@@ -159,3 +159,135 @@ Tái tạo: `npm ci && pip install numpy scipy faster-whisper xlrd requests && n
 | khoảng lặng dài nhất (s) | 0.76 | 0.74 | 0.72 | 0.70 | 0.76 | 0.76 | 0.76 | 0.76 |
 
 **DỪNG**, chờ chủ dự án chọn giọng.
+
+---
+
+# M1b-2 + M2 — sau quyết định chủ dự án (giọng V8, S04 chấp nhận trượt)
+
+Nhánh: **`claude/opus55-cine-phase-d-jw6me1`**. checks/ không đổi; SHA khớp LOCK `0478df73…c612` trước mỗi commit.
+Quyết định đã ghi: `BRIEF-D-amendments.md` (giọng V8 = Eric, eleven_v3, **tạm thời, không phải #158**; miễn trần 175 wpm/câu của A15 cho câu cố ý), `checks-appeal.md` (S04 trượt vì khác phương pháp, dữ liệu Yale dừng ở 09/2023; mô hình vẫn dùng Damodaran). Đối chiếu mô tả đã thêm vào `data/sources.json`: 91/95 năm cùng chiều; chênh lệch trung bình nhân 30 năm trung bình 0,13 điểm %, lớn nhất 0,53 điểm %, cửa sổ 1966 là 0,011 điểm %.
+
+## M1b-2 — lồng tiếng toàn bài (ElevenLabs, không kéo giãn thời gian)
+- Mỗi câu tối đa 4 lần đọc với eleven_v3 (speed 0.9, seed 1000+lần). Chọn theo thứ tự: đủ từ khoá (ASR) → trong 120–190 wpm → gần 156 nhất. Nếu 4 lần v3 đều hỏng, đọc lại bằng Eric trên **eleven_multilingual_v2** (tối đa 4 lần).
+- `out/tableread/tableread-v3.mp3`: **693,4 s (11:33)**, đạt yêu cầu ≥ 10:00.
+- **"Mirror" nghe đúng** qua ASR ở mọi câu. **Từ khoá bị sót: không có.**
+- **wpm theo hồi** (số khai báo, `out/voice/choice-report.json`):
+
+  | hồi | wpm | đạt 150–160? |
+  |---|---|---|
+  | cold-open | 158,9 | có |
+  | act1 | 156,1 | có |
+  | act2 | 151,1 | có |
+  | act3 | **149,6** | không — sửa ở M3 |
+  | method | 155,4 | có |
+  | outro | 150,0 | có |
+
+- **Số đo của máy thắng số khai báo:** A15 đo act1 trên video M2 = **146,8** (trượt), cold-open = 156,3. Trong act1, các dấu ngừng (…) nằm trong cửa sổ câu mà máy đo, nên wpm thấp hơn. Sửa ở M3: act1 chọn lần đọc nhanh hơn hoặc bớt dấu ngừng.
+- **wpm từng câu:** bảng đủ 118 câu ở `out/voice/wpm-report.md` (sinh bằng `src/d/wpm-report.py`), kèm lý do diễn xuất của từng câu lệch.
+  - 88/118 câu nằm ngoài 150–160. Lý do diễn xuất chính:
+    - Câu chốt / câu hỏi đọc chậm, có dấu ngừng cố ý (ví dụ co-question.1 127,7; co-broke.1).
+    - Câu "một hơi" theo chỉ đạo đọc nhanh hơn (ví dụ co-same.1 169,4; a1-notax.2 188,2).
+    - Câu 2–4 từ không thể ghim nhịp.
+  - Trong M2 có 38 câu, 13 câu nằm trong 150–160.
+  - **Ngoài 120–190** (đều là câu 2–3 từ, đã thử đủ 8 lần): a1-avgmirror.2 193,5; a1-payoff.1 195,7; a2-y1.1 200,0; a3-answer.2 204,5.
+  - A15 đo được 4 câu > 175 trong M2: a1-who.1 178; a1-notax.2 190; a1-question.1 175; a1-question.2 180. Các câu này thuộc diện được miễn trần 175 (câu cố ý).
+- **Câu dùng eleven_multilingual_v2 (13):** a1-who.1, a1-real.1, a1-question.2, a1-avgmirror.2, a1-payoff.1, a1-payoff.2, a2-y1.1, a2-bal74m.1, a2-seq.1, a2-short.1, a3-answer.2, a3-limits.1, method-model.2.
+- **Credit ElevenLabs** (cộng từ header `Character-Cost`; khoá không có quyền đọc số dư):
+
+  | hạng mục | ký tự |
+  |---|---|
+  | lần đọc đang dùng | 13.513 |
+  | lần đọc bị thay | 592 |
+  | thăm dò (mirror, thẻ) | 1.193 |
+  | **M1b-2/M2 cộng** | **≈ 15.298** |
+  | thử giọng (M1b-1) | ≈ 5.015 |
+  | **tổng từ đầu** | **≈ 20.300** |
+
+## M2 — cold open + ident + act 1 (0 → hết a1-payoff), chất lượng cuối
+- **Video:** `out/m2/video.mp4` là **bản xem trước** 203,0 s, 2,8 Mbps, 68 MB, có trong git. Bản master đúng hợp đồng (`out/m2/root/out/video.mp4`) là H.264 High 20 Mbps CBR, BT.709 limited, 30 fps, AAC 320k, **515 MB, chỉ ở máy** vì quá lớn cho git.
+- **Có trong git:** stems (voice, music, sfx, whoosh, room), phụ đề `out/m2/captions.srt`, `camera.json`, sfx-events, tension map đo từ stems, render-log.
+- **Hình:**
+  - Trang thật với `window.CHECKS`; camera 3D (24/35/50/85 mm) với lấy đà và vượt đích; DOF theo lớp độ sâu; motion blur 8 subframe.
+  - Một bộ màu grade, vignette nhẹ, grain tĩnh.
+- **Âm:** nhạc (pad, pluck theo phách, leitmotif "mirror"), sound design, duck theo dải tần, master **−14,0 LUFS, LRA 6,3, true peak −1,3 dBTP**.
+- **Bố cục:** kiểu "thẻ + hai dòng" đã được thay bằng các thành phần riêng: growth chart, money column, year grid, donut, escalator, tracks, return rows, avg bars, cái cân, cùng các cảnh chữ căn giữa.
+  - **Theo nghĩa chặt** (đếm thành phần chính), yêu cầu "không bố cục nào quá 2 lần trong 90 s" **chưa đạt**:
+    - moneyColumn: a1-est, a1-start, a1-rule
+    - yearGrid: a1-who, a1-hook, a1-hook-b
+    - escalator: a1-rule, a1-raise, a1-real
+    - scale: a1-samewd, a1-question, a1-payoff
+    - avgBars: a1-question, a1-avg1966, a1-avgmirror
+    - donut (tính cả khi chỉ là thành phần phụ): a1-hook-b, a1-mix, a1-rebal
+  - Phần lớn là một đối tượng được giữ nguyên và phát triển qua các cảnh liền nhau. Nhưng theo luật đếm thì vẫn là lặp. Sửa ở M3: mỗi chuỗi như vậy đổi góc hoặc bố cục ở lần thứ 3, hoặc gộp thành một cảnh.
+
+### Kết quả checks/ trên đoạn M2 (`checks/run.sh out/m2/root`, không sửa checks)
+**51 PASS / 19 FAIL / 1 MISSING** (lần chạy đầu: 39 / 31 / 1). Log: `out/m2/checks-run.log`, chi tiết: `out/m2/checks-report.json` / `.md`.
+
+**FAIL do cấu trúc — đoạn M2 chưa thể đạt** (không phải lỗi của đoạn):
+
+| luật | lý do |
+|---|---|
+| F07 | 203 s < 600 s |
+| S02 | chưa có thẻ phương pháp |
+| S04 | chủ dự án đã chấp nhận trượt |
+| S06 | act 3 |
+| S11 | callback 1966 nằm ở act 2/3 |
+| S14 | ad break nằm giữa các hồi |
+| S15 | thứ tự hồi / outro |
+| R05 | vế act 2; CV 0,35 |
+| P01 (MISSING) | thumbnail thuộc M3 |
+
+R01 trượt một phần vì cấu trúc (mới có 1 cao trào); phần còn lại xếp ở bảng dưới.
+
+**FAIL thật — sửa ở M3** (không kịp thêm một vòng render ~40' + checks ~50' trước điểm dừng an toàn):
+
+| luật | đo được | nguyên nhân | cách sửa |
+|---|---|---|---|
+| F03 | \|frames − duration×30\| = 1,57 (ngưỡng ≤ 1) | container dài hơn luồng hình (audio) | cắt audio đúng số frame khi mux |
+| F08 | banding 31,4% ở t = 192 s, 24,9% ở t = 0 | gradient tối (a1-payoff, co-lines); các frame khác ≤ 5% | tăng dither/grain ở gradient nền, hoặc bỏ gradient ở 2 cảnh này |
+| F09 | 1 cue dài 0,8 s (122,47 s) | — | gộp cue |
+| A15 | act1 146,8 | xem phần giọng | chọn lần đọc nhanh hơn / bớt dấu ngừng |
+| R01 | r music level 0,18; 1 đỉnh giả | nhạc không lên cùng độ căng | vẽ lại đường nhạc theo đỉnh cao trào (đỉnh đo được t = 165 s so với climax 160,4 s) |
+| R06 | 70% cut thấy được (cần ≥ 90%) | 9 cut có thay đổi hình quá nhỏ (7,5 / 12,1 / 17,1 / 26,9 / 85,0 / 107,4 / 123,1 / 143,1 / 160,0 s) | đổi nền, cỡ cảnh hoặc độ sáng ở mỗi cut |
+| V06 | 2 rack gắn với bước ngoặt (cần 3) | rack của a1-real / a1-avgmirror rơi vào cửa sổ ~2 s sau cut nên bị cut "nuốt" | dời rack ra ≥ 2 s sau cut |
+| V07 | median blur ratio 1,20 (cần ≤ 0,8) | grain tĩnh pha loãng phép đo; chỉ 2 chuyển động được đo | giảm grain trên vùng chuyển động, hoặc tăng tốc độ ngang |
+| V08 / C14 | co-a0 / co-a1 3,58 và 3,19:1 | nhãn trục co-lines ở t = 0 quá tối (30 px) | làm sáng nhãn trục |
+| C13 | 1 cặp lệch −433 ms (a1-start "initial") | số hiện sớm hơn lời | dời thời điểm hiện theo ASR |
+
+**Chỉ số vừa chạm ngưỡng (near):**
+
+| luật | chỉ số | giá trị / ngưỡng |
+|---|---|---|
+| A15 | wpm cold-open | 156,3 |
+| S04 | stocks tolerance | 0,5 / 0,5 |
+| S11 | core claims | 1 / 1 |
+| S15 | cold open | 14,83 s / 15 s |
+| V07 | subframes | 8 / 8 |
+
+Các chỉ số near khác xem trong `report.json` (các cờ `near`).
+
+### Thời gian chạy và số lần render
+- **Render M2: 2 lần.**
+  - Lần 1: 1.847 s wall, 9,25 s/s.
+  - Lần 2: **1.660,6 s wall cho 203 s video (8,18 s/s)**, 4 worker, 1.931/6.091 frame supersample. Encode 20 Mbps khoảng 10 phút; audio, mux và bản xem trước khoảng 4 phút.
+- **checks/run.sh:** khoảng 51 phút cho 203 s (sampler trang chiếm phần lớn).
+- **Ước tính M3** (phần còn lại khoảng 500 s, toàn bài khoảng 703 s):
+
+  | bước | thời gian |
+  |---|---|
+  | render phần còn lại | ≈ 70 phút |
+  | render lại M2 sau khi sửa | ≈ 28 phút |
+  | encode + âm thanh + mux | ≈ 20 phút |
+  | checks toàn bài (≈ 15 s/s) | ≈ 3 giờ |
+  | **mỗi vòng render + check** | **≈ 4,5–5 giờ** |
+
+  Chưa tính thời gian dựng các cảnh act 2/3, method, outro và thumbnail.
+
+### Việc chưa làm
+- Các FAIL thật liệt kê ở trên (M2).
+- Luật bố cục "≤ 2 lần/90 s" theo nghĩa chặt.
+- act3 wpm 149,6.
+- Act 2, act 3, method card, outro, ad break, thumbnail (M3).
+- Chọn giọng chính thức (#158) — V8 vẫn là tạm thời.
+
+**DỪNG**, chờ duyệt.
