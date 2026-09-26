@@ -5,3 +5,7 @@ render-motion/data.js
 out/audio/mix.wav
 out/.video-only.mp4
 __pycache__/
+render-av/data.js
+out/audio/*.wav
+out/audio/voice-activity.npy
+out/voice/*.wav

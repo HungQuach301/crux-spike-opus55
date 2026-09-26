@@ -1,30 +1,15 @@
 {
  "bpm": 100,
  "beat": 0.6,
+ "lead": 0.25,
+ "tail": 0.3,
+ "pre": 0.175,
  "total": 127.8,
  "scenes": [
   {
-   "id": "open",
-   "beats": 13,
-   "section": "setup",
-   "shot": "wide",
-   "layout": "two-roads/fork",
-   "cam": {
-    "x": 2060,
-    "y": 1190,
-    "s": 0.42
-   },
-   "drift": [
-    1,
-    0
-   ],
+   "id": "hook1",
    "index": 0,
-   "start": 0,
-   "dur": 7.8
-  },
-  {
-   "id": "facts",
-   "beats": 10,
+   "chapter": "hook",
    "section": "setup",
    "shot": "medium",
    "layout": "hero-number/with-unit",
@@ -34,21 +19,1906 @@
     "s": 1
    },
    "drift": [
-    0,
-    -1
+    1,
+    0
    ],
-   "index": 1,
-   "start": 7.8,
-   "dur": 6
+   "panels": [
+    "hook"
+   ],
+   "chart": false,
+   "beats": 9,
+   "start": 0,
+   "dur": 5.4,
+   "move": 0,
+   "lead": 0.25,
+   "voice": {
+    "file": "out/voice/hook1.trim.wav",
+    "start": 0.25,
+    "dur": 4.53
+   },
+   "display": "A car loan with $25,000 left, at 5.2%.",
+   "anchors": {
+    "balance": 1.27,
+    "apr": 3.43
+   },
+   "markers": [
+    {
+     "name": "balance",
+     "kind": "number",
+     "claimId": "balance",
+     "display": "$25,000",
+     "spokenForm": "twenty-five thousand dollars",
+     "word": 4,
+     "words": 3,
+     "canon": [
+      "usd:25000"
+     ]
+    },
+    {
+     "name": "apr",
+     "kind": "number",
+     "claimId": "apr",
+     "display": "5.2%",
+     "spokenForm": "five point two percent",
+     "word": 9,
+     "words": 4,
+     "canon": [
+      "pct:5.2"
+     ]
+    }
+   ],
+   "words": [
+    {
+     "w": "A",
+     "start": 0.25,
+     "end": 0.41,
+     "matched": true
+    },
+    {
+     "w": "car",
+     "start": 0.41,
+     "end": 0.69,
+     "matched": true
+    },
+    {
+     "w": "loan",
+     "start": 0.69,
+     "end": 0.99,
+     "matched": true
+    },
+    {
+     "w": "with",
+     "start": 0.99,
+     "end": 1.27,
+     "matched": true
+    },
+    {
+     "w": "twenty-five",
+     "start": 1.27,
+     "end": 1.643,
+     "matched": true
+    },
+    {
+     "w": "thousand",
+     "start": 1.643,
+     "end": 2.017,
+     "matched": true
+    },
+    {
+     "w": "dollars",
+     "start": 2.017,
+     "end": 2.39,
+     "matched": true
+    },
+    {
+     "w": "left,",
+     "start": 2.39,
+     "end": 2.91,
+     "matched": true
+    },
+    {
+     "w": "at",
+     "start": 2.91,
+     "end": 3.43,
+     "matched": true
+    },
+    {
+     "w": "five",
+     "start": 3.43,
+     "end": 3.73,
+     "matched": true
+    },
+    {
+     "w": "point",
+     "start": 3.73,
+     "end": 4.03,
+     "matched": true
+    },
+    {
+     "w": "two",
+     "start": 4.03,
+     "end": 4.33,
+     "matched": true
+    },
+    {
+     "w": "percent.",
+     "start": 4.33,
+     "end": 4.63,
+     "matched": true
+    }
+   ],
+   "displayWords": [
+    {
+     "w": "A",
+     "start": 0.25,
+     "end": 0.41
+    },
+    {
+     "w": "car",
+     "start": 0.41,
+     "end": 0.69
+    },
+    {
+     "w": "loan",
+     "start": 0.69,
+     "end": 0.99
+    },
+    {
+     "w": "with",
+     "start": 0.99,
+     "end": 1.27
+    },
+    {
+     "w": "$25,000",
+     "start": 1.27,
+     "end": 2.39
+    },
+    {
+     "w": "left,",
+     "start": 2.39,
+     "end": 2.91
+    },
+    {
+     "w": "at",
+     "start": 2.91,
+     "end": 3.43
+    },
+    {
+     "w": "5.2%.",
+     "start": 3.43,
+     "end": 4.63
+    }
+   ]
   },
   {
-   "id": "extra",
-   "beats": 4,
+   "id": "hook2",
+   "index": 1,
+   "chapter": "hook",
    "section": "setup",
    "shot": "close",
    "layout": "two-roads/fork",
    "cam": {
-    "x": 2560,
+    "x": 3360,
+    "y": 560,
+    "s": 1.35
+   },
+   "drift": [
+    1,
+    0
+   ],
+   "panels": [
+    "fork"
+   ],
+   "chart": false,
+   "beats": 4,
+   "start": 5.4,
+   "dur": 2.4,
+   "move": 0.5,
+   "lead": 0.675,
+   "voice": {
+    "file": "out/voice/hook2.trim.wav",
+    "start": 6.075,
+    "dur": 1.19
+   },
+   "display": "Pay it off early,",
+   "anchors": {
+    "A": 6.075
+   },
+   "markers": [
+    {
+     "name": "A",
+     "kind": "anchor",
+     "word": 0
+    }
+   ],
+   "words": [
+    {
+     "w": "Pay",
+     "start": 6.075,
+     "end": 6.275,
+     "matched": true
+    },
+    {
+     "w": "it",
+     "start": 6.275,
+     "end": 6.395,
+     "matched": true
+    },
+    {
+     "w": "off",
+     "start": 6.395,
+     "end": 6.655,
+     "matched": true
+    },
+    {
+     "w": "early,",
+     "start": 6.655,
+     "end": 7.015,
+     "matched": true
+    }
+   ],
+   "displayWords": [
+    {
+     "w": "Pay",
+     "start": 6.075,
+     "end": 6.275
+    },
+    {
+     "w": "it",
+     "start": 6.275,
+     "end": 6.395
+    },
+    {
+     "w": "off",
+     "start": 6.395,
+     "end": 6.655
+    },
+    {
+     "w": "early,",
+     "start": 6.655,
+     "end": 7.015
+    }
+   ]
+  },
+  {
+   "id": "hook2b",
+   "index": 2,
+   "chapter": "hook",
+   "section": "setup",
+   "shot": "close",
+   "layout": "two-roads/fork",
+   "cam": {
+    "x": 3400,
+    "y": 600,
+    "s": 1.35
+   },
+   "drift": [
+    0,
+    1
+   ],
+   "panels": [
+    "fork"
+   ],
+   "chart": false,
+   "beats": 4,
+   "start": 7.8,
+   "dur": 2.4,
+   "move": 0.5,
+   "lead": 0.375,
+   "voice": {
+    "file": "out/voice/hook2b.trim.wav",
+    "start": 8.175,
+    "dur": 1.64
+   },
+   "display": "or invest the extra cash?",
+   "anchors": {
+    "B": 8.475
+   },
+   "markers": [
+    {
+     "name": "B",
+     "kind": "anchor",
+     "word": 1
+    }
+   ],
+   "words": [
+    {
+     "w": "or",
+     "start": 8.175,
+     "end": 8.475,
+     "matched": true
+    },
+    {
+     "w": "invest",
+     "start": 8.475,
+     "end": 8.895,
+     "matched": true
+    },
+    {
+     "w": "the",
+     "start": 8.895,
+     "end": 9.115,
+     "matched": true
+    },
+    {
+     "w": "extra",
+     "start": 9.115,
+     "end": 9.355,
+     "matched": true
+    },
+    {
+     "w": "cash?",
+     "start": 9.355,
+     "end": 9.655,
+     "matched": true
+    }
+   ],
+   "displayWords": [
+    {
+     "w": "or",
+     "start": 8.175,
+     "end": 8.475
+    },
+    {
+     "w": "invest",
+     "start": 8.475,
+     "end": 8.895
+    },
+    {
+     "w": "the",
+     "start": 8.895,
+     "end": 9.115
+    },
+    {
+     "w": "extra",
+     "start": 9.115,
+     "end": 9.355
+    },
+    {
+     "w": "cash?",
+     "start": 9.355,
+     "end": 9.655
+    }
+   ]
+  },
+  {
+   "id": "hook3",
+   "index": 3,
+   "chapter": "hook",
+   "section": "setup",
+   "shot": "wide",
+   "layout": "timeline/months",
+   "cam": {
+    "x": 960,
+    "y": 760,
+    "s": 0.55
+   },
+   "drift": [
+    0,
+    -1
+   ],
+   "panels": [
+    "hook"
+   ],
+   "chart": true,
+   "beats": 9,
+   "start": 10.2,
+   "dur": 5.4,
+   "move": 1.2,
+   "lead": 0.25,
+   "voice": {
+    "file": "out/voice/hook3.trim.wav",
+    "start": 10.45,
+    "dur": 4.6
+   },
+   "display": "We ran both roads through all 48 months, taxing every lot.",
+   "anchors": {
+    "months": 12.47,
+    "lots": 14.11
+   },
+   "markers": [
+    {
+     "name": "months",
+     "kind": "number",
+     "claimId": "months",
+     "display": "48",
+     "spokenForm": "forty-eight",
+     "word": 6,
+     "words": 1,
+     "canon": [
+      "num:48"
+     ]
+    },
+    {
+     "name": "lots",
+     "kind": "anchor",
+     "word": 9
+    }
+   ],
+   "words": [
+    {
+     "w": "We",
+     "start": 10.45,
+     "end": 10.65,
+     "matched": true
+    },
+    {
+     "w": "ran",
+     "start": 10.65,
+     "end": 10.95,
+     "matched": true
+    },
+    {
+     "w": "both",
+     "start": 10.95,
+     "end": 11.29,
+     "matched": true
+    },
+    {
+     "w": "roads",
+     "start": 11.29,
+     "end": 11.77,
+     "matched": true
+    },
+    {
+     "w": "through",
+     "start": 11.77,
+     "end": 12.15,
+     "matched": true
+    },
+    {
+     "w": "all",
+     "start": 12.15,
+     "end": 12.47,
+     "matched": true
+    },
+    {
+     "w": "forty-eight",
+     "start": 12.47,
+     "end": 12.95,
+     "matched": true
+    },
+    {
+     "w": "months,",
+     "start": 12.95,
+     "end": 13.31,
+     "matched": true
+    },
+    {
+     "w": "taxing",
+     "start": 13.71,
+     "end": 14.11,
+     "matched": true
+    },
+    {
+     "w": "every",
+     "start": 14.11,
+     "end": 14.61,
+     "matched": true
+    },
+    {
+     "w": "lot.",
+     "start": 14.61,
+     "end": 14.91,
+     "matched": true
+    }
+   ],
+   "displayWords": [
+    {
+     "w": "We",
+     "start": 10.45,
+     "end": 10.65
+    },
+    {
+     "w": "ran",
+     "start": 10.65,
+     "end": 10.95
+    },
+    {
+     "w": "both",
+     "start": 10.95,
+     "end": 11.29
+    },
+    {
+     "w": "roads",
+     "start": 11.29,
+     "end": 11.77
+    },
+    {
+     "w": "through",
+     "start": 11.77,
+     "end": 12.15
+    },
+    {
+     "w": "all",
+     "start": 12.15,
+     "end": 12.47
+    },
+    {
+     "w": "48",
+     "start": 12.47,
+     "end": 12.95
+    },
+    {
+     "w": "months,",
+     "start": 12.95,
+     "end": 13.31
+    },
+    {
+     "w": "taxing",
+     "start": 13.71,
+     "end": 14.11
+    },
+    {
+     "w": "every",
+     "start": 14.11,
+     "end": 14.61
+    },
+    {
+     "w": "lot.",
+     "start": 14.61,
+     "end": 14.91
+    }
+   ]
+  },
+  {
+   "id": "hook4",
+   "index": 4,
+   "chapter": "hook",
+   "section": "setup",
+   "shot": "detail",
+   "layout": "flip-point/axis",
+   "cam": {
+    "x": 960,
+    "y": 1960,
+    "s": 2.4
+   },
+   "drift": [
+    -1,
+    0
+   ],
+   "panels": [
+    "axis"
+   ],
+   "chart": false,
+   "beats": 15,
+   "start": 15.6,
+   "dur": 9,
+   "move": 1.2,
+   "lead": 0.25,
+   "voice": {
+    "file": "out/voice/hook4.trim.wav",
+    "start": 15.85,
+    "dur": 7.89
+   },
+   "display": "The answer flips at an average annual return of 6.11%, compounded, in the 22% tax bracket.",
+   "anchors": {
+    "be_22": 19.13,
+    "ord_22": 22.35
+   },
+   "markers": [
+    {
+     "name": "be_22",
+     "kind": "number",
+     "claimId": "be_22",
+     "display": "6.11%",
+     "spokenForm": "six point one one percent",
+     "word": 9,
+     "words": 5,
+     "canon": [
+      "pct:6.11"
+     ]
+    },
+    {
+     "name": "ord_22",
+     "kind": "number",
+     "claimId": "ord_22",
+     "display": "22%",
+     "spokenForm": "twenty-two percent",
+     "word": 17,
+     "words": 2,
+     "canon": [
+      "pct:22"
+     ]
+    }
+   ],
+   "words": [
+    {
+     "w": "The",
+     "start": 15.85,
+     "end": 16.01,
+     "matched": true
+    },
+    {
+     "w": "answer",
+     "start": 16.01,
+     "end": 16.47,
+     "matched": true
+    },
+    {
+     "w": "flips",
+     "start": 16.47,
+     "end": 16.89,
+     "matched": true
+    },
+    {
+     "w": "at",
+     "start": 16.89,
+     "end": 17.53,
+     "matched": true
+    },
+    {
+     "w": "an",
+     "start": 17.53,
+     "end": 17.67,
+     "matched": true
+    },
+    {
+     "w": "average",
+     "start": 17.67,
+     "end": 18.11,
+     "matched": true
+    },
+    {
+     "w": "annual",
+     "start": 18.11,
+     "end": 18.49,
+     "matched": true
+    },
+    {
+     "w": "return",
+     "start": 18.49,
+     "end": 18.93,
+     "matched": true
+    },
+    {
+     "w": "of",
+     "start": 18.93,
+     "end": 19.13,
+     "matched": true
+    },
+    {
+     "w": "six",
+     "start": 19.13,
+     "end": 19.43,
+     "matched": true
+    },
+    {
+     "w": "point",
+     "start": 19.43,
+     "end": 19.73,
+     "matched": true
+    },
+    {
+     "w": "one",
+     "start": 19.73,
+     "end": 20.03,
+     "matched": true
+    },
+    {
+     "w": "one",
+     "start": 20.03,
+     "end": 20.33,
+     "matched": true
+    },
+    {
+     "w": "percent,",
+     "start": 20.33,
+     "end": 20.63,
+     "matched": true
+    },
+    {
+     "w": "compounded,",
+     "start": 20.63,
+     "end": 21.39,
+     "matched": true
+    },
+    {
+     "w": "in",
+     "start": 21.39,
+     "end": 22.25,
+     "matched": true
+    },
+    {
+     "w": "the",
+     "start": 22.25,
+     "end": 22.35,
+     "matched": true
+    },
+    {
+     "w": "twenty-two",
+     "start": 22.35,
+     "end": 22.71,
+     "matched": true
+    },
+    {
+     "w": "percent",
+     "start": 22.71,
+     "end": 23.07,
+     "matched": true
+    },
+    {
+     "w": "tax",
+     "start": 23.07,
+     "end": 23.37,
+     "matched": true
+    },
+    {
+     "w": "bracket.",
+     "start": 23.37,
+     "end": 23.61,
+     "matched": true
+    }
+   ],
+   "displayWords": [
+    {
+     "w": "The",
+     "start": 15.85,
+     "end": 16.01
+    },
+    {
+     "w": "answer",
+     "start": 16.01,
+     "end": 16.47
+    },
+    {
+     "w": "flips",
+     "start": 16.47,
+     "end": 16.89
+    },
+    {
+     "w": "at",
+     "start": 16.89,
+     "end": 17.53
+    },
+    {
+     "w": "an",
+     "start": 17.53,
+     "end": 17.67
+    },
+    {
+     "w": "average",
+     "start": 17.67,
+     "end": 18.11
+    },
+    {
+     "w": "annual",
+     "start": 18.11,
+     "end": 18.49
+    },
+    {
+     "w": "return",
+     "start": 18.49,
+     "end": 18.93
+    },
+    {
+     "w": "of",
+     "start": 18.93,
+     "end": 19.13
+    },
+    {
+     "w": "6.11%,",
+     "start": 19.13,
+     "end": 20.63
+    },
+    {
+     "w": "compounded,",
+     "start": 20.63,
+     "end": 21.39
+    },
+    {
+     "w": "in",
+     "start": 21.39,
+     "end": 22.25
+    },
+    {
+     "w": "the",
+     "start": 22.25,
+     "end": 22.35
+    },
+    {
+     "w": "22%",
+     "start": 22.35,
+     "end": 23.07
+    },
+    {
+     "w": "tax",
+     "start": 23.07,
+     "end": 23.37
+    },
+    {
+     "w": "bracket.",
+     "start": 23.37,
+     "end": 23.61
+    }
+   ]
+  },
+  {
+   "id": "hook5",
+   "index": 5,
+   "chapter": "hook",
+   "section": "setup",
+   "shot": "medium",
+   "layout": "flip-point/axis",
+   "cam": {
+    "x": 960,
+    "y": 2030,
+    "s": 1
+   },
+   "drift": [
+    1,
+    0
+   ],
+   "panels": [
+    "axis"
+   ],
+   "chart": false,
+   "beats": 9,
+   "start": 24.6,
+   "dur": 5.4,
+   "move": 1.2,
+   "lead": 0.25,
+   "voice": {
+    "file": "out/voice/hook5.trim.wav",
+    "start": 24.85,
+    "dur": 4.79
+   },
+   "display": "Below it, paying off ends ahead. Above it, investing does.",
+   "anchors": {
+    "below": 26.07,
+    "above": 28.77
+   },
+   "markers": [
+    {
+     "name": "below",
+     "kind": "anchor",
+     "word": 2
+    },
+    {
+     "name": "above",
+     "kind": "anchor",
+     "word": 8
+    }
+   ],
+   "words": [
+    {
+     "w": "Below",
+     "start": 24.85,
+     "end": 25.21,
+     "matched": true
+    },
+    {
+     "w": "it,",
+     "start": 25.21,
+     "end": 25.73,
+     "matched": true
+    },
+    {
+     "w": "paying",
+     "start": 26.07,
+     "end": 26.25,
+     "matched": true
+    },
+    {
+     "w": "off",
+     "start": 26.25,
+     "end": 26.53,
+     "matched": true
+    },
+    {
+     "w": "ends",
+     "start": 26.53,
+     "end": 26.87,
+     "matched": true
+    },
+    {
+     "w": "ahead.",
+     "start": 26.87,
+     "end": 27.23,
+     "matched": true
+    },
+    {
+     "w": "Above",
+     "start": 28.09,
+     "end": 28.13,
+     "matched": true
+    },
+    {
+     "w": "it,",
+     "start": 28.13,
+     "end": 28.49,
+     "matched": true
+    },
+    {
+     "w": "investing",
+     "start": 28.77,
+     "end": 29.07,
+     "matched": true
+    },
+    {
+     "w": "does.",
+     "start": 29.07,
+     "end": 29.47,
+     "matched": true
+    }
+   ],
+   "displayWords": [
+    {
+     "w": "Below",
+     "start": 24.85,
+     "end": 25.21
+    },
+    {
+     "w": "it,",
+     "start": 25.21,
+     "end": 25.73
+    },
+    {
+     "w": "paying",
+     "start": 26.07,
+     "end": 26.25
+    },
+    {
+     "w": "off",
+     "start": 26.25,
+     "end": 26.53
+    },
+    {
+     "w": "ends",
+     "start": 26.53,
+     "end": 26.87
+    },
+    {
+     "w": "ahead.",
+     "start": 26.87,
+     "end": 27.23
+    },
+    {
+     "w": "Above",
+     "start": 28.09,
+     "end": 28.13
+    },
+    {
+     "w": "it,",
+     "start": 28.13,
+     "end": 28.49
+    },
+    {
+     "w": "investing",
+     "start": 28.77,
+     "end": 29.07
+    },
+    {
+     "w": "does.",
+     "start": 29.07,
+     "end": 29.47
+    }
+   ]
+  },
+  {
+   "id": "ident",
+   "index": 6,
+   "chapter": "ident",
+   "section": "setup",
+   "shot": "wide",
+   "layout": "ident/wordmark",
+   "cam": {
+    "x": 5960,
+    "y": 560,
+    "s": 0.5
+   },
+   "drift": [
+    1,
+    0
+   ],
+   "panels": [
+    "ident"
+   ],
+   "chart": false,
+   "beats": 5,
+   "start": 30,
+   "dur": 3,
+   "move": 0.6,
+   "lead": 0.25,
+   "voice": null,
+   "display": "",
+   "anchors": {},
+   "markers": [],
+   "words": [],
+   "displayWords": []
+  },
+  {
+   "id": "setup",
+   "index": 7,
+   "chapter": "setup",
+   "section": "setup",
+   "shot": "wide",
+   "layout": "canvas/statement",
+   "cam": {
+    "x": 5960,
+    "y": 2000,
+    "s": 0.45
+   },
+   "drift": [
+    1,
+    0
+   ],
+   "panels": [
+    "scope"
+   ],
+   "chart": false,
+   "beats": 3,
+   "start": 33,
+   "dur": 1.8,
+   "move": 0.795,
+   "lead": 0.25,
+   "voice": {
+    "file": "out/voice/setup.trim.wav",
+    "start": 33.25,
+    "dur": 1.13
+   },
+   "display": "Here is the setup.",
+   "anchors": {
+    "setup": 33.97
+   },
+   "markers": [
+    {
+     "name": "setup",
+     "kind": "anchor",
+     "word": 3
+    }
+   ],
+   "words": [
+    {
+     "w": "Here",
+     "start": 33.25,
+     "end": 33.55,
+     "matched": true
+    },
+    {
+     "w": "is",
+     "start": 33.55,
+     "end": 33.79,
+     "matched": true
+    },
+    {
+     "w": "the",
+     "start": 33.79,
+     "end": 33.97,
+     "matched": true
+    },
+    {
+     "w": "setup.",
+     "start": 33.97,
+     "end": 34.19,
+     "matched": true
+    }
+   ],
+   "displayWords": [
+    {
+     "w": "Here",
+     "start": 33.25,
+     "end": 33.55
+    },
+    {
+     "w": "is",
+     "start": 33.55,
+     "end": 33.79
+    },
+    {
+     "w": "the",
+     "start": 33.79,
+     "end": 33.97
+    },
+    {
+     "w": "setup.",
+     "start": 33.97,
+     "end": 34.19
+    }
+   ]
+  },
+  {
+   "id": "scope1",
+   "index": 8,
+   "chapter": "setup",
+   "section": "setup",
+   "shot": "wide",
+   "layout": "canvas/statement",
+   "cam": {
+    "x": 5960,
+    "y": 2050,
+    "s": 0.5
+   },
+   "drift": [
+    0,
+    1
+   ],
+   "panels": [
+    "scope"
+   ],
+   "chart": false,
+   "beats": 11,
+   "start": 34.8,
+   "dur": 6.6,
+   "move": 1.2,
+   "lead": 0.25,
+   "voice": {
+    "file": "out/voice/scope1.trim.wav",
+    "start": 35.05,
+    "dur": 5.93
+   },
+   "display": "The rules here are US tax rules, and every input is stated, not forecast.",
+   "anchors": {
+    "us": 36.33,
+    "stated": 39.17
+   },
+   "markers": [
+    {
+     "name": "us",
+     "kind": "anchor",
+     "word": 4
+    },
+    {
+     "name": "stated",
+     "kind": "anchor",
+     "word": 11
+    }
+   ],
+   "words": [
+    {
+     "w": "The",
+     "start": 35.05,
+     "end": 35.23,
+     "matched": true
+    },
+    {
+     "w": "rules",
+     "start": 35.23,
+     "end": 35.51,
+     "matched": true
+    },
+    {
+     "w": "here",
+     "start": 35.51,
+     "end": 35.93,
+     "matched": true
+    },
+    {
+     "w": "are",
+     "start": 35.93,
+     "end": 36.33,
+     "matched": true
+    },
+    {
+     "w": "U.S.",
+     "start": 36.33,
+     "end": 36.77,
+     "matched": true
+    },
+    {
+     "w": "tax",
+     "start": 36.77,
+     "end": 37.15,
+     "matched": true
+    },
+    {
+     "w": "rules,",
+     "start": 37.15,
+     "end": 37.57,
+     "matched": true
+    },
+    {
+     "w": "and",
+     "start": 38.15,
+     "end": 38.37,
+     "matched": true
+    },
+    {
+     "w": "every",
+     "start": 38.37,
+     "end": 38.65,
+     "matched": true
+    },
+    {
+     "w": "input",
+     "start": 38.65,
+     "end": 38.99,
+     "matched": true
+    },
+    {
+     "w": "is",
+     "start": 38.99,
+     "end": 39.17,
+     "matched": true
+    },
+    {
+     "w": "stated,",
+     "start": 39.17,
+     "end": 39.53,
+     "matched": true
+    },
+    {
+     "w": "not",
+     "start": 40.01,
+     "end": 40.33,
+     "matched": true
+    },
+    {
+     "w": "forecast.",
+     "start": 40.33,
+     "end": 40.67,
+     "matched": true
+    }
+   ],
+   "displayWords": [
+    {
+     "w": "The",
+     "start": 35.05,
+     "end": 35.23
+    },
+    {
+     "w": "rules",
+     "start": 35.23,
+     "end": 35.51
+    },
+    {
+     "w": "here",
+     "start": 35.51,
+     "end": 35.93
+    },
+    {
+     "w": "are",
+     "start": 35.93,
+     "end": 36.33
+    },
+    {
+     "w": "US",
+     "start": 36.33,
+     "end": 36.77
+    },
+    {
+     "w": "tax",
+     "start": 36.77,
+     "end": 37.15
+    },
+    {
+     "w": "rules,",
+     "start": 37.15,
+     "end": 37.57
+    },
+    {
+     "w": "and",
+     "start": 38.15,
+     "end": 38.37
+    },
+    {
+     "w": "every",
+     "start": 38.37,
+     "end": 38.65
+    },
+    {
+     "w": "input",
+     "start": 38.65,
+     "end": 38.99
+    },
+    {
+     "w": "is",
+     "start": 38.99,
+     "end": 39.17
+    },
+    {
+     "w": "stated,",
+     "start": 39.17,
+     "end": 39.53
+    },
+    {
+     "w": "not",
+     "start": 40.01,
+     "end": 40.33
+    },
+    {
+     "w": "forecast.",
+     "start": 40.33,
+     "end": 40.67
+    }
+   ]
+  },
+  {
+   "id": "scope2",
+   "index": 9,
+   "chapter": "setup",
+   "section": "setup",
+   "shot": "medium",
+   "layout": "canvas/statement",
+   "cam": {
+    "x": 5960,
+    "y": 2080,
+    "s": 1
+   },
+   "drift": [
+    1,
+    0
+   ],
+   "panels": [
+    "scope"
+   ],
+   "chart": false,
+   "beats": 15,
+   "start": 41.4,
+   "dur": 9,
+   "move": 1.2,
+   "lead": 0.25,
+   "voice": {
+    "file": "out/voice/scope2.trim.wav",
+    "start": 41.65,
+    "dur": 8.2
+   },
+   "display": "Loan interest is treated as not deductible, so the model ignores the new-car loan interest deduction for 2025 to 2028.",
+   "anchors": {
+    "nd": 43.47,
+    "ded_y0": 47.91,
+    "ded_y1": 49.17
+   },
+   "markers": [
+    {
+     "name": "nd",
+     "kind": "anchor",
+     "word": 5
+    },
+    {
+     "name": "ded_y0",
+     "kind": "number",
+     "claimId": "ded_y0",
+     "display": "2025",
+     "spokenForm": "twenty twenty-five",
+     "word": 17,
+     "words": 2,
+     "canon": [
+      "year:2025"
+     ]
+    },
+    {
+     "name": "ded_y1",
+     "kind": "number",
+     "claimId": "ded_y1",
+     "display": "2028",
+     "spokenForm": "twenty twenty-eight",
+     "word": 20,
+     "words": 2,
+     "canon": [
+      "year:2028"
+     ]
+    }
+   ],
+   "words": [
+    {
+     "w": "Loan",
+     "start": 41.65,
+     "end": 41.97,
+     "matched": true
+    },
+    {
+     "w": "interest",
+     "start": 41.97,
+     "end": 42.41,
+     "matched": true
+    },
+    {
+     "w": "is",
+     "start": 42.41,
+     "end": 42.87,
+     "matched": true
+    },
+    {
+     "w": "treated",
+     "start": 42.87,
+     "end": 43.15,
+     "matched": true
+    },
+    {
+     "w": "as",
+     "start": 43.15,
+     "end": 43.47,
+     "matched": true
+    },
+    {
+     "w": "not",
+     "start": 43.47,
+     "end": 43.73,
+     "matched": true
+    },
+    {
+     "w": "deductible,",
+     "start": 43.73,
+     "end": 44.19,
+     "matched": true
+    },
+    {
+     "w": "so",
+     "start": 44.75,
+     "end": 45.03,
+     "matched": true
+    },
+    {
+     "w": "the",
+     "start": 45.03,
+     "end": 45.17,
+     "matched": true
+    },
+    {
+     "w": "model",
+     "start": 45.17,
+     "end": 45.43,
+     "matched": true
+    },
+    {
+     "w": "ignores",
+     "start": 45.43,
+     "end": 45.89,
+     "matched": true
+    },
+    {
+     "w": "the",
+     "start": 45.89,
+     "end": 46.09,
+     "matched": true
+    },
+    {
+     "w": "new-car",
+     "start": 46.09,
+     "end": 46.47,
+     "matched": false
+    },
+    {
+     "w": "loan",
+     "start": 46.47,
+     "end": 46.73,
+     "matched": true
+    },
+    {
+     "w": "interest",
+     "start": 46.73,
+     "end": 47.03,
+     "matched": true
+    },
+    {
+     "w": "deduction",
+     "start": 47.03,
+     "end": 47.47,
+     "matched": true
+    },
+    {
+     "w": "for",
+     "start": 47.47,
+     "end": 47.91,
+     "matched": true
+    },
+    {
+     "w": "twenty",
+     "start": 47.91,
+     "end": 48.19,
+     "matched": true
+    },
+    {
+     "w": "twenty-five",
+     "start": 48.19,
+     "end": 48.47,
+     "matched": true
+    },
+    {
+     "w": "to",
+     "start": 48.47,
+     "end": 49.17,
+     "matched": true
+    },
+    {
+     "w": "twenty",
+     "start": 49.17,
+     "end": 49.45,
+     "matched": true
+    },
+    {
+     "w": "twenty-eight.",
+     "start": 49.45,
+     "end": 49.73,
+     "matched": true
+    }
+   ],
+   "displayWords": [
+    {
+     "w": "Loan",
+     "start": 41.65,
+     "end": 41.97
+    },
+    {
+     "w": "interest",
+     "start": 41.97,
+     "end": 42.41
+    },
+    {
+     "w": "is",
+     "start": 42.41,
+     "end": 42.87
+    },
+    {
+     "w": "treated",
+     "start": 42.87,
+     "end": 43.15
+    },
+    {
+     "w": "as",
+     "start": 43.15,
+     "end": 43.47
+    },
+    {
+     "w": "not",
+     "start": 43.47,
+     "end": 43.73
+    },
+    {
+     "w": "deductible,",
+     "start": 43.73,
+     "end": 44.19
+    },
+    {
+     "w": "so",
+     "start": 44.75,
+     "end": 45.03
+    },
+    {
+     "w": "the",
+     "start": 45.03,
+     "end": 45.17
+    },
+    {
+     "w": "model",
+     "start": 45.17,
+     "end": 45.43
+    },
+    {
+     "w": "ignores",
+     "start": 45.43,
+     "end": 45.89
+    },
+    {
+     "w": "the",
+     "start": 45.89,
+     "end": 46.09
+    },
+    {
+     "w": "new-car",
+     "start": 46.09,
+     "end": 46.47
+    },
+    {
+     "w": "loan",
+     "start": 46.47,
+     "end": 46.73
+    },
+    {
+     "w": "interest",
+     "start": 46.73,
+     "end": 47.03
+    },
+    {
+     "w": "deduction",
+     "start": 47.03,
+     "end": 47.47
+    },
+    {
+     "w": "for",
+     "start": 47.47,
+     "end": 47.91
+    },
+    {
+     "w": "2025",
+     "start": 47.91,
+     "end": 48.47
+    },
+    {
+     "w": "to",
+     "start": 48.47,
+     "end": 49.17
+    },
+    {
+     "w": "2028.",
+     "start": 49.17,
+     "end": 49.73
+    }
+   ]
+  },
+  {
+   "id": "facts",
+   "index": 10,
+   "chapter": "setup",
+   "section": "setup",
+   "shot": "medium",
+   "layout": "hero-number/with-unit",
+   "cam": {
+    "x": 960,
+    "y": 3300,
+    "s": 1
+   },
+   "drift": [
+    0,
+    -1
+   ],
+   "panels": [
+    "loan"
+   ],
+   "chart": false,
+   "beats": 14,
+   "start": 50.4,
+   "dur": 8.4,
+   "move": 0.755,
+   "lead": 0.25,
+   "voice": {
+    "file": "out/voice/facts.trim.wav",
+    "start": 50.65,
+    "dur": 7.57
+   },
+   "display": "The loan has $25,000 left at 5.2%, with 48 monthly payments of $578.",
+   "anchors": {
+    "balance": 51.33,
+    "apr": 53.37,
+    "months": 54.99,
+    "payment": 56.69
+   },
+   "markers": [
+    {
+     "name": "balance",
+     "kind": "number",
+     "claimId": "balance",
+     "display": "$25,000",
+     "spokenForm": "twenty-five thousand dollars",
+     "word": 3,
+     "words": 3,
+     "canon": [
+      "usd:25000"
+     ]
+    },
+    {
+     "name": "apr",
+     "kind": "number",
+     "claimId": "apr",
+     "display": "5.2%",
+     "spokenForm": "five point two percent",
+     "word": 8,
+     "words": 4,
+     "canon": [
+      "pct:5.2"
+     ]
+    },
+    {
+     "name": "months",
+     "kind": "number",
+     "claimId": "months",
+     "display": "48",
+     "spokenForm": "forty-eight",
+     "word": 13,
+     "words": 1,
+     "canon": [
+      "num:48"
+     ]
+    },
+    {
+     "name": "payment",
+     "kind": "number",
+     "claimId": "payment",
+     "display": "$578",
+     "spokenForm": "five hundred seventy-eight dollars",
+     "word": 17,
+     "words": 4,
+     "canon": [
+      "usd:578"
+     ]
+    }
+   ],
+   "words": [
+    {
+     "w": "The",
+     "start": 50.65,
+     "end": 50.83,
+     "matched": true
+    },
+    {
+     "w": "loan",
+     "start": 50.83,
+     "end": 51.05,
+     "matched": true
+    },
+    {
+     "w": "has",
+     "start": 51.05,
+     "end": 51.33,
+     "matched": true
+    },
+    {
+     "w": "twenty-five",
+     "start": 51.33,
+     "end": 51.663,
+     "matched": true
+    },
+    {
+     "w": "thousand",
+     "start": 51.663,
+     "end": 51.997,
+     "matched": true
+    },
+    {
+     "w": "dollars",
+     "start": 51.997,
+     "end": 52.33,
+     "matched": true
+    },
+    {
+     "w": "left",
+     "start": 52.33,
+     "end": 52.85,
+     "matched": true
+    },
+    {
+     "w": "at",
+     "start": 52.85,
+     "end": 53.37,
+     "matched": true
+    },
+    {
+     "w": "five",
+     "start": 53.37,
+     "end": 53.67,
+     "matched": true
+    },
+    {
+     "w": "point",
+     "start": 53.67,
+     "end": 53.97,
+     "matched": true
+    },
+    {
+     "w": "two",
+     "start": 53.97,
+     "end": 54.27,
+     "matched": true
+    },
+    {
+     "w": "percent,",
+     "start": 54.27,
+     "end": 54.57,
+     "matched": true
+    },
+    {
+     "w": "with",
+     "start": 54.57,
+     "end": 54.99,
+     "matched": true
+    },
+    {
+     "w": "forty-eight",
+     "start": 54.99,
+     "end": 55.47,
+     "matched": true
+    },
+    {
+     "w": "monthly",
+     "start": 55.47,
+     "end": 55.81,
+     "matched": true
+    },
+    {
+     "w": "payments",
+     "start": 55.81,
+     "end": 56.25,
+     "matched": true
+    },
+    {
+     "w": "of",
+     "start": 56.25,
+     "end": 56.69,
+     "matched": true
+    },
+    {
+     "w": "five",
+     "start": 56.69,
+     "end": 56.91,
+     "matched": true
+    },
+    {
+     "w": "hundred",
+     "start": 56.91,
+     "end": 57.13,
+     "matched": true
+    },
+    {
+     "w": "seventy-eight",
+     "start": 57.13,
+     "end": 57.35,
+     "matched": true
+    },
+    {
+     "w": "dollars.",
+     "start": 57.35,
+     "end": 57.57,
+     "matched": true
+    }
+   ],
+   "displayWords": [
+    {
+     "w": "The",
+     "start": 50.65,
+     "end": 50.83
+    },
+    {
+     "w": "loan",
+     "start": 50.83,
+     "end": 51.05
+    },
+    {
+     "w": "has",
+     "start": 51.05,
+     "end": 51.33
+    },
+    {
+     "w": "$25,000",
+     "start": 51.33,
+     "end": 52.33
+    },
+    {
+     "w": "left",
+     "start": 52.33,
+     "end": 52.85
+    },
+    {
+     "w": "at",
+     "start": 52.85,
+     "end": 53.37
+    },
+    {
+     "w": "5.2%,",
+     "start": 53.37,
+     "end": 54.57
+    },
+    {
+     "w": "with",
+     "start": 54.57,
+     "end": 54.99
+    },
+    {
+     "w": "48",
+     "start": 54.99,
+     "end": 55.47
+    },
+    {
+     "w": "monthly",
+     "start": 55.47,
+     "end": 55.81
+    },
+    {
+     "w": "payments",
+     "start": 55.81,
+     "end": 56.25
+    },
+    {
+     "w": "of",
+     "start": 56.25,
+     "end": 56.69
+    },
+    {
+     "w": "$578.",
+     "start": 56.69,
+     "end": 57.57
+    }
+   ]
+  },
+  {
+   "id": "extra",
+   "index": 11,
+   "chapter": "setup",
+   "section": "setup",
+   "shot": "close",
+   "layout": "two-roads/fork",
+   "cam": {
+    "x": 2760,
     "y": 560,
     "s": 1.6
    },
@@ -56,181 +1926,1331 @@
     1,
     0
    ],
-   "index": 2,
-   "start": 13.8,
-   "dur": 2.4
+   "panels": [
+    "fork"
+   ],
+   "chart": false,
+   "beats": 12,
+   "start": 58.8,
+   "dur": 7.2,
+   "move": 1.2,
+   "lead": 0.25,
+   "voice": {
+    "file": "out/voice/extra.trim.wav",
+    "start": 59.05,
+    "dur": 6.15
+   },
+   "display": "On top of that, $400 a month is available. That amount is illustrative.",
+   "anchors": {
+    "extra": 60.79,
+    "illu": 64.53
+   },
+   "markers": [
+    {
+     "name": "extra",
+     "kind": "number",
+     "claimId": "extra",
+     "display": "$400",
+     "spokenForm": "four hundred dollars",
+     "word": 4,
+     "words": 3,
+     "canon": [
+      "usd:400"
+     ]
+    },
+    {
+     "name": "illu",
+     "kind": "anchor",
+     "word": 14
+    }
+   ],
+   "words": [
+    {
+     "w": "On",
+     "start": 59.05,
+     "end": 59.27,
+     "matched": true
+    },
+    {
+     "w": "top",
+     "start": 59.27,
+     "end": 59.57,
+     "matched": true
+    },
+    {
+     "w": "of",
+     "start": 59.57,
+     "end": 59.91,
+     "matched": true
+    },
+    {
+     "w": "that,",
+     "start": 59.91,
+     "end": 60.27,
+     "matched": true
+    },
+    {
+     "w": "four",
+     "start": 60.79,
+     "end": 60.997,
+     "matched": true
+    },
+    {
+     "w": "hundred",
+     "start": 60.997,
+     "end": 61.203,
+     "matched": true
+    },
+    {
+     "w": "dollars",
+     "start": 61.203,
+     "end": 61.41,
+     "matched": true
+    },
+    {
+     "w": "a",
+     "start": 61.41,
+     "end": 61.87,
+     "matched": true
+    },
+    {
+     "w": "month",
+     "start": 61.87,
+     "end": 62.07,
+     "matched": true
+    },
+    {
+     "w": "is",
+     "start": 62.07,
+     "end": 62.57,
+     "matched": true
+    },
+    {
+     "w": "available.",
+     "start": 62.57,
+     "end": 62.89,
+     "matched": true
+    },
+    {
+     "w": "That",
+     "start": 63.47,
+     "end": 63.69,
+     "matched": true
+    },
+    {
+     "w": "amount",
+     "start": 63.69,
+     "end": 63.93,
+     "matched": true
+    },
+    {
+     "w": "is",
+     "start": 63.93,
+     "end": 64.53,
+     "matched": true
+    },
+    {
+     "w": "illustrative.",
+     "start": 64.53,
+     "end": 65.05,
+     "matched": true
+    }
+   ],
+   "displayWords": [
+    {
+     "w": "On",
+     "start": 59.05,
+     "end": 59.27
+    },
+    {
+     "w": "top",
+     "start": 59.27,
+     "end": 59.57
+    },
+    {
+     "w": "of",
+     "start": 59.57,
+     "end": 59.91
+    },
+    {
+     "w": "that,",
+     "start": 59.91,
+     "end": 60.27
+    },
+    {
+     "w": "$400",
+     "start": 60.79,
+     "end": 61.41
+    },
+    {
+     "w": "a",
+     "start": 61.41,
+     "end": 61.87
+    },
+    {
+     "w": "month",
+     "start": 61.87,
+     "end": 62.07
+    },
+    {
+     "w": "is",
+     "start": 62.07,
+     "end": 62.57
+    },
+    {
+     "w": "available.",
+     "start": 62.57,
+     "end": 62.89
+    },
+    {
+     "w": "That",
+     "start": 63.47,
+     "end": 63.69
+    },
+    {
+     "w": "amount",
+     "start": 63.69,
+     "end": 63.93
+    },
+    {
+     "w": "is",
+     "start": 63.93,
+     "end": 64.53
+    },
+    {
+     "w": "illustrative.",
+     "start": 64.53,
+     "end": 65.05
+    }
+   ]
   },
   {
    "id": "roads",
-   "beats": 12,
+   "index": 12,
+   "chapter": "setup",
    "section": "setup",
    "shot": "medium",
    "layout": "two-roads/fork",
    "cam": {
-    "x": 3120,
-    "y": 540,
+    "x": 3380,
+    "y": 560,
     "s": 1
    },
    "drift": [
     -1,
     0
    ],
-   "index": 3,
-   "start": 16.2,
-   "dur": 7.2
+   "panels": [
+    "fork"
+   ],
+   "chart": false,
+   "beats": 12,
+   "start": 66,
+   "dur": 7.2,
+   "move": 0.5,
+   "lead": 0.675,
+   "voice": {
+    "file": "out/voice/roads.trim.wav",
+    "start": 66.675,
+    "dur": 5.8
+   },
+   "display": "Road A sends it to the loan. Road B pays the minimum and invests it every month.",
+   "anchors": {
+    "A": 66.675,
+    "B": 69.355
+   },
+   "markers": [
+    {
+     "name": "A",
+     "kind": "anchor",
+     "word": 0
+    },
+    {
+     "name": "B",
+     "kind": "anchor",
+     "word": 7
+    }
+   ],
+   "words": [
+    {
+     "w": "Road",
+     "start": 66.675,
+     "end": 66.955,
+     "matched": true
+    },
+    {
+     "w": "A",
+     "start": 66.955,
+     "end": 67.375,
+     "matched": true
+    },
+    {
+     "w": "sends",
+     "start": 67.375,
+     "end": 67.755,
+     "matched": true
+    },
+    {
+     "w": "it",
+     "start": 67.755,
+     "end": 67.975,
+     "matched": true
+    },
+    {
+     "w": "to",
+     "start": 67.975,
+     "end": 68.135,
+     "matched": true
+    },
+    {
+     "w": "the",
+     "start": 68.135,
+     "end": 68.255,
+     "matched": true
+    },
+    {
+     "w": "loan.",
+     "start": 68.255,
+     "end": 68.515,
+     "matched": true
+    },
+    {
+     "w": "Road",
+     "start": 69.355,
+     "end": 69.455,
+     "matched": true
+    },
+    {
+     "w": "B",
+     "start": 69.455,
+     "end": 69.815,
+     "matched": true
+    },
+    {
+     "w": "pays",
+     "start": 69.815,
+     "end": 70.195,
+     "matched": true
+    },
+    {
+     "w": "the",
+     "start": 70.195,
+     "end": 70.375,
+     "matched": true
+    },
+    {
+     "w": "minimum",
+     "start": 70.375,
+     "end": 70.655,
+     "matched": true
+    },
+    {
+     "w": "and",
+     "start": 70.655,
+     "end": 71.175,
+     "matched": true
+    },
+    {
+     "w": "invests",
+     "start": 71.175,
+     "end": 71.475,
+     "matched": true
+    },
+    {
+     "w": "it",
+     "start": 71.475,
+     "end": 71.835,
+     "matched": true
+    },
+    {
+     "w": "every",
+     "start": 71.835,
+     "end": 72.175,
+     "matched": true
+    },
+    {
+     "w": "month.",
+     "start": 72.175,
+     "end": 72.395,
+     "matched": true
+    }
+   ],
+   "displayWords": [
+    {
+     "w": "Road",
+     "start": 66.675,
+     "end": 66.955
+    },
+    {
+     "w": "A",
+     "start": 66.955,
+     "end": 67.375
+    },
+    {
+     "w": "sends",
+     "start": 67.375,
+     "end": 67.755
+    },
+    {
+     "w": "it",
+     "start": 67.755,
+     "end": 67.975
+    },
+    {
+     "w": "to",
+     "start": 67.975,
+     "end": 68.135
+    },
+    {
+     "w": "the",
+     "start": 68.135,
+     "end": 68.255
+    },
+    {
+     "w": "loan.",
+     "start": 68.255,
+     "end": 68.515
+    },
+    {
+     "w": "Road",
+     "start": 69.355,
+     "end": 69.455
+    },
+    {
+     "w": "B",
+     "start": 69.455,
+     "end": 69.815
+    },
+    {
+     "w": "pays",
+     "start": 69.815,
+     "end": 70.195
+    },
+    {
+     "w": "the",
+     "start": 70.195,
+     "end": 70.375
+    },
+    {
+     "w": "minimum",
+     "start": 70.375,
+     "end": 70.655
+    },
+    {
+     "w": "and",
+     "start": 70.655,
+     "end": 71.175
+    },
+    {
+     "w": "invests",
+     "start": 71.175,
+     "end": 71.475
+    },
+    {
+     "w": "it",
+     "start": 71.475,
+     "end": 71.835
+    },
+    {
+     "w": "every",
+     "start": 71.835,
+     "end": 72.175
+    },
+    {
+     "w": "month.",
+     "start": 72.175,
+     "end": 72.395
+    }
+   ]
+  },
+  {
+   "id": "cash",
+   "index": 13,
+   "chapter": "setup",
+   "section": "setup",
+   "shot": "medium",
+   "layout": "stacked-cost/absolute",
+   "cam": {
+    "x": 3360,
+    "y": 3560,
+    "s": 1
+   },
+   "drift": [
+    1,
+    0
+   ],
+   "panels": [
+    "cash"
+   ],
+   "chart": true,
+   "beats": 9,
+   "start": 73.2,
+   "dur": 5.4,
+   "move": 0.5,
+   "lead": 0.25,
+   "voice": {
+    "file": "out/voice/cash.trim.wav",
+    "start": 73.45,
+    "dur": 4.62
+   },
+   "display": "Both roads spend the same cash each month. Only the order changes.",
+   "anchors": {
+    "same": 74.57,
+    "order": 77.13
+   },
+   "markers": [
+    {
+     "name": "same",
+     "kind": "anchor",
+     "word": 3
+    },
+    {
+     "name": "order",
+     "kind": "anchor",
+     "word": 10
+    }
+   ],
+   "words": [
+    {
+     "w": "Both",
+     "start": 73.45,
+     "end": 73.77,
+     "matched": true
+    },
+    {
+     "w": "roads",
+     "start": 73.77,
+     "end": 74.29,
+     "matched": true
+    },
+    {
+     "w": "spend",
+     "start": 74.29,
+     "end": 74.57,
+     "matched": true
+    },
+    {
+     "w": "the",
+     "start": 74.57,
+     "end": 74.77,
+     "matched": true
+    },
+    {
+     "w": "same",
+     "start": 74.77,
+     "end": 75.05,
+     "matched": true
+    },
+    {
+     "w": "cash",
+     "start": 75.05,
+     "end": 75.43,
+     "matched": true
+    },
+    {
+     "w": "each",
+     "start": 75.43,
+     "end": 75.67,
+     "matched": true
+    },
+    {
+     "w": "month.",
+     "start": 75.67,
+     "end": 76.03,
+     "matched": true
+    },
+    {
+     "w": "Only",
+     "start": 76.73,
+     "end": 76.89,
+     "matched": true
+    },
+    {
+     "w": "the",
+     "start": 76.89,
+     "end": 77.13,
+     "matched": true
+    },
+    {
+     "w": "order",
+     "start": 77.13,
+     "end": 77.37,
+     "matched": true
+    },
+    {
+     "w": "changes.",
+     "start": 77.37,
+     "end": 77.83,
+     "matched": true
+    }
+   ],
+   "displayWords": [
+    {
+     "w": "Both",
+     "start": 73.45,
+     "end": 73.77
+    },
+    {
+     "w": "roads",
+     "start": 73.77,
+     "end": 74.29
+    },
+    {
+     "w": "spend",
+     "start": 74.29,
+     "end": 74.57
+    },
+    {
+     "w": "the",
+     "start": 74.57,
+     "end": 74.77
+    },
+    {
+     "w": "same",
+     "start": 74.77,
+     "end": 75.05
+    },
+    {
+     "w": "cash",
+     "start": 75.05,
+     "end": 75.43
+    },
+    {
+     "w": "each",
+     "start": 75.43,
+     "end": 75.67
+    },
+    {
+     "w": "month.",
+     "start": 75.67,
+     "end": 76.03
+    },
+    {
+     "w": "Only",
+     "start": 76.73,
+     "end": 76.89
+    },
+    {
+     "w": "the",
+     "start": 76.89,
+     "end": 77.13
+    },
+    {
+     "w": "order",
+     "start": 77.13,
+     "end": 77.37
+    },
+    {
+     "w": "changes.",
+     "start": 77.37,
+     "end": 77.83
+    }
+   ]
+  },
+  {
+   "id": "card1",
+   "index": 14,
+   "chapter": "ch1",
+   "section": "setup",
+   "shot": "wide",
+   "layout": "chapter-card",
+   "cam": {
+    "x": 5960,
+    "y": 3560,
+    "s": 0.5
+   },
+   "drift": [
+    1,
+    0
+   ],
+   "panels": [],
+   "chart": false,
+   "beats": 4,
+   "start": 78.6,
+   "dur": 2.4,
+   "move": 0.5,
+   "lead": 0.25,
+   "voice": {
+    "file": "out/voice/card1.trim.wav",
+    "start": 78.85,
+    "dur": 1.52
+   },
+   "display": "First, the certain part.",
+   "anchors": {},
+   "markers": [],
+   "words": [
+    {
+     "w": "First,",
+     "start": 78.85,
+     "end": 79.19,
+     "matched": true
+    },
+    {
+     "w": "the",
+     "start": 79.59,
+     "end": 79.71,
+     "matched": true
+    },
+    {
+     "w": "certain",
+     "start": 79.71,
+     "end": 79.95,
+     "matched": true
+    },
+    {
+     "w": "part.",
+     "start": 79.95,
+     "end": 80.25,
+     "matched": true
+    }
+   ],
+   "displayWords": [
+    {
+     "w": "First,",
+     "start": 78.85,
+     "end": 79.19
+    },
+    {
+     "w": "the",
+     "start": 79.59,
+     "end": 79.71
+    },
+    {
+     "w": "certain",
+     "start": 79.71,
+     "end": 79.95
+    },
+    {
+     "w": "part.",
+     "start": 79.95,
+     "end": 80.25
+    }
+   ]
   },
   {
    "id": "timeline",
-   "beats": 8,
+   "index": 15,
+   "chapter": "ch1",
    "section": "setup",
    "shot": "medium",
    "layout": "timeline/months",
    "cam": {
     "x": 960,
-    "y": 600,
+    "y": 3560,
     "s": 1
    },
    "drift": [
     1,
     0
    ],
-   "index": 4,
-   "start": 23.4,
-   "dur": 4.8
+   "panels": [
+    "loan"
+   ],
+   "chart": true,
+   "beats": 11,
+   "start": 81,
+   "dur": 6.6,
+   "move": 0.6,
+   "lead": 0.25,
+   "voice": {
+    "file": "out/voice/timeline.trim.wav",
+    "start": 81.25,
+    "dur": 5.71
+   },
+   "display": "Road A pays off the loan at month 28. Road B keeps paying through month 48.",
+   "anchors": {
+    "payoff_a": 83.15,
+    "horizon": 86.35
+   },
+   "markers": [
+    {
+     "name": "payoff_a",
+     "kind": "number",
+     "claimId": "payoff_a",
+     "display": "28",
+     "spokenForm": "twenty-eight",
+     "word": 8,
+     "words": 1,
+     "canon": [
+      "month:28"
+     ]
+    },
+    {
+     "name": "horizon",
+     "kind": "number",
+     "claimId": "horizon",
+     "display": "48",
+     "spokenForm": "forty-eight",
+     "word": 15,
+     "words": 1,
+     "canon": [
+      "month:48"
+     ]
+    }
+   ],
+   "words": [
+    {
+     "w": "Road",
+     "start": 81.25,
+     "end": 81.47,
+     "matched": true
+    },
+    {
+     "w": "A",
+     "start": 81.47,
+     "end": 81.81,
+     "matched": true
+    },
+    {
+     "w": "pays",
+     "start": 81.81,
+     "end": 82.19,
+     "matched": true
+    },
+    {
+     "w": "off",
+     "start": 82.19,
+     "end": 82.43,
+     "matched": true
+    },
+    {
+     "w": "the",
+     "start": 82.43,
+     "end": 82.57,
+     "matched": true
+    },
+    {
+     "w": "loan",
+     "start": 82.57,
+     "end": 82.81,
+     "matched": true
+    },
+    {
+     "w": "at",
+     "start": 82.81,
+     "end": 83.01,
+     "matched": true
+    },
+    {
+     "w": "month",
+     "start": 83.01,
+     "end": 83.15,
+     "matched": true
+    },
+    {
+     "w": "twenty-eight.",
+     "start": 83.15,
+     "end": 83.67,
+     "matched": true
+    },
+    {
+     "w": "Road",
+     "start": 84.69,
+     "end": 84.77,
+     "matched": true
+    },
+    {
+     "w": "B",
+     "start": 84.77,
+     "end": 85.11,
+     "matched": true
+    },
+    {
+     "w": "keeps",
+     "start": 85.11,
+     "end": 85.47,
+     "matched": true
+    },
+    {
+     "w": "paying",
+     "start": 85.47,
+     "end": 85.81,
+     "matched": true
+    },
+    {
+     "w": "through",
+     "start": 85.81,
+     "end": 86.11,
+     "matched": true
+    },
+    {
+     "w": "month",
+     "start": 86.11,
+     "end": 86.35,
+     "matched": true
+    },
+    {
+     "w": "forty-eight.",
+     "start": 86.35,
+     "end": 86.71,
+     "matched": true
+    }
+   ],
+   "displayWords": [
+    {
+     "w": "Road",
+     "start": 81.25,
+     "end": 81.47
+    },
+    {
+     "w": "A",
+     "start": 81.47,
+     "end": 81.81
+    },
+    {
+     "w": "pays",
+     "start": 81.81,
+     "end": 82.19
+    },
+    {
+     "w": "off",
+     "start": 82.19,
+     "end": 82.43
+    },
+    {
+     "w": "the",
+     "start": 82.43,
+     "end": 82.57
+    },
+    {
+     "w": "loan",
+     "start": 82.57,
+     "end": 82.81
+    },
+    {
+     "w": "at",
+     "start": 82.81,
+     "end": 83.01
+    },
+    {
+     "w": "month",
+     "start": 83.01,
+     "end": 83.15
+    },
+    {
+     "w": "28.",
+     "start": 83.15,
+     "end": 83.67
+    },
+    {
+     "w": "Road",
+     "start": 84.69,
+     "end": 84.77
+    },
+    {
+     "w": "B",
+     "start": 84.77,
+     "end": 85.11
+    },
+    {
+     "w": "keeps",
+     "start": 85.11,
+     "end": 85.47
+    },
+    {
+     "w": "paying",
+     "start": 85.47,
+     "end": 85.81
+    },
+    {
+     "w": "through",
+     "start": 85.81,
+     "end": 86.11
+    },
+    {
+     "w": "month",
+     "start": 86.11,
+     "end": 86.35
+    },
+    {
+     "w": "48.",
+     "start": 86.35,
+     "end": 86.71
+    }
+   ]
+  },
+  {
+   "id": "free",
+   "index": 16,
+   "chapter": "ch1",
+   "section": "setup",
+   "shot": "close",
+   "layout": "timeline/months",
+   "cam": {
+    "x": 1320,
+    "y": 3520,
+    "s": 1.6
+   },
+   "drift": [
+    -1,
+    0
+   ],
+   "panels": [
+    "loan"
+   ],
+   "chart": true,
+   "beats": 8,
+   "start": 87.6,
+   "dur": 4.8,
+   "move": 0.515,
+   "lead": 0.25,
+   "voice": {
+    "file": "out/voice/free.trim.wav",
+    "start": 87.85,
+    "dur": 3.67
+   },
+   "display": "That leaves 20 months with no car payment on road A.",
+   "anchors": {
+    "months_free": 88.29
+   },
+   "markers": [
+    {
+     "name": "months_free",
+     "kind": "number",
+     "claimId": "months_free",
+     "display": "20",
+     "spokenForm": "twenty",
+     "word": 2,
+     "words": 1,
+     "canon": [
+      "num:20"
+     ]
+    }
+   ],
+   "words": [
+    {
+     "w": "That",
+     "start": 87.85,
+     "end": 88.05,
+     "matched": true
+    },
+    {
+     "w": "leaves",
+     "start": 88.05,
+     "end": 88.29,
+     "matched": true
+    },
+    {
+     "w": "twenty",
+     "start": 88.29,
+     "end": 88.71,
+     "matched": true
+    },
+    {
+     "w": "months",
+     "start": 88.71,
+     "end": 88.99,
+     "matched": true
+    },
+    {
+     "w": "with",
+     "start": 88.99,
+     "end": 89.51,
+     "matched": true
+    },
+    {
+     "w": "no",
+     "start": 89.51,
+     "end": 89.75,
+     "matched": true
+    },
+    {
+     "w": "car",
+     "start": 89.75,
+     "end": 89.97,
+     "matched": true
+    },
+    {
+     "w": "payment",
+     "start": 89.97,
+     "end": 90.33,
+     "matched": true
+    },
+    {
+     "w": "on",
+     "start": 90.33,
+     "end": 90.87,
+     "matched": true
+    },
+    {
+     "w": "road",
+     "start": 90.87,
+     "end": 91.09,
+     "matched": true
+    },
+    {
+     "w": "A.",
+     "start": 91.09,
+     "end": 91.43,
+     "matched": true
+    }
+   ],
+   "displayWords": [
+    {
+     "w": "That",
+     "start": 87.85,
+     "end": 88.05
+    },
+    {
+     "w": "leaves",
+     "start": 88.05,
+     "end": 88.29
+    },
+    {
+     "w": "20",
+     "start": 88.29,
+     "end": 88.71
+    },
+    {
+     "w": "months",
+     "start": 88.71,
+     "end": 88.99
+    },
+    {
+     "w": "with",
+     "start": 88.99,
+     "end": 89.51
+    },
+    {
+     "w": "no",
+     "start": 89.51,
+     "end": 89.75
+    },
+    {
+     "w": "car",
+     "start": 89.75,
+     "end": 89.97
+    },
+    {
+     "w": "payment",
+     "start": 89.97,
+     "end": 90.33
+    },
+    {
+     "w": "on",
+     "start": 90.33,
+     "end": 90.87
+    },
+    {
+     "w": "road",
+     "start": 90.87,
+     "end": 91.09
+    },
+    {
+     "w": "A.",
+     "start": 91.09,
+     "end": 91.43
+    }
+   ]
   },
   {
    "id": "interest",
-   "beats": 11,
+   "index": 17,
+   "chapter": "ch1",
    "section": "setup",
    "shot": "close",
    "layout": "stacked-cost/absolute",
    "cam": {
-    "x": 1430,
-    "y": 640,
-    "s": 1.7
-   },
-   "drift": [
-    -1,
-    0
-   ],
-   "index": 5,
-   "start": 28.2,
-   "dur": 6.6
-  },
-  {
-   "id": "scope",
-   "beats": 8,
-   "section": "setup",
-   "shot": "wide",
-   "layout": "canvas/overview",
-   "cam": {
-    "x": 2060,
-    "y": 1190,
-    "s": 0.5
-   },
-   "drift": [
-    0,
-    1
-   ],
-   "index": 6,
-   "start": 34.8,
-   "dur": 4.8
-  },
-  {
-   "id": "tax",
-   "beats": 10,
-   "section": "setup",
-   "shot": "medium",
-   "layout": "threshold-matrix/rows",
-   "cam": {
-    "x": 3160,
-    "y": 1680,
-    "s": 1
+    "x": 1040,
+    "y": 3560,
+    "s": 1.4
    },
    "drift": [
     1,
     0
    ],
-   "index": 7,
-   "start": 39.6,
-   "dur": 6
-  },
-  {
-   "id": "bars",
+   "panels": [
+    "loan"
+   ],
+   "chart": true,
    "beats": 12,
-   "section": "sweep",
-   "shot": "medium",
-   "layout": "bar-compare/two",
-   "cam": {
-    "x": 960,
-    "y": 1800,
-    "s": 1
+   "start": 92.4,
+   "dur": 7.2,
+   "move": 1.2,
+   "lead": 0.25,
+   "voice": {
+    "file": "out/voice/interest.trim.wav",
+    "start": 92.65,
+    "dur": 6.58
    },
-   "drift": [
-    -1,
-    0
-   ],
-   "index": 8,
-   "start": 45.6,
-   "dur": 7.2
-  },
-  {
-   "id": "sweep",
-   "beats": 18,
-   "section": "sweep",
-   "shot": "medium",
-   "layout": "bar-compare/two + line-trend/dual",
-   "cam": {
-    "x": 930,
-    "y": 1800,
-    "s": 1.05
+   "display": "Interest paid falls from $2,744 to $1,554.",
+   "anchors": {
+    "int_b": 94.21,
+    "int_a": 97.09
    },
-   "drift": [
-    0,
-    0
+   "markers": [
+    {
+     "name": "int_b",
+     "kind": "number",
+     "claimId": "int_b",
+     "display": "$2,744",
+     "spokenForm": "two thousand seven hundred forty-four dollars",
+     "word": 4,
+     "words": 6,
+     "canon": [
+      "usd:2744"
+     ]
+    },
+    {
+     "name": "int_a",
+     "kind": "number",
+     "claimId": "int_a",
+     "display": "$1,554",
+     "spokenForm": "one thousand five hundred fifty-four dollars",
+     "word": 11,
+     "words": 6,
+     "canon": [
+      "usd:1554"
+     ]
+    }
    ],
-   "index": 9,
-   "start": 52.8,
-   "dur": 10.8
+   "words": [
+    {
+     "w": "Interest",
+     "start": 92.65,
+     "end": 92.95,
+     "matched": true
+    },
+    {
+     "w": "paid",
+     "start": 92.95,
+     "end": 93.35,
+     "matched": true
+    },
+    {
+     "w": "falls",
+     "start": 93.35,
+     "end": 93.89,
+     "matched": true
+    },
+    {
+     "w": "from",
+     "start": 93.89,
+     "end": 94.21,
+     "matched": true
+    },
+    {
+     "w": "two",
+     "start": 94.21,
+     "end": 94.507,
+     "matched": true
+    },
+    {
+     "w": "thousand",
+     "start": 94.507,
+     "end": 94.803,
+     "matched": true
+    },
+    {
+     "w": "seven",
+     "start": 94.803,
+     "end": 95.1,
+     "matched": true
+    },
+    {
+     "w": "hundred",
+     "start": 95.1,
+     "end": 95.397,
+     "matched": true
+    },
+    {
+     "w": "forty-four",
+     "start": 95.397,
+     "end": 95.693,
+     "matched": true
+    },
+    {
+     "w": "dollars",
+     "start": 95.693,
+     "end": 95.99,
+     "matched": true
+    },
+    {
+     "w": "to",
+     "start": 95.99,
+     "end": 97.09,
+     "matched": true
+    },
+    {
+     "w": "one",
+     "start": 97.09,
+     "end": 97.323,
+     "matched": true
+    },
+    {
+     "w": "thousand",
+     "start": 97.323,
+     "end": 97.557,
+     "matched": true
+    },
+    {
+     "w": "five",
+     "start": 97.557,
+     "end": 97.79,
+     "matched": true
+    },
+    {
+     "w": "hundred",
+     "start": 97.79,
+     "end": 98.023,
+     "matched": true
+    },
+    {
+     "w": "fifty-four",
+     "start": 98.023,
+     "end": 98.257,
+     "matched": true
+    },
+    {
+     "w": "dollars.",
+     "start": 98.257,
+     "end": 98.49,
+     "matched": true
+    }
+   ],
+   "displayWords": [
+    {
+     "w": "Interest",
+     "start": 92.65,
+     "end": 92.95
+    },
+    {
+     "w": "paid",
+     "start": 92.95,
+     "end": 93.35
+    },
+    {
+     "w": "falls",
+     "start": 93.35,
+     "end": 93.89
+    },
+    {
+     "w": "from",
+     "start": 93.89,
+     "end": 94.21
+    },
+    {
+     "w": "$2,744",
+     "start": 94.21,
+     "end": 95.99
+    },
+    {
+     "w": "to",
+     "start": 95.99,
+     "end": 97.09
+    },
+    {
+     "w": "$1,554.",
+     "start": 97.09,
+     "end": 98.49
+    }
+   ]
   },
   {
-   "id": "settle",
-   "beats": 5,
-   "section": "sweep",
-   "shot": "close",
-   "layout": "bar-compare/two",
-   "cam": {
-    "x": 560,
-    "y": 1920,
-    "s": 1.6
-   },
-   "drift": [
-    0,
-    0
-   ],
-   "index": 10,
-   "start": 63.6,
-   "dur": 3
-  },
-  {
-   "id": "morph",
-   "beats": 2,
-   "section": "sweep",
-   "shot": "close",
-   "layout": "flip-point/axis",
-   "cam": null,
-   "drift": [
-    0,
-    0
-   ],
-   "index": 11,
-   "start": 66.6,
-   "dur": 1.2
-  },
-  {
-   "id": "detail",
-   "beats": 7,
-   "section": "sweep",
+   "id": "avoided",
+   "index": 18,
+   "chapter": "ch1",
+   "section": "setup",
    "shot": "detail",
    "layout": "hero-number/plain",
    "cam": null,
@@ -238,1021 +3258,1496 @@
     -1,
     0
    ],
-   "index": 12,
-   "start": 67.8,
-   "dur": 4.2
-  },
-  {
-   "id": "flip",
-   "beats": 10,
-   "section": "sweep",
-   "shot": "medium",
-   "layout": "flip-point/axis",
-   "cam": {
-    "x": 1420,
-    "y": 1800,
-    "s": 1.25
-   },
-   "drift": [
-    1,
-    0
+   "panels": [
+    "loan"
    ],
-   "index": 13,
-   "start": 72,
-   "dur": 6
-  },
-  {
-   "id": "matrix",
-   "beats": 12,
-   "section": "tension",
-   "shot": "medium",
-   "layout": "threshold-matrix/rows",
-   "cam": {
-    "x": 3160,
-    "y": 1650,
-    "s": 1
+   "chart": true,
+   "beats": 14,
+   "start": 99.6,
+   "dur": 8.4,
+   "move": 1.2,
+   "lead": 0.25,
+   "voice": {
+    "file": "out/voice/avoided.trim.wav",
+    "start": 99.85,
+    "dur": 7.76
    },
-   "drift": [
-    -1,
-    0
-   ],
-   "index": 14,
-   "start": 78,
-   "dur": 7.2
-  },
-  {
-   "id": "matrix32",
-   "beats": 2,
-   "section": "tension",
-   "shot": "close",
-   "layout": "doodle-transition/circle",
-   "cam": {
-    "x": 2980,
-    "y": 1760,
-    "s": 1.8
+   "display": "Road A avoids $1,190 of interest. That does not depend on markets or taxes.",
+   "anchors": {
+    "avoided": 101.63
    },
-   "drift": [
-    0,
-    0
+   "markers": [
+    {
+     "name": "avoided",
+     "kind": "number",
+     "claimId": "avoided",
+     "display": "$1,190",
+     "spokenForm": "one thousand one hundred ninety dollars",
+     "word": 3,
+     "words": 6,
+     "canon": [
+      "usd:1190"
+     ]
+    }
    ],
-   "index": 15,
-   "start": 85.2,
-   "dur": 1.2
+   "words": [
+    {
+     "w": "Road",
+     "start": 99.85,
+     "end": 100.21,
+     "matched": true
+    },
+    {
+     "w": "A",
+     "start": 100.21,
+     "end": 100.73,
+     "matched": true
+    },
+    {
+     "w": "avoids",
+     "start": 100.73,
+     "end": 101.63,
+     "matched": true
+    },
+    {
+     "w": "one",
+     "start": 101.63,
+     "end": 101.863,
+     "matched": true
+    },
+    {
+     "w": "thousand",
+     "start": 101.863,
+     "end": 102.097,
+     "matched": true
+    },
+    {
+     "w": "one",
+     "start": 102.097,
+     "end": 102.33,
+     "matched": true
+    },
+    {
+     "w": "hundred",
+     "start": 102.33,
+     "end": 102.563,
+     "matched": true
+    },
+    {
+     "w": "ninety",
+     "start": 102.563,
+     "end": 102.797,
+     "matched": true
+    },
+    {
+     "w": "dollars",
+     "start": 102.797,
+     "end": 103.03,
+     "matched": true
+    },
+    {
+     "w": "of",
+     "start": 103.03,
+     "end": 103.63,
+     "matched": true
+    },
+    {
+     "w": "interest.",
+     "start": 103.63,
+     "end": 103.91,
+     "matched": true
+    },
+    {
+     "w": "That",
+     "start": 104.59,
+     "end": 104.95,
+     "matched": true
+    },
+    {
+     "w": "does",
+     "start": 104.95,
+     "end": 105.13,
+     "matched": true
+    },
+    {
+     "w": "not",
+     "start": 105.13,
+     "end": 105.39,
+     "matched": true
+    },
+    {
+     "w": "depend",
+     "start": 105.39,
+     "end": 105.75,
+     "matched": true
+    },
+    {
+     "w": "on",
+     "start": 105.75,
+     "end": 106.23,
+     "matched": true
+    },
+    {
+     "w": "markets",
+     "start": 106.23,
+     "end": 106.57,
+     "matched": true
+    },
+    {
+     "w": "or",
+     "start": 106.57,
+     "end": 107.05,
+     "matched": true
+    },
+    {
+     "w": "taxes.",
+     "start": 107.05,
+     "end": 107.39,
+     "matched": true
+    }
+   ],
+   "displayWords": [
+    {
+     "w": "Road",
+     "start": 99.85,
+     "end": 100.21
+    },
+    {
+     "w": "A",
+     "start": 100.21,
+     "end": 100.73
+    },
+    {
+     "w": "avoids",
+     "start": 100.73,
+     "end": 101.63
+    },
+    {
+     "w": "$1,190",
+     "start": 101.63,
+     "end": 103.03
+    },
+    {
+     "w": "of",
+     "start": 103.03,
+     "end": 103.63
+    },
+    {
+     "w": "interest.",
+     "start": 103.63,
+     "end": 103.91
+    },
+    {
+     "w": "That",
+     "start": 104.59,
+     "end": 104.95
+    },
+    {
+     "w": "does",
+     "start": 104.95,
+     "end": 105.13
+    },
+    {
+     "w": "not",
+     "start": 105.13,
+     "end": 105.39
+    },
+    {
+     "w": "depend",
+     "start": 105.39,
+     "end": 105.75
+    },
+    {
+     "w": "on",
+     "start": 105.75,
+     "end": 106.23
+    },
+    {
+     "w": "markets",
+     "start": 106.23,
+     "end": 106.57
+    },
+    {
+     "w": "or",
+     "start": 106.57,
+     "end": 107.05
+    },
+    {
+     "w": "taxes.",
+     "start": 107.05,
+     "end": 107.39
+    }
+   ]
   },
   {
    "id": "certain",
-   "beats": 10,
-   "section": "tension",
-   "shot": "medium",
-   "layout": "two-column-compare",
-   "cam": {
-    "x": 3160,
-    "y": 2140,
-    "s": 1
-   },
+   "index": 19,
+   "chapter": "ch1",
+   "section": "setup",
+   "shot": "detail",
+   "layout": "hero-number/plain",
+   "cam": null,
    "drift": [
     1,
     0
    ],
-   "index": 16,
-   "start": 86.4,
-   "dur": 6
-  },
-  {
-   "id": "sequence",
-   "beats": 9,
-   "section": "tension",
-   "shot": "wide",
-   "layout": "timeline/months",
-   "cam": {
-    "x": 4900,
-    "y": 1300,
-    "s": 0.5
-   },
-   "drift": [
-    1,
-    0
+   "panels": [
+    "loan"
    ],
-   "index": 17,
-   "start": 92.4,
-   "dur": 5.4
-  },
-  {
-   "id": "race",
-   "beats": 13,
-   "section": "tension",
-   "shot": "medium",
-   "layout": "line-trend/dual",
-   "cam": {
-    "x": 5360,
-    "y": 1180,
-    "s": 1
+   "chart": true,
+   "beats": 4,
+   "start": 108,
+   "dur": 2.4,
+   "move": 0.835,
+   "lead": 0.25,
+   "voice": {
+    "file": "out/voice/certain.trim.wav",
+    "start": 108.25,
+    "dur": 1.34
    },
-   "drift": [
-    0,
-    -1
+   "display": "It is certain.",
+   "anchors": {
+    "certain": 109.01
+   },
+   "markers": [
+    {
+     "name": "certain",
+     "kind": "anchor",
+     "word": 2
+    }
    ],
-   "index": 18,
-   "start": 97.8,
-   "dur": 7.8
+   "words": [
+    {
+     "w": "It",
+     "start": 108.25,
+     "end": 108.47,
+     "matched": true
+    },
+    {
+     "w": "is",
+     "start": 108.47,
+     "end": 109.01,
+     "matched": true
+    },
+    {
+     "w": "certain.",
+     "start": 109.01,
+     "end": 109.35,
+     "matched": true
+    }
+   ],
+   "displayWords": [
+    {
+     "w": "It",
+     "start": 108.25,
+     "end": 108.47
+    },
+    {
+     "w": "is",
+     "start": 108.47,
+     "end": 109.01
+    },
+    {
+     "w": "certain.",
+     "start": 109.01,
+     "end": 109.35
+    }
+   ]
   },
   {
-   "id": "gap",
-   "beats": 2,
-   "section": "tension",
+   "id": "identity",
+   "index": 20,
+   "chapter": "ch1",
+   "section": "setup",
    "shot": "close",
-   "layout": "line-trend/single",
+   "layout": "bar-compare/equal",
    "cam": {
-    "x": 5700,
-    "y": 1170,
+    "x": 960,
+    "y": 5140,
     "s": 1.5
    },
    "drift": [
-    0,
-    0
-   ],
-   "index": 19,
-   "start": 105.6,
-   "dur": 1.2
-  },
-  {
-   "id": "cross",
-   "beats": 9,
-   "section": "tension",
-   "shot": "close",
-   "layout": "line-trend/single",
-   "cam": {
-    "x": 5820,
-    "y": 1200,
-    "s": 1.6
-   },
-   "drift": [
     1,
     0
    ],
-   "index": 20,
-   "start": 106.8,
-   "dur": 5.4
-  },
-  {
-   "id": "downside",
-   "beats": 6,
-   "section": "tension",
-   "shot": "detail",
-   "layout": "hero-number/with-delta",
-   "cam": null,
-   "drift": [
-    -1,
-    0
+   "panels": [
+    "eq"
    ],
-   "index": 21,
-   "start": 112.2,
-   "dur": 3.6
+   "chart": true,
+   "beats": 15,
+   "start": 110.4,
+   "dur": 9,
+   "move": 1,
+   "lead": 0.25,
+   "voice": {
+    "file": "out/voice/identity.trim.wav",
+    "start": 110.65,
+    "dur": 8.37
+   },
+   "display": "Because both roads spend the same cash, road A ends up investing exactly $1,190 more than road B.",
+   "anchors": {
+    "avoided": 115.49
+   },
+   "markers": [
+    {
+     "name": "avoided",
+     "kind": "number",
+     "claimId": "avoided",
+     "display": "$1,190",
+     "spokenForm": "one thousand one hundred ninety dollars",
+     "word": 13,
+     "words": 6,
+     "canon": [
+      "usd:1190"
+     ]
+    }
+   ],
+   "words": [
+    {
+     "w": "Because",
+     "start": 110.65,
+     "end": 111.01,
+     "matched": true
+    },
+    {
+     "w": "both",
+     "start": 111.01,
+     "end": 111.33,
+     "matched": true
+    },
+    {
+     "w": "roads",
+     "start": 111.33,
+     "end": 111.79,
+     "matched": true
+    },
+    {
+     "w": "spend",
+     "start": 111.79,
+     "end": 112.13,
+     "matched": true
+    },
+    {
+     "w": "the",
+     "start": 112.13,
+     "end": 112.31,
+     "matched": true
+    },
+    {
+     "w": "same",
+     "start": 112.31,
+     "end": 112.55,
+     "matched": true
+    },
+    {
+     "w": "cash,",
+     "start": 112.55,
+     "end": 113.09,
+     "matched": true
+    },
+    {
+     "w": "road",
+     "start": 113.77,
+     "end": 113.81,
+     "matched": true
+    },
+    {
+     "w": "A",
+     "start": 113.81,
+     "end": 114.13,
+     "matched": true
+    },
+    {
+     "w": "ends",
+     "start": 114.13,
+     "end": 114.39,
+     "matched": true
+    },
+    {
+     "w": "up",
+     "start": 114.39,
+     "end": 114.59,
+     "matched": true
+    },
+    {
+     "w": "investing",
+     "start": 114.59,
+     "end": 115.03,
+     "matched": true
+    },
+    {
+     "w": "exactly",
+     "start": 115.03,
+     "end": 115.49,
+     "matched": true
+    },
+    {
+     "w": "one",
+     "start": 115.49,
+     "end": 115.78,
+     "matched": true
+    },
+    {
+     "w": "thousand",
+     "start": 115.78,
+     "end": 116.07,
+     "matched": true
+    },
+    {
+     "w": "one",
+     "start": 116.07,
+     "end": 116.36,
+     "matched": true
+    },
+    {
+     "w": "hundred",
+     "start": 116.36,
+     "end": 116.65,
+     "matched": true
+    },
+    {
+     "w": "ninety",
+     "start": 116.65,
+     "end": 116.94,
+     "matched": true
+    },
+    {
+     "w": "dollars",
+     "start": 116.94,
+     "end": 117.23,
+     "matched": true
+    },
+    {
+     "w": "more",
+     "start": 117.23,
+     "end": 117.93,
+     "matched": true
+    },
+    {
+     "w": "than",
+     "start": 117.93,
+     "end": 118.45,
+     "matched": true
+    },
+    {
+     "w": "road",
+     "start": 118.45,
+     "end": 118.65,
+     "matched": true
+    },
+    {
+     "w": "B.",
+     "start": 118.65,
+     "end": 118.91,
+     "matched": true
+    }
+   ],
+   "displayWords": [
+    {
+     "w": "Because",
+     "start": 110.65,
+     "end": 111.01
+    },
+    {
+     "w": "both",
+     "start": 111.01,
+     "end": 111.33
+    },
+    {
+     "w": "roads",
+     "start": 111.33,
+     "end": 111.79
+    },
+    {
+     "w": "spend",
+     "start": 111.79,
+     "end": 112.13
+    },
+    {
+     "w": "the",
+     "start": 112.13,
+     "end": 112.31
+    },
+    {
+     "w": "same",
+     "start": 112.31,
+     "end": 112.55
+    },
+    {
+     "w": "cash,",
+     "start": 112.55,
+     "end": 113.09
+    },
+    {
+     "w": "road",
+     "start": 113.77,
+     "end": 113.81
+    },
+    {
+     "w": "A",
+     "start": 113.81,
+     "end": 114.13
+    },
+    {
+     "w": "ends",
+     "start": 114.13,
+     "end": 114.39
+    },
+    {
+     "w": "up",
+     "start": 114.39,
+     "end": 114.59
+    },
+    {
+     "w": "investing",
+     "start": 114.59,
+     "end": 115.03
+    },
+    {
+     "w": "exactly",
+     "start": 115.03,
+     "end": 115.49
+    },
+    {
+     "w": "$1,190",
+     "start": 115.49,
+     "end": 117.23
+    },
+    {
+     "w": "more",
+     "start": 117.23,
+     "end": 117.93
+    },
+    {
+     "w": "than",
+     "start": 117.93,
+     "end": 118.45
+    },
+    {
+     "w": "road",
+     "start": 118.45,
+     "end": 118.65
+    },
+    {
+     "w": "B.",
+     "start": 118.65,
+     "end": 118.91
+    }
+   ]
   },
   {
-   "id": "converge",
-   "beats": 10,
-   "section": "resolution",
+   "id": "bridge",
+   "index": 21,
+   "chapter": "ch1",
+   "section": "setup",
    "shot": "medium",
-   "layout": "two-roads/converge",
+   "layout": "bar-compare/two",
    "cam": {
-    "x": 3120,
-    "y": 540,
+    "x": 1100,
+    "y": 5120,
     "s": 1
    },
    "drift": [
     -1,
     0
    ],
-   "index": 22,
-   "start": 115.8,
-   "dur": 6
-  },
-  {
-   "id": "outro",
-   "beats": 10,
-   "section": "resolution",
-   "shot": "wide",
-   "layout": "canvas/overview",
-   "cam": {
-    "x": 3200,
-    "y": 1190,
-    "s": 0.42
-   },
-   "drift": [
-    1,
-    0
+   "panels": [
+    "eq"
    ],
-   "index": 23,
-   "start": 121.8,
-   "dur": 6
+   "chart": true,
+   "beats": 14,
+   "start": 119.4,
+   "dur": 8.4,
+   "move": 1.2,
+   "lead": 0.25,
+   "voice": {
+    "file": "out/voice/bridge.trim.wav",
+    "start": 119.65,
+    "dur": 7.7
+   },
+   "display": "So the question is narrow: can road B's head start in the market beat a certain $1,190, after tax?",
+   "anchors": {
+    "head": 122.71,
+    "avoided": 124.51
+   },
+   "markers": [
+    {
+     "name": "head",
+     "kind": "anchor",
+     "word": 8
+    },
+    {
+     "name": "avoided",
+     "kind": "number",
+     "claimId": "avoided",
+     "display": "$1,190",
+     "spokenForm": "one thousand one hundred ninety dollars",
+     "word": 16,
+     "words": 6,
+     "canon": [
+      "usd:1190"
+     ]
+    }
+   ],
+   "words": [
+    {
+     "w": "So",
+     "start": 119.65,
+     "end": 119.93,
+     "matched": true
+    },
+    {
+     "w": "the",
+     "start": 119.93,
+     "end": 120.17,
+     "matched": true
+    },
+    {
+     "w": "question",
+     "start": 120.17,
+     "end": 120.49,
+     "matched": true
+    },
+    {
+     "w": "is",
+     "start": 120.49,
+     "end": 120.79,
+     "matched": true
+    },
+    {
+     "w": "narrow:",
+     "start": 120.79,
+     "end": 121.13,
+     "matched": true
+    },
+    {
+     "w": "can",
+     "start": 121.87,
+     "end": 122.01,
+     "matched": true
+    },
+    {
+     "w": "road",
+     "start": 122.01,
+     "end": 122.31,
+     "matched": true
+    },
+    {
+     "w": "B's",
+     "start": 122.31,
+     "end": 122.71,
+     "matched": true
+    },
+    {
+     "w": "head",
+     "start": 122.71,
+     "end": 122.89,
+     "matched": true
+    },
+    {
+     "w": "start",
+     "start": 122.89,
+     "end": 123.15,
+     "matched": true
+    },
+    {
+     "w": "in",
+     "start": 123.15,
+     "end": 123.29,
+     "matched": true
+    },
+    {
+     "w": "the",
+     "start": 123.29,
+     "end": 123.37,
+     "matched": true
+    },
+    {
+     "w": "market",
+     "start": 123.37,
+     "end": 123.69,
+     "matched": true
+    },
+    {
+     "w": "beat",
+     "start": 123.69,
+     "end": 124.13,
+     "matched": true
+    },
+    {
+     "w": "a",
+     "start": 124.13,
+     "end": 124.29,
+     "matched": true
+    },
+    {
+     "w": "certain",
+     "start": 124.29,
+     "end": 124.51,
+     "matched": true
+    },
+    {
+     "w": "one",
+     "start": 124.51,
+     "end": 124.72,
+     "matched": true
+    },
+    {
+     "w": "thousand",
+     "start": 124.72,
+     "end": 124.93,
+     "matched": true
+    },
+    {
+     "w": "one",
+     "start": 124.93,
+     "end": 125.14,
+     "matched": true
+    },
+    {
+     "w": "hundred",
+     "start": 125.14,
+     "end": 125.35,
+     "matched": true
+    },
+    {
+     "w": "ninety",
+     "start": 125.35,
+     "end": 125.56,
+     "matched": true
+    },
+    {
+     "w": "dollars,",
+     "start": 125.56,
+     "end": 125.77,
+     "matched": true
+    },
+    {
+     "w": "after",
+     "start": 125.77,
+     "end": 126.85,
+     "matched": true
+    },
+    {
+     "w": "tax?",
+     "start": 126.85,
+     "end": 127.15,
+     "matched": true
+    }
+   ],
+   "displayWords": [
+    {
+     "w": "So",
+     "start": 119.65,
+     "end": 119.93
+    },
+    {
+     "w": "the",
+     "start": 119.93,
+     "end": 120.17
+    },
+    {
+     "w": "question",
+     "start": 120.17,
+     "end": 120.49
+    },
+    {
+     "w": "is",
+     "start": 120.49,
+     "end": 120.79
+    },
+    {
+     "w": "narrow:",
+     "start": 120.79,
+     "end": 121.13
+    },
+    {
+     "w": "can",
+     "start": 121.87,
+     "end": 122.01
+    },
+    {
+     "w": "road",
+     "start": 122.01,
+     "end": 122.31
+    },
+    {
+     "w": "B's",
+     "start": 122.31,
+     "end": 122.71
+    },
+    {
+     "w": "head",
+     "start": 122.71,
+     "end": 122.89
+    },
+    {
+     "w": "start",
+     "start": 122.89,
+     "end": 123.15
+    },
+    {
+     "w": "in",
+     "start": 123.15,
+     "end": 123.29
+    },
+    {
+     "w": "the",
+     "start": 123.29,
+     "end": 123.37
+    },
+    {
+     "w": "market",
+     "start": 123.37,
+     "end": 123.69
+    },
+    {
+     "w": "beat",
+     "start": 123.69,
+     "end": 124.13
+    },
+    {
+     "w": "a",
+     "start": 124.13,
+     "end": 124.29
+    },
+    {
+     "w": "certain",
+     "start": 124.29,
+     "end": 124.51
+    },
+    {
+     "w": "$1,190,",
+     "start": 124.51,
+     "end": 125.77
+    },
+    {
+     "w": "after",
+     "start": 125.77,
+     "end": 126.85
+    },
+    {
+     "w": "tax?",
+     "start": 126.85,
+     "end": 127.15
+    }
+   ]
   }
  ],
  "events": [
   {
-   "id": "open:title",
-   "scene": "open",
+   "id": "hook1:hkBal",
+   "scene": "hook1",
    "type": "appear",
-   "t": 0.6,
-   "probe": "title"
+   "t": 1.095,
+   "probe": "hkBal",
+   "wordT": 1.27
   },
   {
-   "id": "open:skeleton",
-   "scene": "open",
+   "id": "hook1:hkApr",
+   "scene": "hook1",
+   "type": "reveal",
+   "t": 3.255,
+   "probe": "hkApr",
+   "wordT": 3.43
+  },
+  {
+   "id": "hook2:cam",
+   "scene": "hook2",
+   "type": "transition",
+   "t": 5.4,
+   "probe": "cam",
+   "wordT": null
+  },
+  {
+   "id": "hook2:hkRoadA",
+   "scene": "hook2",
    "type": "appear",
-   "t": 2.4,
-   "probe": "skeleton"
+   "t": 5.9,
+   "probe": "hkRoadA",
+   "wordT": 6.075
+  },
+  {
+   "id": "hook2b:hkRoadB",
+   "scene": "hook2b",
+   "type": "appear",
+   "t": 8.3,
+   "probe": "hkRoadB",
+   "wordT": 8.475
+  },
+  {
+   "id": "hook3:cam",
+   "scene": "hook3",
+   "type": "transition",
+   "t": 10.2,
+   "probe": "cam",
+   "wordT": null
+  },
+  {
+   "id": "hook3:hkMonths",
+   "scene": "hook3",
+   "type": "appear",
+   "t": 12.295,
+   "probe": "hkMonths",
+   "wordT": 12.47
+  },
+  {
+   "id": "hook3:hkLots",
+   "scene": "hook3",
+   "type": "compare",
+   "t": 13.935,
+   "probe": "hkLots",
+   "wordT": 14.11
+  },
+  {
+   "id": "hook4:cam",
+   "scene": "hook4",
+   "type": "transition",
+   "t": 15.6,
+   "probe": "cam",
+   "wordT": null
+  },
+  {
+   "id": "hook4:hkBe",
+   "scene": "hook4",
+   "type": "reveal",
+   "t": 18.955,
+   "probe": "hkBe",
+   "wordT": 19.13
+  },
+  {
+   "id": "hook4:hkBracket",
+   "scene": "hook4",
+   "type": "appear",
+   "t": 22.175,
+   "probe": "hkBracket",
+   "wordT": 22.35
+  },
+  {
+   "id": "hook5:cam",
+   "scene": "hook5",
+   "type": "transition",
+   "t": 24.6,
+   "probe": "cam",
+   "wordT": null
+  },
+  {
+   "id": "hook5:hkBelow",
+   "scene": "hook5",
+   "type": "appear",
+   "t": 25.895,
+   "probe": "hkBelow",
+   "wordT": 26.07
+  },
+  {
+   "id": "hook5:hkAbove",
+   "scene": "hook5",
+   "type": "appear",
+   "t": 28.595,
+   "probe": "hkAbove",
+   "wordT": 28.77
+  },
+  {
+   "id": "ident:dismissHook",
+   "scene": "ident",
+   "type": "dismiss",
+   "t": 30,
+   "probe": "dismissHook",
+   "wordT": null
+  },
+  {
+   "id": "ident:cam",
+   "scene": "ident",
+   "type": "transition",
+   "t": 30,
+   "probe": "cam",
+   "wordT": null
+  },
+  {
+   "id": "ident:crux",
+   "scene": "ident",
+   "type": "reveal",
+   "t": 30.6,
+   "probe": "crux",
+   "wordT": null
+  },
+  {
+   "id": "setup:cam",
+   "scene": "setup",
+   "type": "transition",
+   "t": 33,
+   "probe": "cam",
+   "wordT": null
+  },
+  {
+   "id": "setup:setupWord",
+   "scene": "setup",
+   "type": "appear",
+   "t": 33.795,
+   "probe": "setupWord",
+   "wordT": 33.97
+  },
+  {
+   "id": "scope1:usOnly",
+   "scene": "scope1",
+   "type": "appear",
+   "t": 36.155,
+   "probe": "usOnly",
+   "wordT": 36.33
+  },
+  {
+   "id": "scope1:stated",
+   "scene": "scope1",
+   "type": "appear",
+   "t": 38.995,
+   "probe": "stated",
+   "wordT": 39.17
+  },
+  {
+   "id": "scope2:cam",
+   "scene": "scope2",
+   "type": "transition",
+   "t": 41.4,
+   "probe": "cam",
+   "wordT": null
+  },
+  {
+   "id": "scope2:notDed",
+   "scene": "scope2",
+   "type": "appear",
+   "t": 43.295,
+   "probe": "notDed",
+   "wordT": 43.47
+  },
+  {
+   "id": "scope2:dedY0",
+   "scene": "scope2",
+   "type": "appear",
+   "t": 47.735,
+   "probe": "dedY0",
+   "wordT": 47.91
+  },
+  {
+   "id": "scope2:dedY1",
+   "scene": "scope2",
+   "type": "count",
+   "t": 48.995,
+   "probe": "dedY1",
+   "wordT": 49.17
   },
   {
    "id": "facts:cam",
    "scene": "facts",
    "type": "transition",
-   "t": 7.8,
-   "probe": "cam"
+   "t": 50.4,
+   "probe": "cam",
+   "wordT": null
   },
   {
-   "id": "facts:balance",
+   "id": "facts:fBal",
    "scene": "facts",
-   "type": "count",
-   "t": 8.7,
-   "probe": "balance"
+   "type": "reveal",
+   "t": 51.155,
+   "probe": "fBal",
+   "wordT": 51.33
   },
   {
-   "id": "facts:factsline",
+   "id": "facts:fApr",
    "scene": "facts",
    "type": "appear",
-   "t": 10.5,
-   "probe": "factsline"
+   "t": 53.195,
+   "probe": "fApr",
+   "wordT": 53.37
+  },
+  {
+   "id": "facts:fMonths",
+   "scene": "facts",
+   "type": "count",
+   "t": 54.815,
+   "probe": "fMonths",
+   "wordT": 54.99
+  },
+  {
+   "id": "facts:fPay",
+   "scene": "facts",
+   "type": "count",
+   "t": 56.515,
+   "probe": "fPay",
+   "wordT": 56.69
   },
   {
    "id": "extra:cam",
    "scene": "extra",
    "type": "transition",
-   "t": 13.8,
-   "probe": "cam"
+   "t": 58.8,
+   "probe": "cam",
+   "wordT": null
   },
   {
-   "id": "extra:extra",
+   "id": "extra:xExtra",
    "scene": "extra",
-   "type": "appear",
-   "t": 14.4,
-   "probe": "extra"
+   "type": "reveal",
+   "t": 60.615,
+   "probe": "xExtra",
+   "wordT": 60.79
+  },
+  {
+   "id": "extra:xIllu",
+   "scene": "extra",
+   "type": "emphasis",
+   "t": 64.355,
+   "probe": "xIllu",
+   "wordT": 64.53
   },
   {
    "id": "roads:cam",
    "scene": "roads",
    "type": "transition",
-   "t": 16.2,
-   "probe": "cam"
+   "t": 66,
+   "probe": "cam",
+   "wordT": null
   },
   {
-   "id": "roads:roadA",
+   "id": "roads:rA",
    "scene": "roads",
    "type": "appear",
-   "t": 17.4,
-   "probe": "roadA"
+   "t": 66.5,
+   "probe": "rA",
+   "wordT": 66.675
   },
   {
-   "id": "roads:roadB",
+   "id": "roads:rB",
    "scene": "roads",
    "type": "appear",
-   "t": 18.6,
-   "probe": "roadB"
+   "t": 69.18,
+   "probe": "rB",
+   "wordT": 69.355
   },
   {
-   "id": "roads:roadsCompare",
-   "scene": "roads",
+   "id": "cash:dismissFork",
+   "scene": "cash",
+   "type": "dismiss",
+   "t": 73.2,
+   "probe": "dismissFork",
+   "wordT": null
+  },
+  {
+   "id": "cash:cam",
+   "scene": "cash",
+   "type": "transition",
+   "t": 73.2,
+   "probe": "cam",
+   "wordT": null
+  },
+  {
+   "id": "cash:cashCols",
+   "scene": "cash",
+   "type": "appear",
+   "t": 73.7,
+   "probe": "cashCols",
+   "wordT": null
+  },
+  {
+   "id": "cash:cashSame",
+   "scene": "cash",
    "type": "compare",
-   "t": 19.8,
-   "probe": "roadsCompare"
+   "t": 74.395,
+   "probe": "cashSame",
+   "wordT": 74.57
+  },
+  {
+   "id": "cash:cashOrder",
+   "scene": "cash",
+   "type": "emphasis",
+   "t": 76.955,
+   "probe": "cashOrder",
+   "wordT": 77.13
+  },
+  {
+   "id": "card1:cam",
+   "scene": "card1",
+   "type": "transition",
+   "t": 78.6,
+   "probe": "cam",
+   "wordT": null
+  },
+  {
+   "id": "card1:card1",
+   "scene": "card1",
+   "type": "appear",
+   "t": 79.1,
+   "probe": "card1",
+   "wordT": null
   },
   {
    "id": "timeline:cam",
    "scene": "timeline",
    "type": "transition",
-   "t": 23.4,
-   "probe": "cam"
+   "t": 81,
+   "probe": "cam",
+   "wordT": null
   },
   {
-   "id": "timeline:tlBars",
+   "id": "timeline:tlAxis",
    "scene": "timeline",
    "type": "appear",
-   "t": 24,
-   "probe": "tlBars"
+   "t": 81.6,
+   "probe": "tlAxis",
+   "wordT": null
   },
   {
    "id": "timeline:tlA",
    "scene": "timeline",
-   "type": "appear",
-   "t": 25.2,
-   "probe": "tlA"
+   "type": "threshold-cross",
+   "t": 82.975,
+   "probe": "tlA",
+   "wordT": 83.15
   },
   {
    "id": "timeline:tlB",
    "scene": "timeline",
    "type": "appear",
-   "t": 26.1,
-   "probe": "tlB"
+   "t": 86.175,
+   "probe": "tlB",
+   "wordT": 86.35
+  },
+  {
+   "id": "free:cam",
+   "scene": "free",
+   "type": "transition",
+   "t": 87.6,
+   "probe": "cam",
+   "wordT": null
+  },
+  {
+   "id": "free:free20",
+   "scene": "free",
+   "type": "emphasis",
+   "t": 88.115,
+   "probe": "free20",
+   "wordT": 88.29
   },
   {
    "id": "interest:cam",
    "scene": "interest",
    "type": "transition",
-   "t": 28.2,
-   "probe": "cam"
-  },
-  {
-   "id": "interest:intRoll",
-   "scene": "interest",
-   "type": "count",
-   "t": 29.7,
-   "probe": "intRoll"
-  },
-  {
-   "id": "interest:avoided",
-   "scene": "interest",
-   "type": "reveal",
-   "t": 31.5,
-   "probe": "avoided"
-  },
-  {
-   "id": "interest:certainLine",
-   "scene": "interest",
-   "type": "emphasis",
-   "t": 32.4,
-   "probe": "certainLine"
-  },
-  {
-   "id": "scope:dismissL",
-   "scene": "scope",
-   "type": "dismiss",
-   "t": 34.8,
-   "probe": "dismissL"
-  },
-  {
-   "id": "scope:cam",
-   "scene": "scope",
-   "type": "transition",
-   "t": 34.8,
-   "probe": "cam"
-  },
-  {
-   "id": "scope:scope",
-   "scene": "scope",
-   "type": "appear",
-   "t": 36,
-   "probe": "scope"
-  },
-  {
-   "id": "tax:cam",
-   "scene": "tax",
-   "type": "transition",
-   "t": 39.6,
-   "probe": "cam"
-  },
-  {
-   "id": "tax:taxHead",
-   "scene": "tax",
-   "type": "appear",
-   "t": 40.5,
-   "probe": "taxHead"
-  },
-  {
-   "id": "tax:taxRows",
-   "scene": "tax",
-   "type": "appear",
-   "t": 41.4,
-   "probe": "taxRows"
-  },
-  {
-   "id": "bars:cam",
-   "scene": "bars",
-   "type": "transition",
-   "t": 45.6,
-   "probe": "cam"
-  },
-  {
-   "id": "bars:barA",
-   "scene": "bars",
-   "type": "appear",
-   "t": 46.5,
-   "probe": "barA"
-  },
-  {
-   "id": "bars:barB",
-   "scene": "bars",
-   "type": "appear",
-   "t": 47.7,
-   "probe": "barB"
-  },
-  {
-   "id": "bars:barsCompare",
-   "scene": "bars",
-   "type": "compare",
-   "t": 48.9,
-   "probe": "barsCompare"
-  },
-  {
-   "id": "bars:slider",
-   "scene": "bars",
-   "type": "appear",
-   "t": 50.1,
-   "probe": "slider"
-  },
-  {
-   "id": "sweep:step1",
-   "scene": "sweep",
-   "type": "count",
-   "t": 53.6812,
-   "probe": "step1"
-  },
-  {
-   "id": "sweep:step2",
-   "scene": "sweep",
-   "type": "count",
-   "t": 53.9625,
-   "probe": "step2"
-  },
-  {
-   "id": "sweep:step3",
-   "scene": "sweep",
-   "type": "count",
-   "t": 54.2437,
-   "probe": "step3"
-  },
-  {
-   "id": "sweep:step4",
-   "scene": "sweep",
-   "type": "count",
-   "t": 54.525,
-   "probe": "step4"
-  },
-  {
-   "id": "sweep:step5",
-   "scene": "sweep",
-   "type": "count",
-   "t": 54.8062,
-   "probe": "step5"
-  },
-  {
-   "id": "sweep:step6",
-   "scene": "sweep",
-   "type": "count",
-   "t": 55.0875,
-   "probe": "step6"
-  },
-  {
-   "id": "sweep:step7",
-   "scene": "sweep",
-   "type": "count",
-   "t": 55.3687,
-   "probe": "step7"
-  },
-  {
-   "id": "sweep:step8",
-   "scene": "sweep",
-   "type": "count",
-   "t": 55.65,
-   "probe": "step8"
-  },
-  {
-   "id": "sweep:step9",
-   "scene": "sweep",
-   "type": "count",
-   "t": 55.9312,
-   "probe": "step9"
-  },
-  {
-   "id": "sweep:step10",
-   "scene": "sweep",
-   "type": "count",
-   "t": 56.2125,
-   "probe": "step10"
-  },
-  {
-   "id": "sweep:step11",
-   "scene": "sweep",
-   "type": "count",
-   "t": 56.4937,
-   "probe": "step11"
-  },
-  {
-   "id": "sweep:step12",
-   "scene": "sweep",
-   "type": "count",
-   "t": 56.775,
-   "probe": "step12"
-  },
-  {
-   "id": "sweep:step13",
-   "scene": "sweep",
-   "type": "count",
-   "t": 57.0562,
-   "probe": "step13"
-  },
-  {
-   "id": "sweep:step14",
-   "scene": "sweep",
-   "type": "count",
-   "t": 57.3375,
-   "probe": "step14"
-  },
-  {
-   "id": "sweep:step15",
-   "scene": "sweep",
-   "type": "count",
-   "t": 57.6187,
-   "probe": "step15"
-  },
-  {
-   "id": "sweep:step16",
-   "scene": "sweep",
-   "type": "count",
-   "t": 57.9,
-   "probe": "step16"
-  },
-  {
-   "id": "sweep:step17",
-   "scene": "sweep",
-   "type": "count",
-   "t": 58.1812,
-   "probe": "step17"
-  },
-  {
-   "id": "sweep:step18",
-   "scene": "sweep",
-   "type": "count",
-   "t": 58.4625,
-   "probe": "step18"
-  },
-  {
-   "id": "sweep:step19",
-   "scene": "sweep",
-   "type": "count",
-   "t": 58.7437,
-   "probe": "step19"
-  },
-  {
-   "id": "sweep:cross19",
-   "scene": "sweep",
-   "type": "threshold-cross",
-   "t": 58.7437,
-   "probe": "cross19"
-  },
-  {
-   "id": "sweep:step20",
-   "scene": "sweep",
-   "type": "count",
-   "t": 59.025,
-   "probe": "step20"
-  },
-  {
-   "id": "sweep:step21",
-   "scene": "sweep",
-   "type": "count",
-   "t": 59.3062,
-   "probe": "step21"
-  },
-  {
-   "id": "sweep:step22",
-   "scene": "sweep",
-   "type": "count",
-   "t": 59.5875,
-   "probe": "step22"
-  },
-  {
-   "id": "sweep:step23",
-   "scene": "sweep",
-   "type": "count",
-   "t": 59.8687,
-   "probe": "step23"
-  },
-  {
-   "id": "sweep:step24",
-   "scene": "sweep",
-   "type": "count",
-   "t": 60.15,
-   "probe": "step24"
-  },
-  {
-   "id": "sweep:step25",
-   "scene": "sweep",
-   "type": "count",
-   "t": 60.4312,
-   "probe": "step25"
-  },
-  {
-   "id": "sweep:step26",
-   "scene": "sweep",
-   "type": "count",
-   "t": 60.7125,
-   "probe": "step26"
-  },
-  {
-   "id": "sweep:step27",
-   "scene": "sweep",
-   "type": "count",
-   "t": 60.9937,
-   "probe": "step27"
-  },
-  {
-   "id": "sweep:step28",
-   "scene": "sweep",
-   "type": "count",
-   "t": 61.275,
-   "probe": "step28"
-  },
-  {
-   "id": "sweep:step29",
-   "scene": "sweep",
-   "type": "count",
-   "t": 61.5562,
-   "probe": "step29"
-  },
-  {
-   "id": "sweep:step30",
-   "scene": "sweep",
-   "type": "count",
-   "t": 61.8375,
-   "probe": "step30"
-  },
-  {
-   "id": "sweep:step31",
-   "scene": "sweep",
-   "type": "count",
-   "t": 62.1187,
-   "probe": "step31"
-  },
-  {
-   "id": "sweep:step32",
-   "scene": "sweep",
-   "type": "count",
-   "t": 62.4,
-   "probe": "step32"
-  },
-  {
-   "id": "settle:land",
-   "scene": "settle",
-   "type": "emphasis",
-   "t": 65.4,
-   "probe": "land"
-  },
-  {
-   "id": "morph:cam",
-   "scene": "morph",
-   "type": "transition",
-   "t": 66.6,
-   "probe": "cam"
-  },
-  {
-   "id": "detail:hero670",
-   "scene": "detail",
-   "type": "reveal",
-   "t": 69.1,
-   "probe": "hero670"
-  },
-  {
-   "id": "detail:underline670",
-   "scene": "detail",
-   "type": "emphasis",
-   "t": 70,
-   "probe": "underline670"
-  },
-  {
-   "id": "flip:cam",
-   "scene": "flip",
-   "type": "transition",
-   "t": 72,
-   "probe": "cam"
-  },
-  {
-   "id": "flip:below",
-   "scene": "flip",
-   "type": "appear",
-   "t": 73.2,
-   "probe": "below"
-  },
-  {
-   "id": "flip:above",
-   "scene": "flip",
-   "type": "appear",
-   "t": 74.4,
-   "probe": "above"
-  },
-  {
-   "id": "flip:arrow",
-   "scene": "flip",
-   "type": "emphasis",
-   "t": 75.3,
-   "probe": "arrow"
-  },
-  {
-   "id": "matrix:cam",
-   "scene": "matrix",
-   "type": "transition",
-   "t": 78,
-   "probe": "cam"
-  },
-  {
-   "id": "matrix:matrixHead",
-   "scene": "matrix",
-   "type": "appear",
-   "t": 78.9,
-   "probe": "matrixHead"
-  },
-  {
-   "id": "matrix:matrixRoll",
-   "scene": "matrix",
-   "type": "count",
-   "t": 79.8,
-   "probe": "matrixRoll"
-  },
-  {
-   "id": "matrix32:circle32",
-   "scene": "matrix32",
-   "type": "emphasis",
-   "t": 85.5,
-   "probe": "circle32"
-  },
-  {
-   "id": "certain:cam",
-   "scene": "certain",
-   "type": "transition",
-   "t": 86.4,
-   "probe": "cam"
-  },
-  {
-   "id": "certain:columns",
-   "scene": "certain",
-   "type": "compare",
-   "t": 87.6,
-   "probe": "columns"
-  },
-  {
-   "id": "sequence:dismissM",
-   "scene": "sequence",
-   "type": "dismiss",
    "t": 92.4,
-   "probe": "dismissM"
+   "probe": "cam",
+   "wordT": null
   },
   {
-   "id": "sequence:cam",
-   "scene": "sequence",
+   "id": "interest:intB",
+   "scene": "interest",
+   "type": "count",
+   "t": 94.035,
+   "probe": "intB",
+   "wordT": 94.21
+  },
+  {
+   "id": "interest:intA",
+   "scene": "interest",
+   "type": "count",
+   "t": 96.915,
+   "probe": "intA",
+   "wordT": 97.09
+  },
+  {
+   "id": "avoided:cam",
+   "scene": "avoided",
    "type": "transition",
-   "t": 92.4,
-   "probe": "cam"
+   "t": 99.6,
+   "probe": "cam",
+   "wordT": null
   },
   {
-   "id": "sequence:seqText",
-   "scene": "sequence",
-   "type": "appear",
-   "t": 93.9,
-   "probe": "seqText"
-  },
-  {
-   "id": "race:cam",
-   "scene": "race",
-   "type": "transition",
-   "t": 97.8,
-   "probe": "cam"
-  },
-  {
-   "id": "race:raceAxes",
-   "scene": "race",
-   "type": "appear",
-   "t": 98.4,
-   "probe": "raceAxes"
-  },
-  {
-   "id": "race:month6",
-   "scene": "race",
-   "type": "count",
-   "t": 99.4875,
-   "probe": "month6"
-  },
-  {
-   "id": "race:month12",
-   "scene": "race",
-   "type": "count",
-   "t": 100.275,
-   "probe": "month12"
-  },
-  {
-   "id": "race:month18",
-   "scene": "race",
-   "type": "count",
-   "t": 101.0625,
-   "probe": "month18"
-  },
-  {
-   "id": "race:month24",
-   "scene": "race",
-   "type": "count",
-   "t": 101.85,
-   "probe": "month24"
-  },
-  {
-   "id": "race:month30",
-   "scene": "race",
-   "type": "count",
-   "t": 102.6375,
-   "probe": "month30"
-  },
-  {
-   "id": "race:month36",
-   "scene": "race",
-   "type": "count",
-   "t": 103.425,
-   "probe": "month36"
-  },
-  {
-   "id": "race:month42",
-   "scene": "race",
-   "type": "count",
-   "t": 104.2125,
-   "probe": "month42"
-  },
-  {
-   "id": "race:month48",
-   "scene": "race",
-   "type": "count",
-   "t": 105,
-   "probe": "month48"
-  },
-  {
-   "id": "gap:cam",
-   "scene": "gap",
-   "type": "transition",
-   "t": 105.6,
-   "probe": "cam"
-  },
-  {
-   "id": "cross:gapLabel",
-   "scene": "cross",
-   "type": "appear",
-   "t": 107.4,
-   "probe": "gapLabel"
-  },
-  {
-   "id": "cross:crossMark",
-   "scene": "cross",
-   "type": "threshold-cross",
-   "t": 109.2,
-   "probe": "crossMark"
-  },
-  {
-   "id": "cross:crossText",
-   "scene": "cross",
-   "type": "appear",
-   "t": 110.1,
-   "probe": "crossText"
-  },
-  {
-   "id": "downside:hero459",
-   "scene": "downside",
+   "id": "avoided:avd",
+   "scene": "avoided",
    "type": "reveal",
-   "t": 113.5,
-   "probe": "hero459"
+   "t": 101.455,
+   "probe": "avd",
+   "wordT": 101.63
   },
   {
-   "id": "downside:underline459",
-   "scene": "downside",
+   "id": "certain:certainLine",
+   "scene": "certain",
    "type": "emphasis",
-   "t": 114.4,
-   "probe": "underline459"
+   "t": 108.835,
+   "probe": "certainLine",
+   "wordT": 109.01
   },
   {
-   "id": "converge:dismissD",
-   "scene": "converge",
-   "type": "dismiss",
-   "t": 115.8,
-   "probe": "dismissD"
-  },
-  {
-   "id": "converge:cam",
-   "scene": "converge",
+   "id": "identity:cam",
+   "scene": "identity",
    "type": "transition",
-   "t": 115.8,
-   "probe": "cam"
+   "t": 110.4,
+   "probe": "cam",
+   "wordT": null
   },
   {
-   "id": "converge:convergeText",
-   "scene": "converge",
+   "id": "identity:eqRight",
+   "scene": "identity",
    "type": "appear",
-   "t": 117.3,
-   "probe": "convergeText"
+   "t": 111.4,
+   "probe": "eqRight",
+   "wordT": null
   },
   {
-   "id": "outro:cam",
-   "scene": "outro",
+   "id": "identity:eqVal",
+   "scene": "identity",
+   "type": "compare",
+   "t": 115.315,
+   "probe": "eqVal",
+   "wordT": 115.49
+  },
+  {
+   "id": "bridge:cam",
+   "scene": "bridge",
    "type": "transition",
-   "t": 121.8,
-   "probe": "cam"
+   "t": 119.4,
+   "probe": "cam",
+   "wordT": null
   },
   {
-   "id": "outro:outroText",
-   "scene": "outro",
+   "id": "bridge:brB",
+   "scene": "bridge",
    "type": "appear",
-   "t": 123,
-   "probe": "outroText"
+   "t": 122.535,
+   "probe": "brB",
+   "wordT": 122.71
   },
   {
-   "id": "outro:fadeAll",
-   "scene": "outro",
-   "type": "dismiss",
-   "t": 126.9,
-   "probe": "fadeAll"
+   "id": "bridge:brVal",
+   "scene": "bridge",
+   "type": "reveal",
+   "t": 124.335,
+   "probe": "brVal",
+   "wordT": 124.51
   }
  ],
  "silences": [
   {
-   "scene": "settle",
-   "start": 65,
-   "end": 65.4
-  },
-  {
-   "scene": "cross",
-   "start": 108.8,
-   "end": 109.2
-  },
-  {
-   "scene": "downside",
-   "start": 113.1,
-   "end": 113.5
+   "scene": "avoided",
+   "start": 101.055,
+   "end": 101.455
   }
  ],
  "still": [
   {
-   "scene": "settle",
-   "start": 65.4,
-   "end": 66.2
-  },
-  {
-   "scene": "detail",
-   "start": 69.1,
-   "end": 69.9
-  },
-  {
-   "scene": "cross",
-   "start": 109.2,
-   "end": 110
-  },
-  {
-   "scene": "downside",
-   "start": 113.5,
-   "end": 114.3
+   "scene": "avoided",
+   "start": 101.455,
+   "end": 102.255
   }
  ],
- "sweep": {
-  "t0": 0.6,
-  "t1": 9.6,
-  "lo": 2,
-  "hi": 10,
-  "steps": 32,
-  "stepTimes": [
-   0.6,
-   0.88125,
-   1.1625,
-   1.44375,
-   1.725,
-   2.00625,
-   2.2875,
-   2.56875,
-   2.85,
-   3.13125,
-   3.4125,
-   3.69375,
-   3.975,
-   4.25625,
-   4.5375,
-   4.81875,
-   5.1,
-   5.38125,
-   5.6625,
-   5.94375,
-   6.225,
-   6.50625,
-   6.7875,
-   7.06875,
-   7.35,
-   7.63125,
-   7.9125,
-   8.19375,
-   8.475,
-   8.75625,
-   9.0375,
-   9.31875,
-   9.6
-  ],
-  "crossK": 19
- },
- "race": {
-  "t0": 0.9,
-  "t1": 7.2,
-  "tickEvery": 6
- },
- "settle": {
-  "t0": 0.3,
-  "t1": 1.8
- }
+ "morphs": [
+  "facts->timeline (one principal bar splits into the two roads' month bars)",
+  "timeline->interest (month bars re-scale to interest dollars)",
+  "identity->bridge (A's extra invested becomes B's unknown head start)"
+ ],
+ "alignment": [
+  {
+   "scene": "hook1",
+   "matched": 13,
+   "total": 13
+  },
+  {
+   "scene": "hook2",
+   "matched": 4,
+   "total": 4
+  },
+  {
+   "scene": "hook2b",
+   "matched": 5,
+   "total": 5
+  },
+  {
+   "scene": "hook3",
+   "matched": 11,
+   "total": 11
+  },
+  {
+   "scene": "hook4",
+   "matched": 21,
+   "total": 21
+  },
+  {
+   "scene": "hook5",
+   "matched": 10,
+   "total": 10
+  },
+  {
+   "scene": "setup",
+   "matched": 4,
+   "total": 4
+  },
+  {
+   "scene": "scope1",
+   "matched": 14,
+   "total": 14
+  },
+  {
+   "scene": "scope2",
+   "matched": 21,
+   "total": 22
+  },
+  {
+   "scene": "facts",
+   "matched": 21,
+   "total": 21
+  },
+  {
+   "scene": "extra",
+   "matched": 15,
+   "total": 15
+  },
+  {
+   "scene": "roads",
+   "matched": 17,
+   "total": 17
+  },
+  {
+   "scene": "cash",
+   "matched": 12,
+   "total": 12
+  },
+  {
+   "scene": "card1",
+   "matched": 4,
+   "total": 4
+  },
+  {
+   "scene": "timeline",
+   "matched": 16,
+   "total": 16
+  },
+  {
+   "scene": "free",
+   "matched": 11,
+   "total": 11
+  },
+  {
+   "scene": "interest",
+   "matched": 17,
+   "total": 17
+  },
+  {
+   "scene": "avoided",
+   "matched": 19,
+   "total": 19
+  },
+  {
+   "scene": "certain",
+   "matched": 3,
+   "total": 3
+  },
+  {
+   "scene": "identity",
+   "matched": 23,
+   "total": 23
+  },
+  {
+   "scene": "bridge",
+   "matched": 24,
+   "total": 24
+  }
+ ]
 }

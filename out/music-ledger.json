@@ -1,130 +1,108 @@
 [
  {
+  "assetId": "voice",
+  "origin": "OpenAI gpt-4o-mini-tts (provisional voice)",
+  "generatorFile": "audio/av_tts.py",
+  "settings": "out/voice/tts-manifest.json",
+  "usedIn": [
+   "out/audio/voice.wav",
+   "out/video.mp4"
+  ]
+ },
+ {
   "assetId": "music-bed",
-  "origin": "generated-in-repo",
+  "origin": "generated-in-repo (test B generator, unchanged)",
   "generatorFile": "audio/generate.py",
   "function": "make_music",
   "seed": 20260926,
   "license": "original work",
   "usedIn": [
    "out/audio/music.wav",
-   "out/segment.mp4"
+   "out/video.mp4"
   ]
  },
  {
   "assetId": "ambience-room-tone",
-  "origin": "generated-in-repo",
+  "origin": "generated-in-repo (test B generator, unchanged)",
   "generatorFile": "audio/generate.py",
   "function": "make_ambience",
   "seed": 404,
   "license": "original work",
   "usedIn": [
    "out/audio/ambience.wav",
-   "out/segment.mp4"
+   "out/video.mp4"
   ]
  },
  {
   "assetId": "sfx-appear",
-  "origin": "generated-in-repo",
+  "origin": "generated-in-repo (test B generator, unchanged)",
   "generatorFile": "audio/generate.py",
   "function": "make_sfx",
   "seed": 8080,
   "license": "original work",
-  "usedIn": [
-   "out/audio/sfx.wav",
-   "out/segment.mp4"
-  ],
-  "occurrences": 24
+  "occurrences": 21
  },
  {
   "assetId": "sfx-compare",
-  "origin": "generated-in-repo",
+  "origin": "generated-in-repo (test B generator, unchanged)",
   "generatorFile": "audio/generate.py",
   "function": "make_sfx",
   "seed": 8080,
   "license": "original work",
-  "usedIn": [
-   "out/audio/sfx.wav",
-   "out/segment.mp4"
-  ],
   "occurrences": 3
  },
  {
   "assetId": "sfx-count",
-  "origin": "generated-in-repo",
+  "origin": "generated-in-repo (test B generator, unchanged)",
   "generatorFile": "audio/generate.py",
   "function": "make_sfx",
   "seed": 8080,
   "license": "original work",
-  "usedIn": [
-   "out/audio/sfx.wav",
-   "out/segment.mp4"
-  ],
-  "occurrences": 43
+  "occurrences": 5
  },
  {
   "assetId": "sfx-dismiss",
-  "origin": "generated-in-repo",
+  "origin": "generated-in-repo (test B generator, unchanged)",
   "generatorFile": "audio/generate.py",
   "function": "make_sfx",
   "seed": 8080,
   "license": "original work",
-  "usedIn": [
-   "out/audio/sfx.wav",
-   "out/segment.mp4"
-  ],
-  "occurrences": 4
- },
- {
-  "assetId": "sfx-emphasis",
-  "origin": "generated-in-repo",
-  "generatorFile": "audio/generate.py",
-  "function": "make_sfx",
-  "seed": 8080,
-  "license": "original work",
-  "usedIn": [
-   "out/audio/sfx.wav",
-   "out/segment.mp4"
-  ],
-  "occurrences": 6
- },
- {
-  "assetId": "sfx-reveal",
-  "origin": "generated-in-repo",
-  "generatorFile": "audio/generate.py",
-  "function": "make_sfx",
-  "seed": 8080,
-  "license": "original work",
-  "usedIn": [
-   "out/audio/sfx.wav",
-   "out/segment.mp4"
-  ],
-  "occurrences": 3
- },
- {
-  "assetId": "sfx-threshold-cross",
-  "origin": "generated-in-repo",
-  "generatorFile": "audio/generate.py",
-  "function": "make_sfx",
-  "seed": 8080,
-  "license": "original work",
-  "usedIn": [
-   "out/audio/sfx.wav",
-   "out/segment.mp4"
-  ],
   "occurrences": 2
  },
  {
-  "assetId": "sfx-transition",
-  "origin": "generated-in-repo",
+  "assetId": "sfx-emphasis",
+  "origin": "generated-in-repo (test B generator, unchanged)",
   "generatorFile": "audio/generate.py",
   "function": "make_sfx",
   "seed": 8080,
   "license": "original work",
-  "usedIn": [
-   "out/audio/sfx.wav",
-   "out/segment.mp4"
-  ],
-  "occurrences": 17
+  "occurrences": 4
+ },
+ {
+  "assetId": "sfx-reveal",
+  "origin": "generated-in-repo (test B generator, unchanged)",
+  "generatorFile": "audio/generate.py",
+  "function": "make_sfx",
+  "seed": 8080,
+  "license": "original work",
+  "occurrences": 7
+ },
+ {
+  "assetId": "sfx-threshold-cross",
+  "origin": "generated-in-repo (test B generator, unchanged)",
+  "generatorFile": "audio/generate.py",
+  "function": "make_sfx",
+  "seed": 8080,
+  "license": "original work",
+  "occurrences": 1
+ },
+ {
+  "assetId": "sfx-transition",
+  "origin": "generated-in-repo (test B generator, unchanged)",
+  "generatorFile": "audio/generate.py",
+  "function": "make_sfx",
+  "seed": 8080,
+  "license": "original work",
+  "occurrences": 18
  }
 ]

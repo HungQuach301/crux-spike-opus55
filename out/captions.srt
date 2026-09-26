@@ -1,0 +1,133 @@
+1
+00:00:00,250 --> 00:00:05,030
+A car loan with $25,000 left, at 5.2%.
+
+2
+00:00:06,075 --> 00:00:07,415
+Pay it off early,
+
+3
+00:00:08,175 --> 00:00:10,055
+or invest the extra cash?
+
+4
+00:00:10,450 --> 00:00:15,310
+We ran both roads through all 48 months,
+taxing every lot.
+
+5
+00:00:15,850 --> 00:00:22,300
+The answer flips at an average annual
+return of 6.11%, compounded, in the
+
+6
+00:00:22,350 --> 00:00:24,010
+22% tax bracket.
+
+7
+00:00:24,850 --> 00:00:27,630
+Below it, paying off ends ahead.
+
+8
+00:00:28,090 --> 00:00:29,870
+Above it, investing does.
+
+9
+00:00:33,250 --> 00:00:34,590
+Here is the setup.
+
+10
+00:00:35,050 --> 00:00:41,070
+The rules here are US tax rules, and every
+input is stated, not forecast.
+
+11
+00:00:41,650 --> 00:00:46,040
+Loan interest is treated as not
+deductible, so the model ignores the
+
+12
+00:00:46,090 --> 00:00:50,130
+new-car loan interest deduction for 2025
+to 2028.
+
+13
+00:00:50,650 --> 00:00:57,650
+The loan has $25,000 left at 5.2%, with 48
+monthly payments of $578.
+
+14
+00:00:59,050 --> 00:01:03,290
+On top of that, $400 a month is available.
+
+15
+00:01:03,470 --> 00:01:05,450
+That amount is illustrative.
+
+16
+00:01:06,675 --> 00:01:08,915
+Road A sends it to the loan.
+
+17
+00:01:09,355 --> 00:01:12,795
+Road B pays the minimum and invests it
+every month.
+
+18
+00:01:13,450 --> 00:01:16,430
+Both roads spend the same cash each month.
+
+19
+00:01:16,730 --> 00:01:18,230
+Only the order changes.
+
+20
+00:01:18,850 --> 00:01:20,650
+First, the certain part.
+
+21
+00:01:21,250 --> 00:01:24,070
+Road A pays off the loan at month 28.
+
+22
+00:01:24,690 --> 00:01:27,110
+Road B keeps paying through month 48.
+
+23
+00:01:27,850 --> 00:01:31,830
+That leaves 20 months with no car payment
+on road A.
+
+24
+00:01:32,650 --> 00:01:38,890
+Interest paid falls from $2,744 to $1,554.
+
+25
+00:01:39,850 --> 00:01:44,310
+Road A avoids $1,190 of interest.
+
+26
+00:01:44,590 --> 00:01:47,790
+That does not depend on markets or taxes.
+
+27
+00:01:48,250 --> 00:01:49,750
+It is certain.
+
+28
+00:01:50,650 --> 00:01:57,180
+Because both roads spend the same cash,
+road A ends up investing exactly $1,190
+
+29
+00:01:57,230 --> 00:01:59,310
+more than road B.
+
+30
+00:01:59,650 --> 00:02:04,460
+So the question is narrow: can road B's
+head start in the market beat a certain
+
+31
+00:02:04,510 --> 00:02:07,550
+$1,190, after tax?

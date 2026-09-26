@@ -2,47 +2,47 @@
  "keyframes": [
   {
    "name": "establishing",
-   "scene": "open",
-   "t": 5.5,
-   "inkCoverage": 0.0163,
-   "checkerIssues": 0,
-   "visibleWords": 10,
-   "level1Elements": 1
-  },
-  {
-   "name": "slider-mid-sweep",
-   "scene": "sweep",
-   "t": 57.9,
-   "inkCoverage": 0.0529,
-   "checkerIssues": 0,
-   "visibleWords": 12,
-   "level1Elements": 0
-  },
-  {
-   "name": "crossover",
-   "scene": "flip",
-   "t": 76.8,
-   "inkCoverage": 0.0162,
-   "checkerIssues": 0,
-   "visibleWords": 9,
-   "level1Elements": 1
-  },
-  {
-   "name": "break-even-detail",
-   "scene": "detail",
-   "t": 70.8,
-   "inkCoverage": 0.0212,
-   "checkerIssues": 0,
-   "visibleWords": 5,
-   "level1Elements": 1
-  },
-  {
-   "name": "downside-path",
-   "scene": "cross",
-   "t": 111.4,
-   "inkCoverage": 0.016,
+   "scene": "hook3",
+   "t": 15.06,
+   "inkCoverage": 0.0263,
    "checkerIssues": 0,
    "visibleWords": 8,
+   "level1Elements": 1
+  },
+  {
+   "name": "break-even-teaser",
+   "scene": "hook4",
+   "t": 23.25,
+   "inkCoverage": 0.0143,
+   "checkerIssues": 0,
+   "visibleWords": 7,
+   "level1Elements": 1
+  },
+  {
+   "name": "same-cash",
+   "scene": "cash",
+   "t": 77.79,
+   "inkCoverage": 0.1028,
+   "checkerIssues": 0,
+   "visibleWords": 8,
+   "level1Elements": 1
+  },
+  {
+   "name": "payoff-month",
+   "scene": "timeline",
+   "t": 86.94,
+   "inkCoverage": 0.0649,
+   "checkerIssues": 0,
+   "visibleWords": 8,
+   "level1Elements": 1
+  },
+  {
+   "name": "interest-avoided",
+   "scene": "certain",
+   "t": 110.16,
+   "inkCoverage": 0.0834,
+   "checkerIssues": 0,
+   "visibleWords": 4,
    "level1Elements": 1
   }
  ],

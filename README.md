@@ -1,15 +1,39 @@
 # crux-spike-opus55
 
-Two capability spikes for a US personal-finance data-analysis channel. All numbers are computed in code and traced to claims.
+Capability spikes for a US personal-finance data-analysis channel. All numbers are computed in code and traced to claims.
 
-## Spike 2 (this branch): car loan early payoff vs investing, with motion and sound
+## Test C (this branch, `spike/opus55-av`): full video with voice — midpoint
+
+Hook + CRUX ident + setup + chapter 1 (2:07.8) with TTS narration, per-lot capital-gains tax,
+voice-driven timeline, subtitles and a -14 LUFS master. Report: `out/report.md`.
+
+- `out/video.mp4`, `out/captions.srt`: the video (1080p30 H.264, AAC 48 kHz) and subtitles
+- `out/conventions.md`: tokens, series colours, shot sizes, counter rules, pronunciation dictionary
+- `claims.json`: every number shown or spoken; `out/script.md`: narration with timings
+- `out/rules-b.json` / `out/rules-c.json`: the composition rules run on test B and on test C
+- `out/asr-numbers.json`, `out/number-sync.json`, `out/audio-metrics.json`, `out/motion-metrics.json`, `out/captions-check.json`
+
+Code layout:
+- `src/av/`: per-lot tax model, claims, script, text normalizer, voice-driven timeline, subtitles, ASR checks
+- `render-av/`: renderer (test B's canvas + camera), composition rules, checker, exporter
+- `audio/av_*.py`: TTS, faster-whisper word timings, mix (test B's generator + voice + sidechain + master), measurements
+
+```
+npm install && pip install numpy scipy faster-whisper requests
+PART=mid npm run av:all
+npm run av:rules-b
+```
+
+Test B's deliverables moved to `out/b/` (their code is unchanged in `render-motion/`, `src/car/`).
+
+## Spike 2: car loan early payoff vs investing, with motion and sound
 
 A 127.8 s, 1080p/30 segment with procedural audio.
 
-- `out/segment.mp4`: picture + AAC 48 kHz stereo mix
-- `out/contact-sheet.png`, `out/keyframes/`: stills
-- `out/motion-metrics.json`, `out/audio-metrics.json`, `out/music-ledger.json`: measured limits
-- `claims.json`, `script.md`: evidence, and narration for TTS
+- `out/b/segment.mp4`: picture + AAC 48 kHz stereo mix
+- `out/b/contact-sheet.png`, `out/b/keyframes/`: stills
+- `out/b/motion-metrics.json`, `out/b/audio-metrics.json`, `out/b/music-ledger.json`: measured limits
+- `out/b/claims.json`, `out/b/script.md`: evidence, and narration for TTS
 - `REPORT.md`: report and self-score
 
 Code layout:

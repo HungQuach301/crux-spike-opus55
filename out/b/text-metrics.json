@@ -1,0 +1,150 @@
+{
+ "scenes": [
+  {
+   "id": "open",
+   "words": 10,
+   "newWords": 10,
+   "newWordsPerSec": 1.28
+  },
+  {
+   "id": "facts",
+   "words": 7,
+   "newWords": 7,
+   "newWordsPerSec": 1.17
+  },
+  {
+   "id": "extra",
+   "words": 3,
+   "newWords": 3,
+   "newWordsPerSec": 1.25
+  },
+  {
+   "id": "roads",
+   "words": 12,
+   "newWords": 9,
+   "newWordsPerSec": 1.25
+  },
+  {
+   "id": "timeline",
+   "words": 7,
+   "newWords": 7,
+   "newWordsPerSec": 1.46
+  },
+  {
+   "id": "interest",
+   "words": 7,
+   "newWords": 7,
+   "newWordsPerSec": 1.06
+  },
+  {
+   "id": "scope",
+   "words": 7,
+   "newWords": 7,
+   "newWordsPerSec": 1.46
+  },
+  {
+   "id": "tax",
+   "words": 9,
+   "newWords": 9,
+   "newWordsPerSec": 1.5
+  },
+  {
+   "id": "bars",
+   "words": 10,
+   "newWords": 10,
+   "newWordsPerSec": 1.39
+  },
+  {
+   "id": "sweep",
+   "words": 12,
+   "newWords": 2,
+   "newWordsPerSec": 0.19
+  },
+  {
+   "id": "settle",
+   "words": 11,
+   "newWords": 1,
+   "newWordsPerSec": 0.33
+  },
+  {
+   "id": "morph",
+   "words": 0,
+   "newWords": 0,
+   "newWordsPerSec": 0
+  },
+  {
+   "id": "detail",
+   "words": 5,
+   "newWords": 5,
+   "newWordsPerSec": 1.19
+  },
+  {
+   "id": "flip",
+   "words": 9,
+   "newWords": 9,
+   "newWordsPerSec": 1.5
+  },
+  {
+   "id": "matrix",
+   "words": 10,
+   "newWords": 10,
+   "newWordsPerSec": 1.39
+  },
+  {
+   "id": "matrix32",
+   "words": 6,
+   "newWords": 0,
+   "newWordsPerSec": 0
+  },
+  {
+   "id": "certain",
+   "words": 9,
+   "newWords": 9,
+   "newWordsPerSec": 1.5
+  },
+  {
+   "id": "sequence",
+   "words": 6,
+   "newWords": 6,
+   "newWordsPerSec": 1.11
+  },
+  {
+   "id": "race",
+   "words": 11,
+   "newWords": 11,
+   "newWordsPerSec": 1.41
+  },
+  {
+   "id": "gap",
+   "words": 0,
+   "newWords": 0,
+   "newWordsPerSec": 0
+  },
+  {
+   "id": "cross",
+   "words": 8,
+   "newWords": 8,
+   "newWordsPerSec": 1.48
+  },
+  {
+   "id": "downside",
+   "words": 4,
+   "newWords": 4,
+   "newWordsPerSec": 1.11
+  },
+  {
+   "id": "converge",
+   "words": 7,
+   "newWords": 7,
+   "newWordsPerSec": 1.17
+  },
+  {
+   "id": "outro",
+   "words": 7,
+   "newWords": 7,
+   "newWordsPerSec": 1.17
+  }
+ ],
+ "totalNewWords": 148,
+ "wordsPerSec": 1.158
+}

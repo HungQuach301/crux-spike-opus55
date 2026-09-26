@@ -1,0 +1,68 @@
+{
+ "keyframes": [
+  {
+   "name": "establishing",
+   "scene": "open",
+   "t": 5.5,
+   "inkCoverage": 0.0163,
+   "checkerIssues": 0,
+   "visibleWords": 10,
+   "level1Elements": 1
+  },
+  {
+   "name": "slider-mid-sweep",
+   "scene": "sweep",
+   "t": 57.9,
+   "inkCoverage": 0.0529,
+   "checkerIssues": 0,
+   "visibleWords": 12,
+   "level1Elements": 0
+  },
+  {
+   "name": "crossover",
+   "scene": "flip",
+   "t": 76.8,
+   "inkCoverage": 0.0162,
+   "checkerIssues": 0,
+   "visibleWords": 9,
+   "level1Elements": 1
+  },
+  {
+   "name": "break-even-detail",
+   "scene": "detail",
+   "t": 70.8,
+   "inkCoverage": 0.0212,
+   "checkerIssues": 0,
+   "visibleWords": 5,
+   "level1Elements": 1
+  },
+  {
+   "name": "downside-path",
+   "scene": "cross",
+   "t": 111.4,
+   "inkCoverage": 0.016,
+   "checkerIssues": 0,
+   "visibleWords": 8,
+   "level1Elements": 1
+  }
+ ],
+ "tokenLuma": {
+  "bg": 16.7,
+  "surface": 26.7,
+  "ink": 243.8,
+  "ink-muted": 162.9,
+  "accent": 135.4,
+  "warn": 184.9,
+  "positive": 159.2,
+  "negative": 105.7,
+  "grid": 47.5
+ },
+ "grayscalePairLumaDelta": {
+  "accent(A) vs warn(B)": 49.5,
+  "accent vs bg": 118.7,
+  "warn vs bg": 168.2,
+  "positive vs warn": 25.7,
+  "negative vs grid": 58.2
+ },
+ "note": "A and B are also separated by stroke pattern (solid vs dashed; solid vs hatched fill), so meaning does not depend on hue."
+}

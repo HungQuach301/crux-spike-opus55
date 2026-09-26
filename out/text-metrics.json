@@ -1,150 +1,138 @@
 {
  "scenes": [
   {
-   "id": "open",
-   "words": 10,
-   "newWords": 10,
-   "newWordsPerSec": 1.28
-  },
-  {
-   "id": "facts",
-   "words": 7,
-   "newWords": 7,
-   "newWordsPerSec": 1.17
-  },
-  {
-   "id": "extra",
-   "words": 3,
-   "newWords": 3,
-   "newWordsPerSec": 1.25
-  },
-  {
-   "id": "roads",
-   "words": 12,
-   "newWords": 9,
-   "newWordsPerSec": 1.25
-  },
-  {
-   "id": "timeline",
-   "words": 7,
-   "newWords": 7,
-   "newWordsPerSec": 1.46
-  },
-  {
-   "id": "interest",
-   "words": 7,
-   "newWords": 7,
-   "newWordsPerSec": 1.06
-  },
-  {
-   "id": "scope",
-   "words": 7,
-   "newWords": 7,
-   "newWordsPerSec": 1.46
-  },
-  {
-   "id": "tax",
-   "words": 9,
-   "newWords": 9,
-   "newWordsPerSec": 1.5
-  },
-  {
-   "id": "bars",
-   "words": 10,
-   "newWords": 10,
-   "newWordsPerSec": 1.39
-  },
-  {
-   "id": "sweep",
-   "words": 12,
-   "newWords": 2,
-   "newWordsPerSec": 0.19
-  },
-  {
-   "id": "settle",
-   "words": 11,
-   "newWords": 1,
-   "newWordsPerSec": 0.33
-  },
-  {
-   "id": "morph",
-   "words": 0,
-   "newWords": 0,
-   "newWordsPerSec": 0
-  },
-  {
-   "id": "detail",
-   "words": 5,
-   "newWords": 5,
-   "newWordsPerSec": 1.19
-  },
-  {
-   "id": "flip",
-   "words": 9,
-   "newWords": 9,
-   "newWordsPerSec": 1.5
-  },
-  {
-   "id": "matrix",
-   "words": 10,
-   "newWords": 10,
-   "newWordsPerSec": 1.39
-  },
-  {
-   "id": "matrix32",
-   "words": 6,
-   "newWords": 0,
-   "newWordsPerSec": 0
-  },
-  {
-   "id": "certain",
-   "words": 9,
-   "newWords": 9,
-   "newWordsPerSec": 1.5
-  },
-  {
-   "id": "sequence",
+   "id": "hook1",
    "words": 6,
    "newWords": 6,
    "newWordsPerSec": 1.11
   },
   {
-   "id": "race",
-   "words": 11,
-   "newWords": 11,
-   "newWordsPerSec": 1.41
+   "id": "hook2",
+   "words": 3,
+   "newWords": 3,
+   "newWordsPerSec": 1.25
   },
   {
-   "id": "gap",
-   "words": 0,
-   "newWords": 0,
-   "newWordsPerSec": 0
+   "id": "hook2b",
+   "words": 5,
+   "newWords": 2,
+   "newWordsPerSec": 0.83
   },
   {
-   "id": "cross",
+   "id": "hook3",
    "words": 8,
    "newWords": 8,
    "newWordsPerSec": 1.48
   },
   {
-   "id": "downside",
-   "words": 4,
-   "newWords": 4,
+   "id": "hook4",
+   "words": 7,
+   "newWords": 7,
+   "newWordsPerSec": 0.78
+  },
+  {
+   "id": "hook5",
+   "words": 11,
+   "newWords": 6,
    "newWordsPerSec": 1.11
   },
   {
-   "id": "converge",
-   "words": 7,
-   "newWords": 7,
-   "newWordsPerSec": 1.17
+   "id": "ident",
+   "words": 4,
+   "newWords": 4,
+   "newWordsPerSec": 1.33
   },
   {
-   "id": "outro",
-   "words": 7,
+   "id": "setup",
+   "words": 2,
+   "newWords": 2,
+   "newWordsPerSec": 1.11
+  },
+  {
+   "id": "scope1",
+   "words": 9,
    "newWords": 7,
-   "newWordsPerSec": 1.17
+   "newWordsPerSec": 1.06
+  },
+  {
+   "id": "scope2",
+   "words": 11,
+   "newWords": 11,
+   "newWordsPerSec": 1.22
+  },
+  {
+   "id": "facts",
+   "words": 10,
+   "newWords": 10,
+   "newWordsPerSec": 1.19
+  },
+  {
+   "id": "extra",
+   "words": 4,
+   "newWords": 4,
+   "newWordsPerSec": 0.56
+  },
+  {
+   "id": "roads",
+   "words": 9,
+   "newWords": 9,
+   "newWordsPerSec": 1.25
+  },
+  {
+   "id": "cash",
+   "words": 8,
+   "newWords": 8,
+   "newWordsPerSec": 1.48
+  },
+  {
+   "id": "card1",
+   "words": 3,
+   "newWords": 3,
+   "newWordsPerSec": 1.25
+  },
+  {
+   "id": "timeline",
+   "words": 9,
+   "newWords": 9,
+   "newWordsPerSec": 1.36
+  },
+  {
+   "id": "free",
+   "words": 9,
+   "newWords": 6,
+   "newWordsPerSec": 1.25
+  },
+  {
+   "id": "interest",
+   "words": 7,
+   "newWords": 8,
+   "newWordsPerSec": 1.11
+  },
+  {
+   "id": "avoided",
+   "words": 4,
+   "newWords": 4,
+   "newWordsPerSec": 0.48
+  },
+  {
+   "id": "certain",
+   "words": 4,
+   "newWords": 0,
+   "newWordsPerSec": 0
+  },
+  {
+   "id": "identity",
+   "words": 8,
+   "newWords": 9,
+   "newWordsPerSec": 1
+  },
+  {
+   "id": "bridge",
+   "words": 7,
+   "newWords": 8,
+   "newWordsPerSec": 0.95
   }
  ],
- "totalNewWords": 148,
- "wordsPerSec": 1.158
+ "totalNewWords": 134,
+ "wordsPerSec": 1.049
 }

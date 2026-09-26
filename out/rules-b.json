@@ -1,0 +1,2436 @@
+{
+ "target": "test B (render-motion, out/segment.mp4 source)",
+ "sampledEvery": "3 frames (0.1 s)",
+ "samples": 1278,
+ "definitions": {
+  "split-view": "changed elements between t and t+0.1s with the camera frozen (an element present in both frames counts only the region where its old and new boxes differ); violation when the union box of changes exceeds 60% of frame width or height for >= 1s, outside camera moves",
+  "level1": "chart scenes of >= 2 s: exactly one visible .l1 (opacity > 0.5) in >= 50% of samples, never two",
+  "exemptions": "scene-leak and split-view skip the camera move at the start of each scene"
+ },
+ "summary": {
+  "scene-leak": {
+   "framesFlagged": 714,
+   "scenes": [
+    "sequence (714)"
+   ],
+   "pass": false
+  },
+  "bg-over-data": {
+   "framesFlagged": 1209,
+   "scenes": [
+    "open (78)",
+    "facts (8)",
+    "extra (18)",
+    "roads (72)",
+    "timeline (48)",
+    "interest (66)",
+    "scope (48)",
+    "tax (49)",
+    "bars (73)",
+    "sweep (107)",
+    "settle (30)",
+    "morph (12)",
+    "detail (42)",
+    "flip (60)",
+    "matrix (72)",
+    "matrix32 (12)",
+    "certain (60)",
+    "sequence (55)",
+    "race (77)",
+    "gap (12)",
+    "cross (54)",
+    "downside (36)",
+    "converge (60)",
+    "outro (60)"
+   ],
+   "pass": false
+  },
+  "unlabelled-curve": {
+   "framesFlagged": 1715,
+   "scenes": [
+    "open (262)",
+    "facts (32)",
+    "extra (40)",
+    "roads (68)",
+    "timeline (32)",
+    "scope (168)",
+    "tax (26)",
+    "sweep (1)",
+    "settle (53)",
+    "morph (24)",
+    "detail (32)",
+    "flip (44)",
+    "matrix (22)",
+    "matrix32 (1)",
+    "certain (5)",
+    "sequence (190)",
+    "race (117)",
+    "gap (24)",
+    "cross (45)",
+    "downside (24)",
+    "converge (59)",
+    "outro (446)"
+   ],
+   "pass": false
+  },
+  "axis-anchors": {
+   "framesFlagged": 929,
+   "scenes": [
+    "sweep (178)",
+    "settle (60)",
+    "morph (24)",
+    "detail (38)",
+    "flip (120)",
+    "matrix (16)",
+    "race (116)",
+    "gap (24)",
+    "cross (108)",
+    "downside (44)",
+    "converge (13)",
+    "outro (188)"
+   ],
+   "pass": false
+  },
+  "grey-emphasis": {
+   "framesFlagged": 38,
+   "scenes": [
+    "downside (38)"
+   ],
+   "pass": false
+  },
+  "number-colour": {
+   "framesFlagged": 111,
+   "scenes": [
+    "timeline (27)",
+    "sweep (15)",
+    "matrix32 (7)",
+    "downside (20)",
+    "converge (42)"
+   ],
+   "pass": false
+  },
+  "level1": {
+   "scenes": [
+    "timeline (one l1 in 0% of samples, max 0)",
+    "interest (one l1 in 0% of samples, max 0)",
+    "tax (one l1 in 0% of samples, max 0)",
+    "bars (one l1 in 0% of samples, max 0)",
+    "sweep (one l1 in 0% of samples, max 0)",
+    "settle (one l1 in 0% of samples, max 0)",
+    "matrix (one l1 in 0% of samples, max 0)",
+    "certain (one l1 in 0% of samples, max 2)",
+    "sequence (one l1 in 0% of samples, max 0)",
+    "race (one l1 in 0% of samples, max 0)",
+    "cross (one l1 in 0% of samples, max 0)"
+   ],
+   "pass": false
+  },
+  "split-view": {
+   "scenes": [
+    "roads (1s from 18.6s, changes span 68% × 30%)",
+    "sweep (2.1s from 60.3s, changes span 69% × 66%)",
+    "race (1.2s from 99s, changes span 83% × 72%)",
+    "race (1.8s from 103.2s, changes span 83% × 25%)"
+   ],
+   "pass": false
+  }
+ },
+ "scenes": [
+  {
+   "id": "open",
+   "samples": 78,
+   "chart": false,
+   "issues": {
+    "bg-over-data": 78,
+    "unlabelled-curve": 262
+   },
+   "level1": {
+    "shareExactlyOne": 0.88,
+    "max": 1,
+    "pass": null
+   },
+   "split": [],
+   "examples": {
+    "bg-over-data": [
+     {
+      "t": 0,
+      "rule": "bg-over-data",
+      "fill": "url(#near)",
+      "dataElementsCovered": 2
+     },
+     {
+      "t": 0.1,
+      "rule": "bg-over-data",
+      "fill": "url(#near)",
+      "dataElementsCovered": 2
+     },
+     {
+      "t": 0.2,
+      "rule": "bg-over-data",
+      "fill": "url(#near)",
+      "dataElementsCovered": 2
+     }
+    ],
+    "unlabelled-curve": [
+     {
+      "t": 0,
+      "rule": "unlabelled-curve",
+      "panel": "roads",
+      "stroke": "#4c8dff",
+      "bound": null,
+      "box": [
+       1103,
+       183,
+       1649,
+       275
+      ]
+     },
+     {
+      "t": 0,
+      "rule": "unlabelled-curve",
+      "panel": "roads",
+      "stroke": "#f2b441",
+      "bound": null,
+      "box": [
+       1103,
+       275,
+       1649,
+       368
+      ]
+     },
+     {
+      "t": 0.1,
+      "rule": "unlabelled-curve",
+      "panel": "roads",
+      "stroke": "#4c8dff",
+      "bound": null,
+      "box": [
+       1102,
+       183,
+       1648,
+       275
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "id": "facts",
+   "samples": 60,
+   "chart": false,
+   "issues": {
+    "bg-over-data": 8,
+    "unlabelled-curve": 32
+   },
+   "level1": {
+    "shareExactlyOne": 0.83,
+    "max": 1,
+    "pass": null
+   },
+   "split": [],
+   "examples": {
+    "bg-over-data": [
+     {
+      "t": 7.8,
+      "rule": "bg-over-data",
+      "fill": "url(#near)",
+      "dataElementsCovered": 10
+     },
+     {
+      "t": 7.9,
+      "rule": "bg-over-data",
+      "fill": "url(#near)",
+      "dataElementsCovered": 10
+     },
+     {
+      "t": 8,
+      "rule": "bg-over-data",
+      "fill": "url(#near)",
+      "dataElementsCovered": 10
+     }
+    ],
+    "unlabelled-curve": [
+     {
+      "t": 7.8,
+      "rule": "unlabelled-curve",
+      "panel": "roads",
+      "stroke": "#2a303b",
+      "bound": null,
+      "box": [
+       1040,
+       183,
+       1586,
+       275
+      ]
+     },
+     {
+      "t": 7.8,
+      "rule": "unlabelled-curve",
+      "panel": "roads",
+      "stroke": "#2a303b",
+      "bound": null,
+      "box": [
+       1040,
+       275,
+       1586,
+       368
+      ]
+     },
+     {
+      "t": 7.8,
+      "rule": "unlabelled-curve",
+      "panel": "roads",
+      "stroke": "#4c8dff",
+      "bound": null,
+      "box": [
+       1040,
+       183,
+       1586,
+       275
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "id": "extra",
+   "samples": 24,
+   "chart": false,
+   "issues": {
+    "bg-over-data": 18,
+    "unlabelled-curve": 40
+   },
+   "level1": {
+    "shareExactlyOne": 0,
+    "max": 0,
+    "pass": null
+   },
+   "split": [],
+   "examples": {
+    "bg-over-data": [
+     {
+      "t": 14.4,
+      "rule": "bg-over-data",
+      "fill": "url(#near)",
+      "dataElementsCovered": 5
+     },
+     {
+      "t": 14.5,
+      "rule": "bg-over-data",
+      "fill": "url(#near)",
+      "dataElementsCovered": 5
+     },
+     {
+      "t": 14.6,
+      "rule": "bg-over-data",
+      "fill": "url(#near)",
+      "dataElementsCovered": 5
+     }
+    ],
+    "unlabelled-curve": [
+     {
+      "t": 14.4,
+      "rule": "unlabelled-curve",
+      "panel": "roads",
+      "stroke": "#2a303b",
+      "bound": null,
+      "box": [
+       1768,
+       292,
+       3412,
+       570
+      ]
+     },
+     {
+      "t": 14.4,
+      "rule": "unlabelled-curve",
+      "panel": "roads",
+      "stroke": "#2a303b",
+      "bound": null,
+      "box": [
+       1768,
+       570,
+       3412,
+       849
+      ]
+     },
+     {
+      "t": 14.4,
+      "rule": "unlabelled-curve",
+      "panel": "roads",
+      "stroke": "#4c8dff",
+      "bound": null,
+      "box": [
+       1768,
+       292,
+       3412,
+       570
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "id": "roads",
+   "samples": 72,
+   "chart": false,
+   "issues": {
+    "bg-over-data": 72,
+    "unlabelled-curve": 68
+   },
+   "level1": {
+    "shareExactlyOne": 0,
+    "max": 0,
+    "pass": null
+   },
+   "split": [
+    {
+     "scene": "roads",
+     "start": 18.6,
+     "durationS": 1,
+     "maxW": 0.683,
+     "maxH": 0.298
+    }
+   ],
+   "examples": {
+    "bg-over-data": [
+     {
+      "t": 16.2,
+      "rule": "bg-over-data",
+      "fill": "url(#near)",
+      "dataElementsCovered": 5
+     },
+     {
+      "t": 16.3,
+      "rule": "bg-over-data",
+      "fill": "url(#near)",
+      "dataElementsCovered": 5
+     },
+     {
+      "t": 16.4,
+      "rule": "bg-over-data",
+      "fill": "url(#near)",
+      "dataElementsCovered": 5
+     }
+    ],
+    "unlabelled-curve": [
+     {
+      "t": 16.2,
+      "rule": "unlabelled-curve",
+      "panel": "roads",
+      "stroke": "#2a303b",
+      "bound": null,
+      "box": [
+       685,
+       540,
+       2765,
+       892
+      ]
+     },
+     {
+      "t": 16.2,
+      "rule": "unlabelled-curve",
+      "panel": "roads",
+      "stroke": "#f2b441",
+      "bound": null,
+      "box": [
+       685,
+       540,
+       2765,
+       892
+      ]
+     },
+     {
+      "t": 16.3,
+      "rule": "unlabelled-curve",
+      "panel": "roads",
+      "stroke": "#2a303b",
+      "bound": null,
+      "box": [
+       683,
+       540,
+       2761,
+       892
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "id": "timeline",
+   "samples": 48,
+   "chart": true,
+   "issues": {
+    "bg-over-data": 48,
+    "unlabelled-curve": 32,
+    "number-colour": 27
+   },
+   "level1": {
+    "shareExactlyOne": 0,
+    "max": 0,
+    "pass": false
+   },
+   "split": [],
+   "examples": {
+    "bg-over-data": [
+     {
+      "t": 23.4,
+      "rule": "bg-over-data",
+      "fill": "url(#near)",
+      "dataElementsCovered": 7
+     },
+     {
+      "t": 23.5,
+      "rule": "bg-over-data",
+      "fill": "url(#near)",
+      "dataElementsCovered": 7
+     },
+     {
+      "t": 23.6,
+      "rule": "bg-over-data",
+      "fill": "url(#near)",
+      "dataElementsCovered": 7
+     }
+    ],
+    "unlabelled-curve": [
+     {
+      "t": 23.4,
+      "rule": "unlabelled-curve",
+      "panel": "roads",
+      "stroke": "#2a303b",
+      "bound": null,
+      "box": [
+       298,
+       340,
+       1598,
+       560
+      ]
+     },
+     {
+      "t": 23.4,
+      "rule": "unlabelled-curve",
+      "panel": "roads",
+      "stroke": "#2a303b",
+      "bound": null,
+      "box": [
+       298,
+       560,
+       1598,
+       780
+      ]
+     },
+     {
+      "t": 23.4,
+      "rule": "unlabelled-curve",
+      "panel": "roads",
+      "stroke": "#4c8dff",
+      "bound": null,
+      "box": [
+       298,
+       340,
+       1598,
+       560
+      ]
+     }
+    ],
+    "number-colour": [
+     {
+      "t": 25.4,
+      "rule": "number-colour",
+      "claim": "payoff_a",
+      "colour": "#4c8dff",
+      "seriesColour": "#f2b441",
+      "via": "nearest mark (rect, 56 px)"
+     },
+     {
+      "t": 25.5,
+      "rule": "number-colour",
+      "claim": "payoff_a",
+      "colour": "#4c8dff",
+      "seriesColour": "#f2b441",
+      "via": "nearest mark (rect, 57 px)"
+     },
+     {
+      "t": 25.6,
+      "rule": "number-colour",
+      "claim": "payoff_a",
+      "colour": "#4c8dff",
+      "seriesColour": "#f2b441",
+      "via": "nearest mark (rect, 57 px)"
+     }
+    ]
+   }
+  },
+  {
+   "id": "interest",
+   "samples": 66,
+   "chart": true,
+   "issues": {
+    "bg-over-data": 66
+   },
+   "level1": {
+    "shareExactlyOne": 0,
+    "max": 0,
+    "pass": false
+   },
+   "split": [],
+   "examples": {
+    "bg-over-data": [
+     {
+      "t": 28.2,
+      "rule": "bg-over-data",
+      "fill": "url(#near)",
+      "dataElementsCovered": 2
+     },
+     {
+      "t": 28.3,
+      "rule": "bg-over-data",
+      "fill": "url(#near)",
+      "dataElementsCovered": 2
+     },
+     {
+      "t": 28.4,
+      "rule": "bg-over-data",
+      "fill": "url(#near)",
+      "dataElementsCovered": 2
+     }
+    ]
+   }
+  },
+  {
+   "id": "scope",
+   "samples": 48,
+   "chart": false,
+   "issues": {
+    "bg-over-data": 48,
+    "unlabelled-curve": 168
+   },
+   "level1": {
+    "shareExactlyOne": 0,
+    "max": 0,
+    "pass": null
+   },
+   "split": [],
+   "examples": {
+    "bg-over-data": [
+     {
+      "t": 34.8,
+      "rule": "bg-over-data",
+      "fill": "url(#near)",
+      "dataElementsCovered": 7
+     },
+     {
+      "t": 34.9,
+      "rule": "bg-over-data",
+      "fill": "url(#near)",
+      "dataElementsCovered": 7
+     },
+     {
+      "t": 35,
+      "rule": "bg-over-data",
+      "fill": "url(#near)",
+      "dataElementsCovered": 7
+     }
+    ],
+    "unlabelled-curve": [
+     {
+      "t": 35.4,
+      "rule": "unlabelled-curve",
+      "panel": "roads",
+      "stroke": "#2a303b",
+      "bound": null,
+      "box": [
+       1578,
+       5,
+       2777,
+       208
+      ]
+     },
+     {
+      "t": 35.4,
+      "rule": "unlabelled-curve",
+      "panel": "roads",
+      "stroke": "#2a303b",
+      "bound": null,
+      "box": [
+       1578,
+       208,
+       2777,
+       411
+      ]
+     },
+     {
+      "t": 35.4,
+      "rule": "unlabelled-curve",
+      "panel": "roads",
+      "stroke": "#4c8dff",
+      "bound": null,
+      "box": [
+       1578,
+       5,
+       2777,
+       208
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "id": "tax",
+   "samples": 60,
+   "chart": true,
+   "issues": {
+    "bg-over-data": 49,
+    "unlabelled-curve": 26
+   },
+   "level1": {
+    "shareExactlyOne": 0,
+    "max": 0,
+    "pass": false
+   },
+   "split": [],
+   "examples": {
+    "bg-over-data": [
+     {
+      "t": 39.6,
+      "rule": "bg-over-data",
+      "fill": "url(#near)",
+      "dataElementsCovered": 13
+     },
+     {
+      "t": 39.7,
+      "rule": "bg-over-data",
+      "fill": "url(#near)",
+      "dataElementsCovered": 13
+     },
+     {
+      "t": 39.8,
+      "rule": "bg-over-data",
+      "fill": "url(#near)",
+      "dataElementsCovered": 13
+     }
+    ],
+    "unlabelled-curve": [
+     {
+      "t": 39.6,
+      "rule": "unlabelled-curve",
+      "panel": "roads",
+      "stroke": "#2a303b",
+      "bound": null,
+      "box": [
+       1130,
+       77,
+       1780,
+       187
+      ]
+     },
+     {
+      "t": 39.6,
+      "rule": "unlabelled-curve",
+      "panel": "roads",
+      "stroke": "#2a303b",
+      "bound": null,
+      "box": [
+       1130,
+       187,
+       1780,
+       297
+      ]
+     },
+     {
+      "t": 39.6,
+      "rule": "unlabelled-curve",
+      "panel": "roads",
+      "stroke": "#4c8dff",
+      "bound": null,
+      "box": [
+       1130,
+       77,
+       1780,
+       187
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "id": "bars",
+   "samples": 73,
+   "chart": true,
+   "issues": {
+    "bg-over-data": 73
+   },
+   "level1": {
+    "shareExactlyOne": 0,
+    "max": 0,
+    "pass": false
+   },
+   "split": [],
+   "examples": {
+    "bg-over-data": [
+     {
+      "t": 45.6,
+      "rule": "bg-over-data",
+      "fill": "url(#near)",
+      "dataElementsCovered": 3
+     },
+     {
+      "t": 45.7,
+      "rule": "bg-over-data",
+      "fill": "url(#near)",
+      "dataElementsCovered": 3
+     },
+     {
+      "t": 45.8,
+      "rule": "bg-over-data",
+      "fill": "url(#near)",
+      "dataElementsCovered": 3
+     }
+    ]
+   }
+  },
+  {
+   "id": "sweep",
+   "samples": 107,
+   "chart": true,
+   "issues": {
+    "bg-over-data": 107,
+    "axis-anchors": 178,
+    "number-colour": 15,
+    "unlabelled-curve": 1
+   },
+   "level1": {
+    "shareExactlyOne": 0,
+    "max": 0,
+    "pass": false
+   },
+   "split": [
+    {
+     "scene": "sweep",
+     "start": 60.3,
+     "durationS": 2.1,
+     "maxW": 0.689,
+     "maxH": 0.656
+    }
+   ],
+   "examples": {
+    "bg-over-data": [
+     {
+      "t": 52.9,
+      "rule": "bg-over-data",
+      "fill": "url(#near)",
+      "dataElementsCovered": 7
+     },
+     {
+      "t": 53,
+      "rule": "bg-over-data",
+      "fill": "url(#near)",
+      "dataElementsCovered": 7
+     },
+     {
+      "t": 53.1,
+      "rule": "bg-over-data",
+      "fill": "url(#near)",
+      "dataElementsCovered": 7
+     }
+    ],
+    "axis-anchors": [
+     {
+      "t": 54.6,
+      "rule": "axis-anchors",
+      "panel": "flip",
+      "chart": null,
+      "axes": 1,
+      "anchors": 1
+     },
+     {
+      "t": 54.7,
+      "rule": "axis-anchors",
+      "panel": "flip",
+      "chart": null,
+      "axes": 1,
+      "anchors": 1
+     },
+     {
+      "t": 54.8,
+      "rule": "axis-anchors",
+      "panel": "flip",
+      "chart": null,
+      "axes": 0,
+      "anchors": 0
+     }
+    ],
+    "number-colour": [
+     {
+      "t": 57.2,
+      "rule": "number-colour",
+      "claim": "barb_13",
+      "colour": "#f2b441",
+      "seriesColour": "#4c8dff",
+      "via": "nearest mark (line, 19 px)"
+     },
+     {
+      "t": 57.3,
+      "rule": "number-colour",
+      "claim": "barb_13",
+      "colour": "#f2b441",
+      "seriesColour": "#4c8dff",
+      "via": "nearest mark (line, 14 px)"
+     },
+     {
+      "t": 57.4,
+      "rule": "number-colour",
+      "claim": "barb_14",
+      "colour": "#f2b441",
+      "seriesColour": "#4c8dff",
+      "via": "nearest mark (line, 9 px)"
+     }
+    ],
+    "unlabelled-curve": [
+     {
+      "t": 63.5,
+      "rule": "unlabelled-curve",
+      "panel": "flip",
+      "stroke": "#4c8dff",
+      "bound": null,
+      "box": [
+       1097,
+       403,
+       1853,
+       630
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "id": "settle",
+   "samples": 30,
+   "chart": true,
+   "issues": {
+    "bg-over-data": 30,
+    "unlabelled-curve": 53,
+    "axis-anchors": 60
+   },
+   "level1": {
+    "shareExactlyOne": 0,
+    "max": 0,
+    "pass": false
+   },
+   "split": [],
+   "examples": {
+    "bg-over-data": [
+     {
+      "t": 63.6,
+      "rule": "bg-over-data",
+      "fill": "url(#near)",
+      "dataElementsCovered": 10
+     },
+     {
+      "t": 63.7,
+      "rule": "bg-over-data",
+      "fill": "url(#near)",
+      "dataElementsCovered": 10
+     },
+     {
+      "t": 63.8,
+      "rule": "bg-over-data",
+      "fill": "url(#near)",
+      "dataElementsCovered": 10
+     }
+    ],
+    "unlabelled-curve": [
+     {
+      "t": 63.6,
+      "rule": "unlabelled-curve",
+      "panel": "flip",
+      "stroke": "#4c8dff",
+      "bound": null,
+      "box": [
+       1097,
+       403,
+       1853,
+       630
+      ]
+     },
+     {
+      "t": 63.7,
+      "rule": "unlabelled-curve",
+      "panel": "flip",
+      "stroke": "#4c8dff",
+      "bound": null,
+      "box": [
+       1098,
+       403,
+       1854,
+       630
+      ]
+     },
+     {
+      "t": 63.8,
+      "rule": "unlabelled-curve",
+      "panel": "flip",
+      "stroke": "#4c8dff",
+      "bound": null,
+      "box": [
+       1105,
+       400,
+       1867,
+       628
+      ]
+     }
+    ],
+    "axis-anchors": [
+     {
+      "t": 63.6,
+      "rule": "axis-anchors",
+      "panel": "flip",
+      "chart": null,
+      "axes": 0,
+      "anchors": 0
+     },
+     {
+      "t": 63.6,
+      "rule": "axis-anchors",
+      "panel": "flip",
+      "chart": null,
+      "axes": 1,
+      "anchors": 1
+     },
+     {
+      "t": 63.7,
+      "rule": "axis-anchors",
+      "panel": "flip",
+      "chart": null,
+      "axes": 0,
+      "anchors": 0
+     }
+    ]
+   }
+  },
+  {
+   "id": "morph",
+   "samples": 12,
+   "chart": true,
+   "issues": {
+    "bg-over-data": 12,
+    "unlabelled-curve": 24,
+    "axis-anchors": 24
+   },
+   "level1": {
+    "shareExactlyOne": 0,
+    "max": 0,
+    "pass": null
+   },
+   "split": [],
+   "examples": {
+    "bg-over-data": [
+     {
+      "t": 66.6,
+      "rule": "bg-over-data",
+      "fill": "url(#near)",
+      "dataElementsCovered": 10
+     },
+     {
+      "t": 66.7,
+      "rule": "bg-over-data",
+      "fill": "url(#near)",
+      "dataElementsCovered": 10
+     },
+     {
+      "t": 66.8,
+      "rule": "bg-over-data",
+      "fill": "url(#near)",
+      "dataElementsCovered": 10
+     }
+    ],
+    "unlabelled-curve": [
+     {
+      "t": 66.6,
+      "rule": "unlabelled-curve",
+      "panel": "flip",
+      "stroke": "#4c8dff",
+      "bound": null,
+      "box": [
+       1760,
+       140,
+       2912,
+       485
+      ]
+     },
+     {
+      "t": 66.6,
+      "rule": "unlabelled-curve",
+      "panel": "flip",
+      "stroke": "#f2b441",
+      "bound": null,
+      "box": [
+       1760,
+       -78,
+       2912,
+       765
+      ]
+     },
+     {
+      "t": 66.7,
+      "rule": "unlabelled-curve",
+      "panel": "flip",
+      "stroke": "#4c8dff",
+      "bound": null,
+      "box": [
+       1734,
+       144,
+       2886,
+       490
+      ]
+     }
+    ],
+    "axis-anchors": [
+     {
+      "t": 66.6,
+      "rule": "axis-anchors",
+      "panel": "flip",
+      "chart": null,
+      "axes": 0,
+      "anchors": 0
+     },
+     {
+      "t": 66.6,
+      "rule": "axis-anchors",
+      "panel": "flip",
+      "chart": null,
+      "axes": 1,
+      "anchors": 0
+     },
+     {
+      "t": 66.7,
+      "rule": "axis-anchors",
+      "panel": "flip",
+      "chart": null,
+      "axes": 0,
+      "anchors": 0
+     }
+    ]
+   }
+  },
+  {
+   "id": "detail",
+   "samples": 42,
+   "chart": true,
+   "issues": {
+    "bg-over-data": 42,
+    "unlabelled-curve": 32,
+    "axis-anchors": 38
+   },
+   "level1": {
+    "shareExactlyOne": 0.62,
+    "max": 1,
+    "pass": true
+   },
+   "split": [],
+   "examples": {
+    "bg-over-data": [
+     {
+      "t": 67.8,
+      "rule": "bg-over-data",
+      "fill": "url(#near)",
+      "dataElementsCovered": 4
+     },
+     {
+      "t": 67.9,
+      "rule": "bg-over-data",
+      "fill": "url(#near)",
+      "dataElementsCovered": 4
+     },
+     {
+      "t": 68,
+      "rule": "bg-over-data",
+      "fill": "url(#near)",
+      "dataElementsCovered": 4
+     }
+    ],
+    "unlabelled-curve": [
+     {
+      "t": 67.8,
+      "rule": "unlabelled-curve",
+      "panel": "flip",
+      "stroke": "#4c8dff",
+      "bound": null,
+      "box": [
+       379,
+       397,
+       1531,
+       743
+      ]
+     },
+     {
+      "t": 67.8,
+      "rule": "unlabelled-curve",
+      "panel": "flip",
+      "stroke": "#f2b441",
+      "bound": null,
+      "box": [
+       379,
+       179,
+       1531,
+       1022
+      ]
+     },
+     {
+      "t": 67.9,
+      "rule": "unlabelled-curve",
+      "panel": "flip",
+      "stroke": "#4c8dff",
+      "bound": null,
+      "box": [
+       379,
+       397,
+       1532,
+       743
+      ]
+     }
+    ],
+    "axis-anchors": [
+     {
+      "t": 67.8,
+      "rule": "axis-anchors",
+      "panel": "flip",
+      "chart": null,
+      "axes": 1,
+      "anchors": 0
+     },
+     {
+      "t": 67.8,
+      "rule": "axis-anchors",
+      "panel": "flip",
+      "chart": null,
+      "axes": 2,
+      "anchors": 0
+     },
+     {
+      "t": 67.9,
+      "rule": "axis-anchors",
+      "panel": "flip",
+      "chart": null,
+      "axes": 1,
+      "anchors": 0
+     }
+    ]
+   }
+  },
+  {
+   "id": "flip",
+   "samples": 60,
+   "chart": true,
+   "issues": {
+    "bg-over-data": 60,
+    "unlabelled-curve": 44,
+    "axis-anchors": 120
+   },
+   "level1": {
+    "shareExactlyOne": 0.85,
+    "max": 1,
+    "pass": true
+   },
+   "split": [],
+   "examples": {
+    "bg-over-data": [
+     {
+      "t": 72,
+      "rule": "bg-over-data",
+      "fill": "url(#near)",
+      "dataElementsCovered": 3
+     },
+     {
+      "t": 72.1,
+      "rule": "bg-over-data",
+      "fill": "url(#near)",
+      "dataElementsCovered": 3
+     },
+     {
+      "t": 72.2,
+      "rule": "bg-over-data",
+      "fill": "url(#near)",
+      "dataElementsCovered": 3
+     }
+    ],
+    "unlabelled-curve": [
+     {
+      "t": 72,
+      "rule": "unlabelled-curve",
+      "panel": "flip",
+      "stroke": "#4c8dff",
+      "bound": null,
+      "box": [
+       303,
+       359,
+       2175,
+       921
+      ]
+     },
+     {
+      "t": 72,
+      "rule": "unlabelled-curve",
+      "panel": "flip",
+      "stroke": "#f2b441",
+      "bound": null,
+      "box": [
+       303,
+       6,
+       2175,
+       1375
+      ]
+     },
+     {
+      "t": 72.1,
+      "rule": "unlabelled-curve",
+      "panel": "flip",
+      "stroke": "#4c8dff",
+      "bound": null,
+      "box": [
+       304,
+       359,
+       2173,
+       920
+      ]
+     }
+    ],
+    "axis-anchors": [
+     {
+      "t": 72,
+      "rule": "axis-anchors",
+      "panel": "flip",
+      "chart": null,
+      "axes": 1,
+      "anchors": 0
+     },
+     {
+      "t": 72,
+      "rule": "axis-anchors",
+      "panel": "flip",
+      "chart": null,
+      "axes": 2,
+      "anchors": 0
+     },
+     {
+      "t": 72.1,
+      "rule": "axis-anchors",
+      "panel": "flip",
+      "chart": null,
+      "axes": 1,
+      "anchors": 0
+     }
+    ]
+   }
+  },
+  {
+   "id": "matrix",
+   "samples": 72,
+   "chart": true,
+   "issues": {
+    "bg-over-data": 72,
+    "unlabelled-curve": 22,
+    "axis-anchors": 16
+   },
+   "level1": {
+    "shareExactlyOne": 0,
+    "max": 0,
+    "pass": false
+   },
+   "split": [],
+   "examples": {
+    "bg-over-data": [
+     {
+      "t": 78,
+      "rule": "bg-over-data",
+      "fill": "url(#near)",
+      "dataElementsCovered": 8
+     },
+     {
+      "t": 78.1,
+      "rule": "bg-over-data",
+      "fill": "url(#near)",
+      "dataElementsCovered": 8
+     },
+     {
+      "t": 78.2,
+      "rule": "bg-over-data",
+      "fill": "url(#near)",
+      "dataElementsCovered": 7
+     }
+    ],
+    "unlabelled-curve": [
+     {
+      "t": 78,
+      "rule": "unlabelled-curve",
+      "panel": "flip",
+      "stroke": "#4c8dff",
+      "bound": null,
+      "box": [
+       462,
+       377,
+       1362,
+       647
+      ]
+     },
+     {
+      "t": 78,
+      "rule": "unlabelled-curve",
+      "panel": "flip",
+      "stroke": "#f2b441",
+      "bound": null,
+      "box": [
+       462,
+       207,
+       1362,
+       865
+      ]
+     },
+     {
+      "t": 78,
+      "rule": "unlabelled-curve",
+      "panel": "flip",
+      "stroke": "#f2f4f7",
+      "bound": null,
+      "box": [
+       1023,
+       251,
+       1178,
+       466
+      ]
+     }
+    ],
+    "axis-anchors": [
+     {
+      "t": 78,
+      "rule": "axis-anchors",
+      "panel": "flip",
+      "chart": null,
+      "axes": 1,
+      "anchors": 0
+     },
+     {
+      "t": 78,
+      "rule": "axis-anchors",
+      "panel": "flip",
+      "chart": null,
+      "axes": 2,
+      "anchors": 0
+     },
+     {
+      "t": 78.1,
+      "rule": "axis-anchors",
+      "panel": "flip",
+      "chart": null,
+      "axes": 1,
+      "anchors": 0
+     }
+    ]
+   }
+  },
+  {
+   "id": "matrix32",
+   "samples": 12,
+   "chart": true,
+   "issues": {
+    "bg-over-data": 12,
+    "number-colour": 7,
+    "unlabelled-curve": 1
+   },
+   "level1": {
+    "shareExactlyOne": 0,
+    "max": 0,
+    "pass": null
+   },
+   "split": [],
+   "examples": {
+    "bg-over-data": [
+     {
+      "t": 85.2,
+      "rule": "bg-over-data",
+      "fill": "url(#near)",
+      "dataElementsCovered": 6
+     },
+     {
+      "t": 85.3,
+      "rule": "bg-over-data",
+      "fill": "url(#near)",
+      "dataElementsCovered": 6
+     },
+     {
+      "t": 85.4,
+      "rule": "bg-over-data",
+      "fill": "url(#near)",
+      "dataElementsCovered": 6
+     }
+    ],
+    "number-colour": [
+     {
+      "t": 85.6,
+      "rule": "number-colour",
+      "claim": "be_22",
+      "colour": "#4c8dff",
+      "seriesColour": "#f2b441",
+      "via": "nearest mark (path, 109 px)"
+     },
+     {
+      "t": 85.7,
+      "rule": "number-colour",
+      "claim": "be_22",
+      "colour": "#4c8dff",
+      "seriesColour": "#f2b441",
+      "via": "nearest mark (path, 122 px)"
+     },
+     {
+      "t": 85.8,
+      "rule": "number-colour",
+      "claim": "be_22",
+      "colour": "#4c8dff",
+      "seriesColour": "#f2b441",
+      "via": "nearest mark (path, 124 px)"
+     }
+    ],
+    "unlabelled-curve": [
+     {
+      "t": 86.3,
+      "rule": "unlabelled-curve",
+      "panel": "matrix",
+      "stroke": "#f2b441",
+      "bound": null,
+      "box": [
+       269,
+       578,
+       730,
+       751
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "id": "certain",
+   "samples": 60,
+   "chart": true,
+   "issues": {
+    "bg-over-data": 60,
+    "unlabelled-curve": 5
+   },
+   "level1": {
+    "shareExactlyOne": 0,
+    "max": 2,
+    "pass": false
+   },
+   "split": [],
+   "examples": {
+    "bg-over-data": [
+     {
+      "t": 86.4,
+      "rule": "bg-over-data",
+      "fill": "url(#near)",
+      "dataElementsCovered": 6
+     },
+     {
+      "t": 86.5,
+      "rule": "bg-over-data",
+      "fill": "url(#near)",
+      "dataElementsCovered": 6
+     },
+     {
+      "t": 86.6,
+      "rule": "bg-over-data",
+      "fill": "url(#near)",
+      "dataElementsCovered": 6
+     }
+    ],
+    "unlabelled-curve": [
+     {
+      "t": 86.4,
+      "rule": "unlabelled-curve",
+      "panel": "matrix",
+      "stroke": "#f2b441",
+      "bound": null,
+      "box": [
+       269,
+       578,
+       730,
+       751
+      ]
+     },
+     {
+      "t": 86.5,
+      "rule": "unlabelled-curve",
+      "panel": "matrix",
+      "stroke": "#f2b441",
+      "bound": null,
+      "box": [
+       269,
+       576,
+       729,
+       749
+      ]
+     },
+     {
+      "t": 86.6,
+      "rule": "unlabelled-curve",
+      "panel": "matrix",
+      "stroke": "#f2b441",
+      "bound": null,
+      "box": [
+       270,
+       565,
+       726,
+       736
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "id": "sequence",
+   "samples": 55,
+   "chart": true,
+   "issues": {
+    "bg-over-data": 55,
+    "unlabelled-curve": 190,
+    "scene-leak": 714
+   },
+   "level1": {
+    "shareExactlyOne": 0,
+    "max": 0,
+    "pass": false
+   },
+   "split": [],
+   "examples": {
+    "bg-over-data": [
+     {
+      "t": 92.4,
+      "rule": "bg-over-data",
+      "fill": "url(#near)",
+      "dataElementsCovered": 11
+     },
+     {
+      "t": 92.5,
+      "rule": "bg-over-data",
+      "fill": "url(#near)",
+      "dataElementsCovered": 11
+     },
+     {
+      "t": 92.6,
+      "rule": "bg-over-data",
+      "fill": "url(#near)",
+      "dataElementsCovered": 12
+     }
+    ],
+    "unlabelled-curve": [
+     {
+      "t": 93.1,
+      "rule": "unlabelled-curve",
+      "panel": "roads",
+      "stroke": "#2a303b",
+      "bound": null,
+      "box": [
+       -273,
+       -61,
+       521,
+       74
+      ]
+     },
+     {
+      "t": 93.1,
+      "rule": "unlabelled-curve",
+      "panel": "roads",
+      "stroke": "#f2b441",
+      "bound": null,
+      "box": [
+       -273,
+       -61,
+       521,
+       74
+      ]
+     },
+     {
+      "t": 93.2,
+      "rule": "unlabelled-curve",
+      "panel": "roads",
+      "stroke": "#2a303b",
+      "bound": null,
+      "box": [
+       -292,
+       -61,
+       428,
+       61
+      ]
+     }
+    ],
+    "scene-leak": [
+     {
+      "t": 93.7,
+      "rule": "scene-leak",
+      "panel": "roads",
+      "tag": "path",
+      "op": 0.9,
+      "box": [
+       -300,
+       60,
+       350,
+       170
+      ]
+     },
+     {
+      "t": 93.7,
+      "rule": "scene-leak",
+      "panel": "roads",
+      "tag": "path",
+      "op": 0.9,
+      "box": [
+       -300,
+       170,
+       350,
+       280
+      ]
+     },
+     {
+      "t": 93.7,
+      "rule": "scene-leak",
+      "panel": "roads",
+      "tag": "path",
+      "op": 1,
+      "box": [
+       -300,
+       60,
+       350,
+       170
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "id": "race",
+   "samples": 77,
+   "chart": true,
+   "issues": {
+    "bg-over-data": 77,
+    "unlabelled-curve": 117,
+    "axis-anchors": 116
+   },
+   "level1": {
+    "shareExactlyOne": 0,
+    "max": 0,
+    "pass": false
+   },
+   "split": [
+    {
+     "scene": "race",
+     "start": 99,
+     "durationS": 1.2,
+     "maxW": 0.833,
+     "maxH": 0.719
+    },
+    {
+     "scene": "race",
+     "start": 103.2,
+     "durationS": 1.8,
+     "maxW": 0.833,
+     "maxH": 0.248
+    }
+   ],
+   "examples": {
+    "bg-over-data": [
+     {
+      "t": 97.9,
+      "rule": "bg-over-data",
+      "fill": "url(#near)",
+      "dataElementsCovered": 20
+     },
+     {
+      "t": 98,
+      "rule": "bg-over-data",
+      "fill": "url(#near)",
+      "dataElementsCovered": 20
+     },
+     {
+      "t": 98.1,
+      "rule": "bg-over-data",
+      "fill": "url(#near)",
+      "dataElementsCovered": 20
+     }
+    ],
+    "unlabelled-curve": [
+     {
+      "t": 97.9,
+      "rule": "unlabelled-curve",
+      "panel": "roads",
+      "stroke": "#2a303b",
+      "bound": null,
+      "box": [
+       -336,
+       59,
+       315,
+       170
+      ]
+     },
+     {
+      "t": 97.9,
+      "rule": "unlabelled-curve",
+      "panel": "roads",
+      "stroke": "#2a303b",
+      "bound": null,
+      "box": [
+       -336,
+       170,
+       315,
+       280
+      ]
+     },
+     {
+      "t": 97.9,
+      "rule": "unlabelled-curve",
+      "panel": "roads",
+      "stroke": "#4c8dff",
+      "bound": null,
+      "box": [
+       -336,
+       59,
+       315,
+       170
+      ]
+     }
+    ],
+    "axis-anchors": [
+     {
+      "t": 99.8,
+      "rule": "axis-anchors",
+      "panel": "down",
+      "chart": null,
+      "axes": 1,
+      "anchors": 0
+     },
+     {
+      "t": 99.8,
+      "rule": "axis-anchors",
+      "panel": "down",
+      "chart": null,
+      "axes": 1,
+      "anchors": 0
+     },
+     {
+      "t": 99.9,
+      "rule": "axis-anchors",
+      "panel": "down",
+      "chart": null,
+      "axes": 1,
+      "anchors": 0
+     }
+    ]
+   }
+  },
+  {
+   "id": "gap",
+   "samples": 12,
+   "chart": true,
+   "issues": {
+    "bg-over-data": 12,
+    "unlabelled-curve": 24,
+    "axis-anchors": 24
+   },
+   "level1": {
+    "shareExactlyOne": 0,
+    "max": 0,
+    "pass": null
+   },
+   "split": [],
+   "examples": {
+    "bg-over-data": [
+     {
+      "t": 105.6,
+      "rule": "bg-over-data",
+      "fill": "url(#near)",
+      "dataElementsCovered": 5
+     },
+     {
+      "t": 105.7,
+      "rule": "bg-over-data",
+      "fill": "url(#near)",
+      "dataElementsCovered": 5
+     },
+     {
+      "t": 105.8,
+      "rule": "bg-over-data",
+      "fill": "url(#near)",
+      "dataElementsCovered": 5
+     }
+    ],
+    "unlabelled-curve": [
+     {
+      "t": 105.6,
+      "rule": "unlabelled-curve",
+      "panel": "down",
+      "stroke": "#4c8dff",
+      "bound": null,
+      "box": [
+       160,
+       261,
+       1760,
+       982
+      ]
+     },
+     {
+      "t": 105.6,
+      "rule": "unlabelled-curve",
+      "panel": "down",
+      "stroke": "#f2b441",
+      "bound": null,
+      "box": [
+       160,
+       269,
+       1760,
+       982
+      ]
+     },
+     {
+      "t": 105.7,
+      "rule": "unlabelled-curve",
+      "panel": "down",
+      "stroke": "#4c8dff",
+      "bound": null,
+      "box": [
+       148,
+       259,
+       1760,
+       984
+      ]
+     }
+    ],
+    "axis-anchors": [
+     {
+      "t": 105.6,
+      "rule": "axis-anchors",
+      "panel": "down",
+      "chart": null,
+      "axes": 1,
+      "anchors": 0
+     },
+     {
+      "t": 105.6,
+      "rule": "axis-anchors",
+      "panel": "down",
+      "chart": null,
+      "axes": 1,
+      "anchors": 0
+     },
+     {
+      "t": 105.7,
+      "rule": "axis-anchors",
+      "panel": "down",
+      "chart": null,
+      "axes": 1,
+      "anchors": 0
+     }
+    ]
+   }
+  },
+  {
+   "id": "cross",
+   "samples": 54,
+   "chart": true,
+   "issues": {
+    "bg-over-data": 54,
+    "unlabelled-curve": 45,
+    "axis-anchors": 108
+   },
+   "level1": {
+    "shareExactlyOne": 0,
+    "max": 0,
+    "pass": false
+   },
+   "split": [],
+   "examples": {
+    "bg-over-data": [
+     {
+      "t": 106.8,
+      "rule": "bg-over-data",
+      "fill": "url(#near)",
+      "dataElementsCovered": 2
+     },
+     {
+      "t": 106.9,
+      "rule": "bg-over-data",
+      "fill": "url(#near)",
+      "dataElementsCovered": 2
+     },
+     {
+      "t": 107,
+      "rule": "bg-over-data",
+      "fill": "url(#near)",
+      "dataElementsCovered": 2
+     }
+    ],
+    "unlabelled-curve": [
+     {
+      "t": 106.8,
+      "rule": "unlabelled-curve",
+      "panel": "down",
+      "stroke": "#4c8dff",
+      "bound": null,
+      "box": [
+       -750,
+       555,
+       1650,
+       555
+      ]
+     },
+     {
+      "t": 106.8,
+      "rule": "unlabelled-curve",
+      "panel": "down",
+      "stroke": "#f2b441",
+      "bound": null,
+      "box": [
+       -750,
+       367,
+       1650,
+       1009
+      ]
+     },
+     {
+      "t": 106.9,
+      "rule": "unlabelled-curve",
+      "panel": "down",
+      "stroke": "#4c8dff",
+      "bound": null,
+      "box": [
+       -751,
+       555,
+       1650,
+       555
+      ]
+     }
+    ],
+    "axis-anchors": [
+     {
+      "t": 106.8,
+      "rule": "axis-anchors",
+      "panel": "down",
+      "chart": null,
+      "axes": 0,
+      "anchors": 0
+     },
+     {
+      "t": 106.8,
+      "rule": "axis-anchors",
+      "panel": "down",
+      "chart": null,
+      "axes": 0,
+      "anchors": 0
+     },
+     {
+      "t": 106.9,
+      "rule": "axis-anchors",
+      "panel": "down",
+      "chart": null,
+      "axes": 0,
+      "anchors": 0
+     }
+    ]
+   }
+  },
+  {
+   "id": "downside",
+   "samples": 36,
+   "chart": true,
+   "issues": {
+    "bg-over-data": 36,
+    "unlabelled-curve": 24,
+    "axis-anchors": 44,
+    "grey-emphasis": 38,
+    "number-colour": 20
+   },
+   "level1": {
+    "shareExactlyOne": 0.56,
+    "max": 1,
+    "pass": true
+   },
+   "split": [],
+   "examples": {
+    "bg-over-data": [
+     {
+      "t": 112.2,
+      "rule": "bg-over-data",
+      "fill": "url(#near)",
+      "dataElementsCovered": 4
+     },
+     {
+      "t": 112.3,
+      "rule": "bg-over-data",
+      "fill": "url(#near)",
+      "dataElementsCovered": 4
+     },
+     {
+      "t": 112.4,
+      "rule": "bg-over-data",
+      "fill": "url(#near)",
+      "dataElementsCovered": 4
+     }
+    ],
+    "unlabelled-curve": [
+     {
+      "t": 112.2,
+      "rule": "unlabelled-curve",
+      "panel": "down",
+      "stroke": "#4c8dff",
+      "bound": null,
+      "box": [
+       -1093,
+       508,
+       1467,
+       508
+      ]
+     },
+     {
+      "t": 112.2,
+      "rule": "unlabelled-curve",
+      "panel": "down",
+      "stroke": "#f2b441",
+      "bound": null,
+      "box": [
+       -1093,
+       307,
+       1467,
+       992
+      ]
+     },
+     {
+      "t": 112.3,
+      "rule": "unlabelled-curve",
+      "panel": "down",
+      "stroke": "#4c8dff",
+      "bound": null,
+      "box": [
+       -1096,
+       507,
+       1467,
+       507
+      ]
+     }
+    ],
+    "axis-anchors": [
+     {
+      "t": 112.2,
+      "rule": "axis-anchors",
+      "panel": "down",
+      "chart": null,
+      "axes": 0,
+      "anchors": 0
+     },
+     {
+      "t": 112.2,
+      "rule": "axis-anchors",
+      "panel": "down",
+      "chart": null,
+      "axes": 0,
+      "anchors": 0
+     },
+     {
+      "t": 112.3,
+      "rule": "axis-anchors",
+      "panel": "down",
+      "chart": null,
+      "axes": 0,
+      "anchors": 0
+     }
+    ],
+    "grey-emphasis": [
+     {
+      "t": 113.7,
+      "rule": "grey-emphasis",
+      "tid": "hero459",
+      "colour": "#4c8dff",
+      "contrast": 5.91,
+      "why": "emphasis below 7:1 against bg in grey"
+     },
+     {
+      "t": 113.8,
+      "rule": "grey-emphasis",
+      "tid": "hero459",
+      "colour": "#4c8dff",
+      "contrast": 5.91,
+      "why": "emphasis below 7:1 against bg in grey"
+     },
+     {
+      "t": 113.9,
+      "rule": "grey-emphasis",
+      "tid": "hero459",
+      "colour": "#4c8dff",
+      "contrast": 5.91,
+      "why": "emphasis below 7:1 against bg in grey"
+     }
+    ],
+    "number-colour": [
+     {
+      "t": 113.7,
+      "rule": "number-colour",
+      "claim": "gap_end",
+      "colour": "#4c8dff",
+      "seriesColour": "#f2b441",
+      "via": "nearest mark (path, 17 px)"
+     },
+     {
+      "t": 113.8,
+      "rule": "number-colour",
+      "claim": "gap_end",
+      "colour": "#4c8dff",
+      "seriesColour": "#f2b441",
+      "via": "nearest mark (path, 16 px)"
+     },
+     {
+      "t": 113.9,
+      "rule": "number-colour",
+      "claim": "gap_end",
+      "colour": "#4c8dff",
+      "seriesColour": "#f2b441",
+      "via": "nearest mark (path, 16 px)"
+     }
+    ]
+   }
+  },
+  {
+   "id": "converge",
+   "samples": 60,
+   "chart": false,
+   "issues": {
+    "bg-over-data": 60,
+    "unlabelled-curve": 59,
+    "axis-anchors": 13,
+    "number-colour": 42
+   },
+   "level1": {
+    "shareExactlyOne": 0,
+    "max": 0,
+    "pass": null
+   },
+   "split": [],
+   "examples": {
+    "bg-over-data": [
+     {
+      "t": 115.8,
+      "rule": "bg-over-data",
+      "fill": "url(#near)",
+      "dataElementsCovered": 5
+     },
+     {
+      "t": 115.9,
+      "rule": "bg-over-data",
+      "fill": "url(#near)",
+      "dataElementsCovered": 5
+     },
+     {
+      "t": 116,
+      "rule": "bg-over-data",
+      "fill": "url(#near)",
+      "dataElementsCovered": 5
+     }
+    ],
+    "unlabelled-curve": [
+     {
+      "t": 115.8,
+      "rule": "unlabelled-curve",
+      "panel": "down",
+      "stroke": "#f2b441",
+      "bound": null,
+      "box": [
+       -2684,
+       -495,
+       1476,
+       618
+      ]
+     },
+     {
+      "t": 115.9,
+      "rule": "unlabelled-curve",
+      "panel": "down",
+      "stroke": "#f2b441",
+      "bound": null,
+      "box": [
+       -2658,
+       -487,
+       1492,
+       623
+      ]
+     },
+     {
+      "t": 116,
+      "rule": "unlabelled-curve",
+      "panel": "down",
+      "stroke": "#f2b441",
+      "bound": null,
+      "box": [
+       -2485,
+       -434,
+       1602,
+       660
+      ]
+     }
+    ],
+    "axis-anchors": [
+     {
+      "t": 115.8,
+      "rule": "axis-anchors",
+      "panel": "down",
+      "chart": null,
+      "axes": 0,
+      "anchors": 0
+     },
+     {
+      "t": 115.9,
+      "rule": "axis-anchors",
+      "panel": "down",
+      "chart": null,
+      "axes": 0,
+      "anchors": 0
+     },
+     {
+      "t": 116,
+      "rule": "axis-anchors",
+      "panel": "down",
+      "chart": null,
+      "axes": 0,
+      "anchors": 0
+     }
+    ],
+    "number-colour": [
+     {
+      "t": 117.5,
+      "rule": "number-colour",
+      "claim": "be_22",
+      "colour": "#4c8dff",
+      "seriesColour": "#f2b441",
+      "via": "nearest mark (path, 0 px)"
+     },
+     {
+      "t": 117.6,
+      "rule": "number-colour",
+      "claim": "be_22",
+      "colour": "#4c8dff",
+      "seriesColour": "#f2b441",
+      "via": "nearest mark (path, 0 px)"
+     },
+     {
+      "t": 117.7,
+      "rule": "number-colour",
+      "claim": "be_22",
+      "colour": "#4c8dff",
+      "seriesColour": "#f2b441",
+      "via": "nearest mark (path, 0 px)"
+     }
+    ]
+   }
+  },
+  {
+   "id": "outro",
+   "samples": 60,
+   "chart": false,
+   "issues": {
+    "bg-over-data": 60,
+    "unlabelled-curve": 446,
+    "axis-anchors": 188
+   },
+   "level1": {
+    "shareExactlyOne": 0,
+    "max": 0,
+    "pass": null
+   },
+   "split": [],
+   "examples": {
+    "bg-over-data": [
+     {
+      "t": 121.8,
+      "rule": "bg-over-data",
+      "fill": "url(#near)",
+      "dataElementsCovered": 8
+     },
+     {
+      "t": 121.9,
+      "rule": "bg-over-data",
+      "fill": "url(#near)",
+      "dataElementsCovered": 8
+     },
+     {
+      "t": 122,
+      "rule": "bg-over-data",
+      "fill": "url(#near)",
+      "dataElementsCovered": 8
+     }
+    ],
+    "unlabelled-curve": [
+     {
+      "t": 121.8,
+      "rule": "unlabelled-curve",
+      "panel": "roads",
+      "stroke": "#2a303b",
+      "bound": null,
+      "box": [
+       288,
+       489,
+       1668,
+       560
+      ]
+     },
+     {
+      "t": 121.8,
+      "rule": "unlabelled-curve",
+      "panel": "roads",
+      "stroke": "#2a303b",
+      "bound": null,
+      "box": [
+       288,
+       560,
+       1668,
+       631
+      ]
+     },
+     {
+      "t": 121.8,
+      "rule": "unlabelled-curve",
+      "panel": "roads",
+      "stroke": "#4c8dff",
+      "bound": null,
+      "box": [
+       288,
+       489,
+       1668,
+       560
+      ]
+     }
+    ],
+    "axis-anchors": [
+     {
+      "t": 122.4,
+      "rule": "axis-anchors",
+      "panel": "flip",
+      "chart": null,
+      "axes": 1,
+      "anchors": 0
+     },
+     {
+      "t": 122.4,
+      "rule": "axis-anchors",
+      "panel": "flip",
+      "chart": null,
+      "axes": 2,
+      "anchors": 0
+     },
+     {
+      "t": 122.4,
+      "rule": "axis-anchors",
+      "panel": "down",
+      "chart": null,
+      "axes": 0,
+      "anchors": 0
+     }
+    ]
+   }
+  }
+ ],
+ "seconds": 163.2
+}

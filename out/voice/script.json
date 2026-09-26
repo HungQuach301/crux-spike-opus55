@@ -1,0 +1,1087 @@
+{
+ "scenes": [
+  {
+   "id": "hook1",
+   "display": "A car loan with $25,000 left, at 5.2%.",
+   "spoken": "A car loan with twenty-five thousand dollars left, at five point two percent.",
+   "markers": [
+    {
+     "name": "balance",
+     "kind": "number",
+     "claimId": "balance",
+     "display": "$25,000",
+     "spokenForm": "twenty-five thousand dollars",
+     "word": 4,
+     "words": 3,
+     "canon": [
+      "usd:25000"
+     ]
+    },
+    {
+     "name": "apr",
+     "kind": "number",
+     "claimId": "apr",
+     "display": "5.2%",
+     "spokenForm": "five point two percent",
+     "word": 9,
+     "words": 4,
+     "canon": [
+      "pct:5.2"
+     ]
+    }
+   ],
+   "spokenWords": [
+    "A",
+    "car",
+    "loan",
+    "with",
+    "twenty-five",
+    "thousand",
+    "dollars",
+    "left,",
+    "at",
+    "five",
+    "point",
+    "two",
+    "percent."
+   ],
+   "displayWords": [
+    "A",
+    "car",
+    "loan",
+    "with",
+    "$25,000",
+    "left,",
+    "at",
+    "5.2%."
+   ]
+  },
+  {
+   "id": "hook2",
+   "display": "Pay it off early,",
+   "spoken": "Pay it off early,",
+   "markers": [
+    {
+     "name": "A",
+     "kind": "anchor",
+     "word": 0
+    }
+   ],
+   "spokenWords": [
+    "Pay",
+    "it",
+    "off",
+    "early,"
+   ],
+   "displayWords": [
+    "Pay",
+    "it",
+    "off",
+    "early,"
+   ]
+  },
+  {
+   "id": "hook2b",
+   "display": "or invest the extra cash?",
+   "spoken": "or invest the extra cash?",
+   "markers": [
+    {
+     "name": "B",
+     "kind": "anchor",
+     "word": 1
+    }
+   ],
+   "spokenWords": [
+    "or",
+    "invest",
+    "the",
+    "extra",
+    "cash?"
+   ],
+   "displayWords": [
+    "or",
+    "invest",
+    "the",
+    "extra",
+    "cash?"
+   ]
+  },
+  {
+   "id": "hook3",
+   "display": "We ran both roads through all 48 months, taxing every lot.",
+   "spoken": "We ran both roads through all forty-eight months, taxing every lot.",
+   "markers": [
+    {
+     "name": "months",
+     "kind": "number",
+     "claimId": "months",
+     "display": "48",
+     "spokenForm": "forty-eight",
+     "word": 6,
+     "words": 1,
+     "canon": [
+      "num:48"
+     ]
+    },
+    {
+     "name": "lots",
+     "kind": "anchor",
+     "word": 9
+    }
+   ],
+   "spokenWords": [
+    "We",
+    "ran",
+    "both",
+    "roads",
+    "through",
+    "all",
+    "forty-eight",
+    "months,",
+    "taxing",
+    "every",
+    "lot."
+   ],
+   "displayWords": [
+    "We",
+    "ran",
+    "both",
+    "roads",
+    "through",
+    "all",
+    "48",
+    "months,",
+    "taxing",
+    "every",
+    "lot."
+   ]
+  },
+  {
+   "id": "hook4",
+   "display": "The answer flips at an average annual return of 6.11%, compounded, in the 22% tax bracket.",
+   "spoken": "The answer flips at an average annual return of six point one one percent, compounded, in the twenty-two percent tax bracket.",
+   "markers": [
+    {
+     "name": "be_22",
+     "kind": "number",
+     "claimId": "be_22",
+     "display": "6.11%",
+     "spokenForm": "six point one one percent",
+     "word": 9,
+     "words": 5,
+     "canon": [
+      "pct:6.11"
+     ]
+    },
+    {
+     "name": "ord_22",
+     "kind": "number",
+     "claimId": "ord_22",
+     "display": "22%",
+     "spokenForm": "twenty-two percent",
+     "word": 17,
+     "words": 2,
+     "canon": [
+      "pct:22"
+     ]
+    }
+   ],
+   "spokenWords": [
+    "The",
+    "answer",
+    "flips",
+    "at",
+    "an",
+    "average",
+    "annual",
+    "return",
+    "of",
+    "six",
+    "point",
+    "one",
+    "one",
+    "percent,",
+    "compounded,",
+    "in",
+    "the",
+    "twenty-two",
+    "percent",
+    "tax",
+    "bracket."
+   ],
+   "displayWords": [
+    "The",
+    "answer",
+    "flips",
+    "at",
+    "an",
+    "average",
+    "annual",
+    "return",
+    "of",
+    "6.11%,",
+    "compounded,",
+    "in",
+    "the",
+    "22%",
+    "tax",
+    "bracket."
+   ]
+  },
+  {
+   "id": "hook5",
+   "display": "Below it, paying off ends ahead. Above it, investing does.",
+   "spoken": "Below it, paying off ends ahead. Above it, investing does.",
+   "markers": [
+    {
+     "name": "below",
+     "kind": "anchor",
+     "word": 2
+    },
+    {
+     "name": "above",
+     "kind": "anchor",
+     "word": 8
+    }
+   ],
+   "spokenWords": [
+    "Below",
+    "it,",
+    "paying",
+    "off",
+    "ends",
+    "ahead.",
+    "Above",
+    "it,",
+    "investing",
+    "does."
+   ],
+   "displayWords": [
+    "Below",
+    "it,",
+    "paying",
+    "off",
+    "ends",
+    "ahead.",
+    "Above",
+    "it,",
+    "investing",
+    "does."
+   ]
+  },
+  {
+   "id": "ident",
+   "display": "",
+   "spoken": "",
+   "markers": [],
+   "spokenWords": [],
+   "displayWords": []
+  },
+  {
+   "id": "setup",
+   "display": "Here is the setup.",
+   "spoken": "Here is the setup.",
+   "markers": [
+    {
+     "name": "setup",
+     "kind": "anchor",
+     "word": 3
+    }
+   ],
+   "spokenWords": [
+    "Here",
+    "is",
+    "the",
+    "setup."
+   ],
+   "displayWords": [
+    "Here",
+    "is",
+    "the",
+    "setup."
+   ]
+  },
+  {
+   "id": "scope1",
+   "display": "The rules here are US tax rules, and every input is stated, not forecast.",
+   "spoken": "The rules here are U.S. tax rules, and every input is stated, not forecast.",
+   "markers": [
+    {
+     "name": "us",
+     "kind": "anchor",
+     "word": 4
+    },
+    {
+     "name": "stated",
+     "kind": "anchor",
+     "word": 11
+    }
+   ],
+   "spokenWords": [
+    "The",
+    "rules",
+    "here",
+    "are",
+    "U.S.",
+    "tax",
+    "rules,",
+    "and",
+    "every",
+    "input",
+    "is",
+    "stated,",
+    "not",
+    "forecast."
+   ],
+   "displayWords": [
+    "The",
+    "rules",
+    "here",
+    "are",
+    "US",
+    "tax",
+    "rules,",
+    "and",
+    "every",
+    "input",
+    "is",
+    "stated,",
+    "not",
+    "forecast."
+   ]
+  },
+  {
+   "id": "scope2",
+   "display": "Loan interest is treated as not deductible, so the model ignores the new-car loan interest deduction for 2025 to 2028.",
+   "spoken": "Loan interest is treated as not deductible, so the model ignores the new-car loan interest deduction for twenty twenty-five to twenty twenty-eight.",
+   "markers": [
+    {
+     "name": "nd",
+     "kind": "anchor",
+     "word": 5
+    },
+    {
+     "name": "ded_y0",
+     "kind": "number",
+     "claimId": "ded_y0",
+     "display": "2025",
+     "spokenForm": "twenty twenty-five",
+     "word": 17,
+     "words": 2,
+     "canon": [
+      "year:2025"
+     ]
+    },
+    {
+     "name": "ded_y1",
+     "kind": "number",
+     "claimId": "ded_y1",
+     "display": "2028",
+     "spokenForm": "twenty twenty-eight",
+     "word": 20,
+     "words": 2,
+     "canon": [
+      "year:2028"
+     ]
+    }
+   ],
+   "spokenWords": [
+    "Loan",
+    "interest",
+    "is",
+    "treated",
+    "as",
+    "not",
+    "deductible,",
+    "so",
+    "the",
+    "model",
+    "ignores",
+    "the",
+    "new-car",
+    "loan",
+    "interest",
+    "deduction",
+    "for",
+    "twenty",
+    "twenty-five",
+    "to",
+    "twenty",
+    "twenty-eight."
+   ],
+   "displayWords": [
+    "Loan",
+    "interest",
+    "is",
+    "treated",
+    "as",
+    "not",
+    "deductible,",
+    "so",
+    "the",
+    "model",
+    "ignores",
+    "the",
+    "new-car",
+    "loan",
+    "interest",
+    "deduction",
+    "for",
+    "2025",
+    "to",
+    "2028."
+   ]
+  },
+  {
+   "id": "facts",
+   "display": "The loan has $25,000 left at 5.2%, with 48 monthly payments of $578.",
+   "spoken": "The loan has twenty-five thousand dollars left at five point two percent, with forty-eight monthly payments of five hundred seventy-eight dollars.",
+   "markers": [
+    {
+     "name": "balance",
+     "kind": "number",
+     "claimId": "balance",
+     "display": "$25,000",
+     "spokenForm": "twenty-five thousand dollars",
+     "word": 3,
+     "words": 3,
+     "canon": [
+      "usd:25000"
+     ]
+    },
+    {
+     "name": "apr",
+     "kind": "number",
+     "claimId": "apr",
+     "display": "5.2%",
+     "spokenForm": "five point two percent",
+     "word": 8,
+     "words": 4,
+     "canon": [
+      "pct:5.2"
+     ]
+    },
+    {
+     "name": "months",
+     "kind": "number",
+     "claimId": "months",
+     "display": "48",
+     "spokenForm": "forty-eight",
+     "word": 13,
+     "words": 1,
+     "canon": [
+      "num:48"
+     ]
+    },
+    {
+     "name": "payment",
+     "kind": "number",
+     "claimId": "payment",
+     "display": "$578",
+     "spokenForm": "five hundred seventy-eight dollars",
+     "word": 17,
+     "words": 4,
+     "canon": [
+      "usd:578"
+     ]
+    }
+   ],
+   "spokenWords": [
+    "The",
+    "loan",
+    "has",
+    "twenty-five",
+    "thousand",
+    "dollars",
+    "left",
+    "at",
+    "five",
+    "point",
+    "two",
+    "percent,",
+    "with",
+    "forty-eight",
+    "monthly",
+    "payments",
+    "of",
+    "five",
+    "hundred",
+    "seventy-eight",
+    "dollars."
+   ],
+   "displayWords": [
+    "The",
+    "loan",
+    "has",
+    "$25,000",
+    "left",
+    "at",
+    "5.2%,",
+    "with",
+    "48",
+    "monthly",
+    "payments",
+    "of",
+    "$578."
+   ]
+  },
+  {
+   "id": "extra",
+   "display": "On top of that, $400 a month is available. That amount is illustrative.",
+   "spoken": "On top of that, four hundred dollars a month is available. That amount is illustrative.",
+   "markers": [
+    {
+     "name": "extra",
+     "kind": "number",
+     "claimId": "extra",
+     "display": "$400",
+     "spokenForm": "four hundred dollars",
+     "word": 4,
+     "words": 3,
+     "canon": [
+      "usd:400"
+     ]
+    },
+    {
+     "name": "illu",
+     "kind": "anchor",
+     "word": 14
+    }
+   ],
+   "spokenWords": [
+    "On",
+    "top",
+    "of",
+    "that,",
+    "four",
+    "hundred",
+    "dollars",
+    "a",
+    "month",
+    "is",
+    "available.",
+    "That",
+    "amount",
+    "is",
+    "illustrative."
+   ],
+   "displayWords": [
+    "On",
+    "top",
+    "of",
+    "that,",
+    "$400",
+    "a",
+    "month",
+    "is",
+    "available.",
+    "That",
+    "amount",
+    "is",
+    "illustrative."
+   ]
+  },
+  {
+   "id": "roads",
+   "display": "Road A sends it to the loan. Road B pays the minimum and invests it every month.",
+   "spoken": "Road A sends it to the loan. Road B pays the minimum and invests it every month.",
+   "markers": [
+    {
+     "name": "A",
+     "kind": "anchor",
+     "word": 0
+    },
+    {
+     "name": "B",
+     "kind": "anchor",
+     "word": 7
+    }
+   ],
+   "spokenWords": [
+    "Road",
+    "A",
+    "sends",
+    "it",
+    "to",
+    "the",
+    "loan.",
+    "Road",
+    "B",
+    "pays",
+    "the",
+    "minimum",
+    "and",
+    "invests",
+    "it",
+    "every",
+    "month."
+   ],
+   "displayWords": [
+    "Road",
+    "A",
+    "sends",
+    "it",
+    "to",
+    "the",
+    "loan.",
+    "Road",
+    "B",
+    "pays",
+    "the",
+    "minimum",
+    "and",
+    "invests",
+    "it",
+    "every",
+    "month."
+   ]
+  },
+  {
+   "id": "cash",
+   "display": "Both roads spend the same cash each month. Only the order changes.",
+   "spoken": "Both roads spend the same cash each month. Only the order changes.",
+   "markers": [
+    {
+     "name": "same",
+     "kind": "anchor",
+     "word": 3
+    },
+    {
+     "name": "order",
+     "kind": "anchor",
+     "word": 10
+    }
+   ],
+   "spokenWords": [
+    "Both",
+    "roads",
+    "spend",
+    "the",
+    "same",
+    "cash",
+    "each",
+    "month.",
+    "Only",
+    "the",
+    "order",
+    "changes."
+   ],
+   "displayWords": [
+    "Both",
+    "roads",
+    "spend",
+    "the",
+    "same",
+    "cash",
+    "each",
+    "month.",
+    "Only",
+    "the",
+    "order",
+    "changes."
+   ]
+  },
+  {
+   "id": "card1",
+   "display": "First, the certain part.",
+   "spoken": "First, the certain part.",
+   "markers": [],
+   "spokenWords": [
+    "First,",
+    "the",
+    "certain",
+    "part."
+   ],
+   "displayWords": [
+    "First,",
+    "the",
+    "certain",
+    "part."
+   ]
+  },
+  {
+   "id": "timeline",
+   "display": "Road A pays off the loan at month 28. Road B keeps paying through month 48.",
+   "spoken": "Road A pays off the loan at month twenty-eight. Road B keeps paying through month forty-eight.",
+   "markers": [
+    {
+     "name": "payoff_a",
+     "kind": "number",
+     "claimId": "payoff_a",
+     "display": "28",
+     "spokenForm": "twenty-eight",
+     "word": 8,
+     "words": 1,
+     "canon": [
+      "month:28"
+     ]
+    },
+    {
+     "name": "horizon",
+     "kind": "number",
+     "claimId": "horizon",
+     "display": "48",
+     "spokenForm": "forty-eight",
+     "word": 15,
+     "words": 1,
+     "canon": [
+      "month:48"
+     ]
+    }
+   ],
+   "spokenWords": [
+    "Road",
+    "A",
+    "pays",
+    "off",
+    "the",
+    "loan",
+    "at",
+    "month",
+    "twenty-eight.",
+    "Road",
+    "B",
+    "keeps",
+    "paying",
+    "through",
+    "month",
+    "forty-eight."
+   ],
+   "displayWords": [
+    "Road",
+    "A",
+    "pays",
+    "off",
+    "the",
+    "loan",
+    "at",
+    "month",
+    "28.",
+    "Road",
+    "B",
+    "keeps",
+    "paying",
+    "through",
+    "month",
+    "48."
+   ]
+  },
+  {
+   "id": "free",
+   "display": "That leaves 20 months with no car payment on road A.",
+   "spoken": "That leaves twenty months with no car payment on road A.",
+   "markers": [
+    {
+     "name": "months_free",
+     "kind": "number",
+     "claimId": "months_free",
+     "display": "20",
+     "spokenForm": "twenty",
+     "word": 2,
+     "words": 1,
+     "canon": [
+      "num:20"
+     ]
+    }
+   ],
+   "spokenWords": [
+    "That",
+    "leaves",
+    "twenty",
+    "months",
+    "with",
+    "no",
+    "car",
+    "payment",
+    "on",
+    "road",
+    "A."
+   ],
+   "displayWords": [
+    "That",
+    "leaves",
+    "20",
+    "months",
+    "with",
+    "no",
+    "car",
+    "payment",
+    "on",
+    "road",
+    "A."
+   ]
+  },
+  {
+   "id": "interest",
+   "display": "Interest paid falls from $2,744 to $1,554.",
+   "spoken": "Interest paid falls from two thousand seven hundred forty-four dollars to one thousand five hundred fifty-four dollars.",
+   "markers": [
+    {
+     "name": "int_b",
+     "kind": "number",
+     "claimId": "int_b",
+     "display": "$2,744",
+     "spokenForm": "two thousand seven hundred forty-four dollars",
+     "word": 4,
+     "words": 6,
+     "canon": [
+      "usd:2744"
+     ]
+    },
+    {
+     "name": "int_a",
+     "kind": "number",
+     "claimId": "int_a",
+     "display": "$1,554",
+     "spokenForm": "one thousand five hundred fifty-four dollars",
+     "word": 11,
+     "words": 6,
+     "canon": [
+      "usd:1554"
+     ]
+    }
+   ],
+   "spokenWords": [
+    "Interest",
+    "paid",
+    "falls",
+    "from",
+    "two",
+    "thousand",
+    "seven",
+    "hundred",
+    "forty-four",
+    "dollars",
+    "to",
+    "one",
+    "thousand",
+    "five",
+    "hundred",
+    "fifty-four",
+    "dollars."
+   ],
+   "displayWords": [
+    "Interest",
+    "paid",
+    "falls",
+    "from",
+    "$2,744",
+    "to",
+    "$1,554."
+   ]
+  },
+  {
+   "id": "avoided",
+   "display": "Road A avoids $1,190 of interest. That does not depend on markets or taxes.",
+   "spoken": "Road A avoids one thousand one hundred ninety dollars of interest. That does not depend on markets or taxes.",
+   "markers": [
+    {
+     "name": "avoided",
+     "kind": "number",
+     "claimId": "avoided",
+     "display": "$1,190",
+     "spokenForm": "one thousand one hundred ninety dollars",
+     "word": 3,
+     "words": 6,
+     "canon": [
+      "usd:1190"
+     ]
+    }
+   ],
+   "spokenWords": [
+    "Road",
+    "A",
+    "avoids",
+    "one",
+    "thousand",
+    "one",
+    "hundred",
+    "ninety",
+    "dollars",
+    "of",
+    "interest.",
+    "That",
+    "does",
+    "not",
+    "depend",
+    "on",
+    "markets",
+    "or",
+    "taxes."
+   ],
+   "displayWords": [
+    "Road",
+    "A",
+    "avoids",
+    "$1,190",
+    "of",
+    "interest.",
+    "That",
+    "does",
+    "not",
+    "depend",
+    "on",
+    "markets",
+    "or",
+    "taxes."
+   ]
+  },
+  {
+   "id": "certain",
+   "display": "It is certain.",
+   "spoken": "It is certain.",
+   "markers": [
+    {
+     "name": "certain",
+     "kind": "anchor",
+     "word": 2
+    }
+   ],
+   "spokenWords": [
+    "It",
+    "is",
+    "certain."
+   ],
+   "displayWords": [
+    "It",
+    "is",
+    "certain."
+   ]
+  },
+  {
+   "id": "identity",
+   "display": "Because both roads spend the same cash, road A ends up investing exactly $1,190 more than road B.",
+   "spoken": "Because both roads spend the same cash, road A ends up investing exactly one thousand one hundred ninety dollars more than road B.",
+   "markers": [
+    {
+     "name": "avoided",
+     "kind": "number",
+     "claimId": "avoided",
+     "display": "$1,190",
+     "spokenForm": "one thousand one hundred ninety dollars",
+     "word": 13,
+     "words": 6,
+     "canon": [
+      "usd:1190"
+     ]
+    }
+   ],
+   "spokenWords": [
+    "Because",
+    "both",
+    "roads",
+    "spend",
+    "the",
+    "same",
+    "cash,",
+    "road",
+    "A",
+    "ends",
+    "up",
+    "investing",
+    "exactly",
+    "one",
+    "thousand",
+    "one",
+    "hundred",
+    "ninety",
+    "dollars",
+    "more",
+    "than",
+    "road",
+    "B."
+   ],
+   "displayWords": [
+    "Because",
+    "both",
+    "roads",
+    "spend",
+    "the",
+    "same",
+    "cash,",
+    "road",
+    "A",
+    "ends",
+    "up",
+    "investing",
+    "exactly",
+    "$1,190",
+    "more",
+    "than",
+    "road",
+    "B."
+   ]
+  },
+  {
+   "id": "bridge",
+   "display": "So the question is narrow: can road B's head start in the market beat a certain $1,190, after tax?",
+   "spoken": "So the question is narrow: can road B's head start in the market beat a certain one thousand one hundred ninety dollars, after tax?",
+   "markers": [
+    {
+     "name": "head",
+     "kind": "anchor",
+     "word": 8
+    },
+    {
+     "name": "avoided",
+     "kind": "number",
+     "claimId": "avoided",
+     "display": "$1,190",
+     "spokenForm": "one thousand one hundred ninety dollars",
+     "word": 16,
+     "words": 6,
+     "canon": [
+      "usd:1190"
+     ]
+    }
+   ],
+   "spokenWords": [
+    "So",
+    "the",
+    "question",
+    "is",
+    "narrow:",
+    "can",
+    "road",
+    "B's",
+    "head",
+    "start",
+    "in",
+    "the",
+    "market",
+    "beat",
+    "a",
+    "certain",
+    "one",
+    "thousand",
+    "one",
+    "hundred",
+    "ninety",
+    "dollars,",
+    "after",
+    "tax?"
+   ],
+   "displayWords": [
+    "So",
+    "the",
+    "question",
+    "is",
+    "narrow:",
+    "can",
+    "road",
+    "B's",
+    "head",
+    "start",
+    "in",
+    "the",
+    "market",
+    "beat",
+    "a",
+    "certain",
+    "$1,190,",
+    "after",
+    "tax?"
+   ]
+  }
+ ]
+}

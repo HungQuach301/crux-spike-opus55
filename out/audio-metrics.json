@@ -1,22 +1,56 @@
 {
  "reference": {
   "narrationRefLUFS": -16.0,
-  "note": "0 dB reference = -16 LUFS integrated, where a narration track would sit. No loudness target is imposed on the mix; values are reported only."
+  "note": "0 dB = -16 LUFS integrated = the voice layer. The master is then raised to -14 LUFS."
  },
- "finalMix": {
-  "integratedLUFS": -31.1,
-  "truePeakDBTP": -13.47,
-  "ffmpegEbur128": {
-   "integratedLUFS": -31.1,
-   "truePeakDBFS": -13.5
+ "master": {
+  "wav": {
+   "integratedLUFS": -14.01,
+   "truePeakDBTP": -2.0
+  },
+  "encoded": {
+   "file": "out/video.mp4",
+   "ownMeter": {
+    "integratedLUFS": -14.05,
+    "truePeakDBTP": -1.98
+   },
+   "ffmpegEbur128": {
+    "integratedLUFS": -14.1,
+    "truePeakDBFS": -2.0,
+    "LRA": 3.8
+   },
+   "pass": {
+    "integrated -14 \u00b11": true,
+    "truePeak <= -1 dBTP": true
+   }
+  },
+  "settings": {
+   "gainDB": 1.97,
+   "limiterMaxReductionDB": -0.93,
+   "limiterTime": {
+    "shareOver1dB": 0.0,
+    "shareOver3dB": 0.0
+   },
+   "ceilingDBTP": -2.0,
+   "targetLUFS": -14.0
   }
  },
  "layers": {
+  "voice": {
+   "integratedLUFS": -16.0,
+   "relToRefDB": -0.0,
+   "target": "0 dB (-16 LUFS)",
+   "pass": true
+  },
   "music": {
    "integratedLUFS": -36.0,
    "relToRefDB": -20.0,
-   "target": "-18 to -22 dB",
+   "target": "-18 to -22 dB (test B level, before ducking)",
    "pass": true
+  },
+  "musicDucked": {
+   "integratedLUFS": -36.81,
+   "relToRefDB": -20.81
   },
   "ambience": {
    "integratedLUFS": -56.0,
@@ -38,938 +72,591 @@
    "minRelDB": -14.0,
    "maxRelDB": -9.0,
    "target": "-8 to -14 dB",
-   "integratedLUFS_whileActive": -27.93,
    "pass": true
   }
  },
- "sfxCountPerType": {
-  "appear": 24,
-  "transition": 17,
-  "count": 43,
-  "compare": 3,
-  "reveal": 3,
-  "emphasis": 6,
-  "dismiss": 4,
-  "threshold-cross": 2
+ "musicUnderVoice": {
+  "definition": "400 ms blocks (100 ms hop) where the voice is active in >= 80% of the block and music is not silent; difference of energy-mean loudness voice - music (ducked)",
+  "blocks": 792,
+  "voiceMinusMusicDB": 21.38,
+  "target": "18-22 dB",
+  "pass": true,
+  "perBlock": {
+   "p10": 17.5,
+   "median": 21.3,
+   "p90": 24.0,
+   "shareIn18to22": 0.475
+  },
+  "duckDB": 1.0
  },
- "sfxTypesUsed": [
-  "appear",
-  "compare",
-  "count",
-  "dismiss",
-  "emphasis",
-  "reveal",
-  "threshold-cross",
-  "transition"
+ "chapters": [
+  {
+   "chapter": "hook",
+   "start": 0,
+   "end": 30.0,
+   "voiceLUFS": -16.08,
+   "musicLUFS": -36.92,
+   "masterLUFS": -14.11,
+   "voiceMinusMusicInVoiceWindowsDB": 21.47
+  },
+  {
+   "chapter": "ident",
+   "start": 30,
+   "end": 33,
+   "voiceLUFS": null,
+   "musicLUFS": -35.75,
+   "masterLUFS": -27.28,
+   "voiceMinusMusicInVoiceWindowsDB": null
+  },
+  {
+   "chapter": "setup",
+   "start": 33,
+   "end": 78.6,
+   "voiceLUFS": -16.09,
+   "musicLUFS": -36.78,
+   "masterLUFS": -14.06,
+   "voiceMinusMusicInVoiceWindowsDB": 21.31
+  },
+  {
+   "chapter": "ch1",
+   "start": 78.6,
+   "end": 127.8,
+   "voiceLUFS": -15.87,
+   "musicLUFS": -36.84,
+   "masterLUFS": -13.83,
+   "voiceMinusMusicInVoiceWindowsDB": 21.39
+  }
  ],
+ "sfxCountPerType": {
+  "appear": 21,
+  "reveal": 7,
+  "transition": 18,
+  "compare": 3,
+  "dismiss": 2,
+  "count": 5,
+  "emphasis": 4,
+  "threshold-cross": 1
+ },
  "sfxTypesExactly8": true,
+ "sfxEvents": 61,
+ "sfxEventsPerSecond": 0.477,
  "sfxDensity": {
-  "percent": 34.9,
+  "percent": 32.7,
   "definition": "share of 50 ms windows where the SFX layer RMS exceeds the median room-tone RMS (-56.8 dBFS)",
   "target": "30-40%",
   "pass": true
  },
  "sync": {
-  "maxAbsOffsetMs": 33.3,
-  "meanAbsOffsetMs": 17.3,
-  "meanSignedOffsetMs": -17.3,
-  "eventsMeasured": 102,
-  "eventsTotal": 102,
+  "maxAbsOffsetMs": 38.3,
+  "meanAbsOffsetMs": 19.8,
+  "eventsMeasured": 61,
+  "eventsTotal": 61,
   "limitMs": 60,
   "pass": true,
-  "method": "audio onset: argmax of cross-correlation between sfx.wav and the fixed buffer of that type within +-150 ms; visual onset: first rendered frame whose DOM shows the event (data-ev probe with opacity > 0.02).",
+  "unmeasured": [],
   "events": [
    {
-    "id": "open:title",
+    "id": "hook1:hkBal",
     "type": "appear",
-    "timelineT": 0.6,
-    "audioOnsetT": 0.6,
-    "visualT": 0.6333,
+    "timelineT": 1.095,
+    "audioOnsetT": 1.095,
+    "visualT": 1.1333,
+    "offsetMs": -38.3
+   },
+   {
+    "id": "hook1:hkApr",
+    "type": "reveal",
+    "timelineT": 3.255,
+    "audioOnsetT": 3.2573,
+    "visualT": 3.2667,
+    "offsetMs": -9.4
+   },
+   {
+    "id": "hook2:cam",
+    "type": "transition",
+    "timelineT": 5.4,
+    "audioOnsetT": 5.4,
+    "visualT": 5.4,
+    "offsetMs": 0.0
+   },
+   {
+    "id": "hook2:hkRoadA",
+    "type": "appear",
+    "timelineT": 5.9,
+    "audioOnsetT": 5.9,
+    "visualT": 5.9333,
     "offsetMs": -33.3
    },
    {
-    "id": "open:skeleton",
+    "id": "hook2b:hkRoadB",
     "type": "appear",
-    "timelineT": 2.4,
-    "audioOnsetT": 2.4,
-    "visualT": 2.4333,
+    "timelineT": 8.3,
+    "audioOnsetT": 8.3,
+    "visualT": 8.3333,
     "offsetMs": -33.3
+   },
+   {
+    "id": "hook3:cam",
+    "type": "transition",
+    "timelineT": 10.2,
+    "audioOnsetT": 10.2,
+    "visualT": 10.2,
+    "offsetMs": 0.0
+   },
+   {
+    "id": "hook3:hkMonths",
+    "type": "appear",
+    "timelineT": 12.295,
+    "audioOnsetT": 12.295,
+    "visualT": 12.3333,
+    "offsetMs": -38.3
+   },
+   {
+    "id": "hook3:hkLots",
+    "type": "compare",
+    "timelineT": 13.935,
+    "audioOnsetT": 13.935,
+    "visualT": 13.9667,
+    "offsetMs": -31.7
+   },
+   {
+    "id": "hook4:cam",
+    "type": "transition",
+    "timelineT": 15.6,
+    "audioOnsetT": 15.6,
+    "visualT": 15.6,
+    "offsetMs": 0.0
+   },
+   {
+    "id": "hook4:hkBe",
+    "type": "reveal",
+    "timelineT": 18.955,
+    "audioOnsetT": 18.9573,
+    "visualT": 18.9667,
+    "offsetMs": -9.4
+   },
+   {
+    "id": "hook4:hkBracket",
+    "type": "appear",
+    "timelineT": 22.175,
+    "audioOnsetT": 22.175,
+    "visualT": 22.2,
+    "offsetMs": -25.0
+   },
+   {
+    "id": "hook5:cam",
+    "type": "transition",
+    "timelineT": 24.6,
+    "audioOnsetT": 24.6,
+    "visualT": 24.6,
+    "offsetMs": 0.0
+   },
+   {
+    "id": "hook5:hkBelow",
+    "type": "appear",
+    "timelineT": 25.895,
+    "audioOnsetT": 25.895,
+    "visualT": 25.9333,
+    "offsetMs": -38.3
+   },
+   {
+    "id": "hook5:hkAbove",
+    "type": "appear",
+    "timelineT": 28.595,
+    "audioOnsetT": 28.595,
+    "visualT": 28.6333,
+    "offsetMs": -38.3
+   },
+   {
+    "id": "ident:dismissHook",
+    "type": "dismiss",
+    "timelineT": 30,
+    "audioOnsetT": 30.0,
+    "visualT": 30.0333,
+    "offsetMs": -33.3
+   },
+   {
+    "id": "ident:cam",
+    "type": "transition",
+    "timelineT": 30,
+    "audioOnsetT": 30.0,
+    "visualT": 30,
+    "offsetMs": 0.0
+   },
+   {
+    "id": "ident:crux",
+    "type": "reveal",
+    "timelineT": 30.6,
+    "audioOnsetT": 30.6023,
+    "visualT": 30.6333,
+    "offsetMs": -31.0
+   },
+   {
+    "id": "setup:cam",
+    "type": "transition",
+    "timelineT": 33,
+    "audioOnsetT": 33.0,
+    "visualT": 33,
+    "offsetMs": 0.0
+   },
+   {
+    "id": "setup:setupWord",
+    "type": "appear",
+    "timelineT": 33.795,
+    "audioOnsetT": 33.795,
+    "visualT": 33.8333,
+    "offsetMs": -38.3
+   },
+   {
+    "id": "scope1:usOnly",
+    "type": "appear",
+    "timelineT": 36.155,
+    "audioOnsetT": 36.155,
+    "visualT": 36.1667,
+    "offsetMs": -11.7
+   },
+   {
+    "id": "scope1:stated",
+    "type": "appear",
+    "timelineT": 38.995,
+    "audioOnsetT": 38.995,
+    "visualT": 39.0333,
+    "offsetMs": -38.3
+   },
+   {
+    "id": "scope2:cam",
+    "type": "transition",
+    "timelineT": 41.4,
+    "audioOnsetT": 41.4,
+    "visualT": 41.4,
+    "offsetMs": 0.0
+   },
+   {
+    "id": "scope2:notDed",
+    "type": "appear",
+    "timelineT": 43.295,
+    "audioOnsetT": 43.295,
+    "visualT": 43.3333,
+    "offsetMs": -38.3
+   },
+   {
+    "id": "scope2:dedY0",
+    "type": "appear",
+    "timelineT": 47.735,
+    "audioOnsetT": 47.735,
+    "visualT": 47.7667,
+    "offsetMs": -31.7
+   },
+   {
+    "id": "scope2:dedY1",
+    "type": "count",
+    "timelineT": 48.995,
+    "audioOnsetT": 48.995,
+    "visualT": 49.0333,
+    "offsetMs": -38.3
    },
    {
     "id": "facts:cam",
     "type": "transition",
-    "timelineT": 7.8,
-    "audioOnsetT": 7.8,
-    "visualT": 7.8,
+    "timelineT": 50.4,
+    "audioOnsetT": 50.4,
+    "visualT": 50.4,
     "offsetMs": 0.0
    },
    {
-    "id": "facts:balance",
-    "type": "count",
-    "timelineT": 8.7,
-    "audioOnsetT": 8.7,
-    "visualT": 8.7333,
-    "offsetMs": -33.3
+    "id": "facts:fBal",
+    "type": "reveal",
+    "timelineT": 51.155,
+    "audioOnsetT": 51.1573,
+    "visualT": 51.1667,
+    "offsetMs": -9.4
    },
    {
-    "id": "facts:factsline",
+    "id": "facts:fApr",
     "type": "appear",
-    "timelineT": 10.5,
-    "audioOnsetT": 10.5,
-    "visualT": 10.5333,
-    "offsetMs": -33.3
+    "timelineT": 53.195,
+    "audioOnsetT": 53.195,
+    "visualT": 53.2333,
+    "offsetMs": -38.3
+   },
+   {
+    "id": "facts:fMonths",
+    "type": "count",
+    "timelineT": 54.815,
+    "audioOnsetT": 54.815,
+    "visualT": 54.8333,
+    "offsetMs": -18.3
+   },
+   {
+    "id": "facts:fPay",
+    "type": "count",
+    "timelineT": 56.515,
+    "audioOnsetT": 56.515,
+    "visualT": 56.5333,
+    "offsetMs": -18.3
    },
    {
     "id": "extra:cam",
     "type": "transition",
-    "timelineT": 13.8,
-    "audioOnsetT": 13.8,
-    "visualT": 13.8,
+    "timelineT": 58.8,
+    "audioOnsetT": 58.8,
+    "visualT": 58.8,
     "offsetMs": 0.0
    },
    {
-    "id": "extra:extra",
-    "type": "appear",
-    "timelineT": 14.4,
-    "audioOnsetT": 14.4,
-    "visualT": 14.4333,
-    "offsetMs": -33.3
+    "id": "extra:xExtra",
+    "type": "reveal",
+    "timelineT": 60.615,
+    "audioOnsetT": 60.6173,
+    "visualT": 60.6333,
+    "offsetMs": -16.0
+   },
+   {
+    "id": "extra:xIllu",
+    "type": "emphasis",
+    "timelineT": 64.355,
+    "audioOnsetT": 64.355,
+    "visualT": 64.3667,
+    "offsetMs": -11.7
    },
    {
     "id": "roads:cam",
     "type": "transition",
-    "timelineT": 16.2,
-    "audioOnsetT": 16.2,
-    "visualT": 16.2,
+    "timelineT": 66,
+    "audioOnsetT": 66.0,
+    "visualT": 66,
     "offsetMs": 0.0
    },
    {
-    "id": "roads:roadA",
+    "id": "roads:rA",
     "type": "appear",
-    "timelineT": 17.4,
-    "audioOnsetT": 17.4,
-    "visualT": 17.4333,
+    "timelineT": 66.5,
+    "audioOnsetT": 66.5,
+    "visualT": 66.5333,
     "offsetMs": -33.3
    },
    {
-    "id": "roads:roadB",
+    "id": "roads:rB",
     "type": "appear",
-    "timelineT": 18.6,
-    "audioOnsetT": 18.6,
-    "visualT": 18.6333,
-    "offsetMs": -33.3
+    "timelineT": 69.18,
+    "audioOnsetT": 69.18,
+    "visualT": 69.2,
+    "offsetMs": -20.0
    },
    {
-    "id": "roads:roadsCompare",
-    "type": "compare",
-    "timelineT": 19.8,
-    "audioOnsetT": 19.8,
-    "visualT": 19.8,
-    "offsetMs": 0.0
-   },
-   {
-    "id": "timeline:cam",
-    "type": "transition",
-    "timelineT": 23.4,
-    "audioOnsetT": 23.4,
-    "visualT": 23.4,
-    "offsetMs": 0.0
-   },
-   {
-    "id": "timeline:tlBars",
-    "type": "appear",
-    "timelineT": 24,
-    "audioOnsetT": 24.0,
-    "visualT": 24,
-    "offsetMs": 0.0
-   },
-   {
-    "id": "timeline:tlA",
-    "type": "appear",
-    "timelineT": 25.2,
-    "audioOnsetT": 25.2,
-    "visualT": 25.2333,
-    "offsetMs": -33.3
-   },
-   {
-    "id": "timeline:tlB",
-    "type": "appear",
-    "timelineT": 26.1,
-    "audioOnsetT": 26.1,
-    "visualT": 26.1333,
-    "offsetMs": -33.3
-   },
-   {
-    "id": "interest:cam",
-    "type": "transition",
-    "timelineT": 28.2,
-    "audioOnsetT": 28.2,
-    "visualT": 28.2,
-    "offsetMs": 0.0
-   },
-   {
-    "id": "interest:intRoll",
-    "type": "count",
-    "timelineT": 29.7,
-    "audioOnsetT": 29.7,
-    "visualT": 29.7333,
-    "offsetMs": -33.3
-   },
-   {
-    "id": "interest:avoided",
-    "type": "reveal",
-    "timelineT": 31.5,
-    "audioOnsetT": 31.5023,
-    "visualT": 31.5333,
-    "offsetMs": -31.0
-   },
-   {
-    "id": "interest:certainLine",
-    "type": "emphasis",
-    "timelineT": 32.4,
-    "audioOnsetT": 32.4,
-    "visualT": 32.4333,
-    "offsetMs": -33.3
-   },
-   {
-    "id": "scope:dismissL",
+    "id": "cash:dismissFork",
     "type": "dismiss",
-    "timelineT": 34.8,
-    "audioOnsetT": 34.8,
-    "visualT": 34.8,
-    "offsetMs": 0.0
-   },
-   {
-    "id": "scope:cam",
-    "type": "transition",
-    "timelineT": 34.8,
-    "audioOnsetT": 34.8,
-    "visualT": 34.8,
-    "offsetMs": 0.0
-   },
-   {
-    "id": "scope:scope",
-    "type": "appear",
-    "timelineT": 36,
-    "audioOnsetT": 36.0,
-    "visualT": 36.0333,
-    "offsetMs": -33.3
-   },
-   {
-    "id": "tax:cam",
-    "type": "transition",
-    "timelineT": 39.6,
-    "audioOnsetT": 39.6,
-    "visualT": 39.6,
-    "offsetMs": 0.0
-   },
-   {
-    "id": "tax:taxHead",
-    "type": "appear",
-    "timelineT": 40.5,
-    "audioOnsetT": 40.5,
-    "visualT": 40.5333,
-    "offsetMs": -33.3
-   },
-   {
-    "id": "tax:taxRows",
-    "type": "appear",
-    "timelineT": 41.4,
-    "audioOnsetT": 41.4,
-    "visualT": 41.4333,
-    "offsetMs": -33.3
-   },
-   {
-    "id": "bars:cam",
-    "type": "transition",
-    "timelineT": 45.6,
-    "audioOnsetT": 45.6,
-    "visualT": 45.6,
-    "offsetMs": 0.0
-   },
-   {
-    "id": "bars:barA",
-    "type": "appear",
-    "timelineT": 46.5,
-    "audioOnsetT": 46.5,
-    "visualT": 46.5333,
-    "offsetMs": -33.3
-   },
-   {
-    "id": "bars:barB",
-    "type": "appear",
-    "timelineT": 47.7,
-    "audioOnsetT": 47.7,
-    "visualT": 47.7333,
-    "offsetMs": -33.3
-   },
-   {
-    "id": "bars:barsCompare",
-    "type": "compare",
-    "timelineT": 48.9,
-    "audioOnsetT": 48.9,
-    "visualT": 48.9,
-    "offsetMs": 0.0
-   },
-   {
-    "id": "bars:slider",
-    "type": "appear",
-    "timelineT": 50.1,
-    "audioOnsetT": 50.1,
-    "visualT": 50.1333,
-    "offsetMs": -33.3
-   },
-   {
-    "id": "sweep:step1",
-    "type": "count",
-    "timelineT": 53.6812,
-    "audioOnsetT": 53.6812,
-    "visualT": 53.7,
-    "offsetMs": -18.8
-   },
-   {
-    "id": "sweep:step2",
-    "type": "count",
-    "timelineT": 53.9625,
-    "audioOnsetT": 53.9625,
-    "visualT": 53.9667,
-    "offsetMs": -4.2
-   },
-   {
-    "id": "sweep:step3",
-    "type": "count",
-    "timelineT": 54.2437,
-    "audioOnsetT": 54.2437,
-    "visualT": 54.2667,
-    "offsetMs": -23.0
-   },
-   {
-    "id": "sweep:step4",
-    "type": "count",
-    "timelineT": 54.525,
-    "audioOnsetT": 54.525,
-    "visualT": 54.5333,
-    "offsetMs": -8.3
-   },
-   {
-    "id": "sweep:step5",
-    "type": "count",
-    "timelineT": 54.8062,
-    "audioOnsetT": 54.8062,
-    "visualT": 54.8333,
-    "offsetMs": -27.1
-   },
-   {
-    "id": "sweep:step6",
-    "type": "count",
-    "timelineT": 55.0875,
-    "audioOnsetT": 55.0875,
-    "visualT": 55.1,
-    "offsetMs": -12.5
-   },
-   {
-    "id": "sweep:step7",
-    "type": "count",
-    "timelineT": 55.3687,
-    "audioOnsetT": 55.3687,
-    "visualT": 55.4,
-    "offsetMs": -31.3
-   },
-   {
-    "id": "sweep:step8",
-    "type": "count",
-    "timelineT": 55.65,
-    "audioOnsetT": 55.65,
-    "visualT": 55.6667,
-    "offsetMs": -16.7
-   },
-   {
-    "id": "sweep:step9",
-    "type": "count",
-    "timelineT": 55.9312,
-    "audioOnsetT": 55.9312,
-    "visualT": 55.9333,
-    "offsetMs": -2.1
-   },
-   {
-    "id": "sweep:step10",
-    "type": "count",
-    "timelineT": 56.2125,
-    "audioOnsetT": 56.2125,
-    "visualT": 56.2333,
-    "offsetMs": -20.8
-   },
-   {
-    "id": "sweep:step11",
-    "type": "count",
-    "timelineT": 56.4937,
-    "audioOnsetT": 56.4937,
-    "visualT": 56.5,
-    "offsetMs": -6.3
-   },
-   {
-    "id": "sweep:step12",
-    "type": "count",
-    "timelineT": 56.775,
-    "audioOnsetT": 56.775,
-    "visualT": 56.8,
-    "offsetMs": -25.0
-   },
-   {
-    "id": "sweep:step13",
-    "type": "count",
-    "timelineT": 57.0562,
-    "audioOnsetT": 57.0562,
-    "visualT": 57.0667,
-    "offsetMs": -10.5
-   },
-   {
-    "id": "sweep:step14",
-    "type": "count",
-    "timelineT": 57.3375,
-    "audioOnsetT": 57.3375,
-    "visualT": 57.3667,
-    "offsetMs": -29.2
-   },
-   {
-    "id": "sweep:step15",
-    "type": "count",
-    "timelineT": 57.6187,
-    "audioOnsetT": 57.6187,
-    "visualT": 57.6333,
-    "offsetMs": -14.6
-   },
-   {
-    "id": "sweep:step16",
-    "type": "count",
-    "timelineT": 57.9,
-    "audioOnsetT": 57.9,
-    "visualT": 57.9,
-    "offsetMs": 0.0
-   },
-   {
-    "id": "sweep:step17",
-    "type": "count",
-    "timelineT": 58.1812,
-    "audioOnsetT": 58.1812,
-    "visualT": 58.2,
-    "offsetMs": -18.8
-   },
-   {
-    "id": "sweep:step18",
-    "type": "count",
-    "timelineT": 58.4625,
-    "audioOnsetT": 58.4625,
-    "visualT": 58.4667,
-    "offsetMs": -4.2
-   },
-   {
-    "id": "sweep:step19",
-    "type": "count",
-    "timelineT": 58.7437,
-    "audioOnsetT": 58.7437,
-    "visualT": 58.7667,
-    "offsetMs": -23.0
-   },
-   {
-    "id": "sweep:cross19",
-    "type": "threshold-cross",
-    "timelineT": 58.7437,
-    "audioOnsetT": 58.7437,
-    "visualT": 58.7667,
-    "offsetMs": -23.0
-   },
-   {
-    "id": "sweep:step20",
-    "type": "count",
-    "timelineT": 59.025,
-    "audioOnsetT": 59.025,
-    "visualT": 59.0333,
-    "offsetMs": -8.3
-   },
-   {
-    "id": "sweep:step21",
-    "type": "count",
-    "timelineT": 59.3062,
-    "audioOnsetT": 59.3062,
-    "visualT": 59.3333,
-    "offsetMs": -27.1
-   },
-   {
-    "id": "sweep:step22",
-    "type": "count",
-    "timelineT": 59.5875,
-    "audioOnsetT": 59.5875,
-    "visualT": 59.6,
-    "offsetMs": -12.5
-   },
-   {
-    "id": "sweep:step23",
-    "type": "count",
-    "timelineT": 59.8687,
-    "audioOnsetT": 59.8687,
-    "visualT": 59.9,
-    "offsetMs": -31.3
-   },
-   {
-    "id": "sweep:step24",
-    "type": "count",
-    "timelineT": 60.15,
-    "audioOnsetT": 60.15,
-    "visualT": 60.1667,
-    "offsetMs": -16.7
-   },
-   {
-    "id": "sweep:step25",
-    "type": "count",
-    "timelineT": 60.4312,
-    "audioOnsetT": 60.4312,
-    "visualT": 60.4333,
-    "offsetMs": -2.1
-   },
-   {
-    "id": "sweep:step26",
-    "type": "count",
-    "timelineT": 60.7125,
-    "audioOnsetT": 60.7125,
-    "visualT": 60.7333,
-    "offsetMs": -20.8
-   },
-   {
-    "id": "sweep:step27",
-    "type": "count",
-    "timelineT": 60.9937,
-    "audioOnsetT": 60.9937,
-    "visualT": 61,
-    "offsetMs": -6.3
-   },
-   {
-    "id": "sweep:step28",
-    "type": "count",
-    "timelineT": 61.275,
-    "audioOnsetT": 61.275,
-    "visualT": 61.3,
-    "offsetMs": -25.0
-   },
-   {
-    "id": "sweep:step29",
-    "type": "count",
-    "timelineT": 61.5562,
-    "audioOnsetT": 61.5562,
-    "visualT": 61.5667,
-    "offsetMs": -10.5
-   },
-   {
-    "id": "sweep:step30",
-    "type": "count",
-    "timelineT": 61.8375,
-    "audioOnsetT": 61.8375,
-    "visualT": 61.8667,
-    "offsetMs": -29.2
-   },
-   {
-    "id": "sweep:step31",
-    "type": "count",
-    "timelineT": 62.1187,
-    "audioOnsetT": 62.1187,
-    "visualT": 62.1333,
-    "offsetMs": -14.6
-   },
-   {
-    "id": "sweep:step32",
-    "type": "count",
-    "timelineT": 62.4,
-    "audioOnsetT": 62.4,
-    "visualT": 62.4,
-    "offsetMs": 0.0
-   },
-   {
-    "id": "settle:land",
-    "type": "emphasis",
-    "timelineT": 65.4,
-    "audioOnsetT": 65.4,
-    "visualT": 65.4,
-    "offsetMs": 0.0
-   },
-   {
-    "id": "morph:cam",
-    "type": "transition",
-    "timelineT": 66.6,
-    "audioOnsetT": 66.6,
-    "visualT": 66.6,
-    "offsetMs": 0.0
-   },
-   {
-    "id": "detail:hero670",
-    "type": "reveal",
-    "timelineT": 69.1,
-    "audioOnsetT": 69.1023,
-    "visualT": 69.1333,
-    "offsetMs": -31.0
-   },
-   {
-    "id": "detail:underline670",
-    "type": "emphasis",
-    "timelineT": 70,
-    "audioOnsetT": 70.0,
-    "visualT": 70,
-    "offsetMs": 0.0
-   },
-   {
-    "id": "flip:cam",
-    "type": "transition",
-    "timelineT": 72,
-    "audioOnsetT": 72.0,
-    "visualT": 72,
-    "offsetMs": 0.0
-   },
-   {
-    "id": "flip:below",
-    "type": "appear",
     "timelineT": 73.2,
     "audioOnsetT": 73.2,
     "visualT": 73.2333,
     "offsetMs": -33.3
    },
    {
-    "id": "flip:above",
-    "type": "appear",
-    "timelineT": 74.4,
-    "audioOnsetT": 74.4,
-    "visualT": 74.4333,
-    "offsetMs": -33.3
-   },
-   {
-    "id": "flip:arrow",
-    "type": "emphasis",
-    "timelineT": 75.3,
-    "audioOnsetT": 75.3,
-    "visualT": 75.3333,
-    "offsetMs": -33.3
-   },
-   {
-    "id": "matrix:cam",
+    "id": "cash:cam",
     "type": "transition",
-    "timelineT": 78,
-    "audioOnsetT": 78.0,
-    "visualT": 78,
+    "timelineT": 73.2,
+    "audioOnsetT": 73.2,
+    "visualT": 73.2,
     "offsetMs": 0.0
    },
    {
-    "id": "matrix:matrixHead",
+    "id": "cash:cashCols",
     "type": "appear",
-    "timelineT": 78.9,
-    "audioOnsetT": 78.9,
-    "visualT": 78.9333,
-    "offsetMs": -33.3
-   },
-   {
-    "id": "matrix:matrixRoll",
-    "type": "count",
-    "timelineT": 79.8,
-    "audioOnsetT": 79.8,
-    "visualT": 79.8333,
-    "offsetMs": -33.3
-   },
-   {
-    "id": "matrix32:circle32",
-    "type": "emphasis",
-    "timelineT": 85.5,
-    "audioOnsetT": 85.5,
-    "visualT": 85.5333,
-    "offsetMs": -33.3
-   },
-   {
-    "id": "certain:cam",
-    "type": "transition",
-    "timelineT": 86.4,
-    "audioOnsetT": 86.4,
-    "visualT": 86.4,
+    "timelineT": 73.7,
+    "audioOnsetT": 73.7,
+    "visualT": 73.7,
     "offsetMs": 0.0
    },
    {
-    "id": "certain:columns",
+    "id": "cash:cashSame",
     "type": "compare",
-    "timelineT": 87.6,
-    "audioOnsetT": 87.6,
-    "visualT": 87.6333,
+    "timelineT": 74.395,
+    "audioOnsetT": 74.395,
+    "visualT": 74.4333,
+    "offsetMs": -38.3
+   },
+   {
+    "id": "cash:cashOrder",
+    "type": "emphasis",
+    "timelineT": 76.955,
+    "audioOnsetT": 76.955,
+    "visualT": 76.9667,
+    "offsetMs": -11.7
+   },
+   {
+    "id": "card1:cam",
+    "type": "transition",
+    "timelineT": 78.6,
+    "audioOnsetT": 78.6,
+    "visualT": 78.6333,
     "offsetMs": -33.3
    },
    {
-    "id": "sequence:dismissM",
-    "type": "dismiss",
-    "timelineT": 92.4,
-    "audioOnsetT": 92.4,
-    "visualT": 92.4,
+    "id": "card1:card1",
+    "type": "appear",
+    "timelineT": 79.1,
+    "audioOnsetT": 79.1,
+    "visualT": 79.1333,
+    "offsetMs": -33.3
+   },
+   {
+    "id": "timeline:cam",
+    "type": "transition",
+    "timelineT": 81,
+    "audioOnsetT": 81.0,
+    "visualT": 81,
     "offsetMs": 0.0
    },
    {
-    "id": "sequence:cam",
-    "type": "transition",
-    "timelineT": 92.4,
-    "audioOnsetT": 92.4,
-    "visualT": 92.4,
-    "offsetMs": 0.0
-   },
-   {
-    "id": "sequence:seqText",
+    "id": "timeline:tlAxis",
     "type": "appear",
-    "timelineT": 93.9,
-    "audioOnsetT": 93.9,
-    "visualT": 93.9333,
+    "timelineT": 81.6,
+    "audioOnsetT": 81.6,
+    "visualT": 81.6333,
     "offsetMs": -33.3
    },
    {
-    "id": "race:cam",
-    "type": "transition",
-    "timelineT": 97.8,
-    "audioOnsetT": 97.8,
-    "visualT": 97.8333,
-    "offsetMs": -33.3
-   },
-   {
-    "id": "race:raceAxes",
-    "type": "appear",
-    "timelineT": 98.4,
-    "audioOnsetT": 98.4,
-    "visualT": 98.4333,
-    "offsetMs": -33.3
-   },
-   {
-    "id": "race:month6",
-    "type": "count",
-    "timelineT": 99.4875,
-    "audioOnsetT": 99.4875,
-    "visualT": 99.5,
-    "offsetMs": -12.5
-   },
-   {
-    "id": "race:month12",
-    "type": "count",
-    "timelineT": 100.275,
-    "audioOnsetT": 100.275,
-    "visualT": 100.3,
+    "id": "timeline:tlA",
+    "type": "threshold-cross",
+    "timelineT": 82.975,
+    "audioOnsetT": 82.975,
+    "visualT": 83,
     "offsetMs": -25.0
    },
    {
-    "id": "race:month18",
-    "type": "count",
-    "timelineT": 101.0625,
-    "audioOnsetT": 101.0625,
-    "visualT": 101.0667,
-    "offsetMs": -4.2
+    "id": "timeline:tlB",
+    "type": "appear",
+    "timelineT": 86.175,
+    "audioOnsetT": 86.175,
+    "visualT": 86.2,
+    "offsetMs": -25.0
    },
    {
-    "id": "race:month24",
-    "type": "count",
-    "timelineT": 101.85,
-    "audioOnsetT": 101.85,
-    "visualT": 101.8667,
-    "offsetMs": -16.7
-   },
-   {
-    "id": "race:month30",
-    "type": "count",
-    "timelineT": 102.6375,
-    "audioOnsetT": 102.6375,
-    "visualT": 102.6667,
-    "offsetMs": -29.2
-   },
-   {
-    "id": "race:month36",
-    "type": "count",
-    "timelineT": 103.425,
-    "audioOnsetT": 103.425,
-    "visualT": 103.4333,
-    "offsetMs": -8.3
-   },
-   {
-    "id": "race:month42",
-    "type": "count",
-    "timelineT": 104.2125,
-    "audioOnsetT": 104.2125,
-    "visualT": 104.2333,
-    "offsetMs": -20.8
-   },
-   {
-    "id": "race:month48",
-    "type": "count",
-    "timelineT": 105,
-    "audioOnsetT": 105.0,
-    "visualT": 105,
-    "offsetMs": 0.0
-   },
-   {
-    "id": "gap:cam",
+    "id": "free:cam",
     "type": "transition",
-    "timelineT": 105.6,
-    "audioOnsetT": 105.6,
-    "visualT": 105.6,
+    "timelineT": 87.6,
+    "audioOnsetT": 87.6,
+    "visualT": 87.6,
     "offsetMs": 0.0
    },
    {
-    "id": "cross:gapLabel",
-    "type": "appear",
-    "timelineT": 107.4,
-    "audioOnsetT": 107.4,
-    "visualT": 107.4333,
-    "offsetMs": -33.3
-   },
-   {
-    "id": "cross:crossMark",
-    "type": "threshold-cross",
-    "timelineT": 109.2,
-    "audioOnsetT": 109.2,
-    "visualT": 109.2,
-    "offsetMs": 0.0
-   },
-   {
-    "id": "cross:crossText",
-    "type": "appear",
-    "timelineT": 110.1,
-    "audioOnsetT": 110.1,
-    "visualT": 110.1333,
-    "offsetMs": -33.3
-   },
-   {
-    "id": "downside:hero459",
-    "type": "reveal",
-    "timelineT": 113.5,
-    "audioOnsetT": 113.5023,
-    "visualT": 113.5333,
-    "offsetMs": -31.0
-   },
-   {
-    "id": "downside:underline459",
+    "id": "free:free20",
     "type": "emphasis",
-    "timelineT": 114.4,
-    "audioOnsetT": 114.4,
-    "visualT": 114.4,
-    "offsetMs": 0.0
+    "timelineT": 88.115,
+    "audioOnsetT": 88.115,
+    "visualT": 88.1333,
+    "offsetMs": -18.3
    },
    {
-    "id": "converge:dismissD",
-    "type": "dismiss",
-    "timelineT": 115.8,
-    "audioOnsetT": 115.8,
-    "visualT": 115.8,
-    "offsetMs": 0.0
-   },
-   {
-    "id": "converge:cam",
+    "id": "interest:cam",
     "type": "transition",
-    "timelineT": 115.8,
-    "audioOnsetT": 115.8,
-    "visualT": 115.8,
+    "timelineT": 92.4,
+    "audioOnsetT": 92.4,
+    "visualT": 92.4,
     "offsetMs": 0.0
    },
    {
-    "id": "converge:convergeText",
-    "type": "appear",
-    "timelineT": 117.3,
-    "audioOnsetT": 117.3,
-    "visualT": 117.3333,
+    "id": "interest:intB",
+    "type": "count",
+    "timelineT": 94.035,
+    "audioOnsetT": 94.035,
+    "visualT": 94.0667,
+    "offsetMs": -31.7
+   },
+   {
+    "id": "interest:intA",
+    "type": "count",
+    "timelineT": 96.915,
+    "audioOnsetT": 96.915,
+    "visualT": 96.9333,
+    "offsetMs": -18.3
+   },
+   {
+    "id": "avoided:cam",
+    "type": "transition",
+    "timelineT": 99.6,
+    "audioOnsetT": 99.6,
+    "visualT": 99.6333,
     "offsetMs": -33.3
    },
    {
-    "id": "outro:cam",
+    "id": "avoided:avd",
+    "type": "reveal",
+    "timelineT": 101.455,
+    "audioOnsetT": 101.4573,
+    "visualT": 101.4667,
+    "offsetMs": -9.4
+   },
+   {
+    "id": "certain:certainLine",
+    "type": "emphasis",
+    "timelineT": 108.835,
+    "audioOnsetT": 108.835,
+    "visualT": 108.8667,
+    "offsetMs": -31.7
+   },
+   {
+    "id": "identity:cam",
     "type": "transition",
-    "timelineT": 121.8,
-    "audioOnsetT": 121.8,
-    "visualT": 121.8,
+    "timelineT": 110.4,
+    "audioOnsetT": 110.4,
+    "visualT": 110.4,
     "offsetMs": 0.0
    },
    {
-    "id": "outro:outroText",
+    "id": "identity:eqRight",
     "type": "appear",
-    "timelineT": 123,
-    "audioOnsetT": 123.0,
-    "visualT": 123.0333,
+    "timelineT": 111.4,
+    "audioOnsetT": 111.4,
+    "visualT": 111.4333,
     "offsetMs": -33.3
    },
    {
-    "id": "outro:fadeAll",
-    "type": "dismiss",
-    "timelineT": 126.9,
-    "audioOnsetT": 126.9,
-    "visualT": 126.9,
+    "id": "identity:eqVal",
+    "type": "compare",
+    "timelineT": 115.315,
+    "audioOnsetT": 115.315,
+    "visualT": 115.3333,
+    "offsetMs": -18.3
+   },
+   {
+    "id": "bridge:cam",
+    "type": "transition",
+    "timelineT": 119.4,
+    "audioOnsetT": 119.4,
+    "visualT": 119.4,
     "offsetMs": 0.0
+   },
+   {
+    "id": "bridge:brB",
+    "type": "appear",
+    "timelineT": 122.535,
+    "audioOnsetT": 122.535,
+    "visualT": 122.5667,
+    "offsetMs": -31.7
+   },
+   {
+    "id": "bridge:brVal",
+    "type": "reveal",
+    "timelineT": 124.335,
+    "audioOnsetT": 124.3373,
+    "visualT": 124.3667,
+    "offsetMs": -29.4
    }
   ]
  },
  "silences": {
-  "count": 3,
+  "count": 1,
   "max": 3,
   "events": [
    {
-    "start": 65.0,
-    "end": 65.4,
-    "durationMs": 400,
-    "followedBy": "settle:land"
-   },
-   {
-    "start": 108.8,
-    "end": 109.2,
-    "durationMs": 400,
-    "followedBy": "cross:crossMark"
-   },
-   {
-    "start": 113.1,
-    "end": 113.5,
-    "durationMs": 400,
-    "followedBy": "downside:hero459"
+    "start": 101.06,
+    "end": 101.45,
+    "durationMs": 390,
+    "followedBy": "avoided:avd"
    }
   ],
   "pass": true
- },
- "music": {
-  "bpm": 100,
-  "beatSeconds": 0.6,
-  "phraseBeatsPerScene": [
-   13,
-   10,
-   4,
-   12,
-   8,
-   11,
-   8,
-   10,
-   12,
-   18,
-   5,
-   2,
-   7,
-   10,
-   12,
-   2,
-   10,
-   9,
-   13,
-   2,
-   9,
-   6,
-   10,
-   10
-  ],
-  "textureBySection": {
-   "setup": {
-    "rmsDBFS": -41.1,
-    "spectralCentroidHz": 1151.0
-   },
-   "sweep": {
-    "rmsDBFS": -39.2,
-    "spectralCentroidHz": 639.0
-   },
-   "tension": {
-    "rmsDBFS": -38.8,
-    "spectralCentroidHz": 806.0
-   },
-   "resolution": {
-    "rmsDBFS": -41.6,
-    "spectralCentroidHz": 694.0
-   }
-  },
-  "note": "Tempo and phrase lengths derive from the scene timeline: every scene is a whole number of beats, chords change on cuts."
  },
  "format": {
   "sampleRate": 48000,

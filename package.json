@@ -15,7 +15,20 @@
     "motion:check": "node render-motion/check.js",
     "motion:measure": "python3 audio/measure.py && python3 audio/motion_metrics.py",
     "motion:export": "node render-motion/export.js",
-    "motion:all": "npm run motion:test && npm run motion:render && npm run motion:audio && npm run motion:mux && npm run motion:check && npm run motion:measure && npm run motion:export"
+    "motion:all": "npm run motion:test && npm run motion:render && npm run motion:audio && npm run motion:mux && npm run motion:check && npm run motion:measure && npm run motion:export",
+    "av:prepare": "node src/av/prepare.js",
+    "av:tts": "python3 audio/av_tts.py",
+    "av:asr": "python3 audio/av_asr.py",
+    "av:asrcheck": "node src/av/asrcheck.js",
+    "av:timeline": "node render-av/build-data.js",
+    "av:render": "node render-av/render.js",
+    "av:mix": "python3 audio/av_mix.py",
+    "av:subs": "node src/av/subtitles.js",
+    "av:mux": "node render-av/mux.js",
+    "av:check": "node render-av/check.js && node render-av/rules-run.js c && node src/av/numsync.js && python3 audio/av_measure.py && python3 audio/av_motion.py out/.video-only.mp4",
+    "av:export": "node render-av/export.js",
+    "av:rules-b": "node render-av/rules-run.js b",
+    "av:all": "npm test && npm run av:prepare && npm run av:tts && npm run av:asr && npm run av:asrcheck && npm run av:timeline && npm run av:render && npm run av:mix && npm run av:subs && npm run av:mux && npm run av:check && npm run av:export"
   },
   "repository": {
     "type": "git",

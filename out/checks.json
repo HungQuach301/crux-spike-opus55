@@ -5,42 +5,42 @@
  "keyframes": [
   {
    "name": "establishing",
-   "scene": "open",
-   "t": 5.5,
-   "issues": [],
-   "words": 10,
-   "l1": 1
-  },
-  {
-   "name": "slider-mid-sweep",
-   "scene": "sweep",
-   "t": 57.9,
-   "issues": [],
-   "words": 12,
-   "l1": 0
-  },
-  {
-   "name": "crossover",
-   "scene": "flip",
-   "t": 76.8,
-   "issues": [],
-   "words": 9,
-   "l1": 1
-  },
-  {
-   "name": "break-even-detail",
-   "scene": "detail",
-   "t": 70.8,
-   "issues": [],
-   "words": 5,
-   "l1": 1
-  },
-  {
-   "name": "downside-path",
-   "scene": "cross",
-   "t": 111.4,
+   "scene": "hook3",
+   "t": 15.06,
    "issues": [],
    "words": 8,
+   "l1": 1
+  },
+  {
+   "name": "break-even-teaser",
+   "scene": "hook4",
+   "t": 23.25,
+   "issues": [],
+   "words": 7,
+   "l1": 1
+  },
+  {
+   "name": "same-cash",
+   "scene": "cash",
+   "t": 77.79,
+   "issues": [],
+   "words": 8,
+   "l1": 1
+  },
+  {
+   "name": "payoff-month",
+   "scene": "timeline",
+   "t": 86.94,
+   "issues": [],
+   "words": 8,
+   "l1": 1
+  },
+  {
+   "name": "interest-avoided",
+   "scene": "certain",
+   "t": 110.16,
+   "issues": [],
+   "words": 4,
    "l1": 1
   }
  ]

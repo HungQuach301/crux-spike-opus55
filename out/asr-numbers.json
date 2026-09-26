@@ -1,0 +1,242 @@
+{
+ "asrModel": "faster-whisper small.en (int8, CPU, beam 5)",
+ "spokenNumbers": 20,
+ "correct": 20,
+ "percent": 100,
+ "pass": true,
+ "mismatches": [],
+ "scenes": [
+  {
+   "scene": "hook1",
+   "asrText": "A car loan with $25,000 left at 5.2%.",
+   "expected": [
+    "usd:25000",
+    "pct:5.2"
+   ],
+   "heard": [
+    "usd:25000",
+    "pct:5.2"
+   ],
+   "matched": 2,
+   "of": 2
+  },
+  {
+   "scene": "hook2",
+   "asrText": "Pay it off early.",
+   "expected": [],
+   "heard": [],
+   "matched": 0,
+   "of": 0
+  },
+  {
+   "scene": "hook2b",
+   "asrText": "or invest the extra cash.",
+   "expected": [],
+   "heard": [],
+   "matched": 0,
+   "of": 0
+  },
+  {
+   "scene": "hook3",
+   "asrText": "We ran both roads through all 48 months, taxing every lot.",
+   "expected": [
+    "num:48"
+   ],
+   "heard": [
+    "num:48"
+   ],
+   "matched": 1,
+   "of": 1
+  },
+  {
+   "scene": "hook4",
+   "asrText": "The answer flips at an average annual return of 6.11% compounded in the 22% tax bracket.",
+   "expected": [
+    "pct:6.11",
+    "pct:22"
+   ],
+   "heard": [
+    "pct:6.11",
+    "pct:22"
+   ],
+   "matched": 2,
+   "of": 2
+  },
+  {
+   "scene": "hook5",
+   "asrText": "Below it, paying off ends ahead. Above it, investing does.",
+   "expected": [],
+   "heard": [],
+   "matched": 0,
+   "of": 0
+  },
+  {
+   "scene": "setup",
+   "asrText": "Here is the setup.",
+   "expected": [],
+   "heard": [],
+   "matched": 0,
+   "of": 0
+  },
+  {
+   "scene": "scope1",
+   "asrText": "The rules here are US tax rules, and every input is stated, not forecast.",
+   "expected": [],
+   "heard": [],
+   "matched": 0,
+   "of": 0
+  },
+  {
+   "scene": "scope2",
+   "asrText": "Loan interest is treated as not deductible, so the model ignores the new car loan interest deduction for 2025 to 2028.",
+   "expected": [
+    "year:2025",
+    "year:2028"
+   ],
+   "heard": [
+    "year:2025",
+    "year:2028"
+   ],
+   "matched": 2,
+   "of": 2
+  },
+  {
+   "scene": "facts",
+   "asrText": "The loan has $25,000 left at 5.2% with 48 monthly payments of $578.",
+   "expected": [
+    "usd:25000",
+    "pct:5.2",
+    "num:48",
+    "usd:578"
+   ],
+   "heard": [
+    "usd:25000",
+    "pct:5.2",
+    "num:48",
+    "usd:578"
+   ],
+   "matched": 4,
+   "of": 4
+  },
+  {
+   "scene": "extra",
+   "asrText": "On top of that, $400 a month is available. That amount is illustrative.",
+   "expected": [
+    "usd:400"
+   ],
+   "heard": [
+    "usd:400"
+   ],
+   "matched": 1,
+   "of": 1
+  },
+  {
+   "scene": "roads",
+   "asrText": "Road A sends it to the loan. Road B pays the minimum and invests it every month.",
+   "expected": [],
+   "heard": [],
+   "matched": 0,
+   "of": 0
+  },
+  {
+   "scene": "cash",
+   "asrText": "Both roads spend the same cash each month. Only the order changes.",
+   "expected": [],
+   "heard": [],
+   "matched": 0,
+   "of": 0
+  },
+  {
+   "scene": "card1",
+   "asrText": "first, the certain part.",
+   "expected": [],
+   "heard": [],
+   "matched": 0,
+   "of": 0
+  },
+  {
+   "scene": "timeline",
+   "asrText": "Road A pays off the loan at month 28. Road B keeps paying through month 48.",
+   "expected": [
+    "month:28",
+    "month:48"
+   ],
+   "heard": [
+    "month:28",
+    "month:48"
+   ],
+   "matched": 2,
+   "of": 2
+  },
+  {
+   "scene": "free",
+   "asrText": "That leaves 20 months with no car payment on road A.",
+   "expected": [
+    "num:20"
+   ],
+   "heard": [
+    "num:20"
+   ],
+   "matched": 1,
+   "of": 1
+  },
+  {
+   "scene": "interest",
+   "asrText": "Interest paid falls from $2,744 to $1,554.",
+   "expected": [
+    "usd:2744",
+    "usd:1554"
+   ],
+   "heard": [
+    "usd:2744",
+    "usd:1554"
+   ],
+   "matched": 2,
+   "of": 2
+  },
+  {
+   "scene": "avoided",
+   "asrText": "Road A avoids $1,190 of interest. That does not depend on markets or taxes.",
+   "expected": [
+    "usd:1190"
+   ],
+   "heard": [
+    "usd:1190"
+   ],
+   "matched": 1,
+   "of": 1
+  },
+  {
+   "scene": "certain",
+   "asrText": "It is certain.",
+   "expected": [],
+   "heard": [],
+   "matched": 0,
+   "of": 0
+  },
+  {
+   "scene": "identity",
+   "asrText": "Because both roads spend the same cash, Road A ends up investing exactly $1,190 more than Road B.",
+   "expected": [
+    "usd:1190"
+   ],
+   "heard": [
+    "usd:1190"
+   ],
+   "matched": 1,
+   "of": 1
+  },
+  {
+   "scene": "bridge",
+   "asrText": "So the question is narrow. Can road B's head start in the market beat a certain $1,190 after tax?",
+   "expected": [
+    "usd:1190"
+   ],
+   "heard": [
+    "usd:1190"
+   ],
+   "matched": 1,
+   "of": 1
+  }
+ ]
+}

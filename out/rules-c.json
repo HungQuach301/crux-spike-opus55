@@ -1,0 +1,339 @@
+{
+ "target": "test C (render-av)",
+ "sampledEvery": "3 frames (0.1 s)",
+ "samples": 1278,
+ "definitions": {
+  "split-view": "changed elements between t and t+0.1s with the camera frozen (an element present in both frames counts only the region where its old and new boxes differ); violation when the union box of changes exceeds 60% of frame width or height for >= 1s, outside camera moves",
+  "level1": "chart scenes of >= 2 s: exactly one visible .l1 (opacity > 0.5) in >= 50% of samples, never two",
+  "exemptions": "scene-leak and split-view skip the camera move at the start of each scene"
+ },
+ "summary": {
+  "scene-leak": {
+   "framesFlagged": 0,
+   "scenes": [],
+   "pass": true
+  },
+  "bg-over-data": {
+   "framesFlagged": 0,
+   "scenes": [],
+   "pass": true
+  },
+  "unlabelled-curve": {
+   "framesFlagged": 0,
+   "scenes": [],
+   "pass": true
+  },
+  "axis-anchors": {
+   "framesFlagged": 0,
+   "scenes": [],
+   "pass": true
+  },
+  "grey-emphasis": {
+   "framesFlagged": 0,
+   "scenes": [],
+   "pass": true
+  },
+  "number-colour": {
+   "framesFlagged": 0,
+   "scenes": [],
+   "pass": true
+  },
+  "level1": {
+   "scenes": [],
+   "pass": true
+  },
+  "split-view": {
+   "scenes": [],
+   "pass": true
+  }
+ },
+ "scenes": [
+  {
+   "id": "hook1",
+   "samples": 54,
+   "chart": false,
+   "issues": {},
+   "level1": {
+    "shareExactlyOne": 0.33,
+    "max": 1,
+    "pass": null
+   },
+   "split": [],
+   "examples": {}
+  },
+  {
+   "id": "hook2",
+   "samples": 25,
+   "chart": false,
+   "issues": {},
+   "level1": {
+    "shareExactlyOne": 0,
+    "max": 0,
+    "pass": null
+   },
+   "split": [],
+   "examples": {}
+  },
+  {
+   "id": "hook2b",
+   "samples": 23,
+   "chart": false,
+   "issues": {},
+   "level1": {
+    "shareExactlyOne": 0,
+    "max": 0,
+    "pass": null
+   },
+   "split": [],
+   "examples": {}
+  },
+  {
+   "id": "hook3",
+   "samples": 54,
+   "chart": true,
+   "issues": {},
+   "level1": {
+    "shareExactlyOne": 0.56,
+    "max": 1,
+    "pass": true
+   },
+   "split": [],
+   "examples": {}
+  },
+  {
+   "id": "hook4",
+   "samples": 90,
+   "chart": false,
+   "issues": {},
+   "level1": {
+    "shareExactlyOne": 0.6,
+    "max": 1,
+    "pass": null
+   },
+   "split": [],
+   "examples": {}
+  },
+  {
+   "id": "hook5",
+   "samples": 54,
+   "chart": false,
+   "issues": {},
+   "level1": {
+    "shareExactlyOne": 0.98,
+    "max": 1,
+    "pass": null
+   },
+   "split": [],
+   "examples": {}
+  },
+  {
+   "id": "ident",
+   "samples": 30,
+   "chart": false,
+   "issues": {},
+   "level1": {
+    "shareExactlyOne": 0.7,
+    "max": 1,
+    "pass": null
+   },
+   "split": [],
+   "examples": {}
+  },
+  {
+   "id": "setup",
+   "samples": 18,
+   "chart": false,
+   "issues": {},
+   "level1": {
+    "shareExactlyOne": 0,
+    "max": 0,
+    "pass": null
+   },
+   "split": [],
+   "examples": {}
+  },
+  {
+   "id": "scope1",
+   "samples": 66,
+   "chart": false,
+   "issues": {},
+   "level1": {
+    "shareExactlyOne": 0.74,
+    "max": 1,
+    "pass": null
+   },
+   "split": [],
+   "examples": {}
+  },
+  {
+   "id": "scope2",
+   "samples": 90,
+   "chart": false,
+   "issues": {},
+   "level1": {
+    "shareExactlyOne": 0,
+    "max": 0,
+    "pass": null
+   },
+   "split": [],
+   "examples": {}
+  },
+  {
+   "id": "facts",
+   "samples": 84,
+   "chart": false,
+   "issues": {},
+   "level1": {
+    "shareExactlyOne": 0.87,
+    "max": 1,
+    "pass": null
+   },
+   "split": [],
+   "examples": {}
+  },
+  {
+   "id": "extra",
+   "samples": 72,
+   "chart": false,
+   "issues": {},
+   "level1": {
+    "shareExactlyOne": 0.71,
+    "max": 1,
+    "pass": null
+   },
+   "split": [],
+   "examples": {}
+  },
+  {
+   "id": "roads",
+   "samples": 72,
+   "chart": false,
+   "issues": {},
+   "level1": {
+    "shareExactlyOne": 0,
+    "max": 0,
+    "pass": null
+   },
+   "split": [],
+   "examples": {}
+  },
+  {
+   "id": "cash",
+   "samples": 55,
+   "chart": true,
+   "issues": {},
+   "level1": {
+    "shareExactlyOne": 0.71,
+    "max": 1,
+    "pass": true
+   },
+   "split": [],
+   "examples": {}
+  },
+  {
+   "id": "card1",
+   "samples": 23,
+   "chart": false,
+   "issues": {},
+   "level1": {
+    "shareExactlyOne": 0.7,
+    "max": 1,
+    "pass": null
+   },
+   "split": [],
+   "examples": {}
+  },
+  {
+   "id": "timeline",
+   "samples": 66,
+   "chart": true,
+   "issues": {},
+   "level1": {
+    "shareExactlyOne": 0.65,
+    "max": 1,
+    "pass": true
+   },
+   "split": [],
+   "examples": {}
+  },
+  {
+   "id": "free",
+   "samples": 48,
+   "chart": true,
+   "issues": {},
+   "level1": {
+    "shareExactlyOne": 0.83,
+    "max": 1,
+    "pass": true
+   },
+   "split": [],
+   "examples": {}
+  },
+  {
+   "id": "interest",
+   "samples": 73,
+   "chart": true,
+   "issues": {},
+   "level1": {
+    "shareExactlyOne": 0.74,
+    "max": 1,
+    "pass": true
+   },
+   "split": [],
+   "examples": {}
+  },
+  {
+   "id": "avoided",
+   "samples": 83,
+   "chart": true,
+   "issues": {},
+   "level1": {
+    "shareExactlyOne": 0.76,
+    "max": 1,
+    "pass": true
+   },
+   "split": [],
+   "examples": {}
+  },
+  {
+   "id": "certain",
+   "samples": 24,
+   "chart": true,
+   "issues": {},
+   "level1": {
+    "shareExactlyOne": 0.96,
+    "max": 1,
+    "pass": true
+   },
+   "split": [],
+   "examples": {}
+  },
+  {
+   "id": "identity",
+   "samples": 90,
+   "chart": true,
+   "issues": {},
+   "level1": {
+    "shareExactlyOne": 0.82,
+    "max": 1,
+    "pass": true
+   },
+   "split": [],
+   "examples": {}
+  },
+  {
+   "id": "bridge",
+   "samples": 84,
+   "chart": true,
+   "issues": {},
+   "level1": {
+    "shareExactlyOne": 0.74,
+    "max": 1,
+    "pass": true
+   },
+   "split": [],
+   "examples": {}
+  }
+ ],
+ "seconds": 147
+}

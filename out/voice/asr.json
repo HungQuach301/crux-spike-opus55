@@ -1,0 +1,1966 @@
+{
+ "model": "faster-whisper small.en (int8, CPU, beam 5)",
+ "seconds": 62.1,
+ "scenes": {
+  "hook1": {
+   "sr": 24000,
+   "trimStart": 0.25,
+   "trimEnd": 4.78,
+   "duration": 4.53,
+   "text": "A car loan with $25,000 left at 5.2%.",
+   "words": [
+    {
+     "w": "A",
+     "raw": " A",
+     "start": 0.0,
+     "end": 0.16,
+     "p": 0.504
+    },
+    {
+     "w": "car",
+     "raw": " car",
+     "start": 0.16,
+     "end": 0.44,
+     "p": 0.97
+    },
+    {
+     "w": "loan",
+     "raw": " loan",
+     "start": 0.44,
+     "end": 0.74,
+     "p": 0.995
+    },
+    {
+     "w": "with",
+     "raw": " with",
+     "start": 0.74,
+     "end": 1.02,
+     "p": 0.991
+    },
+    {
+     "w": "$25",
+     "raw": " $25",
+     "start": 1.02,
+     "end": 1.64,
+     "p": 0.98
+    },
+    {
+     "w": ",000",
+     "raw": ",000",
+     "start": 1.64,
+     "end": 2.14,
+     "p": 0.994
+    },
+    {
+     "w": "left",
+     "raw": " left",
+     "start": 2.14,
+     "end": 2.66,
+     "p": 0.977
+    },
+    {
+     "w": "at",
+     "raw": " at",
+     "start": 2.66,
+     "end": 3.18,
+     "p": 0.898
+    },
+    {
+     "w": "5",
+     "raw": " 5",
+     "start": 3.18,
+     "end": 3.6,
+     "p": 0.994
+    },
+    {
+     "w": ".2%.",
+     "raw": ".2%.",
+     "start": 3.6,
+     "end": 4.38,
+     "p": 0.884
+    }
+   ]
+  },
+  "hook2": {
+   "sr": 24000,
+   "trimStart": 0.06,
+   "trimEnd": 1.25,
+   "duration": 1.19,
+   "text": "Pay it off early.",
+   "words": [
+    {
+     "w": "Pay",
+     "raw": " Pay",
+     "start": 0.0,
+     "end": 0.2,
+     "p": 0.741
+    },
+    {
+     "w": "it",
+     "raw": " it",
+     "start": 0.2,
+     "end": 0.32,
+     "p": 0.959
+    },
+    {
+     "w": "off",
+     "raw": " off",
+     "start": 0.32,
+     "end": 0.58,
+     "p": 0.993
+    },
+    {
+     "w": "early.",
+     "raw": " early.",
+     "start": 0.58,
+     "end": 0.94,
+     "p": 0.932
+    }
+   ]
+  },
+  "hook2b": {
+   "sr": 24000,
+   "trimStart": 0.09,
+   "trimEnd": 1.73,
+   "duration": 1.64,
+   "text": "or invest the extra cash.",
+   "words": [
+    {
+     "w": "or",
+     "raw": " or",
+     "start": 0.0,
+     "end": 0.3,
+     "p": 0.685
+    },
+    {
+     "w": "invest",
+     "raw": " invest",
+     "start": 0.3,
+     "end": 0.72,
+     "p": 0.991
+    },
+    {
+     "w": "the",
+     "raw": " the",
+     "start": 0.72,
+     "end": 0.94,
+     "p": 0.991
+    },
+    {
+     "w": "extra",
+     "raw": " extra",
+     "start": 0.94,
+     "end": 1.18,
+     "p": 1.0
+    },
+    {
+     "w": "cash.",
+     "raw": " cash.",
+     "start": 1.18,
+     "end": 1.48,
+     "p": 0.996
+    }
+   ]
+  },
+  "hook3": {
+   "sr": 24000,
+   "trimStart": 0.0,
+   "trimEnd": 4.6,
+   "duration": 4.6,
+   "text": "We ran both roads through all 48 months, taxing every lot.",
+   "words": [
+    {
+     "w": "We",
+     "raw": " We",
+     "start": 0.0,
+     "end": 0.2,
+     "p": 0.847
+    },
+    {
+     "w": "ran",
+     "raw": " ran",
+     "start": 0.2,
+     "end": 0.5,
+     "p": 0.995
+    },
+    {
+     "w": "both",
+     "raw": " both",
+     "start": 0.5,
+     "end": 0.84,
+     "p": 0.997
+    },
+    {
+     "w": "roads",
+     "raw": " roads",
+     "start": 0.84,
+     "end": 1.32,
+     "p": 0.998
+    },
+    {
+     "w": "through",
+     "raw": " through",
+     "start": 1.32,
+     "end": 1.7,
+     "p": 0.982
+    },
+    {
+     "w": "all",
+     "raw": " all",
+     "start": 1.7,
+     "end": 2.02,
+     "p": 0.999
+    },
+    {
+     "w": "48",
+     "raw": " 48",
+     "start": 2.02,
+     "end": 2.5,
+     "p": 0.991
+    },
+    {
+     "w": "months,",
+     "raw": " months,",
+     "start": 2.5,
+     "end": 2.86,
+     "p": 0.993
+    },
+    {
+     "w": "taxing",
+     "raw": " taxing",
+     "start": 3.26,
+     "end": 3.66,
+     "p": 0.948
+    },
+    {
+     "w": "every",
+     "raw": " every",
+     "start": 3.66,
+     "end": 4.16,
+     "p": 0.999
+    },
+    {
+     "w": "lot.",
+     "raw": " lot.",
+     "start": 4.16,
+     "end": 4.46,
+     "p": 0.998
+    }
+   ]
+  },
+  "hook4": {
+   "sr": 24000,
+   "trimStart": 0.0,
+   "trimEnd": 7.89,
+   "duration": 7.89,
+   "text": "The answer flips at an average annual return of 6.11% compounded in the 22% tax bracket.",
+   "words": [
+    {
+     "w": "The",
+     "raw": " The",
+     "start": 0.0,
+     "end": 0.16,
+     "p": 0.82
+    },
+    {
+     "w": "answer",
+     "raw": " answer",
+     "start": 0.16,
+     "end": 0.62,
+     "p": 0.986
+    },
+    {
+     "w": "flips",
+     "raw": " flips",
+     "start": 0.62,
+     "end": 1.04,
+     "p": 0.985
+    },
+    {
+     "w": "at",
+     "raw": " at",
+     "start": 1.04,
+     "end": 1.68,
+     "p": 0.97
+    },
+    {
+     "w": "an",
+     "raw": " an",
+     "start": 1.68,
+     "end": 1.82,
+     "p": 0.997
+    },
+    {
+     "w": "average",
+     "raw": " average",
+     "start": 1.82,
+     "end": 2.26,
+     "p": 0.996
+    },
+    {
+     "w": "annual",
+     "raw": " annual",
+     "start": 2.26,
+     "end": 2.64,
+     "p": 0.999
+    },
+    {
+     "w": "return",
+     "raw": " return",
+     "start": 2.64,
+     "end": 3.08,
+     "p": 0.996
+    },
+    {
+     "w": "of",
+     "raw": " of",
+     "start": 3.08,
+     "end": 3.28,
+     "p": 0.995
+    },
+    {
+     "w": "6",
+     "raw": " 6",
+     "start": 3.28,
+     "end": 3.58,
+     "p": 0.989
+    },
+    {
+     "w": ".11",
+     "raw": ".11",
+     "start": 3.58,
+     "end": 4.3,
+     "p": 0.988
+    },
+    {
+     "w": "%",
+     "raw": "%",
+     "start": 4.3,
+     "end": 4.78,
+     "p": 0.797
+    },
+    {
+     "w": "compounded",
+     "raw": " compounded",
+     "start": 4.78,
+     "end": 5.54,
+     "p": 0.991
+    },
+    {
+     "w": "in",
+     "raw": " in",
+     "start": 5.54,
+     "end": 6.4,
+     "p": 0.906
+    },
+    {
+     "w": "the",
+     "raw": " the",
+     "start": 6.4,
+     "end": 6.5,
+     "p": 0.99
+    },
+    {
+     "w": "22",
+     "raw": " 22",
+     "start": 6.5,
+     "end": 6.9,
+     "p": 0.997
+    },
+    {
+     "w": "%",
+     "raw": "%",
+     "start": 6.9,
+     "end": 7.22,
+     "p": 0.992
+    },
+    {
+     "w": "tax",
+     "raw": " tax",
+     "start": 7.22,
+     "end": 7.52,
+     "p": 0.997
+    },
+    {
+     "w": "bracket.",
+     "raw": " bracket.",
+     "start": 7.52,
+     "end": 7.76,
+     "p": 0.997
+    }
+   ]
+  },
+  "hook5": {
+   "sr": 24000,
+   "trimStart": 0.0,
+   "trimEnd": 4.79,
+   "duration": 4.79,
+   "text": "Below it, paying off ends ahead. Above it, investing does.",
+   "words": [
+    {
+     "w": "Below",
+     "raw": " Below",
+     "start": 0.0,
+     "end": 0.36,
+     "p": 0.648
+    },
+    {
+     "w": "it,",
+     "raw": " it,",
+     "start": 0.36,
+     "end": 0.88,
+     "p": 0.989
+    },
+    {
+     "w": "paying",
+     "raw": " paying",
+     "start": 1.22,
+     "end": 1.4,
+     "p": 0.974
+    },
+    {
+     "w": "off",
+     "raw": " off",
+     "start": 1.4,
+     "end": 1.68,
+     "p": 0.991
+    },
+    {
+     "w": "ends",
+     "raw": " ends",
+     "start": 1.68,
+     "end": 2.02,
+     "p": 0.991
+    },
+    {
+     "w": "ahead.",
+     "raw": " ahead.",
+     "start": 2.02,
+     "end": 2.38,
+     "p": 0.997
+    },
+    {
+     "w": "Above",
+     "raw": " Above",
+     "start": 3.24,
+     "end": 3.28,
+     "p": 0.988
+    },
+    {
+     "w": "it,",
+     "raw": " it,",
+     "start": 3.28,
+     "end": 3.64,
+     "p": 0.994
+    },
+    {
+     "w": "investing",
+     "raw": " investing",
+     "start": 3.92,
+     "end": 4.22,
+     "p": 0.984
+    },
+    {
+     "w": "does.",
+     "raw": " does.",
+     "start": 4.22,
+     "end": 4.62,
+     "p": 0.998
+    }
+   ]
+  },
+  "setup": {
+   "sr": 24000,
+   "trimStart": 0.17,
+   "trimEnd": 1.3,
+   "duration": 1.13,
+   "text": "Here is the setup.",
+   "words": [
+    {
+     "w": "Here",
+     "raw": " Here",
+     "start": 0.0,
+     "end": 0.3,
+     "p": 0.8
+    },
+    {
+     "w": "is",
+     "raw": " is",
+     "start": 0.3,
+     "end": 0.54,
+     "p": 0.981
+    },
+    {
+     "w": "the",
+     "raw": " the",
+     "start": 0.54,
+     "end": 0.72,
+     "p": 0.998
+    },
+    {
+     "w": "setup.",
+     "raw": " setup.",
+     "start": 0.72,
+     "end": 0.94,
+     "p": 0.883
+    }
+   ]
+  },
+  "scope1": {
+   "sr": 24000,
+   "trimStart": 0.0,
+   "trimEnd": 5.93,
+   "duration": 5.93,
+   "text": "The rules here are US tax rules, and every input is stated, not forecast.",
+   "words": [
+    {
+     "w": "The",
+     "raw": " The",
+     "start": 0.0,
+     "end": 0.18,
+     "p": 0.902
+    },
+    {
+     "w": "rules",
+     "raw": " rules",
+     "start": 0.18,
+     "end": 0.46,
+     "p": 0.991
+    },
+    {
+     "w": "here",
+     "raw": " here",
+     "start": 0.46,
+     "end": 0.88,
+     "p": 0.995
+    },
+    {
+     "w": "are",
+     "raw": " are",
+     "start": 0.88,
+     "end": 1.28,
+     "p": 0.978
+    },
+    {
+     "w": "US",
+     "raw": " US",
+     "start": 1.28,
+     "end": 1.72,
+     "p": 0.623
+    },
+    {
+     "w": "tax",
+     "raw": " tax",
+     "start": 1.72,
+     "end": 2.1,
+     "p": 0.964
+    },
+    {
+     "w": "rules,",
+     "raw": " rules,",
+     "start": 2.1,
+     "end": 2.52,
+     "p": 0.999
+    },
+    {
+     "w": "and",
+     "raw": " and",
+     "start": 3.1,
+     "end": 3.32,
+     "p": 0.996
+    },
+    {
+     "w": "every",
+     "raw": " every",
+     "start": 3.32,
+     "end": 3.6,
+     "p": 0.998
+    },
+    {
+     "w": "input",
+     "raw": " input",
+     "start": 3.6,
+     "end": 3.94,
+     "p": 0.999
+    },
+    {
+     "w": "is",
+     "raw": " is",
+     "start": 3.94,
+     "end": 4.12,
+     "p": 0.996
+    },
+    {
+     "w": "stated,",
+     "raw": " stated,",
+     "start": 4.12,
+     "end": 4.48,
+     "p": 0.998
+    },
+    {
+     "w": "not",
+     "raw": " not",
+     "start": 4.96,
+     "end": 5.28,
+     "p": 0.949
+    },
+    {
+     "w": "forecast.",
+     "raw": " forecast.",
+     "start": 5.28,
+     "end": 5.62,
+     "p": 0.994
+    }
+   ]
+  },
+  "scope2": {
+   "sr": 24000,
+   "trimStart": 0.0,
+   "trimEnd": 8.2,
+   "duration": 8.2,
+   "text": "Loan interest is treated as not deductible, so the model ignores the new car loan interest deduction for 2025 to 2028.",
+   "words": [
+    {
+     "w": "Loan",
+     "raw": " Loan",
+     "start": 0.0,
+     "end": 0.32,
+     "p": 0.619
+    },
+    {
+     "w": "interest",
+     "raw": " interest",
+     "start": 0.32,
+     "end": 0.76,
+     "p": 0.924
+    },
+    {
+     "w": "is",
+     "raw": " is",
+     "start": 0.76,
+     "end": 1.22,
+     "p": 0.994
+    },
+    {
+     "w": "treated",
+     "raw": " treated",
+     "start": 1.22,
+     "end": 1.5,
+     "p": 0.997
+    },
+    {
+     "w": "as",
+     "raw": " as",
+     "start": 1.5,
+     "end": 1.82,
+     "p": 0.997
+    },
+    {
+     "w": "not",
+     "raw": " not",
+     "start": 1.82,
+     "end": 2.08,
+     "p": 0.861
+    },
+    {
+     "w": "deductible,",
+     "raw": " deductible,",
+     "start": 2.08,
+     "end": 2.54,
+     "p": 0.94
+    },
+    {
+     "w": "so",
+     "raw": " so",
+     "start": 3.1,
+     "end": 3.38,
+     "p": 0.989
+    },
+    {
+     "w": "the",
+     "raw": " the",
+     "start": 3.38,
+     "end": 3.52,
+     "p": 0.992
+    },
+    {
+     "w": "model",
+     "raw": " model",
+     "start": 3.52,
+     "end": 3.78,
+     "p": 0.994
+    },
+    {
+     "w": "ignores",
+     "raw": " ignores",
+     "start": 3.78,
+     "end": 4.24,
+     "p": 0.996
+    },
+    {
+     "w": "the",
+     "raw": " the",
+     "start": 4.24,
+     "end": 4.44,
+     "p": 0.984
+    },
+    {
+     "w": "new",
+     "raw": " new",
+     "start": 4.44,
+     "end": 4.6,
+     "p": 0.926
+    },
+    {
+     "w": "car",
+     "raw": " car",
+     "start": 4.6,
+     "end": 4.82,
+     "p": 0.794
+    },
+    {
+     "w": "loan",
+     "raw": " loan",
+     "start": 4.82,
+     "end": 5.08,
+     "p": 0.995
+    },
+    {
+     "w": "interest",
+     "raw": " interest",
+     "start": 5.08,
+     "end": 5.38,
+     "p": 0.991
+    },
+    {
+     "w": "deduction",
+     "raw": " deduction",
+     "start": 5.38,
+     "end": 5.82,
+     "p": 0.994
+    },
+    {
+     "w": "for",
+     "raw": " for",
+     "start": 5.82,
+     "end": 6.26,
+     "p": 0.964
+    },
+    {
+     "w": "2025",
+     "raw": " 2025",
+     "start": 6.26,
+     "end": 6.82,
+     "p": 0.995
+    },
+    {
+     "w": "to",
+     "raw": " to",
+     "start": 6.82,
+     "end": 7.52,
+     "p": 0.705
+    },
+    {
+     "w": "2028.",
+     "raw": " 2028.",
+     "start": 7.52,
+     "end": 8.08,
+     "p": 0.991
+    }
+   ]
+  },
+  "facts": {
+   "sr": 24000,
+   "trimStart": 0.0,
+   "trimEnd": 7.57,
+   "duration": 7.57,
+   "text": "The loan has $25,000 left at 5.2% with 48 monthly payments of $578.",
+   "words": [
+    {
+     "w": "The",
+     "raw": " The",
+     "start": 0.0,
+     "end": 0.18,
+     "p": 0.866
+    },
+    {
+     "w": "loan",
+     "raw": " loan",
+     "start": 0.18,
+     "end": 0.4,
+     "p": 0.973
+    },
+    {
+     "w": "has",
+     "raw": " has",
+     "start": 0.4,
+     "end": 0.68,
+     "p": 0.992
+    },
+    {
+     "w": "$25",
+     "raw": " $25",
+     "start": 0.68,
+     "end": 1.22,
+     "p": 0.978
+    },
+    {
+     "w": ",000",
+     "raw": ",000",
+     "start": 1.22,
+     "end": 1.68,
+     "p": 0.988
+    },
+    {
+     "w": "left",
+     "raw": " left",
+     "start": 1.68,
+     "end": 2.2,
+     "p": 0.969
+    },
+    {
+     "w": "at",
+     "raw": " at",
+     "start": 2.2,
+     "end": 2.72,
+     "p": 0.892
+    },
+    {
+     "w": "5",
+     "raw": " 5",
+     "start": 2.72,
+     "end": 3.0,
+     "p": 0.996
+    },
+    {
+     "w": ".2",
+     "raw": ".2",
+     "start": 3.0,
+     "end": 3.4,
+     "p": 0.998
+    },
+    {
+     "w": "%",
+     "raw": "%",
+     "start": 3.4,
+     "end": 3.92,
+     "p": 0.671
+    },
+    {
+     "w": "with",
+     "raw": " with",
+     "start": 3.92,
+     "end": 4.34,
+     "p": 0.986
+    },
+    {
+     "w": "48",
+     "raw": " 48",
+     "start": 4.34,
+     "end": 4.82,
+     "p": 0.97
+    },
+    {
+     "w": "monthly",
+     "raw": " monthly",
+     "start": 4.82,
+     "end": 5.16,
+     "p": 0.998
+    },
+    {
+     "w": "payments",
+     "raw": " payments",
+     "start": 5.16,
+     "end": 5.6,
+     "p": 0.999
+    },
+    {
+     "w": "of",
+     "raw": " of",
+     "start": 5.6,
+     "end": 6.04,
+     "p": 0.995
+    },
+    {
+     "w": "$578.",
+     "raw": " $578.",
+     "start": 6.04,
+     "end": 6.92,
+     "p": 0.951
+    }
+   ]
+  },
+  "extra": {
+   "sr": 24000,
+   "trimStart": 0.0,
+   "trimEnd": 6.15,
+   "duration": 6.15,
+   "text": "On top of that, $400 a month is available. That amount is illustrative.",
+   "words": [
+    {
+     "w": "On",
+     "raw": " On",
+     "start": 0.0,
+     "end": 0.22,
+     "p": 0.82
+    },
+    {
+     "w": "top",
+     "raw": " top",
+     "start": 0.22,
+     "end": 0.52,
+     "p": 0.993
+    },
+    {
+     "w": "of",
+     "raw": " of",
+     "start": 0.52,
+     "end": 0.86,
+     "p": 0.998
+    },
+    {
+     "w": "that,",
+     "raw": " that,",
+     "start": 0.86,
+     "end": 1.22,
+     "p": 0.999
+    },
+    {
+     "w": "$400",
+     "raw": " $400",
+     "start": 1.74,
+     "end": 2.36,
+     "p": 0.982
+    },
+    {
+     "w": "a",
+     "raw": " a",
+     "start": 2.36,
+     "end": 2.82,
+     "p": 0.961
+    },
+    {
+     "w": "month",
+     "raw": " month",
+     "start": 2.82,
+     "end": 3.02,
+     "p": 0.999
+    },
+    {
+     "w": "is",
+     "raw": " is",
+     "start": 3.02,
+     "end": 3.52,
+     "p": 0.985
+    },
+    {
+     "w": "available.",
+     "raw": " available.",
+     "start": 3.52,
+     "end": 3.84,
+     "p": 0.999
+    },
+    {
+     "w": "That",
+     "raw": " That",
+     "start": 4.42,
+     "end": 4.64,
+     "p": 0.997
+    },
+    {
+     "w": "amount",
+     "raw": " amount",
+     "start": 4.64,
+     "end": 4.88,
+     "p": 0.999
+    },
+    {
+     "w": "is",
+     "raw": " is",
+     "start": 4.88,
+     "end": 5.48,
+     "p": 0.995
+    },
+    {
+     "w": "illustrative.",
+     "raw": " illustrative.",
+     "start": 5.48,
+     "end": 6.0,
+     "p": 0.997
+    }
+   ]
+  },
+  "roads": {
+   "sr": 24000,
+   "trimStart": 0.0,
+   "trimEnd": 5.8,
+   "duration": 5.8,
+   "text": "Road A sends it to the loan. Road B pays the minimum and invests it every month.",
+   "words": [
+    {
+     "w": "Road",
+     "raw": " Road",
+     "start": 0.0,
+     "end": 0.28,
+     "p": 0.744
+    },
+    {
+     "w": "A",
+     "raw": " A",
+     "start": 0.28,
+     "end": 0.7,
+     "p": 0.972
+    },
+    {
+     "w": "sends",
+     "raw": " sends",
+     "start": 0.7,
+     "end": 1.08,
+     "p": 0.964
+    },
+    {
+     "w": "it",
+     "raw": " it",
+     "start": 1.08,
+     "end": 1.3,
+     "p": 0.998
+    },
+    {
+     "w": "to",
+     "raw": " to",
+     "start": 1.3,
+     "end": 1.46,
+     "p": 0.998
+    },
+    {
+     "w": "the",
+     "raw": " the",
+     "start": 1.46,
+     "end": 1.58,
+     "p": 0.997
+    },
+    {
+     "w": "loan.",
+     "raw": " loan.",
+     "start": 1.58,
+     "end": 1.84,
+     "p": 0.986
+    },
+    {
+     "w": "Road",
+     "raw": " Road",
+     "start": 2.68,
+     "end": 2.78,
+     "p": 0.997
+    },
+    {
+     "w": "B",
+     "raw": " B",
+     "start": 2.78,
+     "end": 3.14,
+     "p": 0.999
+    },
+    {
+     "w": "pays",
+     "raw": " pays",
+     "start": 3.14,
+     "end": 3.52,
+     "p": 0.996
+    },
+    {
+     "w": "the",
+     "raw": " the",
+     "start": 3.52,
+     "end": 3.7,
+     "p": 0.999
+    },
+    {
+     "w": "minimum",
+     "raw": " minimum",
+     "start": 3.7,
+     "end": 3.98,
+     "p": 0.999
+    },
+    {
+     "w": "and",
+     "raw": " and",
+     "start": 3.98,
+     "end": 4.5,
+     "p": 0.826
+    },
+    {
+     "w": "invests",
+     "raw": " invests",
+     "start": 4.5,
+     "end": 4.8,
+     "p": 0.978
+    },
+    {
+     "w": "it",
+     "raw": " it",
+     "start": 4.8,
+     "end": 5.16,
+     "p": 0.997
+    },
+    {
+     "w": "every",
+     "raw": " every",
+     "start": 5.16,
+     "end": 5.5,
+     "p": 0.998
+    },
+    {
+     "w": "month.",
+     "raw": " month.",
+     "start": 5.5,
+     "end": 5.72,
+     "p": 0.999
+    }
+   ]
+  },
+  "cash": {
+   "sr": 24000,
+   "trimStart": 0.0,
+   "trimEnd": 4.62,
+   "duration": 4.62,
+   "text": "Both roads spend the same cash each month. Only the order changes.",
+   "words": [
+    {
+     "w": "Both",
+     "raw": " Both",
+     "start": 0.0,
+     "end": 0.32,
+     "p": 0.863
+    },
+    {
+     "w": "roads",
+     "raw": " roads",
+     "start": 0.32,
+     "end": 0.84,
+     "p": 0.998
+    },
+    {
+     "w": "spend",
+     "raw": " spend",
+     "start": 0.84,
+     "end": 1.12,
+     "p": 0.995
+    },
+    {
+     "w": "the",
+     "raw": " the",
+     "start": 1.12,
+     "end": 1.32,
+     "p": 0.998
+    },
+    {
+     "w": "same",
+     "raw": " same",
+     "start": 1.32,
+     "end": 1.6,
+     "p": 0.999
+    },
+    {
+     "w": "cash",
+     "raw": " cash",
+     "start": 1.6,
+     "end": 1.98,
+     "p": 0.988
+    },
+    {
+     "w": "each",
+     "raw": " each",
+     "start": 1.98,
+     "end": 2.22,
+     "p": 0.995
+    },
+    {
+     "w": "month.",
+     "raw": " month.",
+     "start": 2.22,
+     "end": 2.58,
+     "p": 1.0
+    },
+    {
+     "w": "Only",
+     "raw": " Only",
+     "start": 3.28,
+     "end": 3.44,
+     "p": 0.987
+    },
+    {
+     "w": "the",
+     "raw": " the",
+     "start": 3.44,
+     "end": 3.68,
+     "p": 0.997
+    },
+    {
+     "w": "order",
+     "raw": " order",
+     "start": 3.68,
+     "end": 3.92,
+     "p": 0.999
+    },
+    {
+     "w": "changes.",
+     "raw": " changes.",
+     "start": 3.92,
+     "end": 4.38,
+     "p": 0.999
+    }
+   ]
+  },
+  "card1": {
+   "sr": 24000,
+   "trimStart": 0.25,
+   "trimEnd": 1.77,
+   "duration": 1.52,
+   "text": "first, the certain part.",
+   "words": [
+    {
+     "w": "first,",
+     "raw": " first,",
+     "start": 0.0,
+     "end": 0.34,
+     "p": 0.47
+    },
+    {
+     "w": "the",
+     "raw": " the",
+     "start": 0.74,
+     "end": 0.86,
+     "p": 0.955
+    },
+    {
+     "w": "certain",
+     "raw": " certain",
+     "start": 0.86,
+     "end": 1.1,
+     "p": 0.943
+    },
+    {
+     "w": "part.",
+     "raw": " part.",
+     "start": 1.1,
+     "end": 1.4,
+     "p": 0.989
+    }
+   ]
+  },
+  "timeline": {
+   "sr": 24000,
+   "trimStart": 0.0,
+   "trimEnd": 5.71,
+   "duration": 5.71,
+   "text": "Road A pays off the loan at month 28. Road B keeps paying through month 48.",
+   "words": [
+    {
+     "w": "Road",
+     "raw": " Road",
+     "start": 0.0,
+     "end": 0.22,
+     "p": 0.896
+    },
+    {
+     "w": "A",
+     "raw": " A",
+     "start": 0.22,
+     "end": 0.56,
+     "p": 0.986
+    },
+    {
+     "w": "pays",
+     "raw": " pays",
+     "start": 0.56,
+     "end": 0.94,
+     "p": 0.99
+    },
+    {
+     "w": "off",
+     "raw": " off",
+     "start": 0.94,
+     "end": 1.18,
+     "p": 0.991
+    },
+    {
+     "w": "the",
+     "raw": " the",
+     "start": 1.18,
+     "end": 1.32,
+     "p": 0.995
+    },
+    {
+     "w": "loan",
+     "raw": " loan",
+     "start": 1.32,
+     "end": 1.56,
+     "p": 0.996
+    },
+    {
+     "w": "at",
+     "raw": " at",
+     "start": 1.56,
+     "end": 1.76,
+     "p": 0.98
+    },
+    {
+     "w": "month",
+     "raw": " month",
+     "start": 1.76,
+     "end": 1.9,
+     "p": 0.972
+    },
+    {
+     "w": "28.",
+     "raw": " 28.",
+     "start": 1.9,
+     "end": 2.42,
+     "p": 0.985
+    },
+    {
+     "w": "Road",
+     "raw": " Road",
+     "start": 3.44,
+     "end": 3.52,
+     "p": 0.994
+    },
+    {
+     "w": "B",
+     "raw": " B",
+     "start": 3.52,
+     "end": 3.86,
+     "p": 0.999
+    },
+    {
+     "w": "keeps",
+     "raw": " keeps",
+     "start": 3.86,
+     "end": 4.22,
+     "p": 0.99
+    },
+    {
+     "w": "paying",
+     "raw": " paying",
+     "start": 4.22,
+     "end": 4.56,
+     "p": 0.998
+    },
+    {
+     "w": "through",
+     "raw": " through",
+     "start": 4.56,
+     "end": 4.86,
+     "p": 0.986
+    },
+    {
+     "w": "month",
+     "raw": " month",
+     "start": 4.86,
+     "end": 5.1,
+     "p": 0.993
+    },
+    {
+     "w": "48.",
+     "raw": " 48.",
+     "start": 5.1,
+     "end": 5.46,
+     "p": 0.998
+    }
+   ]
+  },
+  "free": {
+   "sr": 24000,
+   "trimStart": 0.11,
+   "trimEnd": 3.78,
+   "duration": 3.67,
+   "text": "That leaves 20 months with no car payment on road A.",
+   "words": [
+    {
+     "w": "That",
+     "raw": " That",
+     "start": 0.0,
+     "end": 0.2,
+     "p": 0.808
+    },
+    {
+     "w": "leaves",
+     "raw": " leaves",
+     "start": 0.2,
+     "end": 0.44,
+     "p": 0.998
+    },
+    {
+     "w": "20",
+     "raw": " 20",
+     "start": 0.44,
+     "end": 0.86,
+     "p": 0.912
+    },
+    {
+     "w": "months",
+     "raw": " months",
+     "start": 0.86,
+     "end": 1.14,
+     "p": 0.982
+    },
+    {
+     "w": "with",
+     "raw": " with",
+     "start": 1.14,
+     "end": 1.66,
+     "p": 0.785
+    },
+    {
+     "w": "no",
+     "raw": " no",
+     "start": 1.66,
+     "end": 1.9,
+     "p": 0.994
+    },
+    {
+     "w": "car",
+     "raw": " car",
+     "start": 1.9,
+     "end": 2.12,
+     "p": 0.98
+    },
+    {
+     "w": "payment",
+     "raw": " payment",
+     "start": 2.12,
+     "end": 2.48,
+     "p": 0.962
+    },
+    {
+     "w": "on",
+     "raw": " on",
+     "start": 2.48,
+     "end": 3.02,
+     "p": 0.983
+    },
+    {
+     "w": "road",
+     "raw": " road",
+     "start": 3.02,
+     "end": 3.24,
+     "p": 0.718
+    },
+    {
+     "w": "A.",
+     "raw": " A.",
+     "start": 3.24,
+     "end": 3.58,
+     "p": 0.99
+    }
+   ]
+  },
+  "interest": {
+   "sr": 24000,
+   "trimStart": 0.0,
+   "trimEnd": 6.58,
+   "duration": 6.58,
+   "text": "Interest paid falls from $2,744 to $1,554.",
+   "words": [
+    {
+     "w": "Interest",
+     "raw": " Interest",
+     "start": 0.0,
+     "end": 0.3,
+     "p": 0.76
+    },
+    {
+     "w": "paid",
+     "raw": " paid",
+     "start": 0.3,
+     "end": 0.7,
+     "p": 0.952
+    },
+    {
+     "w": "falls",
+     "raw": " falls",
+     "start": 0.7,
+     "end": 1.24,
+     "p": 0.933
+    },
+    {
+     "w": "from",
+     "raw": " from",
+     "start": 1.24,
+     "end": 1.56,
+     "p": 0.996
+    },
+    {
+     "w": "$2",
+     "raw": " $2",
+     "start": 1.56,
+     "end": 2.26,
+     "p": 0.971
+    },
+    {
+     "w": ",744",
+     "raw": ",744",
+     "start": 2.26,
+     "end": 3.34,
+     "p": 0.988
+    },
+    {
+     "w": "to",
+     "raw": " to",
+     "start": 3.34,
+     "end": 4.44,
+     "p": 0.938
+    },
+    {
+     "w": "$1",
+     "raw": " $1",
+     "start": 4.44,
+     "end": 5.08,
+     "p": 0.991
+    },
+    {
+     "w": ",554.",
+     "raw": ",554.",
+     "start": 5.08,
+     "end": 5.84,
+     "p": 0.982
+    }
+   ]
+  },
+  "avoided": {
+   "sr": 24000,
+   "trimStart": 0.0,
+   "trimEnd": 7.76,
+   "duration": 7.76,
+   "text": "Road A avoids $1,190 of interest. That does not depend on markets or taxes.",
+   "words": [
+    {
+     "w": "Road",
+     "raw": " Road",
+     "start": 0.0,
+     "end": 0.36,
+     "p": 0.854
+    },
+    {
+     "w": "A",
+     "raw": " A",
+     "start": 0.36,
+     "end": 0.88,
+     "p": 0.982
+    },
+    {
+     "w": "avoids",
+     "raw": " avoids",
+     "start": 0.88,
+     "end": 1.78,
+     "p": 0.949
+    },
+    {
+     "w": "$1",
+     "raw": " $1",
+     "start": 1.78,
+     "end": 2.22,
+     "p": 0.962
+    },
+    {
+     "w": ",190",
+     "raw": ",190",
+     "start": 2.22,
+     "end": 3.18,
+     "p": 0.981
+    },
+    {
+     "w": "of",
+     "raw": " of",
+     "start": 3.18,
+     "end": 3.78,
+     "p": 0.951
+    },
+    {
+     "w": "interest.",
+     "raw": " interest.",
+     "start": 3.78,
+     "end": 4.06,
+     "p": 0.995
+    },
+    {
+     "w": "That",
+     "raw": " That",
+     "start": 4.74,
+     "end": 5.1,
+     "p": 0.988
+    },
+    {
+     "w": "does",
+     "raw": " does",
+     "start": 5.1,
+     "end": 5.28,
+     "p": 0.993
+    },
+    {
+     "w": "not",
+     "raw": " not",
+     "start": 5.28,
+     "end": 5.54,
+     "p": 0.997
+    },
+    {
+     "w": "depend",
+     "raw": " depend",
+     "start": 5.54,
+     "end": 5.9,
+     "p": 0.999
+    },
+    {
+     "w": "on",
+     "raw": " on",
+     "start": 5.9,
+     "end": 6.38,
+     "p": 0.999
+    },
+    {
+     "w": "markets",
+     "raw": " markets",
+     "start": 6.38,
+     "end": 6.72,
+     "p": 0.99
+    },
+    {
+     "w": "or",
+     "raw": " or",
+     "start": 6.72,
+     "end": 7.2,
+     "p": 0.994
+    },
+    {
+     "w": "taxes.",
+     "raw": " taxes.",
+     "start": 7.2,
+     "end": 7.54,
+     "p": 0.999
+    }
+   ]
+  },
+  "certain": {
+   "sr": 24000,
+   "trimStart": 0.0,
+   "trimEnd": 1.34,
+   "duration": 1.34,
+   "text": "It is certain.",
+   "words": [
+    {
+     "w": "It",
+     "raw": " It",
+     "start": 0.0,
+     "end": 0.22,
+     "p": 0.641
+    },
+    {
+     "w": "is",
+     "raw": " is",
+     "start": 0.22,
+     "end": 0.76,
+     "p": 0.912
+    },
+    {
+     "w": "certain.",
+     "raw": " certain.",
+     "start": 0.76,
+     "end": 1.1,
+     "p": 0.898
+    }
+   ]
+  },
+  "identity": {
+   "sr": 24000,
+   "trimStart": 0.0,
+   "trimEnd": 8.37,
+   "duration": 8.37,
+   "text": "Because both roads spend the same cash, Road A ends up investing exactly $1,190 more than Road B.",
+   "words": [
+    {
+     "w": "Because",
+     "raw": " Because",
+     "start": 0.0,
+     "end": 0.36,
+     "p": 0.879
+    },
+    {
+     "w": "both",
+     "raw": " both",
+     "start": 0.36,
+     "end": 0.68,
+     "p": 0.99
+    },
+    {
+     "w": "roads",
+     "raw": " roads",
+     "start": 0.68,
+     "end": 1.14,
+     "p": 0.994
+    },
+    {
+     "w": "spend",
+     "raw": " spend",
+     "start": 1.14,
+     "end": 1.48,
+     "p": 0.986
+    },
+    {
+     "w": "the",
+     "raw": " the",
+     "start": 1.48,
+     "end": 1.66,
+     "p": 0.995
+    },
+    {
+     "w": "same",
+     "raw": " same",
+     "start": 1.66,
+     "end": 1.9,
+     "p": 1.0
+    },
+    {
+     "w": "cash,",
+     "raw": " cash,",
+     "start": 1.9,
+     "end": 2.44,
+     "p": 0.99
+    },
+    {
+     "w": "Road",
+     "raw": " Road",
+     "start": 3.12,
+     "end": 3.16,
+     "p": 0.457
+    },
+    {
+     "w": "A",
+     "raw": " A",
+     "start": 3.16,
+     "end": 3.48,
+     "p": 0.99
+    },
+    {
+     "w": "ends",
+     "raw": " ends",
+     "start": 3.48,
+     "end": 3.74,
+     "p": 0.969
+    },
+    {
+     "w": "up",
+     "raw": " up",
+     "start": 3.74,
+     "end": 3.94,
+     "p": 0.999
+    },
+    {
+     "w": "investing",
+     "raw": " investing",
+     "start": 3.94,
+     "end": 4.38,
+     "p": 0.998
+    },
+    {
+     "w": "exactly",
+     "raw": " exactly",
+     "start": 4.38,
+     "end": 4.84,
+     "p": 0.978
+    },
+    {
+     "w": "$1",
+     "raw": " $1",
+     "start": 4.84,
+     "end": 5.26,
+     "p": 0.96
+    },
+    {
+     "w": ",190",
+     "raw": ",190",
+     "start": 5.26,
+     "end": 6.58,
+     "p": 0.989
+    },
+    {
+     "w": "more",
+     "raw": " more",
+     "start": 6.58,
+     "end": 7.28,
+     "p": 0.969
+    },
+    {
+     "w": "than",
+     "raw": " than",
+     "start": 7.28,
+     "end": 7.8,
+     "p": 0.984
+    },
+    {
+     "w": "Road",
+     "raw": " Road",
+     "start": 7.8,
+     "end": 8.0,
+     "p": 0.984
+    },
+    {
+     "w": "B.",
+     "raw": " B.",
+     "start": 8.0,
+     "end": 8.26,
+     "p": 0.999
+    }
+   ]
+  },
+  "bridge": {
+   "sr": 24000,
+   "trimStart": 0.0,
+   "trimEnd": 7.7,
+   "duration": 7.7,
+   "text": "So the question is narrow. Can road B's head start in the market beat a certain $1,190 after tax?",
+   "words": [
+    {
+     "w": "So",
+     "raw": " So",
+     "start": 0.0,
+     "end": 0.28,
+     "p": 0.935
+    },
+    {
+     "w": "the",
+     "raw": " the",
+     "start": 0.28,
+     "end": 0.52,
+     "p": 0.63
+    },
+    {
+     "w": "question",
+     "raw": " question",
+     "start": 0.52,
+     "end": 0.84,
+     "p": 0.995
+    },
+    {
+     "w": "is",
+     "raw": " is",
+     "start": 0.84,
+     "end": 1.14,
+     "p": 0.998
+    },
+    {
+     "w": "narrow.",
+     "raw": " narrow.",
+     "start": 1.14,
+     "end": 1.48,
+     "p": 0.985
+    },
+    {
+     "w": "Can",
+     "raw": " Can",
+     "start": 2.22,
+     "end": 2.36,
+     "p": 0.987
+    },
+    {
+     "w": "road",
+     "raw": " road",
+     "start": 2.36,
+     "end": 2.66,
+     "p": 0.462
+    },
+    {
+     "w": "B's",
+     "raw": " B's",
+     "start": 2.66,
+     "end": 3.06,
+     "p": 0.742
+    },
+    {
+     "w": "head",
+     "raw": " head",
+     "start": 3.06,
+     "end": 3.24,
+     "p": 0.724
+    },
+    {
+     "w": "start",
+     "raw": " start",
+     "start": 3.24,
+     "end": 3.5,
+     "p": 0.775
+    },
+    {
+     "w": "in",
+     "raw": " in",
+     "start": 3.5,
+     "end": 3.64,
+     "p": 0.991
+    },
+    {
+     "w": "the",
+     "raw": " the",
+     "start": 3.64,
+     "end": 3.72,
+     "p": 0.998
+    },
+    {
+     "w": "market",
+     "raw": " market",
+     "start": 3.72,
+     "end": 4.04,
+     "p": 0.999
+    },
+    {
+     "w": "beat",
+     "raw": " beat",
+     "start": 4.04,
+     "end": 4.48,
+     "p": 0.96
+    },
+    {
+     "w": "a",
+     "raw": " a",
+     "start": 4.48,
+     "end": 4.64,
+     "p": 0.995
+    },
+    {
+     "w": "certain",
+     "raw": " certain",
+     "start": 4.64,
+     "end": 4.86,
+     "p": 0.997
+    },
+    {
+     "w": "$1",
+     "raw": " $1",
+     "start": 4.86,
+     "end": 5.22,
+     "p": 0.962
+    },
+    {
+     "w": ",190",
+     "raw": ",190",
+     "start": 5.22,
+     "end": 6.12,
+     "p": 0.985
+    },
+    {
+     "w": "after",
+     "raw": " after",
+     "start": 6.12,
+     "end": 7.2,
+     "p": 0.938
+    },
+    {
+     "w": "tax?",
+     "raw": " tax?",
+     "start": 7.2,
+     "end": 7.5,
+     "p": 0.572
+    }
+   ]
+  }
+ }
+}

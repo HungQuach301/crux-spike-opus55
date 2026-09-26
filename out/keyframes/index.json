@@ -1,27 +1,27 @@
 [
  {
   "name": "establishing",
-  "scene": "open",
-  "t": 5.5
+  "scene": "hook3",
+  "t": 15.06
  },
  {
-  "name": "slider-mid-sweep",
-  "scene": "sweep",
-  "t": 57.9
+  "name": "break-even-teaser",
+  "scene": "hook4",
+  "t": 23.25
  },
  {
-  "name": "crossover",
-  "scene": "flip",
-  "t": 76.8
+  "name": "same-cash",
+  "scene": "cash",
+  "t": 77.79
  },
  {
-  "name": "break-even-detail",
-  "scene": "detail",
-  "t": 70.8
+  "name": "payoff-month",
+  "scene": "timeline",
+  "t": 86.94
  },
  {
-  "name": "downside-path",
-  "scene": "cross",
-  "t": 111.4
+  "name": "interest-avoided",
+  "scene": "certain",
+  "t": 110.16
  }
 ]

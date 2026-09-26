@@ -1,0 +1,82 @@
+'use strict';
+// Test C script. One entry per scene. Voice first: the scene's length comes from its narration.
+//   text: narration with markers. {claimId} = a claim, spoken and shown; ^name = an anchor on the
+//         next word (visual events hang on anchors). No bare digits or number words (tested).
+//   cam: camera target in world px + scale (shot size), drift: direction of the 8 px/s drift
+//   panels: SVG panels this scene may show once the camera has arrived (rule scene-leak)
+//   chart: the scene holds a chart, so it needs exactly one level-1 element (rule level1)
+//   events: [sfxType, at, probe]; at = seconds from scene start, or an anchor name (+ offset)
+//   minDur: floor for scenes with little or no narration
+module.exports = [
+  // ---------------------------------------------------------------- hook (20–30 s)
+  { id: 'hook1', chapter: 'hook', section: 'setup', shot: 'medium', layout: 'hero-number/with-unit', panels: ['hook'], cam: { x: 960, y: 560, s: 1.0 }, drift: [1, 0],
+    text: 'A car loan with {balance} left, at {apr}.',
+    events: [['appear', 'balance', 'hkBal'], ['reveal', 'apr', 'hkApr']] },
+  { id: 'hook2', chapter: 'hook', section: 'setup', shot: 'close', layout: 'two-roads/fork', panels: ['fork'], cam: { x: 3360, y: 560, s: 1.35 }, drift: [1, 0],
+    text: '^A Pay it off early,',
+    events: [['transition', 0, 'cam'], ['appear', 'A', 'hkRoadA']] },
+  { id: 'hook2b', chapter: 'hook', section: 'setup', shot: 'close', layout: 'two-roads/fork', panels: ['fork'], cam: { x: 3400, y: 600, s: 1.35 }, drift: [0, 1],
+    text: 'or ^B invest the extra cash?',
+    events: [['appear', 'B', 'hkRoadB']] },
+  { id: 'hook3', chapter: 'hook', section: 'setup', shot: 'wide', layout: 'timeline/months', panels: ['hook'], cam: { x: 960, y: 760, s: 0.55 }, drift: [0, -1], chart: true,
+    text: 'We ran both roads through all {months} months, taxing ^lots every lot.',
+    events: [['transition', 0, 'cam'], ['appear', 'months', 'hkMonths'], ['compare', 'lots', 'hkLots']] },
+  { id: 'hook4', chapter: 'hook', section: 'setup', shot: 'detail', layout: 'flip-point/axis', panels: ['axis'], cam: { x: 960, y: 1960, s: 2.4 }, drift: [-1, 0],
+    text: 'The answer flips at an average annual return of {be_22}, compounded, in the {ord_22} tax bracket.',
+    events: [['transition', 0, 'cam'], ['reveal', 'be_22', 'hkBe'], ['appear', 'ord_22', 'hkBracket']] },
+  { id: 'hook5', chapter: 'hook', section: 'setup', shot: 'medium', layout: 'flip-point/axis', panels: ['axis'], cam: { x: 960, y: 2030, s: 1.0 }, drift: [1, 0],
+    text: 'Below it, ^below paying off ends ahead. Above it, ^above investing does.',
+    events: [['transition', 0, 'cam'], ['appear', 'below', 'hkBelow'], ['appear', 'above', 'hkAbove']] },
+  // ---------------------------------------------------------------- CRUX ident
+  { id: 'ident', chapter: 'ident', section: 'setup', shot: 'wide', layout: 'ident/wordmark', panels: ['ident'], cam: { x: 5960, y: 560, s: 0.5 }, drift: [1, 0],
+    text: '', minDur: 3.0,
+    events: [['dismiss', 0, 'dismissHook'], ['transition', 0, 'cam'], ['reveal', 0.6, 'crux']] },
+  // ---------------------------------------------------------------- setup and scope
+  { id: 'setup', chapter: 'setup', section: 'setup', shot: 'wide', layout: 'canvas/statement', panels: ['scope'], cam: { x: 5960, y: 2000, s: 0.45 }, drift: [1, 0],
+    text: 'Here is the ^setup setup.',
+    events: [['transition', 0, 'cam'], ['appear', 'setup', 'setupWord']] },
+  { id: 'scope1', chapter: 'setup', section: 'setup', shot: 'wide', layout: 'canvas/statement', panels: ['scope'], cam: { x: 5960, y: 2050, s: 0.5 }, drift: [0, 1],
+    text: 'The rules here are ^us US tax rules, and every input is ^stated stated, not forecast.',
+    events: [['appear', 'us', 'usOnly'], ['appear', 'stated', 'stated']] },
+  { id: 'scope2', chapter: 'setup', section: 'setup', shot: 'medium', layout: 'canvas/statement', panels: ['scope'], cam: { x: 5960, y: 2080, s: 1.0 }, drift: [1, 0],
+    text: 'Loan interest is treated as ^nd not deductible, so the model ignores the new-car loan interest deduction for {ded_y0} to {ded_y1}.',
+    events: [['transition', 0, 'cam'], ['appear', 'nd', 'notDed'], ['appear', 'ded_y0', 'dedY0'], ['count', 'ded_y1', 'dedY1']] },
+  { id: 'facts', chapter: 'setup', section: 'setup', shot: 'medium', layout: 'hero-number/with-unit', panels: ['loan'], cam: { x: 960, y: 3300, s: 1.0 }, drift: [0, -1],
+    text: 'The loan has {balance} left at {apr}, with {months} monthly payments of {payment}.',
+    events: [['transition', 0, 'cam'], ['reveal', 'balance', 'fBal'], ['appear', 'apr', 'fApr'], ['count', 'months', 'fMonths'], ['count', 'payment', 'fPay']] },
+  { id: 'extra', chapter: 'setup', section: 'setup', shot: 'close', layout: 'two-roads/fork', panels: ['fork'], cam: { x: 2760, y: 560, s: 1.6 }, drift: [1, 0],
+    text: 'On top of that, {extra} a month is available. That amount is ^illu illustrative.',
+    events: [['transition', 0, 'cam'], ['reveal', 'extra', 'xExtra'], ['emphasis', 'illu', 'xIllu']] },
+  { id: 'roads', chapter: 'setup', section: 'setup', shot: 'medium', layout: 'two-roads/fork', panels: ['fork'], cam: { x: 3380, y: 560, s: 1.0 }, drift: [-1, 0],
+    text: '^A Road A sends it to the loan. ^B Road B pays the minimum and invests it every month.',
+    events: [['transition', 0, 'cam'], ['appear', 'A', 'rA'], ['appear', 'B', 'rB']] },
+  { id: 'cash', chapter: 'setup', section: 'setup', shot: 'medium', layout: 'stacked-cost/absolute', panels: ['cash'], cam: { x: 3360, y: 3560, s: 1.0 }, drift: [1, 0], chart: true,
+    text: 'Both roads spend ^same the same cash each month. Only the ^order order changes.',
+    events: [['dismiss', 0, 'dismissFork'], ['transition', 0, 'cam'], ['appear', 0.5, 'cashCols'], ['compare', 'same', 'cashSame'], ['emphasis', 'order', 'cashOrder']] },
+  // ---------------------------------------------------------------- chapter 1: the certain part
+  { id: 'card1', chapter: 'ch1', section: 'setup', shot: 'wide', layout: 'chapter-card', panels: [], cam: { x: 5960, y: 3560, s: 0.5 }, drift: [1, 0],
+    text: 'First, the certain part.',
+    events: [['transition', 0, 'cam'], ['appear', 0.5, 'card1']] },
+  { id: 'timeline', chapter: 'ch1', section: 'setup', shot: 'medium', layout: 'timeline/months', panels: ['loan'], cam: { x: 960, y: 3560, s: 1.0 }, drift: [1, 0], chart: true,
+    text: 'Road A pays off the loan at month {payoff_a}. Road B keeps paying through month {horizon}.',
+    events: [['transition', 0, 'cam'], ['appear', 0.6, 'tlAxis'], ['threshold-cross', 'payoff_a', 'tlA'], ['appear', 'horizon', 'tlB']] },
+  { id: 'free', chapter: 'ch1', section: 'setup', shot: 'close', layout: 'timeline/months', panels: ['loan'], cam: { x: 1320, y: 3520, s: 1.6 }, drift: [-1, 0], chart: true,
+    text: 'That leaves {months_free} months with no car payment on road A.',
+    events: [['transition', 0, 'cam'], ['emphasis', 'months_free', 'free20']] },
+  { id: 'interest', chapter: 'ch1', section: 'setup', shot: 'close', layout: 'stacked-cost/absolute', panels: ['loan'], cam: { x: 1040, y: 3560, s: 1.4 }, drift: [1, 0], chart: true,
+    text: 'Interest paid falls from {int_b} to {int_a}.',
+    events: [['transition', 0, 'cam'], ['count', 'int_b', 'intB'], ['count', 'int_a', 'intA']] },
+  { id: 'avoided', chapter: 'ch1', section: 'setup', shot: 'detail', layout: 'hero-number/plain', panels: ['loan'], cam: null, drift: [-1, 0], chart: true,
+    text: 'Road A avoids {avoided} of interest. That does not depend on markets or taxes.',
+    events: [['transition', 0, 'cam'], ['reveal', 'avoided', 'avd']],
+    silenceBefore: 'avoided', stillAt: 'avoided' },
+  { id: 'certain', chapter: 'ch1', section: 'setup', shot: 'detail', layout: 'hero-number/plain', panels: ['loan'], cam: null, drift: [1, 0], chart: true,
+    text: 'It is ^certain certain.',
+    events: [['emphasis', 'certain', 'certainLine']] },
+  { id: 'identity', chapter: 'ch1', section: 'setup', shot: 'close', layout: 'bar-compare/equal', panels: ['eq'], cam: { x: 960, y: 5140, s: 1.5 }, drift: [1, 0], chart: true,
+    text: 'Because both roads spend the same cash, road A ends up investing exactly {avoided} more than road B.',
+    events: [['transition', 0, 'cam'], ['appear', 1.0, 'eqRight'], ['compare', 'avoided', 'eqVal']] },
+  { id: 'bridge', chapter: 'ch1', section: 'setup', shot: 'medium', layout: 'bar-compare/two', panels: ['eq'], cam: { x: 1100, y: 5120, s: 1.0 }, drift: [-1, 0], chart: true,
+    text: 'So the question is narrow: can road B\'s ^head head start in the market beat a certain {avoided}, after tax?',
+    events: [['transition', 0, 'cam'], ['appear', 'head', 'brB'], ['reveal', 'avoided', 'brVal']] },
+];

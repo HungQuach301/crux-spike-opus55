@@ -1,0 +1,47 @@
+{
+ "sampledFrames": 1278,
+ "issues": [],
+ "transientDuringCameraMoves": {},
+ "keyframes": [
+  {
+   "name": "establishing",
+   "scene": "open",
+   "t": 5.5,
+   "issues": [],
+   "words": 10,
+   "l1": 1
+  },
+  {
+   "name": "slider-mid-sweep",
+   "scene": "sweep",
+   "t": 57.9,
+   "issues": [],
+   "words": 12,
+   "l1": 0
+  },
+  {
+   "name": "crossover",
+   "scene": "flip",
+   "t": 76.8,
+   "issues": [],
+   "words": 9,
+   "l1": 1
+  },
+  {
+   "name": "break-even-detail",
+   "scene": "detail",
+   "t": 70.8,
+   "issues": [],
+   "words": 5,
+   "l1": 1
+  },
+  {
+   "name": "downside-path",
+   "scene": "cross",
+   "t": 111.4,
+   "issues": [],
+   "words": 8,
+   "l1": 1
+  }
+ ]
+}

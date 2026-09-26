@@ -1,0 +1,210 @@
+{
+ "definition": "offset = first frame the claim span reaches opacity >= 0.5 minus the faster-whisper word start of the spoken number; limit ±250 ms",
+ "numbers": 20,
+ "maxAbsOffsetMs": 30,
+ "meanAbsOffsetMs": 16,
+ "slips": [],
+ "pass": true,
+ "rows": [
+  {
+   "scene": "hook1",
+   "claimId": "balance",
+   "canon": "usd:25000",
+   "spokenAt": 1.27,
+   "appearsAt": 1.3,
+   "tid": "hkLine",
+   "offsetMs": 30,
+   "status": "ok"
+  },
+  {
+   "scene": "hook1",
+   "claimId": "apr",
+   "canon": "pct:5.2",
+   "spokenAt": 3.43,
+   "appearsAt": 3.4333,
+   "tid": "hkApr",
+   "offsetMs": 3,
+   "status": "ok"
+  },
+  {
+   "scene": "hook3",
+   "claimId": "months",
+   "canon": "num:48",
+   "spokenAt": 12.47,
+   "appearsAt": 12.5,
+   "tid": "hkMonths",
+   "offsetMs": 30,
+   "status": "ok"
+  },
+  {
+   "scene": "hook4",
+   "claimId": "be_22",
+   "canon": "pct:6.11",
+   "spokenAt": 19.13,
+   "appearsAt": 19.1333,
+   "tid": "hkBe",
+   "offsetMs": 3,
+   "status": "ok"
+  },
+  {
+   "scene": "hook4",
+   "claimId": "ord_22",
+   "canon": "pct:22",
+   "spokenAt": 22.35,
+   "appearsAt": 22.3667,
+   "tid": "hkBr",
+   "offsetMs": 17,
+   "status": "ok"
+  },
+  {
+   "scene": "scope2",
+   "claimId": "ded_y0",
+   "canon": "year:2025",
+   "spokenAt": 47.91,
+   "appearsAt": 47.9333,
+   "tid": "dedNote",
+   "offsetMs": 23,
+   "status": "ok"
+  },
+  {
+   "scene": "scope2",
+   "claimId": "ded_y1",
+   "canon": "year:2028",
+   "spokenAt": 49.17,
+   "appearsAt": 49.2,
+   "tid": "dedNote",
+   "offsetMs": 30,
+   "status": "ok"
+  },
+  {
+   "scene": "facts",
+   "claimId": "balance",
+   "canon": "usd:25000",
+   "spokenAt": 51.33,
+   "appearsAt": 51.3333,
+   "tid": "fBal",
+   "offsetMs": 3,
+   "status": "ok"
+  },
+  {
+   "scene": "facts",
+   "claimId": "apr",
+   "canon": "pct:5.2",
+   "spokenAt": 53.37,
+   "appearsAt": 53.4,
+   "tid": "fApr",
+   "offsetMs": 30,
+   "status": "ok"
+  },
+  {
+   "scene": "facts",
+   "claimId": "months",
+   "canon": "num:48",
+   "spokenAt": 54.99,
+   "appearsAt": 55,
+   "tid": "fPay",
+   "offsetMs": 10,
+   "status": "ok"
+  },
+  {
+   "scene": "facts",
+   "claimId": "payment",
+   "canon": "usd:578",
+   "spokenAt": 56.69,
+   "appearsAt": 56.7,
+   "tid": "fPay",
+   "offsetMs": 10,
+   "status": "ok"
+  },
+  {
+   "scene": "extra",
+   "claimId": "extra",
+   "canon": "usd:400",
+   "spokenAt": 60.79,
+   "appearsAt": 60.8,
+   "tid": "xExtra",
+   "offsetMs": 10,
+   "status": "ok"
+  },
+  {
+   "scene": "timeline",
+   "claimId": "payoff_a",
+   "canon": "month:28",
+   "spokenAt": 83.15,
+   "appearsAt": 83.1667,
+   "tid": "tlA",
+   "offsetMs": 17,
+   "status": "ok"
+  },
+  {
+   "scene": "timeline",
+   "claimId": "horizon",
+   "canon": "month:48",
+   "spokenAt": 86.35,
+   "appearsAt": 86.3667,
+   "tid": "tlB",
+   "offsetMs": 17,
+   "status": "ok"
+  },
+  {
+   "scene": "free",
+   "claimId": "months_free",
+   "canon": "num:20",
+   "spokenAt": 88.29,
+   "appearsAt": 88.3,
+   "tid": "free20",
+   "offsetMs": 10,
+   "status": "ok"
+  },
+  {
+   "scene": "interest",
+   "claimId": "int_b",
+   "canon": "usd:2744",
+   "spokenAt": 94.21,
+   "appearsAt": 94.2333,
+   "tid": "intB",
+   "offsetMs": 23,
+   "status": "ok"
+  },
+  {
+   "scene": "interest",
+   "claimId": "int_a",
+   "canon": "usd:1554",
+   "spokenAt": 97.09,
+   "appearsAt": 97.1,
+   "tid": "intA",
+   "offsetMs": 10,
+   "status": "ok"
+  },
+  {
+   "scene": "avoided",
+   "claimId": "avoided",
+   "canon": "usd:1190",
+   "spokenAt": 101.63,
+   "appearsAt": 101.6333,
+   "tid": "avd",
+   "offsetMs": 3,
+   "status": "ok"
+  },
+  {
+   "scene": "identity",
+   "claimId": "avoided",
+   "canon": "usd:1190",
+   "spokenAt": 115.49,
+   "appearsAt": 115.5,
+   "tid": "eqVal",
+   "offsetMs": 10,
+   "status": "ok"
+  },
+  {
+   "scene": "bridge",
+   "claimId": "avoided",
+   "canon": "usd:1190",
+   "spokenAt": 124.51,
+   "appearsAt": 124.5333,
+   "tid": "brVal",
+   "offsetMs": 23,
+   "status": "ok"
+  }
+ ]
+}

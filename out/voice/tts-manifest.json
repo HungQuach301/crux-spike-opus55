@@ -1,0 +1,156 @@
+{
+ "hook1": {
+  "key": "852fb815ea7bcbd8",
+  "model": "gpt-4o-mini-tts",
+  "voice": "cedar",
+  "chars": 77,
+  "seconds": 1.62
+ },
+ "hook2": {
+  "key": "23c71437acd3de47",
+  "model": "gpt-4o-mini-tts",
+  "voice": "cedar",
+  "chars": 17,
+  "seconds": 1.11
+ },
+ "hook3": {
+  "key": "4222566e347675c0",
+  "model": "gpt-4o-mini-tts",
+  "voice": "cedar",
+  "chars": 67,
+  "seconds": 1.21
+ },
+ "hook4": {
+  "key": "8693da4f72e6f814",
+  "model": "gpt-4o-mini-tts",
+  "voice": "cedar",
+  "chars": 125,
+  "seconds": 1.72
+ },
+ "hook5": {
+  "key": "47fb77dbe6f1f5be",
+  "model": "gpt-4o-mini-tts",
+  "voice": "cedar",
+  "chars": 58,
+  "seconds": 1.39
+ },
+ "scope1": {
+  "key": "ad16f0e39c9d7e14",
+  "model": "gpt-4o-mini-tts",
+  "voice": "cedar",
+  "chars": 75,
+  "seconds": 1.47
+ },
+ "scope2": {
+  "key": "4ee0ff79683cadfc",
+  "model": "gpt-4o-mini-tts",
+  "voice": "cedar",
+  "chars": 147,
+  "seconds": 1.72
+ },
+ "facts": {
+  "key": "3b7bad2c11cf8079",
+  "model": "gpt-4o-mini-tts",
+  "voice": "cedar",
+  "chars": 146,
+  "seconds": 1.66
+ },
+ "extra": {
+  "key": "7da16674b57ffd32",
+  "model": "gpt-4o-mini-tts",
+  "voice": "cedar",
+  "chars": 87,
+  "seconds": 1.57
+ },
+ "roads": {
+  "key": "0f9c85dc95eb339b",
+  "model": "gpt-4o-mini-tts",
+  "voice": "cedar",
+  "chars": 80,
+  "seconds": 1.39
+ },
+ "cash": {
+  "key": "e02b3c9b06f233d0",
+  "model": "gpt-4o-mini-tts",
+  "voice": "cedar",
+  "chars": 66,
+  "seconds": 2.56
+ },
+ "card1": {
+  "key": "ae029cca59898265",
+  "model": "gpt-4o-mini-tts",
+  "voice": "cedar",
+  "chars": 24,
+  "seconds": 0.95
+ },
+ "timeline": {
+  "key": "f9c94f3acde3bb2f",
+  "model": "gpt-4o-mini-tts",
+  "voice": "cedar",
+  "chars": 94,
+  "seconds": 1.49
+ },
+ "free": {
+  "key": "2fd0667a90280e31",
+  "model": "gpt-4o-mini-tts",
+  "voice": "cedar",
+  "chars": 56,
+  "seconds": 1.18
+ },
+ "interest": {
+  "key": "386aa47bcf54d72b",
+  "model": "gpt-4o-mini-tts",
+  "voice": "cedar",
+  "chars": 119,
+  "seconds": 1.63
+ },
+ "avoided": {
+  "key": "57d60ddc7a250a70",
+  "model": "gpt-4o-mini-tts",
+  "voice": "cedar",
+  "chars": 108,
+  "seconds": 1.81
+ },
+ "identity": {
+  "key": "9a8d5c67ae7ad6cc",
+  "model": "gpt-4o-mini-tts",
+  "voice": "cedar",
+  "chars": 130,
+  "seconds": 1.85
+ },
+ "bridge": {
+  "key": "cd8411926d6e2b0e",
+  "model": "gpt-4o-mini-tts",
+  "voice": "cedar",
+  "chars": 131,
+  "seconds": 1.71
+ },
+ "_settings": {
+  "model": "gpt-4o-mini-tts",
+  "voice": "cedar",
+  "instructions": "Persona: a calm, precise, warm financial analyst explaining a calculation to one listener. Accent: General American. Pace: speak noticeably slower than normal conversation, about 140 words per minute, with a short breath after each comma and each number. Tone: neutral and factual; no excitement, no sales voice, no dramatic pauses. Read every number clearly and completely, exactly as written.",
+  "endpoint": "https://api.openai.com/v1/audio/speech",
+  "auth": "injected by the environment proxy; no key in code or logs"
+ },
+ "hook2b": {
+  "key": "5d9ef4143a48bb80",
+  "model": "gpt-4o-mini-tts",
+  "voice": "cedar",
+  "chars": 25,
+  "seconds": 0.95
+ },
+ "certain": {
+  "key": "dbc62400edfc5be6",
+  "model": "gpt-4o-mini-tts",
+  "voice": "cedar",
+  "chars": 14,
+  "seconds": 0.76
+ },
+ "setup": {
+  "key": "5a66932742ab8d13",
+  "model": "gpt-4o-mini-tts",
+  "voice": "cedar",
+  "chars": 18,
+  "seconds": 1.25
+ }
+}

@@ -1,7 +1,13 @@
 {
-  "description": "Every number drawn on screen in out/segment.mp4 (rolling counters are shown as animations of these claims; the checker verifies every settled number equals its claim). Code: src/car/calc.js, src/car/data.js.",
-  "sources": "All inputs are stated in the brief or by us (the $400/month extra and the 8% then -20% sequence). No external rate source is used, so nothing on screen depends on a fetched figure.",
-  "count": 88,
+  "description": "Test C: every number drawn on screen or spoken in out/video.mp4. Code: src/av/calc.js (per-lot tax model), src/av/data.js. Spoken numbers carry their faster-whisper onset and the time the number appears on screen.",
+  "sources": "All inputs are stated in the brief or by us. ILLUSTRATIVE (our choice, not a forecast): $400/month extra, the 2%–10% return range, the 8% then −20% sequence. The model ignores the 2025–2028 new-vehicle loan interest deduction and treats loan interest as not deductible.",
+  "scope": "midpoint build: hook, ident, setup, chapter 1",
+  "counts": {
+    "claims": 20,
+    "shown": 20,
+    "spokenOccurrences": 20,
+    "asrCorrect": "20/20"
+  },
   "claims": [
     {
       "claimId": "balance",
@@ -10,8 +16,27 @@
       "formula": "input",
       "note": "Base case remaining balance (brief).",
       "inputs": {},
-      "appearsIn": [
+      "shownIn": [
+        "hook1",
         "facts"
+      ],
+      "spoken": [
+        {
+          "scene": "hook1",
+          "spokenForm": "twenty-five thousand dollars",
+          "canon": "usd:25000",
+          "asrOnsetS": 1.27,
+          "appearsOnScreenS": 1.3,
+          "offsetMs": 30
+        },
+        {
+          "scene": "facts",
+          "spokenForm": "twenty-five thousand dollars",
+          "canon": "usd:25000",
+          "asrOnsetS": 51.33,
+          "appearsOnScreenS": 51.3333,
+          "offsetMs": 3
+        }
       ]
     },
     {
@@ -19,12 +44,29 @@
       "value": 5.2,
       "display": "5.2%",
       "formula": "input",
-      "note": "Base case APR (brief). Stated input, not a market average.",
+      "note": "Base case APR (brief). A stated input, not a market average.",
       "inputs": {},
-      "appearsIn": [
-        "open",
-        "facts",
-        "certain"
+      "shownIn": [
+        "hook1",
+        "facts"
+      ],
+      "spoken": [
+        {
+          "scene": "hook1",
+          "spokenForm": "five point two percent",
+          "canon": "pct:5.2",
+          "asrOnsetS": 3.43,
+          "appearsOnScreenS": 3.4333,
+          "offsetMs": 3
+        },
+        {
+          "scene": "facts",
+          "spokenForm": "five point two percent",
+          "canon": "pct:5.2",
+          "asrOnsetS": 53.37,
+          "appearsOnScreenS": 53.4,
+          "offsetMs": 30
+        }
       ]
     },
     {
@@ -32,10 +74,29 @@
       "value": 48,
       "display": "48",
       "formula": "input",
-      "note": "Months left (brief).",
+      "note": "Months left on the loan (brief).",
       "inputs": {},
-      "appearsIn": [
+      "shownIn": [
+        "hook3",
         "facts"
+      ],
+      "spoken": [
+        {
+          "scene": "hook3",
+          "spokenForm": "forty-eight",
+          "canon": "num:48",
+          "asrOnsetS": 12.47,
+          "appearsOnScreenS": 12.5,
+          "offsetMs": 30
+        },
+        {
+          "scene": "facts",
+          "spokenForm": "forty-eight",
+          "canon": "num:48",
+          "asrOnsetS": 54.99,
+          "appearsOnScreenS": 55,
+          "offsetMs": 10
+        }
       ]
     },
     {
@@ -43,97 +104,179 @@
       "value": 400,
       "display": "$400",
       "formula": "input",
-      "note": "Extra cash per month available to either strategy. Our stated assumption; the brief does not fix it.",
+      "note": "Extra cash per month available to either road. ILLUSTRATIVE: chosen by us to show the mechanics, not a forecast or a recommendation.",
+      "illustrative": true,
       "inputs": {},
-      "appearsIn": [
-        "extra",
-        "roads"
+      "shownIn": [
+        "extra"
+      ],
+      "spoken": [
+        {
+          "scene": "extra",
+          "spokenForm": "four hundred dollars",
+          "canon": "usd:400",
+          "asrOnsetS": 60.79,
+          "appearsOnScreenS": 60.8,
+          "offsetMs": 10
+        }
       ]
     },
     {
-      "claimId": "tax_12",
-      "value": 12,
-      "display": "12%",
-      "formula": "input",
-      "note": "Marginal tax rate on investment gains (brief sweep). Simplified: gains taxed once, at month 48, at this rate; no tax credit for losses; loan interest not deductible.",
-      "inputs": {},
-      "appearsIn": [
-        "tax",
-        "bars",
-        "sweep",
-        "settle",
-        "morph",
-        "detail",
-        "flip",
-        "matrix",
-        "matrix32"
-      ]
-    },
-    {
-      "claimId": "tax_22",
+      "claimId": "ord_22",
       "value": 22,
       "display": "22%",
       "formula": "input",
-      "note": "Marginal tax rate on investment gains (brief sweep). Simplified: gains taxed once, at month 48, at this rate; no tax credit for losses; loan interest not deductible.",
+      "note": "Ordinary income bracket (brief): applies to short-term lots.",
       "inputs": {},
-      "appearsIn": [
-        "tax",
-        "bars",
-        "sweep",
-        "settle",
-        "morph",
-        "detail",
-        "flip",
-        "matrix",
-        "matrix32",
-        "converge"
+      "shownIn": [
+        "hook4"
+      ],
+      "spoken": [
+        {
+          "scene": "hook4",
+          "spokenForm": "twenty-two percent",
+          "canon": "pct:22",
+          "asrOnsetS": 22.35,
+          "appearsOnScreenS": 22.3667,
+          "offsetMs": 17
+        }
       ]
     },
     {
-      "claimId": "tax_32",
-      "value": 32,
-      "display": "32%",
+      "claimId": "ded_y0",
+      "value": 2025,
+      "display": "2025",
       "formula": "input",
-      "note": "Marginal tax rate on investment gains (brief sweep). Simplified: gains taxed once, at month 48, at this rate; no tax credit for losses; loan interest not deductible.",
+      "note": "First tax year of the new-vehicle loan interest deduction; the model ignores this deduction.",
       "inputs": {},
-      "appearsIn": [
-        "tax",
-        "bars",
-        "sweep",
-        "settle",
-        "morph",
-        "detail",
-        "flip",
-        "matrix",
-        "matrix32"
+      "shownIn": [
+        "scope2"
+      ],
+      "spoken": [
+        {
+          "scene": "scope2",
+          "spokenForm": "twenty twenty-five",
+          "canon": "year:2025",
+          "asrOnsetS": 47.91,
+          "appearsOnScreenS": 47.9333,
+          "offsetMs": 23
+        }
       ]
     },
     {
-      "claimId": "payoff_a",
-      "value": 28,
-      "display": "28",
-      "formula": "first month where balance hits 0 when paying P + extra",
+      "claimId": "ded_y1",
+      "value": 2028,
+      "display": "2028",
+      "formula": "input",
+      "note": "Last tax year of the new-vehicle loan interest deduction; the model ignores this deduction.",
+      "inputs": {},
+      "shownIn": [
+        "scope2"
+      ],
+      "spoken": [
+        {
+          "scene": "scope2",
+          "spokenForm": "twenty twenty-eight",
+          "canon": "year:2028",
+          "asrOnsetS": 49.17,
+          "appearsOnScreenS": 49.2,
+          "offsetMs": 30
+        }
+      ]
+    },
+    {
+      "claimId": "payment",
+      "value": 578,
+      "display": "$578",
+      "formula": "P = B·i/(1−(1+i)^−n), i = APR/12, rounded to cents",
       "inputs": {
         "balance": 25000,
         "aprPct": 5.2,
         "months": 48,
         "extra": 400
       },
-      "appearsIn": [
+      "shownIn": [
+        "facts"
+      ],
+      "spoken": [
+        {
+          "scene": "facts",
+          "spokenForm": "five hundred seventy-eight dollars",
+          "canon": "usd:578",
+          "asrOnsetS": 56.69,
+          "appearsOnScreenS": 56.7,
+          "offsetMs": 10
+        }
+      ]
+    },
+    {
+      "claimId": "payoff_a",
+      "value": 28,
+      "display": "28",
+      "formula": "first month where the balance hits 0 when paying P + extra",
+      "inputs": {
+        "balance": 25000,
+        "aprPct": 5.2,
+        "months": 48,
+        "extra": 400
+      },
+      "shownIn": [
         "timeline"
+      ],
+      "spoken": [
+        {
+          "scene": "timeline",
+          "spokenForm": "twenty-eight",
+          "canon": "month:28",
+          "asrOnsetS": 83.15,
+          "appearsOnScreenS": 83.1667,
+          "offsetMs": 17
+        }
       ]
     },
     {
       "claimId": "horizon",
       "value": 48,
       "display": "48",
-      "formula": "input: horizon month",
+      "formula": "horizon month (road B pays its last payment)",
       "inputs": {},
-      "appearsIn": [
-        "timeline",
-        "tax",
-        "race",
-        "downside"
+      "shownIn": [
+        "timeline"
+      ],
+      "spoken": [
+        {
+          "scene": "timeline",
+          "spokenForm": "forty-eight",
+          "canon": "month:48",
+          "asrOnsetS": 86.35,
+          "appearsOnScreenS": 86.3667,
+          "offsetMs": 17
+        }
+      ]
+    },
+    {
+      "claimId": "months_free",
+      "value": 20,
+      "display": "20",
+      "formula": "horizon − payoff_a: months with no car payment on road A",
+      "inputs": {
+        "balance": 25000,
+        "aprPct": 5.2,
+        "months": 48,
+        "extra": 400
+      },
+      "shownIn": [
+        "free"
+      ],
+      "spoken": [
+        {
+          "scene": "free",
+          "spokenForm": "twenty",
+          "canon": "num:20",
+          "asrOnsetS": 88.29,
+          "appearsOnScreenS": 88.3,
+          "offsetMs": 10
+        }
       ]
     },
     {
@@ -147,8 +290,18 @@
         "months": 48,
         "extra": 400
       },
-      "appearsIn": [
+      "shownIn": [
         "interest"
+      ],
+      "spoken": [
+        {
+          "scene": "interest",
+          "spokenForm": "one thousand five hundred fifty-four dollars",
+          "canon": "usd:1554",
+          "asrOnsetS": 97.09,
+          "appearsOnScreenS": 97.1,
+          "offsetMs": 10
+        }
       ]
     },
     {
@@ -162,8 +315,18 @@
         "months": 48,
         "extra": 400
       },
-      "appearsIn": [
+      "shownIn": [
         "interest"
+      ],
+      "spoken": [
+        {
+          "scene": "interest",
+          "spokenForm": "two thousand seven hundred forty-four dollars",
+          "canon": "usd:2744",
+          "asrOnsetS": 94.21,
+          "appearsOnScreenS": 94.2333,
+          "offsetMs": 23
+        }
       ]
     },
     {
@@ -177,1136 +340,121 @@
         "months": 48,
         "extra": 400
       },
-      "appearsIn": [
-        "interest",
-        "bars",
-        "sweep",
-        "settle"
+      "shownIn": [
+        "avoided",
+        "identity",
+        "bridge"
+      ],
+      "spoken": [
+        {
+          "scene": "avoided",
+          "spokenForm": "one thousand one hundred ninety dollars",
+          "canon": "usd:1190",
+          "asrOnsetS": 101.63,
+          "appearsOnScreenS": 101.6333,
+          "offsetMs": 3
+        },
+        {
+          "scene": "identity",
+          "spokenForm": "one thousand one hundred ninety dollars",
+          "canon": "usd:1190",
+          "asrOnsetS": 115.49,
+          "appearsOnScreenS": 115.5,
+          "offsetMs": 10
+        },
+        {
+          "scene": "bridge",
+          "spokenForm": "one thousand one hundred ninety dollars",
+          "canon": "usd:1190",
+          "asrOnsetS": 124.51,
+          "appearsOnScreenS": 124.5333,
+          "offsetMs": 23
+        }
       ]
     },
     {
-      "claimId": "be_12",
-      "value": 5.99600899017344,
-      "display": "6.00%",
-      "formula": "r such that after-tax net worth at month 48 is equal for A and B (bisection, 80 iterations)",
-      "inputs": {
-        "balance": 25000,
-        "aprPct": 5.2,
-        "months": 48,
-        "extra": 400,
-        "taxPct": 12
-      },
-      "appearsIn": [
-        "matrix",
-        "matrix32"
-      ]
+      "claimId": "tick_m0",
+      "value": 0,
+      "display": "0",
+      "formula": "axis tick: month",
+      "inputs": {},
+      "shownIn": [
+        "timeline"
+      ],
+      "spoken": []
+    },
+    {
+      "claimId": "tick_m12",
+      "value": 12,
+      "display": "12",
+      "formula": "axis tick: month",
+      "inputs": {},
+      "shownIn": [
+        "timeline"
+      ],
+      "spoken": []
+    },
+    {
+      "claimId": "tick_m24",
+      "value": 24,
+      "display": "24",
+      "formula": "axis tick: month",
+      "inputs": {},
+      "shownIn": [
+        "timeline"
+      ],
+      "spoken": []
+    },
+    {
+      "claimId": "tick_m36",
+      "value": 36,
+      "display": "36",
+      "formula": "axis tick: month",
+      "inputs": {},
+      "shownIn": [
+        "timeline"
+      ],
+      "spoken": []
+    },
+    {
+      "claimId": "tick_m48",
+      "value": 48,
+      "display": "48",
+      "formula": "axis tick: month",
+      "inputs": {},
+      "shownIn": [
+        "timeline"
+      ],
+      "spoken": []
     },
     {
       "claimId": "be_22",
-      "value": 6.699472996997814,
-      "display": "6.70%",
-      "formula": "r such that after-tax net worth at month 48 is equal for A and B (bisection, 80 iterations)",
+      "value": 6.114509267810908,
+      "display": "6.11%",
+      "formula": "average annual return (compounded) at which after-tax net worth at month 48 is equal for A and B (bisection, 80 iterations); per-lot tax, losses not deductible",
       "inputs": {
         "balance": 25000,
         "aprPct": 5.2,
         "months": 48,
         "extra": 400,
-        "taxPct": 22
-      },
-      "appearsIn": [
-        "settle",
-        "detail",
-        "flip",
-        "matrix",
-        "matrix32",
-        "converge"
-      ]
-    },
-    {
-      "claimId": "be_32",
-      "value": 7.591278179601847,
-      "display": "7.59%",
-      "formula": "r such that after-tax net worth at month 48 is equal for A and B (bisection, 80 iterations)",
-      "inputs": {
-        "balance": 25000,
-        "aprPct": 5.2,
-        "months": 48,
-        "extra": 400,
-        "taxPct": 32
-      },
-      "appearsIn": [
-        "matrix",
-        "matrix32"
-      ]
-    },
-    {
-      "claimId": "r_0",
-      "value": 2,
-      "display": "2.00%",
-      "formula": "sweep value: 2.00% + k × 0.25%",
-      "inputs": {
-        "k": 0
-      },
-      "appearsIn": [
-        "bars",
-        "sweep"
-      ]
-    },
-    {
-      "claimId": "barb_0",
-      "value": 332.752040776021,
-      "display": "$333",
-      "formula": "(gains_B − gains_A) × (1 − tax): extra after-tax growth from investing earlier",
-      "inputs": {
-        "balance": 25000,
-        "aprPct": 5.2,
-        "months": 48,
-        "extra": 400,
-        "returnPct": 2,
-        "taxPct": 22
-      },
-      "appearsIn": [
-        "bars",
-        "sweep"
-      ]
-    },
-    {
-      "claimId": "r_1",
-      "value": 2.25,
-      "display": "2.25%",
-      "formula": "sweep value: 2.00% + k × 0.25%",
-      "inputs": {
-        "k": 1
-      },
-      "appearsIn": [
-        "sweep"
-      ]
-    },
-    {
-      "claimId": "barb_1",
-      "value": 375.67158510874987,
-      "display": "$376",
-      "formula": "(gains_B − gains_A) × (1 − tax): extra after-tax growth from investing earlier",
-      "inputs": {
-        "balance": 25000,
-        "aprPct": 5.2,
-        "months": 48,
-        "extra": 400,
-        "returnPct": 2.25,
-        "taxPct": 22
-      },
-      "appearsIn": [
-        "sweep"
-      ]
-    },
-    {
-      "claimId": "r_2",
-      "value": 2.5,
-      "display": "2.50%",
-      "formula": "sweep value: 2.00% + k × 0.25%",
-      "inputs": {
-        "k": 2
-      },
-      "appearsIn": [
-        "sweep"
-      ]
-    },
-    {
-      "claimId": "barb_2",
-      "value": 418.888614266487,
-      "display": "$419",
-      "formula": "(gains_B − gains_A) × (1 − tax): extra after-tax growth from investing earlier",
-      "inputs": {
-        "balance": 25000,
-        "aprPct": 5.2,
-        "months": 48,
-        "extra": 400,
-        "returnPct": 2.5,
-        "taxPct": 22
-      },
-      "appearsIn": [
-        "sweep"
-      ]
-    },
-    {
-      "claimId": "r_3",
-      "value": 2.75,
-      "display": "2.75%",
-      "formula": "sweep value: 2.00% + k × 0.25%",
-      "inputs": {
-        "k": 3
-      },
-      "appearsIn": [
-        "sweep"
-      ]
-    },
-    {
-      "claimId": "barb_3",
-      "value": 462.40400733835736,
-      "display": "$462",
-      "formula": "(gains_B − gains_A) × (1 − tax): extra after-tax growth from investing earlier",
-      "inputs": {
-        "balance": 25000,
-        "aprPct": 5.2,
-        "months": 48,
-        "extra": 400,
-        "returnPct": 2.75,
-        "taxPct": 22
-      },
-      "appearsIn": [
-        "sweep"
-      ]
-    },
-    {
-      "claimId": "r_4",
-      "value": 3,
-      "display": "3.00%",
-      "formula": "sweep value: 2.00% + k × 0.25%",
-      "inputs": {
-        "k": 4
-      },
-      "appearsIn": [
-        "sweep"
-      ]
-    },
-    {
-      "claimId": "barb_4",
-      "value": 506.21864447344046,
-      "display": "$506",
-      "formula": "(gains_B − gains_A) × (1 − tax): extra after-tax growth from investing earlier",
-      "inputs": {
-        "balance": 25000,
-        "aprPct": 5.2,
-        "months": 48,
-        "extra": 400,
-        "returnPct": 3,
-        "taxPct": 22
-      },
-      "appearsIn": [
-        "sweep"
-      ]
-    },
-    {
-      "claimId": "r_5",
-      "value": 3.25,
-      "display": "3.25%",
-      "formula": "sweep value: 2.00% + k × 0.25%",
-      "inputs": {
-        "k": 5
-      },
-      "appearsIn": [
-        "sweep"
-      ]
-    },
-    {
-      "claimId": "barb_5",
-      "value": 550.3334068799843,
-      "display": "$550",
-      "formula": "(gains_B − gains_A) × (1 − tax): extra after-tax growth from investing earlier",
-      "inputs": {
-        "balance": 25000,
-        "aprPct": 5.2,
-        "months": 48,
-        "extra": 400,
-        "returnPct": 3.25,
-        "taxPct": 22
-      },
-      "appearsIn": [
-        "sweep"
-      ]
-    },
-    {
-      "claimId": "r_6",
-      "value": 3.5,
-      "display": "3.50%",
-      "formula": "sweep value: 2.00% + k × 0.25%",
-      "inputs": {
-        "k": 6
-      },
-      "appearsIn": [
-        "sweep"
-      ]
-    },
-    {
-      "claimId": "barb_6",
-      "value": 594.7491768240151,
-      "display": "$595",
-      "formula": "(gains_B − gains_A) × (1 − tax): extra after-tax growth from investing earlier",
-      "inputs": {
-        "balance": 25000,
-        "aprPct": 5.2,
-        "months": 48,
-        "extra": 400,
-        "returnPct": 3.5,
-        "taxPct": 22
-      },
-      "appearsIn": [
-        "sweep"
-      ]
-    },
-    {
-      "claimId": "r_7",
-      "value": 3.75,
-      "display": "3.75%",
-      "formula": "sweep value: 2.00% + k × 0.25%",
-      "inputs": {
-        "k": 7
-      },
-      "appearsIn": [
-        "sweep"
-      ]
-    },
-    {
-      "claimId": "barb_7",
-      "value": 639.4668376280997,
-      "display": "$639",
-      "formula": "(gains_B − gains_A) × (1 − tax): extra after-tax growth from investing earlier",
-      "inputs": {
-        "balance": 25000,
-        "aprPct": 5.2,
-        "months": 48,
-        "extra": 400,
-        "returnPct": 3.75,
-        "taxPct": 22
-      },
-      "appearsIn": [
-        "sweep"
-      ]
-    },
-    {
-      "claimId": "r_8",
-      "value": 4,
-      "display": "4.00%",
-      "formula": "sweep value: 2.00% + k × 0.25%",
-      "inputs": {
-        "k": 8
-      },
-      "appearsIn": [
-        "sweep"
-      ]
-    },
-    {
-      "claimId": "barb_8",
-      "value": 684.4872736702364,
-      "display": "$684",
-      "formula": "(gains_B − gains_A) × (1 − tax): extra after-tax growth from investing earlier",
-      "inputs": {
-        "balance": 25000,
-        "aprPct": 5.2,
-        "months": 48,
-        "extra": 400,
-        "returnPct": 4,
-        "taxPct": 22
-      },
-      "appearsIn": [
-        "sweep"
-      ]
-    },
-    {
-      "claimId": "r_9",
-      "value": 4.25,
-      "display": "4.25%",
-      "formula": "sweep value: 2.00% + k × 0.25%",
-      "inputs": {
-        "k": 9
-      },
-      "appearsIn": [
-        "sweep"
-      ]
-    },
-    {
-      "claimId": "barb_9",
-      "value": 729.8113703825155,
-      "display": "$730",
-      "formula": "(gains_B − gains_A) × (1 − tax): extra after-tax growth from investing earlier",
-      "inputs": {
-        "balance": 25000,
-        "aprPct": 5.2,
-        "months": 48,
-        "extra": 400,
-        "returnPct": 4.25,
-        "taxPct": 22
-      },
-      "appearsIn": [
-        "sweep"
-      ]
-    },
-    {
-      "claimId": "r_10",
-      "value": 4.5,
-      "display": "4.50%",
-      "formula": "sweep value: 2.00% + k × 0.25%",
-      "inputs": {
-        "k": 10
-      },
-      "appearsIn": [
-        "sweep"
-      ]
-    },
-    {
-      "claimId": "barb_10",
-      "value": 775.4400142502595,
-      "display": "$775",
-      "formula": "(gains_B − gains_A) × (1 − tax): extra after-tax growth from investing earlier",
-      "inputs": {
-        "balance": 25000,
-        "aprPct": 5.2,
-        "months": 48,
-        "extra": 400,
-        "returnPct": 4.5,
-        "taxPct": 22
-      },
-      "appearsIn": [
-        "sweep"
-      ]
-    },
-    {
-      "claimId": "r_11",
-      "value": 4.75,
-      "display": "4.75%",
-      "formula": "sweep value: 2.00% + k × 0.25%",
-      "inputs": {
-        "k": 11
-      },
-      "appearsIn": [
-        "sweep"
-      ]
-    },
-    {
-      "claimId": "barb_11",
-      "value": 821.3740928103462,
-      "display": "$821",
-      "formula": "(gains_B − gains_A) × (1 − tax): extra after-tax growth from investing earlier",
-      "inputs": {
-        "balance": 25000,
-        "aprPct": 5.2,
-        "months": 48,
-        "extra": 400,
-        "returnPct": 4.75,
-        "taxPct": 22
-      },
-      "appearsIn": [
-        "sweep"
-      ]
-    },
-    {
-      "claimId": "r_12",
-      "value": 5,
-      "display": "5.00%",
-      "formula": "sweep value: 2.00% + k × 0.25%",
-      "inputs": {
-        "k": 12
-      },
-      "appearsIn": [
-        "sweep"
-      ]
-    },
-    {
-      "claimId": "barb_12",
-      "value": 867.6144946506689,
-      "display": "$868",
-      "formula": "(gains_B − gains_A) × (1 − tax): extra after-tax growth from investing earlier",
-      "inputs": {
-        "balance": 25000,
-        "aprPct": 5.2,
-        "months": 48,
-        "extra": 400,
-        "returnPct": 5,
-        "taxPct": 22
-      },
-      "appearsIn": [
-        "sweep"
-      ]
-    },
-    {
-      "claimId": "r_13",
-      "value": 5.25,
-      "display": "5.25%",
-      "formula": "sweep value: 2.00% + k × 0.25%",
-      "inputs": {
-        "k": 13
-      },
-      "appearsIn": [
-        "sweep"
-      ]
-    },
-    {
-      "claimId": "barb_13",
-      "value": 914.1621094084009,
-      "display": "$914",
-      "formula": "(gains_B − gains_A) × (1 − tax): extra after-tax growth from investing earlier",
-      "inputs": {
-        "balance": 25000,
-        "aprPct": 5.2,
-        "months": 48,
-        "extra": 400,
-        "returnPct": 5.25,
-        "taxPct": 22
-      },
-      "appearsIn": [
-        "sweep"
-      ]
-    },
-    {
-      "claimId": "r_14",
-      "value": 5.5,
-      "display": "5.50%",
-      "formula": "sweep value: 2.00% + k × 0.25%",
-      "inputs": {
-        "k": 14
-      },
-      "appearsIn": [
-        "sweep"
-      ]
-    },
-    {
-      "claimId": "barb_14",
-      "value": 961.0178277692622,
-      "display": "$961",
-      "formula": "(gains_B − gains_A) × (1 − tax): extra after-tax growth from investing earlier",
-      "inputs": {
-        "balance": 25000,
-        "aprPct": 5.2,
-        "months": 48,
-        "extra": 400,
-        "returnPct": 5.5,
-        "taxPct": 22
-      },
-      "appearsIn": [
-        "sweep"
-      ]
-    },
-    {
-      "claimId": "r_15",
-      "value": 5.75,
-      "display": "5.75%",
-      "formula": "sweep value: 2.00% + k × 0.25%",
-      "inputs": {
-        "k": 15
-      },
-      "appearsIn": [
-        "sweep"
-      ]
-    },
-    {
-      "claimId": "barb_15",
-      "value": 1008.1825414662154,
-      "display": "$1,008",
-      "formula": "(gains_B − gains_A) × (1 − tax): extra after-tax growth from investing earlier",
-      "inputs": {
-        "balance": 25000,
-        "aprPct": 5.2,
-        "months": 48,
-        "extra": 400,
-        "returnPct": 5.75,
-        "taxPct": 22
-      },
-      "appearsIn": [
-        "sweep"
-      ]
-    },
-    {
-      "claimId": "r_16",
-      "value": 6,
-      "display": "6.00%",
-      "formula": "sweep value: 2.00% + k × 0.25%",
-      "inputs": {
-        "k": 16
-      },
-      "appearsIn": [
-        "sweep"
-      ]
-    },
-    {
-      "claimId": "barb_16",
-      "value": 1055.657143278338,
-      "display": "$1,056",
-      "formula": "(gains_B − gains_A) × (1 − tax): extra after-tax growth from investing earlier",
-      "inputs": {
-        "balance": 25000,
-        "aprPct": 5.2,
-        "months": 48,
-        "extra": 400,
-        "returnPct": 6,
-        "taxPct": 22
-      },
-      "appearsIn": [
-        "sweep"
-      ]
-    },
-    {
-      "claimId": "r_17",
-      "value": 6.25,
-      "display": "6.25%",
-      "formula": "sweep value: 2.00% + k × 0.25%",
-      "inputs": {
-        "k": 17
-      },
-      "appearsIn": [
-        "sweep"
-      ]
-    },
-    {
-      "claimId": "barb_17",
-      "value": 1103.4425270297677,
-      "display": "$1,103",
-      "formula": "(gains_B − gains_A) × (1 − tax): extra after-tax growth from investing earlier",
-      "inputs": {
-        "balance": 25000,
-        "aprPct": 5.2,
-        "months": 48,
-        "extra": 400,
-        "returnPct": 6.25,
-        "taxPct": 22
-      },
-      "appearsIn": [
-        "sweep"
-      ]
-    },
-    {
-      "claimId": "r_18",
-      "value": 6.5,
-      "display": "6.50%",
-      "formula": "sweep value: 2.00% + k × 0.25%",
-      "inputs": {
-        "k": 18
-      },
-      "appearsIn": [
-        "sweep",
-        "settle"
-      ]
-    },
-    {
-      "claimId": "barb_18",
-      "value": 1151.5395875886006,
-      "display": "$1,152",
-      "formula": "(gains_B − gains_A) × (1 − tax): extra after-tax growth from investing earlier",
-      "inputs": {
-        "balance": 25000,
-        "aprPct": 5.2,
-        "months": 48,
-        "extra": 400,
-        "returnPct": 6.5,
-        "taxPct": 22
-      },
-      "appearsIn": [
-        "sweep",
-        "settle"
-      ]
-    },
-    {
-      "claimId": "r_19",
-      "value": 6.75,
-      "display": "6.75%",
-      "formula": "sweep value: 2.00% + k × 0.25%",
-      "inputs": {
-        "k": 19
-      },
-      "appearsIn": [
-        "sweep",
-        "settle"
-      ]
-    },
-    {
-      "claimId": "barb_19",
-      "value": 1199.9492208657316,
-      "display": "$1,200",
-      "formula": "(gains_B − gains_A) × (1 − tax): extra after-tax growth from investing earlier",
-      "inputs": {
-        "balance": 25000,
-        "aprPct": 5.2,
-        "months": 48,
-        "extra": 400,
-        "returnPct": 6.75,
-        "taxPct": 22
-      },
-      "appearsIn": [
-        "sweep",
-        "settle"
-      ]
-    },
-    {
-      "claimId": "r_20",
-      "value": 7,
-      "display": "7.00%",
-      "formula": "sweep value: 2.00% + k × 0.25%",
-      "inputs": {
-        "k": 20
-      },
-      "appearsIn": [
-        "sweep"
-      ]
-    },
-    {
-      "claimId": "barb_20",
-      "value": 1248.6723238136815,
-      "display": "$1,249",
-      "formula": "(gains_B − gains_A) × (1 − tax): extra after-tax growth from investing earlier",
-      "inputs": {
-        "balance": 25000,
-        "aprPct": 5.2,
-        "months": 48,
-        "extra": 400,
-        "returnPct": 7,
-        "taxPct": 22
-      },
-      "appearsIn": [
-        "sweep"
-      ]
-    },
-    {
-      "claimId": "r_21",
-      "value": 7.25,
-      "display": "7.25%",
-      "formula": "sweep value: 2.00% + k × 0.25%",
-      "inputs": {
-        "k": 21
-      },
-      "appearsIn": [
-        "sweep",
-        "settle"
-      ]
-    },
-    {
-      "claimId": "barb_21",
-      "value": 1297.7097944258114,
-      "display": "$1,298",
-      "formula": "(gains_B − gains_A) × (1 − tax): extra after-tax growth from investing earlier",
-      "inputs": {
-        "balance": 25000,
-        "aprPct": 5.2,
-        "months": 48,
-        "extra": 400,
-        "returnPct": 7.25,
-        "taxPct": 22
-      },
-      "appearsIn": [
-        "sweep",
-        "settle"
-      ]
-    },
-    {
-      "claimId": "r_22",
-      "value": 7.5,
-      "display": "7.50%",
-      "formula": "sweep value: 2.00% + k × 0.25%",
-      "inputs": {
-        "k": 22
-      },
-      "appearsIn": [
-        "sweep"
-      ]
-    },
-    {
-      "claimId": "barb_22",
-      "value": 1347.0625317349352,
-      "display": "$1,347",
-      "formula": "(gains_B − gains_A) × (1 − tax): extra after-tax growth from investing earlier",
-      "inputs": {
-        "balance": 25000,
-        "aprPct": 5.2,
-        "months": 48,
-        "extra": 400,
-        "returnPct": 7.5,
-        "taxPct": 22
-      },
-      "appearsIn": [
-        "sweep"
-      ]
-    },
-    {
-      "claimId": "r_23",
-      "value": 7.75,
-      "display": "7.75%",
-      "formula": "sweep value: 2.00% + k × 0.25%",
-      "inputs": {
-        "k": 23
-      },
-      "appearsIn": [
-        "sweep"
-      ]
-    },
-    {
-      "claimId": "barb_23",
-      "value": 1396.7314358124372,
-      "display": "$1,397",
-      "formula": "(gains_B − gains_A) × (1 − tax): extra after-tax growth from investing earlier",
-      "inputs": {
-        "balance": 25000,
-        "aprPct": 5.2,
-        "months": 48,
-        "extra": 400,
-        "returnPct": 7.75,
-        "taxPct": 22
-      },
-      "appearsIn": [
-        "sweep"
-      ]
-    },
-    {
-      "claimId": "r_24",
-      "value": 8,
-      "display": "8.00%",
-      "formula": "sweep value: 2.00% + k × 0.25%",
-      "inputs": {
-        "k": 24
-      },
-      "appearsIn": [
-        "sweep",
-        "settle"
-      ]
-    },
-    {
-      "claimId": "barb_24",
-      "value": 1446.7174077670968,
-      "display": "$1,447",
-      "formula": "(gains_B − gains_A) × (1 − tax): extra after-tax growth from investing earlier",
-      "inputs": {
-        "balance": 25000,
-        "aprPct": 5.2,
-        "months": 48,
-        "extra": 400,
-        "returnPct": 8,
-        "taxPct": 22
-      },
-      "appearsIn": [
-        "sweep",
-        "settle"
-      ]
-    },
-    {
-      "claimId": "r_25",
-      "value": 8.25,
-      "display": "8.25%",
-      "formula": "sweep value: 2.00% + k × 0.25%",
-      "inputs": {
-        "k": 25
-      },
-      "appearsIn": [
-        "sweep"
-      ]
-    },
-    {
-      "claimId": "barb_25",
-      "value": 1497.0213497442094,
-      "display": "$1,497",
-      "formula": "(gains_B − gains_A) × (1 − tax): extra after-tax growth from investing earlier",
-      "inputs": {
-        "balance": 25000,
-        "aprPct": 5.2,
-        "months": 48,
-        "extra": 400,
-        "returnPct": 8.25,
-        "taxPct": 22
-      },
-      "appearsIn": [
-        "sweep"
-      ]
-    },
-    {
-      "claimId": "r_26",
-      "value": 8.5,
-      "display": "8.50%",
-      "formula": "sweep value: 2.00% + k × 0.25%",
-      "inputs": {
-        "k": 26
-      },
-      "appearsIn": [
-        "sweep"
-      ]
-    },
-    {
-      "claimId": "barb_26",
-      "value": 1547.644164924269,
-      "display": "$1,548",
-      "formula": "(gains_B − gains_A) × (1 − tax): extra after-tax growth from investing earlier",
-      "inputs": {
-        "balance": 25000,
-        "aprPct": 5.2,
-        "months": 48,
-        "extra": 400,
-        "returnPct": 8.5,
-        "taxPct": 22
-      },
-      "appearsIn": [
-        "sweep"
-      ]
-    },
-    {
-      "claimId": "r_27",
-      "value": 8.75,
-      "display": "8.75%",
-      "formula": "sweep value: 2.00% + k × 0.25%",
-      "inputs": {
-        "k": 27
-      },
-      "appearsIn": [
-        "sweep"
-      ]
-    },
-    {
-      "claimId": "barb_27",
-      "value": 1598.5867575222032,
-      "display": "$1,599",
-      "formula": "(gains_B − gains_A) × (1 − tax): extra after-tax growth from investing earlier",
-      "inputs": {
-        "balance": 25000,
-        "aprPct": 5.2,
-        "months": 48,
-        "extra": 400,
-        "returnPct": 8.75,
-        "taxPct": 22
-      },
-      "appearsIn": [
-        "sweep"
-      ]
-    },
-    {
-      "claimId": "r_28",
-      "value": 9,
-      "display": "9.00%",
-      "formula": "sweep value: 2.00% + k × 0.25%",
-      "inputs": {
-        "k": 28
-      },
-      "appearsIn": [
-        "sweep",
-        "settle"
-      ]
-    },
-    {
-      "claimId": "barb_28",
-      "value": 1649.8500327862598,
-      "display": "$1,650",
-      "formula": "(gains_B − gains_A) × (1 − tax): extra after-tax growth from investing earlier",
-      "inputs": {
-        "balance": 25000,
-        "aprPct": 5.2,
-        "months": 48,
-        "extra": 400,
-        "returnPct": 9,
-        "taxPct": 22
-      },
-      "appearsIn": [
-        "sweep",
-        "settle"
-      ]
-    },
-    {
-      "claimId": "r_29",
-      "value": 9.25,
-      "display": "9.25%",
-      "formula": "sweep value: 2.00% + k × 0.25%",
-      "inputs": {
-        "k": 29
-      },
-      "appearsIn": [
-        "sweep"
-      ]
-    },
-    {
-      "claimId": "barb_29",
-      "value": 1701.4348969968466,
-      "display": "$1,701",
-      "formula": "(gains_B − gains_A) × (1 − tax): extra after-tax growth from investing earlier",
-      "inputs": {
-        "balance": 25000,
-        "aprPct": 5.2,
-        "months": 48,
-        "extra": 400,
-        "returnPct": 9.25,
-        "taxPct": 22
-      },
-      "appearsIn": [
-        "sweep"
-      ]
-    },
-    {
-      "claimId": "r_30",
-      "value": 9.5,
-      "display": "9.50%",
-      "formula": "sweep value: 2.00% + k × 0.25%",
-      "inputs": {
-        "k": 30
-      },
-      "appearsIn": [
-        "sweep"
-      ]
-    },
-    {
-      "claimId": "barb_30",
-      "value": 1753.3422574657002,
-      "display": "$1,753",
-      "formula": "(gains_B − gains_A) × (1 − tax): extra after-tax growth from investing earlier",
-      "inputs": {
-        "balance": 25000,
-        "aprPct": 5.2,
-        "months": 48,
-        "extra": 400,
-        "returnPct": 9.5,
-        "taxPct": 22
-      },
-      "appearsIn": [
-        "sweep"
-      ]
-    },
-    {
-      "claimId": "r_31",
-      "value": 9.75,
-      "display": "9.75%",
-      "formula": "sweep value: 2.00% + k × 0.25%",
-      "inputs": {
-        "k": 31
-      },
-      "appearsIn": [
-        "sweep"
-      ]
-    },
-    {
-      "claimId": "barb_31",
-      "value": 1805.5730225348468,
-      "display": "$1,806",
-      "formula": "(gains_B − gains_A) × (1 − tax): extra after-tax growth from investing earlier",
-      "inputs": {
-        "balance": 25000,
-        "aprPct": 5.2,
-        "months": 48,
-        "extra": 400,
-        "returnPct": 9.75,
-        "taxPct": 22
-      },
-      "appearsIn": [
-        "sweep"
-      ]
-    },
-    {
-      "claimId": "r_32",
-      "value": 10,
-      "display": "10.00%",
-      "formula": "sweep value: 2.00% + k × 0.25%",
-      "inputs": {
-        "k": 32
-      },
-      "appearsIn": [
-        "sweep",
-        "settle"
-      ]
-    },
-    {
-      "claimId": "barb_32",
-      "value": 1858.128101575542,
-      "display": "$1,858",
-      "formula": "(gains_B − gains_A) × (1 − tax): extra after-tax growth from investing earlier",
-      "inputs": {
-        "balance": 25000,
-        "aprPct": 5.2,
-        "months": 48,
-        "extra": 400,
-        "returnPct": 10,
-        "taxPct": 22
-      },
-      "appearsIn": [
-        "sweep",
-        "settle"
-      ]
-    },
-    {
-      "claimId": "axis_lo",
-      "value": 2,
-      "display": "2%",
-      "formula": "axis label: sweep minimum",
-      "inputs": {},
-      "appearsIn": [
-        "certain"
-      ]
-    },
-    {
-      "claimId": "axis_hi",
-      "value": 10,
-      "display": "10%",
-      "formula": "axis label: sweep maximum",
-      "inputs": {},
-      "appearsIn": [
-        "certain"
-      ]
-    },
-    {
-      "claimId": "barb_be",
-      "value": 1190.1400000000192,
-      "display": "$1,190",
-      "formula": "extra after-tax growth at the break-even return (equals interest avoided)",
-      "inputs": {
-        "balance": 25000,
-        "aprPct": 5.2,
-        "months": 48,
-        "extra": 400,
-        "returnPct": 6.699472996997814,
-        "taxPct": 22
-      },
-      "appearsIn": [
-        "settle"
-      ]
-    },
-    {
-      "claimId": "seq_first",
-      "value": 8,
-      "display": "8%",
-      "formula": "stated scenario: annual return for months 1–36 (not a forecast)",
-      "inputs": {},
-      "appearsIn": [
-        "sequence"
-      ]
-    },
-    {
-      "claimId": "seq_second",
-      "value": -20,
-      "display": "−20%",
-      "formula": "stated scenario: annual return for months 37–48 (not a forecast)",
-      "inputs": {},
-      "appearsIn": [
-        "sequence"
-      ]
-    },
-    {
-      "claimId": "cross_month",
-      "value": 38,
-      "display": "38",
-      "formula": "first month m where NW_B − NW_A turns negative under the stated sequence",
-      "inputs": {
-        "balance": 25000,
-        "aprPct": 5.2,
-        "months": 48,
-        "extra": 400,
-        "taxPct": 22,
-        "sequence": {
-          "first": 8,
-          "second": -20,
-          "split": 36
+        "bracket": {
+          "id": 22,
+          "ord": 22,
+          "lt": 15
         }
       },
-      "appearsIn": [
-        "cross"
-      ]
-    },
-    {
-      "claimId": "gap_end",
-      "value": 458.73897789898547,
-      "display": "$459",
-      "formula": "NW_A − NW_B at month 48 under the stated sequence (after tax)",
-      "inputs": {
-        "balance": 25000,
-        "aprPct": 5.2,
-        "months": 48,
-        "extra": 400,
-        "taxPct": 22,
-        "sequence": {
-          "first": 8,
-          "second": -20,
-          "split": 36
+      "shownIn": [
+        "hook4"
+      ],
+      "spoken": [
+        {
+          "scene": "hook4",
+          "spokenForm": "six point one one percent",
+          "canon": "pct:6.11",
+          "asrOnsetS": 19.13,
+          "appearsOnScreenS": 19.1333,
+          "offsetMs": 3
         }
-      },
-      "appearsIn": [
-        "downside"
       ]
     }
   ]
