@@ -81,6 +81,13 @@ const C = [
   { claimId: 'inf1969', value: pct(data[1969].inflation), display: pct(data[1969].inflation) + '%', formula: 'CPI-U Dec/Dec 1969 (Damodaran, from FRED)', source: D, ...hist(1969), historical: true, illustrative: false },
   { claimId: 'loss1974', value: pct(M.portfolioReturn(data[1974])), display: pct(-M.portfolioReturn(data[1974])) + '%', formula: '−(0.6·S&P_1974 + 0.4·TBond_1974): loss in 1974', source: D, ...hist(1974), historical: true, illustrative: false },
   { claimId: 'inf1974', value: pct(data[1974].inflation), display: pct(data[1974].inflation) + '%', formula: 'CPI-U Dec/Dec 1974', source: D, ...hist(1974), historical: true, illustrative: false },
+  // real 1973-74 returns: drawn as bar heights in a2-7374 (no number text on screen, so they are not new numbers there)
+  ...[1973, 1974].flatMap((y) => ['stocks', 'bonds'].map((k) => {
+    const v = (1 + data[y][k]) / (1 + data[y].inflation) - 1;
+    return { claimId: `real${k === 'stocks' ? 'S' : 'B'}${y}`, value: pct(v, 4), display: (v < 0 ? '−' : '') + Math.abs(pct(v)) + '%', presentation: 'bar height only, no number text',
+      formula: `(1 + ${k === 'stocks' ? 'S&P' : 'TBond'}_${y}) / (1 + inflation_${y}) − 1 (${k === 'stocks' ? 'S&P 500 incl. dividends' : '10-year Treasury'}, real)`, source: D, ...hist(y), historical: true, illustrative: false,
+      planned: ['a2-7374'] };
+  })),
   { claimId: 'bal74', value: A.endReal[Y(1974)], display: usdK(A.endReal[Y(1974)]), basis: 'real', decisive: true, character: '1966', formula: '1966 path endReal[1974] = endNominal / Π(1+inflation) 1966..1974, rounded to $1,000', source: D, ...hist([1966, 1974]), historical: true, illustrative: false },
   { claimId: 'bal74m', value: B.endReal[Y(1974)], display: usdM(B.endReal[Y(1974)]), basis: 'real', character: 'mirror', formula: 'mirror path endReal at the end of 1974 (year 9)', source: D, ...hist([1966, 1995]), historical: true, illustrative: true },
   { claimId: 'inf1979', value: pct(data[1979].inflation), display: pct(data[1979].inflation) + '%', formula: 'CPI-U Dec/Dec 1979', source: D, ...hist(1979), historical: true, illustrative: false },
@@ -158,6 +165,7 @@ function build() {
       if (!cl.shownIn.includes(s.id)) cl.shownIn.push(s.id);
     }
   });
+  for (const c of Object.values(byId)) for (const sc of c.planned || []) if (!c.shownIn.includes(sc)) c.shownIn.push(sc);
   // both geomean claims are shown together wherever either is shown (the two cards of the "average" scenes)
   for (const s of byId.g1966.shownIn) if (s !== 'a3-avg-callback' && !byId.gmirror.shownIn.includes(s)) byId.gmirror.shownIn.push(s);
   for (const c of Object.values(byId)) {

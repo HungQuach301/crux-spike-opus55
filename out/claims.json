@@ -1050,6 +1050,94 @@
    "callbacks": []
   },
   {
+   "claimId": "realS1973",
+   "value": -21.1708,
+   "display": "−21.2%",
+   "presentation": "bar height only, no number text",
+   "formula": "(1 + S&P_1973) / (1 + inflation_1973) − 1 (S&P 500 incl. dividends, real)",
+   "source": {
+    "id": "damodaran-histretSP-2026",
+    "url": "https://pages.stern.nyu.edu/~adamodar/pc/datasets/histretSP.xls"
+   },
+   "dataYear": 1973,
+   "historical": true,
+   "illustrative": false,
+   "planned": [
+    "a2-7374"
+   ],
+   "spoken": [],
+   "shownIn": [
+    "a2-7374"
+   ],
+   "callbacks": []
+  },
+  {
+   "claimId": "realB1973",
+   "value": -4.643,
+   "display": "−4.6%",
+   "presentation": "bar height only, no number text",
+   "formula": "(1 + TBond_1973) / (1 + inflation_1973) − 1 (10-year Treasury, real)",
+   "source": {
+    "id": "damodaran-histretSP-2026",
+    "url": "https://pages.stern.nyu.edu/~adamodar/pc/datasets/histretSP.xls"
+   },
+   "dataYear": 1973,
+   "historical": true,
+   "illustrative": false,
+   "planned": [
+    "a2-7374"
+   ],
+   "spoken": [],
+   "shownIn": [
+    "a2-7374"
+   ],
+   "callbacks": []
+  },
+  {
+   "claimId": "realS1974",
+   "value": -34.0397,
+   "display": "−34%",
+   "presentation": "bar height only, no number text",
+   "formula": "(1 + S&P_1974) / (1 + inflation_1974) − 1 (S&P 500 incl. dividends, real)",
+   "source": {
+    "id": "damodaran-histretSP-2026",
+    "url": "https://pages.stern.nyu.edu/~adamodar/pc/datasets/histretSP.xls"
+   },
+   "dataYear": 1974,
+   "historical": true,
+   "illustrative": false,
+   "planned": [
+    "a2-7374"
+   ],
+   "spoken": [],
+   "shownIn": [
+    "a2-7374"
+   ],
+   "callbacks": []
+  },
+  {
+   "claimId": "realB1974",
+   "value": -9.2125,
+   "display": "−9.2%",
+   "presentation": "bar height only, no number text",
+   "formula": "(1 + TBond_1974) / (1 + inflation_1974) − 1 (10-year Treasury, real)",
+   "source": {
+    "id": "damodaran-histretSP-2026",
+    "url": "https://pages.stern.nyu.edu/~adamodar/pc/datasets/histretSP.xls"
+   },
+   "dataYear": 1974,
+   "historical": true,
+   "illustrative": false,
+   "planned": [
+    "a2-7374"
+   ],
+   "spoken": [],
+   "shownIn": [
+    "a2-7374"
+   ],
+   "callbacks": []
+  },
+  {
    "claimId": "bal74",
    "value": 460508.27283759665,
    "display": "$461,000",

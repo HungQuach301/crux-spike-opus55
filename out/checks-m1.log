@@ -23,10 +23,10 @@ A12  MISSING    0.0s    artifact missing: out/audio/stems/music.wav|flac
 A13  MISSING    0.0s    artifact missing: out/voice/takes.json
 A14  MISSING    0.0s    artifact missing: out/video.mp4
 A15  MISSING    0.0s    artifact missing: out/video.mp4
-S01  PASS       0.0s  
+S01  PASS       0.2s  
 S02  MISSING    0.0s    artifact missing: out/checks/page.json
 S03  PASS       0.0s  
-S04  PASS       0.0s  
+S04  FAIL       0.0s  used years missing in a source=3
 S05  PASS       0.0s  
 S06  MISSING    0.0s    artifact missing: out/checks/page.json
 S07  MISSING    0.0s    artifact missing: out/checks/page.json
@@ -69,4 +69,4 @@ C13  MISSING    0.0s    artifact missing: out/checks/page.json
 C14  MISSING    0.0s    artifact missing: out/checks/page.json
 C15  MISSING    0.0s    artifact missing: out/checks/page.json
 P01  MISSING    0.0s    artifact missing: out/package/thumb-1.png
-{"PASS": 11, "FAIL": 0, "MISSING": 60, "ERROR": 0}
+{"PASS": 10, "FAIL": 1, "MISSING": 60, "ERROR": 0}

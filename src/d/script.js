@@ -72,6 +72,7 @@ const ACTS = [
       { id: 'a1-notax', layout: 'rules/list', shot: 'medium', lines: [
         { t: 'No taxes, no fees.', d: 'Crisp, two beats.' },
         { t: 'We keep the model this bare on purpose, so that one thing can change at a time.', d: 'Analyst voice, candid. "We" is the analyst.' },
+        { t: 'The data is US only, and this is history, not a forecast.', d: 'Plain, brief, matter-of-fact.' },
       ] },
       { id: 'a1-mirror-in', layout: 'mirror/enter', shot: 'wide', lead: 0.6, lines: [
         { t: 'Now meet the second retiree.', d: 'A small turn in tone, intrigue.' },
@@ -138,7 +139,7 @@ const ACTS = [
         { t: 'By 1969 it is 6.2% a year, and every withdrawal grows with it.', d: 'Even, stress "every withdrawal".' },
       ] },
       { id: 'a2-7374', layout: 'duel/lines', shot: 'medium', variant: 2, lines: [
-        { t: 'In 1973 and 1974, stocks and bonds fall together.', d: 'Grave, steady.' },
+        { t: 'After inflation, stocks and bonds both lose money in 1973 and 1974.', d: 'Grave, steady. Stress "after inflation" and "both".' },
       ] },
       { id: 'a2-1974inf', layout: 'escalator/peak', shot: 'close-up', lines: [
         { t: 'In 1974 alone, the portfolio loses 14.7%, while prices rise 12.3%.', d: 'Two hits, one sentence; do not rush the numbers.' },

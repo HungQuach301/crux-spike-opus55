@@ -8,11 +8,11 @@
    "afterStretchWpm": 157.3
   },
   "act1": {
-   "rawWpm": 161.4,
+   "rawWpm": 161.8,
    "afterStretchWpm": 156.3
   },
   "act2": {
-   "rawWpm": 156.3,
+   "rawWpm": 156.4,
    "afterStretchWpm": 156.1
   },
   "act3": {
@@ -311,6 +311,21 @@
     "stretch": 1.1,
     "wpmAfter": 164.5,
     "heard": "we keep the model, this bear, on purpose, so that one thing can change at a time."
+   },
+   "takes": 4,
+   "problem": ""
+  },
+  {
+   "id": "a1-notax.3",
+   "act": "act1",
+   "words": 12,
+   "chosen": {
+    "take": 1,
+    "wpm": 173.9,
+    "missing": [],
+    "stretch": 1.1,
+    "wpmAfter": 158.1,
+    "heard": "The data is US only, and this is history, not a forecast."
    },
    "takes": 4,
    "problem": ""
@@ -708,14 +723,14 @@
   {
    "id": "a2-7374.1",
    "act": "act2",
-   "words": 11,
+   "words": 14,
    "chosen": {
-    "take": 3,
-    "wpm": 139.2,
+    "take": 1,
+    "wpm": 144.3,
     "missing": [],
-    "stretch": 0.9,
-    "wpmAfter": 154.7,
-    "heard": "In 1973 and 1974, stocks and bonds fall together."
+    "stretch": 0.925,
+    "wpmAfter": 156.0,
+    "heard": "After inflation, stocks and bonds both lose money in 1973 and 1974."
    },
    "takes": 4,
    "problem": ""

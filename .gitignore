@@ -15,3 +15,5 @@ checks/**/__pycache__/
 out/voice/raw/
 out/voice/*.log
 out/checks/cache/
+# ElevenLabs responses cache (base64 audio, 19 MB; regenerating costs credits)
+out/voice-audition/cache/

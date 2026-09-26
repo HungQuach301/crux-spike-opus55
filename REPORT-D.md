@@ -116,3 +116,46 @@ Hạ tầng: ffmpeg không có sẵn trong container, Phiên D tự cài bằng 
 **DỪNG** ở M1, chờ chủ dự án duyệt trước khi render.
 
 Tái tạo: `npm ci && pip install numpy scipy faster-whisper xlrd requests && npm run d:m1`. Đo bước 0: `npm run d:step0`. Máy kiểm: `checks/run.sh`.
+
+---
+
+# M1b-1 — sau khi duyệt M1 (quyết định: BRIEF-D-amendments.md)
+
+## A. checks-appeal
+- **§1, §2:** giữ nguyên cách né đã làm, không mở khoá.
+- **§3 — nguồn cổ phiếu thứ hai:** đã thêm. `http://www.econ.yale.edu/~shiller/data/ie_data.xls` tải được qua HTTP; qua HTTPS thì lỗi nguyên văn `curl: (35) Recv failure: Connection reset by peer`. `https://shillerdata.com/` cũng lỗi nguyên văn `curl: (35) Recv failure: Connection reset by peer`.
+  - **Cách tính:** `data/normalized/stocks2.csv` = lợi suất tổng Dec→Dec từ giá tháng của Shiller, cổ tức D/12 tái đầu tư hằng tháng.
+  - **Lệch:** 82/95 năm vượt dung sai 0,5 pp (trung vị 1,61 pp, lớn nhất 8,17 pp năm 1991). Tất cả đã liệt kê trong `data/sources.json` → `mismatches`. Nguyên nhân: Shiller dùng giá **trung bình tháng**, Damodaran dùng mức **cuối năm**, nên hai định nghĩa khác nhau từ gốc. Tôi không tự chọn nguồn; mô hình vẫn dùng Damodaran.
+  - **Thiếu năm:** bản trên Yale dừng ở 09/2023, nên thiếu 2023–2025. Vì vậy **S04 giờ FAIL** ("used years missing in a source = 3"). Bản đang được cập nhật nằm ở shillerdata.com, domain đang bị chặn.
+  - **Điều khoản:** Shiller không có câu cấp phép hay điều khoản sử dụng rõ ràng, chỉ có sheet "Disclaimer" (đã trích nguyên văn trong `sources.json`). Nguồn này chỉ dùng để đối chiếu, không hiện trên hình.
+  - **Cần chủ dự án quyết:** mở shillerdata.com để lấy bản đủ năm, hoặc chấp nhận S04 thiếu 3 năm.
+
+## B. Kịch bản
+- **a2-7374** → "After inflation, stocks and bonds both lose money in 1973 and 1974."
+  - Thêm 4 claim lợi suất thực: cổ phiếu −21.2% (1973) / −34% (1974), trái phiếu −4.6% / −9.2%.
+  - Bốn số này hiện dưới dạng chiều cao cột, không có chữ số trên hình, nên không tính là số mới trong cảnh.
+- **a1-notax** thêm câu "The data is US only, and this is history, not a forecast." Đoạn ở hồi 3 giữ nguyên.
+- **Test:** thêm 2 test (thực âm 1973–74; mọi số trong kịch bản đã đăng ký; câu "US only" nằm ở hồi 1). `npm test` pass.
+- **Timeline:** `out/script.json` và `out/timeline.json` được dựng lại bằng take giọng cũ cho 2 câu này (10:56). Timeline sẽ dựng lại hẳn bằng giọng mới ở table read v3.
+- **checks (chỉ phần Python):** 10 PASS, 1 FAIL (S04, lý do ở trên), 60 MISSING.
+
+## C. ElevenLabs — bước 0: ĐẠT
+- `GET /v1/voices` và `POST /v1/text-to-speech/{voice_id}/with-timestamps` đều trả HTTP 200. Khoá do proxy gắn; không có khoá trong code hay log.
+- `eleven_v3` chấp nhận `speed` và `with-timestamps`.
+- Khoá **không có quyền `user_read`**. Lỗi nguyên văn: `"The API key you used is missing the permission user_read to execute this operation."` Vì vậy không đọc được số dư; credit được cộng từ header `Character-Cost` của từng lần gọi.
+
+## D. Thử giọng mù
+- **Kết quả:** `out/voice-audition/V1.mp3` … `V8.mp3`, bảng số đo đầy đủ trong `out/voice-audition/README.md`. Giải mã chỉ có trong `key.json`.
+- **Credit ElevenLabs đã dùng: 4.883 ký tự** cho 125 lần gọi thử giọng, cộng khoảng 132 cho 3 lần gọi thăm dò. Tổng khoảng **5.015**.
+
+| | V1 | V2 | V3 | V4 | V5 | V6 | V7 | V8 |
+|---|---|---|---|---|---|---|---|---|
+| wpm toàn đoạn | 163.5 | 168.3 | 156.4 | 161.6 | 156.1 | 152.5 | 158.5 | 158.3 |
+| độ lệch chuẩn wpm | 23.3 | 24.2 | 8.9 | 26.1 | 4.9 | 8.7 | 9.8 | 36.6 |
+| số câu trong 150–160 (trên 6) | 3 | 3 | 4 | 2 | 5 | 3 | 4 | 1 |
+| độ nhạy với speed | 0.18 | 0.20 | 0.99 | 0.09 | 1.07 | 0.99 | 1.05 | 0.19 |
+| từ quan trọng ASR bỏ sót (trên 15) | 1 | 0 | 2 | 0 | 0 | 0 | 0 | 1 |
+| LUFS gốc / file | −19.4 / −20.4 | −18.6 / −20.4 | −24.0 / −20.5 | −17.1 / −20.5 | −22.8 / −20.5 | −19.9 / −20.4 | −23.8 / −20.5 | −18.5 / −20.4 |
+| khoảng lặng dài nhất (s) | 0.76 | 0.74 | 0.72 | 0.70 | 0.76 | 0.76 | 0.76 | 0.76 |
+
+**DỪNG**, chờ chủ dự án chọn giọng.

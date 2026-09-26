@@ -2,7 +2,7 @@
 
 root: `/home/user/crux-spike-opus55`  
 lock: `0478df7377b754137071e202c2ff396d7deba94293823cabf5f18932c411c612`  
-{'PASS': 11, 'FAIL': 0, 'MISSING': 60, 'ERROR': 0}
+{'PASS': 10, 'FAIL': 1, 'MISSING': 60, 'ERROR': 0}
 
 | rule | § | status | failing metrics |
 |---|---|---|---|
@@ -34,7 +34,7 @@ lock: `0478df7377b754137071e202c2ff396d7deba94293823cabf5f18932c411c612`
 | S01 | §1.2 | PASS |  |
 | S02 | §1.2 | MISSING | artifact missing: out/checks/page.json |
 | S03 | §1.3 | PASS |  |
-| S04 | §1.3 | PASS |  |
+| S04 | §1.3 | FAIL | used years missing in a source = 3 (need <= 0) |
 | S05 | §1.4 | PASS |  |
 | S06 | §1.4, §1.7 | MISSING | artifact missing: out/checks/page.json |
 | S07 | §1.5 | MISSING | artifact missing: out/checks/page.json |

@@ -322,10 +322,10 @@
   "file": "out/voice/raw/a2-infl.2.t0.wav"
  },
  "a2-7374.1.t0": {
-  "key": "f36f818eb0d89245",
+  "key": "4c3963d29bae9776",
   "take": 0,
-  "chars": 84,
-  "seconds": 1.4,
+  "chars": 102,
+  "seconds": 2.14,
   "file": "out/voice/raw/a2-7374.1.t0.wav"
  },
  "a2-1974inf.1.t0": {
@@ -1485,24 +1485,24 @@
   "file": "out/voice/raw/a2-gap1.1.t3.wav"
  },
  "a2-7374.1.t1": {
-  "key": "9c7a5a7b48f8d7a9",
+  "key": "24ca504e6282e368",
   "take": 1,
-  "chars": 84,
-  "seconds": 4.88,
+  "chars": 102,
+  "seconds": 2.12,
   "file": "out/voice/raw/a2-7374.1.t1.wav"
  },
  "a2-7374.1.t2": {
-  "key": "528aa25bdf662c4b",
+  "key": "1e96e2407e967aaf",
   "take": 2,
-  "chars": 84,
-  "seconds": 1.69,
+  "chars": 102,
+  "seconds": 2.19,
   "file": "out/voice/raw/a2-7374.1.t2.wav"
  },
  "a2-7374.1.t3": {
-  "key": "5ffce43ea7d528b0",
+  "key": "1a959257f6784bfb",
   "take": 3,
-  "chars": 84,
-  "seconds": 5.77,
+  "chars": 102,
+  "seconds": 1.58,
   "file": "out/voice/raw/a2-7374.1.t3.wav"
  },
  "a2-1974inf.1.t1": {
@@ -2393,5 +2393,33 @@
   "chars": 54,
   "seconds": 0.93,
   "file": "out/voice/raw/method-model.2.t0.wav"
+ },
+ "a1-notax.3.t0": {
+  "key": "c612964c35c3c21b",
+  "take": 0,
+  "chars": 59,
+  "seconds": 6.02,
+  "file": "out/voice/raw/a1-notax.3.t0.wav"
+ },
+ "a1-notax.3.t1": {
+  "key": "37419352d6a28ee3",
+  "take": 1,
+  "chars": 59,
+  "seconds": 2.27,
+  "file": "out/voice/raw/a1-notax.3.t1.wav"
+ },
+ "a1-notax.3.t2": {
+  "key": "69097d107adeaa66",
+  "take": 2,
+  "chars": 59,
+  "seconds": 2.4,
+  "file": "out/voice/raw/a1-notax.3.t2.wav"
+ },
+ "a1-notax.3.t3": {
+  "key": "d8a72ac3f53af3c2",
+  "take": 3,
+  "chars": 59,
+  "seconds": 2.63,
+  "file": "out/voice/raw/a1-notax.3.t3.wav"
  }
 }

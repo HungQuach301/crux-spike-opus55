@@ -3,7 +3,8 @@
 Primary: Damodaran (NYU Stern) histretSP.xls, sheet "Returns by year" (S&P 500 incl. dividends, US T.Bond 10-year)
 and sheet "Inflation Rate" (CPI-U NSA, December over December, from FRED).
 Cross-check: FRED CPIAUCNS monthly -> December-over-December inflation, computed here independently.
-A second stock-return source was not reachable (see NOTES in sources.json); no stocks2.csv is written.
+Second stock source: Shiller ie_data.xls (www.econ.yale.edu, reachable over http only; the file ends in 2023),
+annual total return December to December from monthly prices with monthly dividends (D/12) reinvested -> stocks2.csv.
 
 Writes data/normalized/annual.csv, data/normalized/fred_inflation.csv, data/sources.json.
 """
@@ -37,7 +38,38 @@ FILES = [
      'terms': {'quote': 'Public Domain: Citation requested These series may be under copyright or in the public domain and may be used without permission, provided you do not engage in any prohibited use.',
                'status': 'Series page shows "Public Domain: Citation Requested"; citation used: "Source: BLS via FRED".',
                'url': 'https://fred.stlouisfed.org/legal/', 'snapshot': 'data/terms/fred-legal.html', 'series': 'data/terms/fred-CPIAUCNS.html'}},
+    {'path': 'data/raw/shiller_ie_data.xls', 'role': 'crosscheck', 'url': 'http://www.econ.yale.edu/~shiller/data/ie_data.xls',
+     'what': 'Robert J. Shiller, U.S. Stock Markets 1871-Present and CAPE Ratio (monthly S&P Composite price = average of daily closes, dividends); this copy ends in 2023',
+     'terms': {'quote': 'The data and CAPE Ratio on this spreadsheet were developed by Robert J. Shiller using various public sources.  Neither Robert J. Shiller nor any affiliates or consultants, are registered investment advisers and do not guarantee the accuracy or completeness of the CAPE Ratio here, or any data or methodology either included therein or upon which it is based.',
+               'status': 'No explicit licence or usage terms found on the data page or in the workbook; the quote is the workbook "Disclaimer" sheet. Used only as a cross-check, never shown on screen.',
+               'url': 'http://www.econ.yale.edu/~shiller/data.htm', 'snapshot': 'data/terms/shiller-data.html'}},
 ]
+DOWNLOADED_BY_PATH = {'data/raw/shiller_ie_data.xls': '2026-09-26'}
+
+
+def shiller_tr():
+    b = xlrd.open_workbook(os.path.join(RAW, 'shiller_ie_data.xls'))
+    s = b.sheet_by_name('Data')
+    assert s.row_values(7)[:3] == ['Date', 'P', 'D'], s.row_values(7)[:3]
+    P, Dv = {}, {}
+    for r in range(8, s.nrows):
+        v = s.row_values(r)
+        if isinstance(v[0], float) and isinstance(v[1], float):
+            y = int(v[0]); m = int(round((v[0] - y) * 100))
+            P[(y, m)] = v[1]
+            if isinstance(v[2], float):
+                Dv[(y, m)] = v[2]
+    out = {}
+    for y in range(FIRST, LAST + 1):
+        try:
+            g = 1.0
+            for m in range(1, 13):
+                prev = (y - 1, 12) if m == 1 else (y, m - 1)
+                g *= (P[(y, m)] + Dv[(y, m)] / 12) / P[prev]
+            out[y] = g - 1
+        except KeyError:
+            pass  # month missing in this copy of the file
+    return out
 
 
 def sha(p):
@@ -87,18 +119,32 @@ def main():
             w.writerow([y, repr(fred[y])])
     diffs = {y: abs(I[y] - fred[y]) * 100 for y in range(FIRST, LAST + 1)}
     mism = [{'year': y, 'series': 'inflation', 'diff_pp': round(d, 4), 'note': 'Damodaran vs FRED Dec/Dec outside tolerance'} for y, d in diffs.items() if d > TOL_INFLATION_PP]
+    sh = shiller_tr()
+    with open(os.path.join(NORM, 'stocks2.csv'), 'w', newline='') as f:
+        w = csv.writer(f)
+        w.writerow(['year', 'stocks'])
+        for y in sorted(sh):
+            w.writerow([y, repr(sh[y])])
+    sdiff = {y: abs(ret[y][0] - sh[y]) * 100 for y in sh}
+    mism += [{'year': y, 'series': 'stocks', 'diff_pp': round(d, 3), 'damodaran': round(ret[y][0], 5), 'shiller': round(sh[y], 5),
+              'note': 'Damodaran (year-end index level + dividends) vs Shiller (monthly-average prices, Dec to Dec, dividends reinvested monthly): outside tolerance; reported, not resolved'}
+             for y, d in sorted(sdiff.items()) if d > TOL_STOCKS_PP]
+    smissing = [y for y in range(FIRST, LAST + 1) if y not in sh]
     internal = sorted(((y, round(abs(I[y] - I2[y]) * 100, 3)) for y in range(FIRST, LAST + 1) if y in I2 and abs(I[y] - I2[y]) * 100 > TOL_INFLATION_PP), key=lambda x: -x[1])
     src = {
-        'files': [{**f, 'sha256': sha(f['path']), 'downloaded': DOWNLOADED} for f in FILES],
+        'files': [{**f, 'sha256': sha(f['path']), 'downloaded': DOWNLOADED_BY_PATH.get(f['path'], DOWNLOADED)} for f in FILES],
         'tolerance': {'inflation_pp': TOL_INFLATION_PP, 'stocks_pp': TOL_STOCKS_PP},
         'yearsUsed': [FIRST, LAST],
         'mismatches': mism,
         'crosscheck': {
             'inflation': {'method': 'FRED CPIAUCNS December(y) / December(y-1) - 1, vs Damodaran "Inflation Rate" sheet',
                           'maxDiffPp': round(max(diffs.values()), 4), 'maxDiffYear': max(diffs, key=diffs.get), 'yearsCompared': len(diffs)},
-            'stocks': {'status': 'not run', 'reason': 'no independent annual S&P 500 total-return source reachable from this environment: '
-                       'www.econ.yale.edu (Shiller ie_data.xls) answered 403 "Host not in allowlist"; shillerdata.com and www.slickcharts.com were refused at CONNECT by the egress proxy. '
-                       'FRED carries the S&P 500 index for the last 10 years only (price, licensed), not total return back to 1928. Domains to allow if a second stock source is wanted: www.econ.yale.edu or shillerdata.com.'},
+            'stocks': {'method': 'Shiller monthly S&P Composite: prod over Jan..Dec of (P_m + D_m/12) / P_(m-1), vs Damodaran S&P 500 incl. dividends',
+                       'yearsCompared': len(sdiff), 'yearsOutsideTolerance': sum(d > TOL_STOCKS_PP for d in sdiff.values()),
+                       'medianDiffPp': round(sorted(sdiff.values())[len(sdiff) // 2], 3), 'maxDiffPp': round(max(sdiff.values()), 3), 'maxDiffYear': max(sdiff, key=sdiff.get),
+                       'yearsMissingInCrosscheck': smissing,
+                       'why': 'Shiller prices are monthly averages of daily closes, Damodaran uses year-end levels: the two definitions differ by construction, so most years exceed 0.5 pp. '
+                              'The copy reachable at www.econ.yale.edu (http) ends in September 2023; the maintained file is on shillerdata.com, which the egress proxy refuses (connection reset).'},
         },
         'notes': [
             'Inflation is taken from the workbook sheet "Inflation Rate" (CPI-U NSA, Dec/Dec, sourced by Damodaran from FRED). '

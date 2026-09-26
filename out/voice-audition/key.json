@@ -1,0 +1,45 @@
+{
+ "seed": 20260926,
+ "key": {
+  "V1": {
+   "voice": "River",
+   "voiceId": "SAz9YHcvj6GT2YYXdXww",
+   "model": "eleven_v3"
+  },
+  "V2": {
+   "voice": "Matilda",
+   "voiceId": "XrExE9yKIg1WjnnlVkGX",
+   "model": "eleven_v3"
+  },
+  "V3": {
+   "voice": "River",
+   "voiceId": "SAz9YHcvj6GT2YYXdXww",
+   "model": "eleven_multilingual_v2"
+  },
+  "V4": {
+   "voice": "Bella",
+   "voiceId": "hpp4J3VqNfWAUOO0d1Us",
+   "model": "eleven_v3"
+  },
+  "V5": {
+   "voice": "Matilda",
+   "voiceId": "XrExE9yKIg1WjnnlVkGX",
+   "model": "eleven_multilingual_v2"
+  },
+  "V6": {
+   "voice": "Bella",
+   "voiceId": "hpp4J3VqNfWAUOO0d1Us",
+   "model": "eleven_multilingual_v2"
+  },
+  "V7": {
+   "voice": "Eric",
+   "voiceId": "cjVigY5qzO86Huf0OWal",
+   "model": "eleven_multilingual_v2"
+  },
+  "V8": {
+   "voice": "Eric",
+   "voiceId": "cjVigY5qzO86Huf0OWal",
+   "model": "eleven_v3"
+  }
+ }
+}

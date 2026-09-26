@@ -39,7 +39,7 @@
   },
   {
    "t": 17.143,
-   "end": 105.248,
+   "end": 110.466,
    "function": "act 1 theme: 1966 leitmotif (rising 4-note figure, warm Rhodes), light pulse",
    "key": "F major",
    "tempo": 92,
@@ -56,8 +56,8 @@
    "scene": "a1-est"
   },
   {
-   "t": 105.248,
-   "end": 143.075,
+   "t": 110.466,
+   "end": 147.64,
    "function": "mirror enters: the same figure in retrograde, bell timbre, panned right",
    "key": "F major",
    "tempo": 92,
@@ -65,8 +65,8 @@
    "scene": "a1-mirror-in"
   },
   {
-   "t": 143.075,
-   "end": 191.28,
+   "t": 147.64,
+   "end": 195.846,
    "function": "reveal: both motifs meet on one chord; riser into the equal averages, low hit on \"Identical\"",
    "key": "F major",
    "tempo": 92,
@@ -74,8 +74,8 @@
    "scene": "a1-avg1966"
   },
   {
-   "t": 191.28,
-   "end": 226.285,
+   "t": 195.846,
+   "end": 231.466,
    "function": "act 2 departure: motifs split into two lanes, harmony drifts to D minor",
    "key": "D minor",
    "tempo": 96,
@@ -83,8 +83,8 @@
    "scene": "a2-est"
   },
   {
-   "t": 226.285,
-   "end": 312.359,
+   "t": 231.466,
+   "end": 318.108,
    "function": "storm 1973-74: low strings, filtered noise swell, 1966 motif in minor, slower",
    "key": "D minor",
    "tempo": 99.2,
@@ -92,8 +92,8 @@
    "scene": "a2-7374"
   },
   {
-   "t": 226.285,
-   "end": 231.109,
+   "t": 231.466,
+   "end": 237.492,
    "function": "storm layer: low rumble under the bear market",
    "key": null,
    "tempo": 99.2,
@@ -101,26 +101,26 @@
    "scene": "a2-7374"
   },
   {
-   "t": 312.359,
-   "end": 334.02,
+   "t": 318.108,
+   "end": 340.316,
    "function": "turn 1982: harmonic shift to B-flat major, brighter, but the 1966 motif stays minor",
    "key": "Bb major",
-   "tempo": 106.9,
+   "tempo": 107,
    "layer": "music",
    "scene": "a2-1982"
   },
   {
-   "t": 334.02,
-   "end": 354.758,
+   "t": 340.316,
+   "end": 361.044,
    "function": "accelerando to the 1986 climax: pulse doubles, riser, impact + sub-drop on the gap figure",
    "key": "D minor",
-   "tempo": 108.9,
+   "tempo": 109,
    "layer": "music",
    "scene": "a2-climb"
   },
   {
-   "t": 338.963,
-   "end": 346.614,
+   "t": 344.709,
+   "end": 352.903,
    "function": "impact + sub-drop on the climax figure",
    "key": null,
    "tempo": 109.3,
@@ -128,8 +128,8 @@
    "scene": "a2-climax"
   },
   {
-   "t": 354.758,
-   "end": 403.051,
+   "t": 361.044,
+   "end": 408.802,
    "function": "valley: sparse piano; the 1966 motif thins to a single note and stops at 1991 (silence)",
    "key": "D minor",
    "tempo": 110.8,
@@ -137,8 +137,8 @@
    "scene": "a2-rest"
   },
   {
-   "t": 403.051,
-   "end": 412.688,
+   "t": 408.802,
+   "end": 418.958,
    "function": "act 2 payoff: mirror motif alone, resolved in F major; music out for the ad break",
    "key": "F major",
    "tempo": 115.1,
@@ -146,8 +146,8 @@
    "scene": "a2-payoff"
   },
   {
-   "t": 412.688,
-   "end": 525.355,
+   "t": 418.958,
+   "end": 531.625,
    "function": "act 3 analytical pulse: clean arpeggio, map cells tick on the beat",
    "key": "A minor",
    "tempo": 90,
@@ -155,8 +155,8 @@
    "scene": "a3-est"
   },
   {
-   "t": 412.688,
-   "end": 416.959,
+   "t": 418.958,
+   "end": 422.958,
    "function": "map ticks: one soft click per start-year cell",
    "key": null,
    "tempo": 90,
@@ -164,8 +164,8 @@
    "scene": "a3-est"
   },
   {
-   "t": 525.355,
-   "end": 577.355,
+   "t": 531.625,
+   "end": 583.625,
    "function": "answer: the first-decade reveal, both motifs quoted in their first four notes, riser + hit",
    "key": "A minor",
    "tempo": 90,
@@ -173,8 +173,8 @@
    "scene": "a3-share"
   },
   {
-   "t": 577.355,
-   "end": 605.355,
+   "t": 583.625,
+   "end": 611.625,
    "function": "limits: sparse, low, room tone forward",
    "key": "A minor",
    "tempo": 90,
@@ -182,8 +182,8 @@
    "scene": "a3-limits"
   },
   {
-   "t": 577.355,
-   "end": 583.355,
+   "t": 583.625,
+   "end": 589.625,
    "function": "room tone forward, music back",
    "key": null,
    "tempo": 90,
@@ -191,8 +191,8 @@
    "scene": "a3-limits"
   },
   {
-   "t": 605.355,
-   "end": 626.272,
+   "t": 611.625,
+   "end": 631.875,
    "function": "method bed: neutral pad",
    "key": "C major",
    "tempo": 80,
@@ -200,8 +200,8 @@
    "scene": "method"
   },
   {
-   "t": 626.272,
-   "end": 649.962,
+   "t": 631.875,
+   "end": 656.037,
    "function": "outro: both leitmotifs together, resolved, fade under the end screen",
    "key": "F major",
    "tempo": 80,
@@ -217,19 +217,19 @@
    "scene": "co-broke"
   },
   {
-   "t": 191.23,
+   "t": 195.796,
    "dur": 1.3,
    "why": "ad break at the act1 boundary (natural pause, voice and music out)",
    "scene": null
   },
   {
-   "t": 412.638,
+   "t": 418.908,
    "dur": 1.3,
    "why": "ad break at the act2 boundary (natural pause, voice and music out)",
    "scene": null
   },
   {
-   "t": 378.892,
+   "t": 384.967,
    "dur": 1.1,
    "why": "the account hits zero: the 1966 motif stops, a beat of nothing",
    "scene": "a2-1991"

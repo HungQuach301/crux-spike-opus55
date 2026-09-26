@@ -1,0 +1,1399 @@
+{
+ "lines": [
+  "co-same.1",
+  "co-broke.1",
+  "co-question.1",
+  "a1-est.1",
+  "a1-start.1",
+  "a1-hook.1",
+  "a2-climax.1"
+ ],
+ "aimWpm": 155.0,
+ "method": "Test D M1b-1: blind voice audition on ElevenLabs.\n\n4 General American library voices x 2 models (eleven_multilingual_v2, eleven_v3) read 7 script lines. Pace is set only\nwith voice_settings.speed (no time stretching): each version is first read at a calibration speed, then speed is set per\nsentence from the measured pace (character timestamps) towards 155 wpm and the line is read again (at most 2 rounds).\nClips are trimmed to their speech span and joined with pauses <= 0.8 s, loudness-matched to -20 LUFS with a single gain (no limiter; keeps true peak below -1.5 dBTP). Pauses inside a clip longer\nthan 0.75 s are cut to 0.70 s (silence removed from the middle of the pause; speech is never stretched).\n\nOutputs: out/voice-audition/V1.mp3 ... V8.mp3 (blind), key.json (decoding, not for the report), metrics.json.\nThe key is injected by the environment proxy (xi-api-key); nothing here reads, sends or prints a key.\nCredits: the Character-Cost response header of every call is summed into metrics.json.\n",
+ "credits": {
+  "characters": 0,
+  "calls": 0
+ },
+ "versions": {
+  "V1": {
+   "speedResponse": 0.18,
+   "sentencesInRange150to160": 3,
+   "overallWpm": 163.5,
+   "wpmMean": 164.1,
+   "wpmStd": 23.3,
+   "wpmMin": 133.9,
+   "wpmMax": 206.9,
+   "keyWords": 15,
+   "keyWordsMissing": 1,
+   "lufsRaw": -19.4,
+   "lufsFile": -20.4,
+   "truePeakDbfs": -2.4,
+   "longestSilenceS": 0.76,
+   "durationS": 36.0,
+   "sentences": [
+    {
+     "line": "co-same.1",
+     "words": 14,
+     "speed": 0.856,
+     "wpm": 150.0,
+     "speechSeconds": 5.6,
+     "keyWords": 3,
+     "keyMissing": [],
+     "pausesCut": 0,
+     "heard": "two retirees with the same balance, the same withdrawals, and the same average return.",
+     "rounds": [
+      {
+       "speed": 1.0,
+       "wpm": 181.0
+      },
+      {
+       "speed": 0.856,
+       "wpm": 150.0
+      }
+     ]
+    },
+    {
+     "line": "co-broke.1",
+     "words": 8,
+     "speed": 0.7,
+     "wpm": 206.9,
+     "speechSeconds": 2.32,
+     "keyWords": 1,
+     "keyMissing": [],
+     "pausesCut": 0,
+     "heard": "One ran out of money in 1991.",
+     "rounds": [
+      {
+       "speed": 1.0,
+       "wpm": 193.5
+      },
+      {
+       "speed": 0.801,
+       "wpm": 200.0
+      },
+      {
+       "speed": 0.7,
+       "wpm": 206.9
+      }
+     ]
+    },
+    {
+     "line": "co-question.1",
+     "words": 4,
+     "speed": 0.7,
+     "wpm": 176.5,
+     "speechSeconds": 1.36,
+     "keyWords": 0,
+     "keyMissing": [],
+     "pausesCut": 0,
+     "heard": "So what decided it?",
+     "rounds": [
+      {
+       "speed": 1.0,
+       "wpm": 187.5
+      },
+      {
+       "speed": 0.827,
+       "wpm": 200.0
+      },
+      {
+       "speed": 0.7,
+       "wpm": 176.5
+      }
+     ]
+    },
+    {
+     "line": "a1-est.1",
+     "words": 5,
+     "speed": 1.2,
+     "wpm": 133.9,
+     "speechSeconds": 2.24,
+     "keyWords": 2,
+     "keyMissing": [],
+     "pausesCut": 0,
+     "heard": "It is January 1966.",
+     "rounds": [
+      {
+       "speed": 1.0,
+       "wpm": 129.3
+      },
+      {
+       "speed": 1.199,
+       "wpm": 133.9
+      }
+     ]
+    },
+    {
+     "line": "a1-start.1",
+     "words": 13,
+     "speed": 1.049,
+     "wpm": 150.0,
+     "speechSeconds": 5.2,
+     "keyWords": 3,
+     "keyMissing": [],
+     "pausesCut": 0,
+     "heard": "The first retiree starts with $1 million, measured in 1966 dollars.",
+     "rounds": [
+      {
+       "speed": 1.0,
+       "wpm": 147.7
+      },
+      {
+       "speed": 1.049,
+       "wpm": 150.0
+      }
+     ]
+    },
+    {
+     "line": "a1-hook.1",
+     "words": 31,
+     "speed": 0.7,
+     "wpm": 181.6,
+     "speechSeconds": 10.24,
+     "keyWords": 2,
+     "keyMissing": [],
+     "pausesCut": 0,
+     "heard": "By the end of this video, you will know which 10 years decided the fate of this retiree and whether the same thing held for every start year since 1928.",
+     "rounds": [
+      {
+       "speed": 1.0,
+       "wpm": 186.0
+      },
+      {
+       "speed": 0.833,
+       "wpm": 187.5
+      },
+      {
+       "speed": 0.7,
+       "wpm": 181.6
+      }
+     ]
+    },
+    {
+     "line": "a2-climax.1",
+     "words": 17,
+     "speed": 1.2,
+     "wpm": 150.0,
+     "speechSeconds": 6.8,
+     "keyWords": 4,
+     "keyMissing": [
+      "mirror"
+     ],
+     "pausesCut": 0,
+     "heard": "In 1966 dollars, the mere retiree is now ahead by 1 .96 million dollars.",
+     "rounds": [
+      {
+       "speed": 1.0,
+       "wpm": 127.5
+      },
+      {
+       "speed": 1.2,
+       "wpm": 150.0
+      }
+     ]
+    }
+   ]
+  },
+  "V2": {
+   "speedResponse": 0.2,
+   "sentencesInRange150to160": 3,
+   "overallWpm": 168.3,
+   "wpmMean": 165.9,
+   "wpmStd": 24.2,
+   "wpmMin": 133.9,
+   "wpmMax": 206.9,
+   "keyWords": 15,
+   "keyWordsMissing": 0,
+   "lufsRaw": -18.6,
+   "lufsFile": -20.4,
+   "truePeakDbfs": -3.1,
+   "longestSilenceS": 0.74,
+   "durationS": 35.2,
+   "sentences": [
+    {
+     "line": "co-same.1",
+     "words": 14,
+     "speed": 1.0,
+     "wpm": 152.2,
+     "speechSeconds": 5.52,
+     "keyWords": 3,
+     "keyMissing": [],
+     "pausesCut": 0,
+     "heard": "two retirees with the same balance, the same withdrawals, and the same average return.",
+     "rounds": [
+      {
+       "speed": 1.0,
+       "wpm": 152.2
+      }
+     ]
+    },
+    {
+     "line": "co-broke.1",
+     "words": 8,
+     "speed": 0.7,
+     "wpm": 206.9,
+     "speechSeconds": 2.32,
+     "keyWords": 1,
+     "keyMissing": [],
+     "pausesCut": 0,
+     "heard": "One ran out of money in 1991.",
+     "rounds": [
+      {
+       "speed": 1.0,
+       "wpm": 222.2
+      },
+      {
+       "speed": 0.7,
+       "wpm": 206.9
+      }
+     ]
+    },
+    {
+     "line": "co-question.1",
+     "words": 4,
+     "speed": 0.7,
+     "wpm": 166.7,
+     "speechSeconds": 1.44,
+     "keyWords": 0,
+     "keyMissing": [],
+     "pausesCut": 0,
+     "heard": "So what decided it?",
+     "rounds": [
+      {
+       "speed": 1.0,
+       "wpm": 214.3
+      },
+      {
+       "speed": 0.723,
+       "wpm": 187.5
+      },
+      {
+       "speed": 0.7,
+       "wpm": 166.7
+      }
+     ]
+    },
+    {
+     "line": "a1-est.1",
+     "words": 5,
+     "speed": 1.2,
+     "wpm": 133.9,
+     "speechSeconds": 2.24,
+     "keyWords": 2,
+     "keyMissing": [],
+     "pausesCut": 0,
+     "heard": "It is January 1966.",
+     "rounds": [
+      {
+       "speed": 1.0,
+       "wpm": 129.3
+      },
+      {
+       "speed": 1.199,
+       "wpm": 133.9
+      }
+     ]
+    },
+    {
+     "line": "a1-start.1",
+     "words": 13,
+     "speed": 1.0,
+     "wpm": 152.3,
+     "speechSeconds": 5.12,
+     "keyWords": 3,
+     "keyMissing": [],
+     "pausesCut": 0,
+     "heard": "The first retiree starts with $1 million, measured in 1966 dollars.",
+     "rounds": [
+      {
+       "speed": 1.0,
+       "wpm": 152.3
+      }
+     ]
+    },
+    {
+     "line": "a1-hook.1",
+     "words": 31,
+     "speed": 0.7,
+     "wpm": 195.4,
+     "speechSeconds": 9.52,
+     "keyWords": 2,
+     "keyMissing": [],
+     "pausesCut": 0,
+     "heard": "By the end of this video, you will know which 10 years decided the fate of this retiree, and whether the same thing held for every start year since 1928.",
+     "rounds": [
+      {
+       "speed": 1.0,
+       "wpm": 202.2
+      },
+      {
+       "speed": 0.767,
+       "wpm": 193.8
+      },
+      {
+       "speed": 0.7,
+       "wpm": 195.4
+      }
+     ]
+    },
+    {
+     "line": "a2-climax.1",
+     "words": 17,
+     "speed": 1.0,
+     "wpm": 153.6,
+     "speechSeconds": 6.64,
+     "keyWords": 4,
+     "keyMissing": [],
+     "pausesCut": 0,
+     "heard": "In 1966 dollars, the Mirror retiree is now ahead by 1 .96 million dollars.",
+     "rounds": [
+      {
+       "speed": 1.0,
+       "wpm": 153.6
+      }
+     ]
+    }
+   ]
+  },
+  "V3": {
+   "speedResponse": 0.99,
+   "sentencesInRange150to160": 4,
+   "overallWpm": 156.4,
+   "wpmMean": 158.0,
+   "wpmStd": 8.9,
+   "wpmMin": 148.1,
+   "wpmMax": 177.4,
+   "keyWords": 15,
+   "keyWordsMissing": 2,
+   "lufsRaw": -24.0,
+   "lufsFile": -20.5,
+   "truePeakDbfs": -0.3,
+   "longestSilenceS": 0.72,
+   "durationS": 37.8,
+   "sentences": [
+    {
+     "line": "co-same.1",
+     "words": 14,
+     "speed": 0.739,
+     "wpm": 152.6,
+     "speechSeconds": 5.5,
+     "keyWords": 3,
+     "keyMissing": [],
+     "pausesCut": 0,
+     "heard": "two retirees with the same balance, the same withdrawals, and the same average return.",
+     "rounds": [
+      {
+       "speed": 1.0,
+       "wpm": 209.7
+      },
+      {
+       "speed": 0.739,
+       "wpm": 152.6
+      }
+     ]
+    },
+    {
+     "line": "co-broke.1",
+     "words": 8,
+     "speed": 0.7,
+     "wpm": 177.4,
+     "speechSeconds": 2.71,
+     "keyWords": 1,
+     "keyMissing": [],
+     "pausesCut": 0,
+     "heard": "One ran out of money in 1991.",
+     "rounds": [
+      {
+       "speed": 1.0,
+       "wpm": 229.7
+      },
+      {
+       "speed": 0.7,
+       "wpm": 177.4
+      }
+     ]
+    },
+    {
+     "line": "co-question.1",
+     "words": 4,
+     "speed": 0.7,
+     "wpm": 160.3,
+     "speechSeconds": 1.5,
+     "keyWords": 0,
+     "keyMissing": [],
+     "pausesCut": 0,
+     "heard": "So what decided it?",
+     "rounds": [
+      {
+       "speed": 1.0,
+       "wpm": 252.1
+      },
+      {
+       "speed": 0.7,
+       "wpm": 160.3
+      }
+     ]
+    },
+    {
+     "line": "a1-est.1",
+     "words": 5,
+     "speed": 1.05,
+     "wpm": 151.1,
+     "speechSeconds": 1.99,
+     "keyWords": 2,
+     "keyMissing": [],
+     "pausesCut": 0,
+     "heard": "It is January 1966.",
+     "rounds": [
+      {
+       "speed": 1.0,
+       "wpm": 147.6
+      },
+      {
+       "speed": 1.05,
+       "wpm": 151.1
+      }
+     ]
+    },
+    {
+     "line": "a1-start.1",
+     "words": 13,
+     "speed": 1.0,
+     "wpm": 158.5,
+     "speechSeconds": 4.92,
+     "keyWords": 3,
+     "keyMissing": [
+      "retiree"
+     ],
+     "pausesCut": 0,
+     "heard": "The first retirees starts with $1 million, measured in 1966 dollars.",
+     "rounds": [
+      {
+       "speed": 1.0,
+       "wpm": 158.5
+      }
+     ]
+    },
+    {
+     "line": "a1-hook.1",
+     "words": 31,
+     "speed": 0.7,
+     "wpm": 157.7,
+     "speechSeconds": 11.8,
+     "keyWords": 2,
+     "keyMissing": [],
+     "pausesCut": 0,
+     "heard": "By the end of this video, you will know which 10 years decided the fate of this retiree and whether the same thing held for every start year since 1928.",
+     "rounds": [
+      {
+       "speed": 1.0,
+       "wpm": 224.7
+      },
+      {
+       "speed": 0.7,
+       "wpm": 157.7
+      }
+     ]
+    },
+    {
+     "line": "a2-climax.1",
+     "words": 17,
+     "speed": 0.92,
+     "wpm": 148.1,
+     "speechSeconds": 6.88,
+     "keyWords": 4,
+     "keyMissing": [
+      "mirror"
+     ],
+     "pausesCut": 0,
+     "heard": "In 1966 dollars, the mere retiree is now ahead by 1 .96 million dollars.",
+     "rounds": [
+      {
+       "speed": 1.0,
+       "wpm": 166.1
+      },
+      {
+       "speed": 0.933,
+       "wpm": 164.5
+      },
+      {
+       "speed": 0.879,
+       "wpm": 148.1
+      }
+     ]
+    }
+   ]
+  },
+  "V4": {
+   "speedResponse": 0.09,
+   "sentencesInRange150to160": 2,
+   "overallWpm": 161.6,
+   "wpmMean": 163.5,
+   "wpmStd": 26.1,
+   "wpmMin": 125.0,
+   "wpmMax": 206.9,
+   "keyWords": 15,
+   "keyWordsMissing": 0,
+   "lufsRaw": -17.1,
+   "lufsFile": -20.5,
+   "truePeakDbfs": -3.8,
+   "longestSilenceS": 0.7,
+   "durationS": 36.7,
+   "sentences": [
+    {
+     "line": "co-same.1",
+     "words": 14,
+     "speed": 0.945,
+     "wpm": 154.4,
+     "speechSeconds": 5.44,
+     "keyWords": 3,
+     "keyMissing": [],
+     "pausesCut": 0,
+     "heard": "two retirees with the same balance, the same withdrawals, and the same average return.",
+     "rounds": [
+      {
+       "speed": 1.0,
+       "wpm": 164.1
+      },
+      {
+       "speed": 0.945,
+       "wpm": 154.4
+      }
+     ]
+    },
+    {
+     "line": "co-broke.1",
+     "words": 8,
+     "speed": 0.7,
+     "wpm": 206.9,
+     "speechSeconds": 2.32,
+     "keyWords": 1,
+     "keyMissing": [],
+     "pausesCut": 0,
+     "heard": "One ran out of money in 1991.",
+     "rounds": [
+      {
+       "speed": 1.0,
+       "wpm": 206.9
+      },
+      {
+       "speed": 0.749,
+       "wpm": 214.3
+      },
+      {
+       "speed": 0.7,
+       "wpm": 206.9
+      }
+     ]
+    },
+    {
+     "line": "co-question.1",
+     "words": 4,
+     "speed": 0.7,
+     "wpm": 187.5,
+     "speechSeconds": 1.28,
+     "keyWords": 0,
+     "keyMissing": [],
+     "pausesCut": 0,
+     "heard": "So what decided it?",
+     "rounds": [
+      {
+       "speed": 1.0,
+       "wpm": 200.0
+      },
+      {
+       "speed": 0.775,
+       "wpm": 187.5
+      },
+      {
+       "speed": 0.7,
+       "wpm": 187.5
+      }
+     ]
+    },
+    {
+     "line": "a1-est.1",
+     "words": 5,
+     "speed": 1.2,
+     "wpm": 125.0,
+     "speechSeconds": 2.4,
+     "keyWords": 2,
+     "keyMissing": [],
+     "pausesCut": 0,
+     "heard": "It is January 1966.",
+     "rounds": [
+      {
+       "speed": 1.0,
+       "wpm": 129.3
+      },
+      {
+       "speed": 1.199,
+       "wpm": 125.0
+      }
+     ]
+    },
+    {
+     "line": "a1-start.1",
+     "words": 13,
+     "speed": 1.2,
+     "wpm": 141.3,
+     "speechSeconds": 5.52,
+     "keyWords": 3,
+     "keyMissing": [],
+     "pausesCut": 0,
+     "heard": "The first retiree starts with $1 million, measured in 1966 dollars.",
+     "rounds": [
+      {
+       "speed": 1.0,
+       "wpm": 130.0
+      },
+      {
+       "speed": 1.192,
+       "wpm": 137.3
+      },
+      {
+       "speed": 1.2,
+       "wpm": 141.3
+      }
+     ]
+    },
+    {
+     "line": "a1-hook.1",
+     "words": 31,
+     "speed": 0.7,
+     "wpm": 176.1,
+     "speechSeconds": 10.56,
+     "keyWords": 2,
+     "keyMissing": [],
+     "pausesCut": 0,
+     "heard": "By the end of this video, you will know which 10 years decided the fate of this retiree, and whether the same thing held for every start year since 1928.",
+     "rounds": [
+      {
+       "speed": 1.0,
+       "wpm": 176.1
+      },
+      {
+       "speed": 0.88,
+       "wpm": 176.1
+      },
+      {
+       "speed": 0.774,
+       "wpm": 176.1
+      }
+     ]
+    },
+    {
+     "line": "a2-climax.1",
+     "words": 17,
+     "speed": 1.0,
+     "wpm": 153.6,
+     "speechSeconds": 6.64,
+     "keyWords": 4,
+     "keyMissing": [],
+     "pausesCut": 0,
+     "heard": "In 1966 dollars, the Mirror retiree is now ahead by 1 .96 million dollars.",
+     "rounds": [
+      {
+       "speed": 1.0,
+       "wpm": 153.6
+      }
+     ]
+    }
+   ]
+  },
+  "V5": {
+   "speedResponse": 1.07,
+   "sentencesInRange150to160": 5,
+   "overallWpm": 156.1,
+   "wpmMean": 158.1,
+   "wpmStd": 4.9,
+   "wpmMin": 152.0,
+   "wpmMax": 165.7,
+   "keyWords": 15,
+   "keyWordsMissing": 0,
+   "lufsRaw": -22.8,
+   "lufsFile": -20.5,
+   "truePeakDbfs": -0.7,
+   "longestSilenceS": 0.76,
+   "durationS": 37.9,
+   "sentences": [
+    {
+     "line": "co-same.1",
+     "words": 14,
+     "speed": 0.816,
+     "wpm": 159.7,
+     "speechSeconds": 5.26,
+     "keyWords": 3,
+     "keyMissing": [],
+     "pausesCut": 0,
+     "heard": "Two retirees with the same balance, the same withdrawals, and the same average return.",
+     "rounds": [
+      {
+       "speed": 1.0,
+       "wpm": 189.9
+      },
+      {
+       "speed": 0.816,
+       "wpm": 159.7
+      }
+     ]
+    },
+    {
+     "line": "co-broke.1",
+     "words": 8,
+     "speed": 0.7,
+     "wpm": 152.0,
+     "speechSeconds": 3.16,
+     "keyWords": 1,
+     "keyMissing": [],
+     "pausesCut": 0,
+     "heard": "One ran out of money in 1991.",
+     "rounds": [
+      {
+       "speed": 1.0,
+       "wpm": 228.5
+      },
+      {
+       "speed": 0.7,
+       "wpm": 152.0
+      }
+     ]
+    },
+    {
+     "line": "co-question.1",
+     "words": 4,
+     "speed": 0.7,
+     "wpm": 164.0,
+     "speechSeconds": 1.46,
+     "keyWords": 0,
+     "keyMissing": [],
+     "pausesCut": 0,
+     "heard": "So what decided it?",
+     "rounds": [
+      {
+       "speed": 1.0,
+       "wpm": 224.5
+      },
+      {
+       "speed": 0.7,
+       "wpm": 164.0
+      }
+     ]
+    },
+    {
+     "line": "a1-est.1",
+     "words": 5,
+     "speed": 1.072,
+     "wpm": 165.7,
+     "speechSeconds": 1.81,
+     "keyWords": 2,
+     "keyMissing": [],
+     "pausesCut": 0,
+     "heard": "It is January 1966.",
+     "rounds": [
+      {
+       "speed": 1.0,
+       "wpm": 142.8
+      },
+      {
+       "speed": 1.086,
+       "wpm": 146.8
+      },
+      {
+       "speed": 1.146,
+       "wpm": 165.7
+      }
+     ]
+    },
+    {
+     "line": "a1-start.1",
+     "words": 13,
+     "speed": 1.119,
+     "wpm": 156.2,
+     "speechSeconds": 4.99,
+     "keyWords": 3,
+     "keyMissing": [],
+     "pausesCut": 0,
+     "heard": "The first retiree starts with $1 million, measured in 1966 dollars.",
+     "rounds": [
+      {
+       "speed": 1.0,
+       "wpm": 138.5
+      },
+      {
+       "speed": 1.119,
+       "wpm": 156.2
+      }
+     ]
+    },
+    {
+     "line": "a1-hook.1",
+     "words": 31,
+     "speed": 0.785,
+     "wpm": 153.0,
+     "speechSeconds": 12.16,
+     "keyWords": 2,
+     "keyMissing": [],
+     "pausesCut": 0,
+     "heard": "By the end of this video, you will know which ten years decided the fate of this retiree and whether the same thing held for every start year since 1928.",
+     "rounds": [
+      {
+       "speed": 1.0,
+       "wpm": 215.1
+      },
+      {
+       "speed": 0.721,
+       "wpm": 142.3
+      },
+      {
+       "speed": 0.785,
+       "wpm": 153.0
+      }
+     ]
+    },
+    {
+     "line": "a2-climax.1",
+     "words": 17,
+     "speed": 0.891,
+     "wpm": 156.3,
+     "speechSeconds": 6.52,
+     "keyWords": 4,
+     "keyMissing": [],
+     "pausesCut": 0,
+     "heard": "In 1966 dollars, the Mirror retiree is now ahead by 1 .96 million dollars.",
+     "rounds": [
+      {
+       "speed": 1.0,
+       "wpm": 165.5
+      },
+      {
+       "speed": 0.937,
+       "wpm": 163.0
+      },
+      {
+       "speed": 0.891,
+       "wpm": 156.3
+      }
+     ]
+    }
+   ]
+  },
+  "V6": {
+   "speedResponse": 0.99,
+   "sentencesInRange150to160": 3,
+   "overallWpm": 152.5,
+   "wpmMean": 156.0,
+   "wpmStd": 8.7,
+   "wpmMin": 138.6,
+   "wpmMax": 165.3,
+   "keyWords": 15,
+   "keyWordsMissing": 0,
+   "lufsRaw": -19.9,
+   "lufsFile": -20.4,
+   "truePeakDbfs": -2.0,
+   "longestSilenceS": 0.76,
+   "durationS": 38.8,
+   "sentences": [
+    {
+     "line": "co-same.1",
+     "words": 14,
+     "speed": 0.89,
+     "wpm": 138.6,
+     "speechSeconds": 6.06,
+     "keyWords": 3,
+     "keyMissing": [],
+     "pausesCut": 0,
+     "heard": "two retirees with the same balance, the same withdrawals, and the same average return.",
+     "rounds": [
+      {
+       "speed": 1.0,
+       "wpm": 161.1
+      },
+      {
+       "speed": 0.962,
+       "wpm": 187.4
+      },
+      {
+       "speed": 0.796,
+       "wpm": 138.6
+      }
+     ]
+    },
+    {
+     "line": "co-broke.1",
+     "words": 8,
+     "speed": 0.7,
+     "wpm": 162.1,
+     "speechSeconds": 2.96,
+     "keyWords": 1,
+     "keyMissing": [],
+     "pausesCut": 0,
+     "heard": "One ran out of money in 1991.",
+     "rounds": [
+      {
+       "speed": 1.0,
+       "wpm": 232.3
+      },
+      {
+       "speed": 0.7,
+       "wpm": 162.1
+      }
+     ]
+    },
+    {
+     "line": "co-question.1",
+     "words": 4,
+     "speed": 0.7,
+     "wpm": 165.3,
+     "speechSeconds": 1.45,
+     "keyWords": 0,
+     "keyMissing": [],
+     "pausesCut": 0,
+     "heard": "So what decided it?",
+     "rounds": [
+      {
+       "speed": 1.0,
+       "wpm": 229.7
+      },
+      {
+       "speed": 0.7,
+       "wpm": 165.3
+      }
+     ]
+    },
+    {
+     "line": "a1-est.1",
+     "words": 5,
+     "speed": 1.092,
+     "wpm": 164.6,
+     "speechSeconds": 1.82,
+     "keyWords": 2,
+     "keyMissing": [],
+     "pausesCut": 0,
+     "heard": "It is January 1966.",
+     "rounds": [
+      {
+       "speed": 1.0,
+       "wpm": 142.7
+      },
+      {
+       "speed": 1.086,
+       "wpm": 145.1
+      },
+      {
+       "speed": 1.16,
+       "wpm": 164.6
+      }
+     ]
+    },
+    {
+     "line": "a1-start.1",
+     "words": 13,
+     "speed": 1.0,
+     "wpm": 156.6,
+     "speechSeconds": 4.98,
+     "keyWords": 3,
+     "keyMissing": [],
+     "pausesCut": 0,
+     "heard": "The first retiree starts with $1 million, measured in 1966 dollars.",
+     "rounds": [
+      {
+       "speed": 1.0,
+       "wpm": 156.6
+      }
+     ]
+    },
+    {
+     "line": "a1-hook.1",
+     "words": 31,
+     "speed": 0.821,
+     "wpm": 151.4,
+     "speechSeconds": 12.28,
+     "keyWords": 2,
+     "keyMissing": [],
+     "pausesCut": 0,
+     "heard": "By the end of this video, you will know which ten years decided the fate of this retiree, and whether the same thing held for every start year since 1928.",
+     "rounds": [
+      {
+       "speed": 1.0,
+       "wpm": 188.9
+      },
+      {
+       "speed": 0.821,
+       "wpm": 151.4
+      }
+     ]
+    },
+    {
+     "line": "a2-climax.1",
+     "words": 17,
+     "speed": 0.898,
+     "wpm": 153.3,
+     "speechSeconds": 6.65,
+     "keyWords": 4,
+     "keyMissing": [],
+     "pausesCut": 0,
+     "heard": "In 1966 dollars, the Mirror retiree is now ahead by 1 .96 million dollars.",
+     "rounds": [
+      {
+       "speed": 1.0,
+       "wpm": 172.6
+      },
+      {
+       "speed": 0.898,
+       "wpm": 153.3
+      }
+     ]
+    }
+   ]
+  },
+  "V7": {
+   "speedResponse": 1.05,
+   "sentencesInRange150to160": 4,
+   "overallWpm": 158.5,
+   "wpmMean": 161.7,
+   "wpmStd": 9.8,
+   "wpmMin": 151.7,
+   "wpmMax": 182.1,
+   "keyWords": 15,
+   "keyWordsMissing": 0,
+   "lufsRaw": -23.8,
+   "lufsFile": -20.5,
+   "truePeakDbfs": -1.8,
+   "longestSilenceS": 0.76,
+   "durationS": 37.0,
+   "sentences": [
+    {
+     "line": "co-same.1",
+     "words": 14,
+     "speed": 0.705,
+     "wpm": 152.6,
+     "speechSeconds": 5.5,
+     "keyWords": 3,
+     "keyMissing": [],
+     "pausesCut": 0,
+     "heard": "two retirees with the same balance, the same withdrawals and the same average return.",
+     "rounds": [
+      {
+       "speed": 1.0,
+       "wpm": 219.9
+      },
+      {
+       "speed": 0.705,
+       "wpm": 152.6
+      }
+     ]
+    },
+    {
+     "line": "co-broke.1",
+     "words": 8,
+     "speed": 0.7,
+     "wpm": 182.1,
+     "speechSeconds": 2.64,
+     "keyWords": 1,
+     "keyMissing": [],
+     "pausesCut": 0,
+     "heard": "One ran out of money in 1991.",
+     "rounds": [
+      {
+       "speed": 1.0,
+       "wpm": 265.0
+      },
+      {
+       "speed": 0.7,
+       "wpm": 182.1
+      }
+     ]
+    },
+    {
+     "line": "co-question.1",
+     "words": 4,
+     "speed": 0.7,
+     "wpm": 166.7,
+     "speechSeconds": 1.44,
+     "keyWords": 0,
+     "keyMissing": [],
+     "pausesCut": 0,
+     "heard": "So what decided it?",
+     "rounds": [
+      {
+       "speed": 1.0,
+       "wpm": 268.5
+      },
+      {
+       "speed": 0.7,
+       "wpm": 166.7
+      }
+     ]
+    },
+    {
+     "line": "a1-est.1",
+     "words": 5,
+     "speed": 0.865,
+     "wpm": 163.6,
+     "speechSeconds": 1.83,
+     "keyWords": 2,
+     "keyMissing": [],
+     "pausesCut": 0,
+     "heard": "It is January 1966.",
+     "rounds": [
+      {
+       "speed": 1.0,
+       "wpm": 178.3
+      },
+      {
+       "speed": 0.87,
+       "wpm": 147.6
+      },
+      {
+       "speed": 0.913,
+       "wpm": 163.6
+      }
+     ]
+    },
+    {
+     "line": "a1-start.1",
+     "words": 13,
+     "speed": 0.845,
+     "wpm": 155.9,
+     "speechSeconds": 5.0,
+     "keyWords": 3,
+     "keyMissing": [],
+     "pausesCut": 0,
+     "heard": "The first retiree starts with $1 million, measured in 1966 dollars.",
+     "rounds": [
+      {
+       "speed": 1.0,
+       "wpm": 183.5
+      },
+      {
+       "speed": 0.845,
+       "wpm": 155.9
+      }
+     ]
+    },
+    {
+     "line": "a1-hook.1",
+     "words": 31,
+     "speed": 0.766,
+     "wpm": 159.1,
+     "speechSeconds": 11.69,
+     "keyWords": 2,
+     "keyMissing": [],
+     "pausesCut": 1,
+     "heard": "By the end of this video, you will know which 10 years decided the fate of this retiree and whether the same thing held for every start year since 1928.",
+     "rounds": [
+      {
+       "speed": 1.0,
+       "wpm": 202.3
+      },
+      {
+       "speed": 0.766,
+       "wpm": 159.1
+      }
+     ]
+    },
+    {
+     "line": "a2-climax.1",
+     "words": 17,
+     "speed": 0.775,
+     "wpm": 151.7,
+     "speechSeconds": 6.72,
+     "keyWords": 4,
+     "keyMissing": [],
+     "pausesCut": 0,
+     "heard": "In 1966 dollars, the Mirror Retiree is now ahead by 1 .96 million dollars.",
+     "rounds": [
+      {
+       "speed": 1.0,
+       "wpm": 200.1
+      },
+      {
+       "speed": 0.775,
+       "wpm": 151.7
+      }
+     ]
+    }
+   ]
+  },
+  "V8": {
+   "speedResponse": 0.19,
+   "sentencesInRange150to160": 1,
+   "overallWpm": 158.3,
+   "wpmMean": 163.6,
+   "wpmStd": 36.6,
+   "wpmMin": 101.4,
+   "wpmMax": 222.2,
+   "keyWords": 15,
+   "keyWordsMissing": 1,
+   "lufsRaw": -18.5,
+   "lufsFile": -20.4,
+   "truePeakDbfs": -4.5,
+   "longestSilenceS": 0.76,
+   "durationS": 36.2,
+   "sentences": [
+    {
+     "line": "co-same.1",
+     "words": 14,
+     "speed": 0.7,
+     "wpm": 184.2,
+     "speechSeconds": 4.56,
+     "keyWords": 3,
+     "keyMissing": [],
+     "pausesCut": 0,
+     "heard": "Two retirees with the same balance, the same withdrawals, and the same average return.",
+     "rounds": [
+      {
+       "speed": 1.0,
+       "wpm": 198.1
+      },
+      {
+       "speed": 0.782,
+       "wpm": 194.4
+      },
+      {
+       "speed": 0.7,
+       "wpm": 184.2
+      }
+     ]
+    },
+    {
+     "line": "co-broke.1",
+     "words": 8,
+     "speed": 0.7,
+     "wpm": 222.2,
+     "speechSeconds": 2.16,
+     "keyWords": 1,
+     "keyMissing": [],
+     "pausesCut": 0,
+     "heard": "One ran out of money in 1991.",
+     "rounds": [
+      {
+       "speed": 1.0,
+       "wpm": 222.2
+      },
+      {
+       "speed": 0.7,
+       "wpm": 222.2
+      }
+     ]
+    },
+    {
+     "line": "co-question.1",
+     "words": 4,
+     "speed": 0.7,
+     "wpm": 187.5,
+     "speechSeconds": 1.28,
+     "keyWords": 0,
+     "keyMissing": [],
+     "pausesCut": 0,
+     "heard": "So what decided it?",
+     "rounds": [
+      {
+       "speed": 1.0,
+       "wpm": 200.0
+      },
+      {
+       "speed": 0.775,
+       "wpm": 200.0
+      },
+      {
+       "speed": 0.7,
+       "wpm": 187.5
+      }
+     ]
+    },
+    {
+     "line": "a1-est.1",
+     "words": 5,
+     "speed": 1.2,
+     "wpm": 101.4,
+     "speechSeconds": 2.96,
+     "keyWords": 2,
+     "keyMissing": [],
+     "pausesCut": 0,
+     "heard": "It is January, 1966.",
+     "rounds": [
+      {
+       "speed": 1.0,
+       "wpm": 96.2
+      },
+      {
+       "speed": 1.2,
+       "wpm": 101.4
+      }
+     ]
+    },
+    {
+     "line": "a1-start.1",
+     "words": 13,
+     "speed": 1.2,
+     "wpm": 131.8,
+     "speechSeconds": 5.92,
+     "keyWords": 3,
+     "keyMissing": [],
+     "pausesCut": 0,
+     "heard": "The first retiree starts with $1 million, measured in 1966 dollars.",
+     "rounds": [
+      {
+       "speed": 1.0,
+       "wpm": 131.8
+      },
+      {
+       "speed": 1.176,
+       "wpm": 137.3
+      },
+      {
+       "speed": 1.2,
+       "wpm": 131.8
+      }
+     ]
+    },
+    {
+     "line": "a1-hook.1",
+     "words": 31,
+     "speed": 0.766,
+     "wpm": 162.6,
+     "speechSeconds": 11.44,
+     "keyWords": 2,
+     "keyMissing": [],
+     "pausesCut": 0,
+     "heard": "By the end of this video, you will know which 10 years decided the fate of this retiree and whether the same thing held for every start year since 1928.",
+     "rounds": [
+      {
+       "speed": 1.0,
+       "wpm": 172.2
+      },
+      {
+       "speed": 0.9,
+       "wpm": 173.5
+      },
+      {
+       "speed": 0.804,
+       "wpm": 162.6
+      }
+     ]
+    },
+    {
+     "line": "a2-climax.1",
+     "words": 17,
+     "speed": 1.0,
+     "wpm": 155.5,
+     "speechSeconds": 6.56,
+     "keyWords": 4,
+     "keyMissing": [
+      "mirror"
+     ],
+     "pausesCut": 0,
+     "heard": "In 1966 dollars, the Mira retiree is now ahead by 1 .96 million dollars.",
+     "rounds": [
+      {
+       "speed": 1.0,
+       "wpm": 155.5
+      }
+     ]
+    }
+   ]
+  }
+ }
+}

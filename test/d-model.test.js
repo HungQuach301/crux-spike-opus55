@@ -50,3 +50,25 @@ test('depletion stops the balance at zero and caps the withdrawal', () => {
   assert.ok(s.withdrawals[k] < 40000);
   assert.ok(s.endNominal.slice(k).every((v) => v === 0));
 });
+
+test('1973-1974: bonds rose in nominal terms but stocks and bonds both lost money after inflation', () => {
+  for (const y of [1973, 1974]) {
+    const r = data[y];
+    assert.ok(r.bonds > 0, `bonds nominal ${y}`);
+    assert.ok((1 + r.stocks) / (1 + r.inflation) - 1 < 0, `stocks real ${y}`);
+    assert.ok((1 + r.bonds) / (1 + r.inflation) - 1 < 0, `bonds real ${y}`);
+  }
+});
+
+test('script: every number is registered, and "US only" / "history, not a forecast" are said in act 1', () => {
+  const { build } = require('../src/d/claims');
+  const { ACTS } = require('../src/d/script');
+  const r = build();
+  assert.deepStrictEqual(r.errors, []);
+  const act1 = ACTS.find((a) => a.id === 'act1').scenes.flatMap((s) => s.lines.map((l) => l.t)).join(' ');
+  assert.match(act1, /\bUS only\b/);
+  assert.match(act1, /history, not a forecast/);
+  const real = r.claims.filter((c) => /^real[SB]197[34]$/.test(c.claimId));
+  assert.strictEqual(real.length, 4);
+  assert.ok(real.every((c) => c.value < 0));
+});

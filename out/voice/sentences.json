@@ -210,6 +210,17 @@
    "paceHint": "Read this line more slowly and evenly than a normal conversation; about 150 words per minute."
   },
   {
+   "id": "a1-notax.3",
+   "scene": "a1-notax",
+   "act": "act1",
+   "text": "The data is US only, and this is history, not a forecast.",
+   "spoken": "The data is U.S. only, and this is history, not a forecast.",
+   "direction": "Plain, brief, matter-of-fact.",
+   "decisive": false,
+   "takes": 4,
+   "paceHint": ""
+  },
+  {
    "id": "a1-mirror-in.1",
    "scene": "a1-mirror-in",
    "act": "act1",
@@ -499,12 +510,12 @@
    "id": "a2-7374.1",
    "scene": "a2-7374",
    "act": "act2",
-   "text": "In 1973 and 1974, stocks and bonds fall together.",
-   "spoken": "In nineteen seventy-three and nineteen seventy-four, stocks and bonds fall together.",
-   "direction": "Grave, steady.",
+   "text": "After inflation, stocks and bonds both lose money in 1973 and 1974.",
+   "spoken": "After inflation, stocks and bonds both lose money in nineteen seventy-three and nineteen seventy-four.",
+   "direction": "Grave, steady. Stress \"after inflation\" and \"both\".",
    "decisive": false,
    "takes": 4,
-   "paceHint": "Keep a natural, even pace of about 155 words per minute; do not drag or linger."
+   "paceHint": ""
   },
   {
    "id": "a2-1974inf.1",

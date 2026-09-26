@@ -2,8 +2,8 @@
  "root": "/home/user/crux-spike-opus55",
  "lock": "0478df7377b754137071e202c2ff396d7deba94293823cabf5f18932c411c612",
  "counts": {
-  "PASS": 11,
-  "FAIL": 0,
+  "PASS": 10,
+  "FAIL": 1,
   "MISSING": 60,
   "ERROR": 0
  },
@@ -368,7 +368,7 @@
    "note": null,
    "section": "§1.2",
    "threshold": "model parameters exactly 0.60/0.40, 4%, 30 years; every value within max($0.50, 1e-6 relative); 0 mismatches",
-   "seconds": 0.0
+   "seconds": 0.2
   },
   {
    "id": "S02",
@@ -386,7 +386,7 @@
    "metrics": [
     {
      "name": "files",
-     "value": 3,
+     "value": 4,
      "op": ">=",
      "threshold": 2,
      "unit": "",
@@ -429,7 +429,7 @@
   },
   {
    "id": "S04",
-   "status": "PASS",
+   "status": "FAIL",
    "metrics": [
     {
      "name": "inflation tolerance pp",
@@ -451,11 +451,11 @@
     },
     {
      "name": "used years missing in a source",
-     "value": 0,
+     "value": 3,
      "op": "<=",
      "threshold": 0,
      "unit": "",
-     "pass": true,
+     "pass": false,
      "near": false
     },
     {
@@ -470,9 +470,22 @@
    ],
    "details": [
     {
-     "overTolerance": 0,
+     "overTolerance": 82,
      "unreported": [],
-     "missing": []
+     "missing": [
+      [
+       "stocks",
+       2023
+      ],
+      [
+       "stocks",
+       2024
+      ],
+      [
+       "stocks",
+       2025
+      ]
+     ]
     }
    ],
    "note": null,
@@ -672,7 +685,7 @@
    "metrics": [
     {
      "name": "sentence length CV",
-     "value": 0.490203,
+     "value": 0.486475,
      "op": ">=",
      "threshold": 0.35,
      "unit": "",
@@ -682,7 +695,7 @@
    ],
    "details": [
     {
-     "sentences": 117,
+     "sentences": 118,
      "mean": 10.9
     }
    ],
@@ -750,7 +763,7 @@
     },
     {
      "name": "outro s",
-     "value": 23.69,
+     "value": 24.162,
      "op": ">=",
      "threshold": 20.0,
      "unit": "s",
@@ -759,7 +772,7 @@
     },
     {
      "name": "total s",
-     "value": 649.962,
+     "value": 656.037,
      "op": ">=",
      "threshold": 600.0,
      "unit": "s",
@@ -812,7 +825,7 @@
    "metrics": [
     {
      "name": "longest stretch without a break s",
-     "value": 23.69,
+     "value": 24.162,
      "op": "<=",
      "threshold": 60.0,
      "unit": "s",
@@ -822,8 +835,8 @@
    ],
    "details": [
     {
-     "from": 626.272,
-     "to": 649.962
+     "from": 631.875,
+     "to": 656.037
     }
    ],
    "note": null,
@@ -875,7 +888,7 @@
     },
     {
      "name": "shot length CV",
-     "value": 0.438655,
+     "value": 0.445359,
      "op": ">=",
      "threshold": 0.4,
      "unit": "",
@@ -884,7 +897,7 @@
     },
     {
      "name": "act-2 scenes before climax",
-     "value": 28,
+     "value": 29,
      "op": ">=",
      "threshold": 6,
      "unit": "",
@@ -902,7 +915,7 @@
     },
     {
      "name": "act-2 last/first mean",
-     "value": 0.703823,
+     "value": 0.680217,
      "op": "<=",
      "threshold": 0.8,
      "unit": "",
@@ -915,9 +928,9 @@
      "short": [],
      "long": [],
      "act2Groups": [
-      6.2462,
-      5.072777777777778,
-      4.396222222222223
+      6.425400000000001,
+      5.3467,
+      4.370666666666667
      ]
     }
    ],
@@ -942,7 +955,7 @@
    "metrics": [
     {
      "name": "shots",
-     "value": 99,
+     "value": 100,
      "op": ">=",
      "threshold": 1,
      "unit": "",

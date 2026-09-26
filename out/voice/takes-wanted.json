@@ -133,7 +133,7 @@
  },
  "a2-7374.1": {
   "n": 4,
-  "hint": "Keep a natural, even pace of about 155 words per minute; do not drag or linger."
+  "hint": ""
  },
  "a2-1974inf.1": {
   "n": 4,
@@ -284,6 +284,10 @@
   "hint": ""
  },
  "a3-mirror-d.1": {
+  "n": 4,
+  "hint": ""
+ },
+ "a1-notax.3": {
   "n": 4,
   "hint": ""
  }

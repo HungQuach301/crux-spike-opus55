@@ -3327,73 +3327,91 @@
   "wpm": 156.4
  },
  "a2-7374.1.t0": {
-  "key": "f36f818eb0d89245",
+  "key": "4c3963d29bae9776",
   "sid": "a2-7374.1",
-  "duration": 5.25,
+  "duration": 6.8,
   "speech": [
-   0.3,
-   4.92
+   0.0,
+   6.5
   ],
   "words": [
    {
-    "w": "In",
+    "w": "After",
     "start": 0.0,
-    "end": 0.42,
-    "p": 0.818
+    "end": 0.36,
+    "p": 0.977
    },
    {
-    "w": "1973",
-    "start": 0.42,
-    "end": 1.4,
-    "p": 0.996
-   },
-   {
-    "w": "and",
-    "start": 1.4,
-    "end": 2.0,
-    "p": 0.876
-   },
-   {
-    "w": "1974,",
-    "start": 2.0,
-    "end": 2.98,
-    "p": 0.994
+    "w": "inflation,",
+    "start": 0.36,
+    "end": 0.96,
+    "p": 0.966
    },
    {
     "w": "stocks",
-    "start": 3.36,
-    "end": 3.7,
-    "p": 0.945
+    "start": 1.74,
+    "end": 1.84,
+    "p": 0.978
    },
    {
     "w": "and",
-    "start": 3.7,
-    "end": 3.94,
-    "p": 0.998
+    "start": 1.84,
+    "end": 2.1,
+    "p": 0.997
    },
    {
     "w": "bonds",
-    "start": 3.94,
-    "end": 4.26,
-    "p": 1.0
-   },
-   {
-    "w": "fall",
-    "start": 4.26,
-    "end": 4.48,
-    "p": 0.995
-   },
-   {
-    "w": "together.",
-    "start": 4.48,
-    "end": 4.86,
+    "start": 2.1,
+    "end": 2.42,
     "p": 0.999
+   },
+   {
+    "w": "both",
+    "start": 2.42,
+    "end": 2.7,
+    "p": 0.991
+   },
+   {
+    "w": "lose",
+    "start": 2.7,
+    "end": 3.0,
+    "p": 0.996
+   },
+   {
+    "w": "money",
+    "start": 3.0,
+    "end": 3.36,
+    "p": 0.998
+   },
+   {
+    "w": "in",
+    "start": 3.36,
+    "end": 3.8,
+    "p": 0.956
+   },
+   {
+    "w": "1973",
+    "start": 3.8,
+    "end": 4.78,
+    "p": 0.997
+   },
+   {
+    "w": "and",
+    "start": 4.78,
+    "end": 5.46,
+    "p": 0.986
+   },
+   {
+    "w": "1974.",
+    "start": 5.46,
+    "end": 6.24,
+    "p": 0.997
    }
   ],
-  "text": "In 1973 and 1974, stocks and bonds fall together.",
-  "spokenWords": 11,
-  "asrSpan": 4.86,
-  "wpm": 135.8
+  "text": "After inflation, stocks and bonds both lose money in 1973 and 1974.",
+  "spokenWords": 14,
+  "asrSpan": 6.24,
+  "wpm": 134.6
  },
  "a2-1974inf.1.t0": {
   "key": "f76250a3d86b143a",
@@ -16026,211 +16044,265 @@
   "wpm": 176.5
  },
  "a2-7374.1.t1": {
-  "key": "9c7a5a7b48f8d7a9",
+  "key": "24ca504e6282e368",
   "sid": "a2-7374.1",
-  "duration": 6.05,
+  "duration": 6.3,
   "speech": [
    0.0,
-   5.86
+   6.06
   ],
   "words": [
    {
-    "w": "In",
+    "w": "After",
     "start": 0.0,
-    "end": 0.18,
-    "p": 0.763
+    "end": 0.26,
+    "p": 0.97
    },
    {
-    "w": "1973",
-    "start": 0.18,
-    "end": 1.42,
-    "p": 0.994
-   },
-   {
-    "w": "and",
-    "start": 1.42,
-    "end": 2.08,
-    "p": 0.877
-   },
-   {
-    "w": "1974,",
-    "start": 2.08,
-    "end": 3.1,
-    "p": 0.994
+    "w": "inflation,",
+    "start": 0.26,
+    "end": 0.74,
+    "p": 0.973
    },
    {
     "w": "stocks",
-    "start": 3.52,
-    "end": 3.96,
-    "p": 0.966
+    "start": 1.34,
+    "end": 1.46,
+    "p": 0.962
    },
    {
     "w": "and",
-    "start": 3.96,
-    "end": 4.28,
+    "start": 1.46,
+    "end": 1.72,
+    "p": 0.996
+   },
+   {
+    "w": "bonds",
+    "start": 1.72,
+    "end": 2.08,
+    "p": 0.999
+   },
+   {
+    "w": "both",
+    "start": 2.08,
+    "end": 2.48,
+    "p": 0.974
+   },
+   {
+    "w": "lose",
+    "start": 2.48,
+    "end": 2.8,
+    "p": 0.992
+   },
+   {
+    "w": "money",
+    "start": 2.8,
+    "end": 3.16,
+    "p": 0.997
+   },
+   {
+    "w": "in",
+    "start": 3.16,
+    "end": 3.56,
+    "p": 0.969
+   },
+   {
+    "w": "1973",
+    "start": 3.56,
+    "end": 4.48,
+    "p": 0.997
+   },
+   {
+    "w": "and",
+    "start": 4.48,
+    "end": 5.06,
+    "p": 0.979
+   },
+   {
+    "w": "1974.",
+    "start": 5.06,
+    "end": 5.82,
+    "p": 0.996
+   }
+  ],
+  "text": "After inflation, stocks and bonds both lose money in 1973 and 1974.",
+  "spokenWords": 14,
+  "asrSpan": 5.82,
+  "wpm": 144.3
+ },
+ "a2-7374.1.t2": {
+  "key": "1e96e2407e967aaf",
+  "sid": "a2-7374.1",
+  "duration": 6.25,
+  "speech": [
+   0.0,
+   5.8
+  ],
+  "words": [
+   {
+    "w": "After",
+    "start": 0.0,
+    "end": 0.3,
+    "p": 0.962
+   },
+   {
+    "w": "inflation,",
+    "start": 0.3,
+    "end": 0.82,
+    "p": 0.974
+   },
+   {
+    "w": "stocks",
+    "start": 1.44,
+    "end": 1.56,
+    "p": 0.984
+   },
+   {
+    "w": "and",
+    "start": 1.56,
+    "end": 1.8,
     "p": 0.998
    },
    {
     "w": "bonds",
-    "start": 4.28,
-    "end": 4.76,
-    "p": 1.0
+    "start": 1.8,
+    "end": 2.16,
+    "p": 0.998
    },
    {
-    "w": "fall",
-    "start": 4.76,
-    "end": 5.28,
+    "w": "both",
+    "start": 2.16,
+    "end": 2.5,
+    "p": 0.975
+   },
+   {
+    "w": "lose",
+    "start": 2.5,
+    "end": 2.78,
     "p": 0.99
    },
    {
-    "w": "together.",
-    "start": 5.28,
-    "end": 5.76,
+    "w": "money",
+    "start": 2.78,
+    "end": 3.08,
     "p": 0.998
-   }
-  ],
-  "text": "In 1973 and 1974, stocks and bonds fall together.",
-  "spokenWords": 11,
-  "asrSpan": 5.76,
-  "wpm": 114.6
- },
- "a2-7374.1.t2": {
-  "key": "528aa25bdf662c4b",
-  "sid": "a2-7374.1",
-  "duration": 6.4,
-  "speech": [
-   0.3,
-   5.96
-  ],
-  "words": [
+   },
    {
-    "w": "In",
-    "start": 0.0,
-    "end": 0.44,
-    "p": 0.705
+    "w": "in",
+    "start": 3.08,
+    "end": 3.44,
+    "p": 0.882
    },
    {
     "w": "1973",
-    "start": 0.44,
-    "end": 1.54,
-    "p": 0.994
-   },
-   {
-    "w": "and",
-    "start": 1.54,
-    "end": 2.16,
-    "p": 0.958
-   },
-   {
-    "w": "1974,",
-    "start": 2.16,
-    "end": 3.2,
-    "p": 0.994
-   },
-   {
-    "w": "stocks",
-    "start": 3.98,
-    "end": 4.18,
-    "p": 0.951
-   },
-   {
-    "w": "and",
-    "start": 4.18,
-    "end": 4.5,
-    "p": 0.998
-   },
-   {
-    "w": "bonds",
-    "start": 4.5,
-    "end": 4.92,
-    "p": 1.0
-   },
-   {
-    "w": "fall",
-    "start": 4.92,
-    "end": 5.5,
-    "p": 0.95
-   },
-   {
-    "w": "together.",
-    "start": 5.5,
-    "end": 5.88,
-    "p": 0.998
-   }
-  ],
-  "text": "In 1973 and 1974, stocks and bonds fall together.",
-  "spokenWords": 11,
-  "asrSpan": 5.88,
-  "wpm": 112.2
- },
- "a2-7374.1.t3": {
-  "key": "5ffce43ea7d528b0",
-  "sid": "a2-7374.1",
-  "duration": 5.15,
-  "speech": [
-   0.0,
-   4.84
-  ],
-  "words": [
-   {
-    "w": "In",
-    "start": 0.0,
-    "end": 0.16,
-    "p": 0.822
-   },
-   {
-    "w": "1973",
-    "start": 0.16,
-    "end": 1.16,
+    "start": 3.44,
+    "end": 4.26,
     "p": 0.996
    },
    {
     "w": "and",
-    "start": 1.16,
-    "end": 1.7,
-    "p": 0.948
+    "start": 4.26,
+    "end": 4.88,
+    "p": 0.968
    },
    {
-    "w": "1974,",
-    "start": 1.7,
-    "end": 2.76,
-    "p": 0.994
+    "w": "1974.",
+    "start": 4.88,
+    "end": 5.58,
+    "p": 0.995
+   }
+  ],
+  "text": "After inflation, stocks and bonds both lose money in 1973 and 1974.",
+  "spokenWords": 14,
+  "asrSpan": 5.58,
+  "wpm": 150.5
+ },
+ "a2-7374.1.t3": {
+  "key": "1a959257f6784bfb",
+  "sid": "a2-7374.1",
+  "duration": 6.4,
+  "speech": [
+   0.02,
+   6.3
+  ],
+  "words": [
+   {
+    "w": "After",
+    "start": 0.0,
+    "end": 0.34,
+    "p": 0.977
+   },
+   {
+    "w": "inflation,",
+    "start": 0.34,
+    "end": 0.84,
+    "p": 0.99
    },
    {
     "w": "stocks",
-    "start": 3.18,
-    "end": 3.48,
-    "p": 0.941
+    "start": 1.64,
+    "end": 1.76,
+    "p": 0.984
    },
    {
     "w": "and",
-    "start": 3.48,
-    "end": 3.72,
-    "p": 0.999
+    "start": 1.76,
+    "end": 2.04,
+    "p": 0.998
    },
    {
     "w": "bonds",
-    "start": 3.72,
-    "end": 4.04,
-    "p": 1.0
+    "start": 2.04,
+    "end": 2.44,
+    "p": 0.999
    },
    {
-    "w": "fall",
-    "start": 4.04,
-    "end": 4.34,
+    "w": "both",
+    "start": 2.44,
+    "end": 2.8,
+    "p": 0.982
+   },
+   {
+    "w": "lose",
+    "start": 2.8,
+    "end": 3.06,
+    "p": 0.993
+   },
+   {
+    "w": "money",
+    "start": 3.06,
+    "end": 3.38,
     "p": 0.997
    },
    {
-    "w": "together.",
-    "start": 4.34,
+    "w": "in",
+    "start": 3.38,
+    "end": 3.86,
+    "p": 0.892
+   },
+   {
+    "w": "1973",
+    "start": 3.86,
     "end": 4.74,
     "p": 0.998
+   },
+   {
+    "w": "and",
+    "start": 4.74,
+    "end": 5.34,
+    "p": 0.984
+   },
+   {
+    "w": "1974.",
+    "start": 5.34,
+    "end": 6.06,
+    "p": 0.997
    }
   ],
-  "text": "In 1973 and 1974, stocks and bonds fall together.",
-  "spokenWords": 11,
-  "asrSpan": 4.74,
-  "wpm": 139.2
+  "text": "After inflation, stocks and bonds both lose money in 1973 and 1974.",
+  "spokenWords": 14,
+  "asrSpan": 6.06,
+  "wpm": 138.6
  },
  "a2-1974inf.1.t1": {
   "key": "7677182ddd4429db",
@@ -25441,5 +25513,353 @@
   "spokenWords": 9,
   "asrSpan": 3.14,
   "wpm": 172.0
+ },
+ "a1-notax.3.t0": {
+  "key": "c612964c35c3c21b",
+  "sid": "a1-notax.3",
+  "duration": 4.15,
+  "speech": [
+   0.02,
+   3.98
+  ],
+  "words": [
+   {
+    "w": "The",
+    "start": 0.0,
+    "end": 0.16,
+    "p": 0.834
+   },
+   {
+    "w": "data",
+    "start": 0.16,
+    "end": 0.44,
+    "p": 0.981
+   },
+   {
+    "w": "is",
+    "start": 0.44,
+    "end": 0.74,
+    "p": 0.997
+   },
+   {
+    "w": "US",
+    "start": 0.74,
+    "end": 1.06,
+    "p": 0.84
+   },
+   {
+    "w": "only,",
+    "start": 1.06,
+    "end": 1.44,
+    "p": 0.742
+   },
+   {
+    "w": "and",
+    "start": 1.82,
+    "end": 1.9,
+    "p": 0.99
+   },
+   {
+    "w": "this",
+    "start": 1.9,
+    "end": 2.1,
+    "p": 0.997
+   },
+   {
+    "w": "is",
+    "start": 2.1,
+    "end": 2.28,
+    "p": 0.995
+   },
+   {
+    "w": "history,",
+    "start": 2.28,
+    "end": 2.66,
+    "p": 0.975
+   },
+   {
+    "w": "not",
+    "start": 3.16,
+    "end": 3.34,
+    "p": 0.992
+   },
+   {
+    "w": "a",
+    "start": 3.34,
+    "end": 3.46,
+    "p": 0.997
+   },
+   {
+    "w": "forecast.",
+    "start": 3.46,
+    "end": 3.78,
+    "p": 0.989
+   }
+  ],
+  "text": "The data is US only, and this is history, not a forecast.",
+  "spokenWords": 12,
+  "asrSpan": 3.78,
+  "wpm": 190.5
+ },
+ "a1-notax.3.t1": {
+  "key": "37419352d6a28ee3",
+  "sid": "a1-notax.3",
+  "duration": 4.55,
+  "speech": [
+   0.26,
+   4.32
+  ],
+  "words": [
+   {
+    "w": "The",
+    "start": 0.0,
+    "end": 0.38,
+    "p": 0.703
+   },
+   {
+    "w": "data",
+    "start": 0.38,
+    "end": 0.68,
+    "p": 0.981
+   },
+   {
+    "w": "is",
+    "start": 0.68,
+    "end": 1.02,
+    "p": 0.996
+   },
+   {
+    "w": "US",
+    "start": 1.02,
+    "end": 1.36,
+    "p": 0.77
+   },
+   {
+    "w": "only,",
+    "start": 1.36,
+    "end": 1.78,
+    "p": 0.866
+   },
+   {
+    "w": "and",
+    "start": 2.36,
+    "end": 2.44,
+    "p": 0.983
+   },
+   {
+    "w": "this",
+    "start": 2.44,
+    "end": 2.58,
+    "p": 0.995
+   },
+   {
+    "w": "is",
+    "start": 2.58,
+    "end": 2.74,
+    "p": 0.987
+   },
+   {
+    "w": "history,",
+    "start": 2.74,
+    "end": 3.12,
+    "p": 0.984
+   },
+   {
+    "w": "not",
+    "start": 3.48,
+    "end": 3.7,
+    "p": 0.997
+   },
+   {
+    "w": "a",
+    "start": 3.7,
+    "end": 3.82,
+    "p": 0.993
+   },
+   {
+    "w": "forecast.",
+    "start": 3.82,
+    "end": 4.14,
+    "p": 0.992
+   }
+  ],
+  "text": "The data is US only, and this is history, not a forecast.",
+  "spokenWords": 12,
+  "asrSpan": 4.14,
+  "wpm": 173.9
+ },
+ "a1-notax.3.t2": {
+  "key": "69097d107adeaa66",
+  "sid": "a1-notax.3",
+  "duration": 4.55,
+  "speech": [
+   0.02,
+   4.26
+  ],
+  "words": [
+   {
+    "w": "The",
+    "start": 0.0,
+    "end": 0.16,
+    "p": 0.893
+   },
+   {
+    "w": "data",
+    "start": 0.16,
+    "end": 0.44,
+    "p": 0.992
+   },
+   {
+    "w": "is",
+    "start": 0.44,
+    "end": 0.76,
+    "p": 0.997
+   },
+   {
+    "w": "US",
+    "start": 0.76,
+    "end": 1.1,
+    "p": 0.803
+   },
+   {
+    "w": "only,",
+    "start": 1.1,
+    "end": 1.48,
+    "p": 0.796
+   },
+   {
+    "w": "and",
+    "start": 2.04,
+    "end": 2.14,
+    "p": 0.992
+   },
+   {
+    "w": "this",
+    "start": 2.14,
+    "end": 2.32,
+    "p": 0.998
+   },
+   {
+    "w": "is",
+    "start": 2.32,
+    "end": 2.5,
+    "p": 0.993
+   },
+   {
+    "w": "history,",
+    "start": 2.5,
+    "end": 2.86,
+    "p": 0.983
+   },
+   {
+    "w": "not",
+    "start": 3.3,
+    "end": 3.54,
+    "p": 0.998
+   },
+   {
+    "w": "a",
+    "start": 3.54,
+    "end": 3.66,
+    "p": 0.995
+   },
+   {
+    "w": "forecast.",
+    "start": 3.66,
+    "end": 4.0,
+    "p": 0.995
+   }
+  ],
+  "text": "The data is US only, and this is history, not a forecast.",
+  "spokenWords": 12,
+  "asrSpan": 4.0,
+  "wpm": 180.0
+ },
+ "a1-notax.3.t3": {
+  "key": "d8a72ac3f53af3c2",
+  "sid": "a1-notax.3",
+  "duration": 4.15,
+  "speech": [
+   0.02,
+   3.92
+  ],
+  "words": [
+   {
+    "w": "The",
+    "start": 0.0,
+    "end": 0.16,
+    "p": 0.846
+   },
+   {
+    "w": "data",
+    "start": 0.16,
+    "end": 0.4,
+    "p": 0.986
+   },
+   {
+    "w": "is",
+    "start": 0.4,
+    "end": 0.74,
+    "p": 0.993
+   },
+   {
+    "w": "US",
+    "start": 0.74,
+    "end": 1.06,
+    "p": 0.8
+   },
+   {
+    "w": "only,",
+    "start": 1.06,
+    "end": 1.46,
+    "p": 0.868
+   },
+   {
+    "w": "and",
+    "start": 1.9,
+    "end": 1.96,
+    "p": 0.986
+   },
+   {
+    "w": "this",
+    "start": 1.96,
+    "end": 2.1,
+    "p": 0.996
+   },
+   {
+    "w": "is",
+    "start": 2.1,
+    "end": 2.26,
+    "p": 0.994
+   },
+   {
+    "w": "history,",
+    "start": 2.26,
+    "end": 2.62,
+    "p": 0.968
+   },
+   {
+    "w": "not",
+    "start": 3.08,
+    "end": 3.3,
+    "p": 0.986
+   },
+   {
+    "w": "a",
+    "start": 3.3,
+    "end": 3.44,
+    "p": 0.996
+   },
+   {
+    "w": "forecast.",
+    "start": 3.44,
+    "end": 3.74,
+    "p": 0.99
+   }
+  ],
+  "text": "The data is US only, and this is history, not a forecast.",
+  "spokenWords": 12,
+  "asrSpan": 3.74,
+  "wpm": 192.5
  }
 }

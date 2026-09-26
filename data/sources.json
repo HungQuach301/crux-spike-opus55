@@ -40,6 +40,20 @@
    },
    "sha256": "f79e3a78837142293449cee4a1a9b1da7be677fb3e989ffb2ef48e8e7cf4cdd7",
    "downloaded": "2026-09-26"
+  },
+  {
+   "path": "data/raw/shiller_ie_data.xls",
+   "role": "crosscheck",
+   "url": "http://www.econ.yale.edu/~shiller/data/ie_data.xls",
+   "what": "Robert J. Shiller, U.S. Stock Markets 1871-Present and CAPE Ratio (monthly S&P Composite price = average of daily closes, dividends); this copy ends in 2023",
+   "terms": {
+    "quote": "The data and CAPE Ratio on this spreadsheet were developed by Robert J. Shiller using various public sources.  Neither Robert J. Shiller nor any affiliates or consultants, are registered investment advisers and do not guarantee the accuracy or completeness of the CAPE Ratio here, or any data or methodology either included therein or upon which it is based.",
+    "status": "No explicit licence or usage terms found on the data page or in the workbook; the quote is the workbook \"Disclaimer\" sheet. Used only as a cross-check, never shown on screen.",
+    "url": "http://www.econ.yale.edu/~shiller/data.htm",
+    "snapshot": "data/terms/shiller-data.html"
+   },
+   "sha256": "0df9392b7dacf91f756e92c8db508ad903c4588b43f3253680eec3dd8b40db68",
+   "downloaded": "2026-09-26"
   }
  ],
  "tolerance": {
@@ -50,7 +64,664 @@
   1928,
   2025
  ],
- "mismatches": [],
+ "mismatches": [
+  {
+   "year": 1928,
+   "series": "stocks",
+   "diff_pp": 5.682,
+   "damodaran": 0.43811,
+   "shiller": 0.3813,
+   "note": "Damodaran (year-end index level + dividends) vs Shiller (monthly-average prices, Dec to Dec, dividends reinvested monthly): outside tolerance; reported, not resolved"
+  },
+  {
+   "year": 1929,
+   "series": "stocks",
+   "diff_pp": 4.092,
+   "damodaran": -0.08298,
+   "shiller": -0.04206,
+   "note": "Damodaran (year-end index level + dividends) vs Shiller (monthly-average prices, Dec to Dec, dividends reinvested monthly): outside tolerance; reported, not resolved"
+  },
+  {
+   "year": 1930,
+   "series": "stocks",
+   "diff_pp": 1.111,
+   "damodaran": -0.25124,
+   "shiller": -0.24013,
+   "note": "Damodaran (year-end index level + dividends) vs Shiller (monthly-average prices, Dec to Dec, dividends reinvested monthly): outside tolerance; reported, not resolved"
+  },
+  {
+   "year": 1931,
+   "series": "stocks",
+   "diff_pp": 2.062,
+   "damodaran": -0.43838,
+   "shiller": -0.41776,
+   "note": "Damodaran (year-end index level + dividends) vs Shiller (monthly-average prices, Dec to Dec, dividends reinvested monthly): outside tolerance; reported, not resolved"
+  },
+  {
+   "year": 1932,
+   "series": "stocks",
+   "diff_pp": 2.403,
+   "damodaran": -0.08642,
+   "shiller": -0.11045,
+   "note": "Damodaran (year-end index level + dividends) vs Shiller (monthly-average prices, Dec to Dec, dividends reinvested monthly): outside tolerance; reported, not resolved"
+  },
+  {
+   "year": 1933,
+   "series": "stocks",
+   "diff_pp": 4.435,
+   "damodaran": 0.49982,
+   "shiller": 0.54417,
+   "note": "Damodaran (year-end index level + dividends) vs Shiller (monthly-average prices, Dec to Dec, dividends reinvested monthly): outside tolerance; reported, not resolved"
+  },
+  {
+   "year": 1934,
+   "series": "stocks",
+   "diff_pp": 1.612,
+   "damodaran": -0.01189,
+   "shiller": -0.028,
+   "note": "Damodaran (year-end index level + dividends) vs Shiller (monthly-average prices, Dec to Dec, dividends reinvested monthly): outside tolerance; reported, not resolved"
+  },
+  {
+   "year": 1936,
+   "series": "stocks",
+   "diff_pp": 3.807,
+   "damodaran": 0.31943,
+   "shiller": 0.35751,
+   "note": "Damodaran (year-end index level + dividends) vs Shiller (monthly-average prices, Dec to Dec, dividends reinvested monthly): outside tolerance; reported, not resolved"
+  },
+  {
+   "year": 1937,
+   "series": "stocks",
+   "diff_pp": 3.407,
+   "damodaran": -0.35337,
+   "shiller": -0.3193,
+   "note": "Damodaran (year-end index level + dividends) vs Shiller (monthly-average prices, Dec to Dec, dividends reinvested monthly): outside tolerance; reported, not resolved"
+  },
+  {
+   "year": 1938,
+   "series": "stocks",
+   "diff_pp": 6.798,
+   "damodaran": 0.29283,
+   "shiller": 0.22484,
+   "note": "Damodaran (year-end index level + dividends) vs Shiller (monthly-average prices, Dec to Dec, dividends reinvested monthly): outside tolerance; reported, not resolved"
+  },
+  {
+   "year": 1939,
+   "series": "stocks",
+   "diff_pp": 3.108,
+   "damodaran": -0.01098,
+   "shiller": 0.0201,
+   "note": "Damodaran (year-end index level + dividends) vs Shiller (monthly-average prices, Dec to Dec, dividends reinvested monthly): outside tolerance; reported, not resolved"
+  },
+  {
+   "year": 1940,
+   "series": "stocks",
+   "diff_pp": 1.008,
+   "damodaran": -0.10673,
+   "shiller": -0.09665,
+   "note": "Damodaran (year-end index level + dividends) vs Shiller (monthly-average prices, Dec to Dec, dividends reinvested monthly): outside tolerance; reported, not resolved"
+  },
+  {
+   "year": 1941,
+   "series": "stocks",
+   "diff_pp": 2.029,
+   "damodaran": -0.12771,
+   "shiller": -0.10742,
+   "note": "Damodaran (year-end index level + dividends) vs Shiller (monthly-average prices, Dec to Dec, dividends reinvested monthly): outside tolerance; reported, not resolved"
+  },
+  {
+   "year": 1942,
+   "series": "stocks",
+   "diff_pp": 2.014,
+   "damodaran": 0.19174,
+   "shiller": 0.1716,
+   "note": "Damodaran (year-end index level + dividends) vs Shiller (monthly-average prices, Dec to Dec, dividends reinvested monthly): outside tolerance; reported, not resolved"
+  },
+  {
+   "year": 1943,
+   "series": "stocks",
+   "diff_pp": 1.942,
+   "damodaran": 0.25061,
+   "shiller": 0.27003,
+   "note": "Damodaran (year-end index level + dividends) vs Shiller (monthly-average prices, Dec to Dec, dividends reinvested monthly): outside tolerance; reported, not resolved"
+  },
+  {
+   "year": 1944,
+   "series": "stocks",
+   "diff_pp": 0.988,
+   "damodaran": 0.19031,
+   "shiller": 0.20018,
+   "note": "Damodaran (year-end index level + dividends) vs Shiller (monthly-average prices, Dec to Dec, dividends reinvested monthly): outside tolerance; reported, not resolved"
+  },
+  {
+   "year": 1945,
+   "series": "stocks",
+   "diff_pp": 2.319,
+   "damodaran": 0.35821,
+   "shiller": 0.3814,
+   "note": "Damodaran (year-end index level + dividends) vs Shiller (monthly-average prices, Dec to Dec, dividends reinvested monthly): outside tolerance; reported, not resolved"
+  },
+  {
+   "year": 1946,
+   "series": "stocks",
+   "diff_pp": 0.657,
+   "damodaran": -0.08429,
+   "shiller": -0.09086,
+   "note": "Damodaran (year-end index level + dividends) vs Shiller (monthly-average prices, Dec to Dec, dividends reinvested monthly): outside tolerance; reported, not resolved"
+  },
+  {
+   "year": 1947,
+   "series": "stocks",
+   "diff_pp": 0.718,
+   "damodaran": 0.052,
+   "shiller": 0.04482,
+   "note": "Damodaran (year-end index level + dividends) vs Shiller (monthly-average prices, Dec to Dec, dividends reinvested monthly): outside tolerance; reported, not resolved"
+  },
+  {
+   "year": 1948,
+   "series": "stocks",
+   "diff_pp": 1.167,
+   "damodaran": 0.05705,
+   "shiller": 0.06871,
+   "note": "Damodaran (year-end index level + dividends) vs Shiller (monthly-average prices, Dec to Dec, dividends reinvested monthly): outside tolerance; reported, not resolved"
+  },
+  {
+   "year": 1949,
+   "series": "stocks",
+   "diff_pp": 1.836,
+   "damodaran": 0.18303,
+   "shiller": 0.16468,
+   "note": "Damodaran (year-end index level + dividends) vs Shiller (monthly-average prices, Dec to Dec, dividends reinvested monthly): outside tolerance; reported, not resolved"
+  },
+  {
+   "year": 1950,
+   "series": "stocks",
+   "diff_pp": 2.933,
+   "damodaran": 0.30806,
+   "shiller": 0.27872,
+   "note": "Damodaran (year-end index level + dividends) vs Shiller (monthly-average prices, Dec to Dec, dividends reinvested monthly): outside tolerance; reported, not resolved"
+  },
+  {
+   "year": 1951,
+   "series": "stocks",
+   "diff_pp": 3.119,
+   "damodaran": 0.23678,
+   "shiller": 0.26798,
+   "note": "Damodaran (year-end index level + dividends) vs Shiller (monthly-average prices, Dec to Dec, dividends reinvested monthly): outside tolerance; reported, not resolved"
+  },
+  {
+   "year": 1953,
+   "series": "stocks",
+   "diff_pp": 2.197,
+   "damodaran": -0.01208,
+   "shiller": 0.00989,
+   "note": "Damodaran (year-end index level + dividends) vs Shiller (monthly-average prices, Dec to Dec, dividends reinvested monthly): outside tolerance; reported, not resolved"
+  },
+  {
+   "year": 1954,
+   "series": "stocks",
+   "diff_pp": 4.508,
+   "damodaran": 0.52563,
+   "shiller": 0.48056,
+   "note": "Damodaran (year-end index level + dividends) vs Shiller (monthly-average prices, Dec to Dec, dividends reinvested monthly): outside tolerance; reported, not resolved"
+  },
+  {
+   "year": 1955,
+   "series": "stocks",
+   "diff_pp": 2.356,
+   "damodaran": 0.32597,
+   "shiller": 0.34953,
+   "note": "Damodaran (year-end index level + dividends) vs Shiller (monthly-average prices, Dec to Dec, dividends reinvested monthly): outside tolerance; reported, not resolved"
+  },
+  {
+   "year": 1956,
+   "series": "stocks",
+   "diff_pp": 1.127,
+   "damodaran": 0.0744,
+   "shiller": 0.06312,
+   "note": "Damodaran (year-end index level + dividends) vs Shiller (monthly-average prices, Dec to Dec, dividends reinvested monthly): outside tolerance; reported, not resolved"
+  },
+  {
+   "year": 1957,
+   "series": "stocks",
+   "diff_pp": 0.798,
+   "damodaran": -0.10457,
+   "shiller": -0.09659,
+   "note": "Damodaran (year-end index level + dividends) vs Shiller (monthly-average prices, Dec to Dec, dividends reinvested monthly): outside tolerance; reported, not resolved"
+  },
+  {
+   "year": 1958,
+   "series": "stocks",
+   "diff_pp": 5.941,
+   "damodaran": 0.4372,
+   "shiller": 0.37779,
+   "note": "Damodaran (year-end index level + dividends) vs Shiller (monthly-average prices, Dec to Dec, dividends reinvested monthly): outside tolerance; reported, not resolved"
+  },
+  {
+   "year": 1959,
+   "series": "stocks",
+   "diff_pp": 1.859,
+   "damodaran": 0.12056,
+   "shiller": 0.13915,
+   "note": "Damodaran (year-end index level + dividends) vs Shiller (monthly-average prices, Dec to Dec, dividends reinvested monthly): outside tolerance; reported, not resolved"
+  },
+  {
+   "year": 1960,
+   "series": "stocks",
+   "diff_pp": 0.771,
+   "damodaran": 0.00337,
+   "shiller": -0.00435,
+   "note": "Damodaran (year-end index level + dividends) vs Shiller (monthly-average prices, Dec to Dec, dividends reinvested monthly): outside tolerance; reported, not resolved"
+  },
+  {
+   "year": 1961,
+   "series": "stocks",
+   "diff_pp": 3.457,
+   "damodaran": 0.26638,
+   "shiller": 0.30095,
+   "note": "Damodaran (year-end index level + dividends) vs Shiller (monthly-average prices, Dec to Dec, dividends reinvested monthly): outside tolerance; reported, not resolved"
+  },
+  {
+   "year": 1962,
+   "series": "stocks",
+   "diff_pp": 0.909,
+   "damodaran": -0.08811,
+   "shiller": -0.09721,
+   "note": "Damodaran (year-end index level + dividends) vs Shiller (monthly-average prices, Dec to Dec, dividends reinvested monthly): outside tolerance; reported, not resolved"
+  },
+  {
+   "year": 1966,
+   "series": "stocks",
+   "diff_pp": 1.637,
+   "damodaran": -0.09971,
+   "shiller": -0.08334,
+   "note": "Damodaran (year-end index level + dividends) vs Shiller (monthly-average prices, Dec to Dec, dividends reinvested monthly): outside tolerance; reported, not resolved"
+  },
+  {
+   "year": 1967,
+   "series": "stocks",
+   "diff_pp": 2.863,
+   "damodaran": 0.23803,
+   "shiller": 0.2094,
+   "note": "Damodaran (year-end index level + dividends) vs Shiller (monthly-average prices, Dec to Dec, dividends reinvested monthly): outside tolerance; reported, not resolved"
+  },
+  {
+   "year": 1968,
+   "series": "stocks",
+   "diff_pp": 4.387,
+   "damodaran": 0.10815,
+   "shiller": 0.15201,
+   "note": "Damodaran (year-end index level + dividends) vs Shiller (monthly-average prices, Dec to Dec, dividends reinvested monthly): outside tolerance; reported, not resolved"
+  },
+  {
+   "year": 1969,
+   "series": "stocks",
+   "diff_pp": 3.429,
+   "damodaran": -0.08241,
+   "shiller": -0.11671,
+   "note": "Damodaran (year-end index level + dividends) vs Shiller (monthly-average prices, Dec to Dec, dividends reinvested monthly): outside tolerance; reported, not resolved"
+  },
+  {
+   "year": 1970,
+   "series": "stocks",
+   "diff_pp": 0.874,
+   "damodaran": 0.03561,
+   "shiller": 0.02687,
+   "note": "Damodaran (year-end index level + dividends) vs Shiller (monthly-average prices, Dec to Dec, dividends reinvested monthly): outside tolerance; reported, not resolved"
+  },
+  {
+   "year": 1971,
+   "series": "stocks",
+   "diff_pp": 0.568,
+   "damodaran": 0.14221,
+   "shiller": 0.13653,
+   "note": "Damodaran (year-end index level + dividends) vs Shiller (monthly-average prices, Dec to Dec, dividends reinvested monthly): outside tolerance; reported, not resolved"
+  },
+  {
+   "year": 1972,
+   "series": "stocks",
+   "diff_pp": 3.123,
+   "damodaran": 0.18755,
+   "shiller": 0.21878,
+   "note": "Damodaran (year-end index level + dividends) vs Shiller (monthly-average prices, Dec to Dec, dividends reinvested monthly): outside tolerance; reported, not resolved"
+  },
+  {
+   "year": 1973,
+   "series": "stocks",
+   "diff_pp": 2.55,
+   "damodaran": -0.14308,
+   "shiller": -0.16858,
+   "note": "Damodaran (year-end index level + dividends) vs Shiller (monthly-average prices, Dec to Dec, dividends reinvested monthly): outside tolerance; reported, not resolved"
+  },
+  {
+   "year": 1975,
+   "series": "stocks",
+   "diff_pp": 1.048,
+   "damodaran": 0.36995,
+   "shiller": 0.38043,
+   "note": "Damodaran (year-end index level + dividends) vs Shiller (monthly-average prices, Dec to Dec, dividends reinvested monthly): outside tolerance; reported, not resolved"
+  },
+  {
+   "year": 1976,
+   "series": "stocks",
+   "diff_pp": 1.312,
+   "damodaran": 0.23831,
+   "shiller": 0.22519,
+   "note": "Damodaran (year-end index level + dividends) vs Shiller (monthly-average prices, Dec to Dec, dividends reinvested monthly): outside tolerance; reported, not resolved"
+  },
+  {
+   "year": 1977,
+   "series": "stocks",
+   "diff_pp": 0.674,
+   "damodaran": -0.0698,
+   "shiller": -0.06305,
+   "note": "Damodaran (year-end index level + dividends) vs Shiller (monthly-average prices, Dec to Dec, dividends reinvested monthly): outside tolerance; reported, not resolved"
+  },
+  {
+   "year": 1978,
+   "series": "stocks",
+   "diff_pp": 1.312,
+   "damodaran": 0.06509,
+   "shiller": 0.07821,
+   "note": "Damodaran (year-end index level + dividends) vs Shiller (monthly-average prices, Dec to Dec, dividends reinvested monthly): outside tolerance; reported, not resolved"
+  },
+  {
+   "year": 1980,
+   "series": "stocks",
+   "diff_pp": 1.506,
+   "damodaran": 0.31735,
+   "shiller": 0.30229,
+   "note": "Damodaran (year-end index level + dividends) vs Shiller (monthly-average prices, Dec to Dec, dividends reinvested monthly): outside tolerance; reported, not resolved"
+  },
+  {
+   "year": 1981,
+   "series": "stocks",
+   "diff_pp": 2.203,
+   "damodaran": -0.04702,
+   "shiller": -0.02499,
+   "note": "Damodaran (year-end index level + dividends) vs Shiller (monthly-average prices, Dec to Dec, dividends reinvested monthly): outside tolerance; reported, not resolved"
+  },
+  {
+   "year": 1982,
+   "series": "stocks",
+   "diff_pp": 1.214,
+   "damodaran": 0.20419,
+   "shiller": 0.19205,
+   "note": "Damodaran (year-end index level + dividends) vs Shiller (monthly-average prices, Dec to Dec, dividends reinvested monthly): outside tolerance; reported, not resolved"
+  },
+  {
+   "year": 1983,
+   "series": "stocks",
+   "diff_pp": 0.834,
+   "damodaran": 0.22337,
+   "shiller": 0.23171,
+   "note": "Damodaran (year-end index level + dividends) vs Shiller (monthly-average prices, Dec to Dec, dividends reinvested monthly): outside tolerance; reported, not resolved"
+  },
+  {
+   "year": 1984,
+   "series": "stocks",
+   "diff_pp": 1.424,
+   "damodaran": 0.06146,
+   "shiller": 0.04722,
+   "note": "Damodaran (year-end index level + dividends) vs Shiller (monthly-average prices, Dec to Dec, dividends reinvested monthly): outside tolerance; reported, not resolved"
+  },
+  {
+   "year": 1986,
+   "series": "stocks",
+   "diff_pp": 5.625,
+   "damodaran": 0.18495,
+   "shiller": 0.24119,
+   "note": "Damodaran (year-end index level + dividends) vs Shiller (monthly-average prices, Dec to Dec, dividends reinvested monthly): outside tolerance; reported, not resolved"
+  },
+  {
+   "year": 1987,
+   "series": "stocks",
+   "diff_pp": 5.918,
+   "damodaran": 0.05813,
+   "shiller": -0.00105,
+   "note": "Damodaran (year-end index level + dividends) vs Shiller (monthly-average prices, Dec to Dec, dividends reinvested monthly): outside tolerance; reported, not resolved"
+  },
+  {
+   "year": 1988,
+   "series": "stocks",
+   "diff_pp": 2.259,
+   "damodaran": 0.16537,
+   "shiller": 0.18796,
+   "note": "Damodaran (year-end index level + dividends) vs Shiller (monthly-average prices, Dec to Dec, dividends reinvested monthly): outside tolerance; reported, not resolved"
+  },
+  {
+   "year": 1989,
+   "series": "stocks",
+   "diff_pp": 1.264,
+   "damodaran": 0.31475,
+   "shiller": 0.30211,
+   "note": "Damodaran (year-end index level + dividends) vs Shiller (monthly-average prices, Dec to Dec, dividends reinvested monthly): outside tolerance; reported, not resolved"
+  },
+  {
+   "year": 1990,
+   "series": "stocks",
+   "diff_pp": 0.714,
+   "damodaran": -0.03064,
+   "shiller": -0.0235,
+   "note": "Damodaran (year-end index level + dividends) vs Shiller (monthly-average prices, Dec to Dec, dividends reinvested monthly): outside tolerance; reported, not resolved"
+  },
+  {
+   "year": 1991,
+   "series": "stocks",
+   "diff_pp": 8.165,
+   "damodaran": 0.30235,
+   "shiller": 0.22069,
+   "note": "Damodaran (year-end index level + dividends) vs Shiller (monthly-average prices, Dec to Dec, dividends reinvested monthly): outside tolerance; reported, not resolved"
+  },
+  {
+   "year": 1992,
+   "series": "stocks",
+   "diff_pp": 8.012,
+   "damodaran": 0.07494,
+   "shiller": 0.15506,
+   "note": "Damodaran (year-end index level + dividends) vs Shiller (monthly-average prices, Dec to Dec, dividends reinvested monthly): outside tolerance; reported, not resolved"
+  },
+  {
+   "year": 1994,
+   "series": "stocks",
+   "diff_pp": 0.869,
+   "damodaran": 0.01326,
+   "shiller": 0.00457,
+   "note": "Damodaran (year-end index level + dividends) vs Shiller (monthly-average prices, Dec to Dec, dividends reinvested monthly): outside tolerance; reported, not resolved"
+  },
+  {
+   "year": 1995,
+   "series": "stocks",
+   "diff_pp": 1.225,
+   "damodaran": 0.37195,
+   "shiller": 0.3842,
+   "note": "Damodaran (year-end index level + dividends) vs Shiller (monthly-average prices, Dec to Dec, dividends reinvested monthly): outside tolerance; reported, not resolved"
+  },
+  {
+   "year": 1996,
+   "series": "stocks",
+   "diff_pp": 0.882,
+   "damodaran": 0.22681,
+   "shiller": 0.23563,
+   "note": "Damodaran (year-end index level + dividends) vs Shiller (monthly-average prices, Dec to Dec, dividends reinvested monthly): outside tolerance; reported, not resolved"
+  },
+  {
+   "year": 1997,
+   "series": "stocks",
+   "diff_pp": 1.332,
+   "damodaran": 0.33104,
+   "shiller": 0.31772,
+   "note": "Damodaran (year-end index level + dividends) vs Shiller (monthly-average prices, Dec to Dec, dividends reinvested monthly): outside tolerance; reported, not resolved"
+  },
+  {
+   "year": 1998,
+   "series": "stocks",
+   "diff_pp": 2.845,
+   "damodaran": 0.28338,
+   "shiller": 0.25492,
+   "note": "Damodaran (year-end index level + dividends) vs Shiller (monthly-average prices, Dec to Dec, dividends reinvested monthly): outside tolerance; reported, not resolved"
+  },
+  {
+   "year": 1999,
+   "series": "stocks",
+   "diff_pp": 0.673,
+   "damodaran": 0.20885,
+   "shiller": 0.21558,
+   "note": "Damodaran (year-end index level + dividends) vs Shiller (monthly-average prices, Dec to Dec, dividends reinvested monthly): outside tolerance; reported, not resolved"
+  },
+  {
+   "year": 2000,
+   "series": "stocks",
+   "diff_pp": 3.277,
+   "damodaran": -0.09032,
+   "shiller": -0.05755,
+   "note": "Damodaran (year-end index level + dividends) vs Shiller (monthly-average prices, Dec to Dec, dividends reinvested monthly): outside tolerance; reported, not resolved"
+  },
+  {
+   "year": 2001,
+   "series": "stocks",
+   "diff_pp": 0.971,
+   "damodaran": -0.1185,
+   "shiller": -0.12821,
+   "note": "Damodaran (year-end index level + dividends) vs Shiller (monthly-average prices, Dec to Dec, dividends reinvested monthly): outside tolerance; reported, not resolved"
+  },
+  {
+   "year": 2002,
+   "series": "stocks",
+   "diff_pp": 1.78,
+   "damodaran": -0.21966,
+   "shiller": -0.20186,
+   "note": "Damodaran (year-end index level + dividends) vs Shiller (monthly-average prices, Dec to Dec, dividends reinvested monthly): outside tolerance; reported, not resolved"
+  },
+  {
+   "year": 2003,
+   "series": "stocks",
+   "diff_pp": 6.093,
+   "damodaran": 0.28356,
+   "shiller": 0.22263,
+   "note": "Damodaran (year-end index level + dividends) vs Shiller (monthly-average prices, Dec to Dec, dividends reinvested monthly): outside tolerance; reported, not resolved"
+  },
+  {
+   "year": 2004,
+   "series": "stocks",
+   "diff_pp": 2.073,
+   "damodaran": 0.10743,
+   "shiller": 0.12816,
+   "note": "Damodaran (year-end index level + dividends) vs Shiller (monthly-average prices, Dec to Dec, dividends reinvested monthly): outside tolerance; reported, not resolved"
+  },
+  {
+   "year": 2005,
+   "series": "stocks",
+   "diff_pp": 2.251,
+   "damodaran": 0.04834,
+   "shiller": 0.07086,
+   "note": "Damodaran (year-end index level + dividends) vs Shiller (monthly-average prices, Dec to Dec, dividends reinvested monthly): outside tolerance; reported, not resolved"
+  },
+  {
+   "year": 2006,
+   "series": "stocks",
+   "diff_pp": 1.346,
+   "damodaran": 0.15613,
+   "shiller": 0.14267,
+   "note": "Damodaran (year-end index level + dividends) vs Shiller (monthly-average prices, Dec to Dec, dividends reinvested monthly): outside tolerance; reported, not resolved"
+  },
+  {
+   "year": 2007,
+   "series": "stocks",
+   "diff_pp": 0.829,
+   "damodaran": 0.05485,
+   "shiller": 0.06313,
+   "note": "Damodaran (year-end index level + dividends) vs Shiller (monthly-average prices, Dec to Dec, dividends reinvested monthly): outside tolerance; reported, not resolved"
+  },
+  {
+   "year": 2008,
+   "series": "stocks",
+   "diff_pp": 2.68,
+   "damodaran": -0.36552,
+   "shiller": -0.39233,
+   "note": "Damodaran (year-end index level + dividends) vs Shiller (monthly-average prices, Dec to Dec, dividends reinvested monthly): outside tolerance; reported, not resolved"
+  },
+  {
+   "year": 2009,
+   "series": "stocks",
+   "diff_pp": 4.095,
+   "damodaran": 0.25935,
+   "shiller": 0.3003,
+   "note": "Damodaran (year-end index level + dividends) vs Shiller (monthly-average prices, Dec to Dec, dividends reinvested monthly): outside tolerance; reported, not resolved"
+  },
+  {
+   "year": 2010,
+   "series": "stocks",
+   "diff_pp": 0.805,
+   "damodaran": 0.14821,
+   "shiller": 0.14016,
+   "note": "Damodaran (year-end index level + dividends) vs Shiller (monthly-average prices, Dec to Dec, dividends reinvested monthly): outside tolerance; reported, not resolved"
+  },
+  {
+   "year": 2012,
+   "series": "stocks",
+   "diff_pp": 0.908,
+   "damodaran": 0.15891,
+   "shiller": 0.16799,
+   "note": "Damodaran (year-end index level + dividends) vs Shiller (monthly-average prices, Dec to Dec, dividends reinvested monthly): outside tolerance; reported, not resolved"
+  },
+  {
+   "year": 2013,
+   "series": "stocks",
+   "diff_pp": 2.43,
+   "damodaran": 0.32145,
+   "shiller": 0.29715,
+   "note": "Damodaran (year-end index level + dividends) vs Shiller (monthly-average prices, Dec to Dec, dividends reinvested monthly): outside tolerance; reported, not resolved"
+  },
+  {
+   "year": 2014,
+   "series": "stocks",
+   "diff_pp": 2.339,
+   "damodaran": 0.13524,
+   "shiller": 0.15863,
+   "note": "Damodaran (year-end index level + dividends) vs Shiller (monthly-average prices, Dec to Dec, dividends reinvested monthly): outside tolerance; reported, not resolved"
+  },
+  {
+   "year": 2015,
+   "series": "stocks",
+   "diff_pp": 0.659,
+   "damodaran": 0.01379,
+   "shiller": 0.02038,
+   "note": "Damodaran (year-end index level + dividends) vs Shiller (monthly-average prices, Dec to Dec, dividends reinvested monthly): outside tolerance; reported, not resolved"
+  },
+  {
+   "year": 2017,
+   "series": "stocks",
+   "diff_pp": 0.693,
+   "damodaran": 0.21605,
+   "shiller": 0.20912,
+   "note": "Damodaran (year-end index level + dividends) vs Shiller (monthly-average prices, Dec to Dec, dividends reinvested monthly): outside tolerance; reported, not resolved"
+  },
+  {
+   "year": 2018,
+   "series": "stocks",
+   "diff_pp": 2.406,
+   "damodaran": -0.04227,
+   "shiller": -0.01821,
+   "note": "Damodaran (year-end index level + dividends) vs Shiller (monthly-average prices, Dec to Dec, dividends reinvested monthly): outside tolerance; reported, not resolved"
+  },
+  {
+   "year": 2019,
+   "series": "stocks",
+   "diff_pp": 5.059,
+   "damodaran": 0.31212,
+   "shiller": 0.26153,
+   "note": "Damodaran (year-end index level + dividends) vs Shiller (monthly-average prices, Dec to Dec, dividends reinvested monthly): outside tolerance; reported, not resolved"
+  },
+  {
+   "year": 2022,
+   "series": "stocks",
+   "diff_pp": 3.052,
+   "damodaran": -0.18038,
+   "shiller": -0.14985,
+   "note": "Damodaran (year-end index level + dividends) vs Shiller (monthly-average prices, Dec to Dec, dividends reinvested monthly): outside tolerance; reported, not resolved"
+  }
+ ],
  "crosscheck": {
   "inflation": {
    "method": "FRED CPIAUCNS December(y) / December(y-1) - 1, vs Damodaran \"Inflation Rate\" sheet",
@@ -59,8 +730,18 @@
    "yearsCompared": 98
   },
   "stocks": {
-   "status": "not run",
-   "reason": "no independent annual S&P 500 total-return source reachable from this environment: www.econ.yale.edu (Shiller ie_data.xls) answered 403 \"Host not in allowlist\"; shillerdata.com and www.slickcharts.com were refused at CONNECT by the egress proxy. FRED carries the S&P 500 index for the last 10 years only (price, licensed), not total return back to 1928. Domains to allow if a second stock source is wanted: www.econ.yale.edu or shillerdata.com."
+   "method": "Shiller monthly S&P Composite: prod over Jan..Dec of (P_m + D_m/12) / P_(m-1), vs Damodaran S&P 500 incl. dividends",
+   "yearsCompared": 95,
+   "yearsOutsideTolerance": 82,
+   "medianDiffPp": 1.612,
+   "maxDiffPp": 8.165,
+   "maxDiffYear": 1991,
+   "yearsMissingInCrosscheck": [
+    2023,
+    2024,
+    2025
+   ],
+   "why": "Shiller prices are monthly averages of daily closes, Damodaran uses year-end levels: the two definitions differ by construction, so most years exceed 0.5 pp. The copy reachable at www.econ.yale.edu (http) ends in September 2023; the maintained file is on shillerdata.com, which the egress proxy refuses (connection reset)."
   }
  },
  "notes": [
