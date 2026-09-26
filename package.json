@@ -7,7 +7,15 @@
     "check": "node render/check.js",
     "render": "node render/render.js",
     "export": "node render/export.js",
-    "all": "npm test && npm run check && npm run render && npm run export"
+    "all": "npm test && npm run check && npm run render && npm run export",
+    "motion:test": "node --test test/*.test.js",
+    "motion:render": "node render-motion/render.js",
+    "motion:audio": "python3 audio/generate.py",
+    "motion:mux": "node render-motion/mux.js",
+    "motion:check": "node render-motion/check.js",
+    "motion:measure": "python3 audio/measure.py && python3 audio/motion_metrics.py",
+    "motion:export": "node render-motion/export.js",
+    "motion:all": "npm run motion:test && npm run motion:render && npm run motion:audio && npm run motion:mux && npm run motion:check && npm run motion:measure && npm run motion:export"
   },
   "repository": {
     "type": "git",

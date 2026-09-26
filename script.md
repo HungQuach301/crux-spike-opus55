@@ -1,219 +1,387 @@
-# Script — Buying mortgage points: how long must we keep the home to break even?
+# Script — Pay off a 5.2% car loan early, or invest the cash?
 
-US-only. Silent segment; narration below is for later TTS (US English).
-On-screen text is exported from the rendered frames (render/export.js), so it matches the video exactly.
+US-only. No narration was recorded in this spike; the narration below is written for later TTS (US English) and paced per scene.
+On-screen text is exported from the rendered frames (render-motion/export.js). SFX cues come from the shared timeline (src/car/timeline.js).
 
-## title — 0s to 7s (7s)
-
-**On screen**
-
-- A US-only data analysis
-- Mortgage points
-- How long must we keep the home to break even?
-- $400,000 loan · 30-year fixed · two ways to count
-- US only · Base rate 7.03%, Freddie Mac PMMS, week of Sep 24, 2026
-
-**Narration** (19 words, 163 wpm)
-
-> Mortgage points. How long do we need to keep the home before they pay for themselves? US data only.
-
-## assume — 7s to 19s (12s)
+## 01 open — 0:00.0–0:07.8 (7.8 s, 13 beats) · wide · two-roads/fork · setup
 
 **On screen**
 
-- What we assume
-- 7.03%
-- Average 30-year fixed rate, US
-- Freddie Mac PMMS, week of Sep 24, 2026
-- Loan
-- $400,000, 30-year fixed
-- One point
-- 1% of the loan = $4,000
-- Rate cut per point
-- 0.125% to 0.375%
-- Points bought
-- 0 to 3, in steps of 0.5
-- Holding period
-- 1 to 15 years
-- Return on cash not spent
-- 5.00% a year, assumed
-- Not modeled
-- taxes, closing costs,
-- loan balance at sale, refinancing
-- Geography
+- 5.2%
+- car loan: pay off early, or invest?
 - US only
-- US only · Base rate 7.03%, Freddie Mac PMMS, week of Sep 24, 2026
 
-**Narration** (31 words, 155 wpm)
+**Sound** appear×2
 
-> What we assume: a four hundred thousand dollar, thirty-year fixed loan at seven point oh three percent, the Freddie Mac average for September twenty-fourth. One point costs one percent.
+**Narration** (19 words, 146 wpm)
 
-Spoken numbers → claims: "four hundred thousand dollar" → `normal/principal`; "thirty-year" → `normal/term_years`; "seven point oh three percent" → `normal/base_rate`; "September twenty-fourth" → `normal/rate_date`; "one percent" → `normal/point_pct`
+> A car loan at five point two percent. We compared paying it off early with investing the extra cash.
 
-## example — 19s to 33s (14s)
+Spoken numbers → claims: "five point two percent" → `apr` (5.2%)
 
-**On screen**
-
-- One case: 1.0 point, 0.25% off per point
-- Upfront cost
-- $4,000
-- Payment at 7.03%
-- $2,669.27
-- Payment at 6.78%
-- $2,602.37
-- Monthly difference
-- $66.90
-- 60
-- months to break even
-- $4,000 ÷ $66.90, rounded up to a whole month: 5.0 years. Payments only; the cash has no other use in this count.
-- US only · Base rate 7.03%, Freddie Mac PMMS, week of Sep 24, 2026
-
-**Narration** (34 words, 146 wpm)
-
-> One case: one point, four thousand dollars, for a quarter point off the rate. The payment falls by sixty-six dollars ninety a month. Four thousand divided by that is sixty months, five years.
-
-Spoken numbers → claims: "four thousand dollars" → `normal/ex_cost`; "a quarter point" → `normal/ex_cut`; "sixty-six dollars ninety" → `normal/ex_saving`; "sixty months" → `normal/ex_months`; "five years" → `normal/ex_years`
-
-## tableA — 33s to 46s (13s)
+## 02 facts — 0:07.8–0:13.8 (6.0 s, 10 beats) · medium · hero-number/with-unit · setup
 
 **On screen**
 
-- 1 month
-- Payments-only break-even, in years
-- Largest shift across 0.5 to 3 points within any column. The rate cut per point moves the break-even; the number of points barely does.
-- Points · cost
-- 0.125% off
-- 0.25% off
-- 0.375% off
-- 0.5 pt · $2,000
-- 10.0
-- 5.0
-- 3.3
-- 1.0 pt · $4,000
-- 10.0
-- 5.0
-- 3.3
-- 1.5 pt · $6,000
-- 10.0
-- 5.0
-- 3.4
-- 2.0 pt · $8,000
-- 10.0
-- 5.1
-- 3.4
-- 2.5 pt · $10,000
-- 10.0
-- 5.1
-- 3.4
-- 3.0 pt · $12,000
-- 10.0
-- 5.1
-- 3.4
-- US only · Base rate 7.03%, Freddie Mac PMMS, week of Sep 24, 2026
+- $25,000 balance
+- 5.2% APR · 48 months left
 
-**Narration** (32 words, 148 wpm)
+**Sound** transition×1, count×1, appear×1
 
-> Counting payments only, the number of points barely matters: within any column, break-even moves by one month at most. The cut per point sets it: ten years, five, or about three.
+**Narration** (16 words, 160 wpm)
 
-Spoken numbers → claims: "one month" → `normal/spread_months`; "ten years" → `normal/th_a_0.125`
+> Twenty-five thousand dollars left at five point two percent, forty-eight monthly payments to go.
 
-## tableB — 46s to 61s (15s)
+Spoken numbers → claims: "Twenty-five thousand dollars" → `balance` ($25,000); "forty-eight" → `months` (48)
+
+## 03 extra — 0:13.8–0:16.2 (2.4 s, 4 beats) · close · two-roads/fork · setup
 
 **On screen**
 
-- 6 of 18
-- answers flip at a 10-year hold
-- Each cell: break-even years, payments only → with a 5.00% return on the upfront cash.
-- Points · cost
-- 0.125% off
-- 0.25% off
-- 0.375% off
-- 0.5 pt · $2,000
-- 10.0 → 13.8
-- 5.0 → 5.8
-- 3.3 → 3.7
-- 1.0 pt · $4,000
-- 10.0 → 13.8
-- 5.0 → 5.8
-- 3.3 → 3.7
-- 1.5 pt · $6,000
-- 10.0 → 13.8
-- 5.0 → 5.8
-- 3.4 → 3.7
-- 2.0 pt · $8,000
-- 10.0 → 13.8
-- 5.1 → 5.8
-- 3.4 → 3.8
-- 2.5 pt · $10,000
-- 10.0 → 13.9
-- 5.1 → 5.8
-- 3.4 → 3.8
-- 3.0 pt · $12,000
-- 10.0 → 13.9
-- 5.1 → 5.8
-- 3.4 → 3.8
-- flip: break-even by year 10 on payments, not yet once the cash could earn 5.00%
-- US only · Base rate 7.03%, Freddie Mac PMMS, week of Sep 24, 2026
+- +$400 a month
 
-**Narration** (40 words, 160 wpm)
+**Sound** transition×1, appear×1
 
-> Now give the upfront cash another use: earning five percent a year. Each break-even gets longer. At a ten-year hold, six of eighteen answers flip. Payments say the points have paid off; with the return counted, not yet.
+**Narration** (6 words, 150 wpm)
 
-Spoken numbers → claims: "five percent" → `normal/return_pct`; "ten-year hold" → `normal/hold_years`; "six of eighteen" → `normal/flip_count`; "of eighteen" → `normal/cell_count`
+> Four hundred extra dollars a month.
 
-## chart — 61s to 76s (15s)
+Spoken numbers → claims: "Four hundred" → `extra` ($400)
+
+## 04 roads — 0:16.2–0:23.4 (7.2 s, 12 beats) · medium · two-roads/fork · setup
 
 **On screen**
 
-- 10.0 → 13.8
-- Years to break even for 1.0 point at 0.125% off ($4,000, saves $33.53 a month): payments only → with a 5.00% return on the cash.
-- $0
-- 0
-- 5
-- 10
-- 15
-- years held
-- −$4,000
-- flips for holds of 10 to 13 years
-- Payments only +$2,035
-- With return on cash +$507
-- US only · Base rate 7.03%, Freddie Mac PMMS, week of Sep 24, 2026
+- +$400 a month
+- A: extra to the loan
+- B: invest the extra
 
-**Narration** (40 words, 160 wpm)
+**Sound** transition×1, appear×2, compare×1
 
-> One of them: one point at an eighth of a percent off. Payments alone break even at ten years. With the five percent counted, it takes thirteen point eight. For holds of ten to thirteen years, the two counts disagree.
+**Narration** (17 words, 142 wpm)
 
-Spoken numbers → claims: "an eighth of a percent" → `normal/ch_cut`; "ten years" → `normal/ch_a_years`; "thirteen point eight" → `normal/ch_b_years`; "ten to" → `normal/ch_flip_from`; "to thirteen years" → `normal/ch_flip_to`
+> Road A sends it to the loan. Road B pays the minimum and invests it each month.
 
-## close — 76s to 86s (10s)
+## 05 timeline — 0:23.4–0:28.2 (4.8 s, 8 beats) · medium · timeline/months · setup
 
 **On screen**
 
-- 13.9 years
-- longest hold needed to break even
-- At 0.125% off per point, with a 5.00% return on the upfront cash. Longest value across 0.5 to 3 points.
-- Rate cut per point
-- Payments only
-- With return on cash
-- 0.125% off
-- 10.0 years
-- 13.9 years
-- 0.25% off
-- 5.1 years
-- 5.8 years
-- 0.375% off
-- 3.4 years
-- 3.8 years
-- Not modeled: taxes, closing costs, loan balance at sale, refinancing.
-- The holding period is the one input only the owner knows.
-- US only · Base rate 7.03%, Freddie Mac PMMS, week of Sep 24, 2026
+- Loan paid off
+- month 28
+- month 48
 
-**Narration** (27 words, 162 wpm)
+**Sound** transition×1, appear×3
 
-> Counting the return, the thresholds run from about four years to fourteen. Taxes are left out. The holding period is the one input only the owner knows.
+**Narration** (13 words, 163 wpm)
 
-Spoken numbers → claims: "about four years" → `normal/th_b_0.375`; "to fourteen" → `normal/th_b_0.125`
+> Road A clears the loan at month twenty-eight instead of forty-eight.
+
+Spoken numbers → claims: "twenty-eight" → `payoff_a` (28); "forty-eight" → `horizon` (48)
+
+## 06 interest — 0:28.2–0:34.8 (6.6 s, 11 beats) · close · stacked-cost/absolute · setup
+
+**On screen**
+
+- Interest paid
+- $1,554
+- $2,744
+- $1,190 avoided, certain
+
+**Sound** transition×1, count×1, reveal×1, emphasis×1
+
+**Narration** (17 words, 155 wpm)
+
+> Interest drops from twenty-seven forty-four to fifteen fifty-four: a certain eleven hundred ninety dollars.
+
+Spoken numbers → claims: "twenty-seven forty-four" → `int_b` ($2,744); "fifteen fifty-four" → `int_a` ($1,554); "eleven hundred ninety dollars" → `avoided` ($1,190)
+
+## 07 scope — 0:34.8–0:39.6 (4.8 s, 8 beats) · wide · canvas/overview · setup
+
+**On screen**
+
+- US only. Inputs are stated, not forecasts.
+
+**Sound** dismiss×1, transition×1, appear×1
+
+**Narration** (13 words, 163 wpm)
+
+> This analysis is US-only, and every input here is stated, not forecast.
+
+## 08 tax — 0:39.6–0:45.6 (6.0 s, 10 beats) · medium · threshold-matrix/rows · setup
+
+**On screen**
+
+- Gains taxed once, at month 48
+- 12%
+- 22%
+- 32%
+
+**Sound** transition×1, appear×2
+
+**Narration** (16 words, 160 wpm)
+
+> Gains are taxed once, at month forty-eight, at twelve, twenty-two or thirty-two percent.
+
+Spoken numbers → claims: "month forty-eight" → `horizon` (48); "twelve" → `tax_12` (12%); "twenty-two" → `tax_22` (22%); "thirty-two percent" → `tax_32` (32%)
+
+## 09 bars — 0:45.6–0:52.8 (7.2 s, 12 beats) · medium · bar-compare/two · sweep
+
+**On screen**
+
+- 12%
+- 22%
+- 32%
+- $1,190
+- Interest avoided
+- $333
+- Extra after-tax growth
+- Expected return
+- 2.00%
+
+**Sound** transition×1, appear×3, compare×1
+
+**Narration** (17 words, 142 wpm)
+
+> Left: interest road A avoids. Right: the extra after-tax growth road B earns by investing sooner.
+
+## 10 sweep — 0:52.8–1:03.6 (10.8 s, 18 beats) · medium · bar-compare/two + line-trend/dual · sweep
+
+**On screen**
+
+- $1,190
+- $1,858
+- Interest avoided
+- Extra after-tax growth
+- Expected return
+- 10.00%
+- A
+- B
+
+**Sound** count×32, threshold-cross×1
+
+**Narration** (26 words, 144 wpm)
+
+> We sweep the expected return from two to ten percent, at twenty-two percent tax. Road B's bar grows with it, and passes road A's line.
+
+Spoken numbers → claims: "two to" → `axis_lo` (2%); "ten percent" → `axis_hi` (10%); "twenty-two percent tax" → `tax_22` (22%)
+
+## 11 settle — 1:03.6–1:06.6 (3.0 s, 5 beats) · close · bar-compare/two · sweep
+
+**On screen**
+
+- $1,190
+- $1,190
+- Interest avoided
+- Extra after-tax growth
+- Expected return
+- 6.70%
+- Equal
+
+**Sound** emphasis×1 · music silence 1:05.0–1:05.4 · stillness 1:05.4–1:06.2
+
+**Narration** (7 words, 140 wpm)
+
+> They meet at six point seven oh.
+
+Spoken numbers → claims: "six point seven oh" → `be_22` (6.70%)
+
+## 12 morph — 1:06.6–1:07.8 (1.2 s, 2 beats) · close · flip-point/axis · sweep
+
+**On screen**
+
+
+**Sound** transition×1
+
+**Narration** (3 words, 150 wpm)
+
+> That crossing point.
+
+## 13 detail — 1:07.8–1:12.0 (4.2 s, 7 beats) · detail · hero-number/plain · sweep
+
+**On screen**
+
+- 6.70%
+- break-even return · 22% tax
+
+**Sound** reveal×1, emphasis×1 · stillness 1:09.1–1:09.9
+
+**Narration** (11 words, 157 wpm)
+
+> Six point seven oh percent is the break-even expected return.
+
+Spoken numbers → claims: "Six point seven oh percent" → `be_22` (6.70%)
+
+## 14 flip — 1:12.0–1:18.0 (6.0 s, 10 beats) · medium · flip-point/axis · sweep
+
+**On screen**
+
+- A
+- B
+- 6.70%
+- Below: A ends ahead
+- Above: B
+
+**Sound** transition×1, appear×2, emphasis×1
+
+**Narration** (15 words, 150 wpm)
+
+> Below it, road A ends ahead at month forty-eight. Above it, road B does.
+
+Spoken numbers → claims: "month forty-eight" → `horizon` (48)
+
+## 15 matrix — 1:18.0–1:25.2 (7.2 s, 12 beats) · medium · threshold-matrix/rows · tension
+
+**On screen**
+
+- 12%
+- 22%
+- 32%
+- Break-even by tax rate
+- 6.70%
+- 6.00%
+- 7.59%
+
+**Sound** transition×1, appear×1, count×1
+
+**Narration** (17 words, 142 wpm)
+
+> Tax moves the threshold: six percent at twelve percent tax, seven point five nine at thirty-two.
+
+Spoken numbers → claims: "six percent" → `be_12` (6.00%); "twelve percent tax" → `tax_12` (12%); "seven point five nine" → `be_32` (7.59%); "thirty-two" → `tax_32` (32%)
+
+## 16 matrix32 — 1:25.2–1:26.4 (1.2 s, 2 beats) · close · doodle-transition/circle · tension
+
+**On screen**
+
+- 12%
+- 6.00%
+- 22%
+- 6.70%
+- 32%
+- 7.59%
+
+**Sound** emphasis×1
+
+**Narration** (3 words, 150 wpm)
+
+> The highest threshold.
+
+## 17 certain — 1:26.4–1:32.4 (6.0 s, 10 beats) · medium · two-column-compare · tension
+
+**On screen**
+
+- Loan payoff
+- Investing
+- 5.2%
+- certain
+- 2%–10%
+- expected, not certain
+
+**Sound** transition×1, compare×1
+
+**Narration** (15 words, 150 wpm)
+
+> The loan payoff return is certain. The investment return is an expectation, not a promise.
+
+## 18 sequence — 1:32.4–1:37.8 (5.4 s, 9 beats) · wide · timeline/months · tension
+
+**On screen**
+
+- A stated sequence
+- 8%
+- then −20%
+
+**Sound** dismiss×1, transition×1, appear×1
+
+**Narration** (13 words, 144 wpm)
+
+> One stated sequence: eight percent a year, then minus twenty in year four.
+
+Spoken numbers → claims: "eight percent" → `seq_first` (8%); "minus twenty" → `seq_second` (−20%); "year four" → `seq_year` (4)
+
+## 19 race — 1:37.8–1:45.6 (7.8 s, 13 beats) · medium · line-trend/dual · tension
+
+**On screen**
+
+- Month 48
+- Net worth after tax
+- A
+- B
+- not a forecast
+
+**Sound** transition×1, appear×1, count×8
+
+**Narration** (20 words, 154 wpm)
+
+> We track net worth after tax, month by month. The two roads run almost together for the first three years.
+
+## 20 gap — 1:45.6–1:46.8 (1.2 s, 2 beats) · close · line-trend/single · tension
+
+**On screen**
+
+
+**Sound** transition×1
+
+**Narration** (3 words, 150 wpm)
+
+> Now the difference.
+
+## 21 cross — 1:46.8–1:52.2 (5.4 s, 9 beats) · close · line-trend/single · tension
+
+**On screen**
+
+- B minus A
+- A ahead from month 38
+
+**Sound** appear×2, threshold-cross×1 · music silence 1:48.8–1:49.2 · stillness 1:49.2–1:50.0
+
+**Narration** (14 words, 156 wpm)
+
+> Road B leads early, then drops behind road A from month thirty-eight on.
+
+Spoken numbers → claims: "month thirty-eight" → `cross_month` (38)
+
+## 22 downside — 1:52.2–1:55.8 (3.6 s, 6 beats) · detail · hero-number/with-delta · tension
+
+**On screen**
+
+- +$459
+- A, month 48
+
+**Sound** reveal×1, emphasis×1 · music silence 1:53.1–1:53.5 · stillness 1:53.5–1:54.3
+
+**Narration** (9 words, 150 wpm)
+
+> Road A finishes four hundred fifty-nine dollars ahead.
+
+Spoken numbers → claims: "four hundred fifty-nine dollars" → `gap_end` ($459)
+
+## 23 converge — 1:55.8–2:01.8 (6.0 s, 10 beats) · medium · two-roads/converge · resolution
+
+**On screen**
+
+- Flip at 6.70% expected return · 22% tax
+
+**Sound** dismiss×1, transition×1, appear×1
+
+**Narration** (16 words, 160 wpm)
+
+> At twenty-two percent tax, the answer flips at six point seven oh percent expected return.
+
+Spoken numbers → claims: "twenty-two percent tax" → `tax_22` (22%); "six point seven oh percent" → `be_22` (6.70%)
+
+## 24 outro — 2:01.8–2:07.8 (6.0 s, 10 beats) · wide · canvas/overview · resolution
+
+**On screen**
+
+- A threshold, not a forecast. US only.
+
+**Sound** transition×1, appear×1, dismiss×1
+
+**Narration** (16 words, 160 wpm)
+
+> That is a threshold, not a forecast. Where a return lands is not known in advance.
 
 ## Pace
 
-Total narration: 223 words over 86s = 155.6 wpm (target 150–160).
+Total narration: 322 words over 127.8 s = 151.2 wpm (target 150–160).

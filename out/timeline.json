@@ -1,0 +1,1258 @@
+{
+ "bpm": 100,
+ "beat": 0.6,
+ "total": 127.8,
+ "scenes": [
+  {
+   "id": "open",
+   "beats": 13,
+   "section": "setup",
+   "shot": "wide",
+   "layout": "two-roads/fork",
+   "cam": {
+    "x": 2060,
+    "y": 1190,
+    "s": 0.42
+   },
+   "drift": [
+    1,
+    0
+   ],
+   "index": 0,
+   "start": 0,
+   "dur": 7.8
+  },
+  {
+   "id": "facts",
+   "beats": 10,
+   "section": "setup",
+   "shot": "medium",
+   "layout": "hero-number/with-unit",
+   "cam": {
+    "x": 960,
+    "y": 560,
+    "s": 1
+   },
+   "drift": [
+    0,
+    -1
+   ],
+   "index": 1,
+   "start": 7.8,
+   "dur": 6
+  },
+  {
+   "id": "extra",
+   "beats": 4,
+   "section": "setup",
+   "shot": "close",
+   "layout": "two-roads/fork",
+   "cam": {
+    "x": 2560,
+    "y": 560,
+    "s": 1.6
+   },
+   "drift": [
+    1,
+    0
+   ],
+   "index": 2,
+   "start": 13.8,
+   "dur": 2.4
+  },
+  {
+   "id": "roads",
+   "beats": 12,
+   "section": "setup",
+   "shot": "medium",
+   "layout": "two-roads/fork",
+   "cam": {
+    "x": 3120,
+    "y": 540,
+    "s": 1
+   },
+   "drift": [
+    -1,
+    0
+   ],
+   "index": 3,
+   "start": 16.2,
+   "dur": 7.2
+  },
+  {
+   "id": "timeline",
+   "beats": 8,
+   "section": "setup",
+   "shot": "medium",
+   "layout": "timeline/months",
+   "cam": {
+    "x": 960,
+    "y": 600,
+    "s": 1
+   },
+   "drift": [
+    1,
+    0
+   ],
+   "index": 4,
+   "start": 23.4,
+   "dur": 4.8
+  },
+  {
+   "id": "interest",
+   "beats": 11,
+   "section": "setup",
+   "shot": "close",
+   "layout": "stacked-cost/absolute",
+   "cam": {
+    "x": 1430,
+    "y": 640,
+    "s": 1.7
+   },
+   "drift": [
+    -1,
+    0
+   ],
+   "index": 5,
+   "start": 28.2,
+   "dur": 6.6
+  },
+  {
+   "id": "scope",
+   "beats": 8,
+   "section": "setup",
+   "shot": "wide",
+   "layout": "canvas/overview",
+   "cam": {
+    "x": 2060,
+    "y": 1190,
+    "s": 0.5
+   },
+   "drift": [
+    0,
+    1
+   ],
+   "index": 6,
+   "start": 34.8,
+   "dur": 4.8
+  },
+  {
+   "id": "tax",
+   "beats": 10,
+   "section": "setup",
+   "shot": "medium",
+   "layout": "threshold-matrix/rows",
+   "cam": {
+    "x": 3160,
+    "y": 1680,
+    "s": 1
+   },
+   "drift": [
+    1,
+    0
+   ],
+   "index": 7,
+   "start": 39.6,
+   "dur": 6
+  },
+  {
+   "id": "bars",
+   "beats": 12,
+   "section": "sweep",
+   "shot": "medium",
+   "layout": "bar-compare/two",
+   "cam": {
+    "x": 960,
+    "y": 1800,
+    "s": 1
+   },
+   "drift": [
+    -1,
+    0
+   ],
+   "index": 8,
+   "start": 45.6,
+   "dur": 7.2
+  },
+  {
+   "id": "sweep",
+   "beats": 18,
+   "section": "sweep",
+   "shot": "medium",
+   "layout": "bar-compare/two + line-trend/dual",
+   "cam": {
+    "x": 930,
+    "y": 1800,
+    "s": 1.05
+   },
+   "drift": [
+    0,
+    0
+   ],
+   "index": 9,
+   "start": 52.8,
+   "dur": 10.8
+  },
+  {
+   "id": "settle",
+   "beats": 5,
+   "section": "sweep",
+   "shot": "close",
+   "layout": "bar-compare/two",
+   "cam": {
+    "x": 560,
+    "y": 1920,
+    "s": 1.6
+   },
+   "drift": [
+    0,
+    0
+   ],
+   "index": 10,
+   "start": 63.6,
+   "dur": 3
+  },
+  {
+   "id": "morph",
+   "beats": 2,
+   "section": "sweep",
+   "shot": "close",
+   "layout": "flip-point/axis",
+   "cam": null,
+   "drift": [
+    0,
+    0
+   ],
+   "index": 11,
+   "start": 66.6,
+   "dur": 1.2
+  },
+  {
+   "id": "detail",
+   "beats": 7,
+   "section": "sweep",
+   "shot": "detail",
+   "layout": "hero-number/plain",
+   "cam": null,
+   "drift": [
+    -1,
+    0
+   ],
+   "index": 12,
+   "start": 67.8,
+   "dur": 4.2
+  },
+  {
+   "id": "flip",
+   "beats": 10,
+   "section": "sweep",
+   "shot": "medium",
+   "layout": "flip-point/axis",
+   "cam": {
+    "x": 1420,
+    "y": 1800,
+    "s": 1.25
+   },
+   "drift": [
+    1,
+    0
+   ],
+   "index": 13,
+   "start": 72,
+   "dur": 6
+  },
+  {
+   "id": "matrix",
+   "beats": 12,
+   "section": "tension",
+   "shot": "medium",
+   "layout": "threshold-matrix/rows",
+   "cam": {
+    "x": 3160,
+    "y": 1650,
+    "s": 1
+   },
+   "drift": [
+    -1,
+    0
+   ],
+   "index": 14,
+   "start": 78,
+   "dur": 7.2
+  },
+  {
+   "id": "matrix32",
+   "beats": 2,
+   "section": "tension",
+   "shot": "close",
+   "layout": "doodle-transition/circle",
+   "cam": {
+    "x": 2980,
+    "y": 1760,
+    "s": 1.8
+   },
+   "drift": [
+    0,
+    0
+   ],
+   "index": 15,
+   "start": 85.2,
+   "dur": 1.2
+  },
+  {
+   "id": "certain",
+   "beats": 10,
+   "section": "tension",
+   "shot": "medium",
+   "layout": "two-column-compare",
+   "cam": {
+    "x": 3160,
+    "y": 2140,
+    "s": 1
+   },
+   "drift": [
+    1,
+    0
+   ],
+   "index": 16,
+   "start": 86.4,
+   "dur": 6
+  },
+  {
+   "id": "sequence",
+   "beats": 9,
+   "section": "tension",
+   "shot": "wide",
+   "layout": "timeline/months",
+   "cam": {
+    "x": 4900,
+    "y": 1300,
+    "s": 0.5
+   },
+   "drift": [
+    1,
+    0
+   ],
+   "index": 17,
+   "start": 92.4,
+   "dur": 5.4
+  },
+  {
+   "id": "race",
+   "beats": 13,
+   "section": "tension",
+   "shot": "medium",
+   "layout": "line-trend/dual",
+   "cam": {
+    "x": 5360,
+    "y": 1180,
+    "s": 1
+   },
+   "drift": [
+    0,
+    -1
+   ],
+   "index": 18,
+   "start": 97.8,
+   "dur": 7.8
+  },
+  {
+   "id": "gap",
+   "beats": 2,
+   "section": "tension",
+   "shot": "close",
+   "layout": "line-trend/single",
+   "cam": {
+    "x": 5700,
+    "y": 1170,
+    "s": 1.5
+   },
+   "drift": [
+    0,
+    0
+   ],
+   "index": 19,
+   "start": 105.6,
+   "dur": 1.2
+  },
+  {
+   "id": "cross",
+   "beats": 9,
+   "section": "tension",
+   "shot": "close",
+   "layout": "line-trend/single",
+   "cam": {
+    "x": 5820,
+    "y": 1200,
+    "s": 1.6
+   },
+   "drift": [
+    1,
+    0
+   ],
+   "index": 20,
+   "start": 106.8,
+   "dur": 5.4
+  },
+  {
+   "id": "downside",
+   "beats": 6,
+   "section": "tension",
+   "shot": "detail",
+   "layout": "hero-number/with-delta",
+   "cam": null,
+   "drift": [
+    -1,
+    0
+   ],
+   "index": 21,
+   "start": 112.2,
+   "dur": 3.6
+  },
+  {
+   "id": "converge",
+   "beats": 10,
+   "section": "resolution",
+   "shot": "medium",
+   "layout": "two-roads/converge",
+   "cam": {
+    "x": 3120,
+    "y": 540,
+    "s": 1
+   },
+   "drift": [
+    -1,
+    0
+   ],
+   "index": 22,
+   "start": 115.8,
+   "dur": 6
+  },
+  {
+   "id": "outro",
+   "beats": 10,
+   "section": "resolution",
+   "shot": "wide",
+   "layout": "canvas/overview",
+   "cam": {
+    "x": 3200,
+    "y": 1190,
+    "s": 0.42
+   },
+   "drift": [
+    1,
+    0
+   ],
+   "index": 23,
+   "start": 121.8,
+   "dur": 6
+  }
+ ],
+ "events": [
+  {
+   "id": "open:title",
+   "scene": "open",
+   "type": "appear",
+   "t": 0.6,
+   "probe": "title"
+  },
+  {
+   "id": "open:skeleton",
+   "scene": "open",
+   "type": "appear",
+   "t": 2.4,
+   "probe": "skeleton"
+  },
+  {
+   "id": "facts:cam",
+   "scene": "facts",
+   "type": "transition",
+   "t": 7.8,
+   "probe": "cam"
+  },
+  {
+   "id": "facts:balance",
+   "scene": "facts",
+   "type": "count",
+   "t": 8.7,
+   "probe": "balance"
+  },
+  {
+   "id": "facts:factsline",
+   "scene": "facts",
+   "type": "appear",
+   "t": 10.5,
+   "probe": "factsline"
+  },
+  {
+   "id": "extra:cam",
+   "scene": "extra",
+   "type": "transition",
+   "t": 13.8,
+   "probe": "cam"
+  },
+  {
+   "id": "extra:extra",
+   "scene": "extra",
+   "type": "appear",
+   "t": 14.4,
+   "probe": "extra"
+  },
+  {
+   "id": "roads:cam",
+   "scene": "roads",
+   "type": "transition",
+   "t": 16.2,
+   "probe": "cam"
+  },
+  {
+   "id": "roads:roadA",
+   "scene": "roads",
+   "type": "appear",
+   "t": 17.4,
+   "probe": "roadA"
+  },
+  {
+   "id": "roads:roadB",
+   "scene": "roads",
+   "type": "appear",
+   "t": 18.6,
+   "probe": "roadB"
+  },
+  {
+   "id": "roads:roadsCompare",
+   "scene": "roads",
+   "type": "compare",
+   "t": 19.8,
+   "probe": "roadsCompare"
+  },
+  {
+   "id": "timeline:cam",
+   "scene": "timeline",
+   "type": "transition",
+   "t": 23.4,
+   "probe": "cam"
+  },
+  {
+   "id": "timeline:tlBars",
+   "scene": "timeline",
+   "type": "appear",
+   "t": 24,
+   "probe": "tlBars"
+  },
+  {
+   "id": "timeline:tlA",
+   "scene": "timeline",
+   "type": "appear",
+   "t": 25.2,
+   "probe": "tlA"
+  },
+  {
+   "id": "timeline:tlB",
+   "scene": "timeline",
+   "type": "appear",
+   "t": 26.1,
+   "probe": "tlB"
+  },
+  {
+   "id": "interest:cam",
+   "scene": "interest",
+   "type": "transition",
+   "t": 28.2,
+   "probe": "cam"
+  },
+  {
+   "id": "interest:intRoll",
+   "scene": "interest",
+   "type": "count",
+   "t": 29.7,
+   "probe": "intRoll"
+  },
+  {
+   "id": "interest:avoided",
+   "scene": "interest",
+   "type": "reveal",
+   "t": 31.5,
+   "probe": "avoided"
+  },
+  {
+   "id": "interest:certainLine",
+   "scene": "interest",
+   "type": "emphasis",
+   "t": 32.4,
+   "probe": "certainLine"
+  },
+  {
+   "id": "scope:dismissL",
+   "scene": "scope",
+   "type": "dismiss",
+   "t": 34.8,
+   "probe": "dismissL"
+  },
+  {
+   "id": "scope:cam",
+   "scene": "scope",
+   "type": "transition",
+   "t": 34.8,
+   "probe": "cam"
+  },
+  {
+   "id": "scope:scope",
+   "scene": "scope",
+   "type": "appear",
+   "t": 36,
+   "probe": "scope"
+  },
+  {
+   "id": "tax:cam",
+   "scene": "tax",
+   "type": "transition",
+   "t": 39.6,
+   "probe": "cam"
+  },
+  {
+   "id": "tax:taxHead",
+   "scene": "tax",
+   "type": "appear",
+   "t": 40.5,
+   "probe": "taxHead"
+  },
+  {
+   "id": "tax:taxRows",
+   "scene": "tax",
+   "type": "appear",
+   "t": 41.4,
+   "probe": "taxRows"
+  },
+  {
+   "id": "bars:cam",
+   "scene": "bars",
+   "type": "transition",
+   "t": 45.6,
+   "probe": "cam"
+  },
+  {
+   "id": "bars:barA",
+   "scene": "bars",
+   "type": "appear",
+   "t": 46.5,
+   "probe": "barA"
+  },
+  {
+   "id": "bars:barB",
+   "scene": "bars",
+   "type": "appear",
+   "t": 47.7,
+   "probe": "barB"
+  },
+  {
+   "id": "bars:barsCompare",
+   "scene": "bars",
+   "type": "compare",
+   "t": 48.9,
+   "probe": "barsCompare"
+  },
+  {
+   "id": "bars:slider",
+   "scene": "bars",
+   "type": "appear",
+   "t": 50.1,
+   "probe": "slider"
+  },
+  {
+   "id": "sweep:step1",
+   "scene": "sweep",
+   "type": "count",
+   "t": 53.6812,
+   "probe": "step1"
+  },
+  {
+   "id": "sweep:step2",
+   "scene": "sweep",
+   "type": "count",
+   "t": 53.9625,
+   "probe": "step2"
+  },
+  {
+   "id": "sweep:step3",
+   "scene": "sweep",
+   "type": "count",
+   "t": 54.2437,
+   "probe": "step3"
+  },
+  {
+   "id": "sweep:step4",
+   "scene": "sweep",
+   "type": "count",
+   "t": 54.525,
+   "probe": "step4"
+  },
+  {
+   "id": "sweep:step5",
+   "scene": "sweep",
+   "type": "count",
+   "t": 54.8062,
+   "probe": "step5"
+  },
+  {
+   "id": "sweep:step6",
+   "scene": "sweep",
+   "type": "count",
+   "t": 55.0875,
+   "probe": "step6"
+  },
+  {
+   "id": "sweep:step7",
+   "scene": "sweep",
+   "type": "count",
+   "t": 55.3687,
+   "probe": "step7"
+  },
+  {
+   "id": "sweep:step8",
+   "scene": "sweep",
+   "type": "count",
+   "t": 55.65,
+   "probe": "step8"
+  },
+  {
+   "id": "sweep:step9",
+   "scene": "sweep",
+   "type": "count",
+   "t": 55.9312,
+   "probe": "step9"
+  },
+  {
+   "id": "sweep:step10",
+   "scene": "sweep",
+   "type": "count",
+   "t": 56.2125,
+   "probe": "step10"
+  },
+  {
+   "id": "sweep:step11",
+   "scene": "sweep",
+   "type": "count",
+   "t": 56.4937,
+   "probe": "step11"
+  },
+  {
+   "id": "sweep:step12",
+   "scene": "sweep",
+   "type": "count",
+   "t": 56.775,
+   "probe": "step12"
+  },
+  {
+   "id": "sweep:step13",
+   "scene": "sweep",
+   "type": "count",
+   "t": 57.0562,
+   "probe": "step13"
+  },
+  {
+   "id": "sweep:step14",
+   "scene": "sweep",
+   "type": "count",
+   "t": 57.3375,
+   "probe": "step14"
+  },
+  {
+   "id": "sweep:step15",
+   "scene": "sweep",
+   "type": "count",
+   "t": 57.6187,
+   "probe": "step15"
+  },
+  {
+   "id": "sweep:step16",
+   "scene": "sweep",
+   "type": "count",
+   "t": 57.9,
+   "probe": "step16"
+  },
+  {
+   "id": "sweep:step17",
+   "scene": "sweep",
+   "type": "count",
+   "t": 58.1812,
+   "probe": "step17"
+  },
+  {
+   "id": "sweep:step18",
+   "scene": "sweep",
+   "type": "count",
+   "t": 58.4625,
+   "probe": "step18"
+  },
+  {
+   "id": "sweep:step19",
+   "scene": "sweep",
+   "type": "count",
+   "t": 58.7437,
+   "probe": "step19"
+  },
+  {
+   "id": "sweep:cross19",
+   "scene": "sweep",
+   "type": "threshold-cross",
+   "t": 58.7437,
+   "probe": "cross19"
+  },
+  {
+   "id": "sweep:step20",
+   "scene": "sweep",
+   "type": "count",
+   "t": 59.025,
+   "probe": "step20"
+  },
+  {
+   "id": "sweep:step21",
+   "scene": "sweep",
+   "type": "count",
+   "t": 59.3062,
+   "probe": "step21"
+  },
+  {
+   "id": "sweep:step22",
+   "scene": "sweep",
+   "type": "count",
+   "t": 59.5875,
+   "probe": "step22"
+  },
+  {
+   "id": "sweep:step23",
+   "scene": "sweep",
+   "type": "count",
+   "t": 59.8687,
+   "probe": "step23"
+  },
+  {
+   "id": "sweep:step24",
+   "scene": "sweep",
+   "type": "count",
+   "t": 60.15,
+   "probe": "step24"
+  },
+  {
+   "id": "sweep:step25",
+   "scene": "sweep",
+   "type": "count",
+   "t": 60.4312,
+   "probe": "step25"
+  },
+  {
+   "id": "sweep:step26",
+   "scene": "sweep",
+   "type": "count",
+   "t": 60.7125,
+   "probe": "step26"
+  },
+  {
+   "id": "sweep:step27",
+   "scene": "sweep",
+   "type": "count",
+   "t": 60.9937,
+   "probe": "step27"
+  },
+  {
+   "id": "sweep:step28",
+   "scene": "sweep",
+   "type": "count",
+   "t": 61.275,
+   "probe": "step28"
+  },
+  {
+   "id": "sweep:step29",
+   "scene": "sweep",
+   "type": "count",
+   "t": 61.5562,
+   "probe": "step29"
+  },
+  {
+   "id": "sweep:step30",
+   "scene": "sweep",
+   "type": "count",
+   "t": 61.8375,
+   "probe": "step30"
+  },
+  {
+   "id": "sweep:step31",
+   "scene": "sweep",
+   "type": "count",
+   "t": 62.1187,
+   "probe": "step31"
+  },
+  {
+   "id": "sweep:step32",
+   "scene": "sweep",
+   "type": "count",
+   "t": 62.4,
+   "probe": "step32"
+  },
+  {
+   "id": "settle:land",
+   "scene": "settle",
+   "type": "emphasis",
+   "t": 65.4,
+   "probe": "land"
+  },
+  {
+   "id": "morph:cam",
+   "scene": "morph",
+   "type": "transition",
+   "t": 66.6,
+   "probe": "cam"
+  },
+  {
+   "id": "detail:hero670",
+   "scene": "detail",
+   "type": "reveal",
+   "t": 69.1,
+   "probe": "hero670"
+  },
+  {
+   "id": "detail:underline670",
+   "scene": "detail",
+   "type": "emphasis",
+   "t": 70,
+   "probe": "underline670"
+  },
+  {
+   "id": "flip:cam",
+   "scene": "flip",
+   "type": "transition",
+   "t": 72,
+   "probe": "cam"
+  },
+  {
+   "id": "flip:below",
+   "scene": "flip",
+   "type": "appear",
+   "t": 73.2,
+   "probe": "below"
+  },
+  {
+   "id": "flip:above",
+   "scene": "flip",
+   "type": "appear",
+   "t": 74.4,
+   "probe": "above"
+  },
+  {
+   "id": "flip:arrow",
+   "scene": "flip",
+   "type": "emphasis",
+   "t": 75.3,
+   "probe": "arrow"
+  },
+  {
+   "id": "matrix:cam",
+   "scene": "matrix",
+   "type": "transition",
+   "t": 78,
+   "probe": "cam"
+  },
+  {
+   "id": "matrix:matrixHead",
+   "scene": "matrix",
+   "type": "appear",
+   "t": 78.9,
+   "probe": "matrixHead"
+  },
+  {
+   "id": "matrix:matrixRoll",
+   "scene": "matrix",
+   "type": "count",
+   "t": 79.8,
+   "probe": "matrixRoll"
+  },
+  {
+   "id": "matrix32:circle32",
+   "scene": "matrix32",
+   "type": "emphasis",
+   "t": 85.5,
+   "probe": "circle32"
+  },
+  {
+   "id": "certain:cam",
+   "scene": "certain",
+   "type": "transition",
+   "t": 86.4,
+   "probe": "cam"
+  },
+  {
+   "id": "certain:columns",
+   "scene": "certain",
+   "type": "compare",
+   "t": 87.6,
+   "probe": "columns"
+  },
+  {
+   "id": "sequence:dismissM",
+   "scene": "sequence",
+   "type": "dismiss",
+   "t": 92.4,
+   "probe": "dismissM"
+  },
+  {
+   "id": "sequence:cam",
+   "scene": "sequence",
+   "type": "transition",
+   "t": 92.4,
+   "probe": "cam"
+  },
+  {
+   "id": "sequence:seqText",
+   "scene": "sequence",
+   "type": "appear",
+   "t": 93.9,
+   "probe": "seqText"
+  },
+  {
+   "id": "race:cam",
+   "scene": "race",
+   "type": "transition",
+   "t": 97.8,
+   "probe": "cam"
+  },
+  {
+   "id": "race:raceAxes",
+   "scene": "race",
+   "type": "appear",
+   "t": 98.4,
+   "probe": "raceAxes"
+  },
+  {
+   "id": "race:month6",
+   "scene": "race",
+   "type": "count",
+   "t": 99.4875,
+   "probe": "month6"
+  },
+  {
+   "id": "race:month12",
+   "scene": "race",
+   "type": "count",
+   "t": 100.275,
+   "probe": "month12"
+  },
+  {
+   "id": "race:month18",
+   "scene": "race",
+   "type": "count",
+   "t": 101.0625,
+   "probe": "month18"
+  },
+  {
+   "id": "race:month24",
+   "scene": "race",
+   "type": "count",
+   "t": 101.85,
+   "probe": "month24"
+  },
+  {
+   "id": "race:month30",
+   "scene": "race",
+   "type": "count",
+   "t": 102.6375,
+   "probe": "month30"
+  },
+  {
+   "id": "race:month36",
+   "scene": "race",
+   "type": "count",
+   "t": 103.425,
+   "probe": "month36"
+  },
+  {
+   "id": "race:month42",
+   "scene": "race",
+   "type": "count",
+   "t": 104.2125,
+   "probe": "month42"
+  },
+  {
+   "id": "race:month48",
+   "scene": "race",
+   "type": "count",
+   "t": 105,
+   "probe": "month48"
+  },
+  {
+   "id": "gap:cam",
+   "scene": "gap",
+   "type": "transition",
+   "t": 105.6,
+   "probe": "cam"
+  },
+  {
+   "id": "cross:gapLabel",
+   "scene": "cross",
+   "type": "appear",
+   "t": 107.4,
+   "probe": "gapLabel"
+  },
+  {
+   "id": "cross:crossMark",
+   "scene": "cross",
+   "type": "threshold-cross",
+   "t": 109.2,
+   "probe": "crossMark"
+  },
+  {
+   "id": "cross:crossText",
+   "scene": "cross",
+   "type": "appear",
+   "t": 110.1,
+   "probe": "crossText"
+  },
+  {
+   "id": "downside:hero459",
+   "scene": "downside",
+   "type": "reveal",
+   "t": 113.5,
+   "probe": "hero459"
+  },
+  {
+   "id": "downside:underline459",
+   "scene": "downside",
+   "type": "emphasis",
+   "t": 114.4,
+   "probe": "underline459"
+  },
+  {
+   "id": "converge:dismissD",
+   "scene": "converge",
+   "type": "dismiss",
+   "t": 115.8,
+   "probe": "dismissD"
+  },
+  {
+   "id": "converge:cam",
+   "scene": "converge",
+   "type": "transition",
+   "t": 115.8,
+   "probe": "cam"
+  },
+  {
+   "id": "converge:convergeText",
+   "scene": "converge",
+   "type": "appear",
+   "t": 117.3,
+   "probe": "convergeText"
+  },
+  {
+   "id": "outro:cam",
+   "scene": "outro",
+   "type": "transition",
+   "t": 121.8,
+   "probe": "cam"
+  },
+  {
+   "id": "outro:outroText",
+   "scene": "outro",
+   "type": "appear",
+   "t": 123,
+   "probe": "outroText"
+  },
+  {
+   "id": "outro:fadeAll",
+   "scene": "outro",
+   "type": "dismiss",
+   "t": 126.9,
+   "probe": "fadeAll"
+  }
+ ],
+ "silences": [
+  {
+   "scene": "settle",
+   "start": 65,
+   "end": 65.4
+  },
+  {
+   "scene": "cross",
+   "start": 108.8,
+   "end": 109.2
+  },
+  {
+   "scene": "downside",
+   "start": 113.1,
+   "end": 113.5
+  }
+ ],
+ "still": [
+  {
+   "scene": "settle",
+   "start": 65.4,
+   "end": 66.2
+  },
+  {
+   "scene": "detail",
+   "start": 69.1,
+   "end": 69.9
+  },
+  {
+   "scene": "cross",
+   "start": 109.2,
+   "end": 110
+  },
+  {
+   "scene": "downside",
+   "start": 113.5,
+   "end": 114.3
+  }
+ ],
+ "sweep": {
+  "t0": 0.6,
+  "t1": 9.6,
+  "lo": 2,
+  "hi": 10,
+  "steps": 32,
+  "stepTimes": [
+   0.6,
+   0.88125,
+   1.1625,
+   1.44375,
+   1.725,
+   2.00625,
+   2.2875,
+   2.56875,
+   2.85,
+   3.13125,
+   3.4125,
+   3.69375,
+   3.975,
+   4.25625,
+   4.5375,
+   4.81875,
+   5.1,
+   5.38125,
+   5.6625,
+   5.94375,
+   6.225,
+   6.50625,
+   6.7875,
+   7.06875,
+   7.35,
+   7.63125,
+   7.9125,
+   8.19375,
+   8.475,
+   8.75625,
+   9.0375,
+   9.31875,
+   9.6
+  ],
+  "crossK": 19
+ },
+ "race": {
+  "t0": 0.9,
+  "t1": 7.2,
+  "tickEvery": 6
+ },
+ "settle": {
+  "t0": 0.3,
+  "t1": 1.8
+ }
+}

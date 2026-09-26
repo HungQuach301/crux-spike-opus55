@@ -1,0 +1,27 @@
+[
+ {
+  "name": "establishing",
+  "scene": "open",
+  "t": 5.5
+ },
+ {
+  "name": "slider-mid-sweep",
+  "scene": "sweep",
+  "t": 57.9
+ },
+ {
+  "name": "crossover",
+  "scene": "flip",
+  "t": 76.8
+ },
+ {
+  "name": "break-even-detail",
+  "scene": "detail",
+  "t": 70.8
+ },
+ {
+  "name": "downside-path",
+  "scene": "cross",
+  "t": 111.4
+ }
+]

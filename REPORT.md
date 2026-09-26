@@ -1,122 +1,180 @@
-# REPORT — mortgage points break-even segment
+# REPORT — spike 2: car loan early payoff vs investing (motion + sound)
+
+**Topic:** "Pay off a 5.2% car loan early, or invest the cash: at what expected return does the answer flip?"
+The segment is 127.8 s, 1920×1080, 30 fps, H.264 video plus AAC 48 kHz stereo audio, in `out/segment.mp4`.
+Spike 1's report is kept as `REPORT-spike1.md`, and branch `spike/opus55` is untouched.
+
+## What the segment argues (numbers are computed in `src/car/`)
+
+| Input | Value | Where it comes from |
+|---|---|---|
+| Loan | $25,000 at 5.2% APR, 48 months left | The brief |
+| Payment | $578.00 | Standard amortization, `payment()` |
+| Extra cash | **$400 a month** | Our stated assumption; the brief does not fix it |
+| Tax treatment (on screen) | Gains taxed once at month 48 at 12%, 22% or 32% | Brief rates, simplified (see below) |
+
+The simplified tax treatment works like this:
+- Gains are taxed at the bracket rate if the account were liquidated.
+- Losses give no tax credit.
+- Loan interest is not deductible.
+- Returns compound monthly as (1+r)^(1/12).
+
+The two roads:
+- **Road A** puts P + $400 into the loan until it is gone, which happens at **month 28**. After that it invests P + $400 every month.
+- **Road B** pays the minimum and invests $400 every month.
+- Both spend exactly the same cash. A tested identity follows: A's extra invested basis equals the interest it avoids, **$1,190** ($2,744 − $1,554). That part is certain.
+
+Findings:
+- **Break-even expected return:** 6.00% / 6.70% / 7.59% at 12 / 22 / 32% tax.
+- **Sanity check:** at 0% tax the break-even is 5.33%, which is the 5.2% APR expressed as an effective annual rate (tested).
+- **Downside, one stated sequence (not a forecast):** 8% a year for 36 months, then −20% a year for months 37–48. B leads until month 36, A is ahead from **month 38**, and A finishes **$459** ahead after tax.
+
+No external source was needed: every figure is a brief input, our stated assumption, or computed. Nothing needed an ILLUSTRATIVE label, because no fetched rate is shown.
 
 ## Deliverables
 
-| File | What it is |
+| File | Content |
 |---|---|
-| `out/segment.mp4` | 86.0 s, 1920×1080, 30 fps, H.264 High, yuv420p/bt709, **no audio stream** (2,580 frames) |
-| `out/frame-normal.png`, `out/frame-extreme.png`, `out/frame-missing.png` | The same layout (the "flip table" scene) under three datasets |
-| `out/evidence/*` | 25%-scale and grayscale copies of the three frames, plus three stills decoded from the mp4 |
-| `out/checks.json` | Machine layout/token/number checks: 21 hold frames (7 scenes × 3 datasets) + 258 sampled video frames |
-| `src/calc.js`, `src/data.js` | Calculations and the claims ledger. Every on-screen number comes from here |
-| `test/*.test.js` | 20 unit tests (`npm test`), all passing |
-| `claims.json` | 324 claims: every number drawn on screen → value, display string, formula or source URL, inputs, where it appears |
-| `script.md` | On-screen text (exported from the rendered DOM) + narration, 223 words / 86 s = 155.6 wpm |
+| `out/segment.mp4` | Video + mixed audio |
+| `out/contact-sheet.png` | 24 thumbnails, each with timestamp, shot size and layout id |
+| `out/keyframes/*.png` | establishing, slider-mid-sweep, crossover, break-even-detail, downside-path. 25% and grayscale copies are in `out/evidence/` |
+| `out/motion-metrics.json` | Per-scene duration, words, shot, layout and motion coverage; every global limit with pass/fail |
+| `out/audio-metrics.json` | LUFS and true peak (own BS.1770 meter, cross-checked against ffmpeg `ebur128`); per-layer levels; SFX counts, density and sync; silences |
+| `out/music-ledger.json` | 10 assets (music bed, room tone, 8 SFX): origin, generator, seed, license |
+| `out/audio/{music,sfx,ambience}.wav` | Separate stems, 48 kHz stereo PCM16. The 8 fixed SFX buffers are in `out/audio/sfx-bank/` |
+| `claims.json` | 88 claims: every number drawn on screen, with formula, inputs and the scenes it appears in |
+| `script.md` | Per scene: timing, shot, layout, on-screen text exported from the DOM, sound cues, narration (322 words, 151.2 wpm), spoken number → claim |
+| `src/car/` + `test/car.test.js` | Calculation, data/claims, the shared timeline and the narration. 11 new tests; 31/31 pass with spike 1's |
+| `out/checks.json`, `out/text-metrics.json`, `out/visual-events.json`, `out/keyframe-metrics.json` | Raw evidence |
 
-Reproduce: `npm install && pip install imageio-ffmpeg && npm run all`.
+Reproduce: `npm install && pip install imageio-ffmpeg numpy scipy && npm run motion:all`.
 
-## Step 0: environment and renderer choice
+## Tooling choice
 
-Found: Node 22.22, Python 3.11 (no Pillow/numpy), Playwright 1.56.1 with its bundled Chromium 1194. No system ffmpeg; Playwright's own ffmpeg build only handles its screencast codec. npm and PyPI were reachable. Freddie Mac, FRED and the press-wire sites were blocked by the egress proxy.
+**Picture: the deterministic Chromium + ffmpeg renderer from spike 1, extended into a continuous data canvas with a virtual camera.**
+- All graphics live in one SVG world, transformed by a camera (x, y, scale). Strokes are `non-scaling-stroke`.
+- Text lives in a screen-space overlay anchored to world points. Type therefore always renders at the token sizes (128/48/28) whatever the zoom. A camera that scaled text would have broken the type tokens and the 24 px floor.
+- Every frame is a pure function of t, so the checker can sample any frame, 4 workers can render in parallel, and the renderer can record **DOM event probes** per frame. Those probes are what sync is measured against.
+- Remotion would give the same model at the cost of a React/webpack bundle and its own Chrome download; nothing in this spike needs its features. Motion Canvas's audio preview does not render offline to a mix.
 
-**Choice: our own deterministic HTML renderer. Chromium (via Playwright) paints each frame, and ffmpeg (the static 7.0.2 build from the `imageio-ffmpeg` wheel) encodes it with libx264.** This is the Remotion model without Remotion:
-
-- Remotion needs its own Chrome Headless Shell download and a webpack/React bundle. The download host was not verified reachable, and the bundling adds a failure surface this spike doesn't need. Motion Canvas needs Vite plus an ffmpeg exporter, which has the same issue.
-- Python + ffmpeg alone would have meant drawing text with PIL. PIL isn't installed, and PIL has no OpenType `tnum` support or real type layout. Chromium gives us Inter with tabular numerals, flexbox and SVG for free.
-- Each frame is a pure function `renderFrame(t, dataset)`. There are no CSS animations and no timers, so any frame can be re-rendered on its own, sampled by the checker, or split across workers (4 parallel pages → 4 H.264 parts → lossless concat).
-
-## Base rate
-
-**7.03%**, Freddie Mac PMMS 30-year fixed average, week of **Sep 24, 2026**. The release is titled "Mortgage Rates Average 7.03%":
-<https://www.globenewswire.com/news-release/2026/09/24/3368592/0/en/mortgage-rates-average-7-03.html>, index page <https://www.freddiemac.com/pmms>.
-
-**Caveat:** the sandbox proxy blocked direct fetches of freddiemac.com, freddiemac.gcs-web.com, globenewswire.com, nasdaq.com and FRED. The value and date come from the web-search index: the release titles, the dated URL, and the prior weeks 6.71 / 6.76 / 6.95% for a consistency check. We did not read the page body. Because the rate is sourced, it is not labeled ILLUSTRATIVE; the `extreme` stress dataset (12.875%) is labeled ILLUSTRATIVE on screen. If the published number differs, change `SOURCE.ratePct` in `src/data.js` and run `npm run all`. Every number re-derives.
-
-## Model (stated on screen and in claims.json)
-
-- Payment: `M = L·i / (1 − (1+i)^−360)`, `i = r/12`, rounded to cents.
-- One point = 1% of the loan. New rate = base − points × cut per point.
-- **Version A (payments only):** the smallest whole month m with m × saving ≥ cost.
-- **Version B (opportunity cost):** the upfront cash could have earned **5.00%/yr** (a stated assumption, monthly compounding, j = k/12). This is the smallest m where the present value of m monthly savings at j is ≥ cost. It is the same as the future value of the invested savings catching up with the future value of the invested cost; a test checks that both formulations cross zero in the same month.
-- Not modeled (shown on screen): taxes and points deductibility, closing costs, the lower loan balance at sale (this favors points), and refinancing or prepayment.
-
-**The flip:** at a 10-year hold (chosen by code as the holding period with the most disagreements, ties going to the shorter one), 6 of 18 cells flip. At 0.125% off per point, version A breaks even at 10.0 years and version B at 13.8 to 13.9, so for holds of 10 to 13 years the answer changes. At 0.25% off per point, version A is 5.0 to 5.1 years and version B is 5.8. Across 0.5 to 3 points, the number of points moves version A's break-even by at most 1 month.
+**Sound: Python + NumPy/SciPy DSP (`audio/generate.py`).** It reads the same timeline JSON as the picture (`out/timeline.json`, produced by `src/car/timeline.js`).
+- **Timeline-driven:** every scene is a whole number of beats at 100 BPM (0.6 s), so the music's phrase lengths are the scene lengths and chords change exactly on cuts.
+- **Deterministic:** fixed seeds.
+- **Measurable with the same tools:** a BS.1770-4 K-weighted gated meter and a 4× oversampled true peak (`audio/loudness.py`); integrated LUFS matches ffmpeg `ebur128` to 0.1 LU.
+- Tone.js offline rendering would have needed a separate metering path anyway.
 
 ## Wall time and iterations
 
-- **Total wall time: ~24 minutes** (environment check → PR), including a **259 s** full-video render (2,580 frames, 4 workers).
-- **Render iterations: 1 full video render.** Before it: 3 rounds of still-frame iterations (8 stills, then 6, then 5) and 2 checker runs. The first checker run flagged the 128 px glyph boxes above the safe margin, stray SVG `fill` checks, and the footer's entrance moving it below the margin; all were fixed before the video render.
+- **Wall time: about 65 min.** This covers the model, renderer, audio, metrics, 4 full renders at ~6.7 min each, and the report.
+- **Render iterations: 5 full-video renders started, 4 completed, 1 aborted.** Before them came 3 rounds of storyboard stills (24 + 9 + 2 frames). Each render fixed something the checkers found:
+  1. First pass.
+  2. (Aborted.) Stillness windows overlapped camera moves, so the numbers were landing while the camera was still moving.
+  3. The sweep camera clipped the "Interest avoided" caption.
+  4. The stricter safe-area fade hid the sweep counter and the "Month N" label; bar-B's bold weight computed as 900.
+  5. Three keyframes lacked a level-1 (128 px) element.
+- **Audio iterations:** 5 generations. All levels and density passed from the first build; later runs only followed timeline changes.
 
-## Automated evidence (what `render/check.js` asserts)
+## Layout → argument beat
 
-For every hold frame and every 10th video frame:
+| Beat | Layout(s) | Why this form |
+|---|---|---|
+| Question and two options | two-roads/fork (open, extra, roads) | Two uses of the same $400: the argument is a fork |
+| What is owed | hero-number/with-unit (facts) | One number sets the scale: $25,000 |
+| What paying early buys | timeline/months (timeline), then a morph to stacked-cost/absolute (interest) | Months first (month 28 vs 48); the same bars then re-scale to dollars to show the $1,190 of interest, the certain part |
+| Scope | canvas/overview (scope) | A wide shot of the whole canvas while the assumptions are stated |
+| Tax treatment | threshold-matrix/rows (tax, empty values) | The rows exist before their values: the reader sees which dimension varies |
+| The comparison | bar-compare/two (bars, sweep, settle) | Certain dollars (A) vs return-dependent dollars (B), on one axis from zero |
+| The sweep | bar-compare/two + line-trend/dual with a slider (sweep) | As the return rises, bar B grows and the two net-worth lines draw; the threshold line changes color when B passes it |
+| The break-even | bar → point morph, flip-point/axis, hero-number/plain (morph, detail, flip) | Equal bars become one point where the lines cross; "6.70%" at detail scale, then below/above on the axis |
+| Tax dependence | threshold-matrix/rows + doodle/circle (matrix, matrix32) | The point flies into its row; the other two rates roll in; a circle marks the largest threshold |
+| Risk | two-column-compare (certain) | A certain 5.2% vs a 2–10% fan labeled "expected, not certain" |
+| One bad sequence | timeline/months strip, line-trend/dual race, dual → single morph, hero/with-delta (sequence, race, gap, cross, downside) | Net worth after tax is nearly identical on both roads, so the camera pushes in and the lines morph into their difference: B ahead, then A ahead from month 38, +$459 |
+| Resolution | two-roads/converge, canvas/overview (converge, outro) | The fork closes on the threshold; a pull-back to the whole canvas |
 
-- Text ink boxes stay inside the 96 px safe area, with no cell overflow or clipping and no text/text overlap.
-- Every digit on screen sits inside a `K(claimId)` span. A tree-walk fails on any digit outside one, so a hand-typed number cannot reach the screen.
-- Computed colors (text, background, border, SVG fill/stroke) are all in the 9-token table. Font sizes are only 128/48/28, weights only 700/600/400, family Inter.
-- Ink coverage is the share of pixels that differ visibly from the bg token.
+That is 11 distinct catalog layouts (13 counting variants). There are 5 morph transitions: timeline→stacked, bar→point, point→matrix row, dual→gap line, fork→converge.
 
-Result: **0 issues on all 21 hold frames and 0 on 258 sampled video frames.**
+## Motion and genre limits (all measured in `out/motion-metrics.json`)
 
-Motion tokens in `render/scenes.js`:
+| Limit | Measured | Pass |
+|---|---|---|
+| Every scene 1.2–12 s | 1.2 – 10.8 s | ✅ |
+| Scene-length std / mean ≥ 0.4 | 0.432 | ✅ |
+| ≤ 3 consecutive scenes < 2 s | 1 | ✅ |
+| Motion coverage ≥ 70% | **95.1%** | ✅ |
+| Longest static run ≤ 8 s | **0.93 s** (at 62.4 s) | ✅ |
+| ≤ 12 on-screen words per scene | max 12 (roads, sweep) | ✅ |
+| Text rate ≤ 1.5 words/s | 1.16 overall; worst single scene 1.50 | ✅ |
+| Shot mix by scene count: wide 20 / medium 40 / close 30 / detail 10 (±8) | 16.7 / 45.8 / 29.2 / 8.3 | ✅ (by time: 18.8 / 58.7 / 16.4 / 6.1) |
+| ≥ 3 morph transitions | 5 | ✅ |
 
-- Drift: the background dot grid moves at 12 px/s, and the drift **stops** while each focal number holds (emphasis by stillness).
-- Stagger: 60 ms.
-- Overshoot: back-out easing solved numerically to peak at exactly 4%.
-- Entrances: a 16 px rise over 0.5 s.
+How the rows above were measured:
+- **Moving frame:** mean |Δluma| over the full 1920×1080 frame > **0.02** 8-bit levels. The threshold is 4× the encoder noise floor, floored at 0.02. The noise floor is measured by encoding each keyframe as a 2 s still with the same x264 settings (p95 = 0.0001).
+- **Words:** counted from the rendered DOM every 3rd frame (text at opacity > 0.5; numbers count as words). "New words/s" counts words not visible at the end of the previous scene.
+- **Shot size:** comes from camera scale (wide < 0.6 ≤ medium < 1.3 ≤ close < 2.4 ≤ detail).
 
-## Self-score: 8 criteria per frame
+Motion tokens:
+- Camera drift is 8 px/s on screen.
+- Stagger is 60 ms.
+- Back-out easing is solved to peak at exactly 4%.
+- Background parallax layers move at 0.3 / 1.0 / 1.3 of camera motion, integrated per frame so zooms never make the background jump.
+- **Stillness:** at 4 landings (6.70%, detail 6.70%, month-38 crossing, +$459) the camera and all three background layers stop for 0.8 s. The measured moving frames inside those windows (3 / 20 / 6 / 16 of 24) come only from the landing number's own 0.35 s fade and 0.5 s rise.
 
-Legend: ✅ pass, ⚠️ partial (counted as fail), ❌ fail.
+## Sound limits (`out/audio-metrics.json`)
 
-### frame-normal.png — 8/8
+Reference: 0 dB = −16 LUFS integrated, where a narration track would sit.
 
-| # | Criterion | Score | Evidence |
-|---|---|---|---|
-| 1 | Readable at 25% | ✅ | `evidence/frame-normal-25pct.png`: "6 of 18" (32 px at 25%) and the headline (12 px) read clearly; the flip column reads as a pattern even though the 7 px cell digits are soft. |
-| 2 | One focal point | ✅ | A single 128/700 element ("6 of 18"); everything else is 48 or 28. |
-| 3 | Negative space | ✅ | Ink coverage 6.8% of pixels (checks.json); the table stops at y≈770 and leaves about 110 px free above the legend. |
-| 4 | Three-level hierarchy | ✅ | Computed sizes {128, 48, 28} and weights {700, 600, 400}; one l1, two l2, 31 l3. |
-| 5 | Survives worst-case data | ✅ | The same code renders `extreme` (12×6 grid, $9,999,999 loan, "never" values) with 0 overflow, clip or safe-area issues. |
-| 6 | Meaning survives grayscale | ✅ | `evidence/frame-normal-gray.png`: flipped cells carry a 2 px outline, a surface fill and 600 weight. The legend uses the same outlined box plus words. |
-| 7 | Room for motion | ✅ | 60 ms row/column stagger and 16 px entrances run without overlap in all 258 sampled frames; the dot grid drifts behind with no collisions. |
-| 8 | Only token values | ✅ | Checker: 0 off-token colors, sizes, weights or fonts; 6 distinct computed colors, all tokens. |
+| Limit | Measured | Pass |
+|---|---|---|
+| Music bed −18 to −22 dB | −20.0 dB (−36.0 LUFS) | ✅ |
+| SFX −8 to −14 dB | −9 to −14 dB (momentary max per type: appear −12, count −14, compare −11, threshold-cross −9, reveal −9, dismiss −13, transition −12, emphasis −9) | ✅ |
+| Ambience about −40 dB | −40.0 dB (−56.0 LUFS) | ✅ |
+| Exactly 8 SFX types, one fixed sound each | 8 types, 102 events: appear 24, count 43, transition 17, emphasis 6, dismiss 4, compare 3, reveal 3, threshold-cross 2 | ✅ |
+| SFX within 60 ms of the visual event | **max 33.3 ms, mean 17.3 ms**, 102/102 measured | ✅ |
+| SFX active 30–40% of duration | **34.9%** | ✅ |
+| Music silence 300–500 ms before decisive numbers, max 3 | 3 × 400 ms: 65.0 s → 6.70% lands; 108.8 s → crossing at month 38; 113.1 s → +$459 | ✅ |
+| Final mix (report only) | **−31.1 LUFS integrated, −13.5 dBTP true peak** (own meter and ffmpeg agree) | — |
 
-### frame-extreme.png — 6/8
+How these were measured:
+- **Sync:** the audio onset is the argmax of the cross-correlation between `sfx.wav` and that type's fixed buffer (±150 ms search). The visual onset is the first rendered frame whose DOM carries the event's `data-ev` probe at opacity > 0.02. Audio leads by 17 ms on average because visuals are quantized to the next 33 ms frame.
+- **SFX density:** the share of 50 ms windows where the SFX layer is above the room-tone RMS (−56.8 dBFS).
 
-| # | Criterion | Score | Evidence |
-|---|---|---|---|
-| 1 | Readable at 25% | ❌ | `evidence/frame-extreme-25pct.png`: the focal "24 of 72" and the headline read, but 72 cells at 28 px become 7 px of text on a 46 px row pitch. Only the flip pattern survives, not the values. |
-| 2 | One focal point | ✅ | Still one 128 px element; the 24 outlined cells form a strong secondary block but not a competing focal. |
-| 3 | Negative space | ⚠️ | Coverage 13.2%, double the normal frame; the row pitch drops to 46 px and outlined cells sit 4–8 px apart. It is legible but crowded. |
-| 4 | Three-level hierarchy | ✅ | Same {128, 48, 28} / {700, 600, 400}. |
-| 5 | Survives worst-case data | ✅ | This is the worst case: the longest labels ("0.1875% off", "2.25 pt · $225,000", "17.2 → never"), 13 rows including the header, and 6 columns. Checker finds 0 overflow, clip or overlap issues, and everything stays inside the safe area. |
-| 6 | Meaning survives grayscale | ✅ | `evidence/frame-extreme-gray.png`: outlines and weight carry the flip; the ILLUSTRATIVE label keeps its 600 weight. |
-| 7 | Room for motion | ✅ | Entrance offsets stay inside the row pitch; no sampled-frame overlaps (only the normal dataset is animated in the video). |
-| 8 | Only token values | ✅ | Checker: 0 off-token values. |
+Music is one tonal identity: D minor/dorian pads, and the chord changes on every cut. The texture changes by section:
 
-### frame-missing.png — 8/8
+| Section | Texture | Spectral centroid |
+|---|---|---|
+| Setup | Pad only | 1151 Hz |
+| Sweep | Adds a sub and a quiet 8th-note root/fifth pulse (rhythm, no melody) | 639 Hz |
+| Tension | Darker filter, filtered-noise swells | 806 Hz |
+| Resolution | Open voicing, fade | 694 Hz |
 
-| # | Criterion | Score | Evidence |
-|---|---|---|---|
-| 1 | Readable at 25% | ✅ | Same geometry as the normal frame; "4 of 12" and the headline read at 25%. |
-| 2 | One focal point | ✅ | One 128 px count; the denominator counts only quoted cells (12, not 18). |
-| 3 | Negative space | ✅ | Coverage 6.1%. |
-| 4 | Three-level hierarchy | ✅ | Same size and weight sets. |
-| 5 | Survives worst-case data | ✅ | 6 empty cells render as "—" with a "— no lender quote" legend. The count, the holding-period choice and the thresholds all skip empty cells in code (`src/data.js`). |
-| 6 | Meaning survives grayscale | ✅ | Missing is shown by a glyph and words, not color. |
-| 7 | Room for motion | ✅ | Same as normal. |
-| 8 | Only token values | ✅ | Checker: 0 off-token values. |
+## Self-score: 8 criteria per keyframe
+
+Legend: ✅ pass, ⚠️ partial (counted as fail).
+
+Evidence behind every row: `out/checks.json` has 0 issues on all five keyframes. That covers the safe area, overlaps, digits from claims, token colors, sizes and weights, and Inter. Ink coverage and grayscale deltas are in `out/keyframe-metrics.json`.
+
+| Criterion | establishing | slider mid-sweep | crossover | break-even detail | downside path |
+|---|---|---|---|---|---|
+| 1 Readable at 25% | ✅ 5.2% (32 px) and the question (12 px) read | ⚠️ 6.00% counter and $ labels read; 28 px captions are 7 px | ✅ 6.70% reads; A/B labels are soft | ✅ 6.70% + caption | ✅ "38" reads; the line label is soft |
+| 2 One focal point | ✅ l1 "5.2%" | ✅ bar B + counter move together; everything else is static | ✅ 6.70% beside the crossing point | ✅ | ✅ "38" at the crossing |
+| 3 Negative space | ✅ ink 1.6% | ✅ 5.3% | ✅ 1.6% | ✅ 2.1% | ✅ 1.6% |
+| 4 Three-level hierarchy | ✅ 128/48/28 | ⚠️ 48/600 · 28/600 · 28/400: three levels by weight, only two sizes | ✅ 128 / 28-600 / axes | ✅ 128/48 + grid | ✅ 128/48/28 |
+| 5 Worst-case data | ✅ | ✅ Bar B at 10% (largest) keeps its label inside the frame; the counter's longest value "10.00%" was checked in every sampled frame | ✅ | ✅ | ✅ Longest labels checked frame by frame; 0 issues across 1,278 samples |
+| 6 Grayscale | ✅ | ✅ A solid vs B hatched; luma Δ accent/warn = 49.5 | ✅ A solid vs B dashed | ✅ | ✅ B dashed, A baseline solid |
+| 7 Room for motion | ✅ | ✅ Top third reserved for bar B's growth | ✅ | ✅ | ✅ |
+| 8 Tokens only | ✅ | ✅ | ✅ | ✅ | ✅ |
+| **Score** | **8/8** | **6/8** | **8/8** | **8/8** | **8/8** |
 
 ## Known weaknesses
 
-1. **Rate provenance is secondhand.** It was confirmed from search-index titles and a dated URL, not from reading the Freddie Mac page, which the sandbox blocked.
-2. **The opportunity-cost model is simple.** It uses one constant pre-tax 5.00% return with no sensitivity sweep on screen. The lower loan balance at sale, which pushes break-even *earlier* for points, is omitted. Including it would shrink the flip window, and the segment says it is left out but does not quantify it.
-3. **"6 of 18" depends on the chosen hold.** The count moves with H; the code picks the H with the most flips (10 years). That is disclosed on screen as "at a 10-year hold", but it is a selection.
-4. **13.8 vs 13.9.** The chart shows 1 point (13.8 years); the closing card shows the longest value across 0.5 to 3 points (13.9). Both are labeled, but a viewer could read them as inconsistent.
-5. **25% readability of table cells.** 28 px is the smallest token size at or above the 24 px floor, and it becomes 7 px at 25%. The extreme dataset fails this criterion.
-6. **The encoded video is not exactly on-token.** yuv420p/bt709 limited range shifts token colors by a few code values. Anti-aliasing and scene cross-fades (0.4 s) create in-between colors. The checker validates authored/computed CSS, not decoded pixels.
-7. **Non-token geometry.** Row heights, the 2 px stroke width, chart plot bounds and the 16 px entrance distance are computed or chosen values; the token table does not cover them.
-8. **The narration is not recorded or synced.** Per-scene word counts are paced to the scene lengths (146–163 wpm per scene, 155.6 overall), but there is no word-level timing, and the TTS voice may run long on the dollar amounts.
-9. **Scene coverage.** Only the flip-table scene is delivered as three PNGs. The other six scenes were checked under all three datasets (checks.json) but not exported as images.
-10. **Environment coupling.** The renderer depends on Playwright's Chromium 1194 and the imageio-ffmpeg binary. Other Chromium versions can shift font rasterization slightly.
+1. **The $400/month extra is our assumption.** The break-even returns barely move with it (6.708 / 6.699 / 6.693% at $300 / $400 / $500 extra, 22% tax), but the dollar amounts ($1,190, $459) scale with it.
+2. **Simplified tax.** One liquidation at month 48 at the ordinary bracket rate, with no long-term capital-gains rates, no loss credit, and no state tax. Loan interest is treated as non-deductible. Some 2025–2028 new-vehicle loans are now deductible; we did not model that.
+3. **The certainty framing is exact only for the payoff leg.** After month 28, road A also invests and carries market risk. The downside scene shows this honestly (both lines fall), but the two-column card simplifies it.
+4. **One stated bad sequence** is shown, not a distribution. Stated on screen as "not a forecast", by design.
+5. **Tight word budgets.** Several scenes sit exactly at 1.5 new words/s or 12 words, so small copy edits break the limits (the checker catches this).
+6. **Shot mix by time** is medium-heavy (58.7%). The limit is met by scene count, which is how the brief states it.
+7. **Stillness is camera and background only.** The landing number still eases in during the 0.8 s window.
+8. **The encoded video is not exactly on-token.** It is yuv420p, so token colors shift by a few code values, and cross-fades and anti-aliasing create in-between colors. The checkers validate the authored DOM/SVG, not decoded pixels.
+9. **Canvas graphics bleed past the safe margin.** In wide and close shots the continuous canvas intentionally runs off-frame; only text is held to the safe area (text fades out within 16 px of it).
+10. **No narration was recorded,** so real TTS timing may drift from the per-scene wpm. The integrated mix is −31 LUFS because the 0 dB narration layer is absent.
+11. **Render cost.** ~6.7 min per full render on 4 cores. A camera change means a full re-render; per-scene caching would fix that.

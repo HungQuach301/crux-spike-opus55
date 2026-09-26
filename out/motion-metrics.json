@@ -1,0 +1,580 @@
+{
+ "definitions": {
+  "movingFrame": "mean |luma(t) - luma(t-1)| over all 1920x1080 pixels > 0.020 (8-bit levels); threshold = max(0.02, 4 x p95 encoder noise floor), noise floor measured by encoding each keyframe as a 2 s still with the same x264 settings",
+  "words": "max over sampled frames (every 3rd) of words in text elements with opacity > 0.5; numbers count as words",
+  "newWordsPerSec": "words in text elements visible in the scene but not at the end of the previous scene, divided by scene duration",
+  "shotSize": "from virtual-camera scale: wide < 0.6 <= medium < 1.3 <= close < 2.4 <= detail"
+ },
+ "global": {
+  "durationS": 127.8,
+  "frames": 3834,
+  "threshold": 0.02,
+  "noiseFloorP95": 0.0001,
+  "motionCoverage": {
+   "value": 0.951,
+   "limit": ">= 0.70",
+   "pass": true
+  },
+  "longestStaticRunS": {
+   "value": 0.93,
+   "atS": 62.43,
+   "limit": "<= 8",
+   "pass": true
+  },
+  "wordsPerSec": {
+   "value": 1.158,
+   "limit": "<= 1.5",
+   "pass": true
+  },
+  "maxWordsInAnyScene": {
+   "value": 12,
+   "limit": "<= 12",
+   "pass": true
+  },
+  "maxNewWordsPerSecInAnyScene": {
+   "value": 1.5,
+   "limit": "<= 1.5 (per scene, stricter than required)",
+   "pass": true
+  },
+  "sceneDurations": {
+   "min": 1.2,
+   "max": 10.8,
+   "limit": "1.2-12 s",
+   "pass": true
+  },
+  "sceneLengthStdOverMean": {
+   "value": 0.432,
+   "limit": ">= 0.4",
+   "pass": true
+  },
+  "maxConsecutiveScenesUnder2s": {
+   "value": 1,
+   "limit": "<= 3",
+   "pass": true
+  },
+  "shotMixByScene": {
+   "wide": {
+    "value": 0.167,
+    "target": 0.2,
+    "pass": true
+   },
+   "medium": {
+    "value": 0.458,
+    "target": 0.4,
+    "pass": true
+   },
+   "close": {
+    "value": 0.292,
+    "target": 0.3,
+    "pass": true
+   },
+   "detail": {
+    "value": 0.083,
+    "target": 0.1,
+    "pass": true
+   }
+  },
+  "shotMixByTime": {
+   "wide": 0.188,
+   "medium": 0.587,
+   "close": 0.164,
+   "detail": 0.061
+  },
+  "morphTransitions": {
+   "value": 5,
+   "list": [
+    "timeline->interest (bars to stacked cost)",
+    "settle->morph (bar to point)",
+    "flip->matrix (point flies to its row)",
+    "race->gap (two lines to one difference line)",
+    "roads->converge (fork to converge)"
+   ],
+   "limit": ">= 3",
+   "pass": true
+  },
+  "stillness": [
+   {
+    "start": 65.4,
+    "end": 66.2,
+    "durationS": 0.8,
+    "measuredMovingFrames": 3
+   },
+   {
+    "start": 69.1,
+    "end": 69.9,
+    "durationS": 0.8,
+    "measuredMovingFrames": 20
+   },
+   {
+    "start": 109.2,
+    "end": 110,
+    "durationS": 0.8,
+    "measuredMovingFrames": 6
+   },
+   {
+    "start": 113.5,
+    "end": 114.3,
+    "durationS": 0.8,
+    "measuredMovingFrames": 16
+   }
+  ]
+ },
+ "scenes": [
+  {
+   "id": "open",
+   "start": 0,
+   "duration": 7.8,
+   "beats": 13,
+   "section": "setup",
+   "shot": "wide",
+   "layout": "two-roads/fork",
+   "cameraScale": 0.42,
+   "words": 10,
+   "newWords": 10,
+   "newWordsPerSec": 1.28,
+   "motionCoverage": 1.0,
+   "pass": {
+    "duration1.2to12s": true,
+    "words<=12": true,
+    "newWordsPerSec<=1.5": true
+   }
+  },
+  {
+   "id": "facts",
+   "start": 7.8,
+   "duration": 6,
+   "beats": 10,
+   "section": "setup",
+   "shot": "medium",
+   "layout": "hero-number/with-unit",
+   "cameraScale": 1,
+   "words": 7,
+   "newWords": 7,
+   "newWordsPerSec": 1.17,
+   "motionCoverage": 0.606,
+   "pass": {
+    "duration1.2to12s": true,
+    "words<=12": true,
+    "newWordsPerSec<=1.5": true
+   }
+  },
+  {
+   "id": "extra",
+   "start": 13.8,
+   "duration": 2.4,
+   "beats": 4,
+   "section": "setup",
+   "shot": "close",
+   "layout": "two-roads/fork",
+   "cameraScale": 1.6,
+   "words": 3,
+   "newWords": 3,
+   "newWordsPerSec": 1.25,
+   "motionCoverage": 0.986,
+   "pass": {
+    "duration1.2to12s": true,
+    "words<=12": true,
+    "newWordsPerSec<=1.5": true
+   }
+  },
+  {
+   "id": "roads",
+   "start": 16.2,
+   "duration": 7.2,
+   "beats": 12,
+   "section": "setup",
+   "shot": "medium",
+   "layout": "two-roads/fork",
+   "cameraScale": 1,
+   "words": 12,
+   "newWords": 9,
+   "newWordsPerSec": 1.25,
+   "motionCoverage": 0.986,
+   "pass": {
+    "duration1.2to12s": true,
+    "words<=12": true,
+    "newWordsPerSec<=1.5": true
+   }
+  },
+  {
+   "id": "timeline",
+   "start": 23.4,
+   "duration": 4.8,
+   "beats": 8,
+   "section": "setup",
+   "shot": "medium",
+   "layout": "timeline/months",
+   "cameraScale": 1,
+   "words": 7,
+   "newWords": 7,
+   "newWordsPerSec": 1.46,
+   "motionCoverage": 1.0,
+   "pass": {
+    "duration1.2to12s": true,
+    "words<=12": true,
+    "newWordsPerSec<=1.5": true
+   }
+  },
+  {
+   "id": "interest",
+   "start": 28.2,
+   "duration": 6.6,
+   "beats": 11,
+   "section": "setup",
+   "shot": "close",
+   "layout": "stacked-cost/absolute",
+   "cameraScale": 1.7,
+   "words": 7,
+   "newWords": 7,
+   "newWordsPerSec": 1.06,
+   "motionCoverage": 1.0,
+   "pass": {
+    "duration1.2to12s": true,
+    "words<=12": true,
+    "newWordsPerSec<=1.5": true
+   }
+  },
+  {
+   "id": "scope",
+   "start": 34.8,
+   "duration": 4.8,
+   "beats": 8,
+   "section": "setup",
+   "shot": "wide",
+   "layout": "canvas/overview",
+   "cameraScale": 0.5,
+   "words": 7,
+   "newWords": 7,
+   "newWordsPerSec": 1.46,
+   "motionCoverage": 1.0,
+   "pass": {
+    "duration1.2to12s": true,
+    "words<=12": true,
+    "newWordsPerSec<=1.5": true
+   }
+  },
+  {
+   "id": "tax",
+   "start": 39.6,
+   "duration": 6,
+   "beats": 10,
+   "section": "setup",
+   "shot": "medium",
+   "layout": "threshold-matrix/rows",
+   "cameraScale": 1,
+   "words": 9,
+   "newWords": 9,
+   "newWordsPerSec": 1.5,
+   "motionCoverage": 1.0,
+   "pass": {
+    "duration1.2to12s": true,
+    "words<=12": true,
+    "newWordsPerSec<=1.5": true
+   }
+  },
+  {
+   "id": "bars",
+   "start": 45.6,
+   "duration": 7.2,
+   "beats": 12,
+   "section": "sweep",
+   "shot": "medium",
+   "layout": "bar-compare/two",
+   "cameraScale": 1,
+   "words": 10,
+   "newWords": 10,
+   "newWordsPerSec": 1.39,
+   "motionCoverage": 1.0,
+   "pass": {
+    "duration1.2to12s": true,
+    "words<=12": true,
+    "newWordsPerSec<=1.5": true
+   }
+  },
+  {
+   "id": "sweep",
+   "start": 52.8,
+   "duration": 10.8,
+   "beats": 18,
+   "section": "sweep",
+   "shot": "medium",
+   "layout": "bar-compare/two + line-trend/dual",
+   "cameraScale": 1.05,
+   "words": 12,
+   "newWords": 2,
+   "newWordsPerSec": 0.19,
+   "motionCoverage": 0.892,
+   "pass": {
+    "duration1.2to12s": true,
+    "words<=12": true,
+    "newWordsPerSec<=1.5": true
+   }
+  },
+  {
+   "id": "settle",
+   "start": 63.6,
+   "duration": 3,
+   "beats": 5,
+   "section": "sweep",
+   "shot": "close",
+   "layout": "bar-compare/two",
+   "cameraScale": 1.6,
+   "words": 11,
+   "newWords": 1,
+   "newWordsPerSec": 0.33,
+   "motionCoverage": 0.689,
+   "pass": {
+    "duration1.2to12s": true,
+    "words<=12": true,
+    "newWordsPerSec<=1.5": true
+   }
+  },
+  {
+   "id": "morph",
+   "start": 66.6,
+   "duration": 1.2,
+   "beats": 2,
+   "section": "sweep",
+   "shot": "close",
+   "layout": "flip-point/axis",
+   "cameraScale": null,
+   "words": 0,
+   "newWords": 0,
+   "newWordsPerSec": 0,
+   "motionCoverage": 0.833,
+   "pass": {
+    "duration1.2to12s": true,
+    "words<=12": true,
+    "newWordsPerSec<=1.5": true
+   }
+  },
+  {
+   "id": "detail",
+   "start": 67.8,
+   "duration": 4.2,
+   "beats": 7,
+   "section": "sweep",
+   "shot": "detail",
+   "layout": "hero-number/plain",
+   "cameraScale": null,
+   "words": 5,
+   "newWords": 5,
+   "newWordsPerSec": 1.19,
+   "motionCoverage": 0.952,
+   "pass": {
+    "duration1.2to12s": true,
+    "words<=12": true,
+    "newWordsPerSec<=1.5": true
+   }
+  },
+  {
+   "id": "flip",
+   "start": 72,
+   "duration": 6,
+   "beats": 10,
+   "section": "sweep",
+   "shot": "medium",
+   "layout": "flip-point/axis",
+   "cameraScale": 1.25,
+   "words": 9,
+   "newWords": 9,
+   "newWordsPerSec": 1.5,
+   "motionCoverage": 1.0,
+   "pass": {
+    "duration1.2to12s": true,
+    "words<=12": true,
+    "newWordsPerSec<=1.5": true
+   }
+  },
+  {
+   "id": "matrix",
+   "start": 78,
+   "duration": 7.2,
+   "beats": 12,
+   "section": "tension",
+   "shot": "medium",
+   "layout": "threshold-matrix/rows",
+   "cameraScale": 1,
+   "words": 10,
+   "newWords": 10,
+   "newWordsPerSec": 1.39,
+   "motionCoverage": 1.0,
+   "pass": {
+    "duration1.2to12s": true,
+    "words<=12": true,
+    "newWordsPerSec<=1.5": true
+   }
+  },
+  {
+   "id": "matrix32",
+   "start": 85.2,
+   "duration": 1.2,
+   "beats": 2,
+   "section": "tension",
+   "shot": "close",
+   "layout": "doodle-transition/circle",
+   "cameraScale": 1.8,
+   "words": 6,
+   "newWords": 0,
+   "newWordsPerSec": 0,
+   "motionCoverage": 0.889,
+   "pass": {
+    "duration1.2to12s": true,
+    "words<=12": true,
+    "newWordsPerSec<=1.5": true
+   }
+  },
+  {
+   "id": "certain",
+   "start": 86.4,
+   "duration": 6,
+   "beats": 10,
+   "section": "tension",
+   "shot": "medium",
+   "layout": "two-column-compare",
+   "cameraScale": 1,
+   "words": 9,
+   "newWords": 9,
+   "newWordsPerSec": 1.5,
+   "motionCoverage": 0.989,
+   "pass": {
+    "duration1.2to12s": true,
+    "words<=12": true,
+    "newWordsPerSec<=1.5": true
+   }
+  },
+  {
+   "id": "sequence",
+   "start": 92.4,
+   "duration": 5.4,
+   "beats": 9,
+   "section": "tension",
+   "shot": "wide",
+   "layout": "timeline/months",
+   "cameraScale": 0.5,
+   "words": 6,
+   "newWords": 6,
+   "newWordsPerSec": 1.11,
+   "motionCoverage": 0.994,
+   "pass": {
+    "duration1.2to12s": true,
+    "words<=12": true,
+    "newWordsPerSec<=1.5": true
+   }
+  },
+  {
+   "id": "race",
+   "start": 97.8,
+   "duration": 7.8,
+   "beats": 13,
+   "section": "tension",
+   "shot": "medium",
+   "layout": "line-trend/dual",
+   "cameraScale": 1,
+   "words": 11,
+   "newWords": 11,
+   "newWordsPerSec": 1.41,
+   "motionCoverage": 0.996,
+   "pass": {
+    "duration1.2to12s": true,
+    "words<=12": true,
+    "newWordsPerSec<=1.5": true
+   }
+  },
+  {
+   "id": "gap",
+   "start": 105.6,
+   "duration": 1.2,
+   "beats": 2,
+   "section": "tension",
+   "shot": "close",
+   "layout": "line-trend/single",
+   "cameraScale": 1.5,
+   "words": 0,
+   "newWords": 0,
+   "newWordsPerSec": 0,
+   "motionCoverage": 1.0,
+   "pass": {
+    "duration1.2to12s": true,
+    "words<=12": true,
+    "newWordsPerSec<=1.5": true
+   }
+  },
+  {
+   "id": "cross",
+   "start": 106.8,
+   "duration": 5.4,
+   "beats": 9,
+   "section": "tension",
+   "shot": "close",
+   "layout": "line-trend/single",
+   "cameraScale": 1.6,
+   "words": 8,
+   "newWords": 8,
+   "newWordsPerSec": 1.48,
+   "motionCoverage": 0.877,
+   "pass": {
+    "duration1.2to12s": true,
+    "words<=12": true,
+    "newWordsPerSec<=1.5": true
+   }
+  },
+  {
+   "id": "downside",
+   "start": 112.2,
+   "duration": 3.6,
+   "beats": 6,
+   "section": "tension",
+   "shot": "detail",
+   "layout": "hero-number/with-delta",
+   "cameraScale": null,
+   "words": 4,
+   "newWords": 4,
+   "newWordsPerSec": 1.11,
+   "motionCoverage": 0.926,
+   "pass": {
+    "duration1.2to12s": true,
+    "words<=12": true,
+    "newWordsPerSec<=1.5": true
+   }
+  },
+  {
+   "id": "converge",
+   "start": 115.8,
+   "duration": 6,
+   "beats": 10,
+   "section": "resolution",
+   "shot": "medium",
+   "layout": "two-roads/converge",
+   "cameraScale": 1,
+   "words": 7,
+   "newWords": 7,
+   "newWordsPerSec": 1.17,
+   "motionCoverage": 1.0,
+   "pass": {
+    "duration1.2to12s": true,
+    "words<=12": true,
+    "newWordsPerSec<=1.5": true
+   }
+  },
+  {
+   "id": "outro",
+   "start": 121.8,
+   "duration": 6,
+   "beats": 10,
+   "section": "resolution",
+   "shot": "wide",
+   "layout": "canvas/overview",
+   "cameraScale": 0.42,
+   "words": 7,
+   "newWords": 7,
+   "newWordsPerSec": 1.17,
+   "motionCoverage": 1.0,
+   "pass": {
+    "duration1.2to12s": true,
+    "words<=12": true,
+    "newWordsPerSec<=1.5": true
+   }
+  }
+ ]
+}
