@@ -1,0 +1,4 @@
+sfx events 55
+{"integratedLUFS": -14.0, "LRA": 6.3, "truePeakDbfs": -1.3, "limiterMinGainDb": -0.78, "accents": 10, "beats": 308, "events": 55}
+-rw-r--r-- 1 root root 515496061 Sep 26 17:43 out/m2/root/out/video.mp4
+-rw-r--r-- 1 root root  71226956 Sep 26 17:46 out/m2/video.mp4
