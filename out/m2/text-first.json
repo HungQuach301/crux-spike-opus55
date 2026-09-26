@@ -1,111 +1,111 @@
 {
  "co-a0": {
   "t": 0,
-  "x": 566.3,
+  "x": 579.7,
   "level": null,
   "role": "axis-label",
   "claims": 1
  },
  "co-a1": {
   "t": 0,
-  "x": 1353.7,
+  "x": 1340.3,
   "level": null,
   "role": "axis-label",
   "claims": 1
  },
  "co-lab-1966": {
-  "t": 2.1667,
-  "x": 934.7,
+  "t": 1.4333,
+  "x": 961.1,
   "level": null,
   "role": "label",
   "claims": 1
  },
  "co-lab-mirror": {
-  "t": 2.1667,
-  "x": 943.8,
+  "t": 1.4333,
+  "x": 971.5,
   "level": null,
   "role": "label",
   "claims": 0
  },
  "co-l1": {
-  "t": 2.5,
+  "t": 1.7667,
   "x": 640,
   "level": 1,
   "role": "label",
   "claims": 0
  },
  "co-same-0": {
-  "t": 3.7,
+  "t": 3.5,
   "x": 585.6,
   "level": 2,
   "role": "label",
   "claims": 0
  },
  "co-same-1": {
-  "t": 4.8,
+  "t": 4.6,
   "x": 620.4,
   "level": 2,
   "role": "label",
   "claims": 0
  },
  "co-same-2": {
-  "t": 6.2667,
+  "t": 6.0667,
   "x": 641.1,
   "level": 2,
   "role": "label",
   "claims": 0
  },
  "cb-lab-1966": {
-  "t": 7.8667,
+  "t": 7.5667,
   "x": 1736,
   "level": null,
   "role": "label",
   "claims": 1
  },
  "cb-lab-mirror": {
-  "t": 7.8667,
+  "t": 7.5667,
   "x": 981.8,
   "level": null,
   "role": "label",
   "claims": 0
  },
  "cb-a0": {
-  "t": 7.8667,
+  "t": 7.5667,
   "x": 1100,
   "level": null,
   "role": "axis-label",
   "claims": 1
  },
  "cb-a1": {
-  "t": 7.8667,
+  "t": 7.5667,
   "x": 2200,
   "level": null,
   "role": "axis-label",
   "claims": 1
  },
  "cb-l1a": {
-  "t": 8.2333,
+  "t": 7.9333,
   "x": 640,
   "level": 1,
   "role": "label",
   "claims": 0
  },
  "cb-l1": {
-  "t": 10.1,
-  "x": 1316.7,
+  "t": 10.0667,
+  "x": 1248.7,
   "level": 1,
   "role": "label",
   "claims": 1
  },
  "cb-ranout": {
-  "t": 10.4,
-  "x": 1316.7,
+  "t": 10.3667,
+  "x": 1248.7,
   "level": null,
   "role": "label",
   "claims": 0
  },
  "cq-l1": {
-  "t": 12.4667,
+  "t": 12.3667,
   "x": 960,
   "level": 1,
   "role": "label",
@@ -119,49 +119,56 @@
   "claims": 0
  },
  "est-l1": {
-  "t": 19.2,
+  "t": 18.8,
   "x": 640,
   "level": 1,
   "role": "label",
   "claims": 1
  },
  "st-who": {
-  "t": 21.7,
+  "t": 21.6333,
   "x": 1300,
   "level": null,
   "role": "label",
   "claims": 0
  },
  "st-badge": {
-  "t": 22.6333,
+  "t": 22.3667,
   "x": 576.1,
   "level": null,
   "role": "badge",
   "claims": 0
  },
  "st-l1": {
-  "t": 22.8333,
+  "t": 22.5667,
   "x": 640,
   "level": 1,
   "role": "label",
   "claims": 1
  },
  "st-basis": {
-  "t": 23.1,
+  "t": 22.5667,
+  "x": 640,
+  "level": null,
+  "role": "label",
+  "claims": 0
+ },
+ "st-year": {
+  "t": 25.0333,
   "x": 640,
   "level": null,
   "role": "label",
   "claims": 1
  },
  "who-l2": {
-  "t": 27.5667,
+  "t": 27.5,
   "x": 1280,
   "level": 2,
   "role": "label",
   "claims": 0
  },
  "who-l1": {
-  "t": 31.4,
+  "t": 31.3,
   "x": 1280,
   "level": 1,
   "role": "label",
@@ -182,35 +189,35 @@
   "claims": 0
  },
  "hkb-1928": {
-  "t": 43.9667,
-  "x": 491.7,
+  "t": 43.9,
+  "x": 541.4,
   "level": null,
   "role": "label",
   "claims": 1
  },
  "mx-l1": {
-  "t": 46.0667,
+  "t": 46.1667,
   "x": 640,
   "level": 1,
   "role": "label",
   "claims": 0
  },
  "mx-badge": {
-  "t": 47,
+  "t": 47.1667,
   "x": 1436.1,
   "level": null,
   "role": "badge",
   "claims": 0
  },
  "mx-s": {
-  "t": 47.2667,
+  "t": 47.4333,
   "x": 1426.7,
   "level": null,
   "role": "label",
   "claims": 1
  },
  "mx-b": {
-  "t": 49.9,
+  "t": 50.1,
   "x": 1423.2,
   "level": null,
   "role": "label",
@@ -224,441 +231,434 @@
   "claims": 0
  },
  "as-t1": {
-  "t": 53.6333,
+  "t": 53.9,
   "x": 439.4,
   "level": null,
   "role": "label",
   "claims": 1
  },
  "as-t1b": {
-  "t": 54.0333,
+  "t": 54.3,
   "x": 427.8,
   "level": null,
   "role": "label",
   "claims": 0
  },
  "as-t2": {
-  "t": 58.1,
+  "t": 58.3333,
   "x": 1340,
   "level": null,
   "role": "label",
   "claims": 1
  },
  "as-t2b": {
-  "t": 58.5,
+  "t": 58.7,
   "x": 1276.8,
   "level": null,
   "role": "label",
   "claims": 0
  },
  "rb-l1": {
-  "t": 60.5,
+  "t": 60.8,
   "x": 640,
   "level": 1,
   "role": "label",
   "claims": 0
  },
  "rb-sub": {
-  "t": 61,
+  "t": 61.3,
   "x": 640,
   "level": null,
   "role": "label",
   "claims": 0
  },
  "ru-badge": {
-  "t": 68.0333,
+  "t": 68.5333,
   "x": 436.1,
   "level": null,
   "role": "badge",
   "claims": 0
  },
  "ru-l1": {
-  "t": 68.3333,
+  "t": 68.8333,
   "x": 640,
   "level": 1,
   "role": "label",
   "claims": 1
  },
  "ru-40": {
-  "t": 71.1,
+  "t": 71.6333,
   "x": 640,
   "level": null,
   "role": "label",
   "claims": 1
  },
  "ru-basis": {
-  "t": 71.3,
+  "t": 71.6333,
   "x": 640,
   "level": null,
   "role": "label",
-  "claims": 1
+  "claims": 0
  },
  "rs-a0": {
-  "t": 75.9333,
-  "x": 293.3,
+  "t": 76.5333,
+  "x": 293.1,
   "level": null,
   "role": "axis-label",
   "claims": 1
  },
  "rs-a1": {
-  "t": 75.9333,
-  "x": 1576.4,
+  "t": 76.5333,
+  "x": 1576.6,
   "level": null,
   "role": "axis-label",
   "claims": 1
  },
  "rs-l1": {
-  "t": 76.4,
+  "t": 77.0333,
   "x": 640,
   "level": 1,
   "role": "label",
   "claims": 0
  },
  "rs-sub": {
-  "t": 76.7,
+  "t": 77.3333,
   "x": 640,
   "level": null,
   "role": "label",
   "claims": 0
  },
  "re-a0": {
-  "t": 84.4,
+  "t": 85.0333,
   "x": 345.2,
   "level": null,
   "role": "axis-label",
   "claims": 1
  },
  "re-a1": {
-  "t": 84.4,
+  "t": 85.0333,
   "x": 1528.4,
   "level": null,
   "role": "axis-label",
   "claims": 1
  },
  "re-l1": {
-  "t": 84.7667,
+  "t": 85.4,
   "x": 640,
   "level": 1,
   "role": "label",
   "claims": 0
  },
  "re-l1b": {
-  "t": 87.2667,
+  "t": 88.1667,
   "x": 640,
   "level": 1,
   "role": "label",
   "claims": 0
  },
- "hz-a0": {
-  "t": 92.2333,
-  "x": 781,
-  "level": null,
-  "role": "axis-label",
-  "claims": 1
- },
  "hz-badge": {
-  "t": 92.9667,
+  "t": 93.9667,
   "x": 1266.1,
   "level": null,
   "role": "badge",
   "claims": 0
  },
  "hz-l1": {
-  "t": 93.2667,
+  "t": 94.2333,
   "x": 1280,
   "level": 1,
   "role": "label",
   "claims": 1
  },
- "nt-r0": {
-  "t": 98.1,
-  "x": 699.1,
-  "level": 2,
-  "role": "label",
-  "claims": 0
- },
  "nt-l1": {
-  "t": 98.4667,
+  "t": 99.1333,
   "x": 640,
   "level": 1,
   "role": "label",
   "claims": 0
  },
+ "nt-r0": {
+  "t": 99.2,
+  "x": 699.1,
+  "level": 2,
+  "role": "label",
+  "claims": 0
+ },
  "nt-r1": {
-  "t": 99.4,
+  "t": 100.5,
   "x": 688.1,
   "level": 2,
   "role": "label",
   "claims": 0
  },
  "nt-r2": {
-  "t": 106.8333,
+  "t": 108.1333,
   "x": 688.1,
   "level": 2,
   "role": "label",
   "claims": 0
  },
  "nt-r3": {
-  "t": 109.1333,
+  "t": 110.4333,
   "x": 834.7,
   "level": 2,
   "role": "label",
   "claims": 0
  },
  "mi-l66": {
-  "t": 111.6,
+  "t": 112.9,
   "x": 433.2,
   "level": null,
   "role": "label",
   "claims": 1
  },
  "mi-lm": {
-  "t": 112.5,
+  "t": 113.8,
   "x": 1474.1,
   "level": null,
   "role": "label",
   "claims": 0
  },
  "mi-l1": {
-  "t": 113.6667,
+  "t": 115.0667,
   "x": 1280,
   "level": 1,
   "role": "label",
   "claims": 0
  },
  "mr-l1": {
-  "t": 116.1333,
+  "t": 117.6333,
   "x": 1280,
   "level": 1,
   "role": "label",
   "claims": 0
  },
  "mr-66a": {
-  "t": 116.1333,
+  "t": 117.6333,
   "x": 317,
   "level": null,
   "role": "axis-label",
   "claims": 1
  },
  "mr-t66": {
-  "t": 116.1333,
-  "x": 386,
+  "t": 117.6333,
+  "x": 380.2,
   "level": null,
   "role": "label",
-  "claims": 1
+  "claims": 0
  },
  "mr-66b": {
-  "t": 117.7333,
+  "t": 119.2333,
   "x": 1593,
   "level": null,
   "role": "axis-label",
   "claims": 1
  },
  "mr-l1b": {
-  "t": 122.2333,
+  "t": 123.8333,
   "x": 1280,
   "level": 1,
   "role": "label",
   "claims": 0
  },
  "mr-ma": {
-  "t": 122.3,
+  "t": 123.9,
   "x": 370,
   "level": null,
   "role": "label",
   "claims": 1
  },
  "mr-tm": {
-  "t": 122.3,
+  "t": 123.9,
   "x": 1435.1,
   "level": null,
   "role": "label",
   "claims": 0
  },
  "mr-mb": {
-  "t": 124.3,
+  "t": 127.3333,
   "x": 1536,
   "level": null,
   "role": "label",
   "claims": 1
  },
  "il-badge": {
-  "t": 129.5333,
+  "t": 131.2333,
   "x": 941.1,
   "level": null,
   "role": "badge",
   "claims": 0
  },
  "il-l1": {
-  "t": 129.8333,
+  "t": 131.5333,
   "x": 960,
   "level": 1,
   "role": "label",
   "claims": 0
  },
  "sw-a": {
-  "t": 134.6,
+  "t": 135.9333,
   "x": 286,
   "level": null,
   "role": "label",
   "claims": 1
  },
  "sw-b": {
-  "t": 134.6,
+  "t": 135.9333,
   "x": 1095.1,
   "level": null,
   "role": "label",
   "claims": 0
  },
  "sw-l1": {
-  "t": 135.1,
+  "t": 136.4,
   "x": 640,
   "level": 1,
   "role": "label",
   "claims": 0
  },
  "sw-c": {
-  "t": 135.6,
+  "t": 136.9,
   "x": 1280,
   "level": null,
   "role": "label",
   "claims": 0
  },
  "q-sub": {
-  "t": 141.6,
+  "t": 143.5667,
   "x": 960,
   "level": null,
   "role": "label",
   "claims": 0
  },
  "q-l1": {
-  "t": 144.7333,
+  "t": 146.7333,
   "x": 960,
   "level": 1,
   "role": "label",
   "claims": 0
  },
  "av-sub": {
-  "t": 151.4,
+  "t": 153.7333,
   "x": 640,
   "level": null,
   "role": "label",
   "claims": 1
  },
  "av-l1": {
-  "t": 155.2667,
+  "t": 157.4,
   "x": 640,
   "level": 1,
   "role": "label",
   "claims": 1
  },
  "am-66": {
-  "t": 158.1,
+  "t": 160.0333,
   "x": 640,
   "level": 1,
   "role": "label",
   "claims": 1
  },
  "am-badge": {
-  "t": 161.1667,
+  "t": 163.3,
   "x": 1286.1,
   "level": null,
   "role": "badge",
   "claims": 0
  },
  "am-m": {
-  "t": 161.4333,
+  "t": 163.5667,
   "x": 1280,
   "level": null,
   "role": "label",
   "claims": 1
  },
  "am-sub": {
-  "t": 161.6333,
+  "t": 163.7667,
   "x": 1280,
   "level": null,
   "role": "label",
   "claims": 0
  },
  "am-id": {
-  "t": 164.5333,
+  "t": 166.9333,
   "x": 960,
   "level": 1,
   "role": "label",
   "claims": 0
  },
  "ge-l1": {
-  "t": 166.6667,
+  "t": 169.1667,
   "x": 640,
   "level": 1,
   "role": "label",
   "claims": 0
  },
  "ge-sub": {
-  "t": 166.9667,
+  "t": 169.4667,
   "x": 640,
   "level": null,
   "role": "label",
   "claims": 0
  },
  "ar-a0": {
-  "t": 180.2,
-  "x": 517,
+  "t": 182.9,
+  "x": 697,
   "level": null,
   "role": "axis-label",
   "claims": 1
  },
  "ar-a1": {
-  "t": 180.2,
-  "x": 1793,
+  "t": 182.9,
+  "x": 1973,
   "level": null,
   "role": "axis-label",
   "claims": 1
  },
  "ar-l1": {
-  "t": 180.6667,
+  "t": 183.3667,
   "x": 1280,
   "level": 1,
   "role": "label",
   "claims": 0
  },
  "ar-sub": {
-  "t": 180.6667,
+  "t": 183.3667,
   "x": 1280,
   "level": null,
   "role": "label",
   "claims": 0
  },
  "ar-num": {
-  "t": 187.6333,
+  "t": 190.2,
   "x": 1280,
   "level": null,
   "role": "label",
   "claims": 1
  },
  "po-r0": {
-  "t": 189.4,
+  "t": 192.1667,
   "x": 454.9,
   "level": 2,
   "role": "label",
   "claims": 0
  },
  "po-r1": {
-  "t": 190.7333,
+  "t": 193.6333,
   "x": 469.6,
   "level": 2,
   "role": "label",
   "claims": 0
  },
  "po-r2": {
-  "t": 192.2333,
+  "t": 195.2333,
   "x": 444.1,
   "level": 2,
   "role": "label",
   "claims": 0
  },
  "po-l1": {
-  "t": 196.3667,
+  "t": 199.4667,
   "x": 640,
   "level": 1,
   "role": "label",

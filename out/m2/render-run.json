@@ -2,14 +2,14 @@
  "subframes": 8,
  "shutter": 0.5,
  "workers": 4,
- "frames": 5993,
- "framesSupersampled": 2031,
- "wallSeconds": 1847.3,
- "secondsPerVideoSecond": 9.25,
+ "frames": 6091,
+ "framesSupersampled": 1931,
+ "wallSeconds": 1660.6,
+ "secondsPerVideoSecond": 8.18,
  "workerSeconds": [
-  1847.1,
-  1274.7,
-  1376,
-  1237.7
+  1660.4,
+  1171.3,
+  1256.5,
+  1128.8
  ]
 }
