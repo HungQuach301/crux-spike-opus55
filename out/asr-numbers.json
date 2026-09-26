@@ -1,7 +1,7 @@
 {
  "asrModel": "faster-whisper small.en (int8, CPU, beam 5)",
- "spokenNumbers": 20,
- "correct": 20,
+ "spokenNumbers": 66,
+ "correct": 66,
  "percent": 100,
  "pass": true,
  "mismatches": [],
@@ -22,15 +22,7 @@
   },
   {
    "scene": "hook2",
-   "asrText": "Pay it off early.",
-   "expected": [],
-   "heard": [],
-   "matched": 0,
-   "of": 0
-  },
-  {
-   "scene": "hook2b",
-   "asrText": "or invest the extra cash.",
+   "asrText": "Pay it off early or invest the extra cash.",
    "expected": [],
    "heard": [],
    "matched": 0,
@@ -71,16 +63,8 @@
    "of": 0
   },
   {
-   "scene": "setup",
-   "asrText": "Here is the setup.",
-   "expected": [],
-   "heard": [],
-   "matched": 0,
-   "of": 0
-  },
-  {
    "scene": "scope1",
-   "asrText": "The rules here are US tax rules, and every input is stated, not forecast.",
+   "asrText": "Here is the setup. The rules are US tax rules, and every input is stated, not forecast.",
    "expected": [],
    "heard": [],
    "matched": 0,
@@ -148,7 +132,7 @@
   },
   {
    "scene": "card1",
-   "asrText": "first, the certain part.",
+   "asrText": "First, the certain part.",
    "expected": [],
    "heard": [],
    "matched": 0,
@@ -156,7 +140,7 @@
   },
   {
    "scene": "timeline",
-   "asrText": "Road A pays off the loan at month 28. Road B keeps paying through month 48.",
+   "asrText": "Road A pays off the loan at month 28. Road B keeps paying for month 48.",
    "expected": [
     "month:28",
     "month:48"
@@ -228,7 +212,7 @@
   },
   {
    "scene": "bridge",
-   "asrText": "So the question is narrow. Can road B's head start in the market beat a certain $1,190 after tax?",
+   "asrText": "So, the question is narrow. Can road B's head start in the market beat a certain $1,190 after tax?",
    "expected": [
     "usd:1190"
    ],
@@ -237,6 +221,380 @@
    ],
    "matched": 1,
    "of": 1
+  },
+  {
+   "scene": "card2",
+   "asrText": "Second, tax, lot by lot.",
+   "expected": [],
+   "heard": [],
+   "matched": 0,
+   "of": 0
+  },
+  {
+   "scene": "lots1",
+   "asrText": "Each month's contribution is its own tax lot. At month 48, everything is sold.",
+   "expected": [
+    "month:48"
+   ],
+   "heard": [
+    "month:48"
+   ],
+   "matched": 1,
+   "of": 1
+  },
+  {
+   "scene": "lots2",
+   "asrText": "A lot held more than 12 months at that sale is long-term. The rest are short-term.",
+   "expected": [
+    "num:12"
+   ],
+   "heard": [
+    "num:12"
+   ],
+   "matched": 1,
+   "of": 1
+  },
+  {
+   "scene": "rates",
+   "asrText": "In the 22% bracket, long-term gains are taxed at 15% and short-term gains at the full 22%.",
+   "expected": [
+    "pct:22",
+    "pct:15",
+    "pct:22"
+   ],
+   "heard": [
+    "pct:22",
+    "pct:15",
+    "pct:22"
+   ],
+   "matched": 3,
+   "of": 3
+  },
+  {
+   "scene": "lots3",
+   "asrText": "Road B invests from the start, so 35 of its 48 lots are long-term. Road A starts after the payoff, 8 of its 21.",
+   "expected": [
+    "num:35",
+    "num:48",
+    "num:8",
+    "num:21"
+   ],
+   "heard": [
+    "num:35",
+    "num:48",
+    "num:8",
+    "num:21"
+   ],
+   "matched": 4,
+   "of": 4
+  },
+  {
+   "scene": "share",
+   "asrText": "Near the break-even, 37% of road A's gains are short-term against 7% of road B's.",
+   "expected": [
+    "pct:37",
+    "pct:7"
+   ],
+   "heard": [
+    "pct:37",
+    "pct:7"
+   ],
+   "matched": 2,
+   "of": 2
+  },
+  {
+   "scene": "nodeduct",
+   "asrText": "A lot that loses money gets no deduction. State income tax is left out.",
+   "expected": [],
+   "heard": [],
+   "matched": 0,
+   "of": 0
+  },
+  {
+   "scene": "card3",
+   "asrText": "Third, where the answer flips.",
+   "expected": [],
+   "heard": [],
+   "matched": 0,
+   "of": 0
+  },
+  {
+   "scene": "sw1",
+   "asrText": "We sweep the average annual return from 2% to 10%, compounded in the 22% bracket.",
+   "expected": [
+    "pct:2",
+    "pct:10",
+    "pct:22"
+   ],
+   "heard": [
+    "pct:2",
+    "pct:10",
+    "pct:22"
+   ],
+   "matched": 3,
+   "of": 3
+  },
+  {
+   "scene": "sw2",
+   "asrText": "The line is road B minus road A, net worth after tax at month 48, and it rises with the return.",
+   "expected": [
+    "month:48"
+   ],
+   "heard": [
+    "month:48"
+   ],
+   "matched": 1,
+   "of": 1
+  },
+  {
+   "scene": "sw3",
+   "asrText": "At 2%, Road A is ahead by $822. At 10%, Road B is ahead by $861.",
+   "expected": [
+    "pct:2",
+    "usd:822",
+    "pct:10",
+    "usd:861"
+   ],
+   "heard": [
+    "pct:2",
+    "usd:822",
+    "pct:10",
+    "usd:861"
+   ],
+   "matched": 4,
+   "of": 4
+  },
+  {
+   "scene": "sw4",
+   "asrText": "both roads end even at 6.11%.",
+   "expected": [
+    "pct:6.11"
+   ],
+   "heard": [
+    "pct:6.11"
+   ],
+   "matched": 1,
+   "of": 1
+  },
+  {
+   "scene": "sw5",
+   "asrText": "Below that return, paying off early, ends ahead. Above it, investing does.",
+   "expected": [],
+   "heard": [],
+   "matched": 0,
+   "of": 0
+  },
+  {
+   "scene": "card4",
+   "asrText": "Fourth, the tax bracket.",
+   "expected": [],
+   "heard": [],
+   "matched": 0,
+   "of": 0
+  },
+  {
+   "scene": "niit",
+   "asrText": "In the 32% bracket, we add the 3.8% net investment income tax. Short-term gains pay 35.8%, long-term gains 18.8%.",
+   "expected": [
+    "pct:32",
+    "pct:3.8",
+    "pct:35.8",
+    "pct:18.8"
+   ],
+   "heard": [
+    "pct:32",
+    "pct:3.8",
+    "pct:35.8",
+    "pct:18.8"
+   ],
+   "matched": 4,
+   "of": 4
+  },
+  {
+   "scene": "dots",
+   "asrText": "The break even is 5.23% in the 12% bracket and 6.11% in the 22% bracket.",
+   "expected": [
+    "pct:5.23",
+    "pct:12",
+    "pct:6.11",
+    "pct:22"
+   ],
+   "heard": [
+    "pct:5.23",
+    "pct:12",
+    "pct:6.11",
+    "pct:22"
+   ],
+   "matched": 4,
+   "of": 4
+  },
+  {
+   "scene": "dots32",
+   "asrText": "In the 32% bracket, it is 6.26%.",
+   "expected": [
+    "pct:32",
+    "pct:6.26"
+   ],
+   "heard": [
+    "pct:32",
+    "pct:6.26"
+   ],
+   "matched": 2,
+   "of": 2
+  },
+  {
+   "scene": "rises",
+   "asrText": "Higher rates on games shrink road B's head start, so the threshold rises with the bracket.",
+   "expected": [],
+   "heard": [],
+   "matched": 0,
+   "of": 0
+  },
+  {
+   "scene": "below",
+   "asrText": "In the 12% bracket, it sits below 5.33%. The loan rate has an annual yield because road A's gains are mostly short term.",
+   "expected": [
+    "pct:12",
+    "pct:5.33"
+   ],
+   "heard": [
+    "pct:12",
+    "pct:5.33"
+   ],
+   "matched": 2,
+   "of": 2
+  },
+  {
+   "scene": "card5",
+   "asrText": "Fifth. Risk.",
+   "expected": [],
+   "heard": [],
+   "matched": 0,
+   "of": 0
+  },
+  {
+   "scene": "risk1",
+   "asrText": "paying off the loan earns a certain 5.2 percent.",
+   "expected": [
+    "pct:5.2"
+   ],
+   "heard": [
+    "pct:5.2"
+   ],
+   "matched": 1,
+   "of": 1
+  },
+  {
+   "scene": "risk2",
+   "asrText": "Investing earns an average, not a promise. Our range, 2% to 10%, is illustrative.",
+   "expected": [
+    "pct:2",
+    "pct:10"
+   ],
+   "heard": [
+    "pct:2",
+    "pct:10"
+   ],
+   "matched": 2,
+   "of": 2
+  },
+  {
+   "scene": "seq",
+   "asrText": "Here is an illustrative sequence. 8% a year for 36 months, then minus 20% for the last 12.",
+   "expected": [
+    "pct:8",
+    "num:36",
+    "pct:-20",
+    "num:12"
+   ],
+   "heard": [
+    "pct:8",
+    "num:36",
+    "pct:-20",
+    "num:12"
+   ],
+   "matched": 4,
+   "of": 4
+  },
+  {
+   "scene": "race",
+   "asrText": "We track net worth after tax, month by month. For 36 months, both roads run almost together.",
+   "expected": [
+    "num:36"
+   ],
+   "heard": [
+    "num:36"
+   ],
+   "matched": 1,
+   "of": 1
+  },
+  {
+   "scene": "gap",
+   "asrText": "The difference, road B minus road A, peaks, then turns negative in month 39.",
+   "expected": [
+    "month:39"
+   ],
+   "heard": [
+    "month:39"
+   ],
+   "matched": 1,
+   "of": 1
+  },
+  {
+   "scene": "downside",
+   "asrText": "Road A finishes $459.00 ahead after tax.",
+   "expected": [
+    "usd:459"
+   ],
+   "heard": [
+    "usd:459"
+   ],
+   "matched": 1,
+   "of": 1
+  },
+  {
+   "scene": "order",
+   "asrText": "Over all 48 months, that sequence still averages 0.19% a year. The order of the returns decided the result.",
+   "expected": [
+    "num:48",
+    "pct:0.19"
+   ],
+   "heard": [
+    "num:48",
+    "pct:0.19"
+   ],
+   "matched": 2,
+   "of": 2
+  },
+  {
+   "scene": "recap",
+   "asrText": "The payoff month and the interest avoided are fixed. The tax depends on how long each lot is held. The return is the unknown.",
+   "expected": [],
+   "heard": [],
+   "matched": 0,
+   "of": 0
+  },
+  {
+   "scene": "end1",
+   "asrText": "So, in the 22% bracket, the answer flips at an average annual return of 6.11%.",
+   "expected": [
+    "pct:22",
+    "pct:6.11"
+   ],
+   "heard": [
+    "pct:22",
+    "pct:6.11"
+   ],
+   "matched": 2,
+   "of": 2
+  },
+  {
+   "scene": "end2",
+   "asrText": "That is a threshold, not a forecast. Where returns will land is not known in advance.",
+   "expected": [],
+   "heard": [],
+   "matched": 0,
+   "of": 0
   }
  ]
 }

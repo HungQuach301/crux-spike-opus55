@@ -2,16 +2,18 @@
 
 Capability spikes for a US personal-finance data-analysis channel. All numbers are computed in code and traced to claims.
 
-## Test C (this branch, `spike/opus55-av`): full video with voice — midpoint
+## Test C (this branch, `spike/opus55-av`): full video with voice
 
-Hook + CRUX ident + setup + chapter 1 (2:07.8) with TTS narration, per-lot capital-gains tax,
-voice-driven timeline, subtitles and a -14 LUFS master. Report: `out/report.md`.
+A 6:04 video in 5 chapters with TTS narration (sentence-level pacing), per-lot capital-gains tax
+(NIIT in the 32% bracket), a voice-driven timeline, 12 machine-checked composition rules,
+subtitles, a -14 LUFS master and packaging. Report: `out/report.md`.
 
 - `out/video.mp4`, `out/captions.srt`: the video (1080p30 H.264, AAC 48 kHz) and subtitles
 - `out/conventions.md`: tokens, series colours, shot sizes, counter rules, pronunciation dictionary
 - `claims.json`: every number shown or spoken; `out/script.md`: narration with timings
 - `out/rules-b.json` / `out/rules-c.json`: the composition rules run on test B and on test C
-- `out/asr-numbers.json`, `out/number-sync.json`, `out/audio-metrics.json`, `out/motion-metrics.json`, `out/captions-check.json`
+- `out/asr-numbers.json`, `out/number-sync.json`, `out/audio-metrics.json`, `out/motion-metrics.json`, `out/captions-check.json`, `out/voice/pace.json`
+- `out/package/`: title, description, thumbnail
 
 Code layout:
 - `src/av/`: per-lot tax model, claims, script, text normalizer, voice-driven timeline, subtitles, ASR checks
@@ -20,7 +22,7 @@ Code layout:
 
 ```
 npm install && pip install numpy scipy faster-whisper requests
-PART=mid npm run av:all
+npm run av:all
 npm run av:rules-b
 ```
 

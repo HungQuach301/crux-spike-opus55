@@ -1,133 +1,358 @@
 1
-00:00:00,250 --> 00:00:05,030
+00:00:00,250 --> 00:00:05,250
 A car loan with $25,000 left, at 5.2%.
 
 2
-00:00:06,075 --> 00:00:07,415
-Pay it off early,
+00:00:06,075 --> 00:00:09,655
+Pay it off early, or invest the extra
+cash?
 
 3
-00:00:08,175 --> 00:00:10,055
-or invest the extra cash?
-
-4
-00:00:10,450 --> 00:00:15,310
+00:00:10,450 --> 00:00:14,970
 We ran both roads through all 48 months,
 taxing every lot.
 
-5
-00:00:15,850 --> 00:00:22,300
+4
+00:00:15,850 --> 00:00:22,740
 The answer flips at an average annual
-return of 6.11%, compounded, in the
+return of 6.11%, compounded, in the 22%
+
+5
+00:00:22,790 --> 00:00:23,810
+tax bracket.
 
 6
-00:00:22,350 --> 00:00:24,010
-22% tax bracket.
-
-7
-00:00:24,850 --> 00:00:27,630
+00:00:24,250 --> 00:00:26,740
 Below it, paying off ends ahead.
 
-8
-00:00:28,090 --> 00:00:29,870
+7
+00:00:26,790 --> 00:00:28,850
 Above it, investing does.
 
+8
+00:00:32,650 --> 00:00:38,300
+Here is the setup: the rules are US tax
+rules, and every input is stated, not
+
 9
-00:00:33,250 --> 00:00:34,590
-Here is the setup.
+00:00:38,350 --> 00:00:39,350
+forecast.
 
 10
-00:00:35,050 --> 00:00:41,070
-The rules here are US tax rules, and every
-input is stated, not forecast.
-
-11
-00:00:41,650 --> 00:00:46,040
+00:00:39,850 --> 00:00:43,760
 Loan interest is treated as not
 deductible, so the model ignores the
 
-12
-00:00:46,090 --> 00:00:50,130
+11
+00:00:43,810 --> 00:00:48,250
 new-car loan interest deduction for 2025
 to 2028.
 
-13
-00:00:50,650 --> 00:00:57,650
+12
+00:00:48,850 --> 00:00:55,080
 The loan has $25,000 left at 5.2%, with 48
-monthly payments of $578.
+monthly payments of
+
+13
+00:00:55,130 --> 00:00:56,350
+$578.
 
 14
-00:00:59,050 --> 00:01:03,290
+00:00:57,850 --> 00:01:01,870
 On top of that, $400 a month is available.
 
 15
-00:01:03,470 --> 00:01:05,450
+00:01:01,990 --> 00:01:03,830
 That amount is illustrative.
 
 16
-00:01:06,675 --> 00:01:08,915
+00:01:04,875 --> 00:01:07,695
 Road A sends it to the loan.
 
 17
-00:01:09,355 --> 00:01:12,795
+00:01:07,935 --> 00:01:11,795
 Road B pays the minimum and invests it
 every month.
 
 18
-00:01:13,450 --> 00:01:16,430
+00:01:12,250 --> 00:01:15,460
 Both roads spend the same cash each month.
 
 19
-00:01:16,730 --> 00:01:18,230
+00:01:15,510 --> 00:01:17,190
 Only the order changes.
 
 20
-00:01:18,850 --> 00:01:20,650
+00:01:18,250 --> 00:01:20,550
 First, the certain part.
 
 21
-00:01:21,250 --> 00:01:24,070
+00:01:21,250 --> 00:01:24,780
 Road A pays off the loan at month 28.
 
 22
-00:01:24,690 --> 00:01:27,110
+00:01:24,830 --> 00:01:27,830
 Road B keeps paying through month 48.
 
 23
-00:01:27,850 --> 00:01:31,830
+00:01:28,450 --> 00:01:33,270
 That leaves 20 months with no car payment
 on road A.
 
 24
-00:01:32,650 --> 00:01:38,890
+00:01:35,050 --> 00:01:41,130
 Interest paid falls from $2,744 to $1,554.
 
 25
-00:01:39,850 --> 00:01:44,310
+00:01:42,250 --> 00:01:46,620
 Road A avoids $1,190 of interest.
 
 26
-00:01:44,590 --> 00:01:47,790
+00:01:46,670 --> 00:01:49,690
 That does not depend on markets or taxes.
 
 27
-00:01:48,250 --> 00:01:49,750
+00:01:51,850 --> 00:01:53,490
 It is certain.
 
 28
-00:01:50,650 --> 00:01:57,180
+00:01:54,250 --> 00:01:59,760
 Because both roads spend the same cash,
-road A ends up investing exactly $1,190
+road A ends up investing exactly
 
 29
-00:01:57,230 --> 00:01:59,310
-more than road B.
+00:01:59,810 --> 00:02:03,750
+$1,190 more than road B.
 
 30
-00:01:59,650 --> 00:02:04,460
+00:02:04,450 --> 00:02:09,740
 So the question is narrow: can road B's
 head start in the market beat a certain
 
 31
-00:02:04,510 --> 00:02:07,550
+00:02:09,790 --> 00:02:13,210
 $1,190, after tax?
+
+32
+00:02:14,050 --> 00:02:17,070
+Second, tax, lot by lot.
+
+33
+00:02:17,650 --> 00:02:21,060
+Each month's contribution is its own tax
+lot.
+
+34
+00:02:21,110 --> 00:02:23,510
+At month 48, everything is sold.
+
+35
+00:02:24,250 --> 00:02:28,920
+A lot held more than 12 months at that
+sale is long-term.
+
+36
+00:02:28,970 --> 00:02:30,850
+The rest are short-term.
+
+37
+00:02:31,450 --> 00:02:38,020
+In the 22% bracket, long-term gains are
+taxed at 15%, and short-term gains at the
+
+38
+00:02:38,070 --> 00:02:39,550
+full 22%.
+
+39
+00:02:40,450 --> 00:02:45,850
+Road B invests from the start, so 35 of
+its 48 lots are long-term.
+
+40
+00:02:46,010 --> 00:02:49,670
+Road A starts after the payoff: 8 of its
+21.
+
+41
+00:02:50,650 --> 00:02:57,450
+Near the break-even, 37% of road A's gains
+are short-term, against 7% of road B's.
+
+42
+00:02:57,850 --> 00:03:01,010
+A lot that loses money gets no deduction.
+
+43
+00:03:01,070 --> 00:03:03,590
+State income tax is left out.
+
+44
+00:03:04,450 --> 00:03:06,490
+Third, where the answer flips.
+
+45
+00:03:07,450 --> 00:03:14,350
+We sweep the average annual return from 2%
+to 10%, compounded, in the 22% bracket.
+
+46
+00:03:15,250 --> 00:03:21,940
+The line is road B minus road A, net worth
+after tax at month 48, and it rises
+
+47
+00:03:21,990 --> 00:03:23,150
+with the return.
+
+48
+00:03:23,650 --> 00:03:27,990
+At 2%, road A is ahead by $822.
+
+49
+00:03:28,190 --> 00:03:32,710
+At 10%, road B is ahead by $861.
+
+50
+00:03:33,850 --> 00:03:37,790
+Both roads end even at 6.11%.
+
+51
+00:03:40,450 --> 00:03:44,580
+Below that return, paying off early ends
+ahead.
+
+52
+00:03:44,630 --> 00:03:47,030
+Above it, investing does.
+
+53
+00:03:47,650 --> 00:03:49,630
+Fourth, the tax bracket.
+
+54
+00:03:50,095 --> 00:03:56,705
+In the 32% bracket we add the 3.8% net
+investment income tax: short-term gains
+
+55
+00:03:56,755 --> 00:04:01,595
+pay 35.8%, long-term gains 18.8%.
+
+56
+00:04:03,250 --> 00:04:08,820
+The break-even is 5.23% in the 12%
+bracket, and
+
+57
+00:04:08,870 --> 00:04:12,730
+6.11% in the 22% bracket.
+
+58
+00:04:13,495 --> 00:04:18,315
+In the 32% bracket, it is 6.26%.
+
+59
+00:04:18,850 --> 00:04:24,640
+Higher rates on gains shrink road B's head
+start, so the threshold rises with the
+
+60
+00:04:24,690 --> 00:04:25,690
+bracket.
+
+61
+00:04:26,050 --> 00:04:32,900
+In the 12% bracket it sits below 5.33%,
+the loan rate as an annual yield,
+
+62
+00:04:32,950 --> 00:04:36,670
+because road A's gains are mostly
+short-term.
+
+63
+00:04:37,450 --> 00:04:38,850
+Fifth, risk.
+
+64
+00:04:39,850 --> 00:04:44,870
+Paying off the loan earns a certain 5.2%.
+
+65
+00:04:45,850 --> 00:04:48,780
+Investing earns an average, not a promise.
+
+66
+00:04:48,830 --> 00:04:52,630
+Our range, 2% to 10%, is illustrative.
+
+67
+00:04:53,050 --> 00:04:59,680
+Here is an illustrative sequence: 8% a
+year for 36 months, then −20% for the last
+
+68
+00:04:59,730 --> 00:05:00,730
+12.
+
+69
+00:05:00,850 --> 00:05:04,120
+We track net worth after tax, month by
+month.
+
+70
+00:05:04,170 --> 00:05:07,530
+For 36 months, both roads run almost
+together.
+
+71
+00:05:09,250 --> 00:05:15,630
+The difference, road B minus road A,
+peaks, then turns negative in month 39.
+
+72
+00:05:16,450 --> 00:05:20,850
+Road A finishes $459 ahead, after tax.
+
+73
+00:05:23,650 --> 00:05:29,360
+Over all 48 months, that sequence still
+averages 0.19% a year.
+
+74
+00:05:29,410 --> 00:05:32,370
+The order of the returns decided the
+result.
+
+75
+00:05:33,250 --> 00:05:36,850
+The payoff month and the interest avoided
+are fixed.
+
+76
+00:05:36,910 --> 00:05:40,680
+The tax depends on how long each lot is
+held.
+
+77
+00:05:40,730 --> 00:05:42,670
+The return is the unknown.
+
+78
+00:05:43,450 --> 00:05:49,640
+So, in the 22% bracket, the answer flips
+at an average annual return of
+
+79
+00:05:49,690 --> 00:05:51,410
+6.11%, compounded.
+
+80
+00:05:53,650 --> 00:05:56,470
+That is a threshold, not a forecast.
+
+81
+00:05:56,570 --> 00:05:59,950
+Where returns will land is not known in
+advance.

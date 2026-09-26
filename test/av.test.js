@@ -54,14 +54,27 @@ test('break-evens per bracket: the gap changes sign there, and values match the 
     const be = claim(`be_${b.id}`).value;
     assert.ok(C.gap(BASE, be - 0.01, b) < 0 && C.gap(BASE, be + 0.01, b) > 0, `bracket ${b.id}`);
   }
-  assert.deepEqual(['be_12', 'be_22', 'be_32'].map((k) => claim(k).display), ['5.23%', '6.11%', '6.01%']);
+  assert.deepEqual(['be_12', 'be_22', 'be_32'].map((k) => claim(k).display), ['5.23%', '6.11%', '6.26%']);
 });
 
-test('the 32% bracket breaks even below the 22% bracket (short-term lots hit road A harder)', () => {
-  assert.ok(claim('be_32').value < claim('be_22').value);
-  // cause: at the break-even, road A holds more of its gains in short-term lots than road B
-  const r = claim('be_22').value;
-  const a = C.simulate({ ...BASE, returns: r, bracket: B22, strategy: 'A' }), b = C.simulate({ ...BASE, returns: r, bracket: B22, strategy: 'B' });
+test('the 32% bracket carries the 3.8% NIIT on both rates: 35.8% / 18.8%', () => {
+  const b32 = BRACKETS.find((b) => b.id === 32);
+  assert.equal(b32.ord, 35.8);
+  assert.equal(b32.lt, 18.8);
+  assert.equal(claim('ord_32e').display, '35.8%');
+  assert.equal(claim('lt_32e').display, '18.8%');
+  // without NIIT the 32% bracket would break even lower (6.01%); the video uses the NIIT rates
+  assert.ok(Math.abs(C.breakEven(BASE, { ord: 32, lt: 15 }) - 6.008) < 0.01);
+});
+
+test('with NIIT the break-even rises with the bracket', () => {
+  assert.ok(claim('be_12').value < claim('be_22').value && claim('be_22').value < claim('be_32').value);
+});
+
+test('at the 12% bracket the break-even sits below the no-tax break-even (A holds more short-term lots)', () => {
+  assert.ok(claim('be_12').value < claim('be_0').value);
+  const r = claim('be_12').value, b12 = BRACKETS.find((b) => b.id === 12);
+  const a = C.simulate({ ...BASE, returns: r, bracket: b12, strategy: 'A' }), b = C.simulate({ ...BASE, returns: r, bracket: b12, strategy: 'B' });
   assert.ok(a.tax.stGain / (a.tax.stGain + a.tax.ltGain) > b.tax.stGain / (b.tax.stGain + b.tax.ltGain));
 });
 

@@ -1,0 +1,1064 @@
+{
+ "hook1": {
+  "key": "d2f43d050045a3bb",
+  "targetWpm": 165.0,
+  "pauseS": 0.26,
+  "sentences": [
+   {
+    "text": "A car loan with twenty-five thousand dollars left, at five point two percent.",
+    "words": 13,
+    "wpmBefore": 184.0,
+    "tempo": 0.8969,
+    "start": 0.0,
+    "seconds": 4.772,
+    "speechS": 4.73,
+    "wpmAfter": 164.9
+   }
+  ],
+  "seconds": 4.772
+ },
+ "hook2": {
+  "key": "dbb5051444d3a271",
+  "targetWpm": 165.0,
+  "pauseS": 0.26,
+  "sentences": [
+   {
+    "text": "Pay it off early, or invest the extra cash?",
+    "words": 9,
+    "wpmBefore": 200.0,
+    "tempo": 0.825,
+    "start": 0.0,
+    "seconds": 3.382,
+    "speechS": 3.25,
+    "wpmAfter": 166.2
+   }
+  ],
+  "seconds": 3.382
+ },
+ "hook3": {
+  "key": "b9ac1f924e2e190d",
+  "targetWpm": 165.0,
+  "pauseS": 0.26,
+  "sentences": [
+   {
+    "text": "We ran both roads through all forty-eight months, taxing every lot.",
+    "words": 11,
+    "wpmBefore": 161.8,
+    "tempo": 1.0,
+    "start": 0.0,
+    "seconds": 4.22,
+    "speechS": 4.08,
+    "wpmAfter": 161.8
+   }
+  ],
+  "seconds": 4.22
+ },
+ "hook4": {
+  "key": "1866226dbb07cc74",
+  "targetWpm": 165.0,
+  "pauseS": 0.26,
+  "sentences": [
+   {
+    "text": "The answer flips at an average annual return of six point one one percent, compounded, in the twenty-two percent tax bracket.",
+    "words": 21,
+    "wpmBefore": 191.5,
+    "tempo": 0.8617,
+    "start": 0.0,
+    "seconds": 7.706,
+    "speechS": 7.61,
+    "wpmAfter": 165.6
+   }
+  ],
+  "seconds": 7.706
+ },
+ "hook5": {
+  "key": "3d256c83315e5efd",
+  "targetWpm": 165.0,
+  "pauseS": 0.26,
+  "sentences": [
+   {
+    "text": "Below it, paying off ends ahead.",
+    "words": 6,
+    "wpmBefore": 169.8,
+    "tempo": 0.9717,
+    "start": 0.0,
+    "seconds": 2.244,
+    "speechS": 2.18,
+    "wpmAfter": 165.1
+   },
+   {
+    "text": "Above it, investing does.",
+    "words": 4,
+    "wpmBefore": 131.1,
+    "tempo": 1.0,
+    "start": 2.503,
+    "seconds": 1.9,
+    "speechS": 1.83,
+    "wpmAfter": 131.1
+   }
+  ],
+  "seconds": 4.404
+ },
+ "scope1": {
+  "key": "a3c201dfdc11ceeb",
+  "targetWpm": 165.0,
+  "pauseS": 0.26,
+  "sentences": [
+   {
+    "text": "Here is the setup: the rules are U.S. tax rules, and every input is stated, not forecast.",
+    "words": 17,
+    "wpmBefore": 172.9,
+    "tempo": 0.9544,
+    "start": 0.0,
+    "seconds": 6.266,
+    "speechS": 6.18,
+    "wpmAfter": 165.0
+   }
+  ],
+  "seconds": 6.266
+ },
+ "scope2": {
+  "key": "c9e56b3f9092676e",
+  "targetWpm": 165.0,
+  "pauseS": 0.26,
+  "sentences": [
+   {
+    "text": "Loan interest is treated as not deductible, so the model ignores the new-car loan interest deduction for twenty twenty-five to twenty twenty-eight.",
+    "words": 22,
+    "wpmBefore": 173.5,
+    "tempo": 0.9512,
+    "start": 0.0,
+    "seconds": 8.137,
+    "speechS": 8.0,
+    "wpmAfter": 165.0
+   }
+  ],
+  "seconds": 8.137
+ },
+ "facts": {
+  "key": "b6cca7699e507e21",
+  "targetWpm": 165.0,
+  "pauseS": 0.26,
+  "sentences": [
+   {
+    "text": "The loan has twenty-five thousand dollars left at five point two percent, with forty-eight monthly payments of five hundred seventy-eight dollars.",
+    "words": 21,
+    "wpmBefore": 167.3,
+    "tempo": 0.9861,
+    "start": 0.0,
+    "seconds": 7.707,
+    "speechS": 7.64,
+    "wpmAfter": 164.9
+   }
+  ],
+  "seconds": 7.707
+ },
+ "extra": {
+  "key": "fefb669360c5d879",
+  "targetWpm": 165.0,
+  "pauseS": 0.26,
+  "sentences": [
+   {
+    "text": "On top of that, four hundred dollars a month is available.",
+    "words": 11,
+    "wpmBefore": 230.0,
+    "tempo": 0.75,
+    "start": 0.0,
+    "seconds": 3.88,
+    "speechS": 3.84,
+    "wpmAfter": 171.9
+   },
+   {
+    "text": "That amount is illustrative.",
+    "words": 4,
+    "wpmBefore": 180.5,
+    "tempo": 0.9144,
+    "start": 4.14,
+    "seconds": 1.531,
+    "speechS": 1.46,
+    "wpmAfter": 164.4
+   }
+  ],
+  "seconds": 5.671
+ },
+ "roads": {
+  "key": "524ead7ceb7aae84",
+  "targetWpm": 165.0,
+  "pauseS": 0.26,
+  "sentences": [
+   {
+    "text": "Road A sends it to the loan.",
+    "words": 7,
+    "wpmBefore": 219.9,
+    "tempo": 0.7504,
+    "start": 0.0,
+    "seconds": 2.625,
+    "speechS": 2.54,
+    "wpmAfter": 165.4
+   },
+   {
+    "text": "Road B pays the minimum and invests it every month.",
+    "words": 10,
+    "wpmBefore": 189.9,
+    "tempo": 0.869,
+    "start": 2.885,
+    "seconds": 3.774,
+    "speechS": 3.64,
+    "wpmAfter": 164.8
+   }
+  ],
+  "seconds": 6.66
+ },
+ "cash": {
+  "key": "7bfa3f8b82461e83",
+  "targetWpm": 165.0,
+  "pauseS": 0.26,
+  "sentences": [
+   {
+    "text": "Both roads spend the same cash each month.",
+    "words": 8,
+    "wpmBefore": 162.7,
+    "tempo": 1.0,
+    "start": 0.0,
+    "seconds": 3.01,
+    "speechS": 2.95,
+    "wpmAfter": 162.7
+   },
+   {
+    "text": "Only the order changes.",
+    "words": 4,
+    "wpmBefore": 200.0,
+    "tempo": 0.825,
+    "start": 3.27,
+    "seconds": 1.539,
+    "speechS": 1.49,
+    "wpmAfter": 161.1
+   }
+  ],
+  "seconds": 4.809
+ },
+ "card1": {
+  "key": "e888ef6fe2b23032",
+  "targetWpm": 169.55,
+  "pauseS": 0.21,
+  "sentences": [
+   {
+    "text": "First, the certain part.",
+    "words": 4,
+    "wpmBefore": 121.2,
+    "tempo": 1.0,
+    "start": 0.0,
+    "seconds": 2.07,
+    "speechS": 1.98,
+    "wpmAfter": 121.2
+   }
+  ],
+  "seconds": 2.07
+ },
+ "timeline": {
+  "key": "4d0aad51f3079612",
+  "targetWpm": 169.55,
+  "pauseS": 0.21,
+  "sentences": [
+   {
+    "text": "Road A pays off the loan at month twenty-eight.",
+    "words": 9,
+    "wpmBefore": 198.5,
+    "tempo": 0.854,
+    "start": 0.0,
+    "seconds": 3.244,
+    "speechS": 3.15,
+    "wpmAfter": 171.4
+   },
+   {
+    "text": "Road B keeps paying through month forty-eight.",
+    "words": 7,
+    "wpmBefore": 143.8,
+    "tempo": 1.0,
+    "start": 3.454,
+    "seconds": 2.98,
+    "speechS": 2.92,
+    "wpmAfter": 143.8
+   }
+  ],
+  "seconds": 6.434
+ },
+ "free": {
+  "key": "065a4c42d8ec38fd",
+  "targetWpm": 169.55,
+  "pauseS": 0.21,
+  "sentences": [
+   {
+    "text": "That leaves twenty months with no car payment on road A.",
+    "words": 11,
+    "wpmBefore": 148.3,
+    "tempo": 1.0,
+    "start": 0.0,
+    "seconds": 4.51,
+    "speechS": 4.45,
+    "wpmAfter": 148.3
+   }
+  ],
+  "seconds": 4.51
+ },
+ "interest": {
+  "key": "bd0ae3ae36ab9dfd",
+  "targetWpm": 169.55,
+  "pauseS": 0.21,
+  "sentences": [
+   {
+    "text": "Interest paid falls from two thousand seven hundred forty-four dollars to one thousand five hundred fifty-four dollars.",
+    "words": 17,
+    "wpmBefore": 161.1,
+    "tempo": 1.0,
+    "start": 0.0,
+    "seconds": 6.41,
+    "speechS": 6.33,
+    "wpmAfter": 161.1
+   }
+  ],
+  "seconds": 6.41
+ },
+ "avoided": {
+  "key": "ff67353d9175c7e3",
+  "targetWpm": 169.55,
+  "pauseS": 0.21,
+  "sentences": [
+   {
+    "text": "Road A avoids one thousand one hundred ninety dollars of interest.",
+    "words": 11,
+    "wpmBefore": 160.6,
+    "tempo": 1.0,
+    "start": 0.0,
+    "seconds": 4.16,
+    "speechS": 4.11,
+    "wpmAfter": 160.6
+   },
+   {
+    "text": "That does not depend on markets or taxes.",
+    "words": 8,
+    "wpmBefore": 188.2,
+    "tempo": 0.9007,
+    "start": 4.37,
+    "seconds": 2.909,
+    "speechS": 2.83,
+    "wpmAfter": 169.6
+   }
+  ],
+  "seconds": 7.279
+ },
+ "certain": {
+  "key": "a1350f0aa497420d",
+  "targetWpm": 169.55,
+  "pauseS": 0.21,
+  "sentences": [
+   {
+    "text": "It is certain.",
+    "words": 3,
+    "wpmBefore": 123.3,
+    "tempo": 1.0,
+    "start": 0.0,
+    "seconds": 1.51,
+    "speechS": 1.46,
+    "wpmAfter": 123.3
+   }
+  ],
+  "seconds": 1.51
+ },
+ "identity": {
+  "key": "fe988e96ea89b36d",
+  "targetWpm": 169.55,
+  "pauseS": 0.21,
+  "sentences": [
+   {
+    "text": "Because both roads spend the same cash, road A ends up investing exactly one thousand one hundred ninety dollars more than road B.",
+    "words": 23,
+    "wpmBefore": 150.7,
+    "tempo": 1.0,
+    "start": 0.0,
+    "seconds": 9.22,
+    "speechS": 9.16,
+    "wpmAfter": 150.7
+   }
+  ],
+  "seconds": 9.22
+ },
+ "bridge": {
+  "key": "93cad7a46c6b86d7",
+  "targetWpm": 169.55,
+  "pauseS": 0.21,
+  "sentences": [
+   {
+    "text": "So the question is narrow: can road B's head start in the market beat a certain one thousand one hundred ninety dollars, after tax?",
+    "words": 24,
+    "wpmBefore": 198.9,
+    "tempo": 0.8524,
+    "start": 0.0,
+    "seconds": 8.599,
+    "speechS": 8.47,
+    "wpmAfter": 170.0
+   }
+  ],
+  "seconds": 8.599
+ },
+ "card2": {
+  "key": "4a30d774686eb43e",
+  "targetWpm": 165.0,
+  "pauseS": 0.26,
+  "sentences": [
+   {
+    "text": "Second, tax, lot by lot.",
+    "words": 5,
+    "wpmBefore": 111.9,
+    "tempo": 1.0,
+    "start": 0.0,
+    "seconds": 2.76,
+    "speechS": 2.68,
+    "wpmAfter": 111.9
+   }
+  ],
+  "seconds": 2.76
+ },
+ "lots1": {
+  "key": "cdeeddbb21ee519b",
+  "targetWpm": 165.0,
+  "pauseS": 0.26,
+  "sentences": [
+   {
+    "text": "Each month's contribution is its own tax lot.",
+    "words": 8,
+    "wpmBefore": 157.4,
+    "tempo": 1.0,
+    "start": 0.0,
+    "seconds": 3.1,
+    "speechS": 3.05,
+    "wpmAfter": 157.4
+   },
+   {
+    "text": "At month forty-eight, everything is sold.",
+    "words": 6,
+    "wpmBefore": 172.2,
+    "tempo": 0.9579,
+    "start": 3.36,
+    "seconds": 2.255,
+    "speechS": 2.19,
+    "wpmAfter": 164.4
+   }
+  ],
+  "seconds": 5.615
+ },
+ "lots2": {
+  "key": "64d7cb7deb25c0ad",
+  "targetWpm": 165.0,
+  "pauseS": 0.26,
+  "sentences": [
+   {
+    "text": "A lot held more than twelve months at that sale is long-term.",
+    "words": 12,
+    "wpmBefore": 187.0,
+    "tempo": 0.8823,
+    "start": 0.0,
+    "seconds": 4.42,
+    "speechS": 4.39,
+    "wpmAfter": 164.0
+   },
+   {
+    "text": "The rest are short-term.",
+    "words": 4,
+    "wpmBefore": 151.9,
+    "tempo": 1.0,
+    "start": 4.68,
+    "seconds": 1.65,
+    "speechS": 1.58,
+    "wpmAfter": 151.9
+   }
+  ],
+  "seconds": 6.33
+ },
+ "rates": {
+  "key": "6f8f679235846d7d",
+  "targetWpm": 165.0,
+  "pauseS": 0.26,
+  "sentences": [
+   {
+    "text": "In the twenty-two percent bracket, long-term gains are taxed at fifteen percent, and short-term gains at the full twenty-two percent.",
+    "words": 20,
+    "wpmBefore": 157.1,
+    "tempo": 1.0,
+    "start": 0.0,
+    "seconds": 7.72,
+    "speechS": 7.64,
+    "wpmAfter": 157.1
+   }
+  ],
+  "seconds": 7.72
+ },
+ "lots3": {
+  "key": "7f83454dbd08f1d3",
+  "targetWpm": 165.0,
+  "pauseS": 0.26,
+  "sentences": [
+   {
+    "text": "Road B invests from the start, so thirty-five of its forty-eight lots are long-term.",
+    "words": 14,
+    "wpmBefore": 170.7,
+    "tempo": 0.9664,
+    "start": 0.0,
+    "seconds": 5.153,
+    "speechS": 5.08,
+    "wpmAfter": 165.4
+   },
+   {
+    "text": "Road A starts after the payoff: eight of its twenty-one.",
+    "words": 10,
+    "wpmBefore": 169.0,
+    "tempo": 0.9762,
+    "start": 5.413,
+    "seconds": 3.708,
+    "speechS": 3.63,
+    "wpmAfter": 165.3
+   }
+  ],
+  "seconds": 9.121
+ },
+ "share": {
+  "key": "28505d2951eb33db",
+  "targetWpm": 165.0,
+  "pauseS": 0.26,
+  "sentences": [
+   {
+    "text": "Near the break-even, thirty-seven percent of road A's gains are short-term, against seven percent of road B's.",
+    "words": 17,
+    "wpmBefore": 159.9,
+    "tempo": 1.0,
+    "start": 0.0,
+    "seconds": 6.43,
+    "speechS": 6.38,
+    "wpmAfter": 159.9
+   }
+  ],
+  "seconds": 6.43
+ },
+ "nodeduct": {
+  "key": "2657399b9d6aa869",
+  "targetWpm": 165.0,
+  "pauseS": 0.26,
+  "sentences": [
+   {
+    "text": "A lot that loses money gets no deduction.",
+    "words": 8,
+    "wpmBefore": 222.2,
+    "tempo": 0.75,
+    "start": 0.0,
+    "seconds": 2.947,
+    "speechS": 2.86,
+    "wpmAfter": 167.8
+   },
+   {
+    "text": "State income tax is left out.",
+    "words": 6,
+    "wpmBefore": 230.8,
+    "tempo": 0.75,
+    "start": 3.207,
+    "seconds": 2.16,
+    "speechS": 2.08,
+    "wpmAfter": 173.1
+   }
+  ],
+  "seconds": 5.367
+ },
+ "card3": {
+  "key": "950c2871e168340d",
+  "targetWpm": 165.0,
+  "pauseS": 0.26,
+  "sentences": [
+   {
+    "text": "Third, where the answer flips.",
+    "words": 5,
+    "wpmBefore": 189.9,
+    "tempo": 0.869,
+    "start": 0.0,
+    "seconds": 1.91,
+    "speechS": 1.82,
+    "wpmAfter": 164.8
+   }
+  ],
+  "seconds": 1.91
+ },
+ "sw1": {
+  "key": "4730096a6281ff7c",
+  "targetWpm": 165.0,
+  "pauseS": 0.26,
+  "sentences": [
+   {
+    "text": "We sweep the average annual return from two percent to ten percent, compounded, in the twenty-two percent bracket.",
+    "words": 18,
+    "wpmBefore": 162.9,
+    "tempo": 1.0,
+    "start": 0.0,
+    "seconds": 6.69,
+    "speechS": 6.63,
+    "wpmAfter": 162.9
+   }
+  ],
+  "seconds": 6.69
+ },
+ "sw2": {
+  "key": "f6803235bc6fa0d8",
+  "targetWpm": 165.0,
+  "pauseS": 0.26,
+  "sentences": [
+   {
+    "text": "The line is road B minus road A, net worth after tax at month forty-eight, and it rises with the return.",
+    "words": 21,
+    "wpmBefore": 176.0,
+    "tempo": 0.9376,
+    "start": 0.0,
+    "seconds": 7.7,
+    "speechS": 7.6,
+    "wpmAfter": 165.8
+   }
+  ],
+  "seconds": 7.7
+ },
+ "sw3": {
+  "key": "5ee77d4fdbd51c7b",
+  "targetWpm": 165.0,
+  "pauseS": 0.26,
+  "sentences": [
+   {
+    "text": "At two percent, road A is ahead by eight hundred twenty-two dollars.",
+    "words": 12,
+    "wpmBefore": 178.7,
+    "tempo": 0.9235,
+    "start": 0.0,
+    "seconds": 4.429,
+    "speechS": 4.37,
+    "wpmAfter": 164.8
+   },
+   {
+    "text": "At ten percent, road B is ahead by eight hundred sixty-one dollars.",
+    "words": 12,
+    "wpmBefore": 187.5,
+    "tempo": 0.88,
+    "start": 4.689,
+    "seconds": 4.455,
+    "speechS": 4.22,
+    "wpmAfter": 170.6
+   }
+  ],
+  "seconds": 9.143
+ },
+ "sw4": {
+  "key": "e068cdda56924435",
+  "targetWpm": 165.0,
+  "pauseS": 0.26,
+  "sentences": [
+   {
+    "text": "Both roads end even at six point one one percent.",
+    "words": 10,
+    "wpmBefore": 172.4,
+    "tempo": 0.957,
+    "start": 0.0,
+    "seconds": 3.699,
+    "speechS": 3.56,
+    "wpmAfter": 168.5
+   }
+  ],
+  "seconds": 3.699
+ },
+ "sw5": {
+  "key": "27b53a7f69a7e4ba",
+  "targetWpm": 165.0,
+  "pauseS": 0.26,
+  "sentences": [
+   {
+    "text": "Below that return, paying off early ends ahead.",
+    "words": 8,
+    "wpmBefore": 126.0,
+    "tempo": 1.0,
+    "start": 0.0,
+    "seconds": 3.87,
+    "speechS": 3.81,
+    "wpmAfter": 126.0
+   },
+   {
+    "text": "Above it, investing does.",
+    "words": 4,
+    "wpmBefore": 110.1,
+    "tempo": 1.0,
+    "start": 4.13,
+    "seconds": 2.24,
+    "speechS": 2.18,
+    "wpmAfter": 110.1
+   }
+  ],
+  "seconds": 6.37
+ },
+ "card4": {
+  "key": "7385a709c5c86b2a",
+  "targetWpm": 156.94,
+  "pauseS": 0.3,
+  "sentences": [
+   {
+    "text": "Fourth, the tax bracket.",
+    "words": 4,
+    "wpmBefore": 147.2,
+    "tempo": 1.0,
+    "start": 0.0,
+    "seconds": 1.7,
+    "speechS": 1.63,
+    "wpmAfter": 147.2
+   }
+  ],
+  "seconds": 1.7
+ },
+ "niit": {
+  "key": "b6ae0794caafaf16",
+  "targetWpm": 156.94,
+  "pauseS": 0.3,
+  "sentences": [
+   {
+    "text": "In the thirty-two percent bracket we add the three point eight percent net investment income tax: short-term gains pay thirty-five point eight percent, long-term gains eighteen point eight percent.",
+    "words": 29,
+    "wpmBefore": 165.6,
+    "tempo": 0.948,
+    "start": 0.0,
+    "seconds": 11.14,
+    "speechS": 11.09,
+    "wpmAfter": 156.9
+   }
+  ],
+  "seconds": 11.14
+ },
+ "dots": {
+  "key": "8edf34b3190f1a71",
+  "targetWpm": 156.94,
+  "pauseS": 0.3,
+  "sentences": [
+   {
+    "text": "The break-even is five point two three percent in the twelve percent bracket, and six point one one percent in the twenty-two percent bracket.",
+    "words": 24,
+    "wpmBefore": 188.5,
+    "tempo": 0.8327,
+    "start": 0.0,
+    "seconds": 9.26,
+    "speechS": 9.15,
+    "wpmAfter": 157.4
+   }
+  ],
+  "seconds": 9.26
+ },
+ "dots32": {
+  "key": "2188641e80a009fd",
+  "targetWpm": 156.94,
+  "pauseS": 0.3,
+  "sentences": [
+   {
+    "text": "In the thirty-two percent bracket, it is six point two six percent.",
+    "words": 12,
+    "wpmBefore": 181.8,
+    "tempo": 0.8632,
+    "start": 0.0,
+    "seconds": 4.646,
+    "speechS": 4.6,
+    "wpmAfter": 156.5
+   }
+  ],
+  "seconds": 4.646
+ },
+ "rises": {
+  "key": "e9877fbfb031f4c6",
+  "targetWpm": 156.94,
+  "pauseS": 0.3,
+  "sentences": [
+   {
+    "text": "Higher rates on gains shrink road B's head start, so the threshold rises with the bracket.",
+    "words": 16,
+    "wpmBefore": 169.6,
+    "tempo": 0.9253,
+    "start": 0.0,
+    "seconds": 6.193,
+    "speechS": 6.12,
+    "wpmAfter": 156.9
+   }
+  ],
+  "seconds": 6.193
+ },
+ "below": {
+  "key": "6d73ba26a2716abc",
+  "targetWpm": 156.94,
+  "pauseS": 0.3,
+  "sentences": [
+   {
+    "text": "In the twelve percent bracket it sits below five point three three percent, the loan rate as an annual yield, because road A's gains are mostly short-term.",
+    "words": 27,
+    "wpmBefore": 177.0,
+    "tempo": 0.8864,
+    "start": 0.0,
+    "seconds": 10.368,
+    "speechS": 10.33,
+    "wpmAfter": 156.8
+   }
+  ],
+  "seconds": 10.368
+ },
+ "card5": {
+  "key": "94b56dd0e704370b",
+  "targetWpm": 172.0,
+  "pauseS": 0.12,
+  "sentences": [
+   {
+    "text": "Fifth, risk.",
+    "words": 2,
+    "wpmBefore": 110.1,
+    "tempo": 1.0,
+    "start": 0.0,
+    "seconds": 1.17,
+    "speechS": 1.09,
+    "wpmAfter": 110.1
+   }
+  ],
+  "seconds": 1.17
+ },
+ "risk1": {
+  "key": "00851a7d238b137d",
+  "targetWpm": 172.0,
+  "pauseS": 0.12,
+  "sentences": [
+   {
+    "text": "Paying off the loan earns a certain five point two percent.",
+    "words": 11,
+    "wpmBefore": 140.4,
+    "tempo": 1.0,
+    "start": 0.0,
+    "seconds": 4.79,
+    "speechS": 4.7,
+    "wpmAfter": 140.4
+   }
+  ],
+  "seconds": 4.79
+ },
+ "risk2": {
+  "key": "17e7beb91defc9f9",
+  "targetWpm": 172.0,
+  "pauseS": 0.12,
+  "sentences": [
+   {
+    "text": "Investing earns an average, not a promise.",
+    "words": 7,
+    "wpmBefore": 155.0,
+    "tempo": 1.0,
+    "start": 0.0,
+    "seconds": 2.75,
+    "speechS": 2.71,
+    "wpmAfter": 155.0
+   },
+   {
+    "text": "Our range, two percent to ten percent, is illustrative.",
+    "words": 9,
+    "wpmBefore": 153.8,
+    "tempo": 1.0,
+    "start": 2.87,
+    "seconds": 3.61,
+    "speechS": 3.51,
+    "wpmAfter": 153.8
+   }
+  ],
+  "seconds": 6.48
+ },
+ "seq": {
+  "key": "2b28ccf5e2633a62",
+  "targetWpm": 172.0,
+  "pauseS": 0.12,
+  "sentences": [
+   {
+    "text": "Here is an illustrative sequence: eight percent a year for thirty-six months, then minus twenty percent for the last twelve.",
+    "words": 20,
+    "wpmBefore": 172.7,
+    "tempo": 0.9962,
+    "start": 0.0,
+    "seconds": 7.04,
+    "speechS": 6.95,
+    "wpmAfter": 172.7
+   }
+  ],
+  "seconds": 7.04
+ },
+ "race": {
+  "key": "6822588c807a62b2",
+  "targetWpm": 172.0,
+  "pauseS": 0.12,
+  "sentences": [
+   {
+    "text": "We track net worth after tax, month by month.",
+    "words": 9,
+    "wpmBefore": 179.4,
+    "tempo": 0.9587,
+    "start": 0.0,
+    "seconds": 3.192,
+    "speechS": 3.14,
+    "wpmAfter": 172.0
+   },
+   {
+    "text": "For thirty-six months, both roads run almost together.",
+    "words": 8,
+    "wpmBefore": 156.4,
+    "tempo": 1.0,
+    "start": 3.312,
+    "seconds": 3.14,
+    "speechS": 3.07,
+    "wpmAfter": 156.4
+   }
+  ],
+  "seconds": 6.452
+ },
+ "gap": {
+  "key": "be1a4fbcbb7ce246",
+  "targetWpm": 172.0,
+  "pauseS": 0.12,
+  "sentences": [
+   {
+    "text": "The difference, road B minus road A, peaks, then turns negative in month thirty-nine.",
+    "words": 14,
+    "wpmBefore": 135.3,
+    "tempo": 1.0,
+    "start": 0.0,
+    "seconds": 6.3,
+    "speechS": 6.21,
+    "wpmAfter": 135.3
+   }
+  ],
+  "seconds": 6.3
+ },
+ "downside": {
+  "key": "e64b50cc43cfbfdc",
+  "targetWpm": 172.0,
+  "pauseS": 0.12,
+  "sentences": [
+   {
+    "text": "Road A finishes four hundred fifty-nine dollars ahead, after tax.",
+    "words": 10,
+    "wpmBefore": 145.6,
+    "tempo": 1.0,
+    "start": 0.0,
+    "seconds": 4.18,
+    "speechS": 4.12,
+    "wpmAfter": 145.6
+   }
+  ],
+  "seconds": 4.18
+ },
+ "order": {
+  "key": "4b60e5f47a355ed6",
+  "targetWpm": 172.0,
+  "pauseS": 0.12,
+  "sentences": [
+   {
+    "text": "Over all forty-eight months, that sequence still averages zero point one nine percent a year.",
+    "words": 15,
+    "wpmBefore": 164.2,
+    "tempo": 1.0,
+    "start": 0.0,
+    "seconds": 5.53,
+    "speechS": 5.48,
+    "wpmAfter": 164.2
+   },
+   {
+    "text": "The order of the returns decided the result.",
+    "words": 8,
+    "wpmBefore": 200.0,
+    "tempo": 0.86,
+    "start": 5.65,
+    "seconds": 2.86,
+    "speechS": 2.79,
+    "wpmAfter": 172.0
+   }
+  ],
+  "seconds": 8.51
+ },
+ "recap": {
+  "key": "f3e8f5f9e38c561c",
+  "targetWpm": 165.0,
+  "pauseS": 0.26,
+  "sentences": [
+   {
+    "text": "The payoff month and the interest avoided are fixed.",
+    "words": 9,
+    "wpmBefore": 168.2,
+    "tempo": 0.9808,
+    "start": 0.0,
+    "seconds": 3.324,
+    "speechS": 3.27,
+    "wpmAfter": 165.1
+   },
+   {
+    "text": "The tax depends on how long each lot is held.",
+    "words": 10,
+    "wpmBefore": 228.1,
+    "tempo": 0.75,
+    "start": 3.584,
+    "seconds": 3.587,
+    "speechS": 3.51,
+    "wpmAfter": 170.9
+   },
+   {
+    "text": "The return is the unknown.",
+    "words": 5,
+    "wpmBefore": 176.5,
+    "tempo": 0.935,
+    "start": 7.43,
+    "seconds": 1.893,
+    "speechS": 1.77,
+    "wpmAfter": 169.5
+   }
+  ],
+  "seconds": 9.323
+ },
+ "end1": {
+  "key": "118fe71cbbd162c0",
+  "targetWpm": 165.0,
+  "pauseS": 0.26,
+  "sentences": [
+   {
+    "text": "So, in the twenty-two percent bracket, the answer flips at an average annual return of six point one one percent, compounded.",
+    "words": 21,
+    "wpmBefore": 176.5,
+    "tempo": 0.935,
+    "start": 0.0,
+    "seconds": 7.711,
+    "speechS": 7.63,
+    "wpmAfter": 165.1
+   }
+  ],
+  "seconds": 7.711
+ },
+ "end2": {
+  "key": "04d2a66112df9125",
+  "targetWpm": 165.0,
+  "pauseS": 0.26,
+  "sentences": [
+   {
+    "text": "That is a threshold, not a forecast.",
+    "words": 7,
+    "wpmBefore": 191.8,
+    "tempo": 0.8604,
+    "start": 0.0,
+    "seconds": 2.615,
+    "speechS": 2.55,
+    "wpmAfter": 164.7
+   },
+   {
+    "text": "Where returns will land is not known in advance.",
+    "words": 9,
+    "wpmBefore": 200.7,
+    "tempo": 0.8219,
+    "start": 2.875,
+    "seconds": 3.346,
+    "speechS": 3.27,
+    "wpmAfter": 165.1
+   }
+  ],
+  "seconds": 6.221
+ }
+}

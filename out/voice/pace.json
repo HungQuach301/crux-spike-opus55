@@ -1,0 +1,1063 @@
+{
+ "stage": "final",
+ "limits": {
+  "chapterWpm": [
+   150,
+   160
+  ],
+  "sentenceMaxWpm": 175,
+  "minWordCoverage": 0.92
+ },
+ "chapters": {
+  "hook": {
+   "words": 64,
+   "seconds": 24.48,
+   "wpm": 156.8,
+   "pass": true
+  },
+  "setup": {
+   "words": 104,
+   "seconds": 39.25,
+   "wpm": 159,
+   "pass": true
+  },
+  "ch1": {
+   "words": 117,
+   "seconds": 46.03,
+   "wpm": 152.5,
+   "pass": true
+  },
+  "ch2": {
+   "words": 110,
+   "seconds": 43.34,
+   "wpm": 152.3,
+   "pass": true
+  },
+  "ch3": {
+   "words": 90,
+   "seconds": 35.51,
+   "wpm": 152.1,
+   "pass": true
+  },
+  "ch4": {
+   "words": 112,
+   "seconds": 43.31,
+   "wpm": 155.2,
+   "pass": true
+  },
+  "ch5": {
+   "words": 113,
+   "seconds": 44.92,
+   "wpm": 150.9,
+   "pass": true
+  },
+  "close": {
+   "words": 61,
+   "seconds": 23.25,
+   "wpm": 157.4,
+   "pass": true
+  }
+ },
+ "fastSentences": [],
+ "droppedWords": [],
+ "pass": true,
+ "clips": [
+  {
+   "scene": "hook1",
+   "chapter": "hook",
+   "words": 13,
+   "seconds": 4.772,
+   "wpm": 163.5,
+   "coverage": 1
+  },
+  {
+   "scene": "hook2",
+   "chapter": "hook",
+   "words": 9,
+   "seconds": 3.382,
+   "wpm": 159.7,
+   "coverage": 1
+  },
+  {
+   "scene": "hook3",
+   "chapter": "hook",
+   "words": 11,
+   "seconds": 4.22,
+   "wpm": 156.4,
+   "coverage": 1
+  },
+  {
+   "scene": "hook4",
+   "chapter": "hook",
+   "words": 21,
+   "seconds": 7.706,
+   "wpm": 163.5,
+   "coverage": 1
+  },
+  {
+   "scene": "hook5",
+   "chapter": "hook",
+   "words": 10,
+   "seconds": 4.404,
+   "wpm": 136.2,
+   "coverage": 1
+  },
+  {
+   "scene": "scope1",
+   "chapter": "setup",
+   "words": 17,
+   "seconds": 6.266,
+   "wpm": 162.8,
+   "coverage": 1
+  },
+  {
+   "scene": "scope2",
+   "chapter": "setup",
+   "words": 22,
+   "seconds": 8.137,
+   "wpm": 162.2,
+   "coverage": 0.955
+  },
+  {
+   "scene": "facts",
+   "chapter": "setup",
+   "words": 21,
+   "seconds": 7.707,
+   "wpm": 163.5,
+   "coverage": 1
+  },
+  {
+   "scene": "extra",
+   "chapter": "setup",
+   "words": 15,
+   "seconds": 5.671,
+   "wpm": 158.7,
+   "coverage": 1
+  },
+  {
+   "scene": "roads",
+   "chapter": "setup",
+   "words": 17,
+   "seconds": 6.66,
+   "wpm": 153.2,
+   "coverage": 1
+  },
+  {
+   "scene": "cash",
+   "chapter": "setup",
+   "words": 12,
+   "seconds": 4.809,
+   "wpm": 149.7,
+   "coverage": 1
+  },
+  {
+   "scene": "card1",
+   "chapter": "ch1",
+   "words": 4,
+   "seconds": 2.07,
+   "wpm": 115.9,
+   "coverage": 1
+  },
+  {
+   "scene": "timeline",
+   "chapter": "ch1",
+   "words": 16,
+   "seconds": 6.434,
+   "wpm": 149.2,
+   "coverage": 0.938
+  },
+  {
+   "scene": "free",
+   "chapter": "ch1",
+   "words": 11,
+   "seconds": 4.51,
+   "wpm": 146.3,
+   "coverage": 1
+  },
+  {
+   "scene": "interest",
+   "chapter": "ch1",
+   "words": 17,
+   "seconds": 6.41,
+   "wpm": 159.1,
+   "coverage": 1
+  },
+  {
+   "scene": "avoided",
+   "chapter": "ch1",
+   "words": 19,
+   "seconds": 7.279,
+   "wpm": 156.6,
+   "coverage": 1
+  },
+  {
+   "scene": "certain",
+   "chapter": "ch1",
+   "words": 3,
+   "seconds": 1.51,
+   "wpm": 119.2,
+   "coverage": 1
+  },
+  {
+   "scene": "identity",
+   "chapter": "ch1",
+   "words": 23,
+   "seconds": 9.22,
+   "wpm": 149.7,
+   "coverage": 1
+  },
+  {
+   "scene": "bridge",
+   "chapter": "ch1",
+   "words": 24,
+   "seconds": 8.599,
+   "wpm": 167.5,
+   "coverage": 1
+  },
+  {
+   "scene": "card2",
+   "chapter": "ch2",
+   "words": 5,
+   "seconds": 2.76,
+   "wpm": 108.7,
+   "coverage": 1
+  },
+  {
+   "scene": "lots1",
+   "chapter": "ch2",
+   "words": 14,
+   "seconds": 5.615,
+   "wpm": 149.6,
+   "coverage": 1
+  },
+  {
+   "scene": "lots2",
+   "chapter": "ch2",
+   "words": 16,
+   "seconds": 6.33,
+   "wpm": 151.7,
+   "coverage": 1
+  },
+  {
+   "scene": "rates",
+   "chapter": "ch2",
+   "words": 20,
+   "seconds": 7.72,
+   "wpm": 155.4,
+   "coverage": 1
+  },
+  {
+   "scene": "lots3",
+   "chapter": "ch2",
+   "words": 24,
+   "seconds": 9.121,
+   "wpm": 157.9,
+   "coverage": 1
+  },
+  {
+   "scene": "share",
+   "chapter": "ch2",
+   "words": 17,
+   "seconds": 6.43,
+   "wpm": 158.6,
+   "coverage": 1
+  },
+  {
+   "scene": "nodeduct",
+   "chapter": "ch2",
+   "words": 14,
+   "seconds": 5.367,
+   "wpm": 156.5,
+   "coverage": 1
+  },
+  {
+   "scene": "card3",
+   "chapter": "ch3",
+   "words": 5,
+   "seconds": 1.91,
+   "wpm": 157.1,
+   "coverage": 1
+  },
+  {
+   "scene": "sw1",
+   "chapter": "ch3",
+   "words": 18,
+   "seconds": 6.69,
+   "wpm": 161.4,
+   "coverage": 1
+  },
+  {
+   "scene": "sw2",
+   "chapter": "ch3",
+   "words": 21,
+   "seconds": 7.7,
+   "wpm": 163.6,
+   "coverage": 1
+  },
+  {
+   "scene": "sw3",
+   "chapter": "ch3",
+   "words": 24,
+   "seconds": 9.143,
+   "wpm": 157.5,
+   "coverage": 1
+  },
+  {
+   "scene": "sw4",
+   "chapter": "ch3",
+   "words": 10,
+   "seconds": 3.699,
+   "wpm": 162.2,
+   "coverage": 1
+  },
+  {
+   "scene": "sw5",
+   "chapter": "ch3",
+   "words": 12,
+   "seconds": 6.37,
+   "wpm": 113,
+   "coverage": 1
+  },
+  {
+   "scene": "card4",
+   "chapter": "ch4",
+   "words": 4,
+   "seconds": 1.7,
+   "wpm": 141.2,
+   "coverage": 1
+  },
+  {
+   "scene": "niit",
+   "chapter": "ch4",
+   "words": 29,
+   "seconds": 11.14,
+   "wpm": 156.2,
+   "coverage": 1
+  },
+  {
+   "scene": "dots",
+   "chapter": "ch4",
+   "words": 24,
+   "seconds": 9.26,
+   "wpm": 155.5,
+   "coverage": 0.958
+  },
+  {
+   "scene": "dots32",
+   "chapter": "ch4",
+   "words": 12,
+   "seconds": 4.646,
+   "wpm": 155,
+   "coverage": 1
+  },
+  {
+   "scene": "rises",
+   "chapter": "ch4",
+   "words": 16,
+   "seconds": 6.193,
+   "wpm": 155,
+   "coverage": 0.938
+  },
+  {
+   "scene": "below",
+   "chapter": "ch4",
+   "words": 27,
+   "seconds": 10.368,
+   "wpm": 156.3,
+   "coverage": 0.926
+  },
+  {
+   "scene": "card5",
+   "chapter": "ch5",
+   "words": 2,
+   "seconds": 1.17,
+   "wpm": 102.6,
+   "coverage": 1
+  },
+  {
+   "scene": "risk1",
+   "chapter": "ch5",
+   "words": 11,
+   "seconds": 4.79,
+   "wpm": 137.8,
+   "coverage": 1
+  },
+  {
+   "scene": "risk2",
+   "chapter": "ch5",
+   "words": 16,
+   "seconds": 6.48,
+   "wpm": 148.1,
+   "coverage": 1
+  },
+  {
+   "scene": "seq",
+   "chapter": "ch5",
+   "words": 20,
+   "seconds": 7.04,
+   "wpm": 170.5,
+   "coverage": 1
+  },
+  {
+   "scene": "race",
+   "chapter": "ch5",
+   "words": 17,
+   "seconds": 6.452,
+   "wpm": 158.1,
+   "coverage": 1
+  },
+  {
+   "scene": "gap",
+   "chapter": "ch5",
+   "words": 14,
+   "seconds": 6.3,
+   "wpm": 133.3,
+   "coverage": 1
+  },
+  {
+   "scene": "downside",
+   "chapter": "ch5",
+   "words": 10,
+   "seconds": 4.18,
+   "wpm": 143.5,
+   "coverage": 1
+  },
+  {
+   "scene": "order",
+   "chapter": "ch5",
+   "words": 23,
+   "seconds": 8.51,
+   "wpm": 162.2,
+   "coverage": 1
+  },
+  {
+   "scene": "recap",
+   "chapter": "close",
+   "words": 24,
+   "seconds": 9.323,
+   "wpm": 154.5,
+   "coverage": 1
+  },
+  {
+   "scene": "end1",
+   "chapter": "close",
+   "words": 21,
+   "seconds": 7.711,
+   "wpm": 163.4,
+   "coverage": 0.952
+  },
+  {
+   "scene": "end2",
+   "chapter": "close",
+   "words": 16,
+   "seconds": 6.221,
+   "wpm": 154.3,
+   "coverage": 1
+  }
+ ],
+ "sentences": [
+  {
+   "scene": "hook1",
+   "text": "A car loan with twenty-five thousand dollars left, at five point two percent.",
+   "words": 13,
+   "start": 0,
+   "seconds": 4.73,
+   "wpm": 164.9,
+   "tempo": 0.8969
+  },
+  {
+   "scene": "hook2",
+   "text": "Pay it off early, or invest the extra cash?",
+   "words": 9,
+   "start": 0,
+   "seconds": 3.25,
+   "wpm": 166.2,
+   "tempo": 0.825
+  },
+  {
+   "scene": "hook3",
+   "text": "We ran both roads through all forty-eight months, taxing every lot.",
+   "words": 11,
+   "start": 0,
+   "seconds": 4.08,
+   "wpm": 161.8,
+   "tempo": 1
+  },
+  {
+   "scene": "hook4",
+   "text": "The answer flips at an average annual return of six point one one percent, compounded, in the twenty-two percent tax bracket.",
+   "words": 21,
+   "start": 0,
+   "seconds": 7.61,
+   "wpm": 165.6,
+   "tempo": 0.8617
+  },
+  {
+   "scene": "hook5",
+   "text": "Below it, paying off ends ahead.",
+   "words": 6,
+   "start": 0,
+   "seconds": 2.18,
+   "wpm": 165.1,
+   "tempo": 0.9717
+  },
+  {
+   "scene": "hook5",
+   "text": "Above it, investing does.",
+   "words": 4,
+   "start": 2.503,
+   "seconds": 1.83,
+   "wpm": 131.1,
+   "tempo": 1
+  },
+  {
+   "scene": "scope1",
+   "text": "Here is the setup: the rules are U.S. tax rules, and every input is stated, not forecast.",
+   "words": 17,
+   "start": 0,
+   "seconds": 6.18,
+   "wpm": 165,
+   "tempo": 0.9544
+  },
+  {
+   "scene": "scope2",
+   "text": "Loan interest is treated as not deductible, so the model ignores the new-car loan interest deduction for twenty twenty-five to twenty twenty-eight.",
+   "words": 22,
+   "start": 0,
+   "seconds": 8,
+   "wpm": 165,
+   "tempo": 0.9512
+  },
+  {
+   "scene": "facts",
+   "text": "The loan has twenty-five thousand dollars left at five point two percent, with forty-eight monthly payments of five hundred seventy-eight dollars.",
+   "words": 21,
+   "start": 0,
+   "seconds": 7.64,
+   "wpm": 164.9,
+   "tempo": 0.9861
+  },
+  {
+   "scene": "extra",
+   "text": "On top of that, four hundred dollars a month is available.",
+   "words": 11,
+   "start": 0,
+   "seconds": 3.84,
+   "wpm": 171.9,
+   "tempo": 0.75
+  },
+  {
+   "scene": "extra",
+   "text": "That amount is illustrative.",
+   "words": 4,
+   "start": 4.14,
+   "seconds": 1.46,
+   "wpm": 164.4,
+   "tempo": 0.9144
+  },
+  {
+   "scene": "roads",
+   "text": "Road A sends it to the loan.",
+   "words": 7,
+   "start": 0,
+   "seconds": 2.54,
+   "wpm": 165.4,
+   "tempo": 0.7504
+  },
+  {
+   "scene": "roads",
+   "text": "Road B pays the minimum and invests it every month.",
+   "words": 10,
+   "start": 2.885,
+   "seconds": 3.64,
+   "wpm": 164.8,
+   "tempo": 0.869
+  },
+  {
+   "scene": "cash",
+   "text": "Both roads spend the same cash each month.",
+   "words": 8,
+   "start": 0,
+   "seconds": 2.95,
+   "wpm": 162.7,
+   "tempo": 1
+  },
+  {
+   "scene": "cash",
+   "text": "Only the order changes.",
+   "words": 4,
+   "start": 3.27,
+   "seconds": 1.49,
+   "wpm": 161.1,
+   "tempo": 0.825
+  },
+  {
+   "scene": "card1",
+   "text": "First, the certain part.",
+   "words": 4,
+   "start": 0,
+   "seconds": 1.98,
+   "wpm": 121.2,
+   "tempo": 1
+  },
+  {
+   "scene": "timeline",
+   "text": "Road A pays off the loan at month twenty-eight.",
+   "words": 9,
+   "start": 0,
+   "seconds": 3.15,
+   "wpm": 171.4,
+   "tempo": 0.854
+  },
+  {
+   "scene": "timeline",
+   "text": "Road B keeps paying through month forty-eight.",
+   "words": 7,
+   "start": 3.454,
+   "seconds": 2.92,
+   "wpm": 143.8,
+   "tempo": 1
+  },
+  {
+   "scene": "free",
+   "text": "That leaves twenty months with no car payment on road A.",
+   "words": 11,
+   "start": 0,
+   "seconds": 4.45,
+   "wpm": 148.3,
+   "tempo": 1
+  },
+  {
+   "scene": "interest",
+   "text": "Interest paid falls from two thousand seven hundred forty-four dollars to one thousand five hundred fifty-four dollars.",
+   "words": 17,
+   "start": 0,
+   "seconds": 6.33,
+   "wpm": 161.1,
+   "tempo": 1
+  },
+  {
+   "scene": "avoided",
+   "text": "Road A avoids one thousand one hundred ninety dollars of interest.",
+   "words": 11,
+   "start": 0,
+   "seconds": 4.11,
+   "wpm": 160.6,
+   "tempo": 1
+  },
+  {
+   "scene": "avoided",
+   "text": "That does not depend on markets or taxes.",
+   "words": 8,
+   "start": 4.37,
+   "seconds": 2.83,
+   "wpm": 169.6,
+   "tempo": 0.9007
+  },
+  {
+   "scene": "certain",
+   "text": "It is certain.",
+   "words": 3,
+   "start": 0,
+   "seconds": 1.46,
+   "wpm": 123.3,
+   "tempo": 1
+  },
+  {
+   "scene": "identity",
+   "text": "Because both roads spend the same cash, road A ends up investing exactly one thousand one hundred ninety dollars more than road B.",
+   "words": 23,
+   "start": 0,
+   "seconds": 9.16,
+   "wpm": 150.7,
+   "tempo": 1
+  },
+  {
+   "scene": "bridge",
+   "text": "So the question is narrow: can road B's head start in the market beat a certain one thousand one hundred ninety dollars, after tax?",
+   "words": 24,
+   "start": 0,
+   "seconds": 8.47,
+   "wpm": 170,
+   "tempo": 0.8524
+  },
+  {
+   "scene": "card2",
+   "text": "Second, tax, lot by lot.",
+   "words": 5,
+   "start": 0,
+   "seconds": 2.68,
+   "wpm": 111.9,
+   "tempo": 1
+  },
+  {
+   "scene": "lots1",
+   "text": "Each month's contribution is its own tax lot.",
+   "words": 8,
+   "start": 0,
+   "seconds": 3.05,
+   "wpm": 157.4,
+   "tempo": 1
+  },
+  {
+   "scene": "lots1",
+   "text": "At month forty-eight, everything is sold.",
+   "words": 6,
+   "start": 3.36,
+   "seconds": 2.19,
+   "wpm": 164.4,
+   "tempo": 0.9579
+  },
+  {
+   "scene": "lots2",
+   "text": "A lot held more than twelve months at that sale is long-term.",
+   "words": 12,
+   "start": 0,
+   "seconds": 4.39,
+   "wpm": 164,
+   "tempo": 0.8823
+  },
+  {
+   "scene": "lots2",
+   "text": "The rest are short-term.",
+   "words": 4,
+   "start": 4.68,
+   "seconds": 1.58,
+   "wpm": 151.9,
+   "tempo": 1
+  },
+  {
+   "scene": "rates",
+   "text": "In the twenty-two percent bracket, long-term gains are taxed at fifteen percent, and short-term gains at the full twenty-two percent.",
+   "words": 20,
+   "start": 0,
+   "seconds": 7.64,
+   "wpm": 157.1,
+   "tempo": 1
+  },
+  {
+   "scene": "lots3",
+   "text": "Road B invests from the start, so thirty-five of its forty-eight lots are long-term.",
+   "words": 14,
+   "start": 0,
+   "seconds": 5.08,
+   "wpm": 165.4,
+   "tempo": 0.9664
+  },
+  {
+   "scene": "lots3",
+   "text": "Road A starts after the payoff: eight of its twenty-one.",
+   "words": 10,
+   "start": 5.413,
+   "seconds": 3.63,
+   "wpm": 165.3,
+   "tempo": 0.9762
+  },
+  {
+   "scene": "share",
+   "text": "Near the break-even, thirty-seven percent of road A's gains are short-term, against seven percent of road B's.",
+   "words": 17,
+   "start": 0,
+   "seconds": 6.38,
+   "wpm": 159.9,
+   "tempo": 1
+  },
+  {
+   "scene": "nodeduct",
+   "text": "A lot that loses money gets no deduction.",
+   "words": 8,
+   "start": 0,
+   "seconds": 2.86,
+   "wpm": 167.8,
+   "tempo": 0.75
+  },
+  {
+   "scene": "nodeduct",
+   "text": "State income tax is left out.",
+   "words": 6,
+   "start": 3.207,
+   "seconds": 2.08,
+   "wpm": 173.1,
+   "tempo": 0.75
+  },
+  {
+   "scene": "card3",
+   "text": "Third, where the answer flips.",
+   "words": 5,
+   "start": 0,
+   "seconds": 1.82,
+   "wpm": 164.8,
+   "tempo": 0.869
+  },
+  {
+   "scene": "sw1",
+   "text": "We sweep the average annual return from two percent to ten percent, compounded, in the twenty-two percent bracket.",
+   "words": 18,
+   "start": 0,
+   "seconds": 6.63,
+   "wpm": 162.9,
+   "tempo": 1
+  },
+  {
+   "scene": "sw2",
+   "text": "The line is road B minus road A, net worth after tax at month forty-eight, and it rises with the return.",
+   "words": 21,
+   "start": 0,
+   "seconds": 7.6,
+   "wpm": 165.8,
+   "tempo": 0.9376
+  },
+  {
+   "scene": "sw3",
+   "text": "At two percent, road A is ahead by eight hundred twenty-two dollars.",
+   "words": 12,
+   "start": 0,
+   "seconds": 4.37,
+   "wpm": 164.8,
+   "tempo": 0.9235
+  },
+  {
+   "scene": "sw3",
+   "text": "At ten percent, road B is ahead by eight hundred sixty-one dollars.",
+   "words": 12,
+   "start": 4.689,
+   "seconds": 4.22,
+   "wpm": 170.6,
+   "tempo": 0.88
+  },
+  {
+   "scene": "sw4",
+   "text": "Both roads end even at six point one one percent.",
+   "words": 10,
+   "start": 0,
+   "seconds": 3.56,
+   "wpm": 168.5,
+   "tempo": 0.957
+  },
+  {
+   "scene": "sw5",
+   "text": "Below that return, paying off early ends ahead.",
+   "words": 8,
+   "start": 0,
+   "seconds": 3.81,
+   "wpm": 126,
+   "tempo": 1
+  },
+  {
+   "scene": "sw5",
+   "text": "Above it, investing does.",
+   "words": 4,
+   "start": 4.13,
+   "seconds": 2.18,
+   "wpm": 110.1,
+   "tempo": 1
+  },
+  {
+   "scene": "card4",
+   "text": "Fourth, the tax bracket.",
+   "words": 4,
+   "start": 0,
+   "seconds": 1.63,
+   "wpm": 147.2,
+   "tempo": 1
+  },
+  {
+   "scene": "niit",
+   "text": "In the thirty-two percent bracket we add the three point eight percent net investment income tax: short-term gains pay thirty-five point eight percent, long-term gains eighteen point eight percent.",
+   "words": 29,
+   "start": 0,
+   "seconds": 11.09,
+   "wpm": 156.9,
+   "tempo": 0.948
+  },
+  {
+   "scene": "dots",
+   "text": "The break-even is five point two three percent in the twelve percent bracket, and six point one one percent in the twenty-two percent bracket.",
+   "words": 24,
+   "start": 0,
+   "seconds": 9.15,
+   "wpm": 157.4,
+   "tempo": 0.8327
+  },
+  {
+   "scene": "dots32",
+   "text": "In the thirty-two percent bracket, it is six point two six percent.",
+   "words": 12,
+   "start": 0,
+   "seconds": 4.6,
+   "wpm": 156.5,
+   "tempo": 0.8632
+  },
+  {
+   "scene": "rises",
+   "text": "Higher rates on gains shrink road B's head start, so the threshold rises with the bracket.",
+   "words": 16,
+   "start": 0,
+   "seconds": 6.12,
+   "wpm": 156.9,
+   "tempo": 0.9253
+  },
+  {
+   "scene": "below",
+   "text": "In the twelve percent bracket it sits below five point three three percent, the loan rate as an annual yield, because road A's gains are mostly short-term.",
+   "words": 27,
+   "start": 0,
+   "seconds": 10.33,
+   "wpm": 156.8,
+   "tempo": 0.8864
+  },
+  {
+   "scene": "card5",
+   "text": "Fifth, risk.",
+   "words": 2,
+   "start": 0,
+   "seconds": 1.09,
+   "wpm": 110.1,
+   "tempo": 1
+  },
+  {
+   "scene": "risk1",
+   "text": "Paying off the loan earns a certain five point two percent.",
+   "words": 11,
+   "start": 0,
+   "seconds": 4.7,
+   "wpm": 140.4,
+   "tempo": 1
+  },
+  {
+   "scene": "risk2",
+   "text": "Investing earns an average, not a promise.",
+   "words": 7,
+   "start": 0,
+   "seconds": 2.71,
+   "wpm": 155,
+   "tempo": 1
+  },
+  {
+   "scene": "risk2",
+   "text": "Our range, two percent to ten percent, is illustrative.",
+   "words": 9,
+   "start": 2.87,
+   "seconds": 3.51,
+   "wpm": 153.8,
+   "tempo": 1
+  },
+  {
+   "scene": "seq",
+   "text": "Here is an illustrative sequence: eight percent a year for thirty-six months, then minus twenty percent for the last twelve.",
+   "words": 20,
+   "start": 0,
+   "seconds": 6.95,
+   "wpm": 172.7,
+   "tempo": 0.9962
+  },
+  {
+   "scene": "race",
+   "text": "We track net worth after tax, month by month.",
+   "words": 9,
+   "start": 0,
+   "seconds": 3.14,
+   "wpm": 172,
+   "tempo": 0.9587
+  },
+  {
+   "scene": "race",
+   "text": "For thirty-six months, both roads run almost together.",
+   "words": 8,
+   "start": 3.312,
+   "seconds": 3.07,
+   "wpm": 156.4,
+   "tempo": 1
+  },
+  {
+   "scene": "gap",
+   "text": "The difference, road B minus road A, peaks, then turns negative in month thirty-nine.",
+   "words": 14,
+   "start": 0,
+   "seconds": 6.21,
+   "wpm": 135.3,
+   "tempo": 1
+  },
+  {
+   "scene": "downside",
+   "text": "Road A finishes four hundred fifty-nine dollars ahead, after tax.",
+   "words": 10,
+   "start": 0,
+   "seconds": 4.12,
+   "wpm": 145.6,
+   "tempo": 1
+  },
+  {
+   "scene": "order",
+   "text": "Over all forty-eight months, that sequence still averages zero point one nine percent a year.",
+   "words": 15,
+   "start": 0,
+   "seconds": 5.48,
+   "wpm": 164.2,
+   "tempo": 1
+  },
+  {
+   "scene": "order",
+   "text": "The order of the returns decided the result.",
+   "words": 8,
+   "start": 5.65,
+   "seconds": 2.79,
+   "wpm": 172,
+   "tempo": 0.86
+  },
+  {
+   "scene": "recap",
+   "text": "The payoff month and the interest avoided are fixed.",
+   "words": 9,
+   "start": 0,
+   "seconds": 3.27,
+   "wpm": 165.1,
+   "tempo": 0.9808
+  },
+  {
+   "scene": "recap",
+   "text": "The tax depends on how long each lot is held.",
+   "words": 10,
+   "start": 3.584,
+   "seconds": 3.51,
+   "wpm": 170.9,
+   "tempo": 0.75
+  },
+  {
+   "scene": "recap",
+   "text": "The return is the unknown.",
+   "words": 5,
+   "start": 7.43,
+   "seconds": 1.77,
+   "wpm": 169.5,
+   "tempo": 0.935
+  },
+  {
+   "scene": "end1",
+   "text": "So, in the twenty-two percent bracket, the answer flips at an average annual return of six point one one percent, compounded.",
+   "words": 21,
+   "start": 0,
+   "seconds": 7.63,
+   "wpm": 165.1,
+   "tempo": 0.935
+  },
+  {
+   "scene": "end2",
+   "text": "That is a threshold, not a forecast.",
+   "words": 7,
+   "start": 0,
+   "seconds": 2.55,
+   "wpm": 164.7,
+   "tempo": 0.8604
+  },
+  {
+   "scene": "end2",
+   "text": "Where returns will land is not known in advance.",
+   "words": 9,
+   "start": 2.875,
+   "seconds": 3.27,
+   "wpm": 165.1,
+   "tempo": 0.8219
+  }
+ ]
+}

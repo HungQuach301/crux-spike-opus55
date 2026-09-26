@@ -5,7 +5,11 @@
  "definitions": {
   "split-view": "changed elements between t and t+0.1s with the camera frozen (an element present in both frames counts only the region where its old and new boxes differ); violation when the union box of changes exceeds 60% of frame width or height for >= 1s, outside camera moves",
   "level1": "chart scenes of >= 2 s: exactly one visible .l1 (opacity > 0.5) in >= 50% of samples, never two",
-  "exemptions": "scene-leak and split-view skip the camera move at the start of each scene"
+  "bar-proportion": "a visible bar may not run off the frame along its value axis unless an axis break is shown; settled bars with data-value in one chart share one scale (±3%)",
+  "illustrative-badge": "whenever an illustrative claim is visible (opacity > 0.5), an ILLUSTRATIVE badge is visible in the same frame",
+  "text-line-collision": "no point of a visible stroked line/path/outline (sampled every 3 px on screen) falls inside a visible text box (glyph band = box minus 2% top and bottom: the ascent + descent of Inter fill a 1.2 line box)",
+  "layout-repeat": "no layout used more than twice within any 90 s window",
+  "exemptions": "scene-leak, split-view, bar-proportion, unlabelled-curve, axis-anchors and text-line-collision skip the camera move at the start of each scene (layout is judged on settled shots); bg-over-data, grey-emphasis, number-colour and illustrative-badge apply to every frame"
  },
  "summary": {
   "scene-leak": {
@@ -46,48 +50,41 @@
    "pass": false
   },
   "unlabelled-curve": {
-   "framesFlagged": 1715,
+   "framesFlagged": 1250,
    "scenes": [
     "open (262)",
-    "facts (32)",
-    "extra (40)",
-    "roads (68)",
-    "timeline (32)",
-    "scope (168)",
-    "tax (26)",
+    "extra (22)",
+    "roads (32)",
+    "scope (144)",
     "sweep (1)",
-    "settle (53)",
-    "morph (24)",
-    "detail (32)",
-    "flip (44)",
-    "matrix (22)",
+    "settle (34)",
+    "morph (12)",
+    "detail (8)",
+    "flip (28)",
     "matrix32 (1)",
-    "certain (5)",
-    "sequence (190)",
-    "race (117)",
-    "gap (24)",
-    "cross (45)",
-    "downside (24)",
-    "converge (59)",
-    "outro (446)"
+    "sequence (168)",
+    "race (97)",
+    "gap (12)",
+    "cross (25)",
+    "downside (4)",
+    "converge (26)",
+    "outro (374)"
    ],
    "pass": false
   },
   "axis-anchors": {
-   "framesFlagged": 929,
+   "framesFlagged": 734,
    "scenes": [
     "sweep (178)",
-    "settle (60)",
-    "morph (24)",
-    "detail (38)",
-    "flip (120)",
-    "matrix (16)",
+    "settle (34)",
+    "morph (12)",
+    "detail (14)",
+    "flip (96)",
     "race (116)",
-    "gap (24)",
-    "cross (108)",
-    "downside (44)",
-    "converge (13)",
-    "outro (188)"
+    "gap (12)",
+    "cross (84)",
+    "downside (24)",
+    "outro (164)"
    ],
    "pass": false
   },
@@ -109,6 +106,33 @@
    ],
    "pass": false
   },
+  "bar-proportion": {
+   "framesFlagged": 0,
+   "scenes": [],
+   "pass": true
+  },
+  "illustrative-badge": {
+   "framesFlagged": 339,
+   "scenes": [
+    "extra (16)",
+    "roads (26)",
+    "bars (26)",
+    "sweep (107)",
+    "settle (18)",
+    "certain (88)",
+    "sequence (58)"
+   ],
+   "pass": false
+  },
+  "text-line-collision": {
+   "framesFlagged": 66,
+   "scenes": [
+    "sweep (6)",
+    "downside (18)",
+    "converge (42)"
+   ],
+   "pass": false
+  },
   "level1": {
    "scenes": [
     "timeline (one l1 in 0% of samples, max 0)",
@@ -124,6 +148,10 @@
     "cross (one l1 in 0% of samples, max 0)"
    ],
    "pass": false
+  },
+  "layout-repeat": {
+   "scenes": [],
+   "pass": true
   },
   "split-view": {
    "scenes": [
@@ -219,8 +247,7 @@
    "samples": 60,
    "chart": false,
    "issues": {
-    "bg-over-data": 8,
-    "unlabelled-curve": 32
+    "bg-over-data": 8
    },
    "level1": {
     "shareExactlyOne": 0.83,
@@ -248,47 +275,6 @@
       "fill": "url(#near)",
       "dataElementsCovered": 10
      }
-    ],
-    "unlabelled-curve": [
-     {
-      "t": 7.8,
-      "rule": "unlabelled-curve",
-      "panel": "roads",
-      "stroke": "#2a303b",
-      "bound": null,
-      "box": [
-       1040,
-       183,
-       1586,
-       275
-      ]
-     },
-     {
-      "t": 7.8,
-      "rule": "unlabelled-curve",
-      "panel": "roads",
-      "stroke": "#2a303b",
-      "bound": null,
-      "box": [
-       1040,
-       275,
-       1586,
-       368
-      ]
-     },
-     {
-      "t": 7.8,
-      "rule": "unlabelled-curve",
-      "panel": "roads",
-      "stroke": "#4c8dff",
-      "bound": null,
-      "box": [
-       1040,
-       183,
-       1586,
-       275
-      ]
-     }
     ]
    }
   },
@@ -298,7 +284,8 @@
    "chart": false,
    "issues": {
     "bg-over-data": 18,
-    "unlabelled-curve": 40
+    "illustrative-badge": 16,
+    "unlabelled-curve": 22
    },
    "level1": {
     "shareExactlyOne": 0,
@@ -327,44 +314,67 @@
       "dataElementsCovered": 5
      }
     ],
+    "illustrative-badge": [
+     {
+      "t": 14.6,
+      "rule": "illustrative-badge",
+      "claim": "extra",
+      "tid": "extra",
+      "why": "illustrative number visible without a visible ILLUSTRATIVE badge"
+     },
+     {
+      "t": 14.7,
+      "rule": "illustrative-badge",
+      "claim": "extra",
+      "tid": "extra",
+      "why": "illustrative number visible without a visible ILLUSTRATIVE badge"
+     },
+     {
+      "t": 14.8,
+      "rule": "illustrative-badge",
+      "claim": "extra",
+      "tid": "extra",
+      "why": "illustrative number visible without a visible ILLUSTRATIVE badge"
+     }
+    ],
     "unlabelled-curve": [
      {
-      "t": 14.4,
+      "t": 15.1,
       "rule": "unlabelled-curve",
       "panel": "roads",
       "stroke": "#2a303b",
       "bound": null,
       "box": [
-       1768,
-       292,
-       3412,
-       570
+       694,
+       540,
+       2774,
+       892
       ]
      },
      {
-      "t": 14.4,
+      "t": 15.1,
+      "rule": "unlabelled-curve",
+      "panel": "roads",
+      "stroke": "#f2b441",
+      "bound": null,
+      "box": [
+       694,
+       540,
+       2774,
+       892
+      ]
+     },
+     {
+      "t": 15.2,
       "rule": "unlabelled-curve",
       "panel": "roads",
       "stroke": "#2a303b",
       "bound": null,
       "box": [
-       1768,
-       570,
-       3412,
-       849
-      ]
-     },
-     {
-      "t": 14.4,
-      "rule": "unlabelled-curve",
-      "panel": "roads",
-      "stroke": "#4c8dff",
-      "bound": null,
-      "box": [
-       1768,
-       292,
-       3412,
-       570
+       693,
+       540,
+       2773,
+       892
       ]
      }
     ]
@@ -376,7 +386,8 @@
    "chart": false,
    "issues": {
     "bg-over-data": 72,
-    "unlabelled-curve": 68
+    "illustrative-badge": 26,
+    "unlabelled-curve": 32
    },
    "level1": {
     "shareExactlyOne": 0,
@@ -413,44 +424,67 @@
       "dataElementsCovered": 5
      }
     ],
-    "unlabelled-curve": [
+    "illustrative-badge": [
      {
       "t": 16.2,
-      "rule": "unlabelled-curve",
-      "panel": "roads",
-      "stroke": "#2a303b",
-      "bound": null,
-      "box": [
-       685,
-       540,
-       2765,
-       892
-      ]
-     },
-     {
-      "t": 16.2,
-      "rule": "unlabelled-curve",
-      "panel": "roads",
-      "stroke": "#f2b441",
-      "bound": null,
-      "box": [
-       685,
-       540,
-       2765,
-       892
-      ]
+      "rule": "illustrative-badge",
+      "claim": "extra",
+      "tid": "extra",
+      "why": "illustrative number visible without a visible ILLUSTRATIVE badge"
      },
      {
       "t": 16.3,
+      "rule": "illustrative-badge",
+      "claim": "extra",
+      "tid": "extra",
+      "why": "illustrative number visible without a visible ILLUSTRATIVE badge"
+     },
+     {
+      "t": 16.4,
+      "rule": "illustrative-badge",
+      "claim": "extra",
+      "tid": "extra",
+      "why": "illustrative number visible without a visible ILLUSTRATIVE badge"
+     }
+    ],
+    "unlabelled-curve": [
+     {
+      "t": 17.5,
       "rule": "unlabelled-curve",
       "panel": "roads",
       "stroke": "#2a303b",
       "bound": null,
       "box": [
-       683,
-       540,
-       2761,
-       892
+       250,
+       340,
+       1550,
+       560
+      ]
+     },
+     {
+      "t": 17.5,
+      "rule": "unlabelled-curve",
+      "panel": "roads",
+      "stroke": "#2a303b",
+      "bound": null,
+      "box": [
+       250,
+       560,
+       1550,
+       780
+      ]
+     },
+     {
+      "t": 17.5,
+      "rule": "unlabelled-curve",
+      "panel": "roads",
+      "stroke": "#4c8dff",
+      "bound": null,
+      "box": [
+       250,
+       340,
+       1550,
+       560
       ]
      }
     ]
@@ -462,7 +496,6 @@
    "chart": true,
    "issues": {
     "bg-over-data": 48,
-    "unlabelled-curve": 32,
     "number-colour": 27
    },
    "level1": {
@@ -490,47 +523,6 @@
       "rule": "bg-over-data",
       "fill": "url(#near)",
       "dataElementsCovered": 7
-     }
-    ],
-    "unlabelled-curve": [
-     {
-      "t": 23.4,
-      "rule": "unlabelled-curve",
-      "panel": "roads",
-      "stroke": "#2a303b",
-      "bound": null,
-      "box": [
-       298,
-       340,
-       1598,
-       560
-      ]
-     },
-     {
-      "t": 23.4,
-      "rule": "unlabelled-curve",
-      "panel": "roads",
-      "stroke": "#2a303b",
-      "bound": null,
-      "box": [
-       298,
-       560,
-       1598,
-       780
-      ]
-     },
-     {
-      "t": 23.4,
-      "rule": "unlabelled-curve",
-      "panel": "roads",
-      "stroke": "#4c8dff",
-      "bound": null,
-      "box": [
-       298,
-       340,
-       1598,
-       560
-      ]
      }
     ],
     "number-colour": [
@@ -603,7 +595,7 @@
    "chart": false,
    "issues": {
     "bg-over-data": 48,
-    "unlabelled-curve": 168
+    "unlabelled-curve": 144
    },
    "level1": {
     "shareExactlyOne": 0,
@@ -634,42 +626,42 @@
     ],
     "unlabelled-curve": [
      {
-      "t": 35.4,
+      "t": 36,
       "rule": "unlabelled-curve",
       "panel": "roads",
       "stroke": "#2a303b",
       "bound": null,
       "box": [
-       1578,
-       5,
-       2777,
-       208
+       1130,
+       105,
+       1780,
+       215
       ]
      },
      {
-      "t": 35.4,
+      "t": 36,
       "rule": "unlabelled-curve",
       "panel": "roads",
       "stroke": "#2a303b",
       "bound": null,
       "box": [
-       1578,
-       208,
-       2777,
-       411
+       1130,
+       215,
+       1780,
+       325
       ]
      },
      {
-      "t": 35.4,
+      "t": 36,
       "rule": "unlabelled-curve",
       "panel": "roads",
       "stroke": "#4c8dff",
       "bound": null,
       "box": [
-       1578,
-       5,
-       2777,
-       208
+       1130,
+       105,
+       1780,
+       215
       ]
      }
     ]
@@ -680,8 +672,7 @@
    "samples": 60,
    "chart": true,
    "issues": {
-    "bg-over-data": 49,
-    "unlabelled-curve": 26
+    "bg-over-data": 49
    },
    "level1": {
     "shareExactlyOne": 0,
@@ -709,47 +700,6 @@
       "fill": "url(#near)",
       "dataElementsCovered": 13
      }
-    ],
-    "unlabelled-curve": [
-     {
-      "t": 39.6,
-      "rule": "unlabelled-curve",
-      "panel": "roads",
-      "stroke": "#2a303b",
-      "bound": null,
-      "box": [
-       1130,
-       77,
-       1780,
-       187
-      ]
-     },
-     {
-      "t": 39.6,
-      "rule": "unlabelled-curve",
-      "panel": "roads",
-      "stroke": "#2a303b",
-      "bound": null,
-      "box": [
-       1130,
-       187,
-       1780,
-       297
-      ]
-     },
-     {
-      "t": 39.6,
-      "rule": "unlabelled-curve",
-      "panel": "roads",
-      "stroke": "#4c8dff",
-      "bound": null,
-      "box": [
-       1130,
-       77,
-       1780,
-       187
-      ]
-     }
     ]
    }
   },
@@ -758,7 +708,8 @@
    "samples": 73,
    "chart": true,
    "issues": {
-    "bg-over-data": 73
+    "bg-over-data": 73,
+    "illustrative-badge": 26
    },
    "level1": {
     "shareExactlyOne": 0,
@@ -786,6 +737,29 @@
       "fill": "url(#near)",
       "dataElementsCovered": 3
      }
+    ],
+    "illustrative-badge": [
+     {
+      "t": 50.3,
+      "rule": "illustrative-badge",
+      "claim": "r_0",
+      "tid": "retval",
+      "why": "illustrative number visible without a visible ILLUSTRATIVE badge"
+     },
+     {
+      "t": 50.4,
+      "rule": "illustrative-badge",
+      "claim": "r_0",
+      "tid": "retval",
+      "why": "illustrative number visible without a visible ILLUSTRATIVE badge"
+     },
+     {
+      "t": 50.5,
+      "rule": "illustrative-badge",
+      "claim": "r_0",
+      "tid": "retval",
+      "why": "illustrative number visible without a visible ILLUSTRATIVE badge"
+     }
     ]
    }
   },
@@ -795,8 +769,10 @@
    "chart": true,
    "issues": {
     "bg-over-data": 107,
+    "illustrative-badge": 107,
     "axis-anchors": 178,
     "number-colour": 15,
+    "text-line-collision": 6,
     "unlabelled-curve": 1
    },
    "level1": {
@@ -832,6 +808,29 @@
       "rule": "bg-over-data",
       "fill": "url(#near)",
       "dataElementsCovered": 7
+     }
+    ],
+    "illustrative-badge": [
+     {
+      "t": 52.9,
+      "rule": "illustrative-badge",
+      "claim": "r_0",
+      "tid": "retval",
+      "why": "illustrative number visible without a visible ILLUSTRATIVE badge"
+     },
+     {
+      "t": 53,
+      "rule": "illustrative-badge",
+      "claim": "r_0",
+      "tid": "retval",
+      "why": "illustrative number visible without a visible ILLUSTRATIVE badge"
+     },
+     {
+      "t": 53.1,
+      "rule": "illustrative-badge",
+      "claim": "r_0",
+      "tid": "retval",
+      "why": "illustrative number visible without a visible ILLUSTRATIVE badge"
      }
     ],
     "axis-anchors": [
@@ -886,6 +885,32 @@
       "via": "nearest mark (line, 9 px)"
      }
     ],
+    "text-line-collision": [
+     {
+      "t": 57.7,
+      "rule": "text-line-collision",
+      "tid": "barBval",
+      "panel": "flip",
+      "tag": "line",
+      "stroke": "#4C8DFF"
+     },
+     {
+      "t": 57.8,
+      "rule": "text-line-collision",
+      "tid": "barBval",
+      "panel": "flip",
+      "tag": "line",
+      "stroke": "#4C8DFF"
+     },
+     {
+      "t": 57.9,
+      "rule": "text-line-collision",
+      "tid": "barBval",
+      "panel": "flip",
+      "tag": "line",
+      "stroke": "#4C8DFF"
+     }
+    ],
     "unlabelled-curve": [
      {
       "t": 63.5,
@@ -909,8 +934,9 @@
    "chart": true,
    "issues": {
     "bg-over-data": 30,
-    "unlabelled-curve": 53,
-    "axis-anchors": 60
+    "illustrative-badge": 18,
+    "unlabelled-curve": 34,
+    "axis-anchors": 34
    },
    "level1": {
     "shareExactlyOne": 0,
@@ -939,50 +965,73 @@
       "dataElementsCovered": 10
      }
     ],
-    "unlabelled-curve": [
+    "illustrative-badge": [
      {
       "t": 63.6,
-      "rule": "unlabelled-curve",
-      "panel": "flip",
-      "stroke": "#4c8dff",
-      "bound": null,
-      "box": [
-       1097,
-       403,
-       1853,
-       630
-      ]
+      "rule": "illustrative-badge",
+      "claim": "r_32",
+      "tid": "retval",
+      "why": "illustrative number visible without a visible ILLUSTRATIVE badge"
      },
      {
       "t": 63.7,
-      "rule": "unlabelled-curve",
-      "panel": "flip",
-      "stroke": "#4c8dff",
-      "bound": null,
-      "box": [
-       1098,
-       403,
-       1854,
-       630
-      ]
+      "rule": "illustrative-badge",
+      "claim": "r_32",
+      "tid": "retval",
+      "why": "illustrative number visible without a visible ILLUSTRATIVE badge"
      },
      {
       "t": 63.8,
+      "rule": "illustrative-badge",
+      "claim": "r_32",
+      "tid": "retval",
+      "why": "illustrative number visible without a visible ILLUSTRATIVE badge"
+     }
+    ],
+    "unlabelled-curve": [
+     {
+      "t": 64.9,
       "rule": "unlabelled-curve",
       "panel": "flip",
       "stroke": "#4c8dff",
       "bound": null,
       "box": [
-       1105,
-       400,
-       1867,
-       628
+       1760,
+       140,
+       2912,
+       485
+      ]
+     },
+     {
+      "t": 64.9,
+      "rule": "unlabelled-curve",
+      "panel": "flip",
+      "stroke": "#f2b441",
+      "bound": null,
+      "box": [
+       1760,
+       -78,
+       2912,
+       765
+      ]
+     },
+     {
+      "t": 65,
+      "rule": "unlabelled-curve",
+      "panel": "flip",
+      "stroke": "#4c8dff",
+      "bound": null,
+      "box": [
+       1760,
+       140,
+       2912,
+       485
       ]
      }
     ],
     "axis-anchors": [
      {
-      "t": 63.6,
+      "t": 64.9,
       "rule": "axis-anchors",
       "panel": "flip",
       "chart": null,
@@ -990,15 +1039,15 @@
       "anchors": 0
      },
      {
-      "t": 63.6,
+      "t": 64.9,
       "rule": "axis-anchors",
       "panel": "flip",
       "chart": null,
       "axes": 1,
-      "anchors": 1
+      "anchors": 0
      },
      {
-      "t": 63.7,
+      "t": 65,
       "rule": "axis-anchors",
       "panel": "flip",
       "chart": null,
@@ -1014,8 +1063,8 @@
    "chart": true,
    "issues": {
     "bg-over-data": 12,
-    "unlabelled-curve": 24,
-    "axis-anchors": 24
+    "unlabelled-curve": 12,
+    "axis-anchors": 12
    },
    "level1": {
     "shareExactlyOne": 0,
@@ -1046,48 +1095,48 @@
     ],
     "unlabelled-curve": [
      {
-      "t": 66.6,
+      "t": 67.2,
       "rule": "unlabelled-curve",
       "panel": "flip",
       "stroke": "#4c8dff",
       "bound": null,
       "box": [
-       1760,
-       140,
-       2912,
-       485
+       379,
+       397,
+       1531,
+       743
       ]
      },
      {
-      "t": 66.6,
+      "t": 67.2,
       "rule": "unlabelled-curve",
       "panel": "flip",
       "stroke": "#f2b441",
       "bound": null,
       "box": [
-       1760,
-       -78,
-       2912,
-       765
+       379,
+       179,
+       1531,
+       1022
       ]
      },
      {
-      "t": 66.7,
+      "t": 67.3,
       "rule": "unlabelled-curve",
       "panel": "flip",
       "stroke": "#4c8dff",
       "bound": null,
       "box": [
-       1734,
-       144,
-       2886,
-       490
+       379,
+       397,
+       1531,
+       743
       ]
      }
     ],
     "axis-anchors": [
      {
-      "t": 66.6,
+      "t": 67.2,
       "rule": "axis-anchors",
       "panel": "flip",
       "chart": null,
@@ -1095,7 +1144,7 @@
       "anchors": 0
      },
      {
-      "t": 66.6,
+      "t": 67.2,
       "rule": "axis-anchors",
       "panel": "flip",
       "chart": null,
@@ -1103,7 +1152,7 @@
       "anchors": 0
      },
      {
-      "t": 66.7,
+      "t": 67.3,
       "rule": "axis-anchors",
       "panel": "flip",
       "chart": null,
@@ -1119,8 +1168,8 @@
    "chart": true,
    "issues": {
     "bg-over-data": 42,
-    "unlabelled-curve": 32,
-    "axis-anchors": 38
+    "unlabelled-curve": 8,
+    "axis-anchors": 14
    },
    "level1": {
     "shareExactlyOne": 0.62,
@@ -1151,48 +1200,48 @@
     ],
     "unlabelled-curve": [
      {
-      "t": 67.8,
+      "t": 69,
       "rule": "unlabelled-curve",
       "panel": "flip",
       "stroke": "#4c8dff",
       "bound": null,
       "box": [
-       379,
-       397,
-       1531,
-       743
+       286,
+       359,
+       2158,
+       921
       ]
      },
      {
-      "t": 67.8,
+      "t": 69,
       "rule": "unlabelled-curve",
       "panel": "flip",
       "stroke": "#f2b441",
       "bound": null,
       "box": [
-       379,
-       179,
-       1531,
-       1022
+       286,
+       6,
+       2158,
+       1375
       ]
      },
      {
-      "t": 67.9,
+      "t": 69.1,
       "rule": "unlabelled-curve",
       "panel": "flip",
       "stroke": "#4c8dff",
       "bound": null,
       "box": [
-       379,
-       397,
-       1532,
-       743
+       287,
+       359,
+       2159,
+       921
       ]
      }
     ],
     "axis-anchors": [
      {
-      "t": 67.8,
+      "t": 69,
       "rule": "axis-anchors",
       "panel": "flip",
       "chart": null,
@@ -1200,7 +1249,7 @@
       "anchors": 0
      },
      {
-      "t": 67.8,
+      "t": 69,
       "rule": "axis-anchors",
       "panel": "flip",
       "chart": null,
@@ -1208,7 +1257,7 @@
       "anchors": 0
      },
      {
-      "t": 67.9,
+      "t": 69.1,
       "rule": "axis-anchors",
       "panel": "flip",
       "chart": null,
@@ -1224,8 +1273,8 @@
    "chart": true,
    "issues": {
     "bg-over-data": 60,
-    "unlabelled-curve": 44,
-    "axis-anchors": 120
+    "axis-anchors": 96,
+    "unlabelled-curve": 28
    },
    "level1": {
     "shareExactlyOne": 0.85,
@@ -1254,71 +1303,71 @@
       "dataElementsCovered": 3
      }
     ],
-    "unlabelled-curve": [
-     {
-      "t": 72,
-      "rule": "unlabelled-curve",
-      "panel": "flip",
-      "stroke": "#4c8dff",
-      "bound": null,
-      "box": [
-       303,
-       359,
-       2175,
-       921
-      ]
-     },
-     {
-      "t": 72,
-      "rule": "unlabelled-curve",
-      "panel": "flip",
-      "stroke": "#f2b441",
-      "bound": null,
-      "box": [
-       303,
-       6,
-       2175,
-       1375
-      ]
-     },
-     {
-      "t": 72.1,
-      "rule": "unlabelled-curve",
-      "panel": "flip",
-      "stroke": "#4c8dff",
-      "bound": null,
-      "box": [
-       304,
-       359,
-       2173,
-       920
-      ]
-     }
-    ],
     "axis-anchors": [
      {
-      "t": 72,
+      "t": 73.2,
       "rule": "axis-anchors",
       "panel": "flip",
       "chart": null,
       "axes": 1,
-      "anchors": 0
+      "anchors": 1
      },
      {
-      "t": 72,
+      "t": 73.2,
       "rule": "axis-anchors",
       "panel": "flip",
       "chart": null,
       "axes": 2,
-      "anchors": 0
+      "anchors": 1
      },
      {
-      "t": 72.1,
+      "t": 73.3,
       "rule": "axis-anchors",
       "panel": "flip",
       "chart": null,
       "axes": 1,
-      "anchors": 0
+      "anchors": 1
+     }
+    ],
+    "unlabelled-curve": [
+     {
+      "t": 75.4,
+      "rule": "unlabelled-curve",
+      "panel": "flip",
+      "stroke": "#f2f4f7",
+      "bound": null,
+      "box": [
+       1044,
+       251,
+       1199,
+       466
+      ]
+     },
+     {
+      "t": 75.5,
+      "rule": "unlabelled-curve",
+      "panel": "flip",
+      "stroke": "#f2f4f7",
+      "bound": null,
+      "box": [
+       1043,
+       251,
+       1198,
+       466
+      ]
+     },
+     {
+      "t": 75.6,
+      "rule": "unlabelled-curve",
+      "panel": "flip",
+      "stroke": "#f2f4f7",
+      "bound": null,
+      "box": [
+       1042,
+       251,
+       1197,
+       466
+      ]
      }
     ]
    }
@@ -1328,9 +1377,7 @@
    "samples": 72,
    "chart": true,
    "issues": {
-    "bg-over-data": 72,
-    "unlabelled-curve": 22,
-    "axis-anchors": 16
+    "bg-over-data": 72
    },
    "level1": {
     "shareExactlyOne": 0,
@@ -1357,73 +1404,6 @@
       "rule": "bg-over-data",
       "fill": "url(#near)",
       "dataElementsCovered": 7
-     }
-    ],
-    "unlabelled-curve": [
-     {
-      "t": 78,
-      "rule": "unlabelled-curve",
-      "panel": "flip",
-      "stroke": "#4c8dff",
-      "bound": null,
-      "box": [
-       462,
-       377,
-       1362,
-       647
-      ]
-     },
-     {
-      "t": 78,
-      "rule": "unlabelled-curve",
-      "panel": "flip",
-      "stroke": "#f2b441",
-      "bound": null,
-      "box": [
-       462,
-       207,
-       1362,
-       865
-      ]
-     },
-     {
-      "t": 78,
-      "rule": "unlabelled-curve",
-      "panel": "flip",
-      "stroke": "#f2f4f7",
-      "bound": null,
-      "box": [
-       1023,
-       251,
-       1178,
-       466
-      ]
-     }
-    ],
-    "axis-anchors": [
-     {
-      "t": 78,
-      "rule": "axis-anchors",
-      "panel": "flip",
-      "chart": null,
-      "axes": 1,
-      "anchors": 0
-     },
-     {
-      "t": 78,
-      "rule": "axis-anchors",
-      "panel": "flip",
-      "chart": null,
-      "axes": 2,
-      "anchors": 0
-     },
-     {
-      "t": 78.1,
-      "rule": "axis-anchors",
-      "panel": "flip",
-      "chart": null,
-      "axes": 1,
-      "anchors": 0
      }
     ]
    }
@@ -1513,7 +1493,7 @@
    "chart": true,
    "issues": {
     "bg-over-data": 60,
-    "unlabelled-curve": 5
+    "illustrative-badge": 88
    },
    "level1": {
     "shareExactlyOne": 0,
@@ -1542,45 +1522,27 @@
       "dataElementsCovered": 6
      }
     ],
-    "unlabelled-curve": [
+    "illustrative-badge": [
      {
-      "t": 86.4,
-      "rule": "unlabelled-curve",
-      "panel": "matrix",
-      "stroke": "#f2b441",
-      "bound": null,
-      "box": [
-       269,
-       578,
-       730,
-       751
-      ]
+      "t": 87.9,
+      "rule": "illustrative-badge",
+      "claim": "axis_lo",
+      "tid": "c2v",
+      "why": "illustrative number visible without a visible ILLUSTRATIVE badge"
      },
      {
-      "t": 86.5,
-      "rule": "unlabelled-curve",
-      "panel": "matrix",
-      "stroke": "#f2b441",
-      "bound": null,
-      "box": [
-       269,
-       576,
-       729,
-       749
-      ]
+      "t": 87.9,
+      "rule": "illustrative-badge",
+      "claim": "axis_hi",
+      "tid": "c2v",
+      "why": "illustrative number visible without a visible ILLUSTRATIVE badge"
      },
      {
-      "t": 86.6,
-      "rule": "unlabelled-curve",
-      "panel": "matrix",
-      "stroke": "#f2b441",
-      "bound": null,
-      "box": [
-       270,
-       565,
-       726,
-       736
-      ]
+      "t": 88,
+      "rule": "illustrative-badge",
+      "claim": "axis_lo",
+      "tid": "c2v",
+      "why": "illustrative number visible without a visible ILLUSTRATIVE badge"
      }
     ]
    }
@@ -1591,8 +1553,9 @@
    "chart": true,
    "issues": {
     "bg-over-data": 55,
-    "unlabelled-curve": 190,
-    "scene-leak": 714
+    "scene-leak": 714,
+    "unlabelled-curve": 168,
+    "illustrative-badge": 58
    },
    "level1": {
     "shareExactlyOne": 0,
@@ -1619,47 +1582,6 @@
       "rule": "bg-over-data",
       "fill": "url(#near)",
       "dataElementsCovered": 12
-     }
-    ],
-    "unlabelled-curve": [
-     {
-      "t": 93.1,
-      "rule": "unlabelled-curve",
-      "panel": "roads",
-      "stroke": "#2a303b",
-      "bound": null,
-      "box": [
-       -273,
-       -61,
-       521,
-       74
-      ]
-     },
-     {
-      "t": 93.1,
-      "rule": "unlabelled-curve",
-      "panel": "roads",
-      "stroke": "#f2b441",
-      "bound": null,
-      "box": [
-       -273,
-       -61,
-       521,
-       74
-      ]
-     },
-     {
-      "t": 93.2,
-      "rule": "unlabelled-curve",
-      "panel": "roads",
-      "stroke": "#2a303b",
-      "bound": null,
-      "box": [
-       -292,
-       -61,
-       428,
-       61
-      ]
      }
     ],
     "scene-leak": [
@@ -1702,6 +1624,70 @@
        170
       ]
      }
+    ],
+    "unlabelled-curve": [
+     {
+      "t": 93.7,
+      "rule": "unlabelled-curve",
+      "panel": "roads",
+      "stroke": "#2a303b",
+      "bound": null,
+      "box": [
+       -300,
+       60,
+       350,
+       170
+      ]
+     },
+     {
+      "t": 93.7,
+      "rule": "unlabelled-curve",
+      "panel": "roads",
+      "stroke": "#2a303b",
+      "bound": null,
+      "box": [
+       -300,
+       170,
+       350,
+       280
+      ]
+     },
+     {
+      "t": 93.7,
+      "rule": "unlabelled-curve",
+      "panel": "roads",
+      "stroke": "#4c8dff",
+      "bound": null,
+      "box": [
+       -300,
+       60,
+       350,
+       170
+      ]
+     }
+    ],
+    "illustrative-badge": [
+     {
+      "t": 94.6,
+      "rule": "illustrative-badge",
+      "claim": "seq_first",
+      "tid": "seq8",
+      "why": "illustrative number visible without a visible ILLUSTRATIVE badge"
+     },
+     {
+      "t": 94.7,
+      "rule": "illustrative-badge",
+      "claim": "seq_first",
+      "tid": "seq8",
+      "why": "illustrative number visible without a visible ILLUSTRATIVE badge"
+     },
+     {
+      "t": 94.8,
+      "rule": "illustrative-badge",
+      "claim": "seq_first",
+      "tid": "seq8",
+      "why": "illustrative number visible without a visible ILLUSTRATIVE badge"
+     }
     ]
    }
   },
@@ -1711,7 +1697,7 @@
    "chart": true,
    "issues": {
     "bg-over-data": 77,
-    "unlabelled-curve": 117,
+    "unlabelled-curve": 97,
     "axis-anchors": 116
    },
    "level1": {
@@ -1758,42 +1744,42 @@
     ],
     "unlabelled-curve": [
      {
-      "t": 97.9,
+      "t": 99,
       "rule": "unlabelled-curve",
-      "panel": "roads",
-      "stroke": "#2a303b",
-      "bound": null,
-      "box": [
-       -336,
-       59,
-       315,
-       170
-      ]
-     },
-     {
-      "t": 97.9,
-      "rule": "unlabelled-curve",
-      "panel": "roads",
-      "stroke": "#2a303b",
-      "bound": null,
-      "box": [
-       -336,
-       170,
-       315,
-       280
-      ]
-     },
-     {
-      "t": 97.9,
-      "rule": "unlabelled-curve",
-      "panel": "roads",
+      "panel": "down",
       "stroke": "#4c8dff",
       "bound": null,
       "box": [
-       -336,
-       59,
-       315,
-       170
+       160,
+       896,
+       236,
+       930
+      ]
+     },
+     {
+      "t": 99,
+      "rule": "unlabelled-curve",
+      "panel": "down",
+      "stroke": "#f2b441",
+      "bound": null,
+      "box": [
+       160,
+       896,
+       236,
+       930
+      ]
+     },
+     {
+      "t": 99.1,
+      "rule": "unlabelled-curve",
+      "panel": "down",
+      "stroke": "#4c8dff",
+      "bound": null,
+      "box": [
+       160,
+       885,
+       262,
+       930
       ]
      }
     ],
@@ -1831,8 +1817,8 @@
    "chart": true,
    "issues": {
     "bg-over-data": 12,
-    "unlabelled-curve": 24,
-    "axis-anchors": 24
+    "unlabelled-curve": 12,
+    "axis-anchors": 12
    },
    "level1": {
     "shareExactlyOne": 0,
@@ -1863,68 +1849,68 @@
     ],
     "unlabelled-curve": [
      {
-      "t": 105.6,
+      "t": 106.2,
       "rule": "unlabelled-curve",
       "panel": "down",
       "stroke": "#4c8dff",
       "bound": null,
       "box": [
-       160,
-       261,
-       1760,
-       982
+       -750,
+       299,
+       1650,
+       840
       ]
      },
      {
-      "t": 105.6,
+      "t": 106.2,
       "rule": "unlabelled-curve",
       "panel": "down",
       "stroke": "#f2b441",
       "bound": null,
       "box": [
-       160,
-       269,
-       1760,
-       982
+       -750,
+       315,
+       1650,
+       840
       ]
      },
      {
-      "t": 105.7,
+      "t": 106.3,
       "rule": "unlabelled-curve",
       "panel": "down",
       "stroke": "#4c8dff",
       "bound": null,
       "box": [
-       148,
-       259,
-       1760,
-       984
+       -750,
+       407,
+       1650,
+       720
       ]
      }
     ],
     "axis-anchors": [
      {
-      "t": 105.6,
+      "t": 106.2,
       "rule": "axis-anchors",
       "panel": "down",
       "chart": null,
-      "axes": 1,
+      "axes": 0,
       "anchors": 0
      },
      {
-      "t": 105.6,
+      "t": 106.2,
       "rule": "axis-anchors",
       "panel": "down",
       "chart": null,
-      "axes": 1,
+      "axes": 0,
       "anchors": 0
      },
      {
-      "t": 105.7,
+      "t": 106.3,
       "rule": "axis-anchors",
       "panel": "down",
       "chart": null,
-      "axes": 1,
+      "axes": 0,
       "anchors": 0
      }
     ]
@@ -1936,8 +1922,8 @@
    "chart": true,
    "issues": {
     "bg-over-data": 54,
-    "unlabelled-curve": 45,
-    "axis-anchors": 108
+    "unlabelled-curve": 25,
+    "axis-anchors": 84
    },
    "level1": {
     "shareExactlyOne": 0,
@@ -1968,48 +1954,48 @@
     ],
     "unlabelled-curve": [
      {
-      "t": 106.8,
+      "t": 108,
       "rule": "unlabelled-curve",
       "panel": "down",
       "stroke": "#4c8dff",
       "bound": null,
       "box": [
-       -750,
-       555,
-       1650,
-       555
+       -1066,
+       508,
+       1494,
+       508
       ]
      },
      {
-      "t": 106.8,
-      "rule": "unlabelled-curve",
-      "panel": "down",
-      "stroke": "#f2b441",
-      "bound": null,
-      "box": [
-       -750,
-       367,
-       1650,
-       1009
-      ]
-     },
-     {
-      "t": 106.9,
+      "t": 108.1,
       "rule": "unlabelled-curve",
       "panel": "down",
       "stroke": "#4c8dff",
       "bound": null,
       "box": [
-       -751,
-       555,
-       1650,
-       555
+       -1066,
+       508,
+       1494,
+       508
+      ]
+     },
+     {
+      "t": 108.2,
+      "rule": "unlabelled-curve",
+      "panel": "down",
+      "stroke": "#4c8dff",
+      "bound": null,
+      "box": [
+       -1067,
+       508,
+       1493,
+       508
       ]
      }
     ],
     "axis-anchors": [
      {
-      "t": 106.8,
+      "t": 108,
       "rule": "axis-anchors",
       "panel": "down",
       "chart": null,
@@ -2017,7 +2003,7 @@
       "anchors": 0
      },
      {
-      "t": 106.8,
+      "t": 108,
       "rule": "axis-anchors",
       "panel": "down",
       "chart": null,
@@ -2025,7 +2011,7 @@
       "anchors": 0
      },
      {
-      "t": 106.9,
+      "t": 108.1,
       "rule": "axis-anchors",
       "panel": "down",
       "chart": null,
@@ -2041,10 +2027,11 @@
    "chart": true,
    "issues": {
     "bg-over-data": 36,
-    "unlabelled-curve": 24,
-    "axis-anchors": 44,
+    "unlabelled-curve": 4,
+    "axis-anchors": 24,
     "grey-emphasis": 38,
-    "number-colour": 20
+    "number-colour": 20,
+    "text-line-collision": 18
    },
    "level1": {
     "shareExactlyOne": 0.56,
@@ -2075,48 +2062,48 @@
     ],
     "unlabelled-curve": [
      {
-      "t": 112.2,
-      "rule": "unlabelled-curve",
-      "panel": "down",
-      "stroke": "#4c8dff",
-      "bound": null,
-      "box": [
-       -1093,
-       508,
-       1467,
-       508
-      ]
-     },
-     {
-      "t": 112.2,
+      "t": 113.4,
       "rule": "unlabelled-curve",
       "panel": "down",
       "stroke": "#f2b441",
       "bound": null,
       "box": [
-       -1093,
-       307,
-       1467,
-       992
+       -2696,
+       -495,
+       1464,
+       618
       ]
      },
      {
-      "t": 112.3,
+      "t": 113.5,
       "rule": "unlabelled-curve",
       "panel": "down",
-      "stroke": "#4c8dff",
+      "stroke": "#f2b441",
       "bound": null,
       "box": [
-       -1096,
-       507,
-       1467,
-       507
+       -2696,
+       -495,
+       1464,
+       618
+      ]
+     },
+     {
+      "t": 113.6,
+      "rule": "unlabelled-curve",
+      "panel": "down",
+      "stroke": "#f2b441",
+      "bound": null,
+      "box": [
+       -2696,
+       -495,
+       1464,
+       618
       ]
      }
     ],
     "axis-anchors": [
      {
-      "t": 112.2,
+      "t": 113.4,
       "rule": "axis-anchors",
       "panel": "down",
       "chart": null,
@@ -2124,7 +2111,7 @@
       "anchors": 0
      },
      {
-      "t": 112.2,
+      "t": 113.5,
       "rule": "axis-anchors",
       "panel": "down",
       "chart": null,
@@ -2132,7 +2119,7 @@
       "anchors": 0
      },
      {
-      "t": 112.3,
+      "t": 113.6,
       "rule": "axis-anchors",
       "panel": "down",
       "chart": null,
@@ -2191,6 +2178,32 @@
       "seriesColour": "#f2b441",
       "via": "nearest mark (path, 16 px)"
      }
+    ],
+    "text-line-collision": [
+     {
+      "t": 113.9,
+      "rule": "text-line-collision",
+      "tid": "hero459cap",
+      "panel": "down",
+      "tag": "line",
+      "stroke": "#2A303B"
+     },
+     {
+      "t": 114,
+      "rule": "text-line-collision",
+      "tid": "hero459cap",
+      "panel": "down",
+      "tag": "line",
+      "stroke": "#2A303B"
+     },
+     {
+      "t": 114.1,
+      "rule": "text-line-collision",
+      "tid": "hero459cap",
+      "panel": "down",
+      "tag": "line",
+      "stroke": "#2A303B"
+     }
     ]
    }
   },
@@ -2200,9 +2213,9 @@
    "chart": false,
    "issues": {
     "bg-over-data": 60,
-    "unlabelled-curve": 59,
-    "axis-anchors": 13,
-    "number-colour": 42
+    "unlabelled-curve": 26,
+    "number-colour": 42,
+    "text-line-collision": 42
    },
    "level1": {
     "shareExactlyOne": 0,
@@ -2233,69 +2246,43 @@
     ],
     "unlabelled-curve": [
      {
-      "t": 115.8,
+      "t": 117,
       "rule": "unlabelled-curve",
-      "panel": "down",
-      "stroke": "#f2b441",
+      "panel": "roads",
+      "stroke": "#2a303b",
       "bound": null,
       "box": [
-       -2684,
-       -495,
-       1476,
-       618
+       250,
+       455,
+       1604,
+       560
       ]
      },
      {
-      "t": 115.9,
+      "t": 117,
       "rule": "unlabelled-curve",
-      "panel": "down",
-      "stroke": "#f2b441",
+      "panel": "roads",
+      "stroke": "#2a303b",
       "bound": null,
       "box": [
-       -2658,
-       -487,
-       1492,
-       623
+       250,
+       560,
+       1604,
+       665
       ]
      },
      {
-      "t": 116,
+      "t": 117,
       "rule": "unlabelled-curve",
-      "panel": "down",
-      "stroke": "#f2b441",
+      "panel": "roads",
+      "stroke": "#4c8dff",
       "bound": null,
       "box": [
-       -2485,
-       -434,
-       1602,
-       660
+       250,
+       455,
+       1604,
+       560
       ]
-     }
-    ],
-    "axis-anchors": [
-     {
-      "t": 115.8,
-      "rule": "axis-anchors",
-      "panel": "down",
-      "chart": null,
-      "axes": 0,
-      "anchors": 0
-     },
-     {
-      "t": 115.9,
-      "rule": "axis-anchors",
-      "panel": "down",
-      "chart": null,
-      "axes": 0,
-      "anchors": 0
-     },
-     {
-      "t": 116,
-      "rule": "axis-anchors",
-      "panel": "down",
-      "chart": null,
-      "axes": 0,
-      "anchors": 0
      }
     ],
     "number-colour": [
@@ -2323,6 +2310,32 @@
       "seriesColour": "#f2b441",
       "via": "nearest mark (path, 0 px)"
      }
+    ],
+    "text-line-collision": [
+     {
+      "t": 117.5,
+      "rule": "text-line-collision",
+      "tid": "converge",
+      "panel": "roads",
+      "tag": "path",
+      "stroke": "#2A303B"
+     },
+     {
+      "t": 117.6,
+      "rule": "text-line-collision",
+      "tid": "converge",
+      "panel": "roads",
+      "tag": "path",
+      "stroke": "#2A303B"
+     },
+     {
+      "t": 117.7,
+      "rule": "text-line-collision",
+      "tid": "converge",
+      "panel": "roads",
+      "tag": "path",
+      "stroke": "#2A303B"
+     }
     ]
    }
   },
@@ -2332,8 +2345,8 @@
    "chart": false,
    "issues": {
     "bg-over-data": 60,
-    "unlabelled-curve": 446,
-    "axis-anchors": 188
+    "unlabelled-curve": 374,
+    "axis-anchors": 164
    },
    "level1": {
     "shareExactlyOne": 0,
@@ -2364,48 +2377,48 @@
     ],
     "unlabelled-curve": [
      {
-      "t": 121.8,
+      "t": 123,
       "rule": "unlabelled-curve",
       "panel": "roads",
       "stroke": "#2a303b",
       "bound": null,
       "box": [
-       288,
-       489,
-       1668,
-       560
+       614,
+       246,
+       1194,
+       275
       ]
      },
      {
-      "t": 121.8,
+      "t": 123,
       "rule": "unlabelled-curve",
       "panel": "roads",
       "stroke": "#2a303b",
       "bound": null,
       "box": [
-       288,
-       560,
-       1668,
-       631
+       614,
+       275,
+       1194,
+       305
       ]
      },
      {
-      "t": 121.8,
+      "t": 123,
       "rule": "unlabelled-curve",
       "panel": "roads",
       "stroke": "#4c8dff",
       "bound": null,
       "box": [
-       288,
-       489,
-       1668,
-       560
+       614,
+       246,
+       1194,
+       275
       ]
      }
     ],
     "axis-anchors": [
      {
-      "t": 122.4,
+      "t": 123,
       "rule": "axis-anchors",
       "panel": "flip",
       "chart": null,
@@ -2413,7 +2426,7 @@
       "anchors": 0
      },
      {
-      "t": 122.4,
+      "t": 123,
       "rule": "axis-anchors",
       "panel": "flip",
       "chart": null,
@@ -2421,7 +2434,7 @@
       "anchors": 0
      },
      {
-      "t": 122.4,
+      "t": 123,
       "rule": "axis-anchors",
       "panel": "down",
       "chart": null,
@@ -2432,5 +2445,5 @@
    }
   }
  ],
- "seconds": 163.2
+ "seconds": 230.5
 }

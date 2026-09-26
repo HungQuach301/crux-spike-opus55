@@ -24,6 +24,7 @@ The CRUX wordmark and the thumbnail use only these tokens.
 | Series | Colour | Stroke / fill | Grey-scale cue |
 |---|---|---|---|
 | Road A — pay off early | warn | solid 5 px line; solid fill | brightest series |
+| Short-term share / long-term share (bars) | negative hatched / positive | — | hatch |
 | Road B — invest | accent | dashed line `14 10`; hatched fill (accent stripes on surface) | dashes / hatch |
 | Gap B − A (one line) | accent above zero, warn below zero | solid 5 px | sign is labelled in words |
 | Loan principal | grid | solid fill | neutral |
@@ -71,6 +72,17 @@ Canvas and camera are those of test B: one SVG world, a camera (x, y, scale), no
 6. **Emphasis survives grey scale.** The emphasis element (the `l1`, or anything marked `data-emph`) has a grey contrast of at least 7:1 against bg. No other visible text of 48 px or more is brighter in grey. So emphasis is ink or warn; accent, positive and negative are never the emphasis colour. **[rule `grey-emphasis`]**
 7. **Number colour = series colour** (§2). **[rule `number-colour`]**
 
+8. **Bars keep their data proportion.** A bar (`data-kind="bar"`) may not run off the frame along its value axis unless an axis break (`data-kind="axis-break"`) is shown. Settled bars of one chart that carry `data-value` share one scale (±3%). Close shots of bars either show their full length or hide the bars. **[rule `bar-proportion`]** *(added after the midpoint)*
+9. **ILLUSTRATIVE badge on screen with every illustrative number**, in the same frame. Chart ticks inside the ILLUSTRATIVE return range count as illustrative numbers. **[rule `illustrative-badge`]** *(added after the midpoint)*
+10. **Text never touches a line.** No point of a visible stroked line, path or outline (sampled every 3 px on screen) falls inside a visible text box. The glyph band is the box minus 2% top and bottom, because Inter's ascent + descent fill a 1.2 line box. **[rule `text-line-collision`]** *(added after the midpoint)*
+11. **No layout more than twice in any 90 s window.** **[rule `layout-repeat`]** *(added after the midpoint)*
+12. **Rules judge settled shots.** During the camera move at the start of a scene, `scene-leak`, `split-view`, `bar-proportion`, `unlabelled-curve`, `axis-anchors` and `text-line-collision` are skipped. `bg-over-data`, `grey-emphasis`, `number-colour` and `illustrative-badge` apply to every frame.
+
+Chart labelling in practice:
+- A level-1 header hands over to the scene's number at its word (`heroSwap`), so exactly one l1 is on screen.
+- A series carries a small series label ("B − A") next to its line wherever the l1 handover would leave a gap.
+- A label that belongs to a chart continuing into the next scene stays at opacity ≥ 0.5 until the cut.
+
 Extra measure, reported without a threshold: **visible motion** is the share of frames in which at least 0.5% of pixels change by more than 4 luma levels.
 
 ## 6. Counters and numbers on screen [checked]
@@ -78,7 +90,8 @@ Extra measure, reported without a threshold: **visible motion** is the share of 
 - Every digit on screen comes from a claim span (`<span class="n" data-claim>`), and a settled span equals its claim's display exactly.
 - **A spoken number appears at its word.** Visual onset is the first frame in which the claim span's effective opacity is ≥ 0.5. It must fall within ±250 ms of the onset of the spoken number (faster-whisper word start). To get there, the fade (0.35 s) starts 0.175 s before the word onset taken from the voice alignment.
 - A spoken number is introduced fresh at its word: a new element, or the old one re-entering. It is never "already on screen".
-- **Rolling counters** start at the word onset, roll for 0.5 s with ease-out, use the claim's own formatter, and settle on the claim display. A counter never rolls before its word. Unspoken numbers (axis ticks, month counters) may roll at any time.
+- **Sync is measured on the FINAL value** (changed after the midpoint): the first frame in which a span of the claim shows its settled display (no `data-roll`) at opacity ≥ 0.5, within ±250 ms of the faster-whisper word start.
+- **No rolling counters for single numbers** ($578, $2,744, $1,554 and every other spoken amount appear settled at their word). Rolling or stepping displays are kept only for quantities that accumulate or sweep over time, and each value they show is itself a claim (the sweep counter shows `r_k` claims; month ticks are axis claims).
 - Formats:
   - dollars: `$1,190` (no cents)
   - negative dollars: `−$459`
@@ -93,6 +106,12 @@ Extra measure, reported without a threshold: **visible motion** is the share of 
 - The voice is provisional, not a casting decision.
   - Persona: calm, precise, warm analyst; General American; 150–160 words per minute of speech.
   - Settings: OpenAI `gpt-4o-mini-tts`, voice `cedar`, style set by instructions.
+- **Pace** (tightened after the midpoint): every chapter reads at 150–160 wpm, measured as words / clip time. No sentence exceeds 175 wpm, measured as words / speech span, where the speech span runs from the first to the last loud 10 ms window.
+  - The TTS ignores pace instructions: it reads short sentences at 180–300 wpm.
+  - `audio/av_retime.py` therefore cuts each clip into sentences at the TTS's own pauses. It time-stretches any sentence faster than the chapter's target (ffmpeg rubberband, pitch and formants kept, at most −25%), and rejoins the sentences with a fixed pause.
+  - The target and the pause are solved per chapter.
+  - A scene whose sentence is still too fast after the stretch limit, or whose ASR hears less than 92% of the script words, gets a new TTS take (`audio/av_pace_loop.sh`).
+- **Word coverage:** faster-whisper must hear ≥ 92% of each scene's script words. The TTS sometimes drops a whole sentence; the midpoint's aligner had silently interpolated over such gaps.
 - "We" means the analyst. There is no advice to the viewer and no market prediction.
 - Every number in the script is a claim marker `{claimId}`; bare digits and number words in the script are rejected by a test. The narration's display text (numbers as on screen) is the source for subtitles. The spoken text is produced from it by `src/av/normalize.js`.
 - Picture follows voice. Scene length = ceil((0.25 s lead + voice + 0.30 s tail) / 0.6 s beat) beats. Anchors (`^name` markers, number markers) take their times from faster-whisper word timings.
@@ -139,9 +158,16 @@ The text comes from the script, never from ASR, timed by word timings. Each cue 
 | Hook (20–30 s) | hook1–hook5 | setup |
 | CRUX ident | ident | setup |
 | Setup and scope | scope1, scope2, facts, extra, roads, cash | setup |
-| 1 The certain part | card1, timeline, free, interest, avoided, identity, bridge | setup |
-| 2 Tax by lot | — | setup |
-| 3 Return sweep and break-even | — | sweep |
-| 4 Sensitivity to the tax bracket | — | sweep |
-| 5 Risk and one bad sequence (ILLUSTRATIVE) | — | tension |
-| Close: a threshold, not a forecast | — | resolution |
+| 1 The certain part | card1, timeline, free, morphInt, interest, avoided, certain, identity, bridge | setup |
+| 2 Tax by lot | card2, lots1, lots2, rates, lots3, share, nodeduct | setup |
+| 3 Return sweep and break-even | card3, sw1–sw5 | sweep |
+| 4 Sensitivity to the tax bracket | card4, niit, morphDot, dots, dots32, rises, below | sweep |
+| 5 Risk and one bad sequence (ILLUSTRATIVE) | card5, risk1, risk2, seq, race, morphGap, gap, downside, order | tension |
+| Close: a threshold, not a forecast | recap, end1, end2, outro | resolution |
+
+## 11. Tax model (after the midpoint)
+
+- The 32% bracket carries the 3.8% net investment income tax on both rates: 35.8% short-term, 18.8% long-term.
+- State income tax is ignored, and this is said on screen (`nodeduct`, `niit`).
+- Losing lots get no deduction.
+- Loan interest is not deductible; the 2025–2028 new-vehicle loan interest deduction is ignored (on screen in `scope2`).

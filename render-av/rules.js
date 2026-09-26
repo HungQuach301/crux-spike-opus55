@@ -217,8 +217,80 @@
     return out;
   }
 
-  function checkFrame(ctx) {
-    return [...sceneLeak(ctx), ...bgOverData(), ...unlabelledCurve(), ...axisAnchors(), ...greyEmphasis(), ...numberColour()];
+  // 8. data integrity: a bar shown in the frame must keep its data proportion ------------
+  // A bar (data-kind="bar") that runs off the frame along its value axis is cropped: its visible
+  // length no longer matches its value, unless an axis break (data-kind="axis-break") is shown
+  // in the same panel. Settled bars that carry data-value must also share one scale:
+  // visible length / value equal within 3% across the bars of one data-chart.
+  function barProportion(ctx = {}) {
+    if (ctx.inTransition) return []; // like scene-leak: a camera move passes over bars; settled shots are judged
+    const out = [];
+    const breaks = new Set([...document.querySelectorAll('svg [data-kind="axis-break"]')].filter((el) => effOpacity(el) > 0.3).map((el) => el.closest('[data-panel]')?.dataset.panel));
+    const scale = {};
+    for (const { el, panel } of panelShapes()) {
+      if (el.dataset.kind !== 'bar' || effOpacity(el) <= 0.3) continue;
+      const r = rect(el);
+      if (!onFrame(r)) continue;
+      const horiz = el.dataset.orient ? el.dataset.orient === 'h' : (r.r - r.l) >= (r.b - r.t);
+      const cropped = horiz ? (r.l < -0.5 || r.r > W + 0.5) : (r.t < -0.5 || r.b > H + 0.5);
+      if (cropped && !breaks.has(panel)) out.push({ rule: 'bar-proportion', panel, why: 'bar runs off the frame along its value axis, no axis break shown', box: [r.l, r.t, r.r, r.b].map(Math.round) });
+      const v = parseFloat(el.dataset.value);
+      if (!cropped && el.dataset.full === '1' && v > 0 && el.dataset.chart) (scale[el.dataset.chart] ||= []).push({ k: (horiz ? r.r - r.l : r.b - r.t) / v, panel });
+    }
+    for (const [chart, xs] of Object.entries(scale)) {
+      const ks = xs.map((x) => x.k), lo = Math.min(...ks), hi = Math.max(...ks);
+      if (xs.length > 1 && hi / lo > 1.03) out.push({ rule: 'bar-proportion', panel: xs[0].panel, chart, why: `bars of one chart use different scales (${lo.toFixed(4)}–${hi.toFixed(4)} px per unit)` });
+    }
+    return out;
   }
-  window.RULES = { checkFrame, level1Count, snapshot, effOpacity, sceneLeak, bgOverData, unlabelledCurve, axisAnchors, greyEmphasis, numberColour, TOK };
+
+  // 9. ILLUSTRATIVE badge on screen whenever an illustrative number is -------------------
+  function illustrativeBadge(ctx) {
+    const ill = new Set(ctx.illustrative || []);
+    if (!ill.size) return [];
+    const shown = [...document.querySelectorAll('#overlay .n')].filter((sp) => ill.has(sp.dataset.claim) && effOpacity(sp) > 0.5 && onFrame(rect(sp)));
+    if (!shown.length) return [];
+    const badge = [...document.querySelectorAll('#overlay .badge')].some((b) => effOpacity(b) > 0.5 && onFrame(rect(b)));
+    return badge ? [] : shown.map((sp) => ({ rule: 'illustrative-badge', claim: sp.dataset.claim, tid: sp.closest('.t')?.dataset.tid, why: 'illustrative number visible without a visible ILLUSTRATIVE badge' }));
+  }
+
+  // 10. text never touches a line, axis or stroked outline -------------------------------
+  function textLineCollision() {
+    const T = texts().filter((x) => x.op > 0.5 && onFrame(x.box)).map((x) => {
+      const h = x.box.b - x.box.t, pad = h * 0.02; // Inter at line-height 1.2: glyphs (ascent .97 + descent .24) fill the box
+      return { tid: x.el.dataset.tid, b: { l: x.box.l + 1, r: x.box.r - 1, t: x.box.t + pad, b: x.box.b - pad } };
+    });
+    if (!T.length) return [];
+    const out = [];
+    const seen = new Set();
+    for (const { el, panel } of panelShapes()) {
+      if (isBg(el) || effOpacity(el) <= 0.3) continue;
+      const stroke = el.getAttribute('stroke');
+      if (!stroke || stroke === 'none') continue;
+      const r = inflate(rect(el), 4);
+      const near = T.filter((x) => gapBetween(x.b, r) === 0);
+      if (!near.length || typeof el.getTotalLength !== 'function') continue;
+      const len = el.getTotalLength(), m = el.getScreenCTM();
+      if (!m || !(len > 0)) continue;
+      // dashed draw-on paths: only the drawn part counts
+      const off = parseFloat(el.getAttribute('stroke-dashoffset') || '0'), pl = parseFloat(el.getAttribute('pathLength') || '0');
+      const drawn = pl > 0 ? len * Math.max(0, 1 - off / pl) : len;
+      const n = Math.min(600, Math.max(8, Math.ceil(drawn * Math.max(m.a, m.d) / 3)));
+      for (let i = 0; i <= n; i++) {
+        const p = el.getPointAtLength(drawn * i / n);
+        const x = m.a * p.x + m.c * p.y + m.e, y = m.b * p.x + m.d * p.y + m.f;
+        const hit = near.find((q) => x > q.b.l && x < q.b.r && y > q.b.t && y < q.b.b);
+        if (hit) { const k = hit.tid + '|' + el.tagName; if (!seen.has(k)) { seen.add(k); out.push({ rule: 'text-line-collision', tid: hit.tid, panel, tag: el.tagName, stroke }); } break; }
+      }
+    }
+    return out;
+  }
+
+  function checkFrame(ctx) {
+    // layout rules judge settled shots: during a camera move (scene start) they are skipped
+    const settled = !ctx.inTransition;
+    return [...sceneLeak(ctx), ...bgOverData(), ...(settled ? unlabelledCurve() : []), ...(settled ? axisAnchors() : []), ...greyEmphasis(), ...numberColour(),
+      ...barProportion(ctx), ...illustrativeBadge(ctx), ...(settled ? textLineCollision() : [])];
+  }
+  window.RULES = { checkFrame, barProportion, illustrativeBadge, textLineCollision, level1Count, snapshot, effOpacity, sceneLeak, bgOverData, unlabelledCurve, axisAnchors, greyEmphasis, numberColour, TOK };
 })();

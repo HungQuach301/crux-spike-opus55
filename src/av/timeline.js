@@ -6,7 +6,7 @@
 const N = require('./normalize');
 
 const BPM = 100, BEAT = 60 / BPM;
-const LEAD = 0.25, TAIL = 0.30;   // s of room before and after the voice in each scene
+const LEAD = 0.25, TAIL = 0.45;   // s of room before and after the voice in each scene
 const PRE = 0.175;                // a spoken number's fade (0.35 s) starts this long before its word
 const SILENCE_LEN = 0.4, STILL_LEN = 0.8;
 const MOVE_MIN = 0.5, MOVE_MAX = 1.2; // camera move between scenes; it ends before the scene's first visual event
@@ -73,11 +73,11 @@ function build({ script, prepared, asr }) {
     let al = null;
     if (a) {
       al = alignWords(p.spokenWords, a.words);
-      const used = new Set((s.events || []).filter(([, w]) => typeof w !== 'number').map(([, w]) => String(w).split('+')[0]));
+      const used = new Set((s.events || []).filter(([, w]) => typeof w !== 'number').map(([, w]) => String(w).split('+')[0]));  // anchored events only
       const firsts = p.markers.filter((m) => used.has(m.name)).map((m) => al.words[Math.min(m.word, al.words.length - 1)].start);
       if (firsts.length && index > 0) lead = Math.max(LEAD, MOVE_MIN + PRE - Math.min(...firsts));
     }
-    const need = a ? lead + vdur + TAIL : 0;
+    const need = a ? lead + vdur + (s.chapter === 'hook' ? 0.3 : TAIL) + (s.hold || 0) : 0; // hold: extra time to read a decisive number
     const beats = Math.max(2, Math.ceil(need / BEAT - 1e-9), Math.ceil((s.minDur || 0) / BEAT - 1e-9));
     const dur = +(beats * BEAT).toFixed(3), start = +t.toFixed(3);
     const anchors = {}, words = [];
@@ -92,7 +92,7 @@ function build({ script, prepared, asr }) {
     const sc = {
       id: s.id, index: scenes.length, chapter: s.chapter, section: s.section, shot: s.shot, layout: s.layout, cam: s.cam, drift: s.drift,
       panels: s.panels, chart: !!s.chart, beats, start, dur, move: 0, lead: +lead.toFixed(3),
-      voice: a ? { file: `out/voice/${s.id}.trim.wav`, start: +(start + lead).toFixed(3), dur: vdur } : null,
+      voice: a ? { file: `out/voice/${s.id}.final.wav`, start: +(start + lead).toFixed(3), dur: vdur } : null,
       display: p.display, anchors, markers: p.markers, words, displayWords,
     };
     scenes.push(sc);
@@ -103,25 +103,35 @@ function build({ script, prepared, asr }) {
       return { t: anchors[name] + Number(off || 0), word: anchors[name] };
     };
     const mine = [];
-    for (const [type, when, probe] of s.events || []) {
+    for (const [type, when, probe, flag] of s.events || []) {
       const r = at(when);
       const pre = typeof when === 'number' ? 0 : PRE; // anchored visuals start PRE before the word
-      mine.push({ id: `${s.id}:${probe}`, scene: s.id, type, t: +(r.t - pre).toFixed(4), probe, wordT: r.word });
+      mine.push({ id: `${s.id}:${probe}`, scene: s.id, type, t: +(r.t - pre).toFixed(4), probe, wordT: r.word, decor: flag === 'decor' });
     }
     events.push(...mine);
     if (sc.index > 0) {
-      const firstEv = Math.min(...mine.filter((e) => e.type !== 'transition' && e.type !== 'dismiss').map((e) => e.t - start), Infinity);
+      // 'decor' events (a label appearing) do not shorten the camera move
+      const firstEv = Math.min(...mine.filter((e) => e.type !== 'transition' && e.type !== 'dismiss' && !e.decor).map((e) => e.t - start), Infinity);
       sc.move = +Math.max(MOVE_MIN, Math.min(MOVE_MAX, 0.5 * dur, firstEv)).toFixed(3);
     }
     if (s.silenceBefore) { const e = anchors[s.silenceBefore] - PRE; silences.push({ scene: s.id, start: +(e - SILENCE_LEN).toFixed(4), end: +e.toFixed(4) }); }
     if (s.stillAt) { const e = anchors[s.stillAt] - PRE; still.push({ scene: s.id, start: +e.toFixed(4), end: +(e + STILL_LEN).toFixed(4) }); }
     t += dur;
   });
+  // progress ticks ('count' SFX) at fixed points of animations the renderer draws with the same formulas
+  const S2 = Object.fromEntries(scenes.map((x) => [x.id, x]));
+  const tick = (sc, probe, t) => events.push({ id: `${sc}:${probe}`, scene: sc, type: 'count', t: +t.toFixed(4), probe, wordT: null });
+  if (S2.hook3) for (const m of [12, 24, 36, 48]) tick('hook3', `cell${m}`, S2.hook3.anchors.months - PRE + (m - 1) * 0.045);
+  if (S2.lots1) for (const m of [12, 24, 36, 48]) tick('lots1', `cell${m}`, S2.lots1.anchors.lot - PRE + (m - 1) * 0.03);
+  if (S2.race) for (const m of [12, 24, 36]) tick('race', `month${m}`, S2.race.start + 1.0 + (m / 48) * Math.max(2, S2.race.dur - 2.2));
   events.sort((x, y) => x.t - y.t);
   const morphs = [
     "facts->timeline (one principal bar splits into the two roads' month bars)",
-    'timeline->interest (month bars re-scale to interest dollars)',
+    'morphInt->interest (month bars re-scale to interest dollars)',
     "identity->bridge (A's extra invested becomes B's unknown head start)",
+    'morphDot->dots (the break-even point flies from the sweep line into its row of the dot plot)',
+    'morphGap->gap (the two net-worth lines fold into their difference)',
+    'lots1->lots2 (road B lots recolour into long-term and short-term)',
   ].filter((m) => scenes.some((s) => s.id === m.split('->')[1].split(' ')[0]));
   return { bpm: BPM, beat: BEAT, lead: LEAD, tail: TAIL, pre: PRE, total: +t.toFixed(3), scenes, events, silences, still, morphs, alignment };
 }

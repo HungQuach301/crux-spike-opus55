@@ -40,7 +40,7 @@ function run() {
   const offs = rows.filter((r) => r.offsetMs !== null).map((r) => Math.abs(r.offsetMs));
   const slips = rows.filter((r) => r.status !== 'ok');
   const res = {
-    definition: 'offset = first frame the claim span reaches opacity >= 0.5 minus the faster-whisper word start of the spoken number; limit ±250 ms',
+    definition: 'offset = first frame a span of the claim shows its FINAL value (no data-roll) at opacity >= 0.5, minus the faster-whisper word start of the spoken number; limit ±250 ms. No spoken number uses a rolling counter.',
     numbers: rows.length, maxAbsOffsetMs: Math.max(0, ...offs), meanAbsOffsetMs: offs.length ? Math.round(offs.reduce((a, b) => a + b, 0) / offs.length) : null,
     slips, pass: slips.length === 0, rows,
   };

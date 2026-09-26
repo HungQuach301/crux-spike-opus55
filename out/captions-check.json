@@ -1,13 +1,13 @@
 {
- "cues": 31,
+ "cues": 81,
  "maxLineChars": 42,
  "maxLines": 2,
- "minDurS": 1.34,
- "maxDurS": 7,
+ "minDurS": 1,
+ "maxDurS": 6.9,
  "issues": [],
  "textMatchesScript": true,
- "scriptChars": 1277,
- "subtitleChars": 1277,
+ "scriptChars": 3496,
+ "subtitleChars": 3496,
  "firstDiff": null,
  "pass": true
 }

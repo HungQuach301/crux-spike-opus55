@@ -1,12 +1,12 @@
 {
   "description": "Test C: every number drawn on screen or spoken in out/video.mp4. Code: src/av/calc.js (per-lot tax model), src/av/data.js. Spoken numbers carry their faster-whisper onset and the time the number appears on screen.",
   "sources": "All inputs are stated in the brief or by us. ILLUSTRATIVE (our choice, not a forecast): $400/month extra, the 2%–10% return range, the 8% then −20% sequence. The model ignores the 2025–2028 new-vehicle loan interest deduction and treats loan interest as not deductible.",
-  "scope": "midpoint build: hook, ident, setup, chapter 1",
+  "scope": "full video",
   "counts": {
-    "claims": 20,
-    "shown": 20,
-    "spokenOccurrences": 20,
-    "asrCorrect": "20/20"
+    "claims": 78,
+    "shown": 78,
+    "spokenOccurrences": 66,
+    "asrCorrect": "66/66"
   },
   "claims": [
     {
@@ -25,17 +25,17 @@
           "scene": "hook1",
           "spokenForm": "twenty-five thousand dollars",
           "canon": "usd:25000",
-          "asrOnsetS": 1.27,
-          "appearsOnScreenS": 1.3,
-          "offsetMs": 30
+          "asrOnsetS": 1.51,
+          "appearsOnScreenS": 1.5333,
+          "offsetMs": 23
         },
         {
           "scene": "facts",
           "spokenForm": "twenty-five thousand dollars",
           "canon": "usd:25000",
-          "asrOnsetS": 51.33,
-          "appearsOnScreenS": 51.3333,
-          "offsetMs": 3
+          "asrOnsetS": 49.75,
+          "appearsOnScreenS": 49.7667,
+          "offsetMs": 17
         }
       ]
     },
@@ -48,24 +48,33 @@
       "inputs": {},
       "shownIn": [
         "hook1",
-        "facts"
+        "facts",
+        "risk1"
       ],
       "spoken": [
         {
           "scene": "hook1",
           "spokenForm": "five point two percent",
           "canon": "pct:5.2",
-          "asrOnsetS": 3.43,
-          "appearsOnScreenS": 3.4333,
-          "offsetMs": 3
+          "asrOnsetS": 3.71,
+          "appearsOnScreenS": 3.7333,
+          "offsetMs": 23
         },
         {
           "scene": "facts",
           "spokenForm": "five point two percent",
           "canon": "pct:5.2",
-          "asrOnsetS": 53.37,
-          "appearsOnScreenS": 53.4,
-          "offsetMs": 30
+          "asrOnsetS": 51.93,
+          "appearsOnScreenS": 51.9333,
+          "offsetMs": 3
+        },
+        {
+          "scene": "risk1",
+          "spokenForm": "five point two percent",
+          "canon": "pct:5.2",
+          "asrOnsetS": 282.65,
+          "appearsOnScreenS": 282.6667,
+          "offsetMs": 17
         }
       ]
     },
@@ -78,23 +87,32 @@
       "inputs": {},
       "shownIn": [
         "hook3",
-        "facts"
+        "facts",
+        "lots3"
       ],
       "spoken": [
         {
           "scene": "hook3",
           "spokenForm": "forty-eight",
           "canon": "num:48",
-          "asrOnsetS": 12.47,
-          "appearsOnScreenS": 12.5,
-          "offsetMs": 30
+          "asrOnsetS": 12.33,
+          "appearsOnScreenS": 12.3333,
+          "offsetMs": 3
         },
         {
           "scene": "facts",
           "spokenForm": "forty-eight",
           "canon": "num:48",
-          "asrOnsetS": 54.99,
-          "appearsOnScreenS": 55,
+          "asrOnsetS": 53.81,
+          "appearsOnScreenS": 53.8333,
+          "offsetMs": 23
+        },
+        {
+          "scene": "lots3",
+          "spokenForm": "forty-eight",
+          "canon": "num:48",
+          "asrOnsetS": 163.89,
+          "appearsOnScreenS": 163.9,
           "offsetMs": 10
         }
       ]
@@ -115,8 +133,38 @@
           "scene": "extra",
           "spokenForm": "four hundred dollars",
           "canon": "usd:400",
-          "asrOnsetS": 60.79,
-          "appearsOnScreenS": 60.8,
+          "asrOnsetS": 59.29,
+          "appearsOnScreenS": 59.3,
+          "offsetMs": 10
+        }
+      ]
+    },
+    {
+      "claimId": "ord_12",
+      "value": 12,
+      "display": "12%",
+      "formula": "input",
+      "note": "Ordinary income bracket (brief): applies to short-term lots.",
+      "inputs": {},
+      "shownIn": [
+        "dots",
+        "below"
+      ],
+      "spoken": [
+        {
+          "scene": "dots",
+          "spokenForm": "twelve percent",
+          "canon": "pct:12",
+          "asrOnsetS": 247.01,
+          "appearsOnScreenS": 247.0333,
+          "offsetMs": 23
+        },
+        {
+          "scene": "below",
+          "spokenForm": "twelve percent",
+          "canon": "pct:12",
+          "asrOnsetS": 266.29,
+          "appearsOnScreenS": 266.3,
           "offsetMs": 10
         }
       ]
@@ -129,16 +177,204 @@
       "note": "Ordinary income bracket (brief): applies to short-term lots.",
       "inputs": {},
       "shownIn": [
-        "hook4"
+        "hook4",
+        "rates",
+        "sw1",
+        "dots32",
+        "below",
+        "end1"
       ],
       "spoken": [
         {
           "scene": "hook4",
           "spokenForm": "twenty-two percent",
           "canon": "pct:22",
-          "asrOnsetS": 22.35,
-          "appearsOnScreenS": 22.3667,
+          "asrOnsetS": 21.99,
+          "appearsOnScreenS": 22,
+          "offsetMs": 10
+        },
+        {
+          "scene": "rates",
+          "spokenForm": "twenty-two percent",
+          "canon": "pct:22",
+          "asrOnsetS": 151.93,
+          "appearsOnScreenS": 151.9333,
+          "offsetMs": 3
+        },
+        {
+          "scene": "rates",
+          "spokenForm": "twenty-two percent",
+          "canon": "pct:22",
+          "asrOnsetS": 151.93,
+          "appearsOnScreenS": 151.9333,
+          "offsetMs": 3
+        },
+        {
+          "scene": "sw1",
+          "spokenForm": "twenty-two percent",
+          "canon": "pct:22",
+          "asrOnsetS": 193.01,
+          "appearsOnScreenS": 193.0333,
+          "offsetMs": 23
+        },
+        {
+          "scene": "dots",
+          "spokenForm": "twenty-two percent",
+          "canon": "pct:22",
+          "asrOnsetS": 251.15,
+          "appearsOnScreenS": 251.1667,
           "offsetMs": 17
+        },
+        {
+          "scene": "end1",
+          "spokenForm": "twenty-two percent",
+          "canon": "pct:22",
+          "asrOnsetS": 344.75,
+          "appearsOnScreenS": 344.7667,
+          "offsetMs": 17
+        }
+      ]
+    },
+    {
+      "claimId": "ord_32",
+      "value": 32,
+      "display": "32%",
+      "formula": "input",
+      "note": "Ordinary income bracket (brief): applies to short-term lots.",
+      "inputs": {},
+      "shownIn": [
+        "niit",
+        "dots32",
+        "below"
+      ],
+      "spoken": [
+        {
+          "scene": "niit",
+          "spokenForm": "thirty-two percent",
+          "canon": "pct:32",
+          "asrOnsetS": 230.475,
+          "appearsOnScreenS": 230.5,
+          "offsetMs": 25
+        },
+        {
+          "scene": "dots32",
+          "spokenForm": "thirty-two percent",
+          "canon": "pct:32",
+          "asrOnsetS": 253.875,
+          "appearsOnScreenS": 253.9,
+          "offsetMs": 25
+        }
+      ]
+    },
+    {
+      "claimId": "lt_15",
+      "value": 15,
+      "display": "15%",
+      "formula": "input",
+      "note": "Long-term capital-gains rate paired with the 22% and 32% brackets (brief).",
+      "inputs": {},
+      "shownIn": [
+        "rates"
+      ],
+      "spoken": [
+        {
+          "scene": "rates",
+          "spokenForm": "fifteen percent",
+          "canon": "pct:15",
+          "asrOnsetS": 155.39,
+          "appearsOnScreenS": 155.4,
+          "offsetMs": 10
+        }
+      ]
+    },
+    {
+      "claimId": "niit",
+      "value": 3.8,
+      "display": "3.8%",
+      "formula": "input",
+      "note": "Net investment income tax, added to both rates in the 32% bracket (income above the NIIT threshold assumed).",
+      "inputs": {},
+      "shownIn": [
+        "niit"
+      ],
+      "spoken": [
+        {
+          "scene": "niit",
+          "spokenForm": "three point eight percent",
+          "canon": "pct:3.8",
+          "asrOnsetS": 232.855,
+          "appearsOnScreenS": 232.8667,
+          "offsetMs": 12
+        }
+      ]
+    },
+    {
+      "claimId": "ord_32e",
+      "value": 35.8,
+      "display": "35.8%",
+      "formula": "ordinary rate 32% + NIIT 3.8%: short-term lots in the 32% bracket",
+      "inputs": {},
+      "shownIn": [
+        "niit"
+      ],
+      "spoken": [
+        {
+          "scene": "niit",
+          "spokenForm": "thirty-five point eight percent",
+          "canon": "pct:35.8",
+          "asrOnsetS": 236.995,
+          "appearsOnScreenS": 237,
+          "offsetMs": 5
+        }
+      ]
+    },
+    {
+      "claimId": "lt_32e",
+      "value": 18.8,
+      "display": "18.8%",
+      "formula": "long-term rate 15% + NIIT 3.8%: long-term lots in the 32% bracket",
+      "inputs": {},
+      "shownIn": [
+        "niit"
+      ],
+      "spoken": [
+        {
+          "scene": "niit",
+          "spokenForm": "eighteen point eight percent",
+          "canon": "pct:18.8",
+          "asrOnsetS": 239.795,
+          "appearsOnScreenS": 239.8,
+          "offsetMs": 5
+        }
+      ]
+    },
+    {
+      "claimId": "hold_months",
+      "value": 12,
+      "display": "12",
+      "formula": "input",
+      "note": "A lot held more than this many months at month 48 is long-term.",
+      "inputs": {},
+      "shownIn": [
+        "lots2",
+        "seq"
+      ],
+      "spoken": [
+        {
+          "scene": "lots2",
+          "spokenForm": "twelve",
+          "canon": "num:12",
+          "asrOnsetS": 145.77,
+          "appearsOnScreenS": 145.8,
+          "offsetMs": 30
+        },
+        {
+          "scene": "seq",
+          "spokenForm": "twelve",
+          "canon": "num:12",
+          "asrOnsetS": 299.73,
+          "appearsOnScreenS": 299.7333,
+          "offsetMs": 3
         }
       ]
     },
@@ -157,9 +393,9 @@
           "scene": "scope2",
           "spokenForm": "twenty twenty-five",
           "canon": "year:2025",
-          "asrOnsetS": 47.91,
-          "appearsOnScreenS": 47.9333,
-          "offsetMs": 23
+          "asrOnsetS": 45.83,
+          "appearsOnScreenS": 45.8667,
+          "offsetMs": 37
         }
       ]
     },
@@ -178,9 +414,9 @@
           "scene": "scope2",
           "spokenForm": "twenty twenty-eight",
           "canon": "year:2028",
-          "asrOnsetS": 49.17,
-          "appearsOnScreenS": 49.2,
-          "offsetMs": 30
+          "asrOnsetS": 47.21,
+          "appearsOnScreenS": 47.2333,
+          "offsetMs": 23
         }
       ]
     },
@@ -203,9 +439,9 @@
           "scene": "facts",
           "spokenForm": "five hundred seventy-eight dollars",
           "canon": "usd:578",
-          "asrOnsetS": 56.69,
-          "appearsOnScreenS": 56.7,
-          "offsetMs": 10
+          "asrOnsetS": 55.13,
+          "appearsOnScreenS": 55.1333,
+          "offsetMs": 3
         }
       ]
     },
@@ -228,9 +464,9 @@
           "scene": "timeline",
           "spokenForm": "twenty-eight",
           "canon": "month:28",
-          "asrOnsetS": 83.15,
-          "appearsOnScreenS": 83.1667,
-          "offsetMs": 17
+          "asrOnsetS": 83.77,
+          "appearsOnScreenS": 83.8,
+          "offsetMs": 30
         }
       ]
     },
@@ -241,16 +477,44 @@
       "formula": "horizon month (road B pays its last payment)",
       "inputs": {},
       "shownIn": [
-        "timeline"
+        "timeline",
+        "lots1",
+        "sw2",
+        "downside",
+        "order"
       ],
       "spoken": [
         {
           "scene": "timeline",
           "spokenForm": "forty-eight",
           "canon": "month:48",
-          "asrOnsetS": 86.35,
-          "appearsOnScreenS": 86.3667,
+          "asrOnsetS": 86.87,
+          "appearsOnScreenS": 86.9,
+          "offsetMs": 30
+        },
+        {
+          "scene": "lots1",
+          "spokenForm": "forty-eight",
+          "canon": "month:48",
+          "asrOnsetS": 141.35,
+          "appearsOnScreenS": 141.3667,
           "offsetMs": 17
+        },
+        {
+          "scene": "sw2",
+          "spokenForm": "forty-eight",
+          "canon": "month:48",
+          "asrOnsetS": 200.37,
+          "appearsOnScreenS": 200.4,
+          "offsetMs": 30
+        },
+        {
+          "scene": "order",
+          "spokenForm": "forty-eight",
+          "canon": "num:48",
+          "asrOnsetS": 324.29,
+          "appearsOnScreenS": 324.3667,
+          "offsetMs": 77
         }
       ]
     },
@@ -273,9 +537,9 @@
           "scene": "free",
           "spokenForm": "twenty",
           "canon": "num:20",
-          "asrOnsetS": 88.29,
-          "appearsOnScreenS": 88.3,
-          "offsetMs": 10
+          "asrOnsetS": 89.17,
+          "appearsOnScreenS": 89.2,
+          "offsetMs": 30
         }
       ]
     },
@@ -298,9 +562,9 @@
           "scene": "interest",
           "spokenForm": "one thousand five hundred fifty-four dollars",
           "canon": "usd:1554",
-          "asrOnsetS": 97.09,
-          "appearsOnScreenS": 97.1,
-          "offsetMs": 10
+          "asrOnsetS": 99.35,
+          "appearsOnScreenS": 99.3667,
+          "offsetMs": 17
         }
       ]
     },
@@ -323,8 +587,8 @@
           "scene": "interest",
           "spokenForm": "two thousand seven hundred forty-four dollars",
           "canon": "usd:2744",
-          "asrOnsetS": 94.21,
-          "appearsOnScreenS": 94.2333,
+          "asrOnsetS": 96.71,
+          "appearsOnScreenS": 96.7333,
           "offsetMs": 23
         }
       ]
@@ -350,25 +614,25 @@
           "scene": "avoided",
           "spokenForm": "one thousand one hundred ninety dollars",
           "canon": "usd:1190",
-          "asrOnsetS": 101.63,
-          "appearsOnScreenS": 101.6333,
+          "asrOnsetS": 103.83,
+          "appearsOnScreenS": 103.8333,
           "offsetMs": 3
         },
         {
           "scene": "identity",
           "spokenForm": "one thousand one hundred ninety dollars",
           "canon": "usd:1190",
-          "asrOnsetS": 115.49,
-          "appearsOnScreenS": 115.5,
-          "offsetMs": 10
+          "asrOnsetS": 119.81,
+          "appearsOnScreenS": 119.8333,
+          "offsetMs": 23
         },
         {
           "scene": "bridge",
           "spokenForm": "one thousand one hundred ninety dollars",
           "canon": "usd:1190",
-          "asrOnsetS": 124.51,
-          "appearsOnScreenS": 124.5333,
-          "offsetMs": 23
+          "asrOnsetS": 129.79,
+          "appearsOnScreenS": 129.8,
+          "offsetMs": 10
         }
       ]
     },
@@ -379,7 +643,8 @@
       "formula": "axis tick: month",
       "inputs": {},
       "shownIn": [
-        "timeline"
+        "timeline",
+        "free"
       ],
       "spoken": []
     },
@@ -390,7 +655,7 @@
       "formula": "axis tick: month",
       "inputs": {},
       "shownIn": [
-        "timeline"
+        "free"
       ],
       "spoken": []
     },
@@ -401,7 +666,7 @@
       "formula": "axis tick: month",
       "inputs": {},
       "shownIn": [
-        "timeline"
+        "free"
       ],
       "spoken": []
     },
@@ -412,7 +677,7 @@
       "formula": "axis tick: month",
       "inputs": {},
       "shownIn": [
-        "timeline"
+        "free"
       ],
       "spoken": []
     },
@@ -423,9 +688,118 @@
       "formula": "axis tick: month",
       "inputs": {},
       "shownIn": [
-        "timeline"
+        "timeline",
+        "race",
+        "morphGap",
+        "gap",
+        "downside"
       ],
       "spoken": []
+    },
+    {
+      "claimId": "lots_lt_a",
+      "value": 8,
+      "display": "8",
+      "formula": "road A lots that are long-term at month 48",
+      "inputs": {
+        "balance": 25000,
+        "aprPct": 5.2,
+        "months": 48,
+        "extra": 400
+      },
+      "shownIn": [
+        "lots3"
+      ],
+      "spoken": [
+        {
+          "scene": "lots3",
+          "spokenForm": "eight",
+          "canon": "num:8",
+          "asrOnsetS": 168.25,
+          "appearsOnScreenS": 168.2667,
+          "offsetMs": 17
+        }
+      ]
+    },
+    {
+      "claimId": "lots_lt_b",
+      "value": 35,
+      "display": "35",
+      "formula": "road B lots that are long-term at month 48",
+      "inputs": {
+        "balance": 25000,
+        "aprPct": 5.2,
+        "months": 48,
+        "extra": 400
+      },
+      "shownIn": [
+        "lots3"
+      ],
+      "spoken": [
+        {
+          "scene": "lots3",
+          "spokenForm": "thirty-five",
+          "canon": "num:35",
+          "asrOnsetS": 162.89,
+          "appearsOnScreenS": 162.9,
+          "offsetMs": 10
+        }
+      ]
+    },
+    {
+      "claimId": "lots_a",
+      "value": 21,
+      "display": "21",
+      "formula": "road A lots (contributions from the payoff month on)",
+      "inputs": {
+        "balance": 25000,
+        "aprPct": 5.2,
+        "months": 48,
+        "extra": 400
+      },
+      "shownIn": [
+        "lots3"
+      ],
+      "spoken": [
+        {
+          "scene": "lots3",
+          "spokenForm": "twenty-one",
+          "canon": "num:21",
+          "asrOnsetS": 168.91,
+          "appearsOnScreenS": 168.9333,
+          "offsetMs": 23
+        }
+      ]
+    },
+    {
+      "claimId": "be_12",
+      "value": 5.228074794157822,
+      "display": "5.23%",
+      "formula": "average annual return (compounded) at which after-tax net worth at month 48 is equal for A and B (bisection, 80 iterations); per-lot tax, losses not deductible",
+      "inputs": {
+        "balance": 25000,
+        "aprPct": 5.2,
+        "months": 48,
+        "extra": 400,
+        "bracket": {
+          "id": 12,
+          "ord": 12,
+          "lt": 0
+        }
+      },
+      "shownIn": [
+        "rises"
+      ],
+      "spoken": [
+        {
+          "scene": "dots",
+          "spokenForm": "five point two three percent",
+          "canon": "pct:5.23",
+          "asrOnsetS": 244.73,
+          "appearsOnScreenS": 244.7333,
+          "offsetMs": 3
+        }
+      ]
     },
     {
       "claimId": "be_22",
@@ -444,16 +818,916 @@
         }
       },
       "shownIn": [
-        "hook4"
+        "hook5",
+        "sw4",
+        "sw5",
+        "dots32",
+        "below",
+        "end1"
       ],
       "spoken": [
         {
           "scene": "hook4",
           "spokenForm": "six point one one percent",
           "canon": "pct:6.11",
-          "asrOnsetS": 19.13,
-          "appearsOnScreenS": 19.1333,
+          "asrOnsetS": 18.71,
+          "appearsOnScreenS": 18.7333,
+          "offsetMs": 23
+        },
+        {
+          "scene": "sw4",
+          "spokenForm": "six point one one percent",
+          "canon": "pct:6.11",
+          "asrOnsetS": 216.05,
+          "appearsOnScreenS": 216.0667,
+          "offsetMs": 17
+        },
+        {
+          "scene": "dots",
+          "spokenForm": "six point one one percent",
+          "canon": "pct:6.11",
+          "asrOnsetS": 248.87,
+          "appearsOnScreenS": 248.9,
+          "offsetMs": 30
+        },
+        {
+          "scene": "end1",
+          "spokenForm": "six point one one percent",
+          "canon": "pct:6.11",
+          "asrOnsetS": 349.69,
+          "appearsOnScreenS": 349.7,
+          "offsetMs": 10
+        }
+      ]
+    },
+    {
+      "claimId": "be_32",
+      "value": 6.25912763827977,
+      "display": "6.26%",
+      "formula": "average annual return (compounded) at which after-tax net worth at month 48 is equal for A and B (bisection, 80 iterations); per-lot tax, losses not deductible",
+      "inputs": {
+        "balance": 25000,
+        "aprPct": 5.2,
+        "months": 48,
+        "extra": 400,
+        "bracket": {
+          "id": 32,
+          "ord": 35.8,
+          "lt": 18.8,
+          "niit": true
+        }
+      },
+      "shownIn": [
+        "dots32"
+      ],
+      "spoken": [
+        {
+          "scene": "dots32",
+          "spokenForm": "six point two six percent",
+          "canon": "pct:6.26",
+          "asrOnsetS": 256.015,
+          "appearsOnScreenS": 256.0333,
+          "offsetMs": 18
+        }
+      ]
+    },
+    {
+      "claimId": "be_0",
+      "value": 5.325655882604641,
+      "display": "5.33%",
+      "formula": "break-even with no tax at all: the 5.2% APR as an effective annual rate",
+      "inputs": {
+        "balance": 25000,
+        "aprPct": 5.2,
+        "months": 48,
+        "extra": 400
+      },
+      "shownIn": [
+        "below"
+      ],
+      "spoken": [
+        {
+          "scene": "below",
+          "spokenForm": "five point three three percent",
+          "canon": "pct:5.33",
+          "asrOnsetS": 268.67,
+          "appearsOnScreenS": 268.7,
+          "offsetMs": 30
+        }
+      ]
+    },
+    {
+      "claimId": "r_0",
+      "value": 2,
+      "display": "2.00%",
+      "formula": "sweep value: 2.00% + k × 0.25% (ILLUSTRATIVE range)",
+      "illustrative": true,
+      "inputs": {
+        "k": 0
+      },
+      "shownIn": [
+        "sw2"
+      ],
+      "spoken": []
+    },
+    {
+      "claimId": "r_1",
+      "value": 2.25,
+      "display": "2.25%",
+      "formula": "sweep value: 2.00% + k × 0.25% (ILLUSTRATIVE range)",
+      "illustrative": true,
+      "inputs": {
+        "k": 1
+      },
+      "shownIn": [
+        "sw2"
+      ],
+      "spoken": []
+    },
+    {
+      "claimId": "r_2",
+      "value": 2.5,
+      "display": "2.50%",
+      "formula": "sweep value: 2.00% + k × 0.25% (ILLUSTRATIVE range)",
+      "illustrative": true,
+      "inputs": {
+        "k": 2
+      },
+      "shownIn": [
+        "sw2"
+      ],
+      "spoken": []
+    },
+    {
+      "claimId": "r_3",
+      "value": 2.75,
+      "display": "2.75%",
+      "formula": "sweep value: 2.00% + k × 0.25% (ILLUSTRATIVE range)",
+      "illustrative": true,
+      "inputs": {
+        "k": 3
+      },
+      "shownIn": [
+        "sw2"
+      ],
+      "spoken": []
+    },
+    {
+      "claimId": "r_4",
+      "value": 3,
+      "display": "3.00%",
+      "formula": "sweep value: 2.00% + k × 0.25% (ILLUSTRATIVE range)",
+      "illustrative": true,
+      "inputs": {
+        "k": 4
+      },
+      "shownIn": [
+        "sw2"
+      ],
+      "spoken": []
+    },
+    {
+      "claimId": "r_5",
+      "value": 3.25,
+      "display": "3.25%",
+      "formula": "sweep value: 2.00% + k × 0.25% (ILLUSTRATIVE range)",
+      "illustrative": true,
+      "inputs": {
+        "k": 5
+      },
+      "shownIn": [
+        "sw2"
+      ],
+      "spoken": []
+    },
+    {
+      "claimId": "r_6",
+      "value": 3.5,
+      "display": "3.50%",
+      "formula": "sweep value: 2.00% + k × 0.25% (ILLUSTRATIVE range)",
+      "illustrative": true,
+      "inputs": {
+        "k": 6
+      },
+      "shownIn": [
+        "sw2"
+      ],
+      "spoken": []
+    },
+    {
+      "claimId": "r_7",
+      "value": 3.75,
+      "display": "3.75%",
+      "formula": "sweep value: 2.00% + k × 0.25% (ILLUSTRATIVE range)",
+      "illustrative": true,
+      "inputs": {
+        "k": 7
+      },
+      "shownIn": [
+        "sw2"
+      ],
+      "spoken": []
+    },
+    {
+      "claimId": "r_8",
+      "value": 4,
+      "display": "4.00%",
+      "formula": "sweep value: 2.00% + k × 0.25% (ILLUSTRATIVE range)",
+      "illustrative": true,
+      "inputs": {
+        "k": 8
+      },
+      "shownIn": [
+        "sw2"
+      ],
+      "spoken": []
+    },
+    {
+      "claimId": "r_10",
+      "value": 4.5,
+      "display": "4.50%",
+      "formula": "sweep value: 2.00% + k × 0.25% (ILLUSTRATIVE range)",
+      "illustrative": true,
+      "inputs": {
+        "k": 10
+      },
+      "shownIn": [
+        "sw2"
+      ],
+      "spoken": []
+    },
+    {
+      "claimId": "r_11",
+      "value": 4.75,
+      "display": "4.75%",
+      "formula": "sweep value: 2.00% + k × 0.25% (ILLUSTRATIVE range)",
+      "illustrative": true,
+      "inputs": {
+        "k": 11
+      },
+      "shownIn": [
+        "sw2"
+      ],
+      "spoken": []
+    },
+    {
+      "claimId": "r_13",
+      "value": 5.25,
+      "display": "5.25%",
+      "formula": "sweep value: 2.00% + k × 0.25% (ILLUSTRATIVE range)",
+      "illustrative": true,
+      "inputs": {
+        "k": 13
+      },
+      "shownIn": [
+        "sw2"
+      ],
+      "spoken": []
+    },
+    {
+      "claimId": "r_15",
+      "value": 5.75,
+      "display": "5.75%",
+      "formula": "sweep value: 2.00% + k × 0.25% (ILLUSTRATIVE range)",
+      "illustrative": true,
+      "inputs": {
+        "k": 15
+      },
+      "shownIn": [
+        "sw2"
+      ],
+      "spoken": []
+    },
+    {
+      "claimId": "r_17",
+      "value": 6.25,
+      "display": "6.25%",
+      "formula": "sweep value: 2.00% + k × 0.25% (ILLUSTRATIVE range)",
+      "illustrative": true,
+      "inputs": {
+        "k": 17
+      },
+      "shownIn": [
+        "sw2"
+      ],
+      "spoken": []
+    },
+    {
+      "claimId": "r_19",
+      "value": 6.75,
+      "display": "6.75%",
+      "formula": "sweep value: 2.00% + k × 0.25% (ILLUSTRATIVE range)",
+      "illustrative": true,
+      "inputs": {
+        "k": 19
+      },
+      "shownIn": [
+        "sw2"
+      ],
+      "spoken": []
+    },
+    {
+      "claimId": "r_21",
+      "value": 7.25,
+      "display": "7.25%",
+      "formula": "sweep value: 2.00% + k × 0.25% (ILLUSTRATIVE range)",
+      "illustrative": true,
+      "inputs": {
+        "k": 21
+      },
+      "shownIn": [
+        "sw2"
+      ],
+      "spoken": []
+    },
+    {
+      "claimId": "r_23",
+      "value": 7.75,
+      "display": "7.75%",
+      "formula": "sweep value: 2.00% + k × 0.25% (ILLUSTRATIVE range)",
+      "illustrative": true,
+      "inputs": {
+        "k": 23
+      },
+      "shownIn": [
+        "sw2"
+      ],
+      "spoken": []
+    },
+    {
+      "claimId": "r_24",
+      "value": 8,
+      "display": "8.00%",
+      "formula": "sweep value: 2.00% + k × 0.25% (ILLUSTRATIVE range)",
+      "illustrative": true,
+      "inputs": {
+        "k": 24
+      },
+      "shownIn": [
+        "sw2"
+      ],
+      "spoken": []
+    },
+    {
+      "claimId": "r_25",
+      "value": 8.25,
+      "display": "8.25%",
+      "formula": "sweep value: 2.00% + k × 0.25% (ILLUSTRATIVE range)",
+      "illustrative": true,
+      "inputs": {
+        "k": 25
+      },
+      "shownIn": [
+        "sw2"
+      ],
+      "spoken": []
+    },
+    {
+      "claimId": "r_26",
+      "value": 8.5,
+      "display": "8.50%",
+      "formula": "sweep value: 2.00% + k × 0.25% (ILLUSTRATIVE range)",
+      "illustrative": true,
+      "inputs": {
+        "k": 26
+      },
+      "shownIn": [
+        "sw2"
+      ],
+      "spoken": []
+    },
+    {
+      "claimId": "r_27",
+      "value": 8.75,
+      "display": "8.75%",
+      "formula": "sweep value: 2.00% + k × 0.25% (ILLUSTRATIVE range)",
+      "illustrative": true,
+      "inputs": {
+        "k": 27
+      },
+      "shownIn": [
+        "sw2"
+      ],
+      "spoken": []
+    },
+    {
+      "claimId": "r_28",
+      "value": 9,
+      "display": "9.00%",
+      "formula": "sweep value: 2.00% + k × 0.25% (ILLUSTRATIVE range)",
+      "illustrative": true,
+      "inputs": {
+        "k": 28
+      },
+      "shownIn": [
+        "sw2"
+      ],
+      "spoken": []
+    },
+    {
+      "claimId": "r_29",
+      "value": 9.25,
+      "display": "9.25%",
+      "formula": "sweep value: 2.00% + k × 0.25% (ILLUSTRATIVE range)",
+      "illustrative": true,
+      "inputs": {
+        "k": 29
+      },
+      "shownIn": [
+        "sw2"
+      ],
+      "spoken": []
+    },
+    {
+      "claimId": "r_30",
+      "value": 9.5,
+      "display": "9.50%",
+      "formula": "sweep value: 2.00% + k × 0.25% (ILLUSTRATIVE range)",
+      "illustrative": true,
+      "inputs": {
+        "k": 30
+      },
+      "shownIn": [
+        "sw2"
+      ],
+      "spoken": []
+    },
+    {
+      "claimId": "r_31",
+      "value": 9.75,
+      "display": "9.75%",
+      "formula": "sweep value: 2.00% + k × 0.25% (ILLUSTRATIVE range)",
+      "illustrative": true,
+      "inputs": {
+        "k": 31
+      },
+      "shownIn": [
+        "sw2"
+      ],
+      "spoken": []
+    },
+    {
+      "claimId": "r_32",
+      "value": 10,
+      "display": "10.00%",
+      "formula": "sweep value: 2.00% + k × 0.25% (ILLUSTRATIVE range)",
+      "illustrative": true,
+      "inputs": {
+        "k": 32
+      },
+      "shownIn": [
+        "sw2"
+      ],
+      "spoken": []
+    },
+    {
+      "claimId": "axis_lo",
+      "value": 2,
+      "display": "2%",
+      "formula": "sweep minimum (ILLUSTRATIVE range)",
+      "illustrative": true,
+      "inputs": {},
+      "shownIn": [
+        "sw1",
+        "sw2",
+        "sw3",
+        "risk2"
+      ],
+      "spoken": [
+        {
+          "scene": "sw1",
+          "spokenForm": "two percent",
+          "canon": "pct:2",
+          "asrOnsetS": 189.79,
+          "appearsOnScreenS": 189.8,
+          "offsetMs": 10
+        },
+        {
+          "scene": "sw3",
+          "spokenForm": "two percent",
+          "canon": "pct:2",
+          "asrOnsetS": 203.85,
+          "appearsOnScreenS": 203.8667,
+          "offsetMs": 17
+        },
+        {
+          "scene": "risk2",
+          "spokenForm": "two percent",
+          "canon": "pct:2",
+          "asrOnsetS": 289.61,
+          "appearsOnScreenS": 289.6667,
+          "offsetMs": 57
+        }
+      ]
+    },
+    {
+      "claimId": "axis_hi",
+      "value": 10,
+      "display": "10%",
+      "formula": "sweep maximum (ILLUSTRATIVE range)",
+      "illustrative": true,
+      "inputs": {},
+      "shownIn": [
+        "sw1",
+        "sw3",
+        "risk2"
+      ],
+      "spoken": [
+        {
+          "scene": "sw1",
+          "spokenForm": "ten percent",
+          "canon": "pct:10",
+          "asrOnsetS": 190.71,
+          "appearsOnScreenS": 190.7333,
+          "offsetMs": 23
+        },
+        {
+          "scene": "sw3",
+          "spokenForm": "ten percent",
+          "canon": "pct:10",
+          "asrOnsetS": 208.51,
+          "appearsOnScreenS": 208.5333,
+          "offsetMs": 23
+        },
+        {
+          "scene": "risk2",
+          "spokenForm": "ten percent",
+          "canon": "pct:10",
+          "asrOnsetS": 290.53,
+          "appearsOnScreenS": 290.5333,
           "offsetMs": 3
+        }
+      ]
+    },
+    {
+      "claimId": "tick_r6",
+      "value": 6,
+      "display": "6%",
+      "formula": "axis tick: average annual return (inside the ILLUSTRATIVE range)",
+      "illustrative": true,
+      "inputs": {},
+      "shownIn": [
+        "sw5"
+      ],
+      "spoken": []
+    },
+    {
+      "claimId": "tick_gm500",
+      "value": -500,
+      "display": "−$500",
+      "formula": "axis tick: dollars (difference B − A, after tax)",
+      "inputs": {},
+      "shownIn": [
+        "downside"
+      ],
+      "spoken": []
+    },
+    {
+      "claimId": "tick_g0",
+      "value": 0,
+      "display": "$0",
+      "formula": "axis tick: dollars (difference B − A, after tax)",
+      "inputs": {},
+      "shownIn": [
+        "sw3",
+        "sw5",
+        "gap"
+      ],
+      "spoken": []
+    },
+    {
+      "claimId": "gap_lo_abs",
+      "value": 822.2817094917518,
+      "display": "$822",
+      "formula": "A − B after tax at month 48 at a 2% return: how far road A is ahead (ILLUSTRATIVE range end)",
+      "inputs": {
+        "balance": 25000,
+        "aprPct": 5.2,
+        "months": 48,
+        "extra": 400,
+        "bracket": {
+          "id": 22,
+          "ord": 22,
+          "lt": 15
+        }
+      },
+      "shownIn": [
+        "sw3"
+      ],
+      "spoken": [
+        {
+          "scene": "sw3",
+          "spokenForm": "eight hundred twenty-two dollars",
+          "canon": "usd:822",
+          "asrOnsetS": 206.47,
+          "appearsOnScreenS": 206.5,
+          "offsetMs": 30
+        }
+      ]
+    },
+    {
+      "claimId": "share_st_a",
+      "value": 37.19358522640415,
+      "display": "37%",
+      "formula": "share of road A gains in short-term lots at month 48, at the 22% break-even return",
+      "inputs": {
+        "balance": 25000,
+        "aprPct": 5.2,
+        "months": 48,
+        "extra": 400,
+        "bracket": {
+          "id": 22,
+          "ord": 22,
+          "lt": 15
+        },
+        "returnPct": 6.114509267810908
+      },
+      "shownIn": [
+        "share"
+      ],
+      "spoken": [
+        {
+          "scene": "share",
+          "spokenForm": "thirty-seven percent",
+          "canon": "pct:37",
+          "asrOnsetS": 172.23,
+          "appearsOnScreenS": 172.2333,
+          "offsetMs": 3
+        }
+      ]
+    },
+    {
+      "claimId": "share_st_b",
+      "value": 6.517789297741282,
+      "display": "7%",
+      "formula": "share of road B gains in short-term lots at month 48, at the 22% break-even return",
+      "inputs": {
+        "balance": 25000,
+        "aprPct": 5.2,
+        "months": 48,
+        "extra": 400,
+        "bracket": {
+          "id": 22,
+          "ord": 22,
+          "lt": 15
+        },
+        "returnPct": 6.114509267810908
+      },
+      "shownIn": [
+        "share"
+      ],
+      "spoken": [
+        {
+          "scene": "share",
+          "spokenForm": "seven percent",
+          "canon": "pct:7",
+          "asrOnsetS": 175.47,
+          "appearsOnScreenS": 175.5,
+          "offsetMs": 30
+        }
+      ]
+    },
+    {
+      "claimId": "tick_d5",
+      "value": 5,
+      "display": "5%",
+      "formula": "axis tick: break-even return (dot plot)",
+      "inputs": {},
+      "shownIn": [
+        "dots",
+        "below"
+      ],
+      "spoken": []
+    },
+    {
+      "claimId": "tick_d6",
+      "value": 6,
+      "display": "6%",
+      "formula": "axis tick: break-even return (dot plot)",
+      "inputs": {},
+      "shownIn": [
+        "rises"
+      ],
+      "spoken": []
+    },
+    {
+      "claimId": "tick_nwm20000",
+      "value": -20000,
+      "display": "−$20,000",
+      "formula": "axis tick: net worth after tax",
+      "inputs": {},
+      "shownIn": [
+        "race"
+      ],
+      "spoken": []
+    },
+    {
+      "claimId": "tick_nw20000",
+      "value": 20000,
+      "display": "$20,000",
+      "formula": "axis tick: net worth after tax",
+      "inputs": {},
+      "shownIn": [
+        "race"
+      ],
+      "spoken": []
+    },
+    {
+      "claimId": "gap_hi",
+      "value": 860.6592989465607,
+      "display": "$861",
+      "formula": "B − A after tax at month 48 at a 10% return (ILLUSTRATIVE range end)",
+      "inputs": {
+        "balance": 25000,
+        "aprPct": 5.2,
+        "months": 48,
+        "extra": 400,
+        "bracket": {
+          "id": 22,
+          "ord": 22,
+          "lt": 15
+        }
+      },
+      "shownIn": [
+        "sw3"
+      ],
+      "spoken": [
+        {
+          "scene": "sw3",
+          "spokenForm": "eight hundred sixty-one dollars",
+          "canon": "usd:861",
+          "asrOnsetS": 211.05,
+          "appearsOnScreenS": 211.0667,
+          "offsetMs": 17
+        }
+      ]
+    },
+    {
+      "claimId": "seq_first",
+      "value": 8,
+      "display": "8%",
+      "formula": "ILLUSTRATIVE sequence: annual return for months 1–36 (not a forecast)",
+      "illustrative": true,
+      "inputs": {},
+      "shownIn": [
+        "seq"
+      ],
+      "spoken": [
+        {
+          "scene": "seq",
+          "spokenForm": "eight percent",
+          "canon": "pct:8",
+          "asrOnsetS": 295.39,
+          "appearsOnScreenS": 295.4,
+          "offsetMs": 10
+        }
+      ]
+    },
+    {
+      "claimId": "seq_second",
+      "value": -20,
+      "display": "−20%",
+      "formula": "ILLUSTRATIVE sequence: annual return for months 37–48 (not a forecast)",
+      "illustrative": true,
+      "inputs": {},
+      "shownIn": [
+        "seq"
+      ],
+      "spoken": [
+        {
+          "scene": "seq",
+          "spokenForm": "minus twenty percent",
+          "canon": "pct:-20",
+          "asrOnsetS": 298.11,
+          "appearsOnScreenS": 298.1333,
+          "offsetMs": 23
+        }
+      ]
+    },
+    {
+      "claimId": "seq_split",
+      "value": 36,
+      "display": "36",
+      "formula": "ILLUSTRATIVE sequence: last month of the first rate",
+      "illustrative": true,
+      "inputs": {},
+      "shownIn": [
+        "seq",
+        "race"
+      ],
+      "spoken": [
+        {
+          "scene": "seq",
+          "spokenForm": "thirty-six",
+          "canon": "num:36",
+          "asrOnsetS": 296.61,
+          "appearsOnScreenS": 296.6333,
+          "offsetMs": 23
+        },
+        {
+          "scene": "race",
+          "spokenForm": "thirty-six",
+          "canon": "num:36",
+          "asrOnsetS": 304.29,
+          "appearsOnScreenS": 304.3,
+          "offsetMs": 10
+        }
+      ]
+    },
+    {
+      "claimId": "seq_avg",
+      "value": 0.19367661369467104,
+      "display": "0.19%",
+      "formula": "average annual return (compounded) of the ILLUSTRATIVE sequence over 48 months",
+      "illustrative": true,
+      "inputs": {
+        "sequence": {
+          "first": 8,
+          "second": -20,
+          "split": 36
+        }
+      },
+      "shownIn": [
+        "order"
+      ],
+      "spoken": [
+        {
+          "scene": "order",
+          "spokenForm": "zero point one nine percent",
+          "canon": "pct:0.19",
+          "asrOnsetS": 327.09,
+          "appearsOnScreenS": 327.1,
+          "offsetMs": 10
+        }
+      ]
+    },
+    {
+      "claimId": "cross_month",
+      "value": 39,
+      "display": "39",
+      "formula": "first month m where NW_B − NW_A turns negative under the ILLUSTRATIVE sequence",
+      "inputs": {
+        "balance": 25000,
+        "aprPct": 5.2,
+        "months": 48,
+        "extra": 400,
+        "bracket": {
+          "id": 22,
+          "ord": 22,
+          "lt": 15
+        },
+        "sequence": {
+          "first": 8,
+          "second": -20,
+          "split": 36
+        }
+      },
+      "shownIn": [
+        "gap"
+      ],
+      "spoken": [
+        {
+          "scene": "gap",
+          "spokenForm": "thirty-nine",
+          "canon": "month:39",
+          "asrOnsetS": 314.59,
+          "appearsOnScreenS": 314.6,
+          "offsetMs": 10
+        }
+      ]
+    },
+    {
+      "claimId": "gap_end",
+      "value": 458.8185998026602,
+      "display": "$459",
+      "formula": "NW_A − NW_B at month 48 under the ILLUSTRATIVE sequence (after tax)",
+      "inputs": {
+        "balance": 25000,
+        "aprPct": 5.2,
+        "months": 48,
+        "extra": 400,
+        "bracket": {
+          "id": 22,
+          "ord": 22,
+          "lt": 15
+        },
+        "sequence": {
+          "first": 8,
+          "second": -20,
+          "split": 36
+        }
+      },
+      "shownIn": [
+        "downside"
+      ],
+      "spoken": [
+        {
+          "scene": "downside",
+          "spokenForm": "four hundred fifty-nine dollars",
+          "canon": "usd:459",
+          "asrOnsetS": 317.51,
+          "appearsOnScreenS": 317.5333,
+          "offsetMs": 23
         }
       ]
     }

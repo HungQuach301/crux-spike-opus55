@@ -19,6 +19,7 @@ const B_ALLOWED = {
   bars: ['flip'], sweep: ['flip'], settle: ['flip'], morph: ['flip'], detail: ['flip'], flip: ['flip'], matrix: ['matrix', 'flip'], matrix32: ['matrix'],
   certain: ['matrix'], sequence: ['down'], race: ['down'], gap: ['down'], cross: ['down'], downside: ['down'], converge: ['roads'], outro: ['*'],
 };
+const B_LAYOUTS = null; // test B's layout names are free text; layout-repeat is a test C rule
 const B_CHART = new Set(['timeline', 'interest', 'tax', 'bars', 'sweep', 'settle', 'morph', 'detail', 'flip', 'matrix', 'matrix32', 'certain', 'sequence', 'race', 'gap', 'cross', 'downside']);
 
 async function openB(browser) {
@@ -44,12 +45,12 @@ async function openB(browser) {
   return { page, scenes, total: timeline.total };
 }
 
-async function openC(browser) {
-  const tl = JSON.parse(fs.readFileSync(path.join(OUT, 'timeline.json'), 'utf8'));
+async function openC(browser, root = path.join(__dirname, '..')) {
+  const tl = JSON.parse(fs.readFileSync(path.join(root, 'out', 'timeline.json'), 'utf8'));
   const page = await browser.newPage({ viewport: { width: 1920, height: 1080 }, deviceScaleFactor: 1 });
-  await page.goto('file://' + path.join(__dirname, 'index.html'));
+  await page.goto('file://' + path.join(root, 'render-av', 'index.html'));
   await page.evaluate(async () => { await document.fonts.ready; await Promise.all(['400', '600', '700'].map((w) => document.fonts.load(`${w} 28px Inter`))); });
-  const scenes = tl.scenes.map((s) => ({ id: s.id, start: s.start, dur: s.dur, allowed: s.panels, chart: !!s.chart, move: s.move }));
+  const scenes = tl.scenes.map((s) => ({ id: s.id, start: s.start, dur: s.dur, allowed: s.panels, chart: !!s.chart, move: s.move, layout: s.layout }));
   return { page, scenes, total: tl.total };
 }
 
@@ -65,18 +66,22 @@ function diffBox(a, b) {
 async function run(target) {
   const t0 = Date.now();
   const browser = await chromium.launch({ args: ['--font-render-hinting=none', '--disable-lcd-text'] });
-  const { page, scenes, total } = target === 'b' ? await openB(browser) : await openC(browser);
+  // target 'c' = this checkout; 'c:<dir>' = another checkout of test C (e.g. the midpoint commit)
+  const { page, scenes, total } = target === 'b' ? await openB(browser) : await openC(browser, target.startsWith('c:') ? target.slice(2) : undefined);
+  const illustrative = require('../src/av/data').build().claims.filter((c) => c.illustrative).map((c) => c.claimId);
   await page.addScriptTag({ path: path.join(__dirname, 'rules.js') });
   const sceneAt = (t) => scenes.find((s) => t >= s.start && t < s.start + s.dur) || scenes[scenes.length - 1];
   const frames = Math.round(total * FPS);
   const per = Object.fromEntries(scenes.map((s) => [s.id, { samples: 0, l1: [], issues: {}, examples: {}, split: [] }]));
   let splitRun = [];
   const splitRuns = [];
+  const only = process.env.SCENES ? new Set(process.env.SCENES.split(',')) : null; // quick runs while fixing
   for (let f = 0; f < frames; f += STEP) {
     const t = f / FPS, s = sceneAt(t), P = per[s.id];
+    if (only && !only.has(s.id)) continue;
     const inTransition = t - s.start < s.move;
     await page.evaluate((t) => window.SEG.renderFrame(t), t);
-    const r = await page.evaluate((ctx) => ({ issues: window.RULES.checkFrame(ctx), l1: window.RULES.level1Count(), snap: window.RULES.snapshot() }), { allowed: s.allowed, inTransition });
+    const r = await page.evaluate((ctx) => ({ issues: window.RULES.checkFrame(ctx), l1: window.RULES.level1Count(), snap: window.RULES.snapshot() }), { allowed: s.allowed, inTransition, illustrative });
     P.samples++;
     P.l1.push(r.l1);
     for (const i of r.issues) { P.issues[i.rule] = (P.issues[i.rule] || 0) + 1; (P.examples[i.rule] ||= []).length < 3 && P.examples[i.rule].push({ t: +t.toFixed(2), ...i }); }
@@ -124,13 +129,20 @@ async function run(target) {
     const level1 = s.chart && s.dur >= 2 ? { shareExactlyOne: +one.toFixed(2), max: Math.max(0, ...P.l1), pass: one >= 0.5 && Math.max(0, ...P.l1) <= 1 } : { shareExactlyOne: +one.toFixed(2), max: Math.max(0, ...P.l1), pass: null };
     return { id: s.id, samples: P.samples, chart: s.chart, issues: P.issues, level1, split: splitViolations.filter((v) => v.scene === s.id), examples: P.examples };
   });
-  const rules = ['scene-leak', 'bg-over-data', 'unlabelled-curve', 'axis-anchors', 'grey-emphasis', 'number-colour'];
+  const rules = ['scene-leak', 'bg-over-data', 'unlabelled-curve', 'axis-anchors', 'grey-emphasis', 'number-colour', 'bar-proportion', 'illustrative-badge', 'text-line-collision'];
   const summary = Object.fromEntries(rules.map((k) => {
     const sc = sceneRows.filter((r) => r.issues[k]);
     return [k, { framesFlagged: sc.reduce((a, r) => a + r.issues[k], 0), scenes: sc.map((r) => `${r.id} (${r.issues[k]})`), pass: sc.length === 0 }];
   }));
   const l1Fail = sceneRows.filter((r) => r.level1.pass === false);
   summary['level1'] = { scenes: l1Fail.map((r) => `${r.id} (one l1 in ${Math.round(r.level1.shareExactlyOne * 100)}% of samples, max ${r.level1.max})`), pass: l1Fail.length === 0 };
+  // layout repetition: no layout more than twice in any 90 s window (scene start times)
+  const rep = [];
+  if (scenes[0].layout) for (const s of scenes) {
+    const w = scenes.filter((x) => x.layout === s.layout && x.start >= s.start && x.start < s.start + 90);
+    if (w.length > 2 && !rep.some((r) => r.layout === s.layout && r.scenes[0] === w[0].id)) rep.push({ layout: s.layout, scenes: w.map((x) => x.id), window: [s.start, +(s.start + 90).toFixed(1)] });
+  }
+  summary['layout-repeat'] = { scenes: rep.map((r) => `${r.layout}: ${r.scenes.join(', ')} within 90 s from ${r.window[0]}s`), pass: rep.length === 0 };
   summary['split-view'] = { scenes: splitViolations.map((v) => `${v.scene} (${v.durationS}s from ${v.start}s, changes span ${Math.round(v.maxW * 100)}% × ${Math.round(v.maxH * 100)}%)`), pass: splitViolations.length === 0 };
   const res = {
     target: target === 'b' ? 'test B (render-motion, out/segment.mp4 source)' : 'test C (render-av)',
@@ -138,11 +150,16 @@ async function run(target) {
     definitions: {
       'split-view': `changed elements between t and t+${DT}s with the camera frozen (an element present in both frames counts only the region where its old and new boxes differ); violation when the union box of changes exceeds ${SPLIT_MAX * 100}% of frame width or height for >= ${SPLIT_MIN_RUN}s, outside camera moves`,
       level1: 'chart scenes of >= 2 s: exactly one visible .l1 (opacity > 0.5) in >= 50% of samples, never two',
-      exemptions: 'scene-leak and split-view skip the camera move at the start of each scene',
+      'bar-proportion': 'a visible bar may not run off the frame along its value axis unless an axis break is shown; settled bars with data-value in one chart share one scale (±3%)',
+      'illustrative-badge': 'whenever an illustrative claim is visible (opacity > 0.5), an ILLUSTRATIVE badge is visible in the same frame',
+      'text-line-collision': 'no point of a visible stroked line/path/outline (sampled every 3 px on screen) falls inside a visible text box (glyph band = box minus 2% top and bottom: the ascent + descent of Inter fill a 1.2 line box)',
+      'layout-repeat': 'no layout used more than twice within any 90 s window',
+      exemptions: 'scene-leak, split-view, bar-proportion, unlabelled-curve, axis-anchors and text-line-collision skip the camera move at the start of each scene (layout is judged on settled shots); bg-over-data, grey-emphasis, number-colour and illustrative-badge apply to every frame',
     },
     summary, scenes: sceneRows, seconds: +((Date.now() - t0) / 1000).toFixed(1),
   };
-  fs.writeFileSync(path.join(OUT, `rules-${target}.json`), JSON.stringify(res, null, 1));
+  const tag = (target.startsWith('c:') ? 'c-midpoint' : target) + (only ? '-partial' : '');
+  fs.writeFileSync(path.join(OUT, `rules-${tag}.json`), JSON.stringify(res, null, 1));
   console.log(JSON.stringify(summary, null, 1));
   console.log('seconds', res.seconds);
 }

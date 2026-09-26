@@ -4,7 +4,7 @@
    "name": "establishing",
    "scene": "hook3",
    "t": 15.06,
-   "inkCoverage": 0.0263,
+   "inkCoverage": 0.0255,
    "checkerIssues": 0,
    "visibleWords": 8,
    "level1Elements": 1
@@ -12,7 +12,7 @@
   {
    "name": "break-even-teaser",
    "scene": "hook4",
-   "t": 23.25,
+   "t": 22.74,
    "inkCoverage": 0.0143,
    "checkerIssues": 0,
    "visibleWords": 7,
@@ -21,8 +21,8 @@
   {
    "name": "same-cash",
    "scene": "cash",
-   "t": 77.79,
-   "inkCoverage": 0.1028,
+   "t": 77.1,
+   "inkCoverage": 0.1031,
    "checkerIssues": 0,
    "visibleWords": 8,
    "level1Elements": 1
@@ -30,8 +30,8 @@
   {
    "name": "payoff-month",
    "scene": "timeline",
-   "t": 86.94,
-   "inkCoverage": 0.0649,
+   "t": 87.48,
+   "inkCoverage": 0.0651,
    "checkerIssues": 0,
    "visibleWords": 8,
    "level1Elements": 1
@@ -39,8 +39,8 @@
   {
    "name": "interest-avoided",
    "scene": "certain",
-   "t": 110.16,
-   "inkCoverage": 0.0834,
+   "t": 113.76,
+   "inkCoverage": 0.0142,
    "checkerIssues": 0,
    "visibleWords": 4,
    "level1Elements": 1

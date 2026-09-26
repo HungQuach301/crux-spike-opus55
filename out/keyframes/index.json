@@ -7,21 +7,21 @@
  {
   "name": "break-even-teaser",
   "scene": "hook4",
-  "t": 23.25
+  "t": 22.74
  },
  {
   "name": "same-cash",
   "scene": "cash",
-  "t": 77.79
+  "t": 77.1
  },
  {
   "name": "payoff-month",
   "scene": "timeline",
-  "t": 86.94
+  "t": 87.48
  },
  {
   "name": "interest-avoided",
   "scene": "certain",
-  "t": 110.16
+  "t": 113.76
  }
 ]

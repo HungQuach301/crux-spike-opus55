@@ -5,19 +5,19 @@
  },
  "master": {
   "wav": {
-   "integratedLUFS": -14.01,
+   "integratedLUFS": -14.0,
    "truePeakDBTP": -2.0
   },
   "encoded": {
    "file": "out/video.mp4",
    "ownMeter": {
-    "integratedLUFS": -14.05,
-    "truePeakDBTP": -1.98
+    "integratedLUFS": -14.02,
+    "truePeakDBTP": -1.96
    },
    "ffmpegEbur128": {
-    "integratedLUFS": -14.1,
+    "integratedLUFS": -14.0,
     "truePeakDBFS": -2.0,
-    "LRA": 3.8
+    "LRA": 4.1
    },
    "pass": {
     "integrated -14 \u00b11": true,
@@ -25,8 +25,8 @@
    }
   },
   "settings": {
-   "gainDB": 1.97,
-   "limiterMaxReductionDB": -0.93,
+   "gainDB": 2.0,
+   "limiterMaxReductionDB": -0.61,
    "limiterTime": {
     "shareOver1dB": 0.0,
     "shareOver3dB": 0.0
@@ -77,15 +77,15 @@
  },
  "musicUnderVoice": {
   "definition": "400 ms blocks (100 ms hop) where the voice is active in >= 80% of the block and music is not silent; difference of energy-mean loudness voice - music (ducked)",
-  "blocks": 792,
-  "voiceMinusMusicDB": 21.38,
+  "blocks": 2312,
+  "voiceMinusMusicDB": 21.3,
   "target": "18-22 dB",
   "pass": true,
   "perBlock": {
-   "p10": 17.5,
-   "median": 21.3,
-   "p90": 24.0,
-   "shareIn18to22": 0.475
+   "p10": 17.2,
+   "median": 21.1,
+   "p90": 24.1,
+   "shareIn18to22": 0.49
   },
   "duckDB": 1.0
  },
@@ -93,64 +93,109 @@
   {
    "chapter": "hook",
    "start": 0,
-   "end": 30.0,
-   "voiceLUFS": -16.08,
-   "musicLUFS": -36.92,
-   "masterLUFS": -14.11,
-   "voiceMinusMusicInVoiceWindowsDB": 21.47
+   "end": 29.4,
+   "voiceLUFS": -15.79,
+   "musicLUFS": -37.22,
+   "masterLUFS": -13.85,
+   "voiceMinusMusicInVoiceWindowsDB": 21.76
   },
   {
    "chapter": "ident",
-   "start": 30,
-   "end": 33,
+   "start": 29.4,
+   "end": 32.4,
    "voiceLUFS": null,
-   "musicLUFS": -35.75,
-   "masterLUFS": -27.28,
+   "musicLUFS": -36.3,
+   "masterLUFS": -27.35,
    "voiceMinusMusicInVoiceWindowsDB": null
   },
   {
    "chapter": "setup",
-   "start": 33,
-   "end": 78.6,
-   "voiceLUFS": -16.09,
-   "musicLUFS": -36.78,
-   "masterLUFS": -14.06,
-   "voiceMinusMusicInVoiceWindowsDB": 21.31
+   "start": 32.4,
+   "end": 78,
+   "voiceLUFS": -15.81,
+   "musicLUFS": -37.05,
+   "masterLUFS": -13.87,
+   "voiceMinusMusicInVoiceWindowsDB": 21.61
   },
   {
    "chapter": "ch1",
-   "start": 78.6,
-   "end": 127.8,
-   "voiceLUFS": -15.87,
-   "musicLUFS": -36.84,
-   "masterLUFS": -13.83,
-   "voiceMinusMusicInVoiceWindowsDB": 21.39
+   "start": 78,
+   "end": 133.8,
+   "voiceLUFS": -16.19,
+   "musicLUFS": -37.31,
+   "masterLUFS": -14.15,
+   "voiceMinusMusicInVoiceWindowsDB": 21.56
+  },
+  {
+   "chapter": "ch2",
+   "start": 133.8,
+   "end": 184.2,
+   "voiceLUFS": -16.22,
+   "musicLUFS": -37.12,
+   "masterLUFS": -14.17,
+   "voiceMinusMusicInVoiceWindowsDB": 21.38
+  },
+  {
+   "chapter": "ch3",
+   "start": 184.2,
+   "end": 227.4,
+   "voiceLUFS": -15.91,
+   "musicLUFS": -36.51,
+   "masterLUFS": -13.86,
+   "voiceMinusMusicInVoiceWindowsDB": 21.09
+  },
+  {
+   "chapter": "ch4",
+   "start": 227.4,
+   "end": 277.2,
+   "voiceLUFS": -15.83,
+   "musicLUFS": -36.16,
+   "masterLUFS": -13.77,
+   "voiceMinusMusicInVoiceWindowsDB": 20.74
+  },
+  {
+   "chapter": "ch5",
+   "start": 277.2,
+   "end": 333.0,
+   "voiceLUFS": -16.25,
+   "musicLUFS": -36.34,
+   "masterLUFS": -14.23,
+   "voiceMinusMusicInVoiceWindowsDB": 20.8
+  },
+  {
+   "chapter": "close",
+   "start": 333,
+   "end": 364.2,
+   "voiceLUFS": -15.74,
+   "musicLUFS": -37.23,
+   "masterLUFS": -13.86,
+   "voiceMinusMusicInVoiceWindowsDB": 22.11
   }
  ],
  "sfxCountPerType": {
-  "appear": 21,
-  "reveal": 7,
-  "transition": 18,
-  "compare": 3,
-  "dismiss": 2,
-  "count": 5,
-  "emphasis": 4,
-  "threshold-cross": 1
+  "appear": 67,
+  "reveal": 19,
+  "transition": 47,
+  "count": 20,
+  "compare": 4,
+  "dismiss": 4,
+  "emphasis": 7,
+  "threshold-cross": 3
  },
  "sfxTypesExactly8": true,
- "sfxEvents": 61,
- "sfxEventsPerSecond": 0.477,
+ "sfxEvents": 171,
+ "sfxEventsPerSecond": 0.47,
  "sfxDensity": {
-  "percent": 32.7,
+  "percent": 30.3,
   "definition": "share of 50 ms windows where the SFX layer RMS exceeds the median room-tone RMS (-56.8 dBFS)",
   "target": "30-40%",
   "pass": true
  },
  "sync": {
-  "maxAbsOffsetMs": 38.3,
-  "meanAbsOffsetMs": 19.8,
-  "eventsMeasured": 61,
-  "eventsTotal": 61,
+  "maxAbsOffsetMs": 45.0,
+  "meanAbsOffsetMs": 18.1,
+  "eventsMeasured": 171,
+  "eventsTotal": 171,
   "limitMs": 60,
   "pass": true,
   "unmeasured": [],
@@ -158,18 +203,18 @@
    {
     "id": "hook1:hkBal",
     "type": "appear",
-    "timelineT": 1.095,
-    "audioOnsetT": 1.095,
-    "visualT": 1.1333,
-    "offsetMs": -38.3
+    "timelineT": 1.335,
+    "audioOnsetT": 1.335,
+    "visualT": 1.3667,
+    "offsetMs": -31.7
    },
    {
     "id": "hook1:hkApr",
     "type": "reveal",
-    "timelineT": 3.255,
-    "audioOnsetT": 3.2573,
-    "visualT": 3.2667,
-    "offsetMs": -9.4
+    "timelineT": 3.535,
+    "audioOnsetT": 3.5373,
+    "visualT": 3.5667,
+    "offsetMs": -29.4
    },
    {
     "id": "hook2:cam",
@@ -188,12 +233,12 @@
     "offsetMs": -33.3
    },
    {
-    "id": "hook2b:hkRoadB",
+    "id": "hook2:hkRoadB",
     "type": "appear",
-    "timelineT": 8.3,
-    "audioOnsetT": 8.3,
-    "visualT": 8.3333,
-    "offsetMs": -33.3
+    "timelineT": 7.68,
+    "audioOnsetT": 7.68,
+    "visualT": 7.7,
+    "offsetMs": -20.0
    },
    {
     "id": "hook3:cam",
@@ -206,18 +251,50 @@
    {
     "id": "hook3:hkMonths",
     "type": "appear",
-    "timelineT": 12.295,
-    "audioOnsetT": 12.295,
-    "visualT": 12.3333,
-    "offsetMs": -38.3
+    "timelineT": 12.155,
+    "audioOnsetT": 12.155,
+    "visualT": 12.1667,
+    "offsetMs": -11.7
+   },
+   {
+    "id": "hook3:cell12",
+    "type": "count",
+    "timelineT": 12.65,
+    "audioOnsetT": 12.65,
+    "visualT": 12.6667,
+    "offsetMs": -16.7
+   },
+   {
+    "id": "hook3:cell24",
+    "type": "count",
+    "timelineT": 13.19,
+    "audioOnsetT": 13.19,
+    "visualT": 13.2,
+    "offsetMs": -10.0
+   },
+   {
+    "id": "hook3:cell36",
+    "type": "count",
+    "timelineT": 13.73,
+    "audioOnsetT": 13.73,
+    "visualT": 13.7333,
+    "offsetMs": -3.3
    },
    {
     "id": "hook3:hkLots",
     "type": "compare",
-    "timelineT": 13.935,
-    "audioOnsetT": 13.935,
-    "visualT": 13.9667,
-    "offsetMs": -31.7
+    "timelineT": 13.795,
+    "audioOnsetT": 13.795,
+    "visualT": 13.8,
+    "offsetMs": -5.0
+   },
+   {
+    "id": "hook3:cell48",
+    "type": "count",
+    "timelineT": 14.27,
+    "audioOnsetT": 14.27,
+    "visualT": 14.3,
+    "offsetMs": -30.0
    },
    {
     "id": "hook4:cam",
@@ -230,273 +307,273 @@
    {
     "id": "hook4:hkBe",
     "type": "reveal",
-    "timelineT": 18.955,
-    "audioOnsetT": 18.9573,
-    "visualT": 18.9667,
-    "offsetMs": -9.4
+    "timelineT": 18.535,
+    "audioOnsetT": 18.5373,
+    "visualT": 18.5667,
+    "offsetMs": -29.4
    },
    {
     "id": "hook4:hkBracket",
     "type": "appear",
-    "timelineT": 22.175,
-    "audioOnsetT": 22.175,
-    "visualT": 22.2,
-    "offsetMs": -25.0
+    "timelineT": 21.815,
+    "audioOnsetT": 21.815,
+    "visualT": 21.8333,
+    "offsetMs": -18.3
    },
    {
     "id": "hook5:cam",
     "type": "transition",
-    "timelineT": 24.6,
-    "audioOnsetT": 24.6,
-    "visualT": 24.6,
+    "timelineT": 24,
+    "audioOnsetT": 24.0,
+    "visualT": 24,
     "offsetMs": 0.0
    },
    {
     "id": "hook5:hkBelow",
     "type": "appear",
-    "timelineT": 25.895,
-    "audioOnsetT": 25.895,
-    "visualT": 25.9333,
-    "offsetMs": -38.3
+    "timelineT": 24.935,
+    "audioOnsetT": 24.935,
+    "visualT": 24.9667,
+    "offsetMs": -31.7
    },
    {
     "id": "hook5:hkAbove",
     "type": "appear",
-    "timelineT": 28.595,
-    "audioOnsetT": 28.595,
-    "visualT": 28.6333,
+    "timelineT": 27.495,
+    "audioOnsetT": 27.495,
+    "visualT": 27.5333,
     "offsetMs": -38.3
    },
    {
     "id": "ident:dismissHook",
     "type": "dismiss",
-    "timelineT": 30,
-    "audioOnsetT": 30.0,
-    "visualT": 30.0333,
+    "timelineT": 29.4,
+    "audioOnsetT": 29.4,
+    "visualT": 29.4333,
     "offsetMs": -33.3
    },
    {
     "id": "ident:cam",
     "type": "transition",
-    "timelineT": 30,
-    "audioOnsetT": 30.0,
-    "visualT": 30,
+    "timelineT": 29.4,
+    "audioOnsetT": 29.4,
+    "visualT": 29.4,
     "offsetMs": 0.0
    },
    {
     "id": "ident:crux",
     "type": "reveal",
-    "timelineT": 30.6,
-    "audioOnsetT": 30.6023,
-    "visualT": 30.6333,
+    "timelineT": 30,
+    "audioOnsetT": 30.0023,
+    "visualT": 30.0333,
     "offsetMs": -31.0
    },
    {
-    "id": "setup:cam",
+    "id": "scope1:cam",
     "type": "transition",
-    "timelineT": 33,
-    "audioOnsetT": 33.0,
-    "visualT": 33,
+    "timelineT": 32.4,
+    "audioOnsetT": 32.4,
+    "visualT": 32.4,
     "offsetMs": 0.0
    },
    {
-    "id": "setup:setupWord",
+    "id": "scope1:setupWord",
     "type": "appear",
-    "timelineT": 33.795,
-    "audioOnsetT": 33.795,
-    "visualT": 33.8333,
-    "offsetMs": -38.3
+    "timelineT": 33.275,
+    "audioOnsetT": 33.275,
+    "visualT": 33.3,
+    "offsetMs": -25.0
    },
    {
     "id": "scope1:usOnly",
     "type": "appear",
-    "timelineT": 36.155,
-    "audioOnsetT": 36.155,
-    "visualT": 36.1667,
-    "offsetMs": -11.7
+    "timelineT": 34.695,
+    "audioOnsetT": 34.695,
+    "visualT": 34.7333,
+    "offsetMs": -38.3
    },
    {
     "id": "scope1:stated",
     "type": "appear",
-    "timelineT": 38.995,
-    "audioOnsetT": 38.995,
-    "visualT": 39.0333,
-    "offsetMs": -38.3
+    "timelineT": 37.135,
+    "audioOnsetT": 37.135,
+    "visualT": 37.1667,
+    "offsetMs": -31.7
    },
    {
     "id": "scope2:cam",
     "type": "transition",
-    "timelineT": 41.4,
-    "audioOnsetT": 41.4,
-    "visualT": 41.4,
+    "timelineT": 39.6,
+    "audioOnsetT": 39.6,
+    "visualT": 39.6,
     "offsetMs": 0.0
    },
    {
     "id": "scope2:notDed",
     "type": "appear",
-    "timelineT": 43.295,
-    "audioOnsetT": 43.295,
-    "visualT": 43.3333,
-    "offsetMs": -38.3
+    "timelineT": 41.255,
+    "audioOnsetT": 41.255,
+    "visualT": 41.2667,
+    "offsetMs": -11.7
    },
    {
     "id": "scope2:dedY0",
     "type": "appear",
-    "timelineT": 47.735,
-    "audioOnsetT": 47.735,
-    "visualT": 47.7667,
-    "offsetMs": -31.7
+    "timelineT": 45.655,
+    "audioOnsetT": 45.655,
+    "visualT": 45.7,
+    "offsetMs": -45.0
    },
    {
     "id": "scope2:dedY1",
     "type": "count",
-    "timelineT": 48.995,
-    "audioOnsetT": 48.995,
-    "visualT": 49.0333,
-    "offsetMs": -38.3
+    "timelineT": 47.035,
+    "audioOnsetT": 47.035,
+    "visualT": 47.0667,
+    "offsetMs": -31.7
    },
    {
     "id": "facts:cam",
     "type": "transition",
-    "timelineT": 50.4,
-    "audioOnsetT": 50.4,
-    "visualT": 50.4,
+    "timelineT": 48.6,
+    "audioOnsetT": 48.6,
+    "visualT": 48.6,
     "offsetMs": 0.0
    },
    {
     "id": "facts:fBal",
     "type": "reveal",
-    "timelineT": 51.155,
-    "audioOnsetT": 51.1573,
-    "visualT": 51.1667,
-    "offsetMs": -9.4
+    "timelineT": 49.575,
+    "audioOnsetT": 49.5773,
+    "visualT": 49.6,
+    "offsetMs": -22.7
    },
    {
     "id": "facts:fApr",
     "type": "appear",
-    "timelineT": 53.195,
-    "audioOnsetT": 53.195,
-    "visualT": 53.2333,
-    "offsetMs": -38.3
+    "timelineT": 51.755,
+    "audioOnsetT": 51.755,
+    "visualT": 51.7667,
+    "offsetMs": -11.7
    },
    {
     "id": "facts:fMonths",
     "type": "count",
-    "timelineT": 54.815,
-    "audioOnsetT": 54.815,
-    "visualT": 54.8333,
-    "offsetMs": -18.3
+    "timelineT": 53.635,
+    "audioOnsetT": 53.635,
+    "visualT": 53.6667,
+    "offsetMs": -31.7
    },
    {
     "id": "facts:fPay",
     "type": "count",
-    "timelineT": 56.515,
-    "audioOnsetT": 56.515,
-    "visualT": 56.5333,
-    "offsetMs": -18.3
+    "timelineT": 54.955,
+    "audioOnsetT": 54.955,
+    "visualT": 54.9667,
+    "offsetMs": -11.7
    },
    {
     "id": "extra:cam",
     "type": "transition",
-    "timelineT": 58.8,
-    "audioOnsetT": 58.8,
-    "visualT": 58.8,
+    "timelineT": 57.6,
+    "audioOnsetT": 57.6,
+    "visualT": 57.6,
     "offsetMs": 0.0
    },
    {
     "id": "extra:xExtra",
     "type": "reveal",
-    "timelineT": 60.615,
-    "audioOnsetT": 60.6173,
-    "visualT": 60.6333,
+    "timelineT": 59.115,
+    "audioOnsetT": 59.1173,
+    "visualT": 59.1333,
     "offsetMs": -16.0
    },
    {
     "id": "extra:xIllu",
     "type": "emphasis",
-    "timelineT": 64.355,
-    "audioOnsetT": 64.355,
-    "visualT": 64.3667,
-    "offsetMs": -11.7
+    "timelineT": 62.735,
+    "audioOnsetT": 62.735,
+    "visualT": 62.7667,
+    "offsetMs": -31.7
    },
    {
     "id": "roads:cam",
     "type": "transition",
-    "timelineT": 66,
-    "audioOnsetT": 66.0,
-    "visualT": 66,
+    "timelineT": 64.2,
+    "audioOnsetT": 64.2,
+    "visualT": 64.2,
     "offsetMs": 0.0
    },
    {
     "id": "roads:rA",
     "type": "appear",
-    "timelineT": 66.5,
-    "audioOnsetT": 66.5,
-    "visualT": 66.5333,
+    "timelineT": 64.7,
+    "audioOnsetT": 64.7,
+    "visualT": 64.7333,
     "offsetMs": -33.3
    },
    {
     "id": "roads:rB",
     "type": "appear",
-    "timelineT": 69.18,
-    "audioOnsetT": 69.18,
-    "visualT": 69.2,
-    "offsetMs": -20.0
+    "timelineT": 67.76,
+    "audioOnsetT": 67.76,
+    "visualT": 67.8,
+    "offsetMs": -40.0
    },
    {
     "id": "cash:dismissFork",
     "type": "dismiss",
-    "timelineT": 73.2,
-    "audioOnsetT": 73.2,
-    "visualT": 73.2333,
+    "timelineT": 72,
+    "audioOnsetT": 72.0,
+    "visualT": 72.0333,
     "offsetMs": -33.3
    },
    {
     "id": "cash:cam",
     "type": "transition",
-    "timelineT": 73.2,
-    "audioOnsetT": 73.2,
-    "visualT": 73.2,
+    "timelineT": 72,
+    "audioOnsetT": 72.0,
+    "visualT": 72,
     "offsetMs": 0.0
    },
    {
     "id": "cash:cashCols",
     "type": "appear",
-    "timelineT": 73.7,
-    "audioOnsetT": 73.7,
-    "visualT": 73.7,
+    "timelineT": 72.5,
+    "audioOnsetT": 72.5,
+    "visualT": 72.5,
     "offsetMs": 0.0
    },
    {
     "id": "cash:cashSame",
     "type": "compare",
-    "timelineT": 74.395,
-    "audioOnsetT": 74.395,
-    "visualT": 74.4333,
-    "offsetMs": -38.3
+    "timelineT": 73.215,
+    "audioOnsetT": 73.215,
+    "visualT": 73.2333,
+    "offsetMs": -18.3
    },
    {
     "id": "cash:cashOrder",
     "type": "emphasis",
-    "timelineT": 76.955,
-    "audioOnsetT": 76.955,
-    "visualT": 76.9667,
-    "offsetMs": -11.7
+    "timelineT": 75.895,
+    "audioOnsetT": 75.895,
+    "visualT": 75.9,
+    "offsetMs": -5.0
    },
    {
     "id": "card1:cam",
     "type": "transition",
-    "timelineT": 78.6,
-    "audioOnsetT": 78.6,
-    "visualT": 78.6333,
-    "offsetMs": -33.3
+    "timelineT": 78,
+    "audioOnsetT": 78.0,
+    "visualT": 78,
+    "offsetMs": 0.0
    },
    {
     "id": "card1:card1",
     "type": "appear",
-    "timelineT": 79.1,
-    "audioOnsetT": 79.1,
-    "visualT": 79.1333,
+    "timelineT": 78.5,
+    "audioOnsetT": 78.5,
+    "visualT": 78.5333,
     "offsetMs": -33.3
    },
    {
@@ -518,142 +595,1002 @@
    {
     "id": "timeline:tlA",
     "type": "threshold-cross",
-    "timelineT": 82.975,
-    "audioOnsetT": 82.975,
-    "visualT": 83,
-    "offsetMs": -25.0
+    "timelineT": 83.595,
+    "audioOnsetT": 83.595,
+    "visualT": 83.6333,
+    "offsetMs": -38.3
    },
    {
     "id": "timeline:tlB",
     "type": "appear",
-    "timelineT": 86.175,
-    "audioOnsetT": 86.175,
-    "visualT": 86.2,
-    "offsetMs": -25.0
+    "timelineT": 86.695,
+    "audioOnsetT": 86.695,
+    "visualT": 86.7333,
+    "offsetMs": -38.3
    },
    {
     "id": "free:cam",
     "type": "transition",
-    "timelineT": 87.6,
-    "audioOnsetT": 87.6,
-    "visualT": 87.6,
+    "timelineT": 88.2,
+    "audioOnsetT": 88.2,
+    "visualT": 88.2,
     "offsetMs": 0.0
    },
    {
     "id": "free:free20",
     "type": "emphasis",
-    "timelineT": 88.115,
-    "audioOnsetT": 88.115,
-    "visualT": 88.1333,
-    "offsetMs": -18.3
+    "timelineT": 88.995,
+    "audioOnsetT": 88.995,
+    "visualT": 89.0333,
+    "offsetMs": -38.3
+   },
+   {
+    "id": "morphInt:cam",
+    "type": "transition",
+    "timelineT": 93.6,
+    "audioOnsetT": 93.6,
+    "visualT": 93.6333,
+    "offsetMs": -33.3
    },
    {
     "id": "interest:cam",
     "type": "transition",
-    "timelineT": 92.4,
-    "audioOnsetT": 92.4,
-    "visualT": 92.4,
-    "offsetMs": 0.0
+    "timelineT": 94.8,
+    "audioOnsetT": 94.8,
+    "visualT": 94.8333,
+    "offsetMs": -33.3
    },
    {
     "id": "interest:intB",
     "type": "count",
-    "timelineT": 94.035,
-    "audioOnsetT": 94.035,
-    "visualT": 94.0667,
+    "timelineT": 96.535,
+    "audioOnsetT": 96.535,
+    "visualT": 96.5667,
     "offsetMs": -31.7
    },
    {
     "id": "interest:intA",
     "type": "count",
-    "timelineT": 96.915,
-    "audioOnsetT": 96.915,
-    "visualT": 96.9333,
-    "offsetMs": -18.3
+    "timelineT": 99.175,
+    "audioOnsetT": 99.175,
+    "visualT": 99.2,
+    "offsetMs": -25.0
    },
    {
     "id": "avoided:cam",
     "type": "transition",
-    "timelineT": 99.6,
-    "audioOnsetT": 99.6,
-    "visualT": 99.6333,
-    "offsetMs": -33.3
+    "timelineT": 102,
+    "audioOnsetT": 102.0,
+    "visualT": 102,
+    "offsetMs": 0.0
    },
    {
     "id": "avoided:avd",
     "type": "reveal",
-    "timelineT": 101.455,
-    "audioOnsetT": 101.4573,
-    "visualT": 101.4667,
+    "timelineT": 103.655,
+    "audioOnsetT": 103.6573,
+    "visualT": 103.6667,
     "offsetMs": -9.4
    },
    {
     "id": "certain:certainLine",
     "type": "emphasis",
-    "timelineT": 108.835,
-    "audioOnsetT": 108.835,
-    "visualT": 108.8667,
-    "offsetMs": -31.7
+    "timelineT": 112.355,
+    "audioOnsetT": 112.355,
+    "visualT": 112.3667,
+    "offsetMs": -11.7
    },
    {
     "id": "identity:cam",
     "type": "transition",
-    "timelineT": 110.4,
-    "audioOnsetT": 110.4,
-    "visualT": 110.4,
+    "timelineT": 114,
+    "audioOnsetT": 114.0,
+    "visualT": 114,
     "offsetMs": 0.0
+   },
+   {
+    "id": "identity:eqLeft",
+    "type": "appear",
+    "timelineT": 114.823,
+    "audioOnsetT": 114.823,
+    "visualT": 114.8333,
+    "offsetMs": -10.3
    },
    {
     "id": "identity:eqRight",
     "type": "appear",
-    "timelineT": 111.4,
-    "audioOnsetT": 111.4,
-    "visualT": 111.4333,
+    "timelineT": 115,
+    "audioOnsetT": 115.0,
+    "visualT": 115.0333,
     "offsetMs": -33.3
    },
    {
     "id": "identity:eqVal",
     "type": "compare",
-    "timelineT": 115.315,
-    "audioOnsetT": 115.315,
-    "visualT": 115.3333,
-    "offsetMs": -18.3
+    "timelineT": 119.635,
+    "audioOnsetT": 119.635,
+    "visualT": 119.6667,
+    "offsetMs": -31.7
    },
    {
     "id": "bridge:cam",
     "type": "transition",
-    "timelineT": 119.4,
-    "audioOnsetT": 119.4,
-    "visualT": 119.4,
+    "timelineT": 124.2,
+    "audioOnsetT": 124.2,
+    "visualT": 124.2,
     "offsetMs": 0.0
+   },
+   {
+    "id": "bridge:brCertain",
+    "type": "appear",
+    "timelineT": 124.8,
+    "audioOnsetT": 124.8,
+    "visualT": 124.8333,
+    "offsetMs": -33.3
    },
    {
     "id": "bridge:brB",
     "type": "appear",
-    "timelineT": 122.535,
-    "audioOnsetT": 122.535,
-    "visualT": 122.5667,
-    "offsetMs": -31.7
+    "timelineT": 127.415,
+    "audioOnsetT": 127.415,
+    "visualT": 127.4333,
+    "offsetMs": -18.3
    },
    {
     "id": "bridge:brVal",
     "type": "reveal",
-    "timelineT": 124.335,
-    "audioOnsetT": 124.3373,
-    "visualT": 124.3667,
+    "timelineT": 129.615,
+    "audioOnsetT": 129.6173,
+    "visualT": 129.6333,
+    "offsetMs": -16.0
+   },
+   {
+    "id": "card2:cam",
+    "type": "transition",
+    "timelineT": 133.8,
+    "audioOnsetT": 133.8,
+    "visualT": 133.8,
+    "offsetMs": 0.0
+   },
+   {
+    "id": "card2:card2",
+    "type": "appear",
+    "timelineT": 134.3,
+    "audioOnsetT": 134.3,
+    "visualT": 134.3333,
+    "offsetMs": -33.3
+   },
+   {
+    "id": "lots1:cam",
+    "type": "transition",
+    "timelineT": 137.4,
+    "audioOnsetT": 137.4,
+    "visualT": 137.4,
+    "offsetMs": 0.0
+   },
+   {
+    "id": "lots1:ltCells",
+    "type": "count",
+    "timelineT": 139.975,
+    "audioOnsetT": 139.975,
+    "visualT": 140,
+    "offsetMs": -25.0
+   },
+   {
+    "id": "lots1:cell12",
+    "type": "count",
+    "timelineT": 140.305,
+    "audioOnsetT": 140.305,
+    "visualT": 140.3333,
+    "offsetMs": -28.3
+   },
+   {
+    "id": "lots1:cell24",
+    "type": "count",
+    "timelineT": 140.665,
+    "audioOnsetT": 140.665,
+    "visualT": 140.7,
+    "offsetMs": -35.0
+   },
+   {
+    "id": "lots1:cell36",
+    "type": "count",
+    "timelineT": 141.025,
+    "audioOnsetT": 141.025,
+    "visualT": 141.0333,
+    "offsetMs": -8.3
+   },
+   {
+    "id": "lots1:ltSale",
+    "type": "appear",
+    "timelineT": 141.175,
+    "audioOnsetT": 141.175,
+    "visualT": 141.2,
+    "offsetMs": -25.0
+   },
+   {
+    "id": "lots1:cell48",
+    "type": "count",
+    "timelineT": 141.385,
+    "audioOnsetT": 141.385,
+    "visualT": 141.4,
+    "offsetMs": -15.0
+   },
+   {
+    "id": "lots2:cam",
+    "type": "transition",
+    "timelineT": 144,
+    "audioOnsetT": 144.0,
+    "visualT": 144,
+    "offsetMs": 0.0
+   },
+   {
+    "id": "lots2:ltHold",
+    "type": "threshold-cross",
+    "timelineT": 145.595,
+    "audioOnsetT": 145.595,
+    "visualT": 145.6333,
+    "offsetMs": -38.3
+   },
+   {
+    "id": "lots2:ltLong",
+    "type": "appear",
+    "timelineT": 147.735,
+    "audioOnsetT": 147.735,
+    "visualT": 147.7667,
+    "offsetMs": -31.7
+   },
+   {
+    "id": "lots2:ltShort",
+    "type": "appear",
+    "timelineT": 149.775,
+    "audioOnsetT": 149.775,
+    "visualT": 149.8,
+    "offsetMs": -25.0
+   },
+   {
+    "id": "rates:cam",
+    "type": "transition",
+    "timelineT": 151.2,
+    "audioOnsetT": 151.2,
+    "visualT": 151.2,
+    "offsetMs": 0.0
+   },
+   {
+    "id": "rates:rtHead",
+    "type": "appear",
+    "timelineT": 151.755,
+    "audioOnsetT": 151.755,
+    "visualT": 151.7667,
+    "offsetMs": -11.7
+   },
+   {
+    "id": "rates:rtLt",
+    "type": "reveal",
+    "timelineT": 155.215,
+    "audioOnsetT": 155.2173,
+    "visualT": 155.2333,
+    "offsetMs": -16.0
+   },
+   {
+    "id": "rates:rtSt",
+    "type": "reveal",
+    "timelineT": 158.115,
+    "audioOnsetT": 158.1173,
+    "visualT": 158.1333,
+    "offsetMs": -16.0
+   },
+   {
+    "id": "lots3:cam",
+    "type": "transition",
+    "timelineT": 160.2,
+    "audioOnsetT": 160.2,
+    "visualT": 160.2,
+    "offsetMs": 0.0
+   },
+   {
+    "id": "lots3:l3Rows",
+    "type": "appear",
+    "timelineT": 161.19,
+    "audioOnsetT": 161.19,
+    "visualT": 161.2,
+    "offsetMs": -10.0
+   },
+   {
+    "id": "lots3:l3B",
+    "type": "count",
+    "timelineT": 162.715,
+    "audioOnsetT": 162.715,
+    "visualT": 162.7333,
+    "offsetMs": -18.3
+   },
+   {
+    "id": "lots3:l3Bof",
+    "type": "appear",
+    "timelineT": 163.715,
+    "audioOnsetT": 163.715,
+    "visualT": 163.7333,
+    "offsetMs": -18.3
+   },
+   {
+    "id": "lots3:l3A",
+    "type": "count",
+    "timelineT": 168.075,
+    "audioOnsetT": 168.075,
+    "visualT": 168.1,
+    "offsetMs": -25.0
+   },
+   {
+    "id": "lots3:l3Aof",
+    "type": "appear",
+    "timelineT": 168.735,
+    "audioOnsetT": 168.735,
+    "visualT": 168.7667,
+    "offsetMs": -31.7
+   },
+   {
+    "id": "share:cam",
+    "type": "transition",
+    "timelineT": 170.4,
+    "audioOnsetT": 170.4,
+    "visualT": 170.4,
+    "offsetMs": 0.0
+   },
+   {
+    "id": "share:shLegend",
+    "type": "appear",
+    "timelineT": 171.4,
+    "audioOnsetT": 171.4,
+    "visualT": 171.4333,
+    "offsetMs": -33.3
+   },
+   {
+    "id": "share:shA",
+    "type": "reveal",
+    "timelineT": 172.055,
+    "audioOnsetT": 172.0573,
+    "visualT": 172.0667,
+    "offsetMs": -9.4
+   },
+   {
+    "id": "share:shB",
+    "type": "appear",
+    "timelineT": 175.295,
+    "audioOnsetT": 175.295,
+    "visualT": 175.3333,
+    "offsetMs": -38.3
+   },
+   {
+    "id": "nodeduct:cam",
+    "type": "transition",
+    "timelineT": 177.6,
+    "audioOnsetT": 177.6,
+    "visualT": 177.6,
+    "offsetMs": 0.0
+   },
+   {
+    "id": "nodeduct:ndLoss",
+    "type": "appear",
+    "timelineT": 179.455,
+    "audioOnsetT": 179.455,
+    "visualT": 179.4667,
+    "offsetMs": -11.7
+   },
+   {
+    "id": "nodeduct:ndState",
+    "type": "appear",
+    "timelineT": 180.895,
+    "audioOnsetT": 180.895,
+    "visualT": 180.9333,
+    "offsetMs": -38.3
+   },
+   {
+    "id": "card3:cam",
+    "type": "transition",
+    "timelineT": 184.2,
+    "audioOnsetT": 184.2,
+    "visualT": 184.2,
+    "offsetMs": 0.0
+   },
+   {
+    "id": "card3:card3",
+    "type": "appear",
+    "timelineT": 184.7,
+    "audioOnsetT": 184.7,
+    "visualT": 184.7333,
+    "offsetMs": -33.3
+   },
+   {
+    "id": "sw1:cam",
+    "type": "transition",
+    "timelineT": 187.2,
+    "audioOnsetT": 187.2,
+    "visualT": 187.2,
+    "offsetMs": 0.0
+   },
+   {
+    "id": "sw1:swLo",
+    "type": "appear",
+    "timelineT": 189.615,
+    "audioOnsetT": 189.615,
+    "visualT": 189.6333,
+    "offsetMs": -18.3
+   },
+   {
+    "id": "sw1:swHi",
+    "type": "appear",
+    "timelineT": 190.535,
+    "audioOnsetT": 190.535,
+    "visualT": 190.5667,
+    "offsetMs": -31.7
+   },
+   {
+    "id": "sw1:swBr",
+    "type": "appear",
+    "timelineT": 192.835,
+    "audioOnsetT": 192.835,
+    "visualT": 192.8667,
+    "offsetMs": -31.7
+   },
+   {
+    "id": "sw2:swDef",
+    "type": "appear",
+    "timelineT": 200.195,
+    "audioOnsetT": 200.195,
+    "visualT": 200.2333,
+    "offsetMs": -38.3
+   },
+   {
+    "id": "sw2:swDraw",
+    "type": "count",
+    "timelineT": 201.495,
+    "audioOnsetT": 201.495,
+    "visualT": 201.5,
+    "offsetMs": -5.0
+   },
+   {
+    "id": "sw3:cam",
+    "type": "transition",
+    "timelineT": 203.4,
+    "audioOnsetT": 203.4,
+    "visualT": 203.4,
+    "offsetMs": 0.0
+   },
+   {
+    "id": "sw3:swA",
+    "type": "appear",
+    "timelineT": 206.295,
+    "audioOnsetT": 206.295,
+    "visualT": 206.3333,
+    "offsetMs": -38.3
+   },
+   {
+    "id": "sw3:swB",
+    "type": "appear",
+    "timelineT": 210.875,
+    "audioOnsetT": 210.875,
+    "visualT": 210.9,
+    "offsetMs": -25.0
+   },
+   {
+    "id": "sw4:cam",
+    "type": "transition",
+    "timelineT": 213.6,
+    "audioOnsetT": 213.6,
+    "visualT": 213.6,
+    "offsetMs": 0.0
+   },
+   {
+    "id": "sw4:swBe",
+    "type": "reveal",
+    "timelineT": 215.875,
+    "audioOnsetT": 215.8773,
+    "visualT": 215.9,
+    "offsetMs": -22.7
+   },
+   {
+    "id": "sw5:cam",
+    "type": "transition",
+    "timelineT": 220.2,
+    "audioOnsetT": 220.2,
+    "visualT": 220.2,
+    "offsetMs": 0.0
+   },
+   {
+    "id": "sw5:swBelow",
+    "type": "appear",
+    "timelineT": 222.195,
+    "audioOnsetT": 222.195,
+    "visualT": 222.2333,
+    "offsetMs": -38.3
+   },
+   {
+    "id": "sw5:swAbove",
+    "type": "appear",
+    "timelineT": 225.675,
+    "audioOnsetT": 225.675,
+    "visualT": 225.7,
+    "offsetMs": -25.0
+   },
+   {
+    "id": "card4:cam",
+    "type": "transition",
+    "timelineT": 227.4,
+    "audioOnsetT": 227.4,
+    "visualT": 227.4,
+    "offsetMs": 0.0
+   },
+   {
+    "id": "card4:card4",
+    "type": "appear",
+    "timelineT": 227.9,
+    "audioOnsetT": 227.9,
+    "visualT": 227.9333,
+    "offsetMs": -33.3
+   },
+   {
+    "id": "niit:cam",
+    "type": "transition",
+    "timelineT": 229.8,
+    "audioOnsetT": 229.8,
+    "visualT": 229.8,
+    "offsetMs": 0.0
+   },
+   {
+    "id": "niit:niHead",
+    "type": "appear",
+    "timelineT": 230.3,
+    "audioOnsetT": 230.3,
+    "visualT": 230.3333,
+    "offsetMs": -33.3
+   },
+   {
+    "id": "niit:niNiit",
+    "type": "appear",
+    "timelineT": 232.68,
+    "audioOnsetT": 232.68,
+    "visualT": 232.7,
+    "offsetMs": -20.0
+   },
+   {
+    "id": "niit:niSt",
+    "type": "reveal",
+    "timelineT": 236.82,
+    "audioOnsetT": 236.8223,
+    "visualT": 236.8333,
+    "offsetMs": -11.0
+   },
+   {
+    "id": "niit:niLt",
+    "type": "reveal",
+    "timelineT": 239.62,
+    "audioOnsetT": 239.6223,
+    "visualT": 239.6333,
+    "offsetMs": -11.0
+   },
+   {
+    "id": "morphDot:cam",
+    "type": "transition",
+    "timelineT": 241.8,
+    "audioOnsetT": 241.8,
+    "visualT": 241.8,
+    "offsetMs": 0.0
+   },
+   {
+    "id": "dots:cam",
+    "type": "transition",
+    "timelineT": 243,
+    "audioOnsetT": 243.0,
+    "visualT": 243,
+    "offsetMs": 0.0
+   },
+   {
+    "id": "dots:d12",
+    "type": "appear",
+    "timelineT": 244.555,
+    "audioOnsetT": 244.555,
+    "visualT": 244.5667,
+    "offsetMs": -11.7
+   },
+   {
+    "id": "dots:d22",
+    "type": "appear",
+    "timelineT": 248.695,
+    "audioOnsetT": 248.695,
+    "visualT": 248.7333,
+    "offsetMs": -38.3
+   },
+   {
+    "id": "dots32:d32r",
+    "type": "appear",
+    "timelineT": 253.7,
+    "audioOnsetT": 253.7,
+    "visualT": 253.7333,
+    "offsetMs": -33.3
+   },
+   {
+    "id": "dots32:d32",
+    "type": "reveal",
+    "timelineT": 255.84,
+    "audioOnsetT": 255.8423,
+    "visualT": 255.8667,
+    "offsetMs": -24.4
+   },
+   {
+    "id": "rises:dArrow",
+    "type": "emphasis",
+    "timelineT": 263.695,
+    "audioOnsetT": 263.695,
+    "visualT": 263.7,
+    "offsetMs": -5.0
+   },
+   {
+    "id": "below:dRef",
+    "type": "appear",
+    "timelineT": 268.495,
+    "audioOnsetT": 268.495,
+    "visualT": 268.5,
+    "offsetMs": -5.0
+   },
+   {
+    "id": "below:dSt",
+    "type": "emphasis",
+    "timelineT": 275.535,
+    "audioOnsetT": 275.535,
+    "visualT": 275.5667,
+    "offsetMs": -31.7
+   },
+   {
+    "id": "card5:cam",
+    "type": "transition",
+    "timelineT": 277.2,
+    "audioOnsetT": 277.2,
+    "visualT": 277.2,
+    "offsetMs": 0.0
+   },
+   {
+    "id": "card5:card5",
+    "type": "appear",
+    "timelineT": 277.7,
+    "audioOnsetT": 277.7,
+    "visualT": 277.7333,
+    "offsetMs": -33.3
+   },
+   {
+    "id": "risk1:cam",
+    "type": "transition",
+    "timelineT": 279.6,
+    "audioOnsetT": 279.6,
+    "visualT": 279.6,
+    "offsetMs": 0.0
+   },
+   {
+    "id": "risk1:rk1Head",
+    "type": "appear",
+    "timelineT": 280.457,
+    "audioOnsetT": 280.457,
+    "visualT": 280.4667,
+    "offsetMs": -9.7
+   },
+   {
+    "id": "risk1:rkApr",
+    "type": "reveal",
+    "timelineT": 282.475,
+    "audioOnsetT": 282.4773,
+    "visualT": 282.5,
+    "offsetMs": -22.7
+   },
+   {
+    "id": "risk2:cam",
+    "type": "transition",
+    "timelineT": 285.6,
+    "audioOnsetT": 285.6,
+    "visualT": 285.6,
+    "offsetMs": 0.0
+   },
+   {
+    "id": "risk2:rk2Head",
+    "type": "appear",
+    "timelineT": 286.1,
+    "audioOnsetT": 286.1,
+    "visualT": 286.1333,
+    "offsetMs": -33.3
+   },
+   {
+    "id": "risk2:rkProm",
+    "type": "appear",
+    "timelineT": 287.935,
+    "audioOnsetT": 287.935,
+    "visualT": 287.9667,
+    "offsetMs": -31.7
+   },
+   {
+    "id": "risk2:rkRange",
+    "type": "appear",
+    "timelineT": 289.435,
+    "audioOnsetT": 289.435,
+    "visualT": 289.4667,
+    "offsetMs": -31.7
+   },
+   {
+    "id": "seq:cam",
+    "type": "transition",
+    "timelineT": 292.8,
+    "audioOnsetT": 292.8,
+    "visualT": 292.8,
+    "offsetMs": 0.0
+   },
+   {
+    "id": "seq:sqFirst",
+    "type": "appear",
+    "timelineT": 295.215,
+    "audioOnsetT": 295.215,
+    "visualT": 295.2333,
+    "offsetMs": -18.3
+   },
+   {
+    "id": "seq:sqSecond",
+    "type": "appear",
+    "timelineT": 297.935,
+    "audioOnsetT": 297.935,
+    "visualT": 297.9667,
+    "offsetMs": -31.7
+   },
+   {
+    "id": "race:cam",
+    "type": "transition",
+    "timelineT": 300.6,
+    "audioOnsetT": 300.6,
+    "visualT": 300.6,
+    "offsetMs": 0.0
+   },
+   {
+    "id": "race:raceAxes",
+    "type": "appear",
+    "timelineT": 301.2,
+    "audioOnsetT": 301.2,
+    "visualT": 301.2333,
+    "offsetMs": -33.3
+   },
+   {
+    "id": "race:month12",
+    "type": "count",
+    "timelineT": 302.85,
+    "audioOnsetT": 302.85,
+    "visualT": 302.8667,
+    "offsetMs": -16.7
+   },
+   {
+    "id": "race:month24",
+    "type": "count",
+    "timelineT": 304.1,
+    "audioOnsetT": 304.1,
+    "visualT": 304.1333,
+    "offsetMs": -33.3
+   },
+   {
+    "id": "race:month36",
+    "type": "count",
+    "timelineT": 305.35,
+    "audioOnsetT": 305.35,
+    "visualT": 305.3667,
+    "offsetMs": -16.7
+   },
+   {
+    "id": "race:raceTog",
+    "type": "compare",
+    "timelineT": 305.875,
+    "audioOnsetT": 305.875,
+    "visualT": 305.9,
+    "offsetMs": -25.0
+   },
+   {
+    "id": "morphGap:cam",
+    "type": "transition",
+    "timelineT": 307.8,
+    "audioOnsetT": 307.8,
+    "visualT": 307.8,
+    "offsetMs": 0.0
+   },
+   {
+    "id": "gap:cam",
+    "type": "transition",
+    "timelineT": 309,
+    "audioOnsetT": 309.0,
+    "visualT": 309,
+    "offsetMs": 0.0
+   },
+   {
+    "id": "gap:gapPeak",
+    "type": "appear",
+    "timelineT": 311.895,
+    "audioOnsetT": 311.895,
+    "visualT": 311.9,
+    "offsetMs": -5.0
+   },
+   {
+    "id": "gap:gapCross",
+    "type": "threshold-cross",
+    "timelineT": 314.415,
+    "audioOnsetT": 314.415,
+    "visualT": 314.4333,
+    "offsetMs": -18.3
+   },
+   {
+    "id": "downside:dnEnd",
+    "type": "reveal",
+    "timelineT": 317.335,
+    "audioOnsetT": 317.3373,
+    "visualT": 317.3667,
     "offsetMs": -29.4
+   },
+   {
+    "id": "order:cam",
+    "type": "transition",
+    "timelineT": 323.4,
+    "audioOnsetT": 323.4,
+    "visualT": 323.4,
+    "offsetMs": 0.0
+   },
+   {
+    "id": "order:ordAvg",
+    "type": "reveal",
+    "timelineT": 326.915,
+    "audioOnsetT": 326.9173,
+    "visualT": 326.9333,
+    "offsetMs": -16.0
+   },
+   {
+    "id": "order:ordLine",
+    "type": "emphasis",
+    "timelineT": 329.335,
+    "audioOnsetT": 329.335,
+    "visualT": 329.3667,
+    "offsetMs": -31.7
+   },
+   {
+    "id": "recap:dismissSeq",
+    "type": "dismiss",
+    "timelineT": 333,
+    "audioOnsetT": 333.0,
+    "visualT": 333.0333,
+    "offsetMs": -33.3
+   },
+   {
+    "id": "recap:cam",
+    "type": "transition",
+    "timelineT": 333,
+    "audioOnsetT": 333.0,
+    "visualT": 333,
+    "offsetMs": 0.0
+   },
+   {
+    "id": "recap:rc1",
+    "type": "appear",
+    "timelineT": 335.915,
+    "audioOnsetT": 335.915,
+    "visualT": 335.9333,
+    "offsetMs": -18.3
+   },
+   {
+    "id": "recap:rc2",
+    "type": "appear",
+    "timelineT": 339.235,
+    "audioOnsetT": 339.235,
+    "visualT": 339.2667,
+    "offsetMs": -31.7
+   },
+   {
+    "id": "recap:rc3",
+    "type": "appear",
+    "timelineT": 340.615,
+    "audioOnsetT": 340.615,
+    "visualT": 340.6333,
+    "offsetMs": -18.3
+   },
+   {
+    "id": "end1:cam",
+    "type": "transition",
+    "timelineT": 343.2,
+    "audioOnsetT": 343.2,
+    "visualT": 343.2,
+    "offsetMs": 0.0
+   },
+   {
+    "id": "end1:e1Zones",
+    "type": "appear",
+    "timelineT": 344.123,
+    "audioOnsetT": 344.123,
+    "visualT": 344.1333,
+    "offsetMs": -10.3
+   },
+   {
+    "id": "end1:e1Br",
+    "type": "appear",
+    "timelineT": 344.575,
+    "audioOnsetT": 344.575,
+    "visualT": 344.6,
+    "offsetMs": -25.0
+   },
+   {
+    "id": "end1:e1Be",
+    "type": "reveal",
+    "timelineT": 349.515,
+    "audioOnsetT": 349.5173,
+    "visualT": 349.5333,
+    "offsetMs": -16.0
+   },
+   {
+    "id": "end2:cam",
+    "type": "transition",
+    "timelineT": 353.4,
+    "audioOnsetT": 353.4,
+    "visualT": 353.4,
+    "offsetMs": 0.0
+   },
+   {
+    "id": "end2:e2Th",
+    "type": "appear",
+    "timelineT": 354.255,
+    "audioOnsetT": 354.255,
+    "visualT": 354.2667,
+    "offsetMs": -11.7
+   },
+   {
+    "id": "outro:cam",
+    "type": "transition",
+    "timelineT": 360.6,
+    "audioOnsetT": 360.6,
+    "visualT": 360.6,
+    "offsetMs": 0.0
+   },
+   {
+    "id": "outro:outroMark",
+    "type": "reveal",
+    "timelineT": 361.2,
+    "audioOnsetT": 361.2023,
+    "visualT": 361.2333,
+    "offsetMs": -31.0
+   },
+   {
+    "id": "outro:outroTag",
+    "type": "appear",
+    "timelineT": 361.6,
+    "audioOnsetT": 361.6,
+    "visualT": 361.6333,
+    "offsetMs": -33.3
+   },
+   {
+    "id": "outro:fadeAll",
+    "type": "dismiss",
+    "timelineT": 363.3,
+    "audioOnsetT": 363.3,
+    "visualT": 363.3333,
+    "offsetMs": -33.3
    }
   ]
  },
  "silences": {
-  "count": 1,
+  "count": 3,
   "max": 3,
   "events": [
    {
-    "start": 101.06,
-    "end": 101.45,
+    "start": 103.26,
+    "end": 103.65,
     "durationMs": 390,
     "followedBy": "avoided:avd"
+   },
+   {
+    "start": 215.48,
+    "end": 215.87,
+    "durationMs": 390,
+    "followedBy": "sw4:swBe"
+   },
+   {
+    "start": 314.02,
+    "end": 314.41,
+    "durationMs": 390,
+    "followedBy": "gap:gapCross"
    }
   ],
   "pass": true

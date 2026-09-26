@@ -8,15 +8,9 @@
   },
   {
    "id": "hook2",
-   "words": 3,
-   "newWords": 3,
-   "newWordsPerSec": 1.25
-  },
-  {
-   "id": "hook2b",
    "words": 5,
-   "newWords": 2,
-   "newWordsPerSec": 0.83
+   "newWords": 5,
+   "newWordsPerSec": 1.04
   },
   {
    "id": "hook3",
@@ -28,7 +22,7 @@
    "id": "hook4",
    "words": 7,
    "newWords": 7,
-   "newWordsPerSec": 0.78
+   "newWordsPerSec": 0.83
   },
   {
    "id": "hook5",
@@ -43,16 +37,10 @@
    "newWordsPerSec": 1.33
   },
   {
-   "id": "setup",
-   "words": 2,
-   "newWords": 2,
-   "newWordsPerSec": 1.11
-  },
-  {
    "id": "scope1",
    "words": 9,
-   "newWords": 7,
-   "newWordsPerSec": 1.06
+   "newWords": 9,
+   "newWordsPerSec": 1.25
   },
   {
    "id": "scope2",
@@ -64,43 +52,49 @@
    "id": "facts",
    "words": 10,
    "newWords": 10,
-   "newWordsPerSec": 1.19
+   "newWordsPerSec": 1.11
   },
   {
    "id": "extra",
    "words": 4,
    "newWords": 4,
-   "newWordsPerSec": 0.56
+   "newWordsPerSec": 0.61
   },
   {
    "id": "roads",
    "words": 9,
    "newWords": 9,
-   "newWordsPerSec": 1.25
+   "newWordsPerSec": 1.15
   },
   {
    "id": "cash",
    "words": 8,
    "newWords": 8,
-   "newWordsPerSec": 1.48
+   "newWordsPerSec": 1.33
   },
   {
    "id": "card1",
    "words": 3,
    "newWords": 3,
-   "newWordsPerSec": 1.25
+   "newWordsPerSec": 1
   },
   {
    "id": "timeline",
-   "words": 9,
+   "words": 8,
    "newWords": 9,
-   "newWordsPerSec": 1.36
+   "newWordsPerSec": 1.25
   },
   {
    "id": "free",
-   "words": 9,
-   "newWords": 6,
-   "newWordsPerSec": 1.25
+   "words": 11,
+   "newWords": 7,
+   "newWordsPerSec": 1.3
+  },
+  {
+   "id": "morphInt",
+   "words": 4,
+   "newWords": 0,
+   "newWordsPerSec": 0
   },
   {
    "id": "interest",
@@ -112,7 +106,7 @@
    "id": "avoided",
    "words": 4,
    "newWords": 4,
-   "newWordsPerSec": 0.48
+   "newWordsPerSec": 0.42
   },
   {
    "id": "certain",
@@ -124,15 +118,213 @@
    "id": "identity",
    "words": 8,
    "newWords": 9,
-   "newWordsPerSec": 1
+   "newWordsPerSec": 0.88
   },
   {
    "id": "bridge",
    "words": 7,
    "newWords": 8,
-   "newWordsPerSec": 0.95
+   "newWordsPerSec": 0.83
+  },
+  {
+   "id": "card2",
+   "words": 4,
+   "newWords": 4,
+   "newWordsPerSec": 1.11
+  },
+  {
+   "id": "lots1",
+   "words": 6,
+   "newWords": 6,
+   "newWordsPerSec": 0.91
+  },
+  {
+   "id": "lots2",
+   "words": 4,
+   "newWords": 6,
+   "newWordsPerSec": 0.83
+  },
+  {
+   "id": "rates",
+   "words": 6,
+   "newWords": 6,
+   "newWordsPerSec": 0.67
+  },
+  {
+   "id": "lots3",
+   "words": 11,
+   "newWords": 11,
+   "newWordsPerSec": 1.08
+  },
+  {
+   "id": "share",
+   "words": 6,
+   "newWords": 8,
+   "newWordsPerSec": 1.11
+  },
+  {
+   "id": "nodeduct",
+   "words": 8,
+   "newWords": 8,
+   "newWordsPerSec": 1.21
+  },
+  {
+   "id": "card3",
+   "words": 3,
+   "newWords": 3,
+   "newWordsPerSec": 1
+  },
+  {
+   "id": "sw1",
+   "words": 9,
+   "newWords": 11,
+   "newWordsPerSec": 1.41
+  },
+  {
+   "id": "sw2",
+   "words": 11,
+   "newWords": 11,
+   "newWordsPerSec": 1.31
+  },
+  {
+   "id": "sw3",
+   "words": 12,
+   "newWords": 10,
+   "newWordsPerSec": 0.98
+  },
+  {
+   "id": "sw4",
+   "words": 6,
+   "newWords": 7,
+   "newWordsPerSec": 1.06
+  },
+  {
+   "id": "sw5",
+   "words": 10,
+   "newWords": 5,
+   "newWordsPerSec": 0.69
+  },
+  {
+   "id": "card4",
+   "words": 3,
+   "newWords": 3,
+   "newWordsPerSec": 1.25
+  },
+  {
+   "id": "niit",
+   "words": 11,
+   "newWords": 11,
+   "newWordsPerSec": 0.92
+  },
+  {
+   "id": "morphDot",
+   "words": 0,
+   "newWords": 0,
+   "newWordsPerSec": 0
+  },
+  {
+   "id": "dots",
+   "words": 7,
+   "newWords": 7,
+   "newWordsPerSec": 0.69
+  },
+  {
+   "id": "dots32",
+   "words": 9,
+   "newWords": 3,
+   "newWordsPerSec": 0.56
+  },
+  {
+   "id": "rises",
+   "words": 8,
+   "newWords": 1,
+   "newWordsPerSec": 0.14
+  },
+  {
+   "id": "below",
+   "words": 11,
+   "newWords": 12,
+   "newWordsPerSec": 1.05
+  },
+  {
+   "id": "card5",
+   "words": 1,
+   "newWords": 1,
+   "newWordsPerSec": 0.42
+  },
+  {
+   "id": "risk1",
+   "words": 4,
+   "newWords": 4,
+   "newWordsPerSec": 0.67
+  },
+  {
+   "id": "risk2",
+   "words": 8,
+   "newWords": 8,
+   "newWordsPerSec": 1.11
+  },
+  {
+   "id": "seq",
+   "words": 11,
+   "newWords": 11,
+   "newWordsPerSec": 1.41
+  },
+  {
+   "id": "race",
+   "words": 10,
+   "newWords": 10,
+   "newWordsPerSec": 1.39
+  },
+  {
+   "id": "morphGap",
+   "words": 5,
+   "newWords": 1,
+   "newWordsPerSec": 0.83
+  },
+  {
+   "id": "gap",
+   "words": 6,
+   "newWords": 10,
+   "newWordsPerSec": 1.39
+  },
+  {
+   "id": "downside",
+   "words": 10,
+   "newWords": 10,
+   "newWordsPerSec": 1.39
+  },
+  {
+   "id": "order",
+   "words": 10,
+   "newWords": 10,
+   "newWordsPerSec": 1.04
+  },
+  {
+   "id": "recap",
+   "words": 12,
+   "newWords": 12,
+   "newWordsPerSec": 1.18
+  },
+  {
+   "id": "end1",
+   "words": 11,
+   "newWords": 11,
+   "newWordsPerSec": 1.08
+  },
+  {
+   "id": "end2",
+   "words": 5,
+   "newWords": 5,
+   "newWordsPerSec": 0.69
+  },
+  {
+   "id": "outro",
+   "words": 4,
+   "newWords": 4,
+   "newWordsPerSec": 1.11
   }
  ],
- "totalNewWords": 134,
- "wordsPerSec": 1.049
+ "totalNewWords": 365,
+ "wordsPerSec": 1.002
 }

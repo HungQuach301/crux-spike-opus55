@@ -40,7 +40,7 @@
   "function": "make_sfx",
   "seed": 8080,
   "license": "original work",
-  "occurrences": 21
+  "occurrences": 67
  },
  {
   "assetId": "sfx-compare",
@@ -49,7 +49,7 @@
   "function": "make_sfx",
   "seed": 8080,
   "license": "original work",
-  "occurrences": 3
+  "occurrences": 4
  },
  {
   "assetId": "sfx-count",
@@ -58,7 +58,7 @@
   "function": "make_sfx",
   "seed": 8080,
   "license": "original work",
-  "occurrences": 5
+  "occurrences": 20
  },
  {
   "assetId": "sfx-dismiss",
@@ -67,7 +67,7 @@
   "function": "make_sfx",
   "seed": 8080,
   "license": "original work",
-  "occurrences": 2
+  "occurrences": 4
  },
  {
   "assetId": "sfx-emphasis",
@@ -76,7 +76,7 @@
   "function": "make_sfx",
   "seed": 8080,
   "license": "original work",
-  "occurrences": 4
+  "occurrences": 7
  },
  {
   "assetId": "sfx-reveal",
@@ -85,7 +85,7 @@
   "function": "make_sfx",
   "seed": 8080,
   "license": "original work",
-  "occurrences": 7
+  "occurrences": 19
  },
  {
   "assetId": "sfx-threshold-cross",
@@ -94,7 +94,7 @@
   "function": "make_sfx",
   "seed": 8080,
   "license": "original work",
-  "occurrences": 1
+  "occurrences": 3
  },
  {
   "assetId": "sfx-transition",
@@ -103,6 +103,6 @@
   "function": "make_sfx",
   "seed": 8080,
   "license": "original work",
-  "occurrences": 18
+  "occurrences": 47
  }
 ]

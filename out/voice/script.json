@@ -2,6 +2,7 @@
  "scenes": [
   {
    "id": "hook1",
+   "chapter": "hook",
    "display": "A car loan with $25,000 left, at 5.2%.",
    "spoken": "A car loan with twenty-five thousand dollars left, at five point two percent.",
    "markers": [
@@ -58,40 +59,26 @@
   },
   {
    "id": "hook2",
-   "display": "Pay it off early,",
-   "spoken": "Pay it off early,",
+   "chapter": "hook",
+   "display": "Pay it off early, or invest the extra cash?",
+   "spoken": "Pay it off early, or invest the extra cash?",
    "markers": [
     {
      "name": "A",
      "kind": "anchor",
      "word": 0
-    }
-   ],
-   "spokenWords": [
-    "Pay",
-    "it",
-    "off",
-    "early,"
-   ],
-   "displayWords": [
-    "Pay",
-    "it",
-    "off",
-    "early,"
-   ]
-  },
-  {
-   "id": "hook2b",
-   "display": "or invest the extra cash?",
-   "spoken": "or invest the extra cash?",
-   "markers": [
+    },
     {
      "name": "B",
      "kind": "anchor",
-     "word": 1
+     "word": 5
     }
    ],
    "spokenWords": [
+    "Pay",
+    "it",
+    "off",
+    "early,",
     "or",
     "invest",
     "the",
@@ -99,6 +86,10 @@
     "cash?"
    ],
    "displayWords": [
+    "Pay",
+    "it",
+    "off",
+    "early,",
     "or",
     "invest",
     "the",
@@ -108,6 +99,7 @@
   },
   {
    "id": "hook3",
+   "chapter": "hook",
    "display": "We ran both roads through all 48 months, taxing every lot.",
    "spoken": "We ran both roads through all forty-eight months, taxing every lot.",
    "markers": [
@@ -158,6 +150,7 @@
   },
   {
    "id": "hook4",
+   "chapter": "hook",
    "display": "The answer flips at an average annual return of 6.11%, compounded, in the 22% tax bracket.",
    "spoken": "The answer flips at an average annual return of six point one one percent, compounded, in the twenty-two percent tax bracket.",
    "markers": [
@@ -230,6 +223,7 @@
   },
   {
    "id": "hook5",
+   "chapter": "hook",
    "display": "Below it, paying off ends ahead. Above it, investing does.",
    "spoken": "Below it, paying off ends ahead. Above it, investing does.",
    "markers": [
@@ -271,6 +265,7 @@
   },
   {
    "id": "ident",
+   "chapter": "ident",
    "display": "",
    "spoken": "",
    "markers": [],
@@ -278,49 +273,34 @@
    "displayWords": []
   },
   {
-   "id": "setup",
-   "display": "Here is the setup.",
-   "spoken": "Here is the setup.",
+   "id": "scope1",
+   "chapter": "setup",
+   "display": "Here is the setup: the rules are US tax rules, and every input is stated, not forecast.",
+   "spoken": "Here is the setup: the rules are U.S. tax rules, and every input is stated, not forecast.",
    "markers": [
     {
      "name": "setup",
      "kind": "anchor",
      "word": 3
-    }
-   ],
-   "spokenWords": [
-    "Here",
-    "is",
-    "the",
-    "setup."
-   ],
-   "displayWords": [
-    "Here",
-    "is",
-    "the",
-    "setup."
-   ]
-  },
-  {
-   "id": "scope1",
-   "display": "The rules here are US tax rules, and every input is stated, not forecast.",
-   "spoken": "The rules here are U.S. tax rules, and every input is stated, not forecast.",
-   "markers": [
+    },
     {
      "name": "us",
      "kind": "anchor",
-     "word": 4
+     "word": 7
     },
     {
      "name": "stated",
      "kind": "anchor",
-     "word": 11
+     "word": 14
     }
    ],
    "spokenWords": [
-    "The",
+    "Here",
+    "is",
+    "the",
+    "setup:",
+    "the",
     "rules",
-    "here",
     "are",
     "U.S.",
     "tax",
@@ -334,9 +314,12 @@
     "forecast."
    ],
    "displayWords": [
-    "The",
+    "Here",
+    "is",
+    "the",
+    "setup:",
+    "the",
     "rules",
-    "here",
     "are",
     "US",
     "tax",
@@ -352,6 +335,7 @@
   },
   {
    "id": "scope2",
+   "chapter": "setup",
    "display": "Loan interest is treated as not deductible, so the model ignores the new-car loan interest deduction for 2025 to 2028.",
    "spoken": "Loan interest is treated as not deductible, so the model ignores the new-car loan interest deduction for twenty twenty-five to twenty twenty-eight.",
    "markers": [
@@ -434,6 +418,7 @@
   },
   {
    "id": "facts",
+   "chapter": "setup",
    "display": "The loan has $25,000 left at 5.2%, with 48 monthly payments of $578.",
    "spoken": "The loan has twenty-five thousand dollars left at five point two percent, with forty-eight monthly payments of five hundred seventy-eight dollars.",
    "markers": [
@@ -527,6 +512,7 @@
   },
   {
    "id": "extra",
+   "chapter": "setup",
    "display": "On top of that, $400 a month is available. That amount is illustrative.",
    "spoken": "On top of that, four hundred dollars a month is available. That amount is illustrative.",
    "markers": [
@@ -583,6 +569,7 @@
   },
   {
    "id": "roads",
+   "chapter": "setup",
    "display": "Road A sends it to the loan. Road B pays the minimum and invests it every month.",
    "spoken": "Road A sends it to the loan. Road B pays the minimum and invests it every month.",
    "markers": [
@@ -638,6 +625,7 @@
   },
   {
    "id": "cash",
+   "chapter": "setup",
    "display": "Both roads spend the same cash each month. Only the order changes.",
    "spoken": "Both roads spend the same cash each month. Only the order changes.",
    "markers": [
@@ -683,6 +671,7 @@
   },
   {
    "id": "card1",
+   "chapter": "ch1",
    "display": "First, the certain part.",
    "spoken": "First, the certain part.",
    "markers": [],
@@ -701,6 +690,7 @@
   },
   {
    "id": "timeline",
+   "chapter": "ch1",
    "display": "Road A pays off the loan at month 28. Road B keeps paying through month 48.",
    "spoken": "Road A pays off the loan at month twenty-eight. Road B keeps paying through month forty-eight.",
    "markers": [
@@ -768,6 +758,7 @@
   },
   {
    "id": "free",
+   "chapter": "ch1",
    "display": "That leaves 20 months with no car payment on road A.",
    "spoken": "That leaves twenty months with no car payment on road A.",
    "markers": [
@@ -812,7 +803,17 @@
    ]
   },
   {
+   "id": "morphInt",
+   "chapter": "ch1",
+   "display": "",
+   "spoken": "",
+   "markers": [],
+   "spokenWords": [],
+   "displayWords": []
+  },
+  {
    "id": "interest",
+   "chapter": "ch1",
    "display": "Interest paid falls from $2,744 to $1,554.",
    "spoken": "Interest paid falls from two thousand seven hundred forty-four dollars to one thousand five hundred fifty-four dollars.",
    "markers": [
@@ -872,6 +873,7 @@
   },
   {
    "id": "avoided",
+   "chapter": "ch1",
    "display": "Road A avoids $1,190 of interest. That does not depend on markets or taxes.",
    "spoken": "Road A avoids one thousand one hundred ninety dollars of interest. That does not depend on markets or taxes.",
    "markers": [
@@ -928,6 +930,7 @@
   },
   {
    "id": "certain",
+   "chapter": "ch1",
    "display": "It is certain.",
    "spoken": "It is certain.",
    "markers": [
@@ -950,6 +953,7 @@
   },
   {
    "id": "identity",
+   "chapter": "ch1",
    "display": "Because both roads spend the same cash, road A ends up investing exactly $1,190 more than road B.",
    "spoken": "Because both roads spend the same cash, road A ends up investing exactly one thousand one hundred ninety dollars more than road B.",
    "markers": [
@@ -1014,6 +1018,7 @@
   },
   {
    "id": "bridge",
+   "chapter": "ch1",
    "display": "So the question is narrow: can road B's head start in the market beat a certain $1,190, after tax?",
    "spoken": "So the question is narrow: can road B's head start in the market beat a certain one thousand one hundred ninety dollars, after tax?",
    "markers": [
@@ -1082,6 +1087,1938 @@
     "after",
     "tax?"
    ]
+  },
+  {
+   "id": "card2",
+   "chapter": "ch2",
+   "display": "Second, tax, lot by lot.",
+   "spoken": "Second, tax, lot by lot.",
+   "markers": [],
+   "spokenWords": [
+    "Second,",
+    "tax,",
+    "lot",
+    "by",
+    "lot."
+   ],
+   "displayWords": [
+    "Second,",
+    "tax,",
+    "lot",
+    "by",
+    "lot."
+   ]
+  },
+  {
+   "id": "lots1",
+   "chapter": "ch2",
+   "display": "Each month's contribution is its own tax lot. At month 48, everything is sold.",
+   "spoken": "Each month's contribution is its own tax lot. At month forty-eight, everything is sold.",
+   "markers": [
+    {
+     "name": "lot",
+     "kind": "anchor",
+     "word": 6
+    },
+    {
+     "name": "horizon",
+     "kind": "number",
+     "claimId": "horizon",
+     "display": "48",
+     "spokenForm": "forty-eight",
+     "word": 10,
+     "words": 1,
+     "canon": [
+      "month:48"
+     ]
+    },
+    {
+     "name": "sold",
+     "kind": "anchor",
+     "word": 13
+    }
+   ],
+   "spokenWords": [
+    "Each",
+    "month's",
+    "contribution",
+    "is",
+    "its",
+    "own",
+    "tax",
+    "lot.",
+    "At",
+    "month",
+    "forty-eight,",
+    "everything",
+    "is",
+    "sold."
+   ],
+   "displayWords": [
+    "Each",
+    "month's",
+    "contribution",
+    "is",
+    "its",
+    "own",
+    "tax",
+    "lot.",
+    "At",
+    "month",
+    "48,",
+    "everything",
+    "is",
+    "sold."
+   ]
+  },
+  {
+   "id": "lots2",
+   "chapter": "ch2",
+   "display": "A lot held more than 12 months at that sale is long-term. The rest are short-term.",
+   "spoken": "A lot held more than twelve months at that sale is long-term. The rest are short-term.",
+   "markers": [
+    {
+     "name": "hold_months",
+     "kind": "number",
+     "claimId": "hold_months",
+     "display": "12",
+     "spokenForm": "twelve",
+     "word": 5,
+     "words": 1,
+     "canon": [
+      "num:12"
+     ]
+    },
+    {
+     "name": "lt",
+     "kind": "anchor",
+     "word": 11
+    },
+    {
+     "name": "st",
+     "kind": "anchor",
+     "word": 15
+    }
+   ],
+   "spokenWords": [
+    "A",
+    "lot",
+    "held",
+    "more",
+    "than",
+    "twelve",
+    "months",
+    "at",
+    "that",
+    "sale",
+    "is",
+    "long-term.",
+    "The",
+    "rest",
+    "are",
+    "short-term."
+   ],
+   "displayWords": [
+    "A",
+    "lot",
+    "held",
+    "more",
+    "than",
+    "12",
+    "months",
+    "at",
+    "that",
+    "sale",
+    "is",
+    "long-term.",
+    "The",
+    "rest",
+    "are",
+    "short-term."
+   ]
+  },
+  {
+   "id": "rates",
+   "chapter": "ch2",
+   "display": "In the 22% bracket, long-term gains are taxed at 15%, and short-term gains at the full 22%.",
+   "spoken": "In the twenty-two percent bracket, long-term gains are taxed at fifteen percent, and short-term gains at the full twenty-two percent.",
+   "markers": [
+    {
+     "name": "ord_22",
+     "kind": "number",
+     "claimId": "ord_22",
+     "display": "22%",
+     "spokenForm": "twenty-two percent",
+     "word": 2,
+     "words": 2,
+     "canon": [
+      "pct:22"
+     ]
+    },
+    {
+     "name": "lt_15",
+     "kind": "number",
+     "claimId": "lt_15",
+     "display": "15%",
+     "spokenForm": "fifteen percent",
+     "word": 10,
+     "words": 2,
+     "canon": [
+      "pct:15"
+     ]
+    },
+    {
+     "name": "ord_22#2",
+     "kind": "number",
+     "claimId": "ord_22",
+     "display": "22%",
+     "spokenForm": "twenty-two percent",
+     "word": 18,
+     "words": 2,
+     "canon": [
+      "pct:22"
+     ]
+    }
+   ],
+   "spokenWords": [
+    "In",
+    "the",
+    "twenty-two",
+    "percent",
+    "bracket,",
+    "long-term",
+    "gains",
+    "are",
+    "taxed",
+    "at",
+    "fifteen",
+    "percent,",
+    "and",
+    "short-term",
+    "gains",
+    "at",
+    "the",
+    "full",
+    "twenty-two",
+    "percent."
+   ],
+   "displayWords": [
+    "In",
+    "the",
+    "22%",
+    "bracket,",
+    "long-term",
+    "gains",
+    "are",
+    "taxed",
+    "at",
+    "15%,",
+    "and",
+    "short-term",
+    "gains",
+    "at",
+    "the",
+    "full",
+    "22%."
+   ]
+  },
+  {
+   "id": "lots3",
+   "chapter": "ch2",
+   "display": "Road B invests from the start, so 35 of its 48 lots are long-term. Road A starts after the payoff: 8 of its 21.",
+   "spoken": "Road B invests from the start, so thirty-five of its forty-eight lots are long-term. Road A starts after the payoff: eight of its twenty-one.",
+   "markers": [
+    {
+     "name": "lots_lt_b",
+     "kind": "number",
+     "claimId": "lots_lt_b",
+     "display": "35",
+     "spokenForm": "thirty-five",
+     "word": 7,
+     "words": 1,
+     "canon": [
+      "num:35"
+     ]
+    },
+    {
+     "name": "months",
+     "kind": "number",
+     "claimId": "months",
+     "display": "48",
+     "spokenForm": "forty-eight",
+     "word": 10,
+     "words": 1,
+     "canon": [
+      "num:48"
+     ]
+    },
+    {
+     "name": "lots_lt_a",
+     "kind": "number",
+     "claimId": "lots_lt_a",
+     "display": "8",
+     "spokenForm": "eight",
+     "word": 20,
+     "words": 1,
+     "canon": [
+      "num:8"
+     ]
+    },
+    {
+     "name": "lots_a",
+     "kind": "number",
+     "claimId": "lots_a",
+     "display": "21",
+     "spokenForm": "twenty-one",
+     "word": 23,
+     "words": 1,
+     "canon": [
+      "num:21"
+     ]
+    }
+   ],
+   "spokenWords": [
+    "Road",
+    "B",
+    "invests",
+    "from",
+    "the",
+    "start,",
+    "so",
+    "thirty-five",
+    "of",
+    "its",
+    "forty-eight",
+    "lots",
+    "are",
+    "long-term.",
+    "Road",
+    "A",
+    "starts",
+    "after",
+    "the",
+    "payoff:",
+    "eight",
+    "of",
+    "its",
+    "twenty-one."
+   ],
+   "displayWords": [
+    "Road",
+    "B",
+    "invests",
+    "from",
+    "the",
+    "start,",
+    "so",
+    "35",
+    "of",
+    "its",
+    "48",
+    "lots",
+    "are",
+    "long-term.",
+    "Road",
+    "A",
+    "starts",
+    "after",
+    "the",
+    "payoff:",
+    "8",
+    "of",
+    "its",
+    "21."
+   ]
+  },
+  {
+   "id": "share",
+   "chapter": "ch2",
+   "display": "Near the break-even, 37% of road A's gains are short-term, against 7% of road B's.",
+   "spoken": "Near the break-even, thirty-seven percent of road A's gains are short-term, against seven percent of road B's.",
+   "markers": [
+    {
+     "name": "share_st_a",
+     "kind": "number",
+     "claimId": "share_st_a",
+     "display": "37%",
+     "spokenForm": "thirty-seven percent",
+     "word": 3,
+     "words": 2,
+     "canon": [
+      "pct:37"
+     ]
+    },
+    {
+     "name": "share_st_b",
+     "kind": "number",
+     "claimId": "share_st_b",
+     "display": "7%",
+     "spokenForm": "seven percent",
+     "word": 12,
+     "words": 2,
+     "canon": [
+      "pct:7"
+     ]
+    }
+   ],
+   "spokenWords": [
+    "Near",
+    "the",
+    "break-even,",
+    "thirty-seven",
+    "percent",
+    "of",
+    "road",
+    "A's",
+    "gains",
+    "are",
+    "short-term,",
+    "against",
+    "seven",
+    "percent",
+    "of",
+    "road",
+    "B's."
+   ],
+   "displayWords": [
+    "Near",
+    "the",
+    "break-even,",
+    "37%",
+    "of",
+    "road",
+    "A's",
+    "gains",
+    "are",
+    "short-term,",
+    "against",
+    "7%",
+    "of",
+    "road",
+    "B's."
+   ]
+  },
+  {
+   "id": "nodeduct",
+   "chapter": "ch2",
+   "display": "A lot that loses money gets no deduction. State income tax is left out.",
+   "spoken": "A lot that loses money gets no deduction. State income tax is left out.",
+   "markers": [
+    {
+     "name": "nd",
+     "kind": "anchor",
+     "word": 6
+    },
+    {
+     "name": "st",
+     "kind": "anchor",
+     "word": 8
+    }
+   ],
+   "spokenWords": [
+    "A",
+    "lot",
+    "that",
+    "loses",
+    "money",
+    "gets",
+    "no",
+    "deduction.",
+    "State",
+    "income",
+    "tax",
+    "is",
+    "left",
+    "out."
+   ],
+   "displayWords": [
+    "A",
+    "lot",
+    "that",
+    "loses",
+    "money",
+    "gets",
+    "no",
+    "deduction.",
+    "State",
+    "income",
+    "tax",
+    "is",
+    "left",
+    "out."
+   ]
+  },
+  {
+   "id": "card3",
+   "chapter": "ch3",
+   "display": "Third, where the answer flips.",
+   "spoken": "Third, where the answer flips.",
+   "markers": [],
+   "spokenWords": [
+    "Third,",
+    "where",
+    "the",
+    "answer",
+    "flips."
+   ],
+   "displayWords": [
+    "Third,",
+    "where",
+    "the",
+    "answer",
+    "flips."
+   ]
+  },
+  {
+   "id": "sw1",
+   "chapter": "ch3",
+   "display": "We sweep the average annual return from 2% to 10%, compounded, in the 22% bracket.",
+   "spoken": "We sweep the average annual return from two percent to ten percent, compounded, in the twenty-two percent bracket.",
+   "markers": [
+    {
+     "name": "axis_lo",
+     "kind": "number",
+     "claimId": "axis_lo",
+     "display": "2%",
+     "spokenForm": "two percent",
+     "word": 7,
+     "words": 2,
+     "canon": [
+      "pct:2"
+     ]
+    },
+    {
+     "name": "axis_hi",
+     "kind": "number",
+     "claimId": "axis_hi",
+     "display": "10%",
+     "spokenForm": "ten percent",
+     "word": 10,
+     "words": 2,
+     "canon": [
+      "pct:10"
+     ]
+    },
+    {
+     "name": "ord_22",
+     "kind": "number",
+     "claimId": "ord_22",
+     "display": "22%",
+     "spokenForm": "twenty-two percent",
+     "word": 15,
+     "words": 2,
+     "canon": [
+      "pct:22"
+     ]
+    }
+   ],
+   "spokenWords": [
+    "We",
+    "sweep",
+    "the",
+    "average",
+    "annual",
+    "return",
+    "from",
+    "two",
+    "percent",
+    "to",
+    "ten",
+    "percent,",
+    "compounded,",
+    "in",
+    "the",
+    "twenty-two",
+    "percent",
+    "bracket."
+   ],
+   "displayWords": [
+    "We",
+    "sweep",
+    "the",
+    "average",
+    "annual",
+    "return",
+    "from",
+    "2%",
+    "to",
+    "10%,",
+    "compounded,",
+    "in",
+    "the",
+    "22%",
+    "bracket."
+   ]
+  },
+  {
+   "id": "sw2",
+   "chapter": "ch3",
+   "display": "The line is road B minus road A, net worth after tax at month 48, and it rises with the return.",
+   "spoken": "The line is road B minus road A, net worth after tax at month forty-eight, and it rises with the return.",
+   "markers": [
+    {
+     "name": "horizon",
+     "kind": "number",
+     "claimId": "horizon",
+     "display": "48",
+     "spokenForm": "forty-eight",
+     "word": 14,
+     "words": 1,
+     "canon": [
+      "month:48"
+     ]
+    },
+    {
+     "name": "rises",
+     "kind": "anchor",
+     "word": 17
+    }
+   ],
+   "spokenWords": [
+    "The",
+    "line",
+    "is",
+    "road",
+    "B",
+    "minus",
+    "road",
+    "A,",
+    "net",
+    "worth",
+    "after",
+    "tax",
+    "at",
+    "month",
+    "forty-eight,",
+    "and",
+    "it",
+    "rises",
+    "with",
+    "the",
+    "return."
+   ],
+   "displayWords": [
+    "The",
+    "line",
+    "is",
+    "road",
+    "B",
+    "minus",
+    "road",
+    "A,",
+    "net",
+    "worth",
+    "after",
+    "tax",
+    "at",
+    "month",
+    "48,",
+    "and",
+    "it",
+    "rises",
+    "with",
+    "the",
+    "return."
+   ]
+  },
+  {
+   "id": "sw3",
+   "chapter": "ch3",
+   "display": "At 2%, road A is ahead by $822. At 10%, road B is ahead by $861.",
+   "spoken": "At two percent, road A is ahead by eight hundred twenty-two dollars. At ten percent, road B is ahead by eight hundred sixty-one dollars.",
+   "markers": [
+    {
+     "name": "axis_lo",
+     "kind": "number",
+     "claimId": "axis_lo",
+     "display": "2%",
+     "spokenForm": "two percent",
+     "word": 1,
+     "words": 2,
+     "canon": [
+      "pct:2"
+     ]
+    },
+    {
+     "name": "gap_lo_abs",
+     "kind": "number",
+     "claimId": "gap_lo_abs",
+     "display": "$822",
+     "spokenForm": "eight hundred twenty-two dollars",
+     "word": 8,
+     "words": 4,
+     "canon": [
+      "usd:822"
+     ]
+    },
+    {
+     "name": "axis_hi",
+     "kind": "number",
+     "claimId": "axis_hi",
+     "display": "10%",
+     "spokenForm": "ten percent",
+     "word": 13,
+     "words": 2,
+     "canon": [
+      "pct:10"
+     ]
+    },
+    {
+     "name": "gap_hi",
+     "kind": "number",
+     "claimId": "gap_hi",
+     "display": "$861",
+     "spokenForm": "eight hundred sixty-one dollars",
+     "word": 20,
+     "words": 4,
+     "canon": [
+      "usd:861"
+     ]
+    }
+   ],
+   "spokenWords": [
+    "At",
+    "two",
+    "percent,",
+    "road",
+    "A",
+    "is",
+    "ahead",
+    "by",
+    "eight",
+    "hundred",
+    "twenty-two",
+    "dollars.",
+    "At",
+    "ten",
+    "percent,",
+    "road",
+    "B",
+    "is",
+    "ahead",
+    "by",
+    "eight",
+    "hundred",
+    "sixty-one",
+    "dollars."
+   ],
+   "displayWords": [
+    "At",
+    "2%,",
+    "road",
+    "A",
+    "is",
+    "ahead",
+    "by",
+    "$822.",
+    "At",
+    "10%,",
+    "road",
+    "B",
+    "is",
+    "ahead",
+    "by",
+    "$861."
+   ]
+  },
+  {
+   "id": "sw4",
+   "chapter": "ch3",
+   "display": "Both roads end even at 6.11%.",
+   "spoken": "Both roads end even at six point one one percent.",
+   "markers": [
+    {
+     "name": "be_22",
+     "kind": "number",
+     "claimId": "be_22",
+     "display": "6.11%",
+     "spokenForm": "six point one one percent",
+     "word": 5,
+     "words": 5,
+     "canon": [
+      "pct:6.11"
+     ]
+    }
+   ],
+   "spokenWords": [
+    "Both",
+    "roads",
+    "end",
+    "even",
+    "at",
+    "six",
+    "point",
+    "one",
+    "one",
+    "percent."
+   ],
+   "displayWords": [
+    "Both",
+    "roads",
+    "end",
+    "even",
+    "at",
+    "6.11%."
+   ]
+  },
+  {
+   "id": "sw5",
+   "chapter": "ch3",
+   "display": "Below that return, paying off early ends ahead. Above it, investing does.",
+   "spoken": "Below that return, paying off early ends ahead. Above it, investing does.",
+   "markers": [
+    {
+     "name": "below",
+     "kind": "anchor",
+     "word": 3
+    },
+    {
+     "name": "above",
+     "kind": "anchor",
+     "word": 10
+    }
+   ],
+   "spokenWords": [
+    "Below",
+    "that",
+    "return,",
+    "paying",
+    "off",
+    "early",
+    "ends",
+    "ahead.",
+    "Above",
+    "it,",
+    "investing",
+    "does."
+   ],
+   "displayWords": [
+    "Below",
+    "that",
+    "return,",
+    "paying",
+    "off",
+    "early",
+    "ends",
+    "ahead.",
+    "Above",
+    "it,",
+    "investing",
+    "does."
+   ]
+  },
+  {
+   "id": "card4",
+   "chapter": "ch4",
+   "display": "Fourth, the tax bracket.",
+   "spoken": "Fourth, the tax bracket.",
+   "markers": [],
+   "spokenWords": [
+    "Fourth,",
+    "the",
+    "tax",
+    "bracket."
+   ],
+   "displayWords": [
+    "Fourth,",
+    "the",
+    "tax",
+    "bracket."
+   ]
+  },
+  {
+   "id": "niit",
+   "chapter": "ch4",
+   "display": "In the 32% bracket we add the 3.8% net investment income tax: short-term gains pay 35.8%, long-term gains 18.8%.",
+   "spoken": "In the thirty-two percent bracket we add the three point eight percent net investment income tax: short-term gains pay thirty-five point eight percent, long-term gains eighteen point eight percent.",
+   "markers": [
+    {
+     "name": "ord_32",
+     "kind": "number",
+     "claimId": "ord_32",
+     "display": "32%",
+     "spokenForm": "thirty-two percent",
+     "word": 2,
+     "words": 2,
+     "canon": [
+      "pct:32"
+     ]
+    },
+    {
+     "name": "niit",
+     "kind": "number",
+     "claimId": "niit",
+     "display": "3.8%",
+     "spokenForm": "three point eight percent",
+     "word": 8,
+     "words": 4,
+     "canon": [
+      "pct:3.8"
+     ]
+    },
+    {
+     "name": "ord_32e",
+     "kind": "number",
+     "claimId": "ord_32e",
+     "display": "35.8%",
+     "spokenForm": "thirty-five point eight percent",
+     "word": 19,
+     "words": 4,
+     "canon": [
+      "pct:35.8"
+     ]
+    },
+    {
+     "name": "lt_32e",
+     "kind": "number",
+     "claimId": "lt_32e",
+     "display": "18.8%",
+     "spokenForm": "eighteen point eight percent",
+     "word": 25,
+     "words": 4,
+     "canon": [
+      "pct:18.8"
+     ]
+    }
+   ],
+   "spokenWords": [
+    "In",
+    "the",
+    "thirty-two",
+    "percent",
+    "bracket",
+    "we",
+    "add",
+    "the",
+    "three",
+    "point",
+    "eight",
+    "percent",
+    "net",
+    "investment",
+    "income",
+    "tax:",
+    "short-term",
+    "gains",
+    "pay",
+    "thirty-five",
+    "point",
+    "eight",
+    "percent,",
+    "long-term",
+    "gains",
+    "eighteen",
+    "point",
+    "eight",
+    "percent."
+   ],
+   "displayWords": [
+    "In",
+    "the",
+    "32%",
+    "bracket",
+    "we",
+    "add",
+    "the",
+    "3.8%",
+    "net",
+    "investment",
+    "income",
+    "tax:",
+    "short-term",
+    "gains",
+    "pay",
+    "35.8%,",
+    "long-term",
+    "gains",
+    "18.8%."
+   ]
+  },
+  {
+   "id": "morphDot",
+   "chapter": "ch4",
+   "display": "",
+   "spoken": "",
+   "markers": [],
+   "spokenWords": [],
+   "displayWords": []
+  },
+  {
+   "id": "dots",
+   "chapter": "ch4",
+   "display": "The break-even is 5.23% in the 12% bracket, and 6.11% in the 22% bracket.",
+   "spoken": "The break-even is five point two three percent in the twelve percent bracket, and six point one one percent in the twenty-two percent bracket.",
+   "markers": [
+    {
+     "name": "be_12",
+     "kind": "number",
+     "claimId": "be_12",
+     "display": "5.23%",
+     "spokenForm": "five point two three percent",
+     "word": 3,
+     "words": 5,
+     "canon": [
+      "pct:5.23"
+     ]
+    },
+    {
+     "name": "ord_12",
+     "kind": "number",
+     "claimId": "ord_12",
+     "display": "12%",
+     "spokenForm": "twelve percent",
+     "word": 10,
+     "words": 2,
+     "canon": [
+      "pct:12"
+     ]
+    },
+    {
+     "name": "be_22",
+     "kind": "number",
+     "claimId": "be_22",
+     "display": "6.11%",
+     "spokenForm": "six point one one percent",
+     "word": 14,
+     "words": 5,
+     "canon": [
+      "pct:6.11"
+     ]
+    },
+    {
+     "name": "ord_22",
+     "kind": "number",
+     "claimId": "ord_22",
+     "display": "22%",
+     "spokenForm": "twenty-two percent",
+     "word": 21,
+     "words": 2,
+     "canon": [
+      "pct:22"
+     ]
+    }
+   ],
+   "spokenWords": [
+    "The",
+    "break-even",
+    "is",
+    "five",
+    "point",
+    "two",
+    "three",
+    "percent",
+    "in",
+    "the",
+    "twelve",
+    "percent",
+    "bracket,",
+    "and",
+    "six",
+    "point",
+    "one",
+    "one",
+    "percent",
+    "in",
+    "the",
+    "twenty-two",
+    "percent",
+    "bracket."
+   ],
+   "displayWords": [
+    "The",
+    "break-even",
+    "is",
+    "5.23%",
+    "in",
+    "the",
+    "12%",
+    "bracket,",
+    "and",
+    "6.11%",
+    "in",
+    "the",
+    "22%",
+    "bracket."
+   ]
+  },
+  {
+   "id": "dots32",
+   "chapter": "ch4",
+   "display": "In the 32% bracket, it is 6.26%.",
+   "spoken": "In the thirty-two percent bracket, it is six point two six percent.",
+   "markers": [
+    {
+     "name": "ord_32",
+     "kind": "number",
+     "claimId": "ord_32",
+     "display": "32%",
+     "spokenForm": "thirty-two percent",
+     "word": 2,
+     "words": 2,
+     "canon": [
+      "pct:32"
+     ]
+    },
+    {
+     "name": "be_32",
+     "kind": "number",
+     "claimId": "be_32",
+     "display": "6.26%",
+     "spokenForm": "six point two six percent",
+     "word": 7,
+     "words": 5,
+     "canon": [
+      "pct:6.26"
+     ]
+    }
+   ],
+   "spokenWords": [
+    "In",
+    "the",
+    "thirty-two",
+    "percent",
+    "bracket,",
+    "it",
+    "is",
+    "six",
+    "point",
+    "two",
+    "six",
+    "percent."
+   ],
+   "displayWords": [
+    "In",
+    "the",
+    "32%",
+    "bracket,",
+    "it",
+    "is",
+    "6.26%."
+   ]
+  },
+  {
+   "id": "rises",
+   "chapter": "ch4",
+   "display": "Higher rates on gains shrink road B's head start, so the threshold rises with the bracket.",
+   "spoken": "Higher rates on gains shrink road B's head start, so the threshold rises with the bracket.",
+   "markers": [
+    {
+     "name": "rises",
+     "kind": "anchor",
+     "word": 12
+    }
+   ],
+   "spokenWords": [
+    "Higher",
+    "rates",
+    "on",
+    "gains",
+    "shrink",
+    "road",
+    "B's",
+    "head",
+    "start,",
+    "so",
+    "the",
+    "threshold",
+    "rises",
+    "with",
+    "the",
+    "bracket."
+   ],
+   "displayWords": [
+    "Higher",
+    "rates",
+    "on",
+    "gains",
+    "shrink",
+    "road",
+    "B's",
+    "head",
+    "start,",
+    "so",
+    "the",
+    "threshold",
+    "rises",
+    "with",
+    "the",
+    "bracket."
+   ]
+  },
+  {
+   "id": "below",
+   "chapter": "ch4",
+   "display": "In the 12% bracket it sits below 5.33%, the loan rate as an annual yield, because road A's gains are mostly short-term.",
+   "spoken": "In the twelve percent bracket it sits below five point three three percent, the loan rate as an annual yield, because road A's gains are mostly short-term.",
+   "markers": [
+    {
+     "name": "ord_12",
+     "kind": "number",
+     "claimId": "ord_12",
+     "display": "12%",
+     "spokenForm": "twelve percent",
+     "word": 2,
+     "words": 2,
+     "canon": [
+      "pct:12"
+     ]
+    },
+    {
+     "name": "be_0",
+     "kind": "number",
+     "claimId": "be_0",
+     "display": "5.33%",
+     "spokenForm": "five point three three percent",
+     "word": 8,
+     "words": 5,
+     "canon": [
+      "pct:5.33"
+     ]
+    },
+    {
+     "name": "st",
+     "kind": "anchor",
+     "word": 26
+    }
+   ],
+   "spokenWords": [
+    "In",
+    "the",
+    "twelve",
+    "percent",
+    "bracket",
+    "it",
+    "sits",
+    "below",
+    "five",
+    "point",
+    "three",
+    "three",
+    "percent,",
+    "the",
+    "loan",
+    "rate",
+    "as",
+    "an",
+    "annual",
+    "yield,",
+    "because",
+    "road",
+    "A's",
+    "gains",
+    "are",
+    "mostly",
+    "short-term."
+   ],
+   "displayWords": [
+    "In",
+    "the",
+    "12%",
+    "bracket",
+    "it",
+    "sits",
+    "below",
+    "5.33%,",
+    "the",
+    "loan",
+    "rate",
+    "as",
+    "an",
+    "annual",
+    "yield,",
+    "because",
+    "road",
+    "A's",
+    "gains",
+    "are",
+    "mostly",
+    "short-term."
+   ]
+  },
+  {
+   "id": "card5",
+   "chapter": "ch5",
+   "display": "Fifth, risk.",
+   "spoken": "Fifth, risk.",
+   "markers": [],
+   "spokenWords": [
+    "Fifth,",
+    "risk."
+   ],
+   "displayWords": [
+    "Fifth,",
+    "risk."
+   ]
+  },
+  {
+   "id": "risk1",
+   "chapter": "ch5",
+   "display": "Paying off the loan earns a certain 5.2%.",
+   "spoken": "Paying off the loan earns a certain five point two percent.",
+   "markers": [
+    {
+     "name": "apr",
+     "kind": "number",
+     "claimId": "apr",
+     "display": "5.2%",
+     "spokenForm": "five point two percent",
+     "word": 7,
+     "words": 4,
+     "canon": [
+      "pct:5.2"
+     ]
+    }
+   ],
+   "spokenWords": [
+    "Paying",
+    "off",
+    "the",
+    "loan",
+    "earns",
+    "a",
+    "certain",
+    "five",
+    "point",
+    "two",
+    "percent."
+   ],
+   "displayWords": [
+    "Paying",
+    "off",
+    "the",
+    "loan",
+    "earns",
+    "a",
+    "certain",
+    "5.2%."
+   ]
+  },
+  {
+   "id": "risk2",
+   "chapter": "ch5",
+   "display": "Investing earns an average, not a promise. Our range, 2% to 10%, is illustrative.",
+   "spoken": "Investing earns an average, not a promise. Our range, two percent to ten percent, is illustrative.",
+   "markers": [
+    {
+     "name": "promise",
+     "kind": "anchor",
+     "word": 6
+    },
+    {
+     "name": "axis_lo",
+     "kind": "number",
+     "claimId": "axis_lo",
+     "display": "2%",
+     "spokenForm": "two percent",
+     "word": 9,
+     "words": 2,
+     "canon": [
+      "pct:2"
+     ]
+    },
+    {
+     "name": "axis_hi",
+     "kind": "number",
+     "claimId": "axis_hi",
+     "display": "10%",
+     "spokenForm": "ten percent",
+     "word": 12,
+     "words": 2,
+     "canon": [
+      "pct:10"
+     ]
+    }
+   ],
+   "spokenWords": [
+    "Investing",
+    "earns",
+    "an",
+    "average,",
+    "not",
+    "a",
+    "promise.",
+    "Our",
+    "range,",
+    "two",
+    "percent",
+    "to",
+    "ten",
+    "percent,",
+    "is",
+    "illustrative."
+   ],
+   "displayWords": [
+    "Investing",
+    "earns",
+    "an",
+    "average,",
+    "not",
+    "a",
+    "promise.",
+    "Our",
+    "range,",
+    "2%",
+    "to",
+    "10%,",
+    "is",
+    "illustrative."
+   ]
+  },
+  {
+   "id": "seq",
+   "chapter": "ch5",
+   "display": "Here is an illustrative sequence: 8% a year for 36 months, then −20% for the last 12.",
+   "spoken": "Here is an illustrative sequence: eight percent a year for thirty-six months, then minus twenty percent for the last twelve.",
+   "markers": [
+    {
+     "name": "seq_first",
+     "kind": "number",
+     "claimId": "seq_first",
+     "display": "8%",
+     "spokenForm": "eight percent",
+     "word": 5,
+     "words": 2,
+     "canon": [
+      "pct:8"
+     ]
+    },
+    {
+     "name": "seq_split",
+     "kind": "number",
+     "claimId": "seq_split",
+     "display": "36",
+     "spokenForm": "thirty-six",
+     "word": 10,
+     "words": 1,
+     "canon": [
+      "num:36"
+     ]
+    },
+    {
+     "name": "seq_second",
+     "kind": "number",
+     "claimId": "seq_second",
+     "display": "−20%",
+     "spokenForm": "minus twenty percent",
+     "word": 13,
+     "words": 3,
+     "canon": [
+      "pct:-20"
+     ]
+    },
+    {
+     "name": "hold_months",
+     "kind": "number",
+     "claimId": "hold_months",
+     "display": "12",
+     "spokenForm": "twelve",
+     "word": 19,
+     "words": 1,
+     "canon": [
+      "num:12"
+     ]
+    }
+   ],
+   "spokenWords": [
+    "Here",
+    "is",
+    "an",
+    "illustrative",
+    "sequence:",
+    "eight",
+    "percent",
+    "a",
+    "year",
+    "for",
+    "thirty-six",
+    "months,",
+    "then",
+    "minus",
+    "twenty",
+    "percent",
+    "for",
+    "the",
+    "last",
+    "twelve."
+   ],
+   "displayWords": [
+    "Here",
+    "is",
+    "an",
+    "illustrative",
+    "sequence:",
+    "8%",
+    "a",
+    "year",
+    "for",
+    "36",
+    "months,",
+    "then",
+    "−20%",
+    "for",
+    "the",
+    "last",
+    "12."
+   ]
+  },
+  {
+   "id": "race",
+   "chapter": "ch5",
+   "display": "We track net worth after tax, month by month. For 36 months, both roads run almost together.",
+   "spoken": "We track net worth after tax, month by month. For thirty-six months, both roads run almost together.",
+   "markers": [
+    {
+     "name": "seq_split",
+     "kind": "number",
+     "claimId": "seq_split",
+     "display": "36",
+     "spokenForm": "thirty-six",
+     "word": 10,
+     "words": 1,
+     "canon": [
+      "num:36"
+     ]
+    },
+    {
+     "name": "together",
+     "kind": "anchor",
+     "word": 14
+    }
+   ],
+   "spokenWords": [
+    "We",
+    "track",
+    "net",
+    "worth",
+    "after",
+    "tax,",
+    "month",
+    "by",
+    "month.",
+    "For",
+    "thirty-six",
+    "months,",
+    "both",
+    "roads",
+    "run",
+    "almost",
+    "together."
+   ],
+   "displayWords": [
+    "We",
+    "track",
+    "net",
+    "worth",
+    "after",
+    "tax,",
+    "month",
+    "by",
+    "month.",
+    "For",
+    "36",
+    "months,",
+    "both",
+    "roads",
+    "run",
+    "almost",
+    "together."
+   ]
+  },
+  {
+   "id": "morphGap",
+   "chapter": "ch5",
+   "display": "",
+   "spoken": "",
+   "markers": [],
+   "spokenWords": [],
+   "displayWords": []
+  },
+  {
+   "id": "gap",
+   "chapter": "ch5",
+   "display": "The difference, road B minus road A, peaks, then turns negative in month 39.",
+   "spoken": "The difference, road B minus road A, peaks, then turns negative in month thirty-nine.",
+   "markers": [
+    {
+     "name": "peaks",
+     "kind": "anchor",
+     "word": 7
+    },
+    {
+     "name": "cross_month",
+     "kind": "number",
+     "claimId": "cross_month",
+     "display": "39",
+     "spokenForm": "thirty-nine",
+     "word": 13,
+     "words": 1,
+     "canon": [
+      "month:39"
+     ]
+    }
+   ],
+   "spokenWords": [
+    "The",
+    "difference,",
+    "road",
+    "B",
+    "minus",
+    "road",
+    "A,",
+    "peaks,",
+    "then",
+    "turns",
+    "negative",
+    "in",
+    "month",
+    "thirty-nine."
+   ],
+   "displayWords": [
+    "The",
+    "difference,",
+    "road",
+    "B",
+    "minus",
+    "road",
+    "A,",
+    "peaks,",
+    "then",
+    "turns",
+    "negative",
+    "in",
+    "month",
+    "39."
+   ]
+  },
+  {
+   "id": "downside",
+   "chapter": "ch5",
+   "display": "Road A finishes $459 ahead, after tax.",
+   "spoken": "Road A finishes four hundred fifty-nine dollars ahead, after tax.",
+   "markers": [
+    {
+     "name": "gap_end",
+     "kind": "number",
+     "claimId": "gap_end",
+     "display": "$459",
+     "spokenForm": "four hundred fifty-nine dollars",
+     "word": 3,
+     "words": 4,
+     "canon": [
+      "usd:459"
+     ]
+    }
+   ],
+   "spokenWords": [
+    "Road",
+    "A",
+    "finishes",
+    "four",
+    "hundred",
+    "fifty-nine",
+    "dollars",
+    "ahead,",
+    "after",
+    "tax."
+   ],
+   "displayWords": [
+    "Road",
+    "A",
+    "finishes",
+    "$459",
+    "ahead,",
+    "after",
+    "tax."
+   ]
+  },
+  {
+   "id": "order",
+   "chapter": "ch5",
+   "display": "Over all 48 months, that sequence still averages 0.19% a year. The order of the returns decided the result.",
+   "spoken": "Over all forty-eight months, that sequence still averages zero point one nine percent a year. The order of the returns decided the result.",
+   "markers": [
+    {
+     "name": "horizon",
+     "kind": "number",
+     "claimId": "horizon",
+     "display": "48",
+     "spokenForm": "forty-eight",
+     "word": 2,
+     "words": 1,
+     "canon": [
+      "num:48"
+     ]
+    },
+    {
+     "name": "seq_avg",
+     "kind": "number",
+     "claimId": "seq_avg",
+     "display": "0.19%",
+     "spokenForm": "zero point one nine percent",
+     "word": 8,
+     "words": 5,
+     "canon": [
+      "pct:0.19"
+     ]
+    },
+    {
+     "name": "order",
+     "kind": "anchor",
+     "word": 16
+    }
+   ],
+   "spokenWords": [
+    "Over",
+    "all",
+    "forty-eight",
+    "months,",
+    "that",
+    "sequence",
+    "still",
+    "averages",
+    "zero",
+    "point",
+    "one",
+    "nine",
+    "percent",
+    "a",
+    "year.",
+    "The",
+    "order",
+    "of",
+    "the",
+    "returns",
+    "decided",
+    "the",
+    "result."
+   ],
+   "displayWords": [
+    "Over",
+    "all",
+    "48",
+    "months,",
+    "that",
+    "sequence",
+    "still",
+    "averages",
+    "0.19%",
+    "a",
+    "year.",
+    "The",
+    "order",
+    "of",
+    "the",
+    "returns",
+    "decided",
+    "the",
+    "result."
+   ]
+  },
+  {
+   "id": "recap",
+   "chapter": "close",
+   "display": "The payoff month and the interest avoided are fixed. The tax depends on how long each lot is held. The return is the unknown.",
+   "spoken": "The payoff month and the interest avoided are fixed. The tax depends on how long each lot is held. The return is the unknown.",
+   "markers": [
+    {
+     "name": "fixed",
+     "kind": "anchor",
+     "word": 8
+    },
+    {
+     "name": "lot",
+     "kind": "anchor",
+     "word": 16
+    },
+    {
+     "name": "ret",
+     "kind": "anchor",
+     "word": 20
+    }
+   ],
+   "spokenWords": [
+    "The",
+    "payoff",
+    "month",
+    "and",
+    "the",
+    "interest",
+    "avoided",
+    "are",
+    "fixed.",
+    "The",
+    "tax",
+    "depends",
+    "on",
+    "how",
+    "long",
+    "each",
+    "lot",
+    "is",
+    "held.",
+    "The",
+    "return",
+    "is",
+    "the",
+    "unknown."
+   ],
+   "displayWords": [
+    "The",
+    "payoff",
+    "month",
+    "and",
+    "the",
+    "interest",
+    "avoided",
+    "are",
+    "fixed.",
+    "The",
+    "tax",
+    "depends",
+    "on",
+    "how",
+    "long",
+    "each",
+    "lot",
+    "is",
+    "held.",
+    "The",
+    "return",
+    "is",
+    "the",
+    "unknown."
+   ]
+  },
+  {
+   "id": "end1",
+   "chapter": "close",
+   "display": "So, in the 22% bracket, the answer flips at an average annual return of 6.11%, compounded.",
+   "spoken": "So, in the twenty-two percent bracket, the answer flips at an average annual return of six point one one percent, compounded.",
+   "markers": [
+    {
+     "name": "ord_22",
+     "kind": "number",
+     "claimId": "ord_22",
+     "display": "22%",
+     "spokenForm": "twenty-two percent",
+     "word": 3,
+     "words": 2,
+     "canon": [
+      "pct:22"
+     ]
+    },
+    {
+     "name": "be_22",
+     "kind": "number",
+     "claimId": "be_22",
+     "display": "6.11%",
+     "spokenForm": "six point one one percent",
+     "word": 15,
+     "words": 5,
+     "canon": [
+      "pct:6.11"
+     ]
+    }
+   ],
+   "spokenWords": [
+    "So,",
+    "in",
+    "the",
+    "twenty-two",
+    "percent",
+    "bracket,",
+    "the",
+    "answer",
+    "flips",
+    "at",
+    "an",
+    "average",
+    "annual",
+    "return",
+    "of",
+    "six",
+    "point",
+    "one",
+    "one",
+    "percent,",
+    "compounded."
+   ],
+   "displayWords": [
+    "So,",
+    "in",
+    "the",
+    "22%",
+    "bracket,",
+    "the",
+    "answer",
+    "flips",
+    "at",
+    "an",
+    "average",
+    "annual",
+    "return",
+    "of",
+    "6.11%,",
+    "compounded."
+   ]
+  },
+  {
+   "id": "end2",
+   "chapter": "close",
+   "display": "That is a threshold, not a forecast. Where returns will land is not known in advance.",
+   "spoken": "That is a threshold, not a forecast. Where returns will land is not known in advance.",
+   "markers": [
+    {
+     "name": "th",
+     "kind": "anchor",
+     "word": 3
+    }
+   ],
+   "spokenWords": [
+    "That",
+    "is",
+    "a",
+    "threshold,",
+    "not",
+    "a",
+    "forecast.",
+    "Where",
+    "returns",
+    "will",
+    "land",
+    "is",
+    "not",
+    "known",
+    "in",
+    "advance."
+   ],
+   "displayWords": [
+    "That",
+    "is",
+    "a",
+    "threshold,",
+    "not",
+    "a",
+    "forecast.",
+    "Where",
+    "returns",
+    "will",
+    "land",
+    "is",
+    "not",
+    "known",
+    "in",
+    "advance."
+   ]
+  },
+  {
+   "id": "outro",
+   "chapter": "close",
+   "display": "",
+   "spoken": "",
+   "markers": [],
+   "spokenWords": [],
+   "displayWords": []
   }
  ]
 }

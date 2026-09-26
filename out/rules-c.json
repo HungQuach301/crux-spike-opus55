@@ -1,11 +1,15 @@
 {
  "target": "test C (render-av)",
  "sampledEvery": "3 frames (0.1 s)",
- "samples": 1278,
+ "samples": 3642,
  "definitions": {
   "split-view": "changed elements between t and t+0.1s with the camera frozen (an element present in both frames counts only the region where its old and new boxes differ); violation when the union box of changes exceeds 60% of frame width or height for >= 1s, outside camera moves",
   "level1": "chart scenes of >= 2 s: exactly one visible .l1 (opacity > 0.5) in >= 50% of samples, never two",
-  "exemptions": "scene-leak and split-view skip the camera move at the start of each scene"
+  "bar-proportion": "a visible bar may not run off the frame along its value axis unless an axis break is shown; settled bars with data-value in one chart share one scale (±3%)",
+  "illustrative-badge": "whenever an illustrative claim is visible (opacity > 0.5), an ILLUSTRATIVE badge is visible in the same frame",
+  "text-line-collision": "no point of a visible stroked line/path/outline (sampled every 3 px on screen) falls inside a visible text box (glyph band = box minus 2% top and bottom: the ascent + descent of Inter fill a 1.2 line box)",
+  "layout-repeat": "no layout used more than twice within any 90 s window",
+  "exemptions": "scene-leak, split-view, bar-proportion, unlabelled-curve, axis-anchors and text-line-collision skip the camera move at the start of each scene (layout is judged on settled shots); bg-over-data, grey-emphasis, number-colour and illustrative-badge apply to every frame"
  },
  "summary": {
   "scene-leak": {
@@ -38,7 +42,26 @@
    "scenes": [],
    "pass": true
   },
+  "bar-proportion": {
+   "framesFlagged": 0,
+   "scenes": [],
+   "pass": true
+  },
+  "illustrative-badge": {
+   "framesFlagged": 0,
+   "scenes": [],
+   "pass": true
+  },
+  "text-line-collision": {
+   "framesFlagged": 0,
+   "scenes": [],
+   "pass": true
+  },
   "level1": {
+   "scenes": [],
+   "pass": true
+  },
+  "layout-repeat": {
    "scenes": [],
    "pass": true
   },
@@ -54,7 +77,7 @@
    "chart": false,
    "issues": {},
    "level1": {
-    "shareExactlyOne": 0.33,
+    "shareExactlyOne": 0.28,
     "max": 1,
     "pass": null
    },
@@ -63,20 +86,7 @@
   },
   {
    "id": "hook2",
-   "samples": 25,
-   "chart": false,
-   "issues": {},
-   "level1": {
-    "shareExactlyOne": 0,
-    "max": 0,
-    "pass": null
-   },
-   "split": [],
-   "examples": {}
-  },
-  {
-   "id": "hook2b",
-   "samples": 23,
+   "samples": 48,
    "chart": false,
    "issues": {},
    "level1": {
@@ -93,7 +103,7 @@
    "chart": true,
    "issues": {},
    "level1": {
-    "shareExactlyOne": 0.56,
+    "shareExactlyOne": 0.57,
     "max": 1,
     "pass": true
    },
@@ -102,11 +112,11 @@
   },
   {
    "id": "hook4",
-   "samples": 90,
+   "samples": 84,
    "chart": false,
    "issues": {},
    "level1": {
-    "shareExactlyOne": 0.6,
+    "shareExactlyOne": 0.62,
     "max": 1,
     "pass": null
    },
@@ -140,25 +150,12 @@
    "examples": {}
   },
   {
-   "id": "setup",
-   "samples": 18,
-   "chart": false,
-   "issues": {},
-   "level1": {
-    "shareExactlyOne": 0,
-    "max": 0,
-    "pass": null
-   },
-   "split": [],
-   "examples": {}
-  },
-  {
    "id": "scope1",
-   "samples": 66,
+   "samples": 72,
    "chart": false,
    "issues": {},
    "level1": {
-    "shareExactlyOne": 0.74,
+    "shareExactlyOne": 0.64,
     "max": 1,
     "pass": null
    },
@@ -180,11 +177,11 @@
   },
   {
    "id": "facts",
-   "samples": 84,
+   "samples": 90,
    "chart": false,
    "issues": {},
    "level1": {
-    "shareExactlyOne": 0.87,
+    "shareExactlyOne": 0.86,
     "max": 1,
     "pass": null
    },
@@ -193,11 +190,11 @@
   },
   {
    "id": "extra",
-   "samples": 72,
+   "samples": 66,
    "chart": false,
    "issues": {},
    "level1": {
-    "shareExactlyOne": 0.71,
+    "shareExactlyOne": 0.73,
     "max": 1,
     "pass": null
    },
@@ -206,7 +203,7 @@
   },
   {
    "id": "roads",
-   "samples": 72,
+   "samples": 78,
    "chart": false,
    "issues": {},
    "level1": {
@@ -219,11 +216,11 @@
   },
   {
    "id": "cash",
-   "samples": 55,
+   "samples": 60,
    "chart": true,
    "issues": {},
    "level1": {
-    "shareExactlyOne": 0.71,
+    "shareExactlyOne": 0.75,
     "max": 1,
     "pass": true
    },
@@ -232,11 +229,11 @@
   },
   {
    "id": "card1",
-   "samples": 23,
+   "samples": 30,
    "chart": false,
    "issues": {},
    "level1": {
-    "shareExactlyOne": 0.7,
+    "shareExactlyOne": 0.73,
     "max": 1,
     "pass": null
    },
@@ -245,11 +242,11 @@
   },
   {
    "id": "timeline",
-   "samples": 66,
+   "samples": 72,
    "chart": true,
    "issues": {},
    "level1": {
-    "shareExactlyOne": 0.65,
+    "shareExactlyOne": 0.58,
     "max": 1,
     "pass": true
    },
@@ -258,7 +255,72 @@
   },
   {
    "id": "free",
-   "samples": 48,
+   "samples": 55,
+   "chart": true,
+   "issues": {},
+   "level1": {
+    "shareExactlyOne": 0.78,
+    "max": 1,
+    "pass": true
+   },
+   "split": [],
+   "examples": {}
+  },
+  {
+   "id": "morphInt",
+   "samples": 11,
+   "chart": true,
+   "issues": {},
+   "level1": {
+    "shareExactlyOne": 0,
+    "max": 0,
+    "pass": null
+   },
+   "split": [],
+   "examples": {}
+  },
+  {
+   "id": "interest",
+   "samples": 72,
+   "chart": true,
+   "issues": {},
+   "level1": {
+    "shareExactlyOne": 0.75,
+    "max": 1,
+    "pass": true
+   },
+   "split": [],
+   "examples": {}
+  },
+  {
+   "id": "avoided",
+   "samples": 96,
+   "chart": true,
+   "issues": {},
+   "level1": {
+    "shareExactlyOne": 0.8,
+    "max": 1,
+    "pass": true
+   },
+   "split": [],
+   "examples": {}
+  },
+  {
+   "id": "certain",
+   "samples": 24,
+   "chart": false,
+   "issues": {},
+   "level1": {
+    "shareExactlyOne": 0.96,
+    "max": 1,
+    "pass": null
+   },
+   "split": [],
+   "examples": {}
+  },
+  {
+   "id": "identity",
+   "samples": 102,
    "chart": true,
    "issues": {},
    "level1": {
@@ -270,12 +332,12 @@
    "examples": {}
   },
   {
-   "id": "interest",
-   "samples": 73,
+   "id": "bridge",
+   "samples": 96,
    "chart": true,
    "issues": {},
    "level1": {
-    "shareExactlyOne": 0.74,
+    "shareExactlyOne": 0.81,
     "max": 1,
     "pass": true
    },
@@ -283,8 +345,112 @@
    "examples": {}
   },
   {
-   "id": "avoided",
-   "samples": 83,
+   "id": "card2",
+   "samples": 36,
+   "chart": false,
+   "issues": {},
+   "level1": {
+    "shareExactlyOne": 0.78,
+    "max": 1,
+    "pass": null
+   },
+   "split": [],
+   "examples": {}
+  },
+  {
+   "id": "lots1",
+   "samples": 66,
+   "chart": true,
+   "issues": {},
+   "level1": {
+    "shareExactlyOne": 0.79,
+    "max": 1,
+    "pass": true
+   },
+   "split": [],
+   "examples": {}
+  },
+  {
+   "id": "lots2",
+   "samples": 72,
+   "chart": true,
+   "issues": {},
+   "level1": {
+    "shareExactlyOne": 0.75,
+    "max": 1,
+    "pass": true
+   },
+   "split": [],
+   "examples": {}
+  },
+  {
+   "id": "rates",
+   "samples": 90,
+   "chart": false,
+   "issues": {},
+   "level1": {
+    "shareExactlyOne": 0.32,
+    "max": 2,
+    "pass": null
+   },
+   "split": [],
+   "examples": {}
+  },
+  {
+   "id": "lots3",
+   "samples": 102,
+   "chart": true,
+   "issues": {},
+   "level1": {
+    "shareExactlyOne": 0.86,
+    "max": 1,
+    "pass": true
+   },
+   "split": [],
+   "examples": {}
+  },
+  {
+   "id": "share",
+   "samples": 72,
+   "chart": true,
+   "issues": {},
+   "level1": {
+    "shareExactlyOne": 0.75,
+    "max": 1,
+    "pass": true
+   },
+   "split": [],
+   "examples": {}
+  },
+  {
+   "id": "nodeduct",
+   "samples": 66,
+   "chart": false,
+   "issues": {},
+   "level1": {
+    "shareExactlyOne": 0,
+    "max": 0,
+    "pass": null
+   },
+   "split": [],
+   "examples": {}
+  },
+  {
+   "id": "card3",
+   "samples": 30,
+   "chart": false,
+   "issues": {},
+   "level1": {
+    "shareExactlyOne": 0.73,
+    "max": 1,
+    "pass": null
+   },
+   "split": [],
+   "examples": {}
+  },
+  {
+   "id": "sw1",
+   "samples": 78,
    "chart": true,
    "issues": {},
    "level1": {
@@ -296,8 +462,47 @@
    "examples": {}
   },
   {
-   "id": "certain",
-   "samples": 24,
+   "id": "sw2",
+   "samples": 84,
+   "chart": true,
+   "issues": {},
+   "level1": {
+    "shareExactlyOne": 0.94,
+    "max": 1,
+    "pass": true
+   },
+   "split": [],
+   "examples": {}
+  },
+  {
+   "id": "sw3",
+   "samples": 102,
+   "chart": true,
+   "issues": {},
+   "level1": {
+    "shareExactlyOne": 0.95,
+    "max": 1,
+    "pass": true
+   },
+   "split": [],
+   "examples": {}
+  },
+  {
+   "id": "sw4",
+   "samples": 66,
+   "chart": true,
+   "issues": {},
+   "level1": {
+    "shareExactlyOne": 0.91,
+    "max": 1,
+    "pass": true
+   },
+   "split": [],
+   "examples": {}
+  },
+  {
+   "id": "sw5",
+   "samples": 72,
    "chart": true,
    "issues": {},
    "level1": {
@@ -309,12 +514,51 @@
    "examples": {}
   },
   {
-   "id": "identity",
-   "samples": 90,
+   "id": "card4",
+   "samples": 24,
+   "chart": false,
+   "issues": {},
+   "level1": {
+    "shareExactlyOne": 0.67,
+    "max": 1,
+    "pass": null
+   },
+   "split": [],
+   "examples": {}
+  },
+  {
+   "id": "niit",
+   "samples": 120,
+   "chart": false,
+   "issues": {},
+   "level1": {
+    "shareExactlyOne": 0.23,
+    "max": 2,
+    "pass": null
+   },
+   "split": [],
+   "examples": {}
+  },
+  {
+   "id": "morphDot",
+   "samples": 12,
    "chart": true,
    "issues": {},
    "level1": {
-    "shareExactlyOne": 0.82,
+    "shareExactlyOne": 0,
+    "max": 0,
+    "pass": null
+   },
+   "split": [],
+   "examples": {}
+  },
+  {
+   "id": "dots",
+   "samples": 102,
+   "chart": true,
+   "issues": {},
+   "level1": {
+    "shareExactlyOne": 0.86,
     "max": 1,
     "pass": true
    },
@@ -322,18 +566,213 @@
    "examples": {}
   },
   {
-   "id": "bridge",
-   "samples": 84,
+   "id": "dots32",
+   "samples": 54,
    "chart": true,
    "issues": {},
    "level1": {
-    "shareExactlyOne": 0.74,
+    "shareExactlyOne": 0.87,
     "max": 1,
     "pass": true
    },
    "split": [],
    "examples": {}
+  },
+  {
+   "id": "rises",
+   "samples": 72,
+   "chart": true,
+   "issues": {},
+   "level1": {
+    "shareExactlyOne": 0.81,
+    "max": 1,
+    "pass": true
+   },
+   "split": [],
+   "examples": {}
+  },
+  {
+   "id": "below",
+   "samples": 114,
+   "chart": true,
+   "issues": {},
+   "level1": {
+    "shareExactlyOne": 0.92,
+    "max": 1,
+    "pass": true
+   },
+   "split": [],
+   "examples": {}
+  },
+  {
+   "id": "card5",
+   "samples": 24,
+   "chart": false,
+   "issues": {},
+   "level1": {
+    "shareExactlyOne": 0.67,
+    "max": 1,
+    "pass": null
+   },
+   "split": [],
+   "examples": {}
+  },
+  {
+   "id": "risk1",
+   "samples": 60,
+   "chart": false,
+   "issues": {},
+   "level1": {
+    "shareExactlyOne": 0.48,
+    "max": 1,
+    "pass": null
+   },
+   "split": [],
+   "examples": {}
+  },
+  {
+   "id": "risk2",
+   "samples": 72,
+   "chart": false,
+   "issues": {},
+   "level1": {
+    "shareExactlyOne": 0.51,
+    "max": 1,
+    "pass": null
+   },
+   "split": [],
+   "examples": {}
+  },
+  {
+   "id": "seq",
+   "samples": 78,
+   "chart": true,
+   "issues": {},
+   "level1": {
+    "shareExactlyOne": 0.65,
+    "max": 1,
+    "pass": true
+   },
+   "split": [],
+   "examples": {}
+  },
+  {
+   "id": "race",
+   "samples": 72,
+   "chart": true,
+   "issues": {},
+   "level1": {
+    "shareExactlyOne": 0.89,
+    "max": 1,
+    "pass": true
+   },
+   "split": [],
+   "examples": {}
+  },
+  {
+   "id": "morphGap",
+   "samples": 12,
+   "chart": true,
+   "issues": {},
+   "level1": {
+    "shareExactlyOne": 0,
+    "max": 0,
+    "pass": null
+   },
+   "split": [],
+   "examples": {}
+  },
+  {
+   "id": "gap",
+   "samples": 72,
+   "chart": true,
+   "issues": {},
+   "level1": {
+    "shareExactlyOne": 0.93,
+    "max": 1,
+    "pass": true
+   },
+   "split": [],
+   "examples": {}
+  },
+  {
+   "id": "downside",
+   "samples": 72,
+   "chart": true,
+   "issues": {},
+   "level1": {
+    "shareExactlyOne": 0.9,
+    "max": 1,
+    "pass": true
+   },
+   "split": [],
+   "examples": {}
+  },
+  {
+   "id": "order",
+   "samples": 96,
+   "chart": false,
+   "issues": {},
+   "level1": {
+    "shareExactlyOne": 0.55,
+    "max": 1,
+    "pass": null
+   },
+   "split": [],
+   "examples": {}
+  },
+  {
+   "id": "recap",
+   "samples": 102,
+   "chart": false,
+   "issues": {},
+   "level1": {
+    "shareExactlyOne": 0,
+    "max": 0,
+    "pass": null
+   },
+   "split": [],
+   "examples": {}
+  },
+  {
+   "id": "end1",
+   "samples": 102,
+   "chart": false,
+   "issues": {},
+   "level1": {
+    "shareExactlyOne": 0.35,
+    "max": 1,
+    "pass": null
+   },
+   "split": [],
+   "examples": {}
+  },
+  {
+   "id": "end2",
+   "samples": 72,
+   "chart": false,
+   "issues": {},
+   "level1": {
+    "shareExactlyOne": 0,
+    "max": 0,
+    "pass": null
+   },
+   "split": [],
+   "examples": {}
+  },
+  {
+   "id": "outro",
+   "samples": 36,
+   "chart": false,
+   "issues": {},
+   "level1": {
+    "shareExactlyOne": 0.67,
+    "max": 1,
+    "pass": null
+   },
+   "split": [],
+   "examples": {}
   }
  ],
- "seconds": 147
+ "seconds": 430.7
 }

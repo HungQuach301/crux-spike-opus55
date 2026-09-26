@@ -51,7 +51,7 @@ function prepareScene(scene, claimsById) {
   const parsed = N.parseNumbers(display);
   let k = 0;
   for (const x of nums) { x.canon = parsed.slice(k, k + x.canon.length).map((p) => p.canon); k += x.canon.length; }
-  return { id: scene.id, display, spoken, markers, spokenWords: N.splitWords(spoken), displayWords: N.splitWords(display) };
+  return { id: scene.id, chapter: scene.chapter, display, spoken, markers, spokenWords: N.splitWords(spoken), displayWords: N.splitWords(display) };
 }
 
 /** Checks the script obeys its own rules; returns a list of problems (empty = clean). */

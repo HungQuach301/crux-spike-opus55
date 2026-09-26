@@ -4,7 +4,10 @@ const C = require('./calc');
 
 const BASE = { balance: 25000, aprPct: 5.2, months: 48, extra: 400 };
 // Tax brackets: ordinary (short-term lots) / long-term (lots held > 12 months at month 48).
-const BRACKETS = [{ id: 12, ord: 12, lt: 0 }, { id: 22, ord: 22, lt: 15 }, { id: 32, ord: 32, lt: 15 }];
+// The 32% bracket adds the 3.8% net investment income tax (NIIT) to both rates: 35.8% / 18.8%.
+// State income tax is ignored.
+const NIIT = 3.8;
+const BRACKETS = [{ id: 12, ord: 12, lt: 0 }, { id: 22, ord: 22, lt: 15 }, { id: 32, ord: 32 + NIIT, lt: 15 + NIIT, niit: true }];
 const MAIN = 22;
 const SWEEP = Array.from({ length: 33 }, (_, k) => 2 + k * 0.25); // 2.00 .. 10.00 (ILLUSTRATIVE range)
 const SEQ = { first: 8, second: -20, split: 36 }; // ILLUSTRATIVE bad sequence, not a forecast
@@ -39,6 +42,9 @@ function build() {
   input('ord_32', 32, 'pct0', 'Ordinary income bracket (brief): applies to short-term lots.');
   input('lt_0', 0, 'pct0', 'Long-term capital-gains rate paired with the 12% bracket (brief).');
   input('lt_15', 15, 'pct0', 'Long-term capital-gains rate paired with the 22% and 32% brackets (brief).');
+  input('niit', NIIT, 'pct1', 'Net investment income tax, added to both rates in the 32% bracket (income above the NIIT threshold assumed).');
+  add('ord_32e', 32 + NIIT, 'pct1', { formula: 'ordinary rate 32% + NIIT 3.8%: short-term lots in the 32% bracket' });
+  add('lt_32e', 15 + NIIT, 'pct1', { formula: 'long-term rate 15% + NIIT 3.8%: long-term lots in the 32% bracket' });
   input('hold_months', 12, 'int', 'A lot held more than this many months at month 48 is long-term.');
   input('ded_y0', 2025, 'year', 'First tax year of the new-vehicle loan interest deduction; the model ignores this deduction.');
   input('ded_y1', 2028, 'year', 'Last tax year of the new-vehicle loan interest deduction; the model ignores this deduction.');
@@ -68,6 +74,7 @@ function build() {
   add('lots_lt_a', a0.lots.filter((l) => BASE.months - l.m > 12).length, 'int', { formula: 'road A lots that are long-term at month 48' }, BASE);
   add('lots_st_b', b0.lots.filter((l) => BASE.months - l.m <= 12).length, 'int', { formula: 'road B lots that are short-term at month 48' }, BASE);
   add('lots_lt_b', b0.lots.filter((l) => BASE.months - l.m > 12).length, 'int', { formula: 'road B lots that are long-term at month 48' }, BASE);
+  add('lots_a', a0.lots.length, 'int', { formula: 'road A lots (contributions from the payoff month on)' }, BASE);
 
   // Break-even average annual return (compounded) per bracket.
   const be = {};
@@ -92,6 +99,19 @@ function build() {
   });
   add('axis_lo', 2, 'pct0', { formula: 'sweep minimum (ILLUSTRATIVE range)', illustrative: true });
   add('axis_hi', 10, 'pct0', { formula: 'sweep maximum (ILLUSTRATIVE range)', illustrative: true });
+  [4, 6, 8].forEach((r) => add(`tick_r${r}`, r, 'pct0', { formula: 'axis tick: average annual return (inside the ILLUSTRATIVE range)', illustrative: true }));
+  [-500, 0, 500].forEach((v) => add(`tick_g${v < 0 ? 'm' : ''}${Math.abs(v)}`, v, 'usd0', { formula: 'axis tick: dollars (difference B − A, after tax)' }));
+  add('gap_lo', C.gap(BASE, 2, br), 'usd0', { formula: 'B − A after tax at month 48 at a 2% return (ILLUSTRATIVE range end)' }, { ...BASE, bracket: br });
+  add('gap_lo_abs', -C.gap(BASE, 2, br), 'usd0', { formula: 'A − B after tax at month 48 at a 2% return: how far road A is ahead (ILLUSTRATIVE range end)' }, { ...BASE, bracket: br });
+  {
+    const a = C.simulate({ ...BASE, returns: be[MAIN], bracket: br, strategy: 'A' }), b = C.simulate({ ...BASE, returns: be[MAIN], bracket: br, strategy: 'B' });
+    const sh = (x) => 100 * x.tax.stGain / (x.tax.stGain + x.tax.ltGain);
+    add('share_st_a', sh(a), 'pct0', { formula: 'share of road A gains in short-term lots at month 48, at the 22% break-even return' }, { ...BASE, bracket: br, returnPct: be[MAIN] });
+    add('share_st_b', sh(b), 'pct0', { formula: 'share of road B gains in short-term lots at month 48, at the 22% break-even return' }, { ...BASE, bracket: br, returnPct: be[MAIN] });
+  }
+  [5, 6].forEach((r) => add(`tick_d${r}`, r, 'pct0', { formula: 'axis tick: break-even return (dot plot)' }));
+  [-20000, 0, 20000].forEach((v) => add(`tick_nw${v < 0 ? 'm' : ''}${Math.abs(v)}`, v, 'usd0', { formula: 'axis tick: net worth after tax' }));
+  add('gap_hi', C.gap(BASE, 10, br), 'usd0', { formula: 'B − A after tax at month 48 at a 10% return (ILLUSTRATIVE range end)' }, { ...BASE, bracket: br });
   const curve = [];
   for (let r = 2; r <= 10.0001; r += 0.05) { const s = sides(r, br); curve.push({ r: +r.toFixed(2), gap: s.gap }); }
   const curves = Object.fromEntries(BRACKETS.map((b) => [b.id, curve.map((c) => ({ r: c.r, gap: sides(c.r, b).gap }))]));
@@ -105,6 +125,8 @@ function build() {
   add('seq_first', SEQ.first, 'pct0', { formula: 'ILLUSTRATIVE sequence: annual return for months 1–36 (not a forecast)', illustrative: true });
   add('seq_second', SEQ.second, 'pct0', { formula: 'ILLUSTRATIVE sequence: annual return for months 37–48 (not a forecast)', illustrative: true });
   add('seq_split', SEQ.split, 'int', { formula: 'ILLUSTRATIVE sequence: last month of the first rate', illustrative: true });
+  add('seq_avg', (Math.pow(Math.pow(1 + SEQ.first / 100, SEQ.split / 12) * Math.pow(1 + SEQ.second / 100, (BASE.months - SEQ.split) / 12), 12 / BASE.months) - 1) * 100, 'pct2',
+    { formula: 'average annual return (compounded) of the ILLUSTRATIVE sequence over 48 months', illustrative: true }, { sequence: SEQ });
   add('cross_month', cross, 'int', { formula: 'first month m where NW_B − NW_A turns negative under the ILLUSTRATIVE sequence' }, { ...BASE, bracket: br, sequence: SEQ });
   add('gap_end', -gapPath[BASE.months], 'usd0', { formula: 'NW_A − NW_B at month 48 under the ILLUSTRATIVE sequence (after tax)' }, { ...BASE, bracket: br, sequence: SEQ });
 

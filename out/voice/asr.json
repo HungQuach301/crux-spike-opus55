@@ -1,172 +1,167 @@
 {
  "model": "faster-whisper small.en (int8, CPU, beam 5)",
- "seconds": 62.1,
+ "stage": "final",
+ "seconds": 22.5,
  "scenes": {
   "hook1": {
+   "ttsKey": "d2f43d050045a3bb",
    "sr": 24000,
-   "trimStart": 0.25,
-   "trimEnd": 4.78,
-   "duration": 4.53,
+   "trimStart": 0.0,
+   "trimEnd": 4.772,
+   "duration": 4.772,
    "text": "A car loan with $25,000 left at 5.2%.",
    "words": [
     {
      "w": "A",
      "raw": " A",
      "start": 0.0,
-     "end": 0.16,
-     "p": 0.504
+     "end": 0.12,
+     "p": 0.662
     },
     {
      "w": "car",
      "raw": " car",
-     "start": 0.16,
-     "end": 0.44,
-     "p": 0.97
+     "start": 0.12,
+     "end": 0.42,
+     "p": 0.977
     },
     {
      "w": "loan",
      "raw": " loan",
-     "start": 0.44,
-     "end": 0.74,
-     "p": 0.995
+     "start": 0.42,
+     "end": 0.72,
+     "p": 0.972
     },
     {
      "w": "with",
      "raw": " with",
-     "start": 0.74,
-     "end": 1.02,
-     "p": 0.991
+     "start": 0.72,
+     "end": 1.26,
+     "p": 0.92
     },
     {
      "w": "$25",
      "raw": " $25",
-     "start": 1.02,
-     "end": 1.64,
-     "p": 0.98
+     "start": 1.26,
+     "end": 1.84,
+     "p": 0.981
     },
     {
      "w": ",000",
      "raw": ",000",
-     "start": 1.64,
-     "end": 2.14,
+     "start": 1.84,
+     "end": 2.38,
      "p": 0.994
     },
     {
      "w": "left",
      "raw": " left",
-     "start": 2.14,
-     "end": 2.66,
-     "p": 0.977
+     "start": 2.38,
+     "end": 2.9,
+     "p": 0.978
     },
     {
      "w": "at",
      "raw": " at",
-     "start": 2.66,
-     "end": 3.18,
-     "p": 0.898
+     "start": 2.9,
+     "end": 3.46,
+     "p": 0.88
     },
     {
      "w": "5",
      "raw": " 5",
-     "start": 3.18,
-     "end": 3.6,
+     "start": 3.46,
+     "end": 3.8,
      "p": 0.994
     },
     {
      "w": ".2%.",
      "raw": ".2%.",
-     "start": 3.6,
-     "end": 4.38,
-     "p": 0.884
+     "start": 3.8,
+     "end": 4.6,
+     "p": 0.883
     }
    ]
   },
   "hook2": {
+   "ttsKey": "dbb5051444d3a271",
    "sr": 24000,
-   "trimStart": 0.06,
-   "trimEnd": 1.25,
-   "duration": 1.19,
-   "text": "Pay it off early.",
+   "trimStart": 0.0,
+   "trimEnd": 3.382,
+   "duration": 3.382,
+   "text": "Pay it off early or invest the extra cash.",
    "words": [
     {
      "w": "Pay",
      "raw": " Pay",
      "start": 0.0,
      "end": 0.2,
-     "p": 0.741
+     "p": 0.508
     },
     {
      "w": "it",
      "raw": " it",
      "start": 0.2,
-     "end": 0.32,
-     "p": 0.959
+     "end": 0.34,
+     "p": 0.991
     },
     {
      "w": "off",
      "raw": " off",
-     "start": 0.32,
-     "end": 0.58,
-     "p": 0.993
+     "start": 0.34,
+     "end": 0.56,
+     "p": 0.998
     },
     {
-     "w": "early.",
-     "raw": " early.",
-     "start": 0.58,
-     "end": 0.94,
-     "p": 0.932
-    }
-   ]
-  },
-  "hook2b": {
-   "sr": 24000,
-   "trimStart": 0.09,
-   "trimEnd": 1.73,
-   "duration": 1.64,
-   "text": "or invest the extra cash.",
-   "words": [
+     "w": "early",
+     "raw": " early",
+     "start": 0.56,
+     "end": 0.96,
+     "p": 0.999
+    },
     {
      "w": "or",
      "raw": " or",
-     "start": 0.0,
-     "end": 0.3,
-     "p": 0.685
+     "start": 0.96,
+     "end": 1.78,
+     "p": 0.713
     },
     {
      "w": "invest",
      "raw": " invest",
-     "start": 0.3,
-     "end": 0.72,
-     "p": 0.991
+     "start": 1.78,
+     "end": 2.24,
+     "p": 0.982
     },
     {
      "w": "the",
      "raw": " the",
-     "start": 0.72,
-     "end": 0.94,
-     "p": 0.991
+     "start": 2.24,
+     "end": 2.52,
+     "p": 0.982
     },
     {
      "w": "extra",
      "raw": " extra",
-     "start": 0.94,
-     "end": 1.18,
-     "p": 1.0
+     "start": 2.52,
+     "end": 2.84,
+     "p": 0.999
     },
     {
      "w": "cash.",
      "raw": " cash.",
-     "start": 1.18,
-     "end": 1.48,
+     "start": 2.84,
+     "end": 3.18,
      "p": 0.996
     }
    ]
   },
   "hook3": {
+   "ttsKey": "b9ac1f924e2e190d",
    "sr": 24000,
    "trimStart": 0.0,
-   "trimEnd": 4.6,
-   "duration": 4.6,
+   "trimEnd": 4.22,
+   "duration": 4.22,
    "text": "We ran both roads through all 48 months, taxing every lot.",
    "words": [
     {
@@ -174,450 +169,438 @@
      "raw": " We",
      "start": 0.0,
      "end": 0.2,
-     "p": 0.847
+     "p": 0.851
     },
     {
      "w": "ran",
      "raw": " ran",
      "start": 0.2,
-     "end": 0.5,
-     "p": 0.995
+     "end": 0.52,
+     "p": 0.989
     },
     {
      "w": "both",
      "raw": " both",
-     "start": 0.5,
-     "end": 0.84,
-     "p": 0.997
+     "start": 0.52,
+     "end": 0.9,
+     "p": 0.942
     },
     {
      "w": "roads",
      "raw": " roads",
-     "start": 0.84,
-     "end": 1.32,
-     "p": 0.998
+     "start": 0.9,
+     "end": 1.36,
+     "p": 0.997
     },
     {
      "w": "through",
      "raw": " through",
-     "start": 1.32,
-     "end": 1.7,
-     "p": 0.982
+     "start": 1.36,
+     "end": 1.58,
+     "p": 0.987
     },
     {
      "w": "all",
      "raw": " all",
-     "start": 1.7,
-     "end": 2.02,
-     "p": 0.999
+     "start": 1.58,
+     "end": 1.88,
+     "p": 0.997
     },
     {
      "w": "48",
      "raw": " 48",
-     "start": 2.02,
-     "end": 2.5,
-     "p": 0.991
+     "start": 1.88,
+     "end": 2.36,
+     "p": 0.979
     },
     {
      "w": "months,",
      "raw": " months,",
-     "start": 2.5,
-     "end": 2.86,
-     "p": 0.993
+     "start": 2.36,
+     "end": 2.72,
+     "p": 0.99
     },
     {
      "w": "taxing",
      "raw": " taxing",
-     "start": 3.26,
-     "end": 3.66,
-     "p": 0.948
+     "start": 3.14,
+     "end": 3.52,
+     "p": 0.942
     },
     {
      "w": "every",
      "raw": " every",
-     "start": 3.66,
-     "end": 4.16,
-     "p": 0.999
+     "start": 3.52,
+     "end": 3.88,
+     "p": 0.998
     },
     {
      "w": "lot.",
      "raw": " lot.",
-     "start": 4.16,
-     "end": 4.46,
-     "p": 0.998
+     "start": 3.88,
+     "end": 4.12,
+     "p": 0.997
     }
    ]
   },
   "hook4": {
+   "ttsKey": "1866226dbb07cc74",
    "sr": 24000,
    "trimStart": 0.0,
-   "trimEnd": 7.89,
-   "duration": 7.89,
+   "trimEnd": 7.706,
+   "duration": 7.706,
    "text": "The answer flips at an average annual return of 6.11% compounded in the 22% tax bracket.",
    "words": [
     {
      "w": "The",
      "raw": " The",
      "start": 0.0,
-     "end": 0.16,
-     "p": 0.82
+     "end": 0.2,
+     "p": 0.833
     },
     {
      "w": "answer",
      "raw": " answer",
-     "start": 0.16,
-     "end": 0.62,
-     "p": 0.986
+     "start": 0.2,
+     "end": 0.6,
+     "p": 0.993
     },
     {
      "w": "flips",
      "raw": " flips",
-     "start": 0.62,
-     "end": 1.04,
-     "p": 0.985
+     "start": 0.6,
+     "end": 1.0,
+     "p": 0.536
     },
     {
      "w": "at",
      "raw": " at",
-     "start": 1.04,
-     "end": 1.68,
-     "p": 0.97
+     "start": 1.0,
+     "end": 1.24,
+     "p": 0.965
     },
     {
      "w": "an",
      "raw": " an",
-     "start": 1.68,
-     "end": 1.82,
-     "p": 0.997
+     "start": 1.24,
+     "end": 1.38,
+     "p": 0.998
     },
     {
      "w": "average",
      "raw": " average",
-     "start": 1.82,
-     "end": 2.26,
-     "p": 0.996
+     "start": 1.38,
+     "end": 1.8,
+     "p": 0.995
     },
     {
      "w": "annual",
      "raw": " annual",
-     "start": 2.26,
-     "end": 2.64,
+     "start": 1.8,
+     "end": 2.12,
      "p": 0.999
     },
     {
      "w": "return",
      "raw": " return",
-     "start": 2.64,
-     "end": 3.08,
-     "p": 0.996
+     "start": 2.12,
+     "end": 2.62,
+     "p": 0.994
     },
     {
      "w": "of",
      "raw": " of",
-     "start": 3.08,
-     "end": 3.28,
+     "start": 2.62,
+     "end": 2.86,
      "p": 0.995
     },
     {
      "w": "6",
      "raw": " 6",
-     "start": 3.28,
-     "end": 3.58,
-     "p": 0.989
+     "start": 2.86,
+     "end": 3.24,
+     "p": 0.982
     },
     {
      "w": ".11",
      "raw": ".11",
-     "start": 3.58,
-     "end": 4.3,
-     "p": 0.988
+     "start": 3.24,
+     "end": 3.96,
+     "p": 0.985
     },
     {
      "w": "%",
      "raw": "%",
-     "start": 4.3,
-     "end": 4.78,
-     "p": 0.797
+     "start": 3.96,
+     "end": 4.5,
+     "p": 0.683
     },
     {
      "w": "compounded",
      "raw": " compounded",
-     "start": 4.78,
-     "end": 5.54,
-     "p": 0.991
+     "start": 4.5,
+     "end": 5.26,
+     "p": 0.98
     },
     {
      "w": "in",
      "raw": " in",
-     "start": 5.54,
-     "end": 6.4,
-     "p": 0.906
+     "start": 5.26,
+     "end": 6.0,
+     "p": 0.902
     },
     {
      "w": "the",
      "raw": " the",
-     "start": 6.4,
-     "end": 6.5,
-     "p": 0.99
+     "start": 6.0,
+     "end": 6.14,
+     "p": 0.993
     },
     {
      "w": "22",
      "raw": " 22",
-     "start": 6.5,
-     "end": 6.9,
-     "p": 0.997
+     "start": 6.14,
+     "end": 6.58,
+     "p": 0.996
     },
     {
      "w": "%",
      "raw": "%",
-     "start": 6.9,
-     "end": 7.22,
+     "start": 6.58,
+     "end": 6.94,
      "p": 0.992
     },
     {
      "w": "tax",
      "raw": " tax",
-     "start": 7.22,
-     "end": 7.52,
+     "start": 6.94,
+     "end": 7.28,
      "p": 0.997
     },
     {
      "w": "bracket.",
      "raw": " bracket.",
-     "start": 7.52,
-     "end": 7.76,
-     "p": 0.997
+     "start": 7.28,
+     "end": 7.56,
+     "p": 0.998
     }
    ]
   },
   "hook5": {
+   "ttsKey": "3d256c83315e5efd",
    "sr": 24000,
    "trimStart": 0.0,
-   "trimEnd": 4.79,
-   "duration": 4.79,
+   "trimEnd": 4.404,
+   "duration": 4.404,
    "text": "Below it, paying off ends ahead. Above it, investing does.",
    "words": [
     {
      "w": "Below",
      "raw": " Below",
      "start": 0.0,
-     "end": 0.36,
-     "p": 0.648
+     "end": 0.26,
+     "p": 0.839
     },
     {
      "w": "it,",
      "raw": " it,",
-     "start": 0.36,
-     "end": 0.88,
-     "p": 0.989
+     "start": 0.26,
+     "end": 0.5,
+     "p": 0.991
     },
     {
      "w": "paying",
      "raw": " paying",
-     "start": 1.22,
-     "end": 1.4,
-     "p": 0.974
+     "start": 0.86,
+     "end": 1.08,
+     "p": 0.972
     },
     {
      "w": "off",
      "raw": " off",
-     "start": 1.4,
-     "end": 1.68,
+     "start": 1.08,
+     "end": 1.44,
      "p": 0.991
     },
     {
      "w": "ends",
      "raw": " ends",
-     "start": 1.68,
-     "end": 2.02,
-     "p": 0.991
+     "start": 1.44,
+     "end": 1.84,
+     "p": 0.819
     },
     {
      "w": "ahead.",
      "raw": " ahead.",
-     "start": 2.02,
-     "end": 2.38,
-     "p": 0.997
+     "start": 1.84,
+     "end": 2.22,
+     "p": 0.985
     },
     {
      "w": "Above",
      "raw": " Above",
-     "start": 3.24,
-     "end": 3.28,
-     "p": 0.988
+     "start": 2.54,
+     "end": 2.74,
+     "p": 0.99
     },
     {
      "w": "it,",
      "raw": " it,",
-     "start": 3.28,
-     "end": 3.64,
-     "p": 0.994
+     "start": 2.74,
+     "end": 3.02,
+     "p": 0.997
     },
     {
      "w": "investing",
      "raw": " investing",
-     "start": 3.92,
-     "end": 4.22,
-     "p": 0.984
+     "start": 3.42,
+     "end": 3.8,
+     "p": 0.981
     },
     {
      "w": "does.",
      "raw": " does.",
-     "start": 4.22,
-     "end": 4.62,
-     "p": 0.998
+     "start": 3.8,
+     "end": 4.2,
+     "p": 0.999
     }
    ]
   },
-  "setup": {
+  "scope1": {
+   "ttsKey": "a3c201dfdc11ceeb",
    "sr": 24000,
-   "trimStart": 0.17,
-   "trimEnd": 1.3,
-   "duration": 1.13,
-   "text": "Here is the setup.",
+   "trimStart": 0.0,
+   "trimEnd": 6.266,
+   "duration": 6.266,
+   "text": "Here is the setup. The rules are US tax rules, and every input is stated, not forecast.",
    "words": [
     {
      "w": "Here",
      "raw": " Here",
      "start": 0.0,
      "end": 0.3,
-     "p": 0.8
+     "p": 0.895
     },
     {
      "w": "is",
      "raw": " is",
      "start": 0.3,
-     "end": 0.54,
+     "end": 0.62,
      "p": 0.981
     },
     {
      "w": "the",
      "raw": " the",
-     "start": 0.54,
-     "end": 0.72,
-     "p": 0.998
+     "start": 0.62,
+     "end": 0.8,
+     "p": 0.997
     },
     {
      "w": "setup.",
      "raw": " setup.",
-     "start": 0.72,
-     "end": 0.94,
-     "p": 0.883
-    }
-   ]
-  },
-  "scope1": {
-   "sr": 24000,
-   "trimStart": 0.0,
-   "trimEnd": 5.93,
-   "duration": 5.93,
-   "text": "The rules here are US tax rules, and every input is stated, not forecast.",
-   "words": [
+     "start": 0.8,
+     "end": 1.04,
+     "p": 0.763
+    },
     {
      "w": "The",
      "raw": " The",
-     "start": 0.0,
-     "end": 0.18,
-     "p": 0.902
+     "start": 1.58,
+     "end": 1.72,
+     "p": 0.989
     },
     {
      "w": "rules",
      "raw": " rules",
-     "start": 0.18,
-     "end": 0.46,
-     "p": 0.991
-    },
-    {
-     "w": "here",
-     "raw": " here",
-     "start": 0.46,
-     "end": 0.88,
+     "start": 1.72,
+     "end": 1.98,
      "p": 0.995
     },
     {
      "w": "are",
      "raw": " are",
-     "start": 0.88,
-     "end": 1.28,
-     "p": 0.978
+     "start": 1.98,
+     "end": 2.22,
+     "p": 0.995
     },
     {
      "w": "US",
      "raw": " US",
-     "start": 1.28,
-     "end": 1.72,
-     "p": 0.623
+     "start": 2.22,
+     "end": 2.5,
+     "p": 0.63
     },
     {
      "w": "tax",
      "raw": " tax",
-     "start": 1.72,
-     "end": 2.1,
-     "p": 0.964
+     "start": 2.5,
+     "end": 2.8,
+     "p": 0.933
     },
     {
      "w": "rules,",
      "raw": " rules,",
-     "start": 2.1,
-     "end": 2.52,
-     "p": 0.999
+     "start": 2.8,
+     "end": 3.18,
+     "p": 0.998
     },
     {
      "w": "and",
      "raw": " and",
-     "start": 3.1,
-     "end": 3.32,
-     "p": 0.996
+     "start": 3.7,
+     "end": 3.78,
+     "p": 0.993
     },
     {
      "w": "every",
      "raw": " every",
-     "start": 3.32,
-     "end": 3.6,
-     "p": 0.998
-    },
-    {
-     "w": "input",
-     "raw": " input",
-     "start": 3.6,
-     "end": 3.94,
-     "p": 0.999
-    },
-    {
-     "w": "is",
-     "raw": " is",
-     "start": 3.94,
+     "start": 3.78,
      "end": 4.12,
      "p": 0.996
     },
     {
+     "w": "input",
+     "raw": " input",
+     "start": 4.12,
+     "end": 4.46,
+     "p": 0.998
+    },
+    {
+     "w": "is",
+     "raw": " is",
+     "start": 4.46,
+     "end": 4.66,
+     "p": 0.997
+    },
+    {
      "w": "stated,",
      "raw": " stated,",
-     "start": 4.12,
-     "end": 4.48,
-     "p": 0.998
+     "start": 4.66,
+     "end": 5.02,
+     "p": 0.996
     },
     {
      "w": "not",
      "raw": " not",
-     "start": 4.96,
-     "end": 5.28,
-     "p": 0.949
+     "start": 5.48,
+     "end": 5.7,
+     "p": 0.985
     },
     {
      "w": "forecast.",
      "raw": " forecast.",
-     "start": 5.28,
-     "end": 5.62,
-     "p": 0.994
+     "start": 5.7,
+     "end": 5.98,
+     "p": 0.972
     }
    ]
   },
   "scope2": {
+   "ttsKey": "c9e56b3f9092676e",
    "sr": 24000,
    "trimStart": 0.0,
-   "trimEnd": 8.2,
-   "duration": 8.2,
+   "trimEnd": 8.137,
+   "duration": 8.137,
    "text": "Loan interest is treated as not deductible, so the model ignores the new car loan interest deduction for 2025 to 2028.",
    "words": [
     {
@@ -625,155 +608,156 @@
      "raw": " Loan",
      "start": 0.0,
      "end": 0.32,
-     "p": 0.619
+     "p": 0.657
     },
     {
      "w": "interest",
      "raw": " interest",
      "start": 0.32,
      "end": 0.76,
-     "p": 0.924
+     "p": 0.957
     },
     {
      "w": "is",
      "raw": " is",
      "start": 0.76,
-     "end": 1.22,
-     "p": 0.994
+     "end": 1.02,
+     "p": 0.997
     },
     {
      "w": "treated",
      "raw": " treated",
-     "start": 1.22,
-     "end": 1.5,
-     "p": 0.997
+     "start": 1.02,
+     "end": 1.32,
+     "p": 0.998
     },
     {
      "w": "as",
      "raw": " as",
-     "start": 1.5,
-     "end": 1.82,
-     "p": 0.997
+     "start": 1.32,
+     "end": 1.58,
+     "p": 0.998
     },
     {
      "w": "not",
      "raw": " not",
-     "start": 1.82,
-     "end": 2.08,
-     "p": 0.861
+     "start": 1.58,
+     "end": 1.86,
+     "p": 0.93
     },
     {
      "w": "deductible,",
      "raw": " deductible,",
-     "start": 2.08,
-     "end": 2.54,
-     "p": 0.94
+     "start": 1.86,
+     "end": 2.36,
+     "p": 0.955
     },
     {
      "w": "so",
      "raw": " so",
-     "start": 3.1,
-     "end": 3.38,
-     "p": 0.989
+     "start": 2.76,
+     "end": 2.96,
+     "p": 0.991
     },
     {
      "w": "the",
      "raw": " the",
-     "start": 3.38,
-     "end": 3.52,
+     "start": 2.96,
+     "end": 3.08,
      "p": 0.992
     },
     {
      "w": "model",
      "raw": " model",
-     "start": 3.52,
-     "end": 3.78,
+     "start": 3.08,
+     "end": 3.28,
      "p": 0.994
     },
     {
      "w": "ignores",
      "raw": " ignores",
-     "start": 3.78,
-     "end": 4.24,
+     "start": 3.28,
+     "end": 3.74,
      "p": 0.996
     },
     {
      "w": "the",
      "raw": " the",
-     "start": 4.24,
-     "end": 4.44,
-     "p": 0.984
+     "start": 3.74,
+     "end": 3.96,
+     "p": 0.985
     },
     {
      "w": "new",
      "raw": " new",
-     "start": 4.44,
-     "end": 4.6,
-     "p": 0.926
+     "start": 3.96,
+     "end": 4.16,
+     "p": 0.988
     },
     {
      "w": "car",
      "raw": " car",
-     "start": 4.6,
-     "end": 4.82,
-     "p": 0.794
+     "start": 4.16,
+     "end": 4.42,
+     "p": 0.897
     },
     {
      "w": "loan",
      "raw": " loan",
-     "start": 4.82,
-     "end": 5.08,
+     "start": 4.42,
+     "end": 4.68,
      "p": 0.995
     },
     {
      "w": "interest",
      "raw": " interest",
-     "start": 5.08,
-     "end": 5.38,
-     "p": 0.991
+     "start": 4.68,
+     "end": 4.96,
+     "p": 0.987
     },
     {
      "w": "deduction",
      "raw": " deduction",
-     "start": 5.38,
-     "end": 5.82,
-     "p": 0.994
+     "start": 4.96,
+     "end": 5.46,
+     "p": 0.993
     },
     {
      "w": "for",
      "raw": " for",
-     "start": 5.82,
-     "end": 6.26,
-     "p": 0.964
+     "start": 5.46,
+     "end": 5.98,
+     "p": 0.967
     },
     {
      "w": "2025",
      "raw": " 2025",
-     "start": 6.26,
-     "end": 6.82,
+     "start": 5.98,
+     "end": 6.6,
      "p": 0.995
     },
     {
      "w": "to",
      "raw": " to",
-     "start": 6.82,
-     "end": 7.52,
-     "p": 0.705
+     "start": 6.6,
+     "end": 7.36,
+     "p": 0.842
     },
     {
      "w": "2028.",
      "raw": " 2028.",
-     "start": 7.52,
-     "end": 8.08,
-     "p": 0.991
+     "start": 7.36,
+     "end": 8.0,
+     "p": 0.99
     }
    ]
   },
   "facts": {
+   "ttsKey": "b6cca7699e507e21",
    "sr": 24000,
    "trimStart": 0.0,
-   "trimEnd": 7.57,
-   "duration": 7.57,
+   "trimEnd": 7.707,
+   "duration": 7.707,
    "text": "The loan has $25,000 left at 5.2% with 48 monthly payments of $578.",
    "words": [
     {
@@ -781,1184 +765,4708 @@
      "raw": " The",
      "start": 0.0,
      "end": 0.18,
-     "p": 0.866
+     "p": 0.889
     },
     {
      "w": "loan",
      "raw": " loan",
      "start": 0.18,
-     "end": 0.4,
-     "p": 0.973
+     "end": 0.44,
+     "p": 0.834
     },
     {
      "w": "has",
      "raw": " has",
-     "start": 0.4,
-     "end": 0.68,
-     "p": 0.992
+     "start": 0.44,
+     "end": 0.9,
+     "p": 0.987
     },
     {
      "w": "$25",
      "raw": " $25",
-     "start": 0.68,
-     "end": 1.22,
+     "start": 0.9,
+     "end": 1.42,
      "p": 0.978
     },
     {
      "w": ",000",
      "raw": ",000",
-     "start": 1.22,
-     "end": 1.68,
-     "p": 0.988
+     "start": 1.42,
+     "end": 1.9,
+     "p": 0.989
     },
     {
      "w": "left",
      "raw": " left",
-     "start": 1.68,
-     "end": 2.2,
-     "p": 0.969
+     "start": 1.9,
+     "end": 2.4,
+     "p": 0.961
     },
     {
      "w": "at",
      "raw": " at",
-     "start": 2.2,
-     "end": 2.72,
-     "p": 0.892
+     "start": 2.4,
+     "end": 3.08,
+     "p": 0.925
     },
     {
      "w": "5",
      "raw": " 5",
-     "start": 2.72,
-     "end": 3.0,
-     "p": 0.996
+     "start": 3.08,
+     "end": 3.42,
+     "p": 0.994
     },
     {
      "w": ".2",
      "raw": ".2",
-     "start": 3.0,
-     "end": 3.4,
-     "p": 0.998
+     "start": 3.42,
+     "end": 3.88,
+     "p": 0.997
     },
     {
      "w": "%",
      "raw": "%",
-     "start": 3.4,
-     "end": 3.92,
-     "p": 0.671
+     "start": 3.88,
+     "end": 4.52,
+     "p": 0.65
     },
     {
      "w": "with",
      "raw": " with",
-     "start": 3.92,
-     "end": 4.34,
-     "p": 0.986
+     "start": 4.52,
+     "end": 4.96,
+     "p": 0.962
     },
     {
      "w": "48",
      "raw": " 48",
-     "start": 4.34,
-     "end": 4.82,
-     "p": 0.97
+     "start": 4.96,
+     "end": 5.4,
+     "p": 0.982
     },
     {
      "w": "monthly",
      "raw": " monthly",
-     "start": 4.82,
-     "end": 5.16,
+     "start": 5.4,
+     "end": 5.7,
      "p": 0.998
     },
     {
      "w": "payments",
      "raw": " payments",
-     "start": 5.16,
-     "end": 5.6,
+     "start": 5.7,
+     "end": 6.06,
      "p": 0.999
     },
     {
      "w": "of",
      "raw": " of",
-     "start": 5.6,
-     "end": 6.04,
-     "p": 0.995
+     "start": 6.06,
+     "end": 6.28,
+     "p": 0.997
     },
     {
      "w": "$578.",
      "raw": " $578.",
-     "start": 6.04,
-     "end": 6.92,
-     "p": 0.951
+     "start": 6.28,
+     "end": 7.1,
+     "p": 0.948
     }
    ]
   },
   "extra": {
+   "ttsKey": "fefb669360c5d879",
    "sr": 24000,
    "trimStart": 0.0,
-   "trimEnd": 6.15,
-   "duration": 6.15,
+   "trimEnd": 5.671,
+   "duration": 5.671,
    "text": "On top of that, $400 a month is available. That amount is illustrative.",
    "words": [
     {
      "w": "On",
      "raw": " On",
      "start": 0.0,
-     "end": 0.22,
-     "p": 0.82
+     "end": 0.2,
+     "p": 0.886
     },
     {
      "w": "top",
      "raw": " top",
-     "start": 0.22,
-     "end": 0.52,
-     "p": 0.993
+     "start": 0.2,
+     "end": 0.4,
+     "p": 0.996
     },
     {
      "w": "of",
      "raw": " of",
-     "start": 0.52,
-     "end": 0.86,
-     "p": 0.998
+     "start": 0.4,
+     "end": 0.62,
+     "p": 0.999
     },
     {
      "w": "that,",
      "raw": " that,",
-     "start": 0.86,
-     "end": 1.22,
-     "p": 0.999
+     "start": 0.62,
+     "end": 0.94,
+     "p": 0.998
     },
     {
      "w": "$400",
      "raw": " $400",
-     "start": 1.74,
-     "end": 2.36,
-     "p": 0.982
+     "start": 1.44,
+     "end": 2.18,
+     "p": 0.978
     },
     {
      "w": "a",
      "raw": " a",
-     "start": 2.36,
-     "end": 2.82,
-     "p": 0.961
+     "start": 2.18,
+     "end": 2.76,
+     "p": 0.957
     },
     {
      "w": "month",
      "raw": " month",
-     "start": 2.82,
-     "end": 3.02,
+     "start": 2.76,
+     "end": 2.96,
      "p": 0.999
     },
     {
      "w": "is",
      "raw": " is",
-     "start": 3.02,
-     "end": 3.52,
-     "p": 0.985
+     "start": 2.96,
+     "end": 3.22,
+     "p": 0.995
     },
     {
      "w": "available.",
      "raw": " available.",
-     "start": 3.52,
-     "end": 3.84,
-     "p": 0.999
+     "start": 3.22,
+     "end": 3.62,
+     "p": 0.998
     },
     {
      "w": "That",
      "raw": " That",
-     "start": 4.42,
-     "end": 4.64,
-     "p": 0.997
+     "start": 4.14,
+     "end": 4.34,
+     "p": 0.996
     },
     {
      "w": "amount",
      "raw": " amount",
-     "start": 4.64,
-     "end": 4.88,
+     "start": 4.34,
+     "end": 4.58,
      "p": 0.999
     },
     {
      "w": "is",
      "raw": " is",
-     "start": 4.88,
-     "end": 5.48,
-     "p": 0.995
+     "start": 4.58,
+     "end": 5.06,
+     "p": 0.993
     },
     {
      "w": "illustrative.",
      "raw": " illustrative.",
-     "start": 5.48,
-     "end": 6.0,
-     "p": 0.997
+     "start": 5.06,
+     "end": 5.58,
+     "p": 0.96
     }
    ]
   },
   "roads": {
+   "ttsKey": "524ead7ceb7aae84",
    "sr": 24000,
    "trimStart": 0.0,
-   "trimEnd": 5.8,
-   "duration": 5.8,
+   "trimEnd": 6.66,
+   "duration": 6.66,
    "text": "Road A sends it to the loan. Road B pays the minimum and invests it every month.",
    "words": [
     {
      "w": "Road",
      "raw": " Road",
      "start": 0.0,
-     "end": 0.28,
-     "p": 0.744
+     "end": 0.42,
+     "p": 0.841
     },
     {
      "w": "A",
      "raw": " A",
-     "start": 0.28,
-     "end": 0.7,
-     "p": 0.972
+     "start": 0.42,
+     "end": 0.92,
+     "p": 0.977
     },
     {
      "w": "sends",
      "raw": " sends",
-     "start": 0.7,
-     "end": 1.08,
-     "p": 0.964
+     "start": 0.92,
+     "end": 1.58,
+     "p": 0.91
     },
     {
      "w": "it",
      "raw": " it",
-     "start": 1.08,
-     "end": 1.3,
-     "p": 0.998
+     "start": 1.58,
+     "end": 1.82,
+     "p": 0.996
     },
     {
      "w": "to",
      "raw": " to",
-     "start": 1.3,
-     "end": 1.46,
+     "start": 1.82,
+     "end": 2.0,
      "p": 0.998
     },
     {
      "w": "the",
      "raw": " the",
-     "start": 1.46,
-     "end": 1.58,
-     "p": 0.997
+     "start": 2.0,
+     "end": 2.12,
+     "p": 0.996
     },
     {
      "w": "loan.",
      "raw": " loan.",
-     "start": 1.58,
-     "end": 1.84,
-     "p": 0.986
+     "start": 2.12,
+     "end": 2.42,
+     "p": 0.979
     },
     {
      "w": "Road",
      "raw": " Road",
-     "start": 2.68,
-     "end": 2.78,
-     "p": 0.997
+     "start": 3.06,
+     "end": 3.18,
+     "p": 0.996
     },
     {
      "w": "B",
      "raw": " B",
-     "start": 2.78,
-     "end": 3.14,
+     "start": 3.18,
+     "end": 3.62,
      "p": 0.999
     },
     {
      "w": "pays",
      "raw": " pays",
-     "start": 3.14,
-     "end": 3.52,
-     "p": 0.996
+     "start": 3.62,
+     "end": 4.08,
+     "p": 0.998
     },
     {
      "w": "the",
      "raw": " the",
-     "start": 3.52,
-     "end": 3.7,
-     "p": 0.999
+     "start": 4.08,
+     "end": 4.3,
+     "p": 0.998
     },
     {
      "w": "minimum",
      "raw": " minimum",
-     "start": 3.7,
-     "end": 3.98,
+     "start": 4.3,
+     "end": 4.64,
      "p": 0.999
     },
     {
      "w": "and",
      "raw": " and",
-     "start": 3.98,
-     "end": 4.5,
-     "p": 0.826
+     "start": 4.64,
+     "end": 5.26,
+     "p": 0.939
     },
     {
      "w": "invests",
      "raw": " invests",
-     "start": 4.5,
-     "end": 4.8,
-     "p": 0.978
+     "start": 5.26,
+     "end": 5.6,
+     "p": 0.989
     },
     {
      "w": "it",
      "raw": " it",
-     "start": 4.8,
-     "end": 5.16,
-     "p": 0.997
+     "start": 5.6,
+     "end": 5.92,
+     "p": 0.993
     },
     {
      "w": "every",
      "raw": " every",
-     "start": 5.16,
-     "end": 5.5,
-     "p": 0.998
+     "start": 5.92,
+     "end": 6.28,
+     "p": 0.997
     },
     {
      "w": "month.",
      "raw": " month.",
-     "start": 5.5,
-     "end": 5.72,
+     "start": 6.28,
+     "end": 6.52,
      "p": 0.999
     }
    ]
   },
   "cash": {
+   "ttsKey": "7bfa3f8b82461e83",
    "sr": 24000,
    "trimStart": 0.0,
-   "trimEnd": 4.62,
-   "duration": 4.62,
+   "trimEnd": 4.809,
+   "duration": 4.809,
    "text": "Both roads spend the same cash each month. Only the order changes.",
    "words": [
     {
      "w": "Both",
      "raw": " Both",
      "start": 0.0,
-     "end": 0.32,
-     "p": 0.863
+     "end": 0.22,
+     "p": 0.875
     },
     {
      "w": "roads",
      "raw": " roads",
-     "start": 0.32,
-     "end": 0.84,
-     "p": 0.998
+     "start": 0.22,
+     "end": 0.7,
+     "p": 0.997
     },
     {
      "w": "spend",
      "raw": " spend",
-     "start": 0.84,
-     "end": 1.12,
-     "p": 0.995
-    },
-    {
-     "w": "the",
-     "raw": " the",
-     "start": 1.12,
-     "end": 1.32,
-     "p": 0.998
-    },
-    {
-     "w": "same",
-     "raw": " same",
-     "start": 1.32,
-     "end": 1.6,
-     "p": 0.999
-    },
-    {
-     "w": "cash",
-     "raw": " cash",
-     "start": 1.6,
-     "end": 1.98,
-     "p": 0.988
-    },
-    {
-     "w": "each",
-     "raw": " each",
-     "start": 1.98,
-     "end": 2.22,
-     "p": 0.995
-    },
-    {
-     "w": "month.",
-     "raw": " month.",
-     "start": 2.22,
-     "end": 2.58,
-     "p": 1.0
-    },
-    {
-     "w": "Only",
-     "raw": " Only",
-     "start": 3.28,
-     "end": 3.44,
+     "start": 0.7,
+     "end": 1.14,
      "p": 0.987
     },
     {
      "w": "the",
      "raw": " the",
-     "start": 3.44,
-     "end": 3.68,
-     "p": 0.997
+     "start": 1.14,
+     "end": 1.3,
+     "p": 0.998
+    },
+    {
+     "w": "same",
+     "raw": " same",
+     "start": 1.3,
+     "end": 1.66,
+     "p": 0.999
+    },
+    {
+     "w": "cash",
+     "raw": " cash",
+     "start": 1.66,
+     "end": 2.08,
+     "p": 0.97
+    },
+    {
+     "w": "each",
+     "raw": " each",
+     "start": 2.08,
+     "end": 2.64,
+     "p": 0.987
+    },
+    {
+     "w": "month.",
+     "raw": " month.",
+     "start": 2.64,
+     "end": 2.98,
+     "p": 0.998
+    },
+    {
+     "w": "Only",
+     "raw": " Only",
+     "start": 3.26,
+     "end": 3.54,
+     "p": 0.927
+    },
+    {
+     "w": "the",
+     "raw": " the",
+     "start": 3.54,
+     "end": 3.82,
+     "p": 0.996
     },
     {
      "w": "order",
      "raw": " order",
-     "start": 3.68,
-     "end": 3.92,
-     "p": 0.999
+     "start": 3.82,
+     "end": 4.08,
+     "p": 0.997
     },
     {
      "w": "changes.",
      "raw": " changes.",
-     "start": 3.92,
-     "end": 4.38,
+     "start": 4.08,
+     "end": 4.54,
      "p": 0.999
     }
    ]
   },
   "card1": {
+   "ttsKey": "e888ef6fe2b23032",
    "sr": 24000,
-   "trimStart": 0.25,
-   "trimEnd": 1.77,
-   "duration": 1.52,
-   "text": "first, the certain part.",
+   "trimStart": 0.0,
+   "trimEnd": 2.07,
+   "duration": 2.07,
+   "text": "First, the certain part.",
    "words": [
     {
-     "w": "first,",
-     "raw": " first,",
+     "w": "First,",
+     "raw": " First,",
      "start": 0.0,
-     "end": 0.34,
-     "p": 0.47
+     "end": 0.38,
+     "p": 0.641
     },
     {
      "w": "the",
      "raw": " the",
-     "start": 0.74,
-     "end": 0.86,
-     "p": 0.955
+     "start": 0.98,
+     "end": 1.12,
+     "p": 0.927
     },
     {
      "w": "certain",
      "raw": " certain",
-     "start": 0.86,
-     "end": 1.1,
-     "p": 0.943
+     "start": 1.12,
+     "end": 1.44,
+     "p": 0.814
     },
     {
      "w": "part.",
      "raw": " part.",
-     "start": 1.1,
-     "end": 1.4,
-     "p": 0.989
+     "start": 1.44,
+     "end": 1.9,
+     "p": 0.994
     }
    ]
   },
   "timeline": {
+   "ttsKey": "4d0aad51f3079612",
    "sr": 24000,
    "trimStart": 0.0,
-   "trimEnd": 5.71,
-   "duration": 5.71,
-   "text": "Road A pays off the loan at month 28. Road B keeps paying through month 48.",
+   "trimEnd": 6.434,
+   "duration": 6.434,
+   "text": "Road A pays off the loan at month 28. Road B keeps paying for month 48.",
    "words": [
     {
      "w": "Road",
      "raw": " Road",
      "start": 0.0,
-     "end": 0.22,
-     "p": 0.896
+     "end": 0.24,
+     "p": 0.892
     },
     {
      "w": "A",
      "raw": " A",
-     "start": 0.22,
-     "end": 0.56,
-     "p": 0.986
+     "start": 0.24,
+     "end": 0.7,
+     "p": 0.964
     },
     {
      "w": "pays",
      "raw": " pays",
-     "start": 0.56,
-     "end": 0.94,
-     "p": 0.99
+     "start": 0.7,
+     "end": 1.26,
+     "p": 0.976
     },
     {
      "w": "off",
      "raw": " off",
-     "start": 0.94,
-     "end": 1.18,
-     "p": 0.991
+     "start": 1.26,
+     "end": 1.56,
+     "p": 0.99
     },
     {
      "w": "the",
      "raw": " the",
-     "start": 1.18,
-     "end": 1.32,
-     "p": 0.995
+     "start": 1.56,
+     "end": 1.74,
+     "p": 0.996
     },
     {
      "w": "loan",
      "raw": " loan",
-     "start": 1.32,
-     "end": 1.56,
-     "p": 0.996
+     "start": 1.74,
+     "end": 2.02,
+     "p": 0.984
     },
     {
      "w": "at",
      "raw": " at",
-     "start": 1.56,
-     "end": 1.76,
-     "p": 0.98
+     "start": 2.02,
+     "end": 2.3,
+     "p": 0.987
     },
     {
      "w": "month",
      "raw": " month",
-     "start": 1.76,
-     "end": 1.9,
-     "p": 0.972
+     "start": 2.3,
+     "end": 2.52,
+     "p": 0.963
     },
     {
      "w": "28.",
      "raw": " 28.",
-     "start": 1.9,
-     "end": 2.42,
-     "p": 0.985
+     "start": 2.52,
+     "end": 3.16,
+     "p": 0.98
     },
     {
      "w": "Road",
      "raw": " Road",
-     "start": 3.44,
-     "end": 3.52,
-     "p": 0.994
+     "start": 3.58,
+     "end": 3.66,
+     "p": 0.979
     },
     {
      "w": "B",
      "raw": " B",
-     "start": 3.52,
-     "end": 3.86,
-     "p": 0.999
+     "start": 3.66,
+     "end": 4.12,
+     "p": 0.998
     },
     {
      "w": "keeps",
      "raw": " keeps",
-     "start": 3.86,
-     "end": 4.22,
-     "p": 0.99
+     "start": 4.12,
+     "end": 4.54,
+     "p": 0.994
     },
     {
      "w": "paying",
      "raw": " paying",
-     "start": 4.22,
-     "end": 4.56,
+     "start": 4.54,
+     "end": 4.9,
      "p": 0.998
     },
     {
-     "w": "through",
-     "raw": " through",
-     "start": 4.56,
-     "end": 4.86,
-     "p": 0.986
+     "w": "for",
+     "raw": " for",
+     "start": 4.9,
+     "end": 5.34,
+     "p": 0.997
     },
     {
      "w": "month",
      "raw": " month",
-     "start": 4.86,
-     "end": 5.1,
-     "p": 0.993
+     "start": 5.34,
+     "end": 5.62,
+     "p": 0.992
     },
     {
      "w": "48.",
      "raw": " 48.",
-     "start": 5.1,
-     "end": 5.46,
-     "p": 0.998
+     "start": 5.62,
+     "end": 6.18,
+     "p": 0.999
     }
    ]
   },
   "free": {
+   "ttsKey": "065a4c42d8ec38fd",
    "sr": 24000,
-   "trimStart": 0.11,
-   "trimEnd": 3.78,
-   "duration": 3.67,
+   "trimStart": 0.0,
+   "trimEnd": 4.51,
+   "duration": 4.51,
    "text": "That leaves 20 months with no car payment on road A.",
    "words": [
     {
      "w": "That",
      "raw": " That",
      "start": 0.0,
-     "end": 0.2,
-     "p": 0.808
+     "end": 0.3,
+     "p": 0.589
     },
     {
      "w": "leaves",
      "raw": " leaves",
-     "start": 0.2,
-     "end": 0.44,
-     "p": 0.998
+     "start": 0.3,
+     "end": 0.72,
+     "p": 0.996
     },
     {
      "w": "20",
      "raw": " 20",
-     "start": 0.44,
-     "end": 0.86,
-     "p": 0.912
+     "start": 0.72,
+     "end": 1.54,
+     "p": 0.893
     },
     {
      "w": "months",
      "raw": " months",
-     "start": 0.86,
-     "end": 1.14,
-     "p": 0.982
+     "start": 1.54,
+     "end": 1.9,
+     "p": 0.983
     },
     {
      "w": "with",
      "raw": " with",
-     "start": 1.14,
-     "end": 1.66,
-     "p": 0.785
+     "start": 1.9,
+     "end": 2.38,
+     "p": 0.905
     },
     {
      "w": "no",
      "raw": " no",
-     "start": 1.66,
-     "end": 1.9,
-     "p": 0.994
+     "start": 2.38,
+     "end": 2.7,
+     "p": 0.998
     },
     {
      "w": "car",
      "raw": " car",
-     "start": 1.9,
-     "end": 2.12,
-     "p": 0.98
+     "start": 2.7,
+     "end": 2.96,
+     "p": 0.986
     },
     {
      "w": "payment",
      "raw": " payment",
-     "start": 2.12,
-     "end": 2.48,
-     "p": 0.962
+     "start": 2.96,
+     "end": 3.34,
+     "p": 0.989
     },
     {
      "w": "on",
      "raw": " on",
-     "start": 2.48,
-     "end": 3.02,
-     "p": 0.983
+     "start": 3.34,
+     "end": 3.92,
+     "p": 0.98
     },
     {
      "w": "road",
      "raw": " road",
-     "start": 3.02,
-     "end": 3.24,
-     "p": 0.718
+     "start": 3.92,
+     "end": 4.14,
+     "p": 0.722
     },
     {
      "w": "A.",
      "raw": " A.",
-     "start": 3.24,
-     "end": 3.58,
-     "p": 0.99
+     "start": 4.14,
+     "end": 4.42,
+     "p": 0.837
     }
    ]
   },
   "interest": {
+   "ttsKey": "bd0ae3ae36ab9dfd",
    "sr": 24000,
    "trimStart": 0.0,
-   "trimEnd": 6.58,
-   "duration": 6.58,
+   "trimEnd": 6.41,
+   "duration": 6.41,
    "text": "Interest paid falls from $2,744 to $1,554.",
    "words": [
     {
      "w": "Interest",
      "raw": " Interest",
      "start": 0.0,
-     "end": 0.3,
-     "p": 0.76
+     "end": 0.34,
+     "p": 0.884
     },
     {
      "w": "paid",
      "raw": " paid",
-     "start": 0.3,
-     "end": 0.7,
-     "p": 0.952
+     "start": 0.34,
+     "end": 0.84,
+     "p": 0.923
     },
     {
      "w": "falls",
      "raw": " falls",
-     "start": 0.7,
-     "end": 1.24,
-     "p": 0.933
+     "start": 0.84,
+     "end": 1.38,
+     "p": 0.967
     },
     {
      "w": "from",
      "raw": " from",
-     "start": 1.24,
-     "end": 1.56,
+     "start": 1.38,
+     "end": 1.66,
      "p": 0.996
     },
     {
      "w": "$2",
      "raw": " $2",
-     "start": 1.56,
+     "start": 1.66,
      "end": 2.26,
-     "p": 0.971
+     "p": 0.976
     },
     {
      "w": ",744",
      "raw": ",744",
      "start": 2.26,
      "end": 3.34,
-     "p": 0.988
+     "p": 0.987
     },
     {
      "w": "to",
      "raw": " to",
      "start": 3.34,
-     "end": 4.44,
-     "p": 0.938
+     "end": 4.3,
+     "p": 0.958
     },
     {
      "w": "$1",
      "raw": " $1",
-     "start": 4.44,
-     "end": 5.08,
-     "p": 0.991
+     "start": 4.3,
+     "end": 4.62,
+     "p": 0.992
     },
     {
      "w": ",554.",
      "raw": ",554.",
-     "start": 5.08,
-     "end": 5.84,
-     "p": 0.982
+     "start": 4.62,
+     "end": 5.68,
+     "p": 0.984
     }
    ]
   },
   "avoided": {
+   "ttsKey": "ff67353d9175c7e3",
    "sr": 24000,
    "trimStart": 0.0,
-   "trimEnd": 7.76,
-   "duration": 7.76,
+   "trimEnd": 7.279,
+   "duration": 7.279,
    "text": "Road A avoids $1,190 of interest. That does not depend on markets or taxes.",
    "words": [
     {
      "w": "Road",
      "raw": " Road",
      "start": 0.0,
-     "end": 0.36,
-     "p": 0.854
+     "end": 0.38,
+     "p": 0.858
     },
     {
      "w": "A",
      "raw": " A",
-     "start": 0.36,
-     "end": 0.88,
-     "p": 0.982
+     "start": 0.38,
+     "end": 0.96,
+     "p": 0.979
     },
     {
      "w": "avoids",
      "raw": " avoids",
-     "start": 0.88,
-     "end": 1.78,
-     "p": 0.949
+     "start": 0.96,
+     "end": 1.58,
+     "p": 0.915
     },
     {
      "w": "$1",
      "raw": " $1",
-     "start": 1.78,
-     "end": 2.22,
-     "p": 0.962
+     "start": 1.58,
+     "end": 2.02,
+     "p": 0.964
     },
     {
      "w": ",190",
      "raw": ",190",
-     "start": 2.22,
-     "end": 3.18,
-     "p": 0.981
+     "start": 2.02,
+     "end": 3.16,
+     "p": 0.987
     },
     {
      "w": "of",
      "raw": " of",
-     "start": 3.18,
-     "end": 3.78,
-     "p": 0.951
+     "start": 3.16,
+     "end": 3.76,
+     "p": 0.911
     },
     {
      "w": "interest.",
      "raw": " interest.",
-     "start": 3.78,
-     "end": 4.06,
-     "p": 0.995
+     "start": 3.76,
+     "end": 4.04,
+     "p": 0.989
     },
     {
      "w": "That",
      "raw": " That",
-     "start": 4.74,
-     "end": 5.1,
-     "p": 0.988
+     "start": 4.42,
+     "end": 4.58,
+     "p": 0.96
     },
     {
      "w": "does",
      "raw": " does",
-     "start": 5.1,
-     "end": 5.28,
-     "p": 0.993
+     "start": 4.58,
+     "end": 4.78,
+     "p": 0.97
     },
     {
      "w": "not",
      "raw": " not",
-     "start": 5.28,
-     "end": 5.54,
-     "p": 0.997
+     "start": 4.78,
+     "end": 5.06,
+     "p": 0.984
     },
     {
      "w": "depend",
      "raw": " depend",
-     "start": 5.54,
-     "end": 5.9,
+     "start": 5.06,
+     "end": 5.42,
      "p": 0.999
     },
     {
      "w": "on",
      "raw": " on",
-     "start": 5.9,
-     "end": 6.38,
-     "p": 0.999
+     "start": 5.42,
+     "end": 5.66,
+     "p": 0.998
     },
     {
      "w": "markets",
      "raw": " markets",
-     "start": 6.38,
-     "end": 6.72,
-     "p": 0.99
+     "start": 5.66,
+     "end": 6.06,
+     "p": 0.991
     },
     {
      "w": "or",
      "raw": " or",
-     "start": 6.72,
-     "end": 7.2,
-     "p": 0.994
+     "start": 6.06,
+     "end": 6.66,
+     "p": 0.957
     },
     {
      "w": "taxes.",
      "raw": " taxes.",
-     "start": 7.2,
-     "end": 7.54,
-     "p": 0.999
+     "start": 6.66,
+     "end": 7.04,
+     "p": 0.998
     }
    ]
   },
   "certain": {
+   "ttsKey": "a1350f0aa497420d",
    "sr": 24000,
    "trimStart": 0.0,
-   "trimEnd": 1.34,
-   "duration": 1.34,
+   "trimEnd": 1.51,
+   "duration": 1.51,
    "text": "It is certain.",
    "words": [
     {
      "w": "It",
      "raw": " It",
      "start": 0.0,
-     "end": 0.22,
-     "p": 0.641
+     "end": 0.2,
+     "p": 0.647
     },
     {
      "w": "is",
      "raw": " is",
-     "start": 0.22,
-     "end": 0.76,
-     "p": 0.912
+     "start": 0.2,
+     "end": 0.68,
+     "p": 0.957
     },
     {
      "w": "certain.",
      "raw": " certain.",
-     "start": 0.76,
-     "end": 1.1,
-     "p": 0.898
+     "start": 0.68,
+     "end": 1.24,
+     "p": 0.923
     }
    ]
   },
   "identity": {
+   "ttsKey": "fe988e96ea89b36d",
    "sr": 24000,
    "trimStart": 0.0,
-   "trimEnd": 8.37,
-   "duration": 8.37,
+   "trimEnd": 9.22,
+   "duration": 9.22,
    "text": "Because both roads spend the same cash, Road A ends up investing exactly $1,190 more than Road B.",
    "words": [
     {
      "w": "Because",
      "raw": " Because",
      "start": 0.0,
-     "end": 0.36,
-     "p": 0.879
+     "end": 0.6,
+     "p": 0.931
     },
     {
      "w": "both",
      "raw": " both",
-     "start": 0.36,
-     "end": 0.68,
-     "p": 0.99
+     "start": 0.6,
+     "end": 1.0,
+     "p": 0.996
     },
     {
      "w": "roads",
      "raw": " roads",
-     "start": 0.68,
-     "end": 1.14,
-     "p": 0.994
+     "start": 1.0,
+     "end": 1.42,
+     "p": 0.99
     },
     {
      "w": "spend",
      "raw": " spend",
-     "start": 1.14,
-     "end": 1.48,
-     "p": 0.986
+     "start": 1.42,
+     "end": 1.76,
+     "p": 0.99
     },
     {
      "w": "the",
      "raw": " the",
-     "start": 1.48,
-     "end": 1.66,
-     "p": 0.995
+     "start": 1.76,
+     "end": 1.94,
+     "p": 0.998
     },
     {
      "w": "same",
      "raw": " same",
-     "start": 1.66,
-     "end": 1.9,
-     "p": 1.0
+     "start": 1.94,
+     "end": 2.32,
+     "p": 0.999
     },
     {
      "w": "cash,",
      "raw": " cash,",
-     "start": 1.9,
-     "end": 2.44,
-     "p": 0.99
+     "start": 2.32,
+     "end": 2.98,
+     "p": 0.983
     },
     {
      "w": "Road",
      "raw": " Road",
-     "start": 3.12,
-     "end": 3.16,
-     "p": 0.457
+     "start": 3.7,
+     "end": 3.7,
+     "p": 0.576
     },
     {
      "w": "A",
      "raw": " A",
-     "start": 3.16,
-     "end": 3.48,
-     "p": 0.99
+     "start": 3.7,
+     "end": 4.06,
+     "p": 0.992
     },
     {
      "w": "ends",
      "raw": " ends",
-     "start": 3.48,
-     "end": 3.74,
-     "p": 0.969
+     "start": 4.06,
+     "end": 4.34,
+     "p": 0.981
     },
     {
      "w": "up",
      "raw": " up",
-     "start": 3.74,
-     "end": 3.94,
+     "start": 4.34,
+     "end": 4.52,
      "p": 0.999
     },
     {
      "w": "investing",
      "raw": " investing",
-     "start": 3.94,
-     "end": 4.38,
-     "p": 0.998
+     "start": 4.52,
+     "end": 4.98,
+     "p": 0.999
     },
     {
      "w": "exactly",
      "raw": " exactly",
-     "start": 4.38,
-     "end": 4.84,
-     "p": 0.978
+     "start": 4.98,
+     "end": 5.56,
+     "p": 0.971
     },
     {
      "w": "$1",
      "raw": " $1",
-     "start": 4.84,
-     "end": 5.26,
-     "p": 0.96
+     "start": 5.56,
+     "end": 6.06,
+     "p": 0.97
     },
     {
      "w": ",190",
      "raw": ",190",
-     "start": 5.26,
-     "end": 6.58,
-     "p": 0.989
+     "start": 6.06,
+     "end": 7.08,
+     "p": 0.982
     },
     {
      "w": "more",
      "raw": " more",
-     "start": 6.58,
-     "end": 7.28,
-     "p": 0.969
+     "start": 7.08,
+     "end": 7.9,
+     "p": 0.965
     },
     {
      "w": "than",
      "raw": " than",
-     "start": 7.28,
-     "end": 7.8,
-     "p": 0.984
+     "start": 7.9,
+     "end": 8.6,
+     "p": 0.979
     },
     {
      "w": "Road",
      "raw": " Road",
-     "start": 7.8,
-     "end": 8.0,
-     "p": 0.984
+     "start": 8.6,
+     "end": 8.82,
+     "p": 0.981
     },
     {
      "w": "B.",
      "raw": " B.",
-     "start": 8.0,
-     "end": 8.26,
+     "start": 8.82,
+     "end": 9.1,
      "p": 0.999
     }
    ]
   },
   "bridge": {
+   "ttsKey": "93cad7a46c6b86d7",
    "sr": 24000,
    "trimStart": 0.0,
-   "trimEnd": 7.7,
-   "duration": 7.7,
-   "text": "So the question is narrow. Can road B's head start in the market beat a certain $1,190 after tax?",
+   "trimEnd": 8.599,
+   "duration": 8.599,
+   "text": "So, the question is narrow. Can road B's head start in the market beat a certain $1,190 after tax?",
    "words": [
     {
-     "w": "So",
-     "raw": " So",
+     "w": "So,",
+     "raw": " So,",
      "start": 0.0,
-     "end": 0.28,
-     "p": 0.935
+     "end": 0.32,
+     "p": 0.902
     },
     {
      "w": "the",
      "raw": " the",
-     "start": 0.28,
-     "end": 0.52,
-     "p": 0.63
+     "start": 0.62,
+     "end": 0.76,
+     "p": 0.987
     },
     {
      "w": "question",
      "raw": " question",
-     "start": 0.52,
-     "end": 0.84,
-     "p": 0.995
+     "start": 0.76,
+     "end": 1.04,
+     "p": 0.994
     },
     {
      "w": "is",
      "raw": " is",
-     "start": 0.84,
-     "end": 1.14,
+     "start": 1.04,
+     "end": 1.3,
      "p": 0.998
     },
     {
      "w": "narrow.",
      "raw": " narrow.",
-     "start": 1.14,
-     "end": 1.48,
-     "p": 0.985
+     "start": 1.3,
+     "end": 1.58,
+     "p": 0.983
     },
     {
      "w": "Can",
      "raw": " Can",
-     "start": 2.22,
-     "end": 2.36,
-     "p": 0.987
+     "start": 2.3,
+     "end": 2.44,
+     "p": 0.949
     },
     {
      "w": "road",
      "raw": " road",
-     "start": 2.36,
-     "end": 2.66,
-     "p": 0.462
+     "start": 2.44,
+     "end": 2.72,
+     "p": 0.397
     },
     {
      "w": "B's",
      "raw": " B's",
-     "start": 2.66,
-     "end": 3.06,
-     "p": 0.742
+     "start": 2.72,
+     "end": 3.14,
+     "p": 0.717
     },
     {
      "w": "head",
      "raw": " head",
-     "start": 3.06,
-     "end": 3.24,
-     "p": 0.724
+     "start": 3.14,
+     "end": 3.34,
+     "p": 0.644
     },
     {
      "w": "start",
      "raw": " start",
-     "start": 3.24,
-     "end": 3.5,
-     "p": 0.775
+     "start": 3.34,
+     "end": 3.62,
+     "p": 0.81
     },
     {
      "w": "in",
      "raw": " in",
-     "start": 3.5,
-     "end": 3.64,
-     "p": 0.991
+     "start": 3.62,
+     "end": 3.76,
+     "p": 0.984
     },
     {
      "w": "the",
      "raw": " the",
-     "start": 3.64,
-     "end": 3.72,
+     "start": 3.76,
+     "end": 3.88,
      "p": 0.998
     },
     {
      "w": "market",
      "raw": " market",
-     "start": 3.72,
-     "end": 4.04,
-     "p": 0.999
+     "start": 3.88,
+     "end": 4.18,
+     "p": 0.997
     },
     {
      "w": "beat",
      "raw": " beat",
-     "start": 4.04,
-     "end": 4.48,
-     "p": 0.96
+     "start": 4.18,
+     "end": 4.8,
+     "p": 0.915
     },
     {
      "w": "a",
      "raw": " a",
-     "start": 4.48,
-     "end": 4.64,
-     "p": 0.995
+     "start": 4.8,
+     "end": 5.08,
+     "p": 0.993
     },
     {
      "w": "certain",
      "raw": " certain",
-     "start": 4.64,
-     "end": 4.86,
-     "p": 0.997
+     "start": 5.08,
+     "end": 5.34,
+     "p": 0.996
     },
     {
      "w": "$1",
      "raw": " $1",
-     "start": 4.86,
-     "end": 5.22,
-     "p": 0.962
+     "start": 5.34,
+     "end": 5.78,
+     "p": 0.97
     },
     {
      "w": ",190",
      "raw": ",190",
-     "start": 5.22,
-     "end": 6.12,
-     "p": 0.985
+     "start": 5.78,
+     "end": 6.86,
+     "p": 0.989
     },
     {
      "w": "after",
      "raw": " after",
-     "start": 6.12,
-     "end": 7.2,
-     "p": 0.938
+     "start": 6.86,
+     "end": 8.0,
+     "p": 0.961
     },
     {
      "w": "tax?",
      "raw": " tax?",
+     "start": 8.0,
+     "end": 8.36,
+     "p": 0.539
+    }
+   ]
+  },
+  "card2": {
+   "ttsKey": "4a30d774686eb43e",
+   "sr": 24000,
+   "trimStart": 0.0,
+   "trimEnd": 2.76,
+   "duration": 2.76,
+   "text": "Second, tax, lot by lot.",
+   "words": [
+    {
+     "w": "Second,",
+     "raw": " Second,",
+     "start": 0.0,
+     "end": 0.46,
+     "p": 0.844
+    },
+    {
+     "w": "tax,",
+     "raw": " tax,",
+     "start": 1.0,
+     "end": 1.14,
+     "p": 0.754
+    },
+    {
+     "w": "lot",
+     "raw": " lot",
+     "start": 1.8,
+     "end": 1.86,
+     "p": 0.987
+    },
+    {
+     "w": "by",
+     "raw": " by",
+     "start": 1.86,
+     "end": 2.36,
+     "p": 0.959
+    },
+    {
+     "w": "lot.",
+     "raw": " lot.",
+     "start": 2.36,
+     "end": 2.62,
+     "p": 0.999
+    }
+   ]
+  },
+  "lots1": {
+   "ttsKey": "cdeeddbb21ee519b",
+   "sr": 24000,
+   "trimStart": 0.0,
+   "trimEnd": 5.615,
+   "duration": 5.615,
+   "text": "Each month's contribution is its own tax lot. At month 48, everything is sold.",
+   "words": [
+    {
+     "w": "Each",
+     "raw": " Each",
+     "start": 0.0,
+     "end": 0.3,
+     "p": 0.815
+    },
+    {
+     "w": "month's",
+     "raw": " month's",
+     "start": 0.3,
+     "end": 0.94,
+     "p": 0.98
+    },
+    {
+     "w": "contribution",
+     "raw": " contribution",
+     "start": 0.94,
+     "end": 1.34,
+     "p": 0.996
+    },
+    {
+     "w": "is",
+     "raw": " is",
+     "start": 1.34,
+     "end": 2.0,
+     "p": 0.976
+    },
+    {
+     "w": "its",
+     "raw": " its",
+     "start": 2.0,
+     "end": 2.16,
+     "p": 0.947
+    },
+    {
+     "w": "own",
+     "raw": " own",
+     "start": 2.16,
+     "end": 2.5,
+     "p": 0.995
+    },
+    {
+     "w": "tax",
+     "raw": " tax",
+     "start": 2.5,
+     "end": 2.82,
+     "p": 0.991
+    },
+    {
+     "w": "lot.",
+     "raw": " lot.",
+     "start": 2.82,
+     "end": 3.1,
+     "p": 0.927
+    },
+    {
+     "w": "At",
+     "raw": " At",
+     "start": 3.46,
+     "end": 3.5,
+     "p": 0.974
+    },
+    {
+     "w": "month",
+     "raw": " month",
+     "start": 3.5,
+     "end": 3.7,
+     "p": 0.96
+    },
+    {
+     "w": "48,",
+     "raw": " 48,",
+     "start": 3.7,
+     "end": 4.2,
+     "p": 0.972
+    },
+    {
+     "w": "everything",
+     "raw": " everything",
+     "start": 4.72,
+     "end": 4.94,
+     "p": 0.986
+    },
+    {
+     "w": "is",
+     "raw": " is",
+     "start": 4.94,
+     "end": 5.24,
+     "p": 0.971
+    },
+    {
+     "w": "sold.",
+     "raw": " sold.",
+     "start": 5.24,
+     "end": 5.46,
+     "p": 0.998
+    }
+   ]
+  },
+  "lots2": {
+   "ttsKey": "64d7cb7deb25c0ad",
+   "sr": 24000,
+   "trimStart": 0.0,
+   "trimEnd": 6.33,
+   "duration": 6.33,
+   "text": "A lot held more than 12 months at that sale is long-term. The rest are short-term.",
+   "words": [
+    {
+     "w": "A",
+     "raw": " A",
+     "start": 0.0,
+     "end": 0.16,
+     "p": 0.879
+    },
+    {
+     "w": "lot",
+     "raw": " lot",
+     "start": 0.16,
+     "end": 0.5,
+     "p": 0.995
+    },
+    {
+     "w": "held",
+     "raw": " held",
+     "start": 0.5,
+     "end": 0.92,
+     "p": 0.978
+    },
+    {
+     "w": "more",
+     "raw": " more",
+     "start": 0.92,
+     "end": 1.26,
+     "p": 0.995
+    },
+    {
+     "w": "than",
+     "raw": " than",
+     "start": 1.26,
+     "end": 1.52,
+     "p": 0.993
+    },
+    {
+     "w": "12",
+     "raw": " 12",
+     "start": 1.52,
+     "end": 1.9,
+     "p": 0.901
+    },
+    {
+     "w": "months",
+     "raw": " months",
+     "start": 1.9,
+     "end": 2.32,
+     "p": 0.989
+    },
+    {
+     "w": "at",
+     "raw": " at",
+     "start": 2.32,
+     "end": 2.64,
+     "p": 0.991
+    },
+    {
+     "w": "that",
+     "raw": " that",
+     "start": 2.64,
+     "end": 2.82,
+     "p": 0.986
+    },
+    {
+     "w": "sale",
+     "raw": " sale",
+     "start": 2.82,
+     "end": 3.22,
+     "p": 0.992
+    },
+    {
+     "w": "is",
+     "raw": " is",
+     "start": 3.22,
+     "end": 3.66,
+     "p": 0.951
+    },
+    {
+     "w": "long",
+     "raw": " long",
+     "start": 3.66,
+     "end": 3.96,
+     "p": 0.992
+    },
+    {
+     "w": "-term.",
+     "raw": "-term.",
+     "start": 3.96,
+     "end": 4.3,
+     "p": 0.749
+    },
+    {
+     "w": "The",
+     "raw": " The",
+     "start": 4.72,
+     "end": 4.8,
+     "p": 0.992
+    },
+    {
+     "w": "rest",
+     "raw": " rest",
+     "start": 4.8,
+     "end": 5.02,
+     "p": 0.996
+    },
+    {
+     "w": "are",
+     "raw": " are",
+     "start": 5.02,
+     "end": 5.7,
+     "p": 0.795
+    },
+    {
+     "w": "short",
+     "raw": " short",
+     "start": 5.7,
+     "end": 5.92,
+     "p": 0.997
+    },
+    {
+     "w": "-term.",
+     "raw": "-term.",
+     "start": 5.92,
+     "end": 6.2,
+     "p": 0.874
+    }
+   ]
+  },
+  "rates": {
+   "ttsKey": "6f8f679235846d7d",
+   "sr": 24000,
+   "trimStart": 0.0,
+   "trimEnd": 7.72,
+   "duration": 7.72,
+   "text": "In the 22% bracket, long-term gains are taxed at 15% and short-term gains at the full 22%.",
+   "words": [
+    {
+     "w": "In",
+     "raw": " In",
+     "start": 0.0,
+     "end": 0.22,
+     "p": 0.837
+    },
+    {
+     "w": "the",
+     "raw": " the",
+     "start": 0.22,
+     "end": 0.48,
+     "p": 0.995
+    },
+    {
+     "w": "22",
+     "raw": " 22",
+     "start": 0.48,
+     "end": 1.04,
+     "p": 0.981
+    },
+    {
+     "w": "%",
+     "raw": "%",
+     "start": 1.04,
+     "end": 1.38,
+     "p": 0.886
+    },
+    {
+     "w": "bracket,",
+     "raw": " bracket,",
+     "start": 1.38,
+     "end": 1.76,
+     "p": 0.993
+    },
+    {
+     "w": "long",
+     "raw": " long",
+     "start": 2.58,
+     "end": 2.66,
+     "p": 0.841
+    },
+    {
+     "w": "-term",
+     "raw": "-term",
+     "start": 2.66,
+     "end": 2.9,
+     "p": 0.858
+    },
+    {
+     "w": "gains",
+     "raw": " gains",
+     "start": 2.9,
+     "end": 3.24,
+     "p": 0.999
+    },
+    {
+     "w": "are",
+     "raw": " are",
+     "start": 3.24,
+     "end": 3.46,
+     "p": 0.998
+    },
+    {
+     "w": "taxed",
+     "raw": " taxed",
+     "start": 3.46,
+     "end": 3.74,
+     "p": 0.998
+    },
+    {
+     "w": "at",
+     "raw": " at",
+     "start": 3.74,
+     "end": 3.94,
+     "p": 0.998
+    },
+    {
+     "w": "15",
+     "raw": " 15",
+     "start": 3.94,
+     "end": 4.32,
+     "p": 0.996
+    },
+    {
+     "w": "%",
+     "raw": "%",
+     "start": 4.32,
+     "end": 4.72,
+     "p": 0.806
+    },
+    {
+     "w": "and",
+     "raw": " and",
+     "start": 4.72,
+     "end": 5.38,
+     "p": 0.991
+    },
+    {
+     "w": "short",
+     "raw": " short",
+     "start": 5.38,
+     "end": 5.6,
+     "p": 0.99
+    },
+    {
+     "w": "-term",
+     "raw": "-term",
+     "start": 5.6,
+     "end": 5.8,
+     "p": 0.951
+    },
+    {
+     "w": "gains",
+     "raw": " gains",
+     "start": 5.8,
+     "end": 6.12,
+     "p": 0.997
+    },
+    {
+     "w": "at",
+     "raw": " at",
+     "start": 6.12,
+     "end": 6.48,
+     "p": 0.991
+    },
+    {
+     "w": "the",
+     "raw": " the",
+     "start": 6.48,
+     "end": 6.62,
+     "p": 0.993
+    },
+    {
+     "w": "full",
+     "raw": " full",
+     "start": 6.62,
+     "end": 6.84,
+     "p": 0.998
+    },
+    {
+     "w": "22%.",
+     "raw": " 22%.",
+     "start": 6.84,
+     "end": 7.7,
+     "p": 0.946
+    }
+   ]
+  },
+  "lots3": {
+   "ttsKey": "7f83454dbd08f1d3",
+   "sr": 24000,
+   "trimStart": 0.0,
+   "trimEnd": 9.121,
+   "duration": 9.121,
+   "text": "Road B invests from the start, so 35 of its 48 lots are long-term. Road A starts after the payoff, 8 of its 21.",
+   "words": [
+    {
+     "w": "Road",
+     "raw": " Road",
+     "start": 0.0,
+     "end": 0.24,
+     "p": 0.944
+    },
+    {
+     "w": "B",
+     "raw": " B",
+     "start": 0.24,
+     "end": 0.58,
+     "p": 0.983
+    },
+    {
+     "w": "invests",
+     "raw": " invests",
+     "start": 0.58,
+     "end": 1.04,
+     "p": 0.974
+    },
+    {
+     "w": "from",
+     "raw": " from",
+     "start": 1.04,
+     "end": 1.38,
+     "p": 0.996
+    },
+    {
+     "w": "the",
+     "raw": " the",
+     "start": 1.38,
+     "end": 1.54,
+     "p": 0.995
+    },
+    {
+     "w": "start,",
+     "raw": " start,",
+     "start": 1.54,
+     "end": 1.8,
+     "p": 0.998
+    },
+    {
+     "w": "so",
+     "raw": " so",
+     "start": 2.22,
+     "end": 2.44,
+     "p": 0.991
+    },
+    {
+     "w": "35",
+     "raw": " 35",
+     "start": 2.44,
+     "end": 3.02,
+     "p": 0.964
+    },
+    {
+     "w": "of",
+     "raw": " of",
+     "start": 3.02,
+     "end": 3.3,
+     "p": 0.981
+    },
+    {
+     "w": "its",
+     "raw": " its",
+     "start": 3.3,
+     "end": 3.44,
+     "p": 0.969
+    },
+    {
+     "w": "48",
+     "raw": " 48",
+     "start": 3.44,
+     "end": 3.86,
+     "p": 0.997
+    },
+    {
+     "w": "lots",
+     "raw": " lots",
+     "start": 3.86,
+     "end": 4.12,
+     "p": 0.733
+    },
+    {
+     "w": "are",
+     "raw": " are",
+     "start": 4.12,
+     "end": 4.46,
+     "p": 0.99
+    },
+    {
+     "w": "long",
+     "raw": " long",
+     "start": 4.46,
+     "end": 4.7,
+     "p": 0.994
+    },
+    {
+     "w": "-term.",
+     "raw": "-term.",
+     "start": 4.7,
+     "end": 5.0,
+     "p": 0.76
+    },
+    {
+     "w": "Road",
+     "raw": " Road",
+     "start": 5.56,
+     "end": 5.6,
+     "p": 0.995
+    },
+    {
+     "w": "A",
+     "raw": " A",
+     "start": 5.6,
+     "end": 5.98,
+     "p": 0.997
+    },
+    {
+     "w": "starts",
+     "raw": " starts",
+     "start": 5.98,
+     "end": 6.32,
+     "p": 0.996
+    },
+    {
+     "w": "after",
+     "raw": " after",
+     "start": 6.32,
+     "end": 6.72,
+     "p": 0.998
+    },
+    {
+     "w": "the",
+     "raw": " the",
+     "start": 6.72,
+     "end": 6.88,
+     "p": 0.996
+    },
+    {
+     "w": "payoff,",
+     "raw": " payoff,",
+     "start": 6.88,
+     "end": 7.2,
+     "p": 0.937
+    },
+    {
+     "w": "8",
+     "raw": " 8",
+     "start": 7.8,
+     "end": 8.04,
+     "p": 0.844
+    },
+    {
+     "w": "of",
+     "raw": " of",
+     "start": 8.04,
+     "end": 8.32,
+     "p": 0.996
+    },
+    {
+     "w": "its",
+     "raw": " its",
+     "start": 8.32,
+     "end": 8.46,
+     "p": 0.964
+    },
+    {
+     "w": "21.",
+     "raw": " 21.",
+     "start": 8.46,
+     "end": 8.82,
+     "p": 0.998
+    }
+   ]
+  },
+  "share": {
+   "ttsKey": "28505d2951eb33db",
+   "sr": 24000,
+   "trimStart": 0.0,
+   "trimEnd": 6.43,
+   "duration": 6.43,
+   "text": "Near the break-even, 37% of road A's gains are short-term against 7% of road B's.",
+   "words": [
+    {
+     "w": "Near",
+     "raw": " Near",
+     "start": 0.0,
+     "end": 0.36,
+     "p": 0.896
+    },
+    {
+     "w": "the",
+     "raw": " the",
+     "start": 0.36,
+     "end": 0.56,
+     "p": 0.996
+    },
+    {
+     "w": "break",
+     "raw": " break",
+     "start": 0.56,
+     "end": 0.82,
+     "p": 0.762
+    },
+    {
+     "w": "-even,",
+     "raw": "-even,",
+     "start": 0.82,
+     "end": 1.18,
+     "p": 0.739
+    },
+    {
+     "w": "37",
+     "raw": " 37",
+     "start": 1.58,
+     "end": 2.02,
+     "p": 0.989
+    },
+    {
+     "w": "%",
+     "raw": "%",
+     "start": 2.02,
+     "end": 2.6,
+     "p": 0.725
+    },
+    {
+     "w": "of",
+     "raw": " of",
+     "start": 2.6,
+     "end": 2.76,
+     "p": 0.996
+    },
+    {
+     "w": "road",
+     "raw": " road",
+     "start": 2.76,
+     "end": 2.96,
+     "p": 0.86
+    },
+    {
+     "w": "A's",
+     "raw": " A's",
+     "start": 2.96,
+     "end": 3.26,
+     "p": 0.952
+    },
+    {
+     "w": "gains",
+     "raw": " gains",
+     "start": 3.26,
+     "end": 3.44,
+     "p": 0.993
+    },
+    {
+     "w": "are",
+     "raw": " are",
+     "start": 3.44,
+     "end": 3.66,
+     "p": 0.996
+    },
+    {
+     "w": "short",
+     "raw": " short",
+     "start": 3.66,
+     "end": 3.9,
+     "p": 0.996
+    },
+    {
+     "w": "-term",
+     "raw": "-term",
+     "start": 3.9,
+     "end": 4.3,
+     "p": 0.746
+    },
+    {
+     "w": "against",
+     "raw": " against",
+     "start": 4.3,
+     "end": 4.82,
+     "p": 0.485
+    },
+    {
+     "w": "7",
+     "raw": " 7",
+     "start": 4.82,
+     "end": 5.2,
+     "p": 0.98
+    },
+    {
+     "w": "%",
+     "raw": "%",
+     "start": 5.2,
+     "end": 5.66,
+     "p": 0.991
+    },
+    {
+     "w": "of",
+     "raw": " of",
+     "start": 5.66,
+     "end": 5.84,
+     "p": 0.994
+    },
+    {
+     "w": "road",
+     "raw": " road",
+     "start": 5.84,
+     "end": 6.02,
+     "p": 0.975
+    },
+    {
+     "w": "B's.",
+     "raw": " B's.",
+     "start": 6.02,
+     "end": 6.4,
+     "p": 0.99
+    }
+   ]
+  },
+  "nodeduct": {
+   "ttsKey": "2657399b9d6aa869",
+   "sr": 24000,
+   "trimStart": 0.0,
+   "trimEnd": 5.367,
+   "duration": 5.367,
+   "text": "A lot that loses money gets no deduction. State income tax is left out.",
+   "words": [
+    {
+     "w": "A",
+     "raw": " A",
+     "start": 0.0,
+     "end": 0.14,
+     "p": 0.68
+    },
+    {
+     "w": "lot",
+     "raw": " lot",
+     "start": 0.14,
+     "end": 0.34,
+     "p": 0.993
+    },
+    {
+     "w": "that",
+     "raw": " that",
+     "start": 0.34,
+     "end": 0.62,
+     "p": 0.996
+    },
+    {
+     "w": "loses",
+     "raw": " loses",
+     "start": 0.62,
+     "end": 0.96,
+     "p": 0.979
+    },
+    {
+     "w": "money",
+     "raw": " money",
+     "start": 0.96,
+     "end": 1.44,
+     "p": 0.997
+    },
+    {
+     "w": "gets",
+     "raw": " gets",
+     "start": 1.44,
+     "end": 1.78,
+     "p": 0.982
+    },
+    {
+     "w": "no",
+     "raw": " no",
+     "start": 1.78,
+     "end": 2.18,
+     "p": 0.998
+    },
+    {
+     "w": "deduction.",
+     "raw": " deduction.",
+     "start": 2.18,
+     "end": 2.76,
+     "p": 0.997
+    },
+    {
+     "w": "State",
+     "raw": " State",
+     "start": 3.22,
+     "end": 3.58,
+     "p": 0.963
+    },
+    {
+     "w": "income",
+     "raw": " income",
+     "start": 3.58,
+     "end": 3.98,
+     "p": 0.942
+    },
+    {
+     "w": "tax",
+     "raw": " tax",
+     "start": 3.98,
+     "end": 4.48,
+     "p": 0.995
+    },
+    {
+     "w": "is",
+     "raw": " is",
+     "start": 4.48,
+     "end": 4.74,
+     "p": 0.997
+    },
+    {
+     "w": "left",
+     "raw": " left",
+     "start": 4.74,
+     "end": 5.02,
+     "p": 0.998
+    },
+    {
+     "w": "out.",
+     "raw": " out.",
+     "start": 5.02,
+     "end": 5.34,
+     "p": 0.999
+    }
+   ]
+  },
+  "card3": {
+   "ttsKey": "950c2871e168340d",
+   "sr": 24000,
+   "trimStart": 0.0,
+   "trimEnd": 1.91,
+   "duration": 1.91,
+   "text": "Third, where the answer flips.",
+   "words": [
+    {
+     "w": "Third,",
+     "raw": " Third,",
+     "start": 0.0,
+     "end": 0.32,
+     "p": 0.709
+    },
+    {
+     "w": "where",
+     "raw": " where",
+     "start": 0.76,
+     "end": 0.9,
+     "p": 0.95
+    },
+    {
+     "w": "the",
+     "raw": " the",
+     "start": 0.9,
+     "end": 1.06,
+     "p": 0.998
+    },
+    {
+     "w": "answer",
+     "raw": " answer",
+     "start": 1.06,
+     "end": 1.3,
+     "p": 0.997
+    },
+    {
+     "w": "flips.",
+     "raw": " flips.",
+     "start": 1.3,
+     "end": 1.64,
+     "p": 0.987
+    }
+   ]
+  },
+  "sw1": {
+   "ttsKey": "4730096a6281ff7c",
+   "sr": 24000,
+   "trimStart": 0.0,
+   "trimEnd": 6.69,
+   "duration": 6.69,
+   "text": "We sweep the average annual return from 2% to 10%, compounded in the 22% bracket.",
+   "words": [
+    {
+     "w": "We",
+     "raw": " We",
+     "start": 0.0,
+     "end": 0.18,
+     "p": 0.807
+    },
+    {
+     "w": "sweep",
+     "raw": " sweep",
+     "start": 0.18,
+     "end": 0.54,
+     "p": 0.993
+    },
+    {
+     "w": "the",
+     "raw": " the",
+     "start": 0.54,
+     "end": 0.8,
+     "p": 0.993
+    },
+    {
+     "w": "average",
+     "raw": " average",
+     "start": 0.8,
+     "end": 1.16,
+     "p": 0.975
+    },
+    {
+     "w": "annual",
+     "raw": " annual",
+     "start": 1.16,
+     "end": 1.5,
+     "p": 0.997
+    },
+    {
+     "w": "return",
+     "raw": " return",
+     "start": 1.5,
+     "end": 1.9,
+     "p": 0.994
+    },
+    {
+     "w": "from",
+     "raw": " from",
+     "start": 1.9,
+     "end": 2.34,
+     "p": 0.989
+    },
+    {
+     "w": "2",
+     "raw": " 2",
+     "start": 2.34,
+     "end": 2.6,
+     "p": 0.899
+    },
+    {
+     "w": "%",
+     "raw": "%",
+     "start": 2.6,
+     "end": 2.9,
+     "p": 0.91
+    },
+    {
+     "w": "to",
+     "raw": " to",
+     "start": 2.9,
+     "end": 3.26,
+     "p": 0.992
+    },
+    {
+     "w": "10%,",
+     "raw": " 10%,",
+     "start": 3.26,
+     "end": 4.24,
+     "p": 0.856
+    },
+    {
+     "w": "compounded",
+     "raw": " compounded",
+     "start": 4.24,
+     "end": 4.8,
+     "p": 0.988
+    },
+    {
+     "w": "in",
+     "raw": " in",
+     "start": 4.8,
+     "end": 5.46,
+     "p": 0.883
+    },
+    {
+     "w": "the",
+     "raw": " the",
+     "start": 5.46,
+     "end": 5.56,
+     "p": 0.838
+    },
+    {
+     "w": "22",
+     "raw": " 22",
+     "start": 5.56,
+     "end": 5.9,
+     "p": 0.995
+    },
+    {
+     "w": "%",
+     "raw": "%",
+     "start": 5.9,
+     "end": 6.24,
+     "p": 0.98
+    },
+    {
+     "w": "bracket.",
+     "raw": " bracket.",
+     "start": 6.24,
+     "end": 6.5,
+     "p": 0.995
+    }
+   ]
+  },
+  "sw2": {
+   "ttsKey": "f6803235bc6fa0d8",
+   "sr": 24000,
+   "trimStart": 0.0,
+   "trimEnd": 7.7,
+   "duration": 7.7,
+   "text": "The line is road B minus road A, net worth after tax at month 48, and it rises with the return.",
+   "words": [
+    {
+     "w": "The",
+     "raw": " The",
+     "start": 0.0,
+     "end": 0.18,
+     "p": 0.877
+    },
+    {
+     "w": "line",
+     "raw": " line",
+     "start": 0.18,
+     "end": 0.5,
+     "p": 0.982
+    },
+    {
+     "w": "is",
+     "raw": " is",
+     "start": 0.5,
+     "end": 0.72,
+     "p": 0.998
+    },
+    {
+     "w": "road",
+     "raw": " road",
+     "start": 0.72,
+     "end": 1.02,
+     "p": 0.477
+    },
+    {
+     "w": "B",
+     "raw": " B",
+     "start": 1.02,
+     "end": 1.48,
+     "p": 0.974
+    },
+    {
+     "w": "minus",
+     "raw": " minus",
+     "start": 1.48,
+     "end": 2.0,
+     "p": 0.904
+    },
+    {
+     "w": "road",
+     "raw": " road",
+     "start": 2.0,
+     "end": 2.38,
+     "p": 0.98
+    },
+    {
+     "w": "A,",
+     "raw": " A,",
+     "start": 2.38,
+     "end": 3.0,
+     "p": 0.962
+    },
+    {
+     "w": "net",
+     "raw": " net",
+     "start": 3.24,
+     "end": 3.6,
+     "p": 0.995
+    },
+    {
+     "w": "worth",
+     "raw": " worth",
+     "start": 3.6,
+     "end": 3.86,
+     "p": 0.993
+    },
+    {
+     "w": "after",
+     "raw": " after",
+     "start": 3.86,
+     "end": 4.32,
+     "p": 0.986
+    },
+    {
+     "w": "tax",
+     "raw": " tax",
+     "start": 4.32,
+     "end": 4.68,
+     "p": 0.838
+    },
+    {
+     "w": "at",
+     "raw": " at",
+     "start": 4.68,
+     "end": 4.9,
+     "p": 0.981
+    },
+    {
+     "w": "month",
+     "raw": " month",
+     "start": 4.9,
+     "end": 5.12,
+     "p": 0.998
+    },
+    {
+     "w": "48,",
+     "raw": " 48,",
+     "start": 5.12,
+     "end": 5.7,
+     "p": 0.995
+    },
+    {
+     "w": "and",
+     "raw": " and",
+     "start": 6.2,
+     "end": 6.3,
+     "p": 0.998
+    },
+    {
+     "w": "it",
+     "raw": " it",
+     "start": 6.3,
+     "end": 6.42,
+     "p": 0.997
+    },
+    {
+     "w": "rises",
+     "raw": " rises",
+     "start": 6.42,
+     "end": 6.74,
+     "p": 0.997
+    },
+    {
+     "w": "with",
+     "raw": " with",
+     "start": 6.74,
+     "end": 7.04,
+     "p": 0.999
+    },
+    {
+     "w": "the",
+     "raw": " the",
+     "start": 7.04,
+     "end": 7.2,
+     "p": 0.997
+    },
+    {
+     "w": "return.",
+     "raw": " return.",
      "start": 7.2,
      "end": 7.5,
-     "p": 0.572
+     "p": 0.995
+    }
+   ]
+  },
+  "sw3": {
+   "ttsKey": "5ee77d4fdbd51c7b",
+   "sr": 24000,
+   "trimStart": 0.0,
+   "trimEnd": 9.143,
+   "duration": 9.143,
+   "text": "At 2%, Road A is ahead by $822. At 10%, Road B is ahead by $861.",
+   "words": [
+    {
+     "w": "At",
+     "raw": " At",
+     "start": 0.0,
+     "end": 0.2,
+     "p": 0.808
+    },
+    {
+     "w": "2%,",
+     "raw": " 2%,",
+     "start": 0.2,
+     "end": 1.18,
+     "p": 0.827
+    },
+    {
+     "w": "Road",
+     "raw": " Road",
+     "start": 1.18,
+     "end": 1.64,
+     "p": 0.336
+    },
+    {
+     "w": "A",
+     "raw": " A",
+     "start": 1.64,
+     "end": 2.06,
+     "p": 0.994
+    },
+    {
+     "w": "is",
+     "raw": " is",
+     "start": 2.06,
+     "end": 2.32,
+     "p": 0.99
+    },
+    {
+     "w": "ahead",
+     "raw": " ahead",
+     "start": 2.32,
+     "end": 2.6,
+     "p": 0.948
+    },
+    {
+     "w": "by",
+     "raw": " by",
+     "start": 2.6,
+     "end": 2.82,
+     "p": 0.992
+    },
+    {
+     "w": "$822.",
+     "raw": " $822.",
+     "start": 2.82,
+     "end": 3.94,
+     "p": 0.99
+    },
+    {
+     "w": "At",
+     "raw": " At",
+     "start": 4.54,
+     "end": 4.86,
+     "p": 0.985
+    },
+    {
+     "w": "10%,",
+     "raw": " 10%,",
+     "start": 4.86,
+     "end": 5.9,
+     "p": 0.979
+    },
+    {
+     "w": "Road",
+     "raw": " Road",
+     "start": 5.9,
+     "end": 6.26,
+     "p": 0.979
+    },
+    {
+     "w": "B",
+     "raw": " B",
+     "start": 6.26,
+     "end": 6.68,
+     "p": 0.999
+    },
+    {
+     "w": "is",
+     "raw": " is",
+     "start": 6.68,
+     "end": 6.88,
+     "p": 0.998
+    },
+    {
+     "w": "ahead",
+     "raw": " ahead",
+     "start": 6.88,
+     "end": 7.16,
+     "p": 0.996
+    },
+    {
+     "w": "by",
+     "raw": " by",
+     "start": 7.16,
+     "end": 7.4,
+     "p": 0.996
+    },
+    {
+     "w": "$861.",
+     "raw": " $861.",
+     "start": 7.4,
+     "end": 8.66,
+     "p": 0.956
+    }
+   ]
+  },
+  "sw4": {
+   "ttsKey": "e068cdda56924435",
+   "sr": 24000,
+   "trimStart": 0.0,
+   "trimEnd": 3.699,
+   "duration": 3.699,
+   "text": "both roads end even at 6.11%.",
+   "words": [
+    {
+     "w": "both",
+     "raw": " both",
+     "start": 0.0,
+     "end": 0.36,
+     "p": 0.843
+    },
+    {
+     "w": "roads",
+     "raw": " roads",
+     "start": 0.36,
+     "end": 0.82,
+     "p": 0.997
+    },
+    {
+     "w": "end",
+     "raw": " end",
+     "start": 0.82,
+     "end": 1.18,
+     "p": 0.689
+    },
+    {
+     "w": "even",
+     "raw": " even",
+     "start": 1.18,
+     "end": 1.7,
+     "p": 0.756
+    },
+    {
+     "w": "at",
+     "raw": " at",
+     "start": 1.7,
+     "end": 2.2,
+     "p": 0.875
+    },
+    {
+     "w": "6",
+     "raw": " 6",
+     "start": 2.2,
+     "end": 2.52,
+     "p": 0.986
+    },
+    {
+     "w": ".11%.",
+     "raw": ".11%.",
+     "start": 2.52,
+     "end": 3.54,
+     "p": 0.767
+    }
+   ]
+  },
+  "sw5": {
+   "ttsKey": "27b53a7f69a7e4ba",
+   "sr": 24000,
+   "trimStart": 0.0,
+   "trimEnd": 6.37,
+   "duration": 6.37,
+   "text": "Below that return, paying off early, ends ahead. Above it, investing does.",
+   "words": [
+    {
+     "w": "Below",
+     "raw": " Below",
+     "start": 0.0,
+     "end": 0.44,
+     "p": 0.828
+    },
+    {
+     "w": "that",
+     "raw": " that",
+     "start": 0.44,
+     "end": 0.78,
+     "p": 0.998
+    },
+    {
+     "w": "return,",
+     "raw": " return,",
+     "start": 0.78,
+     "end": 1.26,
+     "p": 0.992
+    },
+    {
+     "w": "paying",
+     "raw": " paying",
+     "start": 1.92,
+     "end": 2.12,
+     "p": 0.984
+    },
+    {
+     "w": "off",
+     "raw": " off",
+     "start": 2.12,
+     "end": 2.4,
+     "p": 0.997
+    },
+    {
+     "w": "early,",
+     "raw": " early,",
+     "start": 2.4,
+     "end": 2.78,
+     "p": 0.997
+    },
+    {
+     "w": "ends",
+     "raw": " ends",
+     "start": 3.12,
+     "end": 3.4,
+     "p": 0.996
+    },
+    {
+     "w": "ahead.",
+     "raw": " ahead.",
+     "start": 3.4,
+     "end": 3.76,
+     "p": 0.997
+    },
+    {
+     "w": "Above",
+     "raw": " Above",
+     "start": 4.18,
+     "end": 4.42,
+     "p": 0.986
+    },
+    {
+     "w": "it,",
+     "raw": " it,",
+     "start": 4.42,
+     "end": 4.72,
+     "p": 0.997
+    },
+    {
+     "w": "investing",
+     "raw": " investing",
+     "start": 5.4,
+     "end": 5.64,
+     "p": 0.986
+    },
+    {
+     "w": "does.",
+     "raw": " does.",
+     "start": 5.64,
+     "end": 6.18,
+     "p": 0.999
+    }
+   ]
+  },
+  "card4": {
+   "ttsKey": "7385a709c5c86b2a",
+   "sr": 24000,
+   "trimStart": 0.0,
+   "trimEnd": 1.7,
+   "duration": 1.7,
+   "text": "Fourth, the tax bracket.",
+   "words": [
+    {
+     "w": "Fourth,",
+     "raw": " Fourth,",
+     "start": 0.0,
+     "end": 0.28,
+     "p": 0.612
+    },
+    {
+     "w": "the",
+     "raw": " the",
+     "start": 0.82,
+     "end": 0.98,
+     "p": 0.96
+    },
+    {
+     "w": "tax",
+     "raw": " tax",
+     "start": 0.98,
+     "end": 1.3,
+     "p": 0.918
+    },
+    {
+     "w": "bracket.",
+     "raw": " bracket.",
+     "start": 1.3,
+     "end": 1.58,
+     "p": 0.98
+    }
+   ]
+  },
+  "niit": {
+   "ttsKey": "b6ae0794caafaf16",
+   "sr": 24000,
+   "trimStart": 0.0,
+   "trimEnd": 11.14,
+   "duration": 11.14,
+   "text": "In the 32% bracket, we add the 3.8% net investment income tax. Short-term gains pay 35.8%, long-term gains 18.8%.",
+   "words": [
+    {
+     "w": "In",
+     "raw": " In",
+     "start": 0.0,
+     "end": 0.16,
+     "p": 0.906
+    },
+    {
+     "w": "the",
+     "raw": " the",
+     "start": 0.16,
+     "end": 0.38,
+     "p": 0.999
+    },
+    {
+     "w": "32",
+     "raw": " 32",
+     "start": 0.38,
+     "end": 0.96,
+     "p": 0.992
+    },
+    {
+     "w": "%",
+     "raw": "%",
+     "start": 0.96,
+     "end": 1.3,
+     "p": 0.943
+    },
+    {
+     "w": "bracket,",
+     "raw": " bracket,",
+     "start": 1.3,
+     "end": 1.68,
+     "p": 0.997
+    },
+    {
+     "w": "we",
+     "raw": " we",
+     "start": 2.06,
+     "end": 2.28,
+     "p": 0.996
+    },
+    {
+     "w": "add",
+     "raw": " add",
+     "start": 2.28,
+     "end": 2.58,
+     "p": 0.996
+    },
+    {
+     "w": "the",
+     "raw": " the",
+     "start": 2.58,
+     "end": 2.76,
+     "p": 0.99
+    },
+    {
+     "w": "3",
+     "raw": " 3",
+     "start": 2.76,
+     "end": 3.0,
+     "p": 0.998
+    },
+    {
+     "w": ".8",
+     "raw": ".8",
+     "start": 3.0,
+     "end": 3.38,
+     "p": 0.998
+    },
+    {
+     "w": "%",
+     "raw": "%",
+     "start": 3.38,
+     "end": 3.7,
+     "p": 0.984
+    },
+    {
+     "w": "net",
+     "raw": " net",
+     "start": 3.7,
+     "end": 3.96,
+     "p": 0.961
+    },
+    {
+     "w": "investment",
+     "raw": " investment",
+     "start": 3.96,
+     "end": 4.44,
+     "p": 0.988
+    },
+    {
+     "w": "income",
+     "raw": " income",
+     "start": 4.44,
+     "end": 4.84,
+     "p": 0.997
+    },
+    {
+     "w": "tax.",
+     "raw": " tax.",
+     "start": 4.84,
+     "end": 5.28,
+     "p": 0.998
+    },
+    {
+     "w": "Short",
+     "raw": " Short",
+     "start": 6.02,
+     "end": 6.1,
+     "p": 0.996
+    },
+    {
+     "w": "-term",
+     "raw": "-term",
+     "start": 6.1,
+     "end": 6.28,
+     "p": 0.87
+    },
+    {
+     "w": "gains",
+     "raw": " gains",
+     "start": 6.28,
+     "end": 6.66,
+     "p": 0.999
+    },
+    {
+     "w": "pay",
+     "raw": " pay",
+     "start": 6.66,
+     "end": 6.9,
+     "p": 0.978
+    },
+    {
+     "w": "35",
+     "raw": " 35",
+     "start": 6.9,
+     "end": 7.42,
+     "p": 0.995
+    },
+    {
+     "w": ".8%,",
+     "raw": ".8%,",
+     "start": 7.42,
+     "end": 8.66,
+     "p": 0.88
+    },
+    {
+     "w": "long",
+     "raw": " long",
+     "start": 8.66,
+     "end": 9.04,
+     "p": 0.99
+    },
+    {
+     "w": "-term",
+     "raw": "-term",
+     "start": 9.04,
+     "end": 9.26,
+     "p": 0.991
+    },
+    {
+     "w": "gains",
+     "raw": " gains",
+     "start": 9.26,
+     "end": 9.7,
+     "p": 0.995
+    },
+    {
+     "w": "18",
+     "raw": " 18",
+     "start": 9.7,
+     "end": 10.3,
+     "p": 0.644
+    },
+    {
+     "w": ".8%.",
+     "raw": ".8%.",
+     "start": 10.3,
+     "end": 11.1,
+     "p": 0.988
+    }
+   ]
+  },
+  "dots": {
+   "ttsKey": "8edf34b3190f1a71",
+   "sr": 24000,
+   "trimStart": 0.0,
+   "trimEnd": 9.26,
+   "duration": 9.26,
+   "text": "The break even is 5.23% in the 12% bracket and 6.11% in the 22% bracket.",
+   "words": [
+    {
+     "w": "The",
+     "raw": " The",
+     "start": 0.0,
+     "end": 0.2,
+     "p": 0.716
+    },
+    {
+     "w": "break",
+     "raw": " break",
+     "start": 0.2,
+     "end": 0.64,
+     "p": 0.85
+    },
+    {
+     "w": "even",
+     "raw": " even",
+     "start": 0.64,
+     "end": 1.06,
+     "p": 0.77
+    },
+    {
+     "w": "is",
+     "raw": " is",
+     "start": 1.06,
+     "end": 1.48,
+     "p": 0.998
+    },
+    {
+     "w": "5",
+     "raw": " 5",
+     "start": 1.48,
+     "end": 1.94,
+     "p": 0.978
+    },
+    {
+     "w": ".23",
+     "raw": ".23",
+     "start": 1.94,
+     "end": 2.74,
+     "p": 0.993
+    },
+    {
+     "w": "%",
+     "raw": "%",
+     "start": 2.74,
+     "end": 3.2,
+     "p": 0.857
+    },
+    {
+     "w": "in",
+     "raw": " in",
+     "start": 3.2,
+     "end": 3.64,
+     "p": 0.993
+    },
+    {
+     "w": "the",
+     "raw": " the",
+     "start": 3.64,
+     "end": 3.76,
+     "p": 0.989
+    },
+    {
+     "w": "12",
+     "raw": " 12",
+     "start": 3.76,
+     "end": 4.04,
+     "p": 0.996
+    },
+    {
+     "w": "%",
+     "raw": "%",
+     "start": 4.04,
+     "end": 4.38,
+     "p": 0.985
+    },
+    {
+     "w": "bracket",
+     "raw": " bracket",
+     "start": 4.38,
+     "end": 4.82,
+     "p": 0.997
+    },
+    {
+     "w": "and",
+     "raw": " and",
+     "start": 4.82,
+     "end": 5.62,
+     "p": 0.74
+    },
+    {
+     "w": "6",
+     "raw": " 6",
+     "start": 5.62,
+     "end": 6.0,
+     "p": 0.996
+    },
+    {
+     "w": ".11",
+     "raw": ".11",
+     "start": 6.0,
+     "end": 6.68,
+     "p": 0.993
+    },
+    {
+     "w": "%",
+     "raw": "%",
+     "start": 6.68,
+     "end": 7.28,
+     "p": 0.993
+    },
+    {
+     "w": "in",
+     "raw": " in",
+     "start": 7.28,
+     "end": 7.76,
+     "p": 0.996
+    },
+    {
+     "w": "the",
+     "raw": " the",
+     "start": 7.76,
+     "end": 7.9,
+     "p": 0.955
+    },
+    {
+     "w": "22",
+     "raw": " 22",
+     "start": 7.9,
+     "end": 8.36,
+     "p": 0.999
+    },
+    {
+     "w": "%",
+     "raw": "%",
+     "start": 8.36,
+     "end": 8.82,
+     "p": 0.995
+    },
+    {
+     "w": "bracket.",
+     "raw": " bracket.",
+     "start": 8.82,
+     "end": 9.08,
+     "p": 0.994
+    }
+   ]
+  },
+  "dots32": {
+   "ttsKey": "2188641e80a009fd",
+   "sr": 24000,
+   "trimStart": 0.0,
+   "trimEnd": 4.646,
+   "duration": 4.646,
+   "text": "In the 32% bracket, it is 6.26%.",
+   "words": [
+    {
+     "w": "In",
+     "raw": " In",
+     "start": 0.0,
+     "end": 0.2,
+     "p": 0.772
+    },
+    {
+     "w": "the",
+     "raw": " the",
+     "start": 0.2,
+     "end": 0.38,
+     "p": 0.998
+    },
+    {
+     "w": "32",
+     "raw": " 32",
+     "start": 0.38,
+     "end": 1.02,
+     "p": 0.989
+    },
+    {
+     "w": "%",
+     "raw": "%",
+     "start": 1.02,
+     "end": 1.42,
+     "p": 0.895
+    },
+    {
+     "w": "bracket,",
+     "raw": " bracket,",
+     "start": 1.42,
+     "end": 1.86,
+     "p": 0.993
+    },
+    {
+     "w": "it",
+     "raw": " it",
+     "start": 2.2,
+     "end": 2.36,
+     "p": 0.989
+    },
+    {
+     "w": "is",
+     "raw": " is",
+     "start": 2.36,
+     "end": 2.52,
+     "p": 0.996
+    },
+    {
+     "w": "6",
+     "raw": " 6",
+     "start": 2.52,
+     "end": 2.98,
+     "p": 0.995
+    },
+    {
+     "w": ".26%.",
+     "raw": ".26%.",
+     "start": 2.98,
+     "end": 4.42,
+     "p": 0.94
+    }
+   ]
+  },
+  "rises": {
+   "ttsKey": "e9877fbfb031f4c6",
+   "sr": 24000,
+   "trimStart": 0.0,
+   "trimEnd": 6.193,
+   "duration": 6.193,
+   "text": "Higher rates on games shrink road B's head start, so the threshold rises with the bracket.",
+   "words": [
+    {
+     "w": "Higher",
+     "raw": " Higher",
+     "start": 0.0,
+     "end": 0.38,
+     "p": 0.744
+    },
+    {
+     "w": "rates",
+     "raw": " rates",
+     "start": 0.38,
+     "end": 0.78,
+     "p": 0.981
+    },
+    {
+     "w": "on",
+     "raw": " on",
+     "start": 0.78,
+     "end": 1.02,
+     "p": 0.996
+    },
+    {
+     "w": "games",
+     "raw": " games",
+     "start": 1.02,
+     "end": 1.52,
+     "p": 0.917
+    },
+    {
+     "w": "shrink",
+     "raw": " shrink",
+     "start": 1.52,
+     "end": 2.18,
+     "p": 0.836
+    },
+    {
+     "w": "road",
+     "raw": " road",
+     "start": 2.18,
+     "end": 2.54,
+     "p": 0.567
+    },
+    {
+     "w": "B's",
+     "raw": " B's",
+     "start": 2.54,
+     "end": 2.98,
+     "p": 0.747
+    },
+    {
+     "w": "head",
+     "raw": " head",
+     "start": 2.98,
+     "end": 3.16,
+     "p": 0.729
+    },
+    {
+     "w": "start,",
+     "raw": " start,",
+     "start": 3.16,
+     "end": 3.56,
+     "p": 0.704
+    },
+    {
+     "w": "so",
+     "raw": " so",
+     "start": 4.0,
+     "end": 4.46,
+     "p": 0.973
+    },
+    {
+     "w": "the",
+     "raw": " the",
+     "start": 4.46,
+     "end": 4.62,
+     "p": 0.994
+    },
+    {
+     "w": "threshold",
+     "raw": " threshold",
+     "start": 4.62,
+     "end": 5.02,
+     "p": 0.988
+    },
+    {
+     "w": "rises",
+     "raw": " rises",
+     "start": 5.02,
+     "end": 5.42,
+     "p": 0.996
+    },
+    {
+     "w": "with",
+     "raw": " with",
+     "start": 5.42,
+     "end": 5.7,
+     "p": 0.997
+    },
+    {
+     "w": "the",
+     "raw": " the",
+     "start": 5.7,
+     "end": 5.84,
+     "p": 0.987
+    },
+    {
+     "w": "bracket.",
+     "raw": " bracket.",
+     "start": 5.84,
+     "end": 6.06,
+     "p": 0.867
+    }
+   ]
+  },
+  "below": {
+   "ttsKey": "6d73ba26a2716abc",
+   "sr": 24000,
+   "trimStart": 0.0,
+   "trimEnd": 10.368,
+   "duration": 10.368,
+   "text": "In the 12% bracket, it sits below 5.33%. The loan rate has an annual yield because road A's gains are mostly short term.",
+   "words": [
+    {
+     "w": "In",
+     "raw": " In",
+     "start": 0.0,
+     "end": 0.12,
+     "p": 0.834
+    },
+    {
+     "w": "the",
+     "raw": " the",
+     "start": 0.12,
+     "end": 0.24,
+     "p": 0.997
+    },
+    {
+     "w": "12",
+     "raw": " 12",
+     "start": 0.24,
+     "end": 0.62,
+     "p": 0.972
+    },
+    {
+     "w": "%",
+     "raw": "%",
+     "start": 0.62,
+     "end": 1.06,
+     "p": 0.878
+    },
+    {
+     "w": "bracket,",
+     "raw": " bracket,",
+     "start": 1.06,
+     "end": 1.5,
+     "p": 0.994
+    },
+    {
+     "w": "it",
+     "raw": " it",
+     "start": 1.74,
+     "end": 1.86,
+     "p": 0.991
+    },
+    {
+     "w": "sits",
+     "raw": " sits",
+     "start": 1.86,
+     "end": 2.14,
+     "p": 0.99
+    },
+    {
+     "w": "below",
+     "raw": " below",
+     "start": 2.14,
+     "end": 2.62,
+     "p": 0.986
+    },
+    {
+     "w": "5",
+     "raw": " 5",
+     "start": 2.62,
+     "end": 3.16,
+     "p": 0.995
+    },
+    {
+     "w": ".33%.",
+     "raw": ".33%.",
+     "start": 3.16,
+     "end": 4.7,
+     "p": 0.959
+    },
+    {
+     "w": "The",
+     "raw": " The",
+     "start": 4.7,
+     "end": 5.08,
+     "p": 0.995
+    },
+    {
+     "w": "loan",
+     "raw": " loan",
+     "start": 5.08,
+     "end": 5.32,
+     "p": 0.981
+    },
+    {
+     "w": "rate",
+     "raw": " rate",
+     "start": 5.32,
+     "end": 5.64,
+     "p": 0.998
+    },
+    {
+     "w": "has",
+     "raw": " has",
+     "start": 5.64,
+     "end": 5.88,
+     "p": 0.96
+    },
+    {
+     "w": "an",
+     "raw": " an",
+     "start": 5.88,
+     "end": 6.0,
+     "p": 0.995
+    },
+    {
+     "w": "annual",
+     "raw": " annual",
+     "start": 6.0,
+     "end": 6.42,
+     "p": 0.998
+    },
+    {
+     "w": "yield",
+     "raw": " yield",
+     "start": 6.42,
+     "end": 6.9,
+     "p": 0.999
+    },
+    {
+     "w": "because",
+     "raw": " because",
+     "start": 6.9,
+     "end": 7.64,
+     "p": 0.603
+    },
+    {
+     "w": "road",
+     "raw": " road",
+     "start": 7.64,
+     "end": 7.96,
+     "p": 0.686
+    },
+    {
+     "w": "A's",
+     "raw": " A's",
+     "start": 7.96,
+     "end": 8.42,
+     "p": 0.905
+    },
+    {
+     "w": "gains",
+     "raw": " gains",
+     "start": 8.42,
+     "end": 8.76,
+     "p": 0.999
+    },
+    {
+     "w": "are",
+     "raw": " are",
+     "start": 8.76,
+     "end": 9.28,
+     "p": 0.989
+    },
+    {
+     "w": "mostly",
+     "raw": " mostly",
+     "start": 9.28,
+     "end": 9.66,
+     "p": 0.998
+    },
+    {
+     "w": "short",
+     "raw": " short",
+     "start": 9.66,
+     "end": 9.94,
+     "p": 0.998
+    },
+    {
+     "w": "term.",
+     "raw": " term.",
+     "start": 9.94,
+     "end": 10.22,
+     "p": 0.647
+    }
+   ]
+  },
+  "card5": {
+   "ttsKey": "94b56dd0e704370b",
+   "sr": 24000,
+   "trimStart": 0.0,
+   "trimEnd": 1.17,
+   "duration": 1.17,
+   "text": "Fifth. Risk.",
+   "words": [
+    {
+     "w": "Fifth.",
+     "raw": " Fifth.",
+     "start": 0.0,
+     "end": 0.26,
+     "p": 0.282
+    },
+    {
+     "w": "Risk.",
+     "raw": " Risk.",
+     "start": 0.76,
+     "end": 1.0,
+     "p": 0.968
+    }
+   ]
+  },
+  "risk1": {
+   "ttsKey": "00851a7d238b137d",
+   "sr": 24000,
+   "trimStart": 0.0,
+   "trimEnd": 4.79,
+   "duration": 4.79,
+   "text": "paying off the loan earns a certain 5.2 percent.",
+   "words": [
+    {
+     "w": "paying",
+     "raw": " paying",
+     "start": 0.0,
+     "end": 0.3,
+     "p": 0.825
+    },
+    {
+     "w": "off",
+     "raw": " off",
+     "start": 0.3,
+     "end": 0.66,
+     "p": 0.992
+    },
+    {
+     "w": "the",
+     "raw": " the",
+     "start": 0.66,
+     "end": 1.18,
+     "p": 0.985
+    },
+    {
+     "w": "loan",
+     "raw": " loan",
+     "start": 1.18,
+     "end": 1.6,
+     "p": 0.982
+    },
+    {
+     "w": "earns",
+     "raw": " earns",
+     "start": 1.6,
+     "end": 2.3,
+     "p": 0.977
+    },
+    {
+     "w": "a",
+     "raw": " a",
+     "start": 2.3,
+     "end": 2.52,
+     "p": 0.994
+    },
+    {
+     "w": "certain",
+     "raw": " certain",
+     "start": 2.52,
+     "end": 2.8,
+     "p": 0.998
+    },
+    {
+     "w": "5",
+     "raw": " 5",
+     "start": 2.8,
+     "end": 3.46,
+     "p": 0.936
+    },
+    {
+     "w": ".2",
+     "raw": ".2",
+     "start": 3.46,
+     "end": 4.1,
+     "p": 0.997
+    },
+    {
+     "w": "percent.",
+     "raw": " percent.",
+     "start": 4.1,
+     "end": 4.62,
+     "p": 0.303
+    }
+   ]
+  },
+  "risk2": {
+   "ttsKey": "17e7beb91defc9f9",
+   "sr": 24000,
+   "trimStart": 0.0,
+   "trimEnd": 6.48,
+   "duration": 6.48,
+   "text": "Investing earns an average, not a promise. Our range, 2% to 10%, is illustrative.",
+   "words": [
+    {
+     "w": "Investing",
+     "raw": " Investing",
+     "start": 0.0,
+     "end": 0.64,
+     "p": 0.853
+    },
+    {
+     "w": "earns",
+     "raw": " earns",
+     "start": 0.64,
+     "end": 0.84,
+     "p": 0.978
+    },
+    {
+     "w": "an",
+     "raw": " an",
+     "start": 0.84,
+     "end": 1.1,
+     "p": 0.991
+    },
+    {
+     "w": "average,",
+     "raw": " average,",
+     "start": 1.1,
+     "end": 1.54,
+     "p": 0.986
+    },
+    {
+     "w": "not",
+     "raw": " not",
+     "start": 1.92,
+     "end": 2.12,
+     "p": 0.995
+    },
+    {
+     "w": "a",
+     "raw": " a",
+     "start": 2.12,
+     "end": 2.26,
+     "p": 0.997
+    },
+    {
+     "w": "promise.",
+     "raw": " promise.",
+     "start": 2.26,
+     "end": 2.6,
+     "p": 0.995
+    },
+    {
+     "w": "Our",
+     "raw": " Our",
+     "start": 2.98,
+     "end": 3.06,
+     "p": 0.987
+    },
+    {
+     "w": "range,",
+     "raw": " range,",
+     "start": 3.06,
+     "end": 3.42,
+     "p": 0.975
+    },
+    {
+     "w": "2",
+     "raw": " 2",
+     "start": 3.76,
+     "end": 3.98,
+     "p": 0.841
+    },
+    {
+     "w": "%",
+     "raw": "%",
+     "start": 3.98,
+     "end": 4.34,
+     "p": 0.877
+    },
+    {
+     "w": "to",
+     "raw": " to",
+     "start": 4.34,
+     "end": 4.68,
+     "p": 0.984
+    },
+    {
+     "w": "10%,",
+     "raw": " 10%,",
+     "start": 4.68,
+     "end": 5.42,
+     "p": 0.802
+    },
+    {
+     "w": "is",
+     "raw": " is",
+     "start": 5.42,
+     "end": 5.86,
+     "p": 0.997
+    },
+    {
+     "w": "illustrative.",
+     "raw": " illustrative.",
+     "start": 5.86,
+     "end": 6.38,
+     "p": 0.97
+    }
+   ]
+  },
+  "seq": {
+   "ttsKey": "2b28ccf5e2633a62",
+   "sr": 24000,
+   "trimStart": 0.0,
+   "trimEnd": 7.04,
+   "duration": 7.04,
+   "text": "Here is an illustrative sequence. 8% a year for 36 months, then minus 20% for the last 12.",
+   "words": [
+    {
+     "w": "Here",
+     "raw": " Here",
+     "start": 0.0,
+     "end": 0.2,
+     "p": 0.932
+    },
+    {
+     "w": "is",
+     "raw": " is",
+     "start": 0.2,
+     "end": 0.56,
+     "p": 0.985
+    },
+    {
+     "w": "an",
+     "raw": " an",
+     "start": 0.56,
+     "end": 0.78,
+     "p": 0.986
+    },
+    {
+     "w": "illustrative",
+     "raw": " illustrative",
+     "start": 0.78,
+     "end": 1.24,
+     "p": 0.99
+    },
+    {
+     "w": "sequence.",
+     "raw": " sequence.",
+     "start": 1.24,
+     "end": 1.7,
+     "p": 0.999
+    },
+    {
+     "w": "8",
+     "raw": " 8",
+     "start": 2.34,
+     "end": 2.5,
+     "p": 0.742
+    },
+    {
+     "w": "%",
+     "raw": "%",
+     "start": 2.5,
+     "end": 2.82,
+     "p": 0.933
+    },
+    {
+     "w": "a",
+     "raw": " a",
+     "start": 2.82,
+     "end": 2.98,
+     "p": 0.988
+    },
+    {
+     "w": "year",
+     "raw": " year",
+     "start": 2.98,
+     "end": 3.18,
+     "p": 0.998
+    },
+    {
+     "w": "for",
+     "raw": " for",
+     "start": 3.18,
+     "end": 3.56,
+     "p": 0.85
+    },
+    {
+     "w": "36",
+     "raw": " 36",
+     "start": 3.56,
+     "end": 3.92,
+     "p": 0.997
+    },
+    {
+     "w": "months,",
+     "raw": " months,",
+     "start": 3.92,
+     "end": 4.28,
+     "p": 0.995
+    },
+    {
+     "w": "then",
+     "raw": " then",
+     "start": 4.84,
+     "end": 5.06,
+     "p": 0.993
+    },
+    {
+     "w": "minus",
+     "raw": " minus",
+     "start": 5.06,
+     "end": 5.38,
+     "p": 0.552
+    },
+    {
+     "w": "20",
+     "raw": " 20",
+     "start": 5.38,
+     "end": 5.68,
+     "p": 0.997
+    },
+    {
+     "w": "%",
+     "raw": "%",
+     "start": 5.68,
+     "end": 6.0,
+     "p": 0.991
+    },
+    {
+     "w": "for",
+     "raw": " for",
+     "start": 6.0,
+     "end": 6.36,
+     "p": 0.997
+    },
+    {
+     "w": "the",
+     "raw": " the",
+     "start": 6.36,
+     "end": 6.46,
+     "p": 0.998
+    },
+    {
+     "w": "last",
+     "raw": " last",
+     "start": 6.46,
+     "end": 6.68,
+     "p": 0.999
+    },
+    {
+     "w": "12.",
+     "raw": " 12.",
+     "start": 6.68,
+     "end": 6.9,
+     "p": 0.978
+    }
+   ]
+  },
+  "race": {
+   "ttsKey": "6822588c807a62b2",
+   "sr": 24000,
+   "trimStart": 0.0,
+   "trimEnd": 6.452,
+   "duration": 6.452,
+   "text": "We track net worth after tax, month by month. For 36 months, both roads run almost together.",
+   "words": [
+    {
+     "w": "We",
+     "raw": " We",
+     "start": 0.0,
+     "end": 0.16,
+     "p": 0.807
+    },
+    {
+     "w": "track",
+     "raw": " track",
+     "start": 0.16,
+     "end": 0.52,
+     "p": 0.992
+    },
+    {
+     "w": "net",
+     "raw": " net",
+     "start": 0.52,
+     "end": 1.06,
+     "p": 0.966
+    },
+    {
+     "w": "worth",
+     "raw": " worth",
+     "start": 1.06,
+     "end": 1.34,
+     "p": 0.957
+    },
+    {
+     "w": "after",
+     "raw": " after",
+     "start": 1.34,
+     "end": 1.8,
+     "p": 0.965
+    },
+    {
+     "w": "tax,",
+     "raw": " tax,",
+     "start": 1.8,
+     "end": 2.22,
+     "p": 0.877
+    },
+    {
+     "w": "month",
+     "raw": " month",
+     "start": 2.6,
+     "end": 2.72,
+     "p": 0.996
+    },
+    {
+     "w": "by",
+     "raw": " by",
+     "start": 2.72,
+     "end": 2.92,
+     "p": 0.947
+    },
+    {
+     "w": "month.",
+     "raw": " month.",
+     "start": 2.92,
+     "end": 3.18,
+     "p": 1.0
+    },
+    {
+     "w": "For",
+     "raw": " For",
+     "start": 3.32,
+     "end": 3.44,
+     "p": 0.959
+    },
+    {
+     "w": "36",
+     "raw": " 36",
+     "start": 3.44,
+     "end": 3.84,
+     "p": 0.988
+    },
+    {
+     "w": "months,",
+     "raw": " months,",
+     "start": 3.84,
+     "end": 4.24,
+     "p": 0.992
+    },
+    {
+     "w": "both",
+     "raw": " both",
+     "start": 4.6,
+     "end": 4.8,
+     "p": 0.994
+    },
+    {
+     "w": "roads",
+     "raw": " roads",
+     "start": 4.8,
+     "end": 5.2,
+     "p": 0.998
+    },
+    {
+     "w": "run",
+     "raw": " run",
+     "start": 5.2,
+     "end": 5.44,
+     "p": 0.997
+    },
+    {
+     "w": "almost",
+     "raw": " almost",
+     "start": 5.44,
+     "end": 5.92,
+     "p": 0.936
+    },
+    {
+     "w": "together.",
+     "raw": " together.",
+     "start": 5.92,
+     "end": 6.28,
+     "p": 0.995
+    }
+   ]
+  },
+  "gap": {
+   "ttsKey": "be1a4fbcbb7ce246",
+   "sr": 24000,
+   "trimStart": 0.0,
+   "trimEnd": 6.3,
+   "duration": 6.3,
+   "text": "The difference, road B minus road A, peaks, then turns negative in month 39.",
+   "words": [
+    {
+     "w": "The",
+     "raw": " The",
+     "start": 0.0,
+     "end": 0.18,
+     "p": 0.845
+    },
+    {
+     "w": "difference,",
+     "raw": " difference,",
+     "start": 0.18,
+     "end": 0.58,
+     "p": 0.911
+    },
+    {
+     "w": "road",
+     "raw": " road",
+     "start": 1.2,
+     "end": 1.2,
+     "p": 0.434
+    },
+    {
+     "w": "B",
+     "raw": " B",
+     "start": 1.2,
+     "end": 1.58,
+     "p": 0.977
+    },
+    {
+     "w": "minus",
+     "raw": " minus",
+     "start": 1.58,
+     "end": 1.88,
+     "p": 0.778
+    },
+    {
+     "w": "road",
+     "raw": " road",
+     "start": 1.88,
+     "end": 2.2,
+     "p": 0.981
+    },
+    {
+     "w": "A,",
+     "raw": " A,",
+     "start": 2.2,
+     "end": 2.7,
+     "p": 0.993
+    },
+    {
+     "w": "peaks,",
+     "raw": " peaks,",
+     "start": 2.82,
+     "end": 3.3,
+     "p": 0.986
+    },
+    {
+     "w": "then",
+     "raw": " then",
+     "start": 3.8,
+     "end": 3.94,
+     "p": 0.996
+    },
+    {
+     "w": "turns",
+     "raw": " turns",
+     "start": 3.94,
+     "end": 4.24,
+     "p": 0.988
+    },
+    {
+     "w": "negative",
+     "raw": " negative",
+     "start": 4.24,
+     "end": 4.62,
+     "p": 0.994
+    },
+    {
+     "w": "in",
+     "raw": " in",
+     "start": 4.62,
+     "end": 5.12,
+     "p": 0.689
+    },
+    {
+     "w": "month",
+     "raw": " month",
+     "start": 5.12,
+     "end": 5.34,
+     "p": 0.99
+    },
+    {
+     "w": "39.",
+     "raw": " 39.",
+     "start": 5.34,
+     "end": 5.98,
+     "p": 0.932
+    }
+   ]
+  },
+  "downside": {
+   "ttsKey": "e64b50cc43cfbfdc",
+   "sr": 24000,
+   "trimStart": 0.0,
+   "trimEnd": 4.18,
+   "duration": 4.18,
+   "text": "Road A finishes $459.00 ahead after tax.",
+   "words": [
+    {
+     "w": "Road",
+     "raw": " Road",
+     "start": 0.0,
+     "end": 0.26,
+     "p": 0.93
+    },
+    {
+     "w": "A",
+     "raw": " A",
+     "start": 0.26,
+     "end": 0.62,
+     "p": 0.991
+    },
+    {
+     "w": "finishes",
+     "raw": " finishes",
+     "start": 0.62,
+     "end": 1.06,
+     "p": 0.98
+    },
+    {
+     "w": "$459",
+     "raw": " $459",
+     "start": 1.06,
+     "end": 1.94,
+     "p": 0.979
+    },
+    {
+     "w": ".00",
+     "raw": ".00",
+     "start": 1.94,
+     "end": 2.78,
+     "p": 0.607
+    },
+    {
+     "w": "ahead",
+     "raw": " ahead",
+     "start": 2.78,
+     "end": 3.08,
+     "p": 0.566
+    },
+    {
+     "w": "after",
+     "raw": " after",
+     "start": 3.08,
+     "end": 3.7,
+     "p": 0.834
+    },
+    {
+     "w": "tax.",
+     "raw": " tax.",
+     "start": 3.7,
+     "end": 4.0,
+     "p": 0.764
+    }
+   ]
+  },
+  "order": {
+   "ttsKey": "4b60e5f47a355ed6",
+   "sr": 24000,
+   "trimStart": 0.0,
+   "trimEnd": 8.51,
+   "duration": 8.51,
+   "text": "Over all 48 months, that sequence still averages 0.19% a year. The order of the returns decided the result.",
+   "words": [
+    {
+     "w": "Over",
+     "raw": " Over",
+     "start": 0.0,
+     "end": 0.28,
+     "p": 0.68
+    },
+    {
+     "w": "all",
+     "raw": " all",
+     "start": 0.28,
+     "end": 0.64,
+     "p": 0.997
+    },
+    {
+     "w": "48",
+     "raw": " 48",
+     "start": 0.64,
+     "end": 1.18,
+     "p": 0.968
+    },
+    {
+     "w": "months,",
+     "raw": " months,",
+     "start": 1.18,
+     "end": 1.56,
+     "p": 0.986
+    },
+    {
+     "w": "that",
+     "raw": " that",
+     "start": 2.2,
+     "end": 2.32,
+     "p": 0.981
+    },
+    {
+     "w": "sequence",
+     "raw": " sequence",
+     "start": 2.32,
+     "end": 2.68,
+     "p": 0.988
+    },
+    {
+     "w": "still",
+     "raw": " still",
+     "start": 2.68,
+     "end": 3.02,
+     "p": 0.999
+    },
+    {
+     "w": "averages",
+     "raw": " averages",
+     "start": 3.02,
+     "end": 3.44,
+     "p": 0.991
+    },
+    {
+     "w": "0",
+     "raw": " 0",
+     "start": 3.44,
+     "end": 3.86,
+     "p": 0.986
+    },
+    {
+     "w": ".19",
+     "raw": ".19",
+     "start": 3.86,
+     "end": 4.68,
+     "p": 0.994
+    },
+    {
+     "w": "%",
+     "raw": "%",
+     "start": 4.68,
+     "end": 5.04,
+     "p": 0.764
+    },
+    {
+     "w": "a",
+     "raw": " a",
+     "start": 5.04,
+     "end": 5.24,
+     "p": 0.961
+    },
+    {
+     "w": "year.",
+     "raw": " year.",
+     "start": 5.24,
+     "end": 5.44,
+     "p": 0.999
+    },
+    {
+     "w": "The",
+     "raw": " The",
+     "start": 5.76,
+     "end": 5.86,
+     "p": 0.988
+    },
+    {
+     "w": "order",
+     "raw": " order",
+     "start": 5.86,
+     "end": 6.18,
+     "p": 0.959
+    },
+    {
+     "w": "of",
+     "raw": " of",
+     "start": 6.18,
+     "end": 6.42,
+     "p": 0.998
+    },
+    {
+     "w": "the",
+     "raw": " the",
+     "start": 6.42,
+     "end": 6.52,
+     "p": 0.948
+    },
+    {
+     "w": "returns",
+     "raw": " returns",
+     "start": 6.52,
+     "end": 7.04,
+     "p": 0.994
+    },
+    {
+     "w": "decided",
+     "raw": " decided",
+     "start": 7.04,
+     "end": 7.76,
+     "p": 0.932
+    },
+    {
+     "w": "the",
+     "raw": " the",
+     "start": 7.76,
+     "end": 8.02,
+     "p": 0.996
+    },
+    {
+     "w": "result.",
+     "raw": " result.",
+     "start": 8.02,
+     "end": 8.32,
+     "p": 0.994
+    }
+   ]
+  },
+  "recap": {
+   "ttsKey": "f3e8f5f9e38c561c",
+   "sr": 24000,
+   "trimStart": 0.0,
+   "trimEnd": 9.323,
+   "duration": 9.323,
+   "text": "The payoff month and the interest avoided are fixed. The tax depends on how long each lot is held. The return is the unknown.",
+   "words": [
+    {
+     "w": "The",
+     "raw": " The",
+     "start": 0.0,
+     "end": 0.18,
+     "p": 0.841
+    },
+    {
+     "w": "payoff",
+     "raw": " payoff",
+     "start": 0.18,
+     "end": 0.54,
+     "p": 0.938
+    },
+    {
+     "w": "month",
+     "raw": " month",
+     "start": 0.54,
+     "end": 0.94,
+     "p": 0.989
+    },
+    {
+     "w": "and",
+     "raw": " and",
+     "start": 0.94,
+     "end": 1.36,
+     "p": 0.911
+    },
+    {
+     "w": "the",
+     "raw": " the",
+     "start": 1.36,
+     "end": 1.5,
+     "p": 0.982
+    },
+    {
+     "w": "interest",
+     "raw": " interest",
+     "start": 1.5,
+     "end": 1.9,
+     "p": 0.991
+    },
+    {
+     "w": "avoided",
+     "raw": " avoided",
+     "start": 1.9,
+     "end": 2.44,
+     "p": 0.991
+    },
+    {
+     "w": "are",
+     "raw": " are",
+     "start": 2.44,
+     "end": 2.84,
+     "p": 0.985
+    },
+    {
+     "w": "fixed.",
+     "raw": " fixed.",
+     "start": 2.84,
+     "end": 3.2,
+     "p": 0.999
+    },
+    {
+     "w": "The",
+     "raw": " The",
+     "start": 3.66,
+     "end": 3.78,
+     "p": 0.991
+    },
+    {
+     "w": "tax",
+     "raw": " tax",
+     "start": 3.78,
+     "end": 4.22,
+     "p": 0.986
+    },
+    {
+     "w": "depends",
+     "raw": " depends",
+     "start": 4.22,
+     "end": 4.72,
+     "p": 0.997
+    },
+    {
+     "w": "on",
+     "raw": " on",
+     "start": 4.72,
+     "end": 5.02,
+     "p": 0.994
+    },
+    {
+     "w": "how",
+     "raw": " how",
+     "start": 5.02,
+     "end": 5.36,
+     "p": 0.998
+    },
+    {
+     "w": "long",
+     "raw": " long",
+     "start": 5.36,
+     "end": 5.74,
+     "p": 0.999
+    },
+    {
+     "w": "each",
+     "raw": " each",
+     "start": 5.74,
+     "end": 6.16,
+     "p": 0.999
+    },
+    {
+     "w": "lot",
+     "raw": " lot",
+     "start": 6.16,
+     "end": 6.5,
+     "p": 0.99
+    },
+    {
+     "w": "is",
+     "raw": " is",
+     "start": 6.5,
+     "end": 6.72,
+     "p": 0.998
+    },
+    {
+     "w": "held.",
+     "raw": " held.",
+     "start": 6.72,
+     "end": 7.04,
+     "p": 0.999
+    },
+    {
+     "w": "The",
+     "raw": " The",
+     "start": 7.48,
+     "end": 7.54,
+     "p": 0.995
+    },
+    {
+     "w": "return",
+     "raw": " return",
+     "start": 7.54,
+     "end": 7.98,
+     "p": 0.997
+    },
+    {
+     "w": "is",
+     "raw": " is",
+     "start": 7.98,
+     "end": 8.62,
+     "p": 0.988
+    },
+    {
+     "w": "the",
+     "raw": " the",
+     "start": 8.62,
+     "end": 8.76,
+     "p": 0.976
+    },
+    {
+     "w": "unknown.",
+     "raw": " unknown.",
+     "start": 8.76,
+     "end": 9.02,
+     "p": 0.995
+    }
+   ]
+  },
+  "end1": {
+   "ttsKey": "118fe71cbbd162c0",
+   "sr": 24000,
+   "trimStart": 0.0,
+   "trimEnd": 7.711,
+   "duration": 7.711,
+   "text": "So, in the 22% bracket, the answer flips at an average annual return of 6.11%.",
+   "words": [
+    {
+     "w": "So,",
+     "raw": " So,",
+     "start": 0.0,
+     "end": 0.42,
+     "p": 0.926
+    },
+    {
+     "w": "in",
+     "raw": " in",
+     "start": 0.94,
+     "end": 1.18,
+     "p": 0.973
+    },
+    {
+     "w": "the",
+     "raw": " the",
+     "start": 1.18,
+     "end": 1.3,
+     "p": 0.994
+    },
+    {
+     "w": "22",
+     "raw": " 22",
+     "start": 1.3,
+     "end": 1.86,
+     "p": 0.987
+    },
+    {
+     "w": "%",
+     "raw": "%",
+     "start": 1.86,
+     "end": 2.26,
+     "p": 0.879
+    },
+    {
+     "w": "bracket,",
+     "raw": " bracket,",
+     "start": 2.26,
+     "end": 2.66,
+     "p": 0.989
+    },
+    {
+     "w": "the",
+     "raw": " the",
+     "start": 3.18,
+     "end": 3.22,
+     "p": 0.995
+    },
+    {
+     "w": "answer",
+     "raw": " answer",
+     "start": 3.22,
+     "end": 3.54,
+     "p": 0.996
+    },
+    {
+     "w": "flips",
+     "raw": " flips",
+     "start": 3.54,
+     "end": 3.88,
+     "p": 0.994
+    },
+    {
+     "w": "at",
+     "raw": " at",
+     "start": 3.88,
+     "end": 4.46,
+     "p": 0.943
+    },
+    {
+     "w": "an",
+     "raw": " an",
+     "start": 4.46,
+     "end": 4.58,
+     "p": 0.995
+    },
+    {
+     "w": "average",
+     "raw": " average",
+     "start": 4.58,
+     "end": 5.0,
+     "p": 0.991
+    },
+    {
+     "w": "annual",
+     "raw": " annual",
+     "start": 5.0,
+     "end": 5.36,
+     "p": 0.999
+    },
+    {
+     "w": "return",
+     "raw": " return",
+     "start": 5.36,
+     "end": 5.82,
+     "p": 0.994
+    },
+    {
+     "w": "of",
+     "raw": " of",
+     "start": 5.82,
+     "end": 6.24,
+     "p": 0.995
+    },
+    {
+     "w": "6",
+     "raw": " 6",
+     "start": 6.24,
+     "end": 6.56,
+     "p": 0.994
+    },
+    {
+     "w": ".11%.",
+     "raw": ".11%.",
+     "start": 6.56,
+     "end": 7.56,
+     "p": 0.962
+    }
+   ]
+  },
+  "end2": {
+   "ttsKey": "04d2a66112df9125",
+   "sr": 24000,
+   "trimStart": 0.0,
+   "trimEnd": 6.221,
+   "duration": 6.221,
+   "text": "That is a threshold, not a forecast. Where returns will land is not known in advance.",
+   "words": [
+    {
+     "w": "That",
+     "raw": " That",
+     "start": 0.0,
+     "end": 0.28,
+     "p": 0.829
+    },
+    {
+     "w": "is",
+     "raw": " is",
+     "start": 0.28,
+     "end": 0.62,
+     "p": 0.978
+    },
+    {
+     "w": "a",
+     "raw": " a",
+     "start": 0.62,
+     "end": 0.78,
+     "p": 0.993
+    },
+    {
+     "w": "threshold,",
+     "raw": " threshold,",
+     "start": 0.78,
+     "end": 1.26,
+     "p": 0.989
+    },
+    {
+     "w": "not",
+     "raw": " not",
+     "start": 1.66,
+     "end": 1.9,
+     "p": 0.996
+    },
+    {
+     "w": "a",
+     "raw": " a",
+     "start": 1.9,
+     "end": 2.04,
+     "p": 0.996
+    },
+    {
+     "w": "forecast.",
+     "raw": " forecast.",
+     "start": 2.04,
+     "end": 2.42,
+     "p": 0.994
+    },
+    {
+     "w": "Where",
+     "raw": " Where",
+     "start": 2.92,
+     "end": 3.1,
+     "p": 0.899
+    },
+    {
+     "w": "returns",
+     "raw": " returns",
+     "start": 3.1,
+     "end": 3.54,
+     "p": 0.97
+    },
+    {
+     "w": "will",
+     "raw": " will",
+     "start": 3.54,
+     "end": 3.78,
+     "p": 0.997
+    },
+    {
+     "w": "land",
+     "raw": " land",
+     "start": 3.78,
+     "end": 4.2,
+     "p": 0.978
+    },
+    {
+     "w": "is",
+     "raw": " is",
+     "start": 4.2,
+     "end": 4.78,
+     "p": 0.745
+    },
+    {
+     "w": "not",
+     "raw": " not",
+     "start": 4.78,
+     "end": 5.12,
+     "p": 0.996
+    },
+    {
+     "w": "known",
+     "raw": " known",
+     "start": 5.12,
+     "end": 5.36,
+     "p": 0.997
+    },
+    {
+     "w": "in",
+     "raw": " in",
+     "start": 5.36,
+     "end": 5.56,
+     "p": 0.997
+    },
+    {
+     "w": "advance.",
+     "raw": " advance.",
+     "start": 5.56,
+     "end": 5.9,
+     "p": 0.999
     }
    ]
   }

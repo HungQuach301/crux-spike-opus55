@@ -19,14 +19,18 @@ MODEL = 'gpt-4o-mini-tts'
 VOICE = os.environ.get('TTS_VOICE', 'cedar')
 INSTRUCTIONS = (
     'Persona: a calm, precise, warm financial analyst explaining a calculation to one listener. '
-    'Accent: General American. Pace: speak noticeably slower than normal conversation, about 140 words per minute, with a short breath after each comma and each number. '
+    'Accent: General American. Pace: slow and even inside every sentence, about 150 words per minute, never speeding up on short sentences or on numbers; keep the pauses between sentences short. '
     'Tone: neutral and factual; no excitement, no sales voice, no dramatic pauses. '
     'Read every number clearly and completely, exactly as written.'
 )
 
 
-def key(text):
-    return hashlib.sha256(json.dumps([MODEL, VOICE, INSTRUCTIONS, text]).encode()).hexdigest()[:16]
+TAKES = os.path.join(VDIR, 'takes.json')  # scene -> take number; a new take re-synthesizes the same text
+
+
+def key(text, take=0):
+    parts = [MODEL, VOICE, INSTRUCTIONS, text] + ([take] if take else [])
+    return hashlib.sha256(json.dumps(parts).encode()).hexdigest()[:16]
 
 
 def synth(text, out):
@@ -48,18 +52,19 @@ def main():
     mpath = os.path.join(VDIR, 'tts-manifest.json')
     manifest = json.load(open(mpath)) if os.path.exists(mpath) else {}
     calls = 0
+    takes = json.load(open(TAKES)) if os.path.exists(TAKES) else {}
     for s in script['scenes']:
         if not s['spoken']:
             manifest.pop(s['id'], None)
             continue
-        k = key(s['spoken'])
+        k = key(s['spoken'], takes.get(s['id'], 0))
         wav = os.path.join(VDIR, f"{s['id']}.wav")
         if manifest.get(s['id'], {}).get('key') == k and os.path.exists(wav):
             continue
         t0 = time.time()
         synth(s['spoken'], wav)
         calls += 1
-        manifest[s['id']] = {'key': k, 'model': MODEL, 'voice': VOICE, 'chars': len(s['spoken']), 'seconds': round(time.time() - t0, 2)}
+        manifest[s['id']] = {'key': k, 'model': MODEL, 'voice': VOICE, 'take': takes.get(s['id'], 0), 'chars': len(s['spoken']), 'seconds': round(time.time() - t0, 2)}
         print('tts', s['id'], manifest[s['id']]['seconds'], 's')
     manifest['_settings'] = {'model': MODEL, 'voice': VOICE, 'instructions': INSTRUCTIONS, 'endpoint': URL, 'auth': 'injected by the environment proxy; no key in code or logs'}
     json.dump(manifest, open(mpath, 'w'), indent=1)
