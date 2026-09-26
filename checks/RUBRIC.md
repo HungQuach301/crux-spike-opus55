@@ -1,0 +1,18 @@
+# checks/RUBRIC.md — chấm tay các yêu cầu [NGƯỜI] của BRIEF-D.md
+
+Người chấm xem bản đầy đủ ở cỡ thật, có tiếng, một lần liền mạch trước khi chấm, rồi xem lại từng đoạn. Mỗi câu chấm 1–5 (2 và 4 là mức giữa).
+Mỗi điểm phải kèm **mốc thời gian** làm bằng chứng. Mức đạt của bài: không câu nào dưới 3, trung bình ≥ 4. Máy không thay được các câu này; khi một câu có phần máy đo (ghi ở cột phải), điểm người không được mâu thuẫn với kết quả máy mà không giải thích.
+
+| # | Mục | Câu hỏi | 1 | 3 | 5 | Phần máy |
+|---|---|---|---|---|---|---|
+| H1 | §2.1 cold open | Trong ≤ 15 s đầu, hình có đi trước lời không, và có đặt ra một câu hỏi mở (open loop) cụ thể được trả lời rõ ở hồi 3? | Lời vào trước hoặc cùng lúc với hình; không có câu hỏi, hoặc câu hỏi không bao giờ được trả lời | Hình đi trước lời; có câu hỏi nhưng chung chung ("chuyện gì đã xảy ra?") hoặc câu trả lời ở hồi 3 ngầm, người xem phải tự nối | Hình tự kể trước khi có lời; câu hỏi cụ thể, khiến muốn xem tiếp; hồi 3 trả lời đúng câu đó, gọi lại bằng cùng hình/cùng chữ | S15 (thời lượng) |
+| H2 | §2.1 câu móc lại | Ở 0:30–0:45 có câu hứa hẹn rõ điều người xem sẽ biết/hiểu khi xem hết không? | Không có, hoặc nằm ngoài 0:30–0:45 | Có lời hứa nhưng mơ hồ ("chúng ta sẽ tìm hiểu…") | Một câu, cụ thể, đo được ("đến cuối, bạn sẽ thấy năm nào quyết định…"), và video giữ lời hứa | — |
+| H3 | §2.2 cấu trúc hồi | Mỗi hồi (1, 2, 3) có câu hỏi riêng, một bước ngoặt và một payoff trả lời câu hỏi đó? | Hồi không có câu hỏi riêng; thông tin nối tiếp không có ngoặt | Có câu hỏi và payoff nhưng bước ngoặt yếu hoặc thiếu ở một hồi | Cả ba hồi: câu hỏi nêu rõ, bước ngoặt làm đổi cách hiểu, payoff khép câu hỏi và mở hồi sau | R01 (đỉnh/thung lũng), R05 (tăng tốc hồi 2) |
+| H4 | §2.3 cái giá cụ thể | Cái giá của thứ tự lợi suất có được nói bằng năm và số dư (thực/danh nghĩa) thay vì khái niệm trừu tượng? | Chỉ nói khái niệm ("rủi ro thứ tự", "biến động") | Có số dư/năm nhưng ít, hoặc lẫn với nói trừu tượng ở chỗ quyết định | Mọi điểm quyết định đều gọi tên năm và số dư cụ thể (ví dụ "đến 1982, còn $X thực"), người xem hình dung được hậu quả | S07, S09 (số có nguồn, ghi thực/danh nghĩa) |
+| H5 | §4.2 bố cục | Mỗi khung có thứ bậc ba mức rõ (một thứ nhìn đầu tiên, vài thứ đọc sau, phần còn lại lùi), đường dẫn mắt, khoảng trống phía trước theo hướng chuyển động và khoảng âm có chủ ý? | Nhiều thứ tranh nhau; mắt không biết nhìn đâu; khung chật | Thứ bậc rõ ở phần lớn khung; vài khung chật hoặc khoảng âm ngẫu nhiên | Mọi khung đọc trong 1 giây; khoảng âm dùng có chủ ý; chuyển động luôn có chỗ để đi | V02 (vị trí mức 1), C10, V03, V11 |
+| H6 | §4.5 hoạt hình | Các nguyên lý lấy đà, theo đà, chồng lớp chuyển động, cung chuyển động, dàn cảnh có được áp dụng, và chữ động theo nhịp lời? | Chuyển động tuyến tính, mọi thứ động cùng lúc, chữ không theo lời | Có easing và vài lớp chồng; một số chuyển động vẫn máy móc hoặc lệch nhịp lời | Mọi chuyển động có lấy đà và theo đà, lớp chồng tự nhiên, quỹ đạo cong; chữ vào đúng nhịp lời; dàn cảnh dẫn mắt tới điều cần thấy | V05 (camera), C13 (số–lời) |
+| H7 | §5.2 nhạc không lộ vòng lặp | Nghe liền mạch, có nhận ra đoạn nhạc lặp lại y hệt (vòng lặp) không? Leitmotif có biến tấu theo số phận? | Nghe rõ vòng lặp ngắn; nhạc nền đơn điệu | Có lặp nhưng che được phần lớn; leitmotif có nhưng ít biến tấu | Không nhận ra vòng lặp nào; leitmotif của mỗi nhân vật nhận ra được và biến đổi theo diễn biến | A12 (accent–cắt), A08 (ducking) |
+
+## Ghi phiếu chấm
+
+Mỗi dòng: `H# | điểm | mốc thời gian bằng chứng | một câu lý do`. Điểm 1–2 phải kèm mốc cụ thể của lỗi. Ghi rõ người chấm và ngày; không chấm lại sau khi đã xem kết quả chấm của người khác.

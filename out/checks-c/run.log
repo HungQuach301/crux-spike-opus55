@@ -1,0 +1,72 @@
+F01  PASS       0.1s  
+F02  PASS       0.2s  
+F03  PASS       0.0s  
+F04  FAIL       0.0s  video Mbps=0.640912
+F05  PASS       9.7s  
+F06  FAIL       0.2s  audio kbps=194.782361
+F07  FAIL       0.0s  duration s=364.2
+F08  PASS      10.7s  
+F09  PASS       0.0s  
+F10  PASS       0.0s  
+A01  PASS       3.0s  
+A02  PASS       0.0s  
+A03  FAIL       0.0s  LRA LU=4.1
+A04  PASS       2.0s  
+A05  FAIL       0.2s  windows r<0 (%)=6.162311
+A06  PASS       5.6s  
+A07  FAIL       1.6s  voice − music dB=22.747334
+A08  FAIL       1.5s  median 1-4 kHz drop dB=0.546432; median band-limited excess dB=0.171261
+A09  FAIL       3.7s  silences 0.8-1.5 s=1
+A10  MISSING    0.1s    artifact missing: out/audio/stems/whoosh.wav|flac
+A11  MISSING    0.0s    artifact missing: out/sfx-events.json
+A12  FAIL      12.1s  accents=0; accents on a cut (%)=None; accents confirmed by onset (%)=None
+A13  MISSING    0.0s    artifact missing: out/voice/takes.json
+A14  FAIL       0.0s  key words missing=2
+A15  FAIL       0.0s  wpm act hook=141.906874; wpm act setup=174.985979; wpm act ch5=146.562905; wpm act close=166.515014; sentences > 175 wpm=20
+S01  MISSING    0.0s    artifact missing: out/model.json
+S02  FAIL       0.0s  no-tax in method card=False; no-fee in method card=False; no-tax on screen elsewhere=False; no-fee on screen elsewhere=False
+S03  MISSING    0.0s    artifact missing: data/sources.json
+S04  MISSING    0.0s    artifact missing: data/sources.json
+S05  MISSING    0.0s    artifact missing: data/normalized/annual.csv
+S06  FAIL       0.0s  start years shown in act 3=0
+S07  PASS       0.0s  
+S08  PASS       0.0s  
+S09  FAIL       0.0s  money claims without basis=13; frames missing basis on screen=925; narration $ without basis=12
+S10  FAIL       0.0s  "history, not a forecast" stated=False
+S11  FAIL       0.0s  core claims=0
+S12  FAIL       0.0s  new numbers=64; max new numbers in a scene=23; axis claims shown outside axes=2
+S13  PASS       0.0s  
+S14  MISSING    0.0s    artifact missing: out/adbreaks.json
+S15  FAIL       0.0s  act order=['hook', 'ident', 'setup', 'ch1', 'ch2', 'ch3', 'ch4', 'ch5', 'close']; cold open s=None; outro s=None; total s=364.2
+R01  MISSING    0.0s    artifact missing: out/tension-map.json
+R02  MISSING    0.0s    artifact missing: out/cues.json
+R03  FAIL       0.4s  decisive claims=0; shortest pause s=None
+R04  PASS       0.0s  
+R05  FAIL       0.0s  act-2 scenes before climax=0
+R06  FAIL      10.0s  cuts visible in picture (%)=1.886792
+V01  MISSING    0.0s    artifact missing: preprod/shotlist.json
+V02  FAIL       0.0s  level-1 placed (%)=9.38326
+V03  PASS       0.0s  
+V04  FAIL       0.0s  both characters seen=False; side samples=0
+V05  FAIL      10.1s  anticipation in moves ≥1 s (%)=0.0; overshoot in moves ≥1 s (%)=0.0; peak |a| fw/s²=118.07; camera~picture Spearman=0.200626
+V06  FAIL       0.0s  racks tied to turns=0; frames with DOF (%)=0.0
+V07  FAIL      10.2s  subframes=0; subframe setting justified=False; median blur ratio=0.9845
+V08  FAIL       0.0s  worst text contrast=3.73; samples below 4.5:1=2
+V09  FAIL       0.0s  both characters seen on screen=False
+V10  FAIL      11.1s  verified match cuts=0; verified J/L cuts=0
+V11  FAIL       0.0s  text collisions=196
+C01  PASS       0.0s  
+C02  PASS       0.0s  
+C03  PASS       0.0s  
+C04  PASS       0.0s  
+C05  PASS       0.0s  
+C06  PASS       0.0s  
+C07  PASS       0.0s  
+C10  PASS       0.0s  
+C11  PASS       0.0s  
+C12  PASS       0.0s  
+C13  FAIL       0.0s  worst |offset| ms=420; pairs > 250 ms=2; spoken numbers not in ASR=2
+C14  FAIL       0.0s  text samples not legible at 25%=67
+C15  PASS       0.0s  
+P01  MISSING    0.0s    artifact missing: out/package/thumb-1.png
+{"PASS": 27, "FAIL": 32, "MISSING": 12, "ERROR": 0}

@@ -1,0 +1,96 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>
+  html, body { margin: 0; width: 1920px; height: 1080px; overflow: hidden; background: #0E1116; font-family: sans-serif; }
+  #stage { position: absolute; inset: 0; }
+  svg { position: absolute; inset: 0; }
+  .t { position: absolute; white-space: nowrap; line-height: 1.2; }
+  .badge { position: absolute; padding: 4px 10px; border-radius: 6px; white-space: nowrap; line-height: 1.2; }
+  html.k-layer, html.k-layer body { background: transparent !important; }
+  html.k-text svg, html.k-glyph svg { visibility: hidden; }
+  html.k-glyph .badge { background: transparent !important; }
+  html.k-gfx .t, html.k-gfx .badge { visibility: hidden; }
+  html.k-gfx [data-role="bg"], html.k-gfx [data-role="card"] { visibility: hidden; }
+  html.k-only * { visibility: hidden; }
+  html.k-only [data-kl="only"], html.k-only [data-kl="only"] * { visibility: visible; }
+  html.k-notext .t, html.k-notext .badge { visibility: hidden; }
+</style></head>
+<body><div id="stage"></div>
+<script>
+/* Test-D contract implemented natively for self-tests. Spec (window.SPEC or ?spec=<json>): { els: [...] } where each element is
+   text  {type:'text', tid, text | html, x, y, size, color, level, role, badge, bg, claims:[{id,text,color}], anchor, series, char, year, show:[t0,t1], anim}
+   line  {type:'line', x1,y1,x2,y2, stroke, width, role, chart, panel, show, anim}
+   rect  {type:'rect', x,y,w,h, fill, stroke, role, chart, panel, value, full, orient, show}
+   circle{type:'circle', cx,cy,r, fill, stroke, role, char, shape, panel, show, anim}
+   path  {type:'path', d, stroke, fill, role, chart, label, panel, show}
+   anim  {prop, from, to, t0, t1}: linear keyframes on one numeric property. */
+const SPEC = window.SPEC || JSON.parse(new URLSearchParams(location.search).get('spec') || '{"els":[]}');
+const stage = document.getElementById('stage');
+let frozen = null;
+const hexOf = (c) => { if (!c || c === 'none') return null; if (c.startsWith('#')) return c.toLowerCase(); const m = c.match(/rgba?\((\d+),\s*(\d+),\s*(\d+)(?:,\s*([\d.]+))?/); if (!m || (m[4] !== undefined && +m[4] === 0)) return null; return '#' + [m[1], m[2], m[3]].map((v) => (+v).toString(16).padStart(2, '0')).join(''); };
+function val(e, k, t) { const a = e.anim; if (a && a.prop === k) { const u = Math.max(0, Math.min(1, (t - a.t0) / (a.t1 - a.t0))); return a.from + (a.to - a.from) * u; } return e[k]; }
+function render(t) {
+  stage.innerHTML = '';
+  const NS = 'http://www.w3.org/2000/svg';
+  const svg = document.createElementNS(NS, 'svg'); svg.setAttribute('width', 1920); svg.setAttribute('height', 1080); stage.appendChild(svg);
+  SPEC.els.forEach((e, i) => {
+    const on = !e.show || (t >= e.show[0] && t < e.show[1]);
+    if (e.type === 'text') {
+      const d = document.createElement('div');
+      d.className = e.badge ? 'badge' : 't';
+      d.dataset.kid = 'E' + i; if (e.tid) d.dataset.tid = e.tid;
+      d.style.left = val(e, 'x', t) + 'px'; d.style.top = val(e, 'y', t) + 'px'; if (e.center) d.style.transform = 'translate(-50%,-50%)'; d.style.fontSize = (e.size || 32) + 'px'; d.style.color = e.color || '#F2F4F7';
+      d.style.opacity = on ? (e.opacity ?? 1) : 0; if (e.bg) d.style.background = e.bg; if (e.weight) d.style.fontWeight = e.weight;
+      if (e.claims) { let h = e.text; for (const c of e.claims) h = h.replace(c.text, `<span class="n" data-claim="${c.id}"${c.color ? ` style="color:${c.color}"` : ''}>${c.text}</span>`); d.innerHTML = h; } else d.textContent = e.text;
+      stage.appendChild(d);
+    } else {
+      const el = document.createElementNS(NS, e.type);
+      el.dataset.kid = 'E' + i;
+      for (const [k, v] of Object.entries(e)) if (['x1', 'y1', 'x2', 'y2', 'x', 'y', 'width', 'height', 'cx', 'cy', 'r', 'd', 'fill', 'stroke'].includes(k)) el.setAttribute(k === 'width' && e.type === 'line' ? 'stroke-width' : k, val(e, k, t));
+      if (e.type === 'rect') { el.setAttribute('width', e.w); el.setAttribute('height', e.h); }
+      if (e.type === 'line') el.setAttribute('stroke-width', e.width || 3);
+      if (e.type === 'path' && !e.fill) el.setAttribute('fill', 'none');
+      if (e.type === 'path') el.setAttribute('stroke-width', e.width || 3);
+      if (e.role) el.dataset.role = e.role;
+      el.setAttribute('opacity', on ? 1 : 0);
+      svg.appendChild(el);
+    }
+  });
+}
+function objects() {
+  const out = [];
+  SPEC.els.forEach((e, i) => {
+    const el = document.querySelector(`[data-kid="E${i}"]`); if (!el) return;
+    const r = el.getBoundingClientRect(), box = [r.left, r.top, r.right, r.bottom];
+    const op = parseFloat(el.getAttribute('opacity') ?? el.style.opacity ?? 1);
+    if (e.type === 'text') {
+      const cs = getComputedStyle(el);
+      const runs = [{ color: hexOf(cs.color), size: parseFloat(cs.fontSize) }, ...[...el.querySelectorAll('.n')].map((s) => ({ color: hexOf(getComputedStyle(s).color), size: parseFloat(cs.fontSize) }))];
+      out.push({ id: 'E' + i, z: i, kind: 'text', tid: e.tid || 'E' + i, role: e.badge ? 'badge' : e.role || 'label', text: el.textContent, box, opacity: isNaN(op) ? 1 : op, level: e.level || null, emph: !!e.emph,
+        series: e.series || null, anchor: e.anchor || null, chart: e.anchor || null, year: e.year ?? null, char: e.char || null, runs, color: runs[0].color, fontPx: parseFloat(cs.fontSize), background: hexOf(cs.backgroundColor),
+        claims: [...el.querySelectorAll('.n')].map((s) => { const q = s.getBoundingClientRect(); return { id: s.dataset.claim, text: s.textContent, box: [q.left, q.top, q.right, q.bottom], opacity: isNaN(op) ? 1 : op, color: hexOf(getComputedStyle(s).color), series: null, roll: false }; }),
+        key: 'text|' + (e.tid || i), sig: el.outerHTML });
+    } else {
+      const d = e.d || '';
+      out.push({ id: 'E' + i, z: i, kind: 'shape', tag: e.type, role: e.role || (e.stroke ? 'line' : 'mark'), panel: e.panel || null, chart: e.chart || null, label: e.label || null, series: e.series || null,
+        value: e.value ?? null, full: !!e.full, orient: e.orient || null, char: e.char || null, shape: e.shape || null, year: e.year ?? null, stroke: e.stroke ? e.stroke.toLowerCase() : null,
+        fill: e.type === 'line' ? null : e.fill && e.fill !== 'none' ? e.fill.toLowerCase() : null, opacity: op, box, curve: e.type === 'path' && ((/[CSQTA]/i.test(d)) || (d.match(/[MLHVCSQTAZ]/gi) || []).length >= 3),
+        vertices: (d.match(/[MLHVCSQTAZ]/gi) || []).length, key: e.type + '|' + i, sig: el.outerHTML });
+    }
+  });
+  return out;
+}
+let tagged = [];
+function layer(name, ids) {
+  const h = document.documentElement;
+  h.className = '';
+  for (const el of tagged) el.removeAttribute('data-kl'); tagged = [];
+  if (name === 'all') return;
+  if (name === 'notext') { h.className = 'k-notext'; return; }
+  h.className = 'k-layer k-' + (name === 'graphics' ? 'gfx' : name);
+  if (name === 'only') for (const id of ids) { const el = document.querySelector(`[data-kid="${id}"]`); if (el) { el.setAttribute('data-kl', 'only'); tagged.push(el); } }
+}
+let now = 0;
+window.CHECKS = { seek: (t) => { now = t; render(t); }, freeze: (t) => { frozen = t; }, objects, layer };
+render(0);
+</script></body></html>

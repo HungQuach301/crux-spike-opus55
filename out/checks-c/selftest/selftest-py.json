@@ -1,0 +1,2085 @@
+[
+ {
+  "rule": "F01",
+  "fixture": "must fail",
+  "want": "FAIL",
+  "got": "FAIL",
+  "ok": true,
+  "metrics": [
+   {
+    "name": "profile",
+    "value": "Main",
+    "op": "==",
+    "threshold": "High",
+    "unit": "",
+    "pass": false,
+    "near": false
+   }
+  ]
+ },
+ {
+  "rule": "F01",
+  "fixture": "must pass",
+  "want": "PASS",
+  "got": "PASS",
+  "ok": true,
+  "metrics": []
+ },
+ {
+  "rule": "F02",
+  "fixture": "must fail",
+  "want": "FAIL",
+  "got": "FAIL",
+  "ok": true,
+  "metrics": [
+   {
+    "name": "r_frame_rate",
+    "value": "25/1",
+    "op": "==",
+    "threshold": "30/1",
+    "unit": "",
+    "pass": false,
+    "near": false
+   },
+   {
+    "name": "avg_frame_rate",
+    "value": "25/1",
+    "op": "==",
+    "threshold": "30/1",
+    "unit": "",
+    "pass": false,
+    "near": false
+   },
+   {
+    "name": "PTS steps != 1/30 s",
+    "value": 24,
+    "op": "<=",
+    "threshold": 0,
+    "unit": "",
+    "pass": false,
+    "near": false
+   }
+  ]
+ },
+ {
+  "rule": "F02",
+  "fixture": "must pass",
+  "want": "PASS",
+  "got": "PASS",
+  "ok": true,
+  "metrics": []
+ },
+ {
+  "rule": "F03",
+  "fixture": "must fail",
+  "want": "FAIL",
+  "got": "FAIL",
+  "ok": true,
+  "metrics": [
+   {
+    "name": "dropped frames",
+    "value": 1,
+    "op": "<=",
+    "threshold": 0,
+    "unit": "",
+    "pass": false,
+    "near": false
+   }
+  ]
+ },
+ {
+  "rule": "F03",
+  "fixture": "must pass",
+  "want": "PASS",
+  "got": "PASS",
+  "ok": true,
+  "metrics": []
+ },
+ {
+  "rule": "F04",
+  "fixture": "must fail",
+  "want": "FAIL",
+  "got": "FAIL",
+  "ok": true,
+  "metrics": [
+   {
+    "name": "video Mbps",
+    "value": 2.311272,
+    "op": ">=",
+    "threshold": 16.0,
+    "unit": "Mbps",
+    "pass": false,
+    "near": false
+   }
+  ]
+ },
+ {
+  "rule": "F04",
+  "fixture": "must pass",
+  "want": "PASS",
+  "got": "PASS",
+  "ok": true,
+  "metrics": []
+ },
+ {
+  "rule": "F05",
+  "fixture": "must fail",
+  "want": "FAIL",
+  "got": "FAIL",
+  "ok": true,
+  "metrics": [
+   {
+    "name": "color_primaries",
+    "value": null,
+    "op": "==",
+    "threshold": "bt709",
+    "unit": "",
+    "pass": false,
+    "near": false
+   },
+   {
+    "name": "color_transfer",
+    "value": null,
+    "op": "==",
+    "threshold": "bt709",
+    "unit": "",
+    "pass": false,
+    "near": false
+   },
+   {
+    "name": "color_space",
+    "value": null,
+    "op": "==",
+    "threshold": "bt709",
+    "unit": "",
+    "pass": false,
+    "near": false
+   },
+   {
+    "name": "color_range",
+    "value": null,
+    "op": "==",
+    "threshold": "tv",
+    "unit": "",
+    "pass": false,
+    "near": false
+   }
+  ]
+ },
+ {
+  "rule": "F05",
+  "fixture": "must pass",
+  "want": "PASS",
+  "got": "PASS",
+  "ok": true,
+  "metrics": []
+ },
+ {
+  "rule": "F06",
+  "fixture": "must fail",
+  "want": "FAIL",
+  "got": "FAIL",
+  "ok": true,
+  "metrics": [
+   {
+    "name": "sample_rate",
+    "value": 44100,
+    "op": "==",
+    "threshold": 48000,
+    "unit": "",
+    "pass": false,
+    "near": false
+   }
+  ]
+ },
+ {
+  "rule": "F06",
+  "fixture": "must pass",
+  "want": "PASS",
+  "got": "PASS",
+  "ok": true,
+  "metrics": []
+ },
+ {
+  "rule": "F07",
+  "fixture": "must fail",
+  "want": "FAIL",
+  "got": "FAIL",
+  "ok": true,
+  "metrics": [
+   {
+    "name": "duration s",
+    "value": 5.0,
+    "op": ">=",
+    "threshold": 600.0,
+    "unit": "s",
+    "pass": false,
+    "near": false
+   }
+  ]
+ },
+ {
+  "rule": "F07",
+  "fixture": "must pass",
+  "want": "PASS",
+  "got": "PASS",
+  "ok": true,
+  "metrics": []
+ },
+ {
+  "rule": "F08",
+  "fixture": "must fail",
+  "want": "FAIL",
+  "got": "FAIL",
+  "ok": true,
+  "metrics": [
+   {
+    "name": "worst banding (%)",
+    "value": 38.888889,
+    "op": "<=",
+    "threshold": 5.0,
+    "unit": "%",
+    "pass": false,
+    "near": false
+   }
+  ]
+ },
+ {
+  "rule": "F08",
+  "fixture": "must pass",
+  "want": "PASS",
+  "got": "PASS",
+  "ok": true,
+  "metrics": []
+ },
+ {
+  "rule": "F09",
+  "fixture": "must fail",
+  "want": "FAIL",
+  "got": "FAIL",
+  "ok": true,
+  "metrics": [
+   {
+    "name": "text identical to script",
+    "value": false,
+    "op": "==",
+    "threshold": true,
+    "unit": "",
+    "pass": false,
+    "near": false
+   },
+   {
+    "name": "lines > 42 chars",
+    "value": 1,
+    "op": "<=",
+    "threshold": 0,
+    "unit": "",
+    "pass": false,
+    "near": false
+   },
+   {
+    "name": "cues outside 1-7 s",
+    "value": 1,
+    "op": "<=",
+    "threshold": 0,
+    "unit": "",
+    "pass": false,
+    "near": false
+   }
+  ]
+ },
+ {
+  "rule": "F09",
+  "fixture": "must pass",
+  "want": "PASS",
+  "got": "PASS",
+  "ok": true,
+  "metrics": []
+ },
+ {
+  "rule": "F10",
+  "fixture": "must fail",
+  "want": "FAIL",
+  "got": "FAIL",
+  "ok": true,
+  "metrics": [
+   {
+    "name": "first chapter start s",
+    "value": 5,
+    "op": "==",
+    "threshold": 0,
+    "unit": "",
+    "pass": false,
+    "near": false
+   },
+   {
+    "name": "shortest chapter s",
+    "value": 7,
+    "op": ">=",
+    "threshold": 10.0,
+    "unit": "s",
+    "pass": false,
+    "near": false
+   }
+  ]
+ },
+ {
+  "rule": "F10",
+  "fixture": "must pass",
+  "want": "PASS",
+  "got": "PASS",
+  "ok": true,
+  "metrics": []
+ },
+ {
+  "rule": "A01",
+  "fixture": "must fail",
+  "want": "FAIL",
+  "got": "FAIL",
+  "ok": true,
+  "metrics": [
+   {
+    "name": "integrated LUFS",
+    "value": -20.0,
+    "op": "in",
+    "threshold": [
+     -15.0,
+     -13.0
+    ],
+    "unit": "LUFS",
+    "pass": false,
+    "near": false
+   }
+  ]
+ },
+ {
+  "rule": "A01",
+  "fixture": "must pass",
+  "want": "PASS",
+  "got": "PASS",
+  "ok": true,
+  "metrics": []
+ },
+ {
+  "rule": "A02",
+  "fixture": "must fail",
+  "want": "FAIL",
+  "got": "FAIL",
+  "ok": true,
+  "metrics": [
+   {
+    "name": "true peak dBTP",
+    "value": -0.0,
+    "op": "<=",
+    "threshold": -1.0,
+    "unit": "dBTP",
+    "pass": false,
+    "near": false
+   }
+  ]
+ },
+ {
+  "rule": "A02",
+  "fixture": "must pass",
+  "want": "PASS",
+  "got": "PASS",
+  "ok": true,
+  "metrics": []
+ },
+ {
+  "rule": "A03",
+  "fixture": "must fail",
+  "want": "FAIL",
+  "got": "FAIL",
+  "ok": true,
+  "metrics": [
+   {
+    "name": "LRA LU",
+    "value": 0.1,
+    "op": "in",
+    "threshold": [
+     6.0,
+     10.0
+    ],
+    "unit": "LU",
+    "pass": false,
+    "near": false
+   }
+  ]
+ },
+ {
+  "rule": "A03",
+  "fixture": "must pass",
+  "want": "PASS",
+  "got": "PASS",
+  "ok": true,
+  "metrics": []
+ },
+ {
+  "rule": "A04",
+  "fixture": "must fail",
+  "want": "FAIL",
+  "got": "FAIL",
+  "ok": true,
+  "metrics": [
+   {
+    "name": "samples at full scale",
+    "value": 435,
+    "op": "<=",
+    "threshold": 0,
+    "unit": "",
+    "pass": false,
+    "near": false
+   }
+  ]
+ },
+ {
+  "rule": "A04",
+  "fixture": "must pass",
+  "want": "PASS",
+  "got": "PASS",
+  "ok": true,
+  "metrics": []
+ },
+ {
+  "rule": "A05",
+  "fixture": "must fail",
+  "want": "FAIL",
+  "got": "FAIL",
+  "ok": true,
+  "metrics": [
+   {
+    "name": "mean phase correlation",
+    "value": -0.602216,
+    "op": ">",
+    "threshold": 0.3,
+    "unit": "",
+    "pass": false,
+    "near": false
+   },
+   {
+    "name": "windows r<0 (%)",
+    "value": 100.0,
+    "op": "<=",
+    "threshold": 5.0,
+    "unit": "%",
+    "pass": false,
+    "near": false
+   }
+  ]
+ },
+ {
+  "rule": "A05",
+  "fixture": "must pass",
+  "want": "PASS",
+  "got": "PASS",
+  "ok": true,
+  "metrics": []
+ },
+ {
+  "rule": "A06",
+  "fixture": "must fail",
+  "want": "FAIL",
+  "got": "FAIL",
+  "ok": true,
+  "metrics": [
+   {
+    "name": "mono \u2212 stereo LU",
+    "value": -16.1,
+    "op": ">=",
+    "threshold": -3.0,
+    "unit": "LU",
+    "pass": false,
+    "near": false
+   },
+   {
+    "name": "voice-band loss dB",
+    "value": 16.146531,
+    "op": "<=",
+    "threshold": 3.0,
+    "unit": "dB",
+    "pass": false,
+    "near": false
+   }
+  ]
+ },
+ {
+  "rule": "A06",
+  "fixture": "must pass",
+  "want": "PASS",
+  "got": "PASS",
+  "ok": true,
+  "metrics": []
+ },
+ {
+  "rule": "A07",
+  "fixture": "must fail",
+  "want": "FAIL",
+  "got": "FAIL",
+  "ok": true,
+  "metrics": [
+   {
+    "name": "voice \u2212 music dB",
+    "value": 6.002665,
+    "op": "in",
+    "threshold": [
+     18.0,
+     22.0
+    ],
+    "unit": "dB",
+    "pass": false,
+    "near": false
+   }
+  ]
+ },
+ {
+  "rule": "A07",
+  "fixture": "must pass",
+  "want": "PASS",
+  "got": "PASS",
+  "ok": true,
+  "metrics": []
+ },
+ {
+  "rule": "A08",
+  "fixture": "must fail",
+  "want": "FAIL",
+  "got": "FAIL",
+  "ok": true,
+  "metrics": [
+   {
+    "name": "median band-limited excess dB",
+    "value": -0.042171,
+    "op": ">=",
+    "threshold": 3.0,
+    "unit": "dB",
+    "pass": false,
+    "near": false
+   }
+  ]
+ },
+ {
+  "rule": "A08",
+  "fixture": "must pass",
+  "want": "PASS",
+  "got": "PASS",
+  "ok": true,
+  "metrics": []
+ },
+ {
+  "rule": "A09",
+  "fixture": "must fail",
+  "want": "FAIL",
+  "got": "FAIL",
+  "ok": true,
+  "metrics": [
+   {
+    "name": "silences 0.8-1.5 s",
+    "value": 0,
+    "op": ">=",
+    "threshold": 3,
+    "unit": "",
+    "pass": false,
+    "near": false
+   }
+  ]
+ },
+ {
+  "rule": "A09",
+  "fixture": "must pass",
+  "want": "PASS",
+  "got": "PASS",
+  "ok": true,
+  "metrics": []
+ },
+ {
+  "rule": "A10",
+  "fixture": "must fail",
+  "want": "FAIL",
+  "got": "FAIL",
+  "ok": true,
+  "metrics": [
+   {
+    "name": "Spearman speed~whoosh",
+    "value": -1.0,
+    "op": ">=",
+    "threshold": 0.6,
+    "unit": "",
+    "pass": false,
+    "near": false
+   }
+  ]
+ },
+ {
+  "rule": "A10",
+  "fixture": "must pass",
+  "want": "PASS",
+  "got": "PASS",
+  "ok": true,
+  "metrics": []
+ },
+ {
+  "rule": "A11",
+  "fixture": "must fail",
+  "want": "FAIL",
+  "got": "FAIL",
+  "ok": true,
+  "metrics": [
+   {
+    "name": "Pearson pan~x",
+    "value": -1.0,
+    "op": ">=",
+    "threshold": 0.7,
+    "unit": "",
+    "pass": false,
+    "near": false
+   }
+  ]
+ },
+ {
+  "rule": "A11",
+  "fixture": "must pass",
+  "want": "PASS",
+  "got": "PASS",
+  "ok": true,
+  "metrics": []
+ },
+ {
+  "rule": "A12",
+  "fixture": "must fail",
+  "want": "FAIL",
+  "got": "FAIL",
+  "ok": true,
+  "metrics": [
+   {
+    "name": "accents on a cut (%)",
+    "value": 0.0,
+    "op": ">=",
+    "threshold": 100.0,
+    "unit": "%",
+    "pass": false,
+    "near": false
+   }
+  ]
+ },
+ {
+  "rule": "A12",
+  "fixture": "must pass",
+  "want": "PASS",
+  "got": "PASS",
+  "ok": true,
+  "metrics": []
+ },
+ {
+  "rule": "A13",
+  "fixture": "must fail",
+  "want": "FAIL",
+  "got": "FAIL",
+  "ok": true,
+  "metrics": [
+   {
+    "name": "max |stretch-1|",
+    "value": 0.19802,
+    "op": "<=",
+    "threshold": 0.1,
+    "unit": "",
+    "pass": false,
+    "near": false
+   }
+  ]
+ },
+ {
+  "rule": "A13",
+  "fixture": "must pass",
+  "want": "PASS",
+  "got": "PASS",
+  "ok": true,
+  "metrics": []
+ },
+ {
+  "rule": "A14",
+  "fixture": "must fail",
+  "want": "FAIL",
+  "got": "FAIL",
+  "ok": true,
+  "metrics": [
+   {
+    "name": "key words missing",
+    "value": 1,
+    "op": "<=",
+    "threshold": 0,
+    "unit": "",
+    "pass": false,
+    "near": false
+   }
+  ]
+ },
+ {
+  "rule": "A14",
+  "fixture": "must pass",
+  "want": "PASS",
+  "got": "PASS",
+  "ok": true,
+  "metrics": []
+ },
+ {
+  "rule": "A15",
+  "fixture": "must fail",
+  "want": "FAIL",
+  "got": "FAIL",
+  "ok": true,
+  "metrics": [
+   {
+    "name": "wpm act act1",
+    "value": 191.049001,
+    "op": "in",
+    "threshold": [
+     150.0,
+     160.0
+    ],
+    "unit": "wpm",
+    "pass": false,
+    "near": false
+   },
+   {
+    "name": "sentences > 175 wpm",
+    "value": 6,
+    "op": "<=",
+    "threshold": 0,
+    "unit": "",
+    "pass": false,
+    "near": false
+   }
+  ]
+ },
+ {
+  "rule": "A15",
+  "fixture": "must pass",
+  "want": "PASS",
+  "got": "PASS",
+  "ok": true,
+  "metrics": []
+ },
+ {
+  "rule": "S01",
+  "fixture": "must fail",
+  "want": "FAIL",
+  "got": "FAIL",
+  "ok": true,
+  "metrics": [
+   {
+    "name": "mismatches",
+    "value": 1,
+    "op": "<=",
+    "threshold": 0,
+    "unit": "",
+    "pass": false,
+    "near": false
+   }
+  ]
+ },
+ {
+  "rule": "S01",
+  "fixture": "must pass",
+  "want": "PASS",
+  "got": "PASS",
+  "ok": true,
+  "metrics": []
+ },
+ {
+  "rule": "S02",
+  "fixture": "must fail",
+  "want": "FAIL",
+  "got": "FAIL",
+  "ok": true,
+  "metrics": [
+   {
+    "name": "no-tax on screen elsewhere",
+    "value": false,
+    "op": "==",
+    "threshold": true,
+    "unit": "",
+    "pass": false,
+    "near": false
+   },
+   {
+    "name": "no-fee on screen elsewhere",
+    "value": false,
+    "op": "==",
+    "threshold": true,
+    "unit": "",
+    "pass": false,
+    "near": false
+   }
+  ]
+ },
+ {
+  "rule": "S02",
+  "fixture": "must pass",
+  "want": "PASS",
+  "got": "PASS",
+  "ok": true,
+  "metrics": []
+ },
+ {
+  "rule": "S03",
+  "fixture": "must fail",
+  "want": "FAIL",
+  "got": "FAIL",
+  "ok": true,
+  "metrics": [
+   {
+    "name": "file problems",
+    "value": 1,
+    "op": "<=",
+    "threshold": 0,
+    "unit": "",
+    "pass": false,
+    "near": false
+   }
+  ]
+ },
+ {
+  "rule": "S03",
+  "fixture": "must pass",
+  "want": "PASS",
+  "got": "PASS",
+  "ok": true,
+  "metrics": []
+ },
+ {
+  "rule": "S04",
+  "fixture": "must fail",
+  "want": "FAIL",
+  "got": "FAIL",
+  "ok": true,
+  "metrics": [
+   {
+    "name": "out-of-tolerance years not reported",
+    "value": 1,
+    "op": "<=",
+    "threshold": 0,
+    "unit": "",
+    "pass": false,
+    "near": false
+   }
+  ]
+ },
+ {
+  "rule": "S04",
+  "fixture": "must pass",
+  "want": "PASS",
+  "got": "PASS",
+  "ok": true,
+  "metrics": []
+ },
+ {
+  "rule": "S05",
+  "fixture": "must fail",
+  "want": "FAIL",
+  "got": "FAIL",
+  "ok": true,
+  "metrics": [
+   {
+    "name": "mirror claims not illustrative",
+    "value": 1,
+    "op": "<=",
+    "threshold": 0,
+    "unit": "",
+    "pass": false,
+    "near": false
+   }
+  ]
+ },
+ {
+  "rule": "S05",
+  "fixture": "must pass",
+  "want": "PASS",
+  "got": "PASS",
+  "ok": true,
+  "metrics": []
+ },
+ {
+  "rule": "S06",
+  "fixture": "must fail",
+  "want": "FAIL",
+  "got": "FAIL",
+  "ok": true,
+  "metrics": [
+   {
+    "name": "start years shown in act 3",
+    "value": 68,
+    "op": ">=",
+    "threshold": 69,
+    "unit": "",
+    "pass": false,
+    "near": true
+   }
+  ]
+ },
+ {
+  "rule": "S06",
+  "fixture": "must pass",
+  "want": "PASS",
+  "got": "PASS",
+  "ok": true,
+  "metrics": []
+ },
+ {
+  "rule": "S07",
+  "fixture": "must fail",
+  "want": "FAIL",
+  "got": "FAIL",
+  "ok": true,
+  "metrics": [
+   {
+    "name": "unregistered numbers in narration",
+    "value": 1,
+    "op": "<=",
+    "threshold": 0,
+    "unit": "",
+    "pass": false,
+    "near": false
+   }
+  ]
+ },
+ {
+  "rule": "S07",
+  "fixture": "must pass",
+  "want": "PASS",
+  "got": "PASS",
+  "ok": true,
+  "metrics": []
+ },
+ {
+  "rule": "S08",
+  "fixture": "must fail",
+  "want": "FAIL",
+  "got": "FAIL",
+  "ok": true,
+  "metrics": [
+   {
+    "name": "frames without badge",
+    "value": 3,
+    "op": "<=",
+    "threshold": 0,
+    "unit": "",
+    "pass": false,
+    "near": false
+   }
+  ]
+ },
+ {
+  "rule": "S08",
+  "fixture": "must pass",
+  "want": "PASS",
+  "got": "PASS",
+  "ok": true,
+  "metrics": []
+ },
+ {
+  "rule": "S09",
+  "fixture": "must fail",
+  "want": "FAIL",
+  "got": "FAIL",
+  "ok": true,
+  "metrics": [
+   {
+    "name": "narration $ without basis",
+    "value": 1,
+    "op": "<=",
+    "threshold": 0,
+    "unit": "",
+    "pass": false,
+    "near": false
+   }
+  ]
+ },
+ {
+  "rule": "S09",
+  "fixture": "must pass",
+  "want": "PASS",
+  "got": "PASS",
+  "ok": true,
+  "metrics": []
+ },
+ {
+  "rule": "S10",
+  "fixture": "must fail",
+  "want": "FAIL",
+  "got": "FAIL",
+  "ok": true,
+  "metrics": [
+   {
+    "name": "advice sentences",
+    "value": 1,
+    "op": "<=",
+    "threshold": 0,
+    "unit": "",
+    "pass": false,
+    "near": false
+   }
+  ]
+ },
+ {
+  "rule": "S10",
+  "fixture": "must pass",
+  "want": "PASS",
+  "got": "PASS",
+  "ok": true,
+  "metrics": []
+ },
+ {
+  "rule": "S11",
+  "fixture": "must fail",
+  "want": "FAIL",
+  "got": "FAIL",
+  "ok": true,
+  "metrics": [
+   {
+    "name": "g scenes",
+    "value": 2,
+    "op": ">=",
+    "threshold": 3,
+    "unit": "",
+    "pass": false,
+    "near": false
+   },
+   {
+    "name": "g callbacks unverified",
+    "value": 1,
+    "op": "<=",
+    "threshold": 0,
+    "unit": "",
+    "pass": false,
+    "near": false
+   }
+  ]
+ },
+ {
+  "rule": "S11",
+  "fixture": "must pass",
+  "want": "PASS",
+  "got": "PASS",
+  "ok": true,
+  "metrics": []
+ },
+ {
+  "rule": "S12",
+  "fixture": "must fail",
+  "want": "FAIL",
+  "got": "FAIL",
+  "ok": true,
+  "metrics": [
+   {
+    "name": "max new numbers in a scene",
+    "value": 3,
+    "op": "<=",
+    "threshold": 2,
+    "unit": "",
+    "pass": false,
+    "near": false
+   }
+  ]
+ },
+ {
+  "rule": "S12",
+  "fixture": "must pass",
+  "want": "PASS",
+  "got": "PASS",
+  "ok": true,
+  "metrics": []
+ },
+ {
+  "rule": "S13",
+  "fixture": "must fail",
+  "want": "FAIL",
+  "got": "FAIL",
+  "ok": true,
+  "metrics": [
+   {
+    "name": "sentence length CV",
+    "value": 0.0,
+    "op": ">=",
+    "threshold": 0.35,
+    "unit": "",
+    "pass": false,
+    "near": false
+   }
+  ]
+ },
+ {
+  "rule": "S13",
+  "fixture": "must pass",
+  "want": "PASS",
+  "got": "PASS",
+  "ok": true,
+  "metrics": []
+ },
+ {
+  "rule": "S14",
+  "fixture": "must fail",
+  "want": "FAIL",
+  "got": "FAIL",
+  "ok": true,
+  "metrics": [
+   {
+    "name": "breaks without \u22651 s silence",
+    "value": 1,
+    "op": "<=",
+    "threshold": 0,
+    "unit": "",
+    "pass": false,
+    "near": false
+   }
+  ]
+ },
+ {
+  "rule": "S14",
+  "fixture": "must pass",
+  "want": "PASS",
+  "got": "PASS",
+  "ok": true,
+  "metrics": []
+ },
+ {
+  "rule": "S15",
+  "fixture": "must fail",
+  "want": "FAIL",
+  "got": "FAIL",
+  "ok": true,
+  "metrics": [
+   {
+    "name": "cold open s",
+    "value": 20.0,
+    "op": "<=",
+    "threshold": 15.0,
+    "unit": "s",
+    "pass": false,
+    "near": false
+   }
+  ]
+ },
+ {
+  "rule": "S15",
+  "fixture": "must pass",
+  "want": "PASS",
+  "got": "PASS",
+  "ok": true,
+  "metrics": []
+ },
+ {
+  "rule": "R01",
+  "fixture": "must fail",
+  "want": "FAIL",
+  "got": "FAIL",
+  "ok": true,
+  "metrics": [
+   {
+    "name": "r cut rate",
+    "value": -1.0,
+    "op": ">=",
+    "threshold": 0.8,
+    "unit": "",
+    "pass": false,
+    "near": false
+   }
+  ]
+ },
+ {
+  "rule": "R01",
+  "fixture": "must pass",
+  "want": "PASS",
+  "got": "PASS",
+  "ok": true,
+  "metrics": []
+ },
+ {
+  "rule": "R02",
+  "fixture": "must fail",
+  "want": "FAIL",
+  "got": "FAIL",
+  "ok": true,
+  "metrics": [
+   {
+    "name": "longest stretch without a break s",
+    "value": 70.0,
+    "op": "<=",
+    "threshold": 60.0,
+    "unit": "s",
+    "pass": false,
+    "near": false
+   }
+  ]
+ },
+ {
+  "rule": "R02",
+  "fixture": "must pass",
+  "want": "PASS",
+  "got": "PASS",
+  "ok": true,
+  "metrics": []
+ },
+ {
+  "rule": "R03",
+  "fixture": "must fail",
+  "want": "FAIL",
+  "got": "FAIL",
+  "ok": true,
+  "metrics": [
+   {
+    "name": "shortest pause s",
+    "value": 0.4,
+    "op": ">=",
+    "threshold": 1.0,
+    "unit": "s",
+    "pass": false,
+    "near": false
+   },
+   {
+    "name": "pauses < 1.0 s",
+    "value": 1,
+    "op": "<=",
+    "threshold": 0,
+    "unit": "",
+    "pass": false,
+    "near": false
+   }
+  ]
+ },
+ {
+  "rule": "R03",
+  "fixture": "must pass",
+  "want": "PASS",
+  "got": "PASS",
+  "ok": true,
+  "metrics": []
+ },
+ {
+  "rule": "R04",
+  "fixture": "must fail",
+  "want": "FAIL",
+  "got": "FAIL",
+  "ok": true,
+  "metrics": [
+   {
+    "name": "cuts on beat/action (%)",
+    "value": 50.0,
+    "op": ">=",
+    "threshold": 70.0,
+    "unit": "%",
+    "pass": false,
+    "near": false
+   }
+  ]
+ },
+ {
+  "rule": "R04",
+  "fixture": "must pass",
+  "want": "PASS",
+  "got": "PASS",
+  "ok": true,
+  "metrics": []
+ },
+ {
+  "rule": "R05",
+  "fixture": "must fail",
+  "want": "FAIL",
+  "got": "FAIL",
+  "ok": true,
+  "metrics": [
+   {
+    "name": "shots > 12 s",
+    "value": 1,
+    "op": "<=",
+    "threshold": 0,
+    "unit": "",
+    "pass": false,
+    "near": false
+   }
+  ]
+ },
+ {
+  "rule": "R05",
+  "fixture": "must pass",
+  "want": "PASS",
+  "got": "PASS",
+  "ok": true,
+  "metrics": []
+ },
+ {
+  "rule": "R06",
+  "fixture": "must fail",
+  "want": "FAIL",
+  "got": "FAIL",
+  "ok": true,
+  "metrics": [
+   {
+    "name": "cuts visible in picture (%)",
+    "value": 20.0,
+    "op": ">=",
+    "threshold": 90.0,
+    "unit": "%",
+    "pass": false,
+    "near": false
+   }
+  ]
+ },
+ {
+  "rule": "R06",
+  "fixture": "must pass",
+  "want": "PASS",
+  "got": "PASS",
+  "ok": true,
+  "metrics": []
+ },
+ {
+  "rule": "V01",
+  "fixture": "must fail",
+  "want": "FAIL",
+  "got": "FAIL",
+  "ok": true,
+  "metrics": [
+   {
+    "name": "shots with field problems",
+    "value": 1,
+    "op": "<=",
+    "threshold": 0,
+    "unit": "",
+    "pass": false,
+    "near": false
+   }
+  ]
+ },
+ {
+  "rule": "V01",
+  "fixture": "must pass",
+  "want": "PASS",
+  "got": "PASS",
+  "ok": true,
+  "metrics": []
+ },
+ {
+  "rule": "V02",
+  "fixture": "must fail",
+  "want": "FAIL",
+  "got": "FAIL",
+  "ok": true,
+  "metrics": [
+   {
+    "name": "level-1 placed (%)",
+    "value": 50.0,
+    "op": ">=",
+    "threshold": 90.0,
+    "unit": "%",
+    "pass": false,
+    "near": false
+   }
+  ]
+ },
+ {
+  "rule": "V02",
+  "fixture": "must pass",
+  "want": "PASS",
+  "got": "PASS",
+  "ok": true,
+  "metrics": []
+ },
+ {
+  "rule": "V03",
+  "fixture": "must fail",
+  "want": "FAIL",
+  "got": "FAIL",
+  "ok": true,
+  "metrics": [
+   {
+    "name": "text outside safe area",
+    "value": 1,
+    "op": "<=",
+    "threshold": 0,
+    "unit": "",
+    "pass": false,
+    "near": false
+   }
+  ]
+ },
+ {
+  "rule": "V03",
+  "fixture": "must pass",
+  "want": "PASS",
+  "got": "PASS",
+  "ok": true,
+  "metrics": []
+ },
+ {
+  "rule": "V04",
+  "fixture": "must fail",
+  "want": "FAIL",
+  "got": "FAIL",
+  "ok": true,
+  "metrics": [
+   {
+    "name": "sides used",
+    "value": 2,
+    "op": "<=",
+    "threshold": 1,
+    "unit": "",
+    "pass": false,
+    "near": false
+   },
+   {
+    "name": "1966 colour share",
+    "value": 0.8,
+    "op": ">=",
+    "threshold": 0.95,
+    "unit": "",
+    "pass": false,
+    "near": false
+   },
+   {
+    "name": "shapes differ",
+    "value": false,
+    "op": "==",
+    "threshold": true,
+    "unit": "",
+    "pass": false,
+    "near": false
+   }
+  ]
+ },
+ {
+  "rule": "V04",
+  "fixture": "must pass",
+  "want": "PASS",
+  "got": "PASS",
+  "ok": true,
+  "metrics": []
+ },
+ {
+  "rule": "V05",
+  "fixture": "must fail",
+  "want": "FAIL",
+  "got": "FAIL",
+  "ok": true,
+  "metrics": [
+   {
+    "name": "worst ease ratio",
+    "value": 0.87,
+    "op": "<=",
+    "threshold": 0.4,
+    "unit": "",
+    "pass": false,
+    "near": false
+   },
+   {
+    "name": "linear moves",
+    "value": 6,
+    "op": "<=",
+    "threshold": 0,
+    "unit": "",
+    "pass": false,
+    "near": false
+   },
+   {
+    "name": "anticipation in moves \u22651 s (%)",
+    "value": 0.0,
+    "op": ">=",
+    "threshold": 30.0,
+    "unit": "%",
+    "pass": false,
+    "near": false
+   },
+   {
+    "name": "overshoot in moves \u22651 s (%)",
+    "value": 0.0,
+    "op": ">=",
+    "threshold": 30.0,
+    "unit": "%",
+    "pass": false,
+    "near": false
+   }
+  ]
+ },
+ {
+  "rule": "V05",
+  "fixture": "must pass",
+  "want": "PASS",
+  "got": "PASS",
+  "ok": true,
+  "metrics": []
+ },
+ {
+  "rule": "V06",
+  "fixture": "must fail",
+  "want": "FAIL",
+  "got": "FAIL",
+  "ok": true,
+  "metrics": [
+   {
+    "name": "racks tied to turns",
+    "value": 0,
+    "op": ">=",
+    "threshold": 3,
+    "unit": "",
+    "pass": false,
+    "near": false
+   }
+  ]
+ },
+ {
+  "rule": "V06",
+  "fixture": "must pass",
+  "want": "PASS",
+  "got": "PASS",
+  "ok": true,
+  "metrics": []
+ },
+ {
+  "rule": "V07",
+  "fixture": "must fail",
+  "want": "FAIL",
+  "got": "FAIL",
+  "ok": true,
+  "metrics": [
+   {
+    "name": "subframes",
+    "value": 1,
+    "op": ">=",
+    "threshold": 8,
+    "unit": "",
+    "pass": false,
+    "near": false
+   },
+   {
+    "name": "subframe setting justified",
+    "value": false,
+    "op": "==",
+    "threshold": true,
+    "unit": "",
+    "pass": false,
+    "near": false
+   },
+   {
+    "name": "median blur ratio",
+    "value": 1.017963,
+    "op": "<=",
+    "threshold": 0.8,
+    "unit": "",
+    "pass": false,
+    "near": false
+   }
+  ]
+ },
+ {
+  "rule": "V07",
+  "fixture": "must pass",
+  "want": "PASS",
+  "got": "PASS",
+  "ok": true,
+  "metrics": []
+ },
+ {
+  "rule": "V08",
+  "fixture": "must fail",
+  "want": "FAIL",
+  "got": "FAIL",
+  "ok": true,
+  "metrics": [
+   {
+    "name": "worst text contrast",
+    "value": 2.1,
+    "op": ">=",
+    "threshold": 4.5,
+    "unit": "",
+    "pass": false,
+    "near": false
+   },
+   {
+    "name": "samples below 4.5:1",
+    "value": 1,
+    "op": "<=",
+    "threshold": 0,
+    "unit": "",
+    "pass": false,
+    "near": false
+   }
+  ]
+ },
+ {
+  "rule": "V08",
+  "fixture": "must pass",
+  "want": "PASS",
+  "got": "PASS",
+  "ok": true,
+  "metrics": []
+ },
+ {
+  "rule": "V09",
+  "fixture": "must fail",
+  "want": "FAIL",
+  "got": "FAIL",
+  "ok": true,
+  "metrics": [
+   {
+    "name": "\u0394E2000 deuteranopia",
+    "value": 11.511445,
+    "op": ">=",
+    "threshold": 20.0,
+    "unit": "",
+    "pass": false,
+    "near": false
+   }
+  ]
+ },
+ {
+  "rule": "V09",
+  "fixture": "must pass",
+  "want": "PASS",
+  "got": "PASS",
+  "ok": true,
+  "metrics": []
+ },
+ {
+  "rule": "V10",
+  "fixture": "must fail",
+  "want": "FAIL",
+  "got": "FAIL",
+  "ok": true,
+  "metrics": [
+   {
+    "name": "undeclared dissolves",
+    "value": 1,
+    "op": "<=",
+    "threshold": 0,
+    "unit": "",
+    "pass": false,
+    "near": false
+   }
+  ]
+ },
+ {
+  "rule": "V10",
+  "fixture": "must pass",
+  "want": "PASS",
+  "got": "PASS",
+  "ok": true,
+  "metrics": []
+ },
+ {
+  "rule": "V11",
+  "fixture": "must fail",
+  "want": "FAIL",
+  "got": "FAIL",
+  "ok": true,
+  "metrics": [
+   {
+    "name": "text collisions",
+    "value": 1,
+    "op": "<=",
+    "threshold": 0,
+    "unit": "",
+    "pass": false,
+    "near": false
+   }
+  ]
+ },
+ {
+  "rule": "V11",
+  "fixture": "must pass",
+  "want": "PASS",
+  "got": "PASS",
+  "ok": true,
+  "metrics": []
+ },
+ {
+  "rule": "C01",
+  "fixture": "must fail",
+  "want": "FAIL",
+  "got": "FAIL",
+  "ok": true,
+  "metrics": [
+   {
+    "name": "frames flagged",
+    "value": 2,
+    "op": "<=",
+    "threshold": 0,
+    "unit": "",
+    "pass": false,
+    "near": false
+   }
+  ]
+ },
+ {
+  "rule": "C01",
+  "fixture": "must pass",
+  "want": "PASS",
+  "got": "PASS",
+  "ok": true,
+  "metrics": []
+ },
+ {
+  "rule": "C02",
+  "fixture": "must fail",
+  "want": "FAIL",
+  "got": "FAIL",
+  "ok": true,
+  "metrics": [
+   {
+    "name": "frames flagged",
+    "value": 2,
+    "op": "<=",
+    "threshold": 0,
+    "unit": "",
+    "pass": false,
+    "near": false
+   }
+  ]
+ },
+ {
+  "rule": "C02",
+  "fixture": "must pass",
+  "want": "PASS",
+  "got": "PASS",
+  "ok": true,
+  "metrics": []
+ },
+ {
+  "rule": "C03",
+  "fixture": "must fail",
+  "want": "FAIL",
+  "got": "FAIL",
+  "ok": true,
+  "metrics": [
+   {
+    "name": "frames flagged",
+    "value": 2,
+    "op": "<=",
+    "threshold": 0,
+    "unit": "",
+    "pass": false,
+    "near": false
+   }
+  ]
+ },
+ {
+  "rule": "C03",
+  "fixture": "must pass",
+  "want": "PASS",
+  "got": "PASS",
+  "ok": true,
+  "metrics": []
+ },
+ {
+  "rule": "C04",
+  "fixture": "must fail",
+  "want": "FAIL",
+  "got": "FAIL",
+  "ok": true,
+  "metrics": [
+   {
+    "name": "frames flagged",
+    "value": 2,
+    "op": "<=",
+    "threshold": 0,
+    "unit": "",
+    "pass": false,
+    "near": false
+   }
+  ]
+ },
+ {
+  "rule": "C04",
+  "fixture": "must pass",
+  "want": "PASS",
+  "got": "PASS",
+  "ok": true,
+  "metrics": []
+ },
+ {
+  "rule": "C05",
+  "fixture": "must fail",
+  "want": "FAIL",
+  "got": "FAIL",
+  "ok": true,
+  "metrics": [
+   {
+    "name": "frames flagged",
+    "value": 2,
+    "op": "<=",
+    "threshold": 0,
+    "unit": "",
+    "pass": false,
+    "near": false
+   }
+  ]
+ },
+ {
+  "rule": "C05",
+  "fixture": "must pass",
+  "want": "PASS",
+  "got": "PASS",
+  "ok": true,
+  "metrics": []
+ },
+ {
+  "rule": "C06",
+  "fixture": "must fail",
+  "want": "FAIL",
+  "got": "FAIL",
+  "ok": true,
+  "metrics": [
+   {
+    "name": "frames flagged",
+    "value": 2,
+    "op": "<=",
+    "threshold": 0,
+    "unit": "",
+    "pass": false,
+    "near": false
+   }
+  ]
+ },
+ {
+  "rule": "C06",
+  "fixture": "must pass",
+  "want": "PASS",
+  "got": "PASS",
+  "ok": true,
+  "metrics": []
+ },
+ {
+  "rule": "C07",
+  "fixture": "must fail",
+  "want": "FAIL",
+  "got": "FAIL",
+  "ok": true,
+  "metrics": [
+   {
+    "name": "frames flagged",
+    "value": 2,
+    "op": "<=",
+    "threshold": 0,
+    "unit": "",
+    "pass": false,
+    "near": false
+   }
+  ]
+ },
+ {
+  "rule": "C07",
+  "fixture": "must pass",
+  "want": "PASS",
+  "got": "PASS",
+  "ok": true,
+  "metrics": []
+ },
+ {
+  "rule": "C10",
+  "fixture": "must fail",
+  "want": "FAIL",
+  "got": "FAIL",
+  "ok": true,
+  "metrics": [
+   {
+    "name": "scenes failing",
+    "value": 1,
+    "op": "<=",
+    "threshold": 0,
+    "unit": "",
+    "pass": false,
+    "near": false
+   }
+  ]
+ },
+ {
+  "rule": "C10",
+  "fixture": "must pass",
+  "want": "PASS",
+  "got": "PASS",
+  "ok": true,
+  "metrics": []
+ },
+ {
+  "rule": "C11",
+  "fixture": "must fail",
+  "want": "FAIL",
+  "got": "FAIL",
+  "ok": true,
+  "metrics": [
+   {
+    "name": "layout repeats >2 in 90 s",
+    "value": 1,
+    "op": "<=",
+    "threshold": 0,
+    "unit": "",
+    "pass": false,
+    "near": false
+   }
+  ]
+ },
+ {
+  "rule": "C11",
+  "fixture": "must pass",
+  "want": "PASS",
+  "got": "PASS",
+  "ok": true,
+  "metrics": []
+ },
+ {
+  "rule": "C12",
+  "fixture": "must fail",
+  "want": "FAIL",
+  "got": "FAIL",
+  "ok": true,
+  "metrics": [
+   {
+    "name": "split-view runs",
+    "value": 1,
+    "op": "<=",
+    "threshold": 0,
+    "unit": "",
+    "pass": false,
+    "near": false
+   }
+  ]
+ },
+ {
+  "rule": "C12",
+  "fixture": "must pass",
+  "want": "PASS",
+  "got": "PASS",
+  "ok": true,
+  "metrics": []
+ },
+ {
+  "rule": "C13",
+  "fixture": "must fail",
+  "want": "FAIL",
+  "got": "FAIL",
+  "ok": true,
+  "metrics": [
+   {
+    "name": "worst |offset| ms",
+    "value": 400,
+    "op": "<=",
+    "threshold": 250.0,
+    "unit": "ms",
+    "pass": false,
+    "near": false
+   },
+   {
+    "name": "pairs > 250 ms",
+    "value": 1,
+    "op": "<=",
+    "threshold": 0,
+    "unit": "",
+    "pass": false,
+    "near": false
+   }
+  ]
+ },
+ {
+  "rule": "C13",
+  "fixture": "must pass",
+  "want": "PASS",
+  "got": "PASS",
+  "ok": true,
+  "metrics": []
+ },
+ {
+  "rule": "C14",
+  "fixture": "must fail",
+  "want": "FAIL",
+  "got": "FAIL",
+  "ok": true,
+  "metrics": [
+   {
+    "name": "text samples not legible at 25%",
+    "value": 3,
+    "op": "<=",
+    "threshold": 0,
+    "unit": "",
+    "pass": false,
+    "near": false
+   }
+  ]
+ },
+ {
+  "rule": "C14",
+  "fixture": "must pass",
+  "want": "PASS",
+  "got": "PASS",
+  "ok": true,
+  "metrics": []
+ },
+ {
+  "rule": "C15",
+  "fixture": "must fail",
+  "want": "FAIL",
+  "got": "FAIL",
+  "ok": true,
+  "metrics": [
+   {
+    "name": "frames flagged",
+    "value": 2,
+    "op": "<=",
+    "threshold": 0,
+    "unit": "",
+    "pass": false,
+    "near": false
+   }
+  ]
+ },
+ {
+  "rule": "C15",
+  "fixture": "must pass",
+  "want": "PASS",
+  "got": "PASS",
+  "ok": true,
+  "metrics": []
+ },
+ {
+  "rule": "P01",
+  "fixture": "must fail",
+  "want": "FAIL",
+  "got": "FAIL",
+  "ok": true,
+  "metrics": [
+   {
+    "name": "thumb 1 token share (%)",
+    "value": 89.453736,
+    "op": ">=",
+    "threshold": 97.0,
+    "unit": "%",
+    "pass": false,
+    "near": false
+   },
+   {
+    "name": "thumb 2 token share (%)",
+    "value": 89.453736,
+    "op": ">=",
+    "threshold": 97.0,
+    "unit": "%",
+    "pass": false,
+    "near": false
+   },
+   {
+    "name": "thumb 3 token share (%)",
+    "value": 89.453736,
+    "op": ">=",
+    "threshold": 97.0,
+    "unit": "%",
+    "pass": false,
+    "near": false
+   }
+  ]
+ },
+ {
+  "rule": "P01",
+  "fixture": "must pass",
+  "want": "PASS",
+  "got": "PASS",
+  "ok": true,
+  "metrics": []
+ }
+]

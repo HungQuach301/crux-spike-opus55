@@ -9,3 +9,5 @@ render-av/data.js
 out/audio/*.wav
 out/audio/voice-activity.npy
 out/voice/*.wav
+out/checks-c/root/
+checks/**/__pycache__/

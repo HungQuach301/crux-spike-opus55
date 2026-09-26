@@ -1,0 +1,303 @@
+[
+ {
+  "case": "good",
+  "rule": "C01",
+  "want": "PASS",
+  "got": "PASS",
+  "ok": true
+ },
+ {
+  "case": "good",
+  "rule": "C02",
+  "want": "PASS",
+  "got": "PASS",
+  "ok": true
+ },
+ {
+  "case": "good",
+  "rule": "C03",
+  "want": "PASS",
+  "got": "PASS",
+  "ok": true
+ },
+ {
+  "case": "good",
+  "rule": "C04",
+  "want": "PASS",
+  "got": "PASS",
+  "ok": true
+ },
+ {
+  "case": "good",
+  "rule": "C05",
+  "want": "PASS",
+  "got": "PASS",
+  "ok": true
+ },
+ {
+  "case": "good",
+  "rule": "C06",
+  "want": "PASS",
+  "got": "PASS",
+  "ok": true
+ },
+ {
+  "case": "good",
+  "rule": "C07",
+  "want": "PASS",
+  "got": "PASS",
+  "ok": true
+ },
+ {
+  "case": "good",
+  "rule": "C10",
+  "want": "PASS",
+  "got": "PASS",
+  "ok": true
+ },
+ {
+  "case": "good",
+  "rule": "C12",
+  "want": "PASS",
+  "got": "PASS",
+  "ok": true
+ },
+ {
+  "case": "good",
+  "rule": "C14",
+  "want": "PASS",
+  "got": "PASS",
+  "ok": true
+ },
+ {
+  "case": "good",
+  "rule": "C15",
+  "want": "PASS",
+  "got": "PASS",
+  "ok": true
+ },
+ {
+  "case": "good",
+  "rule": "V02",
+  "want": "PASS",
+  "got": "PASS",
+  "ok": true
+ },
+ {
+  "case": "good",
+  "rule": "V03",
+  "want": "PASS",
+  "got": "PASS",
+  "ok": true
+ },
+ {
+  "case": "good",
+  "rule": "V04",
+  "want": "PASS",
+  "got": "PASS",
+  "ok": true
+ },
+ {
+  "case": "good",
+  "rule": "V08",
+  "want": "PASS",
+  "got": "PASS",
+  "ok": true
+ },
+ {
+  "case": "good",
+  "rule": "V11",
+  "want": "PASS",
+  "got": "PASS",
+  "ok": true
+ },
+ {
+  "case": "good",
+  "rule": "S08",
+  "want": "PASS",
+  "got": "PASS",
+  "ok": true
+ },
+ {
+  "case": "good",
+  "rule": "S09",
+  "want": "PASS",
+  "got": "PASS",
+  "ok": true
+ },
+ {
+  "case": "good",
+  "rule": "S07",
+  "want": "PASS",
+  "got": "PASS",
+  "ok": true
+ },
+ {
+  "case": "V11-text-on-line",
+  "rule": "V11",
+  "want": "FAIL",
+  "got": "FAIL",
+  "ok": true
+ },
+ {
+  "case": "V11-badge-on-series",
+  "rule": "V11",
+  "want": "FAIL",
+  "got": "FAIL",
+  "ok": true
+ },
+ {
+  "case": "V11-axis-label-on-axis",
+  "rule": "V11",
+  "want": "FAIL",
+  "got": "FAIL",
+  "ok": true
+ },
+ {
+  "case": "V11-text-on-text",
+  "rule": "V11",
+  "want": "FAIL",
+  "got": "FAIL",
+  "ok": true
+ },
+ {
+  "case": "V03-outside-safe",
+  "rule": "V03",
+  "want": "FAIL",
+  "got": "FAIL",
+  "ok": true
+ },
+ {
+  "case": "V08-low-contrast",
+  "rule": "V08",
+  "want": "FAIL",
+  "got": "FAIL",
+  "ok": true
+ },
+ {
+  "case": "C14-too-small",
+  "rule": "C14",
+  "want": "FAIL",
+  "got": "FAIL",
+  "ok": true
+ },
+ {
+  "case": "C01-scene-leak",
+  "rule": "C01",
+  "want": "FAIL",
+  "got": "FAIL",
+  "ok": true
+ },
+ {
+  "case": "C02-bg-over-data",
+  "rule": "C02",
+  "want": "FAIL",
+  "got": "FAIL",
+  "ok": true
+ },
+ {
+  "case": "C03-unlabelled-curve",
+  "rule": "C03",
+  "want": "FAIL",
+  "got": "FAIL",
+  "ok": true
+ },
+ {
+  "case": "C04-no-anchors",
+  "rule": "C04",
+  "want": "FAIL",
+  "got": "FAIL",
+  "ok": true
+ },
+ {
+  "case": "C05-weak-emphasis",
+  "rule": "C05",
+  "want": "FAIL",
+  "got": "FAIL",
+  "ok": true
+ },
+ {
+  "case": "C06-number-colour",
+  "rule": "C06",
+  "want": "FAIL",
+  "got": "FAIL",
+  "ok": true
+ },
+ {
+  "case": "C07-bar-cropped",
+  "rule": "C07",
+  "want": "FAIL",
+  "got": "FAIL",
+  "ok": true
+ },
+ {
+  "case": "C10-two-level1",
+  "rule": "C10",
+  "want": "FAIL",
+  "got": "FAIL",
+  "ok": true
+ },
+ {
+  "case": "C12-split-view",
+  "rule": "C12",
+  "want": "FAIL",
+  "got": "FAIL",
+  "ok": true
+ },
+ {
+  "case": "C15-off-token",
+  "rule": "C15",
+  "want": "FAIL",
+  "got": "FAIL",
+  "ok": true
+ },
+ {
+  "case": "S08-no-badge",
+  "rule": "S08",
+  "want": "FAIL",
+  "got": "FAIL",
+  "ok": true
+ },
+ {
+  "case": "S08-badge-late",
+  "rule": "S08",
+  "want": "FAIL",
+  "got": "FAIL",
+  "ok": true
+ },
+ {
+  "case": "S09-no-basis",
+  "rule": "S09",
+  "want": "FAIL",
+  "got": "FAIL",
+  "ok": true
+ },
+ {
+  "case": "V02-off-thirds",
+  "rule": "V02",
+  "want": "FAIL",
+  "got": "FAIL",
+  "ok": true
+ },
+ {
+  "case": "V04-side-swap",
+  "rule": "V04",
+  "want": "FAIL",
+  "got": "FAIL",
+  "ok": true
+ },
+ {
+  "case": "V04-time-reversed",
+  "rule": "V04",
+  "want": "FAIL",
+  "got": "FAIL",
+  "ok": true
+ },
+ {
+  "case": "S07-orphan-number",
+  "rule": "S07",
+  "want": "FAIL",
+  "got": "FAIL",
+  "ok": true
+ }
+]
