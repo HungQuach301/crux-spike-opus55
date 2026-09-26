@@ -1,8 +1,7 @@
 {
- "frames": 2580,
+ "frames": 3834,
  "fps": 30,
  "workers": 4,
- "seconds": 259,
- "ffmpeg": "/usr/local/lib/python3.11/dist-packages/imageio_ffmpeg/binaries/ffmpeg-linux-x86_64-v7.0.2",
- "finished": "2026-09-25T23:56:16.599Z"
+ "seconds": 403.3,
+ "finished": "2026-09-26T01:13:42.748Z"
 }

@@ -1,3 +1,7 @@
 node_modules/
 render/data.js
 .frames/
+render-motion/data.js
+out/audio/mix.wav
+out/.video-only.mp4
+__pycache__/

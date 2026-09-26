@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Car loan segment</title>
+<style>
+  @font-face { font-family: 'Inter'; font-weight: 400; src: url('fonts/inter-latin-400-normal.woff2') format('woff2'); }
+  @font-face { font-family: 'Inter'; font-weight: 600; src: url('fonts/inter-latin-600-normal.woff2') format('woff2'); }
+  @font-face { font-family: 'Inter'; font-weight: 700; src: url('fonts/inter-latin-700-normal.woff2') format('woff2'); }
+  :root {
+    --bg: #0E1116; --surface: #171B22; --ink: #F2F4F7; --ink-muted: #9AA4B2; --accent: #4C8DFF;
+    --warn: #F2B441; --positive: #3FBF7F; --negative: #E5484D; --grid: #2A303B;
+  }
+  html, body { margin: 0; padding: 0; background: var(--bg); }
+  #stage { position: relative; width: 1920px; height: 1080px; overflow: hidden; background: var(--bg); font-family: 'Inter'; color: var(--ink); }
+  svg { position: absolute; left: 0; top: 0; }
+  .t { position: absolute; white-space: nowrap; line-height: 1.2; margin: 0; }
+  .l1 { font-size: 128px; font-weight: 700; line-height: 1; }
+  .l2 { font-size: 48px; font-weight: 600; }
+  .l2b { font-size: 48px; font-weight: 700; }
+  .l3 { font-size: 28px; font-weight: 400; }
+  .l3s { font-size: 28px; font-weight: 600; }
+  .n { font-variant-numeric: tabular-nums; font-feature-settings: 'tnum' 1; }
+  .ink { color: var(--ink); } .muted { color: var(--ink-muted); } .accent { color: var(--accent); }
+  .warn { color: var(--warn); } .pos { color: var(--positive); } .neg { color: var(--negative); }
+  .u { position: relative; display: inline-block; }
+  .u > i { position: absolute; left: 0; bottom: -4px; height: 6px; }
+</style>
+</head>
+<body>
+<div id="stage"></div>
+<script src="data.js"></script>
+<script src="scenes.js"></script>
+</body>
+</html>
