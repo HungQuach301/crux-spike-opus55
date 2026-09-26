@@ -13,6 +13,7 @@ import hashlib
 import json
 import os
 
+import numpy as np
 import xlrd
 
 ROOT = os.path.join(os.path.dirname(__file__), '..', '..')
@@ -130,6 +131,16 @@ def main():
               'note': 'Damodaran (year-end index level + dividends) vs Shiller (monthly-average prices, Dec to Dec, dividends reinvested monthly): outside tolerance; reported, not resolved'}
              for y, d in sorted(sdiff.items()) if d > TOL_STOCKS_PP]
     smissing = [y for y in range(FIRST, LAST + 1) if y not in sh]
+    both = sorted(y for y in sh if y in ret)
+    same_dir = sum((sh[y] > 0) == (ret[y][0] > 0) for y in both)
+    g = lambda xs: np.prod([1 + x for x in xs]) ** (1 / len(xs)) - 1
+    wins = [y for y in range(FIRST, LAST + 1) if all(k in sh for k in range(y, y + 30))]
+    wdiff = {y: (g([ret[k][0] for k in range(y, y + 30)]) - g([sh[k] for k in range(y, y + 30)])) * 100 for y in wins}
+    descriptive = {'yearsBoth': len(both), 'sameDirectionYears': same_dir, 'sameDirectionShare': round(same_dir / len(both), 3),
+                   'windows30': [wins[0], wins[-1]], 'windowsCompared': len(wins),
+                   'geomeanDiffPp': {'meanAbs': round(float(np.mean(np.abs(list(wdiff.values())))), 3), 'maxAbs': round(float(max(abs(v) for v in wdiff.values())), 3),
+                                     'maxAbsStart': max(wdiff, key=lambda y: abs(wdiff[y])), 'start1966': round(wdiff[1966], 3)},
+                   'note': 'Descriptive only: 30-year geometric means (Damodaran minus Shiller) of S&P total return for every window with data in both sources.'}
     internal = sorted(((y, round(abs(I[y] - I2[y]) * 100, 3)) for y in range(FIRST, LAST + 1) if y in I2 and abs(I[y] - I2[y]) * 100 > TOL_INFLATION_PP), key=lambda x: -x[1])
     src = {
         'files': [{**f, 'sha256': sha(f['path']), 'downloaded': DOWNLOADED_BY_PATH.get(f['path'], DOWNLOADED)} for f in FILES],
@@ -142,7 +153,8 @@ def main():
             'stocks': {'method': 'Shiller monthly S&P Composite: prod over Jan..Dec of (P_m + D_m/12) / P_(m-1), vs Damodaran S&P 500 incl. dividends',
                        'yearsCompared': len(sdiff), 'yearsOutsideTolerance': sum(d > TOL_STOCKS_PP for d in sdiff.values()),
                        'medianDiffPp': round(sorted(sdiff.values())[len(sdiff) // 2], 3), 'maxDiffPp': round(max(sdiff.values()), 3), 'maxDiffYear': max(sdiff, key=sdiff.get),
-                       'yearsMissingInCrosscheck': smissing,
+                       'yearsMissingInCrosscheck': smissing, 'descriptive': descriptive,
+                       'decision': 'Owner decision 2026-09-26: S04 is accepted as failing (method difference + file ends 09/2023); no further domains are opened; the model keeps Damodaran.',
                        'why': 'Shiller prices are monthly averages of daily closes, Damodaran uses year-end levels: the two definitions differ by construction, so most years exceed 0.5 pp. '
                               'The copy reachable at www.econ.yale.edu (http) ends in September 2023; the maintained file is on shillerdata.com, which the egress proxy refuses (connection reset).'},
         },

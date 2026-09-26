@@ -15,10 +15,10 @@ const ACTS = [
         { t: 'Two retirees with the same balance, the same withdrawals and the same average return.', d: 'Quiet, close to the mic, one flowing line at an even pace; no pauses between the phrases.' },
       ] },
       { id: 'co-broke', layout: 'duel/split', shot: 'medium', hold: 1.2, lines: [
-        { t: 'One ran out of money in 1991.', d: 'Flat, factual. Stress "ran out". Full stop, then silence.', decisive: true },
+        { t: 'One ran out of money in 1991.', pause: 'One ran out of money... in 1991.', d: 'Flat, factual. Stress "ran out". Full stop, then silence.', decisive: true },
       ] },
       { id: 'co-question', layout: 'duel/split', shot: 'close-up', hold: 0.2, lines: [
-        { t: 'So what decided it?', d: 'A real question, curious, not dramatic. Rising end.' },
+        { t: 'So what decided it?', pause: 'So... what decided it?', d: 'A real question, curious, not dramatic. Rising end.' },
       ] },
     ],
   },
@@ -88,7 +88,7 @@ const ACTS = [
         { t: 'Inflation stays in its real calendar order, so both retirees take out the same dollars every year.', d: 'Careful, a clarifying point. Stress "same dollars".' },
       ] },
       { id: 'a1-question', layout: 'duel/scale', shot: 'wide', lines: [
-        { t: 'Here is the question this first part answers.', sp: 'Here is the question... this first part answers.', d: 'Framing, slower.' },
+        { t: 'Here is the question this first part answers.', pause: 'Here is the question... this first part answers.', sp: 'Here is the question... this first part answers.', d: 'Framing, slower.' },
         { t: 'If two people earn the same average return, do they end up in the same place?', sp: 'If two people earn the same average return... do they end up, in the same place?', d: 'Genuine question, open, rising end.' },
       ] },
       { id: 'a1-avg1966', layout: 'average/reveal', shot: 'close-up', hold: 1.1, lines: [
@@ -110,7 +110,7 @@ const ACTS = [
         { t: 'Same money in.', d: 'Beat.' },
         { t: 'Same money out.', d: 'Beat.' },
         { t: 'Same average.', d: 'Beat.' },
-        { t: 'The only thing that differs is the order.', d: 'Slow, the thesis. Stress "order".' },
+        { t: 'The only thing that differs is the order.', pause: 'The only thing that differs... is the order.', d: 'Slow, the thesis. Stress "order".' },
       ] },
     ],
   },

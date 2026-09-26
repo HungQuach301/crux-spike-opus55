@@ -17,3 +17,11 @@ out/voice/*.log
 out/checks/cache/
 # ElevenLabs responses cache (base64 audio, 19 MB; regenerating costs credits)
 out/voice-audition/cache/
+out/voice/openai-m1/raw/
+out/voice/el-superseded/
+out/voice/el-round0-nopause/
+out/voice/el-probe/
+.frames/
+out/m2/stills/
+out/m2/picture.mkv
+out/m2/root/out/checks/cache/

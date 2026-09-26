@@ -13,3 +13,9 @@
 4. **checks-appeal §1, §2**: chấp nhận cách né (bỏ sở hữu cách; đọc "Standard & Poor's 500 index"); luật giữ nguyên.
 5. **checks-appeal §3**: thêm nguồn đối chiếu cổ phiếu thứ hai nếu truy cập được; lệch thì báo, không tự chọn nguồn.
 6. **Kịch bản**: a2-7374 sửa thành "After inflation, stocks and bonds both lose money in 1973 and 1974." (trái phiếu tăng danh nghĩa 1973 +3.66%, 1974 +1.99%); nói "US only" và "history, not a forecast" một lần ở hồi 1.
+
+## 2026-09-26 — sau khi duyệt M1b-1
+7. **Giọng: V8 = Eric, `eleven_v3`** (ElevenLabs). Giọng tạm cho bài D, KHÔNG phải quyết định #158. Câu nào 4 take `eleven_v3` vẫn không đạt thì dùng Eric `eleven_multilingual_v2` cho riêng câu đó (liệt kê trong báo cáo).
+8. **Nhịp (A15):** chấp nhận luật A15 trượt ở trần 175 wpm từng câu cho các câu diễn có chủ ý. Ràng buộc giữ: trung bình mỗi hồi 150–160 wpm, mọi câu 120–190 wpm. Luật `checks/` giữ nguyên.
+9. **S04:** chấp nhận trượt (phương pháp khác nhau; dữ liệu Yale dừng ở 09/2023). Không mở thêm domain. Mô hình vẫn dùng Damodaran.
+10. **Không dừng chờ nghe giọng:** làm liền M1b-2 (giọng toàn bài, kiểm bằng máy) rồi M2 (cold open + ident + hồi 1, chất lượng cuối); dừng khi xong M2. Chọn take: (a) đủ từ quan trọng, (b) 120–190 wpm, (c) gần 156 wpm; tối đa 4 take; không giãn thời gian.

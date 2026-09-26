@@ -43,3 +43,8 @@ Domain cần mở nếu chủ dự án muốn có nguồn đối chiếu lợi s
 - `shillerdata.com`: bị proxy từ chối ngay ở bước CONNECT.
 
 Theo brief §1.3, Phiên D không tự đổi nguồn. S04 hiện chỉ so lạm phát với FRED. `tolerance.stocks_pp = 0.5` được khai báo nhưng chưa dùng vì không có `stocks2.csv`.
+
+## Quyết định của chủ dự án (2026-09-26, sau M1b-1)
+- §1, §2: chấp nhận cách né; luật giữ nguyên.
+- §3 / S04: **chấp nhận S04 trượt**, không mở thêm domain. Lý do: lệch do phương pháp — Shiller dùng giá trung bình tháng, Damodaran dùng mức cuối năm (82/95 năm lệch > 0,5 pp, trung vị 1,61 pp); bản dữ liệu Yale truy cập được dừng ở 09/2023 nên thiếu 2023–2025. Đối chiếu mô tả trong `data/sources.json` (`crosscheck.stocks.descriptive`): cùng chiều tăng/giảm 91/95 năm; bình quân nhân 30 năm lệch trung bình 0,13 pp (tối đa 0,53 pp), cửa sổ 1966–1995 lệch 0,011 pp. Mô hình vẫn dùng Damodaran.
+- A15: chấp nhận trượt trần 175 wpm từng câu cho các câu diễn có chủ ý; ràng buộc giữ: trung bình mỗi hồi 150–160 wpm, mọi câu 120–190 wpm (ghi ở BRIEF-D-amendments.md). Luật không đổi.

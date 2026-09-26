@@ -1,0 +1,4 @@
+{
+ "url": "../../../render-d/prod/page.html",
+ "ready": "document.fonts.ready"
+}

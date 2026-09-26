@@ -1,0 +1,304 @@
+{
+ "cuts": [
+  {
+   "t": 2.143,
+   "from": "co-lines",
+   "to": "co-same",
+   "type": "cut",
+   "match": null,
+   "audio": null,
+   "action": false,
+   "reason": "hard cut on the beat into co same to start the next idea"
+  },
+  {
+   "t": 7.857,
+   "from": "co-same",
+   "to": "co-broke",
+   "type": "cut",
+   "match": "semantic",
+   "audio": null,
+   "action": false,
+   "reason": "the shared end point splits into two very different balances"
+  },
+  {
+   "t": 12.143,
+   "from": "co-broke",
+   "to": "co-question",
+   "type": "cut",
+   "match": "semantic",
+   "audio": null,
+   "action": false,
+   "reason": "the zero point of 1991 becomes the open question"
+  },
+  {
+   "t": 14.83,
+   "from": "co-question",
+   "to": "ident",
+   "type": "cut",
+   "match": null,
+   "audio": null,
+   "action": false,
+   "reason": "hard cut on the beat into ident to start the next idea"
+  },
+  {
+   "t": 17.143,
+   "from": "ident",
+   "to": "a1-est",
+   "type": "cut",
+   "match": null,
+   "audio": null,
+   "action": false,
+   "reason": "hard cut on the beat into a1 est to start the next idea"
+  },
+  {
+   "t": 21.118,
+   "from": "a1-est",
+   "to": "a1-start",
+   "type": "cut",
+   "match": null,
+   "audio": null,
+   "action": false,
+   "reason": "hard cut on the beat into a1 start to start the next idea"
+  },
+  {
+   "t": 26.988,
+   "from": "a1-start",
+   "to": "a1-who",
+   "type": "cut",
+   "match": null,
+   "audio": null,
+   "action": false,
+   "reason": "hard cut on the beat into a1 who to start the next idea"
+  },
+  {
+   "t": 32.857,
+   "from": "a1-who",
+   "to": "a1-hook",
+   "type": "cut",
+   "match": null,
+   "audio": null,
+   "action": false,
+   "reason": "hard cut on the beat into a1 hook to start the next idea"
+  },
+  {
+   "t": 39.233,
+   "from": "a1-hook",
+   "to": "a1-hook-b",
+   "type": "cut",
+   "match": null,
+   "audio": null,
+   "action": false,
+   "reason": "a second angle inside one long line of narration"
+  },
+  {
+   "t": 45.59,
+   "from": "a1-hook-b",
+   "to": "a1-mix",
+   "type": "cut",
+   "match": null,
+   "audio": null,
+   "action": false,
+   "reason": "hard cut on the beat into a1 mix to start the next idea"
+  },
+  {
+   "t": 51.77,
+   "from": "a1-mix",
+   "to": "a1-assets",
+   "type": "cut",
+   "match": "semantic",
+   "audio": null,
+   "action": false,
+   "reason": "the two slices of the ring open into what each slice holds"
+  },
+  {
+   "t": 60,
+   "from": "a1-assets",
+   "to": "a1-rebal",
+   "type": "cut",
+   "match": null,
+   "audio": "l",
+   "action": false,
+   "reason": "hard cut on the beat into a1 rebal to start the next idea"
+  },
+  {
+   "t": 65.15,
+   "from": "a1-rebal",
+   "to": "a1-rule",
+   "type": "cut",
+   "match": null,
+   "audio": null,
+   "action": false,
+   "reason": "hard cut on the beat into a1 rule to start the next idea"
+  },
+  {
+   "t": 75.901,
+   "from": "a1-rule",
+   "to": "a1-raise",
+   "type": "cut",
+   "match": "semantic",
+   "audio": null,
+   "action": false,
+   "reason": "the slice taken from the column becomes the first withdrawal bar"
+  },
+  {
+   "t": 84.379,
+   "from": "a1-raise",
+   "to": "a1-real",
+   "type": "cut",
+   "match": "semantic",
+   "audio": null,
+   "action": false,
+   "reason": "the same staircase of withdrawals is now read in real terms"
+  },
+  {
+   "t": 92.205,
+   "from": "a1-real",
+   "to": "a1-horizon",
+   "type": "cut",
+   "match": null,
+   "audio": null,
+   "action": false,
+   "reason": "hard cut on the beat into a1 horizon to start the next idea"
+  },
+  {
+   "t": 98.075,
+   "from": "a1-horizon",
+   "to": "a1-notax",
+   "type": "cut",
+   "match": null,
+   "audio": null,
+   "action": false,
+   "reason": "hard cut on the beat into a1 notax to start the next idea"
+  },
+  {
+   "t": 106.067,
+   "from": "a1-notax",
+   "to": "a1-notax-b",
+   "type": "cut",
+   "match": null,
+   "audio": null,
+   "action": false,
+   "reason": "a second angle inside one long line of narration"
+  },
+  {
+   "t": 111.567,
+   "from": "a1-notax-b",
+   "to": "a1-mirror-in",
+   "type": "cut",
+   "match": null,
+   "audio": "l",
+   "action": false,
+   "reason": "hard cut on the beat into a1 mirror in to start the next idea"
+  },
+  {
+   "t": 115.633,
+   "from": "a1-mirror-in",
+   "to": "a1-mirror-rule",
+   "type": "cut",
+   "match": "semantic",
+   "audio": "j",
+   "action": false,
+   "reason": "the second track becomes the reversed row of the same returns"
+  },
+  {
+   "t": 121.533,
+   "from": "a1-mirror-rule",
+   "to": "a1-mirror-rule-b",
+   "type": "cut",
+   "match": null,
+   "audio": null,
+   "action": false,
+   "reason": "a second angle inside one long line of narration"
+  },
+  {
+   "t": 129.333,
+   "from": "a1-mirror-rule-b",
+   "to": "a1-illus",
+   "type": "cut",
+   "match": null,
+   "audio": "j",
+   "action": false,
+   "reason": "hard cut on the beat into a1 illus to start the next idea"
+  },
+  {
+   "t": 134.596,
+   "from": "a1-illus",
+   "to": "a1-samewd",
+   "type": "cut",
+   "match": null,
+   "audio": null,
+   "action": false,
+   "reason": "hard cut on the beat into a1 samewd to start the next idea"
+  },
+  {
+   "t": 141.118,
+   "from": "a1-samewd",
+   "to": "a1-question",
+   "type": "cut",
+   "match": null,
+   "audio": null,
+   "action": false,
+   "reason": "hard cut on the beat into a1 question to start the next idea"
+  },
+  {
+   "t": 150.901,
+   "from": "a1-question",
+   "to": "a1-avg1966",
+   "type": "cut",
+   "match": null,
+   "audio": null,
+   "action": false,
+   "reason": "hard cut on the beat into a1 avg1966 to start the next idea"
+  },
+  {
+   "t": 158.075,
+   "from": "a1-avg1966",
+   "to": "a1-avgmirror",
+   "type": "cut",
+   "match": "semantic",
+   "audio": null,
+   "action": false,
+   "reason": "the same number reappears on the other side for the mirror retiree"
+  },
+  {
+   "t": 166.167,
+   "from": "a1-avgmirror",
+   "to": "a1-geo",
+   "type": "cut",
+   "match": null,
+   "audio": "j",
+   "action": false,
+   "reason": "hard cut on the beat into a1 geo to start the next idea"
+  },
+  {
+   "t": 172.633,
+   "from": "a1-geo",
+   "to": "a1-geo-b",
+   "type": "cut",
+   "match": null,
+   "audio": null,
+   "action": false,
+   "reason": "a second angle inside one long line of narration"
+  },
+  {
+   "t": 180.167,
+   "from": "a1-geo-b",
+   "to": "a1-arith",
+   "type": "cut",
+   "match": null,
+   "audio": "j",
+   "action": false,
+   "reason": "hard cut on the beat into a1 arith to start the next idea"
+  },
+  {
+   "t": 189.379,
+   "from": "a1-arith",
+   "to": "a1-payoff",
+   "type": "cut",
+   "match": "semantic",
+   "audio": null,
+   "action": false,
+   "reason": "the arithmetic bars resolve into the balanced scale of the question"
+  }
+ ]
+}

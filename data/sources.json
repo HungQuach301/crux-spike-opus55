@@ -741,6 +741,24 @@
     2024,
     2025
    ],
+   "descriptive": {
+    "yearsBoth": 95,
+    "sameDirectionYears": 91,
+    "sameDirectionShare": 0.958,
+    "windows30": [
+     1928,
+     1993
+    ],
+    "windowsCompared": 66,
+    "geomeanDiffPp": {
+     "meanAbs": 0.132,
+     "maxAbs": 0.527,
+     "maxAbsStart": 1928,
+     "start1966": 0.011
+    },
+    "note": "Descriptive only: 30-year geometric means (Damodaran minus Shiller) of S&P total return for every window with data in both sources."
+   },
+   "decision": "Owner decision 2026-09-26: S04 is accepted as failing (method difference + file ends 09/2023); no further domains are opened; the model keeps Damodaran.",
    "why": "Shiller prices are monthly averages of daily closes, Damodaran uses year-end levels: the two definitions differ by construction, so most years exceed 0.5 pp. The copy reachable at www.econ.yale.edu (http) ends in September 2023; the maintained file is on shillerdata.com, which the egress proxy refuses (connection reset)."
   }
  },

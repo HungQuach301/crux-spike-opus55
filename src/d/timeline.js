@@ -15,8 +15,8 @@ const GAP_SENT = 0.30, GAP_SCENE = 0.30, DECISIVE_HOLD = 1.25, MARGIN = 0.03, AD
 // tempo per act (bpm): act 2 accelerates towards its climax
 const BPM = { 'cold-open': 84, ident: 84, act1: 92, act2: [96, 116], act3: 90, method: 80, outro: 80 };
 const AD_AFTER = ['act1', 'act2']; // ad breaks at the act1|act2 and act2|act3 boundaries
-const J_CUTS = ['a1-mirror-rule', 'a2-seq', 'a2-bal74m', 'a3-mirror-d', 'a1-arith', 'a3-1928'];
-const L_CUTS = ['a1-assets', 'a2-1982r', 'a3-decade', 'a3-usonly'];
+const J_CUTS = ['a1-mirror-rule', 'a1-illus', 'a1-geo', 'a2-seq', 'a2-bal74m', 'a3-mirror-d', 'a1-arith', 'a3-1928'];
+const L_CUTS = ['a1-assets', 'a1-notax', 'a2-1982r', 'a3-decade', 'a3-usonly'];
 const r3 = (x) => Math.round(x * 1000) / 1000;
 const snapF = (x) => Math.round(x * FPS) / FPS;
 
@@ -41,7 +41,7 @@ function build() {
       (bySc[sc.id] || []).forEach((s, k) => {
         const r = rep[s.id];
         const take = r.chosen.take;
-        const rec = asr[`${s.id}.t${take}`];
+        const rec = asr[`${s.id}.t${take}`] || asr[`${s.id}.t0`];
         const span = (rec.speech[1] - rec.speech[0]) * r.chosen.stretch + 2 * MARGIN;
         if (k) t += GAP_SENT;
         lines.push({ id: s.id, scene: sc.id, act: a.id, text: s.text, spoken: s.spoken, start: r3(t), end: r3(t + span), take, stretch: r.chosen.stretch, decisive: s.decisive });

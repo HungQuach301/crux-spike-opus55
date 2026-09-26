@@ -1,45 +1,123 @@
 {
  "aim": 156.0,
- "cap": 172.0,
- "maxStretch": 0.1,
+ "sentenceRange": [
+  120.0,
+  190.0
+ ],
+ "actRange": [
+  150.0,
+  160.0
+ ],
  "acts": {
   "cold-open": {
-   "rawWpm": 169.6,
-   "afterStretchWpm": 157.3
+   "rawWpm": 158.9,
+   "afterStretchWpm": 158.9
   },
   "act1": {
-   "rawWpm": 161.8,
-   "afterStretchWpm": 156.3
-  },
-  "act2": {
-   "rawWpm": 156.4,
+   "rawWpm": 156.1,
    "afterStretchWpm": 156.1
   },
+  "act2": {
+   "rawWpm": 151.1,
+   "afterStretchWpm": 151.1
+  },
   "act3": {
-   "rawWpm": 158.1,
-   "afterStretchWpm": 157.5
+   "rawWpm": 149.6,
+   "afterStretchWpm": 149.6
   },
   "method": {
-   "rawWpm": 155.0,
-   "afterStretchWpm": 154.4
+   "rawWpm": 155.4,
+   "afterStretchWpm": 155.4
   },
   "outro": {
-   "rawWpm": 172.1,
-   "afterStretchWpm": 156.5
+   "rawWpm": 150.0,
+   "afterStretchWpm": 150.0
   }
  },
- "problems": [],
+ "fallbackSentences": [
+  "a1-avgmirror.2",
+  "a1-payoff.1",
+  "a2-y1.1",
+  "a3-answer.2"
+ ],
+ "problems": [
+  {
+   "id": "a1-avgmirror.2",
+   "act": "act1",
+   "words": 2,
+   "chosen": {
+    "take": 2,
+    "model": "eleven_multilingual_v2",
+    "wpm": 193.5,
+    "wpmAfter": 193.5,
+    "stretch": 1.0,
+    "missing": [],
+    "heard": "Not close."
+   },
+   "takes": 8,
+   "problem": "outside 120-190"
+  },
+  {
+   "id": "a1-payoff.1",
+   "act": "act1",
+   "words": 3,
+   "chosen": {
+    "take": 3,
+    "model": "eleven_multilingual_v2",
+    "wpm": 195.7,
+    "wpmAfter": 195.7,
+    "stretch": 1.0,
+    "missing": [],
+    "heard": "Same money in."
+   },
+   "takes": 8,
+   "problem": "outside 120-190"
+  },
+  {
+   "id": "a2-y1.1",
+   "act": "act2",
+   "words": 2,
+   "chosen": {
+    "take": 3,
+    "model": "eleven_multilingual_v2",
+    "wpm": 200.0,
+    "wpmAfter": 200.0,
+    "stretch": 1.0,
+    "missing": [],
+    "heard": "year one."
+   },
+   "takes": 8,
+   "problem": "outside 120-190"
+  },
+  {
+   "id": "a3-answer.2",
+   "act": "act3",
+   "words": 3,
+   "chosen": {
+    "take": 2,
+    "model": "eleven_multilingual_v2",
+    "wpm": 204.5,
+    "wpmAfter": 204.5,
+    "stretch": 1.0,
+    "missing": [],
+    "heard": "not the average."
+   },
+   "takes": 8,
+   "problem": "outside 120-190"
+  }
+ ],
  "sentences": [
   {
    "id": "co-same.1",
    "act": "cold-open",
    "words": 14,
    "chosen": {
-    "take": 2,
-    "wpm": 174.3,
+    "take": 1,
+    "model": "eleven_v3",
+    "wpm": 169.4,
+    "wpmAfter": 169.4,
+    "stretch": 1.0,
     "missing": [],
-    "stretch": 1.1,
-    "wpmAfter": 158.5,
     "heard": "two retirees with the same balance, the same withdrawals and the same average return."
    },
    "takes": 4,
@@ -51,13 +129,14 @@
    "words": 8,
    "chosen": {
     "take": 1,
-    "wpm": 166.7,
+    "model": "eleven_v3",
+    "wpm": 161.1,
+    "wpmAfter": 161.1,
+    "stretch": 1.0,
     "missing": [],
-    "stretch": 1.069,
-    "wpmAfter": 156.0,
     "heard": "One ran out of money in 1991."
    },
-   "takes": 4,
+   "takes": 2,
    "problem": ""
   },
   {
@@ -65,11 +144,12 @@
    "act": "cold-open",
    "words": 4,
    "chosen": {
-    "take": 3,
-    "wpm": 160.0,
+    "take": 0,
+    "model": "eleven_v3",
+    "wpm": 127.7,
+    "wpmAfter": 127.7,
+    "stretch": 1.0,
     "missing": [],
-    "stretch": 1.026,
-    "wpmAfter": 156.0,
     "heard": "So what decided it?"
    },
    "takes": 4,
@@ -81,13 +161,14 @@
    "words": 5,
    "chosen": {
     "take": 2,
-    "wpm": 157.9,
+    "model": "eleven_v3",
+    "wpm": 154.6,
+    "wpmAfter": 154.6,
+    "stretch": 1.0,
     "missing": [],
-    "stretch": 1.012,
-    "wpmAfter": 156.0,
     "heard": "It is January 1966."
    },
-   "takes": 4,
+   "takes": 3,
    "problem": ""
   },
   {
@@ -95,14 +176,15 @@
    "act": "act1",
    "words": 13,
    "chosen": {
-    "take": 3,
-    "wpm": 155.4,
+    "take": 0,
+    "model": "eleven_v3",
+    "wpm": 148.3,
+    "wpmAfter": 148.3,
+    "stretch": 1.0,
     "missing": [],
-    "stretch": 0.996,
-    "wpmAfter": 156.0,
     "heard": "The first retiree starts with $1 million, measured in 1966 dollars."
    },
-   "takes": 4,
+   "takes": 1,
    "problem": ""
   },
   {
@@ -110,14 +192,15 @@
    "act": "act1",
    "words": 16,
    "chosen": {
-    "take": 0,
-    "wpm": 163.3,
+    "take": 2,
+    "model": "eleven_multilingual_v2",
+    "wpm": 175.8,
+    "wpmAfter": 175.8,
+    "stretch": 1.0,
     "missing": [],
-    "stretch": 1.047,
-    "wpmAfter": 156.0,
-    "heard": "They retire at the start of a hard decade for markets though. Nobody knows that yet"
+    "heard": "They retire at the start of a hard decade for markets, though nobody knows it yet."
    },
-   "takes": 4,
+   "takes": 7,
    "problem": ""
   },
   {
@@ -125,14 +208,15 @@
    "act": "act1",
    "words": 31,
    "chosen": {
-    "take": 2,
-    "wpm": 165.5,
+    "take": 0,
+    "model": "eleven_v3",
+    "wpm": 159.0,
+    "wpmAfter": 159.0,
+    "stretch": 1.0,
     "missing": [],
-    "stretch": 1.061,
-    "wpmAfter": 156.0,
-    "heard": "By the end of this video, you will know which ten years decided the fate of this retiree, and whether the same thing held for every start year since 1928."
+    "heard": "By the end of this video, you will know which 10 years decided the fate of this retiree, and whether the same thing held for every start year since 1928."
    },
-   "takes": 4,
+   "takes": 1,
    "problem": ""
   },
   {
@@ -140,26 +224,28 @@
    "act": "act1",
    "words": 14,
    "chosen": {
-    "take": 3,
-    "wpm": 166.7,
+    "take": 0,
+    "model": "eleven_v3",
+    "wpm": 155.0,
+    "wpmAfter": 155.0,
+    "stretch": 1.0,
     "missing": [],
-    "stretch": 1.069,
-    "wpmAfter": 156.0,
     "heard": "The money sits in a portfolio of 60 % stocks and 40 % bonds."
    },
-   "takes": 4,
+   "takes": 1,
    "problem": ""
   },
   {
    "id": "a1-assets.1",
    "act": "act1",
-   "words": 13,
+   "words": 12,
    "chosen": {
-    "take": 0,
-    "wpm": 170.3,
+    "take": 3,
+    "model": "eleven_v3",
+    "wpm": 134.8,
+    "wpmAfter": 134.8,
+    "stretch": 1.0,
     "missing": [],
-    "stretch": 1.092,
-    "wpmAfter": 156.0,
     "heard": "The stocks are the Standard & Poor's 500 Index, with dividends reinvested."
    },
    "takes": 4,
@@ -170,14 +256,15 @@
    "act": "act1",
    "words": 7,
    "chosen": {
-    "take": 0,
-    "wpm": 170.7,
+    "take": 2,
+    "model": "eleven_v3",
+    "wpm": 153.3,
+    "wpmAfter": 153.3,
+    "stretch": 1.0,
     "missing": [],
-    "stretch": 1.094,
-    "wpmAfter": 156.0,
     "heard": "The bonds are 10 -year U .S. Treasury bonds."
    },
-   "takes": 4,
+   "takes": 3,
    "problem": ""
   },
   {
@@ -185,14 +272,15 @@
    "act": "act1",
    "words": 10,
    "chosen": {
-    "take": 0,
-    "wpm": 156.2,
+    "take": 2,
+    "model": "eleven_v3",
+    "wpm": 155.4,
+    "wpmAfter": 155.4,
+    "stretch": 1.0,
     "missing": [],
-    "stretch": 1.001,
-    "wpmAfter": 156.0,
     "heard": "Every January, the portfolio is rebalanced back to that mix."
    },
-   "takes": 1,
+   "takes": 3,
    "problem": ""
   },
   {
@@ -201,10 +289,11 @@
    "words": 13,
    "chosen": {
     "take": 0,
-    "wpm": 163.9,
-    "missing": [],
-    "stretch": 1.051,
+    "model": "eleven_v3",
+    "wpm": 156.0,
     "wpmAfter": 156.0,
+    "stretch": 1.0,
+    "missing": [],
     "heard": "In the first year, the retiree withdraws 4 % of the starting balance."
    },
    "takes": 1,
@@ -215,14 +304,15 @@
    "act": "act1",
    "words": 9,
    "chosen": {
-    "take": 0,
-    "wpm": 153.4,
+    "take": 1,
+    "model": "eleven_v3",
+    "wpm": 122.2,
+    "wpmAfter": 122.2,
+    "stretch": 1.0,
     "missing": [],
-    "stretch": 0.983,
-    "wpmAfter": 156.0,
     "heard": "That is $40 ,000 in 1966 dollars."
    },
-   "takes": 1,
+   "takes": 4,
    "problem": ""
   },
   {
@@ -230,12 +320,13 @@
    "act": "act1",
    "words": 19,
    "chosen": {
-    "take": 2,
-    "wpm": 174.8,
+    "take": 3,
+    "model": "eleven_v3",
+    "wpm": 146.9,
+    "wpmAfter": 146.9,
+    "stretch": 1.0,
     "missing": [],
-    "stretch": 1.1,
-    "wpmAfter": 158.9,
-    "heard": "After that, the withdrawal rises each year with the previous year's inflation, so it always buys the same groceries."
+    "heard": "After that, the withdrawal rises each year with the previous year's inflation. So it always buys the same groceries."
    },
    "takes": 4,
    "problem": ""
@@ -246,13 +337,14 @@
    "words": 6,
    "chosen": {
     "take": 2,
-    "wpm": 171.4,
+    "model": "eleven_multilingual_v2",
+    "wpm": 166.7,
+    "wpmAfter": 166.7,
+    "stretch": 1.0,
     "missing": [],
-    "stretch": 1.099,
-    "wpmAfter": 156.0,
     "heard": "In real terms, it never changes."
    },
-   "takes": 4,
+   "takes": 7,
    "problem": ""
   },
   {
@@ -260,11 +352,12 @@
    "act": "act1",
    "words": 12,
    "chosen": {
-    "take": 1,
-    "wpm": 165.1,
+    "take": 3,
+    "model": "eleven_v3",
+    "wpm": 151.3,
+    "wpmAfter": 151.3,
+    "stretch": 1.0,
     "missing": [],
-    "stretch": 1.058,
-    "wpmAfter": 156.0,
     "heard": "In nominal terms, the dollars of the day, it climbs every year."
    },
    "takes": 4,
@@ -275,14 +368,15 @@
    "act": "act1",
    "words": 12,
    "chosen": {
-    "take": 0,
-    "wpm": 154.5,
+    "take": 1,
+    "model": "eleven_v3",
+    "wpm": 153.2,
+    "wpmAfter": 153.2,
+    "stretch": 1.0,
     "missing": [],
-    "stretch": 0.99,
-    "wpmAfter": 156.0,
     "heard": "The plan runs for 30 years, from 1966 through 1995."
    },
-   "takes": 1,
+   "takes": 2,
    "problem": ""
   },
   {
@@ -290,14 +384,15 @@
    "act": "act1",
    "words": 4,
    "chosen": {
-    "take": 0,
+    "take": 1,
+    "model": "eleven_v3",
     "wpm": 144.6,
+    "wpmAfter": 144.6,
+    "stretch": 1.0,
     "missing": [],
-    "stretch": 0.927,
-    "wpmAfter": 156.0,
     "heard": "No taxes, no fees."
    },
-   "takes": 1,
+   "takes": 4,
    "problem": ""
   },
   {
@@ -305,12 +400,13 @@
    "act": "act1",
    "words": 17,
    "chosen": {
-    "take": 3,
-    "wpm": 180.9,
+    "take": 1,
+    "model": "eleven_v3",
+    "wpm": 188.2,
+    "wpmAfter": 188.2,
+    "stretch": 1.0,
     "missing": [],
-    "stretch": 1.1,
-    "wpmAfter": 164.5,
-    "heard": "we keep the model, this bear, on purpose, so that one thing can change at a time."
+    "heard": "We keep the model this bare on purpose so that one thing can change at a time."
    },
    "takes": 4,
    "problem": ""
@@ -321,11 +417,12 @@
    "words": 12,
    "chosen": {
     "take": 1,
-    "wpm": 173.9,
+    "model": "eleven_v3",
+    "wpm": 135.3,
+    "wpmAfter": 135.3,
+    "stretch": 1.0,
     "missing": [],
-    "stretch": 1.1,
-    "wpmAfter": 158.1,
-    "heard": "The data is US only, and this is history, not a forecast."
+    "heard": "The data is U .S. only, and this is history, not a forecast."
    },
    "takes": 4,
    "problem": ""
@@ -335,14 +432,15 @@
    "act": "act1",
    "words": 5,
    "chosen": {
-    "take": 0,
-    "wpm": 137.6,
+    "take": 1,
+    "model": "eleven_v3",
+    "wpm": 159.6,
+    "wpmAfter": 159.6,
+    "stretch": 1.0,
     "missing": [],
-    "stretch": 0.9,
-    "wpmAfter": 152.9,
     "heard": "Now meet the second retiree."
    },
-   "takes": 4,
+   "takes": 2,
    "problem": ""
   },
   {
@@ -350,14 +448,15 @@
    "act": "act1",
    "words": 15,
    "chosen": {
-    "take": 0,
-    "wpm": 150.0,
+    "take": 2,
+    "model": "eleven_v3",
+    "wpm": 149.0,
+    "wpmAfter": 149.0,
+    "stretch": 1.0,
     "missing": [],
-    "stretch": 0.962,
-    "wpmAfter": 156.0,
     "heard": "The Mirror retiree lives through the exact same 30 annual returns, but in reverse order."
    },
-   "takes": 1,
+   "takes": 3,
    "problem": ""
   },
   {
@@ -365,11 +464,12 @@
    "act": "act1",
    "words": 15,
    "chosen": {
-    "take": 1,
-    "wpm": 157.9,
+    "take": 0,
+    "model": "eleven_v3",
+    "wpm": 136.0,
+    "wpmAfter": 136.0,
+    "stretch": 1.0,
     "missing": [],
-    "stretch": 1.012,
-    "wpmAfter": 156.0,
     "heard": "The return of 1995 arrives first, and the return of 1966 arrives last."
    },
    "takes": 4,
@@ -380,14 +480,15 @@
    "act": "act1",
    "words": 13,
    "chosen": {
-    "take": 2,
-    "wpm": 142.9,
+    "take": 1,
+    "model": "eleven_v3",
+    "wpm": 159.2,
+    "wpmAfter": 159.2,
+    "stretch": 1.0,
     "missing": [],
-    "stretch": 0.916,
-    "wpmAfter": 156.0,
     "heard": "This retiree is illustrative. No one lived through these years in this order."
    },
-   "takes": 4,
+   "takes": 2,
    "problem": ""
   },
   {
@@ -395,14 +496,15 @@
    "act": "act1",
    "words": 17,
    "chosen": {
-    "take": 2,
-    "wpm": 160.4,
+    "take": 0,
+    "model": "eleven_v3",
+    "wpm": 155.0,
+    "wpmAfter": 155.0,
+    "stretch": 1.0,
     "missing": [],
-    "stretch": 1.028,
-    "wpmAfter": 156.0,
     "heard": "Inflation stays in its real calendar order, so both retirees take out the same dollars every year."
    },
-   "takes": 4,
+   "takes": 1,
    "problem": ""
   },
   {
@@ -410,12 +512,13 @@
    "act": "act1",
    "words": 8,
    "chosen": {
-    "take": 2,
-    "wpm": 166.7,
+    "take": 1,
+    "model": "eleven_v3",
+    "wpm": 176.5,
+    "wpmAfter": 176.5,
+    "stretch": 1.0,
     "missing": [],
-    "stretch": 1.069,
-    "wpmAfter": 156.0,
-    "heard": "Here is the question. This first part answers."
+    "heard": "Here is the question this first part answers."
    },
    "takes": 4,
    "problem": ""
@@ -425,14 +528,15 @@
    "act": "act1",
    "words": 16,
    "chosen": {
-    "take": 0,
-    "wpm": 172.0,
+    "take": 2,
+    "model": "eleven_multilingual_v2",
+    "wpm": 179.8,
+    "wpmAfter": 179.8,
+    "stretch": 1.0,
     "missing": [],
-    "stretch": 1.1,
-    "wpmAfter": 156.4,
     "heard": "If two people earn the same average return, do they end up in the same place?"
    },
-   "takes": 4,
+   "takes": 7,
    "problem": ""
   },
   {
@@ -440,14 +544,15 @@
    "act": "act1",
    "words": 16,
    "chosen": {
-    "take": 0,
-    "wpm": 149.5,
+    "take": 1,
+    "model": "eleven_v3",
+    "wpm": 161.6,
+    "wpmAfter": 161.6,
+    "stretch": 1.0,
     "missing": [],
-    "stretch": 0.958,
-    "wpmAfter": 156.0,
     "heard": "The portfolio of the 1966 retiree earned an average return of 9 .7%."
    },
-   "takes": 4,
+   "takes": 2,
    "problem": ""
   },
   {
@@ -455,14 +560,15 @@
    "act": "act1",
    "words": 12,
    "chosen": {
-    "take": 3,
-    "wpm": 155.2,
+    "take": 1,
+    "model": "eleven_v3",
+    "wpm": 153.2,
+    "wpmAfter": 153.2,
+    "stretch": 1.0,
     "missing": [],
-    "stretch": 0.995,
-    "wpmAfter": 156.0,
-    "heard": "For the Mirror Retiree, the average is also 9 .7%."
+    "heard": "For the Mirror retiree, the average is also 9 .7%."
    },
-   "takes": 4,
+   "takes": 2,
    "problem": ""
   },
   {
@@ -470,27 +576,29 @@
    "act": "act1",
    "words": 2,
    "chosen": {
-    "take": 1,
-    "wpm": 162.2,
+    "take": 2,
+    "model": "eleven_multilingual_v2",
+    "wpm": 193.5,
+    "wpmAfter": 193.5,
+    "stretch": 1.0,
     "missing": [],
-    "stretch": 1.04,
-    "wpmAfter": 156.0,
     "heard": "Not close."
    },
-   "takes": 4,
-   "problem": ""
+   "takes": 8,
+   "problem": "outside 120-190"
   },
   {
    "id": "a1-avgmirror.3",
    "act": "act1",
    "words": 1,
    "chosen": {
-    "take": 2,
-    "wpm": 100.0,
+    "take": 0,
+    "model": "eleven_v3",
+    "wpm": 130.4,
+    "wpmAfter": 130.4,
+    "stretch": 1.0,
     "missing": [],
-    "stretch": 0.9,
-    "wpmAfter": 111.1,
-    "heard": "Identical."
+    "heard": "identical."
    },
    "takes": 4,
    "problem": ""
@@ -501,10 +609,11 @@
    "words": 17,
    "chosen": {
     "take": 3,
-    "wpm": 172.3,
+    "model": "eleven_v3",
+    "wpm": 155.0,
+    "wpmAfter": 155.0,
+    "stretch": 1.0,
     "missing": [],
-    "stretch": 1.1,
-    "wpmAfter": 156.6,
     "heard": "That is the geometric average, the compound rate that turns the starting dollar into the ending dollar."
    },
    "takes": 4,
@@ -515,14 +624,15 @@
    "act": "act1",
    "words": 17,
    "chosen": {
-    "take": 0,
-    "wpm": 161.4,
+    "take": 1,
+    "model": "eleven_v3",
+    "wpm": 160.4,
+    "wpmAfter": 160.4,
+    "stretch": 1.0,
     "missing": [],
-    "stretch": 1.035,
-    "wpmAfter": 156.0,
-    "heard": "Multiplication does not care about order, so the same years in any order give the same average."
+    "heard": "Multiplication does not care about order. So the same years in any order give the same average."
    },
-   "takes": 1,
+   "takes": 2,
    "problem": ""
   },
   {
@@ -530,14 +640,15 @@
    "act": "act1",
    "words": 23,
    "chosen": {
-    "take": 1,
-    "wpm": 169.5,
+    "take": 2,
+    "model": "eleven_v3",
+    "wpm": 163.1,
+    "wpmAfter": 163.1,
+    "stretch": 1.0,
     "missing": [],
-    "stretch": 1.087,
-    "wpmAfter": 156.0,
-    "heard": "Even the simple arithmetic average, adding up the 30 returns and dividing by 30, is the same for both, 10 .3%."
+    "heard": "Even the simple arithmetic average, adding up the 30 returns and dividing by 30 is the same for both, 10 .3%."
    },
-   "takes": 4,
+   "takes": 3,
    "problem": ""
   },
   {
@@ -545,15 +656,16 @@
    "act": "act1",
    "words": 3,
    "chosen": {
-    "take": 0,
-    "wpm": 152.5,
+    "take": 3,
+    "model": "eleven_multilingual_v2",
+    "wpm": 195.7,
+    "wpmAfter": 195.7,
+    "stretch": 1.0,
     "missing": [],
-    "stretch": 0.978,
-    "wpmAfter": 156.0,
     "heard": "Same money in."
    },
-   "takes": 1,
-   "problem": ""
+   "takes": 8,
+   "problem": "outside 120-190"
   },
   {
    "id": "a1-payoff.2",
@@ -561,13 +673,14 @@
    "words": 3,
    "chosen": {
     "take": 2,
-    "wpm": 136.4,
+    "model": "eleven_multilingual_v2",
+    "wpm": 183.7,
+    "wpmAfter": 183.7,
+    "stretch": 1.0,
     "missing": [],
-    "stretch": 0.9,
-    "wpmAfter": 151.6,
-    "heard": "Same money out"
+    "heard": "Same money out."
    },
-   "takes": 4,
+   "takes": 7,
    "problem": ""
   },
   {
@@ -575,11 +688,12 @@
    "act": "act1",
    "words": 2,
    "chosen": {
-    "take": 1,
-    "wpm": 139.5,
+    "take": 3,
+    "model": "eleven_v3",
+    "wpm": 181.8,
+    "wpmAfter": 181.8,
+    "stretch": 1.0,
     "missing": [],
-    "stretch": 0.9,
-    "wpmAfter": 155.0,
     "heard": "Same average."
    },
    "takes": 4,
@@ -590,14 +704,15 @@
    "act": "act1",
    "words": 8,
    "chosen": {
-    "take": 0,
-    "wpm": 161.1,
+    "take": 2,
+    "model": "eleven_v3",
+    "wpm": 163.3,
+    "wpmAfter": 163.3,
+    "stretch": 1.0,
     "missing": [],
-    "stretch": 1.033,
-    "wpmAfter": 156.0,
     "heard": "The only thing that differs is the order."
    },
-   "takes": 1,
+   "takes": 3,
    "problem": ""
   },
   {
@@ -605,14 +720,15 @@
    "act": "act2",
    "words": 7,
    "chosen": {
-    "take": 0,
-    "wpm": 154.4,
+    "take": 2,
+    "model": "eleven_v3",
+    "wpm": 182.6,
+    "wpmAfter": 182.6,
+    "stretch": 1.0,
     "missing": [],
-    "stretch": 0.99,
-    "wpmAfter": 156.0,
-    "heard": "Watch the two balances, year by year."
+    "heard": "Watch the two balances year by year."
    },
-   "takes": 1,
+   "takes": 4,
    "problem": ""
   },
   {
@@ -620,14 +736,15 @@
    "act": "act2",
    "words": 16,
    "chosen": {
-    "take": 1,
-    "wpm": 172.0,
+    "take": 0,
+    "model": "eleven_v3",
+    "wpm": 153.4,
+    "wpmAfter": 153.4,
+    "stretch": 1.0,
     "missing": [],
-    "stretch": 1.1,
-    "wpmAfter": 156.4,
     "heard": "The question now, when does the order start to matter and how much does it cost?"
    },
-   "takes": 4,
+   "takes": 1,
    "problem": ""
   },
   {
@@ -635,29 +752,31 @@
    "act": "act2",
    "words": 2,
    "chosen": {
-    "take": 1,
-    "wpm": 157.9,
+    "take": 3,
+    "model": "eleven_multilingual_v2",
+    "wpm": 200.0,
+    "wpmAfter": 200.0,
+    "stretch": 1.0,
     "missing": [],
-    "stretch": 1.012,
-    "wpmAfter": 156.0,
-    "heard": "Year 1"
+    "heard": "year one."
    },
-   "takes": 4,
-   "problem": ""
+   "takes": 8,
+   "problem": "outside 120-190"
   },
   {
    "id": "a2-y1.2",
    "act": "act2",
    "words": 9,
    "chosen": {
-    "take": 0,
-    "wpm": 141.4,
+    "take": 1,
+    "model": "eleven_v3",
+    "wpm": 157.0,
+    "wpmAfter": 157.0,
+    "stretch": 1.0,
     "missing": [],
-    "stretch": 0.906,
-    "wpmAfter": 156.0,
     "heard": "The 1966 retiree loses 4 .8%."
    },
-   "takes": 4,
+   "takes": 2,
    "problem": ""
   },
   {
@@ -666,11 +785,12 @@
    "words": 16,
    "chosen": {
     "take": 0,
-    "wpm": 134.5,
+    "model": "eleven_v3",
+    "wpm": 160.5,
+    "wpmAfter": 160.5,
+    "stretch": 1.0,
     "missing": [],
-    "stretch": 0.9,
-    "wpmAfter": 149.4,
-    "heard": "The Mirror Retiree gets the 1995 return first, a gain of 31 .7%."
+    "heard": "The Mirror retiree gets the 1995 return first, a gain of 31 .7%."
    },
    "takes": 1,
    "problem": ""
@@ -680,14 +800,15 @@
    "act": "act2",
    "words": 9,
    "chosen": {
-    "take": 2,
-    "wpm": 166.7,
+    "take": 1,
+    "model": "eleven_v3",
+    "wpm": 153.4,
+    "wpmAfter": 153.4,
+    "stretch": 1.0,
     "missing": [],
-    "stretch": 1.069,
-    "wpmAfter": 156.0,
     "heard": "One year in, and the paths have already split."
    },
-   "takes": 4,
+   "takes": 2,
    "problem": ""
   },
   {
@@ -696,10 +817,11 @@
    "words": 5,
    "chosen": {
     "take": 0,
-    "wpm": 161.3,
+    "model": "eleven_v3",
+    "wpm": 150.0,
+    "wpmAfter": 150.0,
+    "stretch": 1.0,
     "missing": [],
-    "stretch": 1.034,
-    "wpmAfter": 156.0,
     "heard": "Then, inflation starts to climb."
    },
    "takes": 1,
@@ -711,10 +833,11 @@
    "words": 17,
    "chosen": {
     "take": 0,
-    "wpm": 156.4,
+    "model": "eleven_v3",
+    "wpm": 162.9,
+    "wpmAfter": 162.9,
+    "stretch": 1.0,
     "missing": [],
-    "stretch": 1.003,
-    "wpmAfter": 156.0,
     "heard": "By 1969, it is 6 .2 % a year, and every withdrawal grows with it."
    },
    "takes": 1,
@@ -725,14 +848,15 @@
    "act": "act2",
    "words": 14,
    "chosen": {
-    "take": 1,
-    "wpm": 144.3,
+    "take": 0,
+    "model": "eleven_v3",
+    "wpm": 151.1,
+    "wpmAfter": 151.1,
+    "stretch": 1.0,
     "missing": [],
-    "stretch": 0.925,
-    "wpmAfter": 156.0,
     "heard": "After inflation, stocks and bonds both lose money in 1973 and 1974."
    },
-   "takes": 4,
+   "takes": 1,
    "problem": ""
   },
   {
@@ -741,10 +865,11 @@
    "words": 18,
    "chosen": {
     "take": 2,
-    "wpm": 154.7,
+    "model": "eleven_v3",
+    "wpm": 139.2,
+    "wpmAfter": 139.2,
+    "stretch": 1.0,
     "missing": [],
-    "stretch": 0.992,
-    "wpmAfter": 156.0,
     "heard": "In 1974 alone, the portfolio loses 14 .7%, while prices rise 12 .3%."
    },
    "takes": 4,
@@ -755,11 +880,12 @@
    "act": "act2",
    "words": 17,
    "chosen": {
-    "take": 1,
-    "wpm": 153.6,
+    "take": 3,
+    "model": "eleven_v3",
+    "wpm": 125.0,
+    "wpmAfter": 125.0,
+    "stretch": 1.0,
     "missing": [],
-    "stretch": 0.985,
-    "wpmAfter": 156.0,
     "heard": "In 1966 dollars, the 1966 retiree ends 1974 with $461 ,000."
    },
    "takes": 4,
@@ -770,14 +896,15 @@
    "act": "act2",
    "words": 18,
    "chosen": {
-    "take": 0,
-    "wpm": 150.0,
+    "take": 1,
+    "model": "eleven_multilingual_v2",
+    "wpm": 148.8,
+    "wpmAfter": 148.8,
+    "stretch": 1.0,
     "missing": [],
-    "stretch": 0.962,
-    "wpmAfter": 156.0,
     "heard": "The Mirror Retiree, same year, same withdrawals, $1 .27 million, also in 1966 dollars."
    },
-   "takes": 1,
+   "takes": 6,
    "problem": ""
   },
   {
@@ -785,11 +912,12 @@
    "act": "act2",
    "words": 11,
    "chosen": {
-    "take": 3,
-    "wpm": 173.7,
+    "take": 2,
+    "model": "eleven_v3",
+    "wpm": 179.3,
+    "wpmAfter": 179.3,
+    "stretch": 1.0,
     "missing": [],
-    "stretch": 1.1,
-    "wpmAfter": 157.9,
     "heard": "Here is why a bad start is so hard to undo."
    },
    "takes": 4,
@@ -800,14 +928,15 @@
    "act": "act2",
    "words": 21,
    "chosen": {
-    "take": 1,
-    "wpm": 168.4,
+    "take": 0,
+    "model": "eleven_v3",
+    "wpm": 165.8,
+    "wpmAfter": 165.8,
+    "stretch": 1.0,
     "missing": [],
-    "stretch": 1.079,
-    "wpmAfter": 156.0,
     "heard": "The withdrawal is still $40 ,000 in 1966 dollars, but it is now taken from a much smaller pile."
    },
-   "takes": 4,
+   "takes": 1,
    "problem": ""
   },
   {
@@ -815,14 +944,15 @@
    "act": "act2",
    "words": 17,
    "chosen": {
-    "take": 3,
-    "wpm": 180.2,
+    "take": 2,
+    "model": "eleven_v3",
+    "wpm": 148.3,
+    "wpmAfter": 148.3,
+    "stretch": 1.0,
     "missing": [],
-    "stretch": 1.1,
-    "wpmAfter": 163.8,
     "heard": "Every dollar withdrawn after a loss is a dollar that is not there when the recovery comes."
    },
-   "takes": 4,
+   "takes": 3,
    "problem": ""
   },
   {
@@ -831,13 +961,14 @@
    "words": 5,
    "chosen": {
     "take": 0,
-    "wpm": 115.4,
+    "model": "eleven_multilingual_v2",
+    "wpm": 141.5,
+    "wpmAfter": 141.5,
+    "stretch": 1.0,
     "missing": [],
-    "stretch": 0.9,
-    "wpmAfter": 128.2,
     "heard": "Analysts call this sequence of returns risk."
    },
-   "takes": 1,
+   "takes": 5,
    "problem": ""
   },
   {
@@ -845,14 +976,15 @@
    "act": "act2",
    "words": 4,
    "chosen": {
-    "take": 0,
-    "wpm": 160.0,
+    "take": 1,
+    "model": "eleven_v3",
+    "wpm": 162.2,
+    "wpmAfter": 162.2,
+    "stretch": 1.0,
     "missing": [],
-    "stretch": 1.026,
-    "wpmAfter": 156.0,
     "heard": "Good years do come."
    },
-   "takes": 1,
+   "takes": 2,
    "problem": ""
   },
   {
@@ -860,14 +992,15 @@
    "act": "act2",
    "words": 19,
    "chosen": {
-    "take": 0,
-    "wpm": 132.6,
+    "take": 2,
+    "model": "eleven_v3",
+    "wpm": 142.5,
+    "wpmAfter": 142.5,
+    "stretch": 1.0,
     "missing": [],
-    "stretch": 0.9,
-    "wpmAfter": 147.3,
     "heard": "In 1975, the portfolio gains 23 .6%, and in 1976, another 20 .7%."
    },
-   "takes": 1,
+   "takes": 4,
    "problem": ""
   },
   {
@@ -875,14 +1008,15 @@
    "act": "act2",
    "words": 16,
    "chosen": {
-    "take": 0,
-    "wpm": 164.9,
+    "take": 3,
+    "model": "eleven_v3",
+    "wpm": 159.5,
+    "wpmAfter": 159.5,
+    "stretch": 1.0,
     "missing": [],
-    "stretch": 1.057,
-    "wpmAfter": 156.0,
-    "heard": "But, they compound on a balance that has already been cut, while the withdrawals keep rising."
+    "heard": "but they compound on a balance that has already been cut while the withdrawals keep rising."
    },
-   "takes": 1,
+   "takes": 4,
    "problem": ""
   },
   {
@@ -891,13 +1025,14 @@
    "words": 9,
    "chosen": {
     "take": 0,
-    "wpm": 151.7,
+    "model": "eleven_v3",
+    "wpm": 168.8,
+    "wpmAfter": 168.8,
+    "stretch": 1.0,
     "missing": [],
-    "stretch": 0.972,
-    "wpmAfter": 156.0,
     "heard": "Through the rest of the decade, inflation keeps rising."
    },
-   "takes": 1,
+   "takes": 4,
    "problem": ""
   },
   {
@@ -905,14 +1040,15 @@
    "act": "act2",
    "words": 9,
    "chosen": {
-    "take": 0,
-    "wpm": 142.9,
+    "take": 1,
+    "model": "eleven_v3",
+    "wpm": 147.5,
+    "wpmAfter": 147.5,
+    "stretch": 1.0,
     "missing": [],
-    "stretch": 0.916,
-    "wpmAfter": 156.0,
     "heard": "In 1979, it reaches 13 .3%."
    },
-   "takes": 1,
+   "takes": 2,
    "problem": ""
   },
   {
@@ -921,13 +1057,14 @@
    "words": 20,
    "chosen": {
     "take": 0,
-    "wpm": 159.6,
+    "model": "eleven_v3",
+    "wpm": 141.5,
+    "wpmAfter": 141.5,
+    "stretch": 1.0,
     "missing": [],
-    "stretch": 1.023,
-    "wpmAfter": 156.0,
     "heard": "By 1981, the yearly withdrawal has grown to $108 ,553 in nominal dollars."
    },
-   "takes": 1,
+   "takes": 4,
    "problem": ""
   },
   {
@@ -936,10 +1073,11 @@
    "words": 10,
    "chosen": {
     "take": 0,
-    "wpm": 142.2,
+    "model": "eleven_v3",
+    "wpm": 128.8,
+    "wpmAfter": 128.8,
+    "stretch": 1.0,
     "missing": [],
-    "stretch": 0.912,
-    "wpmAfter": 156.0,
     "heard": "In 1966 dollars, it is still $40 ,000."
    },
    "takes": 4,
@@ -951,13 +1089,14 @@
    "words": 9,
    "chosen": {
     "take": 0,
-    "wpm": 144.4,
+    "model": "eleven_v3",
+    "wpm": 134.3,
+    "wpmAfter": 134.3,
+    "stretch": 1.0,
     "missing": [],
-    "stretch": 0.926,
-    "wpmAfter": 156.0,
-    "heard": "Then, in 1982, the good years finally arrive."
+    "heard": "Then, in 1982, the good years finally arrived."
    },
-   "takes": 1,
+   "takes": 4,
    "problem": ""
   },
   {
@@ -965,14 +1104,15 @@
    "act": "act2",
    "words": 11,
    "chosen": {
-    "take": 3,
-    "wpm": 138.1,
+    "take": 2,
+    "model": "eleven_v3",
+    "wpm": 147.3,
+    "wpmAfter": 147.3,
+    "stretch": 1.0,
     "missing": [],
-    "stretch": 0.9,
-    "wpmAfter": 153.4,
     "heard": "That year, the 1966 retiree gains 25 .4%."
    },
-   "takes": 4,
+   "takes": 3,
    "problem": ""
   },
   {
@@ -980,11 +1120,12 @@
    "act": "act2",
    "words": 13,
    "chosen": {
-    "take": 0,
-    "wpm": 177.3,
+    "take": 3,
+    "model": "eleven_v3",
+    "wpm": 174.9,
+    "wpmAfter": 174.9,
+    "stretch": 1.0,
     "missing": [],
-    "stretch": 1.1,
-    "wpmAfter": 161.2,
     "heard": "But the withdrawal now takes 16 .9 % of what is left."
    },
    "takes": 4,
@@ -995,14 +1136,15 @@
    "act": "act2",
    "words": 5,
    "chosen": {
-    "take": 0,
-    "wpm": 156.2,
+    "take": 3,
+    "model": "eleven_v3",
+    "wpm": 159.6,
+    "wpmAfter": 159.6,
+    "stretch": 1.0,
     "missing": [],
-    "stretch": 1.001,
-    "wpmAfter": 156.0,
     "heard": "The boom comes too late."
    },
-   "takes": 1,
+   "takes": 4,
    "problem": ""
   },
   {
@@ -1011,11 +1153,12 @@
    "words": 14,
    "chosen": {
     "take": 0,
-    "wpm": 148.9,
+    "model": "eleven_v3",
+    "wpm": 153.3,
+    "wpmAfter": 153.3,
+    "stretch": 1.0,
     "missing": [],
-    "stretch": 0.954,
-    "wpmAfter": 156.0,
-    "heard": "For the mirror retiree, those same years came first, when the balance was largest."
+    "heard": "For the mirror retiree, those same years came first when the balance was largest."
    },
    "takes": 1,
    "problem": ""
@@ -1026,10 +1169,11 @@
    "words": 5,
    "chosen": {
     "take": 0,
-    "wpm": 157.9,
+    "model": "eleven_v3",
+    "wpm": 151.5,
+    "wpmAfter": 151.5,
+    "stretch": 1.0,
     "missing": [],
-    "stretch": 1.012,
-    "wpmAfter": 156.0,
     "heard": "The gap widens every year."
    },
    "takes": 1,
@@ -1040,14 +1184,15 @@
    "act": "act2",
    "words": 5,
    "chosen": {
-    "take": 3,
-    "wpm": 176.5,
+    "take": 2,
+    "model": "eleven_v3",
+    "wpm": 164.8,
+    "wpmAfter": 164.8,
+    "stretch": 1.0,
     "missing": [],
-    "stretch": 1.1,
-    "wpmAfter": 160.5,
     "heard": "In 1986, it peaks."
    },
-   "takes": 4,
+   "takes": 3,
    "problem": ""
   },
   {
@@ -1055,12 +1200,13 @@
    "act": "act2",
    "words": 17,
    "chosen": {
-    "take": 2,
-    "wpm": 167.8,
+    "take": 3,
+    "model": "eleven_v3",
+    "wpm": 141.7,
+    "wpmAfter": 141.7,
+    "stretch": 1.0,
     "missing": [],
-    "stretch": 1.076,
-    "wpmAfter": 156.0,
-    "heard": "In 1966 dollars, the mirror retiree is now ahead by 1 .96 million dollars."
+    "heard": "In 1966 dollars, the Mirror Retiree is now ahead by 1 .96 million dollars."
    },
    "takes": 4,
    "problem": ""
@@ -1071,11 +1217,12 @@
    "words": 20,
    "chosen": {
     "take": 0,
-    "wpm": 169.0,
+    "model": "eleven_v3",
+    "wpm": 163.5,
+    "wpmAfter": 163.5,
+    "stretch": 1.0,
     "missing": [],
-    "stretch": 1.083,
-    "wpmAfter": 156.0,
-    "heard": "At $40 ,000 a year, in 1966 dollars, that gap would pay for 49 more years of withdrawals."
+    "heard": "At $40 ,000 a year in 1966 dollars, that gap would pay for 49 more years of withdrawals."
    },
    "takes": 1,
    "problem": ""
@@ -1085,14 +1232,15 @@
    "act": "act2",
    "words": 11,
    "chosen": {
-    "take": 0,
-    "wpm": 148.0,
+    "take": 2,
+    "model": "eleven_v3",
+    "wpm": 146.7,
+    "wpmAfter": 146.7,
+    "stretch": 1.0,
     "missing": [],
-    "stretch": 0.949,
-    "wpmAfter": 156.0,
     "heard": "From there, the story of the 1966 retiree is short."
    },
-   "takes": 4,
+   "takes": 3,
    "problem": ""
   },
   {
@@ -1101,10 +1249,11 @@
    "words": 24,
    "chosen": {
     "take": 0,
-    "wpm": 148.1,
+    "model": "eleven_v3",
+    "wpm": 155.8,
+    "wpmAfter": 155.8,
+    "stretch": 1.0,
     "missing": [],
-    "stretch": 0.949,
-    "wpmAfter": 156.0,
     "heard": "The mirror retiree meets the bad years late. The 1974 loss arrives in 1987 on a balance big enough to absorb it."
    },
    "takes": 1,
@@ -1115,14 +1264,15 @@
    "act": "act2",
    "words": 21,
    "chosen": {
-    "take": 0,
-    "wpm": 155.2,
+    "take": 3,
+    "model": "eleven_v3",
+    "wpm": 131.2,
+    "wpmAfter": 131.2,
+    "stretch": 1.0,
     "missing": [],
-    "stretch": 0.995,
-    "wpmAfter": 156.0,
-    "heard": "The account pays out its last $96 ,829 in nominal dollars and hits zero in 1991."
+    "heard": "The account pays out its last $96 ,829, in nominal dollars, and hits zero in 1991."
    },
-   "takes": 1,
+   "takes": 4,
    "problem": ""
   },
   {
@@ -1130,14 +1280,15 @@
    "act": "act2",
    "words": 19,
    "chosen": {
-    "take": 0,
-    "wpm": 191.9,
+    "take": 2,
+    "model": "eleven_multilingual_v2",
+    "wpm": 182.1,
+    "wpmAfter": 182.1,
+    "stretch": 1.0,
     "missing": [],
-    "stretch": 1.1,
-    "wpmAfter": 174.5,
     "heard": "That last payment is short of the full withdrawal, and the final four years of the plan get nothing."
    },
-   "takes": 4,
+   "takes": 7,
    "problem": ""
   },
   {
@@ -1145,14 +1296,15 @@
    "act": "act2",
    "words": 16,
    "chosen": {
-    "take": 0,
-    "wpm": 151.9,
+    "take": 3,
+    "model": "eleven_v3",
+    "wpm": 138.3,
+    "wpmAfter": 138.3,
+    "stretch": 1.0,
     "missing": [],
-    "stretch": 0.974,
-    "wpmAfter": 156.0,
     "heard": "The Mirror Retiree finishes 1995 with $6 .96 million in nominal dollars."
    },
-   "takes": 1,
+   "takes": 4,
    "problem": ""
   },
   {
@@ -1160,14 +1312,15 @@
    "act": "act2",
    "words": 22,
    "chosen": {
-    "take": 0,
-    "wpm": 165.8,
+    "take": 1,
+    "model": "eleven_v3",
+    "wpm": 141.6,
+    "wpmAfter": 141.6,
+    "stretch": 1.0,
     "missing": [],
-    "stretch": 1.063,
-    "wpmAfter": 156.0,
     "heard": "In 1966 dollars, that is $1 .44 million, more than the starting balance, after 30 years of withdrawals."
    },
-   "takes": 1,
+   "takes": 4,
    "problem": ""
   },
   {
@@ -1175,14 +1328,15 @@
    "act": "act2",
    "words": 9,
    "chosen": {
-    "take": 0,
-    "wpm": 169.8,
+    "take": 1,
+    "model": "eleven_v3",
+    "wpm": 161.7,
+    "wpmAfter": 161.7,
+    "stretch": 1.0,
     "missing": [],
-    "stretch": 1.088,
-    "wpmAfter": 156.0,
-    "heard": "Both portfolios average 9 .7 % a year."
+    "heard": "Both portfolios averaged 9 .7 % a year."
    },
-   "takes": 1,
+   "takes": 2,
    "problem": ""
   },
   {
@@ -1191,13 +1345,14 @@
    "words": 8,
    "chosen": {
     "take": 2,
-    "wpm": 163.3,
+    "model": "eleven_v3",
+    "wpm": 161.1,
+    "wpmAfter": 161.1,
+    "stretch": 1.0,
     "missing": [],
-    "stretch": 1.047,
-    "wpmAfter": 156.0,
     "heard": "The average did not decide who went broke."
    },
-   "takes": 4,
+   "takes": 3,
    "problem": ""
   },
   {
@@ -1206,10 +1361,11 @@
    "words": 6,
    "chosen": {
     "take": 2,
-    "wpm": 142.9,
+    "model": "eleven_v3",
+    "wpm": 189.5,
+    "wpmAfter": 189.5,
+    "stretch": 1.0,
     "missing": [],
-    "stretch": 0.916,
-    "wpmAfter": 156.0,
     "heard": "So was 1966 a fluke?"
    },
    "takes": 4,
@@ -1220,14 +1376,15 @@
    "act": "act3",
    "words": 15,
    "chosen": {
-    "take": 2,
-    "wpm": 159.0,
+    "take": 0,
+    "model": "eleven_v3",
+    "wpm": 160.7,
+    "wpmAfter": 160.7,
+    "stretch": 1.0,
     "missing": [],
-    "stretch": 1.019,
-    "wpmAfter": 156.0,
-    "heard": "We ran the same rules for every start year from 1928 to 1996."
+    "heard": "We ran the same rules for every start year, from 1928 to 1996."
    },
-   "takes": 4,
+   "takes": 1,
    "problem": ""
   },
   {
@@ -1235,14 +1392,15 @@
    "act": "act3",
    "words": 10,
    "chosen": {
-    "take": 0,
-    "wpm": 178.6,
+    "take": 2,
+    "model": "eleven_v3",
+    "wpm": 146.3,
+    "wpmAfter": 146.3,
+    "stretch": 1.0,
     "missing": [],
-    "stretch": 1.1,
-    "wpmAfter": 162.4,
     "heard": "That is 69 retirements, each with 30 years of data."
    },
-   "takes": 1,
+   "takes": 3,
    "problem": ""
   },
   {
@@ -1251,10 +1409,11 @@
    "words": 10,
    "chosen": {
     "take": 0,
-    "wpm": 163.9,
+    "model": "eleven_v3",
+    "wpm": 149.3,
+    "wpmAfter": 149.3,
+    "stretch": 1.0,
     "missing": [],
-    "stretch": 1.051,
-    "wpmAfter": 156.0,
     "heard": "The question for this part, what actually decides the outcome?"
    },
    "takes": 1,
@@ -1265,14 +1424,15 @@
    "act": "act3",
    "words": 7,
    "chosen": {
-    "take": 1,
-    "wpm": 153.3,
+    "take": 0,
+    "model": "eleven_v3",
+    "wpm": 161.5,
+    "wpmAfter": 161.5,
+    "stretch": 1.0,
     "missing": [],
-    "stretch": 0.983,
-    "wpmAfter": 156.0,
     "heard": "Most of these retirees never ran out."
    },
-   "takes": 4,
+   "takes": 1,
    "problem": ""
   },
   {
@@ -1281,10 +1441,11 @@
    "words": 13,
    "chosen": {
     "take": 0,
-    "wpm": 159.2,
+    "model": "eleven_v3",
+    "wpm": 147.2,
+    "wpmAfter": 147.2,
+    "stretch": 1.0,
     "missing": [],
-    "stretch": 1.021,
-    "wpmAfter": 156.0,
     "heard": "In 65 of the 69 start years, the money lasted all 30 years."
    },
    "takes": 1,
@@ -1295,14 +1456,15 @@
    "act": "act3",
    "words": 23,
    "chosen": {
-    "take": 0,
-    "wpm": 150.3,
+    "take": 3,
+    "model": "eleven_v3",
+    "wpm": 145.3,
+    "wpmAfter": 145.3,
+    "stretch": 1.0,
     "missing": [],
-    "stretch": 0.963,
-    "wpmAfter": 156.0,
     "heard": "A retiree who started in 1982 under the same rules ended with $5 .36 million in 1982 dollars."
    },
-   "takes": 1,
+   "takes": 4,
    "problem": ""
   },
   {
@@ -1311,10 +1473,11 @@
    "words": 16,
    "chosen": {
     "take": 0,
-    "wpm": 156.4,
+    "model": "eleven_v3",
+    "wpm": 163.3,
+    "wpmAfter": 163.3,
+    "stretch": 1.0,
     "missing": [],
-    "stretch": 1.003,
-    "wpmAfter": 156.0,
     "heard": "Even a retiree who started in 1929, the year of the crash, never ran out."
    },
    "takes": 1,
@@ -1326,11 +1489,12 @@
    "words": 23,
    "chosen": {
     "take": 0,
-    "wpm": 182.5,
+    "model": "eleven_v3",
+    "wpm": 156.1,
+    "wpmAfter": 156.1,
+    "stretch": 1.0,
     "missing": [],
-    "stretch": 1.1,
-    "wpmAfter": 165.9,
-    "heard": "Prices fell through the depression, so the withdrawals shrank, and after inflation, the first decade still averaged 3 .9 % a year."
+    "heard": "Prices fell through the depression, so the withdrawal shrank, and after inflation, the first decade still averaged 3 .9 % a year."
    },
    "takes": 1,
    "problem": ""
@@ -1340,14 +1504,15 @@
    "act": "act3",
    "words": 13,
    "chosen": {
-    "take": 2,
-    "wpm": 183.1,
+    "take": 1,
+    "model": "eleven_v3",
+    "wpm": 163.9,
+    "wpmAfter": 163.9,
+    "stretch": 1.0,
     "missing": [],
-    "stretch": 1.1,
-    "wpmAfter": 166.5,
     "heard": "For many start years, the order of returns did no harm at all."
    },
-   "takes": 4,
+   "takes": 2,
    "problem": ""
   },
   {
@@ -1355,14 +1520,15 @@
    "act": "act3",
    "words": 7,
    "chosen": {
-    "take": 2,
-    "wpm": 169.4,
+    "take": 1,
+    "model": "eleven_v3",
+    "wpm": 156.7,
+    "wpmAfter": 156.7,
+    "stretch": 1.0,
     "missing": [],
-    "stretch": 1.086,
-    "wpmAfter": 156.0,
-    "heard": "surviving is not the same as thriving."
+    "heard": "Surviving is not the same as thriving."
    },
-   "takes": 4,
+   "takes": 2,
    "problem": ""
   },
   {
@@ -1371,10 +1537,11 @@
    "words": 18,
    "chosen": {
     "take": 3,
-    "wpm": 157.0,
+    "model": "eleven_v3",
+    "wpm": 143.2,
+    "wpmAfter": 143.2,
+    "stretch": 1.0,
     "missing": [],
-    "stretch": 1.006,
-    "wpmAfter": 156.0,
     "heard": "In 26 of the 69 start years, the retiree ended with less than the starting balance after inflation."
    },
    "takes": 4,
@@ -1385,14 +1552,15 @@
    "act": "act3",
    "words": 14,
    "chosen": {
-    "take": 0,
-    "wpm": 156.1,
+    "take": 3,
+    "model": "eleven_v3",
+    "wpm": 136.4,
+    "wpmAfter": 136.4,
+    "stretch": 1.0,
     "missing": [],
-    "stretch": 1.001,
-    "wpmAfter": 156.0,
     "heard": "Four start years ran out of money, beginning with 1965 and 1966."
    },
-   "takes": 1,
+   "takes": 4,
    "problem": ""
   },
   {
@@ -1400,14 +1568,15 @@
    "act": "act3",
    "words": 6,
    "chosen": {
-    "take": 0,
-    "wpm": 131.4,
+    "take": 1,
+    "model": "eleven_v3",
+    "wpm": 146.3,
+    "wpmAfter": 146.3,
+    "stretch": 1.0,
     "missing": [],
-    "stretch": 0.9,
-    "wpmAfter": 146.0,
-    "heard": "then 1968 and 1969."
+    "heard": "Then 1968 and 1969."
    },
-   "takes": 4,
+   "takes": 2,
    "problem": ""
   },
   {
@@ -1415,14 +1584,15 @@
    "act": "act3",
    "words": 8,
    "chosen": {
-    "take": 0,
-    "wpm": 153.8,
+    "take": 1,
+    "model": "eleven_v3",
+    "wpm": 162.2,
+    "wpmAfter": 162.2,
+    "stretch": 1.0,
     "missing": [],
-    "stretch": 0.986,
-    "wpmAfter": 156.0,
-    "heard": "Their long -run averages do not single them out."
+    "heard": "Their long run averages, do not single them out."
    },
-   "takes": 1,
+   "takes": 2,
    "problem": ""
   },
   {
@@ -1430,12 +1600,13 @@
    "act": "act3",
    "words": 17,
    "chosen": {
-    "take": 0,
-    "wpm": 150.0,
+    "take": 3,
+    "model": "eleven_v3",
+    "wpm": 133.2,
+    "wpmAfter": 133.2,
+    "stretch": 1.0,
     "missing": [],
-    "stretch": 0.962,
-    "wpmAfter": 156.0,
-    "heard": "After inflation, the 1966 retiree averaged 4 .1 % a year, over all 30 years."
+    "heard": "After inflation, the 1966 retiree averaged 4 .1 % a year over all 30 years."
    },
    "takes": 4,
    "problem": ""
@@ -1445,14 +1616,15 @@
    "act": "act3",
    "words": 14,
    "chosen": {
-    "take": 0,
-    "wpm": 169.4,
+    "take": 2,
+    "model": "eleven_v3",
+    "wpm": 144.8,
+    "wpmAfter": 144.8,
+    "stretch": 1.0,
     "missing": [],
-    "stretch": 1.086,
-    "wpmAfter": 156.0,
-    "heard": "17 start years had a lower real average than that, and never ran out."
+    "heard": "17 start years had a lower real average than that and never ran out."
    },
-   "takes": 1,
+   "takes": 4,
    "problem": ""
   },
   {
@@ -1460,14 +1632,15 @@
    "act": "act3",
    "words": 13,
    "chosen": {
-    "take": 0,
-    "wpm": 156.6,
+    "take": 2,
+    "model": "eleven_v3",
+    "wpm": 150.6,
+    "wpmAfter": 150.6,
+    "stretch": 1.0,
     "missing": [],
-    "stretch": 1.004,
-    "wpmAfter": 156.0,
     "heard": "After inflation, the 1969 retiree averaged 5 .6 % a year."
    },
-   "takes": 1,
+   "takes": 3,
    "problem": ""
   },
   {
@@ -1475,11 +1648,12 @@
    "act": "act3",
    "words": 10,
    "chosen": {
-    "take": 0,
-    "wpm": 140.8,
+    "take": 1,
+    "model": "eleven_v3",
+    "wpm": 124.5,
+    "wpmAfter": 124.5,
+    "stretch": 1.0,
     "missing": [],
-    "stretch": 0.903,
-    "wpmAfter": 156.0,
     "heard": "The 1928 retiree averaged less, 4 .9%."
    },
    "takes": 4,
@@ -1490,14 +1664,15 @@
    "act": "act3",
    "words": 26,
    "chosen": {
-    "take": 0,
-    "wpm": 147.4,
+    "take": 2,
+    "model": "eleven_v3",
+    "wpm": 148.9,
+    "wpmAfter": 148.9,
+    "stretch": 1.0,
     "missing": [],
-    "stretch": 0.945,
-    "wpmAfter": 156.0,
-    "heard": "Yet 1928 ended with $1 .21 million in 1928 dollars and 1969 ran out of money in its 28th year."
+    "heard": "Yet, 1928 ended with $1 .21 million in 1928 dollars and 1969 ran out of money in its 28th year."
    },
-   "takes": 1,
+   "takes": 3,
    "problem": ""
   },
   {
@@ -1505,14 +1680,15 @@
    "act": "act3",
    "words": 9,
    "chosen": {
-    "take": 0,
-    "wpm": 163.6,
+    "take": 1,
+    "model": "eleven_v3",
+    "wpm": 173.1,
+    "wpmAfter": 173.1,
+    "stretch": 1.0,
     "missing": [],
-    "stretch": 1.049,
-    "wpmAfter": 156.0,
-    "heard": "What, the four failures share, is their first decade."
+    "heard": "What the four failures share is their first decade."
    },
-   "takes": 1,
+   "takes": 4,
    "problem": ""
   },
   {
@@ -1521,13 +1697,14 @@
    "words": 16,
    "chosen": {
     "take": 2,
-    "wpm": 163.8,
+    "model": "eleven_v3",
+    "wpm": 152.9,
+    "wpmAfter": 152.9,
+    "stretch": 1.0,
     "missing": [],
-    "stretch": 1.05,
-    "wpmAfter": 156.0,
     "heard": "In every one of them, the portfolio lost money after inflation over its first 10 years."
    },
-   "takes": 4,
+   "takes": 3,
    "problem": ""
   },
   {
@@ -1536,10 +1713,11 @@
    "words": 16,
    "chosen": {
     "take": 0,
-    "wpm": 156.9,
+    "model": "eleven_v3",
+    "wpm": 123.7,
+    "wpmAfter": 123.7,
+    "stretch": 1.0,
     "missing": [],
-    "stretch": 1.006,
-    "wpmAfter": 156.0,
     "heard": "After inflation, the first decade of the 1966 retiree averaged minus 1 .8%."
    },
    "takes": 4,
@@ -1550,14 +1728,15 @@
    "act": "act3",
    "words": 16,
    "chosen": {
-    "take": 1,
-    "wpm": 157.4,
+    "take": 0,
+    "model": "eleven_v3",
+    "wpm": 148.1,
+    "wpmAfter": 148.1,
+    "stretch": 1.0,
     "missing": [],
-    "stretch": 1.009,
-    "wpmAfter": 156.0,
     "heard": "In the first decade, the mirror retiree averaged 6 .9 % a year after inflation."
    },
-   "takes": 4,
+   "takes": 1,
    "problem": ""
   },
   {
@@ -1566,10 +1745,11 @@
    "words": 4,
    "chosen": {
     "take": 0,
-    "wpm": 137.9,
+    "model": "eleven_v3",
+    "wpm": 126.3,
+    "wpmAfter": 126.3,
+    "stretch": 1.0,
     "missing": [],
-    "stretch": 0.9,
-    "wpmAfter": 153.2,
     "heard": "So what decided it?"
    },
    "takes": 4,
@@ -1580,29 +1760,31 @@
    "act": "act3",
    "words": 3,
    "chosen": {
-    "take": 0,
-    "wpm": 169.8,
+    "take": 2,
+    "model": "eleven_multilingual_v2",
+    "wpm": 204.5,
+    "wpmAfter": 204.5,
+    "stretch": 1.0,
     "missing": [],
-    "stretch": 1.088,
-    "wpmAfter": 156.0,
     "heard": "not the average."
    },
-   "takes": 1,
-   "problem": ""
+   "takes": 8,
+   "problem": "outside 120-190"
   },
   {
    "id": "a3-answer.3",
    "act": "act3",
    "words": 4,
    "chosen": {
-    "take": 0,
-    "wpm": 164.4,
+    "take": 3,
+    "model": "eleven_v3",
+    "wpm": 179.1,
+    "wpmAfter": 179.1,
+    "stretch": 1.0,
     "missing": [],
-    "stretch": 1.054,
-    "wpmAfter": 156.0,
     "heard": "the first 10 years."
    },
-   "takes": 1,
+   "takes": 4,
    "problem": ""
   },
   {
@@ -1611,13 +1793,14 @@
    "words": 24,
    "chosen": {
     "take": 0,
-    "wpm": 189.5,
+    "model": "eleven_v3",
+    "wpm": 171.4,
+    "wpmAfter": 171.4,
+    "stretch": 1.0,
     "missing": [],
-    "stretch": 1.1,
-    "wpmAfter": 172.3,
     "heard": "To be precise, across all 69 start years, the 30 -year real return still lines up best with how much is left at the end."
    },
-   "takes": 4,
+   "takes": 2,
    "problem": ""
   },
   {
@@ -1626,10 +1809,11 @@
    "words": 11,
    "chosen": {
     "take": 0,
-    "wpm": 150.0,
+    "model": "eleven_v3",
+    "wpm": 156.4,
+    "wpmAfter": 156.4,
+    "stretch": 1.0,
     "missing": [],
-    "stretch": 0.962,
-    "wpmAfter": 156.0,
     "heard": "But every retiree who ran out, met a bad first decade."
    },
    "takes": 1,
@@ -1640,14 +1824,15 @@
    "act": "act3",
    "words": 19,
    "chosen": {
-    "take": 0,
-    "wpm": 145.4,
+    "take": 1,
+    "model": "eleven_v3",
+    "wpm": 148.4,
+    "wpmAfter": 148.4,
+    "stretch": 1.0,
     "missing": [],
-    "stretch": 0.932,
-    "wpmAfter": 156.0,
     "heard": "The 9 .7 % average described the 1966 retiree perfectly, and it said nothing about 1991."
    },
-   "takes": 1,
+   "takes": 2,
    "problem": ""
   },
   {
@@ -1655,14 +1840,15 @@
    "act": "act3",
    "words": 6,
    "chosen": {
-    "take": 0,
-    "wpm": 156.5,
+    "take": 2,
+    "model": "eleven_multilingual_v2",
+    "wpm": 183.7,
+    "wpmAfter": 183.7,
+    "stretch": 1.0,
     "missing": [],
-    "stretch": 1.003,
-    "wpmAfter": 156.0,
-    "heard": "Now, the limits of this analysis."
+    "heard": "Now the limits of this analysis."
    },
-   "takes": 4,
+   "takes": 7,
    "problem": ""
   },
   {
@@ -1670,14 +1856,15 @@
    "act": "act3",
    "words": 6,
    "chosen": {
-    "take": 1,
-    "wpm": 152.5,
+    "take": 0,
+    "model": "eleven_v3",
+    "wpm": 155.2,
+    "wpmAfter": 155.2,
+    "stretch": 1.0,
     "missing": [],
-    "stretch": 0.978,
-    "wpmAfter": 156.0,
     "heard": "This is history, not a forecast."
    },
-   "takes": 4,
+   "takes": 1,
    "problem": ""
   },
   {
@@ -1686,11 +1873,12 @@
    "words": 11,
    "chosen": {
     "take": 0,
-    "wpm": 161.0,
+    "model": "eleven_v3",
+    "wpm": 163.4,
+    "wpmAfter": 163.4,
+    "stretch": 1.0,
     "missing": [],
-    "stretch": 1.032,
-    "wpmAfter": 156.0,
-    "heard": "It is US only, one country with one set of markets."
+    "heard": "It is U .S. only, one country with one set of markets."
    },
    "takes": 1,
    "problem": ""
@@ -1700,11 +1888,12 @@
    "act": "act3",
    "words": 15,
    "chosen": {
-    "take": 2,
-    "wpm": 142.0,
+    "take": 1,
+    "model": "eleven_v3",
+    "wpm": 120.6,
+    "wpmAfter": 120.6,
+    "stretch": 1.0,
     "missing": [],
-    "stretch": 0.91,
-    "wpmAfter": 156.0,
     "heard": "The 69 windows overlap, so 98 years of data hold only three separate 30 -year stretches."
    },
    "takes": 4,
@@ -1716,13 +1905,14 @@
    "words": 16,
    "chosen": {
     "take": 0,
-    "wpm": 155.3,
+    "model": "eleven_v3",
+    "wpm": 134.5,
+    "wpmAfter": 134.5,
+    "stretch": 1.0,
     "missing": [],
-    "stretch": 0.996,
-    "wpmAfter": 156.0,
-    "heard": "And the model is bare. No taxes, no fees, one portfolio mix, and one withdrawal rule."
+    "heard": "And the model is bare, no taxes, no fees, one portfolio mix, and one withdrawal rule."
    },
-   "takes": 1,
+   "takes": 4,
    "problem": ""
   },
   {
@@ -1730,14 +1920,15 @@
    "act": "act3",
    "words": 10,
    "chosen": {
-    "take": 0,
-    "wpm": 159.6,
+    "take": 1,
+    "model": "eleven_v3",
+    "wpm": 180.7,
+    "wpmAfter": 180.7,
+    "stretch": 1.0,
     "missing": [],
-    "stretch": 1.023,
-    "wpmAfter": 156.0,
-    "heard": "change any of those, and every number here changes too."
+    "heard": "Change any of those, and every number here changes too."
    },
-   "takes": 1,
+   "takes": 3,
    "problem": ""
   },
   {
@@ -1746,13 +1937,14 @@
    "words": 19,
    "chosen": {
     "take": 0,
-    "wpm": 164.3,
+    "model": "eleven_v3",
+    "wpm": 143.6,
+    "wpmAfter": 143.6,
+    "stretch": 1.0,
     "missing": [],
-    "stretch": 1.053,
-    "wpmAfter": 156.0,
     "heard": "The data, annual returns compiled at NYU Stern, and consumer prices from the Bureau of Labor Statistics via FRED."
    },
-   "takes": 1,
+   "takes": 4,
    "problem": ""
   },
   {
@@ -1761,10 +1953,11 @@
    "words": 14,
    "chosen": {
     "take": 0,
-    "wpm": 135.9,
+    "model": "eleven_v3",
+    "wpm": 164.7,
+    "wpmAfter": 164.7,
+    "stretch": 1.0,
     "missing": [],
-    "stretch": 0.9,
-    "wpmAfter": 151.0,
     "heard": "Returns include dividends and bond coupons, and the portfolio is rebalanced once a year."
    },
    "takes": 1,
@@ -1775,14 +1968,15 @@
    "act": "method",
    "words": 9,
    "chosen": {
-    "take": 0,
-    "wpm": 172.0,
+    "take": 2,
+    "model": "eleven_multilingual_v2",
+    "wpm": 169.8,
+    "wpmAfter": 169.8,
+    "stretch": 1.0,
     "missing": [],
-    "stretch": 1.1,
-    "wpmAfter": 156.4,
     "heard": "Every number and formula is listed in the description."
    },
-   "takes": 1,
+   "takes": 7,
    "problem": ""
   },
   {
@@ -1790,14 +1984,15 @@
    "act": "outro",
    "words": 14,
    "chosen": {
-    "take": 1,
-    "wpm": 172.1,
+    "take": 0,
+    "model": "eleven_v3",
+    "wpm": 150.0,
+    "wpmAfter": 150.0,
+    "stretch": 1.0,
     "missing": [],
-    "stretch": 1.1,
-    "wpmAfter": 156.5,
-    "heard": "two retirees, one average, and a fate decided by the order of the years."
+    "heard": "Two retirees, one average, and a fate decided by the order of the years."
    },
-   "takes": 4,
+   "takes": 1,
    "problem": ""
   }
  ]

@@ -5,16 +5,18 @@ const fs = require('fs');
 const path = require('path');
 const { ACTS } = require('./script');
 const { toSpoken } = require('./speak');
+const { withPauses } = require('./pauses');
 
 const ROOT = path.join(__dirname, '..', '..');
-const TAKES = path.join(ROOT, 'out', 'voice', 'takes-wanted.json'); // sentence -> number of takes to generate
+const TAKES = path.join(ROOT, 'out', 'voice', 'openai-m1', 'takes-wanted.json'); // sentence -> number of takes to generate
 
+// ElevenLabs reads the text as written: the OpenAI-only `sp` pause hacks of M1 are not used.
 function sentences() {
   const takes = fs.existsSync(TAKES) ? JSON.parse(fs.readFileSync(TAKES, 'utf8')) : {};
   const out = [];
   for (const a of ACTS) for (const s of a.scenes) s.lines.forEach((l, i) => {
     const id = `${s.id}.${i + 1}`;
-    out.push({ id, scene: s.id, act: a.id, text: l.t, spoken: toSpoken(l.sp || l.t), direction: l.d, decisive: !!l.decisive, takes: (takes[id] && takes[id].n) || 1, paceHint: (takes[id] && takes[id].hint) || '' });
+    out.push({ id, scene: s.id, act: a.id, text: l.t, spoken: withPauses(toSpoken(l.pause || l.t)), direction: l.d, decisive: !!l.decisive, takes: (takes[id] && takes[id].n) || 1, paceHint: (takes[id] && takes[id].hint) || '' });
   });
   return out;
 }

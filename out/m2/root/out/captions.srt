@@ -1,0 +1,208 @@
+1
+00:00:02,100 --> 00:00:06,888
+Two retirees with the same balance, the
+same withdrawals and the same average
+
+2
+00:00:06,908 --> 00:00:07,620
+return.
+
+3
+00:00:07,640 --> 00:00:11,120
+One ran out of money in 1991.
+
+4
+00:00:12,370 --> 00:00:14,330
+So what decided it?
+
+5
+00:00:18,230 --> 00:00:20,930
+It is January 1966.
+
+6
+00:00:21,230 --> 00:00:26,710
+The first retiree starts with $1 million,
+measured in 1966 dollars.
+
+7
+00:00:27,010 --> 00:00:32,730
+They retire at the start of a hard decade
+for markets, though nobody knows it yet.
+
+8
+00:00:33,030 --> 00:00:39,458
+By the end of this video, you will know
+which ten years decided the fate of this
+
+9
+00:00:39,478 --> 00:00:45,290
+retiree, and whether the same thing held
+for every start year since 1928.
+
+10
+00:00:45,590 --> 00:00:51,330
+The money sits in a portfolio of 60%
+stocks and 40% bonds.
+
+11
+00:00:51,630 --> 00:00:57,050
+The stocks are the Standard & Poor's 500
+index, with dividends reinvested.
+
+12
+00:00:57,350 --> 00:01:00,450
+The bonds are 10-year US Treasury bonds.
+
+13
+00:01:00,750 --> 00:01:04,850
+Every January, the portfolio is rebalanced
+back to that mix.
+
+14
+00:01:05,150 --> 00:01:10,470
+In the first year, the retiree withdraws
+4% of the starting balance.
+
+15
+00:01:10,770 --> 00:01:15,530
+That is $40,000, in 1966 dollars.
+
+16
+00:01:15,830 --> 00:01:21,731
+After that, the withdrawal rises each year
+with the previous year's inflation, so it
+
+17
+00:01:21,751 --> 00:01:23,910
+always buys the same groceries.
+
+18
+00:01:24,210 --> 00:01:26,690
+In real terms, it never changes.
+
+19
+00:01:26,990 --> 00:01:32,090
+In nominal terms, the dollars of the day,
+it climbs every year.
+
+20
+00:01:32,390 --> 00:01:37,630
+The plan runs for 30 years, from 1966
+through 1995.
+
+21
+00:01:37,930 --> 00:01:39,870
+No taxes, no fees.
+
+22
+00:01:40,170 --> 00:01:45,930
+We keep the model this bare on purpose, so
+that one thing can change at a time.
+
+23
+00:01:46,230 --> 00:01:52,030
+The data is US only, and this is history,
+not a forecast.
+
+24
+00:01:52,930 --> 00:01:54,890
+Now meet the second retiree.
+
+25
+00:01:55,190 --> 00:02:00,947
+The mirror retiree lives through the exact
+same 30 annual returns, but in reverse
+
+26
+00:02:00,967 --> 00:02:01,670
+order.
+
+27
+00:02:01,690 --> 00:02:08,590
+The return of 1995 arrives first, and the
+return of 1966 arrives last.
+
+28
+00:02:08,890 --> 00:02:14,010
+This retiree is illustrative: no one lived
+through these years in this order.
+
+29
+00:02:14,310 --> 00:02:19,723
+Inflation stays in its real calendar
+order, so both retirees take out the same
+
+30
+00:02:19,743 --> 00:02:21,050
+dollars every year.
+
+31
+00:02:21,350 --> 00:02:24,350
+Here is the question this first part
+answers.
+
+32
+00:02:24,650 --> 00:02:30,330
+If two people earn the same average
+return, do they end up in the same place?
+
+33
+00:02:30,630 --> 00:02:36,790
+The portfolio of the 1966 retiree earned
+an average return of 9.7%.
+
+34
+00:02:38,190 --> 00:02:43,030
+For the mirror retiree, the average is
+also 9.7%.
+
+35
+00:02:43,330 --> 00:02:44,330
+Not close.
+
+36
+00:02:44,610 --> 00:02:45,610
+Identical.
+
+37
+00:02:45,710 --> 00:02:50,481
+That is the geometric average, the
+compound rate that turns the starting
+
+38
+00:02:50,501 --> 00:02:52,470
+dollar into the ending dollar.
+
+39
+00:02:52,770 --> 00:02:58,481
+Multiplication does not care about order,
+so the same years in any order give the
+
+40
+00:02:58,501 --> 00:02:59,501
+same average.
+
+41
+00:02:59,710 --> 00:03:06,710
+Even the simple arithmetic average, adding
+up the 30 returns and dividing by 30, is
+
+42
+00:03:06,862 --> 00:03:08,990
+the same for both: 10.3%.
+
+43
+00:03:09,290 --> 00:03:10,350
+Same money in.
+
+44
+00:03:10,650 --> 00:03:11,850
+Same money out.
+
+45
+00:03:12,150 --> 00:03:13,390
+Same average.
+
+46
+00:03:13,690 --> 00:03:16,830
+The only thing that differs is the order.

@@ -925,6 +925,18 @@
    "depth": "foreground card / mid chart / background floor and year wall (≥ 3 layers)"
   },
   {
+   "id": "sh-a3-less-b",
+   "scene": "a3-less-b",
+   "size": "close-up",
+   "angle": "high",
+   "focalMm": 35,
+   "move": "cut on action to a new size, then hold",
+   "moveReason": "a long line needs a second angle to keep attention",
+   "moveSeconds": 0,
+   "lens": "35 mm (35 mm equivalent, vertical fov 37.8°)",
+   "depth": "foreground card / mid chart / background floor and year wall (≥ 3 layers)"
+  },
+  {
    "id": "sh-a3-four",
    "scene": "a3-four",
    "size": "medium",
