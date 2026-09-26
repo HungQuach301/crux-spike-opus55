@@ -1,0 +1,26 @@
+{
+ "subframes": 8,
+ "shutter": 0.5,
+ "stepZero": {
+  "secondsPerVideoSecond": 33.27,
+  "worstCaseSecondsPerVideoSecond": 43.69,
+  "workers": 1,
+  "reason": "Step 0 (BRIEF-D §8b): 10 s test scene (4 floor depth bands + 3 depth layers, thin-lens depth of field per layer, rack focus, lateral truck) rendered with 8 temporal subframes over a 180-degree shutter in Chromium (software raster, --disable-gpu), 1 worker: 332.7 s wall for 10 s = 33.3 s per video second; 202 of 300 frames needed all 8 subframes (1.46 s/frame), 98 were static (0.38 s/frame). Below the 60 s/s limit, so 8 subframes are kept (no reduction to 4).",
+  "evidence": "out/step0/render-8x.mp4, out/step0/render-8x.json, out/step0/contact.png"
+ },
+ "m2": {
+  "subframes": 8,
+  "shutter": 0.5,
+  "workers": 4,
+  "frames": 5993,
+  "framesSupersampled": 2031,
+  "wallSeconds": 1847.3,
+  "secondsPerVideoSecond": 9.25,
+  "workerSeconds": [
+   1847.1,
+   1274.7,
+   1376,
+   1237.7
+  ]
+ }
+}

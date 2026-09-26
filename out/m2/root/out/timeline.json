@@ -1,6 +1,6 @@
 {
  "fps": 30,
- "total": 199.759,
+ "total": 203.019,
  "acts": [
   {
    "id": "cold-open",
@@ -15,8 +15,8 @@
   {
    "id": "act1",
    "start": 17.143,
-   "end": 199.759,
-   "climax": 158.19
+   "end": 203.019,
+   "climax": 160.39
   }
  ],
  "scenes": [
@@ -24,7 +24,7 @@
    "id": "co-lines",
    "act": "cold-open",
    "start": 0,
-   "dur": 2.143,
+   "dur": 1.429,
    "layout": "duel/emerge",
    "shot": {
     "size": "extreme-wide",
@@ -35,15 +35,15 @@
     "co"
    ],
    "chart": null,
-   "move": 1.54,
+   "move": 0,
    "composition": "center",
    "cutIn": null
   },
   {
    "id": "co-same",
    "act": "cold-open",
-   "start": 2.143,
-   "dur": 5.714,
+   "start": 1.429,
+   "dur": 6.111,
    "layout": "duel/overlay",
    "shot": {
     "size": "wide",
@@ -54,14 +54,14 @@
     "co"
    ],
    "chart": "co",
-   "move": 3,
+   "move": 2,
    "cutIn": null
   },
   {
    "id": "co-broke",
    "act": "cold-open",
-   "start": 7.857,
-   "dur": 4.286,
+   "start": 7.54,
+   "dur": 4.603,
    "layout": "duel/split",
    "shot": {
     "size": "medium",
@@ -72,7 +72,7 @@
     "cb"
    ],
    "chart": "cb",
-   "move": 2.2,
+   "move": 2,
    "cutIn": null
   },
   {
@@ -117,7 +117,7 @@
    "id": "a1-est",
    "act": "act1",
    "start": 17.143,
-   "dur": 3.975,
+   "dur": 3.887,
    "layout": "world/establish",
    "shot": {
     "size": "extreme-wide",
@@ -128,14 +128,14 @@
     "est"
    ],
    "chart": null,
-   "move": 2.4,
+   "move": 2.1,
    "cutIn": null
   },
   {
    "id": "a1-start",
    "act": "act1",
-   "start": 21.118,
-   "dur": 5.87,
+   "start": 21.03,
+   "dur": 5.88,
    "layout": "ledger/card",
    "shot": {
     "size": "medium",
@@ -146,14 +146,14 @@
     "st"
    ],
    "chart": null,
-   "move": 2,
+   "move": 1.9,
    "cutIn": null
   },
   {
    "id": "a1-who",
    "act": "act1",
-   "start": 26.988,
-   "dur": 5.869,
+   "start": 26.91,
+   "dur": 5.947,
    "layout": "ledger/card",
    "shot": {
     "size": "close-up",
@@ -164,14 +164,14 @@
     "who"
    ],
    "chart": null,
-   "move": 2.6,
+   "move": 2.1,
    "cutIn": null
   },
   {
    "id": "a1-hook",
    "act": "act1",
    "start": 32.857,
-   "dur": 6.376,
+   "dur": 6.41,
    "layout": "promise/card",
    "shot": {
     "size": "wide",
@@ -182,14 +182,14 @@
     "hk"
    ],
    "chart": null,
-   "move": 2.6,
+   "move": 2.1,
    "cutIn": null
   },
   {
    "id": "a1-hook-b",
    "act": "act1",
-   "start": 39.233,
-   "dur": 6.357,
+   "start": 39.267,
+   "dur": 6.423,
    "layout": "promise/card",
    "shot": {
     "size": "medium",
@@ -200,14 +200,14 @@
     "hk"
    ],
    "chart": null,
-   "move": 2.4,
+   "move": 2,
    "cutIn": null
   },
   {
    "id": "a1-mix",
    "act": "act1",
-   "start": 45.59,
-   "dur": 6.18,
+   "start": 45.69,
+   "dur": 6.08,
    "layout": "donut/split",
    "shot": {
     "size": "medium",
@@ -218,7 +218,7 @@
     "mx"
    ],
    "chart": null,
-   "move": 2.4,
+   "move": 2,
    "composition": "center",
    "cutIn": null
   },
@@ -226,7 +226,7 @@
    "id": "a1-assets",
    "act": "act1",
    "start": 51.77,
-   "dur": 8.23,
+   "dur": 8.53,
    "layout": "donut/detail",
    "shot": {
     "size": "close-up",
@@ -243,8 +243,8 @@
   {
    "id": "a1-rebal",
    "act": "act1",
-   "start": 60,
-   "dur": 5.15,
+   "start": 60.3,
+   "dur": 5.166,
    "layout": "donut/rebalance",
    "shot": {
     "size": "medium",
@@ -261,8 +261,8 @@
   {
    "id": "a1-rule",
    "act": "act1",
-   "start": 65.15,
-   "dur": 10.751,
+   "start": 65.466,
+   "dur": 11.064,
    "layout": "rules/card",
    "shot": {
     "size": "medium",
@@ -279,8 +279,8 @@
   {
    "id": "a1-raise",
    "act": "act1",
-   "start": 75.901,
-   "dur": 8.478,
+   "start": 76.53,
+   "dur": 8.48,
    "layout": "rules/escalator",
    "shot": {
     "size": "wide",
@@ -291,14 +291,14 @@
     "rs"
    ],
    "chart": "rs",
-   "move": 2.6,
+   "move": 2.1,
    "cutIn": null
   },
   {
    "id": "a1-real",
    "act": "act1",
-   "start": 84.379,
-   "dur": 7.826,
+   "start": 85.01,
+   "dur": 8.38,
    "layout": "rules/constant",
    "shot": {
     "size": "close-up",
@@ -315,8 +315,8 @@
   {
    "id": "a1-horizon",
    "act": "act1",
-   "start": 92.205,
-   "dur": 5.87,
+   "start": 93.39,
+   "dur": 5.337,
    "layout": "timeline/ribbon",
    "shot": {
     "size": "extreme-wide",
@@ -327,14 +327,14 @@
     "hz"
    ],
    "chart": null,
-   "move": 2.4,
+   "move": 2.2,
    "cutIn": null
   },
   {
    "id": "a1-notax",
    "act": "act1",
-   "start": 98.075,
-   "dur": 7.992,
+   "start": 98.727,
+   "dur": 8.64,
    "layout": "rules/list",
    "shot": {
     "size": "medium",
@@ -351,7 +351,7 @@
   {
    "id": "a1-notax-b",
    "act": "act1",
-   "start": 106.067,
+   "start": 107.367,
    "dur": 5.5,
    "layout": "rules/list",
    "shot": {
@@ -369,8 +369,8 @@
   {
    "id": "a1-mirror-in",
    "act": "act1",
-   "start": 111.567,
-   "dur": 4.067,
+   "start": 112.867,
+   "dur": 4.267,
    "layout": "mirror/enter",
    "shot": {
     "size": "wide",
@@ -381,14 +381,14 @@
     "mi"
    ],
    "chart": null,
-   "move": 2,
+   "move": 1.9,
    "cutIn": "l"
   },
   {
    "id": "a1-mirror-rule",
    "act": "act1",
-   "start": 115.633,
-   "dur": 5.9,
+   "start": 117.133,
+   "dur": 6,
    "layout": "mirror/reverse",
    "shot": {
     "size": "medium",
@@ -399,14 +399,14 @@
     "mr"
    ],
    "chart": "mr",
-   "move": 2.2,
+   "move": 2,
    "cutIn": "j"
   },
   {
    "id": "a1-mirror-rule-b",
    "act": "act1",
-   "start": 121.533,
-   "dur": 7.8,
+   "start": 123.133,
+   "dur": 7.9,
    "layout": "mirror/reverse",
    "shot": {
     "size": "close-up",
@@ -423,8 +423,8 @@
   {
    "id": "a1-illus",
    "act": "act1",
-   "start": 129.333,
-   "dur": 5.263,
+   "start": 131.033,
+   "dur": 4.868,
    "layout": "mirror/badge",
    "shot": {
     "size": "close-up",
@@ -435,15 +435,15 @@
     "il"
    ],
    "chart": null,
-   "move": 1.6,
+   "move": 1.8,
    "composition": "center",
    "cutIn": "j"
   },
   {
    "id": "a1-samewd",
    "act": "act1",
-   "start": 134.596,
-   "dur": 6.522,
+   "start": 135.901,
+   "dur": 7.174,
    "layout": "ledger/twin",
    "shot": {
     "size": "medium",
@@ -454,14 +454,14 @@
     "sw"
    ],
    "chart": "sw",
-   "move": 2,
+   "move": 1.9,
    "cutIn": null
   },
   {
    "id": "a1-question",
    "act": "act1",
-   "start": 141.118,
-   "dur": 9.783,
+   "start": 143.075,
+   "dur": 9.655,
    "layout": "duel/scale",
    "shot": {
     "size": "wide",
@@ -472,15 +472,15 @@
     "q"
    ],
    "chart": null,
-   "move": 2.2,
+   "move": 2,
    "composition": "center",
    "cutIn": null
   },
   {
    "id": "a1-avg1966",
    "act": "act1",
-   "start": 150.901,
-   "dur": 7.174,
+   "start": 152.73,
+   "dur": 7.301,
    "layout": "average/reveal",
    "shot": {
     "size": "close-up",
@@ -491,14 +491,14 @@
     "av"
    ],
    "chart": null,
-   "move": 1.6,
+   "move": 1.8,
    "cutIn": null
   },
   {
    "id": "a1-avgmirror",
    "act": "act1",
-   "start": 158.075,
-   "dur": 8.092,
+   "start": 160.031,
+   "dur": 8.636,
    "layout": "average/match",
    "shot": {
     "size": "close-up",
@@ -516,8 +516,8 @@
   {
    "id": "a1-geo",
    "act": "act1",
-   "start": 166.167,
-   "dur": 6.467,
+   "start": 168.667,
+   "dur": 6.567,
    "layout": "average/explain",
    "shot": {
     "size": "medium",
@@ -528,14 +528,14 @@
     "ge"
    ],
    "chart": "ge",
-   "move": 2.4,
+   "move": 2.1,
    "cutIn": "j"
   },
   {
    "id": "a1-geo-b",
    "act": "act1",
-   "start": 172.633,
-   "dur": 7.533,
+   "start": 175.233,
+   "dur": 7.633,
    "layout": "average/explain",
    "shot": {
     "size": "close-up",
@@ -552,8 +552,8 @@
   {
    "id": "a1-arith",
    "act": "act1",
-   "start": 180.167,
-   "dur": 9.212,
+   "start": 182.867,
+   "dur": 9.121,
    "layout": "average/table",
    "shot": {
     "size": "medium",
@@ -564,14 +564,14 @@
     "ar"
    ],
    "chart": "ar",
-   "move": 2.2,
+   "move": 2,
    "cutIn": "j"
   },
   {
    "id": "a1-payoff",
    "act": "act1",
-   "start": 189.379,
-   "dur": 10.38,
+   "start": 191.988,
+   "dur": 11.031,
    "layout": "duel/scale-2",
    "shot": {
     "size": "wide",
@@ -582,29 +582,34 @@
     "po"
    ],
    "chart": null,
-   "move": 2.6,
+   "move": 2.1,
    "composition": "center",
    "cutIn": null
   }
  ],
  "turns": [
   {
-   "t": 12.37,
+   "t": 10.07,
+   "what": "cold-open turn: the 1966 retiree runs out of money in 1991",
+   "scene": "co-broke"
+  },
+  {
+   "t": 12.27,
    "what": "open loop: what decided which retiree went broke?",
    "scene": "co-question"
   },
   {
-   "t": 86.99,
+   "t": 87.89,
    "what": "nominal versus real: the same withdrawal climbs in dollars of the day",
    "scene": "a1-real"
   },
   {
-   "t": 112.93,
+   "t": 114.33,
    "what": "act 1 turn: the second retiree lives the same years in reverse",
    "scene": "a1-mirror-in"
   },
   {
-   "t": 164.61,
+   "t": 167.01,
    "what": "act 1 climax: the two averages are identical",
    "scene": "a1-avgmirror"
   }

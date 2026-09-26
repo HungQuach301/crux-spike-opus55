@@ -27,6 +27,15 @@ const MATCH = {
 };
 
 function pre() {
+  // intentional silences (music, sfx and whoosh out; room tone stays under -40 dBFS): after decisive / reveal lines
+  const SIL = [['co-broke.1', 'let "1991" land'], ['co-question.1', 'the open question hangs before the title'], ['a1-avg1966.1', 'let the first average land before the mirror answers']];
+  const silences = SIL.map(([sid, why]) => {
+    const i = script.sentences.findIndex((l) => l.id === sid);
+    const l = script.sentences[i], nx = script.sentences[i + 1];
+    const t0 = l.end + 0.08, room = (nx ? nx.start : tl.total) - 0.08 - t0;
+    return room >= 0.8 ? { t: +t0.toFixed(3), dur: +Math.min(1.3, room).toFixed(3), why, after: sid } : null;
+  }).filter(Boolean);
+  W('out/silences.json', { silences });
   const full = J(path.join(REPO, 'out', 'tempo-map.json'));
   const cuts = tl.scenes.slice(1).map((s) => s.start);
   // the tempo map follows the edit: every cut is a beat; each shot is divided into a whole number of beats at the
@@ -42,7 +51,8 @@ function pre() {
   const onBeat = (c) => beats.some((b) => Math.abs(b - c) <= FR + 1e-6);
   // accents: cuts that sit on a beat at the start of a new idea (act boundary, reveal scenes)
   const ACC = ['ident', 'a1-est', 'a1-mix', 'a1-rule', 'a1-horizon', 'a1-mirror-in', 'a1-question', 'a1-avg1966', 'a1-avgmirror', 'a1-geo', 'a1-payoff', 'co-broke'];
-  const accents = tl.scenes.filter((s) => ACC.includes(s.id) && onBeat(s.start)).map((s) => s.start);
+  const silPre = J(path.join(R, 'out', 'silences.json')).silences;
+  const accents = tl.scenes.filter((s) => ACC.includes(s.id) && onBeat(s.start) && !silPre.some((x) => s.start >= x.t - 0.1 && s.start <= x.t + x.dur + 0.1)).map((s) => s.start);
   W('out/tempo-map.json', { bpm: full.bpm, beats, accents, note: 'tempo map follows the edit: every cut is a beat, each shot holds a whole number of beats near the act tempo; accents are cuts' });
   const transitions = { cuts: tl.scenes.slice(1).map((s, i) => {
     const from = tl.scenes[i].id, base = s.id.replace(/-[bc]$/, '');
@@ -51,15 +61,7 @@ function pre() {
       reason: m ? m[1] : s.id.endsWith('-b') ? 'a second angle inside one long line of narration' : `hard cut on the beat into ${base.replace(/-/g, ' ')} to start the next idea` };
   }) };
   W('out/transitions.json', transitions);
-  // intentional silences (music, sfx and whoosh out; room tone stays under -40 dBFS): after decisive / reveal lines
-  const SIL = [['co-broke.1', 'let "1991" land'], ['co-question.1', 'the open question hangs before the title'], ['a1-avg1966.1', 'let the first average land before the mirror answers']];
-  const silences = SIL.map(([sid, why]) => {
-    const i = script.sentences.findIndex((l) => l.id === sid);
-    const l = script.sentences[i], nx = script.sentences[i + 1];
-    const t0 = l.end + 0.08, room = (nx ? nx.start : tl.total) - 0.08 - t0;
-    return room >= 0.8 ? { t: +t0.toFixed(3), dur: +Math.min(1.3, room).toFixed(3), why, after: sid } : null;
-  }).filter(Boolean);
-  W('out/silences.json', { silences });
+
   // captions: one cue per sentence, split into <= 42-char lines (max 2) and 1-7 s cues by the word timing
   const cues = [];
   const cueMap = eval(fs.readFileSync(path.join(REPO, 'render-d', 'prod', 'data.js'), 'utf8').replace('window.DATA = ', '(').replace(/;\s*$/, ')')).cues;
@@ -80,6 +82,14 @@ function pre() {
       const b = k === chunks.length - 1 ? l.end : l.start + (l.end - l.start) * acc / n;
       cues.push({ a, b, lines: wrap(txt) });
     });
+  }
+  for (let i = 0; i < cues.length; i++) {
+    if (cues[i].b - cues[i].a < 1.0) {
+      const j = i + 1 < cues.length && wrap(cues[i].lines.join(' ') + ' ' + cues[i + 1].lines.join(' ')).length <= 2 && cues[i + 1].b - cues[i].a <= 7 ? i + 1
+        : i > 0 && wrap(cues[i - 1].lines.join(' ') + ' ' + cues[i].lines.join(' ')).length <= 2 && cues[i].b - cues[i - 1].a <= 7 ? i - 1 : -1;
+      if (j === i + 1) { cues[i + 1] = { a: cues[i].a, b: cues[i + 1].b, lines: wrap(cues[i].lines.join(' ') + ' ' + cues[i + 1].lines.join(' ')) }; cues.splice(i, 1); i--; continue; }
+      if (j === i - 1) { cues[i - 1] = { a: cues[i - 1].a, b: cues[i].b, lines: wrap(cues[i - 1].lines.join(' ') + ' ' + cues[i].lines.join(' ')) }; cues.splice(i, 1); i -= 2; continue; }
+    }
   }
   for (let i = 0; i < cues.length; i++) {
     const nx = cues[i + 1] ? cues[i + 1].a : tl.total;

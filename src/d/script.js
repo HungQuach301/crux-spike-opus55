@@ -10,7 +10,7 @@ const ACTS = [
   {
     id: 'cold-open', title: 'Cold open', question: 'What decided which retiree went broke?',
     scenes: [
-      { id: 'co-lines', layout: 'duel/emerge', shot: 'extreme-wide', lead: 1.6, lines: [] },
+      { id: 'co-lines', layout: 'duel/emerge', shot: 'extreme-wide', lead: 1.3, lines: [] },
       { id: 'co-same', layout: 'duel/overlay', shot: 'wide', lines: [
         { t: 'Two retirees with the same balance, the same withdrawals and the same average return.', d: 'Quiet, close to the mic, one flowing line at an even pace; no pauses between the phrases.' },
       ] },
@@ -24,7 +24,7 @@ const ACTS = [
   },
   {
     id: 'ident', title: 'Ident', scenes: [
-      { id: 'ident', layout: 'title/ident', shot: 'insert', lead: 2.2, lines: [] },
+      { id: 'ident', layout: 'title/ident', shot: 'insert', lead: 2.0, lines: [] },
     ],
   },
   {
@@ -33,7 +33,7 @@ const ACTS = [
     turn: 'The mirror retiree takes out the same dollars and earns the same average; only the order differs.',
     payoff: 'Everything is equal except the order of the years.',
     scenes: [
-      { id: 'a1-est', layout: 'world/establish', shot: 'extreme-wide', lead: 0.7, lines: [
+      { id: 'a1-est', layout: 'world/establish', shot: 'extreme-wide', lead: 0.5, lines: [
         { t: 'It is January 1966.', d: 'Scene-setting, unhurried. Small pause after.' },
       ] },
       { id: 'a1-start', layout: 'ledger/card', shot: 'medium', lines: [

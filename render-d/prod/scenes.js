@@ -31,7 +31,8 @@
   // environment: act background, key-light glow on the far wall, floor grid in depth bands (all role "bg")
   function env(items, panel, o = {}) {
     const key = o.key || C['key-light'];
-    items.push(S(panel + '-glow', 'circle', { panel, z: 2600, c: [o.gx ?? 1300, o.gy ?? 250], r: 1500, fill: key, gradient: { type: 'radial', stops: [[0, key, o.glow ?? 0.10], [1, key, 0]] }, meta: { role: 'bg' } }));
+    const gx = o.gx ?? (panel.charCodeAt(0) + panel.length) % 2 ? 1500 : 350;
+    items.push(S(panel + '-glow', 'circle', { panel, z: 2600, c: [gx, o.gy ?? 250], r: 1500, fill: key, gradient: { type: 'radial', stops: [[0, key, 2 * (o.glow ?? 0.10)], [1, key, 0]] }, meta: { role: 'bg' } }));
     items.push(S(panel + '-rim', 'circle', { panel, z: 2600, c: [o.rx ?? -300, 900], r: 1100, fill: C['rim-light'], gradient: { type: 'radial', stops: [[0, C['rim-light'], 0.05], [1, C['rim-light'], 0]] }, meta: { role: 'bg' } }));
     const bands = [[-600, 400], [400, 1400], [1400, 3200]];
     bands.forEach(([z0, z1], bi) => {
@@ -74,12 +75,12 @@
       const tip = pts[pts.length - 1];
       const sp = P(tip[0], tip[1], 0);
       const right = false;
-      items.push(Tx(`${panel}-lab-${ch}`, ch === '1966' ? '1966 retiree' : 'mirror retiree', sp[0] + (right ? -22 : 22), sp[1] + (ch === '1966' ? 56 : -34), 30, colorOf(ch),
+      items.push(Tx(`${panel}-lab-${ch}`, ch === '1966' ? '1966 retiree' : 'mirror retiree', sp[0] + (right ? -22 : 22), sp[1] + (ch === '1966' ? 58 : -36), 34, colorOf(ch),
         { align: right ? 'right' : 'left', claims: ch === '1966' ? [claim('y1966')] : [], alpha: prog > 0.2 ? fade(prog * 10, 2.2, 1) : 0, series: ch }));
     }
     const a = P(x0, yb + 20, 0), b = P(x1, yb + 20, 0);
-    items.push(Tx(panel + '-a0', '1966', a[0], a[1] + 44, 30, C['text-dim'], { role: 'axis-label', anchor: panel, chart: panel, year: 1966, align: 'center', claims: [claim('y1966')] }));
-    items.push(Tx(panel + '-a1', '1995', b[0], b[1] + 44, 30, C['text-dim'], { role: 'axis-label', anchor: panel, chart: panel, year: 1995, align: 'center', claims: [claim('y1995')] }));
+    items.push(Tx(panel + '-a0', '1966', a[0], a[1] + 44, 30, C['text-dim'], { role: 'axis-label', anchor: panel, chart: panel, year: 1966, align: 'center', claims: [claim('ax1966')] }));
+    items.push(Tx(panel + '-a1', '1995', b[0], b[1] + 44, 30, C['text-dim'], { role: 'axis-label', anchor: panel, chart: panel, year: 1995, align: 'center', claims: [claim('ax1995')] }));
   }
   B['co-lines'] = (L, sc, H) => {
     const items = []; env(items, 'co', { glow: 0.06, floor: 0.7 });
@@ -117,21 +118,21 @@
     items.push(Tx('cb-lab-1966', '1966 retiree', H.P(X(15), yb, 0)[0], H.P(X(15), yb, 0)[1] + 50, 30, C.c1966, { claims: [claim('y1966')], series: '1966' }));
     items.push(Tx('cb-lab-mirror', 'mirror retiree', labM[0] - 250, labM[1] - 30, 30, C.cmirror, { series: 'mirror' }));
     const a = H.P(x0, yb + 4, 0), b = H.P(x1, yb + 4, 0);
-    items.push(Tx('cb-a0', '1966', a[0], a[1] + 46, 30, C['text-dim'], { role: 'axis-label', anchor: 'cb', chart: 'cb', year: 1966, align: 'center', claims: [claim('y1966')] }));
-    items.push(Tx('cb-a1', '1995', b[0], b[1] + 46, 30, C['text-dim'], { role: 'axis-label', anchor: 'cb', chart: 'cb', year: 1995, align: 'center', claims: [claim('y1995')] }));
-    const hit = H.P(X(25), yb + 4, 0);
+    items.push(Tx('cb-a0', '1966', a[0], a[1] + 46, 30, C['text-dim'], { role: 'axis-label', anchor: 'cb', chart: 'cb', year: 1966, align: 'center', claims: [claim('ax1966')] }));
+    items.push(Tx('cb-a1', '1995', b[0], b[1] + 46, 30, C['text-dim'], { role: 'axis-label', anchor: 'cb', chart: 'cb', year: 1995, align: 'center', claims: [claim('ax1995')] }));
+    const hit = H.P(X(25), yb + 4, -250);
     const ah = L >= tHit - 1 / 60 ? 1 : 0;
-    items.push(S('cb-zero', 'circle', { panel: 'cb', z: 0, c: [X(25), yb + 4], r: 12 * back((L - tHit) / 0.35), fill: C.loss, alpha: ah, meta: { role: 'mark', panel: 'cb', ...charShape('1966') }, stroke: null }));
+    items.push(S('cb-zero', 'circle', { panel: 'cb', z: -250, c: [X(25), yb + 4], r: 12 * back((L - tHit) / 0.35), fill: C.loss, alpha: ah, meta: { role: 'mark', panel: 'cb', ...charShape('1966') }, stroke: null }));
     items.push(L1('cb-l1a', 'With the same withdrawals', 640, 360, 56, fade(L, 0.2) * fadeOut(L, tHit - 0.35, 0.3)));
-    items.push(L1('cb-l1', '1991', hit[0], hit[1] - 72, 96, ah, { claims: [claim('y1991')] }));
-    items.push(Tx('cb-ranout', 'ran out of money', hit[0], hit[1] - 150, 34, C['text-dim'], { align: 'center', alpha: fade(L, tHit + 0.1) }));
+    items.push(L1('cb-l1', '1991', hit[0], hit[1] - 112, 96, ah, { claims: [claim('y1991')] }));
+    items.push(Tx('cb-ranout', 'ran out of money', hit[0], hit[1] - 192, 34, C['text-dim'], { align: 'center', alpha: fade(L, tHit + 0.1) }));
     return items;
   };
   B['co-question'] = (L, sc, H) => {
     const items = []; env(items, 'cq', { glow: 0.05 });
     // foreground: the zero point; background: the surviving mirror line (rack focus between them)
     items.push(S('cq-zero', 'circle', { panel: 'cq', z: -260, c: [700, 820], r: 22, fill: C.loss, meta: { role: 'mark', panel: 'cq', ...charShape('1966') } }));
-    const pts = []; for (let k = 0; k <= 30; k++) pts.push([700 + k * 36, 900 - 260 * Math.pow(k / 30, 1.4)]);
+    const pts = []; for (let k = 0; k <= 7; k++) pts.push([700 + k * 154, 900 - 260 * Math.pow(k / 7, 1.4)]);
     items.push(S('cq-mirror', 'polyline', { panel: 'cq', z: 380, pts, stroke: C.cmirror, lw: 6, dash: [18, 12], meta: { role: 'mark', panel: 'cq', ...charShape('mirror') } }));
     items.push(L1('cq-l1', 'What decided it?', 960, 540, 84, fade(L, H.local(lineStart('co-question.1')) - 0.05, 0.25)));
     return items;
@@ -175,7 +176,8 @@
     const tv = H.local(cueAbs('a1-start.1', '$1 million'));
     items.push(badge('st-badge', 470, 560, fade(L, tv - 0.3, 0.2)));
     items.push(L1('st-l1', '$1 million', 640, 720, 104, L >= tv - 1 / 60 ? 1 : 0, { claims: [claim('initial')] }));
-    items.push(Tx('st-basis', 'in 1966 dollars (real)', 640, 820, 34, C['text-dim'], { align: 'center', alpha: fade(L, tv + 0.1), claims: [claim('y1966')] }));
+    items.push(Tx('st-basis', 'real dollars, inflation-adjusted', 640, 820, 34, C['text-dim'], { align: 'center', alpha: L >= tv - 1 / 60 ? 1 : 0 }));
+    items.push(Tx('st-year', 'measured in 1966 dollars', 640, 880, 30, C['text-dim'], { align: 'center', alpha: L >= H.local(cueAbs('a1-start.1', '1966')) - 1 / 60 ? 1 : 0, claims: [claim('y1966')] }));
     items.push(Tx('st-who', 'the first retiree', 1300, 180, 34, C.c1966, { align: 'center', alpha: fade(L, 0.4), series: '1966' }));
     return items;
   };
@@ -183,7 +185,7 @@
     const items = []; env(items, 'who', { glow: 0.05, gx: 1600, floor: 1.2 });
     // the road ahead: ten tiles receding into the dark
     for (let k = 0; k < 10; k++) {
-      const z = -200 + k * 330;
+      const z = -200 + k * 250;
       items.push(S(`who-tile${k}`, 'poly', { panel: 'who', z, layer: 'who-t' + k, pts: [[700, 1170, z], [1220, 1170, z], [1220, 1170, z + 280], [700, 1170, z + 280]], fill: C['surface-2'], alpha: 0.9 - k * 0.08, meta: { role: 'mark', panel: 'who' } }));
     }
     const walk = smooth((L - 0.5) / 4.5);
@@ -272,7 +274,7 @@
     items.push(badge('ru-badge', 330, 200, fade(L, t4 - 0.4, 0.2)));
     items.push(L1('ru-l1', '4% in year one', 640, 360, 72, L >= t4 - 1 / 60 ? 1 : 0, { claims: [claim('rate4')] }));
     items.push(Tx('ru-40', '$40,000', 640, 580, 60, C.text, { align: 'center', weight: 700, alpha: L >= t40 - 1 / 60 ? 1 : 0, claims: [claim('wd1')] }));
-    items.push(Tx('ru-basis', 'in 1966 dollars', 640, 640, 32, C['text-dim'], { align: 'center', alpha: fade(L, t40), claims: [claim('y1966')] }));
+    items.push(Tx('ru-basis', 'real dollars', 640, 640, 32, C['text-dim'], { align: 'center', alpha: L >= t40 - 1 / 60 ? 1 : 0 }));
     return items;
   };
   function escalator(items, panel, L, H, grow, z, o = {}) {
@@ -286,8 +288,8 @@
     }
     const a = H.P(x0 + 17, yb, z), b = H.P(x0 + 29 * w + 17, yb, z);
     items.push(S(panel + '-axis', 'polyline', { panel, z, layer: panel + '-bars', pts: [[x0 - 10, yb + 2], [x0 + 30 * w, yb + 2]], stroke: C.muted, lw: 2, meta: { role: 'axis', panel, chart: panel } }));
-    items.push(Tx(panel + '-a0', '1966', a[0], a[1] + 48, 30, C['text-dim'], { role: 'axis-label', anchor: panel, chart: panel, year: 1966, align: 'center', claims: [claim('y1966')] }));
-    items.push(Tx(panel + '-a1', '1995', b[0], b[1] + 48, 30, C['text-dim'], { role: 'axis-label', anchor: panel, chart: panel, year: 1995, align: 'center', claims: [claim('y1995')] }));
+    items.push(Tx(panel + '-a0', '1966', a[0], a[1] + 48, 30, C['text-dim'], { role: 'axis-label', anchor: panel, chart: panel, year: 1966, align: 'center', claims: [claim('ax1966')] }));
+    items.push(Tx(panel + '-a1', '1995', b[0], b[1] + 48, 30, C['text-dim'], { role: 'axis-label', anchor: panel, chart: panel, year: 1995, align: 'center', claims: [claim('ax1995')] }));
     return { x0, w, yb, Y };
   }
   B['a1-raise'] = (L, sc, H) => {
@@ -315,8 +317,8 @@
     const a = H.P(331, 862, 0), b = H.P(300 + 29 * 70 + 31, 862, 0);
     items.push(S('hz-axis', 'polyline', { panel: 'hz', z: 0, pts: [[290, 866], [300 + 30 * 70, 866]], stroke: C.muted, lw: 2, meta: { role: 'axis', panel: 'hz', chart: 'hz' } }));
     const inSafe = (x) => (x > 150 && x < 1770 ? 1 : 0);
-    items.push(Tx('hz-a0', '1966', a[0], a[1] + 50, 30, C['text-dim'], { role: 'axis-label', anchor: 'hz', chart: 'hz', year: 1966, align: 'center', claims: [claim('y1966')], alpha: inSafe(a[0]) }));
-    items.push(Tx('hz-a1', '1995', b[0], b[1] + 50, 30, C['text-dim'], { role: 'axis-label', anchor: 'hz', chart: 'hz', year: 1995, align: 'center', claims: [claim('y1995')], alpha: inSafe(b[0]) }));
+    items.push(Tx('hz-a0', '1966', a[0], a[1] + 50, 30, C['text-dim'], { role: 'axis-label', anchor: 'hz', chart: 'hz', year: 1966, align: 'center', claims: [claim('ax1966')], alpha: inSafe(a[0]) * (L >= H.local(cueAbs('a1-horizon.1', '1966')) - 1 / 60 ? 1 : 0) }));
+    items.push(Tx('hz-a1', '1995', b[0], b[1] + 50, 30, C['text-dim'], { role: 'axis-label', anchor: 'hz', chart: 'hz', year: 1995, align: 'center', claims: [claim('ax1995')], alpha: inSafe(b[0]) * (L >= H.local(cueAbs('a1-horizon.1', '1995')) - 1 / 60 ? 1 : 0) }));
     const t30 = H.local(cueAbs('a1-horizon.1', '30'));
     items.push(badge('hz-badge', 1160, 230, fade(L, t30 - 0.4, 0.2)));
     items.push(L1('hz-l1', '30 years', 1280, 360, 88, L >= t30 - 1 / 60 ? 1 : 0, { claims: [claim('years30')] }));
@@ -370,15 +372,15 @@
   }
   B['a1-mirror-rule'] = (L, sc, H) => {
     const items = []; env(items, 'mr', { glow: 0.08 });
-    const t2 = H.local(cueAbs('a1-mirror-rule.2', '1995')) - 0.2;
+    const t95 = H.local(cueAbs('a1-mirror-rule.2', '1995')), t66 = H.local(cueAbs('a1-mirror-rule.2', '1966')), t2 = t95 - 0.2;
     const g = returnRows(items, 'mr', L, H, 0.3, t2);
     items.push(L1('mr-l1', 'Same returns, reverse order', 1280, 360, 56, fade(L, 0.3) * fadeOut(L, t2 - 0.4)));
     const lab = (id, text, x, y, a, cl, role, year, chart) => items.push(Tx(id, text, x, y, 30, C['text-dim'], { align: 'center', alpha: a, claims: [claim(cl)], role, year, chart, anchor: role === 'axis-label' ? chart : null }));
-    lab('mr-66a', '1966', g.x0 + 17, 450, fade(L, 0.3), 'y1966', 'axis-label', 1966, 'mr-66');
-    lab('mr-66b', '1995', g.x0 + 29 * g.w + 17, 450, fade(L, 1.9), 'y1995', 'axis-label', 1995, 'mr-66');
-    lab('mr-ma', '1995 first', g.x0 + 70, 1004, L >= t2 + 0.2 ? 1 : 0, 'y1995', 'label');
-    lab('mr-mb', '1966 last', g.x0 + 29 * g.w - 40, 1004, fade(L, t2 + 2.0), 'y1966', 'label');
-    items.push(Tx('mr-t66', '1966 retiree', 300, 540, 30, C.c1966, { claims: [claim('y1966')], series: '1966', alpha: fade(L, 0.3) }));
+    lab('mr-66a', '1966', g.x0 + 17, 450, fade(L, 0.3), 'ax1966', 'axis-label', 1966, 'mr-66');
+    lab('mr-66b', '1995', g.x0 + 29 * g.w + 17, 450, fade(L, 1.9), 'ax1995', 'axis-label', 1995, 'mr-66');
+    lab('mr-ma', '1995 first', g.x0 + 70, 1004, L >= t95 - 1 / 60 ? 1 : 0, 'y1995', 'label');
+    lab('mr-mb', '1966 last', g.x0 + 29 * g.w - 40, 1004, L >= t66 - 1 / 60 ? 1 : 0, 'y1966', 'label');
+    items.push(Tx('mr-t66', 'first retiree', 300, 540, 30, C.c1966, { series: '1966', alpha: fade(L, 0.3) }));
     items.push(Tx('mr-tm', 'mirror retiree', 1340, 720, 30, C.cmirror, { series: 'mirror', alpha: fade(L, t2) }));
     items.push(L1('mr-l1b', 'The mirror reads it backwards', 1280, 360, 52, fade(L, t2 - 0.05, 0.35)));
     return items;
@@ -441,7 +443,7 @@
     const tv = H.local(cueAbs('a1-avg1966.1', '9.7%'));
     avgBars(items, 'av', L, '1966', 200, smooth((L - (tv - 1.2)) / 1.2));
     items.push(L1('av-l1', '9.7%', 640, 360, 120, L >= tv - 1 / 60 ? 1 : 0, { color: C.c1966, series: '1966', claims: [claim('g1966')] }));
-    items.push(Tx('av-sub', '1966 retiree, average return per year', 640, 470, 32, C['text-dim'], { align: 'center', alpha: fade(L, 0.3), claims: [claim('y1966')] }));
+    items.push(Tx('av-sub', '1966 retiree, average return per year', 640, 470, 32, C['text-dim'], { align: 'center', alpha: L >= H.local(cueAbs('a1-avg1966.1', '1966')) - 1 / 60 ? 1 : 0, claims: [claim('y1966')] }));
     return items;
   };
   B['a1-avgmirror'] = (L, sc, H) => {
@@ -489,8 +491,8 @@
     items.push(S('ar-mean', 'polyline', { panel: 'ar', z: 0, pts: [[x0 - 10, ym], [x0 + 30 * w, ym]], stroke: C.text, lw: 3, dash: [12, 8], alpha: L >= ta - 0.2 ? 1 : 0, meta: { role: 'mark', panel: 'ar' } }));
     items.push(S('ar-axis', 'polyline', { panel: 'ar', z: 0, pts: [[x0 - 10, yb], [x0 + 30 * w, yb]], stroke: C.muted, lw: 2, meta: { role: 'axis', panel: 'ar', chart: 'ar' } }));
     const a = H.P(x0 + 17, yb, 0), b = H.P(x0 + 29 * w + 17, yb, 0);
-    items.push(Tx('ar-a0', '1966', a[0], 1000, 30, C['text-dim'], { role: 'axis-label', anchor: 'ar', chart: 'ar', year: 1966, align: 'center', claims: [claim('y1966')] }));
-    items.push(Tx('ar-a1', '1995', b[0], 1000, 30, C['text-dim'], { role: 'axis-label', anchor: 'ar', chart: 'ar', year: 1995, align: 'center', claims: [claim('y1995')] }));
+    items.push(Tx('ar-a0', '1966', a[0], 1000, 30, C['text-dim'], { role: 'axis-label', anchor: 'ar', chart: 'ar', year: 1966, align: 'center', claims: [claim('ax1966')] }));
+    items.push(Tx('ar-a1', '1995', b[0], 1000, 30, C['text-dim'], { role: 'axis-label', anchor: 'ar', chart: 'ar', year: 1995, align: 'center', claims: [claim('ax1995')] }));
     items.push(L1('ar-l1', 'The simple average', 1280, 360, 60, fade(L, 0.3)));
     items.push(Tx('ar-num', '10.3%', 1280, 470, 44, C.text, { align: 'center', weight: 700, alpha: L >= ta - 1 / 60 ? 1 : 0, claims: [claim('arith')] }));
     items.push(Tx('ar-sub', 'add the returns, divide by the count', 1280, 250, 32, C['text-dim'], { align: 'center', alpha: fade(L, 0.3) }));

@@ -36,6 +36,9 @@ const C = [
   year('y1966', 1966, 'first calendar year of the 1966 retiree\'s 30-year window (brief §1.4)'),
   year('y1991', 1966 + A.depletedYear - 1, 'calendar year in which the 1966 path cannot pay the full withdrawal: 1966 + depletedYear − 1 (depletedYear = ' + A.depletedYear + ')', { dataYears: [1966, 1991], decisive: true, character: '1966' }),
   year('y1995', 1995, 'last calendar year of the 1966–1995 window'),
+  // axis labels of the year axes (shown only as axis labels; role axis)
+  year('ax1966', 1966, 'first year on a 1966–1995 time axis', { role: 'axis', planned: ['co-lines', 'co-same', 'co-broke', 'a1-raise', 'a1-real', 'a1-horizon', 'a1-mirror-rule', 'a1-arith'] }),
+  year('ax1995', 1995, 'last year on a 1966–1995 time axis', { role: 'axis', planned: ['co-lines', 'co-same', 'co-broke', 'a1-raise', 'a1-real', 'a1-horizon', 'a1-mirror-rule', 'a1-arith'] }),
   year('y1928', 1928, 'first year of Damodaran\'s annual series and first start year with a full 30-year window'),
   year('y1996', 1996, 'last start year with 30 full years of data (1996 + 29 = 2025)'),
   year('y1969', 1969, 'calendar year (inflation example; later a start year that ran out)'),
@@ -151,7 +154,7 @@ function build() {
     const sid = `${s.id}.${i + 1}`;
     for (const n of numbersIn(l.t)) {
       // disambiguation: explicit hint on the line, then verbatim display, exact unit, character, already introduced
-      const cands = C.filter((c) => numbersIn(c.display).some((x) => canonMatch(x.canon, n.canon)));
+      const cands = C.filter((c) => c.role !== 'axis' && numbersIn(c.display).some((x) => canonMatch(x.canon, n.canon)));
       if (!cands.length) { errors.push(`${sid}: unregistered number "${n.text}"`); continue; }
       const hint = (l.claims || {})[n.text];
       const unit = n.canon.split(':')[0];

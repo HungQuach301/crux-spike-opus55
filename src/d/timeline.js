@@ -11,7 +11,7 @@ const SHOTS = require('./shots');
 const ROOT = path.join(__dirname, '..', '..');
 const J = (p) => JSON.parse(fs.readFileSync(path.join(ROOT, p), 'utf8'));
 const FPS = 30;
-const GAP_SENT = 0.30, GAP_SCENE = 0.30, DECISIVE_HOLD = 1.25, MARGIN = 0.03, AD_SILENCE = 1.4, MAX_SHOT = 11.5;
+const GAP_SENT = 0.40, GAP_SCENE = 0.40, DECISIVE_HOLD = 1.25, MARGIN = 0.03, AD_SILENCE = 1.4, MAX_SHOT = 11.5;
 // tempo per act (bpm): act 2 accelerates towards its climax
 const BPM = { 'cold-open': 84, ident: 84, act1: 92, act2: [96, 116], act3: 90, method: 80, outro: 80 };
 const AD_AFTER = ['act1', 'act2']; // ad breaks at the act1|act2 and act2|act3 boundaries
@@ -77,7 +77,7 @@ function build() {
     // the cut may fall up to 0.3 s into the incoming line (a natural J) but never cuts the outgoing line
     const limits = (x) => (scenes[i - 1].act !== 'ident' || x - scenes[i - 1].start <= 2.95) && (scenes[i].act !== 'ident' || scenes[i + 1].start - x <= 2.95) &&
       (scenes[i - 1].act !== 'cold-open' || scenes[i].act === 'cold-open' || x <= 14.9);
-    const ok = (x) => limits(x) && (!outL || x >= outL.end + 0.05) && (!inL || x <= inL.start + 0.3) && x - scenes[i - 1].start >= 1.25 && (i + 1 >= scenes.length || scenes[i + 1].start - x >= 1.25);
+    const ok = (x) => limits(x) && (!outL || x >= outL.end + 0.05) && (!inL || x <= inL.start - 0.05) && x - scenes[i - 1].start >= 1.25 && (i + 1 >= scenes.length || scenes[i + 1].start - x >= 1.25);
     const near = beats.filter((b) => Math.abs(b - c) <= 0.5 && ok(b)).sort((a, b) => Math.abs(a - c) - Math.abs(b - c))[0];
     if (near !== undefined) { scenes[i].start = near; scenes[i - 1].end = near; onBeat.push(scenes[i].id); }
   }

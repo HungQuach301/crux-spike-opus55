@@ -115,7 +115,7 @@
       target.setLineDash([]);
     }
     target.restore();
-    const pad = lw / 2 + 1;
+    const pad = it.stroke && lw > 0 ? lw / 2 : 0;
     const box = [bb[0] - pad, bb[1] - pad, bb[2] + pad, bb[3] + pad];
     if (it.meta && !it.noRecord) {
       objs.push({ id: it.id, kind: 'shape', tag: it.geo, fill: it.gradient ? 'url(#' + it.id + ')' : (it.fill || null), stroke: it.stroke || null, opacity: a, box, coc: +coc.toFixed(2),
@@ -226,6 +226,13 @@
     const centre = stateAt(t);
     if (N === 1 || still || MODE.name !== 'all') {
       const r = drawSubframe(mctx, centre, opts);
+      if (MODE.name === 'all' && opts.dither !== false) {
+        // same triangular dither as the accumulated frames (no banding on dark gradients)
+        const img = mctx.getImageData(0, 0, W, H), o = img.data;
+        seed = 12345 + Math.round(t * 30);
+        for (let i = 0; i < o.length; i += 4) { const d = rnd() - rnd(); o[i] += d; o[i + 1] += d; o[i + 2] += d; }
+        mctx.putImageData(img, 0, 0);
+      }
       return { objs: r.objs, cam: r.cam, rendered: 1 };
     }
     acc.fill(0);

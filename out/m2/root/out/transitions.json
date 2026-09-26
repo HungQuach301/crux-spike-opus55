@@ -1,7 +1,7 @@
 {
  "cuts": [
   {
-   "t": 2.143,
+   "t": 1.429,
    "from": "co-lines",
    "to": "co-same",
    "type": "cut",
@@ -11,7 +11,7 @@
    "reason": "hard cut on the beat into co same to start the next idea"
   },
   {
-   "t": 7.857,
+   "t": 7.54,
    "from": "co-same",
    "to": "co-broke",
    "type": "cut",
@@ -51,7 +51,7 @@
    "reason": "hard cut on the beat into a1 est to start the next idea"
   },
   {
-   "t": 21.118,
+   "t": 21.03,
    "from": "a1-est",
    "to": "a1-start",
    "type": "cut",
@@ -61,7 +61,7 @@
    "reason": "hard cut on the beat into a1 start to start the next idea"
   },
   {
-   "t": 26.988,
+   "t": 26.91,
    "from": "a1-start",
    "to": "a1-who",
    "type": "cut",
@@ -81,7 +81,7 @@
    "reason": "hard cut on the beat into a1 hook to start the next idea"
   },
   {
-   "t": 39.233,
+   "t": 39.267,
    "from": "a1-hook",
    "to": "a1-hook-b",
    "type": "cut",
@@ -91,7 +91,7 @@
    "reason": "a second angle inside one long line of narration"
   },
   {
-   "t": 45.59,
+   "t": 45.69,
    "from": "a1-hook-b",
    "to": "a1-mix",
    "type": "cut",
@@ -111,7 +111,7 @@
    "reason": "the two slices of the ring open into what each slice holds"
   },
   {
-   "t": 60,
+   "t": 60.3,
    "from": "a1-assets",
    "to": "a1-rebal",
    "type": "cut",
@@ -121,7 +121,7 @@
    "reason": "hard cut on the beat into a1 rebal to start the next idea"
   },
   {
-   "t": 65.15,
+   "t": 65.466,
    "from": "a1-rebal",
    "to": "a1-rule",
    "type": "cut",
@@ -131,7 +131,7 @@
    "reason": "hard cut on the beat into a1 rule to start the next idea"
   },
   {
-   "t": 75.901,
+   "t": 76.53,
    "from": "a1-rule",
    "to": "a1-raise",
    "type": "cut",
@@ -141,7 +141,7 @@
    "reason": "the slice taken from the column becomes the first withdrawal bar"
   },
   {
-   "t": 84.379,
+   "t": 85.01,
    "from": "a1-raise",
    "to": "a1-real",
    "type": "cut",
@@ -151,7 +151,7 @@
    "reason": "the same staircase of withdrawals is now read in real terms"
   },
   {
-   "t": 92.205,
+   "t": 93.39,
    "from": "a1-real",
    "to": "a1-horizon",
    "type": "cut",
@@ -161,7 +161,7 @@
    "reason": "hard cut on the beat into a1 horizon to start the next idea"
   },
   {
-   "t": 98.075,
+   "t": 98.727,
    "from": "a1-horizon",
    "to": "a1-notax",
    "type": "cut",
@@ -171,7 +171,7 @@
    "reason": "hard cut on the beat into a1 notax to start the next idea"
   },
   {
-   "t": 106.067,
+   "t": 107.367,
    "from": "a1-notax",
    "to": "a1-notax-b",
    "type": "cut",
@@ -181,7 +181,7 @@
    "reason": "a second angle inside one long line of narration"
   },
   {
-   "t": 111.567,
+   "t": 112.867,
    "from": "a1-notax-b",
    "to": "a1-mirror-in",
    "type": "cut",
@@ -191,7 +191,7 @@
    "reason": "hard cut on the beat into a1 mirror in to start the next idea"
   },
   {
-   "t": 115.633,
+   "t": 117.133,
    "from": "a1-mirror-in",
    "to": "a1-mirror-rule",
    "type": "cut",
@@ -201,7 +201,7 @@
    "reason": "the second track becomes the reversed row of the same returns"
   },
   {
-   "t": 121.533,
+   "t": 123.133,
    "from": "a1-mirror-rule",
    "to": "a1-mirror-rule-b",
    "type": "cut",
@@ -211,7 +211,7 @@
    "reason": "a second angle inside one long line of narration"
   },
   {
-   "t": 129.333,
+   "t": 131.033,
    "from": "a1-mirror-rule-b",
    "to": "a1-illus",
    "type": "cut",
@@ -221,7 +221,7 @@
    "reason": "hard cut on the beat into a1 illus to start the next idea"
   },
   {
-   "t": 134.596,
+   "t": 135.901,
    "from": "a1-illus",
    "to": "a1-samewd",
    "type": "cut",
@@ -231,7 +231,7 @@
    "reason": "hard cut on the beat into a1 samewd to start the next idea"
   },
   {
-   "t": 141.118,
+   "t": 143.075,
    "from": "a1-samewd",
    "to": "a1-question",
    "type": "cut",
@@ -241,7 +241,7 @@
    "reason": "hard cut on the beat into a1 question to start the next idea"
   },
   {
-   "t": 150.901,
+   "t": 152.73,
    "from": "a1-question",
    "to": "a1-avg1966",
    "type": "cut",
@@ -251,7 +251,7 @@
    "reason": "hard cut on the beat into a1 avg1966 to start the next idea"
   },
   {
-   "t": 158.075,
+   "t": 160.031,
    "from": "a1-avg1966",
    "to": "a1-avgmirror",
    "type": "cut",
@@ -261,7 +261,7 @@
    "reason": "the same number reappears on the other side for the mirror retiree"
   },
   {
-   "t": 166.167,
+   "t": 168.667,
    "from": "a1-avgmirror",
    "to": "a1-geo",
    "type": "cut",
@@ -271,7 +271,7 @@
    "reason": "hard cut on the beat into a1 geo to start the next idea"
   },
   {
-   "t": 172.633,
+   "t": 175.233,
    "from": "a1-geo",
    "to": "a1-geo-b",
    "type": "cut",
@@ -281,7 +281,7 @@
    "reason": "a second angle inside one long line of narration"
   },
   {
-   "t": 180.167,
+   "t": 182.867,
    "from": "a1-geo-b",
    "to": "a1-arith",
    "type": "cut",
@@ -291,7 +291,7 @@
    "reason": "hard cut on the beat into a1 arith to start the next idea"
   },
   {
-   "t": 189.379,
+   "t": 191.988,
    "from": "a1-arith",
    "to": "a1-payoff",
    "type": "cut",

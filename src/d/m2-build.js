@@ -18,6 +18,7 @@ const PANEL = { 'co-lines': 'co', 'co-same': 'co', 'co-broke': 'cb', 'co-questio
   'a1-question': 'q', 'a1-avg1966': 'av', 'a1-avgmirror': 'am', 'a1-geo': 'ge', 'a1-arith': 'ar', 'a1-payoff': 'po' };
 const CENTER = new Set(['co-question', 'ident', 'a1-illus', 'a1-avgmirror', 'a1-question']);
 const M2_TURNS = [
+  ['co-broke', 'co-broke.1', 'cold-open turn: the 1966 retiree runs out of money in 1991', '1991'],
   ['co-question', 'co-question.1', 'open loop: what decided which retiree went broke?'],
   ['a1-real', 'a1-real.2', 'nominal versus real: the same withdrawal climbs in dollars of the day'],
   ['a1-mirror-in', 'a1-mirror-in.1', 'act 1 turn: the second retiree lives the same years in reverse'],
@@ -39,7 +40,12 @@ function cues(sentences, takes, el) {
     let from = 0;
     // numbers written in the text, in order
     const nums = s.text.match(/−?\$?(?:\d{1,3}(?:,\d{3})+|\d+)(?:\.\d+)?%?(?:\s(?:million|billion))?(?:-year)?/g) || [];
+    const asrW = (el[tk.name].words || []).map((w) => ({ ...w, t: +(s.start + 0.03 + w.start).toFixed(3) }));
+    let wi = 0;
     for (const n of nums) {
+      const lead = (n.match(/\d+/) || [''])[0];
+      const j = asrW.findIndex((w, k) => k >= wi && w.w.replace(/[^0-9]/g, '').startsWith(lead) && lead);
+      if (j >= 0) { out[`${s.id}|${n}`] = asrW[j].t; wi = j + 1; continue; }
       const sp = toSpoken(n).toLowerCase().replace(/\.$/, '');
       const first = sp.split(/\s+/)[0].replace(/-.*/, '');
       const i = low.indexOf(first, from);
@@ -72,7 +78,8 @@ function main() {
     ...(CENTER.has(s.id) ? { composition: 'center' } : {}),
   }));
   const sentences = script.sentences.filter((l) => scenes.some((s) => s.id === l.scene));
-  const turns = M2_TURNS.map(([scene, sid, what]) => { const l = sentences.find((x) => x.id === sid); return l ? { t: l.start, what, scene } : null; }).filter(Boolean);
+  const cueMapPre = cues(sentences, takes, el);
+  const turns = M2_TURNS.map(([scene, sid, what, at]) => { const l = sentences.find((x) => x.id === sid); return l ? { t: at ? cueMapPre[`${sid}|${at}`] : l.start, what, scene } : null; }).filter(Boolean);
   const m2tl = { fps: 30, total: +end.toFixed(3), acts, scenes, turns, cutIns: Object.fromEntries(scenes.filter((s) => s.cutIn).map((s) => [s.id, s.cutIn])) };
   // model series for the charts
   const data = M.loadAnnual();
@@ -97,8 +104,12 @@ function main() {
   const w2 = (rel, o) => fs.writeFileSync(path.join(R, rel), JSON.stringify(o, null, 1));
   w2('out/timeline.json', m2tl);
   w2('out/script.json', { sentences });
-  const cl = claims.map((c) => ({ ...c, shownIn: c.shownIn.filter((s) => scenes.some((x) => x.id === s)), spoken: (c.spoken || []).filter((s) => scenes.some((x) => x.id === s.scene)),
-    callbacks: (c.callbacks || []).filter((cb) => scenes.some((x) => x.id === cb.scene)) }));
+  const sceneOfSentence = Object.fromEntries(sentences.map((l) => [l.id, l.scene]));
+  const cl = claims.map((c) => {
+    const spoken = (c.spoken || []).filter((x) => sceneOfSentence[x.sentence]).map((x) => ({ ...x, scene: sceneOfSentence[x.sentence] }));
+    const shown = [...new Set([...c.shownIn.filter((x) => scenes.some((y) => y.id === x || y.id === x + '-b' || y.id === x + '-c')).flatMap((x) => scenes.filter((y) => y.id === x || y.id === x + '-b' || y.id === x + '-c').map((y) => y.id)), ...spoken.map((x) => x.scene)])];
+    return { ...c, shownIn: shown, spoken, callbacks: (c.callbacks || []).filter((cb) => shown.includes(cb.scene)) };
+  }).filter((c) => c.shownIn.length);
   w2('out/claims.json', { claims: cl });
   w2('out/page.json', { url: path.relative(R, path.join(ROOT, 'render-d', 'prod', 'page.html')), ready: 'document.fonts.ready' });
   const missingCues = sentences.flatMap((s) => (s.text.match(/−?\$?(?:\d{1,3}(?:,\d{3})+|\d+)(?:\.\d+)?%?(?:\s(?:million|billion))?(?:-year)?/g) || []).filter((n) => !(`${s.id}|${n}` in cueMap)).map((n) => `${s.id}|${n}`));

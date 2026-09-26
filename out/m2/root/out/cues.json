@@ -3,7 +3,7 @@
  "cues": [
   {
    "t": 0,
-   "end": 7.857,
+   "end": 7.54,
    "function": "cold open: both leitmotifs in unison on one low pad, same notes",
    "key": "D minor",
    "tempo": 84,
@@ -12,7 +12,7 @@
   },
   {
    "t": 0,
-   "end": 2.143,
+   "end": 1.429,
    "function": "room tone in: dark hall, the one reverb space of the film",
    "key": null,
    "tempo": 84,
@@ -20,8 +20,8 @@
    "scene": "co-lines"
   },
   {
-   "t": 7.857,
-   "end": 14.556,
+   "t": 7.54,
+   "end": 14.83,
    "function": "the split: 1966 motif descends alone, mirror motif holds; music cuts to silence after \"1991\"",
    "key": "D minor",
    "tempo": 84,
@@ -29,7 +29,7 @@
    "scene": "co-broke"
   },
   {
-   "t": 14.556,
+   "t": 14.83,
    "end": 17.143,
    "function": "ident sting: two-note signature, filtered pluck + sub",
    "key": "D minor",
@@ -39,7 +39,7 @@
   },
   {
    "t": 17.143,
-   "end": 110.466,
+   "end": 112.867,
    "function": "act 1 theme: 1966 leitmotif (rising 4-note figure, warm Rhodes), light pulse",
    "key": "F major",
    "tempo": 92,
@@ -48,7 +48,7 @@
   },
   {
    "t": 17.143,
-   "end": 20.724,
+   "end": 21.03,
    "function": "clock-tick texture for the 1966 calendar, whooshes on camera moves",
    "key": null,
    "tempo": 92,
@@ -56,8 +56,8 @@
    "scene": "a1-est"
   },
   {
-   "t": 110.466,
-   "end": 147.64,
+   "t": 112.867,
+   "end": 152.73,
    "function": "mirror enters: the same figure in retrograde, bell timbre, panned right",
    "key": "F major",
    "tempo": 92,
@@ -65,40 +65,31 @@
    "scene": "a1-mirror-in"
   },
   {
-   "t": 147.64,
-   "end": 195.846,
+   "t": 152.73,
+   "end": 203.019,
    "function": "reveal: both motifs meet on one chord; riser into the equal averages, low hit on \"Identical\"",
    "key": "F major",
    "tempo": 92,
    "layer": "music",
    "scene": "a1-avg1966"
-  },
-  {
-   "t": 195.846,
-   "end": 199.759,
-   "function": "act 2 departure: motifs split into two lanes, harmony drifts to D minor",
-   "key": "D minor",
-   "tempo": 96,
-   "layer": "music",
-   "scene": "a2-est"
   }
  ],
  "silences": [
   {
-   "t": 11.2,
+   "t": 11.1,
    "dur": 1.09,
    "why": "let \"1991\" land",
    "after": "co-broke.1"
   },
   {
-   "t": 14.41,
+   "t": 14.31,
    "dur": 1.3,
    "why": "the open question hangs before the title",
    "after": "co-question.1"
   },
   {
-   "t": 156.87,
-   "dur": 1.24,
+   "t": 158.97,
+   "dur": 1.3,
    "why": "let the first average land before the mirror answers",
    "after": "a1-avg1966.1"
   }

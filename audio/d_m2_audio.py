@@ -215,6 +215,13 @@ def main():
     # accents: a low hit on each declared accent (all are cuts)
     for a in accents:
         add(dry, a * SR, boom(0.55), 1, 1)
+    # air: a soft band-limited (1.2-3.8 kHz) noise pad, slow swells, left/right slightly different
+    air = np.zeros((N, 2))
+    for ch in range(2):
+        nz = band(RNG.standard_normal(N), 1200, 3800)
+        sw = 0.6 + 0.4 * np.sin(2 * np.pi * np.arange(N) / SR / 7.3 + ch)
+        air[:, ch] = nz * sw * 0.035
+    dry += air
     # one reverb space
     irL, irR = reverb_ir()
     wetL = signal.fftconvolve(dry[:, 0], irL)[:N]
@@ -223,6 +230,9 @@ def main():
 
     # ---------------------------------------------------------------- voice
     takes = {t['id']: t for t in json.load(open(os.path.join(ROOT, 'out', 'voice', 'takes.json')))['takes']}
+    EL = json.load(open(os.path.join(ROOT, 'out', 'voice', 'el-takes.json')))
+    cl = json.load(open(os.path.join(ROOT, 'out', 'claims.json')))['claims']
+    DECISIVE = {sp['sentence'] for c in cl if c.get('decisive') for sp in c.get('spoken', [])}
     vbuf = np.zeros(N)
     for s in sc['sentences']:
         f = os.path.join(REPO, takes[s['id']]['final'])
@@ -231,14 +241,42 @@ def main():
             subprocess.run(['ffmpeg', '-y', '-loglevel', 'error', '-i', f, '-ac', '1', '-ar', str(SR),
                             '-af', 'highpass=f=70,deesser=i=0.4:m=0.5:f=0.5,acompressor=threshold=0.1:ratio=2.5:attack=8:release=150:makeup=1.5', w], check=True)
             x = wavfile.read(w)[1].astype(np.float64) / 32768
+        if s['id'] in DECISIVE:
+            # cut the breath/decay after the last word (take ASR end + 90 ms, 40 ms fade): the decisive pause starts clean
+            el = EL.get(os.path.basename(takes[s['id']]['raw'])[:-4])
+            if el and el.get('words'):
+                e = int((0.03 + el['words'][-1]['end'] + 0.09) * SR)
+                f = int(0.04 * SR)
+                if e < len(x):
+                    x = x.copy()
+                    x[e:e + f] *= np.linspace(1, 0, len(x[e:e + f]))
+                    x[e + f:] = 0
         i0 = int(round(s['start'] * SR))
         n = min(len(x), N - i0)
         vbuf[i0:i0 + n] += x[:n]
+    # performance dynamics by section (the reading gets closer/quieter in the cold open and fuller at the reveals)
+    SECT = [('co-lines', -9.0), ('a1-est', -4.0), ('a1-mirror-in', -1.5), ('a1-avg1966', 2.0), ('a1-geo', -3.0)]
+    starts = {s_['id']: s_['start'] for s_ in tl['scenes']}
+    gv = np.zeros(N)
+    for k, (sid, g_) in enumerate(SECT):
+        i0 = int(starts[sid] * SR)
+        i1 = int(starts[SECT[k + 1][0]] * SR) if k + 1 < len(SECT) else N
+        gv[i0:i1] = g_
+    from scipy.ndimage import uniform_filter1d as _uf
+    gv = _uf(gv, int(0.5 * SR))
+    vbuf = vbuf * 10 ** (gv / 20)
+    # voice peak control (soft clip of rare plosive peaks, 4 ms look-ahead gain)
+    from scipy.ndimage import minimum_filter1d as _minf, uniform_filter1d as _unif
+    vc = np.sqrt(np.mean(vbuf[np.abs(vbuf) > 1e-4] ** 2)) * 10 ** (12 / 20)  # ceiling: 12 dB over the speech RMS
+    gpk = np.minimum(1, vc / np.maximum(np.abs(vbuf), 1e-9))
+    gpk = np.minimum(_unif(_minf(gpk, int(0.004 * SR)), int(0.002 * SR)), _minf(gpk, int(0.004 * SR)))
+    vbuf = vbuf * gpk
     voice = np.stack([vbuf, vbuf], 1)
 
     # voice activity (100 ms RMS > -45 dBFS) -> multiband ducking of the music (1-4 kHz only)
     hop = int(0.01 * SR)
-    vr = np.sqrt(np.convolve(vbuf ** 2, np.ones(int(0.1 * SR)) / int(0.1 * SR), 'same'))
+    from scipy.ndimage import uniform_filter1d as _uf2
+    vr = np.sqrt(np.maximum(_uf2(vbuf ** 2, int(0.1 * SR)), 0))
     act = (db(vr) > -45).astype(float)
     # smooth: attack 40 ms, release 350 ms
     g = np.zeros(N)
@@ -250,12 +288,12 @@ def main():
         a = a_att if target > cur else a_rel
         cur = target + (cur - target) * a ** step
         g[i:i + step] = cur
-    duck_mid = 10 ** (-10 * g / 20)  # -10 dB in 1-4 kHz under voice
-    duck_all = 10 ** (-1.0 * g / 20)
+    duck_mid = 10 ** (-12 * g / 20)  # -12 dB in 1-4 kHz under voice
+    duck_all = np.ones(N)  # the dip is band-limited: low and high bands keep their level
     mus = np.zeros_like(music)
     for ch in range(2):
         lo, mid, hi = split3(music[:, ch])
-        mus[:, ch] = (lo + mid * duck_mid + hi * (0.5 + 0.5 * duck_mid)) * duck_all
+        mus[:, ch] = (lo + mid * duck_mid + hi) * duck_all
 
     # ---------------------------------------------------------------- sound design
     sfx = np.zeros((N, 2))
@@ -265,15 +303,15 @@ def main():
         t = np.arange(n) / SR
         blip = np.sin(2 * np.pi * (880 + 300 * RNG.uniform()) * t) * np.exp(-t / 0.05)
         noise = band(RNG.standard_normal(n), 1500, 6000) * np.exp(-t / 0.03)
-        x = (0.5 * blip + 0.6 * noise) * (0.45 if e.get('kind') != 'impact' else 0.7)
+        x = (0.5 * blip + 0.6 * noise) * (0.09 if e.get('kind') != 'impact' else 0.14)
         if e.get('kind') == 'impact':
-            x = x + boom(0.9)[:n] * 0.8
+            x = x + boom(0.9)[:n] * 0.16
         gl, gr = pan_gains((e['x'] - 960) / 960)
         add(sfx, e['t'] * SR, x, gl, gr)
         if e.get('riser'):
             rn = int(e['riser'] * SR)
             rt = np.arange(rn) / SR
-            rs = band(RNG.standard_normal(rn), 400, 5000) * (rt / rt[-1]) ** 2 * 0.25
+            rs = band(RNG.standard_normal(rn), 400, 5000) * (rt / rt[-1]) ** 2 * 0.05
             add(sfx, e['t'] * SR - rn, rs, 0.8, 0.8)
     # whoosh per camera move, level from the peak speed (frame widths per second at the focus plane)
     cam = J('out/camera.json')

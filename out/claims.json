@@ -205,6 +205,78 @@
    "callbacks": []
   },
   {
+   "claimId": "ax1966",
+   "value": 1966,
+   "display": "1966",
+   "formula": "first year on a 1966–1995 time axis",
+   "source": {
+    "id": "damodaran-histretSP-2026",
+    "url": "https://pages.stern.nyu.edu/~adamodar/pc/datasets/histretSP.xls"
+   },
+   "dataYear": 1966,
+   "historical": true,
+   "illustrative": false,
+   "role": "axis",
+   "planned": [
+    "co-lines",
+    "co-same",
+    "co-broke",
+    "a1-raise",
+    "a1-real",
+    "a1-horizon",
+    "a1-mirror-rule",
+    "a1-arith"
+   ],
+   "spoken": [],
+   "shownIn": [
+    "co-lines",
+    "co-same",
+    "co-broke",
+    "a1-raise",
+    "a1-real",
+    "a1-horizon",
+    "a1-mirror-rule",
+    "a1-arith"
+   ],
+   "callbacks": []
+  },
+  {
+   "claimId": "ax1995",
+   "value": 1995,
+   "display": "1995",
+   "formula": "last year on a 1966–1995 time axis",
+   "source": {
+    "id": "damodaran-histretSP-2026",
+    "url": "https://pages.stern.nyu.edu/~adamodar/pc/datasets/histretSP.xls"
+   },
+   "dataYear": 1995,
+   "historical": true,
+   "illustrative": false,
+   "role": "axis",
+   "planned": [
+    "co-lines",
+    "co-same",
+    "co-broke",
+    "a1-raise",
+    "a1-real",
+    "a1-horizon",
+    "a1-mirror-rule",
+    "a1-arith"
+   ],
+   "spoken": [],
+   "shownIn": [
+    "co-lines",
+    "co-same",
+    "co-broke",
+    "a1-raise",
+    "a1-real",
+    "a1-horizon",
+    "a1-mirror-rule",
+    "a1-arith"
+   ],
+   "callbacks": []
+  },
+  {
    "claimId": "y1928",
    "value": 1928,
    "display": "1928",
