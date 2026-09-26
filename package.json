@@ -1,0 +1,25 @@
+{
+  "name": "mortgage-points-segment",
+  "version": "1.0.0",
+  "description": "Silent 1080p explainer segment: mortgage points break-even, with computed claims.",
+  "scripts": {
+    "test": "node --test test/*.test.js",
+    "check": "node render/check.js",
+    "render": "node render/render.js",
+    "export": "node render/export.js",
+    "all": "npm test && npm run check && npm run render && npm run export"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HungQuach301/crux-spike-opus55.git"
+  },
+  "bugs": {
+    "url": "https://github.com/HungQuach301/crux-spike-opus55/issues"
+  },
+  "homepage": "https://github.com/HungQuach301/crux-spike-opus55#readme",
+  "dependencies": {
+    "@fontsource/inter": "^5.3.0",
+    "playwright": "^1.56.1"
+  },
+  "private": true
+}

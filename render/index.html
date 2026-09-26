@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Mortgage points segment</title>
+<style>
+  @font-face { font-family: 'Inter'; font-weight: 400; src: url('fonts/inter-latin-400-normal.woff2') format('woff2'); }
+  @font-face { font-family: 'Inter'; font-weight: 600; src: url('fonts/inter-latin-600-normal.woff2') format('woff2'); }
+  @font-face { font-family: 'Inter'; font-weight: 700; src: url('fonts/inter-latin-700-normal.woff2') format('woff2'); }
+  :root {
+    --bg: #0E1116; --surface: #171B22; --ink: #F2F4F7; --ink-muted: #9AA4B2; --accent: #4C8DFF;
+    --warn: #F2B441; --positive: #3FBF7F; --negative: #E5484D; --grid: #2A303B;
+  }
+  html, body { margin: 0; padding: 0; background: var(--bg); }
+  #stage {
+    position: relative; width: 1920px; height: 1080px; overflow: hidden; background: var(--bg);
+    font-family: 'Inter';
+    color: var(--ink);
+  }
+  .t { position: absolute; white-space: nowrap; line-height: 1.2; margin: 0; }
+  .wrap { white-space: normal; }
+  .l1 { font-size: 128px; font-weight: 700; line-height: 1; letter-spacing: 0; }
+  .l2 { font-size: 48px; font-weight: 600; }
+  .l2b { font-size: 48px; font-weight: 700; }
+  .l3 { font-size: 28px; font-weight: 400; }
+  .l3s { font-size: 28px; font-weight: 600; }
+  .n { font-variant-numeric: tabular-nums; font-feature-settings: 'tnum' 1; }
+  .muted { color: var(--ink-muted); }
+  .accent { color: var(--accent); }
+  .warn { color: var(--warn); }
+  .ink { color: var(--ink); }
+  .cell { position: absolute; box-sizing: border-box; display: flex; align-items: center; justify-content: flex-end;
+          padding: 0 16px; font-size: 28px; font-weight: 400; color: var(--ink-muted); white-space: nowrap; overflow: hidden; }
+  .cell.flip { color: var(--warn); font-weight: 600; border: 2px solid var(--warn); background: var(--surface); }
+  .cell.hdr { color: var(--ink-muted); font-weight: 600; }
+  .cell.lbl { justify-content: flex-start; padding-left: 0; }
+  .rule { position: absolute; height: 2px; background: var(--grid); }
+  svg { position: absolute; left: 0; top: 0; }
+</style>
+</head>
+<body>
+<div id="stage"></div>
+<script src="data.js"></script>
+<script src="scenes.js"></script>
+</body>
+</html>

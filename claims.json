@@ -1,0 +1,5316 @@
+{
+  "description": "Every number drawn on screen in out/segment.mp4 and out/frame-*.png. value = computed value; display = exact on-screen string. Code: src/calc.js, src/data.js.",
+  "baseRateSource": {
+    "name": "Freddie Mac Primary Mortgage Market Survey (PMMS)",
+    "url": "https://www.freddiemac.com/pmms",
+    "releaseUrl": "https://www.globenewswire.com/news-release/2026/09/24/3368592/0/en/mortgage-rates-average-7-03.html",
+    "date": "2026-09-24",
+    "dateDisplay": "Sep 24, 2026",
+    "ratePct": 7.03,
+    "note": "Release title \"Mortgage Rates Average 7.03%\" (Freddie Mac, 2026-09-24) retrieved via web search index on 2026-09-25; direct page fetch blocked by sandbox egress proxy."
+  },
+  "count": 324,
+  "claims": [
+    {
+      "claimId": "normal/principal",
+      "dataset": "normal",
+      "value": 400000,
+      "display": "$400,000",
+      "appearsIn": [
+        "segment.mp4:assume",
+        "segment.mp4:title"
+      ],
+      "formula": "input",
+      "note": "Base case loan amount (brief).",
+      "inputs": {}
+    },
+    {
+      "claimId": "normal/term_years",
+      "dataset": "normal",
+      "value": 30,
+      "display": "30",
+      "appearsIn": [
+        "segment.mp4:assume",
+        "segment.mp4:title"
+      ],
+      "formula": "input",
+      "note": "30-year fixed (brief).",
+      "inputs": {}
+    },
+    {
+      "claimId": "normal/base_rate",
+      "dataset": "normal",
+      "value": 7.03,
+      "display": "7.03%",
+      "appearsIn": [
+        "frame-normal.png",
+        "segment.mp4:assume",
+        "segment.mp4:chart",
+        "segment.mp4:close",
+        "segment.mp4:example",
+        "segment.mp4:tableA",
+        "segment.mp4:tableB",
+        "segment.mp4:title"
+      ],
+      "source": "https://www.globenewswire.com/news-release/2026/09/24/3368592/0/en/mortgage-rates-average-7-03.html",
+      "sourceIndex": "https://www.freddiemac.com/pmms",
+      "sourceDate": "2026-09-24",
+      "note": "Release title \"Mortgage Rates Average 7.03%\" (Freddie Mac, 2026-09-24) retrieved via web search index on 2026-09-25; direct page fetch blocked by sandbox egress proxy.",
+      "inputs": {}
+    },
+    {
+      "claimId": "normal/rate_date",
+      "dataset": "normal",
+      "value": "2026-09-24",
+      "display": "Sep 24, 2026",
+      "appearsIn": [
+        "frame-normal.png",
+        "segment.mp4:assume",
+        "segment.mp4:chart",
+        "segment.mp4:close",
+        "segment.mp4:example",
+        "segment.mp4:tableA",
+        "segment.mp4:tableB",
+        "segment.mp4:title"
+      ],
+      "source": "https://www.globenewswire.com/news-release/2026/09/24/3368592/0/en/mortgage-rates-average-7-03.html",
+      "note": "PMMS weekly release date.",
+      "inputs": {}
+    },
+    {
+      "claimId": "normal/point_pct",
+      "dataset": "normal",
+      "value": 1,
+      "display": "1%",
+      "appearsIn": [
+        "segment.mp4:assume"
+      ],
+      "formula": "input",
+      "note": "1 point = 1% of loan amount (brief).",
+      "inputs": {}
+    },
+    {
+      "claimId": "normal/return_pct",
+      "dataset": "normal",
+      "value": 5,
+      "display": "5.00%",
+      "appearsIn": [
+        "frame-normal.png",
+        "segment.mp4:assume",
+        "segment.mp4:chart",
+        "segment.mp4:close",
+        "segment.mp4:tableB"
+      ],
+      "formula": "input",
+      "note": "Assumed annual return on cash not spent on points, compounded monthly (j = k/12). Stated assumption, not a forecast.",
+      "inputs": {}
+    },
+    {
+      "claimId": "normal/cut_min",
+      "dataset": "normal",
+      "value": 0.125,
+      "display": "0.125%",
+      "appearsIn": [
+        "segment.mp4:assume"
+      ],
+      "formula": "input",
+      "note": "Sweep low end, rate reduction per point (brief).",
+      "inputs": {}
+    },
+    {
+      "claimId": "normal/cut_max",
+      "dataset": "normal",
+      "value": 0.375,
+      "display": "0.375%",
+      "appearsIn": [
+        "segment.mp4:assume"
+      ],
+      "formula": "input",
+      "note": "Sweep high end (brief).",
+      "inputs": {}
+    },
+    {
+      "claimId": "normal/points_min",
+      "dataset": "normal",
+      "value": 0,
+      "display": "0",
+      "appearsIn": [
+        "segment.mp4:assume"
+      ],
+      "formula": "input",
+      "note": "Sweep (brief).",
+      "inputs": {}
+    },
+    {
+      "claimId": "normal/points_max",
+      "dataset": "normal",
+      "value": 3,
+      "display": "3",
+      "appearsIn": [
+        "segment.mp4:assume",
+        "segment.mp4:close",
+        "segment.mp4:tableA"
+      ],
+      "formula": "input",
+      "note": "Sweep (brief).",
+      "inputs": {}
+    },
+    {
+      "claimId": "normal/points_step",
+      "dataset": "normal",
+      "value": 0.5,
+      "display": "0.5",
+      "appearsIn": [
+        "segment.mp4:assume"
+      ],
+      "formula": "input",
+      "note": "Sweep step (brief).",
+      "inputs": {}
+    },
+    {
+      "claimId": "normal/hold_min",
+      "dataset": "normal",
+      "value": 1,
+      "display": "1",
+      "appearsIn": [
+        "segment.mp4:assume"
+      ],
+      "formula": "input",
+      "note": "Holding-period sweep (brief).",
+      "inputs": {}
+    },
+    {
+      "claimId": "normal/hold_max",
+      "dataset": "normal",
+      "value": 15,
+      "display": "15",
+      "appearsIn": [
+        "segment.mp4:assume"
+      ],
+      "formula": "input",
+      "note": "Holding-period sweep (brief).",
+      "inputs": {}
+    },
+    {
+      "claimId": "normal/one_point_cost",
+      "dataset": "normal",
+      "value": 4000,
+      "display": "$4,000",
+      "appearsIn": [
+        "segment.mp4:assume"
+      ],
+      "formula": "cost = principal × points / 100",
+      "inputs": {
+        "principal": 400000,
+        "points": 1
+      }
+    },
+    {
+      "claimId": "normal/pts_0.5",
+      "dataset": "normal",
+      "value": 0.5,
+      "display": "0.5",
+      "appearsIn": [
+        "frame-normal.png",
+        "segment.mp4:close",
+        "segment.mp4:tableA",
+        "segment.mp4:tableB"
+      ],
+      "formula": "input (sweep value)",
+      "inputs": {}
+    },
+    {
+      "claimId": "normal/cost_0.5",
+      "dataset": "normal",
+      "value": 2000,
+      "display": "$2,000",
+      "appearsIn": [
+        "frame-normal.png",
+        "segment.mp4:tableA",
+        "segment.mp4:tableB"
+      ],
+      "formula": "cost = principal × points / 100",
+      "inputs": {
+        "principal": 400000,
+        "points": 0.5
+      }
+    },
+    {
+      "claimId": "normal/pts_1",
+      "dataset": "normal",
+      "value": 1,
+      "display": "1.0",
+      "appearsIn": [
+        "frame-normal.png",
+        "segment.mp4:tableA",
+        "segment.mp4:tableB"
+      ],
+      "formula": "input (sweep value)",
+      "inputs": {}
+    },
+    {
+      "claimId": "normal/cost_1",
+      "dataset": "normal",
+      "value": 4000,
+      "display": "$4,000",
+      "appearsIn": [
+        "frame-normal.png",
+        "segment.mp4:tableA",
+        "segment.mp4:tableB"
+      ],
+      "formula": "cost = principal × points / 100",
+      "inputs": {
+        "principal": 400000,
+        "points": 1
+      }
+    },
+    {
+      "claimId": "normal/pts_1.5",
+      "dataset": "normal",
+      "value": 1.5,
+      "display": "1.5",
+      "appearsIn": [
+        "frame-normal.png",
+        "segment.mp4:tableA",
+        "segment.mp4:tableB"
+      ],
+      "formula": "input (sweep value)",
+      "inputs": {}
+    },
+    {
+      "claimId": "normal/cost_1.5",
+      "dataset": "normal",
+      "value": 6000,
+      "display": "$6,000",
+      "appearsIn": [
+        "frame-normal.png",
+        "segment.mp4:tableA",
+        "segment.mp4:tableB"
+      ],
+      "formula": "cost = principal × points / 100",
+      "inputs": {
+        "principal": 400000,
+        "points": 1.5
+      }
+    },
+    {
+      "claimId": "normal/pts_2",
+      "dataset": "normal",
+      "value": 2,
+      "display": "2.0",
+      "appearsIn": [
+        "frame-normal.png",
+        "segment.mp4:tableA",
+        "segment.mp4:tableB"
+      ],
+      "formula": "input (sweep value)",
+      "inputs": {}
+    },
+    {
+      "claimId": "normal/cost_2",
+      "dataset": "normal",
+      "value": 8000,
+      "display": "$8,000",
+      "appearsIn": [
+        "frame-normal.png",
+        "segment.mp4:tableA",
+        "segment.mp4:tableB"
+      ],
+      "formula": "cost = principal × points / 100",
+      "inputs": {
+        "principal": 400000,
+        "points": 2
+      }
+    },
+    {
+      "claimId": "normal/pts_2.5",
+      "dataset": "normal",
+      "value": 2.5,
+      "display": "2.5",
+      "appearsIn": [
+        "frame-normal.png",
+        "segment.mp4:tableA",
+        "segment.mp4:tableB"
+      ],
+      "formula": "input (sweep value)",
+      "inputs": {}
+    },
+    {
+      "claimId": "normal/cost_2.5",
+      "dataset": "normal",
+      "value": 10000,
+      "display": "$10,000",
+      "appearsIn": [
+        "frame-normal.png",
+        "segment.mp4:tableA",
+        "segment.mp4:tableB"
+      ],
+      "formula": "cost = principal × points / 100",
+      "inputs": {
+        "principal": 400000,
+        "points": 2.5
+      }
+    },
+    {
+      "claimId": "normal/pts_3",
+      "dataset": "normal",
+      "value": 3,
+      "display": "3.0",
+      "appearsIn": [
+        "frame-normal.png",
+        "segment.mp4:tableA",
+        "segment.mp4:tableB"
+      ],
+      "formula": "input (sweep value)",
+      "inputs": {}
+    },
+    {
+      "claimId": "normal/cost_3",
+      "dataset": "normal",
+      "value": 12000,
+      "display": "$12,000",
+      "appearsIn": [
+        "frame-normal.png",
+        "segment.mp4:tableA",
+        "segment.mp4:tableB"
+      ],
+      "formula": "cost = principal × points / 100",
+      "inputs": {
+        "principal": 400000,
+        "points": 3
+      }
+    },
+    {
+      "claimId": "normal/cut_0.125",
+      "dataset": "normal",
+      "value": 0.125,
+      "display": "0.125%",
+      "appearsIn": [
+        "frame-normal.png",
+        "segment.mp4:close",
+        "segment.mp4:tableA",
+        "segment.mp4:tableB"
+      ],
+      "formula": "input (sweep value)",
+      "inputs": {}
+    },
+    {
+      "claimId": "normal/cut_0.25",
+      "dataset": "normal",
+      "value": 0.25,
+      "display": "0.25%",
+      "appearsIn": [
+        "frame-normal.png",
+        "segment.mp4:close",
+        "segment.mp4:tableA",
+        "segment.mp4:tableB"
+      ],
+      "formula": "input (sweep value)",
+      "inputs": {}
+    },
+    {
+      "claimId": "normal/cut_0.375",
+      "dataset": "normal",
+      "value": 0.375,
+      "display": "0.375%",
+      "appearsIn": [
+        "frame-normal.png",
+        "segment.mp4:close",
+        "segment.mp4:tableA",
+        "segment.mp4:tableB"
+      ],
+      "formula": "input (sweep value)",
+      "inputs": {}
+    },
+    {
+      "claimId": "normal/be_simple_0.5_0.125",
+      "dataset": "normal",
+      "value": 120,
+      "display": "10.0",
+      "appearsIn": [
+        "frame-normal.png",
+        "segment.mp4:tableA",
+        "segment.mp4:tableB"
+      ],
+      "formula": "years = ceil(cost / (M(base) − M(base − points×cut))) / 12; M = L·i/(1−(1+i)^−n), i = r/12, payments rounded to cents",
+      "inputs": {
+        "principal": 400000,
+        "baseRatePct": 7.03,
+        "termMonths": 360,
+        "points": 0.5,
+        "cutPerPointPct": 0.125
+      }
+    },
+    {
+      "claimId": "normal/be_opp_0.5_0.125",
+      "dataset": "normal",
+      "value": 165,
+      "display": "13.8",
+      "appearsIn": [
+        "frame-normal.png",
+        "segment.mp4:tableB"
+      ],
+      "formula": "years = min m s.t. Σ_{t=1..m} saving/(1+j)^t ≥ cost, j = returnPct/12, / 12; \"never\" if not within term",
+      "inputs": {
+        "principal": 400000,
+        "baseRatePct": 7.03,
+        "termMonths": 360,
+        "points": 0.5,
+        "cutPerPointPct": 0.125,
+        "returnPct": 5
+      }
+    },
+    {
+      "claimId": "normal/be_simple_0.5_0.25",
+      "dataset": "normal",
+      "value": 60,
+      "display": "5.0",
+      "appearsIn": [
+        "frame-normal.png",
+        "segment.mp4:tableA",
+        "segment.mp4:tableB"
+      ],
+      "formula": "years = ceil(cost / (M(base) − M(base − points×cut))) / 12; M = L·i/(1−(1+i)^−n), i = r/12, payments rounded to cents",
+      "inputs": {
+        "principal": 400000,
+        "baseRatePct": 7.03,
+        "termMonths": 360,
+        "points": 0.5,
+        "cutPerPointPct": 0.25
+      }
+    },
+    {
+      "claimId": "normal/be_opp_0.5_0.25",
+      "dataset": "normal",
+      "value": 69,
+      "display": "5.8",
+      "appearsIn": [
+        "frame-normal.png",
+        "segment.mp4:tableB"
+      ],
+      "formula": "years = min m s.t. Σ_{t=1..m} saving/(1+j)^t ≥ cost, j = returnPct/12, / 12; \"never\" if not within term",
+      "inputs": {
+        "principal": 400000,
+        "baseRatePct": 7.03,
+        "termMonths": 360,
+        "points": 0.5,
+        "cutPerPointPct": 0.25,
+        "returnPct": 5
+      }
+    },
+    {
+      "claimId": "normal/be_simple_0.5_0.375",
+      "dataset": "normal",
+      "value": 40,
+      "display": "3.3",
+      "appearsIn": [
+        "frame-normal.png",
+        "segment.mp4:tableA",
+        "segment.mp4:tableB"
+      ],
+      "formula": "years = ceil(cost / (M(base) − M(base − points×cut))) / 12; M = L·i/(1−(1+i)^−n), i = r/12, payments rounded to cents",
+      "inputs": {
+        "principal": 400000,
+        "baseRatePct": 7.03,
+        "termMonths": 360,
+        "points": 0.5,
+        "cutPerPointPct": 0.375
+      }
+    },
+    {
+      "claimId": "normal/be_opp_0.5_0.375",
+      "dataset": "normal",
+      "value": 44,
+      "display": "3.7",
+      "appearsIn": [
+        "frame-normal.png",
+        "segment.mp4:tableB"
+      ],
+      "formula": "years = min m s.t. Σ_{t=1..m} saving/(1+j)^t ≥ cost, j = returnPct/12, / 12; \"never\" if not within term",
+      "inputs": {
+        "principal": 400000,
+        "baseRatePct": 7.03,
+        "termMonths": 360,
+        "points": 0.5,
+        "cutPerPointPct": 0.375,
+        "returnPct": 5
+      }
+    },
+    {
+      "claimId": "normal/be_simple_1_0.125",
+      "dataset": "normal",
+      "value": 120,
+      "display": "10.0",
+      "appearsIn": [
+        "frame-normal.png",
+        "segment.mp4:tableA",
+        "segment.mp4:tableB"
+      ],
+      "formula": "years = ceil(cost / (M(base) − M(base − points×cut))) / 12; M = L·i/(1−(1+i)^−n), i = r/12, payments rounded to cents",
+      "inputs": {
+        "principal": 400000,
+        "baseRatePct": 7.03,
+        "termMonths": 360,
+        "points": 1,
+        "cutPerPointPct": 0.125
+      }
+    },
+    {
+      "claimId": "normal/be_opp_1_0.125",
+      "dataset": "normal",
+      "value": 166,
+      "display": "13.8",
+      "appearsIn": [
+        "frame-normal.png",
+        "segment.mp4:tableB"
+      ],
+      "formula": "years = min m s.t. Σ_{t=1..m} saving/(1+j)^t ≥ cost, j = returnPct/12, / 12; \"never\" if not within term",
+      "inputs": {
+        "principal": 400000,
+        "baseRatePct": 7.03,
+        "termMonths": 360,
+        "points": 1,
+        "cutPerPointPct": 0.125,
+        "returnPct": 5
+      }
+    },
+    {
+      "claimId": "normal/be_simple_1_0.25",
+      "dataset": "normal",
+      "value": 60,
+      "display": "5.0",
+      "appearsIn": [
+        "frame-normal.png",
+        "segment.mp4:tableA",
+        "segment.mp4:tableB"
+      ],
+      "formula": "years = ceil(cost / (M(base) − M(base − points×cut))) / 12; M = L·i/(1−(1+i)^−n), i = r/12, payments rounded to cents",
+      "inputs": {
+        "principal": 400000,
+        "baseRatePct": 7.03,
+        "termMonths": 360,
+        "points": 1,
+        "cutPerPointPct": 0.25
+      }
+    },
+    {
+      "claimId": "normal/be_opp_1_0.25",
+      "dataset": "normal",
+      "value": 69,
+      "display": "5.8",
+      "appearsIn": [
+        "frame-normal.png",
+        "segment.mp4:tableB"
+      ],
+      "formula": "years = min m s.t. Σ_{t=1..m} saving/(1+j)^t ≥ cost, j = returnPct/12, / 12; \"never\" if not within term",
+      "inputs": {
+        "principal": 400000,
+        "baseRatePct": 7.03,
+        "termMonths": 360,
+        "points": 1,
+        "cutPerPointPct": 0.25,
+        "returnPct": 5
+      }
+    },
+    {
+      "claimId": "normal/be_simple_1_0.375",
+      "dataset": "normal",
+      "value": 40,
+      "display": "3.3",
+      "appearsIn": [
+        "frame-normal.png",
+        "segment.mp4:tableA",
+        "segment.mp4:tableB"
+      ],
+      "formula": "years = ceil(cost / (M(base) − M(base − points×cut))) / 12; M = L·i/(1−(1+i)^−n), i = r/12, payments rounded to cents",
+      "inputs": {
+        "principal": 400000,
+        "baseRatePct": 7.03,
+        "termMonths": 360,
+        "points": 1,
+        "cutPerPointPct": 0.375
+      }
+    },
+    {
+      "claimId": "normal/be_opp_1_0.375",
+      "dataset": "normal",
+      "value": 44,
+      "display": "3.7",
+      "appearsIn": [
+        "frame-normal.png",
+        "segment.mp4:tableB"
+      ],
+      "formula": "years = min m s.t. Σ_{t=1..m} saving/(1+j)^t ≥ cost, j = returnPct/12, / 12; \"never\" if not within term",
+      "inputs": {
+        "principal": 400000,
+        "baseRatePct": 7.03,
+        "termMonths": 360,
+        "points": 1,
+        "cutPerPointPct": 0.375,
+        "returnPct": 5
+      }
+    },
+    {
+      "claimId": "normal/be_simple_1.5_0.125",
+      "dataset": "normal",
+      "value": 120,
+      "display": "10.0",
+      "appearsIn": [
+        "frame-normal.png",
+        "segment.mp4:tableA",
+        "segment.mp4:tableB"
+      ],
+      "formula": "years = ceil(cost / (M(base) − M(base − points×cut))) / 12; M = L·i/(1−(1+i)^−n), i = r/12, payments rounded to cents",
+      "inputs": {
+        "principal": 400000,
+        "baseRatePct": 7.03,
+        "termMonths": 360,
+        "points": 1.5,
+        "cutPerPointPct": 0.125
+      }
+    },
+    {
+      "claimId": "normal/be_opp_1.5_0.125",
+      "dataset": "normal",
+      "value": 166,
+      "display": "13.8",
+      "appearsIn": [
+        "frame-normal.png",
+        "segment.mp4:tableB"
+      ],
+      "formula": "years = min m s.t. Σ_{t=1..m} saving/(1+j)^t ≥ cost, j = returnPct/12, / 12; \"never\" if not within term",
+      "inputs": {
+        "principal": 400000,
+        "baseRatePct": 7.03,
+        "termMonths": 360,
+        "points": 1.5,
+        "cutPerPointPct": 0.125,
+        "returnPct": 5
+      }
+    },
+    {
+      "claimId": "normal/be_simple_1.5_0.25",
+      "dataset": "normal",
+      "value": 60,
+      "display": "5.0",
+      "appearsIn": [
+        "frame-normal.png",
+        "segment.mp4:tableA",
+        "segment.mp4:tableB"
+      ],
+      "formula": "years = ceil(cost / (M(base) − M(base − points×cut))) / 12; M = L·i/(1−(1+i)^−n), i = r/12, payments rounded to cents",
+      "inputs": {
+        "principal": 400000,
+        "baseRatePct": 7.03,
+        "termMonths": 360,
+        "points": 1.5,
+        "cutPerPointPct": 0.25
+      }
+    },
+    {
+      "claimId": "normal/be_opp_1.5_0.25",
+      "dataset": "normal",
+      "value": 70,
+      "display": "5.8",
+      "appearsIn": [
+        "frame-normal.png",
+        "segment.mp4:tableB"
+      ],
+      "formula": "years = min m s.t. Σ_{t=1..m} saving/(1+j)^t ≥ cost, j = returnPct/12, / 12; \"never\" if not within term",
+      "inputs": {
+        "principal": 400000,
+        "baseRatePct": 7.03,
+        "termMonths": 360,
+        "points": 1.5,
+        "cutPerPointPct": 0.25,
+        "returnPct": 5
+      }
+    },
+    {
+      "claimId": "normal/be_simple_1.5_0.375",
+      "dataset": "normal",
+      "value": 41,
+      "display": "3.4",
+      "appearsIn": [
+        "frame-normal.png",
+        "segment.mp4:tableA",
+        "segment.mp4:tableB"
+      ],
+      "formula": "years = ceil(cost / (M(base) − M(base − points×cut))) / 12; M = L·i/(1−(1+i)^−n), i = r/12, payments rounded to cents",
+      "inputs": {
+        "principal": 400000,
+        "baseRatePct": 7.03,
+        "termMonths": 360,
+        "points": 1.5,
+        "cutPerPointPct": 0.375
+      }
+    },
+    {
+      "claimId": "normal/be_opp_1.5_0.375",
+      "dataset": "normal",
+      "value": 44,
+      "display": "3.7",
+      "appearsIn": [
+        "frame-normal.png",
+        "segment.mp4:tableB"
+      ],
+      "formula": "years = min m s.t. Σ_{t=1..m} saving/(1+j)^t ≥ cost, j = returnPct/12, / 12; \"never\" if not within term",
+      "inputs": {
+        "principal": 400000,
+        "baseRatePct": 7.03,
+        "termMonths": 360,
+        "points": 1.5,
+        "cutPerPointPct": 0.375,
+        "returnPct": 5
+      }
+    },
+    {
+      "claimId": "normal/be_simple_2_0.125",
+      "dataset": "normal",
+      "value": 120,
+      "display": "10.0",
+      "appearsIn": [
+        "frame-normal.png",
+        "segment.mp4:tableA",
+        "segment.mp4:tableB"
+      ],
+      "formula": "years = ceil(cost / (M(base) − M(base − points×cut))) / 12; M = L·i/(1−(1+i)^−n), i = r/12, payments rounded to cents",
+      "inputs": {
+        "principal": 400000,
+        "baseRatePct": 7.03,
+        "termMonths": 360,
+        "points": 2,
+        "cutPerPointPct": 0.125
+      }
+    },
+    {
+      "claimId": "normal/be_opp_2_0.125",
+      "dataset": "normal",
+      "value": 166,
+      "display": "13.8",
+      "appearsIn": [
+        "frame-normal.png",
+        "segment.mp4:tableB"
+      ],
+      "formula": "years = min m s.t. Σ_{t=1..m} saving/(1+j)^t ≥ cost, j = returnPct/12, / 12; \"never\" if not within term",
+      "inputs": {
+        "principal": 400000,
+        "baseRatePct": 7.03,
+        "termMonths": 360,
+        "points": 2,
+        "cutPerPointPct": 0.125,
+        "returnPct": 5
+      }
+    },
+    {
+      "claimId": "normal/be_simple_2_0.25",
+      "dataset": "normal",
+      "value": 61,
+      "display": "5.1",
+      "appearsIn": [
+        "frame-normal.png",
+        "segment.mp4:tableA",
+        "segment.mp4:tableB"
+      ],
+      "formula": "years = ceil(cost / (M(base) − M(base − points×cut))) / 12; M = L·i/(1−(1+i)^−n), i = r/12, payments rounded to cents",
+      "inputs": {
+        "principal": 400000,
+        "baseRatePct": 7.03,
+        "termMonths": 360,
+        "points": 2,
+        "cutPerPointPct": 0.25
+      }
+    },
+    {
+      "claimId": "normal/be_opp_2_0.25",
+      "dataset": "normal",
+      "value": 70,
+      "display": "5.8",
+      "appearsIn": [
+        "frame-normal.png",
+        "segment.mp4:tableB"
+      ],
+      "formula": "years = min m s.t. Σ_{t=1..m} saving/(1+j)^t ≥ cost, j = returnPct/12, / 12; \"never\" if not within term",
+      "inputs": {
+        "principal": 400000,
+        "baseRatePct": 7.03,
+        "termMonths": 360,
+        "points": 2,
+        "cutPerPointPct": 0.25,
+        "returnPct": 5
+      }
+    },
+    {
+      "claimId": "normal/be_simple_2_0.375",
+      "dataset": "normal",
+      "value": 41,
+      "display": "3.4",
+      "appearsIn": [
+        "frame-normal.png",
+        "segment.mp4:tableA",
+        "segment.mp4:tableB"
+      ],
+      "formula": "years = ceil(cost / (M(base) − M(base − points×cut))) / 12; M = L·i/(1−(1+i)^−n), i = r/12, payments rounded to cents",
+      "inputs": {
+        "principal": 400000,
+        "baseRatePct": 7.03,
+        "termMonths": 360,
+        "points": 2,
+        "cutPerPointPct": 0.375
+      }
+    },
+    {
+      "claimId": "normal/be_opp_2_0.375",
+      "dataset": "normal",
+      "value": 45,
+      "display": "3.8",
+      "appearsIn": [
+        "frame-normal.png",
+        "segment.mp4:tableB"
+      ],
+      "formula": "years = min m s.t. Σ_{t=1..m} saving/(1+j)^t ≥ cost, j = returnPct/12, / 12; \"never\" if not within term",
+      "inputs": {
+        "principal": 400000,
+        "baseRatePct": 7.03,
+        "termMonths": 360,
+        "points": 2,
+        "cutPerPointPct": 0.375,
+        "returnPct": 5
+      }
+    },
+    {
+      "claimId": "normal/be_simple_2.5_0.125",
+      "dataset": "normal",
+      "value": 120,
+      "display": "10.0",
+      "appearsIn": [
+        "frame-normal.png",
+        "segment.mp4:tableA",
+        "segment.mp4:tableB"
+      ],
+      "formula": "years = ceil(cost / (M(base) − M(base − points×cut))) / 12; M = L·i/(1−(1+i)^−n), i = r/12, payments rounded to cents",
+      "inputs": {
+        "principal": 400000,
+        "baseRatePct": 7.03,
+        "termMonths": 360,
+        "points": 2.5,
+        "cutPerPointPct": 0.125
+      }
+    },
+    {
+      "claimId": "normal/be_opp_2.5_0.125",
+      "dataset": "normal",
+      "value": 167,
+      "display": "13.9",
+      "appearsIn": [
+        "frame-normal.png",
+        "segment.mp4:tableB"
+      ],
+      "formula": "years = min m s.t. Σ_{t=1..m} saving/(1+j)^t ≥ cost, j = returnPct/12, / 12; \"never\" if not within term",
+      "inputs": {
+        "principal": 400000,
+        "baseRatePct": 7.03,
+        "termMonths": 360,
+        "points": 2.5,
+        "cutPerPointPct": 0.125,
+        "returnPct": 5
+      }
+    },
+    {
+      "claimId": "normal/be_simple_2.5_0.25",
+      "dataset": "normal",
+      "value": 61,
+      "display": "5.1",
+      "appearsIn": [
+        "frame-normal.png",
+        "segment.mp4:tableA",
+        "segment.mp4:tableB"
+      ],
+      "formula": "years = ceil(cost / (M(base) − M(base − points×cut))) / 12; M = L·i/(1−(1+i)^−n), i = r/12, payments rounded to cents",
+      "inputs": {
+        "principal": 400000,
+        "baseRatePct": 7.03,
+        "termMonths": 360,
+        "points": 2.5,
+        "cutPerPointPct": 0.25
+      }
+    },
+    {
+      "claimId": "normal/be_opp_2.5_0.25",
+      "dataset": "normal",
+      "value": 70,
+      "display": "5.8",
+      "appearsIn": [
+        "frame-normal.png",
+        "segment.mp4:tableB"
+      ],
+      "formula": "years = min m s.t. Σ_{t=1..m} saving/(1+j)^t ≥ cost, j = returnPct/12, / 12; \"never\" if not within term",
+      "inputs": {
+        "principal": 400000,
+        "baseRatePct": 7.03,
+        "termMonths": 360,
+        "points": 2.5,
+        "cutPerPointPct": 0.25,
+        "returnPct": 5
+      }
+    },
+    {
+      "claimId": "normal/be_simple_2.5_0.375",
+      "dataset": "normal",
+      "value": 41,
+      "display": "3.4",
+      "appearsIn": [
+        "frame-normal.png",
+        "segment.mp4:tableA",
+        "segment.mp4:tableB"
+      ],
+      "formula": "years = ceil(cost / (M(base) − M(base − points×cut))) / 12; M = L·i/(1−(1+i)^−n), i = r/12, payments rounded to cents",
+      "inputs": {
+        "principal": 400000,
+        "baseRatePct": 7.03,
+        "termMonths": 360,
+        "points": 2.5,
+        "cutPerPointPct": 0.375
+      }
+    },
+    {
+      "claimId": "normal/be_opp_2.5_0.375",
+      "dataset": "normal",
+      "value": 45,
+      "display": "3.8",
+      "appearsIn": [
+        "frame-normal.png",
+        "segment.mp4:tableB"
+      ],
+      "formula": "years = min m s.t. Σ_{t=1..m} saving/(1+j)^t ≥ cost, j = returnPct/12, / 12; \"never\" if not within term",
+      "inputs": {
+        "principal": 400000,
+        "baseRatePct": 7.03,
+        "termMonths": 360,
+        "points": 2.5,
+        "cutPerPointPct": 0.375,
+        "returnPct": 5
+      }
+    },
+    {
+      "claimId": "normal/be_simple_3_0.125",
+      "dataset": "normal",
+      "value": 120,
+      "display": "10.0",
+      "appearsIn": [
+        "frame-normal.png",
+        "segment.mp4:tableA",
+        "segment.mp4:tableB"
+      ],
+      "formula": "years = ceil(cost / (M(base) − M(base − points×cut))) / 12; M = L·i/(1−(1+i)^−n), i = r/12, payments rounded to cents",
+      "inputs": {
+        "principal": 400000,
+        "baseRatePct": 7.03,
+        "termMonths": 360,
+        "points": 3,
+        "cutPerPointPct": 0.125
+      }
+    },
+    {
+      "claimId": "normal/be_opp_3_0.125",
+      "dataset": "normal",
+      "value": 167,
+      "display": "13.9",
+      "appearsIn": [
+        "frame-normal.png",
+        "segment.mp4:tableB"
+      ],
+      "formula": "years = min m s.t. Σ_{t=1..m} saving/(1+j)^t ≥ cost, j = returnPct/12, / 12; \"never\" if not within term",
+      "inputs": {
+        "principal": 400000,
+        "baseRatePct": 7.03,
+        "termMonths": 360,
+        "points": 3,
+        "cutPerPointPct": 0.125,
+        "returnPct": 5
+      }
+    },
+    {
+      "claimId": "normal/be_simple_3_0.25",
+      "dataset": "normal",
+      "value": 61,
+      "display": "5.1",
+      "appearsIn": [
+        "frame-normal.png",
+        "segment.mp4:tableA",
+        "segment.mp4:tableB"
+      ],
+      "formula": "years = ceil(cost / (M(base) − M(base − points×cut))) / 12; M = L·i/(1−(1+i)^−n), i = r/12, payments rounded to cents",
+      "inputs": {
+        "principal": 400000,
+        "baseRatePct": 7.03,
+        "termMonths": 360,
+        "points": 3,
+        "cutPerPointPct": 0.25
+      }
+    },
+    {
+      "claimId": "normal/be_opp_3_0.25",
+      "dataset": "normal",
+      "value": 70,
+      "display": "5.8",
+      "appearsIn": [
+        "frame-normal.png",
+        "segment.mp4:tableB"
+      ],
+      "formula": "years = min m s.t. Σ_{t=1..m} saving/(1+j)^t ≥ cost, j = returnPct/12, / 12; \"never\" if not within term",
+      "inputs": {
+        "principal": 400000,
+        "baseRatePct": 7.03,
+        "termMonths": 360,
+        "points": 3,
+        "cutPerPointPct": 0.25,
+        "returnPct": 5
+      }
+    },
+    {
+      "claimId": "normal/be_simple_3_0.375",
+      "dataset": "normal",
+      "value": 41,
+      "display": "3.4",
+      "appearsIn": [
+        "frame-normal.png",
+        "segment.mp4:tableA",
+        "segment.mp4:tableB"
+      ],
+      "formula": "years = ceil(cost / (M(base) − M(base − points×cut))) / 12; M = L·i/(1−(1+i)^−n), i = r/12, payments rounded to cents",
+      "inputs": {
+        "principal": 400000,
+        "baseRatePct": 7.03,
+        "termMonths": 360,
+        "points": 3,
+        "cutPerPointPct": 0.375
+      }
+    },
+    {
+      "claimId": "normal/be_opp_3_0.375",
+      "dataset": "normal",
+      "value": 45,
+      "display": "3.8",
+      "appearsIn": [
+        "frame-normal.png",
+        "segment.mp4:tableB"
+      ],
+      "formula": "years = min m s.t. Σ_{t=1..m} saving/(1+j)^t ≥ cost, j = returnPct/12, / 12; \"never\" if not within term",
+      "inputs": {
+        "principal": 400000,
+        "baseRatePct": 7.03,
+        "termMonths": 360,
+        "points": 3,
+        "cutPerPointPct": 0.375,
+        "returnPct": 5
+      }
+    },
+    {
+      "claimId": "normal/hold_years",
+      "dataset": "normal",
+      "value": 10,
+      "display": "10",
+      "appearsIn": [
+        "frame-normal.png",
+        "segment.mp4:tableB"
+      ],
+      "formula": "argmax over holdYears of count(cells where simple ≤ 12·H < opp); ties → shortest H",
+      "inputs": {
+        "holdYears": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ]
+      }
+    },
+    {
+      "claimId": "normal/flip_count",
+      "dataset": "normal",
+      "value": 6,
+      "display": "6",
+      "appearsIn": [
+        "frame-normal.png",
+        "segment.mp4:tableB"
+      ],
+      "formula": "count(cells where simpleMonths ≤ 12·hold < oppMonths)",
+      "inputs": {
+        "hold": 10
+      }
+    },
+    {
+      "claimId": "normal/cell_count",
+      "dataset": "normal",
+      "value": 18,
+      "display": "18",
+      "appearsIn": [
+        "frame-normal.png",
+        "segment.mp4:tableB"
+      ],
+      "formula": "count(cells with a lender quote)",
+      "inputs": {
+        "rows": 6,
+        "cols": 3,
+        "missing": 0
+      }
+    },
+    {
+      "claimId": "normal/spread_months",
+      "dataset": "normal",
+      "value": 1,
+      "display": "1",
+      "appearsIn": [
+        "segment.mp4:tableA"
+      ],
+      "formula": "max over cut columns of (max − min) simpleMonths across point rows",
+      "inputs": {}
+    },
+    {
+      "claimId": "normal/ex_points",
+      "dataset": "normal",
+      "value": 1,
+      "display": "1.0",
+      "appearsIn": [
+        "segment.mp4:example"
+      ],
+      "formula": "input (example)",
+      "inputs": {}
+    },
+    {
+      "claimId": "normal/ex_cut",
+      "dataset": "normal",
+      "value": 0.25,
+      "display": "0.25%",
+      "appearsIn": [
+        "segment.mp4:example"
+      ],
+      "formula": "input (example)",
+      "inputs": {}
+    },
+    {
+      "claimId": "normal/ex_cost",
+      "dataset": "normal",
+      "value": 4000,
+      "display": "$4,000",
+      "appearsIn": [
+        "segment.mp4:example"
+      ],
+      "formula": "cost = principal × points / 100",
+      "inputs": {
+        "principal": 400000,
+        "baseRatePct": 7.03,
+        "termMonths": 360,
+        "annualReturnPct": 5,
+        "points": 1,
+        "cutPerPointPct": 0.25
+      }
+    },
+    {
+      "claimId": "normal/ex_base_pay",
+      "dataset": "normal",
+      "value": 2669.27,
+      "display": "$2,669.27",
+      "appearsIn": [
+        "segment.mp4:example"
+      ],
+      "formula": "M = L·i/(1−(1+i)^−n), i = base/12, n = 360, rounded to cents",
+      "inputs": {
+        "principal": 400000,
+        "baseRatePct": 7.03,
+        "termMonths": 360,
+        "annualReturnPct": 5,
+        "points": 1,
+        "cutPerPointPct": 0.25
+      }
+    },
+    {
+      "claimId": "normal/ex_new_rate",
+      "dataset": "normal",
+      "value": 6.78,
+      "display": "6.78%",
+      "appearsIn": [
+        "segment.mp4:example"
+      ],
+      "formula": "newRate = base − points × cut",
+      "inputs": {
+        "principal": 400000,
+        "baseRatePct": 7.03,
+        "termMonths": 360,
+        "annualReturnPct": 5,
+        "points": 1,
+        "cutPerPointPct": 0.25
+      }
+    },
+    {
+      "claimId": "normal/ex_new_pay",
+      "dataset": "normal",
+      "value": 2602.37,
+      "display": "$2,602.37",
+      "appearsIn": [
+        "segment.mp4:example"
+      ],
+      "formula": "M at newRate, rounded to cents",
+      "inputs": {
+        "principal": 400000,
+        "baseRatePct": 7.03,
+        "termMonths": 360,
+        "annualReturnPct": 5,
+        "points": 1,
+        "cutPerPointPct": 0.25
+      }
+    },
+    {
+      "claimId": "normal/ex_saving",
+      "dataset": "normal",
+      "value": 66.9,
+      "display": "$66.90",
+      "appearsIn": [
+        "segment.mp4:example"
+      ],
+      "formula": "saving = M(base) − M(newRate)",
+      "inputs": {
+        "principal": 400000,
+        "baseRatePct": 7.03,
+        "termMonths": 360,
+        "annualReturnPct": 5,
+        "points": 1,
+        "cutPerPointPct": 0.25
+      }
+    },
+    {
+      "claimId": "normal/ex_months",
+      "dataset": "normal",
+      "value": 60,
+      "display": "60",
+      "appearsIn": [
+        "segment.mp4:example"
+      ],
+      "formula": "ceil(cost / saving)",
+      "inputs": {
+        "principal": 400000,
+        "baseRatePct": 7.03,
+        "termMonths": 360,
+        "annualReturnPct": 5,
+        "points": 1,
+        "cutPerPointPct": 0.25
+      }
+    },
+    {
+      "claimId": "normal/ex_years",
+      "dataset": "normal",
+      "value": 60,
+      "display": "5.0",
+      "appearsIn": [
+        "segment.mp4:example"
+      ],
+      "formula": "months / 12, 1 decimal",
+      "inputs": {
+        "principal": 400000,
+        "baseRatePct": 7.03,
+        "termMonths": 360,
+        "annualReturnPct": 5,
+        "points": 1,
+        "cutPerPointPct": 0.25
+      }
+    },
+    {
+      "claimId": "normal/ch_points",
+      "dataset": "normal",
+      "value": 1,
+      "display": "1.0",
+      "appearsIn": [
+        "segment.mp4:chart"
+      ],
+      "formula": "input (chart)",
+      "inputs": {}
+    },
+    {
+      "claimId": "normal/ch_cut",
+      "dataset": "normal",
+      "value": 0.125,
+      "display": "0.125%",
+      "appearsIn": [
+        "segment.mp4:chart"
+      ],
+      "formula": "input (chart)",
+      "inputs": {}
+    },
+    {
+      "claimId": "normal/ch_cost",
+      "dataset": "normal",
+      "value": 4000,
+      "display": "$4,000",
+      "appearsIn": [
+        "segment.mp4:chart"
+      ],
+      "formula": "cost = principal × points / 100",
+      "inputs": {
+        "principal": 400000,
+        "baseRatePct": 7.03,
+        "termMonths": 360,
+        "annualReturnPct": 5,
+        "points": 1,
+        "cutPerPointPct": 0.125
+      }
+    },
+    {
+      "claimId": "normal/ch_saving",
+      "dataset": "normal",
+      "value": 33.53,
+      "display": "$33.53",
+      "appearsIn": [
+        "segment.mp4:chart"
+      ],
+      "formula": "M(base) − M(newRate)",
+      "inputs": {
+        "principal": 400000,
+        "baseRatePct": 7.03,
+        "termMonths": 360,
+        "annualReturnPct": 5,
+        "points": 1,
+        "cutPerPointPct": 0.125
+      }
+    },
+    {
+      "claimId": "normal/ch_a_years",
+      "dataset": "normal",
+      "value": 120,
+      "display": "10.0",
+      "appearsIn": [
+        "segment.mp4:chart"
+      ],
+      "formula": "ceil(cost/saving)/12",
+      "inputs": {
+        "principal": 400000,
+        "baseRatePct": 7.03,
+        "termMonths": 360,
+        "annualReturnPct": 5,
+        "points": 1,
+        "cutPerPointPct": 0.125
+      }
+    },
+    {
+      "claimId": "normal/ch_b_years",
+      "dataset": "normal",
+      "value": 166,
+      "display": "13.8",
+      "appearsIn": [
+        "segment.mp4:chart"
+      ],
+      "formula": "opportunity break-even months / 12",
+      "inputs": {
+        "principal": 400000,
+        "baseRatePct": 7.03,
+        "termMonths": 360,
+        "annualReturnPct": 5,
+        "points": 1,
+        "cutPerPointPct": 0.125,
+        "returnPct": 5
+      }
+    },
+    {
+      "claimId": "normal/ch_flip_from",
+      "dataset": "normal",
+      "value": 10,
+      "display": "10",
+      "appearsIn": [
+        "segment.mp4:chart"
+      ],
+      "formula": "first H in holdYears with simple ≤ 12H < opp",
+      "inputs": {
+        "principal": 400000,
+        "baseRatePct": 7.03,
+        "termMonths": 360,
+        "annualReturnPct": 5,
+        "points": 1,
+        "cutPerPointPct": 0.125
+      }
+    },
+    {
+      "claimId": "normal/ch_flip_to",
+      "dataset": "normal",
+      "value": 13,
+      "display": "13",
+      "appearsIn": [
+        "segment.mp4:chart"
+      ],
+      "formula": "last H in holdYears with simple ≤ 12H < opp",
+      "inputs": {
+        "principal": 400000,
+        "baseRatePct": 7.03,
+        "termMonths": 360,
+        "annualReturnPct": 5,
+        "points": 1,
+        "cutPerPointPct": 0.125
+      }
+    },
+    {
+      "claimId": "normal/ch_end_a",
+      "dataset": "normal",
+      "value": 2035.4,
+      "display": "+$2,035",
+      "appearsIn": [
+        "segment.mp4:chart"
+      ],
+      "formula": "month-180 value of netPathSimple = m·saving − cost",
+      "inputs": {
+        "principal": 400000,
+        "baseRatePct": 7.03,
+        "termMonths": 360,
+        "annualReturnPct": 5,
+        "points": 1,
+        "cutPerPointPct": 0.125
+      }
+    },
+    {
+      "claimId": "normal/ch_end_b",
+      "dataset": "normal",
+      "value": 507.38,
+      "display": "+$507",
+      "appearsIn": [
+        "segment.mp4:chart"
+      ],
+      "formula": "month-180 value of netPathOpportunity = FV_j(savings) − cost·(1+j)^m",
+      "inputs": {
+        "principal": 400000,
+        "baseRatePct": 7.03,
+        "termMonths": 360,
+        "annualReturnPct": 5,
+        "points": 1,
+        "cutPerPointPct": 0.125,
+        "returnPct": 5
+      }
+    },
+    {
+      "claimId": "normal/xt_0",
+      "dataset": "normal",
+      "value": 0,
+      "display": "0",
+      "appearsIn": [
+        "segment.mp4:chart"
+      ],
+      "formula": "axis tick (years)",
+      "inputs": {}
+    },
+    {
+      "claimId": "normal/xt_5",
+      "dataset": "normal",
+      "value": 5,
+      "display": "5",
+      "appearsIn": [
+        "segment.mp4:chart"
+      ],
+      "formula": "axis tick (years)",
+      "inputs": {}
+    },
+    {
+      "claimId": "normal/xt_10",
+      "dataset": "normal",
+      "value": 10,
+      "display": "10",
+      "appearsIn": [
+        "segment.mp4:chart"
+      ],
+      "formula": "axis tick (years)",
+      "inputs": {}
+    },
+    {
+      "claimId": "normal/xt_15",
+      "dataset": "normal",
+      "value": 15,
+      "display": "15",
+      "appearsIn": [
+        "segment.mp4:chart"
+      ],
+      "formula": "axis tick (years)",
+      "inputs": {}
+    },
+    {
+      "claimId": "normal/ch_neg_cost",
+      "dataset": "normal",
+      "value": -4000,
+      "display": "−$4,000",
+      "appearsIn": [
+        "segment.mp4:chart"
+      ],
+      "formula": "net position at month 0 = −cost",
+      "inputs": {
+        "principal": 400000,
+        "baseRatePct": 7.03,
+        "termMonths": 360,
+        "annualReturnPct": 5,
+        "points": 1,
+        "cutPerPointPct": 0.125
+      }
+    },
+    {
+      "claimId": "normal/y_zero",
+      "dataset": "normal",
+      "value": 0,
+      "display": "$0",
+      "appearsIn": [
+        "segment.mp4:chart"
+      ],
+      "formula": "axis reference: break-even line",
+      "inputs": {}
+    },
+    {
+      "claimId": "normal/th_a_0.125",
+      "dataset": "normal",
+      "value": 120,
+      "display": "10.0",
+      "appearsIn": [
+        "segment.mp4:close"
+      ],
+      "formula": "max over point rows of simpleMonths / 12",
+      "inputs": {
+        "cut": 0.125
+      }
+    },
+    {
+      "claimId": "normal/th_b_0.125",
+      "dataset": "normal",
+      "value": 167,
+      "display": "13.9",
+      "appearsIn": [
+        "segment.mp4:close"
+      ],
+      "formula": "max over point rows of oppMonths / 12",
+      "inputs": {
+        "cut": 0.125,
+        "returnPct": 5
+      }
+    },
+    {
+      "claimId": "normal/th_a_0.25",
+      "dataset": "normal",
+      "value": 61,
+      "display": "5.1",
+      "appearsIn": [
+        "segment.mp4:close"
+      ],
+      "formula": "max over point rows of simpleMonths / 12",
+      "inputs": {
+        "cut": 0.25
+      }
+    },
+    {
+      "claimId": "normal/th_b_0.25",
+      "dataset": "normal",
+      "value": 70,
+      "display": "5.8",
+      "appearsIn": [
+        "segment.mp4:close"
+      ],
+      "formula": "max over point rows of oppMonths / 12",
+      "inputs": {
+        "cut": 0.25,
+        "returnPct": 5
+      }
+    },
+    {
+      "claimId": "normal/th_a_0.375",
+      "dataset": "normal",
+      "value": 41,
+      "display": "3.4",
+      "appearsIn": [
+        "segment.mp4:close"
+      ],
+      "formula": "max over point rows of simpleMonths / 12",
+      "inputs": {
+        "cut": 0.375
+      }
+    },
+    {
+      "claimId": "normal/th_b_0.375",
+      "dataset": "normal",
+      "value": 45,
+      "display": "3.8",
+      "appearsIn": [
+        "segment.mp4:close"
+      ],
+      "formula": "max over point rows of oppMonths / 12",
+      "inputs": {
+        "cut": 0.375,
+        "returnPct": 5
+      }
+    },
+    {
+      "claimId": "extreme/base_rate",
+      "dataset": "extreme",
+      "value": 12.875,
+      "display": "12.875%",
+      "appearsIn": [
+        "frame-extreme.png"
+      ],
+      "formula": "input",
+      "note": "ILLUSTRATIVE stress-test rate, not a published average.",
+      "inputs": {}
+    },
+    {
+      "claimId": "extreme/return_pct",
+      "dataset": "extreme",
+      "value": 11.875,
+      "display": "11.875%",
+      "appearsIn": [
+        "frame-extreme.png"
+      ],
+      "formula": "input",
+      "note": "Assumed annual return on cash not spent on points, compounded monthly (j = k/12). Stated assumption, not a forecast.",
+      "inputs": {}
+    },
+    {
+      "claimId": "extreme/pts_0.25",
+      "dataset": "extreme",
+      "value": 0.25,
+      "display": "0.25",
+      "appearsIn": [
+        "frame-extreme.png"
+      ],
+      "formula": "input (sweep value)",
+      "inputs": {}
+    },
+    {
+      "claimId": "extreme/cost_0.25",
+      "dataset": "extreme",
+      "value": 25000,
+      "display": "$25,000",
+      "appearsIn": [
+        "frame-extreme.png"
+      ],
+      "formula": "cost = principal × points / 100",
+      "inputs": {
+        "principal": 9999999,
+        "points": 0.25
+      }
+    },
+    {
+      "claimId": "extreme/pts_0.5",
+      "dataset": "extreme",
+      "value": 0.5,
+      "display": "0.5",
+      "appearsIn": [
+        "frame-extreme.png"
+      ],
+      "formula": "input (sweep value)",
+      "inputs": {}
+    },
+    {
+      "claimId": "extreme/cost_0.5",
+      "dataset": "extreme",
+      "value": 50000,
+      "display": "$50,000",
+      "appearsIn": [
+        "frame-extreme.png"
+      ],
+      "formula": "cost = principal × points / 100",
+      "inputs": {
+        "principal": 9999999,
+        "points": 0.5
+      }
+    },
+    {
+      "claimId": "extreme/pts_0.75",
+      "dataset": "extreme",
+      "value": 0.75,
+      "display": "0.75",
+      "appearsIn": [
+        "frame-extreme.png"
+      ],
+      "formula": "input (sweep value)",
+      "inputs": {}
+    },
+    {
+      "claimId": "extreme/cost_0.75",
+      "dataset": "extreme",
+      "value": 74999.99,
+      "display": "$75,000",
+      "appearsIn": [
+        "frame-extreme.png"
+      ],
+      "formula": "cost = principal × points / 100",
+      "inputs": {
+        "principal": 9999999,
+        "points": 0.75
+      }
+    },
+    {
+      "claimId": "extreme/pts_1",
+      "dataset": "extreme",
+      "value": 1,
+      "display": "1.0",
+      "appearsIn": [
+        "frame-extreme.png"
+      ],
+      "formula": "input (sweep value)",
+      "inputs": {}
+    },
+    {
+      "claimId": "extreme/cost_1",
+      "dataset": "extreme",
+      "value": 99999.99,
+      "display": "$100,000",
+      "appearsIn": [
+        "frame-extreme.png"
+      ],
+      "formula": "cost = principal × points / 100",
+      "inputs": {
+        "principal": 9999999,
+        "points": 1
+      }
+    },
+    {
+      "claimId": "extreme/pts_1.25",
+      "dataset": "extreme",
+      "value": 1.25,
+      "display": "1.25",
+      "appearsIn": [
+        "frame-extreme.png"
+      ],
+      "formula": "input (sweep value)",
+      "inputs": {}
+    },
+    {
+      "claimId": "extreme/cost_1.25",
+      "dataset": "extreme",
+      "value": 124999.99,
+      "display": "$125,000",
+      "appearsIn": [
+        "frame-extreme.png"
+      ],
+      "formula": "cost = principal × points / 100",
+      "inputs": {
+        "principal": 9999999,
+        "points": 1.25
+      }
+    },
+    {
+      "claimId": "extreme/pts_1.5",
+      "dataset": "extreme",
+      "value": 1.5,
+      "display": "1.5",
+      "appearsIn": [
+        "frame-extreme.png"
+      ],
+      "formula": "input (sweep value)",
+      "inputs": {}
+    },
+    {
+      "claimId": "extreme/cost_1.5",
+      "dataset": "extreme",
+      "value": 149999.98,
+      "display": "$150,000",
+      "appearsIn": [
+        "frame-extreme.png"
+      ],
+      "formula": "cost = principal × points / 100",
+      "inputs": {
+        "principal": 9999999,
+        "points": 1.5
+      }
+    },
+    {
+      "claimId": "extreme/pts_1.75",
+      "dataset": "extreme",
+      "value": 1.75,
+      "display": "1.75",
+      "appearsIn": [
+        "frame-extreme.png"
+      ],
+      "formula": "input (sweep value)",
+      "inputs": {}
+    },
+    {
+      "claimId": "extreme/cost_1.75",
+      "dataset": "extreme",
+      "value": 174999.98,
+      "display": "$175,000",
+      "appearsIn": [
+        "frame-extreme.png"
+      ],
+      "formula": "cost = principal × points / 100",
+      "inputs": {
+        "principal": 9999999,
+        "points": 1.75
+      }
+    },
+    {
+      "claimId": "extreme/pts_2",
+      "dataset": "extreme",
+      "value": 2,
+      "display": "2.0",
+      "appearsIn": [
+        "frame-extreme.png"
+      ],
+      "formula": "input (sweep value)",
+      "inputs": {}
+    },
+    {
+      "claimId": "extreme/cost_2",
+      "dataset": "extreme",
+      "value": 199999.98,
+      "display": "$200,000",
+      "appearsIn": [
+        "frame-extreme.png"
+      ],
+      "formula": "cost = principal × points / 100",
+      "inputs": {
+        "principal": 9999999,
+        "points": 2
+      }
+    },
+    {
+      "claimId": "extreme/pts_2.25",
+      "dataset": "extreme",
+      "value": 2.25,
+      "display": "2.25",
+      "appearsIn": [
+        "frame-extreme.png"
+      ],
+      "formula": "input (sweep value)",
+      "inputs": {}
+    },
+    {
+      "claimId": "extreme/cost_2.25",
+      "dataset": "extreme",
+      "value": 224999.98,
+      "display": "$225,000",
+      "appearsIn": [
+        "frame-extreme.png"
+      ],
+      "formula": "cost = principal × points / 100",
+      "inputs": {
+        "principal": 9999999,
+        "points": 2.25
+      }
+    },
+    {
+      "claimId": "extreme/pts_2.5",
+      "dataset": "extreme",
+      "value": 2.5,
+      "display": "2.5",
+      "appearsIn": [
+        "frame-extreme.png"
+      ],
+      "formula": "input (sweep value)",
+      "inputs": {}
+    },
+    {
+      "claimId": "extreme/cost_2.5",
+      "dataset": "extreme",
+      "value": 249999.98,
+      "display": "$250,000",
+      "appearsIn": [
+        "frame-extreme.png"
+      ],
+      "formula": "cost = principal × points / 100",
+      "inputs": {
+        "principal": 9999999,
+        "points": 2.5
+      }
+    },
+    {
+      "claimId": "extreme/pts_2.75",
+      "dataset": "extreme",
+      "value": 2.75,
+      "display": "2.75",
+      "appearsIn": [
+        "frame-extreme.png"
+      ],
+      "formula": "input (sweep value)",
+      "inputs": {}
+    },
+    {
+      "claimId": "extreme/cost_2.75",
+      "dataset": "extreme",
+      "value": 274999.97,
+      "display": "$275,000",
+      "appearsIn": [
+        "frame-extreme.png"
+      ],
+      "formula": "cost = principal × points / 100",
+      "inputs": {
+        "principal": 9999999,
+        "points": 2.75
+      }
+    },
+    {
+      "claimId": "extreme/pts_3",
+      "dataset": "extreme",
+      "value": 3,
+      "display": "3.0",
+      "appearsIn": [
+        "frame-extreme.png"
+      ],
+      "formula": "input (sweep value)",
+      "inputs": {}
+    },
+    {
+      "claimId": "extreme/cost_3",
+      "dataset": "extreme",
+      "value": 299999.97,
+      "display": "$300,000",
+      "appearsIn": [
+        "frame-extreme.png"
+      ],
+      "formula": "cost = principal × points / 100",
+      "inputs": {
+        "principal": 9999999,
+        "points": 3
+      }
+    },
+    {
+      "claimId": "extreme/cut_0.0625",
+      "dataset": "extreme",
+      "value": 0.0625,
+      "display": "0.0625%",
+      "appearsIn": [
+        "frame-extreme.png"
+      ],
+      "formula": "input (sweep value)",
+      "inputs": {}
+    },
+    {
+      "claimId": "extreme/cut_0.125",
+      "dataset": "extreme",
+      "value": 0.125,
+      "display": "0.125%",
+      "appearsIn": [
+        "frame-extreme.png"
+      ],
+      "formula": "input (sweep value)",
+      "inputs": {}
+    },
+    {
+      "claimId": "extreme/cut_0.1875",
+      "dataset": "extreme",
+      "value": 0.1875,
+      "display": "0.1875%",
+      "appearsIn": [
+        "frame-extreme.png"
+      ],
+      "formula": "input (sweep value)",
+      "inputs": {}
+    },
+    {
+      "claimId": "extreme/cut_0.25",
+      "dataset": "extreme",
+      "value": 0.25,
+      "display": "0.25%",
+      "appearsIn": [
+        "frame-extreme.png"
+      ],
+      "formula": "input (sweep value)",
+      "inputs": {}
+    },
+    {
+      "claimId": "extreme/cut_0.3125",
+      "dataset": "extreme",
+      "value": 0.3125,
+      "display": "0.3125%",
+      "appearsIn": [
+        "frame-extreme.png"
+      ],
+      "formula": "input (sweep value)",
+      "inputs": {}
+    },
+    {
+      "claimId": "extreme/cut_0.375",
+      "dataset": "extreme",
+      "value": 0.375,
+      "display": "0.375%",
+      "appearsIn": [
+        "frame-extreme.png"
+      ],
+      "formula": "input (sweep value)",
+      "inputs": {}
+    },
+    {
+      "claimId": "extreme/be_simple_0.25_0.0625",
+      "dataset": "extreme",
+      "value": 206,
+      "display": "17.2",
+      "appearsIn": [
+        "frame-extreme.png"
+      ],
+      "formula": "years = ceil(cost / (M(base) − M(base − points×cut))) / 12; M = L·i/(1−(1+i)^−n), i = r/12, payments rounded to cents",
+      "inputs": {
+        "principal": 9999999,
+        "baseRatePct": 12.875,
+        "termMonths": 360,
+        "points": 0.25,
+        "cutPerPointPct": 0.0625
+      }
+    },
+    {
+      "claimId": "extreme/be_opp_0.25_0.0625",
+      "dataset": "extreme",
+      "value": null,
+      "display": "never",
+      "appearsIn": [
+        "frame-extreme.png"
+      ],
+      "formula": "years = min m s.t. Σ_{t=1..m} saving/(1+j)^t ≥ cost, j = returnPct/12, / 12; \"never\" if not within term",
+      "inputs": {
+        "principal": 9999999,
+        "baseRatePct": 12.875,
+        "termMonths": 360,
+        "points": 0.25,
+        "cutPerPointPct": 0.0625,
+        "returnPct": 11.875
+      }
+    },
+    {
+      "claimId": "extreme/be_simple_0.25_0.125",
+      "dataset": "extreme",
+      "value": 103,
+      "display": "8.6",
+      "appearsIn": [
+        "frame-extreme.png"
+      ],
+      "formula": "years = ceil(cost / (M(base) − M(base − points×cut))) / 12; M = L·i/(1−(1+i)^−n), i = r/12, payments rounded to cents",
+      "inputs": {
+        "principal": 9999999,
+        "baseRatePct": 12.875,
+        "termMonths": 360,
+        "points": 0.25,
+        "cutPerPointPct": 0.125
+      }
+    },
+    {
+      "claimId": "extreme/be_opp_0.25_0.125",
+      "dataset": "extreme",
+      "value": null,
+      "display": "never",
+      "appearsIn": [
+        "frame-extreme.png"
+      ],
+      "formula": "years = min m s.t. Σ_{t=1..m} saving/(1+j)^t ≥ cost, j = returnPct/12, / 12; \"never\" if not within term",
+      "inputs": {
+        "principal": 9999999,
+        "baseRatePct": 12.875,
+        "termMonths": 360,
+        "points": 0.25,
+        "cutPerPointPct": 0.125,
+        "returnPct": 11.875
+      }
+    },
+    {
+      "claimId": "extreme/be_simple_0.25_0.1875",
+      "dataset": "extreme",
+      "value": 69,
+      "display": "5.8",
+      "appearsIn": [
+        "frame-extreme.png"
+      ],
+      "formula": "years = ceil(cost / (M(base) − M(base − points×cut))) / 12; M = L·i/(1−(1+i)^−n), i = r/12, payments rounded to cents",
+      "inputs": {
+        "principal": 9999999,
+        "baseRatePct": 12.875,
+        "termMonths": 360,
+        "points": 0.25,
+        "cutPerPointPct": 0.1875
+      }
+    },
+    {
+      "claimId": "extreme/be_opp_0.25_0.1875",
+      "dataset": "extreme",
+      "value": 115,
+      "display": "9.6",
+      "appearsIn": [
+        "frame-extreme.png"
+      ],
+      "formula": "years = min m s.t. Σ_{t=1..m} saving/(1+j)^t ≥ cost, j = returnPct/12, / 12; \"never\" if not within term",
+      "inputs": {
+        "principal": 9999999,
+        "baseRatePct": 12.875,
+        "termMonths": 360,
+        "points": 0.25,
+        "cutPerPointPct": 0.1875,
+        "returnPct": 11.875
+      }
+    },
+    {
+      "claimId": "extreme/be_simple_0.25_0.25",
+      "dataset": "extreme",
+      "value": 52,
+      "display": "4.3",
+      "appearsIn": [
+        "frame-extreme.png"
+      ],
+      "formula": "years = ceil(cost / (M(base) − M(base − points×cut))) / 12; M = L·i/(1−(1+i)^−n), i = r/12, payments rounded to cents",
+      "inputs": {
+        "principal": 9999999,
+        "baseRatePct": 12.875,
+        "termMonths": 360,
+        "points": 0.25,
+        "cutPerPointPct": 0.25
+      }
+    },
+    {
+      "claimId": "extreme/be_opp_0.25_0.25",
+      "dataset": "extreme",
+      "value": 72,
+      "display": "6.0",
+      "appearsIn": [
+        "frame-extreme.png"
+      ],
+      "formula": "years = min m s.t. Σ_{t=1..m} saving/(1+j)^t ≥ cost, j = returnPct/12, / 12; \"never\" if not within term",
+      "inputs": {
+        "principal": 9999999,
+        "baseRatePct": 12.875,
+        "termMonths": 360,
+        "points": 0.25,
+        "cutPerPointPct": 0.25,
+        "returnPct": 11.875
+      }
+    },
+    {
+      "claimId": "extreme/be_simple_0.25_0.3125",
+      "dataset": "extreme",
+      "value": 42,
+      "display": "3.5",
+      "appearsIn": [
+        "frame-extreme.png"
+      ],
+      "formula": "years = ceil(cost / (M(base) − M(base − points×cut))) / 12; M = L·i/(1−(1+i)^−n), i = r/12, payments rounded to cents",
+      "inputs": {
+        "principal": 9999999,
+        "baseRatePct": 12.875,
+        "termMonths": 360,
+        "points": 0.25,
+        "cutPerPointPct": 0.3125
+      }
+    },
+    {
+      "claimId": "extreme/be_opp_0.25_0.3125",
+      "dataset": "extreme",
+      "value": 53,
+      "display": "4.4",
+      "appearsIn": [
+        "frame-extreme.png"
+      ],
+      "formula": "years = min m s.t. Σ_{t=1..m} saving/(1+j)^t ≥ cost, j = returnPct/12, / 12; \"never\" if not within term",
+      "inputs": {
+        "principal": 9999999,
+        "baseRatePct": 12.875,
+        "termMonths": 360,
+        "points": 0.25,
+        "cutPerPointPct": 0.3125,
+        "returnPct": 11.875
+      }
+    },
+    {
+      "claimId": "extreme/be_simple_0.25_0.375",
+      "dataset": "extreme",
+      "value": 35,
+      "display": "2.9",
+      "appearsIn": [
+        "frame-extreme.png"
+      ],
+      "formula": "years = ceil(cost / (M(base) − M(base − points×cut))) / 12; M = L·i/(1−(1+i)^−n), i = r/12, payments rounded to cents",
+      "inputs": {
+        "principal": 9999999,
+        "baseRatePct": 12.875,
+        "termMonths": 360,
+        "points": 0.25,
+        "cutPerPointPct": 0.375
+      }
+    },
+    {
+      "claimId": "extreme/be_opp_0.25_0.375",
+      "dataset": "extreme",
+      "value": 42,
+      "display": "3.5",
+      "appearsIn": [
+        "frame-extreme.png"
+      ],
+      "formula": "years = min m s.t. Σ_{t=1..m} saving/(1+j)^t ≥ cost, j = returnPct/12, / 12; \"never\" if not within term",
+      "inputs": {
+        "principal": 9999999,
+        "baseRatePct": 12.875,
+        "termMonths": 360,
+        "points": 0.25,
+        "cutPerPointPct": 0.375,
+        "returnPct": 11.875
+      }
+    },
+    {
+      "claimId": "extreme/be_simple_0.5_0.0625",
+      "dataset": "extreme",
+      "value": 206,
+      "display": "17.2",
+      "appearsIn": [
+        "frame-extreme.png"
+      ],
+      "formula": "years = ceil(cost / (M(base) − M(base − points×cut))) / 12; M = L·i/(1−(1+i)^−n), i = r/12, payments rounded to cents",
+      "inputs": {
+        "principal": 9999999,
+        "baseRatePct": 12.875,
+        "termMonths": 360,
+        "points": 0.5,
+        "cutPerPointPct": 0.0625
+      }
+    },
+    {
+      "claimId": "extreme/be_opp_0.5_0.0625",
+      "dataset": "extreme",
+      "value": null,
+      "display": "never",
+      "appearsIn": [
+        "frame-extreme.png"
+      ],
+      "formula": "years = min m s.t. Σ_{t=1..m} saving/(1+j)^t ≥ cost, j = returnPct/12, / 12; \"never\" if not within term",
+      "inputs": {
+        "principal": 9999999,
+        "baseRatePct": 12.875,
+        "termMonths": 360,
+        "points": 0.5,
+        "cutPerPointPct": 0.0625,
+        "returnPct": 11.875
+      }
+    },
+    {
+      "claimId": "extreme/be_simple_0.5_0.125",
+      "dataset": "extreme",
+      "value": 103,
+      "display": "8.6",
+      "appearsIn": [
+        "frame-extreme.png"
+      ],
+      "formula": "years = ceil(cost / (M(base) − M(base − points×cut))) / 12; M = L·i/(1−(1+i)^−n), i = r/12, payments rounded to cents",
+      "inputs": {
+        "principal": 9999999,
+        "baseRatePct": 12.875,
+        "termMonths": 360,
+        "points": 0.5,
+        "cutPerPointPct": 0.125
+      }
+    },
+    {
+      "claimId": "extreme/be_opp_0.5_0.125",
+      "dataset": "extreme",
+      "value": null,
+      "display": "never",
+      "appearsIn": [
+        "frame-extreme.png"
+      ],
+      "formula": "years = min m s.t. Σ_{t=1..m} saving/(1+j)^t ≥ cost, j = returnPct/12, / 12; \"never\" if not within term",
+      "inputs": {
+        "principal": 9999999,
+        "baseRatePct": 12.875,
+        "termMonths": 360,
+        "points": 0.5,
+        "cutPerPointPct": 0.125,
+        "returnPct": 11.875
+      }
+    },
+    {
+      "claimId": "extreme/be_simple_0.5_0.1875",
+      "dataset": "extreme",
+      "value": 69,
+      "display": "5.8",
+      "appearsIn": [
+        "frame-extreme.png"
+      ],
+      "formula": "years = ceil(cost / (M(base) − M(base − points×cut))) / 12; M = L·i/(1−(1+i)^−n), i = r/12, payments rounded to cents",
+      "inputs": {
+        "principal": 9999999,
+        "baseRatePct": 12.875,
+        "termMonths": 360,
+        "points": 0.5,
+        "cutPerPointPct": 0.1875
+      }
+    },
+    {
+      "claimId": "extreme/be_opp_0.5_0.1875",
+      "dataset": "extreme",
+      "value": 115,
+      "display": "9.6",
+      "appearsIn": [
+        "frame-extreme.png"
+      ],
+      "formula": "years = min m s.t. Σ_{t=1..m} saving/(1+j)^t ≥ cost, j = returnPct/12, / 12; \"never\" if not within term",
+      "inputs": {
+        "principal": 9999999,
+        "baseRatePct": 12.875,
+        "termMonths": 360,
+        "points": 0.5,
+        "cutPerPointPct": 0.1875,
+        "returnPct": 11.875
+      }
+    },
+    {
+      "claimId": "extreme/be_simple_0.5_0.25",
+      "dataset": "extreme",
+      "value": 52,
+      "display": "4.3",
+      "appearsIn": [
+        "frame-extreme.png"
+      ],
+      "formula": "years = ceil(cost / (M(base) − M(base − points×cut))) / 12; M = L·i/(1−(1+i)^−n), i = r/12, payments rounded to cents",
+      "inputs": {
+        "principal": 9999999,
+        "baseRatePct": 12.875,
+        "termMonths": 360,
+        "points": 0.5,
+        "cutPerPointPct": 0.25
+      }
+    },
+    {
+      "claimId": "extreme/be_opp_0.5_0.25",
+      "dataset": "extreme",
+      "value": 72,
+      "display": "6.0",
+      "appearsIn": [
+        "frame-extreme.png"
+      ],
+      "formula": "years = min m s.t. Σ_{t=1..m} saving/(1+j)^t ≥ cost, j = returnPct/12, / 12; \"never\" if not within term",
+      "inputs": {
+        "principal": 9999999,
+        "baseRatePct": 12.875,
+        "termMonths": 360,
+        "points": 0.5,
+        "cutPerPointPct": 0.25,
+        "returnPct": 11.875
+      }
+    },
+    {
+      "claimId": "extreme/be_simple_0.5_0.3125",
+      "dataset": "extreme",
+      "value": 42,
+      "display": "3.5",
+      "appearsIn": [
+        "frame-extreme.png"
+      ],
+      "formula": "years = ceil(cost / (M(base) − M(base − points×cut))) / 12; M = L·i/(1−(1+i)^−n), i = r/12, payments rounded to cents",
+      "inputs": {
+        "principal": 9999999,
+        "baseRatePct": 12.875,
+        "termMonths": 360,
+        "points": 0.5,
+        "cutPerPointPct": 0.3125
+      }
+    },
+    {
+      "claimId": "extreme/be_opp_0.5_0.3125",
+      "dataset": "extreme",
+      "value": 53,
+      "display": "4.4",
+      "appearsIn": [
+        "frame-extreme.png"
+      ],
+      "formula": "years = min m s.t. Σ_{t=1..m} saving/(1+j)^t ≥ cost, j = returnPct/12, / 12; \"never\" if not within term",
+      "inputs": {
+        "principal": 9999999,
+        "baseRatePct": 12.875,
+        "termMonths": 360,
+        "points": 0.5,
+        "cutPerPointPct": 0.3125,
+        "returnPct": 11.875
+      }
+    },
+    {
+      "claimId": "extreme/be_simple_0.5_0.375",
+      "dataset": "extreme",
+      "value": 35,
+      "display": "2.9",
+      "appearsIn": [
+        "frame-extreme.png"
+      ],
+      "formula": "years = ceil(cost / (M(base) − M(base − points×cut))) / 12; M = L·i/(1−(1+i)^−n), i = r/12, payments rounded to cents",
+      "inputs": {
+        "principal": 9999999,
+        "baseRatePct": 12.875,
+        "termMonths": 360,
+        "points": 0.5,
+        "cutPerPointPct": 0.375
+      }
+    },
+    {
+      "claimId": "extreme/be_opp_0.5_0.375",
+      "dataset": "extreme",
+      "value": 42,
+      "display": "3.5",
+      "appearsIn": [
+        "frame-extreme.png"
+      ],
+      "formula": "years = min m s.t. Σ_{t=1..m} saving/(1+j)^t ≥ cost, j = returnPct/12, / 12; \"never\" if not within term",
+      "inputs": {
+        "principal": 9999999,
+        "baseRatePct": 12.875,
+        "termMonths": 360,
+        "points": 0.5,
+        "cutPerPointPct": 0.375,
+        "returnPct": 11.875
+      }
+    },
+    {
+      "claimId": "extreme/be_simple_0.75_0.0625",
+      "dataset": "extreme",
+      "value": 206,
+      "display": "17.2",
+      "appearsIn": [
+        "frame-extreme.png"
+      ],
+      "formula": "years = ceil(cost / (M(base) − M(base − points×cut))) / 12; M = L·i/(1−(1+i)^−n), i = r/12, payments rounded to cents",
+      "inputs": {
+        "principal": 9999999,
+        "baseRatePct": 12.875,
+        "termMonths": 360,
+        "points": 0.75,
+        "cutPerPointPct": 0.0625
+      }
+    },
+    {
+      "claimId": "extreme/be_opp_0.75_0.0625",
+      "dataset": "extreme",
+      "value": null,
+      "display": "never",
+      "appearsIn": [
+        "frame-extreme.png"
+      ],
+      "formula": "years = min m s.t. Σ_{t=1..m} saving/(1+j)^t ≥ cost, j = returnPct/12, / 12; \"never\" if not within term",
+      "inputs": {
+        "principal": 9999999,
+        "baseRatePct": 12.875,
+        "termMonths": 360,
+        "points": 0.75,
+        "cutPerPointPct": 0.0625,
+        "returnPct": 11.875
+      }
+    },
+    {
+      "claimId": "extreme/be_simple_0.75_0.125",
+      "dataset": "extreme",
+      "value": 103,
+      "display": "8.6",
+      "appearsIn": [
+        "frame-extreme.png"
+      ],
+      "formula": "years = ceil(cost / (M(base) − M(base − points×cut))) / 12; M = L·i/(1−(1+i)^−n), i = r/12, payments rounded to cents",
+      "inputs": {
+        "principal": 9999999,
+        "baseRatePct": 12.875,
+        "termMonths": 360,
+        "points": 0.75,
+        "cutPerPointPct": 0.125
+      }
+    },
+    {
+      "claimId": "extreme/be_opp_0.75_0.125",
+      "dataset": "extreme",
+      "value": null,
+      "display": "never",
+      "appearsIn": [
+        "frame-extreme.png"
+      ],
+      "formula": "years = min m s.t. Σ_{t=1..m} saving/(1+j)^t ≥ cost, j = returnPct/12, / 12; \"never\" if not within term",
+      "inputs": {
+        "principal": 9999999,
+        "baseRatePct": 12.875,
+        "termMonths": 360,
+        "points": 0.75,
+        "cutPerPointPct": 0.125,
+        "returnPct": 11.875
+      }
+    },
+    {
+      "claimId": "extreme/be_simple_0.75_0.1875",
+      "dataset": "extreme",
+      "value": 69,
+      "display": "5.8",
+      "appearsIn": [
+        "frame-extreme.png"
+      ],
+      "formula": "years = ceil(cost / (M(base) − M(base − points×cut))) / 12; M = L·i/(1−(1+i)^−n), i = r/12, payments rounded to cents",
+      "inputs": {
+        "principal": 9999999,
+        "baseRatePct": 12.875,
+        "termMonths": 360,
+        "points": 0.75,
+        "cutPerPointPct": 0.1875
+      }
+    },
+    {
+      "claimId": "extreme/be_opp_0.75_0.1875",
+      "dataset": "extreme",
+      "value": 115,
+      "display": "9.6",
+      "appearsIn": [
+        "frame-extreme.png"
+      ],
+      "formula": "years = min m s.t. Σ_{t=1..m} saving/(1+j)^t ≥ cost, j = returnPct/12, / 12; \"never\" if not within term",
+      "inputs": {
+        "principal": 9999999,
+        "baseRatePct": 12.875,
+        "termMonths": 360,
+        "points": 0.75,
+        "cutPerPointPct": 0.1875,
+        "returnPct": 11.875
+      }
+    },
+    {
+      "claimId": "extreme/be_simple_0.75_0.25",
+      "dataset": "extreme",
+      "value": 52,
+      "display": "4.3",
+      "appearsIn": [
+        "frame-extreme.png"
+      ],
+      "formula": "years = ceil(cost / (M(base) − M(base − points×cut))) / 12; M = L·i/(1−(1+i)^−n), i = r/12, payments rounded to cents",
+      "inputs": {
+        "principal": 9999999,
+        "baseRatePct": 12.875,
+        "termMonths": 360,
+        "points": 0.75,
+        "cutPerPointPct": 0.25
+      }
+    },
+    {
+      "claimId": "extreme/be_opp_0.75_0.25",
+      "dataset": "extreme",
+      "value": 73,
+      "display": "6.1",
+      "appearsIn": [
+        "frame-extreme.png"
+      ],
+      "formula": "years = min m s.t. Σ_{t=1..m} saving/(1+j)^t ≥ cost, j = returnPct/12, / 12; \"never\" if not within term",
+      "inputs": {
+        "principal": 9999999,
+        "baseRatePct": 12.875,
+        "termMonths": 360,
+        "points": 0.75,
+        "cutPerPointPct": 0.25,
+        "returnPct": 11.875
+      }
+    },
+    {
+      "claimId": "extreme/be_simple_0.75_0.3125",
+      "dataset": "extreme",
+      "value": 42,
+      "display": "3.5",
+      "appearsIn": [
+        "frame-extreme.png"
+      ],
+      "formula": "years = ceil(cost / (M(base) − M(base − points×cut))) / 12; M = L·i/(1−(1+i)^−n), i = r/12, payments rounded to cents",
+      "inputs": {
+        "principal": 9999999,
+        "baseRatePct": 12.875,
+        "termMonths": 360,
+        "points": 0.75,
+        "cutPerPointPct": 0.3125
+      }
+    },
+    {
+      "claimId": "extreme/be_opp_0.75_0.3125",
+      "dataset": "extreme",
+      "value": 53,
+      "display": "4.4",
+      "appearsIn": [
+        "frame-extreme.png"
+      ],
+      "formula": "years = min m s.t. Σ_{t=1..m} saving/(1+j)^t ≥ cost, j = returnPct/12, / 12; \"never\" if not within term",
+      "inputs": {
+        "principal": 9999999,
+        "baseRatePct": 12.875,
+        "termMonths": 360,
+        "points": 0.75,
+        "cutPerPointPct": 0.3125,
+        "returnPct": 11.875
+      }
+    },
+    {
+      "claimId": "extreme/be_simple_0.75_0.375",
+      "dataset": "extreme",
+      "value": 35,
+      "display": "2.9",
+      "appearsIn": [
+        "frame-extreme.png"
+      ],
+      "formula": "years = ceil(cost / (M(base) − M(base − points×cut))) / 12; M = L·i/(1−(1+i)^−n), i = r/12, payments rounded to cents",
+      "inputs": {
+        "principal": 9999999,
+        "baseRatePct": 12.875,
+        "termMonths": 360,
+        "points": 0.75,
+        "cutPerPointPct": 0.375
+      }
+    },
+    {
+      "claimId": "extreme/be_opp_0.75_0.375",
+      "dataset": "extreme",
+      "value": 43,
+      "display": "3.6",
+      "appearsIn": [
+        "frame-extreme.png"
+      ],
+      "formula": "years = min m s.t. Σ_{t=1..m} saving/(1+j)^t ≥ cost, j = returnPct/12, / 12; \"never\" if not within term",
+      "inputs": {
+        "principal": 9999999,
+        "baseRatePct": 12.875,
+        "termMonths": 360,
+        "points": 0.75,
+        "cutPerPointPct": 0.375,
+        "returnPct": 11.875
+      }
+    },
+    {
+      "claimId": "extreme/be_simple_1_0.0625",
+      "dataset": "extreme",
+      "value": 206,
+      "display": "17.2",
+      "appearsIn": [
+        "frame-extreme.png"
+      ],
+      "formula": "years = ceil(cost / (M(base) − M(base − points×cut))) / 12; M = L·i/(1−(1+i)^−n), i = r/12, payments rounded to cents",
+      "inputs": {
+        "principal": 9999999,
+        "baseRatePct": 12.875,
+        "termMonths": 360,
+        "points": 1,
+        "cutPerPointPct": 0.0625
+      }
+    },
+    {
+      "claimId": "extreme/be_opp_1_0.0625",
+      "dataset": "extreme",
+      "value": null,
+      "display": "never",
+      "appearsIn": [
+        "frame-extreme.png"
+      ],
+      "formula": "years = min m s.t. Σ_{t=1..m} saving/(1+j)^t ≥ cost, j = returnPct/12, / 12; \"never\" if not within term",
+      "inputs": {
+        "principal": 9999999,
+        "baseRatePct": 12.875,
+        "termMonths": 360,
+        "points": 1,
+        "cutPerPointPct": 0.0625,
+        "returnPct": 11.875
+      }
+    },
+    {
+      "claimId": "extreme/be_simple_1_0.125",
+      "dataset": "extreme",
+      "value": 103,
+      "display": "8.6",
+      "appearsIn": [
+        "frame-extreme.png"
+      ],
+      "formula": "years = ceil(cost / (M(base) − M(base − points×cut))) / 12; M = L·i/(1−(1+i)^−n), i = r/12, payments rounded to cents",
+      "inputs": {
+        "principal": 9999999,
+        "baseRatePct": 12.875,
+        "termMonths": 360,
+        "points": 1,
+        "cutPerPointPct": 0.125
+      }
+    },
+    {
+      "claimId": "extreme/be_opp_1_0.125",
+      "dataset": "extreme",
+      "value": null,
+      "display": "never",
+      "appearsIn": [
+        "frame-extreme.png"
+      ],
+      "formula": "years = min m s.t. Σ_{t=1..m} saving/(1+j)^t ≥ cost, j = returnPct/12, / 12; \"never\" if not within term",
+      "inputs": {
+        "principal": 9999999,
+        "baseRatePct": 12.875,
+        "termMonths": 360,
+        "points": 1,
+        "cutPerPointPct": 0.125,
+        "returnPct": 11.875
+      }
+    },
+    {
+      "claimId": "extreme/be_simple_1_0.1875",
+      "dataset": "extreme",
+      "value": 69,
+      "display": "5.8",
+      "appearsIn": [
+        "frame-extreme.png"
+      ],
+      "formula": "years = ceil(cost / (M(base) − M(base − points×cut))) / 12; M = L·i/(1−(1+i)^−n), i = r/12, payments rounded to cents",
+      "inputs": {
+        "principal": 9999999,
+        "baseRatePct": 12.875,
+        "termMonths": 360,
+        "points": 1,
+        "cutPerPointPct": 0.1875
+      }
+    },
+    {
+      "claimId": "extreme/be_opp_1_0.1875",
+      "dataset": "extreme",
+      "value": 115,
+      "display": "9.6",
+      "appearsIn": [
+        "frame-extreme.png"
+      ],
+      "formula": "years = min m s.t. Σ_{t=1..m} saving/(1+j)^t ≥ cost, j = returnPct/12, / 12; \"never\" if not within term",
+      "inputs": {
+        "principal": 9999999,
+        "baseRatePct": 12.875,
+        "termMonths": 360,
+        "points": 1,
+        "cutPerPointPct": 0.1875,
+        "returnPct": 11.875
+      }
+    },
+    {
+      "claimId": "extreme/be_simple_1_0.25",
+      "dataset": "extreme",
+      "value": 52,
+      "display": "4.3",
+      "appearsIn": [
+        "frame-extreme.png"
+      ],
+      "formula": "years = ceil(cost / (M(base) − M(base − points×cut))) / 12; M = L·i/(1−(1+i)^−n), i = r/12, payments rounded to cents",
+      "inputs": {
+        "principal": 9999999,
+        "baseRatePct": 12.875,
+        "termMonths": 360,
+        "points": 1,
+        "cutPerPointPct": 0.25
+      }
+    },
+    {
+      "claimId": "extreme/be_opp_1_0.25",
+      "dataset": "extreme",
+      "value": 73,
+      "display": "6.1",
+      "appearsIn": [
+        "frame-extreme.png"
+      ],
+      "formula": "years = min m s.t. Σ_{t=1..m} saving/(1+j)^t ≥ cost, j = returnPct/12, / 12; \"never\" if not within term",
+      "inputs": {
+        "principal": 9999999,
+        "baseRatePct": 12.875,
+        "termMonths": 360,
+        "points": 1,
+        "cutPerPointPct": 0.25,
+        "returnPct": 11.875
+      }
+    },
+    {
+      "claimId": "extreme/be_simple_1_0.3125",
+      "dataset": "extreme",
+      "value": 42,
+      "display": "3.5",
+      "appearsIn": [
+        "frame-extreme.png"
+      ],
+      "formula": "years = ceil(cost / (M(base) − M(base − points×cut))) / 12; M = L·i/(1−(1+i)^−n), i = r/12, payments rounded to cents",
+      "inputs": {
+        "principal": 9999999,
+        "baseRatePct": 12.875,
+        "termMonths": 360,
+        "points": 1,
+        "cutPerPointPct": 0.3125
+      }
+    },
+    {
+      "claimId": "extreme/be_opp_1_0.3125",
+      "dataset": "extreme",
+      "value": 54,
+      "display": "4.5",
+      "appearsIn": [
+        "frame-extreme.png"
+      ],
+      "formula": "years = min m s.t. Σ_{t=1..m} saving/(1+j)^t ≥ cost, j = returnPct/12, / 12; \"never\" if not within term",
+      "inputs": {
+        "principal": 9999999,
+        "baseRatePct": 12.875,
+        "termMonths": 360,
+        "points": 1,
+        "cutPerPointPct": 0.3125,
+        "returnPct": 11.875
+      }
+    },
+    {
+      "claimId": "extreme/be_simple_1_0.375",
+      "dataset": "extreme",
+      "value": 35,
+      "display": "2.9",
+      "appearsIn": [
+        "frame-extreme.png"
+      ],
+      "formula": "years = ceil(cost / (M(base) − M(base − points×cut))) / 12; M = L·i/(1−(1+i)^−n), i = r/12, payments rounded to cents",
+      "inputs": {
+        "principal": 9999999,
+        "baseRatePct": 12.875,
+        "termMonths": 360,
+        "points": 1,
+        "cutPerPointPct": 0.375
+      }
+    },
+    {
+      "claimId": "extreme/be_opp_1_0.375",
+      "dataset": "extreme",
+      "value": 43,
+      "display": "3.6",
+      "appearsIn": [
+        "frame-extreme.png"
+      ],
+      "formula": "years = min m s.t. Σ_{t=1..m} saving/(1+j)^t ≥ cost, j = returnPct/12, / 12; \"never\" if not within term",
+      "inputs": {
+        "principal": 9999999,
+        "baseRatePct": 12.875,
+        "termMonths": 360,
+        "points": 1,
+        "cutPerPointPct": 0.375,
+        "returnPct": 11.875
+      }
+    },
+    {
+      "claimId": "extreme/be_simple_1.25_0.0625",
+      "dataset": "extreme",
+      "value": 206,
+      "display": "17.2",
+      "appearsIn": [
+        "frame-extreme.png"
+      ],
+      "formula": "years = ceil(cost / (M(base) − M(base − points×cut))) / 12; M = L·i/(1−(1+i)^−n), i = r/12, payments rounded to cents",
+      "inputs": {
+        "principal": 9999999,
+        "baseRatePct": 12.875,
+        "termMonths": 360,
+        "points": 1.25,
+        "cutPerPointPct": 0.0625
+      }
+    },
+    {
+      "claimId": "extreme/be_opp_1.25_0.0625",
+      "dataset": "extreme",
+      "value": null,
+      "display": "never",
+      "appearsIn": [
+        "frame-extreme.png"
+      ],
+      "formula": "years = min m s.t. Σ_{t=1..m} saving/(1+j)^t ≥ cost, j = returnPct/12, / 12; \"never\" if not within term",
+      "inputs": {
+        "principal": 9999999,
+        "baseRatePct": 12.875,
+        "termMonths": 360,
+        "points": 1.25,
+        "cutPerPointPct": 0.0625,
+        "returnPct": 11.875
+      }
+    },
+    {
+      "claimId": "extreme/be_simple_1.25_0.125",
+      "dataset": "extreme",
+      "value": 103,
+      "display": "8.6",
+      "appearsIn": [
+        "frame-extreme.png"
+      ],
+      "formula": "years = ceil(cost / (M(base) − M(base − points×cut))) / 12; M = L·i/(1−(1+i)^−n), i = r/12, payments rounded to cents",
+      "inputs": {
+        "principal": 9999999,
+        "baseRatePct": 12.875,
+        "termMonths": 360,
+        "points": 1.25,
+        "cutPerPointPct": 0.125
+      }
+    },
+    {
+      "claimId": "extreme/be_opp_1.25_0.125",
+      "dataset": "extreme",
+      "value": null,
+      "display": "never",
+      "appearsIn": [
+        "frame-extreme.png"
+      ],
+      "formula": "years = min m s.t. Σ_{t=1..m} saving/(1+j)^t ≥ cost, j = returnPct/12, / 12; \"never\" if not within term",
+      "inputs": {
+        "principal": 9999999,
+        "baseRatePct": 12.875,
+        "termMonths": 360,
+        "points": 1.25,
+        "cutPerPointPct": 0.125,
+        "returnPct": 11.875
+      }
+    },
+    {
+      "claimId": "extreme/be_simple_1.25_0.1875",
+      "dataset": "extreme",
+      "value": 69,
+      "display": "5.8",
+      "appearsIn": [
+        "frame-extreme.png"
+      ],
+      "formula": "years = ceil(cost / (M(base) − M(base − points×cut))) / 12; M = L·i/(1−(1+i)^−n), i = r/12, payments rounded to cents",
+      "inputs": {
+        "principal": 9999999,
+        "baseRatePct": 12.875,
+        "termMonths": 360,
+        "points": 1.25,
+        "cutPerPointPct": 0.1875
+      }
+    },
+    {
+      "claimId": "extreme/be_opp_1.25_0.1875",
+      "dataset": "extreme",
+      "value": 115,
+      "display": "9.6",
+      "appearsIn": [
+        "frame-extreme.png"
+      ],
+      "formula": "years = min m s.t. Σ_{t=1..m} saving/(1+j)^t ≥ cost, j = returnPct/12, / 12; \"never\" if not within term",
+      "inputs": {
+        "principal": 9999999,
+        "baseRatePct": 12.875,
+        "termMonths": 360,
+        "points": 1.25,
+        "cutPerPointPct": 0.1875,
+        "returnPct": 11.875
+      }
+    },
+    {
+      "claimId": "extreme/be_simple_1.25_0.25",
+      "dataset": "extreme",
+      "value": 52,
+      "display": "4.3",
+      "appearsIn": [
+        "frame-extreme.png"
+      ],
+      "formula": "years = ceil(cost / (M(base) − M(base − points×cut))) / 12; M = L·i/(1−(1+i)^−n), i = r/12, payments rounded to cents",
+      "inputs": {
+        "principal": 9999999,
+        "baseRatePct": 12.875,
+        "termMonths": 360,
+        "points": 1.25,
+        "cutPerPointPct": 0.25
+      }
+    },
+    {
+      "claimId": "extreme/be_opp_1.25_0.25",
+      "dataset": "extreme",
+      "value": 73,
+      "display": "6.1",
+      "appearsIn": [
+        "frame-extreme.png"
+      ],
+      "formula": "years = min m s.t. Σ_{t=1..m} saving/(1+j)^t ≥ cost, j = returnPct/12, / 12; \"never\" if not within term",
+      "inputs": {
+        "principal": 9999999,
+        "baseRatePct": 12.875,
+        "termMonths": 360,
+        "points": 1.25,
+        "cutPerPointPct": 0.25,
+        "returnPct": 11.875
+      }
+    },
+    {
+      "claimId": "extreme/be_simple_1.25_0.3125",
+      "dataset": "extreme",
+      "value": 42,
+      "display": "3.5",
+      "appearsIn": [
+        "frame-extreme.png"
+      ],
+      "formula": "years = ceil(cost / (M(base) − M(base − points×cut))) / 12; M = L·i/(1−(1+i)^−n), i = r/12, payments rounded to cents",
+      "inputs": {
+        "principal": 9999999,
+        "baseRatePct": 12.875,
+        "termMonths": 360,
+        "points": 1.25,
+        "cutPerPointPct": 0.3125
+      }
+    },
+    {
+      "claimId": "extreme/be_opp_1.25_0.3125",
+      "dataset": "extreme",
+      "value": 54,
+      "display": "4.5",
+      "appearsIn": [
+        "frame-extreme.png"
+      ],
+      "formula": "years = min m s.t. Σ_{t=1..m} saving/(1+j)^t ≥ cost, j = returnPct/12, / 12; \"never\" if not within term",
+      "inputs": {
+        "principal": 9999999,
+        "baseRatePct": 12.875,
+        "termMonths": 360,
+        "points": 1.25,
+        "cutPerPointPct": 0.3125,
+        "returnPct": 11.875
+      }
+    },
+    {
+      "claimId": "extreme/be_simple_1.25_0.375",
+      "dataset": "extreme",
+      "value": 35,
+      "display": "2.9",
+      "appearsIn": [
+        "frame-extreme.png"
+      ],
+      "formula": "years = ceil(cost / (M(base) − M(base − points×cut))) / 12; M = L·i/(1−(1+i)^−n), i = r/12, payments rounded to cents",
+      "inputs": {
+        "principal": 9999999,
+        "baseRatePct": 12.875,
+        "termMonths": 360,
+        "points": 1.25,
+        "cutPerPointPct": 0.375
+      }
+    },
+    {
+      "claimId": "extreme/be_opp_1.25_0.375",
+      "dataset": "extreme",
+      "value": 43,
+      "display": "3.6",
+      "appearsIn": [
+        "frame-extreme.png"
+      ],
+      "formula": "years = min m s.t. Σ_{t=1..m} saving/(1+j)^t ≥ cost, j = returnPct/12, / 12; \"never\" if not within term",
+      "inputs": {
+        "principal": 9999999,
+        "baseRatePct": 12.875,
+        "termMonths": 360,
+        "points": 1.25,
+        "cutPerPointPct": 0.375,
+        "returnPct": 11.875
+      }
+    },
+    {
+      "claimId": "extreme/be_simple_1.5_0.0625",
+      "dataset": "extreme",
+      "value": 206,
+      "display": "17.2",
+      "appearsIn": [
+        "frame-extreme.png"
+      ],
+      "formula": "years = ceil(cost / (M(base) − M(base − points×cut))) / 12; M = L·i/(1−(1+i)^−n), i = r/12, payments rounded to cents",
+      "inputs": {
+        "principal": 9999999,
+        "baseRatePct": 12.875,
+        "termMonths": 360,
+        "points": 1.5,
+        "cutPerPointPct": 0.0625
+      }
+    },
+    {
+      "claimId": "extreme/be_opp_1.5_0.0625",
+      "dataset": "extreme",
+      "value": null,
+      "display": "never",
+      "appearsIn": [
+        "frame-extreme.png"
+      ],
+      "formula": "years = min m s.t. Σ_{t=1..m} saving/(1+j)^t ≥ cost, j = returnPct/12, / 12; \"never\" if not within term",
+      "inputs": {
+        "principal": 9999999,
+        "baseRatePct": 12.875,
+        "termMonths": 360,
+        "points": 1.5,
+        "cutPerPointPct": 0.0625,
+        "returnPct": 11.875
+      }
+    },
+    {
+      "claimId": "extreme/be_simple_1.5_0.125",
+      "dataset": "extreme",
+      "value": 103,
+      "display": "8.6",
+      "appearsIn": [
+        "frame-extreme.png"
+      ],
+      "formula": "years = ceil(cost / (M(base) − M(base − points×cut))) / 12; M = L·i/(1−(1+i)^−n), i = r/12, payments rounded to cents",
+      "inputs": {
+        "principal": 9999999,
+        "baseRatePct": 12.875,
+        "termMonths": 360,
+        "points": 1.5,
+        "cutPerPointPct": 0.125
+      }
+    },
+    {
+      "claimId": "extreme/be_opp_1.5_0.125",
+      "dataset": "extreme",
+      "value": null,
+      "display": "never",
+      "appearsIn": [
+        "frame-extreme.png"
+      ],
+      "formula": "years = min m s.t. Σ_{t=1..m} saving/(1+j)^t ≥ cost, j = returnPct/12, / 12; \"never\" if not within term",
+      "inputs": {
+        "principal": 9999999,
+        "baseRatePct": 12.875,
+        "termMonths": 360,
+        "points": 1.5,
+        "cutPerPointPct": 0.125,
+        "returnPct": 11.875
+      }
+    },
+    {
+      "claimId": "extreme/be_simple_1.5_0.1875",
+      "dataset": "extreme",
+      "value": 69,
+      "display": "5.8",
+      "appearsIn": [
+        "frame-extreme.png"
+      ],
+      "formula": "years = ceil(cost / (M(base) − M(base − points×cut))) / 12; M = L·i/(1−(1+i)^−n), i = r/12, payments rounded to cents",
+      "inputs": {
+        "principal": 9999999,
+        "baseRatePct": 12.875,
+        "termMonths": 360,
+        "points": 1.5,
+        "cutPerPointPct": 0.1875
+      }
+    },
+    {
+      "claimId": "extreme/be_opp_1.5_0.1875",
+      "dataset": "extreme",
+      "value": 116,
+      "display": "9.7",
+      "appearsIn": [
+        "frame-extreme.png"
+      ],
+      "formula": "years = min m s.t. Σ_{t=1..m} saving/(1+j)^t ≥ cost, j = returnPct/12, / 12; \"never\" if not within term",
+      "inputs": {
+        "principal": 9999999,
+        "baseRatePct": 12.875,
+        "termMonths": 360,
+        "points": 1.5,
+        "cutPerPointPct": 0.1875,
+        "returnPct": 11.875
+      }
+    },
+    {
+      "claimId": "extreme/be_simple_1.5_0.25",
+      "dataset": "extreme",
+      "value": 52,
+      "display": "4.3",
+      "appearsIn": [
+        "frame-extreme.png"
+      ],
+      "formula": "years = ceil(cost / (M(base) − M(base − points×cut))) / 12; M = L·i/(1−(1+i)^−n), i = r/12, payments rounded to cents",
+      "inputs": {
+        "principal": 9999999,
+        "baseRatePct": 12.875,
+        "termMonths": 360,
+        "points": 1.5,
+        "cutPerPointPct": 0.25
+      }
+    },
+    {
+      "claimId": "extreme/be_opp_1.5_0.25",
+      "dataset": "extreme",
+      "value": 73,
+      "display": "6.1",
+      "appearsIn": [
+        "frame-extreme.png"
+      ],
+      "formula": "years = min m s.t. Σ_{t=1..m} saving/(1+j)^t ≥ cost, j = returnPct/12, / 12; \"never\" if not within term",
+      "inputs": {
+        "principal": 9999999,
+        "baseRatePct": 12.875,
+        "termMonths": 360,
+        "points": 1.5,
+        "cutPerPointPct": 0.25,
+        "returnPct": 11.875
+      }
+    },
+    {
+      "claimId": "extreme/be_simple_1.5_0.3125",
+      "dataset": "extreme",
+      "value": 42,
+      "display": "3.5",
+      "appearsIn": [
+        "frame-extreme.png"
+      ],
+      "formula": "years = ceil(cost / (M(base) − M(base − points×cut))) / 12; M = L·i/(1−(1+i)^−n), i = r/12, payments rounded to cents",
+      "inputs": {
+        "principal": 9999999,
+        "baseRatePct": 12.875,
+        "termMonths": 360,
+        "points": 1.5,
+        "cutPerPointPct": 0.3125
+      }
+    },
+    {
+      "claimId": "extreme/be_opp_1.5_0.3125",
+      "dataset": "extreme",
+      "value": 54,
+      "display": "4.5",
+      "appearsIn": [
+        "frame-extreme.png"
+      ],
+      "formula": "years = min m s.t. Σ_{t=1..m} saving/(1+j)^t ≥ cost, j = returnPct/12, / 12; \"never\" if not within term",
+      "inputs": {
+        "principal": 9999999,
+        "baseRatePct": 12.875,
+        "termMonths": 360,
+        "points": 1.5,
+        "cutPerPointPct": 0.3125,
+        "returnPct": 11.875
+      }
+    },
+    {
+      "claimId": "extreme/be_simple_1.5_0.375",
+      "dataset": "extreme",
+      "value": 35,
+      "display": "2.9",
+      "appearsIn": [
+        "frame-extreme.png"
+      ],
+      "formula": "years = ceil(cost / (M(base) − M(base − points×cut))) / 12; M = L·i/(1−(1+i)^−n), i = r/12, payments rounded to cents",
+      "inputs": {
+        "principal": 9999999,
+        "baseRatePct": 12.875,
+        "termMonths": 360,
+        "points": 1.5,
+        "cutPerPointPct": 0.375
+      }
+    },
+    {
+      "claimId": "extreme/be_opp_1.5_0.375",
+      "dataset": "extreme",
+      "value": 43,
+      "display": "3.6",
+      "appearsIn": [
+        "frame-extreme.png"
+      ],
+      "formula": "years = min m s.t. Σ_{t=1..m} saving/(1+j)^t ≥ cost, j = returnPct/12, / 12; \"never\" if not within term",
+      "inputs": {
+        "principal": 9999999,
+        "baseRatePct": 12.875,
+        "termMonths": 360,
+        "points": 1.5,
+        "cutPerPointPct": 0.375,
+        "returnPct": 11.875
+      }
+    },
+    {
+      "claimId": "extreme/be_simple_1.75_0.0625",
+      "dataset": "extreme",
+      "value": 206,
+      "display": "17.2",
+      "appearsIn": [
+        "frame-extreme.png"
+      ],
+      "formula": "years = ceil(cost / (M(base) − M(base − points×cut))) / 12; M = L·i/(1−(1+i)^−n), i = r/12, payments rounded to cents",
+      "inputs": {
+        "principal": 9999999,
+        "baseRatePct": 12.875,
+        "termMonths": 360,
+        "points": 1.75,
+        "cutPerPointPct": 0.0625
+      }
+    },
+    {
+      "claimId": "extreme/be_opp_1.75_0.0625",
+      "dataset": "extreme",
+      "value": null,
+      "display": "never",
+      "appearsIn": [
+        "frame-extreme.png"
+      ],
+      "formula": "years = min m s.t. Σ_{t=1..m} saving/(1+j)^t ≥ cost, j = returnPct/12, / 12; \"never\" if not within term",
+      "inputs": {
+        "principal": 9999999,
+        "baseRatePct": 12.875,
+        "termMonths": 360,
+        "points": 1.75,
+        "cutPerPointPct": 0.0625,
+        "returnPct": 11.875
+      }
+    },
+    {
+      "claimId": "extreme/be_simple_1.75_0.125",
+      "dataset": "extreme",
+      "value": 103,
+      "display": "8.6",
+      "appearsIn": [
+        "frame-extreme.png"
+      ],
+      "formula": "years = ceil(cost / (M(base) − M(base − points×cut))) / 12; M = L·i/(1−(1+i)^−n), i = r/12, payments rounded to cents",
+      "inputs": {
+        "principal": 9999999,
+        "baseRatePct": 12.875,
+        "termMonths": 360,
+        "points": 1.75,
+        "cutPerPointPct": 0.125
+      }
+    },
+    {
+      "claimId": "extreme/be_opp_1.75_0.125",
+      "dataset": "extreme",
+      "value": null,
+      "display": "never",
+      "appearsIn": [
+        "frame-extreme.png"
+      ],
+      "formula": "years = min m s.t. Σ_{t=1..m} saving/(1+j)^t ≥ cost, j = returnPct/12, / 12; \"never\" if not within term",
+      "inputs": {
+        "principal": 9999999,
+        "baseRatePct": 12.875,
+        "termMonths": 360,
+        "points": 1.75,
+        "cutPerPointPct": 0.125,
+        "returnPct": 11.875
+      }
+    },
+    {
+      "claimId": "extreme/be_simple_1.75_0.1875",
+      "dataset": "extreme",
+      "value": 69,
+      "display": "5.8",
+      "appearsIn": [
+        "frame-extreme.png"
+      ],
+      "formula": "years = ceil(cost / (M(base) − M(base − points×cut))) / 12; M = L·i/(1−(1+i)^−n), i = r/12, payments rounded to cents",
+      "inputs": {
+        "principal": 9999999,
+        "baseRatePct": 12.875,
+        "termMonths": 360,
+        "points": 1.75,
+        "cutPerPointPct": 0.1875
+      }
+    },
+    {
+      "claimId": "extreme/be_opp_1.75_0.1875",
+      "dataset": "extreme",
+      "value": 116,
+      "display": "9.7",
+      "appearsIn": [
+        "frame-extreme.png"
+      ],
+      "formula": "years = min m s.t. Σ_{t=1..m} saving/(1+j)^t ≥ cost, j = returnPct/12, / 12; \"never\" if not within term",
+      "inputs": {
+        "principal": 9999999,
+        "baseRatePct": 12.875,
+        "termMonths": 360,
+        "points": 1.75,
+        "cutPerPointPct": 0.1875,
+        "returnPct": 11.875
+      }
+    },
+    {
+      "claimId": "extreme/be_simple_1.75_0.25",
+      "dataset": "extreme",
+      "value": 52,
+      "display": "4.3",
+      "appearsIn": [
+        "frame-extreme.png"
+      ],
+      "formula": "years = ceil(cost / (M(base) − M(base − points×cut))) / 12; M = L·i/(1−(1+i)^−n), i = r/12, payments rounded to cents",
+      "inputs": {
+        "principal": 9999999,
+        "baseRatePct": 12.875,
+        "termMonths": 360,
+        "points": 1.75,
+        "cutPerPointPct": 0.25
+      }
+    },
+    {
+      "claimId": "extreme/be_opp_1.75_0.25",
+      "dataset": "extreme",
+      "value": 73,
+      "display": "6.1",
+      "appearsIn": [
+        "frame-extreme.png"
+      ],
+      "formula": "years = min m s.t. Σ_{t=1..m} saving/(1+j)^t ≥ cost, j = returnPct/12, / 12; \"never\" if not within term",
+      "inputs": {
+        "principal": 9999999,
+        "baseRatePct": 12.875,
+        "termMonths": 360,
+        "points": 1.75,
+        "cutPerPointPct": 0.25,
+        "returnPct": 11.875
+      }
+    },
+    {
+      "claimId": "extreme/be_simple_1.75_0.3125",
+      "dataset": "extreme",
+      "value": 42,
+      "display": "3.5",
+      "appearsIn": [
+        "frame-extreme.png"
+      ],
+      "formula": "years = ceil(cost / (M(base) − M(base − points×cut))) / 12; M = L·i/(1−(1+i)^−n), i = r/12, payments rounded to cents",
+      "inputs": {
+        "principal": 9999999,
+        "baseRatePct": 12.875,
+        "termMonths": 360,
+        "points": 1.75,
+        "cutPerPointPct": 0.3125
+      }
+    },
+    {
+      "claimId": "extreme/be_opp_1.75_0.3125",
+      "dataset": "extreme",
+      "value": 54,
+      "display": "4.5",
+      "appearsIn": [
+        "frame-extreme.png"
+      ],
+      "formula": "years = min m s.t. Σ_{t=1..m} saving/(1+j)^t ≥ cost, j = returnPct/12, / 12; \"never\" if not within term",
+      "inputs": {
+        "principal": 9999999,
+        "baseRatePct": 12.875,
+        "termMonths": 360,
+        "points": 1.75,
+        "cutPerPointPct": 0.3125,
+        "returnPct": 11.875
+      }
+    },
+    {
+      "claimId": "extreme/be_simple_1.75_0.375",
+      "dataset": "extreme",
+      "value": 35,
+      "display": "2.9",
+      "appearsIn": [
+        "frame-extreme.png"
+      ],
+      "formula": "years = ceil(cost / (M(base) − M(base − points×cut))) / 12; M = L·i/(1−(1+i)^−n), i = r/12, payments rounded to cents",
+      "inputs": {
+        "principal": 9999999,
+        "baseRatePct": 12.875,
+        "termMonths": 360,
+        "points": 1.75,
+        "cutPerPointPct": 0.375
+      }
+    },
+    {
+      "claimId": "extreme/be_opp_1.75_0.375",
+      "dataset": "extreme",
+      "value": 43,
+      "display": "3.6",
+      "appearsIn": [
+        "frame-extreme.png"
+      ],
+      "formula": "years = min m s.t. Σ_{t=1..m} saving/(1+j)^t ≥ cost, j = returnPct/12, / 12; \"never\" if not within term",
+      "inputs": {
+        "principal": 9999999,
+        "baseRatePct": 12.875,
+        "termMonths": 360,
+        "points": 1.75,
+        "cutPerPointPct": 0.375,
+        "returnPct": 11.875
+      }
+    },
+    {
+      "claimId": "extreme/be_simple_2_0.0625",
+      "dataset": "extreme",
+      "value": 206,
+      "display": "17.2",
+      "appearsIn": [
+        "frame-extreme.png"
+      ],
+      "formula": "years = ceil(cost / (M(base) − M(base − points×cut))) / 12; M = L·i/(1−(1+i)^−n), i = r/12, payments rounded to cents",
+      "inputs": {
+        "principal": 9999999,
+        "baseRatePct": 12.875,
+        "termMonths": 360,
+        "points": 2,
+        "cutPerPointPct": 0.0625
+      }
+    },
+    {
+      "claimId": "extreme/be_opp_2_0.0625",
+      "dataset": "extreme",
+      "value": null,
+      "display": "never",
+      "appearsIn": [
+        "frame-extreme.png"
+      ],
+      "formula": "years = min m s.t. Σ_{t=1..m} saving/(1+j)^t ≥ cost, j = returnPct/12, / 12; \"never\" if not within term",
+      "inputs": {
+        "principal": 9999999,
+        "baseRatePct": 12.875,
+        "termMonths": 360,
+        "points": 2,
+        "cutPerPointPct": 0.0625,
+        "returnPct": 11.875
+      }
+    },
+    {
+      "claimId": "extreme/be_simple_2_0.125",
+      "dataset": "extreme",
+      "value": 103,
+      "display": "8.6",
+      "appearsIn": [
+        "frame-extreme.png"
+      ],
+      "formula": "years = ceil(cost / (M(base) − M(base − points×cut))) / 12; M = L·i/(1−(1+i)^−n), i = r/12, payments rounded to cents",
+      "inputs": {
+        "principal": 9999999,
+        "baseRatePct": 12.875,
+        "termMonths": 360,
+        "points": 2,
+        "cutPerPointPct": 0.125
+      }
+    },
+    {
+      "claimId": "extreme/be_opp_2_0.125",
+      "dataset": "extreme",
+      "value": null,
+      "display": "never",
+      "appearsIn": [
+        "frame-extreme.png"
+      ],
+      "formula": "years = min m s.t. Σ_{t=1..m} saving/(1+j)^t ≥ cost, j = returnPct/12, / 12; \"never\" if not within term",
+      "inputs": {
+        "principal": 9999999,
+        "baseRatePct": 12.875,
+        "termMonths": 360,
+        "points": 2,
+        "cutPerPointPct": 0.125,
+        "returnPct": 11.875
+      }
+    },
+    {
+      "claimId": "extreme/be_simple_2_0.1875",
+      "dataset": "extreme",
+      "value": 69,
+      "display": "5.8",
+      "appearsIn": [
+        "frame-extreme.png"
+      ],
+      "formula": "years = ceil(cost / (M(base) − M(base − points×cut))) / 12; M = L·i/(1−(1+i)^−n), i = r/12, payments rounded to cents",
+      "inputs": {
+        "principal": 9999999,
+        "baseRatePct": 12.875,
+        "termMonths": 360,
+        "points": 2,
+        "cutPerPointPct": 0.1875
+      }
+    },
+    {
+      "claimId": "extreme/be_opp_2_0.1875",
+      "dataset": "extreme",
+      "value": 116,
+      "display": "9.7",
+      "appearsIn": [
+        "frame-extreme.png"
+      ],
+      "formula": "years = min m s.t. Σ_{t=1..m} saving/(1+j)^t ≥ cost, j = returnPct/12, / 12; \"never\" if not within term",
+      "inputs": {
+        "principal": 9999999,
+        "baseRatePct": 12.875,
+        "termMonths": 360,
+        "points": 2,
+        "cutPerPointPct": 0.1875,
+        "returnPct": 11.875
+      }
+    },
+    {
+      "claimId": "extreme/be_simple_2_0.25",
+      "dataset": "extreme",
+      "value": 52,
+      "display": "4.3",
+      "appearsIn": [
+        "frame-extreme.png"
+      ],
+      "formula": "years = ceil(cost / (M(base) − M(base − points×cut))) / 12; M = L·i/(1−(1+i)^−n), i = r/12, payments rounded to cents",
+      "inputs": {
+        "principal": 9999999,
+        "baseRatePct": 12.875,
+        "termMonths": 360,
+        "points": 2,
+        "cutPerPointPct": 0.25
+      }
+    },
+    {
+      "claimId": "extreme/be_opp_2_0.25",
+      "dataset": "extreme",
+      "value": 73,
+      "display": "6.1",
+      "appearsIn": [
+        "frame-extreme.png"
+      ],
+      "formula": "years = min m s.t. Σ_{t=1..m} saving/(1+j)^t ≥ cost, j = returnPct/12, / 12; \"never\" if not within term",
+      "inputs": {
+        "principal": 9999999,
+        "baseRatePct": 12.875,
+        "termMonths": 360,
+        "points": 2,
+        "cutPerPointPct": 0.25,
+        "returnPct": 11.875
+      }
+    },
+    {
+      "claimId": "extreme/be_simple_2_0.3125",
+      "dataset": "extreme",
+      "value": 42,
+      "display": "3.5",
+      "appearsIn": [
+        "frame-extreme.png"
+      ],
+      "formula": "years = ceil(cost / (M(base) − M(base − points×cut))) / 12; M = L·i/(1−(1+i)^−n), i = r/12, payments rounded to cents",
+      "inputs": {
+        "principal": 9999999,
+        "baseRatePct": 12.875,
+        "termMonths": 360,
+        "points": 2,
+        "cutPerPointPct": 0.3125
+      }
+    },
+    {
+      "claimId": "extreme/be_opp_2_0.3125",
+      "dataset": "extreme",
+      "value": 54,
+      "display": "4.5",
+      "appearsIn": [
+        "frame-extreme.png"
+      ],
+      "formula": "years = min m s.t. Σ_{t=1..m} saving/(1+j)^t ≥ cost, j = returnPct/12, / 12; \"never\" if not within term",
+      "inputs": {
+        "principal": 9999999,
+        "baseRatePct": 12.875,
+        "termMonths": 360,
+        "points": 2,
+        "cutPerPointPct": 0.3125,
+        "returnPct": 11.875
+      }
+    },
+    {
+      "claimId": "extreme/be_simple_2_0.375",
+      "dataset": "extreme",
+      "value": 35,
+      "display": "2.9",
+      "appearsIn": [
+        "frame-extreme.png"
+      ],
+      "formula": "years = ceil(cost / (M(base) − M(base − points×cut))) / 12; M = L·i/(1−(1+i)^−n), i = r/12, payments rounded to cents",
+      "inputs": {
+        "principal": 9999999,
+        "baseRatePct": 12.875,
+        "termMonths": 360,
+        "points": 2,
+        "cutPerPointPct": 0.375
+      }
+    },
+    {
+      "claimId": "extreme/be_opp_2_0.375",
+      "dataset": "extreme",
+      "value": 43,
+      "display": "3.6",
+      "appearsIn": [
+        "frame-extreme.png"
+      ],
+      "formula": "years = min m s.t. Σ_{t=1..m} saving/(1+j)^t ≥ cost, j = returnPct/12, / 12; \"never\" if not within term",
+      "inputs": {
+        "principal": 9999999,
+        "baseRatePct": 12.875,
+        "termMonths": 360,
+        "points": 2,
+        "cutPerPointPct": 0.375,
+        "returnPct": 11.875
+      }
+    },
+    {
+      "claimId": "extreme/be_simple_2.25_0.0625",
+      "dataset": "extreme",
+      "value": 206,
+      "display": "17.2",
+      "appearsIn": [
+        "frame-extreme.png"
+      ],
+      "formula": "years = ceil(cost / (M(base) − M(base − points×cut))) / 12; M = L·i/(1−(1+i)^−n), i = r/12, payments rounded to cents",
+      "inputs": {
+        "principal": 9999999,
+        "baseRatePct": 12.875,
+        "termMonths": 360,
+        "points": 2.25,
+        "cutPerPointPct": 0.0625
+      }
+    },
+    {
+      "claimId": "extreme/be_opp_2.25_0.0625",
+      "dataset": "extreme",
+      "value": null,
+      "display": "never",
+      "appearsIn": [
+        "frame-extreme.png"
+      ],
+      "formula": "years = min m s.t. Σ_{t=1..m} saving/(1+j)^t ≥ cost, j = returnPct/12, / 12; \"never\" if not within term",
+      "inputs": {
+        "principal": 9999999,
+        "baseRatePct": 12.875,
+        "termMonths": 360,
+        "points": 2.25,
+        "cutPerPointPct": 0.0625,
+        "returnPct": 11.875
+      }
+    },
+    {
+      "claimId": "extreme/be_simple_2.25_0.125",
+      "dataset": "extreme",
+      "value": 103,
+      "display": "8.6",
+      "appearsIn": [
+        "frame-extreme.png"
+      ],
+      "formula": "years = ceil(cost / (M(base) − M(base − points×cut))) / 12; M = L·i/(1−(1+i)^−n), i = r/12, payments rounded to cents",
+      "inputs": {
+        "principal": 9999999,
+        "baseRatePct": 12.875,
+        "termMonths": 360,
+        "points": 2.25,
+        "cutPerPointPct": 0.125
+      }
+    },
+    {
+      "claimId": "extreme/be_opp_2.25_0.125",
+      "dataset": "extreme",
+      "value": null,
+      "display": "never",
+      "appearsIn": [
+        "frame-extreme.png"
+      ],
+      "formula": "years = min m s.t. Σ_{t=1..m} saving/(1+j)^t ≥ cost, j = returnPct/12, / 12; \"never\" if not within term",
+      "inputs": {
+        "principal": 9999999,
+        "baseRatePct": 12.875,
+        "termMonths": 360,
+        "points": 2.25,
+        "cutPerPointPct": 0.125,
+        "returnPct": 11.875
+      }
+    },
+    {
+      "claimId": "extreme/be_simple_2.25_0.1875",
+      "dataset": "extreme",
+      "value": 69,
+      "display": "5.8",
+      "appearsIn": [
+        "frame-extreme.png"
+      ],
+      "formula": "years = ceil(cost / (M(base) − M(base − points×cut))) / 12; M = L·i/(1−(1+i)^−n), i = r/12, payments rounded to cents",
+      "inputs": {
+        "principal": 9999999,
+        "baseRatePct": 12.875,
+        "termMonths": 360,
+        "points": 2.25,
+        "cutPerPointPct": 0.1875
+      }
+    },
+    {
+      "claimId": "extreme/be_opp_2.25_0.1875",
+      "dataset": "extreme",
+      "value": 116,
+      "display": "9.7",
+      "appearsIn": [
+        "frame-extreme.png"
+      ],
+      "formula": "years = min m s.t. Σ_{t=1..m} saving/(1+j)^t ≥ cost, j = returnPct/12, / 12; \"never\" if not within term",
+      "inputs": {
+        "principal": 9999999,
+        "baseRatePct": 12.875,
+        "termMonths": 360,
+        "points": 2.25,
+        "cutPerPointPct": 0.1875,
+        "returnPct": 11.875
+      }
+    },
+    {
+      "claimId": "extreme/be_simple_2.25_0.25",
+      "dataset": "extreme",
+      "value": 52,
+      "display": "4.3",
+      "appearsIn": [
+        "frame-extreme.png"
+      ],
+      "formula": "years = ceil(cost / (M(base) − M(base − points×cut))) / 12; M = L·i/(1−(1+i)^−n), i = r/12, payments rounded to cents",
+      "inputs": {
+        "principal": 9999999,
+        "baseRatePct": 12.875,
+        "termMonths": 360,
+        "points": 2.25,
+        "cutPerPointPct": 0.25
+      }
+    },
+    {
+      "claimId": "extreme/be_opp_2.25_0.25",
+      "dataset": "extreme",
+      "value": 73,
+      "display": "6.1",
+      "appearsIn": [
+        "frame-extreme.png"
+      ],
+      "formula": "years = min m s.t. Σ_{t=1..m} saving/(1+j)^t ≥ cost, j = returnPct/12, / 12; \"never\" if not within term",
+      "inputs": {
+        "principal": 9999999,
+        "baseRatePct": 12.875,
+        "termMonths": 360,
+        "points": 2.25,
+        "cutPerPointPct": 0.25,
+        "returnPct": 11.875
+      }
+    },
+    {
+      "claimId": "extreme/be_simple_2.25_0.3125",
+      "dataset": "extreme",
+      "value": 42,
+      "display": "3.5",
+      "appearsIn": [
+        "frame-extreme.png"
+      ],
+      "formula": "years = ceil(cost / (M(base) − M(base − points×cut))) / 12; M = L·i/(1−(1+i)^−n), i = r/12, payments rounded to cents",
+      "inputs": {
+        "principal": 9999999,
+        "baseRatePct": 12.875,
+        "termMonths": 360,
+        "points": 2.25,
+        "cutPerPointPct": 0.3125
+      }
+    },
+    {
+      "claimId": "extreme/be_opp_2.25_0.3125",
+      "dataset": "extreme",
+      "value": 54,
+      "display": "4.5",
+      "appearsIn": [
+        "frame-extreme.png"
+      ],
+      "formula": "years = min m s.t. Σ_{t=1..m} saving/(1+j)^t ≥ cost, j = returnPct/12, / 12; \"never\" if not within term",
+      "inputs": {
+        "principal": 9999999,
+        "baseRatePct": 12.875,
+        "termMonths": 360,
+        "points": 2.25,
+        "cutPerPointPct": 0.3125,
+        "returnPct": 11.875
+      }
+    },
+    {
+      "claimId": "extreme/be_simple_2.25_0.375",
+      "dataset": "extreme",
+      "value": 35,
+      "display": "2.9",
+      "appearsIn": [
+        "frame-extreme.png"
+      ],
+      "formula": "years = ceil(cost / (M(base) − M(base − points×cut))) / 12; M = L·i/(1−(1+i)^−n), i = r/12, payments rounded to cents",
+      "inputs": {
+        "principal": 9999999,
+        "baseRatePct": 12.875,
+        "termMonths": 360,
+        "points": 2.25,
+        "cutPerPointPct": 0.375
+      }
+    },
+    {
+      "claimId": "extreme/be_opp_2.25_0.375",
+      "dataset": "extreme",
+      "value": 43,
+      "display": "3.6",
+      "appearsIn": [
+        "frame-extreme.png"
+      ],
+      "formula": "years = min m s.t. Σ_{t=1..m} saving/(1+j)^t ≥ cost, j = returnPct/12, / 12; \"never\" if not within term",
+      "inputs": {
+        "principal": 9999999,
+        "baseRatePct": 12.875,
+        "termMonths": 360,
+        "points": 2.25,
+        "cutPerPointPct": 0.375,
+        "returnPct": 11.875
+      }
+    },
+    {
+      "claimId": "extreme/be_simple_2.5_0.0625",
+      "dataset": "extreme",
+      "value": 206,
+      "display": "17.2",
+      "appearsIn": [
+        "frame-extreme.png"
+      ],
+      "formula": "years = ceil(cost / (M(base) − M(base − points×cut))) / 12; M = L·i/(1−(1+i)^−n), i = r/12, payments rounded to cents",
+      "inputs": {
+        "principal": 9999999,
+        "baseRatePct": 12.875,
+        "termMonths": 360,
+        "points": 2.5,
+        "cutPerPointPct": 0.0625
+      }
+    },
+    {
+      "claimId": "extreme/be_opp_2.5_0.0625",
+      "dataset": "extreme",
+      "value": null,
+      "display": "never",
+      "appearsIn": [
+        "frame-extreme.png"
+      ],
+      "formula": "years = min m s.t. Σ_{t=1..m} saving/(1+j)^t ≥ cost, j = returnPct/12, / 12; \"never\" if not within term",
+      "inputs": {
+        "principal": 9999999,
+        "baseRatePct": 12.875,
+        "termMonths": 360,
+        "points": 2.5,
+        "cutPerPointPct": 0.0625,
+        "returnPct": 11.875
+      }
+    },
+    {
+      "claimId": "extreme/be_simple_2.5_0.125",
+      "dataset": "extreme",
+      "value": 103,
+      "display": "8.6",
+      "appearsIn": [
+        "frame-extreme.png"
+      ],
+      "formula": "years = ceil(cost / (M(base) − M(base − points×cut))) / 12; M = L·i/(1−(1+i)^−n), i = r/12, payments rounded to cents",
+      "inputs": {
+        "principal": 9999999,
+        "baseRatePct": 12.875,
+        "termMonths": 360,
+        "points": 2.5,
+        "cutPerPointPct": 0.125
+      }
+    },
+    {
+      "claimId": "extreme/be_opp_2.5_0.125",
+      "dataset": "extreme",
+      "value": null,
+      "display": "never",
+      "appearsIn": [
+        "frame-extreme.png"
+      ],
+      "formula": "years = min m s.t. Σ_{t=1..m} saving/(1+j)^t ≥ cost, j = returnPct/12, / 12; \"never\" if not within term",
+      "inputs": {
+        "principal": 9999999,
+        "baseRatePct": 12.875,
+        "termMonths": 360,
+        "points": 2.5,
+        "cutPerPointPct": 0.125,
+        "returnPct": 11.875
+      }
+    },
+    {
+      "claimId": "extreme/be_simple_2.5_0.1875",
+      "dataset": "extreme",
+      "value": 69,
+      "display": "5.8",
+      "appearsIn": [
+        "frame-extreme.png"
+      ],
+      "formula": "years = ceil(cost / (M(base) − M(base − points×cut))) / 12; M = L·i/(1−(1+i)^−n), i = r/12, payments rounded to cents",
+      "inputs": {
+        "principal": 9999999,
+        "baseRatePct": 12.875,
+        "termMonths": 360,
+        "points": 2.5,
+        "cutPerPointPct": 0.1875
+      }
+    },
+    {
+      "claimId": "extreme/be_opp_2.5_0.1875",
+      "dataset": "extreme",
+      "value": 116,
+      "display": "9.7",
+      "appearsIn": [
+        "frame-extreme.png"
+      ],
+      "formula": "years = min m s.t. Σ_{t=1..m} saving/(1+j)^t ≥ cost, j = returnPct/12, / 12; \"never\" if not within term",
+      "inputs": {
+        "principal": 9999999,
+        "baseRatePct": 12.875,
+        "termMonths": 360,
+        "points": 2.5,
+        "cutPerPointPct": 0.1875,
+        "returnPct": 11.875
+      }
+    },
+    {
+      "claimId": "extreme/be_simple_2.5_0.25",
+      "dataset": "extreme",
+      "value": 52,
+      "display": "4.3",
+      "appearsIn": [
+        "frame-extreme.png"
+      ],
+      "formula": "years = ceil(cost / (M(base) − M(base − points×cut))) / 12; M = L·i/(1−(1+i)^−n), i = r/12, payments rounded to cents",
+      "inputs": {
+        "principal": 9999999,
+        "baseRatePct": 12.875,
+        "termMonths": 360,
+        "points": 2.5,
+        "cutPerPointPct": 0.25
+      }
+    },
+    {
+      "claimId": "extreme/be_opp_2.5_0.25",
+      "dataset": "extreme",
+      "value": 73,
+      "display": "6.1",
+      "appearsIn": [
+        "frame-extreme.png"
+      ],
+      "formula": "years = min m s.t. Σ_{t=1..m} saving/(1+j)^t ≥ cost, j = returnPct/12, / 12; \"never\" if not within term",
+      "inputs": {
+        "principal": 9999999,
+        "baseRatePct": 12.875,
+        "termMonths": 360,
+        "points": 2.5,
+        "cutPerPointPct": 0.25,
+        "returnPct": 11.875
+      }
+    },
+    {
+      "claimId": "extreme/be_simple_2.5_0.3125",
+      "dataset": "extreme",
+      "value": 42,
+      "display": "3.5",
+      "appearsIn": [
+        "frame-extreme.png"
+      ],
+      "formula": "years = ceil(cost / (M(base) − M(base − points×cut))) / 12; M = L·i/(1−(1+i)^−n), i = r/12, payments rounded to cents",
+      "inputs": {
+        "principal": 9999999,
+        "baseRatePct": 12.875,
+        "termMonths": 360,
+        "points": 2.5,
+        "cutPerPointPct": 0.3125
+      }
+    },
+    {
+      "claimId": "extreme/be_opp_2.5_0.3125",
+      "dataset": "extreme",
+      "value": 54,
+      "display": "4.5",
+      "appearsIn": [
+        "frame-extreme.png"
+      ],
+      "formula": "years = min m s.t. Σ_{t=1..m} saving/(1+j)^t ≥ cost, j = returnPct/12, / 12; \"never\" if not within term",
+      "inputs": {
+        "principal": 9999999,
+        "baseRatePct": 12.875,
+        "termMonths": 360,
+        "points": 2.5,
+        "cutPerPointPct": 0.3125,
+        "returnPct": 11.875
+      }
+    },
+    {
+      "claimId": "extreme/be_simple_2.5_0.375",
+      "dataset": "extreme",
+      "value": 35,
+      "display": "2.9",
+      "appearsIn": [
+        "frame-extreme.png"
+      ],
+      "formula": "years = ceil(cost / (M(base) − M(base − points×cut))) / 12; M = L·i/(1−(1+i)^−n), i = r/12, payments rounded to cents",
+      "inputs": {
+        "principal": 9999999,
+        "baseRatePct": 12.875,
+        "termMonths": 360,
+        "points": 2.5,
+        "cutPerPointPct": 0.375
+      }
+    },
+    {
+      "claimId": "extreme/be_opp_2.5_0.375",
+      "dataset": "extreme",
+      "value": 43,
+      "display": "3.6",
+      "appearsIn": [
+        "frame-extreme.png"
+      ],
+      "formula": "years = min m s.t. Σ_{t=1..m} saving/(1+j)^t ≥ cost, j = returnPct/12, / 12; \"never\" if not within term",
+      "inputs": {
+        "principal": 9999999,
+        "baseRatePct": 12.875,
+        "termMonths": 360,
+        "points": 2.5,
+        "cutPerPointPct": 0.375,
+        "returnPct": 11.875
+      }
+    },
+    {
+      "claimId": "extreme/be_simple_2.75_0.0625",
+      "dataset": "extreme",
+      "value": 206,
+      "display": "17.2",
+      "appearsIn": [
+        "frame-extreme.png"
+      ],
+      "formula": "years = ceil(cost / (M(base) − M(base − points×cut))) / 12; M = L·i/(1−(1+i)^−n), i = r/12, payments rounded to cents",
+      "inputs": {
+        "principal": 9999999,
+        "baseRatePct": 12.875,
+        "termMonths": 360,
+        "points": 2.75,
+        "cutPerPointPct": 0.0625
+      }
+    },
+    {
+      "claimId": "extreme/be_opp_2.75_0.0625",
+      "dataset": "extreme",
+      "value": null,
+      "display": "never",
+      "appearsIn": [
+        "frame-extreme.png"
+      ],
+      "formula": "years = min m s.t. Σ_{t=1..m} saving/(1+j)^t ≥ cost, j = returnPct/12, / 12; \"never\" if not within term",
+      "inputs": {
+        "principal": 9999999,
+        "baseRatePct": 12.875,
+        "termMonths": 360,
+        "points": 2.75,
+        "cutPerPointPct": 0.0625,
+        "returnPct": 11.875
+      }
+    },
+    {
+      "claimId": "extreme/be_simple_2.75_0.125",
+      "dataset": "extreme",
+      "value": 103,
+      "display": "8.6",
+      "appearsIn": [
+        "frame-extreme.png"
+      ],
+      "formula": "years = ceil(cost / (M(base) − M(base − points×cut))) / 12; M = L·i/(1−(1+i)^−n), i = r/12, payments rounded to cents",
+      "inputs": {
+        "principal": 9999999,
+        "baseRatePct": 12.875,
+        "termMonths": 360,
+        "points": 2.75,
+        "cutPerPointPct": 0.125
+      }
+    },
+    {
+      "claimId": "extreme/be_opp_2.75_0.125",
+      "dataset": "extreme",
+      "value": null,
+      "display": "never",
+      "appearsIn": [
+        "frame-extreme.png"
+      ],
+      "formula": "years = min m s.t. Σ_{t=1..m} saving/(1+j)^t ≥ cost, j = returnPct/12, / 12; \"never\" if not within term",
+      "inputs": {
+        "principal": 9999999,
+        "baseRatePct": 12.875,
+        "termMonths": 360,
+        "points": 2.75,
+        "cutPerPointPct": 0.125,
+        "returnPct": 11.875
+      }
+    },
+    {
+      "claimId": "extreme/be_simple_2.75_0.1875",
+      "dataset": "extreme",
+      "value": 69,
+      "display": "5.8",
+      "appearsIn": [
+        "frame-extreme.png"
+      ],
+      "formula": "years = ceil(cost / (M(base) − M(base − points×cut))) / 12; M = L·i/(1−(1+i)^−n), i = r/12, payments rounded to cents",
+      "inputs": {
+        "principal": 9999999,
+        "baseRatePct": 12.875,
+        "termMonths": 360,
+        "points": 2.75,
+        "cutPerPointPct": 0.1875
+      }
+    },
+    {
+      "claimId": "extreme/be_opp_2.75_0.1875",
+      "dataset": "extreme",
+      "value": 116,
+      "display": "9.7",
+      "appearsIn": [
+        "frame-extreme.png"
+      ],
+      "formula": "years = min m s.t. Σ_{t=1..m} saving/(1+j)^t ≥ cost, j = returnPct/12, / 12; \"never\" if not within term",
+      "inputs": {
+        "principal": 9999999,
+        "baseRatePct": 12.875,
+        "termMonths": 360,
+        "points": 2.75,
+        "cutPerPointPct": 0.1875,
+        "returnPct": 11.875
+      }
+    },
+    {
+      "claimId": "extreme/be_simple_2.75_0.25",
+      "dataset": "extreme",
+      "value": 52,
+      "display": "4.3",
+      "appearsIn": [
+        "frame-extreme.png"
+      ],
+      "formula": "years = ceil(cost / (M(base) − M(base − points×cut))) / 12; M = L·i/(1−(1+i)^−n), i = r/12, payments rounded to cents",
+      "inputs": {
+        "principal": 9999999,
+        "baseRatePct": 12.875,
+        "termMonths": 360,
+        "points": 2.75,
+        "cutPerPointPct": 0.25
+      }
+    },
+    {
+      "claimId": "extreme/be_opp_2.75_0.25",
+      "dataset": "extreme",
+      "value": 73,
+      "display": "6.1",
+      "appearsIn": [
+        "frame-extreme.png"
+      ],
+      "formula": "years = min m s.t. Σ_{t=1..m} saving/(1+j)^t ≥ cost, j = returnPct/12, / 12; \"never\" if not within term",
+      "inputs": {
+        "principal": 9999999,
+        "baseRatePct": 12.875,
+        "termMonths": 360,
+        "points": 2.75,
+        "cutPerPointPct": 0.25,
+        "returnPct": 11.875
+      }
+    },
+    {
+      "claimId": "extreme/be_simple_2.75_0.3125",
+      "dataset": "extreme",
+      "value": 42,
+      "display": "3.5",
+      "appearsIn": [
+        "frame-extreme.png"
+      ],
+      "formula": "years = ceil(cost / (M(base) − M(base − points×cut))) / 12; M = L·i/(1−(1+i)^−n), i = r/12, payments rounded to cents",
+      "inputs": {
+        "principal": 9999999,
+        "baseRatePct": 12.875,
+        "termMonths": 360,
+        "points": 2.75,
+        "cutPerPointPct": 0.3125
+      }
+    },
+    {
+      "claimId": "extreme/be_opp_2.75_0.3125",
+      "dataset": "extreme",
+      "value": 54,
+      "display": "4.5",
+      "appearsIn": [
+        "frame-extreme.png"
+      ],
+      "formula": "years = min m s.t. Σ_{t=1..m} saving/(1+j)^t ≥ cost, j = returnPct/12, / 12; \"never\" if not within term",
+      "inputs": {
+        "principal": 9999999,
+        "baseRatePct": 12.875,
+        "termMonths": 360,
+        "points": 2.75,
+        "cutPerPointPct": 0.3125,
+        "returnPct": 11.875
+      }
+    },
+    {
+      "claimId": "extreme/be_simple_2.75_0.375",
+      "dataset": "extreme",
+      "value": 35,
+      "display": "2.9",
+      "appearsIn": [
+        "frame-extreme.png"
+      ],
+      "formula": "years = ceil(cost / (M(base) − M(base − points×cut))) / 12; M = L·i/(1−(1+i)^−n), i = r/12, payments rounded to cents",
+      "inputs": {
+        "principal": 9999999,
+        "baseRatePct": 12.875,
+        "termMonths": 360,
+        "points": 2.75,
+        "cutPerPointPct": 0.375
+      }
+    },
+    {
+      "claimId": "extreme/be_opp_2.75_0.375",
+      "dataset": "extreme",
+      "value": 43,
+      "display": "3.6",
+      "appearsIn": [
+        "frame-extreme.png"
+      ],
+      "formula": "years = min m s.t. Σ_{t=1..m} saving/(1+j)^t ≥ cost, j = returnPct/12, / 12; \"never\" if not within term",
+      "inputs": {
+        "principal": 9999999,
+        "baseRatePct": 12.875,
+        "termMonths": 360,
+        "points": 2.75,
+        "cutPerPointPct": 0.375,
+        "returnPct": 11.875
+      }
+    },
+    {
+      "claimId": "extreme/be_simple_3_0.0625",
+      "dataset": "extreme",
+      "value": 206,
+      "display": "17.2",
+      "appearsIn": [
+        "frame-extreme.png"
+      ],
+      "formula": "years = ceil(cost / (M(base) − M(base − points×cut))) / 12; M = L·i/(1−(1+i)^−n), i = r/12, payments rounded to cents",
+      "inputs": {
+        "principal": 9999999,
+        "baseRatePct": 12.875,
+        "termMonths": 360,
+        "points": 3,
+        "cutPerPointPct": 0.0625
+      }
+    },
+    {
+      "claimId": "extreme/be_opp_3_0.0625",
+      "dataset": "extreme",
+      "value": null,
+      "display": "never",
+      "appearsIn": [
+        "frame-extreme.png"
+      ],
+      "formula": "years = min m s.t. Σ_{t=1..m} saving/(1+j)^t ≥ cost, j = returnPct/12, / 12; \"never\" if not within term",
+      "inputs": {
+        "principal": 9999999,
+        "baseRatePct": 12.875,
+        "termMonths": 360,
+        "points": 3,
+        "cutPerPointPct": 0.0625,
+        "returnPct": 11.875
+      }
+    },
+    {
+      "claimId": "extreme/be_simple_3_0.125",
+      "dataset": "extreme",
+      "value": 103,
+      "display": "8.6",
+      "appearsIn": [
+        "frame-extreme.png"
+      ],
+      "formula": "years = ceil(cost / (M(base) − M(base − points×cut))) / 12; M = L·i/(1−(1+i)^−n), i = r/12, payments rounded to cents",
+      "inputs": {
+        "principal": 9999999,
+        "baseRatePct": 12.875,
+        "termMonths": 360,
+        "points": 3,
+        "cutPerPointPct": 0.125
+      }
+    },
+    {
+      "claimId": "extreme/be_opp_3_0.125",
+      "dataset": "extreme",
+      "value": null,
+      "display": "never",
+      "appearsIn": [
+        "frame-extreme.png"
+      ],
+      "formula": "years = min m s.t. Σ_{t=1..m} saving/(1+j)^t ≥ cost, j = returnPct/12, / 12; \"never\" if not within term",
+      "inputs": {
+        "principal": 9999999,
+        "baseRatePct": 12.875,
+        "termMonths": 360,
+        "points": 3,
+        "cutPerPointPct": 0.125,
+        "returnPct": 11.875
+      }
+    },
+    {
+      "claimId": "extreme/be_simple_3_0.1875",
+      "dataset": "extreme",
+      "value": 69,
+      "display": "5.8",
+      "appearsIn": [
+        "frame-extreme.png"
+      ],
+      "formula": "years = ceil(cost / (M(base) − M(base − points×cut))) / 12; M = L·i/(1−(1+i)^−n), i = r/12, payments rounded to cents",
+      "inputs": {
+        "principal": 9999999,
+        "baseRatePct": 12.875,
+        "termMonths": 360,
+        "points": 3,
+        "cutPerPointPct": 0.1875
+      }
+    },
+    {
+      "claimId": "extreme/be_opp_3_0.1875",
+      "dataset": "extreme",
+      "value": 116,
+      "display": "9.7",
+      "appearsIn": [
+        "frame-extreme.png"
+      ],
+      "formula": "years = min m s.t. Σ_{t=1..m} saving/(1+j)^t ≥ cost, j = returnPct/12, / 12; \"never\" if not within term",
+      "inputs": {
+        "principal": 9999999,
+        "baseRatePct": 12.875,
+        "termMonths": 360,
+        "points": 3,
+        "cutPerPointPct": 0.1875,
+        "returnPct": 11.875
+      }
+    },
+    {
+      "claimId": "extreme/be_simple_3_0.25",
+      "dataset": "extreme",
+      "value": 52,
+      "display": "4.3",
+      "appearsIn": [
+        "frame-extreme.png"
+      ],
+      "formula": "years = ceil(cost / (M(base) − M(base − points×cut))) / 12; M = L·i/(1−(1+i)^−n), i = r/12, payments rounded to cents",
+      "inputs": {
+        "principal": 9999999,
+        "baseRatePct": 12.875,
+        "termMonths": 360,
+        "points": 3,
+        "cutPerPointPct": 0.25
+      }
+    },
+    {
+      "claimId": "extreme/be_opp_3_0.25",
+      "dataset": "extreme",
+      "value": 73,
+      "display": "6.1",
+      "appearsIn": [
+        "frame-extreme.png"
+      ],
+      "formula": "years = min m s.t. Σ_{t=1..m} saving/(1+j)^t ≥ cost, j = returnPct/12, / 12; \"never\" if not within term",
+      "inputs": {
+        "principal": 9999999,
+        "baseRatePct": 12.875,
+        "termMonths": 360,
+        "points": 3,
+        "cutPerPointPct": 0.25,
+        "returnPct": 11.875
+      }
+    },
+    {
+      "claimId": "extreme/be_simple_3_0.3125",
+      "dataset": "extreme",
+      "value": 42,
+      "display": "3.5",
+      "appearsIn": [
+        "frame-extreme.png"
+      ],
+      "formula": "years = ceil(cost / (M(base) − M(base − points×cut))) / 12; M = L·i/(1−(1+i)^−n), i = r/12, payments rounded to cents",
+      "inputs": {
+        "principal": 9999999,
+        "baseRatePct": 12.875,
+        "termMonths": 360,
+        "points": 3,
+        "cutPerPointPct": 0.3125
+      }
+    },
+    {
+      "claimId": "extreme/be_opp_3_0.3125",
+      "dataset": "extreme",
+      "value": 54,
+      "display": "4.5",
+      "appearsIn": [
+        "frame-extreme.png"
+      ],
+      "formula": "years = min m s.t. Σ_{t=1..m} saving/(1+j)^t ≥ cost, j = returnPct/12, / 12; \"never\" if not within term",
+      "inputs": {
+        "principal": 9999999,
+        "baseRatePct": 12.875,
+        "termMonths": 360,
+        "points": 3,
+        "cutPerPointPct": 0.3125,
+        "returnPct": 11.875
+      }
+    },
+    {
+      "claimId": "extreme/be_simple_3_0.375",
+      "dataset": "extreme",
+      "value": 35,
+      "display": "2.9",
+      "appearsIn": [
+        "frame-extreme.png"
+      ],
+      "formula": "years = ceil(cost / (M(base) − M(base − points×cut))) / 12; M = L·i/(1−(1+i)^−n), i = r/12, payments rounded to cents",
+      "inputs": {
+        "principal": 9999999,
+        "baseRatePct": 12.875,
+        "termMonths": 360,
+        "points": 3,
+        "cutPerPointPct": 0.375
+      }
+    },
+    {
+      "claimId": "extreme/be_opp_3_0.375",
+      "dataset": "extreme",
+      "value": 43,
+      "display": "3.6",
+      "appearsIn": [
+        "frame-extreme.png"
+      ],
+      "formula": "years = min m s.t. Σ_{t=1..m} saving/(1+j)^t ≥ cost, j = returnPct/12, / 12; \"never\" if not within term",
+      "inputs": {
+        "principal": 9999999,
+        "baseRatePct": 12.875,
+        "termMonths": 360,
+        "points": 3,
+        "cutPerPointPct": 0.375,
+        "returnPct": 11.875
+      }
+    },
+    {
+      "claimId": "extreme/hold_years",
+      "dataset": "extreme",
+      "value": 9,
+      "display": "9",
+      "appearsIn": [
+        "frame-extreme.png"
+      ],
+      "formula": "argmax over holdYears of count(cells where simple ≤ 12·H < opp); ties → shortest H",
+      "inputs": {
+        "holdYears": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ]
+      }
+    },
+    {
+      "claimId": "extreme/flip_count",
+      "dataset": "extreme",
+      "value": 24,
+      "display": "24",
+      "appearsIn": [
+        "frame-extreme.png"
+      ],
+      "formula": "count(cells where simpleMonths ≤ 12·hold < oppMonths)",
+      "inputs": {
+        "hold": 9
+      }
+    },
+    {
+      "claimId": "extreme/cell_count",
+      "dataset": "extreme",
+      "value": 72,
+      "display": "72",
+      "appearsIn": [
+        "frame-extreme.png"
+      ],
+      "formula": "count(cells with a lender quote)",
+      "inputs": {
+        "rows": 12,
+        "cols": 6,
+        "missing": 0
+      }
+    },
+    {
+      "claimId": "missing/base_rate",
+      "dataset": "missing",
+      "value": 7.03,
+      "display": "7.03%",
+      "appearsIn": [
+        "frame-missing.png"
+      ],
+      "source": "https://www.globenewswire.com/news-release/2026/09/24/3368592/0/en/mortgage-rates-average-7-03.html",
+      "sourceIndex": "https://www.freddiemac.com/pmms",
+      "sourceDate": "2026-09-24",
+      "note": "Release title \"Mortgage Rates Average 7.03%\" (Freddie Mac, 2026-09-24) retrieved via web search index on 2026-09-25; direct page fetch blocked by sandbox egress proxy.",
+      "inputs": {}
+    },
+    {
+      "claimId": "missing/rate_date",
+      "dataset": "missing",
+      "value": "2026-09-24",
+      "display": "Sep 24, 2026",
+      "appearsIn": [
+        "frame-missing.png"
+      ],
+      "source": "https://www.globenewswire.com/news-release/2026/09/24/3368592/0/en/mortgage-rates-average-7-03.html",
+      "note": "PMMS weekly release date.",
+      "inputs": {}
+    },
+    {
+      "claimId": "missing/return_pct",
+      "dataset": "missing",
+      "value": 5,
+      "display": "5.00%",
+      "appearsIn": [
+        "frame-missing.png"
+      ],
+      "formula": "input",
+      "note": "Assumed annual return on cash not spent on points, compounded monthly (j = k/12). Stated assumption, not a forecast.",
+      "inputs": {}
+    },
+    {
+      "claimId": "missing/pts_0.5",
+      "dataset": "missing",
+      "value": 0.5,
+      "display": "0.5",
+      "appearsIn": [
+        "frame-missing.png"
+      ],
+      "formula": "input (sweep value)",
+      "inputs": {}
+    },
+    {
+      "claimId": "missing/cost_0.5",
+      "dataset": "missing",
+      "value": 2000,
+      "display": "$2,000",
+      "appearsIn": [
+        "frame-missing.png"
+      ],
+      "formula": "cost = principal × points / 100",
+      "inputs": {
+        "principal": 400000,
+        "points": 0.5
+      }
+    },
+    {
+      "claimId": "missing/pts_1",
+      "dataset": "missing",
+      "value": 1,
+      "display": "1.0",
+      "appearsIn": [
+        "frame-missing.png"
+      ],
+      "formula": "input (sweep value)",
+      "inputs": {}
+    },
+    {
+      "claimId": "missing/cost_1",
+      "dataset": "missing",
+      "value": 4000,
+      "display": "$4,000",
+      "appearsIn": [
+        "frame-missing.png"
+      ],
+      "formula": "cost = principal × points / 100",
+      "inputs": {
+        "principal": 400000,
+        "points": 1
+      }
+    },
+    {
+      "claimId": "missing/pts_1.5",
+      "dataset": "missing",
+      "value": 1.5,
+      "display": "1.5",
+      "appearsIn": [
+        "frame-missing.png"
+      ],
+      "formula": "input (sweep value)",
+      "inputs": {}
+    },
+    {
+      "claimId": "missing/cost_1.5",
+      "dataset": "missing",
+      "value": 6000,
+      "display": "$6,000",
+      "appearsIn": [
+        "frame-missing.png"
+      ],
+      "formula": "cost = principal × points / 100",
+      "inputs": {
+        "principal": 400000,
+        "points": 1.5
+      }
+    },
+    {
+      "claimId": "missing/pts_2",
+      "dataset": "missing",
+      "value": 2,
+      "display": "2.0",
+      "appearsIn": [
+        "frame-missing.png"
+      ],
+      "formula": "input (sweep value)",
+      "inputs": {}
+    },
+    {
+      "claimId": "missing/cost_2",
+      "dataset": "missing",
+      "value": 8000,
+      "display": "$8,000",
+      "appearsIn": [
+        "frame-missing.png"
+      ],
+      "formula": "cost = principal × points / 100",
+      "inputs": {
+        "principal": 400000,
+        "points": 2
+      }
+    },
+    {
+      "claimId": "missing/pts_2.5",
+      "dataset": "missing",
+      "value": 2.5,
+      "display": "2.5",
+      "appearsIn": [
+        "frame-missing.png"
+      ],
+      "formula": "input (sweep value)",
+      "inputs": {}
+    },
+    {
+      "claimId": "missing/cost_2.5",
+      "dataset": "missing",
+      "value": 10000,
+      "display": "$10,000",
+      "appearsIn": [
+        "frame-missing.png"
+      ],
+      "formula": "cost = principal × points / 100",
+      "inputs": {
+        "principal": 400000,
+        "points": 2.5
+      }
+    },
+    {
+      "claimId": "missing/pts_3",
+      "dataset": "missing",
+      "value": 3,
+      "display": "3.0",
+      "appearsIn": [
+        "frame-missing.png"
+      ],
+      "formula": "input (sweep value)",
+      "inputs": {}
+    },
+    {
+      "claimId": "missing/cost_3",
+      "dataset": "missing",
+      "value": 12000,
+      "display": "$12,000",
+      "appearsIn": [
+        "frame-missing.png"
+      ],
+      "formula": "cost = principal × points / 100",
+      "inputs": {
+        "principal": 400000,
+        "points": 3
+      }
+    },
+    {
+      "claimId": "missing/cut_0.125",
+      "dataset": "missing",
+      "value": 0.125,
+      "display": "0.125%",
+      "appearsIn": [
+        "frame-missing.png"
+      ],
+      "formula": "input (sweep value)",
+      "inputs": {}
+    },
+    {
+      "claimId": "missing/cut_0.25",
+      "dataset": "missing",
+      "value": 0.25,
+      "display": "0.25%",
+      "appearsIn": [
+        "frame-missing.png"
+      ],
+      "formula": "input (sweep value)",
+      "inputs": {}
+    },
+    {
+      "claimId": "missing/cut_0.375",
+      "dataset": "missing",
+      "value": 0.375,
+      "display": "0.375%",
+      "appearsIn": [
+        "frame-missing.png"
+      ],
+      "formula": "input (sweep value)",
+      "inputs": {}
+    },
+    {
+      "claimId": "missing/be_simple_0.5_0.125",
+      "dataset": "missing",
+      "value": 120,
+      "display": "10.0",
+      "appearsIn": [
+        "frame-missing.png"
+      ],
+      "formula": "years = ceil(cost / (M(base) − M(base − points×cut))) / 12; M = L·i/(1−(1+i)^−n), i = r/12, payments rounded to cents",
+      "inputs": {
+        "principal": 400000,
+        "baseRatePct": 7.03,
+        "termMonths": 360,
+        "points": 0.5,
+        "cutPerPointPct": 0.125
+      }
+    },
+    {
+      "claimId": "missing/be_opp_0.5_0.125",
+      "dataset": "missing",
+      "value": 165,
+      "display": "13.8",
+      "appearsIn": [
+        "frame-missing.png"
+      ],
+      "formula": "years = min m s.t. Σ_{t=1..m} saving/(1+j)^t ≥ cost, j = returnPct/12, / 12; \"never\" if not within term",
+      "inputs": {
+        "principal": 400000,
+        "baseRatePct": 7.03,
+        "termMonths": 360,
+        "points": 0.5,
+        "cutPerPointPct": 0.125,
+        "returnPct": 5
+      }
+    },
+    {
+      "claimId": "missing/be_simple_0.5_0.25",
+      "dataset": "missing",
+      "value": 60,
+      "display": "5.0",
+      "appearsIn": [
+        "frame-missing.png"
+      ],
+      "formula": "years = ceil(cost / (M(base) − M(base − points×cut))) / 12; M = L·i/(1−(1+i)^−n), i = r/12, payments rounded to cents",
+      "inputs": {
+        "principal": 400000,
+        "baseRatePct": 7.03,
+        "termMonths": 360,
+        "points": 0.5,
+        "cutPerPointPct": 0.25
+      }
+    },
+    {
+      "claimId": "missing/be_opp_0.5_0.25",
+      "dataset": "missing",
+      "value": 69,
+      "display": "5.8",
+      "appearsIn": [
+        "frame-missing.png"
+      ],
+      "formula": "years = min m s.t. Σ_{t=1..m} saving/(1+j)^t ≥ cost, j = returnPct/12, / 12; \"never\" if not within term",
+      "inputs": {
+        "principal": 400000,
+        "baseRatePct": 7.03,
+        "termMonths": 360,
+        "points": 0.5,
+        "cutPerPointPct": 0.25,
+        "returnPct": 5
+      }
+    },
+    {
+      "claimId": "missing/be_simple_1_0.125",
+      "dataset": "missing",
+      "value": 120,
+      "display": "10.0",
+      "appearsIn": [
+        "frame-missing.png"
+      ],
+      "formula": "years = ceil(cost / (M(base) − M(base − points×cut))) / 12; M = L·i/(1−(1+i)^−n), i = r/12, payments rounded to cents",
+      "inputs": {
+        "principal": 400000,
+        "baseRatePct": 7.03,
+        "termMonths": 360,
+        "points": 1,
+        "cutPerPointPct": 0.125
+      }
+    },
+    {
+      "claimId": "missing/be_opp_1_0.125",
+      "dataset": "missing",
+      "value": 166,
+      "display": "13.8",
+      "appearsIn": [
+        "frame-missing.png"
+      ],
+      "formula": "years = min m s.t. Σ_{t=1..m} saving/(1+j)^t ≥ cost, j = returnPct/12, / 12; \"never\" if not within term",
+      "inputs": {
+        "principal": 400000,
+        "baseRatePct": 7.03,
+        "termMonths": 360,
+        "points": 1,
+        "cutPerPointPct": 0.125,
+        "returnPct": 5
+      }
+    },
+    {
+      "claimId": "missing/be_simple_1_0.25",
+      "dataset": "missing",
+      "value": 60,
+      "display": "5.0",
+      "appearsIn": [
+        "frame-missing.png"
+      ],
+      "formula": "years = ceil(cost / (M(base) − M(base − points×cut))) / 12; M = L·i/(1−(1+i)^−n), i = r/12, payments rounded to cents",
+      "inputs": {
+        "principal": 400000,
+        "baseRatePct": 7.03,
+        "termMonths": 360,
+        "points": 1,
+        "cutPerPointPct": 0.25
+      }
+    },
+    {
+      "claimId": "missing/be_opp_1_0.25",
+      "dataset": "missing",
+      "value": 69,
+      "display": "5.8",
+      "appearsIn": [
+        "frame-missing.png"
+      ],
+      "formula": "years = min m s.t. Σ_{t=1..m} saving/(1+j)^t ≥ cost, j = returnPct/12, / 12; \"never\" if not within term",
+      "inputs": {
+        "principal": 400000,
+        "baseRatePct": 7.03,
+        "termMonths": 360,
+        "points": 1,
+        "cutPerPointPct": 0.25,
+        "returnPct": 5
+      }
+    },
+    {
+      "claimId": "missing/be_simple_1_0.375",
+      "dataset": "missing",
+      "value": 40,
+      "display": "3.3",
+      "appearsIn": [
+        "frame-missing.png"
+      ],
+      "formula": "years = ceil(cost / (M(base) − M(base − points×cut))) / 12; M = L·i/(1−(1+i)^−n), i = r/12, payments rounded to cents",
+      "inputs": {
+        "principal": 400000,
+        "baseRatePct": 7.03,
+        "termMonths": 360,
+        "points": 1,
+        "cutPerPointPct": 0.375
+      }
+    },
+    {
+      "claimId": "missing/be_opp_1_0.375",
+      "dataset": "missing",
+      "value": 44,
+      "display": "3.7",
+      "appearsIn": [
+        "frame-missing.png"
+      ],
+      "formula": "years = min m s.t. Σ_{t=1..m} saving/(1+j)^t ≥ cost, j = returnPct/12, / 12; \"never\" if not within term",
+      "inputs": {
+        "principal": 400000,
+        "baseRatePct": 7.03,
+        "termMonths": 360,
+        "points": 1,
+        "cutPerPointPct": 0.375,
+        "returnPct": 5
+      }
+    },
+    {
+      "claimId": "missing/be_simple_1.5_0.25",
+      "dataset": "missing",
+      "value": 60,
+      "display": "5.0",
+      "appearsIn": [
+        "frame-missing.png"
+      ],
+      "formula": "years = ceil(cost / (M(base) − M(base − points×cut))) / 12; M = L·i/(1−(1+i)^−n), i = r/12, payments rounded to cents",
+      "inputs": {
+        "principal": 400000,
+        "baseRatePct": 7.03,
+        "termMonths": 360,
+        "points": 1.5,
+        "cutPerPointPct": 0.25
+      }
+    },
+    {
+      "claimId": "missing/be_opp_1.5_0.25",
+      "dataset": "missing",
+      "value": 70,
+      "display": "5.8",
+      "appearsIn": [
+        "frame-missing.png"
+      ],
+      "formula": "years = min m s.t. Σ_{t=1..m} saving/(1+j)^t ≥ cost, j = returnPct/12, / 12; \"never\" if not within term",
+      "inputs": {
+        "principal": 400000,
+        "baseRatePct": 7.03,
+        "termMonths": 360,
+        "points": 1.5,
+        "cutPerPointPct": 0.25,
+        "returnPct": 5
+      }
+    },
+    {
+      "claimId": "missing/be_simple_1.5_0.375",
+      "dataset": "missing",
+      "value": 41,
+      "display": "3.4",
+      "appearsIn": [
+        "frame-missing.png"
+      ],
+      "formula": "years = ceil(cost / (M(base) − M(base − points×cut))) / 12; M = L·i/(1−(1+i)^−n), i = r/12, payments rounded to cents",
+      "inputs": {
+        "principal": 400000,
+        "baseRatePct": 7.03,
+        "termMonths": 360,
+        "points": 1.5,
+        "cutPerPointPct": 0.375
+      }
+    },
+    {
+      "claimId": "missing/be_opp_1.5_0.375",
+      "dataset": "missing",
+      "value": 44,
+      "display": "3.7",
+      "appearsIn": [
+        "frame-missing.png"
+      ],
+      "formula": "years = min m s.t. Σ_{t=1..m} saving/(1+j)^t ≥ cost, j = returnPct/12, / 12; \"never\" if not within term",
+      "inputs": {
+        "principal": 400000,
+        "baseRatePct": 7.03,
+        "termMonths": 360,
+        "points": 1.5,
+        "cutPerPointPct": 0.375,
+        "returnPct": 5
+      }
+    },
+    {
+      "claimId": "missing/be_simple_2_0.125",
+      "dataset": "missing",
+      "value": 120,
+      "display": "10.0",
+      "appearsIn": [
+        "frame-missing.png"
+      ],
+      "formula": "years = ceil(cost / (M(base) − M(base − points×cut))) / 12; M = L·i/(1−(1+i)^−n), i = r/12, payments rounded to cents",
+      "inputs": {
+        "principal": 400000,
+        "baseRatePct": 7.03,
+        "termMonths": 360,
+        "points": 2,
+        "cutPerPointPct": 0.125
+      }
+    },
+    {
+      "claimId": "missing/be_opp_2_0.125",
+      "dataset": "missing",
+      "value": 166,
+      "display": "13.8",
+      "appearsIn": [
+        "frame-missing.png"
+      ],
+      "formula": "years = min m s.t. Σ_{t=1..m} saving/(1+j)^t ≥ cost, j = returnPct/12, / 12; \"never\" if not within term",
+      "inputs": {
+        "principal": 400000,
+        "baseRatePct": 7.03,
+        "termMonths": 360,
+        "points": 2,
+        "cutPerPointPct": 0.125,
+        "returnPct": 5
+      }
+    },
+    {
+      "claimId": "missing/be_simple_2_0.375",
+      "dataset": "missing",
+      "value": 41,
+      "display": "3.4",
+      "appearsIn": [
+        "frame-missing.png"
+      ],
+      "formula": "years = ceil(cost / (M(base) − M(base − points×cut))) / 12; M = L·i/(1−(1+i)^−n), i = r/12, payments rounded to cents",
+      "inputs": {
+        "principal": 400000,
+        "baseRatePct": 7.03,
+        "termMonths": 360,
+        "points": 2,
+        "cutPerPointPct": 0.375
+      }
+    },
+    {
+      "claimId": "missing/be_opp_2_0.375",
+      "dataset": "missing",
+      "value": 45,
+      "display": "3.8",
+      "appearsIn": [
+        "frame-missing.png"
+      ],
+      "formula": "years = min m s.t. Σ_{t=1..m} saving/(1+j)^t ≥ cost, j = returnPct/12, / 12; \"never\" if not within term",
+      "inputs": {
+        "principal": 400000,
+        "baseRatePct": 7.03,
+        "termMonths": 360,
+        "points": 2,
+        "cutPerPointPct": 0.375,
+        "returnPct": 5
+      }
+    },
+    {
+      "claimId": "missing/be_simple_2.5_0.125",
+      "dataset": "missing",
+      "value": 120,
+      "display": "10.0",
+      "appearsIn": [
+        "frame-missing.png"
+      ],
+      "formula": "years = ceil(cost / (M(base) − M(base − points×cut))) / 12; M = L·i/(1−(1+i)^−n), i = r/12, payments rounded to cents",
+      "inputs": {
+        "principal": 400000,
+        "baseRatePct": 7.03,
+        "termMonths": 360,
+        "points": 2.5,
+        "cutPerPointPct": 0.125
+      }
+    },
+    {
+      "claimId": "missing/be_opp_2.5_0.125",
+      "dataset": "missing",
+      "value": 167,
+      "display": "13.9",
+      "appearsIn": [
+        "frame-missing.png"
+      ],
+      "formula": "years = min m s.t. Σ_{t=1..m} saving/(1+j)^t ≥ cost, j = returnPct/12, / 12; \"never\" if not within term",
+      "inputs": {
+        "principal": 400000,
+        "baseRatePct": 7.03,
+        "termMonths": 360,
+        "points": 2.5,
+        "cutPerPointPct": 0.125,
+        "returnPct": 5
+      }
+    },
+    {
+      "claimId": "missing/be_simple_2.5_0.25",
+      "dataset": "missing",
+      "value": 61,
+      "display": "5.1",
+      "appearsIn": [
+        "frame-missing.png"
+      ],
+      "formula": "years = ceil(cost / (M(base) − M(base − points×cut))) / 12; M = L·i/(1−(1+i)^−n), i = r/12, payments rounded to cents",
+      "inputs": {
+        "principal": 400000,
+        "baseRatePct": 7.03,
+        "termMonths": 360,
+        "points": 2.5,
+        "cutPerPointPct": 0.25
+      }
+    },
+    {
+      "claimId": "missing/be_opp_2.5_0.25",
+      "dataset": "missing",
+      "value": 70,
+      "display": "5.8",
+      "appearsIn": [
+        "frame-missing.png"
+      ],
+      "formula": "years = min m s.t. Σ_{t=1..m} saving/(1+j)^t ≥ cost, j = returnPct/12, / 12; \"never\" if not within term",
+      "inputs": {
+        "principal": 400000,
+        "baseRatePct": 7.03,
+        "termMonths": 360,
+        "points": 2.5,
+        "cutPerPointPct": 0.25,
+        "returnPct": 5
+      }
+    },
+    {
+      "claimId": "missing/be_simple_3_0.375",
+      "dataset": "missing",
+      "value": 41,
+      "display": "3.4",
+      "appearsIn": [
+        "frame-missing.png"
+      ],
+      "formula": "years = ceil(cost / (M(base) − M(base − points×cut))) / 12; M = L·i/(1−(1+i)^−n), i = r/12, payments rounded to cents",
+      "inputs": {
+        "principal": 400000,
+        "baseRatePct": 7.03,
+        "termMonths": 360,
+        "points": 3,
+        "cutPerPointPct": 0.375
+      }
+    },
+    {
+      "claimId": "missing/be_opp_3_0.375",
+      "dataset": "missing",
+      "value": 45,
+      "display": "3.8",
+      "appearsIn": [
+        "frame-missing.png"
+      ],
+      "formula": "years = min m s.t. Σ_{t=1..m} saving/(1+j)^t ≥ cost, j = returnPct/12, / 12; \"never\" if not within term",
+      "inputs": {
+        "principal": 400000,
+        "baseRatePct": 7.03,
+        "termMonths": 360,
+        "points": 3,
+        "cutPerPointPct": 0.375,
+        "returnPct": 5
+      }
+    },
+    {
+      "claimId": "missing/hold_years",
+      "dataset": "missing",
+      "value": 10,
+      "display": "10",
+      "appearsIn": [
+        "frame-missing.png"
+      ],
+      "formula": "argmax over holdYears of count(cells where simple ≤ 12·H < opp); ties → shortest H",
+      "inputs": {
+        "holdYears": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ]
+      }
+    },
+    {
+      "claimId": "missing/flip_count",
+      "dataset": "missing",
+      "value": 4,
+      "display": "4",
+      "appearsIn": [
+        "frame-missing.png"
+      ],
+      "formula": "count(cells where simpleMonths ≤ 12·hold < oppMonths)",
+      "inputs": {
+        "hold": 10
+      }
+    },
+    {
+      "claimId": "missing/cell_count",
+      "dataset": "missing",
+      "value": 12,
+      "display": "12",
+      "appearsIn": [
+        "frame-missing.png"
+      ],
+      "formula": "count(cells with a lender quote)",
+      "inputs": {
+        "rows": 6,
+        "cols": 3,
+        "missing": 6
+      }
+    }
+  ]
+}
