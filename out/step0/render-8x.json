@@ -1,0 +1,14 @@
+{
+ "subframes": 8,
+ "videoSeconds": 10,
+ "wallSeconds": 332.7,
+ "secondsPerVideoSecond": 33.27,
+ "framesSupersampled": 202,
+ "framesStatic": 98,
+ "secPerFrameMoving": 1.456,
+ "secPerFrameStatic": 0.381,
+ "worstCaseSecondsPerVideoSecond": 43.69,
+ "pageRenderSeconds": 246.3,
+ "workers": 1,
+ "browser": "chromium --disable-gpu (software raster)"
+}

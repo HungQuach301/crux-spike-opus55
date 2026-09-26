@@ -1,496 +1,458 @@
-# Script — test C: car loan 5.2%, pay off early or invest
+# Same average, different fate — script (M1)
 
-US only. The narration is the source of the subtitles; numbers are written as on screen and spoken through `src/av/normalize.js`.
-Timing comes from the voice (TTS clip lengths and faster-whisper word onsets). The voice is provisional.
+Running time 10:50.0 (650.0 s) from the table-read takes with the planned stretch. 117 lines, 1446 spoken words.
+Text = subtitles/screen (numbers as digits); every number is a claim in out/claims.json. Directions go to TTS with each line. "We" is the analyst only.
 
-## 01 hook1 — 0:00.0–0:05.4 (5.4 s) · hook · medium · hero-number/with-unit
 
-> A car loan with $25,000 left, at 5.2%.
+## Cold open — 0:00.0–0:14.6
 
-Spoken (13 words in 4.77 s = 163 wpm): A car loan with twenty-five thousand dollars left, at five point two percent.
+- **Question:** What decided which retiree went broke?
 
-Numbers: `balance` $25,000 ("twenty-five thousand dollars") said at 1.51 s, on screen +23 ms; `apr` 5.2% ("five point two percent") said at 3.71 s, on screen +23 ms
+**co-lines** · 0:00.0 · 2.1 s · duel/emerge · extreme-wide
+  - *(picture only)*
 
-Sound: appear×1, reveal×1
+**co-same** · 0:02.1 · 5.7 s · duel/overlay · wide
+  - `0:02.1` Two retirees with the same balance, the same withdrawals and the same average return.
+    - *Quiet, close to the mic, one flowing line at an even pace; no pauses between the phrases.*
 
-## 02 hook2 — 0:05.4–0:10.2 (4.8 s) · hook · close · two-roads/fork
+**co-broke** · 0:07.9 · 5.0 s · duel/split · medium
+  - `0:07.8` One ran out of money in 1991. **[decisive: ≥ 1 s silence after]**
+    - *Flat, factual. Stress "ran out". Full stop, then silence.*
 
-> Pay it off early, or invest the extra cash?
+**co-question** · 0:12.9 · 1.7 s · duel/split · close-up
+  - `0:12.6` So what decided it?
+    - *A real question, curious, not dramatic. Rising end.*
 
-Spoken (9 words in 3.38 s = 160 wpm): Pay it off early, or invest the extra cash?
+## Ident — 0:14.6–0:17.1
 
-Sound: transition×1, appear×2
 
-## 03 hook3 — 0:10.2–0:15.6 (5.4 s) · hook · wide · grid/lots
+**ident** · 0:14.6 · 2.6 s · title/ident · insert
+  - *(picture only)*
 
-> We ran both roads through all 48 months, taxing every lot.
+## Two retirees, one set of rules — 0:17.1–3:11.3 (climax 2:30.5)
 
-Spoken (11 words in 4.22 s = 156 wpm): We ran both roads through all forty-eight months, taxing every lot.
+- **Question:** If two people earn the same average return, do they end up in the same place?
+- **Turn:** The mirror retiree takes out the same dollars and earns the same average; only the order differs.
+- **Payoff:** Everything is equal except the order of the years.
 
-Numbers: `months` 48 ("forty-eight") said at 12.33 s, on screen +3 ms
-
-Sound: transition×1, appear×1, count×4, compare×1
-
-## 04 hook4 — 0:15.6–0:24.0 (8.4 s) · hook · detail · flip-point/axis
-
-> The answer flips at an average annual return of 6.11%, compounded, in the 22% tax bracket.
-
-Spoken (21 words in 7.71 s = 164 wpm): The answer flips at an average annual return of six point one one percent, compounded, in the twenty-two percent tax bracket.
-
-Numbers: `be_22` 6.11% ("six point one one percent") said at 18.71 s, on screen +23 ms; `ord_22` 22% ("twenty-two percent") said at 21.99 s, on screen +10 ms
-
-Sound: transition×1, reveal×1, appear×1
-
-## 05 hook5 — 0:24.0–0:29.4 (5.4 s) · hook · medium · flip-point/axis
-
-> Below it, paying off ends ahead. Above it, investing does.
-
-Spoken (10 words in 4.40 s = 136 wpm): Below it, paying off ends ahead. Above it, investing does.
-
-Sound: transition×1, appear×2
-
-## 06 ident — 0:29.4–0:32.4 (3.0 s) · ident · wide · ident/wordmark
-
-_(no narration)_
-
-Sound: dismiss×1, transition×1, reveal×1
-
-## 07 scope1 — 0:32.4–0:39.6 (7.2 s) · setup · wide · canvas/statement
-
-> Here is the setup: the rules are US tax rules, and every input is stated, not forecast.
-
-Spoken (17 words in 6.27 s = 163 wpm): Here is the setup: the rules are U.S. tax rules, and every input is stated, not forecast.
-
-Sound: transition×1, appear×3
-
-## 08 scope2 — 0:39.6–0:48.6 (9.0 s) · setup · medium · canvas/statement
-
-> Loan interest is treated as not deductible, so the model ignores the new-car loan interest deduction for 2025 to 2028.
-
-Spoken (22 words in 8.14 s = 162 wpm): Loan interest is treated as not deductible, so the model ignores the new-car loan interest deduction for twenty twenty-five to twenty twenty-eight.
-
-Numbers: `ded_y0` 2025 ("twenty twenty-five") said at 45.83 s, on screen +37 ms; `ded_y1` 2028 ("twenty twenty-eight") said at 47.21 s, on screen +23 ms
-
-Sound: transition×1, appear×2, count×1
-
-## 09 facts — 0:48.6–0:57.6 (9.0 s) · setup · medium · hero-number/with-unit
-
-> The loan has $25,000 left at 5.2%, with 48 monthly payments of $578.
-
-Spoken (21 words in 7.71 s = 163 wpm): The loan has twenty-five thousand dollars left at five point two percent, with forty-eight monthly payments of five hundred seventy-eight dollars.
-
-Numbers: `balance` $25,000 ("twenty-five thousand dollars") said at 49.75 s, on screen +17 ms; `apr` 5.2% ("five point two percent") said at 51.93 s, on screen +3 ms; `months` 48 ("forty-eight") said at 53.81 s, on screen +23 ms; `payment` $578 ("five hundred seventy-eight dollars") said at 55.13 s, on screen +3 ms
-
-Sound: transition×1, reveal×1, appear×1, count×2
-
-## 10 extra — 0:57.6–1:04.2 (6.6 s) · setup · close · hero-number/with-badge
-
-> On top of that, $400 a month is available. That amount is illustrative.
-
-Spoken (15 words in 5.67 s = 159 wpm): On top of that, four hundred dollars a month is available. That amount is illustrative.
-
-Numbers: `extra` $400 ("four hundred dollars") said at 59.29 s, on screen +10 ms
-
-Sound: transition×1, reveal×1, emphasis×1
-
-## 11 roads — 1:04.2–1:12.0 (7.8 s) · setup · medium · two-roads/fork
-
-> Road A sends it to the loan. Road B pays the minimum and invests it every month.
-
-Spoken (17 words in 6.66 s = 153 wpm): Road A sends it to the loan. Road B pays the minimum and invests it every month.
-
-Sound: transition×1, appear×2
-
-## 12 cash — 1:12.0–1:18.0 (6.0 s) · setup · medium · stacked-cost/absolute
-
-> Both roads spend the same cash each month. Only the order changes.
-
-Spoken (12 words in 4.81 s = 150 wpm): Both roads spend the same cash each month. Only the order changes.
-
-Sound: dismiss×1, transition×1, appear×1, compare×1, emphasis×1
-
-## 13 card1 — 1:18.0–1:21.0 (3.0 s) · ch1 · wide · chapter-card
-
-> First, the certain part.
-
-Spoken (4 words in 2.07 s = 116 wpm): First, the certain part.
-
-Sound: transition×1, appear×1
-
-## 14 timeline — 1:21.0–1:28.2 (7.2 s) · ch1 · medium · timeline/months
-
-> Road A pays off the loan at month 28. Road B keeps paying through month 48.
-
-Spoken (16 words in 6.43 s = 149 wpm): Road A pays off the loan at month twenty-eight. Road B keeps paying through month forty-eight.
-
-Numbers: `payoff_a` 28 ("twenty-eight") said at 83.77 s, on screen +30 ms; `horizon` 48 ("forty-eight") said at 86.87 s, on screen +30 ms
-
-Sound: transition×1, appear×2, threshold-cross×1
-
-## 15 free — 1:28.2–1:33.6 (5.4 s) · ch1 · medium · timeline/months
-
-> That leaves 20 months with no car payment on road A.
-
-Spoken (11 words in 4.51 s = 146 wpm): That leaves twenty months with no car payment on road A.
-
-Numbers: `months_free` 20 ("twenty") said at 89.17 s, on screen +30 ms
-
-Sound: transition×1, emphasis×1
-
-## 16 morphInt — 1:33.6–1:34.8 (1.2 s) · ch1 · medium · morph/months-to-dollars
-
-_(no narration)_
-
-Sound: transition×1
-
-## 17 interest — 1:34.8–1:42.0 (7.2 s) · ch1 · medium · stacked-cost/absolute
-
-> Interest paid falls from $2,744 to $1,554.
-
-Spoken (17 words in 6.41 s = 159 wpm): Interest paid falls from two thousand seven hundred forty-four dollars to one thousand five hundred fifty-four dollars.
-
-Numbers: `int_b` $2,744 ("two thousand seven hundred forty-four dollars") said at 96.71 s, on screen +23 ms; `int_a` $1,554 ("one thousand five hundred fifty-four dollars") said at 99.35 s, on screen +17 ms
-
-Sound: transition×1, count×2
-
-## 18 avoided — 1:42.0–1:51.6 (9.6 s) · ch1 · medium · hero-number/plain
-
-> Road A avoids $1,190 of interest. That does not depend on markets or taxes.
-
-Spoken (19 words in 7.28 s = 157 wpm): Road A avoids one thousand one hundred ninety dollars of interest. That does not depend on markets or taxes.
-
-Numbers: `avoided` $1,190 ("one thousand one hundred ninety dollars") said at 103.83 s, on screen +3 ms
-
-Sound: transition×1, reveal×1
-
-## 19 certain — 1:51.6–1:54.0 (2.4 s) · ch1 · detail · hero-word/underline
-
-> It is certain.
-
-Spoken (3 words in 1.51 s = 119 wpm): It is certain.
-
-Sound: emphasis×1
-
-## 20 identity — 1:54.0–2:04.2 (10.2 s) · ch1 · close · bar-compare/equal
-
-> Because both roads spend the same cash, road A ends up investing exactly $1,190 more than road B.
-
-Spoken (23 words in 9.22 s = 150 wpm): Because both roads spend the same cash, road A ends up investing exactly one thousand one hundred ninety dollars more than road B.
-
-Numbers: `avoided` $1,190 ("one thousand one hundred ninety dollars") said at 119.81 s, on screen +23 ms
-
-Sound: transition×1, appear×2, compare×1
-
-## 21 bridge — 2:04.2–2:13.8 (9.6 s) · ch1 · medium · bar-compare/two
-
-> So the question is narrow: can road B's head start in the market beat a certain $1,190, after tax?
-
-Spoken (24 words in 8.60 s = 167 wpm): So the question is narrow: can road B's head start in the market beat a certain one thousand one hundred ninety dollars, after tax?
-
-Numbers: `avoided` $1,190 ("one thousand one hundred ninety dollars") said at 129.79 s, on screen +10 ms
-
-Sound: transition×1, appear×2, reveal×1
-
-## 22 card2 — 2:13.8–2:17.4 (3.6 s) · ch2 · medium · chapter-card
-
-> Second, tax, lot by lot.
-
-Spoken (5 words in 2.76 s = 109 wpm): Second, tax, lot by lot.
-
-Sound: transition×1, appear×1
-
-## 23 lots1 — 2:17.4–2:24.0 (6.6 s) · ch2 · wide · grid/lots
-
-> Each month's contribution is its own tax lot. At month 48, everything is sold.
-
-Spoken (14 words in 5.62 s = 150 wpm): Each month's contribution is its own tax lot. At month forty-eight, everything is sold.
-
-Numbers: `horizon` 48 ("forty-eight") said at 141.35 s, on screen +17 ms
-
-Sound: transition×1, count×5, appear×1
-
-## 24 lots2 — 2:24.0–2:31.2 (7.2 s) · ch2 · close · grid/term-split
-
-> A lot held more than 12 months at that sale is long-term. The rest are short-term.
-
-Spoken (16 words in 6.33 s = 152 wpm): A lot held more than twelve months at that sale is long-term. The rest are short-term.
-
-Numbers: `hold_months` 12 ("twelve") said at 145.77 s, on screen +30 ms
-
-Sound: transition×1, threshold-cross×1, appear×2
-
-## 25 rates — 2:31.2–2:40.2 (9.0 s) · ch2 · close · rate-table/rows
-
-> In the 22% bracket, long-term gains are taxed at 15%, and short-term gains at the full 22%.
-
-Spoken (20 words in 7.72 s = 155 wpm): In the twenty-two percent bracket, long-term gains are taxed at fifteen percent, and short-term gains at the full twenty-two percent.
-
-Numbers: `ord_22` 22% ("twenty-two percent") said at 151.93 s, on screen +3 ms; `lt_15` 15% ("fifteen percent") said at 155.39 s, on screen +10 ms; `ord_22` 22% ("twenty-two percent") said at 151.93 s, on screen +3 ms
-
-Sound: transition×1, appear×1, reveal×2
-
-## 26 lots3 — 2:40.2–2:50.4 (10.2 s) · ch2 · medium · grid/two-rows
-
-> Road B invests from the start, so 35 of its 48 lots are long-term. Road A starts after the payoff: 8 of its 21.
-
-Spoken (24 words in 9.12 s = 158 wpm): Road B invests from the start, so thirty-five of its forty-eight lots are long-term. Road A starts after the payoff: eight of its twenty-one.
-
-Numbers: `lots_lt_b` 35 ("thirty-five") said at 162.89 s, on screen +10 ms; `months` 48 ("forty-eight") said at 163.89 s, on screen +10 ms; `lots_lt_a` 8 ("eight") said at 168.25 s, on screen +17 ms; `lots_a` 21 ("twenty-one") said at 168.91 s, on screen +23 ms
-
-Sound: transition×1, appear×3, count×2
-
-## 27 share — 2:50.4–2:57.6 (7.2 s) · ch2 · close · bar-compare/share
-
-> Near the break-even, 37% of road A's gains are short-term, against 7% of road B's.
-
-Spoken (17 words in 6.43 s = 159 wpm): Near the break-even, thirty-seven percent of road A's gains are short-term, against seven percent of road B's.
-
-Numbers: `share_st_a` 37% ("thirty-seven percent") said at 172.23 s, on screen +3 ms; `share_st_b` 7% ("seven percent") said at 175.47 s, on screen +30 ms
-
-Sound: transition×1, appear×2, reveal×1
-
-## 28 nodeduct — 2:57.6–3:04.2 (6.6 s) · ch2 · wide · canvas/statement
-
-> A lot that loses money gets no deduction. State income tax is left out.
-
-Spoken (14 words in 5.37 s = 157 wpm): A lot that loses money gets no deduction. State income tax is left out.
-
-Sound: transition×1, appear×2
-
-## 29 card3 — 3:04.2–3:07.2 (3.0 s) · ch3 · medium · chapter-card
-
-> Third, where the answer flips.
-
-Spoken (5 words in 1.91 s = 157 wpm): Third, where the answer flips.
-
-Sound: transition×1, appear×1
-
-## 30 sw1 — 3:07.2–3:15.0 (7.8 s) · ch3 · medium · chart/axes-intro
-
-> We sweep the average annual return from 2% to 10%, compounded, in the 22% bracket.
-
-Spoken (18 words in 6.69 s = 161 wpm): We sweep the average annual return from two percent to ten percent, compounded, in the twenty-two percent bracket.
-
-Numbers: `axis_lo` 2% ("two percent") said at 189.79 s, on screen +10 ms; `axis_hi` 10% ("ten percent") said at 190.71 s, on screen +23 ms; `ord_22` 22% ("twenty-two percent") said at 193.01 s, on screen +23 ms
-
-Sound: transition×1, appear×3
-
-## 31 sw2 — 3:15.0–3:23.4 (8.4 s) · ch3 · medium · line-trend/single
-
-> The line is road B minus road A, net worth after tax at month 48, and it rises with the return.
-
-Spoken (21 words in 7.70 s = 164 wpm): The line is road B minus road A, net worth after tax at month forty-eight, and it rises with the return.
-
-Numbers: `horizon` 48 ("forty-eight") said at 200.37 s, on screen +30 ms
-
-Sound: appear×1, count×1
-
-## 32 sw3 — 3:23.4–3:33.6 (10.2 s) · ch3 · wide · callout/pair
-
-> At 2%, road A is ahead by $822. At 10%, road B is ahead by $861.
-
-Spoken (24 words in 9.14 s = 157 wpm): At two percent, road A is ahead by eight hundred twenty-two dollars. At ten percent, road B is ahead by eight hundred sixty-one dollars.
-
-Numbers: `axis_lo` 2% ("two percent") said at 203.85 s, on screen +17 ms; `gap_lo_abs` $822 ("eight hundred twenty-two dollars") said at 206.47 s, on screen +30 ms; `axis_hi` 10% ("ten percent") said at 208.51 s, on screen +23 ms; `gap_hi` $861 ("eight hundred sixty-one dollars") said at 211.05 s, on screen +17 ms
-
-Sound: transition×1, appear×2
-
-## 33 sw4 — 3:33.6–3:40.2 (6.6 s) · ch3 · detail · hero-number/on-chart
-
-> Both roads end even at 6.11%.
-
-Spoken (10 words in 3.70 s = 162 wpm): Both roads end even at six point one one percent.
-
-Numbers: `be_22` 6.11% ("six point one one percent") said at 216.05 s, on screen +17 ms
-
-Sound: transition×1, reveal×1
-
-## 34 sw5 — 3:40.2–3:47.4 (7.2 s) · ch3 · close · regions/two-zones
-
-> Below that return, paying off early ends ahead. Above it, investing does.
-
-Spoken (12 words in 6.37 s = 113 wpm): Below that return, paying off early ends ahead. Above it, investing does.
-
-Sound: transition×1, appear×2
-
-## 35 card4 — 3:47.4–3:49.8 (2.4 s) · ch4 · medium · chapter-card
-
-> Fourth, the tax bracket.
-
-Spoken (4 words in 1.70 s = 141 wpm): Fourth, the tax bracket.
-
-Sound: transition×1, appear×1
-
-## 36 niit — 3:49.8–4:01.8 (12.0 s) · ch4 · close · rate-table/rows
-
-> In the 32% bracket we add the 3.8% net investment income tax: short-term gains pay 35.8%, long-term gains 18.8%.
-
-Spoken (29 words in 11.14 s = 156 wpm): In the thirty-two percent bracket we add the three point eight percent net investment income tax: short-term gains pay thirty-five point eight percent, long-term gains eighteen point eight percent.
-
-Numbers: `ord_32` 32% ("thirty-two percent") said at 230.47 s, on screen +25 ms; `niit` 3.8% ("three point eight percent") said at 232.85 s, on screen +12 ms; `ord_32e` 35.8% ("thirty-five point eight percent") said at 237.00 s, on screen +5 ms; `lt_32e` 18.8% ("eighteen point eight percent") said at 239.79 s, on screen +5 ms
-
-Sound: transition×1, appear×2, reveal×2
-
-## 37 morphDot — 4:01.8–4:03.0 (1.2 s) · ch4 · wide · morph/point-to-row
-
-_(no narration)_
-
-Sound: transition×1
-
-## 38 dots — 4:03.0–4:13.2 (10.2 s) · ch4 · medium · dot-plot/rows
-
-> The break-even is 5.23% in the 12% bracket, and 6.11% in the 22% bracket.
-
-Spoken (24 words in 9.26 s = 156 wpm): The break-even is five point two three percent in the twelve percent bracket, and six point one one percent in the twenty-two percent bracket.
-
-Numbers: `be_12` 5.23% ("five point two three percent") said at 244.73 s, on screen +3 ms; `ord_12` 12% ("twelve percent") said at 247.01 s, on screen +23 ms; `be_22` 6.11% ("six point one one percent") said at 248.87 s, on screen +30 ms; `ord_22` 22% ("twenty-two percent") said at 251.15 s, on screen +17 ms
-
-Sound: transition×1, appear×2
-
-## 39 dots32 — 4:13.2–4:18.6 (5.4 s) · ch4 · medium · dot-plot/rows
-
-> In the 32% bracket, it is 6.26%.
-
-Spoken (12 words in 4.65 s = 155 wpm): In the thirty-two percent bracket, it is six point two six percent.
-
-Numbers: `ord_32` 32% ("thirty-two percent") said at 253.88 s, on screen +25 ms; `be_32` 6.26% ("six point two six percent") said at 256.01 s, on screen +18 ms
-
-Sound: appear×1, reveal×1
-
-## 40 rises — 4:18.6–4:25.8 (7.2 s) · ch4 · close · annotation/arrow
-
-> Higher rates on gains shrink road B's head start, so the threshold rises with the bracket.
-
-Spoken (16 words in 6.19 s = 155 wpm): Higher rates on gains shrink road B's head start, so the threshold rises with the bracket.
-
-Sound: emphasis×1
-
-## 41 below — 4:25.8–4:37.2 (11.4 s) · ch4 · close · dot-plot/reference
-
-> In the 12% bracket it sits below 5.33%, the loan rate as an annual yield, because road A's gains are mostly short-term.
-
-Spoken (27 words in 10.37 s = 156 wpm): In the twelve percent bracket it sits below five point three three percent, the loan rate as an annual yield, because road A's gains are mostly short-term.
-
-Numbers: `ord_12` 12% ("twelve percent") said at 266.29 s, on screen +10 ms; `be_0` 5.33% ("five point three three percent") said at 268.67 s, on screen +30 ms
-
-Sound: appear×1, emphasis×1
-
-## 42 card5 — 4:37.2–4:39.6 (2.4 s) · ch5 · medium · chapter-card
-
-> Fifth, risk.
-
-Spoken (2 words in 1.17 s = 103 wpm): Fifth, risk.
-
-Sound: transition×1, appear×1
-
-## 43 risk1 — 4:39.6–4:45.6 (6.0 s) · ch5 · close · two-column-compare
-
-> Paying off the loan earns a certain 5.2%.
-
-Spoken (11 words in 4.79 s = 138 wpm): Paying off the loan earns a certain five point two percent.
-
-Numbers: `apr` 5.2% ("five point two percent") said at 282.65 s, on screen +17 ms
-
-Sound: transition×1, appear×1, reveal×1
-
-## 44 risk2 — 4:45.6–4:52.8 (7.2 s) · ch5 · close · two-column-compare
-
-> Investing earns an average, not a promise. Our range, 2% to 10%, is illustrative.
-
-Spoken (16 words in 6.48 s = 148 wpm): Investing earns an average, not a promise. Our range, two percent to ten percent, is illustrative.
-
-Numbers: `axis_lo` 2% ("two percent") said at 289.61 s, on screen +57 ms; `axis_hi` 10% ("ten percent") said at 290.53 s, on screen +3 ms
-
-Sound: transition×1, appear×3
-
-## 45 seq — 4:52.8–5:00.6 (7.8 s) · ch5 · wide · timeline/strip
-
-> Here is an illustrative sequence: 8% a year for 36 months, then −20% for the last 12.
-
-Spoken (20 words in 7.04 s = 170 wpm): Here is an illustrative sequence: eight percent a year for thirty-six months, then minus twenty percent for the last twelve.
-
-Numbers: `seq_first` 8% ("eight percent") said at 295.39 s, on screen +10 ms; `seq_split` 36 ("thirty-six") said at 296.61 s, on screen +23 ms; `seq_second` −20% ("minus twenty percent") said at 298.11 s, on screen +23 ms; `hold_months` 12 ("twelve") said at 299.73 s, on screen +3 ms
-
-Sound: transition×1, appear×2
-
-## 46 race — 5:00.6–5:07.8 (7.2 s) · ch5 · medium · line-trend/dual
-
-> We track net worth after tax, month by month. For 36 months, both roads run almost together.
-
-Spoken (17 words in 6.45 s = 158 wpm): We track net worth after tax, month by month. For thirty-six months, both roads run almost together.
-
-Numbers: `seq_split` 36 ("thirty-six") said at 304.29 s, on screen +10 ms
-
-Sound: transition×1, appear×1, count×3, compare×1
-
-## 47 morphGap — 5:07.8–5:09.0 (1.2 s) · ch5 · medium · morph/lines-to-gap
-
-_(no narration)_
-
-Sound: transition×1
-
-## 48 gap — 5:09.0–5:16.2 (7.2 s) · ch5 · close · line-trend/gap
-
-> The difference, road B minus road A, peaks, then turns negative in month 39.
-
-Spoken (14 words in 6.30 s = 133 wpm): The difference, road B minus road A, peaks, then turns negative in month thirty-nine.
-
-Numbers: `cross_month` 39 ("thirty-nine") said at 314.59 s, on screen +10 ms
-
-Sound: transition×1, appear×1, threshold-cross×1
-
-## 49 downside — 5:16.2–5:23.4 (7.2 s) · ch5 · detail · hero-number/with-delta
-
-> Road A finishes $459 ahead, after tax.
-
-Spoken (10 words in 4.18 s = 144 wpm): Road A finishes four hundred fifty-nine dollars ahead, after tax.
-
-Numbers: `gap_end` $459 ("four hundred fifty-nine dollars") said at 317.51 s, on screen +23 ms
-
-Sound: reveal×1
-
-## 50 order — 5:23.4–5:33.0 (9.6 s) · ch5 · close · hero-number/with-badge
-
-> Over all 48 months, that sequence still averages 0.19% a year. The order of the returns decided the result.
-
-Spoken (23 words in 8.51 s = 162 wpm): Over all forty-eight months, that sequence still averages zero point one nine percent a year. The order of the returns decided the result.
-
-Numbers: `horizon` 48 ("forty-eight") said at 324.29 s, on screen +77 ms; `seq_avg` 0.19% ("zero point one nine percent") said at 327.09 s, on screen +10 ms
-
-Sound: transition×1, reveal×1, emphasis×1
-
-## 51 recap — 5:33.0–5:43.2 (10.2 s) · close · medium · list/recap
-
-> The payoff month and the interest avoided are fixed. The tax depends on how long each lot is held. The return is the unknown.
-
-Spoken (24 words in 9.32 s = 154 wpm): The payoff month and the interest avoided are fixed. The tax depends on how long each lot is held. The return is the unknown.
-
-Sound: dismiss×1, transition×1, appear×3
-
-## 52 end1 — 5:43.2–5:53.4 (10.2 s) · close · medium · flip-point/axis
-
-> So, in the 22% bracket, the answer flips at an average annual return of 6.11%, compounded.
-
-Spoken (21 words in 7.71 s = 163 wpm): So, in the twenty-two percent bracket, the answer flips at an average annual return of six point one one percent, compounded.
-
-Numbers: `ord_22` 22% ("twenty-two percent") said at 344.75 s, on screen +17 ms; `be_22` 6.11% ("six point one one percent") said at 349.69 s, on screen +10 ms
-
-Sound: transition×1, appear×2, reveal×1
-
-## 53 end2 — 5:53.4–6:00.6 (7.2 s) · close · wide · canvas/statement
-
-> That is a threshold, not a forecast. Where returns will land is not known in advance.
-
-Spoken (16 words in 6.22 s = 154 wpm): That is a threshold, not a forecast. Where returns will land is not known in advance.
-
-Sound: transition×1, appear×1
-
-## 54 outro — 6:00.6–6:04.2 (3.6 s) · close · wide · ident/wordmark
-
-_(no narration)_
-
-Sound: transition×1, reveal×1, appear×1, dismiss×1
-
-## Pace
-
-771 spoken words in 300.1 s of speech = 154.1 wpm.
+
+**a1-est** · 0:17.1 · 3.6 s · world/establish · extreme-wide
+  - `0:18.0` It is January 1966.
+    - *Scene-setting, unhurried. Small pause after.*
+
+**a1-start** · 0:20.7 · 5.6 s · ledger/card · medium
+  - `0:20.7` The first retiree starts with $1 million, measured in 1966 dollars.
+    - *Warm, plain. Stress "one million". "Measured in 1966 dollars" softer, as a footnote.*
+
+**a1-who** · 0:26.3 · 5.9 s · ledger/card · close-up
+  - `0:26.2` They retire at the start of a hard decade for markets, though nobody knows it yet.
+    - *Quiet dramatic irony, a touch slower on "nobody knows that yet".*
+    - spoken: "They retire at the start of a hard decade for markets... though nobody knows it yet."
+
+**a1-hook** · 0:32.2 · 13.0 s · promise/card · wide → medium
+  - `0:32.4` By the end of this video, you will know which ten years decided the fate of this retiree, and whether the same thing held for every start year since 1928.
+    - *The promise. Clear and concrete, a little forward lean. Breathe at the comma.*
+    - spoken: "By the end of this video, you will know which ten years decided the fate of this retiree... and whether the same thing held, for every start year since 1928."
+
+**a1-mix** · 0:45.2 · 5.9 s · donut/split · medium
+  - `0:45.0` The money sits in a portfolio of 60% stocks and 40% bonds.
+    - *Matter-of-fact, even pace on the two numbers.*
+
+**a1-assets** · 0:51.1 · 7.5 s · donut/detail · close-up
+  - `0:50.9` The stocks are the Standard & Poor's 500 index, with dividends reinvested.
+    - *Neutral, clear.*
+  - `0:56.2` The bonds are 10-year US Treasury bonds.
+    - *Same register.*
+
+**a1-rebal** · 0:58.7 · 5.1 s · donut/rebalance · medium
+  - `0:59.4` Every January, the portfolio is rebalanced back to that mix.
+    - *Light, procedural.*
+
+**a1-rule** · 1:03.8 · 9.5 s · rules/card · medium
+  - `1:03.8` In the first year, the retiree withdraws 4% of the starting balance.
+    - *Stress "first year". Not a recommendation: descriptive, cool.*
+  - `1:09.3` That is $40,000, in 1966 dollars.
+    - *Short. Let the number sit.*
+
+**a1-raise** · 1:13.3 · 7.8 s · rules/escalator · wide
+  - `1:13.2` After that, the withdrawal rises each year with the previous year's inflation, so it always buys the same groceries.
+    - *Explaining, friendly. Slight smile on "groceries".*
+
+**a1-real** · 1:21.1 · 7.8 s · rules/constant · close-up
+  - `1:20.9` In real terms, it never changes.
+    - *Short, firm.*
+  - `1:23.8` In nominal terms, the dollars of the day, it climbs every year.
+    - *Contrast with the previous line; stress "nominal".*
+
+**a1-horizon** · 1:28.9 · 7.8 s · timeline/ribbon · extreme-wide
+  - `1:28.8` The plan runs for 30 years, from 1966 through 1995.
+    - *Spacious, a long horizon. Slow down slightly.*
+
+**a1-notax** · 1:36.8 · 8.5 s · rules/list · medium
+  - `1:36.8` No taxes, no fees.
+    - *Crisp, two beats.*
+  - `1:38.8` We keep the model this bare on purpose, so that one thing can change at a time.
+    - *Analyst voice, candid. "We" is the analyst.*
+
+**a1-mirror-in** · 1:45.2 · 3.0 s · mirror/enter · wide
+  - `1:46.0` Now meet the second retiree.
+    - *A small turn in tone, intrigue.*
+
+**a1-mirror-rule** · 1:48.3 · 12.0 s · mirror/reverse · medium → close-up
+  - `1:47.8` The mirror retiree lives through the exact same 30 annual returns, but in reverse order.
+    - *Precise. Stress "exact same" and "reverse".*
+  - `1:54.0` The return of 1995 arrives first, and the return of 1966 arrives last.
+    - *Walk through it slowly, like laying cards.*
+
+**a1-illus** · 2:00.2 · 5.2 s · mirror/badge · close-up
+  - `2:00.2` This retiree is illustrative: no one lived through these years in this order.
+    - *Honest aside, slightly lower.*
+
+**a1-samewd** · 2:05.5 · 7.2 s · ledger/twin · medium
+  - `2:05.7` Inflation stays in its real calendar order, so both retirees take out the same dollars every year.
+    - *Careful, a clarifying point. Stress "same dollars".*
+
+**a1-question** · 2:12.6 · 10.4 s · duel/scale · wide
+  - `2:12.6` Here is the question this first part answers.
+    - *Framing, slower.*
+    - spoken: "Here is the question... this first part answers."
+  - `2:16.2` If two people earn the same average return, do they end up in the same place?
+    - *Genuine question, open, rising end.*
+    - spoken: "If two people earn the same average return... do they end up, in the same place?"
+
+**a1-avg1966** · 2:23.1 · 7.2 s · average/reveal · close-up
+  - `2:22.9` The portfolio of the 1966 retiree earned an average return of 9.7%.
+    - *Reveal. Stress "nine point seven". Pause after.*
+
+**a1-avgmirror** · 2:30.2 · 7.2 s · average/match · close-up
+  - `2:30.5` For the mirror retiree, the average is also 9.7%.
+    - *Same melody as the previous line, as an echo.*
+  - `2:35.5` Not close.
+    - *Short, dry.*
+  - `2:36.7` Identical.
+    - *Beat. Land it.*
+
+**a1-geo** · 2:37.4 · 14.6 s · average/explain · medium → close-up
+  - `2:37.6` That is the geometric average, the compound rate that turns the starting dollar into the ending dollar.
+    - *Teacherly, calm; define it cleanly.*
+  - `2:44.6` Multiplication does not care about order, so the same years in any order give the same average.
+    - *Light, almost playful logic.*
+
+**a1-arith** · 2:52.1 · 8.8 s · average/table · medium
+  - `2:51.6` Even the simple arithmetic average, adding up the 30 returns and dividing by 30, is the same for both: 10.3%.
+    - *Brisk aside, a footnote with a smile.*
+
+**a1-payoff** · 3:00.9 · 10.4 s · duel/scale-2 · wide
+  - `3:01.0` Same money in.
+    - *Beat.*
+  - `3:02.5` Same money out.
+    - *Beat.*
+  - `3:03.8` Same average.
+    - *Beat.*
+  - `3:05.1` The only thing that differs is the order.
+    - *Slow, the thesis. Stress "order".*
+
+## Two fates — 3:11.3–6:52.7 (climax 5:38.7)
+
+- **Question:** When does the order start to matter, and how much does it cost?
+- **Turn:** 1982: the good years finally reach the 1966 retiree, but the withdrawals now eat a much bigger share of a smaller balance.
+- **Payoff:** The 1966 retiree runs out in 1991; the mirror ends with more real money than they started with.
+
+
+**a2-est** · 3:11.3 · 4.4 s · world/road · extreme-wide
+  - `3:12.6` Watch the two balances year by year.
+    - *Inviting, fresh start of a chapter.*
+
+**a2-q** · 3:15.6 · 6.8 s · question/card · medium
+  - `3:15.7` The question now: when does the order start to matter, and how much does it cost?
+    - *Chapter question, clear.*
+
+**a2-y1** · 3:22.5 · 11.7 s · duel/bars · medium → close-up
+  - `3:22.4` Year one.
+    - *Short, a marker.*
+  - `3:23.7` The 1966 retiree loses 4.8%.
+    - *Neutral, slight weight on "loses".*
+  - `3:27.5` The mirror retiree gets the 1995 return first: a gain of 31.7%.
+    - *Brighter, but restrained.*
+
+**a2-gap1** · 3:34.1 · 3.4 s · duel/lines · wide
+  - `3:34.2` One year in, and the paths have already split.
+    - *Observational.*
+
+**a2-infl** · 3:37.5 · 8.8 s · escalator/rise · medium
+  - `3:37.5` Then inflation starts to climb.
+    - *A shade darker.*
+  - `3:39.9` By 1969 it is 6.2% a year, and every withdrawal grows with it.
+    - *Even, stress "every withdrawal".*
+
+**a2-7374** · 3:46.3 · 4.8 s · duel/lines-2 · medium
+  - `3:46.4` In 1973 and 1974, stocks and bonds fall together.
+    - *Grave, steady.*
+
+**a2-1974inf** · 3:51.1 · 7.2 s · escalator/peak · close-up
+  - `3:51.1` In 1974 alone, the portfolio loses 14.7%, while prices rise 12.3%.
+    - *Two hits, one sentence; do not rush the numbers.*
+
+**a2-bal74** · 3:58.3 · 8.7 s · ledger/drop · close-up
+  - `3:58.4` In 1966 dollars, the 1966 retiree ends 1974 with $461,000. **[decisive: ≥ 1 s silence after]**
+    - *Quiet weight. Stress the number, then a real pause.*
+
+**a2-bal74m** · 4:07.0 · 6.7 s · ledger/twin · medium
+  - `4:06.6` The mirror retiree, same year, same withdrawals: $1.27 million, also in 1966 dollars.
+    - *Contrast, measured.*
+
+**a2-bite** · 4:13.7 · 12.6 s · donut/bite · medium → close-up
+  - `4:13.9` Here is why a bad start is so hard to undo.
+    - *Leaning in, explanatory.*
+  - `4:17.7` The withdrawal is still $40,000 in 1966 dollars, but it is now taken from a much smaller pile.
+    - *Build through the sentence; stress "much smaller".*
+
+**a2-sell** · 4:26.3 · 7.2 s · donut/bite-2 · close-up
+  - `4:26.3` Every dollar withdrawn after a loss is a dollar that is not there when the recovery comes.
+    - *Slow, the mechanism. Even stress.*
+
+**a2-seq** · 4:33.5 · 2.5 s · title/term · medium
+  - `4:33.0` Analysts call this sequence-of-returns risk.
+    - *Naming the idea, neutral, not academic.*
+
+**a2-7576** · 4:35.9 · 1.7 s · duel/bars-3 · medium
+  - `4:35.8` Good years do come.
+    - *A lift, hopeful.*
+
+**a2-7576n** · 4:37.7 · 8.1 s · duel/bars-4 · close-up
+  - `4:37.8` In 1975 the portfolio gains 23.6%, and in 1976 another 20.7%.
+    - *Brighter, steady on the numbers.*
+
+**a2-7576b** · 4:45.7 · 6.5 s · ledger/drop-2 · medium
+  - `4:45.6` But they compound on a balance that has already been cut, while the withdrawals keep rising.
+    - *The hope undercut, calm.*
+
+**a2-grind** · 4:52.3 · 3.7 s · escalator/grind · medium
+  - `4:52.3` Through the rest of the decade, inflation keeps rising.
+    - *Grinding, patient.*
+
+**a2-1979** · 4:56.0 · 3.4 s · escalator/peak-2 · close-up
+  - `4:55.7` In 1979 it reaches 13.3%.
+    - *Flat statement.*
+
+**a2-1981** · 4:59.4 · 13.0 s · ledger/climb · close-up → medium
+  - `4:59.6` By 1981, the yearly withdrawal has grown to $108,553 in nominal dollars.
+    - *Stress the size of the number, not dramatic.*
+  - `5:07.6` In 1966 dollars, it is still $40,000.
+    - *Gentle reminder, callback tone.*
+
+**a2-1982** · 5:12.4 · 3.9 s · world/dawn · wide
+  - `5:12.6` Then, in 1982, the good years finally arrive.
+    - *The turn. Lift the tone a little.*
+
+**a2-1982r** · 5:16.3 · 4.1 s · duel/bars-2 · medium
+  - `5:16.5` That year the 1966 retiree gains 25.4%.
+    - *Positive, but not celebratory.*
+
+**a2-1982w** · 5:20.4 · 5.9 s · ledger/share · close-up
+  - `5:21.1` But the withdrawal now takes 16.9% of what is left.
+    - *Undercut the good news. Stress "sixteen point nine".*
+
+**a2-late** · 5:26.3 · 2.2 s · duel/lines-3 · wide
+  - `5:26.2` The boom comes too late.
+    - *Short. Heavy.*
+
+**a2-mirror-boom** · 5:28.5 · 5.5 s · duel/lines-4 · medium
+  - `5:28.2` For the mirror retiree, those same years came first, when the balance was largest.
+    - *Explaining the contrast, smooth.*
+
+**a2-climb** · 5:34.0 · 2.2 s · gap/widen · close-up
+  - `5:34.1` The gap widens every year.
+    - *Tighter, faster.*
+
+**a2-climax-in** · 5:36.2 · 2.7 s · gap/peak · extreme-close-up
+  - `5:36.3` In 1986 it peaks.
+    - *Quick, tense.*
+
+**a2-climax** · 5:39.0 · 7.7 s · gap/number · extreme-close-up
+  - `5:38.7` In 1966 dollars, the mirror retiree is now ahead by $1.96 million. **[decisive: ≥ 1 s silence after]**
+    - *Climax. Slow down, stress each part of the number, then silence.*
+
+**a2-years** · 5:46.6 · 8.1 s · ledger/years · medium
+  - `5:46.7` At $40,000 a year in 1966 dollars, that gap would pay for 49 more years of withdrawals.
+    - *Concrete, slower; make the size felt.*
+
+**a2-rest** · 5:54.8 · 5.9 s · world/rest · extreme-wide
+  - `5:56.4` From there, the story of the 1966 retiree is short.
+    - *Soft, after the storm. Slower.*
+
+**a2-mirror-late** · 6:00.7 · 9.7 s · duel/lines-5 · wide
+  - `6:00.8` The mirror retiree meets the bad years late: the 1974 loss arrives in 1987, on a balance big enough to absorb it.
+    - *Even, explanatory.*
+
+**a2-1991** · 6:10.4 · 9.6 s · ledger/zero · close-up
+  - `6:10.4` The account pays out its last $96,829, in nominal dollars, and hits zero in 1991. **[decisive: ≥ 1 s silence after]**
+    - *Plain, almost gentle. Stress the year. Silence after.*
+
+**a2-short** · 6:19.9 · 7.4 s · ledger/missing · medium
+  - `6:20.0` That last payment is short of the full withdrawal, and the final 4 years of the plan get nothing.
+    - *Quiet consequence.*
+
+**a2-mirror-end** · 6:27.3 · 6.3 s · ledger/twin-2 · medium
+  - `6:27.2` The mirror retiree finishes 1995 with $6.96 million in nominal dollars.
+    - *Neutral statement.*
+
+**a2-mirror-real** · 6:33.6 · 9.4 s · ledger/real · close-up
+  - `6:33.8` In 1966 dollars that is $1.44 million, more than the starting balance, after 30 years of withdrawals.
+    - *Stress "more than". Measured.*
+
+**a2-payoff** · 6:43.1 · 9.6 s · average/echo · wide
+  - `6:42.8` Both portfolios averaged 9.7% a year.
+    - *The callback. Slow and flat, let the irony carry itself.*
+  - `6:46.7` The average did not decide who went broke.
+    - *Clear, final.*
+
+## Every start year — 6:52.7–10:05.4 (climax 9:09.9)
+
+- **Question:** Was 1966 a fluke, and what actually decides the outcome?
+- **Turn:** The four failures share one thing: a first decade that lost money after inflation. The 30-year average does not separate them.
+- **Payoff:** The first decade decides whether a retiree survives long enough for the average to count; the limits of the analysis.
+
+
+**a3-est** · 6:52.7 · 4.3 s · map/establish · extreme-wide
+  - `6:54.2` So was 1966 a fluke?
+    - *New chapter, open question, unhurried.*
+
+**a3-all** · 6:57.0 · 10.7 s · map/grid · wide
+  - `6:57.0` We ran the same rules for every start year from 1928 to 1996.
+    - *Analyst voice, even.*
+  - `7:03.5` That is 69 retirements, each with 30 years of data.
+    - *Stress "sixty-nine".*
+
+**a3-q** · 7:07.7 · 4.4 s · question/card-2 · medium
+  - `7:07.7` The question for this part: what actually decides the outcome?
+    - *Chapter question.*
+
+**a3-fine** · 7:12.0 · 8.7 s · map/scan · medium
+  - `7:12.0` Most of these retirees never ran out.
+    - *Reassuring but factual.*
+  - `7:15.1` In 65 of the 69 start years, the money lasted all 30 years.
+    - *Even, clear.*
+
+**a3-good** · 7:20.7 · 8.7 s · map/focus · close-up
+  - `7:20.6` A retiree who started in 1982 under the same rules ended with $5.36 million in 1982 dollars.
+    - *Bright, one example. Stress "1982 dollars" lightly.*
+
+**a3-1929** · 7:29.4 · 15.3 s · map/focus-2 · medium → close-up
+  - `7:29.5` Even a retiree who started in 1929, the year of the crash, never ran out.
+    - *Surprise, understated.*
+  - `7:36.0` Prices fell through the Depression, so the withdrawals shrank, and after inflation the first decade still averaged 3.9% a year.
+    - *Explaining, patient; stress "after inflation".*
+
+**a3-nohurt** · 7:44.7 · 5.3 s · map/scan-2 · wide
+  - `7:44.7` For many start years, the order of returns did no harm at all.
+    - *Fair-minded.*
+
+**a3-less** · 7:50.0 · 10.7 s · map/threshold · medium
+  - `7:49.8` Surviving is not the same as thriving.
+    - *Short, wry.*
+  - `7:53.0` In 26 of the 69 start years, the retiree ended with less than the starting balance, after inflation.
+    - *Even, factual.*
+
+**a3-four** · 8:00.7 · 6.0 s · map/highlight · medium
+  - `8:00.5` 4 start years ran out of money, beginning with 1965 and 1966.
+    - *Slow, equal weight on each year.*
+
+**a3-four2** · 8:06.7 · 2.7 s · map/highlight-2 · close-up
+  - `8:06.5` Then 1968 and 1969.
+    - *Completing the list, quieter.*
+
+**a3-avg-not** · 8:09.4 · 3.7 s · scatter/avg · medium
+  - `8:09.6` Their long-run averages do not single them out.
+    - *The turn begins. Curious.*
+
+**a3-real66** · 8:13.0 · 12.3 s · scatter/rank · medium → close-up
+  - `8:13.0` After inflation, the 1966 retiree averaged 4.1% a year over all 30 years.
+    - *Precise, stress "after inflation".*
+  - `8:19.5` 17 start years had a lower real average than that, and never ran out.
+    - *Stress "lower" and "never".*
+
+**a3-1969** · 8:25.4 · 9.9 s · scatter/pair · close-up
+  - `8:25.3` After inflation, the 1969 retiree averaged 5.6% a year.
+    - *Careful, even.*
+  - `8:30.7` The 1928 retiree averaged less: 4.9%.
+    - *Stress "less".*
+
+**a3-1928** · 8:35.3 · 10.1 s · scatter/pair-2 · medium
+  - `8:34.9` Yet 1928 ended with $1.21 million in 1928 dollars, and 1969 ran out of money in its 28th year.
+    - *The paradox; slow down on the second half.*
+
+**a3-share** · 8:45.4 · 4.3 s · decade/reveal · wide
+  - `8:45.7` What the four failures share is their first decade.
+    - *The answer arriving. Stress "first decade".*
+
+**a3-decade** · 8:49.6 · 5.3 s · decade/bars · medium
+  - `8:49.6` In every one of them, the portfolio lost money after inflation over its first 10 years.
+    - *Firm, even.*
+
+**a3-1966d** · 8:54.9 · 8.8 s · decade/bars-2 · close-up
+  - `8:55.7` After inflation, the first decade of the 1966 retiree averaged −1.8%. **[decisive: ≥ 1 s silence after]**
+    - *Heavy, slow. Pause after.*
+
+**a3-mirror-d** · 9:03.7 · 6.4 s · decade/twin · close-up
+  - `9:03.2` In the first decade, the mirror retiree averaged 6.9% a year after inflation.
+    - *Contrast, lighter.*
+
+**a3-answer** · 9:10.0 · 5.0 s · answer/card · medium
+  - `9:09.9` So, what decided it?
+    - *Callback to the opening question. Beat.*
+  - `9:11.2` Not the average.
+    - *Short.*
+  - `9:12.9` The first 10 years.
+    - *Land it, slow.*
+
+**a3-nuance** · 9:15.0 · 13.3 s · scatter/all · wide → medium
+  - `9:15.0` To be precise: across all 69 start years, the 30-year real return still lines up best with how much is left at the end.
+    - *Scrupulous, analytic. Not defensive.*
+  - `9:23.8` But every retiree who ran out met a bad first decade.
+    - *Stress "every".*
+
+**a3-avg-callback** · 9:28.3 · 9.1 s · average/ghost · close-up
+  - `9:28.3` The 9.7% average described the 1966 retiree perfectly, and it said nothing about 1991. **[decisive: ≥ 1 s silence after]**
+    - *The third meaning of the core number. Wry, quiet. Silence after.*
+
+**a3-limits** · 9:37.4 · 6.0 s · limits/list · medium
+  - `9:37.7` Now the limits of this analysis.
+    - *Change of register, straightforward.*
+    - spoken: "Now... the limits of this analysis."
+  - `9:40.6` This is history, not a forecast.
+    - *Plain, deliberate.*
+
+**a3-usonly** · 9:43.4 · 4.1 s · limits/globe · wide
+  - `9:43.5` It is US only, one country with one set of markets.
+    - *Neutral.*
+
+**a3-overlap** · 9:47.5 · 7.2 s · limits/overlap · medium
+  - `9:48.2` The 69 windows overlap, so 98 years of data hold only 3 separate 30-year stretches.
+    - *Careful, a statistical caveat; do not rush.*
+
+**a3-bare** · 9:54.7 · 10.7 s · limits/list-2 · close-up
+  - `9:54.5` And the model is bare: no taxes, no fees, one portfolio mix and one withdrawal rule.
+    - *List rhythm, light.*
+  - `10:01.1` Change any of those, and every number here changes too.
+    - *Final caveat, open.*
+
+## Method — 10:05.4–10:26.3
+
+
+**method** · 10:05.4 · 8.6 s · method/sources · medium
+  - `10:06.2` The data: annual returns compiled at NYU Stern, and consumer prices from the Bureau of Labor Statistics via FRED.
+    - *Credits voice: clear, neutral, steady.*
+
+**method-model** · 10:13.9 · 12.4 s · method/model · close-up → medium
+  - `10:13.9` Returns include dividends and bond coupons, and the portfolio is rebalanced once a year.
+    - *Neutral.*
+  - `10:19.7` Every number and formula is listed in the description.
+    - *Light.*
+
+## Outro — 10:26.3–10:50.0
+
+
+**outro** · 10:26.3 · 23.7 s · end/screen · wide
+  - `10:27.1` Two retirees, one average, and a fate decided by the order of the years.
+    - *Closing line, warm and slow. Let the music take over after.*

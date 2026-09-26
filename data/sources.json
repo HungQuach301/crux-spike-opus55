@@ -1,0 +1,70 @@
+{
+ "files": [
+  {
+   "path": "data/raw/histretSP.xls",
+   "role": "primary",
+   "url": "https://pages.stern.nyu.edu/~adamodar/pc/datasets/histretSP.xls",
+   "what": "Damodaran, Historical Returns on Stocks, Bonds and Bills: 1928-2025 (data updated January 2026)",
+   "terms": {
+    "quote": "I hope you find this data useful and there are no strings attached.",
+    "also": "I am not good at making rules and thus have very few related to the use of my data. I want the data to be widely used and to be a help, rather than a hindrance.",
+    "url": "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/datahistory.html",
+    "snapshot": "data/terms/damodaran-datahistory.html"
+   },
+   "sha256": "28b8110916a15a4dcc11c87c6422510704608ddedcdfa67a1298abdc22e49c69",
+   "downloaded": "2026-09-26"
+  },
+  {
+   "path": "data/raw/histretSP.html",
+   "role": "primary",
+   "url": "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/datafile/histretSP.html",
+   "what": "HTML view of the same table (kept for reference; not parsed)",
+   "terms": {
+    "quote": "I hope you find this data useful and there are no strings attached.",
+    "url": "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/datahistory.html"
+   },
+   "sha256": "127c772f0fea8763391dbf2c1c7d3ecd3a07ca2b23f81ab47af58b529e2b5647",
+   "downloaded": "2026-09-26"
+  },
+  {
+   "path": "data/raw/fred_CPIAUCNS.csv",
+   "role": "crosscheck",
+   "url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=CPIAUCNS",
+   "what": "U.S. Bureau of Labor Statistics, CPI for All Urban Consumers: All Items in U.S. City Average [CPIAUCNS], monthly, NSA, retrieved from FRED",
+   "terms": {
+    "quote": "Public Domain: Citation requested These series may be under copyright or in the public domain and may be used without permission, provided you do not engage in any prohibited use.",
+    "status": "Series page shows \"Public Domain: Citation Requested\"; citation used: \"Source: BLS via FRED\".",
+    "url": "https://fred.stlouisfed.org/legal/",
+    "snapshot": "data/terms/fred-legal.html",
+    "series": "data/terms/fred-CPIAUCNS.html"
+   },
+   "sha256": "f79e3a78837142293449cee4a1a9b1da7be677fb3e989ffb2ef48e8e7cf4cdd7",
+   "downloaded": "2026-09-26"
+  }
+ ],
+ "tolerance": {
+  "inflation_pp": 0.1,
+  "stocks_pp": 0.5
+ },
+ "yearsUsed": [
+  1928,
+  2025
+ ],
+ "mismatches": [],
+ "crosscheck": {
+  "inflation": {
+   "method": "FRED CPIAUCNS December(y) / December(y-1) - 1, vs Damodaran \"Inflation Rate\" sheet",
+   "maxDiffPp": 0.058,
+   "maxDiffYear": 2025,
+   "yearsCompared": 98
+  },
+  "stocks": {
+   "status": "not run",
+   "reason": "no independent annual S&P 500 total-return source reachable from this environment: www.econ.yale.edu (Shiller ie_data.xls) answered 403 \"Host not in allowlist\"; shillerdata.com and www.slickcharts.com were refused at CONNECT by the egress proxy. FRED carries the S&P 500 index for the last 10 years only (price, licensed), not total return back to 1928. Domains to allow if a second stock source is wanted: www.econ.yale.edu or shillerdata.com."
+  }
+ },
+ "notes": [
+  "Inflation is taken from the workbook sheet \"Inflation Rate\" (CPI-U NSA, Dec/Dec, sourced by Damodaran from FRED). The workbook sheet \"Nominal vs Real Data\" has a different inflation column that differs from it by more than 0.10 pp in 26 years (largest: [(1954, 0.371), (1969, 0.298), (1948, 0.258), (1949, 0.245), (1974, 0.243)]); that sheet is not used.",
+  "The 10-year Treasury return is Damodaran's: a par bond at the prior year-end yield repriced at the new yield with maturity kept at 10 years, plus coupon."
+ ]
+}

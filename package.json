@@ -29,7 +29,17 @@
     "av:all": "npm test && npm run av:prepare && npm run av:voice && npm run av:asrcheck && npm run av:timeline && npm run av:render && npm run av:mix && npm run av:subs && npm run av:mux && npm run av:check && npm run av:export && npm run av:package",
     "av:voice": "./audio/av_pace_loop.sh",
     "av:probe": "node render-av/probe.js",
-    "av:package": "node render-av/package.js"
+    "av:package": "node render-av/package.js",
+    "d:data": "python3 src/d/data.py",
+    "d:model": "node src/d/model.js",
+    "d:claims": "node src/d/claims.js",
+    "d:voice": "node src/d/prepare.js && python3 audio/d_tts.py && python3 audio/d_asr.py && python3 audio/d_choose.py",
+    "d:timeline": "node src/d/timeline.js && node src/d/script-md.js",
+    "d:preprod": "node src/d/preprod.js",
+    "d:tableread": "python3 audio/d_tableread.py v2 out/voice/choice.json --stretch",
+    "d:step0": "node render-d/run-step0.js 8 out/step0/render-8x.mp4",
+    "d:m1": "npm run d:data && npm run d:model && node --test test/d-model.test.js && npm run d:claims && npm run d:voice && npm run d:timeline && npm run d:preprod && npm run d:tableread",
+    "d:checks": "checks/run.sh"
   },
   "repository": {
     "type": "git",

@@ -1,0 +1,78 @@
+{
+ "sent": "In nineteen sixty-six, a retiree with one million dollars withdrew forty thousand dollars in the first year.",
+ "http": 200,
+ "asr": "In 1966, a retiree with $1 million withdrew $40 ,000 in the first year.",
+ "words": [
+  [
+   "In",
+   0.0,
+   0.16
+  ],
+  [
+   "1966,",
+   0.16,
+   1.2
+  ],
+  [
+   "a",
+   1.94,
+   2.06
+  ],
+  [
+   "retiree",
+   2.06,
+   2.68
+  ],
+  [
+   "with",
+   2.68,
+   2.82
+  ],
+  [
+   "$1",
+   2.82,
+   3.12
+  ],
+  [
+   "million",
+   3.12,
+   3.4
+  ],
+  [
+   "withdrew",
+   3.4,
+   4.4
+  ],
+  [
+   "$40",
+   4.4,
+   4.86
+  ],
+  [
+   ",000",
+   4.86,
+   5.24
+  ],
+  [
+   "in",
+   5.24,
+   5.82
+  ],
+  [
+   "the",
+   5.82,
+   5.94
+  ],
+  [
+   "first",
+   5.94,
+   6.12
+  ],
+  [
+   "year.",
+   6.12,
+   6.4
+  ]
+ ],
+ "duration": 6.55
+}

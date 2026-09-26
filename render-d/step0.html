@@ -1,0 +1,110 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>
+@font-face { font-family: Inter; font-weight: 400; src: url(../render-av/fonts/inter-latin-400-normal.woff2); }
+@font-face { font-family: Inter; font-weight: 600; src: url(../render-av/fonts/inter-latin-600-normal.woff2); }
+@font-face { font-family: Inter; font-weight: 700; src: url(../render-av/fonts/inter-latin-700-normal.woff2); }
+html, body { margin: 0; background: #0b0f17; }
+canvas { display: block; }
+</style></head>
+<body>
+<script src="engine.js"></script>
+<script>
+// Step-0 render test: 10 s, 3 depth layers + floor, a dolly with anticipation/overshoot, a rack focus
+// (mid -> near -> far), a fast lateral truck (motion blur), dark background gradient (banding).
+const E = window.ENGINE;
+const lerp = (a, b, u) => a + (b - a) * u;
+const clamp = (x, a = 0, b = 1) => Math.min(b, Math.max(a, x));
+// camera ease with anticipation (small pull-back) and overshoot that settles: progress u(p), p in [0,1]
+function inertia(p) {
+  p = clamp(p);
+  const s = p * p * p * (p * (6 * p - 15) + 10);            // smootherstep
+  const ant = -0.012 * Math.sin(Math.PI * clamp(p / 0.25)) * (p < 0.25 ? 1 : 0);
+  const ovs = 0.03 * Math.sin(Math.PI * clamp((p - 0.6) / 0.4)) * (p > 0.6 ? 1 : 0);
+  return s + ant + ovs;
+}
+const seg = (t, a, b) => inertia((t - a) / (b - a));
+
+// deterministic series
+const N = 30, A = [], B = [];
+let v1 = 1, v2 = 1;
+for (let i = 0; i < N; i++) { v1 *= 1 + 0.05 + 0.15 * Math.sin(i * 1.3); v2 *= 1 + 0.05 + 0.15 * Math.sin((N - 1 - i) * 1.3); A.push(v1); B.push(v2); }
+const vmax = Math.max(...A, ...B);
+
+function poly(ctx, cam, pts, z) {
+  ctx.beginPath();
+  pts.forEach(([x, y], i) => { const p = cam.project([x, y, z]); i ? ctx.lineTo(p[0], p[1]) : ctx.moveTo(p[0], p[1]); });
+}
+function text(ctx, cam, str, x, y, z, px, color, weight = 600, align = 'left') {
+  const p = cam.project([x, y, z]);
+  ctx.font = `${weight} ${px * p[2]}px Inter`; ctx.fillStyle = color; ctx.textAlign = align; ctx.textBaseline = 'alphabetic';
+  ctx.fillText(str, p[0], p[1]);
+  const w = ctx.measureText(str).width, fs = px * p[2];
+  const x0 = align === 'right' ? p[0] - w : align === 'center' ? p[0] - w / 2 : p[0];
+  cam.mark(x0, p[1] - fs, x0 + w, p[1] + fs * 0.3);
+}
+
+function world(t) {
+  // camera keys: establishing wide -> dolly in -> lateral truck
+  const k1 = seg(t, 0.5, 3.5), k2 = seg(t, 6.2, 8.0);
+  const pos = [lerp(lerp(-200, 0, k1), 900, k2), lerp(-260, -60, k1), lerp(-1400, -300, k1)];
+  const target = [lerp(lerp(-100, 0, k1), 900, k2), 0, 1600];
+  // rack focus: mid (1600+300) -> near card -> far wall
+  const zc = (z) => z - pos[2];
+  const f1 = seg(t, 4.2, 5.2), f2 = seg(t, 8.6, 9.4);
+  const focusDist = lerp(lerp(zc(1600), zc(900), f1), zc(3200), f2);
+  const cam = { pos, target, fovDeg: 2 * Math.atan(12 / 35) * 180 / Math.PI, focusDist, aperture: 26 };
+  const cardIn = clamp((t - 4.4) / 0.6);
+  return {
+    camera: cam,
+    sig: JSON.stringify([pos.map((x) => x.toFixed(3)), focusDist.toFixed(3), cardIn.toFixed(3)]),
+    bg(ctx) {
+      const g = ctx.createLinearGradient(0, 0, 0, 1080);
+      g.addColorStop(0, '#0b0f17'); g.addColorStop(1, '#141b27');
+      ctx.fillStyle = g; ctx.fillRect(0, 0, 1920, 1080);
+      const r = ctx.createRadialGradient(1300, 300, 0, 1300, 300, 900);
+      r.addColorStop(0, 'rgba(60,90,140,0.18)'); r.addColorStop(1, 'rgba(60,90,140,0)');
+      ctx.fillStyle = r; ctx.fillRect(0, 0, 1920, 1080);
+    },
+    layers: [
+      // floor in depth bands (each band blurs with its own depth)
+      ...[200, 900, 1700, 2600].map((z0, bi, arr) => ({ id: 'floor' + bi, z: z0 + 200, draw(ctx, c) {
+        const z1 = arr[bi + 1] || 3600;
+        ctx.strokeStyle = 'rgba(120,140,170,0.22)'; ctx.lineWidth = 1.5;
+        for (let x = -3000; x <= 4000; x += 250) { const a = c.project([x, 420, z0]), b = c.project([x, 420, z1]); ctx.beginPath(); ctx.moveTo(a[0], a[1]); ctx.lineTo(b[0], b[1]); ctx.stroke(); }
+        for (let z = z0; z < z1; z += 200) { const a = c.project([-3000, 420, z]), b = c.project([4000, 420, z]); ctx.beginPath(); ctx.moveTo(a[0], a[1]); ctx.lineTo(b[0], b[1]); ctx.stroke(); }
+      } })),
+      { id: 'far', z: 3200, draw(ctx, c) {
+        for (let i = 0; i < 12; i++) text(ctx, c, String(1928 + i * 6), -1800 + i * 420, -300, 3200, 90, 'rgba(140,160,190,0.35)', 700);
+        ctx.fillStyle = 'rgba(80,110,160,0.25)';
+        for (let i = 0; i < 40; i++) { const h = 200 + 180 * Math.sin(i * 0.7); poly(ctx, c, [[-2000 + i * 110, 400], [-2000 + i * 110 + 70, 400], [-2000 + i * 110 + 70, 400 - h], [-2000 + i * 110, 400 - h]], 3200); ctx.fill(); }
+      } },
+      { id: 'mid', z: 1600, draw(ctx, c) {
+        const X = (i) => -700 + i * 1400 / (N - 1), Y = (v) => 300 - 600 * v / vmax;
+        ctx.strokeStyle = 'rgba(200,210,225,0.5)'; ctx.lineWidth = 2;
+        poly(ctx, c, [[-720, 300], [720, 300]], 1600); ctx.stroke();
+        const grow = clamp((t - 0.3) / 3.0);
+        const n = Math.max(2, Math.round(grow * N));
+        ctx.lineWidth = 6 * c.project([0, 0, 1600])[2]; ctx.lineJoin = 'round';
+        ctx.strokeStyle = '#f2a541'; poly(ctx, c, A.slice(0, n).map((v, i) => [X(i), Y(v)]), 1600); ctx.stroke();
+        ctx.strokeStyle = '#5ab0f0'; ctx.setLineDash([18, 12]); poly(ctx, c, B.slice(0, n).map((v, i) => [X(i), Y(v)]), 1600); ctx.stroke(); ctx.setLineDash([]);
+        text(ctx, c, '1966 retiree', -700, -360, 1600, 44, '#f2a541');
+        text(ctx, c, 'Mirror retiree', 700, -360, 1600, 44, '#5ab0f0', 600, 'right');
+        for (let i = 0; i < N; i += 5) text(ctx, c, String(1966 + i), X(i), 350, 1600, 30, 'rgba(200,210,225,0.8)', 400, 'center');
+      } },
+      { id: 'near', z: 900, draw(ctx, c) {
+        if (cardIn <= 0) return;
+        ctx.globalAlpha = cardIn;
+        const a = c.project([-620, -300, 900]), b = c.project([-160, -120, 900]);
+        ctx.fillStyle = 'rgba(22,30,44,0.92)'; ctx.shadowColor = 'rgba(0,0,0,0.55)'; ctx.shadowBlur = 40 * a[2]; ctx.shadowOffsetY = 14 * a[2];
+        ctx.beginPath(); ctx.roundRect(a[0], a[1], b[0] - a[0], b[1] - a[1], 18 * a[2]); ctx.fill(); ctx.shadowColor = 'transparent';
+        text(ctx, c, '6.0% a year', -590, -210, 900, 64, '#f4f6fa', 700);
+        text(ctx, c, 'same average, both paths', -590, -150, 900, 30, 'rgba(200,210,225,0.9)', 400);
+        ctx.globalAlpha = 1;
+      } },
+    ],
+  };
+}
+window.STEP0 = { world };
+</script>
+</body></html>

@@ -1,0 +1,1251 @@
+{
+ "root": "/home/user/crux-spike-opus55",
+ "lock": "0478df7377b754137071e202c2ff396d7deba94293823cabf5f18932c411c612",
+ "counts": {
+  "PASS": 11,
+  "FAIL": 0,
+  "MISSING": 60,
+  "ERROR": 0
+ },
+ "near": [
+  {
+   "rule": "S04",
+   "name": "stocks tolerance pp",
+   "value": 0.5,
+   "op": "<=",
+   "threshold": 0.5,
+   "unit": "pp",
+   "pass": true,
+   "near": true
+  },
+  {
+   "rule": "S05",
+   "name": "geomean claims shown",
+   "value": 2,
+   "op": ">=",
+   "threshold": 2,
+   "unit": "",
+   "pass": true,
+   "near": true
+  },
+  {
+   "rule": "S15",
+   "name": "cold open s",
+   "value": 14.556,
+   "op": "<=",
+   "threshold": 15.0,
+   "unit": "s",
+   "pass": true,
+   "near": true
+  }
+ ],
+ "results": [
+  {
+   "id": "F01",
+   "status": "MISSING",
+   "metrics": [],
+   "details": [],
+   "note": "artifact missing: out/video.mp4",
+   "section": "§0, §6",
+   "threshold": "h264 / High / yuv420p / 1920×1080 / 16:9 (square pixels)",
+   "seconds": 0.0
+  },
+  {
+   "id": "F02",
+   "status": "MISSING",
+   "metrics": [],
+   "details": [],
+   "note": "artifact missing: out/video.mp4",
+   "section": "§0, §6",
+   "threshold": "both rates exactly 30/1 and every PTS step = 1/30 s (constant frame rate)",
+   "seconds": 0.0
+  },
+  {
+   "id": "F03",
+   "status": "MISSING",
+   "metrics": [],
+   "details": [],
+   "note": "artifact missing: out/video.mp4",
+   "section": "§6",
+   "threshold": "dropped = 0, duplicated = 0, first PTS = 0, |frames − duration×30| ≤ 1",
+   "seconds": 0.0
+  },
+  {
+   "id": "F04",
+   "status": "MISSING",
+   "metrics": [],
+   "details": [],
+   "note": "artifact missing: out/video.mp4",
+   "section": "§6",
+   "threshold": "≥ 16 Mbps",
+   "seconds": 0.0
+  },
+  {
+   "id": "F05",
+   "status": "MISSING",
+   "metrics": [],
+   "details": [],
+   "note": "artifact missing: out/video.mp4",
+   "section": "§6",
+   "threshold": "all tags bt709, range tv (limited); Y outside 16–235 ≤ 0.1% of samples",
+   "seconds": 0.0
+  },
+  {
+   "id": "F06",
+   "status": "MISSING",
+   "metrics": [],
+   "details": [],
+   "note": "artifact missing: out/video.mp4",
+   "section": "§6",
+   "threshold": "AAC (LC), 48 kHz, 2 channels, measured ≥ 272 kbps (= 85% of the 320 kbps nominal: ffmpeg's native AAC at -b:a 320k measured 276 kbps on test C's master, so the measure allows its ABR undershoot but not a 256k or lower setting)",
+   "seconds": 0.0
+  },
+  {
+   "id": "F07",
+   "status": "MISSING",
+   "metrics": [],
+   "details": [],
+   "note": "artifact missing: out/video.mp4",
+   "section": "§0",
+   "threshold": "≥ 600 s (10:00)",
+   "seconds": 0.0
+  },
+  {
+   "id": "F08",
+   "status": "MISSING",
+   "metrics": [],
+   "details": [],
+   "note": "artifact missing: out/video.mp4",
+   "section": "§4.4",
+   "threshold": "worst frame ≤ 5% (frames with < 1% dark-gradient area are skipped)",
+   "seconds": 0.0
+  },
+  {
+   "id": "F09",
+   "status": "MISSING",
+   "metrics": [],
+   "details": [],
+   "note": "artifact missing: out/captions.srt",
+   "section": "§6",
+   "threshold": "text identical (100%); every line ≤ 42 chars; ≤ 2 lines; 1.0 ≤ duration ≤ 7.0 s; 0 overlaps",
+   "seconds": 0.0
+  },
+  {
+   "id": "F10",
+   "status": "MISSING",
+   "metrics": [],
+   "details": [],
+   "note": "artifact missing: out/package/description.md",
+   "section": "§6",
+   "threshold": "≥ 3 chapters; first at 0:00; each ≥ 10 s; MP4 chapters (if any) equal the description's",
+   "seconds": 0.0
+  },
+  {
+   "id": "A01",
+   "status": "MISSING",
+   "metrics": [],
+   "details": [],
+   "note": "artifact missing: out/video.mp4",
+   "section": "§5.6",
+   "threshold": "−14 LUFS ± 1 (−15 … −13)",
+   "seconds": 0.0
+  },
+  {
+   "id": "A02",
+   "status": "MISSING",
+   "metrics": [],
+   "details": [],
+   "note": "artifact missing: out/video.mp4",
+   "section": "§5.6",
+   "threshold": "≤ −1.0 dBTP",
+   "seconds": 0.0
+  },
+  {
+   "id": "A03",
+   "status": "MISSING",
+   "metrics": [],
+   "details": [],
+   "note": "artifact missing: out/video.mp4",
+   "section": "§5.6",
+   "threshold": "6 … 10 LU",
+   "seconds": 0.0
+  },
+  {
+   "id": "A04",
+   "status": "MISSING",
+   "metrics": [],
+   "details": [],
+   "note": "artifact missing: out/video.mp4",
+   "section": "§5.6",
+   "threshold": "0 samples",
+   "seconds": 0.0
+  },
+  {
+   "id": "A05",
+   "status": "MISSING",
+   "metrics": [],
+   "details": [],
+   "note": "artifact missing: out/video.mp4",
+   "section": "§5.6, §6",
+   "threshold": "mean r > 0.3; windows with r < 0 ≤ 5%",
+   "seconds": 0.0
+  },
+  {
+   "id": "A06",
+   "status": "MISSING",
+   "metrics": [],
+   "details": [],
+   "note": "artifact missing: out/video.mp4",
+   "section": "§5.6",
+   "threshold": "mono loudness ≥ stereo − 3 LU; voice-band loss ≤ 3 dB",
+   "seconds": 0.0
+  },
+  {
+   "id": "A07",
+   "status": "MISSING",
+   "metrics": [],
+   "details": [],
+   "note": "artifact missing: out/audio/stems/voice.wav|flac",
+   "section": "§5.5",
+   "threshold": "18 … 22 dB",
+   "seconds": 0.0
+  },
+  {
+   "id": "A08",
+   "status": "MISSING",
+   "metrics": [],
+   "details": [],
+   "note": "artifact missing: out/audio/stems/music.wav|flac",
+   "section": "§5.5",
+   "threshold": "median presence drop ≥ 6 dB AND median (presence drop − low drop) ≥ 3 dB (the dip is band-limited, not broadband); ≥ 3 onsets measured",
+   "seconds": 0.0
+  },
+  {
+   "id": "A09",
+   "status": "MISSING",
+   "metrics": [],
+   "details": [],
+   "note": "artifact missing: out/video.mp4",
+   "section": "§5.3",
+   "threshold": "≥ 3 spans of 0.8–1.5 s",
+   "seconds": 0.0
+  },
+  {
+   "id": "A10",
+   "status": "MISSING",
+   "metrics": [],
+   "details": [],
+   "note": "artifact missing: out/camera.json",
+   "section": "§5.3",
+   "threshold": "Spearman ρ(peak speed, whoosh dB) ≥ 0.6 over ≥ 5 moves; every move with peak ≥ 0.3 fw/s has a whoosh ≥ −45 dBFS",
+   "seconds": 0.0
+  },
+  {
+   "id": "A11",
+   "status": "MISSING",
+   "metrics": [],
+   "details": [],
+   "note": "artifact missing: out/sfx-events.json",
+   "section": "§5.3",
+   "threshold": "Pearson r(pan, (x − 960)/960) ≥ 0.7 over ≥ 8 events",
+   "seconds": 0.0
+  },
+  {
+   "id": "A12",
+   "status": "MISSING",
+   "metrics": [],
+   "details": [],
+   "note": "artifact missing: out/audio/stems/music.wav|flac",
+   "section": "§5.2",
+   "threshold": "≥ 5 accents; 100% of accents land on a cut; ≥ 90% of accents are real; ≥ 70% of beats while music is audible have an onset within ±50 ms",
+   "seconds": 0.0
+  },
+  {
+   "id": "A13",
+   "status": "MISSING",
+   "metrics": [],
+   "details": [],
+   "note": "artifact missing: out/voice/takes.json",
+   "section": "§5.4",
+   "threshold": "every |stretch − 1| ≤ 0.10",
+   "seconds": 0.0
+  },
+  {
+   "id": "A14",
+   "status": "MISSING",
+   "metrics": [],
+   "details": [],
+   "note": "artifact missing: out/video.mp4",
+   "section": "§5.4",
+   "threshold": "0 key words missing (no percentage threshold)",
+   "seconds": 0.0
+  },
+  {
+   "id": "A15",
+   "status": "MISSING",
+   "metrics": [],
+   "details": [],
+   "note": "artifact missing: out/video.mp4",
+   "section": "§5.4",
+   "threshold": "every act 150 … 160 wpm; no sentence > 175 wpm",
+   "seconds": 0.0
+  },
+  {
+   "id": "S01",
+   "status": "PASS",
+   "metrics": [
+    {
+     "name": "weights",
+     "value": [
+      0.6,
+      0.4
+     ],
+     "op": "==",
+     "threshold": [
+      0.6,
+      0.4
+     ],
+     "unit": "",
+     "pass": true,
+     "near": false
+    },
+    {
+     "name": "withdrawal rate",
+     "value": 0.04,
+     "op": "==",
+     "threshold": 0.04,
+     "unit": "",
+     "pass": true,
+     "near": false
+    },
+    {
+     "name": "horizon years",
+     "value": 30,
+     "op": "==",
+     "threshold": 30,
+     "unit": "",
+     "pass": true,
+     "near": false
+    },
+    {
+     "name": "tax",
+     "value": 0,
+     "op": "==",
+     "threshold": 0,
+     "unit": "",
+     "pass": true,
+     "near": false
+    },
+    {
+     "name": "fees",
+     "value": 0,
+     "op": "==",
+     "threshold": 0,
+     "unit": "",
+     "pass": true,
+     "near": false
+    },
+    {
+     "name": "values compared",
+     "value": 6390,
+     "op": ">=",
+     "threshold": 1,
+     "unit": "",
+     "pass": true,
+     "near": false
+    },
+    {
+     "name": "mismatches",
+     "value": 0,
+     "op": "<=",
+     "threshold": 0,
+     "unit": "",
+     "pass": true,
+     "near": false
+    }
+   ],
+   "details": [],
+   "note": null,
+   "section": "§1.2",
+   "threshold": "model parameters exactly 0.60/0.40, 4%, 30 years; every value within max($0.50, 1e-6 relative); 0 mismatches",
+   "seconds": 0.0
+  },
+  {
+   "id": "S02",
+   "status": "MISSING",
+   "metrics": [],
+   "details": [],
+   "note": "artifact missing: out/checks/page.json",
+   "section": "§1.2",
+   "threshold": "both phrases visible in the methodology card AND both visible outside it",
+   "seconds": 0.0
+  },
+  {
+   "id": "S03",
+   "status": "PASS",
+   "metrics": [
+    {
+     "name": "files",
+     "value": 3,
+     "op": ">=",
+     "threshold": 2,
+     "unit": "",
+     "pass": true,
+     "near": false
+    },
+    {
+     "name": "file problems",
+     "value": 0,
+     "op": "<=",
+     "threshold": 0,
+     "unit": "",
+     "pass": true,
+     "near": false
+    },
+    {
+     "name": "primary on pages.stern.nyu.edu",
+     "value": true,
+     "op": "==",
+     "threshold": true,
+     "unit": "",
+     "pass": true,
+     "near": false
+    },
+    {
+     "name": "cross-check on fred.stlouisfed.org",
+     "value": true,
+     "op": "==",
+     "threshold": true,
+     "unit": "",
+     "pass": true,
+     "near": false
+    }
+   ],
+   "details": [],
+   "note": null,
+   "section": "§1.3",
+   "threshold": "every file present with matching SHA-256, valid date, http(s) URL, terms quote ≥ 20 chars and terms URL; a primary file on pages.stern.nyu.edu; a cross-check file on fred.stlouisfed.org",
+   "seconds": 0.0
+  },
+  {
+   "id": "S04",
+   "status": "PASS",
+   "metrics": [
+    {
+     "name": "inflation tolerance pp",
+     "value": 0.1,
+     "op": "<=",
+     "threshold": 0.5,
+     "unit": "pp",
+     "pass": true,
+     "near": false
+    },
+    {
+     "name": "stocks tolerance pp",
+     "value": 0.5,
+     "op": "<=",
+     "threshold": 0.5,
+     "unit": "pp",
+     "pass": true,
+     "near": true
+    },
+    {
+     "name": "used years missing in a source",
+     "value": 0,
+     "op": "<=",
+     "threshold": 0,
+     "unit": "",
+     "pass": true,
+     "near": false
+    },
+    {
+     "name": "out-of-tolerance years not reported",
+     "value": 0,
+     "op": "<=",
+     "threshold": 0,
+     "unit": "",
+     "pass": true,
+     "near": false
+    }
+   ],
+   "details": [
+    {
+     "overTolerance": 0,
+     "unreported": [],
+     "missing": []
+    }
+   ],
+   "note": null,
+   "section": "§1.3",
+   "threshold": "declared tolerance ≤ 0.5 pp (inflation) and ≤ 0.5 pp (stocks); every year outside tolerance is listed in sources.json \"mismatches\" (reported, not silently resolved); every used year present in both",
+   "seconds": 0.0
+  },
+  {
+   "id": "S05",
+   "status": "PASS",
+   "metrics": [
+    {
+     "name": "|G1966 - Gmirror| pp",
+     "value": 0.0,
+     "op": "<=",
+     "threshold": 0.01,
+     "unit": "pp",
+     "pass": true,
+     "near": false
+    },
+    {
+     "name": "geomean claims shown",
+     "value": 2,
+     "op": ">=",
+     "threshold": 2,
+     "unit": "",
+     "pass": true,
+     "near": true
+    },
+    {
+     "name": "geomean claims off",
+     "value": 0,
+     "op": "<=",
+     "threshold": 0,
+     "unit": "",
+     "pass": true,
+     "near": false
+    },
+    {
+     "name": "mirror claims not illustrative",
+     "value": 0,
+     "op": "<=",
+     "threshold": 0,
+     "unit": "",
+     "pass": true,
+     "near": false
+    }
+   ],
+   "details": [
+    {
+     "G1966 %": 9.6717,
+     "Gmirror %": 9.6717,
+     "off": [],
+     "notIllustrative": []
+    }
+   ],
+   "note": null,
+   "section": "§1.4",
+   "threshold": "|G(1966) − G(mirror)| ≤ 0.01 pp; each displayed geomean claim within 0.005 pp of its recomputation; every mirror claim illustrative",
+   "seconds": 0.0
+  },
+  {
+   "id": "S06",
+   "status": "MISSING",
+   "metrics": [],
+   "details": [],
+   "note": "artifact missing: out/checks/page.json",
+   "section": "§1.4, §1.7",
+   "threshold": "every start year 1928 … 1996 shown (69 of 69), including years where order did no harm",
+   "seconds": 0.0
+  },
+  {
+   "id": "S07",
+   "status": "MISSING",
+   "metrics": [],
+   "details": [],
+   "note": "artifact missing: out/checks/page.json",
+   "section": "§1.5",
+   "threshold": "0 orphan numbers on screen; 0 unregistered numbers in narration; 0 claims without formula; 0 unsourced non-illustrative claims; 0 sourced claims without dataYear",
+   "seconds": 0.0
+  },
+  {
+   "id": "S08",
+   "status": "MISSING",
+   "metrics": [],
+   "details": [],
+   "note": "artifact missing: out/checks/page.json",
+   "section": "§1.5 (C rule 9, upgraded)",
+   "threshold": "0 frames without badge; badge never later than the number (lag ≤ 0 frames)",
+   "seconds": 0.0
+  },
+  {
+   "id": "S09",
+   "status": "MISSING",
+   "metrics": [],
+   "details": [],
+   "note": "artifact missing: out/checks/page.json",
+   "section": "§1.5",
+   "threshold": "0 money claims without basis; 0 frames missing the on-screen basis; 0 narration sentences missing it",
+   "seconds": 0.0
+  },
+  {
+   "id": "S10",
+   "status": "PASS",
+   "metrics": [
+    {
+     "name": "advice sentences",
+     "value": 0,
+     "op": "<=",
+     "threshold": 0,
+     "unit": "",
+     "pass": true,
+     "near": false
+    },
+    {
+     "name": "forecast sentences",
+     "value": 0,
+     "op": "<=",
+     "threshold": 0,
+     "unit": "",
+     "pass": true,
+     "near": false
+    },
+    {
+     "name": "4% as recommendation",
+     "value": 0,
+     "op": "<=",
+     "threshold": 0,
+     "unit": "",
+     "pass": true,
+     "near": false
+    },
+    {
+     "name": "\"we\" for the viewer",
+     "value": 0,
+     "op": "<=",
+     "threshold": 0,
+     "unit": "",
+     "pass": true,
+     "near": false
+    },
+    {
+     "name": "\"US only\" stated",
+     "value": true,
+     "op": "==",
+     "threshold": true,
+     "unit": "",
+     "pass": true,
+     "near": false
+    },
+    {
+     "name": "\"history, not a forecast\" stated",
+     "value": true,
+     "op": "==",
+     "threshold": true,
+     "unit": "",
+     "pass": true,
+     "near": false
+    }
+   ],
+   "details": [
+    {
+     "advice": [],
+     "forecast": [],
+     "four": [],
+     "we": []
+    }
+   ],
+   "note": null,
+   "section": "§1.6",
+   "threshold": "0 matches of ADVICE, FORECAST, FOUR, WE_BAD; both required phrases present",
+   "seconds": 0.0
+  },
+  {
+   "id": "S11",
+   "status": "MISSING",
+   "metrics": [],
+   "details": [],
+   "note": "artifact missing: out/checks/page.json",
+   "section": "§2.4",
+   "threshold": "≥ 1 core claim; each core claim appears in ≥ 3 distinct scenes spanning ≥ 2 acts; ≥ 3 declared callbacks with distinct meanings, all verified",
+   "seconds": 0.0
+  },
+  {
+   "id": "S12",
+   "status": "MISSING",
+   "metrics": [],
+   "details": [],
+   "note": "artifact missing: out/checks/page.json",
+   "section": "§2.5",
+   "threshold": "new numbers ≤ duration / 8 s; no scene with > 2 new numbers; 0 claims marked axis but shown outside axis labels",
+   "seconds": 0.0
+  },
+  {
+   "id": "S13",
+   "status": "PASS",
+   "metrics": [
+    {
+     "name": "sentence length CV",
+     "value": 0.490203,
+     "op": ">=",
+     "threshold": 0.35,
+     "unit": "",
+     "pass": true,
+     "near": false
+    }
+   ],
+   "details": [
+    {
+     "sentences": 117,
+     "mean": 10.9
+    }
+   ],
+   "note": null,
+   "section": "§2.6",
+   "threshold": "CV ≥ 0.35",
+   "seconds": 0.0
+  },
+  {
+   "id": "S14",
+   "status": "MISSING",
+   "metrics": [],
+   "details": [],
+   "note": "artifact missing: out/video.mp4",
+   "section": "§2.8",
+   "threshold": "2 … 3 breaks; each within ±1.0 s of a boundary between two acts (not inside cold open/ident); each inside a silence ≥ 1.0 s",
+   "seconds": 0.0
+  },
+  {
+   "id": "S15",
+   "status": "PASS",
+   "metrics": [
+    {
+     "name": "act order",
+     "value": [
+      "cold-open",
+      "ident",
+      "act1",
+      "act2",
+      "act3",
+      "method",
+      "outro"
+     ],
+     "op": "==",
+     "threshold": [
+      "cold-open",
+      "ident",
+      "act1",
+      "act2",
+      "act3",
+      "method",
+      "outro"
+     ],
+     "unit": "",
+     "pass": true,
+     "near": false
+    },
+    {
+     "name": "cold open s",
+     "value": 14.556,
+     "op": "<=",
+     "threshold": 15.0,
+     "unit": "s",
+     "pass": true,
+     "near": true
+    },
+    {
+     "name": "ident s",
+     "value": 2.587,
+     "op": "<=",
+     "threshold": 3.0,
+     "unit": "s",
+     "pass": true,
+     "near": false
+    },
+    {
+     "name": "outro s",
+     "value": 23.69,
+     "op": ">=",
+     "threshold": 20.0,
+     "unit": "s",
+     "pass": true,
+     "near": false
+    },
+    {
+     "name": "total s",
+     "value": 649.962,
+     "op": ">=",
+     "threshold": 600.0,
+     "unit": "s",
+     "pass": true,
+     "near": false
+    },
+    {
+     "name": "act gaps",
+     "value": 0,
+     "op": "<=",
+     "threshold": 0,
+     "unit": "",
+     "pass": true,
+     "near": false
+    },
+    {
+     "name": "scenes outside their act",
+     "value": 0,
+     "op": "<=",
+     "threshold": 0,
+     "unit": "",
+     "pass": true,
+     "near": false
+    }
+   ],
+   "details": [
+    {
+     "gaps": [],
+     "outside": []
+    }
+   ],
+   "note": null,
+   "section": "§0, §2.1",
+   "threshold": "order cold-open, ident, act1, act2, act3, method, outro; cold open ≤ 15 s; ident ≤ 3 s; outro ≥ 20 s; timeline total ≥ 600 s; every scene inside its act",
+   "seconds": 0.0
+  },
+  {
+   "id": "R01",
+   "status": "MISSING",
+   "metrics": [],
+   "details": [],
+   "note": "artifact missing: out/audio/stems/music.wav|flac",
+   "section": "§3.1",
+   "threshold": "Pearson r ≥ 0.8 (cut rate), ≥ 0.7 (music level), ≥ 0.6 (audio density); 0 false peaks; 3 acts with a climax peak; 0 peaks without valley",
+   "seconds": 0.0
+  },
+  {
+   "id": "R02",
+   "status": "PASS",
+   "metrics": [
+    {
+     "name": "longest stretch without a break s",
+     "value": 23.69,
+     "op": "<=",
+     "threshold": 60.0,
+     "unit": "s",
+     "pass": true,
+     "near": false
+    }
+   ],
+   "details": [
+    {
+     "from": 626.272,
+     "to": 649.962
+    }
+   ],
+   "note": null,
+   "section": "§3.2",
+   "threshold": "longest gap ≤ 60 s",
+   "seconds": 0.0
+  },
+  {
+   "id": "R03",
+   "status": "MISSING",
+   "metrics": [],
+   "details": [],
+   "note": "artifact missing: out/video.mp4",
+   "section": "§3.3",
+   "threshold": "≥ 1 decisive claim; every pause ≥ 1.0 s; 0 decisive numbers not found in ASR",
+   "seconds": 0.0
+  },
+  {
+   "id": "R04",
+   "status": "MISSING",
+   "metrics": [],
+   "details": [],
+   "note": "artifact missing: out/transitions.json",
+   "section": "§3.4",
+   "threshold": "≥ 70% of cuts on a beat or on action",
+   "seconds": 0.0
+  },
+  {
+   "id": "R05",
+   "status": "PASS",
+   "metrics": [
+    {
+     "name": "shots < 1.2 s",
+     "value": 0,
+     "op": "<=",
+     "threshold": 0,
+     "unit": "",
+     "pass": true,
+     "near": false
+    },
+    {
+     "name": "shots > 12 s",
+     "value": 0,
+     "op": "<=",
+     "threshold": 0,
+     "unit": "",
+     "pass": true,
+     "near": false
+    },
+    {
+     "name": "shot length CV",
+     "value": 0.438655,
+     "op": ">=",
+     "threshold": 0.4,
+     "unit": "",
+     "pass": true,
+     "near": false
+    },
+    {
+     "name": "act-2 scenes before climax",
+     "value": 28,
+     "op": ">=",
+     "threshold": 6,
+     "unit": "",
+     "pass": true,
+     "near": false
+    },
+    {
+     "name": "act-2 group means non-increasing",
+     "value": true,
+     "op": "==",
+     "threshold": true,
+     "unit": "",
+     "pass": true,
+     "near": false
+    },
+    {
+     "name": "act-2 last/first mean",
+     "value": 0.703823,
+     "op": "<=",
+     "threshold": 0.8,
+     "unit": "",
+     "pass": true,
+     "near": false
+    }
+   ],
+   "details": [
+    {
+     "short": [],
+     "long": [],
+     "act2Groups": [
+      6.2462,
+      5.072777777777778,
+      4.396222222222223
+     ]
+    }
+   ],
+   "note": null,
+   "section": "§3.5",
+   "threshold": "every shot 1.2 … 12 s (act \"outro\" exempt from the 12 s cap: it holds the end screen); CV = std/mean ≥ 0.4; act-2 means non-increasing and last ≤ 0.8 × first (≥ 6 scenes)",
+   "seconds": 0.0
+  },
+  {
+   "id": "R06",
+   "status": "MISSING",
+   "metrics": [],
+   "details": [],
+   "note": "artifact missing: out/transitions.json",
+   "section": "§3.4, §3.5, §4.6 (picture check)",
+   "threshold": "≥ 90% of cuts show a spike ≥ 3 × the surrounding median and ≥ 2 codes",
+   "seconds": 0.0
+  },
+  {
+   "id": "V01",
+   "status": "PASS",
+   "metrics": [
+    {
+     "name": "shots",
+     "value": 99,
+     "op": ">=",
+     "threshold": 1,
+     "unit": "",
+     "pass": true,
+     "near": false
+    },
+    {
+     "name": "shots with field problems",
+     "value": 0,
+     "op": "<=",
+     "threshold": 0,
+     "unit": "",
+     "pass": true,
+     "near": false
+    },
+    {
+     "name": "scenes without a shot",
+     "value": 0,
+     "op": "<=",
+     "threshold": 0,
+     "unit": "",
+     "pass": true,
+     "near": false
+    },
+    {
+     "name": "storyboard present",
+     "value": true,
+     "op": "==",
+     "threshold": true,
+     "unit": "",
+     "pass": true,
+     "near": false
+    },
+    {
+     "name": "colour script present",
+     "value": true,
+     "op": "==",
+     "threshold": true,
+     "unit": "",
+     "pass": true,
+     "near": false
+    }
+   ],
+   "details": [
+    {
+     "bad": [],
+     "uncovered": []
+    }
+   ],
+   "note": null,
+   "section": "§4.1",
+   "threshold": "every shot has all 5 fields non-empty; focalMm ∈ {24, 35, 50, 85}; moveReason ≥ 3 words; every timeline scene has ≥ 1 shot; storyboard and colour script present",
+   "seconds": 0.0
+  },
+  {
+   "id": "V02",
+   "status": "MISSING",
+   "metrics": [],
+   "details": [],
+   "note": "artifact missing: out/checks/page.json",
+   "section": "§4.2",
+   "threshold": "≥ 90% of level-1 samples placed",
+   "seconds": 0.0
+  },
+  {
+   "id": "V03",
+   "status": "MISSING",
+   "metrics": [],
+   "details": [],
+   "note": "artifact missing: out/checks/page.json",
+   "section": "§4.2",
+   "threshold": "all text ink inside x 96–1824, y 54–1026 (90% safe area); 0 violations",
+   "seconds": 0.0
+  },
+  {
+   "id": "V04",
+   "status": "MISSING",
+   "metrics": [],
+   "details": [],
+   "note": "artifact missing: out/checks/page.json",
+   "section": "§4.3",
+   "threshold": "one side only for the whole video (≥ 1 sample); each character's main colour ≥ 95% and main shape ≥ 95% of its observations; colours differ; shapes differ; 0 time-order violations",
+   "seconds": 0.0
+  },
+  {
+   "id": "V05",
+   "status": "MISSING",
+   "metrics": [],
+   "details": [],
+   "note": "artifact missing: out/camera.json",
+   "section": "§4.3",
+   "threshold": "≥ 5 moves; every move eased (≤ 0.4) and none linear; anticipation in ≥ 30% and overshoot in ≥ 30% of moves ≥ 1 s; no overshoot > 8%; peak |a| ≤ 8 fw/s²; ρ ≥ 0.3",
+   "seconds": 0.0
+  },
+  {
+   "id": "V06",
+   "status": "MISSING",
+   "metrics": [],
+   "details": [],
+   "note": "artifact missing: out/camera.json",
+   "section": "§4.3",
+   "threshold": "≥ 3 racks tied to distinct turns; depth of field on (coc ≥ 1 px) in ≥ 50% of frames",
+   "seconds": 0.0
+  },
+  {
+   "id": "V07",
+   "status": "MISSING",
+   "metrics": [],
+   "details": [],
+   "note": "artifact missing: out/camera.json",
+   "section": "§4.3",
+   "threshold": "subframes ≥ 8 (or = 4 with the step-0 proof); median R_peak / R_settled ≤ 0.8 over ≥ 1 measured move",
+   "seconds": 0.0
+  },
+  {
+   "id": "V08",
+   "status": "MISSING",
+   "metrics": [],
+   "details": [],
+   "note": "artifact missing: out/checks/page.json",
+   "section": "§4.4",
+   "threshold": "≥ 4.5:1 for every text sample",
+   "seconds": 0.0
+  },
+  {
+   "id": "V09",
+   "status": "MISSING",
+   "metrics": [],
+   "details": [],
+   "note": "artifact missing: out/checks/page.json",
+   "section": "§4.4",
+   "threshold": "ΔE2000 ≥ 20 under each simulation; grey contrast ≥ 1.5:1",
+   "seconds": 0.0
+  },
+  {
+   "id": "V10",
+   "status": "MISSING",
+   "metrics": [],
+   "details": [],
+   "note": "artifact missing: out/transitions.json",
+   "section": "§4.6",
+   "threshold": "≥ 5 verified match cuts; ≥ 4 verified J/L-cuts; every declared dissolve has a reason ≥ 5 words and not \"default\"; 0 undeclared dissolves detected",
+   "seconds": 0.0
+  },
+  {
+   "id": "V11",
+   "status": "MISSING",
+   "metrics": [],
+   "details": [],
+   "note": "artifact missing: out/checks/page.json",
+   "section": "§4.7 (C rule text-line-collision, upgraded to pixels)",
+   "threshold": "< 4 overlapping pixels for every text in every sample; 0 violations",
+   "seconds": 0.0
+  },
+  {
+   "id": "C01",
+   "status": "MISSING",
+   "metrics": [],
+   "details": [],
+   "note": "artifact missing: out/checks/page.json",
+   "section": "§4.7 (C rule scene-leak)",
+   "threshold": "0 flagged frames",
+   "seconds": 0.0
+  },
+  {
+   "id": "C02",
+   "status": "MISSING",
+   "metrics": [],
+   "details": [],
+   "note": "artifact missing: out/checks/page.json",
+   "section": "§4.7 (C rule bg-over-data)",
+   "threshold": "0 flagged frames",
+   "seconds": 0.0
+  },
+  {
+   "id": "C03",
+   "status": "MISSING",
+   "metrics": [],
+   "details": [],
+   "note": "artifact missing: out/checks/page.json",
+   "section": "§4.7 (C rule unlabelled-curve)",
+   "threshold": "0 flagged frames",
+   "seconds": 0.0
+  },
+  {
+   "id": "C04",
+   "status": "MISSING",
+   "metrics": [],
+   "details": [],
+   "note": "artifact missing: out/checks/page.json",
+   "section": "§4.7 (C rule axis-anchors: \"nhãn trục có neo\")",
+   "threshold": "0 flagged frames",
+   "seconds": 0.0
+  },
+  {
+   "id": "C05",
+   "status": "MISSING",
+   "metrics": [],
+   "details": [],
+   "note": "artifact missing: out/checks/page.json",
+   "section": "§4.7 (C rule grey-emphasis: \"hiểu được ở thang xám\")",
+   "threshold": "0 flagged frames",
+   "seconds": 0.0
+  },
+  {
+   "id": "C06",
+   "status": "MISSING",
+   "metrics": [],
+   "details": [],
+   "note": "artifact missing: out/checks/page.json",
+   "section": "§4.7 (C rule number-colour)",
+   "threshold": "0 flagged frames",
+   "seconds": 0.0
+  },
+  {
+   "id": "C07",
+   "status": "MISSING",
+   "metrics": [],
+   "details": [],
+   "note": "artifact missing: out/checks/page.json",
+   "section": "§4.7 (C rule bar-proportion: \"tỷ lệ cột đúng\")",
+   "threshold": "0 flagged frames",
+   "seconds": 0.0
+  },
+  {
+   "id": "C10",
+   "status": "MISSING",
+   "metrics": [],
+   "details": [],
+   "note": "artifact missing: out/checks/page.json",
+   "section": "§4.7 (C rule level1)",
+   "threshold": "≥ 50% of samples with exactly one, never two",
+   "seconds": 0.0
+  },
+  {
+   "id": "C11",
+   "status": "PASS",
+   "metrics": [
+    {
+     "name": "layout repeats >2 in 90 s",
+     "value": 0,
+     "op": "<=",
+     "threshold": 0,
+     "unit": "",
+     "pass": true,
+     "near": false
+    }
+   ],
+   "details": [],
+   "note": null,
+   "section": "§4.7 (C rule layout-repeat)",
+   "threshold": "no layout used more than 2 times in any 90 s window",
+   "seconds": 0.0
+  },
+  {
+   "id": "C12",
+   "status": "MISSING",
+   "metrics": [],
+   "details": [],
+   "note": "artifact missing: out/checks/page.json",
+   "section": "§4.7 (C rule split-view)",
+   "threshold": "no run ≥ 1.0 s where the changes span > 60% of frame width or height",
+   "seconds": 0.0
+  },
+  {
+   "id": "C13",
+   "status": "MISSING",
+   "metrics": [],
+   "details": [],
+   "note": "artifact missing: out/checks/page.json",
+   "section": "§4.7 (\"đồng bộ số–lời ±250 ms theo giá trị cuối\")",
+   "threshold": "|screen − onset| ≤ 250 ms for every pair; 0 spoken numbers missing from ASR",
+   "seconds": 0.0
+  },
+  {
+   "id": "C14",
+   "status": "MISSING",
+   "metrics": [],
+   "details": [],
+   "note": "artifact missing: out/checks/page.json",
+   "section": "§4.7 (\"đọc được ở cỡ 25%\")",
+   "threshold": "every text ≥ 28 px (cap height ≥ 5 px at 25%) and ≥ 3:1 at 25%; 0 violations",
+   "seconds": 0.0
+  },
+  {
+   "id": "C15",
+   "status": "MISSING",
+   "metrics": [],
+   "details": [],
+   "note": "artifact missing: out/checks/page.json",
+   "section": "§4.7, §4.4 (\"chỉ dùng token\")",
+   "threshold": "0 flagged frames",
+   "seconds": 0.0
+  },
+  {
+   "id": "P01",
+   "status": "MISSING",
+   "metrics": [],
+   "details": [],
+   "note": "artifact missing: out/package/thumb-1.png",
+   "section": "§7",
+   "threshold": "3 thumbnails, each 1280×720; token share ≥ 97%; every text fontPx ≥ 90 (≥ 9 px at 10%) and contrast at 10% ≥ 3:1",
+   "seconds": 0.0
+  }
+ ]
+}

@@ -1,0 +1,51 @@
+{
+ "renders": [
+  {
+   "part": "full",
+   "scenes": 54,
+   "durationS": 364.2,
+   "frames": 10926,
+   "workers": 4,
+   "seconds": 1243.3,
+   "finished": "2026-09-26T07:26:46.837Z"
+  },
+  {
+   "part": "full",
+   "scenes": 54,
+   "durationS": 364.2,
+   "frames": 10926,
+   "workers": 4,
+   "seconds": 1128.6,
+   "finished": "2026-09-26T07:56:52.730Z"
+  }
+ ],
+ "midpointRenders": [
+  {
+   "part": "mid",
+   "scenes": 22,
+   "durationS": 126.6,
+   "frames": 3798,
+   "workers": 4,
+   "seconds": 405,
+   "finished": "2026-09-26T02:49:51.776Z"
+  },
+  {
+   "part": "mid",
+   "scenes": 22,
+   "durationS": 127.8,
+   "frames": 3834,
+   "workers": 4,
+   "seconds": 419.1,
+   "finished": "2026-09-26T03:10:49.600Z"
+  },
+  {
+   "part": "mid",
+   "scenes": 22,
+   "durationS": 127.8,
+   "frames": 3834,
+   "workers": 4,
+   "seconds": 393.5,
+   "finished": "2026-09-26T03:20:59.124Z"
+  }
+ ]
+}

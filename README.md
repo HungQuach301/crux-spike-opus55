@@ -2,7 +2,15 @@
 
 Capability spikes for a US personal-finance data-analysis channel. All numbers are computed in code and traced to claims.
 
-## Test C (this branch, `spike/opus55-av`): full video with voice
+## Test D (branch `claude/opus55-cine-phase-d-jw6me1`): "Same average, different fate"
+
+Cinema-standard data explainer (≥ 10:00). Status: **M1 pre-production** (no production render yet). Report: `REPORT-D.md`.
+- `data/` raw files + `data/sources.json` (SHA-256, terms), `src/d/model.js` (60/40, 4% inflation-indexed withdrawals, 30 years), `out/model.json`, `out/claims.json`
+- `out/script.md` / `out/script.json`, table read `out/tableread/`, `preprod/` (shot list, storyboard, colour script), `out/cues.json`, `out/tension-map.*`, `out/timeline.json`
+- step 0 render test: `render-d/`, `out/step0/`; locked checks: `checks/` (not edited), appeals: `checks-appeal.md`
+- Test C's deliverables moved to `out/c/` so the test-D contract paths under `out/` are free.
+
+## Test C (branch `spike/opus55-av`, `spike/opus55-av`): full video with voice
 
 A 6:04 video in 5 chapters with TTS narration (sentence-level pacing), per-lot capital-gains tax
 (NIIT in the 32% bracket), a voice-driven timeline, 12 machine-checked composition rules,

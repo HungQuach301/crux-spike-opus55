@@ -1,0 +1,72 @@
+F01  MISSING    0.0s    artifact missing: out/video.mp4
+F02  MISSING    0.0s    artifact missing: out/video.mp4
+F03  MISSING    0.0s    artifact missing: out/video.mp4
+F04  MISSING    0.0s    artifact missing: out/video.mp4
+F05  MISSING    0.0s    artifact missing: out/video.mp4
+F06  MISSING    0.0s    artifact missing: out/video.mp4
+F07  MISSING    0.0s    artifact missing: out/video.mp4
+F08  MISSING    0.0s    artifact missing: out/video.mp4
+F09  MISSING    0.0s    artifact missing: out/captions.srt
+F10  MISSING    0.0s    artifact missing: out/package/description.md
+A01  MISSING    0.0s    artifact missing: out/video.mp4
+A02  MISSING    0.0s    artifact missing: out/video.mp4
+A03  MISSING    0.0s    artifact missing: out/video.mp4
+A04  MISSING    0.0s    artifact missing: out/video.mp4
+A05  MISSING    0.0s    artifact missing: out/video.mp4
+A06  MISSING    0.0s    artifact missing: out/video.mp4
+A07  MISSING    0.0s    artifact missing: out/audio/stems/voice.wav|flac
+A08  MISSING    0.0s    artifact missing: out/audio/stems/music.wav|flac
+A09  MISSING    0.0s    artifact missing: out/video.mp4
+A10  MISSING    0.0s    artifact missing: out/camera.json
+A11  MISSING    0.0s    artifact missing: out/sfx-events.json
+A12  MISSING    0.0s    artifact missing: out/audio/stems/music.wav|flac
+A13  MISSING    0.0s    artifact missing: out/voice/takes.json
+A14  MISSING    0.0s    artifact missing: out/video.mp4
+A15  MISSING    0.0s    artifact missing: out/video.mp4
+S01  PASS       0.0s  
+S02  MISSING    0.0s    artifact missing: out/checks/page.json
+S03  PASS       0.0s  
+S04  PASS       0.0s  
+S05  PASS       0.0s  
+S06  MISSING    0.0s    artifact missing: out/checks/page.json
+S07  MISSING    0.0s    artifact missing: out/checks/page.json
+S08  MISSING    0.0s    artifact missing: out/checks/page.json
+S09  MISSING    0.0s    artifact missing: out/checks/page.json
+S10  PASS       0.0s  
+S11  MISSING    0.0s    artifact missing: out/checks/page.json
+S12  MISSING    0.0s    artifact missing: out/checks/page.json
+S13  PASS       0.0s  
+S14  MISSING    0.0s    artifact missing: out/video.mp4
+S15  PASS       0.0s  
+R01  MISSING    0.0s    artifact missing: out/audio/stems/music.wav|flac
+R02  PASS       0.0s  
+R03  MISSING    0.0s    artifact missing: out/video.mp4
+R04  MISSING    0.0s    artifact missing: out/transitions.json
+R05  PASS       0.0s  
+R06  MISSING    0.0s    artifact missing: out/transitions.json
+V01  PASS       0.0s  
+V02  MISSING    0.0s    artifact missing: out/checks/page.json
+V03  MISSING    0.0s    artifact missing: out/checks/page.json
+V04  MISSING    0.0s    artifact missing: out/checks/page.json
+V05  MISSING    0.0s    artifact missing: out/camera.json
+V06  MISSING    0.0s    artifact missing: out/camera.json
+V07  MISSING    0.0s    artifact missing: out/camera.json
+V08  MISSING    0.0s    artifact missing: out/checks/page.json
+V09  MISSING    0.0s    artifact missing: out/checks/page.json
+V10  MISSING    0.0s    artifact missing: out/transitions.json
+V11  MISSING    0.0s    artifact missing: out/checks/page.json
+C01  MISSING    0.0s    artifact missing: out/checks/page.json
+C02  MISSING    0.0s    artifact missing: out/checks/page.json
+C03  MISSING    0.0s    artifact missing: out/checks/page.json
+C04  MISSING    0.0s    artifact missing: out/checks/page.json
+C05  MISSING    0.0s    artifact missing: out/checks/page.json
+C06  MISSING    0.0s    artifact missing: out/checks/page.json
+C07  MISSING    0.0s    artifact missing: out/checks/page.json
+C10  MISSING    0.0s    artifact missing: out/checks/page.json
+C11  PASS       0.0s  
+C12  MISSING    0.0s    artifact missing: out/checks/page.json
+C13  MISSING    0.0s    artifact missing: out/checks/page.json
+C14  MISSING    0.0s    artifact missing: out/checks/page.json
+C15  MISSING    0.0s    artifact missing: out/checks/page.json
+P01  MISSING    0.0s    artifact missing: out/package/thumb-1.png
+{"PASS": 11, "FAIL": 0, "MISSING": 60, "ERROR": 0}

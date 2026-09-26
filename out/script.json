@@ -1,0 +1,940 @@
+{
+ "sentences": [
+  {
+   "id": "co-same.1",
+   "scene": "co-same",
+   "text": "Two retirees with the same balance, the same withdrawals and the same average return.",
+   "spoken": "Two retirees with the same balance, the same withdrawals and the same average return.",
+   "start": 2.1,
+   "end": 7.55
+  },
+  {
+   "id": "co-broke.1",
+   "scene": "co-broke",
+   "text": "One ran out of money in 1991.",
+   "spoken": "One ran out of money in nineteen ninety-one.",
+   "start": 7.85,
+   "end": 11.309
+  },
+  {
+   "id": "co-question.1",
+   "scene": "co-question",
+   "text": "So what decided it?",
+   "spoken": "So what decided it?",
+   "start": 12.559,
+   "end": 14.056
+  },
+  {
+   "id": "a1-est.1",
+   "scene": "a1-est",
+   "text": "It is January 1966.",
+   "spoken": "It is January nineteen sixty-six.",
+   "start": 17.956,
+   "end": 20.424
+  },
+  {
+   "id": "a1-start.1",
+   "scene": "a1-start",
+   "text": "The first retiree starts with $1 million, measured in 1966 dollars.",
+   "spoken": "The first retiree starts with one million dollars, measured in nineteen sixty-six dollars.",
+   "start": 20.724,
+   "end": 25.904
+  },
+  {
+   "id": "a1-who.1",
+   "scene": "a1-who",
+   "text": "They retire at the start of a hard decade for markets, though nobody knows it yet.",
+   "spoken": "They retire at the start of a hard decade for markets... though nobody knows it yet.",
+   "start": 26.204,
+   "end": 32.127
+  },
+  {
+   "id": "a1-hook.1",
+   "scene": "a1-hook",
+   "text": "By the end of this video, you will know which ten years decided the fate of this retiree, and whether the same thing held for every start year since 1928.",
+   "spoken": "By the end of this video, you will know which ten years decided the fate of this retiree... and whether the same thing held, for every start year since nineteen twenty-eight.",
+   "start": 32.427,
+   "end": 44.71
+  },
+  {
+   "id": "a1-mix.1",
+   "scene": "a1-mix",
+   "text": "The money sits in a portfolio of 60% stocks and 40% bonds.",
+   "spoken": "The money sits in a portfolio of sixty percent stocks and forty percent bonds.",
+   "start": 45.01,
+   "end": 50.607
+  },
+  {
+   "id": "a1-assets.1",
+   "scene": "a1-assets",
+   "text": "The stocks are the Standard & Poor's 500 index, with dividends reinvested.",
+   "spoken": "The stocks are the Standard & Poor's five hundred index, with dividends reinvested.",
+   "start": 50.907,
+   "end": 55.903
+  },
+  {
+   "id": "a1-assets.2",
+   "scene": "a1-assets",
+   "text": "The bonds are 10-year US Treasury bonds.",
+   "spoken": "The bonds are ten-year U.S. Treasury bonds.",
+   "start": 56.203,
+   "end": 59.107
+  },
+  {
+   "id": "a1-rebal.1",
+   "scene": "a1-rebal",
+   "text": "Every January, the portfolio is rebalanced back to that mix.",
+   "spoken": "Every January, the portfolio is rebalanced back to that mix.",
+   "start": 59.407,
+   "end": 63.471
+  },
+  {
+   "id": "a1-rule.1",
+   "scene": "a1-rule",
+   "text": "In the first year, the retiree withdraws 4% of the starting balance.",
+   "spoken": "In the first year, the retiree withdraws four percent of the starting balance.",
+   "start": 63.771,
+   "end": 69.002
+  },
+  {
+   "id": "a1-rule.2",
+   "scene": "a1-rule",
+   "text": "That is $40,000, in 1966 dollars.",
+   "spoken": "That is forty thousand dollars, in nineteen sixty-six dollars.",
+   "start": 69.302,
+   "end": 72.901
+  },
+  {
+   "id": "a1-raise.1",
+   "scene": "a1-raise",
+   "text": "After that, the withdrawal rises each year with the previous year's inflation, so it always buys the same groceries.",
+   "spoken": "After that, the withdrawal rises each year with the previous year's inflation, so it always buys the same groceries.",
+   "start": 73.201,
+   "end": 80.609
+  },
+  {
+   "id": "a1-real.1",
+   "scene": "a1-real",
+   "text": "In real terms, it never changes.",
+   "spoken": "In real terms, it never changes.",
+   "start": 80.909,
+   "end": 83.453
+  },
+  {
+   "id": "a1-real.2",
+   "scene": "a1-real",
+   "text": "In nominal terms, the dollars of the day, it climbs every year.",
+   "spoken": "In nominal terms, the dollars of the day, it climbs every year.",
+   "start": 83.753,
+   "end": 88.489
+  },
+  {
+   "id": "a1-horizon.1",
+   "scene": "a1-horizon",
+   "text": "The plan runs for 30 years, from 1966 through 1995.",
+   "spoken": "The plan runs for thirty years, from nineteen sixty-six through nineteen ninety-five.",
+   "start": 88.789,
+   "end": 96.512
+  },
+  {
+   "id": "a1-notax.1",
+   "scene": "a1-notax",
+   "text": "No taxes, no fees.",
+   "spoken": "No taxes, no fees.",
+   "start": 96.812,
+   "end": 98.485
+  },
+  {
+   "id": "a1-notax.2",
+   "scene": "a1-notax",
+   "text": "We keep the model this bare on purpose, so that one thing can change at a time.",
+   "spoken": "We keep the model this bare on purpose, so that one thing can change at a time.",
+   "start": 98.785,
+   "end": 105.115
+  },
+  {
+   "id": "a1-mirror-in.1",
+   "scene": "a1-mirror-in",
+   "text": "Now meet the second retiree.",
+   "spoken": "Now meet the second retiree.",
+   "start": 106.015,
+   "end": 107.515
+  },
+  {
+   "id": "a1-mirror-rule.1",
+   "scene": "a1-mirror-rule",
+   "text": "The mirror retiree lives through the exact same 30 annual returns, but in reverse order.",
+   "spoken": "The mirror retiree lives through the exact same thirty annual returns, but in reverse order.",
+   "start": 107.815,
+   "end": 113.685
+  },
+  {
+   "id": "a1-mirror-rule.2",
+   "scene": "a1-mirror-rule-b",
+   "text": "The return of 1995 arrives first, and the return of 1966 arrives last.",
+   "spoken": "The return of nineteen ninety-five arrives first, and the return of nineteen sixty-six arrives last.",
+   "start": 113.985,
+   "end": 119.935
+  },
+  {
+   "id": "a1-illus.1",
+   "scene": "a1-illus",
+   "text": "This retiree is illustrative: no one lived through these years in this order.",
+   "spoken": "This retiree is illustrative: no one lived through these years in this order.",
+   "start": 120.235,
+   "end": 125.37
+  },
+  {
+   "id": "a1-samewd.1",
+   "scene": "a1-samewd",
+   "text": "Inflation stays in its real calendar order, so both retirees take out the same dollars every year.",
+   "spoken": "Inflation stays in its real calendar order, so both retirees take out the same dollars every year.",
+   "start": 125.67,
+   "end": 132.288
+  },
+  {
+   "id": "a1-question.1",
+   "scene": "a1-question",
+   "text": "Here is the question this first part answers.",
+   "spoken": "Here is the question... this first part answers.",
+   "start": 132.588,
+   "end": 135.855
+  },
+  {
+   "id": "a1-question.2",
+   "scene": "a1-question",
+   "text": "If two people earn the same average return, do they end up in the same place?",
+   "spoken": "If two people earn the same average return... do they end up, in the same place?",
+   "start": 136.155,
+   "end": 142.551
+  },
+  {
+   "id": "a1-avg1966.1",
+   "scene": "a1-avg1966",
+   "text": "The portfolio of the 1966 retiree earned an average return of 9.7%.",
+   "spoken": "The portfolio of the nineteen sixty-six retiree earned an average return of nine point seven percent.",
+   "start": 142.851,
+   "end": 149.081
+  },
+  {
+   "id": "a1-avgmirror.1",
+   "scene": "a1-avgmirror",
+   "text": "For the mirror retiree, the average is also 9.7%.",
+   "spoken": "For the mirror retiree, the average is also nine point seven percent.",
+   "start": 150.481,
+   "end": 155.178
+  },
+  {
+   "id": "a1-avgmirror.2",
+   "scene": "a1-avgmirror",
+   "text": "Not close.",
+   "spoken": "Not close.",
+   "start": 155.478,
+   "end": 156.37
+  },
+  {
+   "id": "a1-avgmirror.3",
+   "scene": "a1-avgmirror",
+   "text": "Identical.",
+   "spoken": "Identical.",
+   "start": 156.67,
+   "end": 157.306
+  },
+  {
+   "id": "a1-geo.1",
+   "scene": "a1-geo",
+   "text": "That is the geometric average, the compound rate that turns the starting dollar into the ending dollar.",
+   "spoken": "That is the geometric average, the compound rate that turns the starting dollar into the ending dollar.",
+   "start": 157.606,
+   "end": 164.266
+  },
+  {
+   "id": "a1-geo.2",
+   "scene": "a1-geo-b",
+   "text": "Multiplication does not care about order, so the same years in any order give the same average.",
+   "spoken": "Multiplication does not care about order, so the same years in any order give the same average.",
+   "start": 164.566,
+   "end": 171.332
+  },
+  {
+   "id": "a1-arith.1",
+   "scene": "a1-arith",
+   "text": "Even the simple arithmetic average, adding up the 30 returns and dividing by 30, is the same for both: 10.3%.",
+   "spoken": "Even the simple arithmetic average, adding up the thirty returns and dividing by thirty, is the same for both: ten point three percent.",
+   "start": 171.632,
+   "end": 180.671
+  },
+  {
+   "id": "a1-payoff.1",
+   "scene": "a1-payoff",
+   "text": "Same money in.",
+   "spoken": "Same money in.",
+   "start": 180.971,
+   "end": 182.185
+  },
+  {
+   "id": "a1-payoff.2",
+   "scene": "a1-payoff",
+   "text": "Same money out.",
+   "spoken": "Same money out.",
+   "start": 182.485,
+   "end": 183.535
+  },
+  {
+   "id": "a1-payoff.3",
+   "scene": "a1-payoff",
+   "text": "Same average.",
+   "spoken": "Same average.",
+   "start": 183.835,
+   "end": 184.795
+  },
+  {
+   "id": "a1-payoff.4",
+   "scene": "a1-payoff",
+   "text": "The only thing that differs is the order.",
+   "spoken": "The only thing that differs is the order.",
+   "start": 185.095,
+   "end": 188.316
+  },
+  {
+   "id": "a2-est.1",
+   "scene": "a2-est",
+   "text": "Watch the two balances year by year.",
+   "spoken": "Watch the two balances year by year.",
+   "start": 192.616,
+   "end": 195.428
+  },
+  {
+   "id": "a2-q.1",
+   "scene": "a2-q",
+   "text": "The question now: when does the order start to matter, and how much does it cost?",
+   "spoken": "The question now: when does the order start to matter, and how much does it cost?",
+   "start": 195.728,
+   "end": 202.124
+  },
+  {
+   "id": "a2-y1.1",
+   "scene": "a2-y1",
+   "text": "Year one.",
+   "spoken": "Year one.",
+   "start": 202.424,
+   "end": 203.375
+  },
+  {
+   "id": "a2-y1.2",
+   "scene": "a2-y1",
+   "text": "The 1966 retiree loses 4.8%.",
+   "spoken": "The nineteen sixty-six retiree loses four point eight percent.",
+   "start": 203.675,
+   "end": 207.178
+  },
+  {
+   "id": "a2-y1.3",
+   "scene": "a2-y1-b",
+   "text": "The mirror retiree gets the 1995 return first: a gain of 31.7%.",
+   "spoken": "The mirror retiree gets the nineteen ninety-five return first: a gain of thirty-one point seven percent.",
+   "start": 207.478,
+   "end": 213.892
+  },
+  {
+   "id": "a2-gap1.1",
+   "scene": "a2-gap1",
+   "text": "One year in, and the paths have already split.",
+   "spoken": "One year in, and the paths have already split.",
+   "start": 214.192,
+   "end": 217.181
+  },
+  {
+   "id": "a2-infl.1",
+   "scene": "a2-infl",
+   "text": "Then inflation starts to climb.",
+   "spoken": "Then inflation starts to climb.",
+   "start": 217.481,
+   "end": 219.567
+  },
+  {
+   "id": "a2-infl.2",
+   "scene": "a2-infl",
+   "text": "By 1969 it is 6.2% a year, and every withdrawal grows with it.",
+   "spoken": "By nineteen sixty-nine it is six point two percent a year, and every withdrawal grows with it.",
+   "start": 219.867,
+   "end": 226.106
+  },
+  {
+   "id": "a2-7374.1",
+   "scene": "a2-7374",
+   "text": "In 1973 and 1974, stocks and bonds fall together.",
+   "spoken": "In nineteen seventy-three and nineteen seventy-four, stocks and bonds fall together.",
+   "start": 226.406,
+   "end": 230.822
+  },
+  {
+   "id": "a2-1974inf.1",
+   "scene": "a2-1974inf",
+   "text": "In 1974 alone, the portfolio loses 14.7%, while prices rise 12.3%.",
+   "spoken": "In nineteen seventy-four alone, the portfolio loses fourteen point seven percent, while prices rise twelve point three percent.",
+   "start": 231.122,
+   "end": 238.066
+  },
+  {
+   "id": "a2-bal74.1",
+   "scene": "a2-bal74",
+   "text": "In 1966 dollars, the 1966 retiree ends 1974 with $461,000.",
+   "spoken": "In nineteen sixty-six dollars, the nineteen sixty-six retiree ends nineteen seventy-four with four hundred sixty-one thousand dollars.",
+   "start": 238.366,
+   "end": 245.321
+  },
+  {
+   "id": "a2-bal74m.1",
+   "scene": "a2-bal74m",
+   "text": "The mirror retiree, same year, same withdrawals: $1.27 million, also in 1966 dollars.",
+   "spoken": "The mirror retiree, same year, same withdrawals: one point two seven million dollars, also in nineteen sixty-six dollars.",
+   "start": 246.571,
+   "end": 253.635
+  },
+  {
+   "id": "a2-bite.1",
+   "scene": "a2-bite",
+   "text": "Here is why a bad start is so hard to undo.",
+   "spoken": "Here is why a bad start is so hard to undo.",
+   "start": 253.935,
+   "end": 257.449
+  },
+  {
+   "id": "a2-bite.2",
+   "scene": "a2-bite-b",
+   "text": "The withdrawal is still $40,000 in 1966 dollars, but it is now taken from a much smaller pile.",
+   "spoken": "The withdrawal is still forty thousand dollars in nineteen sixty-six dollars, but it is now taken from a much smaller pile.",
+   "start": 257.749,
+   "end": 266.009
+  },
+  {
+   "id": "a2-sell.1",
+   "scene": "a2-sell",
+   "text": "Every dollar withdrawn after a loss is a dollar that is not there when the recovery comes.",
+   "spoken": "Every dollar withdrawn after a loss is a dollar that is not there when the recovery comes.",
+   "start": 266.309,
+   "end": 272.727
+  },
+  {
+   "id": "a2-seq.1",
+   "scene": "a2-seq",
+   "text": "Analysts call this sequence-of-returns risk.",
+   "spoken": "Analysts call this sequence-of-returns risk.",
+   "start": 273.027,
+   "end": 275.517
+  },
+  {
+   "id": "a2-7576.1",
+   "scene": "a2-7576",
+   "text": "Good years do come.",
+   "spoken": "Good years do come.",
+   "start": 275.817,
+   "end": 277.478
+  },
+  {
+   "id": "a2-7576n.1",
+   "scene": "a2-7576n",
+   "text": "In 1975 the portfolio gains 23.6%, and in 1976 another 20.7%.",
+   "spoken": "In nineteen seventy-five the portfolio gains twenty-three point six percent, and in nineteen seventy-six another twenty point seven percent.",
+   "start": 277.778,
+   "end": 285.308
+  },
+  {
+   "id": "a2-7576b.1",
+   "scene": "a2-7576b",
+   "text": "But they compound on a balance that has already been cut, while the withdrawals keep rising.",
+   "spoken": "But they compound on a balance that has already been cut, while the withdrawals keep rising.",
+   "start": 285.608,
+   "end": 291.967
+  },
+  {
+   "id": "a2-grind.1",
+   "scene": "a2-grind",
+   "text": "Through the rest of the decade, inflation keeps rising.",
+   "spoken": "Through the rest of the decade, inflation keeps rising.",
+   "start": 292.267,
+   "end": 295.399
+  },
+  {
+   "id": "a2-1979.1",
+   "scene": "a2-1979",
+   "text": "In 1979 it reaches 13.3%.",
+   "spoken": "In nineteen seventy-nine it reaches thirteen point three percent.",
+   "start": 295.699,
+   "end": 299.331
+  },
+  {
+   "id": "a2-1981.1",
+   "scene": "a2-1981",
+   "text": "By 1981, the yearly withdrawal has grown to $108,553 in nominal dollars.",
+   "spoken": "By nineteen eighty-one, the yearly withdrawal has grown to one hundred eight thousand five hundred fifty-three dollars in nominal dollars.",
+   "start": 299.631,
+   "end": 307.343
+  },
+  {
+   "id": "a2-1981.2",
+   "scene": "a2-1981-b",
+   "text": "In 1966 dollars, it is still $40,000.",
+   "spoken": "In nineteen sixty-six dollars, it is still forty thousand dollars.",
+   "start": 307.643,
+   "end": 311.807
+  },
+  {
+   "id": "a2-1982.1",
+   "scene": "a2-1982",
+   "text": "Then, in 1982, the good years finally arrive.",
+   "spoken": "Then, in nineteen eighty-two, the good years finally arrive.",
+   "start": 312.607,
+   "end": 316.168
+  },
+  {
+   "id": "a2-1982r.1",
+   "scene": "a2-1982r",
+   "text": "That year the 1966 retiree gains 25.4%.",
+   "spoken": "That year the nineteen sixty-six retiree gains twenty-five point four percent.",
+   "start": 316.468,
+   "end": 320.812
+  },
+  {
+   "id": "a2-1982w.1",
+   "scene": "a2-1982w",
+   "text": "But the withdrawal now takes 16.9% of what is left.",
+   "spoken": "But the withdrawal now takes sixteen point nine percent of what is left.",
+   "start": 321.112,
+   "end": 325.924
+  },
+  {
+   "id": "a2-late.1",
+   "scene": "a2-late",
+   "text": "The boom comes too late.",
+   "spoken": "The boom comes too late.",
+   "start": 326.224,
+   "end": 327.945
+  },
+  {
+   "id": "a2-mirror-boom.1",
+   "scene": "a2-mirror-boom",
+   "text": "For the mirror retiree, those same years came first, when the balance was largest.",
+   "spoken": "For the mirror retiree, those same years came first, when the balance was largest.",
+   "start": 328.245,
+   "end": 333.838
+  },
+  {
+   "id": "a2-climb.1",
+   "scene": "a2-climb",
+   "text": "The gap widens every year.",
+   "spoken": "The gap widens every year.",
+   "start": 334.138,
+   "end": 335.959
+  },
+  {
+   "id": "a2-climax-in.1",
+   "scene": "a2-climax-in",
+   "text": "In 1986 it peaks.",
+   "spoken": "In nineteen eighty-six it peaks.",
+   "start": 336.259,
+   "end": 338.409
+  },
+  {
+   "id": "a2-climax.1",
+   "scene": "a2-climax",
+   "text": "In 1966 dollars, the mirror retiree is now ahead by $1.96 million.",
+   "spoken": "In nineteen sixty-six dollars, the mirror retiree is now ahead by one point nine six million dollars.",
+   "start": 338.709,
+   "end": 345.419
+  },
+  {
+   "id": "a2-years.1",
+   "scene": "a2-years",
+   "text": "At $40,000 a year in 1966 dollars, that gap would pay for 49 more years of withdrawals.",
+   "spoken": "At forty thousand dollars a year in nineteen sixty-six dollars, that gap would pay for forty-nine more years of withdrawals.",
+   "start": 346.719,
+   "end": 354.707
+  },
+  {
+   "id": "a2-rest.1",
+   "scene": "a2-rest",
+   "text": "From there, the story of the 1966 retiree is short.",
+   "spoken": "From there, the story of the nineteen sixty-six retiree is short.",
+   "start": 356.407,
+   "end": 360.528
+  },
+  {
+   "id": "a2-mirror-late.1",
+   "scene": "a2-mirror-late",
+   "text": "The mirror retiree meets the bad years late: the 1974 loss arrives in 1987, on a balance big enough to absorb it.",
+   "spoken": "The mirror retiree meets the bad years late: the nineteen seventy-four loss arrives in nineteen eighty-seven, on a balance big enough to absorb it.",
+   "start": 360.828,
+   "end": 370.094
+  },
+  {
+   "id": "a2-1991.1",
+   "scene": "a2-1991",
+   "text": "The account pays out its last $96,829, in nominal dollars, and hits zero in 1991.",
+   "spoken": "The account pays out its last ninety-six thousand eight hundred twenty-nine dollars, in nominal dollars, and hits zero in nineteen ninety-one.",
+   "start": 370.394,
+   "end": 378.792
+  },
+  {
+   "id": "a2-short.1",
+   "scene": "a2-short",
+   "text": "That last payment is short of the full withdrawal, and the final 4 years of the plan get nothing.",
+   "spoken": "That last payment is short of the full withdrawal, and the final four years of the plan get nothing.",
+   "start": 380.042,
+   "end": 386.878
+  },
+  {
+   "id": "a2-mirror-end.1",
+   "scene": "a2-mirror-end",
+   "text": "The mirror retiree finishes 1995 with $6.96 million in nominal dollars.",
+   "spoken": "The mirror retiree finishes nineteen ninety-five with six point nine six million dollars in nominal dollars.",
+   "start": 387.178,
+   "end": 393.452
+  },
+  {
+   "id": "a2-mirror-real.1",
+   "scene": "a2-mirror-real",
+   "text": "In 1966 dollars that is $1.44 million, more than the starting balance, after 30 years of withdrawals.",
+   "spoken": "In nineteen sixty-six dollars that is one point four four million dollars, more than the starting balance, after thirty years of withdrawals.",
+   "start": 393.752,
+   "end": 402.507
+  },
+  {
+   "id": "a2-payoff.1",
+   "scene": "a2-payoff",
+   "text": "Both portfolios averaged 9.7% a year.",
+   "spoken": "Both portfolios averaged nine point seven percent a year.",
+   "start": 402.807,
+   "end": 406.414
+  },
+  {
+   "id": "a2-payoff.2",
+   "scene": "a2-payoff",
+   "text": "The average did not decide who went broke.",
+   "spoken": "The average did not decide who went broke.",
+   "start": 406.714,
+   "end": 409.936
+  },
+  {
+   "id": "a3-est.1",
+   "scene": "a3-est",
+   "text": "So was 1966 a fluke?",
+   "spoken": "So was nineteen sixty-six a fluke?",
+   "start": 414.236,
+   "end": 416.659
+  },
+  {
+   "id": "a3-all.1",
+   "scene": "a3-all",
+   "text": "We ran the same rules for every start year from 1928 to 1996.",
+   "spoken": "We ran the same rules for every start year from nineteen twenty-eight to nineteen ninety-six.",
+   "start": 416.959,
+   "end": 423.174
+  },
+  {
+   "id": "a3-all.2",
+   "scene": "a3-all",
+   "text": "That is 69 retirements, each with 30 years of data.",
+   "spoken": "That is sixty-nine retirements, each with thirty years of data.",
+   "start": 423.474,
+   "end": 427.362
+  },
+  {
+   "id": "a3-q.1",
+   "scene": "a3-q",
+   "text": "The question for this part: what actually decides the outcome?",
+   "spoken": "The question for this part: what actually decides the outcome?",
+   "start": 427.662,
+   "end": 431.674
+  },
+  {
+   "id": "a3-fine.1",
+   "scene": "a3-fine",
+   "text": "Most of these retirees never ran out.",
+   "spoken": "Most of these retirees never ran out.",
+   "start": 431.974,
+   "end": 434.766
+  },
+  {
+   "id": "a3-fine.2",
+   "scene": "a3-fine",
+   "text": "In 65 of the 69 start years, the money lasted all 30 years.",
+   "spoken": "In sixty-five of the sixty-nine start years, the money lasted all thirty years.",
+   "start": 435.066,
+   "end": 440.252
+  },
+  {
+   "id": "a3-good.1",
+   "scene": "a3-good",
+   "text": "A retiree who started in 1982 under the same rules ended with $5.36 million in 1982 dollars.",
+   "spoken": "A retiree who started in nineteen eighty-two under the same rules ended with five point three six million dollars in nineteen eighty-two dollars.",
+   "start": 440.552,
+   "end": 449.202
+  },
+  {
+   "id": "a3-1929.1",
+   "scene": "a3-1929",
+   "text": "Even a retiree who started in 1929, the year of the crash, never ran out.",
+   "spoken": "Even a retiree who started in nineteen twenty-nine, the year of the crash, never ran out.",
+   "start": 449.502,
+   "end": 455.7
+  },
+  {
+   "id": "a3-1929.2",
+   "scene": "a3-1929-b",
+   "text": "Prices fell through the Depression, so the withdrawals shrank, and after inflation the first decade still averaged 3.9% a year.",
+   "spoken": "Prices fell through the Depression, so the withdrawals shrank, and after inflation the first decade still averaged three point nine percent a year.",
+   "start": 456,
+   "end": 464.442
+  },
+  {
+   "id": "a3-nohurt.1",
+   "scene": "a3-nohurt",
+   "text": "For many start years, the order of returns did no harm at all.",
+   "spoken": "For many start years, the order of returns did no harm at all.",
+   "start": 464.742,
+   "end": 469.466
+  },
+  {
+   "id": "a3-less.1",
+   "scene": "a3-less",
+   "text": "Surviving is not the same as thriving.",
+   "spoken": "Surviving is not the same as thriving.",
+   "start": 469.766,
+   "end": 472.737
+  },
+  {
+   "id": "a3-less.2",
+   "scene": "a3-less",
+   "text": "In 26 of the 69 start years, the retiree ended with less than the starting balance, after inflation.",
+   "spoken": "In twenty-six of the sixty-nine start years, the retiree ended with less than the starting balance, after inflation.",
+   "start": 473.037,
+   "end": 480.199
+  },
+  {
+   "id": "a3-four.1",
+   "scene": "a3-four",
+   "text": "4 start years ran out of money, beginning with 1965 and 1966.",
+   "spoken": "four start years ran out of money, beginning with nineteen sixty-five and nineteen sixty-six.",
+   "start": 480.499,
+   "end": 486.245
+  },
+  {
+   "id": "a3-four2.1",
+   "scene": "a3-four2",
+   "text": "Then 1968 and 1969.",
+   "spoken": "Then nineteen sixty-eight and nineteen sixty-nine.",
+   "start": 486.545,
+   "end": 489.251
+  },
+  {
+   "id": "a3-avg-not.1",
+   "scene": "a3-avg-not",
+   "text": "Their long-run averages do not single them out.",
+   "spoken": "Their long-run averages do not single them out.",
+   "start": 489.551,
+   "end": 492.707
+  },
+  {
+   "id": "a3-real66.1",
+   "scene": "a3-real66",
+   "text": "After inflation, the 1966 retiree averaged 4.1% a year over all 30 years.",
+   "spoken": "After inflation, the nineteen sixty-six retiree averaged four point one percent a year over all thirty years.",
+   "start": 493.007,
+   "end": 499.224
+  },
+  {
+   "id": "a3-real66.2",
+   "scene": "a3-real66-b",
+   "text": "17 start years had a lower real average than that, and never ran out.",
+   "spoken": "seventeen start years had a lower real average than that, and never ran out.",
+   "start": 499.524,
+   "end": 504.992
+  },
+  {
+   "id": "a3-1969.1",
+   "scene": "a3-1969",
+   "text": "After inflation, the 1969 retiree averaged 5.6% a year.",
+   "spoken": "After inflation, the nineteen sixty-nine retiree averaged five point six percent a year.",
+   "start": 505.292,
+   "end": 510.412
+  },
+  {
+   "id": "a3-1969.2",
+   "scene": "a3-1969",
+   "text": "The 1928 retiree averaged less: 4.9%.",
+   "spoken": "The nineteen twenty-eight retiree averaged less: four point nine percent.",
+   "start": 510.712,
+   "end": 514.565
+  },
+  {
+   "id": "a3-1928.1",
+   "scene": "a3-1928",
+   "text": "Yet 1928 ended with $1.21 million in 1928 dollars, and 1969 ran out of money in its 28th year.",
+   "spoken": "Yet nineteen twenty-eight ended with one point two one million dollars in nineteen twenty-eight dollars, and nineteen sixty-nine ran out of money in its twenty-eighth year.",
+   "start": 514.865,
+   "end": 524.979
+  },
+  {
+   "id": "a3-share.1",
+   "scene": "a3-share",
+   "text": "What the four failures share is their first decade.",
+   "spoken": "What the four failures share is their first decade.",
+   "start": 525.679,
+   "end": 529.306
+  },
+  {
+   "id": "a3-decade.1",
+   "scene": "a3-decade",
+   "text": "In every one of them, the portfolio lost money after inflation over its first 10 years.",
+   "spoken": "In every one of them, the portfolio lost money after inflation over its first ten years.",
+   "start": 529.606,
+   "end": 535.357
+  },
+  {
+   "id": "a3-1966d.1",
+   "scene": "a3-1966d",
+   "text": "After inflation, the first decade of the 1966 retiree averaged −1.8%.",
+   "spoken": "After inflation, the first decade of the nineteen sixty-six retiree averaged minus one point eight percent.",
+   "start": 535.657,
+   "end": 541.954
+  },
+  {
+   "id": "a3-mirror-d.1",
+   "scene": "a3-mirror-d",
+   "text": "In the first decade, the mirror retiree averaged 6.9% a year after inflation.",
+   "spoken": "In the first decade, the mirror retiree averaged six point nine percent a year after inflation.",
+   "start": 543.204,
+   "end": 549.621
+  },
+  {
+   "id": "a3-answer.1",
+   "scene": "a3-answer",
+   "text": "So, what decided it?",
+   "spoken": "So, what decided it?",
+   "start": 549.921,
+   "end": 550.917
+  },
+  {
+   "id": "a3-answer.2",
+   "scene": "a3-answer",
+   "text": "Not the average.",
+   "spoken": "Not the average.",
+   "start": 551.217,
+   "end": 552.604
+  },
+  {
+   "id": "a3-answer.3",
+   "scene": "a3-answer",
+   "text": "The first 10 years.",
+   "spoken": "The first ten years.",
+   "start": 552.904,
+   "end": 554.672
+  },
+  {
+   "id": "a3-nuance.1",
+   "scene": "a3-nuance",
+   "text": "To be precise: across all 69 start years, the 30-year real return still lines up best with how much is left at the end.",
+   "spoken": "To be precise: across all sixty-nine start years, the thirty-year real return still lines up best with how much is left at the end.",
+   "start": 554.972,
+   "end": 563.458
+  },
+  {
+   "id": "a3-nuance.2",
+   "scene": "a3-nuance-b",
+   "text": "But every retiree who ran out met a bad first decade.",
+   "spoken": "But every retiree who ran out met a bad first decade.",
+   "start": 563.758,
+   "end": 567.993
+  },
+  {
+   "id": "a3-avg-callback.1",
+   "scene": "a3-avg-callback",
+   "text": "The 9.7% average described the 1966 retiree perfectly, and it said nothing about 1991.",
+   "spoken": "The nine point seven percent average described the nineteen sixty-six retiree perfectly, and it said nothing about nineteen ninety-one.",
+   "start": 568.293,
+   "end": 576.07
+  },
+  {
+   "id": "a3-limits.1",
+   "scene": "a3-limits",
+   "text": "Now the limits of this analysis.",
+   "spoken": "Now... the limits of this analysis.",
+   "start": 577.72,
+   "end": 580.307
+  },
+  {
+   "id": "a3-limits.2",
+   "scene": "a3-limits",
+   "text": "This is history, not a forecast.",
+   "spoken": "This is history, not a forecast.",
+   "start": 580.607,
+   "end": 583.171
+  },
+  {
+   "id": "a3-usonly.1",
+   "scene": "a3-usonly",
+   "text": "It is US only, one country with one set of markets.",
+   "spoken": "It is U.S. only, one country with one set of markets.",
+   "start": 583.471,
+   "end": 587.927
+  },
+  {
+   "id": "a3-overlap.1",
+   "scene": "a3-overlap",
+   "text": "The 69 windows overlap, so 98 years of data hold only 3 separate 30-year stretches.",
+   "spoken": "The sixty-nine windows overlap, so ninety-eight years of data hold only three separate thirty-year stretches.",
+   "start": 588.227,
+   "end": 594.239
+  },
+  {
+   "id": "a3-bare.1",
+   "scene": "a3-bare",
+   "text": "And the model is bare: no taxes, no fees, one portfolio mix and one withdrawal rule.",
+   "spoken": "And the model is bare: no taxes, no fees, one portfolio mix and one withdrawal rule.",
+   "start": 594.539,
+   "end": 600.834
+  },
+  {
+   "id": "a3-bare.2",
+   "scene": "a3-bare",
+   "text": "Change any of those, and every number here changes too.",
+   "spoken": "Change any of those, and every number here changes too.",
+   "start": 601.134,
+   "end": 605.102
+  },
+  {
+   "id": "method.1",
+   "scene": "method",
+   "text": "The data: annual returns compiled at NYU Stern, and consumer prices from the Bureau of Labor Statistics via FRED.",
+   "spoken": "The data: annual returns compiled at N.Y.U. Stern, and consumer prices from the Bureau of Labor Statistics via Fred.",
+   "start": 606.202,
+   "end": 613.612
+  },
+  {
+   "id": "method-model.1",
+   "scene": "method-model",
+   "text": "Returns include dividends and bond coupons, and the portfolio is rebalanced once a year.",
+   "spoken": "Returns include dividends and bond coupons, and the portfolio is rebalanced once a year.",
+   "start": 613.912,
+   "end": 619.39
+  },
+  {
+   "id": "method-model.2",
+   "scene": "method-model-b",
+   "text": "Every number and formula is listed in the description.",
+   "spoken": "Every number and formula is listed in the description.",
+   "start": 619.69,
+   "end": 623.446
+  },
+  {
+   "id": "outro.1",
+   "scene": "outro",
+   "text": "Two retirees, one average, and a fate decided by the order of the years.",
+   "spoken": "Two retirees, one average, and a fate decided by the order of the years.",
+   "start": 627.146,
+   "end": 632.662
+  }
+ ]
+}

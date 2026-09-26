@@ -11,3 +11,7 @@ out/audio/voice-activity.npy
 out/voice/*.wav
 out/checks-c/root/
 checks/**/__pycache__/
+# test D: raw TTS takes (regenerable, 79 MB; final takes are committed at M2), checker cache, step logs
+out/voice/raw/
+out/voice/*.log
+out/checks/cache/

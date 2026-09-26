@@ -1,0 +1,1623 @@
+{
+ "tag": "v1",
+ "totalSeconds": 612.3,
+ "actWpm": {
+  "cold-open": 133.9,
+  "act1": 166.3,
+  "act2": 156.2,
+  "act3": 158.8,
+  "method": 153.1,
+  "outro": 185.0
+ },
+ "fastOver175": [
+  {
+   "id": "a1-question.1",
+   "act": "act1",
+   "start": 126.57,
+   "dur": 2.27,
+   "wpm": 247.7,
+   "words": 9,
+   "asrSpan": 2.18,
+   "heard": "So here is the question for this first part."
+  },
+  {
+   "id": "a2-short.1",
+   "act": "act2",
+   "start": 361.85,
+   "dur": 4.85,
+   "wpm": 242.6,
+   "words": 19,
+   "asrSpan": 4.7,
+   "heard": "That was less than the full withdrawal, and nothing is left for the last four years of the plan."
+  },
+  {
+   "id": "a2-bite.1",
+   "act": "act2",
+   "start": 249.94,
+   "dur": 2.92,
+   "wpm": 239.1,
+   "words": 11,
+   "asrSpan": 2.76,
+   "heard": "Here is why a bad start is so hard to undo."
+  },
+  {
+   "id": "a3-limits.1",
+   "act": "act3",
+   "start": 542.08,
+   "dur": 1.85,
+   "wpm": 222.2,
+   "words": 6,
+   "asrSpan": 1.62,
+   "heard": "Now the limits of this analysis."
+  },
+  {
+   "id": "a2-gap1.1",
+   "act": "act2",
+   "start": 205.03,
+   "dur": 2.71,
+   "wpm": 210.9,
+   "words": 9,
+   "asrSpan": 2.56,
+   "heard": "One year in, and the paths have already split."
+  },
+  {
+   "id": "a3-nohurt.1",
+   "act": "act3",
+   "start": 427.33,
+   "dur": 3.76,
+   "wpm": 210.8,
+   "words": 13,
+   "asrSpan": 3.7,
+   "heard": "For many start years, the order of returns did no harm at all."
+  },
+  {
+   "id": "a1-notax.2",
+   "act": "act1",
+   "start": 93.12,
+   "dur": 4.92,
+   "wpm": 210.7,
+   "words": 17,
+   "asrSpan": 4.84,
+   "heard": "We keep the model this bear on purpose, so that one thing can change at a time."
+  },
+  {
+   "id": "a1-hook.1",
+   "act": "act1",
+   "start": 33.58,
+   "dur": 8.71,
+   "wpm": 204.7,
+   "words": 29,
+   "asrSpan": 8.5,
+   "heard": "By the end of this video, you will know which 10 years decided this retirees fate, and whether the same thing held for every start year since 1928."
+  },
+  {
+   "id": "a2-q.1",
+   "act": "act2",
+   "start": 185.6,
+   "dur": 4.97,
+   "wpm": 200.0,
+   "words": 16,
+   "asrSpan": 4.8,
+   "heard": "The question now, when does the order start to matter and how much does it cost?"
+  },
+  {
+   "id": "a3-all.1",
+   "act": "act3",
+   "start": 395.46,
+   "dur": 4.87,
+   "wpm": 200.0,
+   "words": 15,
+   "asrSpan": 4.5,
+   "heard": "We ran the same rules for every start year from 1928 to 1996."
+  },
+  {
+   "id": "a1-geo.1",
+   "act": "act1",
+   "start": 151.41,
+   "dur": 5.16,
+   "wpm": 196.2,
+   "words": 17,
+   "asrSpan": 5.2,
+   "heard": "That is the geometric average, the compound rate that turns the starting dollar into the ending dollar."
+  },
+  {
+   "id": "a1-assets.1",
+   "act": "act1",
+   "start": 47.78,
+   "dur": 3.73,
+   "wpm": 194.6,
+   "words": 12,
+   "asrSpan": 3.7,
+   "heard": "The stocks are the S &P 500 with dividends reinvested."
+  },
+  {
+   "id": "a1-question.2",
+   "act": "act1",
+   "start": 129.14,
+   "dur": 5.21,
+   "wpm": 192.8,
+   "words": 16,
+   "asrSpan": 4.98,
+   "heard": "If two people earn the same average return, do they end up in the same place?"
+  },
+  {
+   "id": "a1-mix.1",
+   "act": "act1",
+   "start": 42.74,
+   "dur": 4.59,
+   "wpm": 191.8,
+   "words": 14,
+   "asrSpan": 4.38,
+   "heard": "The money sits in a portfolio of 60 % stocks and 40 % bonds."
+  },
+  {
+   "id": "co-broke.1",
+   "act": "cold-open",
+   "start": 9.18,
+   "dur": 2.89,
+   "wpm": 190.5,
+   "words": 8,
+   "asrSpan": 2.52,
+   "heard": "One ran out of money in 1991."
+  },
+  {
+   "id": "a3-nuance.1",
+   "act": "act3",
+   "start": 518.06,
+   "dur": 7.69,
+   "wpm": 189.5,
+   "words": 24,
+   "asrSpan": 7.6,
+   "heard": "To be precise, across all 69 start years, the 30 -year real return still lines up best with how much is left at the end."
+  },
+  {
+   "id": "a1-arith.1",
+   "act": "act1",
+   "start": 163.83,
+   "dur": 7.45,
+   "wpm": 187.5,
+   "words": 23,
+   "asrSpan": 7.36,
+   "heard": "Even the simple arithmetic average, adding up the 30 returns and dividing by 30, is the same for both, 10 .3%."
+  },
+  {
+   "id": "a2-sell.1",
+   "act": "act2",
+   "start": 261.02,
+   "dur": 5.4,
+   "wpm": 186.8,
+   "words": 17,
+   "asrSpan": 5.46,
+   "heard": "Every dollar withdrawn after a loss is a dollar that is not there when the recovery comes"
+  },
+  {
+   "id": "outro.1",
+   "act": "outro",
+   "start": 593.13,
+   "dur": 4.7,
+   "wpm": 185.0,
+   "words": 14,
+   "asrSpan": 4.54,
+   "heard": "two retirees, one average, and a fate decided by the order of the years."
+  },
+  {
+   "id": "a1-illus.1",
+   "act": "act1",
+   "start": 115.51,
+   "dur": 4.33,
+   "wpm": 184.8,
+   "words": 13,
+   "asrSpan": 4.22,
+   "heard": "This retiree is illustrative. No one lived through these years, in this order."
+  },
+  {
+   "id": "a2-payoff.2",
+   "act": "act2",
+   "start": 386.3,
+   "dur": 2.67,
+   "wpm": 183.2,
+   "words": 8,
+   "asrSpan": 2.62,
+   "heard": "The average did not decide who went broke."
+  },
+  {
+   "id": "a3-decade.1",
+   "act": "act3",
+   "start": 492.51,
+   "dur": 5.39,
+   "wpm": 183.2,
+   "words": 16,
+   "asrSpan": 5.24,
+   "heard": "In every one of them, the portfolio lost money after inflation over its first 10 years."
+  },
+  {
+   "id": "a1-real.2",
+   "act": "act1",
+   "start": 78.33,
+   "dur": 4.03,
+   "wpm": 182.7,
+   "words": 12,
+   "asrSpan": 3.94,
+   "heard": "In nominal terms, the dollars of the day, it climbs every year."
+  },
+  {
+   "id": "a3-fine.1",
+   "act": "act3",
+   "start": 409.71,
+   "dur": 2.37,
+   "wpm": 182.6,
+   "words": 7,
+   "asrSpan": 2.3,
+   "heard": "Most of these retirees never ran out."
+  },
+  {
+   "id": "a1-raise.1",
+   "act": "act1",
+   "start": 68.74,
+   "dur": 6.53,
+   "wpm": 181.0,
+   "words": 19,
+   "asrSpan": 6.3,
+   "heard": "After that, the withdrawal rises each year with the previous year's inflation, so it always buys the same groceries."
+  },
+  {
+   "id": "a2-1982w.1",
+   "act": "act2",
+   "start": 298.24,
+   "dur": 4.37,
+   "wpm": 177.3,
+   "words": 13,
+   "asrSpan": 4.4,
+   "heard": "But the withdrawal now takes 16 .9 % of what is left."
+  },
+  {
+   "id": "a1-samewd.1",
+   "act": "act1",
+   "start": 120.29,
+   "dur": 5.83,
+   "wpm": 177.1,
+   "words": 17,
+   "asrSpan": 5.76,
+   "heard": "Inflation stays in its real calendar order, so both retirees take out the same dollars every year."
+  },
+  {
+   "id": "a3-limits.2",
+   "act": "act3",
+   "start": 544.23,
+   "dur": 2.29,
+   "wpm": 176.5,
+   "words": 6,
+   "asrSpan": 2.04,
+   "heard": "This is history, not a forecast."
+  }
+ ],
+ "slowUnder140": [
+  {
+   "id": "co-same.1",
+   "act": "cold-open",
+   "start": 4.07,
+   "dur": 4.66,
+   "wpm": 100.8,
+   "words": 8,
+   "asrSpan": 4.76,
+   "heard": "Same starting balance, same withdrawals, same average return."
+  },
+  {
+   "id": "a1-est.1",
+   "act": "act1",
+   "start": 24.15,
+   "dur": 2.74,
+   "wpm": 114.5,
+   "words": 5,
+   "asrSpan": 2.62,
+   "heard": "It is January 1966."
+  },
+  {
+   "id": "a1-avgmirror.1",
+   "act": "act1",
+   "start": 142.88,
+   "dur": 5.29,
+   "wpm": 117.6,
+   "words": 10,
+   "asrSpan": 5.1,
+   "heard": "The mirror retirees average is also 9 .7%."
+  },
+  {
+   "id": "a2-climax-in.1",
+   "act": "act2",
+   "start": 313.79,
+   "dur": 2.81,
+   "wpm": 120.0,
+   "words": 5,
+   "asrSpan": 2.5,
+   "heard": "In 1986, it peaks."
+  },
+  {
+   "id": "a1-mirror-rule.2",
+   "act": "act1",
+   "start": 107.59,
+   "dur": 7.47,
+   "wpm": 122.3,
+   "words": 15,
+   "asrSpan": 7.36,
+   "heard": "The return of 1995 arrives first and the return of 1966 arrives last."
+  },
+  {
+   "id": "a2-bal74.1",
+   "act": "act2",
+   "start": 231.02,
+   "dur": 8.69,
+   "wpm": 123.2,
+   "words": 17,
+   "asrSpan": 8.28,
+   "heard": "In 1966 dollars, the 1966 retiree ends 1974 with $461 ,000."
+  },
+  {
+   "id": "a2-y1.2",
+   "act": "act2",
+   "start": 192.52,
+   "dur": 4.5,
+   "wpm": 123.5,
+   "words": 10,
+   "asrSpan": 4.86,
+   "heard": "The 1966 retirees portfolio loses 4 .8%."
+  },
+  {
+   "id": "a3-est.1",
+   "act": "act3",
+   "start": 392.02,
+   "dur": 2.99,
+   "wpm": 125.0,
+   "words": 6,
+   "asrSpan": 2.88,
+   "heard": "So, was 1966 a fluke?"
+  },
+  {
+   "id": "a1-avg1966.1",
+   "act": "act1",
+   "start": 134.8,
+   "dur": 6.53,
+   "wpm": 129.6,
+   "words": 14,
+   "asrSpan": 6.48,
+   "heard": "The 1966 retirees portfolio earned an average return of 9 .7%."
+  },
+  {
+   "id": "a2-1974inf.1",
+   "act": "act2",
+   "start": 222.3,
+   "dur": 8.27,
+   "wpm": 131.1,
+   "words": 18,
+   "asrSpan": 8.24,
+   "heard": "In 1974 alone, the portfolio loses 14 .7%, while prices rise 12 .3%."
+  },
+  {
+   "id": "a3-four2.1",
+   "act": "act3",
+   "start": 448.2,
+   "dur": 2.99,
+   "wpm": 131.4,
+   "words": 6,
+   "asrSpan": 2.74,
+   "heard": "then 1968 and 1969."
+  },
+  {
+   "id": "a2-1982r.1",
+   "act": "act2",
+   "start": 292.4,
+   "dur": 5.39,
+   "wpm": 132.8,
+   "words": 12,
+   "asrSpan": 5.42,
+   "heard": "That year, the 1966 retirees portfolio gains 25 .4%."
+  },
+  {
+   "id": "a2-y1m.1",
+   "act": "act2",
+   "start": 197.47,
+   "dur": 7.11,
+   "wpm": 134.5,
+   "words": 16,
+   "asrSpan": 7.14,
+   "heard": "The Mirror Retiree gets the 1995 return first, a gain of 31 .7%."
+  },
+  {
+   "id": "co-question.2",
+   "act": "cold-open",
+   "start": 16.95,
+   "dur": 1.7,
+   "wpm": 134.8,
+   "words": 4,
+   "asrSpan": 1.78,
+   "heard": "So what decided it?"
+  },
+  {
+   "id": "a2-7374.1",
+   "act": "act2",
+   "start": 217.17,
+   "dur": 4.68,
+   "wpm": 135.8,
+   "words": 11,
+   "asrSpan": 4.86,
+   "heard": "In 1973 and 1974, stocks and bonds fall together."
+  },
+  {
+   "id": "method.2",
+   "act": "method",
+   "start": 578.91,
+   "dur": 6.08,
+   "wpm": 135.9,
+   "words": 14,
+   "asrSpan": 6.18,
+   "heard": "Returns include dividends and bond coupons, and the portfolio is rebalanced once a year."
+  },
+  {
+   "id": "a3-less.1",
+   "act": "act3",
+   "start": 431.54,
+   "dur": 3.28,
+   "wpm": 137.3,
+   "words": 7,
+   "asrSpan": 3.06,
+   "heard": "Surviving is not the same as thriving."
+  },
+  {
+   "id": "a1-mirror-in.1",
+   "act": "act1",
+   "start": 99.09,
+   "dur": 1.66,
+   "wpm": 137.6,
+   "words": 5,
+   "asrSpan": 2.18,
+   "heard": "Now meet the second retiree."
+  },
+  {
+   "id": "a3-answer.1",
+   "act": "act3",
+   "start": 512.97,
+   "dur": 1.1,
+   "wpm": 137.9,
+   "words": 4,
+   "asrSpan": 1.74,
+   "heard": "So what decided it?"
+  },
+  {
+   "id": "a1-start.1",
+   "act": "act1",
+   "start": 27.34,
+   "dur": 5.79,
+   "wpm": 138.3,
+   "words": 13,
+   "asrSpan": 5.64,
+   "heard": "The first retiree starts with $1 million, measured in 1966 dollars."
+  },
+  {
+   "id": "a3-overlap.1",
+   "act": "act3",
+   "start": 551.71,
+   "dur": 6.73,
+   "wpm": 139.3,
+   "words": 15,
+   "asrSpan": 6.46,
+   "heard": "The 69 windows overlap, so 98 years of data hold only three separate 30 -year stretches."
+  }
+ ],
+ "sentences": [
+  {
+   "id": "co-lines.1",
+   "act": "cold-open",
+   "start": 2.4,
+   "dur": 1.22,
+   "wpm": 98.4,
+   "words": 2,
+   "asrSpan": 1.22,
+   "heard": "2 retirees"
+  },
+  {
+   "id": "co-same.1",
+   "act": "cold-open",
+   "start": 4.07,
+   "dur": 4.66,
+   "wpm": 100.8,
+   "words": 8,
+   "asrSpan": 4.76,
+   "heard": "Same starting balance, same withdrawals, same average return."
+  },
+  {
+   "id": "co-broke.1",
+   "act": "cold-open",
+   "start": 9.18,
+   "dur": 2.89,
+   "wpm": 190.5,
+   "words": 8,
+   "asrSpan": 2.52,
+   "heard": "One ran out of money in 1991."
+  },
+  {
+   "id": "co-question.1",
+   "act": "cold-open",
+   "start": 14.62,
+   "dur": 2.03,
+   "wpm": 164.8,
+   "words": 5,
+   "asrSpan": 1.82,
+   "heard": "The other never came close."
+  },
+  {
+   "id": "co-question.2",
+   "act": "cold-open",
+   "start": 16.95,
+   "dur": 1.7,
+   "wpm": 134.8,
+   "words": 4,
+   "asrSpan": 1.78,
+   "heard": "So what decided it?"
+  },
+  {
+   "id": "a1-est.1",
+   "act": "act1",
+   "start": 24.15,
+   "dur": 2.74,
+   "wpm": 114.5,
+   "words": 5,
+   "asrSpan": 2.62,
+   "heard": "It is January 1966."
+  },
+  {
+   "id": "a1-start.1",
+   "act": "act1",
+   "start": 27.34,
+   "dur": 5.79,
+   "wpm": 138.3,
+   "words": 13,
+   "asrSpan": 5.64,
+   "heard": "The first retiree starts with $1 million, measured in 1966 dollars."
+  },
+  {
+   "id": "a1-hook.1",
+   "act": "act1",
+   "start": 33.58,
+   "dur": 8.71,
+   "wpm": 204.7,
+   "words": 29,
+   "asrSpan": 8.5,
+   "heard": "By the end of this video, you will know which 10 years decided this retirees fate, and whether the same thing held for every start year since 1928."
+  },
+  {
+   "id": "a1-mix.1",
+   "act": "act1",
+   "start": 42.74,
+   "dur": 4.59,
+   "wpm": 191.8,
+   "words": 14,
+   "asrSpan": 4.38,
+   "heard": "The money sits in a portfolio of 60 % stocks and 40 % bonds."
+  },
+  {
+   "id": "a1-assets.1",
+   "act": "act1",
+   "start": 47.78,
+   "dur": 3.73,
+   "wpm": 194.6,
+   "words": 12,
+   "asrSpan": 3.7,
+   "heard": "The stocks are the S &P 500 with dividends reinvested."
+  },
+  {
+   "id": "a1-assets.2",
+   "act": "act1",
+   "start": 51.81,
+   "dur": 2.65,
+   "wpm": 170.7,
+   "words": 7,
+   "asrSpan": 2.46,
+   "heard": "The bonds are 10 -year U .S. Treasury bonds."
+  },
+  {
+   "id": "a1-rebal.1",
+   "act": "act1",
+   "start": 54.91,
+   "dur": 4.03,
+   "wpm": 156.2,
+   "words": 10,
+   "asrSpan": 3.84,
+   "heard": "Every January, the portfolio is rebalanced back to that mix."
+  },
+  {
+   "id": "a1-rule.1",
+   "act": "act1",
+   "start": 59.39,
+   "dur": 4.95,
+   "wpm": 163.9,
+   "words": 13,
+   "asrSpan": 4.76,
+   "heard": "In the first year, the retiree withdraws 4 % of the starting balance."
+  },
+  {
+   "id": "a1-rule.2",
+   "act": "act1",
+   "start": 64.64,
+   "dur": 3.65,
+   "wpm": 153.4,
+   "words": 9,
+   "asrSpan": 3.52,
+   "heard": "That is $40 ,000 in 1966 dollars."
+  },
+  {
+   "id": "a1-raise.1",
+   "act": "act1",
+   "start": 68.74,
+   "dur": 6.53,
+   "wpm": 181.0,
+   "words": 19,
+   "asrSpan": 6.3,
+   "heard": "After that, the withdrawal rises each year with the previous year's inflation, so it always buys the same groceries."
+  },
+  {
+   "id": "a1-real.1",
+   "act": "act1",
+   "start": 75.72,
+   "dur": 2.31,
+   "wpm": 173.1,
+   "words": 6,
+   "asrSpan": 2.08,
+   "heard": "In real terms, it never changes."
+  },
+  {
+   "id": "a1-real.2",
+   "act": "act1",
+   "start": 78.33,
+   "dur": 4.03,
+   "wpm": 182.7,
+   "words": 12,
+   "asrSpan": 3.94,
+   "heard": "In nominal terms, the dollars of the day, it climbs every year."
+  },
+  {
+   "id": "a1-horizon.1",
+   "act": "act1",
+   "start": 82.81,
+   "dur": 7.77,
+   "wpm": 154.5,
+   "words": 12,
+   "asrSpan": 4.66,
+   "heard": "The plan runs for 30 years, from 1966 through 1995."
+  },
+  {
+   "id": "a1-notax.1",
+   "act": "act1",
+   "start": 91.03,
+   "dur": 1.79,
+   "wpm": 144.6,
+   "words": 4,
+   "asrSpan": 1.66,
+   "heard": "No taxes, no fees."
+  },
+  {
+   "id": "a1-notax.2",
+   "act": "act1",
+   "start": 93.12,
+   "dur": 4.92,
+   "wpm": 210.7,
+   "words": 17,
+   "asrSpan": 4.84,
+   "heard": "We keep the model this bear on purpose, so that one thing can change at a time."
+  },
+  {
+   "id": "a1-mirror-in.1",
+   "act": "act1",
+   "start": 99.09,
+   "dur": 1.66,
+   "wpm": 137.6,
+   "words": 5,
+   "asrSpan": 2.18,
+   "heard": "Now meet the second retiree."
+  },
+  {
+   "id": "a1-mirror-rule.1",
+   "act": "act1",
+   "start": 101.2,
+   "dur": 6.09,
+   "wpm": 150.0,
+   "words": 15,
+   "asrSpan": 6.0,
+   "heard": "The Mirror retiree lives through the exact same 30 annual returns, but in reverse order."
+  },
+  {
+   "id": "a1-mirror-rule.2",
+   "act": "act1",
+   "start": 107.59,
+   "dur": 7.47,
+   "wpm": 122.3,
+   "words": 15,
+   "asrSpan": 7.36,
+   "heard": "The return of 1995 arrives first and the return of 1966 arrives last."
+  },
+  {
+   "id": "a1-illus.1",
+   "act": "act1",
+   "start": 115.51,
+   "dur": 4.33,
+   "wpm": 184.8,
+   "words": 13,
+   "asrSpan": 4.22,
+   "heard": "This retiree is illustrative. No one lived through these years, in this order."
+  },
+  {
+   "id": "a1-samewd.1",
+   "act": "act1",
+   "start": 120.29,
+   "dur": 5.83,
+   "wpm": 177.1,
+   "words": 17,
+   "asrSpan": 5.76,
+   "heard": "Inflation stays in its real calendar order, so both retirees take out the same dollars every year."
+  },
+  {
+   "id": "a1-question.1",
+   "act": "act1",
+   "start": 126.57,
+   "dur": 2.27,
+   "wpm": 247.7,
+   "words": 9,
+   "asrSpan": 2.18,
+   "heard": "So here is the question for this first part."
+  },
+  {
+   "id": "a1-question.2",
+   "act": "act1",
+   "start": 129.14,
+   "dur": 5.21,
+   "wpm": 192.8,
+   "words": 16,
+   "asrSpan": 4.98,
+   "heard": "If two people earn the same average return, do they end up in the same place?"
+  },
+  {
+   "id": "a1-avg1966.1",
+   "act": "act1",
+   "start": 134.8,
+   "dur": 6.53,
+   "wpm": 129.6,
+   "words": 14,
+   "asrSpan": 6.48,
+   "heard": "The 1966 retirees portfolio earned an average return of 9 .7%."
+  },
+  {
+   "id": "a1-avgmirror.1",
+   "act": "act1",
+   "start": 142.88,
+   "dur": 5.29,
+   "wpm": 117.6,
+   "words": 10,
+   "asrSpan": 5.1,
+   "heard": "The mirror retirees average is also 9 .7%."
+  },
+  {
+   "id": "a1-avgmirror.2",
+   "act": "act1",
+   "start": 148.47,
+   "dur": 1.28,
+   "wpm": 109.1,
+   "words": 2,
+   "asrSpan": 1.1,
+   "heard": "Not close."
+  },
+  {
+   "id": "a1-avgmirror.3",
+   "act": "act1",
+   "start": 150.05,
+   "dur": 0.91,
+   "wpm": 69.8,
+   "words": 1,
+   "asrSpan": 0.86,
+   "heard": "Identical"
+  },
+  {
+   "id": "a1-geo.1",
+   "act": "act1",
+   "start": 151.41,
+   "dur": 5.16,
+   "wpm": 196.2,
+   "words": 17,
+   "asrSpan": 5.2,
+   "heard": "That is the geometric average, the compound rate that turns the starting dollar into the ending dollar."
+  },
+  {
+   "id": "a1-geo.2",
+   "act": "act1",
+   "start": 156.87,
+   "dur": 6.51,
+   "wpm": 161.4,
+   "words": 17,
+   "asrSpan": 6.32,
+   "heard": "Multiplication does not care about order, so the same years in any order give the same average."
+  },
+  {
+   "id": "a1-arith.1",
+   "act": "act1",
+   "start": 163.83,
+   "dur": 7.45,
+   "wpm": 187.5,
+   "words": 23,
+   "asrSpan": 7.36,
+   "heard": "Even the simple arithmetic average, adding up the 30 returns and dividing by 30, is the same for both, 10 .3%."
+  },
+  {
+   "id": "a1-payoff.1",
+   "act": "act1",
+   "start": 171.73,
+   "dur": 1.24,
+   "wpm": 152.5,
+   "words": 3,
+   "asrSpan": 1.18,
+   "heard": "Same money in."
+  },
+  {
+   "id": "a1-payoff.2",
+   "act": "act1",
+   "start": 173.27,
+   "dur": 1.08,
+   "wpm": 180.0,
+   "words": 3,
+   "asrSpan": 1.0,
+   "heard": "Same money out."
+  },
+  {
+   "id": "a1-payoff.3",
+   "act": "act1",
+   "start": 174.65,
+   "dur": 1.21,
+   "wpm": 117.6,
+   "words": 2,
+   "asrSpan": 1.02,
+   "heard": "same average."
+  },
+  {
+   "id": "a1-payoff.4",
+   "act": "act1",
+   "start": 176.16,
+   "dur": 3.11,
+   "wpm": 161.1,
+   "words": 8,
+   "asrSpan": 2.98,
+   "heard": "The only thing that differs is the order."
+  },
+  {
+   "id": "a2-est.1",
+   "act": "act2",
+   "start": 182.32,
+   "dur": 2.83,
+   "wpm": 154.4,
+   "words": 7,
+   "asrSpan": 2.72,
+   "heard": "Watch the two balances, year by year."
+  },
+  {
+   "id": "a2-q.1",
+   "act": "act2",
+   "start": 185.6,
+   "dur": 4.97,
+   "wpm": 200.0,
+   "words": 16,
+   "asrSpan": 4.8,
+   "heard": "The question now, when does the order start to matter and how much does it cost?"
+  },
+  {
+   "id": "a2-y1.1",
+   "act": "act2",
+   "start": 191.02,
+   "dur": 1.2,
+   "wpm": 113.2,
+   "words": 2,
+   "asrSpan": 1.06,
+   "heard": "Year One"
+  },
+  {
+   "id": "a2-y1.2",
+   "act": "act2",
+   "start": 192.52,
+   "dur": 4.5,
+   "wpm": 123.5,
+   "words": 10,
+   "asrSpan": 4.86,
+   "heard": "The 1966 retirees portfolio loses 4 .8%."
+  },
+  {
+   "id": "a2-y1m.1",
+   "act": "act2",
+   "start": 197.47,
+   "dur": 7.11,
+   "wpm": 134.5,
+   "words": 16,
+   "asrSpan": 7.14,
+   "heard": "The Mirror Retiree gets the 1995 return first, a gain of 31 .7%."
+  },
+  {
+   "id": "a2-gap1.1",
+   "act": "act2",
+   "start": 205.03,
+   "dur": 2.71,
+   "wpm": 210.9,
+   "words": 9,
+   "asrSpan": 2.56,
+   "heard": "One year in, and the paths have already split."
+  },
+  {
+   "id": "a2-infl.1",
+   "act": "act2",
+   "start": 208.19,
+   "dur": 2.01,
+   "wpm": 161.3,
+   "words": 5,
+   "asrSpan": 1.86,
+   "heard": "Then, inflation starts to climb."
+  },
+  {
+   "id": "a2-infl.2",
+   "act": "act2",
+   "start": 210.5,
+   "dur": 6.22,
+   "wpm": 156.4,
+   "words": 17,
+   "asrSpan": 6.52,
+   "heard": "By 1969, it is 6 .2 % a year, and every withdrawal grows with it."
+  },
+  {
+   "id": "a2-7374.1",
+   "act": "act2",
+   "start": 217.17,
+   "dur": 4.68,
+   "wpm": 135.8,
+   "words": 11,
+   "asrSpan": 4.86,
+   "heard": "In 1973 and 1974, stocks and bonds fall together."
+  },
+  {
+   "id": "a2-1974inf.1",
+   "act": "act2",
+   "start": 222.3,
+   "dur": 8.27,
+   "wpm": 131.1,
+   "words": 18,
+   "asrSpan": 8.24,
+   "heard": "In 1974 alone, the portfolio loses 14 .7%, while prices rise 12 .3%."
+  },
+  {
+   "id": "a2-bal74.1",
+   "act": "act2",
+   "start": 231.02,
+   "dur": 8.69,
+   "wpm": 123.2,
+   "words": 17,
+   "asrSpan": 8.28,
+   "heard": "In 1966 dollars, the 1966 retiree ends 1974 with $461 ,000."
+  },
+  {
+   "id": "a2-bal74m.1",
+   "act": "act2",
+   "start": 242.16,
+   "dur": 7.33,
+   "wpm": 150.0,
+   "words": 18,
+   "asrSpan": 7.2,
+   "heard": "The Mirror Retiree, same year, same withdrawals, $1 .27 million, also in 1966 dollars."
+  },
+  {
+   "id": "a2-bite.1",
+   "act": "act2",
+   "start": 249.94,
+   "dur": 2.92,
+   "wpm": 239.1,
+   "words": 11,
+   "asrSpan": 2.76,
+   "heard": "Here is why a bad start is so hard to undo."
+  },
+  {
+   "id": "a2-bite.2",
+   "act": "act2",
+   "start": 253.16,
+   "dur": 7.41,
+   "wpm": 174.5,
+   "words": 21,
+   "asrSpan": 7.22,
+   "heard": "The withdrawal is still $40 ,000 in 1966 dollars, but it is now taken from a much smaller pile."
+  },
+  {
+   "id": "a2-sell.1",
+   "act": "act2",
+   "start": 261.02,
+   "dur": 5.4,
+   "wpm": 186.8,
+   "words": 17,
+   "asrSpan": 5.46,
+   "heard": "Every dollar withdrawn after a loss is a dollar that is not there when the recovery comes"
+  },
+  {
+   "id": "a2-grind.1",
+   "act": "act2",
+   "start": 266.87,
+   "dur": 3.22,
+   "wpm": 151.7,
+   "words": 9,
+   "asrSpan": 3.56,
+   "heard": "Through the rest of the decade, inflation keeps rising."
+  },
+  {
+   "id": "a2-grind.2",
+   "act": "act2",
+   "start": 270.39,
+   "dur": 3.93,
+   "wpm": 142.9,
+   "words": 9,
+   "asrSpan": 3.78,
+   "heard": "In 1979, it reaches 13 .3%."
+  },
+  {
+   "id": "a2-1981.1",
+   "act": "act2",
+   "start": 274.77,
+   "dur": 7.54,
+   "wpm": 159.6,
+   "words": 20,
+   "asrSpan": 7.52,
+   "heard": "By 1981, the yearly withdrawal has grown to $108 ,553 in nominal dollars."
+  },
+  {
+   "id": "a2-1981.2",
+   "act": "act2",
+   "start": 282.61,
+   "dur": 4.56,
+   "wpm": 142.2,
+   "words": 10,
+   "asrSpan": 4.22,
+   "heard": "In 1966 dollars, it is still $40 ,000."
+  },
+  {
+   "id": "a2-1982.1",
+   "act": "act2",
+   "start": 288.12,
+   "dur": 3.83,
+   "wpm": 144.4,
+   "words": 9,
+   "asrSpan": 3.74,
+   "heard": "Then, in 1982, the good years finally arrive."
+  },
+  {
+   "id": "a2-1982r.1",
+   "act": "act2",
+   "start": 292.4,
+   "dur": 5.39,
+   "wpm": 132.8,
+   "words": 12,
+   "asrSpan": 5.42,
+   "heard": "That year, the 1966 retirees portfolio gains 25 .4%."
+  },
+  {
+   "id": "a2-1982w.1",
+   "act": "act2",
+   "start": 298.24,
+   "dur": 4.37,
+   "wpm": 177.3,
+   "words": 13,
+   "asrSpan": 4.4,
+   "heard": "But the withdrawal now takes 16 .9 % of what is left."
+  },
+  {
+   "id": "a2-late.1",
+   "act": "act2",
+   "start": 303.06,
+   "dur": 1.72,
+   "wpm": 156.2,
+   "words": 5,
+   "asrSpan": 1.92,
+   "heard": "The boom comes too late."
+  },
+  {
+   "id": "a2-mirror-boom.1",
+   "act": "act2",
+   "start": 305.23,
+   "dur": 5.86,
+   "wpm": 148.9,
+   "words": 14,
+   "asrSpan": 5.64,
+   "heard": "For the mirror retiree, those same years came first, when the balance was largest."
+  },
+  {
+   "id": "a2-climb.1",
+   "act": "act2",
+   "start": 311.54,
+   "dur": 1.8,
+   "wpm": 157.9,
+   "words": 5,
+   "asrSpan": 1.9,
+   "heard": "The gap widens every year."
+  },
+  {
+   "id": "a2-climax-in.1",
+   "act": "act2",
+   "start": 313.79,
+   "dur": 2.81,
+   "wpm": 120.0,
+   "words": 5,
+   "asrSpan": 2.5,
+   "heard": "In 1986, it peaks."
+  },
+  {
+   "id": "a2-climax.1",
+   "act": "act2",
+   "start": 317.05,
+   "dur": 7.37,
+   "wpm": 141.3,
+   "words": 17,
+   "asrSpan": 7.22,
+   "heard": "In 1966 dollars, the Miro retiree is now ahead by 1 .96 million dollars."
+  },
+  {
+   "id": "a2-years.1",
+   "act": "act2",
+   "start": 327.07,
+   "dur": 7.35,
+   "wpm": 169.0,
+   "words": 20,
+   "asrSpan": 7.1,
+   "heard": "At $40 ,000 a year, in 1966 dollars, that gap would pay for 49 more years of withdrawals."
+  },
+  {
+   "id": "a2-rest.1",
+   "act": "act2",
+   "start": 336.27,
+   "dur": 3.95,
+   "wpm": 141.4,
+   "words": 9,
+   "asrSpan": 3.82,
+   "heard": "From there, the 1966 retirees story is short."
+  },
+  {
+   "id": "a2-mirror-late.1",
+   "act": "act2",
+   "start": 340.67,
+   "dur": 9.75,
+   "wpm": 148.1,
+   "words": 24,
+   "asrSpan": 9.72,
+   "heard": "The mirror retiree meets the bad years late. The 1974 loss arrives in 1987 on a balance big enough to absorb it."
+  },
+  {
+   "id": "a2-1991.1",
+   "act": "act2",
+   "start": 350.87,
+   "dur": 8.43,
+   "wpm": 155.2,
+   "words": 21,
+   "asrSpan": 8.12,
+   "heard": "The account pays out its last $96 ,829 in nominal dollars and hits zero in 1991."
+  },
+  {
+   "id": "a2-short.1",
+   "act": "act2",
+   "start": 361.85,
+   "dur": 4.85,
+   "wpm": 242.6,
+   "words": 19,
+   "asrSpan": 4.7,
+   "heard": "That was less than the full withdrawal, and nothing is left for the last four years of the plan."
+  },
+  {
+   "id": "a2-mirror-end.1",
+   "act": "act2",
+   "start": 367.15,
+   "dur": 6.43,
+   "wpm": 151.9,
+   "words": 16,
+   "asrSpan": 6.32,
+   "heard": "The Mirror Retiree finishes 1995 with $6 .96 million in nominal dollars."
+  },
+  {
+   "id": "a2-mirror-real.1",
+   "act": "act2",
+   "start": 374.03,
+   "dur": 8.21,
+   "wpm": 165.8,
+   "words": 22,
+   "asrSpan": 7.96,
+   "heard": "In 1966 dollars, that is $1 .44 million, more than the starting balance, after 30 years of withdrawals."
+  },
+  {
+   "id": "a2-payoff.1",
+   "act": "act2",
+   "start": 382.69,
+   "dur": 3.31,
+   "wpm": 169.8,
+   "words": 9,
+   "asrSpan": 3.18,
+   "heard": "Both portfolios average 9 .7 % a year."
+  },
+  {
+   "id": "a2-payoff.2",
+   "act": "act2",
+   "start": 386.3,
+   "dur": 2.67,
+   "wpm": 183.2,
+   "words": 8,
+   "asrSpan": 2.62,
+   "heard": "The average did not decide who went broke."
+  },
+  {
+   "id": "a3-est.1",
+   "act": "act3",
+   "start": 392.02,
+   "dur": 2.99,
+   "wpm": 125.0,
+   "words": 6,
+   "asrSpan": 2.88,
+   "heard": "So, was 1966 a fluke?"
+  },
+  {
+   "id": "a3-all.1",
+   "act": "act3",
+   "start": 395.46,
+   "dur": 4.87,
+   "wpm": 200.0,
+   "words": 15,
+   "asrSpan": 4.5,
+   "heard": "We ran the same rules for every start year from 1928 to 1996."
+  },
+  {
+   "id": "a3-all.2",
+   "act": "act3",
+   "start": 400.63,
+   "dur": 4.37,
+   "wpm": 154.9,
+   "words": 11,
+   "asrSpan": 4.26,
+   "heard": "That is 69 retirements, each with 34 years of data."
+  },
+  {
+   "id": "a3-q.1",
+   "act": "act3",
+   "start": 405.45,
+   "dur": 3.81,
+   "wpm": 163.9,
+   "words": 10,
+   "asrSpan": 3.66,
+   "heard": "The question for this part, what actually decides the outcome?"
+  },
+  {
+   "id": "a3-fine.1",
+   "act": "act3",
+   "start": 409.71,
+   "dur": 2.37,
+   "wpm": 182.6,
+   "words": 7,
+   "asrSpan": 2.3,
+   "heard": "Most of these retirees never ran out."
+  },
+  {
+   "id": "a3-fine.2",
+   "act": "act3",
+   "start": 412.38,
+   "dur": 5.07,
+   "wpm": 159.2,
+   "words": 13,
+   "asrSpan": 4.9,
+   "heard": "In 65 of the 69 start years, the money lasted all 30 years."
+  },
+  {
+   "id": "a3-good.1",
+   "act": "act3",
+   "start": 417.9,
+   "dur": 8.98,
+   "wpm": 150.3,
+   "words": 23,
+   "asrSpan": 9.18,
+   "heard": "A retiree who started in 1982 under the same rules ended with $5 .36 million in 1982 dollars."
+  },
+  {
+   "id": "a3-nohurt.1",
+   "act": "act3",
+   "start": 427.33,
+   "dur": 3.76,
+   "wpm": 210.8,
+   "words": 13,
+   "asrSpan": 3.7,
+   "heard": "For many start years, the order of returns did no harm at all."
+  },
+  {
+   "id": "a3-less.1",
+   "act": "act3",
+   "start": 431.54,
+   "dur": 3.28,
+   "wpm": 137.3,
+   "words": 7,
+   "asrSpan": 3.06,
+   "heard": "Surviving is not the same as thriving."
+  },
+  {
+   "id": "a3-less.2",
+   "act": "act3",
+   "start": 435.12,
+   "dur": 6.44,
+   "wpm": 172.5,
+   "words": 18,
+   "asrSpan": 6.26,
+   "heard": "In 26 of the 69 start years, the retiree ended with less than the starting balance after inflation."
+  },
+  {
+   "id": "a3-four.1",
+   "act": "act3",
+   "start": 442.01,
+   "dur": 5.74,
+   "wpm": 156.1,
+   "words": 14,
+   "asrSpan": 5.38,
+   "heard": "Four start years ran out of money, beginning with 1965 and 1966."
+  },
+  {
+   "id": "a3-four2.1",
+   "act": "act3",
+   "start": 448.2,
+   "dur": 2.99,
+   "wpm": 131.4,
+   "words": 6,
+   "asrSpan": 2.74,
+   "heard": "then 1968 and 1969."
+  },
+  {
+   "id": "a3-avg-not.1",
+   "act": "act3",
+   "start": 451.64,
+   "dur": 3.19,
+   "wpm": 153.8,
+   "words": 8,
+   "asrSpan": 3.12,
+   "heard": "Their long -run averages do not single them out."
+  },
+  {
+   "id": "a3-real66.1",
+   "act": "act3",
+   "start": 455.28,
+   "dur": 5.99,
+   "wpm": 152.5,
+   "words": 15,
+   "asrSpan": 5.9,
+   "heard": "After inflation, the 1966 retirees 30 years averaged 4 .1 % a year."
+  },
+  {
+   "id": "a3-real66.2",
+   "act": "act3",
+   "start": 461.57,
+   "dur": 5.03,
+   "wpm": 169.4,
+   "words": 14,
+   "asrSpan": 4.96,
+   "heard": "17 start years had a lower real average than that, and never ran out."
+  },
+  {
+   "id": "a3-1969.1",
+   "act": "act3",
+   "start": 467.05,
+   "dur": 9.59,
+   "wpm": 143.8,
+   "words": 23,
+   "asrSpan": 9.6,
+   "heard": "The 1969 retiree averaged 5 .6 % a year after inflation, more than the 1928 retiree's 4 .9%."
+  },
+  {
+   "id": "a3-1928.1",
+   "act": "act3",
+   "start": 477.09,
+   "dur": 10.67,
+   "wpm": 147.4,
+   "words": 26,
+   "asrSpan": 10.58,
+   "heard": "Yet 1928 ended with $1 .21 million in 1928 dollars and 1969 ran out of money in its 28th year."
+  },
+  {
+   "id": "a3-share.1",
+   "act": "act3",
+   "start": 488.61,
+   "dur": 3.45,
+   "wpm": 163.6,
+   "words": 9,
+   "asrSpan": 3.3,
+   "heard": "What, the four failures share, is their first decade."
+  },
+  {
+   "id": "a3-decade.1",
+   "act": "act3",
+   "start": 492.51,
+   "dur": 5.39,
+   "wpm": 183.2,
+   "words": 16,
+   "asrSpan": 5.24,
+   "heard": "In every one of them, the portfolio lost money after inflation over its first 10 years."
+  },
+  {
+   "id": "a3-1966d.1",
+   "act": "act3",
+   "start": 498.35,
+   "dur": 6.09,
+   "wpm": 140.5,
+   "words": 14,
+   "asrSpan": 5.98,
+   "heard": "After inflation, the 1966 retirees' first decade averaged minus 1 .8 percent."
+  },
+  {
+   "id": "a3-mirror-d.1",
+   "act": "act3",
+   "start": 506.79,
+   "dur": 5.73,
+   "wpm": 152.2,
+   "words": 14,
+   "asrSpan": 5.52,
+   "heard": "The Mirror Retirees first decade averaged 6 .9 % a year after inflation."
+  },
+  {
+   "id": "a3-answer.1",
+   "act": "act3",
+   "start": 512.97,
+   "dur": 1.1,
+   "wpm": 137.9,
+   "words": 4,
+   "asrSpan": 1.74,
+   "heard": "So what decided it?"
+  },
+  {
+   "id": "a3-answer.2",
+   "act": "act3",
+   "start": 514.37,
+   "dur": 1.27,
+   "wpm": 169.8,
+   "words": 3,
+   "asrSpan": 1.06,
+   "heard": "not the average."
+  },
+  {
+   "id": "a3-answer.3",
+   "act": "act3",
+   "start": 515.94,
+   "dur": 1.67,
+   "wpm": 164.4,
+   "words": 4,
+   "asrSpan": 1.46,
+   "heard": "the first 10 years."
+  },
+  {
+   "id": "a3-nuance.1",
+   "act": "act3",
+   "start": 518.06,
+   "dur": 7.69,
+   "wpm": 189.5,
+   "words": 24,
+   "asrSpan": 7.6,
+   "heard": "To be precise, across all 69 start years, the 30 -year real return still lines up best with how much is left at the end."
+  },
+  {
+   "id": "a3-nuance.2",
+   "act": "act3",
+   "start": 526.05,
+   "dur": 4.4,
+   "wpm": 150.0,
+   "words": 11,
+   "asrSpan": 4.4,
+   "heard": "But every retiree who ran out, met a bad first decade."
+  },
+  {
+   "id": "a3-avg-callback.1",
+   "act": "act3",
+   "start": 530.9,
+   "dur": 8.33,
+   "wpm": 145.4,
+   "words": 19,
+   "asrSpan": 7.84,
+   "heard": "The 9 .7 % average described the 1966 retiree perfectly, and it said nothing about 1991."
+  },
+  {
+   "id": "a3-limits.1",
+   "act": "act3",
+   "start": 542.08,
+   "dur": 1.85,
+   "wpm": 222.2,
+   "words": 6,
+   "asrSpan": 1.62,
+   "heard": "Now the limits of this analysis."
+  },
+  {
+   "id": "a3-limits.2",
+   "act": "act3",
+   "start": 544.23,
+   "dur": 2.29,
+   "wpm": 176.5,
+   "words": 6,
+   "asrSpan": 2.04,
+   "heard": "This is history, not a forecast."
+  },
+  {
+   "id": "a3-usonly.1",
+   "act": "act3",
+   "start": 546.97,
+   "dur": 4.29,
+   "wpm": 161.0,
+   "words": 11,
+   "asrSpan": 4.1,
+   "heard": "It is US only, one country with one set of markets."
+  },
+  {
+   "id": "a3-overlap.1",
+   "act": "act3",
+   "start": 551.71,
+   "dur": 6.73,
+   "wpm": 139.3,
+   "words": 15,
+   "asrSpan": 6.46,
+   "heard": "The 69 windows overlap, so 98 years of data hold only three separate 30 -year stretches."
+  },
+  {
+   "id": "a3-bare.1",
+   "act": "act3",
+   "start": 558.89,
+   "dur": 6.29,
+   "wpm": 155.3,
+   "words": 16,
+   "asrSpan": 6.18,
+   "heard": "And the model is bare. No taxes, no fees, one portfolio mix, and one withdrawal rule."
+  },
+  {
+   "id": "a3-bare.2",
+   "act": "act3",
+   "start": 565.48,
+   "dur": 3.87,
+   "wpm": 159.6,
+   "words": 10,
+   "asrSpan": 3.76,
+   "heard": "change any of those, and every number here changes too."
+  },
+  {
+   "id": "method.1",
+   "act": "method",
+   "start": 570.6,
+   "dur": 8.01,
+   "wpm": 159.1,
+   "words": 21,
+   "asrSpan": 7.92,
+   "heard": "The data, annual returns from Professor de Motoran at NYU Stern, and consumer prices from the Bureau of Labor Statistics via FRED."
+  },
+  {
+   "id": "method.2",
+   "act": "method",
+   "start": 578.91,
+   "dur": 6.08,
+   "wpm": 135.9,
+   "words": 14,
+   "asrSpan": 6.18,
+   "heard": "Returns include dividends and bond coupons, and the portfolio is rebalanced once a year."
+  },
+  {
+   "id": "method.3",
+   "act": "method",
+   "start": 585.29,
+   "dur": 3.39,
+   "wpm": 172.0,
+   "words": 9,
+   "asrSpan": 3.14,
+   "heard": "Every number and formula is listed in the description."
+  },
+  {
+   "id": "outro.1",
+   "act": "outro",
+   "start": 593.13,
+   "dur": 4.7,
+   "wpm": 185.0,
+   "words": 14,
+   "asrSpan": 4.54,
+   "heard": "two retirees, one average, and a fate decided by the order of the years."
+  }
+ ],
+ "gaps": {
+  "sentence": 0.3,
+  "scene": 0.45,
+  "decisiveHold": 1.2
+ }
+}
