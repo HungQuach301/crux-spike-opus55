@@ -14,8 +14,8 @@
    "afterStretchWpm": 158.9
   },
   "act1": {
-   "rawWpm": 156.1,
-   "afterStretchWpm": 156.1
+   "rawWpm": 156.5,
+   "afterStretchWpm": 156.5
   },
   "act2": {
    "rawWpm": 151.1,
@@ -188,6 +188,22 @@
    "problem": ""
   },
   {
+   "id": "a1-start.2",
+   "act": "act1",
+   "words": 9,
+   "chosen": {
+    "take": 2,
+    "model": "eleven_v3",
+    "wpm": 150.0,
+    "wpmAfter": 150.0,
+    "stretch": 1.0,
+    "missing": [],
+    "heard": "Their money is the water in this glass tank."
+   },
+   "takes": 3,
+   "problem": ""
+  },
+  {
    "id": "a1-who.1",
    "act": "act1",
    "words": 16,
@@ -332,6 +348,22 @@
    "problem": ""
   },
   {
+   "id": "a1-raise.2",
+   "act": "act1",
+   "words": 11,
+   "chosen": {
+    "take": 0,
+    "model": "eleven_v3",
+    "wpm": 149.3,
+    "wpmAfter": 149.3,
+    "stretch": 1.0,
+    "missing": [],
+    "heard": "The tap is that withdrawal, and it widens as prices rise."
+   },
+   "takes": 1,
+   "problem": ""
+  },
+  {
    "id": "a1-real.1",
    "act": "act1",
    "words": 6,
@@ -377,6 +409,38 @@
     "heard": "The plan runs for 30 years, from 1966 through 1995."
    },
    "takes": 2,
+   "problem": ""
+  },
+  {
+   "id": "a1-horizon.2",
+   "act": "act1",
+   "words": 16,
+   "chosen": {
+    "take": 2,
+    "model": "eleven_v3",
+    "wpm": 164.9,
+    "wpmAfter": 164.9,
+    "stretch": 1.0,
+    "missing": [],
+    "heard": "Each stone on this road is one year's return. A losing year sinks below the road."
+   },
+   "takes": 3,
+   "problem": ""
+  },
+  {
+   "id": "a1-horizon.3",
+   "act": "act1",
+   "words": 14,
+   "chosen": {
+    "take": 0,
+    "model": "eleven_v3",
+    "wpm": 162.2,
+    "wpmAfter": 162.2,
+    "stretch": 1.0,
+    "missing": [],
+    "heard": "As the tank passes each stone, the water rises or falls with that year."
+   },
+   "takes": 1,
    "problem": ""
   },
   {
@@ -473,6 +537,22 @@
     "heard": "The return of 1995 arrives first, and the return of 1966 arrives last."
    },
    "takes": 4,
+   "problem": ""
+  },
+  {
+   "id": "a1-mirror-rule.3",
+   "act": "act1",
+   "words": 11,
+   "chosen": {
+    "take": 1,
+    "model": "eleven_v3",
+    "wpm": 163.4,
+    "wpmAfter": 163.4,
+    "stretch": 1.0,
+    "missing": [],
+    "heard": "So the mirror tank walks the same road the other way."
+   },
+   "takes": 2,
    "problem": ""
   },
   {

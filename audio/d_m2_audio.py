@@ -445,7 +445,15 @@ def main():
     for arr in (mus, sfx, whoosh):
         arr *= gate[:, None]
     if amb is not None:
-        sfx += amb * gate[:, None]
+        # physical sounds sit under the voice: -10 dB while the voice is active, and -18 dB within +-0.5 s of every
+        # spoken number (so the decisive words stay intelligible to the ASR and to the viewer)
+        dph = 10 ** (-10 * g / 20)
+        for tn in J('out/physical.json').get('numbers', []):
+            i0, i1 = int(max(0, tn - 0.5) * SR), int(min(N / SR, tn + 0.9) * SR)
+            dph[i0:i1] = np.minimum(dph[i0:i1], 10 ** (-18 / 20))
+        from scipy.ndimage import uniform_filter1d as _ufd
+        dph = _ufd(dph, int(0.05 * SR))
+        sfx += amb * (gate * dph)[:, None]
 
     # ---------------------------------------------------------------- levels
     # voice-active windows: music 20 dB under the voice (mean power)

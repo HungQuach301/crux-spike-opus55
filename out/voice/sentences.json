@@ -56,6 +56,17 @@
    "paceHint": "Keep a natural, even pace of about 155 words per minute; do not drag or linger."
   },
   {
+   "id": "a1-start.2",
+   "scene": "a1-start",
+   "act": "act1",
+   "text": "Their money is the water in this glass tank.",
+   "spoken": "Their money... is the water... in this glass tank.",
+   "direction": "Teaching the world: plain, unhurried, a small pause after.",
+   "decisive": false,
+   "takes": 1,
+   "paceHint": ""
+  },
+  {
    "id": "a1-who.1",
    "scene": "a1-who",
    "act": "act1",
@@ -155,6 +166,17 @@
    "paceHint": "Read this line more slowly and evenly than a normal conversation; about 150 words per minute."
   },
   {
+   "id": "a1-raise.2",
+   "scene": "a1-raise",
+   "act": "act1",
+   "text": "The tap is that withdrawal, and it widens as prices rise.",
+   "spoken": "The tap is that withdrawal... and it widens as prices rise.",
+   "direction": "Teaching the world: plain, unhurried, a small pause after.",
+   "decisive": false,
+   "takes": 1,
+   "paceHint": ""
+  },
+  {
    "id": "a1-real.1",
    "scene": "a1-real",
    "act": "act1",
@@ -183,6 +205,28 @@
    "text": "The plan runs for 30 years, from 1966 through 1995.",
    "spoken": "The plan runs for thirty years... from nineteen sixty-six through nineteen ninety-five.",
    "direction": "Spacious, a long horizon. Slow down slightly.",
+   "decisive": false,
+   "takes": 1,
+   "paceHint": ""
+  },
+  {
+   "id": "a1-horizon.2",
+   "scene": "a1-horizon",
+   "act": "act1",
+   "text": "Each stone on this road is one year's return; a losing year sinks below the road.",
+   "spoken": "Each stone on this road is one year's return... a losing year sinks below the road.",
+   "direction": "Teaching the world: plain, unhurried, a small pause after.",
+   "decisive": false,
+   "takes": 1,
+   "paceHint": ""
+  },
+  {
+   "id": "a1-horizon.3",
+   "scene": "a1-horizon",
+   "act": "act1",
+   "text": "As the tank passes each stone, the water rises or falls with that year.",
+   "spoken": "As the tank passes each stone... the water rises or falls with that year.",
+   "direction": "Teaching the world: plain, unhurried, a small pause after.",
    "decisive": false,
    "takes": 1,
    "paceHint": ""
@@ -252,6 +296,17 @@
    "decisive": false,
    "takes": 4,
    "paceHint": "Keep a natural, even pace of about 155 words per minute; do not drag or linger."
+  },
+  {
+   "id": "a1-mirror-rule.3",
+   "scene": "a1-mirror-rule",
+   "act": "act1",
+   "text": "So the mirror tank walks the same road, the other way.",
+   "spoken": "So the mirror tank walks the same road... the other way.",
+   "direction": "Teaching the world: plain, unhurried, a small pause after.",
+   "decisive": false,
+   "takes": 1,
+   "paceHint": ""
   },
   {
    "id": "a1-illus.1",
