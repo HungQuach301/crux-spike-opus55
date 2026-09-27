@@ -1,0 +1,170 @@
+{
+ "fps": 30,
+ "total": 133.923,
+ "acts": [
+  {
+   "id": "cold-open",
+   "start": 0,
+   "end": 14.83
+  },
+  {
+   "id": "ident",
+   "start": 14.83,
+   "end": 17.143
+  },
+  {
+   "id": "act1",
+   "start": 17.143,
+   "end": 97.943,
+   "climax": null
+  },
+  {
+   "id": "act2",
+   "start": 97.943,
+   "end": 133.923,
+   "climax": null
+  }
+ ],
+ "scenes": [
+  {
+   "id": "co-lines",
+   "act": "cold-open",
+   "start": 0,
+   "dur": 1.429
+  },
+  {
+   "id": "co-same",
+   "act": "cold-open",
+   "start": 1.429,
+   "dur": 6.111
+  },
+  {
+   "id": "co-broke",
+   "act": "cold-open",
+   "start": 7.54,
+   "dur": 4.603
+  },
+  {
+   "id": "co-question",
+   "act": "cold-open",
+   "start": 12.143,
+   "dur": 2.687
+  },
+  {
+   "id": "ident",
+   "act": "ident",
+   "start": 14.83,
+   "dur": 2.313
+  },
+  {
+   "id": "a1-est.1",
+   "act": "act1",
+   "start": 17.143,
+   "dur": 4.22
+  },
+  {
+   "id": "a1-start.1",
+   "act": "act1",
+   "start": 21.363,
+   "dur": 5.93
+  },
+  {
+   "id": "a1-start.2",
+   "act": "act1",
+   "start": 27.293,
+   "dur": 4.77
+  },
+  {
+   "id": "a1-rule.1",
+   "act": "act1",
+   "start": 32.063,
+   "dur": 5.77
+  },
+  {
+   "id": "a1-rule.2",
+   "act": "act1",
+   "start": 37.833,
+   "dur": 5.68
+  },
+  {
+   "id": "a1-raise.1",
+   "act": "act1",
+   "start": 43.513,
+   "dur": 8.53
+  },
+  {
+   "id": "a1-raise.2",
+   "act": "act1",
+   "start": 52.043,
+   "dur": 5.76
+  },
+  {
+   "id": "a1-horizon.1",
+   "act": "act1",
+   "start": 57.803,
+   "dur": 5.69
+  },
+  {
+   "id": "a1-horizon.2",
+   "act": "act1",
+   "start": 63.493,
+   "dur": 6.58
+  },
+  {
+   "id": "a1-horizon.3",
+   "act": "act1",
+   "start": 70.073,
+   "dur": 6.38
+  },
+  {
+   "id": "a1-mirror-in.1",
+   "act": "act1",
+   "start": 76.453,
+   "dur": 2.91
+  },
+  {
+   "id": "a1-mirror-rule.1",
+   "act": "act1",
+   "start": 79.363,
+   "dur": 6.65
+  },
+  {
+   "id": "a1-mirror-rule.2",
+   "act": "act1",
+   "start": 86.013,
+   "dur": 7.35
+  },
+  {
+   "id": "a1-mirror-rule.3",
+   "act": "act1",
+   "start": 93.363,
+   "dur": 4.58
+  },
+  {
+   "id": "a2-7374.1",
+   "act": "act2",
+   "start": 97.943,
+   "dur": 8.01
+  },
+  {
+   "id": "a2-1974inf.1",
+   "act": "act2",
+   "start": 105.953,
+   "dur": 8.87
+  },
+  {
+   "id": "a2-bal74.1",
+   "act": "act2",
+   "start": 114.823,
+   "dur": 9.69
+  },
+  {
+   "id": "a2-bal74m.1",
+   "act": "act2",
+   "start": 124.513,
+   "dur": 9.41
+  }
+ ],
+ "turns": [],
+ "note": "M2c animatic: cold open + the act-1 lines that teach the world + act 2 1973-74"
+}

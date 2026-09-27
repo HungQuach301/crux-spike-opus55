@@ -1,0 +1,13 @@
+{
+ "mode": "animatic",
+ "size": [
+  854,
+  480
+ ],
+ "frames": 4018,
+ "from": 0,
+ "to": 133.93333333333334,
+ "workers": 3,
+ "wallSeconds": 1052.7,
+ "secondsPerVideoSecond": 7.86
+}

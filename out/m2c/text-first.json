@@ -1,0 +1,191 @@
+{
+ "mr-1995": {
+  "t": 89.3333,
+  "x": 556.2,
+  "level": 2,
+  "role": "label",
+  "claims": 1
+ },
+ "mr-1966": {
+  "t": 90.4333,
+  "x": 412.2,
+  "level": 2,
+  "role": "label",
+  "claims": 1
+ },
+ "teach-tap": {
+  "t": 52.7,
+  "x": 188.8,
+  "level": 2,
+  "role": "label",
+  "claims": 0
+ },
+ "cb-1991": {
+  "t": 10.1667,
+  "x": 333.4,
+  "level": 1,
+  "role": "label",
+  "claims": 1
+ },
+ "b1-1973": {
+  "t": 102.9667,
+  "x": 618.2,
+  "level": 2,
+  "role": "label",
+  "claims": 1
+ },
+ "b1-1974": {
+  "t": 104.2333,
+  "x": 758.7,
+  "level": 2,
+  "role": "label",
+  "claims": 1
+ },
+ "hz-1966": {
+  "t": 60.5,
+  "x": 553.5,
+  "level": 2,
+  "role": "label",
+  "claims": 1
+ },
+ "hz-1995": {
+  "t": 62.1333,
+  "x": 419.1,
+  "level": 2,
+  "role": "label",
+  "claims": 1
+ },
+ "id-title": {
+  "t": 15.2333,
+  "x": 426.7,
+  "level": 1,
+  "role": "label",
+  "claims": 0
+ },
+ "teach-stone": {
+  "t": 64.1333,
+  "x": 427,
+  "level": 2,
+  "role": "label",
+  "claims": 0
+ },
+ "b2-loss": {
+  "t": 109.2333,
+  "x": 427,
+  "level": 1,
+  "role": "label",
+  "claims": 1
+ },
+ "teach-rail": {
+  "t": 67.4667,
+  "x": 770.1,
+  "level": 3,
+  "role": "label",
+  "claims": 0
+ },
+ "b2-infl": {
+  "t": 112.6333,
+  "x": 289.2,
+  "level": 2,
+  "role": "label",
+  "claims": 1
+ },
+ "st-badge": {
+  "t": 23.1667,
+  "x": 427,
+  "level": 3,
+  "role": "badge",
+  "claims": 0
+ },
+ "st-1m": {
+  "t": 23.3,
+  "x": 427,
+  "level": 1,
+  "role": "label",
+  "claims": 1
+ },
+ "st-basis": {
+  "t": 23.3,
+  "x": 427,
+  "level": 3,
+  "role": "label",
+  "claims": 0
+ },
+ "teach-tank": {
+  "t": 27.9333,
+  "x": 280.3,
+  "level": 2,
+  "role": "label",
+  "claims": 0
+ },
+ "mi-badge": {
+  "t": 77.2,
+  "x": 427,
+  "level": 3,
+  "role": "badge",
+  "claims": 0
+ },
+ "mi-name": {
+  "t": 77.2,
+  "x": 427,
+  "level": 2,
+  "role": "label",
+  "claims": 0
+ },
+ "b3-bal": {
+  "t": 121.4,
+  "x": 427,
+  "level": 1,
+  "role": "label",
+  "claims": 1
+ },
+ "b3-basis": {
+  "t": 121.4,
+  "x": 427,
+  "level": 3,
+  "role": "label",
+  "claims": 0
+ },
+ "b4-badge": {
+  "t": 128.5667,
+  "x": 427,
+  "level": 3,
+  "role": "badge",
+  "claims": 0
+ },
+ "b4-bal": {
+  "t": 128.7667,
+  "x": 427,
+  "level": 1,
+  "role": "label",
+  "claims": 1
+ },
+ "b4-basis": {
+  "t": 128.7667,
+  "x": 427,
+  "level": 3,
+  "role": "label",
+  "claims": 0
+ },
+ "ru-badge": {
+  "t": 38.3333,
+  "x": 247,
+  "level": 3,
+  "role": "badge",
+  "claims": 0
+ },
+ "ru-40k": {
+  "t": 38.4667,
+  "x": 247,
+  "level": 1,
+  "role": "label",
+  "claims": 1
+ },
+ "ru-basis": {
+  "t": 38.4667,
+  "x": 247,
+  "level": 3,
+  "role": "label",
+  "claims": 0
+ }
+}

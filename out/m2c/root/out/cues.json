@@ -1,0 +1,28 @@
+{
+ "cues": [
+  {
+   "t": 0,
+   "end": 17.143,
+   "key": "D minor",
+   "tempo": 84,
+   "layer": "music",
+   "function": "cold open"
+  },
+  {
+   "t": 17.143,
+   "end": 97.943,
+   "key": "F major",
+   "tempo": 92,
+   "layer": "music",
+   "function": "act 1: learning the world"
+  },
+  {
+   "t": 97.943,
+   "end": 133.923,
+   "key": "D minor",
+   "tempo": 99,
+   "layer": "music",
+   "function": "storm 1973-74"
+  }
+ ]
+}

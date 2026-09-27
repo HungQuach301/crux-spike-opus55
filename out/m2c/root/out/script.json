@@ -1,0 +1,151 @@
+{
+ "sentences": [
+  {
+   "id": "co-same.1",
+   "scene": "co-same",
+   "text": "Two retirees with the same balance, the same withdrawals and the same average return.",
+   "start": 1.9,
+   "end": 7.14
+  },
+  {
+   "id": "co-broke.1",
+   "scene": "co-broke",
+   "text": "One ran out of money in 1991.",
+   "start": 7.54,
+   "end": 11.02
+  },
+  {
+   "id": "co-question.1",
+   "scene": "co-question",
+   "text": "So what decided it?",
+   "start": 12.27,
+   "end": 14.23
+  },
+  {
+   "id": "a1-est.1",
+   "scene": "a1-est.1",
+   "text": "It is January 1966.",
+   "start": 18.043,
+   "end": 20.713
+  },
+  {
+   "id": "a1-start.1",
+   "scene": "a1-start.1",
+   "text": "The first retiree starts with $1 million, measured in 1966 dollars.",
+   "start": 21.663,
+   "end": 27.143
+  },
+  {
+   "id": "a1-start.2",
+   "scene": "a1-start.2",
+   "text": "Their money is the water in this glass tank.",
+   "start": 27.593,
+   "end": 31.413
+  },
+  {
+   "id": "a1-rule.1",
+   "scene": "a1-rule.1",
+   "text": "In the first year, the retiree withdraws 4% of the starting balance.",
+   "start": 32.363,
+   "end": 37.683
+  },
+  {
+   "id": "a1-rule.2",
+   "scene": "a1-rule.2",
+   "text": "That is $40,000, in 1966 dollars.",
+   "start": 38.133,
+   "end": 42.863
+  },
+  {
+   "id": "a1-raise.1",
+   "scene": "a1-raise.1",
+   "text": "After that, the withdrawal rises each year with the previous year's inflation, so it always buys the same groceries.",
+   "start": 43.813,
+   "end": 51.893
+  },
+  {
+   "id": "a1-raise.2",
+   "scene": "a1-raise.2",
+   "text": "The tap is that withdrawal, and it widens as prices rise.",
+   "start": 52.343,
+   "end": 57.153
+  },
+  {
+   "id": "a1-horizon.1",
+   "scene": "a1-horizon.1",
+   "text": "The plan runs for 30 years, from 1966 through 1995.",
+   "start": 58.103,
+   "end": 63.343
+  },
+  {
+   "id": "a1-horizon.2",
+   "scene": "a1-horizon.2",
+   "text": "Each stone on this road is one year's return; a losing year sinks below the road.",
+   "start": 63.793,
+   "end": 69.923
+  },
+  {
+   "id": "a1-horizon.3",
+   "scene": "a1-horizon.3",
+   "text": "As the tank passes each stone, the water rises or falls with that year.",
+   "start": 70.373,
+   "end": 75.803
+  },
+  {
+   "id": "a1-mirror-in.1",
+   "scene": "a1-mirror-in.1",
+   "text": "Now meet the second retiree.",
+   "start": 76.753,
+   "end": 78.713
+  },
+  {
+   "id": "a1-mirror-rule.1",
+   "scene": "a1-mirror-rule.1",
+   "text": "The mirror retiree lives through the exact same 30 annual returns, but in reverse order.",
+   "start": 79.663,
+   "end": 85.863
+  },
+  {
+   "id": "a1-mirror-rule.2",
+   "scene": "a1-mirror-rule.2",
+   "text": "The return of 1995 arrives first, and the return of 1966 arrives last.",
+   "start": 86.313,
+   "end": 93.213
+  },
+  {
+   "id": "a1-mirror-rule.3",
+   "scene": "a1-mirror-rule.3",
+   "text": "So the mirror tank walks the same road, the other way.",
+   "start": 93.663,
+   "end": 97.893
+  },
+  {
+   "id": "a2-7374.1",
+   "scene": "a2-7374.1",
+   "text": "After inflation, stocks and bonds both lose money in 1973 and 1974.",
+   "start": 99.343,
+   "end": 105.303
+  },
+  {
+   "id": "a2-1974inf.1",
+   "scene": "a2-1974inf.1",
+   "text": "In 1974 alone, the portfolio loses 14.7%, while prices rise 12.3%.",
+   "start": 106.253,
+   "end": 114.173
+  },
+  {
+   "id": "a2-bal74.1",
+   "scene": "a2-bal74.1",
+   "text": "In 1966 dollars, the 1966 retiree ends 1974 with $461,000.",
+   "start": 115.123,
+   "end": 123.863
+  },
+  {
+   "id": "a2-bal74m.1",
+   "scene": "a2-bal74m.1",
+   "text": "The mirror retiree, same year, same withdrawals: $1.27 million, also in 1966 dollars.",
+   "start": 124.813,
+   "end": 132.273
+  }
+ ]
+}
