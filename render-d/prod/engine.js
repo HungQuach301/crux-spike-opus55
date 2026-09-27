@@ -221,8 +221,11 @@
     const N = opts.subframes || 8, shutter = 0.5, fps = 30;
     const times = Array.from({ length: N }, (_, k) => t + ((k + 0.5) / N - 0.5) * shutter / fps);
     const states = times.map((x) => stateAt(x));
-    const sig = (s) => JSON.stringify([s.camera.pos, s.camera.target, s.camera.focusDist, s.sig]);
-    const still = states.every((s) => sig(s) === sig(states[0]));
+    // a frame is still when nothing changes but the camera's slow creep (< 1 world px across the shutter, far below a
+    // pixel on screen): motion blur would be invisible, so the centre instant is drawn once
+    const d3 = (a, b) => Math.hypot(a[0] - b[0], a[1] - b[1], a[2] - b[2]);
+    const s0 = states[0], s1 = states[N - 1];
+    const still = states.every((s) => s.sig === s0.sig) && d3(s0.camera.pos, s1.camera.pos) < 1 && d3(s0.camera.target, s1.camera.target) < 1 && Math.abs(s0.camera.focusDist - s1.camera.focusDist) < 2;
     const centre = stateAt(t);
     if (N === 1 || still || MODE.name !== 'all') {
       const r = drawSubframe(mctx, centre, opts);

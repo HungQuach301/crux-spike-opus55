@@ -217,6 +217,90 @@
    "callbacks": []
   },
   {
+   "claimId": "axPct0",
+   "value": 0,
+   "display": "0%",
+   "role": "axis",
+   "formula": "zero line of a yearly-return bar chart",
+   "source": {
+    "id": "damodaran-histretSP-2026",
+    "url": "https://pages.stern.nyu.edu/~adamodar/pc/datasets/histretSP.xls"
+   },
+   "dataYears": [
+    1966,
+    1995
+   ],
+   "historical": true,
+   "illustrative": false,
+   "planned": [
+    "a1-mirror-in",
+    "a1-mirror-rule"
+   ],
+   "spoken": [],
+   "shownIn": [
+    "a1-mirror-in",
+    "a1-mirror-rule",
+    "a1-mirror-rule-b"
+   ],
+   "callbacks": []
+  },
+  {
+   "claimId": "axPct20",
+   "value": 20,
+   "display": "20%",
+   "role": "axis",
+   "formula": "gridline of a yearly-return bar chart at +20%",
+   "source": {
+    "id": "damodaran-histretSP-2026",
+    "url": "https://pages.stern.nyu.edu/~adamodar/pc/datasets/histretSP.xls"
+   },
+   "dataYears": [
+    1966,
+    1995
+   ],
+   "historical": true,
+   "illustrative": false,
+   "planned": [
+    "a1-mirror-in",
+    "a1-mirror-rule"
+   ],
+   "spoken": [],
+   "shownIn": [
+    "a1-mirror-in",
+    "a1-mirror-rule",
+    "a1-mirror-rule-b"
+   ],
+   "callbacks": []
+  },
+  {
+   "claimId": "axUsd100k",
+   "value": 100000,
+   "display": "$100,000",
+   "basis": "nominal",
+   "role": "axis",
+   "formula": "gridline of the nominal-withdrawal bar chart at $100,000",
+   "source": {
+    "id": "damodaran-histretSP-2026",
+    "url": "https://pages.stern.nyu.edu/~adamodar/pc/datasets/histretSP.xls"
+   },
+   "dataYears": [
+    1966,
+    1995
+   ],
+   "historical": true,
+   "illustrative": false,
+   "planned": [
+    "a1-raise",
+    "a1-real"
+   ],
+   "spoken": [],
+   "shownIn": [
+    "a1-raise",
+    "a1-real"
+   ],
+   "callbacks": []
+  },
+  {
    "claimId": "ax1966",
    "value": 1966,
    "display": "1966",

@@ -240,7 +240,7 @@
     const items = []; env(items, 'mx', { glow: 0.10 });
     donut(items, 'mx', 960, 640, 0, 0.6 * smooth((L - 0.3) / 1.2) + 0.4 * 0, fade(L, 0.2), H);
     const t60 = H.local(cueAbs('a1-mix.1', '60%')), t40 = H.local(cueAbs('a1-mix.1', '40%'));
-    items.push(badge('mx-badge', 1330, 180, fade(L, Math.min(t60, t40) - 0.4, 0.2)));
+    items.push(badge('mx-badge', 1300, 498, fade(L, Math.min(t60, t40) - 0.4, 0.2)));
     items.push(L1('mx-l1', 'The portfolio', 640, 360, 64, fade(L, 0.3)));
     items.push(Tx('mx-s', '60% stocks', 1300, 560, 44, C.stocks, { alpha: L >= t60 - 1 / 60 ? 1 : 0, claims: [claim('w60')] }));
     items.push(Tx('mx-b', '40% bonds', 1300, 760, 44, C.bonds, { alpha: L >= t40 - 1 / 60 ? 1 : 0, claims: [claim('w40')] }));
@@ -274,7 +274,7 @@
     const items = []; env(items, 'ru', { glow: 0.10 });
     const t4 = H.local(cueAbs('a1-rule.1', '4%')), t40 = H.local(cueAbs('a1-rule.2', '$40,000'));
     moneyColumn(items, 'ru', 10, L + 2, 1200, 920, 0, { u: smooth((L - t4) / 1.2), a: L >= t4 - 0.2 ? 1 : 0 });
-    items.push(badge('ru-badge', 330, 200, fade(L, t4 - 0.4, 0.2)));
+    items.push(badge('ru-badge', 548, 482, fade(L, t4 - 0.4, 0.2)));
     items.push(L1('ru-l1', '4% in year one', 640, 360, 72, L >= t4 - 1 / 60 ? 1 : 0, { claims: [claim('rate4')] }));
     items.push(Tx('ru-40', '$40,000', 640, 580, 60, C.text, { align: 'center', weight: 700, alpha: L >= t40 - 1 / 60 ? 1 : 0, claims: [claim('wd1')] }));
     items.push(Tx('ru-basis', 'real dollars', 640, 640, 32, C['text-dim'], { align: 'center', alpha: L >= t40 - 1 / 60 ? 1 : 0 }));
@@ -291,6 +291,11 @@
     }
     const a = H.P(x0 + 17, yb, z), b = H.P(x0 + 29 * w + 17, yb, z);
     items.push(S(panel + '-axis', 'polyline', { panel, z, layer: panel + '-bars', pts: [[x0 - 10, yb + 2], [x0 + 30 * w, yb + 2]], stroke: C.muted, lw: 2, meta: { role: 'axis', panel, chart: panel } }));
+    // scale: a dashed gridline at $100,000 (nominal)
+    const yg = yb - Y(100000), ga = clamp(grow * 2);
+    items.push(S(panel + '-grid100k', 'polyline', { panel, z, layer: panel + '-bars', pts: [[x0 - 10, yg], [x0 + 30 * w, yg]], stroke: C.grid, lw: 2, dash: [10, 10], alpha: ga, meta: { role: 'axis', panel, chart: panel } }));
+    const gp = H.P(x0 + 30 * w + 14, yg, z);
+    items.push(Tx(panel + '-g100k', '$100,000 nominal', gp[0], gp[1] + 10, 30, C['text-dim'], { role: 'axis-label', anchor: panel, chart: panel, alpha: ga, claims: [claim('axUsd100k')] }));
     items.push(Tx(panel + '-a0', '1966', a[0], a[1] + 48, 30, C['text-dim'], { role: 'axis-label', anchor: panel, chart: panel, year: 1966, align: 'center', claims: [claim('ax1966')] }));
     items.push(Tx(panel + '-a1', '1995', b[0], b[1] + 48, 30, C['text-dim'], { role: 'axis-label', anchor: panel, chart: panel, year: 1995, align: 'center', claims: [claim('ax1995')] }));
     return { x0, w, yb, Y };
@@ -323,7 +328,7 @@
     items.push(Tx('hz-a0', '1966', a[0], a[1] + 50, 30, C['text-dim'], { role: 'axis-label', anchor: 'hz', chart: 'hz', year: 1966, align: 'center', claims: [claim('ax1966')], alpha: inSafe(a[0]) * (L >= H.local(cueAbs('a1-horizon.1', '1966')) - 1 / 60 ? 1 : 0) }));
     items.push(Tx('hz-a1', '1995', b[0], b[1] + 50, 30, C['text-dim'], { role: 'axis-label', anchor: 'hz', chart: 'hz', year: 1995, align: 'center', claims: [claim('ax1995')], alpha: inSafe(b[0]) * (L >= H.local(cueAbs('a1-horizon.1', '1995')) - 1 / 60 ? 1 : 0) }));
     const t30 = H.local(cueAbs('a1-horizon.1', '30'));
-    items.push(badge('hz-badge', 1160, 230, fade(L, t30 - 0.4, 0.2)));
+    items.push(badge('hz-badge', 1150, 282, fade(L, t30 - 0.4, 0.2)));
     items.push(L1('hz-l1', '30 years', 1280, 360, 88, L >= t30 - 1 / 60 ? 1 : 0, { claims: [claim('years30')] }));
     return items;
   };
@@ -371,6 +376,12 @@
     }
     items.push(S(panel + '-ax66', 'polyline', { panel, z: 0, pts: [[x0 - 10, y66], [x0 + 30 * w, y66]], stroke: C.muted, lw: 2, alpha: clamp((L - t1) / 0.3), meta: { role: 'axis', panel, chart: panel + '-66' } }));
     items.push(S(panel + '-axm', 'polyline', { panel, z: 0, pts: [[x0 - 10, ym], [x0 + 30 * w, ym]], stroke: C.muted, lw: 2, alpha: clamp((L - t2) / 0.3), meta: { role: 'axis', panel, chart: panel + '-m' } }));
+    // scale: 0% on both zero lines and a dashed 20% gridline on the first row
+    items.push(S(panel + '-g20', 'polyline', { panel, z: 0, pts: [[x0 - 10, y66 - 20 * s], [x0 + 30 * w, y66 - 20 * s]], stroke: C.grid, lw: 2, dash: [10, 10], alpha: clamp((L - t1) / 0.3), meta: { role: 'axis', panel, chart: panel + '-66' } }));
+    const lp = (y, a, id, text, cl) => { const p = H.P(x0 - 22, y, 0); items.push(Tx(id, text, p[0], p[1] + 10, 28, C['text-dim'], { align: 'right', role: 'axis-label', anchor: panel, chart: panel, alpha: a, claims: [claim(cl)] })); };
+    lp(y66, clamp((L - t1) / 0.3), panel + '-z66', '0%', 'axPct0');
+    lp(y66 - 20 * s, clamp((L - t1) / 0.3), panel + '-t20', '20%', 'axPct20');
+    lp(ym, clamp((L - t2) / 0.3), panel + '-zm', '0%', 'axPct0');
     return { x0, w, y66, ym };
   }
   B['a1-mirror-rule'] = (L, sc, H) => {
@@ -455,7 +466,7 @@
     avgBars(items, 'am', L, '1966', 200, 1);
     avgBars(items, 'am', L, 'mirror', 1100, smooth((L - 0.2) / 1.0), fade(L, 0.1));
     items.push(Tx('am-66', '9.7%', 640, 360 + 32, 120, C.c1966, { align: 'center', weight: 700, series: '1966', claims: [claim('g1966')], level: L < tid - 0.2 ? 1 : null }));
-    items.push(badge('am-badge', 1180, 200, fade(L, tm - 0.4, 0.2)));
+    items.push(badge('am-badge', 1195, 280, fade(L, tm - 0.4, 0.2)));
     items.push(Tx('am-m', '9.7%', 1280, 360 + 32, 120, C.cmirror, { align: 'center', weight: 700, series: 'mirror', claims: [claim('gmirror')], alpha: L >= tm - 1 / 60 ? 1 : 0 }));
     items.push(Tx('am-sub', 'mirror retiree, average return per year', 1280, 470, 32, C['text-dim'], { align: 'center', alpha: fade(L, tm) }));
     items.push(L1('am-id', 'Identical', 960, 720 - 40, 72, fade(L, tid - 0.2, 0.2)));

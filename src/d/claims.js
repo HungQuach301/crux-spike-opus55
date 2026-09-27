@@ -39,6 +39,10 @@ const C = [
   year('y1991', 1966 + A.depletedYear - 1, 'calendar year in which the 1966 path cannot pay the full withdrawal: 1966 + depletedYear − 1 (depletedYear = ' + A.depletedYear + ')', { dataYears: [1966, 1991], decisive: true, character: '1966' }),
   year('y1995', 1995, 'last calendar year of the 1966–1995 window'),
   // axis labels of the year axes (shown only as axis labels; role axis)
+  // scale ticks of the bar charts (shown only as axis labels; role axis)
+  { claimId: 'axPct0', value: 0, display: '0%', role: 'axis', formula: 'zero line of a yearly-return bar chart', source: D, ...hist([1966, 1995]), historical: true, illustrative: false, planned: ['a1-mirror-in', 'a1-mirror-rule'] },
+  { claimId: 'axPct20', value: 20, display: '20%', role: 'axis', formula: 'gridline of a yearly-return bar chart at +20%', source: D, ...hist([1966, 1995]), historical: true, illustrative: false, planned: ['a1-mirror-in', 'a1-mirror-rule'] },
+  { claimId: 'axUsd100k', value: 100000, display: '$100,000', basis: 'nominal', role: 'axis', formula: 'gridline of the nominal-withdrawal bar chart at $100,000', source: D, ...hist([1966, 1995]), historical: true, illustrative: false, planned: ['a1-raise', 'a1-real'] },
   year('ax1966', 1966, 'first year on a 1966–1995 time axis', { role: 'axis', planned: ['co-lines', 'co-same', 'co-broke', 'a1-raise', 'a1-real', 'a1-horizon', 'a1-mirror-rule', 'a1-arith'] }),
   year('ax1995', 1995, 'last year on a 1966–1995 time axis', { role: 'axis', planned: ['co-lines', 'co-same', 'co-broke', 'a1-raise', 'a1-real', 'a1-horizon', 'a1-mirror-rule', 'a1-arith'] }),
   year('y1928', 1928, 'first year of Damodaran\'s annual series and first start year with a full 30-year window'),
