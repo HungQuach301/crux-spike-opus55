@@ -48,19 +48,19 @@
   "role": "label",
   "claims": 1
  },
- "hz-1995": {
-  "t": 62.1333,
-  "x": 419.1,
-  "level": 2,
-  "role": "label",
-  "claims": 1
- },
  "id-title": {
   "t": 15.2333,
   "x": 426.7,
   "level": 1,
   "role": "label",
   "claims": 0
+ },
+ "hz-1995": {
+  "t": 62.1333,
+  "x": 419.1,
+  "level": 2,
+  "role": "label",
+  "claims": 1
  },
  "teach-stone": {
   "t": 64.1333,
@@ -85,7 +85,7 @@
  },
  "b2-infl": {
   "t": 112.6333,
-  "x": 289.2,
+  "x": 427,
   "level": 2,
   "role": "label",
   "claims": 1
