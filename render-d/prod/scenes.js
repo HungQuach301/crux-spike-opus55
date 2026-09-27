@@ -79,8 +79,8 @@
         { align: right ? 'right' : 'left', claims: ch === '1966' ? [claim('y1966')] : [], alpha: prog > 0.2 ? fade(prog * 10, 2.2, 1) : 0, series: ch }));
     }
     const a = P(x0, yb + 20, 0), b = P(x1, yb + 20, 0);
-    items.push(Tx(panel + '-a0', '1966', a[0], a[1] + 44, 30, C['text-dim'], { role: 'axis-label', anchor: panel, chart: panel, year: 1966, align: 'center', claims: [claim('ax1966')] }));
-    items.push(Tx(panel + '-a1', '1995', b[0], b[1] + 44, 30, C['text-dim'], { role: 'axis-label', anchor: panel, chart: panel, year: 1995, align: 'center', claims: [claim('ax1995')] }));
+    items.push(Tx(panel + '-a0', '1966', a[0], a[1] + 46, 34, C.text, { role: 'axis-label', anchor: panel, chart: panel, year: 1966, align: 'center', claims: [claim('ax1966')] }));
+    items.push(Tx(panel + '-a1', '1995', b[0], b[1] + 46, 34, C.text, { role: 'axis-label', anchor: panel, chart: panel, year: 1995, align: 'center', claims: [claim('ax1995')] }));
   }
   B['co-lines'] = (L, sc, H) => {
     const items = []; env(items, 'co', { glow: 0.06, floor: 0.7 });
@@ -174,22 +174,25 @@
     const items = []; env(items, 'st', { glow: 0.10 });
     moneyColumn(items, 'st', 10, L, 1150, 900, 0, null);
     const tv = H.local(cueAbs('a1-start.1', '$1 million'));
-    items.push(badge('st-badge', 470, 560, fade(L, tv - 0.3, 0.2)));
+    items.push(badge('st-badge', 470, 638, fade(L, tv - 0.3, 0.2)));
     items.push(L1('st-l1', '$1 million', 640, 720, 104, L >= tv - 1 / 60 ? 1 : 0, { claims: [claim('initial')] }));
-    items.push(Tx('st-basis', 'real dollars, inflation-adjusted', 640, 820, 34, C['text-dim'], { align: 'center', alpha: L >= tv - 1 / 60 ? 1 : 0 }));
-    items.push(Tx('st-year', 'measured in 1966 dollars', 640, 880, 30, C['text-dim'], { align: 'center', alpha: L >= H.local(cueAbs('a1-start.1', '1966')) - 1 / 60 ? 1 : 0, claims: [claim('y1966')] }));
+    items.push(Tx('st-basis', 'in 1966 dollars', 640, 830, 40, C['text-dim'], { align: 'center', alpha: L >= tv - 1 / 60 ? 1 : 0, claims: [claim('y1966')] }));
     items.push(Tx('st-who', 'the first retiree', 1300, 180, 34, C.c1966, { align: 'center', alpha: fade(L, 0.4), series: '1966' }));
     return items;
   };
   B['a1-who'] = (L, sc, H) => {
     const items = []; env(items, 'who', { glow: 0.05, gx: 1600, floor: 1.2 });
-    // the road ahead: ten tiles receding into the dark
+    // the decade ahead, not yet known to the retiree: the real returns of 1966..1975 as bars on a zero line, revealed one
+    // by one as the amber path walks over them (no numbers: the shape is the foreshadowing)
+    const walk = smooth((L - 0.5) / 4.5), x0 = 380, bw = 70, gap = 18, y0 = 640, k2px = 1000;
+    items.push(S('who-zero', 'polyline', { panel: 'who', z: 0, pts: [[x0 - 20, y0], [x0 + 10 * (bw + gap) + 2, y0]], stroke: C.muted, lw: 2, meta: { role: 'axis', panel: 'who' } }));
     for (let k = 0; k < 10; k++) {
-      const z = -200 + k * 250;
-      items.push(S(`who-tile${k}`, 'poly', { panel: 'who', z, layer: 'who-t' + k, pts: [[700, 1170, z], [1220, 1170, z], [1220, 1170, z + 280], [700, 1170, z + 280]], fill: C['surface-2'], alpha: 0.9 - k * 0.08, meta: { role: 'mark', panel: 'who' } }));
+      const r = (1 + M.ret1966[k]) / (1 + M.infl[k]) - 1, h = r * k2px, a = clamp((walk * 10 - k) / 1.2);
+      const x = x0 + k * (bw + gap);
+      items.push(S(`who-bar${k}`, 'rect', { panel: 'who', z: 0, rect: [x, h >= 0 ? y0 - h * a : y0, bw, Math.max(2, Math.abs(h) * a)], fill: r >= 0 ? C.gain : C.loss, alpha: 0.85, meta: { role: 'mark', panel: 'who' } }));
     }
-    const walk = smooth((L - 0.5) / 4.5);
-    items.push(S('who-path', 'polyline', { panel: 'who', z: 0, layer: 'who-path', pts: [[960, 1168, -200], [960, 1168, -200 + 3000 * walk]], stroke: C.c1966, lw: 5, meta: { role: 'mark', panel: 'who', ...charShape('1966') } }));
+    items.push(S('who-path', 'polyline', { panel: 'who', z: 0, pts: [[x0, y0 - 190], [x0 + 10 * (bw + gap) * walk, y0 - 190]], stroke: C.c1966, lw: 5, meta: { role: 'mark', panel: 'who', ...charShape('1966') } }));
+    items.push(Tx('who-cap', 'real return, first ten years', x0, y0 - 220, 30, C['text-dim'], { alpha: fade(L, 0.8), level: 3 }));
     items.push(Tx('who-l2', 'A hard decade for markets', 1280, 250, 38, C['text-dim'], { align: 'center', alpha: fade(L, 0.4), level: 2 }));
     items.push(L1('who-l1', 'Nobody knows it yet', 1280, 360, 64, fade(L, H.local(cueAbs('a1-who.1', 'nobody')) - 0.05, 0.25)));
     return items;
@@ -461,7 +464,7 @@
   B['a1-geo'] = (L, sc, H) => {
     const items = []; env(items, 'ge', { glow: 0.10 });
     // two towers of the 30 growth factors (log heights): 1966 order (left) and reverse order (right), same total height
-    const lg = (r) => Math.log(1 + r) * 260;
+    const lg = (r) => Math.log(1 + r) * 200; // total height ~560 px: the towers stay below the top edge through the camera move
     for (const [ch, x, rs] of [['1966', 1050, M.ret1966], ['mirror', 1400, M.retMirror]]) {
       let y = 940;
       rs.forEach((r, k) => {
@@ -507,5 +510,8 @@
     return items;
   };
 
-  window.SCENES = { B, cueAbs, lineStart, smooth };
+  // helpers for the builders of acts 2, 3, method and outro (render-d/prod/scenes-a2.js, scenes-a3.js, scenes-end.js)
+  const K = { D, C, M, clamp, smooth, easeOut, back, fade, fadeOut, cueAbs, lineStart, S, Tx, L1, claim, badge, env, axisX, series, charShape, colorOf, yearsX,
+    growthChart, moneyColumn, yearGrid, donut, escalator, tracks, returnRows, scale, avgBars };
+  window.SCENES = { B, K, cueAbs, lineStart, smooth };
 })();

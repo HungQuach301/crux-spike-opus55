@@ -290,6 +290,18 @@ def main():
         sw = 0.6 + 0.4 * np.sin(2 * np.pi * np.arange(N) / SR / 7.3 + ch)
         air[:, ch] = nz * sw * 0.035
     dry += air
+    # tension: the music builds over the 20 s before each act climax (+6 dB), drops to a valley after it (-5 dB at +8 s)
+    # and recovers by +25 s (acts[].climax of the timeline; none in a segment without climaxes)
+    env_db = np.zeros(N)
+    tt_ = np.arange(N) / SR
+    for a_ in tl['acts']:
+        c_ = a_.get('climax')
+        if c_ is None:
+            continue
+        up = np.clip((tt_ - (c_ - 20)) / 20, 0, 1) * (tt_ <= c_)
+        down = (tt_ > c_) * np.interp(tt_, [c_, c_ + 8, c_ + 25], [6, -5, 0])
+        env_db += 6 * up ** 2 + down
+    dry *= 10 ** (env_db / 20)[:, None]
     # one reverb space
     irL, irR = reverb_ir()
     wetL = signal.fftconvolve(dry[:, 0], irL)[:N]

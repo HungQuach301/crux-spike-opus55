@@ -16,7 +16,7 @@ const opt = (k, d) => { const i = args.indexOf('--' + k); return i >= 0 ? args[i
 const WORKERS = +(process.env.WORKERS || 4), FPS = 30;
 const PAGE = path.resolve(__dirname, 'page.html');
 const TL = JSON.parse(fs.readFileSync(path.join(ROOT, 'out', 'timeline.json'), 'utf8'));
-const TMP = path.resolve(__dirname, '..', '..', '.frames', 'm2');
+const TMP = path.resolve(__dirname, '..', '..', '.frames', path.basename(path.dirname(ROOT)));
 
 async function openPage(browser) {
   const page = await browser.newPage({ viewport: { width: 1920, height: 1080 }, deviceScaleFactor: 1 });
@@ -100,12 +100,12 @@ async function main() {
     // ONE grade for the whole film (token colours in, graded colours out): gentle filmic curve, slight warm highlights
     "curves=master='0/0.02 0.25/0.235 0.5/0.5 0.75/0.765 1/0.98':r='0/0 0.5/0.505 1/1':b='0/0.01 0.5/0.495 1/0.99'",
     'vignette=angle=PI/9:mode=forward',            // light, fixed vignette
-    'noise=alls=2:allf=u',                         // light, fixed (static) grain
+    'noise=alls=4:allf=u',                         // fixed (static) grain, strong enough to dither dark gradients through the encode (F08)
     'scale=out_color_matrix=bt709:out_range=tv', 'format=yuv420p',
     "lutyuv=y='clip(val,16,235)':u='clip(val,16,240)':v='clip(val,16,240)'", // stay inside the limited range
   ].join(',');
   execFileSync('ffmpeg', ['-y', '-loglevel', 'error', '-f', 'concat', '-safe', '0', '-i', list, '-vf', vf,
-    '-c:v', 'libx264', '-profile:v', 'high', '-preset', 'medium', '-tune', 'grain', '-b:v', '20M', '-minrate', '20M', '-maxrate', '20M', '-bufsize', '20M', '-x264-params', 'nal-hrd=cbr:force-cfr=1',
+    '-c:v', 'libx264', '-profile:v', 'high', '-preset', 'medium', '-tune', 'grain', '-b:v', String(process.env.VBR || '20M'), '-minrate', String(process.env.VBR || '20M'), '-maxrate', String(process.env.VBR || '20M'), '-bufsize', String(process.env.VBR || '20M'), '-x264-params', 'nal-hrd=cbr:force-cfr=1',
     '-colorspace', 'bt709', '-color_primaries', 'bt709', '-color_trc', 'bt709', '-color_range', 'tv', '-r', String(FPS), '-video_track_timescale', '15360', out]);
   const log2 = { subframes: 8, shutter: 0.5, workers: WORKERS, frames: F1 - F0, framesSupersampled: res.reduce((a, r) => a + r.moving, 0), wallSeconds: +wall.toFixed(1),
     secondsPerVideoSecond: +(wall / ((F1 - F0) / FPS)).toFixed(2), workerSeconds: res.map((r) => +r.seconds.toFixed(1)) };

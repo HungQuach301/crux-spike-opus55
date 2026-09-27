@@ -181,18 +181,6 @@
    "depth": "foreground card / mid chart / background floor and year wall (≥ 3 layers)"
   },
   {
-   "id": "sh-a1-raise-b",
-   "scene": "a1-raise-b",
-   "size": "medium",
-   "angle": "slightly low",
-   "focalMm": 35,
-   "move": "cut on action to a new size, then hold",
-   "moveReason": "a long line needs a second angle to keep attention",
-   "moveSeconds": 0,
-   "lens": "35 mm (35 mm equivalent, vertical fov 37.8°)",
-   "depth": "foreground card / mid chart / background floor and year wall (≥ 3 layers)"
-  },
-  {
    "id": "sh-a1-real",
    "scene": "a1-real",
    "size": "close-up",
@@ -213,18 +201,6 @@
    "move": "truck right along thirty years of floor",
    "moveReason": "show the length of the plan left to right",
    "moveSeconds": 1.6,
-   "lens": "24 mm (35 mm equivalent, vertical fov 53.1°)",
-   "depth": "foreground card / mid chart / background floor and year wall (≥ 3 layers)"
-  },
-  {
-   "id": "sh-a1-horizon-b",
-   "scene": "a1-horizon-b",
-   "size": "wide",
-   "angle": "high",
-   "focalMm": 24,
-   "move": "cut on action to a new size, then hold",
-   "moveReason": "a long line needs a second angle to keep attention",
-   "moveSeconds": 0,
    "lens": "24 mm (35 mm equivalent, vertical fov 53.1°)",
    "depth": "foreground card / mid chart / background floor and year wall (≥ 3 layers)"
   },
@@ -280,18 +256,6 @@
    "id": "sh-a1-mirror-rule-b",
    "scene": "a1-mirror-rule-b",
    "size": "close-up",
-   "angle": "eye-level",
-   "focalMm": 50,
-   "move": "cut on action to a new size, then hold",
-   "moveReason": "a long line needs a second angle to keep attention",
-   "moveSeconds": 0,
-   "lens": "50 mm (35 mm equivalent, vertical fov 27.0°)",
-   "depth": "foreground card / mid chart / background floor and year wall (≥ 3 layers)"
-  },
-  {
-   "id": "sh-a1-mirror-rule-c",
-   "scene": "a1-mirror-rule-c",
-   "size": "medium",
    "angle": "eye-level",
    "focalMm": 50,
    "move": "cut on action to a new size, then hold",
@@ -697,6 +661,18 @@
    "depth": "foreground card / mid chart / background floor and year wall (≥ 3 layers)"
   },
   {
+   "id": "sh-a2-gains80",
+   "scene": "a2-gains80",
+   "size": "medium",
+   "angle": "eye-level",
+   "focalMm": 50,
+   "move": "track along the 1980s bars, gain against share of the balance taken",
+   "moveReason": "show that good years still lost ground",
+   "moveSeconds": 0.6,
+   "lens": "50 mm (35 mm equivalent, vertical fov 27.0°)",
+   "depth": "foreground card / mid chart / background floor and year wall (≥ 3 layers)"
+  },
+  {
    "id": "sh-a2-late",
    "scene": "a2-late",
    "size": "wide",
@@ -961,6 +937,18 @@
    "depth": "foreground card / mid chart / background floor and year wall (≥ 3 layers)"
   },
   {
+   "id": "sh-a3-less-b",
+   "scene": "a3-less-b",
+   "size": "close-up",
+   "angle": "high",
+   "focalMm": 35,
+   "move": "cut on action to a new size, then hold",
+   "moveReason": "a long line needs a second angle to keep attention",
+   "moveSeconds": 0,
+   "lens": "35 mm (35 mm equivalent, vertical fov 37.8°)",
+   "depth": "foreground card / mid chart / background floor and year wall (≥ 3 layers)"
+  },
+  {
    "id": "sh-a3-four",
    "scene": "a3-four",
    "size": "medium",
@@ -1196,18 +1184,6 @@
    "focalMm": 50,
    "move": "static on the model list",
    "moveReason": "a plain list needs a still frame to read",
-   "moveSeconds": 0,
-   "lens": "50 mm (35 mm equivalent, vertical fov 27.0°)",
-   "depth": "foreground card / mid chart / background floor and year wall (≥ 3 layers)"
-  },
-  {
-   "id": "sh-a3-bare-b",
-   "scene": "a3-bare-b",
-   "size": "medium",
-   "angle": "eye-level",
-   "focalMm": 50,
-   "move": "cut on action to a new size, then hold",
-   "moveReason": "a long line needs a second angle to keep attention",
    "moveSeconds": 0,
    "lens": "50 mm (35 mm equivalent, vertical fov 27.0°)",
    "depth": "foreground card / mid chart / background floor and year wall (≥ 3 layers)"

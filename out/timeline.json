@@ -1,6 +1,6 @@
 {
  "fps": 30,
- "total": 729.61,
+ "total": 706.01,
  "acts": [
   {
    "id": "cold-open",
@@ -15,30 +15,30 @@
   {
    "id": "act1",
    "start": 17.143,
-   "end": 229.134,
-   "climax": 186.93
+   "end": 203.019,
+   "climax": 160.39
   },
   {
    "id": "act2",
-   "start": 229.134,
-   "end": 473.224,
-   "climax": 393.86
+   "start": 203.019,
+   "end": 451.458,
+   "climax": 372.34
   },
   {
    "id": "act3",
-   "start": 473.224,
-   "end": 683.891,
-   "climax": 623.74
+   "start": 451.458,
+   "end": 660.125,
+   "climax": 600.64
   },
   {
    "id": "method",
-   "start": 683.891,
-   "end": 705.558
+   "start": 660.125,
+   "end": 681.791
   },
   {
    "id": "outro",
-   "start": 705.558,
-   "end": 729.61
+   "start": 681.791,
+   "end": 706.01
   }
  ],
  "scenes": [
@@ -157,7 +157,7 @@
    "id": "a1-start",
    "act": "act1",
    "start": 21.03,
-   "dur": 9.871,
+   "dur": 5.88,
    "layout": "ledger/card",
    "shot": {
     "size": "medium",
@@ -174,8 +174,8 @@
   {
    "id": "a1-who",
    "act": "act1",
-   "start": 30.901,
-   "dur": 6.349,
+   "start": 26.91,
+   "dur": 5.947,
    "layout": "ledger/card",
    "shot": {
     "size": "close-up",
@@ -192,8 +192,8 @@
   {
    "id": "a1-hook",
    "act": "act1",
-   "start": 37.25,
-   "dur": 6.283,
+   "start": 32.857,
+   "dur": 6.41,
    "layout": "promise/card",
    "shot": {
     "size": "wide",
@@ -210,8 +210,8 @@
   {
    "id": "a1-hook-b",
    "act": "act1",
-   "start": 43.533,
-   "dur": 6.281,
+   "start": 39.267,
+   "dur": 6.423,
    "layout": "promise/card",
    "shot": {
     "size": "medium",
@@ -228,8 +228,8 @@
   {
    "id": "a1-mix",
    "act": "act1",
-   "start": 49.814,
-   "dur": 6.236,
+   "start": 45.69,
+   "dur": 6.08,
    "layout": "donut/split",
    "shot": {
     "size": "medium",
@@ -247,8 +247,8 @@
   {
    "id": "a1-assets",
    "act": "act1",
-   "start": 56.05,
-   "dur": 8.483,
+   "start": 51.77,
+   "dur": 8.53,
    "layout": "donut/detail",
    "shot": {
     "size": "close-up",
@@ -265,8 +265,8 @@
   {
    "id": "a1-rebal",
    "act": "act1",
-   "start": 64.533,
-   "dur": 5.337,
+   "start": 60.3,
+   "dur": 5.166,
    "layout": "donut/rebalance",
    "shot": {
     "size": "medium",
@@ -283,8 +283,8 @@
   {
    "id": "a1-rule",
    "act": "act1",
-   "start": 69.87,
-   "dur": 10.596,
+   "start": 65.466,
+   "dur": 11.064,
    "layout": "rules/card",
    "shot": {
     "size": "medium",
@@ -301,8 +301,8 @@
   {
    "id": "a1-raise",
    "act": "act1",
-   "start": 80.466,
-   "dur": 8.601,
+   "start": 76.53,
+   "dur": 8.48,
    "layout": "rules/escalator",
    "shot": {
     "size": "wide",
@@ -317,28 +317,10 @@
    "cutIn": null
   },
   {
-   "id": "a1-raise-b",
-   "act": "act1",
-   "start": 89.067,
-   "dur": 5.094,
-   "layout": "rules/escalator",
-   "shot": {
-    "size": "medium",
-    "angle": "slightly low",
-    "focalMm": 35
-   },
-   "panels": [
-    "rules"
-   ],
-   "chart": "rules",
-   "move": 0,
-   "cutIn": null
-  },
-  {
    "id": "a1-real",
    "act": "act1",
-   "start": 94.161,
-   "dur": 8.479,
+   "start": 85.01,
+   "dur": 8.38,
    "layout": "rules/constant",
    "shot": {
     "size": "close-up",
@@ -355,8 +337,8 @@
   {
    "id": "a1-horizon",
    "act": "act1",
-   "start": 102.64,
-   "dur": 12.26,
+   "start": 93.39,
+   "dur": 5.337,
    "layout": "timeline/ribbon",
    "shot": {
     "size": "extreme-wide",
@@ -371,28 +353,10 @@
    "cutIn": null
   },
   {
-   "id": "a1-horizon-b",
-   "act": "act1",
-   "start": 114.9,
-   "dur": 6.01,
-   "layout": "timeline/ribbon",
-   "shot": {
-    "size": "wide",
-    "angle": "high",
-    "focalMm": 24
-   },
-   "panels": [
-    "timeline"
-   ],
-   "chart": "timeline",
-   "move": 0,
-   "cutIn": null
-  },
-  {
    "id": "a1-notax",
    "act": "act1",
-   "start": 120.91,
-   "dur": 8.357,
+   "start": 98.727,
+   "dur": 8.64,
    "layout": "rules/list",
    "shot": {
     "size": "medium",
@@ -409,7 +373,7 @@
   {
    "id": "a1-notax-b",
    "act": "act1",
-   "start": 129.267,
+   "start": 107.367,
    "dur": 5.5,
    "layout": "rules/list",
    "shot": {
@@ -427,7 +391,7 @@
   {
    "id": "a1-mirror-in",
    "act": "act1",
-   "start": 134.767,
+   "start": 112.867,
    "dur": 4.267,
    "layout": "mirror/enter",
    "shot": {
@@ -445,7 +409,7 @@
   {
    "id": "a1-mirror-rule",
    "act": "act1",
-   "start": 139.033,
+   "start": 117.133,
    "dur": 6,
    "layout": "mirror/reverse",
    "shot": {
@@ -463,8 +427,8 @@
   {
    "id": "a1-mirror-rule-b",
    "act": "act1",
-   "start": 145.033,
-   "dur": 7.3,
+   "start": 123.133,
+   "dur": 7.9,
    "layout": "mirror/reverse",
    "shot": {
     "size": "close-up",
@@ -479,28 +443,10 @@
    "cutIn": null
   },
   {
-   "id": "a1-mirror-rule-c",
-   "act": "act1",
-   "start": 152.333,
-   "dur": 5.233,
-   "layout": "mirror/reverse",
-   "shot": {
-    "size": "medium",
-    "angle": "eye-level",
-    "focalMm": 50
-   },
-   "panels": [
-    "mirror"
-   ],
-   "chart": "mirror",
-   "move": 0,
-   "cutIn": null
-  },
-  {
    "id": "a1-illus",
    "act": "act1",
-   "start": 157.567,
-   "dur": 5.083,
+   "start": 131.033,
+   "dur": 4.868,
    "layout": "mirror/badge",
    "shot": {
     "size": "close-up",
@@ -518,8 +464,8 @@
   {
    "id": "a1-samewd",
    "act": "act1",
-   "start": 162.65,
-   "dur": 7.14,
+   "start": 135.901,
+   "dur": 7.174,
    "layout": "ledger/twin",
    "shot": {
     "size": "medium",
@@ -536,8 +482,8 @@
   {
    "id": "a1-question",
    "act": "act1",
-   "start": 169.79,
-   "dur": 9.154,
+   "start": 143.075,
+   "dur": 9.655,
    "layout": "duel/scale",
    "shot": {
     "size": "wide",
@@ -555,8 +501,8 @@
   {
    "id": "a1-avg1966",
    "act": "act1",
-   "start": 178.944,
-   "dur": 7.826,
+   "start": 152.73,
+   "dur": 7.301,
    "layout": "average/reveal",
    "shot": {
     "size": "close-up",
@@ -573,8 +519,8 @@
   {
    "id": "a1-avgmirror",
    "act": "act1",
-   "start": 186.77,
-   "dur": 8.43,
+   "start": 160.031,
+   "dur": 8.636,
    "layout": "average/match",
    "shot": {
     "size": "close-up",
@@ -592,7 +538,7 @@
   {
    "id": "a1-geo",
    "act": "act1",
-   "start": 195.2,
+   "start": 168.667,
    "dur": 6.567,
    "layout": "average/explain",
    "shot": {
@@ -610,7 +556,7 @@
   {
    "id": "a1-geo-b",
    "act": "act1",
-   "start": 201.767,
+   "start": 175.233,
    "dur": 7.633,
    "layout": "average/explain",
    "shot": {
@@ -628,8 +574,8 @@
   {
    "id": "a1-arith",
    "act": "act1",
-   "start": 209.4,
-   "dur": 9.23,
+   "start": 182.867,
+   "dur": 9.121,
    "layout": "average/table",
    "shot": {
     "size": "medium",
@@ -646,8 +592,8 @@
   {
    "id": "a1-payoff",
    "act": "act1",
-   "start": 218.63,
-   "dur": 10.504,
+   "start": 191.988,
+   "dur": 11.031,
    "layout": "duel/scale-2",
    "shot": {
     "size": "wide",
@@ -665,8 +611,8 @@
   {
    "id": "a2-est",
    "act": "act2",
-   "start": 229.134,
-   "dur": 4.363,
+   "start": 203.019,
+   "dur": 4.231,
    "layout": "world/road",
    "shot": {
     "size": "extreme-wide",
@@ -683,8 +629,8 @@
   {
    "id": "a2-q",
    "act": "act2",
-   "start": 233.497,
-   "dur": 7.413,
+   "start": 207.25,
+   "dur": 6.98,
    "layout": "question/card",
    "shot": {
     "size": "medium",
@@ -701,8 +647,8 @@
   {
    "id": "a2-y1",
    "act": "act2",
-   "start": 240.91,
-   "dur": 5.223,
+   "start": 214.23,
+   "dur": 5.237,
    "layout": "duel/bars",
    "shot": {
     "size": "medium",
@@ -719,8 +665,8 @@
   {
    "id": "a2-y1-b",
    "act": "act2",
-   "start": 246.133,
-   "dur": 6.857,
+   "start": 219.467,
+   "dur": 6.843,
    "layout": "duel/bars",
    "shot": {
     "size": "close-up",
@@ -737,8 +683,8 @@
   {
    "id": "a2-gap1",
    "act": "act2",
-   "start": 252.99,
-   "dur": 3.917,
+   "start": 226.31,
+   "dur": 3.259,
    "layout": "duel/lines",
    "shot": {
     "size": "wide",
@@ -755,8 +701,8 @@
   {
    "id": "a2-infl",
    "act": "act2",
-   "start": 256.907,
-   "dur": 9.116,
+   "start": 229.569,
+   "dur": 9.127,
    "layout": "escalator/rise",
    "shot": {
     "size": "medium",
@@ -773,8 +719,8 @@
   {
    "id": "a2-7374",
    "act": "act2",
-   "start": 266.023,
-   "dur": 6.641,
+   "start": 238.696,
+   "dur": 6.634,
    "layout": "duel/lines-2",
    "shot": {
     "size": "medium",
@@ -791,8 +737,8 @@
   {
    "id": "a2-1974inf",
    "act": "act2",
-   "start": 272.664,
-   "dur": 8.426,
+   "start": 245.33,
+   "dur": 8.36,
    "layout": "escalator/peak",
    "shot": {
     "size": "close-up",
@@ -809,7 +755,7 @@
   {
    "id": "a2-bal74",
    "act": "act2",
-   "start": 281.09,
+   "start": 253.69,
    "dur": 10.443,
    "layout": "ledger/drop",
    "shot": {
@@ -827,8 +773,8 @@
   {
    "id": "a2-bal74m",
    "act": "act2",
-   "start": 291.533,
-   "dur": 7.342,
+   "start": 264.133,
+   "dur": 7.407,
    "layout": "ledger/twin",
    "shot": {
     "size": "medium",
@@ -845,8 +791,8 @@
   {
    "id": "a2-bite",
    "act": "act2",
-   "start": 298.875,
-   "dur": 4.592,
+   "start": 271.54,
+   "dur": 4.527,
    "layout": "donut/bite",
    "shot": {
     "size": "medium",
@@ -863,7 +809,7 @@
   {
    "id": "a2-bite-b",
    "act": "act2",
-   "start": 303.467,
+   "start": 276.067,
    "dur": 8.853,
    "layout": "donut/bite",
    "shot": {
@@ -881,8 +827,8 @@
   {
    "id": "a2-sell",
    "act": "act2",
-   "start": 312.32,
-   "dur": 7.947,
+   "start": 284.92,
+   "dur": 6.78,
    "layout": "donut/bite-2",
    "shot": {
     "size": "close-up",
@@ -899,8 +845,8 @@
   {
    "id": "a2-seq",
    "act": "act2",
-   "start": 320.267,
-   "dur": 2.333,
+   "start": 291.7,
+   "dur": 2.138,
    "layout": "title/term",
    "shot": {
     "size": "medium",
@@ -918,8 +864,8 @@
   {
    "id": "a2-7576",
    "act": "act2",
-   "start": 322.6,
-   "dur": 1.943,
+   "start": 293.838,
+   "dur": 2.242,
    "layout": "duel/bars-3",
    "shot": {
     "size": "medium",
@@ -936,8 +882,8 @@
   {
    "id": "a2-7576n",
    "act": "act2",
-   "start": 324.543,
-   "dur": 8.597,
+   "start": 296.08,
+   "dur": 8.16,
    "layout": "duel/bars-4",
    "shot": {
     "size": "close-up",
@@ -954,8 +900,8 @@
   {
    "id": "a2-7576b",
    "act": "act2",
-   "start": 333.14,
-   "dur": 8.64,
+   "start": 304.24,
+   "dur": 6.24,
    "layout": "ledger/drop-2",
    "shot": {
     "size": "medium",
@@ -972,7 +918,7 @@
   {
    "id": "a2-grind",
    "act": "act2",
-   "start": 341.78,
+   "start": 310.48,
    "dur": 3.86,
    "layout": "escalator/grind",
    "shot": {
@@ -990,8 +936,8 @@
   {
    "id": "a2-1979",
    "act": "act2",
-   "start": 345.64,
-   "dur": 4.062,
+   "start": 314.34,
+   "dur": 4.21,
    "layout": "escalator/peak-2",
    "shot": {
     "size": "close-up",
@@ -1008,8 +954,8 @@
   {
    "id": "a2-1981",
    "act": "act2",
-   "start": 349.702,
-   "dur": 9.165,
+   "start": 318.55,
+   "dur": 9.017,
    "layout": "ledger/climb",
    "shot": {
     "size": "close-up",
@@ -1026,8 +972,8 @@
   {
    "id": "a2-1981-b",
    "act": "act2",
-   "start": 358.867,
-   "dur": 5.474,
+   "start": 327.567,
+   "dur": 5.702,
    "layout": "ledger/climb",
    "shot": {
     "size": "medium",
@@ -1044,8 +990,8 @@
   {
    "id": "a2-1982",
    "act": "act2",
-   "start": 364.341,
-   "dur": 5.539,
+   "start": 333.269,
+   "dur": 5.057,
    "layout": "world/dawn",
    "shot": {
     "size": "wide",
@@ -1062,8 +1008,8 @@
   {
    "id": "a2-1982r",
    "act": "act2",
-   "start": 369.88,
-   "dur": 4.353,
+   "start": 338.326,
+   "dur": 4.441,
    "layout": "duel/bars-2",
    "shot": {
     "size": "medium",
@@ -1080,8 +1026,8 @@
   {
    "id": "a2-1982w",
    "act": "act2",
-   "start": 374.233,
-   "dur": 5.692,
+   "start": 342.767,
+   "dur": 5.973,
    "layout": "ledger/share",
    "shot": {
     "size": "close-up",
@@ -1096,10 +1042,28 @@
    "cutIn": "l"
   },
   {
+   "id": "a2-gains80",
+   "act": "act2",
+   "start": 348.74,
+   "dur": 10.02,
+   "layout": "ledger/gains",
+   "shot": {
+    "size": "medium",
+    "angle": "eye-level",
+    "focalMm": 50
+   },
+   "panels": [
+    "ledger"
+   ],
+   "chart": "ledger",
+   "move": 0.6,
+   "cutIn": null
+  },
+  {
    "id": "a2-late",
    "act": "act2",
-   "start": 379.925,
-   "dur": 2.655,
+   "start": 358.76,
+   "dur": 2.38,
    "layout": "duel/lines-3",
    "shot": {
     "size": "wide",
@@ -1116,8 +1080,8 @@
   {
    "id": "a2-mirror-boom",
    "act": "act2",
-   "start": 382.58,
-   "dur": 6.16,
+   "start": 361.14,
+   "dur": 6.08,
    "layout": "duel/lines-4",
    "shot": {
     "size": "medium",
@@ -1134,7 +1098,7 @@
   {
    "id": "a2-climb",
    "act": "act2",
-   "start": 388.74,
+   "start": 367.22,
    "dur": 2.6,
    "layout": "gap/widen",
    "shot": {
@@ -1152,8 +1116,8 @@
   {
    "id": "a2-climax-in",
    "act": "act2",
-   "start": 391.34,
-   "dur": 2.345,
+   "start": 369.82,
+   "dur": 2.289,
    "layout": "gap/peak",
    "shot": {
     "size": "extreme-close-up",
@@ -1170,8 +1134,8 @@
   {
    "id": "a2-climax",
    "act": "act2",
-   "start": 393.685,
-   "dur": 8.733,
+   "start": 372.109,
+   "dur": 8.723,
    "layout": "gap/number",
    "shot": {
     "size": "extreme-close-up",
@@ -1188,8 +1152,8 @@
   {
    "id": "a2-years",
    "act": "act2",
-   "start": 402.418,
-   "dur": 8.676,
+   "start": 380.832,
+   "dur": 8.669,
    "layout": "ledger/years",
    "shot": {
     "size": "medium",
@@ -1206,8 +1170,8 @@
   {
    "id": "a2-rest",
    "act": "act2",
-   "start": 411.094,
-   "dur": 5.933,
+   "start": 389.501,
+   "dur": 5.928,
    "layout": "world/rest",
    "shot": {
     "size": "extreme-wide",
@@ -1224,8 +1188,8 @@
   {
    "id": "a2-mirror-late",
    "act": "act2",
-   "start": 417.027,
-   "dur": 10.073,
+   "start": 395.429,
+   "dur": 10.151,
    "layout": "duel/lines-5",
    "shot": {
     "size": "wide",
@@ -1242,8 +1206,8 @@
   {
    "id": "a2-1991",
    "act": "act2",
-   "start": 427.1,
-   "dur": 11.287,
+   "start": 405.58,
+   "dur": 11.196,
    "layout": "ledger/zero",
    "shot": {
     "size": "close-up",
@@ -1260,8 +1224,8 @@
   {
    "id": "a2-short",
    "act": "act2",
-   "start": 438.387,
-   "dur": 6.871,
+   "start": 416.776,
+   "dur": 6.868,
    "layout": "ledger/missing",
    "shot": {
     "size": "medium",
@@ -1278,8 +1242,8 @@
   {
    "id": "a2-mirror-end",
    "act": "act2",
-   "start": 445.258,
-   "dur": 7.812,
+   "start": 423.644,
+   "dur": 7.906,
    "layout": "ledger/twin-2",
    "shot": {
     "size": "medium",
@@ -1296,8 +1260,8 @@
   {
    "id": "a2-mirror-real",
    "act": "act2",
-   "start": 453.07,
-   "dur": 9.999,
+   "start": 431.55,
+   "dur": 9.903,
    "layout": "ledger/real",
    "shot": {
     "size": "close-up",
@@ -1314,8 +1278,8 @@
   {
    "id": "a2-payoff",
    "act": "act2",
-   "start": 463.069,
-   "dur": 10.155,
+   "start": 441.453,
+   "dur": 10.005,
    "layout": "average/echo",
    "shot": {
     "size": "wide",
@@ -1333,8 +1297,8 @@
   {
    "id": "a3-est",
    "act": "act3",
-   "start": 473.224,
-   "dur": 4,
+   "start": 451.458,
+   "dur": 4.472,
    "layout": "map/establish",
    "shot": {
     "size": "extreme-wide",
@@ -1351,8 +1315,8 @@
   {
    "id": "a3-all",
    "act": "act3",
-   "start": 477.224,
-   "dur": 11.334,
+   "start": 455.93,
+   "dur": 11.24,
    "layout": "map/grid",
    "shot": {
     "size": "wide",
@@ -1369,8 +1333,8 @@
   {
    "id": "a3-q",
    "act": "act3",
-   "start": 488.558,
-   "dur": 4.666,
+   "start": 467.17,
+   "dur": 4.26,
    "layout": "question/card-2",
    "shot": {
     "size": "medium",
@@ -1387,8 +1351,8 @@
   {
    "id": "a3-fine",
    "act": "act3",
-   "start": 493.224,
-   "dur": 9.346,
+   "start": 471.43,
+   "dur": 9.2,
    "layout": "map/scan",
    "shot": {
     "size": "medium",
@@ -1405,8 +1369,8 @@
   {
    "id": "a3-good",
    "act": "act3",
-   "start": 502.57,
-   "dur": 9.988,
+   "start": 480.63,
+   "dur": 10.161,
    "layout": "map/focus",
    "shot": {
     "size": "close-up",
@@ -1423,8 +1387,8 @@
   {
    "id": "a3-1929",
    "act": "act3",
-   "start": 512.558,
-   "dur": 6.509,
+   "start": 490.791,
+   "dur": 6.342,
    "layout": "map/focus-2",
    "shot": {
     "size": "medium",
@@ -1441,8 +1405,8 @@
   {
    "id": "a3-1929-b",
    "act": "act3",
-   "start": 519.067,
-   "dur": 9.463,
+   "start": 497.133,
+   "dur": 9.457,
    "layout": "map/focus-2",
    "shot": {
     "size": "close-up",
@@ -1459,7 +1423,7 @@
   {
    "id": "a3-nohurt",
    "act": "act3",
-   "start": 528.53,
+   "start": 506.59,
    "dur": 5.24,
    "layout": "map/scan-2",
    "shot": {
@@ -1477,8 +1441,8 @@
   {
    "id": "a3-less",
    "act": "act3",
-   "start": 533.77,
-   "dur": 11.454,
+   "start": 511.83,
+   "dur": 3.203,
    "layout": "map/threshold",
    "shot": {
     "size": "medium",
@@ -1493,10 +1457,28 @@
    "cutIn": null
   },
   {
+   "id": "a3-less-b",
+   "act": "act3",
+   "start": 515.033,
+   "dur": 8.437,
+   "layout": "map/threshold",
+   "shot": {
+    "size": "close-up",
+    "angle": "high",
+    "focalMm": 35
+   },
+   "panels": [
+    "map"
+   ],
+   "chart": "map",
+   "move": 0,
+   "cutIn": null
+  },
+  {
    "id": "a3-four",
    "act": "act3",
-   "start": 545.224,
-   "dur": 7.206,
+   "start": 523.47,
+   "dur": 7.02,
    "layout": "map/highlight",
    "shot": {
     "size": "medium",
@@ -1513,8 +1495,8 @@
   {
    "id": "a3-four2",
    "act": "act3",
-   "start": 552.43,
-   "dur": 3.28,
+   "start": 530.49,
+   "dur": 2.968,
    "layout": "map/highlight-2",
    "shot": {
     "size": "close-up",
@@ -1531,8 +1513,8 @@
   {
    "id": "a3-avg-not",
    "act": "act3",
-   "start": 555.71,
-   "dur": 3.44,
+   "start": 533.458,
+   "dur": 3.692,
    "layout": "scatter/avg",
    "shot": {
     "size": "medium",
@@ -1549,7 +1531,7 @@
   {
    "id": "a3-real66",
    "act": "act3",
-   "start": 559.15,
+   "start": 537.15,
    "dur": 8.317,
    "layout": "scatter/rank",
    "shot": {
@@ -1567,8 +1549,8 @@
   {
    "id": "a3-real66-b",
    "act": "act3",
-   "start": 567.467,
-   "dur": 6.424,
+   "start": 545.467,
+   "dur": 6.543,
    "layout": "scatter/rank",
    "shot": {
     "size": "close-up",
@@ -1585,8 +1567,8 @@
   {
    "id": "a3-1969",
    "act": "act3",
-   "start": 573.891,
-   "dur": 5.776,
+   "start": 552.01,
+   "dur": 5.657,
    "layout": "scatter/pair",
    "shot": {
     "size": "close-up",
@@ -1603,7 +1585,7 @@
   {
    "id": "a3-1969-b",
    "act": "act3",
-   "start": 579.667,
+   "start": 557.667,
    "dur": 6.067,
    "layout": "scatter/pair",
    "shot": {
@@ -1621,8 +1603,8 @@
   {
    "id": "a3-1928",
    "act": "act3",
-   "start": 585.733,
-   "dur": 10.825,
+   "start": 563.733,
+   "dur": 10.392,
    "layout": "scatter/pair-2",
    "shot": {
     "size": "medium",
@@ -1639,8 +1621,8 @@
   {
    "id": "a3-share",
    "act": "act3",
-   "start": 596.558,
-   "dur": 3.972,
+   "start": 574.125,
+   "dur": 4.405,
    "layout": "decade/reveal",
    "shot": {
     "size": "wide",
@@ -1657,7 +1639,7 @@
   {
    "id": "a3-decade",
    "act": "act3",
-   "start": 600.53,
+   "start": 578.53,
    "dur": 6.07,
    "layout": "decade/bars",
    "shot": {
@@ -1675,7 +1657,7 @@
   {
    "id": "a3-1966d",
    "act": "act3",
-   "start": 606.6,
+   "start": 584.6,
    "dur": 10.467,
    "layout": "decade/bars-2",
    "shot": {
@@ -1693,8 +1675,8 @@
   {
    "id": "a3-mirror-d",
    "act": "act3",
-   "start": 617.067,
-   "dur": 6.673,
+   "start": 595.067,
+   "dur": 5.573,
    "layout": "decade/twin",
    "shot": {
     "size": "close-up",
@@ -1711,7 +1693,7 @@
   {
    "id": "a3-answer",
    "act": "act3",
-   "start": 623.74,
+   "start": 600.64,
    "dur": 6,
    "layout": "answer/card",
    "shot": {
@@ -1730,7 +1712,7 @@
   {
    "id": "a3-nuance",
    "act": "act3",
-   "start": 629.74,
+   "start": 606.64,
    "dur": 8.86,
    "layout": "scatter/all",
    "shot": {
@@ -1748,7 +1730,7 @@
   {
    "id": "a3-nuance-b",
    "act": "act3",
-   "start": 638.6,
+   "start": 615.5,
    "dur": 5.04,
    "layout": "scatter/all",
    "shot": {
@@ -1766,8 +1748,8 @@
   {
    "id": "a3-avg-callback",
    "act": "act3",
-   "start": 643.64,
-   "dur": 9.584,
+   "start": 620.54,
+   "dur": 9.585,
    "layout": "average/ghost",
    "shot": {
     "size": "close-up",
@@ -1784,8 +1766,8 @@
   {
    "id": "a3-limits",
    "act": "act3",
-   "start": 653.224,
-   "dur": 6,
+   "start": 630.125,
+   "dur": 5.333,
    "layout": "limits/list",
    "shot": {
     "size": "medium",
@@ -1802,8 +1784,8 @@
   {
    "id": "a3-usonly",
    "act": "act3",
-   "start": 659.224,
-   "dur": 4.043,
+   "start": 635.458,
+   "dur": 4.242,
    "layout": "limits/globe",
    "shot": {
     "size": "wide",
@@ -1820,8 +1802,8 @@
   {
    "id": "a3-overlap",
    "act": "act3",
-   "start": 663.267,
-   "dur": 9.043,
+   "start": 639.7,
+   "dur": 9.05,
    "layout": "limits/overlap",
    "shot": {
     "size": "medium",
@@ -1838,8 +1820,8 @@
   {
    "id": "a3-bare",
    "act": "act3",
-   "start": 672.31,
-   "dur": 7.557,
+   "start": 648.75,
+   "dur": 11.375,
    "layout": "limits/list-2",
    "shot": {
     "size": "close-up",
@@ -1854,28 +1836,10 @@
    "cutIn": null
   },
   {
-   "id": "a3-bare-b",
-   "act": "act3",
-   "start": 679.867,
-   "dur": 4.024,
-   "layout": "limits/list-2",
-   "shot": {
-    "size": "medium",
-    "angle": "eye-level",
-    "focalMm": 50
-   },
-   "panels": [
-    "limits"
-   ],
-   "chart": "limits",
-   "move": 0,
-   "cutIn": null
-  },
-  {
    "id": "method",
    "act": "method",
-   "start": 683.891,
-   "dur": 9.379,
+   "start": 660.125,
+   "dur": 9.585,
    "layout": "method/sources",
    "shot": {
     "size": "medium",
@@ -1892,8 +1856,8 @@
   {
    "id": "method-model",
    "act": "method",
-   "start": 693.27,
-   "dur": 5.53,
+   "start": 669.71,
+   "dur": 5.523,
    "layout": "method/model",
    "shot": {
     "size": "close-up",
@@ -1910,8 +1874,8 @@
   {
    "id": "method-model-b",
    "act": "method",
-   "start": 698.8,
-   "dur": 6.758,
+   "start": 675.233,
+   "dur": 6.558,
    "layout": "method/model",
    "shot": {
     "size": "medium",
@@ -1928,8 +1892,8 @@
   {
    "id": "outro",
    "act": "outro",
-   "start": 705.558,
-   "dur": 24.052,
+   "start": 681.791,
+   "dur": 24.219,
    "layout": "end/screen",
    "shot": {
     "size": "wide",
@@ -1946,42 +1910,42 @@
  ],
  "turns": [
   {
-   "t": 136.21,
+   "t": 114.33,
    "what": "act 1 turn: the second retiree lives the same years in reverse",
    "scene": "a1-mirror-in"
   },
   {
-   "t": 186.93,
+   "t": 160.39,
    "what": "act 1 climax: the two averages are identical",
    "scene": "a1-avgmirror"
   },
   {
-   "t": 365.08,
+   "t": 333.78,
    "what": "act 2 turn: the good years arrive, too late for the 1966 retiree",
    "scene": "a2-1982"
   },
   {
-   "t": 393.86,
+   "t": 372.34,
    "what": "act 2 climax: the largest gap, 1986",
    "scene": "a2-climax"
   },
   {
-   "t": 427.1,
+   "t": 405.58,
    "what": "act 2 payoff: the 1966 account hits zero",
    "scene": "a2-1991"
   },
   {
-   "t": 596.71,
+   "t": 574.71,
    "what": "act 3 turn: what the four failures share is their first decade",
    "scene": "a3-share"
   },
   {
-   "t": 623.74,
+   "t": 600.64,
    "what": "act 3 answer to the cold-open question",
    "scene": "a3-answer"
   },
   {
-   "t": 653.47,
+   "t": 630.37,
    "what": "limits of the analysis",
    "scene": "a3-limits"
   }

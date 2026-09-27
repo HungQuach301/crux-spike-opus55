@@ -28,6 +28,8 @@ const usd = (v) => '$' + Math.round(v).toLocaleString('en-US');
 const usdK = (v) => '$' + (Math.round(v / 1000) * 1000).toLocaleString('en-US');
 const usdM = (v) => '$' + (v / 1e6).toFixed(2) + ' million';
 
+const GAINS_FELL = [];
+for (let i = 0; i < A.depletedYear; i++) { const r = M.portfolioReturn(base[i]); const start = i ? A.endReal[i - 1] : M.INITIAL || 1e6; if (r > 0.10 && A.endReal[i] < start) GAINS_FELL.push(1966 + i); }
 const hist = (years) => (Array.isArray(years) ? { dataYears: years } : { dataYear: years });
 const year = (id, y, formula, extra = {}) => ({ claimId: id, value: y, display: String(y), formula, source: D, ...hist(y), historical: true, illustrative: false, ...extra });
 
@@ -99,6 +101,9 @@ const C = [
   { claimId: 'ret1976', value: pct(M.portfolioReturn(data[1976])), display: pct(M.portfolioReturn(data[1976])) + '%', formula: '0.6·S&P_1976 + 0.4·TBond_1976', source: D, ...hist(1976), historical: true, illustrative: false },
   { claimId: 'ret1982', value: pct(M.portfolioReturn(data[1982])), display: pct(M.portfolioReturn(data[1982])) + '%', formula: '0.6·S&P_1982 + 0.4·TBond_1982', source: D, ...hist(1982), historical: true, illustrative: false },
   { claimId: 'share1982', value: pct(A.withdrawals[Y(1982)] / A.startNominal[Y(1982)]), display: pct(A.withdrawals[Y(1982)] / A.startNominal[Y(1982)]) + '%', character: '1966', formula: '1982 withdrawal / balance at the start of 1982 (1966 path)', source: D, ...hist([1966, 1982]), historical: true, illustrative: false },
+  // 1980s: good years in which the balance still fell after the withdrawal and inflation (1966 path, years it was alive)
+  { claimId: 'gainsFell', value: GAINS_FELL.length, display: String(GAINS_FELL.length), character: '1966', formula: 'count of 1966-path years (1966..1991) with 0.6·S&P + 0.4·TBond > 10% and endReal < real balance at the start of the year: ' + GAINS_FELL.join(', '), source: D, ...hist([1966, 1991]), historical: true, illustrative: false, years: GAINS_FELL },
+  { claimId: 'gt10', value: 10, display: '10%', formula: 'threshold of a "gain above 10%": portfolio nominal return > 10%', source: D, ...hist([1966, 1991]), historical: true, illustrative: false },
   { claimId: 'gap86', value: B.endReal[Y(1986)] - A.endReal[Y(1986)], display: usdM(B.endReal[Y(1986)] - A.endReal[Y(1986)]), basis: 'real', decisive: true, formula: 'mirror endReal[1986] − 1966 endReal[1986]; the largest gap of the 30 years', source: D, ...hist([1966, 1995]), historical: true, illustrative: true },
   { claimId: 'years49', value: (B.endReal[Y(1986)] - A.endReal[Y(1986)]) / 40000, display: String(Math.round((B.endReal[Y(1986)] - A.endReal[Y(1986)]) / 40000)), formula: 'gap86 / $40,000 (real withdrawal), rounded', source: D, ...hist([1966, 1995]), historical: true, illustrative: true },
   { claimId: 'last91', value: A.withdrawals[Y(1991)], display: usd(A.withdrawals[Y(1991)]), basis: 'nominal', character: '1966', formula: 'whole remaining balance paid out in 1991 (less than the full withdrawal of ' + usd(A.withdrawals[Y(1990)] * (1 + data[1990].inflation)) + ')', source: D, ...hist([1966, 1991]), historical: true, illustrative: false },

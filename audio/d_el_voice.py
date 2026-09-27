@@ -39,7 +39,7 @@ EDIR, FDIR = os.path.join(VDIR, 'el'), os.path.join(VDIR, 'final')
 VOICE_ID = 'cjVigY5qzO86Huf0OWal'  # Eric (premade library voice), V8 of the blind audition
 MAIN, FALLBACK = 'eleven_v3', 'eleven_multilingual_v2'
 URL = 'https://api.elevenlabs.io/v1/text-to-speech/{}/with-timestamps?output_format=mp3_44100_128'
-AIM, LO, HI, ACT_LO, ACT_HI = 156.0, 120.0, 190.0, 150.0, 160.0
+AIM, LO, HI, ACT_LO, ACT_HI = 156.0, 120.0, 190.0, 153.0, 159.0  # act target inside 150-160 with margin: the check (A15) measured act 1 ~9 wpm under this measure in M2
 MAX_TAKES, MAX_FALLBACK = 4, 4
 cost = {'characters': 0, 'calls': 0}
 
@@ -132,6 +132,34 @@ def main():
         for s in todo:
             r = evaluate(s, MAIN, k)
             print(f"round {k} {s['id']}: {r['wpm']} wpm, missing {r['missing']} | {r['text'][:90]}", flush=True)
+        json.dump(recs, open(rec_p, 'w'))
+    # act means: while an act is outside its range, draw further eleven_v3 takes (up to MAX_TAKES) for the sentences of
+    # that act whose best take is on the wrong side of the aim, so the swap below has something to swap to
+    def best(sid):
+        c = [r for r in recs.values() if r['sid'] == sid and r['model'] == MAIN and not r['missing'] and r['wpm'] and LO <= r['wpm'] <= HI]
+        return min(c, key=lambda r: abs(r['wpm'] - AIM)) if c else None
+    for k in range(MAX_TAKES):
+        acc = {}
+        for s in sents:
+            r = best(s['id'])
+            if r:
+                a_ = acc.setdefault(s['act'], [0, 0.0]); a_[0] += r['spokenWords']; a_[1] += r['asrSpan']
+        rates = {a_: 60 * n / d for a_, (n, d) in acc.items() if d}
+        todo = []
+        for s in sents:
+            v = rates.get(s['act'])
+            if v is None or ACT_LO <= v <= ACT_HI or os.path.exists(os.path.join(EDIR, f"{s['id']}.t{k}.{MAIN}.mp3")):
+                continue
+            r = best(s['id'])
+            if r and ((v < ACT_LO and r['wpm'] < AIM) or (v > ACT_HI and r['wpm'] > AIM)):
+                todo.append(s)
+        if not todo:
+            continue
+        with ThreadPoolExecutor(3) as ex:
+            list(ex.map(lambda s: synth(s['spoken'], MAIN, k, os.path.join(EDIR, f"{s['id']}.t{k}.{MAIN}.mp3")), todo))
+        for s in todo:
+            r = evaluate(s, MAIN, k)
+            print(f"act round {k} {s['id']}: {r['wpm']} wpm, missing {r['missing']}", flush=True)
         json.dump(recs, open(rec_p, 'w'))
     fallback = []
     for s in sents:

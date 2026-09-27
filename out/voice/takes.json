@@ -36,13 +36,6 @@
    "take": 0
   },
   {
-   "id": "a1-start.2",
-   "raw": "out/voice/el/a1-start.2.t2.eleven_v3.mp3",
-   "final": "out/voice/final/a1-start.2.flac",
-   "model": "eleven_v3",
-   "take": 2
-  },
-  {
    "id": "a1-who.1",
    "raw": "out/voice/el/a1-who.1.t2.eleven_multilingual_v2.mp3",
    "final": "out/voice/final/a1-who.1.flac",
@@ -106,13 +99,6 @@
    "take": 3
   },
   {
-   "id": "a1-raise.2",
-   "raw": "out/voice/el/a1-raise.2.t0.eleven_v3.mp3",
-   "final": "out/voice/final/a1-raise.2.flac",
-   "model": "eleven_v3",
-   "take": 0
-  },
-  {
    "id": "a1-real.1",
    "raw": "out/voice/el/a1-real.1.t2.eleven_multilingual_v2.mp3",
    "final": "out/voice/final/a1-real.1.flac",
@@ -132,20 +118,6 @@
    "final": "out/voice/final/a1-horizon.1.flac",
    "model": "eleven_v3",
    "take": 1
-  },
-  {
-   "id": "a1-horizon.2",
-   "raw": "out/voice/el/a1-horizon.2.t2.eleven_v3.mp3",
-   "final": "out/voice/final/a1-horizon.2.flac",
-   "model": "eleven_v3",
-   "take": 2
-  },
-  {
-   "id": "a1-horizon.3",
-   "raw": "out/voice/el/a1-horizon.3.t0.eleven_v3.mp3",
-   "final": "out/voice/final/a1-horizon.3.flac",
-   "model": "eleven_v3",
-   "take": 0
   },
   {
    "id": "a1-notax.1",
@@ -188,13 +160,6 @@
    "final": "out/voice/final/a1-mirror-rule.2.flac",
    "model": "eleven_v3",
    "take": 0
-  },
-  {
-   "id": "a1-mirror-rule.3",
-   "raw": "out/voice/el/a1-mirror-rule.3.t1.eleven_v3.mp3",
-   "final": "out/voice/final/a1-mirror-rule.3.flac",
-   "model": "eleven_v3",
-   "take": 1
   },
   {
    "id": "a1-illus.1",
@@ -310,10 +275,10 @@
   },
   {
    "id": "a2-q.1",
-   "raw": "out/voice/el/a2-q.1.t0.eleven_v3.mp3",
+   "raw": "out/voice/el/a2-q.1.t2.eleven_v3.mp3",
    "final": "out/voice/final/a2-q.1.flac",
    "model": "eleven_v3",
-   "take": 0
+   "take": 2
   },
   {
    "id": "a2-y1.1",
@@ -338,17 +303,17 @@
   },
   {
    "id": "a2-gap1.1",
-   "raw": "out/voice/el/a2-gap1.1.t1.eleven_v3.mp3",
+   "raw": "out/voice/el/a2-gap1.1.t2.eleven_v3.mp3",
    "final": "out/voice/final/a2-gap1.1.flac",
    "model": "eleven_v3",
-   "take": 1
+   "take": 2
   },
   {
    "id": "a2-infl.1",
-   "raw": "out/voice/el/a2-infl.1.t0.eleven_v3.mp3",
+   "raw": "out/voice/el/a2-infl.1.t1.eleven_v3.mp3",
    "final": "out/voice/final/a2-infl.1.flac",
    "model": "eleven_v3",
-   "take": 0
+   "take": 1
   },
   {
    "id": "a2-infl.2",
@@ -401,10 +366,10 @@
   },
   {
    "id": "a2-sell.1",
-   "raw": "out/voice/el/a2-sell.1.t2.eleven_v3.mp3",
+   "raw": "out/voice/el/a2-sell.1.t0.eleven_v3.mp3",
    "final": "out/voice/final/a2-sell.1.flac",
    "model": "eleven_v3",
-   "take": 2
+   "take": 0
   },
   {
    "id": "a2-seq.1",
@@ -429,10 +394,10 @@
   },
   {
    "id": "a2-7576b.1",
-   "raw": "out/voice/el/a2-7576b.1.t3.eleven_v3.mp3",
+   "raw": "out/voice/el/a2-7576b.1.t0.eleven_v3.mp3",
    "final": "out/voice/final/a2-7576b.1.flac",
    "model": "eleven_v3",
-   "take": 3
+   "take": 0
   },
   {
    "id": "a2-grind.1",
@@ -471,15 +436,22 @@
   },
   {
    "id": "a2-1982r.1",
-   "raw": "out/voice/el/a2-1982r.1.t2.eleven_v3.mp3",
+   "raw": "out/voice/el/a2-1982r.1.t3.eleven_v3.mp3",
    "final": "out/voice/final/a2-1982r.1.flac",
    "model": "eleven_v3",
-   "take": 2
+   "take": 3
   },
   {
    "id": "a2-1982w.1",
    "raw": "out/voice/el/a2-1982w.1.t3.eleven_v3.mp3",
    "final": "out/voice/final/a2-1982w.1.flac",
+   "model": "eleven_v3",
+   "take": 3
+  },
+  {
+   "id": "a2-gains80.1",
+   "raw": "out/voice/el/a2-gains80.1.t3.eleven_v3.mp3",
+   "final": "out/voice/final/a2-gains80.1.flac",
    "model": "eleven_v3",
    "take": 3
   },
@@ -492,10 +464,10 @@
   },
   {
    "id": "a2-mirror-boom.1",
-   "raw": "out/voice/el/a2-mirror-boom.1.t0.eleven_v3.mp3",
+   "raw": "out/voice/el/a2-mirror-boom.1.t2.eleven_v3.mp3",
    "final": "out/voice/final/a2-mirror-boom.1.flac",
    "model": "eleven_v3",
-   "take": 0
+   "take": 2
   },
   {
    "id": "a2-climb.1",
@@ -604,10 +576,10 @@
   },
   {
    "id": "a3-q.1",
-   "raw": "out/voice/el/a3-q.1.t0.eleven_v3.mp3",
+   "raw": "out/voice/el/a3-q.1.t1.eleven_v3.mp3",
    "final": "out/voice/final/a3-q.1.flac",
    "model": "eleven_v3",
-   "take": 0
+   "take": 1
   },
   {
    "id": "a3-fine.1",
@@ -674,10 +646,10 @@
   },
   {
    "id": "a3-four2.1",
-   "raw": "out/voice/el/a3-four2.1.t1.eleven_v3.mp3",
+   "raw": "out/voice/el/a3-four2.1.t3.eleven_v3.mp3",
    "final": "out/voice/final/a3-four2.1.flac",
    "model": "eleven_v3",
-   "take": 1
+   "take": 3
   },
   {
    "id": "a3-avg-not.1",
@@ -744,10 +716,10 @@
   },
   {
    "id": "a3-mirror-d.1",
-   "raw": "out/voice/el/a3-mirror-d.1.t0.eleven_v3.mp3",
+   "raw": "out/voice/el/a3-mirror-d.1.t1.eleven_v3.mp3",
    "final": "out/voice/final/a3-mirror-d.1.flac",
    "model": "eleven_v3",
-   "take": 0
+   "take": 1
   },
   {
    "id": "a3-answer.1",
@@ -800,10 +772,10 @@
   },
   {
    "id": "a3-limits.2",
-   "raw": "out/voice/el/a3-limits.2.t0.eleven_v3.mp3",
+   "raw": "out/voice/el/a3-limits.2.t1.eleven_v3.mp3",
    "final": "out/voice/final/a3-limits.2.flac",
    "model": "eleven_v3",
-   "take": 0
+   "take": 1
   },
   {
    "id": "a3-usonly.1",
@@ -856,10 +828,10 @@
   },
   {
    "id": "outro.1",
-   "raw": "out/voice/el/outro.1.t0.eleven_v3.mp3",
+   "raw": "out/voice/el/outro.1.t1.eleven_v3.mp3",
    "final": "out/voice/final/outro.1.flac",
    "model": "eleven_v3",
-   "take": 0
+   "take": 1
   }
  ],
  "voice": {

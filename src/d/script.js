@@ -38,7 +38,6 @@ const ACTS = [
       ] },
       { id: 'a1-start', layout: 'ledger/card', shot: 'medium', lines: [
         { t: 'The first retiree starts with $1 million, measured in 1966 dollars.', d: 'Warm, plain. Stress "one million". "Measured in 1966 dollars" softer, as a footnote.' },
-        { t: 'Their money is the water in this glass tank.', pause: 'Their money... is the water, in this glass tank.', d: 'Teaching the world: plain, unhurried, a small pause after.', world: 'tank' },
       ] },
       { id: 'a1-who', layout: 'ledger/card', shot: 'close-up', lines: [
         { t: 'They retire at the start of a hard decade for markets, though nobody knows it yet.', sp: 'They retire at the start of a hard decade for markets... though nobody knows it yet.', d: 'Quiet dramatic irony, a touch slower on "nobody knows that yet".' },
@@ -62,7 +61,6 @@ const ACTS = [
       ] },
       { id: 'a1-raise', layout: 'rules/escalator', shot: 'wide', lines: [
         { t: 'After that, the withdrawal rises each year with the previous year\'s inflation, so it always buys the same groceries.', d: 'Explaining, friendly. Slight smile on "groceries".' },
-        { t: 'The tap is that withdrawal, and it widens as prices rise.', d: 'Teaching the world: plain, unhurried, a small pause after.', world: 'tap' },
       ] },
       { id: 'a1-real', layout: 'rules/constant', shot: 'close-up', lines: [
         { t: 'In real terms, it never changes.', d: 'Short, firm.' },
@@ -70,8 +68,6 @@ const ACTS = [
       ] },
       { id: 'a1-horizon', layout: 'timeline/ribbon', shot: 'extreme-wide', lines: [
         { t: 'The plan runs for 30 years, from 1966 through 1995.', d: 'Spacious, a long horizon. Slow down slightly.' },
-        { t: 'Each stone on this road is one year\'s return; a losing year sinks below the road.', d: 'Teaching the world: plain, unhurried, a small pause after.', world: 'stone' },
-        { t: 'As the tank passes each stone, the water rises or falls with that year.', d: 'Teaching the world: plain, unhurried, a small pause after.', world: 'pass' },
       ] },
       { id: 'a1-notax', layout: 'rules/list', shot: 'medium', lines: [
         { t: 'No taxes, no fees.', d: 'Crisp, two beats.' },
@@ -84,7 +80,6 @@ const ACTS = [
       { id: 'a1-mirror-rule', layout: 'mirror/reverse', shot: 'medium', lines: [
         { t: 'The mirror retiree lives through the exact same 30 annual returns, but in reverse order.', d: 'Precise. Stress "exact same" and "reverse".' },
         { t: 'The return of 1995 arrives first, and the return of 1966 arrives last.', d: 'Walk through it slowly, like laying cards.' },
-        { t: 'So the mirror tank walks the same road, the other way.', d: 'Teaching the world: plain, unhurried, a small pause after.', world: 'reverse' },
       ] },
       { id: 'a1-illus', layout: 'mirror/badge', shot: 'close-up', lines: [
         { t: 'This retiree is illustrative: no one lived through these years in this order.', d: 'Honest aside, slightly lower.' },
@@ -192,6 +187,9 @@ const ACTS = [
       ] },
       { id: 'a2-1982w', layout: 'ledger/share', shot: 'close-up', lines: [
         { t: 'But the withdrawal now takes 16.9% of what is left.', d: 'Undercut the good news. Stress "sixteen point nine".' },
+      ] },
+      { id: 'a2-gains80', layout: 'ledger/gains', shot: 'medium', lines: [
+        { t: 'In 8 of its years with gains above 10%, the balance of the 1966 retiree still fell after the withdrawal and inflation.', d: 'Analytical, a small sting on "still fell". Even pace through the list of conditions.' },
       ] },
       { id: 'a2-late', layout: 'duel/lines', shot: 'wide', variant: 3, lines: [
         { t: 'The boom comes too late.', d: 'Short. Heavy.' },

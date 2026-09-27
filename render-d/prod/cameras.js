@@ -74,6 +74,10 @@
       const u = inertia((L - t0) / d1);
       for (const k of Object.keys(delta)) b[k] += delta[k] * u;
     }
+    // 2.5D hold: between and after the moves the camera keeps creeping in toward the chart (<= 1.2 % of the distance per
+    // second, <= 8 % per shot; ~0.007 frame widths/s, well under the 0.05 fw/s that counts as a move), so the chart plane
+    // and the far layers separate in parallax while the narration holds on one idea
+    b.z += Dz * Math.min(0.012, 0.08 / Math.max(dur, 1)) * Math.max(0, L);
     const pos = [960 + b.x, 540 + b.y, -Dz + b.z];
     const target = [960 + (b.tx || 0), 540 + (b.ty || 0), 0];
     let fz = s.focus ?? 0;

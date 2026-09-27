@@ -1,0 +1,1024 @@
+{
+ "cuts": [
+  {
+   "t": 1.429,
+   "from": "co-lines",
+   "to": "co-same",
+   "type": "cut",
+   "match": null,
+   "audio": null,
+   "action": false,
+   "reason": "hard cut on the beat into co same to start the next idea"
+  },
+  {
+   "t": 7.54,
+   "from": "co-same",
+   "to": "co-broke",
+   "type": "cut",
+   "match": "semantic",
+   "audio": null,
+   "action": false,
+   "reason": "the shared end point splits into two very different balances"
+  },
+  {
+   "t": 12.143,
+   "from": "co-broke",
+   "to": "co-question",
+   "type": "cut",
+   "match": "semantic",
+   "audio": null,
+   "action": false,
+   "reason": "the zero point of 1991 becomes the open question"
+  },
+  {
+   "t": 14.83,
+   "from": "co-question",
+   "to": "ident",
+   "type": "cut",
+   "match": null,
+   "audio": null,
+   "action": false,
+   "reason": "hard cut on the beat into ident to start the next idea"
+  },
+  {
+   "t": 17.143,
+   "from": "ident",
+   "to": "a1-est",
+   "type": "cut",
+   "match": null,
+   "audio": null,
+   "action": false,
+   "reason": "hard cut on the beat into a1 est to start the next idea"
+  },
+  {
+   "t": 21.03,
+   "from": "a1-est",
+   "to": "a1-start",
+   "type": "cut",
+   "match": null,
+   "audio": null,
+   "action": false,
+   "reason": "hard cut on the beat into a1 start to start the next idea"
+  },
+  {
+   "t": 26.91,
+   "from": "a1-start",
+   "to": "a1-who",
+   "type": "cut",
+   "match": null,
+   "audio": null,
+   "action": false,
+   "reason": "hard cut on the beat into a1 who to start the next idea"
+  },
+  {
+   "t": 32.857,
+   "from": "a1-who",
+   "to": "a1-hook",
+   "type": "cut",
+   "match": null,
+   "audio": null,
+   "action": false,
+   "reason": "hard cut on the beat into a1 hook to start the next idea"
+  },
+  {
+   "t": 39.267,
+   "from": "a1-hook",
+   "to": "a1-hook-b",
+   "type": "cut",
+   "match": null,
+   "audio": null,
+   "action": false,
+   "reason": "a second angle inside one long line of narration"
+  },
+  {
+   "t": 45.69,
+   "from": "a1-hook-b",
+   "to": "a1-mix",
+   "type": "cut",
+   "match": null,
+   "audio": null,
+   "action": false,
+   "reason": "hard cut on the beat into a1 mix to start the next idea"
+  },
+  {
+   "t": 51.77,
+   "from": "a1-mix",
+   "to": "a1-assets",
+   "type": "cut",
+   "match": "semantic",
+   "audio": null,
+   "action": false,
+   "reason": "the two slices of the ring open into what each slice holds"
+  },
+  {
+   "t": 60.3,
+   "from": "a1-assets",
+   "to": "a1-rebal",
+   "type": "cut",
+   "match": null,
+   "audio": "l",
+   "action": false,
+   "reason": "hard cut on the beat into a1 rebal to start the next idea"
+  },
+  {
+   "t": 65.466,
+   "from": "a1-rebal",
+   "to": "a1-rule",
+   "type": "cut",
+   "match": null,
+   "audio": null,
+   "action": false,
+   "reason": "hard cut on the beat into a1 rule to start the next idea"
+  },
+  {
+   "t": 76.53,
+   "from": "a1-rule",
+   "to": "a1-raise",
+   "type": "cut",
+   "match": "semantic",
+   "audio": null,
+   "action": false,
+   "reason": "the slice taken from the column becomes the first withdrawal bar"
+  },
+  {
+   "t": 85.01,
+   "from": "a1-raise",
+   "to": "a1-real",
+   "type": "cut",
+   "match": "semantic",
+   "audio": null,
+   "action": false,
+   "reason": "the same staircase of withdrawals is now read in real terms"
+  },
+  {
+   "t": 93.39,
+   "from": "a1-real",
+   "to": "a1-horizon",
+   "type": "cut",
+   "match": null,
+   "audio": null,
+   "action": false,
+   "reason": "hard cut on the beat into a1 horizon to start the next idea"
+  },
+  {
+   "t": 98.727,
+   "from": "a1-horizon",
+   "to": "a1-notax",
+   "type": "cut",
+   "match": null,
+   "audio": null,
+   "action": false,
+   "reason": "hard cut on the beat into a1 notax to start the next idea"
+  },
+  {
+   "t": 107.367,
+   "from": "a1-notax",
+   "to": "a1-notax-b",
+   "type": "cut",
+   "match": null,
+   "audio": null,
+   "action": false,
+   "reason": "a second angle inside one long line of narration"
+  },
+  {
+   "t": 112.867,
+   "from": "a1-notax-b",
+   "to": "a1-mirror-in",
+   "type": "cut",
+   "match": null,
+   "audio": "l",
+   "action": false,
+   "reason": "hard cut on the beat into a1 mirror in to start the next idea"
+  },
+  {
+   "t": 117.133,
+   "from": "a1-mirror-in",
+   "to": "a1-mirror-rule",
+   "type": "cut",
+   "match": "semantic",
+   "audio": "j",
+   "action": false,
+   "reason": "the second track becomes the reversed row of the same returns"
+  },
+  {
+   "t": 123.133,
+   "from": "a1-mirror-rule",
+   "to": "a1-mirror-rule-b",
+   "type": "cut",
+   "match": null,
+   "audio": null,
+   "action": false,
+   "reason": "a second angle inside one long line of narration"
+  },
+  {
+   "t": 131.033,
+   "from": "a1-mirror-rule-b",
+   "to": "a1-illus",
+   "type": "cut",
+   "match": null,
+   "audio": "j",
+   "action": false,
+   "reason": "hard cut on the beat into a1 illus to start the next idea"
+  },
+  {
+   "t": 135.901,
+   "from": "a1-illus",
+   "to": "a1-samewd",
+   "type": "cut",
+   "match": null,
+   "audio": null,
+   "action": false,
+   "reason": "hard cut on the beat into a1 samewd to start the next idea"
+  },
+  {
+   "t": 143.075,
+   "from": "a1-samewd",
+   "to": "a1-question",
+   "type": "cut",
+   "match": null,
+   "audio": null,
+   "action": false,
+   "reason": "hard cut on the beat into a1 question to start the next idea"
+  },
+  {
+   "t": 152.73,
+   "from": "a1-question",
+   "to": "a1-avg1966",
+   "type": "cut",
+   "match": null,
+   "audio": null,
+   "action": false,
+   "reason": "hard cut on the beat into a1 avg1966 to start the next idea"
+  },
+  {
+   "t": 160.031,
+   "from": "a1-avg1966",
+   "to": "a1-avgmirror",
+   "type": "cut",
+   "match": "semantic",
+   "audio": null,
+   "action": false,
+   "reason": "the same number reappears on the other side for the mirror retiree"
+  },
+  {
+   "t": 168.667,
+   "from": "a1-avgmirror",
+   "to": "a1-geo",
+   "type": "cut",
+   "match": null,
+   "audio": "j",
+   "action": false,
+   "reason": "hard cut on the beat into a1 geo to start the next idea"
+  },
+  {
+   "t": 175.233,
+   "from": "a1-geo",
+   "to": "a1-geo-b",
+   "type": "cut",
+   "match": null,
+   "audio": null,
+   "action": false,
+   "reason": "a second angle inside one long line of narration"
+  },
+  {
+   "t": 182.867,
+   "from": "a1-geo-b",
+   "to": "a1-arith",
+   "type": "cut",
+   "match": null,
+   "audio": "j",
+   "action": false,
+   "reason": "hard cut on the beat into a1 arith to start the next idea"
+  },
+  {
+   "t": 191.988,
+   "from": "a1-arith",
+   "to": "a1-payoff",
+   "type": "cut",
+   "match": "semantic",
+   "audio": null,
+   "action": false,
+   "reason": "the arithmetic bars resolve into the balanced scale of the question"
+  },
+  {
+   "t": 203.019,
+   "from": "a1-payoff",
+   "to": "a2-est",
+   "type": "cut",
+   "match": null,
+   "audio": null,
+   "action": false,
+   "reason": "hard cut on the beat into a2 est to start the next idea"
+  },
+  {
+   "t": 207.25,
+   "from": "a2-est",
+   "to": "a2-q",
+   "type": "cut",
+   "match": null,
+   "audio": null,
+   "action": false,
+   "reason": "hard cut on the beat into a2 q to start the next idea"
+  },
+  {
+   "t": 214.23,
+   "from": "a2-q",
+   "to": "a2-y1",
+   "type": "cut",
+   "match": null,
+   "audio": null,
+   "action": false,
+   "reason": "hard cut on the beat into a2 y1 to start the next idea"
+  },
+  {
+   "t": 219.467,
+   "from": "a2-y1",
+   "to": "a2-y1-b",
+   "type": "cut",
+   "match": null,
+   "audio": null,
+   "action": false,
+   "reason": "a second angle inside one long line of narration"
+  },
+  {
+   "t": 226.31,
+   "from": "a2-y1-b",
+   "to": "a2-gap1",
+   "type": "cut",
+   "match": "semantic",
+   "audio": null,
+   "action": false,
+   "reason": "the first-year bars become the start of the two balance lines"
+  },
+  {
+   "t": 229.569,
+   "from": "a2-gap1",
+   "to": "a2-infl",
+   "type": "cut",
+   "match": null,
+   "audio": null,
+   "action": false,
+   "reason": "hard cut on the beat into a2 infl to start the next idea"
+  },
+  {
+   "t": 238.696,
+   "from": "a2-infl",
+   "to": "a2-7374",
+   "type": "cut",
+   "match": null,
+   "audio": null,
+   "action": false,
+   "reason": "hard cut on the beat into a2 7374 to start the next idea"
+  },
+  {
+   "t": 245.33,
+   "from": "a2-7374",
+   "to": "a2-1974inf",
+   "type": "cut",
+   "match": null,
+   "audio": null,
+   "action": false,
+   "reason": "hard cut on the beat into a2 1974inf to start the next idea"
+  },
+  {
+   "t": 253.69,
+   "from": "a2-1974inf",
+   "to": "a2-bal74",
+   "type": "cut",
+   "match": null,
+   "audio": null,
+   "action": false,
+   "reason": "hard cut on the beat into a2 bal74 to start the next idea"
+  },
+  {
+   "t": 264.133,
+   "from": "a2-bal74",
+   "to": "a2-bal74m",
+   "type": "cut",
+   "match": "semantic",
+   "audio": "j",
+   "action": false,
+   "reason": "the 1966 ledger number is answered by the mirror ledger at the same year"
+  },
+  {
+   "t": 271.54,
+   "from": "a2-bal74m",
+   "to": "a2-bite",
+   "type": "cut",
+   "match": null,
+   "audio": null,
+   "action": false,
+   "reason": "hard cut on the beat into a2 bite to start the next idea"
+  },
+  {
+   "t": 276.067,
+   "from": "a2-bite",
+   "to": "a2-bite-b",
+   "type": "cut",
+   "match": null,
+   "audio": null,
+   "action": false,
+   "reason": "a second angle inside one long line of narration"
+  },
+  {
+   "t": 284.92,
+   "from": "a2-bite-b",
+   "to": "a2-sell",
+   "type": "cut",
+   "match": null,
+   "audio": null,
+   "action": false,
+   "reason": "hard cut on the beat into a2 sell to start the next idea"
+  },
+  {
+   "t": 291.7,
+   "from": "a2-sell",
+   "to": "a2-seq",
+   "type": "cut",
+   "match": null,
+   "audio": "j",
+   "action": false,
+   "reason": "hard cut on the beat into a2 seq to start the next idea"
+  },
+  {
+   "t": 293.838,
+   "from": "a2-seq",
+   "to": "a2-7576",
+   "type": "cut",
+   "match": null,
+   "audio": null,
+   "action": false,
+   "reason": "hard cut on the beat into a2 7576 to start the next idea"
+  },
+  {
+   "t": 296.08,
+   "from": "a2-7576",
+   "to": "a2-7576n",
+   "type": "cut",
+   "match": null,
+   "audio": null,
+   "action": false,
+   "reason": "hard cut on the beat into a2 7576n to start the next idea"
+  },
+  {
+   "t": 304.24,
+   "from": "a2-7576n",
+   "to": "a2-7576b",
+   "type": "cut",
+   "match": null,
+   "audio": null,
+   "action": false,
+   "reason": "hard cut on the beat into a2 7576b to start the next idea"
+  },
+  {
+   "t": 310.48,
+   "from": "a2-7576b",
+   "to": "a2-grind",
+   "type": "cut",
+   "match": null,
+   "audio": null,
+   "action": false,
+   "reason": "hard cut on the beat into a2 grind to start the next idea"
+  },
+  {
+   "t": 314.34,
+   "from": "a2-grind",
+   "to": "a2-1979",
+   "type": "cut",
+   "match": null,
+   "audio": null,
+   "action": false,
+   "reason": "hard cut on the beat into a2 1979 to start the next idea"
+  },
+  {
+   "t": 318.55,
+   "from": "a2-1979",
+   "to": "a2-1981",
+   "type": "cut",
+   "match": null,
+   "audio": null,
+   "action": false,
+   "reason": "hard cut on the beat into a2 1981 to start the next idea"
+  },
+  {
+   "t": 327.567,
+   "from": "a2-1981",
+   "to": "a2-1981-b",
+   "type": "cut",
+   "match": null,
+   "audio": null,
+   "action": false,
+   "reason": "a second angle inside one long line of narration"
+  },
+  {
+   "t": 333.269,
+   "from": "a2-1981-b",
+   "to": "a2-1982",
+   "type": "cut",
+   "match": null,
+   "audio": null,
+   "action": false,
+   "reason": "hard cut on the beat into a2 1982 to start the next idea"
+  },
+  {
+   "t": 338.326,
+   "from": "a2-1982",
+   "to": "a2-1982r",
+   "type": "cut",
+   "match": "semantic",
+   "audio": null,
+   "action": false,
+   "reason": "the dawn of 1982 lands as the 1982 bar of the return row"
+  },
+  {
+   "t": 342.767,
+   "from": "a2-1982r",
+   "to": "a2-1982w",
+   "type": "cut",
+   "match": null,
+   "audio": "l",
+   "action": false,
+   "reason": "hard cut on the beat into a2 1982w to start the next idea"
+  },
+  {
+   "t": 348.74,
+   "from": "a2-1982w",
+   "to": "a2-gains80",
+   "type": "cut",
+   "match": null,
+   "audio": null,
+   "action": false,
+   "reason": "hard cut on the beat into a2 gains80 to start the next idea"
+  },
+  {
+   "t": 358.76,
+   "from": "a2-gains80",
+   "to": "a2-late",
+   "type": "cut",
+   "match": null,
+   "audio": null,
+   "action": false,
+   "reason": "hard cut on the beat into a2 late to start the next idea"
+  },
+  {
+   "t": 361.14,
+   "from": "a2-late",
+   "to": "a2-mirror-boom",
+   "type": "cut",
+   "match": null,
+   "audio": null,
+   "action": false,
+   "reason": "hard cut on the beat into a2 mirror boom to start the next idea"
+  },
+  {
+   "t": 367.22,
+   "from": "a2-mirror-boom",
+   "to": "a2-climb",
+   "type": "cut",
+   "match": null,
+   "audio": null,
+   "action": false,
+   "reason": "hard cut on the beat into a2 climb to start the next idea"
+  },
+  {
+   "t": 369.82,
+   "from": "a2-climb",
+   "to": "a2-climax-in",
+   "type": "cut",
+   "match": null,
+   "audio": null,
+   "action": false,
+   "reason": "hard cut on the beat into a2 climax in to start the next idea"
+  },
+  {
+   "t": 372.109,
+   "from": "a2-climax-in",
+   "to": "a2-climax",
+   "type": "cut",
+   "match": "semantic",
+   "audio": null,
+   "action": false,
+   "reason": "the widening gap closes up on its peak value"
+  },
+  {
+   "t": 380.832,
+   "from": "a2-climax",
+   "to": "a2-years",
+   "type": "cut",
+   "match": null,
+   "audio": null,
+   "action": false,
+   "reason": "hard cut on the beat into a2 years to start the next idea"
+  },
+  {
+   "t": 389.501,
+   "from": "a2-years",
+   "to": "a2-rest",
+   "type": "cut",
+   "match": null,
+   "audio": null,
+   "action": false,
+   "reason": "hard cut on the beat into a2 rest to start the next idea"
+  },
+  {
+   "t": 395.429,
+   "from": "a2-rest",
+   "to": "a2-mirror-late",
+   "type": "cut",
+   "match": null,
+   "audio": null,
+   "action": false,
+   "reason": "hard cut on the beat into a2 mirror late to start the next idea"
+  },
+  {
+   "t": 405.58,
+   "from": "a2-mirror-late",
+   "to": "a2-1991",
+   "type": "cut",
+   "match": null,
+   "audio": null,
+   "action": false,
+   "reason": "hard cut on the beat into a2 1991 to start the next idea"
+  },
+  {
+   "t": 416.776,
+   "from": "a2-1991",
+   "to": "a2-short",
+   "type": "cut",
+   "match": null,
+   "audio": null,
+   "action": false,
+   "reason": "hard cut on the beat into a2 short to start the next idea"
+  },
+  {
+   "t": 423.644,
+   "from": "a2-short",
+   "to": "a2-mirror-end",
+   "type": "cut",
+   "match": null,
+   "audio": null,
+   "action": false,
+   "reason": "hard cut on the beat into a2 mirror end to start the next idea"
+  },
+  {
+   "t": 431.55,
+   "from": "a2-mirror-end",
+   "to": "a2-mirror-real",
+   "type": "cut",
+   "match": null,
+   "audio": null,
+   "action": false,
+   "reason": "hard cut on the beat into a2 mirror real to start the next idea"
+  },
+  {
+   "t": 441.453,
+   "from": "a2-mirror-real",
+   "to": "a2-payoff",
+   "type": "cut",
+   "match": null,
+   "audio": null,
+   "action": false,
+   "reason": "hard cut on the beat into a2 payoff to start the next idea"
+  },
+  {
+   "t": 451.458,
+   "from": "a2-payoff",
+   "to": "a3-est",
+   "type": "cut",
+   "match": null,
+   "audio": null,
+   "action": false,
+   "reason": "hard cut on the beat into a3 est to start the next idea"
+  },
+  {
+   "t": 455.93,
+   "from": "a3-est",
+   "to": "a3-all",
+   "type": "cut",
+   "match": "semantic",
+   "audio": null,
+   "action": false,
+   "reason": "the single 1966 tile becomes one of 69 start-year tiles"
+  },
+  {
+   "t": 467.17,
+   "from": "a3-all",
+   "to": "a3-q",
+   "type": "cut",
+   "match": null,
+   "audio": null,
+   "action": false,
+   "reason": "hard cut on the beat into a3 q to start the next idea"
+  },
+  {
+   "t": 471.43,
+   "from": "a3-q",
+   "to": "a3-fine",
+   "type": "cut",
+   "match": null,
+   "audio": null,
+   "action": false,
+   "reason": "hard cut on the beat into a3 fine to start the next idea"
+  },
+  {
+   "t": 480.63,
+   "from": "a3-fine",
+   "to": "a3-good",
+   "type": "cut",
+   "match": null,
+   "audio": null,
+   "action": false,
+   "reason": "hard cut on the beat into a3 good to start the next idea"
+  },
+  {
+   "t": 490.791,
+   "from": "a3-good",
+   "to": "a3-1929",
+   "type": "cut",
+   "match": null,
+   "audio": null,
+   "action": false,
+   "reason": "hard cut on the beat into a3 1929 to start the next idea"
+  },
+  {
+   "t": 497.133,
+   "from": "a3-1929",
+   "to": "a3-1929-b",
+   "type": "cut",
+   "match": null,
+   "audio": null,
+   "action": false,
+   "reason": "a second angle inside one long line of narration"
+  },
+  {
+   "t": 506.59,
+   "from": "a3-1929-b",
+   "to": "a3-nohurt",
+   "type": "cut",
+   "match": null,
+   "audio": null,
+   "action": false,
+   "reason": "hard cut on the beat into a3 nohurt to start the next idea"
+  },
+  {
+   "t": 511.83,
+   "from": "a3-nohurt",
+   "to": "a3-less",
+   "type": "cut",
+   "match": null,
+   "audio": null,
+   "action": false,
+   "reason": "hard cut on the beat into a3 less to start the next idea"
+  },
+  {
+   "t": 515.033,
+   "from": "a3-less",
+   "to": "a3-less-b",
+   "type": "cut",
+   "match": null,
+   "audio": null,
+   "action": false,
+   "reason": "a second angle inside one long line of narration"
+  },
+  {
+   "t": 523.47,
+   "from": "a3-less-b",
+   "to": "a3-four",
+   "type": "cut",
+   "match": null,
+   "audio": null,
+   "action": false,
+   "reason": "hard cut on the beat into a3 four to start the next idea"
+  },
+  {
+   "t": 530.49,
+   "from": "a3-four",
+   "to": "a3-four2",
+   "type": "cut",
+   "match": null,
+   "audio": null,
+   "action": false,
+   "reason": "hard cut on the beat into a3 four2 to start the next idea"
+  },
+  {
+   "t": 533.458,
+   "from": "a3-four2",
+   "to": "a3-avg-not",
+   "type": "cut",
+   "match": null,
+   "audio": null,
+   "action": false,
+   "reason": "hard cut on the beat into a3 avg not to start the next idea"
+  },
+  {
+   "t": 537.15,
+   "from": "a3-avg-not",
+   "to": "a3-real66",
+   "type": "cut",
+   "match": null,
+   "audio": null,
+   "action": false,
+   "reason": "hard cut on the beat into a3 real66 to start the next idea"
+  },
+  {
+   "t": 545.467,
+   "from": "a3-real66",
+   "to": "a3-real66-b",
+   "type": "cut",
+   "match": null,
+   "audio": null,
+   "action": false,
+   "reason": "a second angle inside one long line of narration"
+  },
+  {
+   "t": 552.01,
+   "from": "a3-real66-b",
+   "to": "a3-1969",
+   "type": "cut",
+   "match": null,
+   "audio": null,
+   "action": false,
+   "reason": "hard cut on the beat into a3 1969 to start the next idea"
+  },
+  {
+   "t": 557.667,
+   "from": "a3-1969",
+   "to": "a3-1969-b",
+   "type": "cut",
+   "match": null,
+   "audio": null,
+   "action": false,
+   "reason": "a second angle inside one long line of narration"
+  },
+  {
+   "t": 563.733,
+   "from": "a3-1969-b",
+   "to": "a3-1928",
+   "type": "cut",
+   "match": null,
+   "audio": "j",
+   "action": false,
+   "reason": "hard cut on the beat into a3 1928 to start the next idea"
+  },
+  {
+   "t": 574.125,
+   "from": "a3-1928",
+   "to": "a3-share",
+   "type": "cut",
+   "match": null,
+   "audio": null,
+   "action": false,
+   "reason": "hard cut on the beat into a3 share to start the next idea"
+  },
+  {
+   "t": 578.53,
+   "from": "a3-share",
+   "to": "a3-decade",
+   "type": "cut",
+   "match": "semantic",
+   "audio": null,
+   "action": false,
+   "reason": "the four failing tiles become four first-decade bars"
+  },
+  {
+   "t": 584.6,
+   "from": "a3-decade",
+   "to": "a3-1966d",
+   "type": "cut",
+   "match": null,
+   "audio": "l",
+   "action": false,
+   "reason": "hard cut on the beat into a3 1966d to start the next idea"
+  },
+  {
+   "t": 595.067,
+   "from": "a3-1966d",
+   "to": "a3-mirror-d",
+   "type": "cut",
+   "match": "semantic",
+   "audio": "j",
+   "action": false,
+   "reason": "the 1966 first decade is answered by the mirror first decade"
+  },
+  {
+   "t": 600.64,
+   "from": "a3-mirror-d",
+   "to": "a3-answer",
+   "type": "cut",
+   "match": null,
+   "audio": null,
+   "action": false,
+   "reason": "hard cut on the beat into a3 answer to start the next idea"
+  },
+  {
+   "t": 606.64,
+   "from": "a3-answer",
+   "to": "a3-nuance",
+   "type": "cut",
+   "match": null,
+   "audio": null,
+   "action": false,
+   "reason": "hard cut on the beat into a3 nuance to start the next idea"
+  },
+  {
+   "t": 615.5,
+   "from": "a3-nuance",
+   "to": "a3-nuance-b",
+   "type": "cut",
+   "match": null,
+   "audio": null,
+   "action": false,
+   "reason": "a second angle inside one long line of narration"
+  },
+  {
+   "t": 620.54,
+   "from": "a3-nuance-b",
+   "to": "a3-avg-callback",
+   "type": "cut",
+   "match": null,
+   "audio": null,
+   "action": false,
+   "reason": "hard cut on the beat into a3 avg callback to start the next idea"
+  },
+  {
+   "t": 630.125,
+   "from": "a3-avg-callback",
+   "to": "a3-limits",
+   "type": "cut",
+   "match": null,
+   "audio": null,
+   "action": false,
+   "reason": "hard cut on the beat into a3 limits to start the next idea"
+  },
+  {
+   "t": 635.458,
+   "from": "a3-limits",
+   "to": "a3-usonly",
+   "type": "cut",
+   "match": null,
+   "audio": null,
+   "action": false,
+   "reason": "hard cut on the beat into a3 usonly to start the next idea"
+  },
+  {
+   "t": 639.7,
+   "from": "a3-usonly",
+   "to": "a3-overlap",
+   "type": "cut",
+   "match": null,
+   "audio": "l",
+   "action": false,
+   "reason": "hard cut on the beat into a3 overlap to start the next idea"
+  },
+  {
+   "t": 648.75,
+   "from": "a3-overlap",
+   "to": "a3-bare",
+   "type": "cut",
+   "match": null,
+   "audio": null,
+   "action": false,
+   "reason": "hard cut on the beat into a3 bare to start the next idea"
+  },
+  {
+   "t": 660.125,
+   "from": "a3-bare",
+   "to": "method",
+   "type": "cut",
+   "match": null,
+   "audio": null,
+   "action": false,
+   "reason": "hard cut on the beat into method to start the next idea"
+  },
+  {
+   "t": 669.71,
+   "from": "method",
+   "to": "method-model",
+   "type": "cut",
+   "match": null,
+   "audio": null,
+   "action": false,
+   "reason": "hard cut on the beat into method model to start the next idea"
+  },
+  {
+   "t": 675.233,
+   "from": "method-model",
+   "to": "method-model-b",
+   "type": "cut",
+   "match": null,
+   "audio": null,
+   "action": false,
+   "reason": "a second angle inside one long line of narration"
+  },
+  {
+   "t": 681.791,
+   "from": "method-model-b",
+   "to": "outro",
+   "type": "cut",
+   "match": null,
+   "audio": null,
+   "action": false,
+   "reason": "hard cut on the beat into outro to start the next idea"
+  }
+ ]
+}

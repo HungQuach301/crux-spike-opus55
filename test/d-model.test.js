@@ -72,3 +72,14 @@ test('script: every number is registered, and "US only" / "history, not a foreca
   assert.strictEqual(real.length, 4);
   assert.ok(real.every((c) => c.value < 0));
 });
+
+test('act 2: in 8 of its years with gains above 10%, the 1966 balance still fell (1979, 1980, 1983, 1985, 1986, 1988, 1989, 1991)', () => {
+  const { build } = require('../src/d/claims');
+  const r = build();
+  const c = r.claims.find((x) => x.claimId === 'gainsFell');
+  assert.strictEqual(c.value, 8);
+  assert.deepStrictEqual(c.years, [1979, 1980, 1983, 1985, 1986, 1988, 1989, 1991]);
+  assert.ok(c.spoken.some((s) => s.sentence === 'a2-gains80.1'));
+  const t = r.claims.find((x) => x.claimId === 'gt10');
+  assert.strictEqual(t.display, '10%');
+});

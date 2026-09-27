@@ -22,8 +22,8 @@
     const parent = scenes.find((s) => s.id === sc.id.replace(/-[bc]$/, '')) || sc;
     const own = SC.B[sc.id];
     const build = own || SC.B[parent.id];
-    if (!build) throw new Error('no builder for ' + sc.id);
-    const items = own ? build(t - sc.start, sc, H) : build(t - parent.start, parent, { ...H, local: (abs) => abs - parent.start });
+    if (!build) console.error('no builder for ' + sc.id); // renders the background only; every scene must have a builder before the final render
+    const items = !build ? (() => { const it = []; SC.K.env(it, parent.id); return it; })() : own ? build(t - sc.start, sc, H) : build(t - parent.start, parent, { ...H, local: (abs) => abs - parent.start });
     const sig = JSON.stringify(items.map((it) => it.kind === 'text' ? [it.id, it.text, it.x, it.y, it.alpha] : [it.id, it.pts, it.rect, it.c, it.r, it.alpha]));
     return { camera: cam, bg: { color: bgOf(sc.act) }, items, sig, scene: sc.id };
   }
@@ -34,14 +34,22 @@
     cur = { t, objs: r.objs, cam: r.cam };
     return r.rendered;
   }
+  // the checks read the object list (identical at any subframe count: objects come from the centre instant) and the
+  // layer masks (always one subframe); the pixels they judge come from the decoded video. One subframe is enough here.
+  function seekChecks(t) {
+    E.MODE.name = 'all'; E.MODE.ids = null;
+    const r = E.frame(stateAt, t, { subframes: 1 });
+    cur = { t, objs: r.objs, cam: r.cam };
+    return r.rendered;
+  }
   window.CHECKS = {
-    seek,
+    seek: seekChecks,
     freeze: (t) => { frozen = t; },
     objects: () => cur.objs,
     layer: (name, ids) => {
       E.MODE.name = name || 'all';
       E.MODE.ids = ids && ids.length ? new Set(ids) : null;
-      if (name === 'all') { E.MODE.ids = null; seek(cur.t); return; }
+      if (name === 'all') { E.MODE.ids = null; seekChecks(cur.t); return; }
       E.frame(stateAt, cur.t, { subframes: 1 });
       E.MODE.name = 'all';
     },

@@ -1,0 +1,1994 @@
+{
+ "fps": 30,
+ "total": 706.01,
+ "acts": [
+  {
+   "id": "cold-open",
+   "start": 0,
+   "end": 14.83
+  },
+  {
+   "id": "ident",
+   "start": 14.83,
+   "end": 17.143
+  },
+  {
+   "id": "act1",
+   "start": 17.143,
+   "end": 203.019,
+   "climax": 160.39
+  },
+  {
+   "id": "act2",
+   "start": 203.019,
+   "end": 451.458,
+   "climax": 372.34
+  },
+  {
+   "id": "act3",
+   "start": 451.458,
+   "end": 660.125,
+   "climax": 600.64
+  },
+  {
+   "id": "method",
+   "start": 660.125,
+   "end": 681.791
+  },
+  {
+   "id": "outro",
+   "start": 681.791,
+   "end": 706.01
+  }
+ ],
+ "scenes": [
+  {
+   "id": "co-lines",
+   "act": "cold-open",
+   "start": 0,
+   "dur": 1.429,
+   "layout": "duel/emerge",
+   "shot": {
+    "size": "extreme-wide",
+    "angle": "low",
+    "focalMm": 24
+   },
+   "panels": [
+    "co"
+   ],
+   "chart": "co-lines",
+   "move": 0,
+   "composition": "center",
+   "cutIn": null
+  },
+  {
+   "id": "co-same",
+   "act": "cold-open",
+   "start": 1.429,
+   "dur": 6.111,
+   "layout": "duel/overlay",
+   "shot": {
+    "size": "wide",
+    "angle": "eye-level",
+    "focalMm": 35
+   },
+   "panels": [
+    "co"
+   ],
+   "chart": "co",
+   "move": 2,
+   "cutIn": null
+  },
+  {
+   "id": "co-broke",
+   "act": "cold-open",
+   "start": 7.54,
+   "dur": 4.603,
+   "layout": "duel/split",
+   "shot": {
+    "size": "medium",
+    "angle": "eye-level",
+    "focalMm": 50
+   },
+   "panels": [
+    "cb"
+   ],
+   "chart": "cb",
+   "move": 2,
+   "cutIn": null
+  },
+  {
+   "id": "co-question",
+   "act": "cold-open",
+   "start": 12.143,
+   "dur": 2.687,
+   "layout": "duel/split",
+   "shot": {
+    "size": "close-up",
+    "angle": "slightly high",
+    "focalMm": 85
+   },
+   "panels": [
+    "cq"
+   ],
+   "chart": "co-question",
+   "move": 0,
+   "composition": "center",
+   "cutIn": null
+  },
+  {
+   "id": "ident",
+   "act": "ident",
+   "start": 14.83,
+   "dur": 2.313,
+   "layout": "title/ident",
+   "shot": {
+    "size": "insert",
+    "angle": "eye-level",
+    "focalMm": 50
+   },
+   "panels": [
+    "id"
+   ],
+   "chart": null,
+   "move": 1.71,
+   "composition": "center",
+   "cutIn": null
+  },
+  {
+   "id": "a1-est",
+   "act": "act1",
+   "start": 17.143,
+   "dur": 3.887,
+   "layout": "world/establish",
+   "shot": {
+    "size": "extreme-wide",
+    "angle": "high",
+    "focalMm": 24
+   },
+   "panels": [
+    "est"
+   ],
+   "chart": null,
+   "move": 2.1,
+   "cutIn": null
+  },
+  {
+   "id": "a1-start",
+   "act": "act1",
+   "start": 21.03,
+   "dur": 5.88,
+   "layout": "ledger/card",
+   "shot": {
+    "size": "medium",
+    "angle": "eye-level",
+    "focalMm": 50
+   },
+   "panels": [
+    "st"
+   ],
+   "chart": null,
+   "move": 1.9,
+   "cutIn": null
+  },
+  {
+   "id": "a1-who",
+   "act": "act1",
+   "start": 26.91,
+   "dur": 5.947,
+   "layout": "ledger/card",
+   "shot": {
+    "size": "close-up",
+    "angle": "low",
+    "focalMm": 35
+   },
+   "panels": [
+    "who"
+   ],
+   "chart": null,
+   "move": 2.1,
+   "cutIn": null
+  },
+  {
+   "id": "a1-hook",
+   "act": "act1",
+   "start": 32.857,
+   "dur": 6.41,
+   "layout": "promise/card",
+   "shot": {
+    "size": "wide",
+    "angle": "eye-level",
+    "focalMm": 35
+   },
+   "panels": [
+    "hk"
+   ],
+   "chart": null,
+   "move": 2.1,
+   "cutIn": null
+  },
+  {
+   "id": "a1-hook-b",
+   "act": "act1",
+   "start": 39.267,
+   "dur": 6.423,
+   "layout": "promise/card",
+   "shot": {
+    "size": "medium",
+    "angle": "eye-level",
+    "focalMm": 35
+   },
+   "panels": [
+    "hk"
+   ],
+   "chart": null,
+   "move": 2,
+   "cutIn": null
+  },
+  {
+   "id": "a1-mix",
+   "act": "act1",
+   "start": 45.69,
+   "dur": 6.08,
+   "layout": "donut/split",
+   "shot": {
+    "size": "medium",
+    "angle": "slightly high",
+    "focalMm": 50
+   },
+   "panels": [
+    "mx"
+   ],
+   "chart": null,
+   "move": 2,
+   "composition": "center",
+   "cutIn": null
+  },
+  {
+   "id": "a1-assets",
+   "act": "act1",
+   "start": 51.77,
+   "dur": 8.53,
+   "layout": "donut/detail",
+   "shot": {
+    "size": "close-up",
+    "angle": "eye-level",
+    "focalMm": 85
+   },
+   "panels": [
+    "as"
+   ],
+   "chart": null,
+   "move": 1.8,
+   "cutIn": null
+  },
+  {
+   "id": "a1-rebal",
+   "act": "act1",
+   "start": 60.3,
+   "dur": 5.166,
+   "layout": "donut/rebalance",
+   "shot": {
+    "size": "medium",
+    "angle": "eye-level",
+    "focalMm": 50
+   },
+   "panels": [
+    "rb"
+   ],
+   "chart": null,
+   "move": 0,
+   "cutIn": "l"
+  },
+  {
+   "id": "a1-rule",
+   "act": "act1",
+   "start": 65.466,
+   "dur": 11.064,
+   "layout": "rules/card",
+   "shot": {
+    "size": "medium",
+    "angle": "eye-level",
+    "focalMm": 50
+   },
+   "panels": [
+    "ru"
+   ],
+   "chart": null,
+   "move": 1.8,
+   "cutIn": null
+  },
+  {
+   "id": "a1-raise",
+   "act": "act1",
+   "start": 76.53,
+   "dur": 8.48,
+   "layout": "rules/escalator",
+   "shot": {
+    "size": "wide",
+    "angle": "slightly low",
+    "focalMm": 35
+   },
+   "panels": [
+    "rs"
+   ],
+   "chart": "rs",
+   "move": 2.1,
+   "cutIn": null
+  },
+  {
+   "id": "a1-real",
+   "act": "act1",
+   "start": 85.01,
+   "dur": 8.38,
+   "layout": "rules/constant",
+   "shot": {
+    "size": "close-up",
+    "angle": "eye-level",
+    "focalMm": 85
+   },
+   "panels": [
+    "re"
+   ],
+   "chart": "re",
+   "move": 0,
+   "cutIn": null
+  },
+  {
+   "id": "a1-horizon",
+   "act": "act1",
+   "start": 93.39,
+   "dur": 5.337,
+   "layout": "timeline/ribbon",
+   "shot": {
+    "size": "extreme-wide",
+    "angle": "high",
+    "focalMm": 24
+   },
+   "panels": [
+    "hz"
+   ],
+   "chart": null,
+   "move": 2.2,
+   "cutIn": null
+  },
+  {
+   "id": "a1-notax",
+   "act": "act1",
+   "start": 98.727,
+   "dur": 8.64,
+   "layout": "rules/list",
+   "shot": {
+    "size": "medium",
+    "angle": "eye-level",
+    "focalMm": 50
+   },
+   "panels": [
+    "nt"
+   ],
+   "chart": null,
+   "move": 0,
+   "cutIn": null
+  },
+  {
+   "id": "a1-notax-b",
+   "act": "act1",
+   "start": 107.367,
+   "dur": 5.5,
+   "layout": "rules/list",
+   "shot": {
+    "size": "close-up",
+    "angle": "eye-level",
+    "focalMm": 50
+   },
+   "panels": [
+    "nt"
+   ],
+   "chart": null,
+   "move": 0,
+   "cutIn": null
+  },
+  {
+   "id": "a1-mirror-in",
+   "act": "act1",
+   "start": 112.867,
+   "dur": 4.267,
+   "layout": "mirror/enter",
+   "shot": {
+    "size": "wide",
+    "angle": "eye-level",
+    "focalMm": 35
+   },
+   "panels": [
+    "mi"
+   ],
+   "chart": null,
+   "move": 1.9,
+   "cutIn": "l"
+  },
+  {
+   "id": "a1-mirror-rule",
+   "act": "act1",
+   "start": 117.133,
+   "dur": 6,
+   "layout": "mirror/reverse",
+   "shot": {
+    "size": "medium",
+    "angle": "eye-level",
+    "focalMm": 50
+   },
+   "panels": [
+    "mr"
+   ],
+   "chart": "mr",
+   "move": 2,
+   "cutIn": "j"
+  },
+  {
+   "id": "a1-mirror-rule-b",
+   "act": "act1",
+   "start": 123.133,
+   "dur": 7.9,
+   "layout": "mirror/reverse",
+   "shot": {
+    "size": "close-up",
+    "angle": "eye-level",
+    "focalMm": 50
+   },
+   "panels": [
+    "mr"
+   ],
+   "chart": "mr",
+   "move": 0,
+   "cutIn": null
+  },
+  {
+   "id": "a1-illus",
+   "act": "act1",
+   "start": 131.033,
+   "dur": 4.868,
+   "layout": "mirror/badge",
+   "shot": {
+    "size": "close-up",
+    "angle": "eye-level",
+    "focalMm": 85
+   },
+   "panels": [
+    "il"
+   ],
+   "chart": null,
+   "move": 1.8,
+   "composition": "center",
+   "cutIn": "j"
+  },
+  {
+   "id": "a1-samewd",
+   "act": "act1",
+   "start": 135.901,
+   "dur": 7.174,
+   "layout": "ledger/twin",
+   "shot": {
+    "size": "medium",
+    "angle": "eye-level",
+    "focalMm": 50
+   },
+   "panels": [
+    "sw"
+   ],
+   "chart": "sw",
+   "move": 1.9,
+   "cutIn": null
+  },
+  {
+   "id": "a1-question",
+   "act": "act1",
+   "start": 143.075,
+   "dur": 9.655,
+   "layout": "duel/scale",
+   "shot": {
+    "size": "wide",
+    "angle": "eye-level",
+    "focalMm": 35
+   },
+   "panels": [
+    "q"
+   ],
+   "chart": null,
+   "move": 2,
+   "composition": "center",
+   "cutIn": null
+  },
+  {
+   "id": "a1-avg1966",
+   "act": "act1",
+   "start": 152.73,
+   "dur": 7.301,
+   "layout": "average/reveal",
+   "shot": {
+    "size": "close-up",
+    "angle": "eye-level",
+    "focalMm": 85
+   },
+   "panels": [
+    "av"
+   ],
+   "chart": null,
+   "move": 1.8,
+   "cutIn": null
+  },
+  {
+   "id": "a1-avgmirror",
+   "act": "act1",
+   "start": 160.031,
+   "dur": 8.636,
+   "layout": "average/match",
+   "shot": {
+    "size": "close-up",
+    "angle": "eye-level",
+    "focalMm": 85
+   },
+   "panels": [
+    "am"
+   ],
+   "chart": null,
+   "move": 0,
+   "composition": "center",
+   "cutIn": null
+  },
+  {
+   "id": "a1-geo",
+   "act": "act1",
+   "start": 168.667,
+   "dur": 6.567,
+   "layout": "average/explain",
+   "shot": {
+    "size": "medium",
+    "angle": "slightly high",
+    "focalMm": 50
+   },
+   "panels": [
+    "ge"
+   ],
+   "chart": "ge",
+   "move": 2.1,
+   "cutIn": "j"
+  },
+  {
+   "id": "a1-geo-b",
+   "act": "act1",
+   "start": 175.233,
+   "dur": 7.633,
+   "layout": "average/explain",
+   "shot": {
+    "size": "close-up",
+    "angle": "slightly high",
+    "focalMm": 50
+   },
+   "panels": [
+    "ge"
+   ],
+   "chart": "ge",
+   "move": 0,
+   "cutIn": null
+  },
+  {
+   "id": "a1-arith",
+   "act": "act1",
+   "start": 182.867,
+   "dur": 9.121,
+   "layout": "average/table",
+   "shot": {
+    "size": "medium",
+    "angle": "eye-level",
+    "focalMm": 50
+   },
+   "panels": [
+    "ar"
+   ],
+   "chart": "ar",
+   "move": 2,
+   "cutIn": "j"
+  },
+  {
+   "id": "a1-payoff",
+   "act": "act1",
+   "start": 191.988,
+   "dur": 11.031,
+   "layout": "duel/scale-2",
+   "shot": {
+    "size": "wide",
+    "angle": "eye-level",
+    "focalMm": 35
+   },
+   "panels": [
+    "po"
+   ],
+   "chart": null,
+   "move": 2.1,
+   "composition": "center",
+   "cutIn": null
+  },
+  {
+   "id": "a2-est",
+   "act": "act2",
+   "start": 203.019,
+   "dur": 4.231,
+   "layout": "world/road",
+   "shot": {
+    "size": "extreme-wide",
+    "angle": "high",
+    "focalMm": 24
+   },
+   "panels": [
+    "a2-est"
+   ],
+   "chart": null,
+   "move": 0,
+   "cutIn": null
+  },
+  {
+   "id": "a2-q",
+   "act": "act2",
+   "start": 207.25,
+   "dur": 6.98,
+   "layout": "question/card",
+   "shot": {
+    "size": "medium",
+    "angle": "eye-level",
+    "focalMm": 50
+   },
+   "panels": [
+    "a2-q"
+   ],
+   "chart": null,
+   "move": 0,
+   "cutIn": null,
+   "composition": "center"
+  },
+  {
+   "id": "a2-y1",
+   "act": "act2",
+   "start": 214.23,
+   "dur": 5.237,
+   "layout": "duel/bars",
+   "shot": {
+    "size": "medium",
+    "angle": "eye-level",
+    "focalMm": 50
+   },
+   "panels": [
+    "a2-y1"
+   ],
+   "chart": "a2-y1",
+   "move": 0,
+   "cutIn": null
+  },
+  {
+   "id": "a2-y1-b",
+   "act": "act2",
+   "start": 219.467,
+   "dur": 6.843,
+   "layout": "duel/bars",
+   "shot": {
+    "size": "close-up",
+    "angle": "eye-level",
+    "focalMm": 50
+   },
+   "panels": [
+    "a2-y1"
+   ],
+   "chart": "a2-y1",
+   "move": 0,
+   "cutIn": null
+  },
+  {
+   "id": "a2-gap1",
+   "act": "act2",
+   "start": 226.31,
+   "dur": 3.259,
+   "layout": "duel/lines",
+   "shot": {
+    "size": "wide",
+    "angle": "slightly high",
+    "focalMm": 35
+   },
+   "panels": [
+    "a2-gap1"
+   ],
+   "chart": "a2-gap1",
+   "move": 0,
+   "cutIn": null
+  },
+  {
+   "id": "a2-infl",
+   "act": "act2",
+   "start": 229.569,
+   "dur": 9.127,
+   "layout": "escalator/rise",
+   "shot": {
+    "size": "medium",
+    "angle": "low",
+    "focalMm": 50
+   },
+   "panels": [
+    "a2-infl"
+   ],
+   "chart": "a2-infl",
+   "move": 0,
+   "cutIn": null
+  },
+  {
+   "id": "a2-7374",
+   "act": "act2",
+   "start": 238.696,
+   "dur": 6.634,
+   "layout": "duel/lines-2",
+   "shot": {
+    "size": "medium",
+    "angle": "eye-level",
+    "focalMm": 35
+   },
+   "panels": [
+    "a2-7374"
+   ],
+   "chart": "a2-7374",
+   "move": 0,
+   "cutIn": null
+  },
+  {
+   "id": "a2-1974inf",
+   "act": "act2",
+   "start": 245.33,
+   "dur": 8.36,
+   "layout": "escalator/peak",
+   "shot": {
+    "size": "close-up",
+    "angle": "eye-level",
+    "focalMm": 85
+   },
+   "panels": [
+    "a2-1974inf"
+   ],
+   "chart": "a2-1974inf",
+   "move": 0,
+   "cutIn": null
+  },
+  {
+   "id": "a2-bal74",
+   "act": "act2",
+   "start": 253.69,
+   "dur": 10.443,
+   "layout": "ledger/drop",
+   "shot": {
+    "size": "close-up",
+    "angle": "eye-level",
+    "focalMm": 85
+   },
+   "panels": [
+    "a2-bal74"
+   ],
+   "chart": null,
+   "move": 0,
+   "cutIn": null
+  },
+  {
+   "id": "a2-bal74m",
+   "act": "act2",
+   "start": 264.133,
+   "dur": 7.407,
+   "layout": "ledger/twin",
+   "shot": {
+    "size": "medium",
+    "angle": "eye-level",
+    "focalMm": 50
+   },
+   "panels": [
+    "a2-bal74m"
+   ],
+   "chart": null,
+   "move": 0,
+   "cutIn": "j"
+  },
+  {
+   "id": "a2-bite",
+   "act": "act2",
+   "start": 271.54,
+   "dur": 4.527,
+   "layout": "donut/bite",
+   "shot": {
+    "size": "medium",
+    "angle": "slightly high",
+    "focalMm": 50
+   },
+   "panels": [
+    "a2-bite"
+   ],
+   "chart": null,
+   "move": 0,
+   "cutIn": null
+  },
+  {
+   "id": "a2-bite-b",
+   "act": "act2",
+   "start": 276.067,
+   "dur": 8.853,
+   "layout": "donut/bite",
+   "shot": {
+    "size": "close-up",
+    "angle": "slightly high",
+    "focalMm": 50
+   },
+   "panels": [
+    "a2-bite"
+   ],
+   "chart": null,
+   "move": 0,
+   "cutIn": null
+  },
+  {
+   "id": "a2-sell",
+   "act": "act2",
+   "start": 284.92,
+   "dur": 6.78,
+   "layout": "donut/bite-2",
+   "shot": {
+    "size": "close-up",
+    "angle": "eye-level",
+    "focalMm": 85
+   },
+   "panels": [
+    "a2-sell"
+   ],
+   "chart": null,
+   "move": 0,
+   "cutIn": null
+  },
+  {
+   "id": "a2-seq",
+   "act": "act2",
+   "start": 291.7,
+   "dur": 2.138,
+   "layout": "title/term",
+   "shot": {
+    "size": "medium",
+    "angle": "eye-level",
+    "focalMm": 50
+   },
+   "panels": [
+    "a2-seq"
+   ],
+   "chart": null,
+   "move": 0,
+   "composition": "center",
+   "cutIn": "j"
+  },
+  {
+   "id": "a2-7576",
+   "act": "act2",
+   "start": 293.838,
+   "dur": 2.242,
+   "layout": "duel/bars-3",
+   "shot": {
+    "size": "medium",
+    "angle": "low",
+    "focalMm": 35
+   },
+   "panels": [
+    "a2-7576"
+   ],
+   "chart": "a2-7576",
+   "move": 0,
+   "cutIn": null
+  },
+  {
+   "id": "a2-7576n",
+   "act": "act2",
+   "start": 296.08,
+   "dur": 8.16,
+   "layout": "duel/bars-4",
+   "shot": {
+    "size": "close-up",
+    "angle": "eye-level",
+    "focalMm": 85
+   },
+   "panels": [
+    "a2-7576n"
+   ],
+   "chart": "a2-7576n",
+   "move": 0,
+   "cutIn": null
+  },
+  {
+   "id": "a2-7576b",
+   "act": "act2",
+   "start": 304.24,
+   "dur": 6.24,
+   "layout": "ledger/drop-2",
+   "shot": {
+    "size": "medium",
+    "angle": "slightly high",
+    "focalMm": 50
+   },
+   "panels": [
+    "a2-7576b"
+   ],
+   "chart": null,
+   "move": 0,
+   "cutIn": null
+  },
+  {
+   "id": "a2-grind",
+   "act": "act2",
+   "start": 310.48,
+   "dur": 3.86,
+   "layout": "escalator/grind",
+   "shot": {
+    "size": "medium",
+    "angle": "low",
+    "focalMm": 35
+   },
+   "panels": [
+    "a2-grind"
+   ],
+   "chart": "a2-grind",
+   "move": 0,
+   "cutIn": null
+  },
+  {
+   "id": "a2-1979",
+   "act": "act2",
+   "start": 314.34,
+   "dur": 4.21,
+   "layout": "escalator/peak-2",
+   "shot": {
+    "size": "close-up",
+    "angle": "eye-level",
+    "focalMm": 85
+   },
+   "panels": [
+    "a2-1979"
+   ],
+   "chart": "a2-1979",
+   "move": 0,
+   "cutIn": null
+  },
+  {
+   "id": "a2-1981",
+   "act": "act2",
+   "start": 318.55,
+   "dur": 9.017,
+   "layout": "ledger/climb",
+   "shot": {
+    "size": "close-up",
+    "angle": "eye-level",
+    "focalMm": 85
+   },
+   "panels": [
+    "a2-1981"
+   ],
+   "chart": null,
+   "move": 0,
+   "cutIn": null
+  },
+  {
+   "id": "a2-1981-b",
+   "act": "act2",
+   "start": 327.567,
+   "dur": 5.702,
+   "layout": "ledger/climb",
+   "shot": {
+    "size": "medium",
+    "angle": "eye-level",
+    "focalMm": 85
+   },
+   "panels": [
+    "a2-1981"
+   ],
+   "chart": null,
+   "move": 0,
+   "cutIn": null
+  },
+  {
+   "id": "a2-1982",
+   "act": "act2",
+   "start": 333.269,
+   "dur": 5.057,
+   "layout": "world/dawn",
+   "shot": {
+    "size": "wide",
+    "angle": "high",
+    "focalMm": 24
+   },
+   "panels": [
+    "a2-1982"
+   ],
+   "chart": null,
+   "move": 0,
+   "cutIn": null
+  },
+  {
+   "id": "a2-1982r",
+   "act": "act2",
+   "start": 338.326,
+   "dur": 4.441,
+   "layout": "duel/bars-2",
+   "shot": {
+    "size": "medium",
+    "angle": "eye-level",
+    "focalMm": 50
+   },
+   "panels": [
+    "a2-1982r"
+   ],
+   "chart": "a2-1982r",
+   "move": 0,
+   "cutIn": null
+  },
+  {
+   "id": "a2-1982w",
+   "act": "act2",
+   "start": 342.767,
+   "dur": 5.973,
+   "layout": "ledger/share",
+   "shot": {
+    "size": "close-up",
+    "angle": "eye-level",
+    "focalMm": 85
+   },
+   "panels": [
+    "a2-1982w"
+   ],
+   "chart": null,
+   "move": 0,
+   "cutIn": "l"
+  },
+  {
+   "id": "a2-gains80",
+   "act": "act2",
+   "start": 348.74,
+   "dur": 10.02,
+   "layout": "ledger/gains",
+   "shot": {
+    "size": "medium",
+    "angle": "eye-level",
+    "focalMm": 50
+   },
+   "panels": [
+    "a2-gains80"
+   ],
+   "chart": null,
+   "move": 0,
+   "cutIn": null
+  },
+  {
+   "id": "a2-late",
+   "act": "act2",
+   "start": 358.76,
+   "dur": 2.38,
+   "layout": "duel/lines-3",
+   "shot": {
+    "size": "wide",
+    "angle": "slightly high",
+    "focalMm": 35
+   },
+   "panels": [
+    "a2-late"
+   ],
+   "chart": "a2-late",
+   "move": 0,
+   "cutIn": null
+  },
+  {
+   "id": "a2-mirror-boom",
+   "act": "act2",
+   "start": 361.14,
+   "dur": 6.08,
+   "layout": "duel/lines-4",
+   "shot": {
+    "size": "medium",
+    "angle": "eye-level",
+    "focalMm": 35
+   },
+   "panels": [
+    "a2-mirror-boom"
+   ],
+   "chart": "a2-mirror-boom",
+   "move": 0,
+   "cutIn": null
+  },
+  {
+   "id": "a2-climb",
+   "act": "act2",
+   "start": 367.22,
+   "dur": 2.6,
+   "layout": "gap/widen",
+   "shot": {
+    "size": "close-up",
+    "angle": "eye-level",
+    "focalMm": 50
+   },
+   "panels": [
+    "a2-climb"
+   ],
+   "chart": "a2-climb",
+   "move": 0,
+   "cutIn": null
+  },
+  {
+   "id": "a2-climax-in",
+   "act": "act2",
+   "start": 369.82,
+   "dur": 2.289,
+   "layout": "gap/peak",
+   "shot": {
+    "size": "extreme-close-up",
+    "angle": "low",
+    "focalMm": 85
+   },
+   "panels": [
+    "a2-climax-in"
+   ],
+   "chart": "a2-climax-in",
+   "move": 0,
+   "cutIn": null,
+   "composition": "center"
+  },
+  {
+   "id": "a2-climax",
+   "act": "act2",
+   "start": 372.109,
+   "dur": 8.723,
+   "layout": "gap/number",
+   "shot": {
+    "size": "extreme-close-up",
+    "angle": "eye-level",
+    "focalMm": 85
+   },
+   "panels": [
+    "a2-climax"
+   ],
+   "chart": "a2-climax",
+   "move": 0,
+   "cutIn": null,
+   "composition": "center"
+  },
+  {
+   "id": "a2-years",
+   "act": "act2",
+   "start": 380.832,
+   "dur": 8.669,
+   "layout": "ledger/years",
+   "shot": {
+    "size": "medium",
+    "angle": "eye-level",
+    "focalMm": 50
+   },
+   "panels": [
+    "a2-years"
+   ],
+   "chart": null,
+   "move": 0,
+   "cutIn": null
+  },
+  {
+   "id": "a2-rest",
+   "act": "act2",
+   "start": 389.501,
+   "dur": 5.928,
+   "layout": "world/rest",
+   "shot": {
+    "size": "extreme-wide",
+    "angle": "high",
+    "focalMm": 24
+   },
+   "panels": [
+    "a2-rest"
+   ],
+   "chart": null,
+   "move": 0,
+   "cutIn": null
+  },
+  {
+   "id": "a2-mirror-late",
+   "act": "act2",
+   "start": 395.429,
+   "dur": 10.151,
+   "layout": "duel/lines-5",
+   "shot": {
+    "size": "wide",
+    "angle": "eye-level",
+    "focalMm": 35
+   },
+   "panels": [
+    "a2-mirror-late"
+   ],
+   "chart": "a2-mirror-late",
+   "move": 0,
+   "cutIn": null
+  },
+  {
+   "id": "a2-1991",
+   "act": "act2",
+   "start": 405.58,
+   "dur": 11.196,
+   "layout": "ledger/zero",
+   "shot": {
+    "size": "close-up",
+    "angle": "eye-level",
+    "focalMm": 85
+   },
+   "panels": [
+    "a2-1991"
+   ],
+   "chart": null,
+   "move": 0,
+   "cutIn": null
+  },
+  {
+   "id": "a2-short",
+   "act": "act2",
+   "start": 416.776,
+   "dur": 6.868,
+   "layout": "ledger/missing",
+   "shot": {
+    "size": "medium",
+    "angle": "eye-level",
+    "focalMm": 50
+   },
+   "panels": [
+    "a2-short"
+   ],
+   "chart": null,
+   "move": 0,
+   "cutIn": null
+  },
+  {
+   "id": "a2-mirror-end",
+   "act": "act2",
+   "start": 423.644,
+   "dur": 7.906,
+   "layout": "ledger/twin-2",
+   "shot": {
+    "size": "medium",
+    "angle": "eye-level",
+    "focalMm": 50
+   },
+   "panels": [
+    "a2-mirror-end"
+   ],
+   "chart": null,
+   "move": 0,
+   "cutIn": null
+  },
+  {
+   "id": "a2-mirror-real",
+   "act": "act2",
+   "start": 431.55,
+   "dur": 9.903,
+   "layout": "ledger/real",
+   "shot": {
+    "size": "close-up",
+    "angle": "eye-level",
+    "focalMm": 85
+   },
+   "panels": [
+    "a2-mirror-real"
+   ],
+   "chart": null,
+   "move": 0,
+   "cutIn": null
+  },
+  {
+   "id": "a2-payoff",
+   "act": "act2",
+   "start": 441.453,
+   "dur": 10.005,
+   "layout": "average/echo",
+   "shot": {
+    "size": "wide",
+    "angle": "eye-level",
+    "focalMm": 35
+   },
+   "panels": [
+    "a2-payoff"
+   ],
+   "chart": null,
+   "move": 0,
+   "composition": "center",
+   "cutIn": null
+  },
+  {
+   "id": "a3-est",
+   "act": "act3",
+   "start": 451.458,
+   "dur": 4.472,
+   "layout": "map/establish",
+   "shot": {
+    "size": "extreme-wide",
+    "angle": "top-down",
+    "focalMm": 24
+   },
+   "panels": [
+    "a3-est"
+   ],
+   "chart": "a3-est",
+   "move": 0,
+   "cutIn": null,
+   "composition": "center"
+  },
+  {
+   "id": "a3-all",
+   "act": "act3",
+   "start": 455.93,
+   "dur": 11.24,
+   "layout": "map/grid",
+   "shot": {
+    "size": "wide",
+    "angle": "high",
+    "focalMm": 35
+   },
+   "panels": [
+    "a3-all"
+   ],
+   "chart": "a3-all",
+   "move": 0,
+   "cutIn": null
+  },
+  {
+   "id": "a3-q",
+   "act": "act3",
+   "start": 467.17,
+   "dur": 4.26,
+   "layout": "question/card-2",
+   "shot": {
+    "size": "medium",
+    "angle": "eye-level",
+    "focalMm": 50
+   },
+   "panels": [
+    "a3-q"
+   ],
+   "chart": null,
+   "move": 0,
+   "cutIn": null,
+   "composition": "center"
+  },
+  {
+   "id": "a3-fine",
+   "act": "act3",
+   "start": 471.43,
+   "dur": 9.2,
+   "layout": "map/scan",
+   "shot": {
+    "size": "medium",
+    "angle": "high",
+    "focalMm": 35
+   },
+   "panels": [
+    "a3-fine"
+   ],
+   "chart": "a3-fine",
+   "move": 0,
+   "cutIn": null
+  },
+  {
+   "id": "a3-good",
+   "act": "act3",
+   "start": 480.63,
+   "dur": 10.161,
+   "layout": "map/focus",
+   "shot": {
+    "size": "close-up",
+    "angle": "eye-level",
+    "focalMm": 85
+   },
+   "panels": [
+    "a3-good"
+   ],
+   "chart": "a3-good",
+   "move": 0,
+   "cutIn": null
+  },
+  {
+   "id": "a3-1929",
+   "act": "act3",
+   "start": 490.791,
+   "dur": 6.342,
+   "layout": "map/focus-2",
+   "shot": {
+    "size": "medium",
+    "angle": "eye-level",
+    "focalMm": 50
+   },
+   "panels": [
+    "a3-1929"
+   ],
+   "chart": "a3-1929",
+   "move": 0,
+   "cutIn": null
+  },
+  {
+   "id": "a3-1929-b",
+   "act": "act3",
+   "start": 497.133,
+   "dur": 9.457,
+   "layout": "map/focus-2",
+   "shot": {
+    "size": "close-up",
+    "angle": "eye-level",
+    "focalMm": 50
+   },
+   "panels": [
+    "a3-1929"
+   ],
+   "chart": "a3-1929",
+   "move": 0,
+   "cutIn": null
+  },
+  {
+   "id": "a3-nohurt",
+   "act": "act3",
+   "start": 506.59,
+   "dur": 5.24,
+   "layout": "map/scan-2",
+   "shot": {
+    "size": "wide",
+    "angle": "high",
+    "focalMm": 35
+   },
+   "panels": [
+    "a3-nohurt"
+   ],
+   "chart": "a3-nohurt",
+   "move": 0,
+   "cutIn": null
+  },
+  {
+   "id": "a3-less",
+   "act": "act3",
+   "start": 511.83,
+   "dur": 3.203,
+   "layout": "map/threshold",
+   "shot": {
+    "size": "medium",
+    "angle": "high",
+    "focalMm": 35
+   },
+   "panels": [
+    "a3-less"
+   ],
+   "chart": "a3-less",
+   "move": 0,
+   "cutIn": null
+  },
+  {
+   "id": "a3-less-b",
+   "act": "act3",
+   "start": 515.033,
+   "dur": 8.437,
+   "layout": "map/threshold",
+   "shot": {
+    "size": "close-up",
+    "angle": "high",
+    "focalMm": 35
+   },
+   "panels": [
+    "a3-less"
+   ],
+   "chart": "a3-less",
+   "move": 0,
+   "cutIn": null
+  },
+  {
+   "id": "a3-four",
+   "act": "act3",
+   "start": 523.47,
+   "dur": 7.02,
+   "layout": "map/highlight",
+   "shot": {
+    "size": "medium",
+    "angle": "eye-level",
+    "focalMm": 50
+   },
+   "panels": [
+    "a3-four"
+   ],
+   "chart": "a3-four",
+   "move": 0,
+   "cutIn": null
+  },
+  {
+   "id": "a3-four2",
+   "act": "act3",
+   "start": 530.49,
+   "dur": 2.968,
+   "layout": "map/highlight-2",
+   "shot": {
+    "size": "close-up",
+    "angle": "eye-level",
+    "focalMm": 85
+   },
+   "panels": [
+    "a3-four2"
+   ],
+   "chart": "a3-four2",
+   "move": 0,
+   "cutIn": null
+  },
+  {
+   "id": "a3-avg-not",
+   "act": "act3",
+   "start": 533.458,
+   "dur": 3.692,
+   "layout": "scatter/avg",
+   "shot": {
+    "size": "medium",
+    "angle": "slightly high",
+    "focalMm": 35
+   },
+   "panels": [
+    "a3-avg-not"
+   ],
+   "chart": "a3-avg-not",
+   "move": 0,
+   "cutIn": null
+  },
+  {
+   "id": "a3-real66",
+   "act": "act3",
+   "start": 537.15,
+   "dur": 8.317,
+   "layout": "scatter/rank",
+   "shot": {
+    "size": "medium",
+    "angle": "eye-level",
+    "focalMm": 50
+   },
+   "panels": [
+    "a3-real66"
+   ],
+   "chart": "a3-real66",
+   "move": 0,
+   "cutIn": null
+  },
+  {
+   "id": "a3-real66-b",
+   "act": "act3",
+   "start": 545.467,
+   "dur": 6.543,
+   "layout": "scatter/rank",
+   "shot": {
+    "size": "close-up",
+    "angle": "eye-level",
+    "focalMm": 50
+   },
+   "panels": [
+    "a3-real66"
+   ],
+   "chart": "a3-real66",
+   "move": 0,
+   "cutIn": null
+  },
+  {
+   "id": "a3-1969",
+   "act": "act3",
+   "start": 552.01,
+   "dur": 5.657,
+   "layout": "scatter/pair",
+   "shot": {
+    "size": "close-up",
+    "angle": "eye-level",
+    "focalMm": 50
+   },
+   "panels": [
+    "a3-1969"
+   ],
+   "chart": "a3-1969",
+   "move": 0,
+   "cutIn": null
+  },
+  {
+   "id": "a3-1969-b",
+   "act": "act3",
+   "start": 557.667,
+   "dur": 6.067,
+   "layout": "scatter/pair",
+   "shot": {
+    "size": "medium",
+    "angle": "eye-level",
+    "focalMm": 50
+   },
+   "panels": [
+    "a3-1969"
+   ],
+   "chart": "a3-1969",
+   "move": 0,
+   "cutIn": null
+  },
+  {
+   "id": "a3-1928",
+   "act": "act3",
+   "start": 563.733,
+   "dur": 10.392,
+   "layout": "scatter/pair-2",
+   "shot": {
+    "size": "medium",
+    "angle": "eye-level",
+    "focalMm": 85
+   },
+   "panels": [
+    "a3-1928"
+   ],
+   "chart": "a3-1928",
+   "move": 0,
+   "cutIn": "j"
+  },
+  {
+   "id": "a3-share",
+   "act": "act3",
+   "start": 574.125,
+   "dur": 4.405,
+   "layout": "decade/reveal",
+   "shot": {
+    "size": "wide",
+    "angle": "high",
+    "focalMm": 24
+   },
+   "panels": [
+    "a3-share"
+   ],
+   "chart": "a3-share",
+   "move": 0,
+   "cutIn": null
+  },
+  {
+   "id": "a3-decade",
+   "act": "act3",
+   "start": 578.53,
+   "dur": 6.07,
+   "layout": "decade/bars",
+   "shot": {
+    "size": "medium",
+    "angle": "eye-level",
+    "focalMm": 50
+   },
+   "panels": [
+    "a3-decade"
+   ],
+   "chart": "a3-decade",
+   "move": 0,
+   "cutIn": null
+  },
+  {
+   "id": "a3-1966d",
+   "act": "act3",
+   "start": 584.6,
+   "dur": 10.467,
+   "layout": "decade/bars-2",
+   "shot": {
+    "size": "close-up",
+    "angle": "eye-level",
+    "focalMm": 85
+   },
+   "panels": [
+    "a3-1966d"
+   ],
+   "chart": "a3-1966d",
+   "move": 0,
+   "cutIn": "l"
+  },
+  {
+   "id": "a3-mirror-d",
+   "act": "act3",
+   "start": 595.067,
+   "dur": 5.573,
+   "layout": "decade/twin",
+   "shot": {
+    "size": "close-up",
+    "angle": "eye-level",
+    "focalMm": 85
+   },
+   "panels": [
+    "a3-mirror-d"
+   ],
+   "chart": "a3-mirror-d",
+   "move": 0,
+   "cutIn": "j"
+  },
+  {
+   "id": "a3-answer",
+   "act": "act3",
+   "start": 600.64,
+   "dur": 6,
+   "layout": "answer/card",
+   "shot": {
+    "size": "medium",
+    "angle": "eye-level",
+    "focalMm": 35
+   },
+   "panels": [
+    "a3-answer"
+   ],
+   "chart": null,
+   "move": 0,
+   "composition": "center",
+   "cutIn": null
+  },
+  {
+   "id": "a3-nuance",
+   "act": "act3",
+   "start": 606.64,
+   "dur": 8.86,
+   "layout": "scatter/all",
+   "shot": {
+    "size": "wide",
+    "angle": "slightly high",
+    "focalMm": 35
+   },
+   "panels": [
+    "a3-nuance"
+   ],
+   "chart": "a3-nuance",
+   "move": 0,
+   "cutIn": null
+  },
+  {
+   "id": "a3-nuance-b",
+   "act": "act3",
+   "start": 615.5,
+   "dur": 5.04,
+   "layout": "scatter/all",
+   "shot": {
+    "size": "medium",
+    "angle": "slightly high",
+    "focalMm": 35
+   },
+   "panels": [
+    "a3-nuance"
+   ],
+   "chart": "a3-nuance",
+   "move": 0,
+   "cutIn": null
+  },
+  {
+   "id": "a3-avg-callback",
+   "act": "act3",
+   "start": 620.54,
+   "dur": 9.585,
+   "layout": "average/ghost",
+   "shot": {
+    "size": "close-up",
+    "angle": "eye-level",
+    "focalMm": 85
+   },
+   "panels": [
+    "a3-avg-callback"
+   ],
+   "chart": null,
+   "move": 0,
+   "cutIn": null
+  },
+  {
+   "id": "a3-limits",
+   "act": "act3",
+   "start": 630.125,
+   "dur": 5.333,
+   "layout": "limits/list",
+   "shot": {
+    "size": "medium",
+    "angle": "eye-level",
+    "focalMm": 50
+   },
+   "panels": [
+    "a3-limits"
+   ],
+   "chart": null,
+   "move": 0,
+   "cutIn": null
+  },
+  {
+   "id": "a3-usonly",
+   "act": "act3",
+   "start": 635.458,
+   "dur": 4.242,
+   "layout": "limits/globe",
+   "shot": {
+    "size": "wide",
+    "angle": "high",
+    "focalMm": 24
+   },
+   "panels": [
+    "a3-usonly"
+   ],
+   "chart": null,
+   "move": 0,
+   "cutIn": null
+  },
+  {
+   "id": "a3-overlap",
+   "act": "act3",
+   "start": 639.7,
+   "dur": 9.05,
+   "layout": "limits/overlap",
+   "shot": {
+    "size": "medium",
+    "angle": "eye-level",
+    "focalMm": 50
+   },
+   "panels": [
+    "a3-overlap"
+   ],
+   "chart": null,
+   "move": 0,
+   "cutIn": "l"
+  },
+  {
+   "id": "a3-bare",
+   "act": "act3",
+   "start": 648.75,
+   "dur": 11.375,
+   "layout": "limits/list-2",
+   "shot": {
+    "size": "close-up",
+    "angle": "eye-level",
+    "focalMm": 50
+   },
+   "panels": [
+    "a3-bare"
+   ],
+   "chart": null,
+   "move": 0,
+   "cutIn": null
+  },
+  {
+   "id": "method",
+   "act": "method",
+   "start": 660.125,
+   "dur": 9.585,
+   "layout": "method/sources",
+   "shot": {
+    "size": "medium",
+    "angle": "eye-level",
+    "focalMm": 50
+   },
+   "panels": [
+    "method"
+   ],
+   "chart": null,
+   "move": 0,
+   "cutIn": null
+  },
+  {
+   "id": "method-model",
+   "act": "method",
+   "start": 669.71,
+   "dur": 5.523,
+   "layout": "method/model",
+   "shot": {
+    "size": "close-up",
+    "angle": "eye-level",
+    "focalMm": 50
+   },
+   "panels": [
+    "method-model"
+   ],
+   "chart": null,
+   "move": 0,
+   "cutIn": null
+  },
+  {
+   "id": "method-model-b",
+   "act": "method",
+   "start": 675.233,
+   "dur": 6.558,
+   "layout": "method/model",
+   "shot": {
+    "size": "medium",
+    "angle": "eye-level",
+    "focalMm": 50
+   },
+   "panels": [
+    "method-model"
+   ],
+   "chart": null,
+   "move": 0,
+   "cutIn": null
+  },
+  {
+   "id": "outro",
+   "act": "outro",
+   "start": 681.791,
+   "dur": 24.219,
+   "layout": "end/screen",
+   "shot": {
+    "size": "wide",
+    "angle": "eye-level",
+    "focalMm": 35
+   },
+   "panels": [
+    "outro"
+   ],
+   "chart": null,
+   "move": 0,
+   "cutIn": null,
+   "composition": "center"
+  }
+ ],
+ "turns": [
+  {
+   "t": 10.07,
+   "what": "cold-open turn: the 1966 retiree runs out of money in 1991",
+   "scene": "co-broke"
+  },
+  {
+   "t": 12.27,
+   "what": "open loop: what decided which retiree went broke?",
+   "scene": "co-question"
+  },
+  {
+   "t": 87.89,
+   "what": "nominal versus real: the same withdrawal climbs in dollars of the day",
+   "scene": "a1-real"
+  },
+  {
+   "t": 114.33,
+   "what": "act 1 turn: the second retiree lives the same years in reverse",
+   "scene": "a1-mirror-in"
+  },
+  {
+   "t": 167.01,
+   "what": "act 1 climax: the two averages are identical",
+   "scene": "a1-avgmirror"
+  },
+  {
+   "t": 228.92,
+   "what": "act 2: after one year the paths have split",
+   "scene": "a2-gap1"
+  },
+  {
+   "t": 337.499,
+   "what": "act 2 turn: the good years finally arrive, too late",
+   "scene": "a2-1982"
+  },
+  {
+   "t": 376.95,
+   "what": "act 2 climax: the gap peaks at $1.96 million",
+   "scene": "a2-climax"
+  },
+  {
+   "t": 414.49,
+   "what": "the 1966 account hits zero in 1991",
+   "scene": "a2-1991"
+  },
+  {
+   "t": 525.293,
+   "what": "act 3: four start years ran out of money",
+   "scene": "a3-four"
+  },
+  {
+   "t": 581.6,
+   "what": "act 3 climax: every failure had a losing first decade",
+   "scene": "a3-decade"
+  },
+  {
+   "t": 605.71,
+   "what": "the answer: the first 10 years",
+   "scene": "a3-answer"
+  }
+ ],
+ "cutIns": {
+  "a1-rebal": "l",
+  "a1-mirror-in": "l",
+  "a1-mirror-rule": "j",
+  "a1-illus": "j",
+  "a1-geo": "j",
+  "a1-arith": "j",
+  "a2-bal74m": "j",
+  "a2-seq": "j",
+  "a2-1982w": "l",
+  "a3-1928": "j",
+  "a3-1966d": "l",
+  "a3-mirror-d": "j",
+  "a3-overlap": "l"
+ }
+}

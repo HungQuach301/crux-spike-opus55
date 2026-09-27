@@ -1,0 +1,40 @@
+{
+ "silences": [
+  {
+   "t": 11.1,
+   "dur": 1.09,
+   "why": "let \"1991\" land",
+   "after": "co-broke.1"
+  },
+  {
+   "t": 14.31,
+   "dur": 1.3,
+   "why": "the open question hangs before the title",
+   "after": "co-question.1"
+  },
+  {
+   "t": 158.97,
+   "dur": 1.3,
+   "why": "let the first average land before the mirror answers",
+   "after": "a1-avg1966.1"
+  },
+  {
+   "t": 200.01,
+   "dur": 3.2,
+   "why": "end of act 1: ad break",
+   "after": "a1-payoff.4"
+  },
+  {
+   "t": 379.92,
+   "dur": 1.14,
+   "why": "let the $1.96 million gap land",
+   "after": "a2-climax.1"
+  },
+  {
+   "t": 448.97,
+   "dur": 3.2,
+   "why": "end of act 2: ad break",
+   "after": "a2-payoff.2"
+  }
+ ]
+}

@@ -19,3 +19,16 @@
 8. **Nhịp (A15):** chấp nhận luật A15 trượt ở trần 175 wpm từng câu cho các câu diễn có chủ ý. Ràng buộc giữ: trung bình mỗi hồi 150–160 wpm, mọi câu 120–190 wpm. Luật `checks/` giữ nguyên.
 9. **S04:** chấp nhận trượt (phương pháp khác nhau; dữ liệu Yale dừng ở 09/2023). Không mở thêm domain. Mô hình vẫn dùng Damodaran.
 10. **Không dừng chờ nghe giọng:** làm liền M1b-2 (giọng toàn bài, kiểm bằng máy) rồi M2 (cold open + ident + hồi 1, chất lượng cuối); dừng khi xong M2. Chọn take: (a) đủ từ quan trọng, (b) 120–190 wpm, (c) gần 156 wpm; tối đa 4 take; không giãn thời gian.
+
+## 2026-09-27 — sau M2c: dừng hướng 3D, làm M3
+11. **Phong cách:** hướng 3D "thế giới vật lý" (M2b lookdev, M2c ngữ pháp hình + animatic) KHÔNG hợp với nội dung data-explainer và dừng lại. Toàn bộ M2b/M2c (`render-d/look/`, `out/m2b/`, `out/m2c/`, `preprod/visual-bible.md`, `preprod/visual-grammar.md`, `preprod/style*/`) được giữ làm tài sản cho dự án khác, không dùng trong bài D.
+12. **"Chuẩn điện ảnh" cho thể loại này** = tay nghề: kịch bản, nhịp, âm thanh, dựng, máy quay có lý do. Không phải thế giới 3D. Hướng M3: **biểu đồ là nhân vật chính, tay nghề điện ảnh bao quanh**.
+13. **§4.3 làm ở mức 2.5D:**
+    - Phối cảnh 3D ≥ 3 lớp → parallax nhiều lớp.
+    - Rack focus → làm mờ lớp nền để dẫn mắt.
+    - Làm mờ chuyển động 8× → làm mờ khi máy quay di chuyển trên mặt phẳng.
+    - Luật nào không đạt thì báo trượt kèm lý do; KHÔNG sửa `checks/`.
+14. **Kịch bản M3:**
+    - Bỏ 5 câu dạy thế giới 3D thêm ở M2c; khôi phục dòng thời gian tương ứng.
+    - Thêm một câu hồi 2 (V8, cùng quy tắc chọn take) cho claim mới: "In 8 of its years with gains above 10%, the 1966 retiree's balance still fell after the withdrawal and inflation." (1979, 1980, 1983, 1985, 1986, 1988, 1989, 1991), có test.
+    - Giữ các sửa âm thanh của M2c: cắt đuôi câu quyết định +250 ms; ducking quanh các con số.

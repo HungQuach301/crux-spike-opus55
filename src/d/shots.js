@@ -53,6 +53,7 @@ const S = {
   'a2-1982': ['high', 24, 'crane down as light rises on 1982', 'the turn of act two gets its own wide', 1.4],
   'a2-1982r': ['eye-level', 50, 'dolly in to the 1982 bar', 'the good year for the 1966 retiree', 0.7],
   'a2-1982w': ['eye-level', 85, 'rack focus from the gain to the withdrawal share', 'undercut the good news at the turn', 0.6],
+  'a2-gains80': ['eye-level', 50, 'track along the 1980s bars, gain against share of the balance taken', 'show that good years still lost ground', 0.6],
   'a2-late': ['slightly high', 35, 'slow pull back from the 1966 line', 'distance for a sober beat', 0.9],
   'a2-mirror-boom': ['eye-level', 35, 'truck left along the mirror line', 'the same years sit early on the mirror path', 0.9],
   'a2-seq': ['eye-level', 50, 'slow push in on the term card', 'the idea gets a name, give it the frame', 0.6, 'center'],

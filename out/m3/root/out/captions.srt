@@ -1,0 +1,643 @@
+1
+00:00:01,900 --> 00:00:06,688
+Two retirees with the same balance, the
+same withdrawals and the same average
+
+2
+00:00:06,708 --> 00:00:11,020
+return. One ran out of money in 1991.
+
+3
+00:00:12,270 --> 00:00:14,230
+So what decided it?
+
+4
+00:00:17,930 --> 00:00:20,630
+It is January 1966.
+
+5
+00:00:21,030 --> 00:00:26,510
+The first retiree starts with $1 million,
+measured in 1966 dollars.
+
+6
+00:00:26,910 --> 00:00:32,630
+They retire at the start of a hard decade
+for markets, though nobody knows it yet.
+
+7
+00:00:33,030 --> 00:00:39,458
+By the end of this video, you will know
+which ten years decided the fate of this
+
+8
+00:00:39,478 --> 00:00:45,290
+retiree, and whether the same thing held
+for every start year since 1928.
+
+9
+00:00:45,690 --> 00:00:51,430
+The money sits in a portfolio of 60%
+stocks and 40% bonds.
+
+10
+00:00:51,830 --> 00:00:57,250
+The stocks are the Standard & Poor's 500
+index, with dividends reinvested.
+
+11
+00:00:57,650 --> 00:01:00,750
+The bonds are 10-year US Treasury bonds.
+
+12
+00:01:01,150 --> 00:01:05,250
+Every January, the portfolio is rebalanced
+back to that mix.
+
+13
+00:01:05,650 --> 00:01:10,970
+In the first year, the retiree withdraws
+4% of the starting balance.
+
+14
+00:01:11,370 --> 00:01:16,130
+That is $40,000, in 1966 dollars.
+
+15
+00:01:16,530 --> 00:01:22,431
+After that, the withdrawal rises each year
+with the previous year's inflation, so it
+
+16
+00:01:22,451 --> 00:01:24,610
+always buys the same groceries.
+
+17
+00:01:25,010 --> 00:01:27,490
+In real terms, it never changes.
+
+18
+00:01:27,890 --> 00:01:32,990
+In nominal terms, the dollars of the day,
+it climbs every year.
+
+19
+00:01:33,390 --> 00:01:38,630
+The plan runs for 30 years, from 1966
+through 1995.
+
+20
+00:01:39,030 --> 00:01:40,970
+No taxes, no fees.
+
+21
+00:01:41,370 --> 00:01:47,130
+We keep the model this bare on purpose, so
+that one thing can change at a time.
+
+22
+00:01:47,530 --> 00:01:53,330
+The data is US only, and this is history,
+not a forecast.
+
+23
+00:01:54,330 --> 00:01:56,290
+Now meet the second retiree.
+
+24
+00:01:56,690 --> 00:02:02,447
+The mirror retiree lives through the exact
+same 30 annual returns, but in reverse
+
+25
+00:02:02,467 --> 00:02:03,270
+order.
+
+26
+00:02:03,290 --> 00:02:10,190
+The return of 1995 arrives first, and the
+return of 1966 arrives last.
+
+27
+00:02:10,590 --> 00:02:15,710
+This retiree is illustrative: no one lived
+through these years in this order.
+
+28
+00:02:16,110 --> 00:02:21,523
+Inflation stays in its real calendar
+order, so both retirees take out the same
+
+29
+00:02:21,543 --> 00:02:22,850
+dollars every year.
+
+30
+00:02:23,250 --> 00:02:26,250
+Here is the question this first part
+answers.
+
+31
+00:02:26,650 --> 00:02:32,330
+If two people earn the same average
+return, do they end up in the same place?
+
+32
+00:02:32,730 --> 00:02:38,890
+The portfolio of the 1966 retiree earned
+an average return of 9.7%.
+
+33
+00:02:40,390 --> 00:02:45,230
+For the mirror retiree, the average is
+also 9.7%.
+
+34
+00:02:45,630 --> 00:02:47,810
+Not close. Identical.
+
+35
+00:02:48,210 --> 00:02:52,981
+That is the geometric average, the
+compound rate that turns the starting
+
+36
+00:02:53,001 --> 00:02:54,970
+dollar into the ending dollar.
+
+37
+00:02:55,370 --> 00:03:01,081
+Multiplication does not care about order,
+so the same years in any order give the
+
+38
+00:03:01,101 --> 00:03:02,101
+same average.
+
+39
+00:03:02,410 --> 00:03:09,410
+Even the simple arithmetic average, adding
+up the 30 returns and dividing by 30, is
+
+40
+00:03:09,562 --> 00:03:11,690
+the same for both: 10.3%.
+
+41
+00:03:12,090 --> 00:03:13,150
+Same money in.
+
+42
+00:03:13,550 --> 00:03:14,750
+Same money out.
+
+43
+00:03:15,150 --> 00:03:16,390
+Same average.
+
+44
+00:03:16,790 --> 00:03:19,930
+The only thing that differs is the order.
+
+45
+00:03:24,330 --> 00:03:26,850
+Watch the two balances year by year.
+
+46
+00:03:27,250 --> 00:03:33,404
+The question now: when does the order
+start to matter, and how much does it
+
+47
+00:03:33,424 --> 00:03:35,070
+cost? Year one.
+
+48
+00:03:35,470 --> 00:03:39,210
+The 1966 retiree loses 4.8%.
+
+49
+00:03:39,610 --> 00:03:45,910
+The mirror retiree gets the 1995 return
+first: a gain of 31.7%.
+
+50
+00:03:46,310 --> 00:03:49,370
+One year in, and the paths have already
+split.
+
+51
+00:03:49,770 --> 00:03:51,830
+Then inflation starts to climb.
+
+52
+00:03:52,230 --> 00:03:58,570
+By 1969 it is 6.2% a year, and every
+withdrawal grows with it.
+
+53
+00:03:58,970 --> 00:04:04,930
+After inflation, stocks and bonds both
+lose money in 1973 and 1974.
+
+54
+00:04:05,330 --> 00:04:12,330
+In 1974 alone, the portfolio loses 14.7%,
+while prices rise 12.3%.
+
+55
+00:04:13,690 --> 00:04:20,690
+In 1966 dollars, the 1966 retiree ends
+1974 with $461,000.
+
+56
+00:04:23,680 --> 00:04:30,418
+The mirror retiree, same year, same
+withdrawals: $1.27 million, also in 1966
+
+57
+00:04:30,438 --> 00:04:35,820
+dollars. Here is why a bad start is so
+hard to undo.
+
+58
+00:04:36,220 --> 00:04:43,220
+The withdrawal is still $40,000 in 1966
+dollars, but it is now taken from a much
+
+59
+00:04:43,372 --> 00:04:44,520
+smaller pile.
+
+60
+00:04:44,920 --> 00:04:50,425
+Every dollar withdrawn after a loss is a
+dollar that is not there when the recovery
+
+61
+00:04:50,445 --> 00:04:53,620
+comes. Analysts call this
+sequence-of-returns risk.
+
+62
+00:04:54,020 --> 00:04:55,680
+Good years do come.
+
+63
+00:04:56,080 --> 00:05:03,080
+In 1975 the portfolio gains 23.6%, and in
+1976 another 20.7%.
+
+64
+00:05:04,560 --> 00:05:09,340
+But they compound on a balance that has
+already been cut, while the withdrawals
+
+65
+00:05:09,360 --> 00:05:13,940
+keep rising. Through the rest of the
+decade, inflation keeps rising.
+
+66
+00:05:14,340 --> 00:05:18,200
+In 1979 it reaches 13.3%.
+
+67
+00:05:18,600 --> 00:05:25,600
+By 1981, the yearly withdrawal has grown
+to $108,553 in nominal dollars.
+
+68
+00:05:27,700 --> 00:05:32,880
+In 1966 dollars, it is still $40,000.
+
+69
+00:05:33,780 --> 00:05:38,180
+Then, in 1982, the good years finally
+arrive.
+
+70
+00:05:38,580 --> 00:05:43,220
+That year the 1966 retiree gains 25.4%.
+
+71
+00:05:43,620 --> 00:05:48,340
+But the withdrawal now takes 16.9% of what
+is left.
+
+72
+00:05:48,740 --> 00:05:55,487
+In 8 of its years with gains above 10%,
+the balance of the 1966 retiree still fell
+
+73
+00:05:55,507 --> 00:05:58,360
+after the withdrawal and inflation.
+
+74
+00:05:58,760 --> 00:06:00,740
+The boom comes too late.
+
+75
+00:06:01,140 --> 00:06:06,820
+For the mirror retiree, those same years
+came first, when the balance was largest.
+
+76
+00:06:07,220 --> 00:06:09,420
+The gap widens every year.
+
+77
+00:06:09,820 --> 00:06:11,940
+In 1986 it peaks.
+
+78
+00:06:12,340 --> 00:06:19,340
+In 1966 dollars, the mirror retiree is now
+ahead by $1.96 million.
+
+79
+00:06:21,140 --> 00:06:27,844
+At $40,000 a year in 1966 dollars, that
+gap would pay for 49 more years of
+
+80
+00:06:27,864 --> 00:06:28,940
+withdrawals.
+
+81
+00:06:30,740 --> 00:06:35,360
+From there, the story of the 1966 retiree
+is short.
+
+82
+00:06:35,760 --> 00:06:42,492
+The mirror retiree meets the bad years
+late: the 1974 loss arrives in 1987, on a
+
+83
+00:06:42,512 --> 00:06:45,180
+balance big enough to absorb it.
+
+84
+00:06:45,580 --> 00:06:52,580
+The account pays out its last $96,829, in
+nominal dollars, and hits zero in 1991.
+
+85
+00:06:56,950 --> 00:07:02,373
+That last payment is short of the full
+withdrawal, and the final 4 years of the
+
+86
+00:07:02,393 --> 00:07:03,550
+plan get nothing.
+
+87
+00:07:03,950 --> 00:07:10,950
+The mirror retiree finishes 1995 with
+$6.96 million in nominal dollars.
+
+88
+00:07:11,550 --> 00:07:18,550
+In 1966 dollars that is $1.44 million,
+more than the starting balance, after 30
+
+89
+00:07:19,233 --> 00:07:21,250
+years of withdrawals.
+
+90
+00:07:21,650 --> 00:07:25,310
+Both portfolios averaged 9.7% a year.
+
+91
+00:07:25,710 --> 00:07:28,890
+The average did not decide who went broke.
+
+92
+00:07:33,290 --> 00:07:35,530
+So was 1966 a fluke?
+
+93
+00:07:35,930 --> 00:07:42,070
+We ran the same rules for every start year
+from 1928 to 1996.
+
+94
+00:07:42,470 --> 00:07:46,770
+That is 69 retirements, each with 30 years
+of data.
+
+95
+00:07:47,170 --> 00:07:51,030
+The question for this part: what actually
+decides the outcome?
+
+96
+00:07:51,430 --> 00:07:54,250
+Most of these retirees never ran out.
+
+97
+00:07:54,650 --> 00:08:00,230
+In 65 of the 69 start years, the money
+lasted all 30 years.
+
+98
+00:08:00,630 --> 00:08:07,630
+A retiree who started in 1982 under the
+same rules ended with $5.36 million in
+
+99
+00:08:09,062 --> 00:08:10,450
+1982 dollars.
+
+100
+00:08:10,850 --> 00:08:16,870
+Even a retiree who started in 1929, the
+year of the crash, never ran out.
+
+101
+00:08:17,270 --> 00:08:23,080
+Prices fell through the Depression, so the
+withdrawals shrank, and after inflation
+
+102
+00:08:23,100 --> 00:08:26,190
+the first decade still averaged 3.9% a
+year.
+
+103
+00:08:26,590 --> 00:08:31,430
+For many start years, the order of returns
+did no harm at all.
+
+104
+00:08:31,830 --> 00:08:34,770
+Surviving is not the same as thriving.
+
+105
+00:08:35,170 --> 00:08:41,786
+In 26 of the 69 start years, the retiree
+ended with less than the starting balance,
+
+106
+00:08:41,806 --> 00:08:43,070
+after inflation.
+
+107
+00:08:43,470 --> 00:08:50,090
+4 start years ran out of money, beginning
+with 1965 and 1966.
+
+108
+00:08:50,490 --> 00:08:53,310
+Then 1968 and 1969.
+
+109
+00:08:53,710 --> 00:08:56,750
+Their long-run averages do not single them
+out.
+
+110
+00:08:57,150 --> 00:09:04,150
+After inflation, the 1966 retiree averaged
+4.1% a year over all 30 years.
+
+111
+00:09:05,630 --> 00:09:11,610
+17 start years had a lower real average
+than that, and never ran out.
+
+112
+00:09:12,010 --> 00:09:17,430
+After inflation, the 1969 retiree averaged
+5.6% a year.
+
+113
+00:09:17,830 --> 00:09:22,870
+The 1928 retiree averaged less: 4.9%.
+
+114
+00:09:23,270 --> 00:09:30,270
+Yet 1928 ended with $1.21 million in 1928
+dollars, and 1969 ran out of money in its
+
+115
+00:09:32,778 --> 00:09:33,910
+28th year.
+
+116
+00:09:34,710 --> 00:09:38,130
+What the four failures share is their
+first decade.
+
+117
+00:09:38,530 --> 00:09:44,580
+In every one of them, the portfolio lost
+money after inflation over its first 10
+
+118
+00:09:44,600 --> 00:09:45,430
+years.
+
+119
+00:09:45,450 --> 00:09:52,450
+After inflation, the first decade of the
+1966 retiree averaged −1.8%.
+
+120
+00:09:54,600 --> 00:10:00,240
+In the first decade, the mirror retiree
+averaged 6.9% a year after inflation.
+
+121
+00:10:00,640 --> 00:10:02,620
+So, what decided it?
+
+122
+00:10:03,020 --> 00:10:04,200
+Not the average.
+
+123
+00:10:04,600 --> 00:10:06,240
+The first 10 years.
+
+124
+00:10:06,640 --> 00:10:12,474
+To be precise: across all 69 start years,
+the 30-year real return still lines up
+
+125
+00:10:12,494 --> 00:10:15,240
+best with how much is left at the end.
+
+126
+00:10:15,640 --> 00:10:20,140
+But every retiree who ran out met a bad
+first decade.
+
+127
+00:10:20,540 --> 00:10:27,540
+The 9.7% average described the 1966
+retiree perfectly, and it said nothing
+
+128
+00:10:27,674 --> 00:10:28,720
+about 1991.
+
+129
+00:10:30,370 --> 00:10:32,770
+Now the limits of this analysis.
+
+130
+00:10:33,170 --> 00:10:35,390
+This is history, not a forecast.
+
+131
+00:10:35,790 --> 00:10:40,150
+It is US only, one country with one set of
+markets.
+
+132
+00:10:40,550 --> 00:10:47,390
+The 69 windows overlap, so 98 years of
+data hold only 3 separate 30-year
+
+133
+00:10:47,410 --> 00:10:48,410
+stretches.
+
+134
+00:10:48,750 --> 00:10:55,750
+And the model is bare: no taxes, no fees,
+one portfolio mix and one withdrawal rule.
+
+135
+00:10:56,450 --> 00:10:59,950
+Change any of those, and every number here
+changes too.
+
+136
+00:11:01,150 --> 00:11:07,196
+The data: annual returns compiled at NYU
+Stern, and consumer prices from the Bureau
+
+137
+00:11:07,216 --> 00:11:09,310
+of Labor Statistics via FRED.
+
+138
+00:11:09,710 --> 00:11:14,250
+Returns include dividends and bond
+coupons, and the portfolio is rebalanced
+
+139
+00:11:14,270 --> 00:11:18,970
+once a year. Every number and formula is
+listed in the description.
+
+140
+00:11:22,770 --> 00:11:28,610
+Two retirees, one average, and a fate
+decided by the order of the years.
