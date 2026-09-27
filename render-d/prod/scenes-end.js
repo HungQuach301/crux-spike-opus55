@@ -22,7 +22,7 @@
   B.method = (L, sc, H) => {
     const items = []; env(items, 'method', { glow: 0.08, gx: 1500 });
     const tStern = cue(H, 'method.1', 'stern', 3), tBls = cue(H, 'method.1', 'bureau', 5.5), tFred = cue(H, 'method.1', 'fred', 7.5);
-    card(items, 'method', [820, 250, 960, 640], fade(L, 0.2));
+    card(items, 'method', [860, 250, 900, 640], fade(L, 0.2));
     const rows = [
       ['table', 'Annual returns', 'NYU Stern, Damodaran (histretSP)', tStern],
       ['tag', 'Consumer prices', 'Bureau of Labor Statistics, CPI-U', tBls],
@@ -30,24 +30,24 @@
     ];
     rows.forEach(([k, h, s, t], i) => {
       const y = 350 + i * 150, a = fade(L, t - 0.15, 0.25);
-      icon(items, 'method', i, k, 910, y, a, i === 0 ? C.stocks : C.inflation);
-      items.push(Tx('method-h' + i, h, 970, y - 6, 40, C.text, { weight: 700, alpha: a, level: 2 }));
-      items.push(Tx('method-s' + i, s, 970, y + 42, 32, C['text-dim'], { alpha: a, level: 3 }));
+      icon(items, 'method', i, k, 950, y, a, i === 0 ? C.stocks : C.inflation);
+      items.push(Tx('method-h' + i, h, 1010, y - 6, 40, C.text, { weight: 700, alpha: a, level: 2 }));
+      items.push(Tx('method-s' + i, s, 1010, y + 42, 32, C['text-dim'], { alpha: a, level: 3 }));
     });
-    items.push(S('method-rule', 'polyline', { panel: 'method', z: 0, pts: [[900, 790], [1700, 790]], stroke: C.grid, lw: 2, alpha: fade(L, 0.6), meta: { role: 'bg', panel: 'method' } }));
-    items.push(Tx('method-foot', 'US data only. No taxes, no fees.', 900, 850, 32, C['text-dim'], { alpha: fade(L, 0.8), level: 3 }));
-    items.push(L1('method-l1', 'The data', 480, 360, 72, fade(L, 0.3)));
-    items.push(Tx('method-sub', 'where every number comes from', 480, 450, 32, C['text-dim'], { align: 'center', alpha: fade(L, 0.6), level: 2 }));
+    const pf = H.P(930, 810, 0);
+    items.push(Tx('method-foot', 'US data only. No taxes, no fees.', pf[0], pf[1], 32, C['text-dim'], { alpha: fade(L, 0.8), level: 3 }));
+    items.push(L1('method-l1', 'The data', 560, 360, 72, fade(L, 0.3)));
+    items.push(Tx('method-sub', 'where the numbers come from', 560, 450, 32, C['text-dim'], { align: 'center', alpha: fade(L, 0.6), level: 2 }));
     return items;
   };
   // the list builds down the card as each source is named
-  CAM.method = { f: 50, base: { y: -200, ty: -120 }, moves: [[1.0, 1.5, { y: 200, ty: 120 }], [5.0, 1.4, { z: 200 }]] };
+  CAM.method = { f: 50, base: { y: -200, ty: -120, z: -150 }, moves: [[1.0, 1.5, { y: 200, ty: 120 }], [5.0, 1.4, { z: 150 }]] };
 
   B['method-model'] = (L, sc, H) => {
     const items = []; env(items, 'method-model', { glow: 0.08, gx: 400 });
     const tDiv = cue(H, 'method-model.1', 'dividends', 1), tReb = cue(H, 'method-model.1', 'rebalanced', 3.5), tDesc = cue(H, 'method-model.2', 'description', 8.5);
     const tList = cue(H, 'method-model.2', 'listed', 7.5);
-    card(items, 'method-model', [150, 230, 900, 700], fade(L, 0.15));
+    card(items, 'method-model', [110, 230, 950, 700], fade(L, 0.15));
     const rows = [
       ['check', 'Dividends and bond coupons included', tDiv],
       ['cycle', 'Rebalanced once a year', tReb],
@@ -58,16 +58,16 @@
     rows.forEach(([k, s, t], i) => {
       const y = 330 + i * 120, a = fade(L, t - 0.15, 0.25);
       icon(items, 'method-model', i, k, 240, y, a, k === 'x' ? C.loss : C.gain);
-      items.push(Tx('method-model-r' + i, s, 300, y + 14, 40, C.text, { alpha: a, level: 2 }));
+      items.push(Tx('method-model-r' + i, s, 300, y + 13, 36, C.text, { alpha: a, level: 2 }));
     });
-    items.push(L1('method-model-l1', 'The model', 1440, 360, 72, fade(L, 0.2) * fadeOut(L, tList - 0.3, 0.25)));
-    items.push(Tx('method-model-sub', 'one portfolio mix, one withdrawal rule', 1440, 450, 32, C['text-dim'], { align: 'center', alpha: fade(L, 0.5) * fadeOut(L, tList - 0.3, 0.25), level: 2 }));
-    items.push(L1('method-model-l1b', 'Every formula is listed', 1440, 360, 52, fade(L, tList - 0.1, 0.3)));
-    items.push(Tx('method-model-desc', 'in the description', 1440, 450, 36, C['text-dim'], { align: 'center', alpha: fade(L, tDesc - 0.2), level: 2 }));
+    items.push(L1('method-model-l1', 'The model', 1340, 360, 72, fade(L, 0.2) * fadeOut(L, tList - 0.3, 0.25)));
+    items.push(Tx('method-model-sub', 'what the simulation assumes', 1340, 450, 32, C['text-dim'], { align: 'center', alpha: fade(L, 0.5) * fadeOut(L, tList - 0.3, 0.25), level: 2 }));
+    items.push(L1('method-model-l1b', 'Every formula is listed', 1360, 360, 48, fade(L, tList - 0.1, 0.3)));
+    items.push(Tx('method-model-desc', 'in the description', 1360, 450, 36, C['text-dim'], { align: 'center', alpha: fade(L, tDesc - 0.2), level: 2 }));
     // a pointer down toward the description, drawn when it is named
     const u = smooth((L - tDesc) / 0.6);
-    items.push(S('method-model-arrow', 'polyline', { panel: 'method-model', z: 0, pts: [[1440, 520], [1440, 520 + 260 * u]], stroke: C.text, lw: 5, alpha: u > 0 ? 1 : 0, meta: { role: 'mark', panel: 'method-model' } }));
-    items.push(S('method-model-head', 'poly', { panel: 'method-model', z: 0, pts: [[1414, 520 + 260 * u - 6], [1466, 520 + 260 * u - 6], [1440, 520 + 260 * u + 26]], fill: C.text, alpha: u > 0.05 ? 1 : 0, meta: { role: 'mark', panel: 'method-model' } }));
+    items.push(S('method-model-arrow', 'polyline', { panel: 'method-model', z: 0, pts: [[1360, 520], [1360, 520 + 260 * u]], stroke: C.text, lw: 5, alpha: u > 0 ? 1 : 0, meta: { role: 'mark', panel: 'method-model' } }));
+    items.push(S('method-model-head', 'poly', { panel: 'method-model', z: 0, pts: [[1334, 520 + 260 * u - 6], [1386, 520 + 260 * u - 6], [1360, 520 + 260 * u + 26]], fill: C.text, alpha: u > 0.05 ? 1 : 0, meta: { role: 'mark', panel: 'method-model' } }));
     return items;
   };
   CAM['method-model'] = { f: 50, base: { x: 250, tx: 250, z: 150 }, moves: [[0.7, 1.4, { x: -250, tx: -250, z: -150 }]] };

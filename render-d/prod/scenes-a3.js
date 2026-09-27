@@ -66,7 +66,7 @@
     items.push(Tx('a3-all-28', '1928', p28[0], p28[1], 30, C.text, { align: 'center', alpha: at(L, t28), claims: [claim('y1928')], year: 1928 }));
     items.push(Tx('a3-all-96', '1996', p96[0], p96[1], 30, C.text, { align: 'center', alpha: at(L, t96), claims: [claim('y1996')], year: 1996 }));
     items.push(L1('a3-all-l1', 'Every start year', 1340, 360, 64, fade(L, 0.3) * fadeOut(L, t69 - 0.3, 0.25)));
-    items.push(Tx('a3-all-sub', 'same rules, same mix, same withdrawals', 1340, 450, 32, C['text-dim'], { align: 'center', alpha: fade(L, 1.0), level: 2 }));
+    items.push(Tx('a3-all-sub', 'same rules for each', 1340, 450, 32, C['text-dim'], { align: 'center', alpha: fade(L, 1.0), level: 2 }));
     items.push(L1('a3-all-69', '69 retirements', 1340, 360, 64, at(L, t69), { claims: [claim('n69')] }));
     return items;
   };
@@ -172,8 +172,8 @@
     const items = []; env(items, 'a3-less', { glow: 0.09, gx: 1500 });
     const t26 = cue(H, 'a3-less.2', '26', 3.6), t69 = cue(H, 'a3-less.2', '69', 4.3), tIn = cue(H, 'a3-less.2', 'inflation', 7);
     // survivors that ended below their starting balance (after inflation) turn muted, one by one
-    startMap(items, 'a3-less', { g: { x0: 120, y0: 250 }, color: (s, i) => (s.depleted ? C.loss : s.less && L >= t26 - 0.8 + i * 0.012 ? C.muted : C.gain) });
-    items.push(L1('a3-less-l1', 'Lasting is not thriving', 1340, 360, 60, fade(L, 0.2) * fadeOut(L, t26 - 0.3, 0.25)));
+    startMap(items, 'a3-less', { g: { x0: 120, y0: 250 }, color: (s, i) => (s.depleted ? C.loss : s.less && L >= t26 - 0.25 + i * 0.012 ? C.muted : C.gain) });
+    items.push(L1('a3-less-l1', 'Lasting is not thriving', 1340, 360, 56, fade(L, 0.2) * fadeOut(L, t26 - 0.3, 0.25)));
     items.push(L1('a3-less-26', '26', 1340, 360, 120, at(L, t26), { claims: [claim('n26')], color: C.text }));
     items.push(Tx('a3-less-of', 'of 69 ended below their start', 1340, 480, 36, C.text, { align: 'center', alpha: at(L, t69), claims: [claim('n69')], level: 2 }));
     items.push(Tx('a3-less-inf', 'after inflation', 1340, 536, 32, C['text-dim'], { align: 'center', alpha: fade(L, tIn - 0.1), level: 3 }));
@@ -184,6 +184,8 @@
     });
     return items;
   };
+  // the split shot keeps the 35 mm lens and pushes in a little as the 26 are named
+  CAM['a3-less-b'] = { f: 35, base: { z: 200 }, moves: [[0.6, 1.4, { z: -300 }]] };
   CAM['a3-less'] = { f: 35, base: { z: -250, x: 150, tx: 150 }, moves: [[0.7, 1.5, { z: 250, x: -150, tx: -150 }]] };
 
   // the four that ran out rise out of the map
@@ -195,12 +197,12 @@
     const items = []; env(items, 'a3-four', { glow: 0.09, gx: 400 });
     const t4 = cue(H, 'a3-four.1', '4', 0.2), t65 = cue(H, 'a3-four.1', '1965', 4), t66 = cue(H, 'a3-four.1', '1966', 5);
     const lift = (s) => smooth((L - (s.y === 1965 ? t65 : s.y === 1966 ? t66 : t4 + 0.4) + 0.2) / 0.5);
-    const g = fourMap(items, 'a3-four', L, H, { x0: 820, y0: 260 }, lift, smooth((L - t4) / 0.6));
+    const g = fourMap(items, 'a3-four', L, H, { x0: 890, y0: 260 }, lift, smooth((L - t4) / 0.6));
     for (const [y, t, cl] of [[1965, t65, 'y1965'], [1966, t66, 'y1966']]) {
       const p = under(H, y, g, -60 * lift(byY[y]));
       items.push(Tx('a3-four-' + y, String(y), p[0], p[1] + 6, 32, C.text, { align: 'center', weight: 700, alpha: at(L, t), claims: [claim(cl)], year: y }));
     }
-    items.push(L1('a3-four-l1', '4 ran out of money', 560, 360, 60, at(L, t4), { claims: [claim('n4')] }));
+    items.push(L1('a3-four-l1', '4 ran out of money', 560, 360, 52, at(L, t4), { claims: [claim('n4')] }));
     items.push(Tx('a3-four-sub', 'start years that failed', 560, 450, 34, C['text-dim'], { align: 'center', alpha: fade(L, t4 + 0.3), level: 2 }));
     return items;
   };
@@ -466,14 +468,14 @@
 
   B['a3-nuance'] = (L, sc, H) => {
     const items = []; env(items, 'a3-nuance', { glow: 0.09, gx: 1500 });
-    const t69 = cue(H, 'a3-nuance.1', '69', 1.8), tLeft = cue(H, 'a3-nuance.1', 'left', 7.8);
+    const t69 = cue(H, 'a3-nuance.1', '69', 1.8);
     const tBad = cue(H, 'a3-nuance.2', 'bad', 12.5);
     // the swarm opens into the scatter: the real average lines up with what is left
     const u = (s, i) => smooth((L - 1.5 - i * 0.03) / 1.4);
     dots(items, 'a3-nuance', L, { u, color: (s) => (s.depleted ? C.loss : s.less ? C.muted : C.gain),
       ring: (s) => (s.realGeo10 < 0 ? smooth((L - tBad + 0.3) / 0.4) : 0), ringColor: C.loss, alpha: (s) => (L > tBad - 0.3 && s.realGeo10 >= 0 ? 0.5 : 1) });
     scatterAxes(items, 'a3-nuance', H, fade(L, 1.8));
-    items.push(L1('a3-nuance-l1', 'The long average still matters', 1280, 360, 52, fade(L, tLeft - 1.5, 0.3) * fadeOut(L, tBad - 0.4, 0.25)));
+    items.push(L1('a3-nuance-l1', 'The long average still matters', 1280, 360, 52, fade(L, 0.4, 0.3) * fadeOut(L, tBad - 0.4, 0.25)));
     items.push(Tx('a3-nuance-69', 'all 69 start years', 1280, 270, 34, C['text-dim'], { align: 'center', alpha: at(L, t69) * fadeOut(L, tBad - 0.4, 0.25), claims: [claim('n69')], level: 2 }));
     items.push(L1('a3-nuance-l1b', 'Every failure: a bad first decade', 1280, 360, 48, fade(L, tBad - 0.2, 0.3)));
     items.push(Tx('a3-nuance-ring', 'ringed: lost money in the first decade', 1280, 270, 32, C.loss, { align: 'center', alpha: fade(L, tBad + 0.2), level: 2 }));
