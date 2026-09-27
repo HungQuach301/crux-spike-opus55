@@ -161,7 +161,7 @@
   // inflation climbs: inflation bars 1966..1969 rise, then every withdrawal (nominal) grows with it
   function inflRow(items, P, H, L, n, grow, o = {}) {
     const x0 = o.x0 ?? 300, w = o.w ?? 44, yb = o.yb ?? 560, s = o.s ?? 14, chart = 'infl';
-    base(items, P, chart, x0 - 10, x0 + 30 * w, yb, o.axA ?? 1);
+    base(items, P, chart, x0 - 10, x0 + (o.nAxis ?? 30) * w, yb, o.axA ?? 1);
     for (let k = 0; k < n; k++) bar(items, P, chart, `${P}-inf${k}`, x0 + k * w, yb, w - 10, M.infl[k] * 100, s, grow(k), C.inflation, (o.hi && !o.hi.includes(k)) ? 0.45 : 1);
     return { x0, w, yb, s };
   }
@@ -240,7 +240,7 @@
     const r = H.P(g.x0 + 9 * g.w, g.yb - 1e6 * g.s, 0);
     items.push(Tx(P + '-refl', 'start', r[0] - 4, r[1] - 16, 30, C['text-dim'], { align: 'right', alpha: fade(L, 0.4), level: 3 }));
     const e = H.P(g.x0 + 8 * g.w + 28, g.yb, 0);
-    items.push(Tx(P + '-e74', 'end of 1974', e[0], e[1] + 46, 30, C['text-dim'], { align: 'center', claims: cl('y1974'), alpha: on(L, t74), level: 3 }));
+    items.push(Tx(P + '-e74', 'end of 1974', e[0] + 34, e[1] + 46, 30, C['text-dim'], { align: 'right', claims: cl('y1974'), alpha: on(L, t74), level: 3 }));
     items.push(Tx(P + '-who', '1966 retiree, real balance', g.x0 - 10, 250, 32, C.c1966, { series: '1966', claims: cl('y1966'), alpha: fade(L, 0.3), level: 3 }));
     items.push(L1(P + '-l1', '$461,000', 640, 720, 104, on(L, tV), { claims: cl('bal74') }));
     basis(items, P + '-basis', 640, 830, L, 0.25, fade(L, 0.2, 0.2));
@@ -254,14 +254,14 @@
     const items = [], P = 'a2-bal74m'; env(items, P, { glow: 0.08, key: C['rim-light'], gx: 1500 });
     const W = cueL(H), tV = W('a2-bal74m.1', '$1.27 million', 3.4), t66 = W('a2-bal74m.1', '1966', 5.6), tM = W('a2-bal74m.1', 'mirror', 0.2);
     const s = 0.00030;
-    balBars(items, P, H, L, '1966', 9, () => 1, { x0: 200, w: 50, s });
-    const g = balBars(items, P, H, L, 'mirror', 9, (k) => smooth((L - 0.3 - k * 0.3) / 0.35), { x0: 780, w: 50, s });
-    items.push(Tx(P + '-a', 'first retiree', 200, 1000, 30, C.c1966, { series: '1966', alpha: 1, level: 3 }));
-    items.push(Tx(P + '-b', 'mirror retiree', 780, 1000, 30, C.cmirror, { series: 'mirror', alpha: fade(L, tM), level: 3 }));
-    items.push(badge(P + '-badge', 1100, 560, fade(L, tV - 0.4, 0.2)));
-    items.push(L1(P + '-l1', '$1.27 million', 1380, 680, 88, on(L, tV), { claims: cl('bal74m') }));
-    basis(items, P + '-basis', 1380, 780, L, t66, on(L, tV));
-    items.push(Tx(P + '-same', 'same year, same withdrawals', 1380, 470, 34, C['text-dim'], { align: 'center', alpha: fade(L, W('a2-bal74m.1', 'same', 1.1) - 0.1), level: 2 }));
+    balBars(items, P, H, L, '1966', 9, () => 1, { x0: 170, w: 44, s });
+    const g = balBars(items, P, H, L, 'mirror', 9, (k) => smooth((L - 0.3 - k * 0.3) / 0.35), { x0: 620, w: 44, s });
+    items.push(Tx(P + '-a', 'first retiree', 170, 1000, 30, C.c1966, { series: '1966', alpha: 1, level: 3 }));
+    items.push(Tx(P + '-b', 'mirror retiree', 620, 1000, 30, C.cmirror, { series: 'mirror', alpha: fade(L, tM), level: 3 }));
+    items.push(badge(P + '-badge', 1110, 590, fade(L, tV - 0.4, 0.2)));
+    items.push(L1(P + '-l1', '$1.27 million', 1360, 690, 80, on(L, tV), { claims: cl('bal74m') }));
+    basis(items, P + '-basis', 1360, 790, L, t66, on(L, tV));
+    items.push(Tx(P + '-same', 'same year, same withdrawals', 1360, 470, 34, C['text-dim'], { align: 'center', alpha: fade(L, W('a2-bal74m.1', 'same', 1.1) - 0.1), level: 2 }));
     void g;
     return items;
   };
@@ -305,6 +305,7 @@
     const x = 520, yb = 940, h = 44, gap = 8, n = 10;
     const lost = [7, 8, 9];
     for (let k = 0; k < n; k++) {
+      if (k === 6 && L > tW + 1.2) continue;
       const isLost = lost.includes(k), y = yb - (k + 1) * (h + gap);
       const drop = isLost ? smooth((L - (tLoss - 0.2) - (9 - k) * 0.08) / 0.5) : 0;
       items.push(S(`${P}-s${k}`, 'rect', { panel: P, z: 0, rect: [x - 60 * drop, y + 200 * drop, 320, h], radius: 6, fill: isLost ? C.loss : C.c1966, alpha: isLost ? 1 - drop : 1, meta: { role: 'mark', panel: P, ...(isLost ? {} : charShape('1966')) } }));
@@ -384,7 +385,7 @@
   B['a2-7576b'] = (L, sc, H) => {
     const items = [], P = 'a2-7576b'; env(items, P, { glow: 0.07, gx: 400 });
     const W = cueL(H), tCut = W('a2-7576b.1', 'cut', 2.5), tWd = W('a2-7576b.1', 'withdrawals', 3.8);
-    const g = duel(items, P, H, { p66: 8 + 3 * smooth((L - 0.3) / 1.6), lk66: 3, yb: 640, yt: 240, vmax: 1.2e6, l66dy: -24, ldx: 30 });
+    const g = duel(items, P, H, { p66: 8 + 3 * smooth((L - 0.3) / 1.6), lk66: 2.5, yb: 640, yt: 240, vmax: 1.2e6, l66dy: 60, ldx: 0 });
     // the start level as a dashed reference, the cut as a bracket from it to the 1974 low
     items.push(S(P + '-ref', 'polyline', { panel: P, z: 0, pts: [[g.X(0), g.Y(1e6)], [g.X(30), g.Y(1e6)]], stroke: C.muted, lw: 2, dash: [10, 8], alpha: 0.8, meta: { role: 'mark', panel: P } }));
     const cu = smooth((L - (tCut - 0.4)) / 0.5), xc = g.X(9) + 20;
@@ -406,7 +407,7 @@
   B['a2-grind'] = (L, sc, H) => {
     const items = [], P = 'a2-grind'; env(items, P, { glow: 0.06, gx: 1500 });
     const W = cueL(H), tI = W('a2-grind.1', 'inflation', 2.0);
-    inflRow(items, P, H, L, 13, (k) => (k < 10 ? 1 : smooth((L - 0.5 - (k - 10) * 0.5) / 0.5)), { yb: 900, s: 26, x0: 300, w: 70, hi: [10, 11, 12] });
+    inflRow(items, P, H, L, 13, (k) => (k < 10 ? 1 : smooth((L - 0.5 - (k - 10) * 0.5) / 0.5)), { yb: 900, s: 26, x0: 300, w: 70, hi: [10, 11, 12], nAxis: 14 });
     items.push(Tx(P + '-cap', 'inflation per year', 300, 980, 30, C.inflation, { level: 3 }));
     items.push(L1(P + '-l1', 'Inflation keeps rising', 1280, 360, 60, fade(L, tI - 1.2, 0.3)));
     return items;
@@ -416,7 +417,7 @@
   B['a2-1979'] = (L, sc, H) => {
     const items = [], P = 'a2-1979'; env(items, P, { glow: 0.06, gx: 1500 });
     const W = cueL(H), t79 = W('a2-1979.1', '1979', 0.2), t133 = W('a2-1979.1', '13.3%', 1.9);
-    const g = inflRow(items, P, H, L, 14, (k) => (k < 13 ? 1 : smooth((L - (t133 - 0.6)) / 0.6)), { yb: 900, s: 26, x0: 300, w: 70, hi: [13] });
+    const g = inflRow(items, P, H, L, 14, (k) => (k < 13 ? 1 : smooth((L - (t133 - 0.6)) / 0.6)), { yb: 900, s: 26, x0: 300, w: 70, hi: [13], nAxis: 14 });
     const tp = H.P(g.x0 + 13 * g.w + 30, g.yb - M.infl[13] * 100 * g.s, 0), bt = H.P(g.x0 + 13 * g.w + 30, g.yb, 0);
     items.push(Tx(P + '-v', '13.3%', tp[0] + 60, tp[1] + 16, 46, C.text, { weight: 700, claims: cl('inf1979'), alpha: on(L, t133), level: 2 }));
     items.push(Tx(P + '-y', '1979', bt[0], bt[1] + 46, 30, C['text-dim'], { align: 'center', claims: cl('y1979'), alpha: on(L, t79), level: 3 }));
@@ -725,7 +726,7 @@
       bar(items, P, 'n66', `${P}-a${k}`, 200 + k * w, yb, w - 6, M.nom1966[k + 1], s, 1, C.c1966, 1, { char: '1966', radius: 2 });
       bar(items, P, 'nm', `${P}-m${k}`, 1020 + k * w, yb, w - 6, M.nomMirror[k + 1], s, smooth((L - 0.3 - k * 0.1) / 0.3), C.cmirror, 1, { char: 'mirror', radius: 2 });
     }
-    items.push(Tx(P + '-a', 'first retiree', 200, 1000, 30, C.c1966, { series: '1966', level: 3 }));
+    items.push(Tx(P + '-a', 'first retiree', 170, 1000, 30, C.c1966, { series: '1966', level: 3 }));
     items.push(Tx(P + '-b', 'mirror retiree', 1020, 1000, 30, C.cmirror, { series: 'mirror', level: 3 }));
     const e = H.P(1020 + 29 * w + 8, yb, 0);
     items.push(Tx(P + '-y', '1995', e[0] + 30, e[1] + 46, 30, C['text-dim'], { align: 'center', claims: cl('y1995'), alpha: on(L, t95), level: 3 }));

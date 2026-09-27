@@ -316,8 +316,8 @@
     items.push(S('a3-1969-lead', 'polyline', { panel: 'a3-1969', z: 0, pts: [[600, 640], [scXY(byY[1928])[0] - 22, scXY(byY[1928])[1] - 16]], stroke: C.gain, lw: 2, alpha: at(L, t28), meta: { role: 'mark', panel: 'a3-1969' } }));
     items.push(Tx('a3-1928-y', '1928', co[0], co[1] - 40, 34, C.text, { align: 'center', weight: 700, alpha: at(L, t28), claims: [claim('y1928')], year: 1928 }));
     items.push(Tx('a3-1928-v', '4.9%', co[0], co[1] + 14, 40, C.gain, { align: 'center', weight: 700, alpha: at(L, t49), claims: [claim('rg1928')], level: 2 }));
-    items.push(L1('a3-1969-l1', 'Real average, whole plan', 640, 360, 52, fade(L, 0.2) * fadeOut(L, t28 - 0.3, 0.25)));
-    items.push(L1('a3-1969-l1b', '1928 averaged less', 640, 360, 52, fade(L, t49 - 0.2, 0.3), { claims: [claim('y1928')] }));
+    items.push(L1('a3-1969-l1', 'Real average, whole plan', 1280, 360, 52, fade(L, 0.2) * fadeOut(L, t28 - 0.3, 0.25)));
+    items.push(L1('a3-1969-l1b', '1928 averaged less', 1280, 360, 52, fade(L, t49 - 0.2, 0.3), { claims: [claim('y1928')] }));
     return items;
   };
   CAM['a3-1969'] = { f: 50, base: { z: -250 }, moves: [[0.8, 1.4, { z: 250 }]] };
@@ -350,7 +350,6 @@
   // (3) first decade: the four failures, their first 10 plan years lit on a 30-year strip
   B['a3-share'] = (L, sc, H) => {
     const items = []; env(items, 'a3-share', { glow: 0.10, gx: 960 });
-    startMap(items, 'a3-share', { g: { x0: 506, y0: 250, z: 1000 }, color: (s) => (s.depleted ? C.loss : s.less ? C.muted : C.gain), alpha: () => 0.8 });
     const tFirst = cue(H, 'a3-share.1', 'first', 2.5);
     FAIL.forEach((y, r) => {
       const y0 = 470 + r * 110;
@@ -369,7 +368,7 @@
 
   // first-decade real average return, all 69 start years (bars on a zero baseline)
   function decadeBars(items, panel, L, o) {
-    const x0 = o.x0 ?? 170, step = o.step ?? 23, bw = o.bw ?? 17, yb = o.yb ?? 760, k = o.k ?? 3000;
+    const x0 = o.x0 ?? 170, step = o.step ?? 23, bw = o.bw ?? 17, yb = o.yb ?? 760, k = o.k ?? 2600;
     ST.forEach((s, i) => {
       const gr = o.grow ? o.grow(s, i) : 1, v = s.realGeo10, h = Math.abs(v) * k * gr;
       items.push(S(`${panel}-b${s.y}`, 'rect', { panel, z: 0, rect: [x0 + i * step, v >= 0 ? yb - h : yb, bw, Math.max(2, h)], radius: 2, fill: o.color(s, i), alpha: o.alpha ? o.alpha(s, i) : 1,
@@ -386,11 +385,10 @@
     const p = H.P(g.x0 + (1966 - 1928) * g.step, g.yb + 90, 0);
     items.push(Tx('a3-decade-f', 'the four that ran out', p[0], p[1] + 20, 32, C.loss, { align: 'center', weight: 700, alpha: fade(L, tLost), level: 2 }));
     items.push(Tx('a3-decade-cap', 'average return per year over the first decade, after inflation, by start year', 170, 1000, 30, C['text-dim'], { alpha: fade(L, 0.8), level: 3 }));
-    items.push(Tx('a3-decade-z', 'zero', g.x0 - 20, g.yb + 10, 28, C['text-dim'], { align: 'right', alpha: fade(L, 0.5), level: 3 }));
     items.push(L1('a3-decade-l1', 'All four lost ground early', 640, 360, 60, fade(L, tLost - 0.2, 0.3)));
     return items;
   };
-  CAM['a3-decade'] = { f: 50, base: { z: 200 }, moves: [[0.8, 1.4, { z: -250, x: 150, tx: 150 }]], focus: 400, racks: [['turn', 0.8, 0]] };
+  CAM['a3-decade'] = { f: 50, base: { z: 150 }, moves: [[0.8, 1.4, { z: -300 }]], focus: 400, racks: [['turn', 0.8, 0]] };
 
   // the four failures' first decades as large bars, 1966 in its own colour
   function fourBars(items, panel, L, H, o) {
@@ -475,10 +473,10 @@
     dots(items, 'a3-nuance', L, { u, color: (s) => (s.depleted ? C.loss : s.less ? C.muted : C.gain),
       ring: (s) => (s.realGeo10 < 0 ? smooth((L - tBad + 0.3) / 0.4) : 0), ringColor: C.loss, alpha: (s) => (L > tBad - 0.3 && s.realGeo10 >= 0 ? 0.5 : 1) });
     scatterAxes(items, 'a3-nuance', H, fade(L, 1.8));
-    items.push(L1('a3-nuance-l1', 'The long average still matters', 640, 360, 52, fade(L, tLeft - 1.5, 0.3) * fadeOut(L, tBad - 0.4, 0.25)));
-    items.push(Tx('a3-nuance-69', 'all 69 start years', 640, 450, 34, C['text-dim'], { align: 'center', alpha: at(L, t69) * fadeOut(L, tBad - 0.4, 0.25), claims: [claim('n69')], level: 2 }));
-    items.push(L1('a3-nuance-l1b', 'Every failure: a bad first decade', 640, 360, 48, fade(L, tBad - 0.2, 0.3)));
-    items.push(Tx('a3-nuance-ring', 'ringed: lost money in the first decade', 640, 450, 32, C.loss, { align: 'center', alpha: fade(L, tBad + 0.2), level: 2 }));
+    items.push(L1('a3-nuance-l1', 'The long average still matters', 1280, 360, 52, fade(L, tLeft - 1.5, 0.3) * fadeOut(L, tBad - 0.4, 0.25)));
+    items.push(Tx('a3-nuance-69', 'all 69 start years', 1280, 270, 34, C['text-dim'], { align: 'center', alpha: at(L, t69) * fadeOut(L, tBad - 0.4, 0.25), claims: [claim('n69')], level: 2 }));
+    items.push(L1('a3-nuance-l1b', 'Every failure: a bad first decade', 1280, 360, 48, fade(L, tBad - 0.2, 0.3)));
+    items.push(Tx('a3-nuance-ring', 'ringed: lost money in the first decade', 1280, 270, 32, C.loss, { align: 'center', alpha: fade(L, tBad + 0.2), level: 2 }));
     return items;
   };
   CAM['a3-nuance'] = { f: 35, base: { z: -250 }, moves: [[0.8, 1.5, { z: 250 }]] };
