@@ -406,3 +406,133 @@ V08 theo nhãn:
 - Tốc độ render trên CPU vượt ngân sách.
 
 **DỪNG**, chờ chủ dự án duyệt hướng hình.
+
+---
+
+# M2c — NGỮ PHÁP HÌNH + ANIMATIC + ĐO RENDER
+
+Nhánh: **`claude/opus55-cine-phase-d-jw6me1`**. checks/ không đổi; SHA khớp LOCK trước mỗi commit. Không render lại lookdev M2b. Bắt đầu 03:36 UTC, xong khoảng 05:25 UTC (khoảng 110 phút, dưới mốc 150).
+
+## 1. Ngữ pháp hình — `preprod/visual-grammar.md`
+Bảng trong file: vật thể → biến → đơn vị → lúc giới thiệu → câu lời đọc → cách gắn nhãn. Các điểm chính:
+
+| vật thể | ý nghĩa |
+|---|---|
+| đường 30 khối đá | thời gian; năm **khắc** trên cả bốn mặt |
+| chiều cao khối | lợi suất năm đó; năm lỗ **chìm dưới đường ray** (ray = mức 0 %) |
+| hai bể kính | số dư, **đi trên con đường**; mỗi năm bể đứng trên khối của năm đó |
+| vòi | khoản rút; to dần theo đô-la danh nghĩa |
+| bể 1966 | làn trái, đi 1966 → 1995 |
+| bể mirror | làn phải, đi **ngược lại** 1995 → 1966 |
+| bão | một **nơi chốn**: mây, mưa, sương trên khối 1973–74; bể chỉ ở trong bão khi đứng trên hai khối đó |
+
+- **Diễn biến một năm (nhân và quả cùng khung):** vòi rót khoản rút → mực nước đổi theo khối và lạm phát năm đó → bể bước sang khối kế.
+- **Một quyết định thiết kế cần chủ dự án biết:**
+  - Chiều cao khối là **lợi suất danh nghĩa**. Đây là 30 con số giống hệt nhau mà hai người đi qua theo thứ tự ngược, đúng câu "cùng lợi suất, khác thứ tự".
+  - Mực nước là **số dư thực**.
+  - Vì vậy khối cao luôn làm nước dâng, khối chìm luôn làm nước hạ. Riêng khối dương thấp trong năm lạm phát cao vẫn có thể làm nước hạ; đó chính là bài học lạm phát của hồi 2.
+- **Bỏ:** đá viền đường của M2b (không mang nghĩa). Mặt đất, bầu trời, bụi xa làm nền mờ.
+- **Năm câu dạy thế giới** thêm vào hồi 1, không có số; claims không đổi (71):
+
+  | id | câu | wpm |
+  |---|---|---|
+  | a1-start.2 | "Their money is the water in this glass tank." | 150 |
+  | a1-raise.2 | "The tap is that withdrawal, and it widens as prices rise." | 149 |
+  | a1-horizon.2 | "Each stone on this road is one year's return; a losing year sinks below the road." | 165 |
+  | a1-horizon.3 | "As the tank passes each stone, the water rises or falls with that year." | 162 |
+  | a1-mirror-rule.3 | "So the mirror tank walks the same road, the other way." | 163 |
+
+  - Cả năm câu dùng V8 (Eric, eleven_v3), cùng quy tắc chọn take.
+  - a1-start.2 đọc quá nhanh ở mọi take (203–329 wpm) nên được thêm dấu ngừng trong phần đọc, như các câu khác. Sau đó take v3 đạt 150 wpm; không câu mới nào phải dùng multilingual.
+  - Credit ElevenLabs: **499 ký tự / 18 lần gọi**, kể cả các take bị thay.
+- Timeline toàn phim đã sinh lại: **729,6 s**, 123 câu. `npm test` 64/64 đạt.
+
+## 2. Sửa thiết kế — kiểm trên 6 ảnh tĩnh chất lượng cuối (`preprod/style-m2c/still-*.png`)
+- **Nhãn:**
+  - Tấm nền tối (`#0B0F17`, 80%), gắn vào bể.
+  - Huy hiệu ILLUSTRATIVE, giá trị và cơ sở ("in 1966 dollars") xếp thành một chồng đi cùng nhau.
+  - Nhãn được đẩy khỏi hộp chiếu của bể/khối trước khi vẽ.
+  - Hai cảnh phải khung lại để có trời phía trên bể: a1-start và a2-1974inf.
+- **Màu chất lỏng:**
+  - 1966 hổ phách: albedo 0,9 × `#FFC857`, tự sáng 0,45.
+  - Mirror xanh đậm hơn: 0,5 × `#5A9CEB`, tự sáng 0,2.
+  - Bể mirror có viền trên **đứt đoạn**, bể 1966 viền liền: dấu hiệu hình dạng, không phụ thuộc màu.
+  - Ảnh thang xám và mô phỏng deuteranopia/protanopia (Machado 2009) nằm cạnh mỗi ảnh tĩnh (`*-gray.png`, `*-deutan.png`, `*-protan.png`).
+  - Hổ phách vẫn đọc ra vàng dưới trời bão và dưới cả hai mô phỏng.
+  - **Độ sáng đo trên animatic:** hổ phách 157–181, xanh 137–154 (trên 255). Khác biệt chỉ 20–27 mức, nên ở thang xám hai bể phân biệt được nhưng **chưa mạnh**. Hình viền và làn đường gánh phần còn lại.
+- **Khối tiền cảnh:** camera cao ≥ 2,3 m khi nhìn dọc đường, hoặc đứng ngoài đường ray khi quay ngang.
+- **Banding trời:** dither tam giác ±2 LSB ở vùng tối, ±1 ở vùng sáng.
+- **Kết quả checks trên 6 ảnh tĩnh** (`out/m2c/stills-root`, mỗi ảnh giữ 4 s; `checks/run.sh`, không sửa checks):
+
+  | luật | kết quả | chi tiết |
+  |---|---|---|
+  | V08 | **ĐẠT** | tương phản tệ nhất 9,75:1 |
+  | C14 | **ĐẠT** | 0 mẫu không đọc được ở 25% |
+  | V11 | **ĐẠT** | 0 va chạm, sau hai lần khung lại |
+  | F08 | **ĐẠT** | banding tệ nhất 0,03% |
+
+  - Lần chạy đầu cho kết quả rỗng: độ hiện của nhãn tính theo thời gian video thay vì thời gian câu chuyện. Đã sửa rồi chạy lại.
+  - Lần chạy thứ hai V11 trượt: nhãn "$1 million" và "lost 14.7%" chạm bể, do thiếu chỗ trời phía trên. Đã khung lại.
+- **Âm thanh — ASR nghe đúng "1991":**
+  - **Nguyên nhân thật:** đoạn cắt đuôi câu quyết định (cuối từ ASR + 90 ms) cắt mất âm cuối của "ninety-one". Riêng stem giọng vẫn nghe đúng, nhưng thêm bất kỳ lớp nào (nhạc, âm vật lý, thậm chí room tone −60 dB) là ASR nghe thành "1990". M2 master cũng cho "1990" trên đoạn này; A14 của M2 đạt chỉ nhờ ngữ cảnh cả bài.
+  - **Sửa:** cắt ở +250 ms.
+  - **Thêm:**
+    - Lớp âm vật lý giảm −10 dB khi có lời.
+    - Nhạc, whoosh và SFX giảm −24 dB trong cửa sổ −0,5 → +1,6 s quanh mỗi con số.
+  - **Kết quả trên animatic:** **24/24 con số nghe đúng**, kể cả "1991" (`out/m2c/asr-numbers.json`).
+
+## 3. Animatic — `out/m2c/animatic.mp4` (854×480, 133,9 s, có giọng, nhạc, âm vật lý)
+- **(a) Cold open + ident**, rồi 14 câu hồi 1 dạy thế giới:
+  - a1-est → a1-start (bể, $1 million) → a1-rule (vòi mở, $40,000);
+  - a1-raise (vòi to dần) → a1-horizon (con đường, khối, ray = 0 %, bể đi qua 1966–1967: nước hạ rồi dâng);
+  - a1-mirror-in / a1-mirror-rule (bể mirror ở đầu 1995, đi ngược 1995 → 1993).
+- **(b) 1973–74:**
+  - Bể 1966 bước vào vùng bão trên khối 1973 rồi 1974.
+  - "lost 14.7%": sấm chớp, nước hạ.
+  - "prices rose 12.3%": vòi to thêm đúng 12,3% trong khung đó.
+  - "$461,000".
+  - Cắt sang bể mirror ở khối 1987 trong nắng: "$1.27 million" + ILLUSTRATIVE.
+- **Chế độ rẻ:** không mưa, không làm mờ chuyển động, không DOF/bloom, bóng 1024. Render 1.019 s cho 133,9 s (7,6 s/s, 3 worker). −14,1 LUFS.
+- **Giới hạn đã biết:**
+  - Đám mây bão là khối cầu mờ, thô ở 480p.
+  - Huy hiệu ILLUSTRATIVE hiện trước con số 0,2 s và có lúc đứng lệch khỏi chồng trong khoảng đó (đúng luật S08: huy hiệu không muộn hơn số).
+  - Cảnh a1-horizon.3 là bản xem trước hai năm đầu (1966, 1967) để dạy quy tắc; sau đó bể 1966 đứng ở 1968 trong các cảnh mirror.
+
+## 4. Đo render sau giảm tải (cho bản cuối)
+**Giảm tải** (chế độ `fast` trong `render-d/look/world2.js`):
+- Render 3D ở 1280×720 rồi phóng lên 1080p, có làm nét nhẹ.
+- Làm mờ chuyển động theo vận tốc máy quay: chiếu lại mỗi điểm ảnh bằng camera lúc mở và đóng màn trập 180°, 10 mẫu.
+- LOD: mưa 2.600 vệt thay vì 6.000; bụi 900 thay vì 2.200.
+- Tia nắng/volumetric chỉ ở cảnh có mặt trời trong khung.
+
+**Benchmark 5 s cho mỗi loại cảnh** (máy rảnh, 1 trang; `out/m2c/bench.json`):
+
+| loại cảnh | đoạn | **sau giảm tải (s/s)** | trước giảm tải (s/s)* | giảm |
+|---|---|---|---|---|
+| trời quang | a1-horizon.1 | **40,8** | 103,3 | 2,5× |
+| bão (mưa, chớp) | a2-1974inf.1 | **45,9** | 116,1 | 2,5× |
+| cận cảnh | a1-start.1 | **51,8** | 126,5 | 2,4× |
+
+\* Chế độ final của M2b: 1080p, phần dư subframe nửa độ phân giải; đo trên 1 s của cùng đoạn.
+
+- Ảnh so sánh cùng khung (trái = trước, phải = sau): `preprod/style-m2c/bench-{clear,storm,close}.png` và bản cắt 1:1 `*-crop.png`. Ở 1:1 gần như không phân biệt được; bản sau giảm tải cạnh hơi gắt hơn vì làm nét sau phóng.
+- Cả ba loại cảnh **dưới ngưỡng 60 s/s** của BRIEF-D §8b.
+- Số chạy khi máy đang bận (bị lấn CPU) có trong `out/m2c/bench-contended.json`; không dùng.
+- **Ước tính toàn phim trong MỘT phiên** (container 4 nhân, không GPU, 1 trang):
+  - Phim 729,6 s.
+  - Tỷ lệ giả định: khoảng 55% trời quang/toàn cảnh, 10% bão, 35% cận cảnh → trung bình khoảng **45 s/s** → **khoảng 9,1 giờ** render, cộng encode, âm thanh và checks.
+  - **Không vừa một phiên cỡ 4 giờ.**
+  - Chạy nhiều trang trong cùng máy không nhanh hơn (đo ở M2b: mọi trang dùng chung một tiến trình GPU phần mềm).
+  - Muốn xong trong một phiên cỡ 4 giờ cần: hoặc **3 container song song** (khoảng 3 giờ mỗi container), hoặc máy có GPU.
+
+## Việc chưa làm / cần duyệt
+- Chưa render lại lookdev chất lượng cuối (đúng yêu cầu).
+- Chưa làm M3.
+- Chưa chạy checks cả bài trên animatic (animatic chỉ để kiểm sự liên kết).
+- Các sửa lỗi M3 đã biết còn nguyên, trừ phần đã sửa ở đây: nhãn/tương phản, banding, "1991", ducking.
+- Cần chủ dự án duyệt:
+  - (1) quy ước "chiều cao khối = lợi suất danh nghĩa; mực nước = số dư thực";
+  - (2) nhịp dạy thế giới trong hồi 1;
+  - (3) phương án render toàn phim (3 container song song hay máy có GPU).
+
+**DỪNG**, chờ duyệt.
