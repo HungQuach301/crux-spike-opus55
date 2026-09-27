@@ -304,8 +304,8 @@ def main():
     dry *= 10 ** (env_db / 20)[:, None]
     # one reverb space
     irL, irR = reverb_ir()
-    wetL = signal.fftconvolve(dry[:, 0], irL)[:N]
-    wetR = signal.fftconvolve(dry[:, 1], irR)[:N]
+    wetL = signal.oaconvolve(dry[:, 0], irL)[:N]  # overlap-add: memory stays small for a full-length film
+    wetR = signal.oaconvolve(dry[:, 1], irR)[:N]
     music = dry + 0.22 * np.stack([wetL, wetR], 1)
 
     # ---------------------------------------------------------------- voice
@@ -501,8 +501,14 @@ def main():
         stems[k] = stems[k] * gain
     # look-ahead true-peak limiter (4x oversampled detection), ceiling -1.3 dBTP
     ceil = 10 ** (-1.3 / 20)
-    up = signal.resample_poly(mix, 4, 1, axis=0)
-    pk = np.abs(up).max(1).reshape(-1, 4).max(1)[:N]
+    # 4x oversampled peak per sample, in chunks (a full-length 4x buffer does not fit the memory of a 12-minute film)
+    pk = np.zeros(N)
+    CH, OV = SR * 20, 256
+    for i0 in range(0, N, CH):
+        a0, a1 = max(0, i0 - OV), min(N, i0 + CH + OV)
+        up = signal.resample_poly(mix[a0:a1], 4, 1, axis=0)
+        p_ = np.abs(up).max(1).reshape(-1, 4).max(1)
+        pk[i0:min(N, i0 + CH)] = p_[i0 - a0:i0 - a0 + min(CH, N - i0)]
     need = np.minimum(1, ceil / np.maximum(pk, 1e-9))
     la = int(0.003 * SR)
     need = np.minimum.accumulate(np.concatenate([need[la:], np.ones(la)])[::-1])[::-1] if False else need
