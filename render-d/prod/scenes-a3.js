@@ -300,7 +300,7 @@
     const p = H.P(1600, SC.yb + 20, 0), q = H.P(330, SC.top - 20, 0);
     const p0 = H.P(330, SC.yb + 20, 0); void p;
     items.push(Tx(panel + '-axx', 'higher real average →', p0[0], p0[1] + 48, 30, C['text-dim'], { alpha: a, level: 3 }));
-    items.push(Tx(panel + '-axy', '↑ more left at the end, after inflation', q[0] + 16, q[1] - 16, 30, C['text-dim'], { alpha: a, level: 3 }));
+    items.push(Tx(panel + '-axy', '↑ more left at the end, after inflation', p0[0], p0[1] + 90, 30, C['text-dim'], { alpha: a, level: 3 })); void q; // under the x caption: clear of the headline
   }
   B['a3-1969'] = (L, sc, H) => {
     const items = []; env(items, 'a3-1969', { glow: 0.09, gx: 1500 });
