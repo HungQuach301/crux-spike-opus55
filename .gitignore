@@ -35,3 +35,8 @@ out/m2b/root/out/audio/master.wav
 out/m2b/root/out/checks/
 out/m2b/root/out/video.mp4
 out/m2b/stills/
+out/m2c/animatic-picture.mp4
+out/m2c/*.log
+out/m2c/root/out/audio/master.wav
+out/m2c/stills-root/out/checks/
+out/m2c/stills-root/out/video.mp4
