@@ -1,0 +1,2333 @@
+{
+ "a2-est-ax0": {
+  "t": 203.0333,
+  "x": 477.6,
+  "level": null,
+  "role": "axis-label",
+  "claims": 1
+ },
+ "a2-est-ax1": {
+  "t": 203.0333,
+  "x": 1442.4,
+  "level": null,
+  "role": "axis-label",
+  "claims": 1
+ },
+ "a2-est-sub": {
+  "t": 203.8,
+  "x": 1280,
+  "level": 2,
+  "role": "label",
+  "claims": 0
+ },
+ "a2-est-l1": {
+  "t": 204.9,
+  "x": 1280,
+  "level": 1,
+  "role": "label",
+  "claims": 0
+ },
+ "a2-est-lab-1966": {
+  "t": 206.2333,
+  "x": 446.7,
+  "level": 3,
+  "role": "label",
+  "claims": 0
+ },
+ "a2-est-lab-mirror": {
+  "t": 206.2333,
+  "x": 461.6,
+  "level": 3,
+  "role": "label",
+  "claims": 0
+ },
+ "a2-q-l1": {
+  "t": 208.5,
+  "x": 960,
+  "level": 1,
+  "role": "label",
+  "claims": 0
+ },
+ "a2-q-l2": {
+  "t": 212.2333,
+  "x": 960,
+  "level": 2,
+  "role": "label",
+  "claims": 0
+ },
+ "a2-y1-l1": {
+  "t": 214.3667,
+  "x": 640,
+  "level": 1,
+  "role": "label",
+  "claims": 0
+ },
+ "a2-y1-n66": {
+  "t": 215.6,
+  "x": 721.2,
+  "level": null,
+  "role": "label",
+  "claims": 1
+ },
+ "a2-y1-v66": {
+  "t": 217.5333,
+  "x": 699.7,
+  "level": 2,
+  "role": "label",
+  "claims": 1
+ },
+ "a2-y1-nm": {
+  "t": 219.6333,
+  "x": 1230.5,
+  "level": null,
+  "role": "label",
+  "claims": 0
+ },
+ "a2-y1-ym": {
+  "t": 221.0667,
+  "x": 1235.1,
+  "level": 3,
+  "role": "label",
+  "claims": 1
+ },
+ "a2-y1-badge": {
+  "t": 223.7333,
+  "x": 1370.3,
+  "level": null,
+  "role": "badge",
+  "claims": 0
+ },
+ "a2-y1-vm": {
+  "t": 224.0333,
+  "x": 1127.3,
+  "level": 2,
+  "role": "label",
+  "claims": 1
+ },
+ "a2-gap1-ax0": {
+  "t": 226.3333,
+  "x": 359.8,
+  "level": null,
+  "role": "axis-label",
+  "claims": 1
+ },
+ "a2-gap1-ax1": {
+  "t": 226.3333,
+  "x": 1560.2,
+  "level": null,
+  "role": "axis-label",
+  "claims": 1
+ },
+ "a2-gap1-lab-1966": {
+  "t": 227.1667,
+  "x": 460.5,
+  "level": 3,
+  "role": "label",
+  "claims": 0
+ },
+ "a2-gap1-lab-mirror": {
+  "t": 227.1667,
+  "x": 475.4,
+  "level": 3,
+  "role": "label",
+  "claims": 0
+ },
+ "a2-gap1-l1": {
+  "t": 228.6,
+  "x": 1280,
+  "level": 1,
+  "role": "label",
+  "claims": 0
+ },
+ "a2-infl-l1": {
+  "t": 230.0667,
+  "x": 1280,
+  "level": 1,
+  "role": "label",
+  "claims": 0
+ },
+ "a2-infl-cap1": {
+  "t": 230.2667,
+  "x": 628.2,
+  "level": 3,
+  "role": "label",
+  "claims": 0
+ },
+ "a2-infl-y": {
+  "t": 232.3667,
+  "x": 436.2,
+  "level": 3,
+  "role": "label",
+  "claims": 1
+ },
+ "a2-infl-v": {
+  "t": 233.9333,
+  "x": 581.3,
+  "level": 2,
+  "role": "label",
+  "claims": 1
+ },
+ "a2-infl-cap2": {
+  "t": 237.2667,
+  "x": 1224.6,
+  "level": 3,
+  "role": "label",
+  "claims": 0
+ },
+ "a2-7374-ax0": {
+  "t": 238.7,
+  "x": 360,
+  "level": null,
+  "role": "axis-label",
+  "claims": 1
+ },
+ "a2-7374-ax1": {
+  "t": 238.7,
+  "x": 1560,
+  "level": null,
+  "role": "axis-label",
+  "claims": 1
+ },
+ "a2-7374-lab-1966": {
+  "t": 239.1,
+  "x": 469.5,
+  "level": 3,
+  "role": "label",
+  "claims": 0
+ },
+ "a2-7374-lab-mirror": {
+  "t": 239.1,
+  "x": 484.4,
+  "level": 3,
+  "role": "label",
+  "claims": 0
+ },
+ "a2-7374-sub": {
+  "t": 239.2,
+  "x": 1280,
+  "level": 2,
+  "role": "label",
+  "claims": 0
+ },
+ "a2-7374-l1": {
+  "t": 240.9,
+  "x": 1280,
+  "level": 1,
+  "role": "label",
+  "claims": 0
+ },
+ "a2-7374-y7": {
+  "t": 242.5,
+  "x": 573.7,
+  "level": 2,
+  "role": "label",
+  "claims": 1
+ },
+ "a2-7374-y8": {
+  "t": 243.7667,
+  "x": 618.5,
+  "level": 2,
+  "role": "label",
+  "claims": 1
+ },
+ "a2-1974inf-l1": {
+  "t": 245.5667,
+  "x": 640,
+  "level": 1,
+  "role": "label",
+  "claims": 1
+ },
+ "a2-1974inf-vr": {
+  "t": 248.2333,
+  "x": 1114.3,
+  "level": 2,
+  "role": "label",
+  "claims": 1
+ },
+ "a2-1974inf-vi": {
+  "t": 251.6333,
+  "x": 1524,
+  "level": 2,
+  "role": "label",
+  "claims": 1
+ },
+ "a2-1974inf-sub": {
+  "t": 252.2,
+  "x": 640,
+  "level": 2,
+  "role": "label",
+  "claims": 0
+ },
+ "a2-bal74-basis": {
+  "t": 254,
+  "x": 640,
+  "level": 2,
+  "role": "label",
+  "claims": 1
+ },
+ "a2-bal74-who": {
+  "t": 254.1667,
+  "x": 1245.1,
+  "level": 3,
+  "role": "label",
+  "claims": 1
+ },
+ "a2-bal74-refl": {
+  "t": 254.2667,
+  "x": 1388.3,
+  "level": 3,
+  "role": "label",
+  "claims": 0
+ },
+ "a2-bal74-e74": {
+  "t": 257.8,
+  "x": 1670.6,
+  "level": 3,
+  "role": "label",
+  "claims": 1
+ },
+ "a2-bal74-pre": {
+  "t": 257.8,
+  "x": 640,
+  "level": 2,
+  "role": "label",
+  "claims": 0
+ },
+ "a2-bal74-l1": {
+  "t": 259.8667,
+  "x": 640,
+  "level": 1,
+  "role": "label",
+  "claims": 1
+ },
+ "a2-bal74m-a": {
+  "t": 264.1333,
+  "x": 250.2,
+  "level": 3,
+  "role": "label",
+  "claims": 0
+ },
+ "a2-bal74m-b": {
+  "t": 264.1333,
+  "x": 715.1,
+  "level": 3,
+  "role": "label",
+  "claims": 0
+ },
+ "a2-bal74m-same": {
+  "t": 265.3333,
+  "x": 1360,
+  "level": 2,
+  "role": "label",
+  "claims": 0
+ },
+ "a2-bal74m-badge": {
+  "t": 267.2667,
+  "x": 1216.1,
+  "level": null,
+  "role": "badge",
+  "claims": 0
+ },
+ "a2-bal74m-l1": {
+  "t": 267.5333,
+  "x": 1360,
+  "level": 1,
+  "role": "label",
+  "claims": 1
+ },
+ "a2-bal74m-basis": {
+  "t": 267.5333,
+  "x": 1360,
+  "level": 2,
+  "role": "label",
+  "claims": 0
+ },
+ "a2-bite-c0": {
+  "t": 272.0333,
+  "x": 560,
+  "level": 3,
+  "role": "label",
+  "claims": 1
+ },
+ "a2-bite-l1": {
+  "t": 272.0333,
+  "x": 640,
+  "level": 1,
+  "role": "label",
+  "claims": 0
+ },
+ "a2-bite-c1": {
+  "t": 272.4667,
+  "x": 1360,
+  "level": 3,
+  "role": "label",
+  "claims": 0
+ },
+ "a2-bite-badge": {
+  "t": 276.9,
+  "x": 1246.1,
+  "level": null,
+  "role": "badge",
+  "claims": 0
+ },
+ "a2-bite-l1b": {
+  "t": 277.2,
+  "x": 1280,
+  "level": 1,
+  "role": "label",
+  "claims": 1
+ },
+ "a2-bite-basis": {
+  "t": 277.2,
+  "x": 1280,
+  "level": 2,
+  "role": "label",
+  "claims": 0
+ },
+ "a2-bite-still": {
+  "t": 282.2667,
+  "x": 1360,
+  "level": 2,
+  "role": "label",
+  "claims": 0
+ },
+ "a2-sell-l1": {
+  "t": 285.4,
+  "x": 1280,
+  "level": 1,
+  "role": "label",
+  "claims": 0
+ },
+ "a2-sell-cw": {
+  "t": 287.3667,
+  "x": 1076.6,
+  "level": 3,
+  "role": "label",
+  "claims": 0
+ },
+ "a2-sell-cr": {
+  "t": 290.0333,
+  "x": 1004.5,
+  "level": 3,
+  "role": "label",
+  "claims": 0
+ },
+ "a2-seq-l1": {
+  "t": 292.1333,
+  "x": 960,
+  "level": 1,
+  "role": "label",
+  "claims": 0
+ },
+ "a2-7576-l1": {
+  "t": 294.1,
+  "x": 1280,
+  "level": 1,
+  "role": "label",
+  "claims": 0
+ },
+ "a2-7576n-ya": {
+  "t": 296.2667,
+  "x": 1088.5,
+  "level": 3,
+  "role": "label",
+  "claims": 1
+ },
+ "a2-7576n-l1": {
+  "t": 296.4333,
+  "x": 640,
+  "level": 1,
+  "role": "label",
+  "claims": 0
+ },
+ "a2-7576n-sub": {
+  "t": 296.8667,
+  "x": 640,
+  "level": 2,
+  "role": "label",
+  "claims": 0
+ },
+ "a2-7576n-va": {
+  "t": 298.2667,
+  "x": 1103.1,
+  "level": 2,
+  "role": "label",
+  "claims": 1
+ },
+ "a2-7576n-yb": {
+  "t": 300.7333,
+  "x": 1504.9,
+  "level": 3,
+  "role": "label",
+  "claims": 1
+ },
+ "a2-7576n-vb": {
+  "t": 302.6333,
+  "x": 1515.7,
+  "level": 2,
+  "role": "label",
+  "claims": 1
+ },
+ "a2-7576b-ax0": {
+  "t": 304.2667,
+  "x": 9.7,
+  "level": null,
+  "role": "axis-label",
+  "claims": 1
+ },
+ "a2-7576b-ax1": {
+  "t": 304.2667,
+  "x": 1210.1,
+  "level": null,
+  "role": "axis-label",
+  "claims": 1
+ },
+ "a2-7576b-lab-1966": {
+  "t": 304.2667,
+  "x": 428,
+  "level": 3,
+  "role": "label",
+  "claims": 0
+ },
+ "a2-7576b-refl": {
+  "t": 304.2667,
+  "x": 1096.3,
+  "level": 3,
+  "role": "label",
+  "claims": 0
+ },
+ "a2-7576b-l1": {
+  "t": 304.7,
+  "x": 1280,
+  "level": 1,
+  "role": "label",
+  "claims": 0
+ },
+ "a2-7576b-wdl": {
+  "t": 308.5667,
+  "x": 966.5,
+  "level": 3,
+  "role": "label",
+  "claims": 0
+ },
+ "a2-grind-cap": {
+  "t": 310.5,
+  "x": 422.9,
+  "level": 3,
+  "role": "label",
+  "claims": 0
+ },
+ "a2-grind-l1": {
+  "t": 311.4,
+  "x": 1280,
+  "level": 1,
+  "role": "label",
+  "claims": 0
+ },
+ "a2-1979-cap": {
+  "t": 314.3667,
+  "x": 422.9,
+  "level": 3,
+  "role": "label",
+  "claims": 0
+ },
+ "a2-1979-y": {
+  "t": 314.5,
+  "x": 1213.9,
+  "level": 3,
+  "role": "label",
+  "claims": 1
+ },
+ "a2-1979-l1": {
+  "t": 314.7,
+  "x": 1280,
+  "level": 1,
+  "role": "label",
+  "claims": 0
+ },
+ "a2-1979-v": {
+  "t": 316.2333,
+  "x": 1376.2,
+  "level": 2,
+  "role": "label",
+  "claims": 1
+ },
+ "a2-1981-y": {
+  "t": 318.7333,
+  "x": 967.3,
+  "level": 3,
+  "role": "label",
+  "claims": 1
+ },
+ "a2-1981-cap": {
+  "t": 319.0333,
+  "x": 415.2,
+  "level": 3,
+  "role": "label",
+  "claims": 0
+ },
+ "a2-1981-l1": {
+  "t": 321.7,
+  "x": 1280,
+  "level": 1,
+  "role": "label",
+  "claims": 1
+ },
+ "a2-1981-nb": {
+  "t": 321.7,
+  "x": 1280,
+  "level": 2,
+  "role": "label",
+  "claims": 0
+ },
+ "a2-1981-basis": {
+  "t": 327.9333,
+  "x": 1280,
+  "level": 2,
+  "role": "label",
+  "claims": 1
+ },
+ "a2-1981-real": {
+  "t": 328.5,
+  "x": 1280,
+  "level": 2,
+  "role": "label",
+  "claims": 0
+ },
+ "a2-1981-badge": {
+  "t": 330.8667,
+  "x": 1186.1,
+  "level": null,
+  "role": "badge",
+  "claims": 0
+ },
+ "a2-1981-l1b": {
+  "t": 331.1333,
+  "x": 1280,
+  "level": 1,
+  "role": "label",
+  "claims": 1
+ },
+ "a2-1982-cap": {
+  "t": 333.3,
+  "x": 401.9,
+  "level": 3,
+  "role": "label",
+  "claims": 0
+ },
+ "a2-1982-y": {
+  "t": 334.7,
+  "x": 1258.3,
+  "level": 2,
+  "role": "label",
+  "claims": 1
+ },
+ "a2-1982-l1": {
+  "t": 336.2333,
+  "x": 640,
+  "level": 1,
+  "role": "label",
+  "claims": 0
+ },
+ "a2-1982r-who": {
+  "t": 339.2,
+  "x": 1280,
+  "level": 2,
+  "role": "label",
+  "claims": 1
+ },
+ "a2-1982r-l1": {
+  "t": 341.0333,
+  "x": 1280,
+  "level": 1,
+  "role": "label",
+  "claims": 1
+ },
+ "a2-1982w-cap2": {
+  "t": 343.2667,
+  "x": 1154.4,
+  "level": 3,
+  "role": "label",
+  "claims": 0
+ },
+ "a2-1982w-l1": {
+  "t": 345.3333,
+  "x": 640,
+  "level": 1,
+  "role": "label",
+  "claims": 1
+ },
+ "a2-1982w-cap": {
+  "t": 347.7333,
+  "x": 378.8,
+  "level": 3,
+  "role": "label",
+  "claims": 0
+ },
+ "a2-gains80-l1": {
+  "t": 348.8667,
+  "x": 1280,
+  "level": 1,
+  "role": "label",
+  "claims": 1
+ },
+ "a2-gains80-cr": {
+  "t": 349.1333,
+  "x": 411.4,
+  "level": 3,
+  "role": "label",
+  "claims": 0
+ },
+ "a2-gains80-sub": {
+  "t": 349.3667,
+  "x": 1280,
+  "level": 2,
+  "role": "label",
+  "claims": 0
+ },
+ "a2-gains80-l10": {
+  "t": 350.5333,
+  "x": 1423.3,
+  "level": 2,
+  "role": "label",
+  "claims": 1
+ },
+ "a2-gains80-cw": {
+  "t": 352.4667,
+  "x": 1487.3,
+  "level": 3,
+  "role": "label",
+  "claims": 0
+ },
+ "a2-gains80-cw2": {
+  "t": 352.4667,
+  "x": 1462.2,
+  "level": 3,
+  "role": "label",
+  "claims": 0
+ },
+ "a2-gains80-who2": {
+  "t": 353.1,
+  "x": 1280,
+  "level": 3,
+  "role": "label",
+  "claims": 1
+ },
+ "a2-gains80-fell": {
+  "t": 355.5333,
+  "x": 1407.1,
+  "level": 3,
+  "role": "label",
+  "claims": 0
+ },
+ "a2-late-ax0": {
+  "t": 358.7667,
+  "x": 360,
+  "level": null,
+  "role": "axis-label",
+  "claims": 1
+ },
+ "a2-late-ax1": {
+  "t": 358.7667,
+  "x": 1560,
+  "level": null,
+  "role": "axis-label",
+  "claims": 1
+ },
+ "a2-late-lab-1966": {
+  "t": 358.7667,
+  "x": 1098.2,
+  "level": 3,
+  "role": "label",
+  "claims": 0
+ },
+ "a2-late-bl": {
+  "t": 359.0667,
+  "x": 1159,
+  "level": 2,
+  "role": "label",
+  "claims": 0
+ },
+ "a2-late-l1": {
+  "t": 359.8333,
+  "x": 640,
+  "level": 1,
+  "role": "label",
+  "claims": 0
+ },
+ "a2-mirror-boom-ax0": {
+  "t": 361.1667,
+  "x": 359.8,
+  "level": null,
+  "role": "axis-label",
+  "claims": 1
+ },
+ "a2-mirror-boom-ax1": {
+  "t": 361.1667,
+  "x": 1560.2,
+  "level": null,
+  "role": "axis-label",
+  "claims": 1
+ },
+ "a2-mirror-boom-l1": {
+  "t": 361.6,
+  "x": 1280,
+  "level": 1,
+  "role": "label",
+  "claims": 0
+ },
+ "a2-mirror-boom-lab-mirror": {
+  "t": 361.8333,
+  "x": 482.9,
+  "level": 3,
+  "role": "label",
+  "claims": 0
+ },
+ "a2-mirror-boom-bl": {
+  "t": 363.9,
+  "x": 706.5,
+  "level": 2,
+  "role": "label",
+  "claims": 0
+ },
+ "a2-climb-ax0": {
+  "t": 367.2333,
+  "x": 430.5,
+  "level": null,
+  "role": "axis-label",
+  "claims": 1
+ },
+ "a2-climb-ax1": {
+  "t": 367.2333,
+  "x": 1489.5,
+  "level": null,
+  "role": "axis-label",
+  "claims": 1
+ },
+ "a2-climb-lab-1966": {
+  "t": 367.2333,
+  "x": 811.1,
+  "level": 3,
+  "role": "label",
+  "claims": 0
+ },
+ "a2-climb-lab-mirror": {
+  "t": 367.2333,
+  "x": 826,
+  "level": 3,
+  "role": "label",
+  "claims": 0
+ },
+ "a2-climb-l1": {
+  "t": 367.5,
+  "x": 640,
+  "level": 1,
+  "role": "label",
+  "claims": 0
+ },
+ "a2-climax-in-ax0": {
+  "t": 369.8333,
+  "x": 287.9,
+  "level": null,
+  "role": "axis-label",
+  "claims": 1
+ },
+ "a2-climax-in-ax1": {
+  "t": 369.8333,
+  "x": 1248,
+  "level": null,
+  "role": "axis-label",
+  "claims": 1
+ },
+ "a2-climax-in-lab-1966": {
+  "t": 369.8333,
+  "x": 1090.2,
+  "level": 3,
+  "role": "label",
+  "claims": 0
+ },
+ "a2-climax-in-lab-mirror": {
+  "t": 369.8333,
+  "x": 1105.1,
+  "level": 3,
+  "role": "label",
+  "claims": 0
+ },
+ "a2-climax-in-l1": {
+  "t": 370,
+  "x": 960,
+  "level": 1,
+  "role": "label",
+  "claims": 1
+ },
+ "a2-climax-ax0": {
+  "t": 372.1333,
+  "x": 336.7,
+  "level": null,
+  "role": "axis-label",
+  "claims": 1
+ },
+ "a2-climax-ax1": {
+  "t": 372.1333,
+  "x": 1227.1,
+  "level": null,
+  "role": "axis-label",
+  "claims": 1
+ },
+ "a2-climax-lab-1966": {
+  "t": 372.1333,
+  "x": 1090.2,
+  "level": 3,
+  "role": "label",
+  "claims": 0
+ },
+ "a2-climax-lab-mirror": {
+  "t": 372.1333,
+  "x": 1105.1,
+  "level": 3,
+  "role": "label",
+  "claims": 0
+ },
+ "a2-climax-basis": {
+  "t": 372.3333,
+  "x": 960,
+  "level": 2,
+  "role": "label",
+  "claims": 0
+ },
+ "a2-climax-l1a": {
+  "t": 375.3333,
+  "x": 960,
+  "level": 1,
+  "role": "label",
+  "claims": 0
+ },
+ "a2-climax-badge": {
+  "t": 376.6667,
+  "x": 1406.1,
+  "level": null,
+  "role": "badge",
+  "claims": 0
+ },
+ "a2-climax-l1": {
+  "t": 376.9333,
+  "x": 960,
+  "level": 1,
+  "role": "label",
+  "claims": 1
+ },
+ "a2-years-b40": {
+  "t": 381,
+  "x": 636.1,
+  "level": null,
+  "role": "badge",
+  "claims": 0
+ },
+ "a2-years-l1": {
+  "t": 381.3,
+  "x": 640,
+  "level": 1,
+  "role": "label",
+  "claims": 1
+ },
+ "a2-years-basis": {
+  "t": 381.3,
+  "x": 640,
+  "level": 2,
+  "role": "label",
+  "claims": 0
+ },
+ "a2-years-cg": {
+  "t": 382.6333,
+  "x": 1184.5,
+  "level": 3,
+  "role": "label",
+  "claims": 0
+ },
+ "a2-years-ct": {
+  "t": 386.1,
+  "x": 1374.4,
+  "level": 3,
+  "role": "label",
+  "claims": 0
+ },
+ "a2-years-b49": {
+  "t": 386.1333,
+  "x": 636.1,
+  "level": null,
+  "role": "badge",
+  "claims": 0
+ },
+ "a2-years-l2": {
+  "t": 386.4,
+  "x": 640,
+  "level": 1,
+  "role": "label",
+  "claims": 1
+ },
+ "a2-years-sub": {
+  "t": 386.8,
+  "x": 640,
+  "level": 2,
+  "role": "label",
+  "claims": 0
+ },
+ "a2-rest-ax0": {
+  "t": 389.5333,
+  "x": 412.5,
+  "level": null,
+  "role": "axis-label",
+  "claims": 1
+ },
+ "a2-rest-ax1": {
+  "t": 389.5333,
+  "x": 1507.5,
+  "level": null,
+  "role": "axis-label",
+  "claims": 1
+ },
+ "a2-rest-lab-1966": {
+  "t": 389.5333,
+  "x": 1242,
+  "level": 3,
+  "role": "label",
+  "claims": 0
+ },
+ "a2-rest-l1": {
+  "t": 389.9667,
+  "x": 1280,
+  "level": 1,
+  "role": "label",
+  "claims": 0
+ },
+ "a2-rest-who": {
+  "t": 392.9333,
+  "x": 1280,
+  "level": 2,
+  "role": "label",
+  "claims": 1
+ },
+ "a2-mirror-late-ax0": {
+  "t": 395.4333,
+  "x": 456,
+  "level": null,
+  "role": "axis-label",
+  "claims": 1
+ },
+ "a2-mirror-late-ax1": {
+  "t": 395.4333,
+  "x": 1464,
+  "level": null,
+  "role": "axis-label",
+  "claims": 1
+ },
+ "a2-mirror-late-lab-mirror": {
+  "t": 395.4333,
+  "x": 1173.9,
+  "level": 3,
+  "role": "label",
+  "claims": 0
+ },
+ "a2-mirror-late-l1": {
+  "t": 395.9,
+  "x": 1280,
+  "level": 1,
+  "role": "label",
+  "claims": 0
+ },
+ "a2-mirror-late-t8": {
+  "t": 399.3667,
+  "x": 691.7,
+  "level": 2,
+  "role": "label",
+  "claims": 1
+ },
+ "a2-mirror-late-t21": {
+  "t": 401.2333,
+  "x": 1232.5,
+  "level": 2,
+  "role": "label",
+  "claims": 1
+ },
+ "a2-mirror-late-sub": {
+  "t": 403.4,
+  "x": 1280,
+  "level": 2,
+  "role": "label",
+  "claims": 0
+ },
+ "a2-1991-cb": {
+  "t": 405.6,
+  "x": 1183.5,
+  "level": 3,
+  "role": "label",
+  "claims": 0
+ },
+ "a2-1991-cap": {
+  "t": 406.0667,
+  "x": 394.2,
+  "level": 3,
+  "role": "label",
+  "claims": 0
+ },
+ "a2-1991-v": {
+  "t": 407,
+  "x": 1280,
+  "level": 1,
+  "role": "label",
+  "claims": 1
+ },
+ "a2-1991-nb": {
+  "t": 407,
+  "x": 1280,
+  "level": 2,
+  "role": "label",
+  "claims": 0
+ },
+ "a2-1991-l1": {
+  "t": 414.5,
+  "x": 1280,
+  "level": 1,
+  "role": "label",
+  "claims": 1
+ },
+ "a2-short-ax0": {
+  "t": 416.8,
+  "x": 616.9,
+  "level": null,
+  "role": "axis-label",
+  "claims": 1
+ },
+ "a2-short-ax1": {
+  "t": 416.8,
+  "x": 1893.3,
+  "level": null,
+  "role": "axis-label",
+  "claims": 1
+ },
+ "a2-short-cap": {
+  "t": 417.2667,
+  "x": 587.3,
+  "level": 3,
+  "role": "label",
+  "claims": 0
+ },
+ "a2-short-l1a": {
+  "t": 417.7,
+  "x": 640,
+  "level": 1,
+  "role": "label",
+  "claims": 0
+ },
+ "a2-short-l1": {
+  "t": 421.3667,
+  "x": 1280,
+  "level": 1,
+  "role": "label",
+  "claims": 1
+ },
+ "a2-short-sub": {
+  "t": 421.7667,
+  "x": 1280,
+  "level": 2,
+  "role": "label",
+  "claims": 0
+ },
+ "a2-mirror-end-a": {
+  "t": 423.6667,
+  "x": 250.2,
+  "level": 3,
+  "role": "label",
+  "claims": 0
+ },
+ "a2-mirror-end-b": {
+  "t": 423.6667,
+  "x": 1115.1,
+  "level": 3,
+  "role": "label",
+  "claims": 0
+ },
+ "a2-mirror-end-l": {
+  "t": 424.1333,
+  "x": 397.8,
+  "level": 3,
+  "role": "label",
+  "claims": 0
+ },
+ "a2-mirror-end-y": {
+  "t": 425.5,
+  "x": 1708.1,
+  "level": 3,
+  "role": "label",
+  "claims": 1
+ },
+ "a2-mirror-end-badge": {
+  "t": 427.4667,
+  "x": 1106.1,
+  "level": null,
+  "role": "badge",
+  "claims": 0
+ },
+ "a2-mirror-end-l1": {
+  "t": 427.7333,
+  "x": 1280,
+  "level": 1,
+  "role": "label",
+  "claims": 1
+ },
+ "a2-mirror-end-nb": {
+  "t": 427.7333,
+  "x": 1280,
+  "level": 2,
+  "role": "label",
+  "claims": 0
+ },
+ "a2-mirror-real-basis": {
+  "t": 431.7667,
+  "x": 640,
+  "level": 2,
+  "role": "label",
+  "claims": 1
+ },
+ "a2-mirror-real-badge": {
+  "t": 433.5333,
+  "x": 606.1,
+  "level": null,
+  "role": "badge",
+  "claims": 0
+ },
+ "a2-mirror-real-l1": {
+  "t": 433.8,
+  "x": 640,
+  "level": 1,
+  "role": "label",
+  "claims": 1
+ },
+ "a2-mirror-real-refl": {
+  "t": 437.3667,
+  "x": 1623.1,
+  "level": 3,
+  "role": "label",
+  "claims": 0
+ },
+ "a2-mirror-real-more": {
+  "t": 437.6667,
+  "x": 640,
+  "level": 2,
+  "role": "label",
+  "claims": 0
+ },
+ "a2-mirror-real-b30": {
+  "t": 439.2333,
+  "x": 406.1,
+  "level": null,
+  "role": "badge",
+  "claims": 0
+ },
+ "a2-mirror-real-30": {
+  "t": 439.5,
+  "x": 745.9,
+  "level": 2,
+  "role": "label",
+  "claims": 1
+ },
+ "a2-payoff-a": {
+  "t": 441.4667,
+  "x": 380.2,
+  "level": 3,
+  "role": "label",
+  "claims": 0
+ },
+ "a2-payoff-b": {
+  "t": 441.4667,
+  "x": 1095.1,
+  "level": 3,
+  "role": "label",
+  "claims": 0
+ },
+ "a2-payoff-sub": {
+  "t": 441.8333,
+  "x": 960,
+  "level": 2,
+  "role": "label",
+  "claims": 0
+ },
+ "a2-payoff-badge": {
+  "t": 442.6667,
+  "x": 526.1,
+  "level": null,
+  "role": "badge",
+  "claims": 0
+ },
+ "a2-payoff-l1": {
+  "t": 442.9333,
+  "x": 960,
+  "level": 1,
+  "role": "label",
+  "claims": 2
+ },
+ "a2-payoff-l2": {
+  "t": 445.7333,
+  "x": 960,
+  "level": 1,
+  "role": "label",
+  "claims": 0
+ },
+ "a2-payoff-ax0": {
+  "t": 445.8333,
+  "x": 338.2,
+  "level": null,
+  "role": "axis-label",
+  "claims": 1
+ },
+ "a2-payoff-ax1": {
+  "t": 445.8333,
+  "x": 1581.8,
+  "level": null,
+  "role": "axis-label",
+  "claims": 1
+ },
+ "a2-payoff-lab-1966": {
+  "t": 446.0333,
+  "x": 452,
+  "level": 3,
+  "role": "label",
+  "claims": 0
+ },
+ "a2-payoff-lab-mirror": {
+  "t": 446.0333,
+  "x": 466.9,
+  "level": 3,
+  "role": "label",
+  "claims": 0
+ },
+ "a3-est-l1": {
+  "t": 453.6,
+  "x": 960,
+  "level": 1,
+  "role": "label",
+  "claims": 1
+ },
+ "a3-all-l1": {
+  "t": 456.4333,
+  "x": 1340,
+  "level": 1,
+  "role": "label",
+  "claims": 0
+ },
+ "a3-all-sub": {
+  "t": 457.1333,
+  "x": 1340,
+  "level": 2,
+  "role": "label",
+  "claims": 0
+ },
+ "a3-all-28": {
+  "t": 459.0667,
+  "x": 893.5,
+  "level": null,
+  "role": "label",
+  "claims": 1
+ },
+ "a3-all-96": {
+  "t": 460.5667,
+  "x": 702.5,
+  "level": null,
+  "role": "label",
+  "claims": 1
+ },
+ "a3-all-69": {
+  "t": 462.7333,
+  "x": 1340,
+  "level": 1,
+  "role": "label",
+  "claims": 1
+ },
+ "a3-q-k": {
+  "t": 467.6667,
+  "x": 960,
+  "level": 2,
+  "role": "label",
+  "claims": 0
+ },
+ "a3-q-l1": {
+  "t": 469.3667,
+  "x": 960,
+  "level": 1,
+  "role": "label",
+  "claims": 0
+ },
+ "a3-fine-l1": {
+  "t": 471.9333,
+  "x": 560,
+  "level": 1,
+  "role": "label",
+  "claims": 0
+ },
+ "a3-fine-lgA": {
+  "t": 473.0333,
+  "x": 302.3,
+  "level": 3,
+  "role": "label",
+  "claims": 0
+ },
+ "a3-fine-lgB": {
+  "t": 473.0333,
+  "x": 256.1,
+  "level": 3,
+  "role": "label",
+  "claims": 0
+ },
+ "a3-fine-65": {
+  "t": 474.8333,
+  "x": 560,
+  "level": 1,
+  "role": "label",
+  "claims": 1
+ },
+ "a3-fine-of": {
+  "t": 475.7667,
+  "x": 560,
+  "level": 2,
+  "role": "label",
+  "claims": 1
+ },
+ "a3-fine-sub": {
+  "t": 476.2667,
+  "x": 560,
+  "level": 3,
+  "role": "label",
+  "claims": 0
+ },
+ "a3-good-l1": {
+  "t": 481.1333,
+  "x": 640,
+  "level": 1,
+  "role": "label",
+  "claims": 0
+ },
+ "a3-good-cap": {
+  "t": 481.8333,
+  "x": 546.2,
+  "level": 3,
+  "role": "label",
+  "claims": 0
+ },
+ "a3-good-m": {
+  "t": 486.0333,
+  "x": 640,
+  "level": 1,
+  "role": "label",
+  "claims": 1
+ },
+ "a3-good-basis": {
+  "t": 486.0333,
+  "x": 640,
+  "level": 2,
+  "role": "label",
+  "claims": 1
+ },
+ "a3-good-82": {
+  "t": 489,
+  "x": 1453,
+  "level": null,
+  "role": "label",
+  "claims": 1
+ },
+ "a3-1929-y": {
+  "t": 492.5333,
+  "x": 966.9,
+  "level": null,
+  "role": "label",
+  "claims": 1
+ },
+ "a3-1929-l1": {
+  "t": 492.6,
+  "x": 1340,
+  "level": 1,
+  "role": "label",
+  "claims": 0
+ },
+ "a3-1929-l1b": {
+  "t": 497.2,
+  "x": 1340,
+  "level": 1,
+  "role": "label",
+  "claims": 0
+ },
+ "a3-1929-pr": {
+  "t": 497.3,
+  "x": 1340,
+  "level": 3,
+  "role": "label",
+  "claims": 0
+ },
+ "a3-1929-cap": {
+  "t": 502.3667,
+  "x": 1363.7,
+  "level": 3,
+  "role": "label",
+  "claims": 0
+ },
+ "a3-1929-l1c": {
+  "t": 504.5,
+  "x": 1340,
+  "level": 1,
+  "role": "label",
+  "claims": 0
+ },
+ "a3-1929-39": {
+  "t": 504.5333,
+  "x": 1221.5,
+  "level": 2,
+  "role": "label",
+  "claims": 1
+ },
+ "a3-nohurt-l1": {
+  "t": 507.0667,
+  "x": 560,
+  "level": 1,
+  "role": "label",
+  "claims": 0
+ },
+ "a3-nohurt-sub": {
+  "t": 507.3667,
+  "x": 560,
+  "level": 2,
+  "role": "label",
+  "claims": 0
+ },
+ "a3-less-l1": {
+  "t": 512.2333,
+  "x": 1340,
+  "level": 1,
+  "role": "label",
+  "claims": 0
+ },
+ "a3-less-26": {
+  "t": 515.3333,
+  "x": 1340,
+  "level": 1,
+  "role": "label",
+  "claims": 1
+ },
+ "a3-less-lg0": {
+  "t": 515.9,
+  "x": 1442.7,
+  "level": 3,
+  "role": "label",
+  "claims": 0
+ },
+ "a3-less-lg1": {
+  "t": 515.9,
+  "x": 1442.1,
+  "level": 3,
+  "role": "label",
+  "claims": 0
+ },
+ "a3-less-lg2": {
+  "t": 515.9,
+  "x": 1384.8,
+  "level": 3,
+  "role": "label",
+  "claims": 0
+ },
+ "a3-less-of": {
+  "t": 516.1667,
+  "x": 1340,
+  "level": 2,
+  "role": "label",
+  "claims": 1
+ },
+ "a3-less-inf": {
+  "t": 522.4,
+  "x": 1340,
+  "level": 3,
+  "role": "label",
+  "claims": 0
+ },
+ "a3-four-l1": {
+  "t": 523.5,
+  "x": 560,
+  "level": 1,
+  "role": "label",
+  "claims": 1
+ },
+ "a3-four-sub": {
+  "t": 523.9667,
+  "x": 560,
+  "level": 2,
+  "role": "label",
+  "claims": 0
+ },
+ "a3-four-1965": {
+  "t": 527.2333,
+  "x": 1402.4,
+  "level": null,
+  "role": "label",
+  "claims": 1
+ },
+ "a3-four-1966": {
+  "t": 528.8333,
+  "x": 1506.6,
+  "level": null,
+  "role": "label",
+  "claims": 1
+ },
+ "a3-four2-1968": {
+  "t": 530.6667,
+  "x": 1107.5,
+  "level": null,
+  "role": "label",
+  "claims": 1
+ },
+ "a3-four2-l1": {
+  "t": 530.7,
+  "x": 1340,
+  "level": 1,
+  "role": "label",
+  "claims": 0
+ },
+ "a3-four2-sub": {
+  "t": 531.0667,
+  "x": 1340,
+  "level": 2,
+  "role": "label",
+  "claims": 0
+ },
+ "a3-four2-1969": {
+  "t": 531.9667,
+  "x": 1029.3,
+  "level": null,
+  "role": "label",
+  "claims": 1
+ },
+ "a3-avg-not-axl": {
+  "t": 533.8333,
+  "x": 562,
+  "level": 3,
+  "role": "label",
+  "claims": 0
+ },
+ "a3-avg-not-axr": {
+  "t": 533.8333,
+  "x": 1360,
+  "level": 3,
+  "role": "label",
+  "claims": 0
+ },
+ "a3-avg-not-sub": {
+  "t": 534.4333,
+  "x": 640,
+  "level": 2,
+  "role": "label",
+  "claims": 0
+ },
+ "a3-avg-not-l1": {
+  "t": 534.5,
+  "x": 640,
+  "level": 1,
+  "role": "label",
+  "claims": 0
+ },
+ "a3-real66-axl": {
+  "t": 537.1667,
+  "x": 213.1,
+  "level": 3,
+  "role": "label",
+  "claims": 0
+ },
+ "a3-real66-axr": {
+  "t": 537.1667,
+  "x": 1210.4,
+  "level": 3,
+  "role": "label",
+  "claims": 0
+ },
+ "a3-real66-l1": {
+  "t": 537.5333,
+  "x": 1280,
+  "level": 1,
+  "role": "label",
+  "claims": 0
+ },
+ "a3-real66-41": {
+  "t": 540.9667,
+  "x": 691.6,
+  "level": 2,
+  "role": "label",
+  "claims": 1
+ },
+ "a3-real66-who": {
+  "t": 541.2667,
+  "x": 690.8,
+  "level": 3,
+  "role": "label",
+  "claims": 1
+ },
+ "a3-real66-17": {
+  "t": 545.6667,
+  "x": 1280,
+  "level": 1,
+  "role": "label",
+  "claims": 1
+ },
+ "a3-real66-17s": {
+  "t": 546.0667,
+  "x": 1280,
+  "level": 2,
+  "role": "label",
+  "claims": 0
+ },
+ "a3-1969-axx": {
+  "t": 552.4,
+  "x": 549.1,
+  "level": 3,
+  "role": "label",
+  "claims": 0
+ },
+ "a3-1969-axy": {
+  "t": 552.4,
+  "x": 653.1,
+  "level": 3,
+  "role": "label",
+  "claims": 0
+ },
+ "a3-1969-l1": {
+  "t": 552.4,
+  "x": 1280,
+  "level": 1,
+  "role": "label",
+  "claims": 0
+ },
+ "a3-1969-y": {
+  "t": 553.7333,
+  "x": 975.4,
+  "level": null,
+  "role": "label",
+  "claims": 1
+ },
+ "a3-1969-v": {
+  "t": 555.6333,
+  "x": 1111.4,
+  "level": 2,
+  "role": "label",
+  "claims": 1
+ },
+ "a3-1928-y": {
+  "t": 557.9667,
+  "x": 558.6,
+  "level": null,
+  "role": "label",
+  "claims": 1
+ },
+ "a3-1969-l1b": {
+  "t": 561.4,
+  "x": 1280,
+  "level": 1,
+  "role": "label",
+  "claims": 1
+ },
+ "a3-1928-v": {
+  "t": 561.4333,
+  "x": 541.1,
+  "level": 2,
+  "role": "label",
+  "claims": 1
+ },
+ "a3-1928-axx": {
+  "t": 563.7667,
+  "x": 611.8,
+  "level": 3,
+  "role": "label",
+  "claims": 0
+ },
+ "a3-1928-axy": {
+  "t": 563.7667,
+  "x": 715.9,
+  "level": 3,
+  "role": "label",
+  "claims": 0
+ },
+ "a3-1928-l1": {
+  "t": 564.2333,
+  "x": 1280,
+  "level": 1,
+  "role": "label",
+  "claims": 0
+ },
+ "a3-1928-m": {
+  "t": 565.1333,
+  "x": 675.9,
+  "level": 2,
+  "role": "label",
+  "claims": 1
+ },
+ "a3-1928-b": {
+  "t": 565.1333,
+  "x": 675.9,
+  "level": 3,
+  "role": "label",
+  "claims": 1
+ },
+ "a3-1969-y2": {
+  "t": 569.9,
+  "x": 979.6,
+  "level": null,
+  "role": "label",
+  "claims": 1
+ },
+ "a3-1969-r": {
+  "t": 572.9333,
+  "x": 1255.7,
+  "level": 2,
+  "role": "label",
+  "claims": 1
+ },
+ "a3-share-l1": {
+  "t": 574.5333,
+  "x": 960,
+  "level": 1,
+  "role": "label",
+  "claims": 0
+ },
+ "a3-share-cap": {
+  "t": 575.1,
+  "x": 887.7,
+  "level": 3,
+  "role": "label",
+  "claims": 0
+ },
+ "a3-decade-cap": {
+  "t": 579.5333,
+  "x": 699.4,
+  "level": 3,
+  "role": "label",
+  "claims": 0
+ },
+ "a3-decade-l1": {
+  "t": 581.5667,
+  "x": 640,
+  "level": 1,
+  "role": "label",
+  "claims": 0
+ },
+ "a3-decade-f": {
+  "t": 581.8,
+  "x": 1041.8,
+  "level": 2,
+  "role": "label",
+  "claims": 0
+ },
+ "a3-1966d-l1": {
+  "t": 585.1,
+  "x": 1280,
+  "level": 1,
+  "role": "label",
+  "claims": 0
+ },
+ "a3-1966d-z": {
+  "t": 585.2,
+  "x": -64.8,
+  "level": 3,
+  "role": "label",
+  "claims": 0
+ },
+ "a3-1966d-cap": {
+  "t": 585.3,
+  "x": 525.5,
+  "level": 3,
+  "role": "label",
+  "claims": 0
+ },
+ "a3-1966d-sub": {
+  "t": 585.4,
+  "x": 1280,
+  "level": 2,
+  "role": "label",
+  "claims": 0
+ },
+ "a3-1966d-y": {
+  "t": 588.2333,
+  "x": 543.4,
+  "level": null,
+  "role": "label",
+  "claims": 1
+ },
+ "a3-1966d-v": {
+  "t": 591.5333,
+  "x": 532.3,
+  "level": 2,
+  "role": "label",
+  "claims": 1
+ },
+ "a3-mirror-d-l66": {
+  "t": 595.1,
+  "x": 829.9,
+  "level": 3,
+  "role": "label",
+  "claims": 0
+ },
+ "a3-mirror-d-l1": {
+  "t": 595.4667,
+  "x": 640,
+  "level": 1,
+  "role": "label",
+  "claims": 0
+ },
+ "a3-mirror-d-lm": {
+  "t": 595.5667,
+  "x": 1493.2,
+  "level": 3,
+  "role": "label",
+  "claims": 0
+ },
+ "a3-mirror-d-cap": {
+  "t": 595.6667,
+  "x": 960,
+  "level": 3,
+  "role": "label",
+  "claims": 0
+ },
+ "a3-mirror-d-badge": {
+  "t": 597.0333,
+  "x": 1321.8,
+  "level": null,
+  "role": "badge",
+  "claims": 0
+ },
+ "a3-mirror-d-v": {
+  "t": 597.4333,
+  "x": 1093.8,
+  "level": 2,
+  "role": "label",
+  "claims": 1
+ },
+ "a3-answer-q": {
+  "t": 601.0333,
+  "x": 960,
+  "level": 1,
+  "role": "label",
+  "claims": 0
+ },
+ "a3-answer-avg": {
+  "t": 603.1,
+  "x": 960,
+  "level": 2,
+  "role": "label",
+  "claims": 0
+ },
+ "a3-answer-l1": {
+  "t": 604.6667,
+  "x": 960,
+  "level": 1,
+  "role": "label",
+  "claims": 0
+ },
+ "a3-nuance-l1": {
+  "t": 607.2,
+  "x": 1280,
+  "level": 1,
+  "role": "label",
+  "claims": 0
+ },
+ "a3-nuance-69": {
+  "t": 608.2667,
+  "x": 1280,
+  "level": 2,
+  "role": "label",
+  "claims": 1
+ },
+ "a3-nuance-axx": {
+  "t": 608.6333,
+  "x": 480.2,
+  "level": 3,
+  "role": "label",
+  "claims": 0
+ },
+ "a3-nuance-axy": {
+  "t": 608.6333,
+  "x": 584.2,
+  "level": 3,
+  "role": "label",
+  "claims": 0
+ },
+ "a3-nuance-l1b": {
+  "t": 618.6333,
+  "x": 1280,
+  "level": 1,
+  "role": "label",
+  "claims": 0
+ },
+ "a3-nuance-ring": {
+  "t": 619.0667,
+  "x": 1280,
+  "level": 2,
+  "role": "label",
+  "claims": 0
+ },
+ "a3-avg-callback-a0": {
+  "t": 620.5667,
+  "x": 1216.8,
+  "level": null,
+  "role": "axis-label",
+  "claims": 1
+ },
+ "a3-avg-callback-a1": {
+  "t": 620.5667,
+  "x": 1966,
+  "level": null,
+  "role": "axis-label",
+  "claims": 1
+ },
+ "a3-avg-callback-l1": {
+  "t": 620.6333,
+  "x": 640,
+  "level": 1,
+  "role": "label",
+  "claims": 1
+ },
+ "a3-avg-callback-lab": {
+  "t": 621.7333,
+  "x": 1487.6,
+  "level": 3,
+  "role": "label",
+  "claims": 1
+ },
+ "a3-avg-callback-s1": {
+  "t": 623.1,
+  "x": 640,
+  "level": 2,
+  "role": "label",
+  "claims": 1
+ },
+ "a3-avg-callback-s2": {
+  "t": 626.8667,
+  "x": 640,
+  "level": 2,
+  "role": "label",
+  "claims": 0
+ },
+ "a3-avg-callback-91": {
+  "t": 627.4333,
+  "x": 1621.4,
+  "level": 2,
+  "role": "label",
+  "claims": 1
+ },
+ "a3-limits-l1": {
+  "t": 630.6,
+  "x": 640,
+  "level": 1,
+  "role": "label",
+  "claims": 0
+ },
+ "a3-limits-r0": {
+  "t": 630.7,
+  "x": 1596.9,
+  "level": 2,
+  "role": "label",
+  "claims": 0
+ },
+ "a3-limits-r1": {
+  "t": 630.9333,
+  "x": 1458.7,
+  "level": 2,
+  "role": "label",
+  "claims": 0
+ },
+ "a3-limits-r2": {
+  "t": 631.2,
+  "x": 1584.5,
+  "level": 2,
+  "role": "label",
+  "claims": 0
+ },
+ "a3-limits-r3": {
+  "t": 631.4333,
+  "x": 1449.6,
+  "level": 2,
+  "role": "label",
+  "claims": 0
+ },
+ "a3-usonly-l1": {
+  "t": 636.1667,
+  "x": 640,
+  "level": 1,
+  "role": "label",
+  "claims": 0
+ },
+ "a3-usonly-sub": {
+  "t": 638.0667,
+  "x": 640,
+  "level": 2,
+  "role": "label",
+  "claims": 0
+ },
+ "a3-overlap-l1": {
+  "t": 640.6667,
+  "x": 560,
+  "level": 1,
+  "role": "label",
+  "claims": 1
+ },
+ "a3-overlap-98": {
+  "t": 643.1667,
+  "x": 960,
+  "level": 2,
+  "role": "label",
+  "claims": 1
+ },
+ "a3-overlap-3": {
+  "t": 646.9667,
+  "x": 1280,
+  "level": 2,
+  "role": "label",
+  "claims": 1
+ },
+ "a3-bare-l1": {
+  "t": 649.1333,
+  "x": 1280,
+  "level": 1,
+  "role": "label",
+  "claims": 0
+ },
+ "a3-bare-r0": {
+  "t": 650.7333,
+  "x": 420.3,
+  "level": 2,
+  "role": "label",
+  "claims": 0
+ },
+ "a3-bare-r1": {
+  "t": 651.8667,
+  "x": 404.2,
+  "level": 2,
+  "role": "label",
+  "claims": 0
+ },
+ "a3-bare-r2": {
+  "t": 653.4,
+  "x": 493,
+  "level": 2,
+  "role": "label",
+  "claims": 0
+ },
+ "a3-bare-r3": {
+  "t": 655.1667,
+  "x": 513.7,
+  "level": 2,
+  "role": "label",
+  "claims": 0
+ },
+ "a3-bare-l1b": {
+  "t": 656.4667,
+  "x": 1280,
+  "level": 1,
+  "role": "label",
+  "claims": 0
+ },
+ "a3-bare-ecap": {
+  "t": 657.2,
+  "x": 1357.6,
+  "level": 3,
+  "role": "label",
+  "claims": 0
+ },
+ "method-l1": {
+  "t": 660.6,
+  "x": 560,
+  "level": 1,
+  "role": "label",
+  "claims": 0
+ },
+ "method-sub": {
+  "t": 660.9333,
+  "x": 560,
+  "level": 2,
+  "role": "label",
+  "claims": 0
+ },
+ "method-foot": {
+  "t": 661.1,
+  "x": 1177.1,
+  "level": 3,
+  "role": "label",
+  "claims": 0
+ },
+ "method-h0": {
+  "t": 664.1667,
+  "x": 1155.3,
+  "level": 2,
+  "role": "label",
+  "claims": 0
+ },
+ "method-s0": {
+  "t": 664.1667,
+  "x": 1275.8,
+  "level": 3,
+  "role": "label",
+  "claims": 0
+ },
+ "method-h1": {
+  "t": 666.3667,
+  "x": 1177.4,
+  "level": 2,
+  "role": "label",
+  "claims": 0
+ },
+ "method-s1": {
+  "t": 666.3667,
+  "x": 1264.1,
+  "level": 3,
+  "role": "label",
+  "claims": 0
+ },
+ "method-h2": {
+  "t": 668.8,
+  "x": 1180.3,
+  "level": 2,
+  "role": "label",
+  "claims": 0
+ },
+ "method-s2": {
+  "t": 668.8,
+  "x": 1151.4,
+  "level": 3,
+  "role": "label",
+  "claims": 0
+ },
+ "method-model-r2": {
+  "t": 670.1,
+  "x": 563.2,
+  "level": 2,
+  "role": "label",
+  "claims": 0
+ },
+ "method-model-l1": {
+  "t": 670.1,
+  "x": 1340,
+  "level": 1,
+  "role": "label",
+  "claims": 0
+ },
+ "method-model-r3": {
+  "t": 670.3,
+  "x": 376.3,
+  "level": 2,
+  "role": "label",
+  "claims": 0
+ },
+ "method-model-sub": {
+  "t": 670.4,
+  "x": 1340,
+  "level": 2,
+  "role": "label",
+  "claims": 0
+ },
+ "method-model-r0": {
+  "t": 670.4333,
+  "x": 632.8,
+  "level": 2,
+  "role": "label",
+  "claims": 0
+ },
+ "method-model-r4": {
+  "t": 670.5,
+  "x": 366.9,
+  "level": 2,
+  "role": "label",
+  "claims": 0
+ },
+ "method-model-r1": {
+  "t": 673.6,
+  "x": 507.9,
+  "level": 2,
+  "role": "label",
+  "claims": 0
+ },
+ "method-model-l1b": {
+  "t": 677.5,
+  "x": 1360,
+  "level": 1,
+  "role": "label",
+  "claims": 0
+ },
+ "method-model-desc": {
+  "t": 678.2,
+  "x": 1360,
+  "level": 2,
+  "role": "label",
+  "claims": 0
+ },
+ "outro-a0": {
+  "t": 681.8,
+  "x": 556.8,
+  "level": null,
+  "role": "axis-label",
+  "claims": 1
+ },
+ "outro-a1": {
+  "t": 681.8,
+  "x": 1363.2,
+  "level": null,
+  "role": "axis-label",
+  "claims": 1
+ },
+ "outro-l1": {
+  "t": 682.8,
+  "x": 960,
+  "level": 1,
+  "role": "label",
+  "claims": 0
+ },
+ "outro-basis": {
+  "t": 682.9667,
+  "x": 673.6,
+  "level": 3,
+  "role": "label",
+  "claims": 0
+ },
+ "outro-lab66": {
+  "t": 683.1667,
+  "x": 517.1,
+  "level": 3,
+  "role": "label",
+  "claims": 0
+ },
+ "outro-labm": {
+  "t": 683.5667,
+  "x": 659.3,
+  "level": 3,
+  "role": "label",
+  "claims": 0
+ },
+ "outro-sub": {
+  "t": 687.3333,
+  "x": 960,
+  "level": 2,
+  "role": "label",
+  "claims": 0
+ },
+ "outro-title": {
+  "t": 694.0667,
+  "x": 960,
+  "level": 1,
+  "role": "label",
+  "claims": 0
+ },
+ "outro-src": {
+  "t": 697.5667,
+  "x": 960,
+  "level": 3,
+  "role": "label",
+  "claims": 0
+ },
+ "outro-hist": {
+  "t": 701.0667,
+  "x": 960,
+  "level": 3,
+  "role": "label",
+  "claims": 0
+ }
+}
