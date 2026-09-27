@@ -173,10 +173,12 @@
   B['a1-start'] = (L, sc, H) => {
     const items = []; env(items, 'st', { glow: 0.10 });
     moneyColumn(items, 'st', 10, L, 1150, 900, 0, null);
-    const tv = H.local(cueAbs('a1-start.1', '$1 million'));
+    // reveal at the number's onset measured on the master mix (checks ASR: '$1 million' onset 22.86-23.02 s; the take's own ASR said 22.56)
+    const tv = H.local(22.86), t66 = H.local(cueAbs('a1-start.1', '1966'));
     items.push(badge('st-badge', 470, 638, fade(L, tv - 0.3, 0.2)));
     items.push(L1('st-l1', '$1 million', 640, 720, 104, L >= tv - 1 / 60 ? 1 : 0, { claims: [claim('initial')] }));
-    items.push(Tx('st-basis', 'in 1966 dollars', 640, 830, 40, C['text-dim'], { align: 'center', alpha: L >= tv - 1 / 60 ? 1 : 0, claims: [claim('y1966')] }));
+    const said66 = L >= t66 - 1 / 60; // 'real dollars' until the voice says 1966
+    items.push(Tx('st-basis', said66 ? 'in 1966 dollars' : 'real dollars', 640, 830, 40, C['text-dim'], { align: 'center', alpha: L >= tv - 1 / 60 ? 1 : 0, claims: said66 ? [claim('y1966')] : [] }));
     items.push(Tx('st-who', 'the first retiree', 1300, 180, 34, C.c1966, { align: 'center', alpha: fade(L, 0.4), series: '1966' }));
     return items;
   };
@@ -294,8 +296,8 @@
     // scale: a dashed gridline at $100,000 (nominal)
     const yg = yb - Y(100000), ga = clamp(grow * 2);
     items.push(S(panel + '-grid100k', 'polyline', { panel, z, layer: panel + '-bars', pts: [[x0 - 10, yg], [x0 + 30 * w, yg]], stroke: C.grid, lw: 2, dash: [10, 10], alpha: ga, meta: { role: 'axis', panel, chart: panel } }));
-    const gp = H.P(x0 + 30 * w + 14, yg, z);
-    items.push(Tx(panel + '-g100k', '$100,000 nominal', gp[0], gp[1] + 10, 30, C['text-dim'], { role: 'axis-label', anchor: panel, chart: panel, alpha: ga, claims: [claim('axUsd100k')] }));
+    const gp = H.P(x0 - 10, yg, z); // above the gridline at its left end (the early bars are far below it): inside the safe area
+    items.push(Tx(panel + '-g100k', '$100,000 nominal', gp[0], gp[1] - 12, 30, C['text-dim'], { role: 'axis-label', anchor: panel, chart: panel, alpha: ga, claims: [claim('axUsd100k')] }));
     items.push(Tx(panel + '-a0', '1966', a[0], a[1] + 48, 30, C['text-dim'], { role: 'axis-label', anchor: panel, chart: panel, year: 1966, align: 'center', claims: [claim('ax1966')] }));
     items.push(Tx(panel + '-a1', '1995', b[0], b[1] + 48, 30, C['text-dim'], { role: 'axis-label', anchor: panel, chart: panel, year: 1995, align: 'center', claims: [claim('ax1995')] }));
     return { x0, w, yb, Y };
@@ -393,7 +395,7 @@
     lab('mr-66a', '1966', g.x0 + 17, 450, fade(L, 0.3), 'ax1966', 'axis-label', 1966, 'mr-66');
     lab('mr-66b', '1995', g.x0 + 29 * g.w + 17, 450, fade(L, 1.9), 'ax1995', 'axis-label', 1995, 'mr-66');
     lab('mr-ma', '1995 first', g.x0 + 70, 1004, L >= t95 - 1 / 60 ? 1 : 0, 'y1995', 'label');
-    lab('mr-mb', '1966 last', g.x0 + 29 * g.w - 40, 1004, L >= t66 - 1 / 60 ? 1 : 0, 'y1966', 'label');
+    lab('mr-mb', '1966 last', g.x0 + 30 * g.w + 84, g.ym + 11, L >= t66 - 1 / 60 ? 1 : 0, 'y1966', 'label'); // right of the row's end (the last bars dip below the zero line)
     items.push(Tx('mr-t66', 'first retiree', 300, 540, 30, C.c1966, { series: '1966', alpha: fade(L, 0.3) }));
     items.push(Tx('mr-tm', 'mirror retiree', 1340, 720, 30, C.cmirror, { series: 'mirror', alpha: fade(L, t2) }));
     items.push(L1('mr-l1b', 'The mirror reads it backwards', 1280, 360, 52, fade(L, t2 - 0.05, 0.35)));

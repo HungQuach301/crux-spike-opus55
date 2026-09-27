@@ -1,0 +1,12 @@
+{
+ "range": "639.700-648.767",
+ "wallSeconds": 98.1,
+ "frames": 272,
+ "framesSupersampled": 272,
+ "workerSeconds": [
+  97.8,
+  85.8,
+  86.9,
+  85.7
+ ]
+}

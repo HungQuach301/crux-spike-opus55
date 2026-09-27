@@ -1,0 +1,58 @@
+{
+ "a2-7374-ax0": {
+  "t": 238.7,
+  "x": 360,
+  "level": null,
+  "role": "axis-label",
+  "claims": 1
+ },
+ "a2-7374-ax1": {
+  "t": 238.7,
+  "x": 1560,
+  "level": null,
+  "role": "axis-label",
+  "claims": 1
+ },
+ "a2-7374-lab-1966": {
+  "t": 239.1,
+  "x": 483.7,
+  "level": 3,
+  "role": "label",
+  "claims": 0
+ },
+ "a2-7374-lab-mirror": {
+  "t": 239.1,
+  "x": 500.6,
+  "level": 3,
+  "role": "label",
+  "claims": 0
+ },
+ "a2-7374-sub": {
+  "t": 239.2,
+  "x": 1280,
+  "level": 2,
+  "role": "label",
+  "claims": 0
+ },
+ "a2-7374-l1": {
+  "t": 240.9,
+  "x": 1280,
+  "level": 1,
+  "role": "label",
+  "claims": 0
+ },
+ "a2-7374-y7": {
+  "t": 242.5,
+  "x": 573.7,
+  "level": 2,
+  "role": "label",
+  "claims": 1
+ },
+ "a2-7374-y8": {
+  "t": 243.7667,
+  "x": 618.5,
+  "level": 2,
+  "role": "label",
+  "claims": 1
+ }
+}

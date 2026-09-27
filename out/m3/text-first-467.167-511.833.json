@@ -1,0 +1,184 @@
+{
+ "a3-all-28": {
+  "t": 467.1667,
+  "x": 889.3,
+  "level": null,
+  "role": "label",
+  "claims": 1
+ },
+ "a3-all-96": {
+  "t": 467.1667,
+  "x": 689.4,
+  "level": null,
+  "role": "label",
+  "claims": 1
+ },
+ "a3-all-sub": {
+  "t": 467.1667,
+  "x": 1340,
+  "level": 2,
+  "role": "label",
+  "claims": 0
+ },
+ "a3-all-69": {
+  "t": 467.1667,
+  "x": 1340,
+  "level": 1,
+  "role": "label",
+  "claims": 1
+ },
+ "a3-q-k": {
+  "t": 467.6667,
+  "x": 960,
+  "level": 2,
+  "role": "label",
+  "claims": 0
+ },
+ "a3-q-l1": {
+  "t": 469.3667,
+  "x": 960,
+  "level": 1,
+  "role": "label",
+  "claims": 0
+ },
+ "a3-fine-l1": {
+  "t": 471.9333,
+  "x": 560,
+  "level": 1,
+  "role": "label",
+  "claims": 0
+ },
+ "a3-fine-lgA": {
+  "t": 473.0333,
+  "x": 303.1,
+  "level": 3,
+  "role": "label",
+  "claims": 0
+ },
+ "a3-fine-lgB": {
+  "t": 473.0333,
+  "x": 257,
+  "level": 3,
+  "role": "label",
+  "claims": 0
+ },
+ "a3-fine-65": {
+  "t": 474.8333,
+  "x": 560,
+  "level": 1,
+  "role": "label",
+  "claims": 1
+ },
+ "a3-fine-of": {
+  "t": 475.7667,
+  "x": 560,
+  "level": 2,
+  "role": "label",
+  "claims": 1
+ },
+ "a3-fine-sub": {
+  "t": 476.2667,
+  "x": 560,
+  "level": 3,
+  "role": "label",
+  "claims": 0
+ },
+ "a3-good-l1": {
+  "t": 481.1333,
+  "x": 640,
+  "level": 1,
+  "role": "label",
+  "claims": 0
+ },
+ "a3-good-cap": {
+  "t": 481.8333,
+  "x": 546.2,
+  "level": 3,
+  "role": "label",
+  "claims": 0
+ },
+ "a3-good-82": {
+  "t": 482.6667,
+  "x": 1431.7,
+  "level": null,
+  "role": "label",
+  "claims": 1
+ },
+ "a3-good-m": {
+  "t": 486.0333,
+  "x": 640,
+  "level": 1,
+  "role": "label",
+  "claims": 1
+ },
+ "a3-good-basis": {
+  "t": 486.0333,
+  "x": 640,
+  "level": 2,
+  "role": "label",
+  "claims": 1
+ },
+ "a3-1929-y": {
+  "t": 492.5333,
+  "x": 966.9,
+  "level": null,
+  "role": "label",
+  "claims": 1
+ },
+ "a3-1929-l1": {
+  "t": 492.6,
+  "x": 1340,
+  "level": 1,
+  "role": "label",
+  "claims": 0
+ },
+ "a3-1929-l1b": {
+  "t": 497.2,
+  "x": 1340,
+  "level": 1,
+  "role": "label",
+  "claims": 0
+ },
+ "a3-1929-pr": {
+  "t": 497.3,
+  "x": 1340,
+  "level": 3,
+  "role": "label",
+  "claims": 0
+ },
+ "a3-1929-cap": {
+  "t": 502.3667,
+  "x": 1363.7,
+  "level": 3,
+  "role": "label",
+  "claims": 0
+ },
+ "a3-1929-l1c": {
+  "t": 504.5,
+  "x": 1340,
+  "level": 1,
+  "role": "label",
+  "claims": 0
+ },
+ "a3-1929-39": {
+  "t": 504.5333,
+  "x": 1221.5,
+  "level": 2,
+  "role": "label",
+  "claims": 1
+ },
+ "a3-nohurt-l1": {
+  "t": 507.0667,
+  "x": 560,
+  "level": 1,
+  "role": "label",
+  "claims": 0
+ },
+ "a3-nohurt-sub": {
+  "t": 507.3667,
+  "x": 560,
+  "level": 2,
+  "role": "label",
+  "claims": 0
+ }
+}

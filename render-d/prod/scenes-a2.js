@@ -32,8 +32,9 @@
   }
   function yearAnchors(items, panel, chart, H, xa, xb, y, a = 1, z = 0) {
     const pa = H.P(xa, y, z), pb = H.P(xb, y, z);
-    items.push(Tx(panel + '-ax0', '1966', pa[0], pa[1] + 46, 30, C['text-dim'], { role: 'axis-label', anchor: chart, chart, year: 1966, align: 'center', claims: cl('ax1966'), alpha: a }));
-    items.push(Tx(panel + '-ax1', '1995', pb[0], pb[1] + 46, 30, C['text-dim'], { role: 'axis-label', anchor: chart, chart, year: 1995, align: 'center', claims: cl('ax1995'), alpha: a }));
+    const cx = (x) => clamp(x, 140, 1780), cy = (y) => Math.min(1004, y);
+    items.push(Tx(panel + '-ax0', '1966', cx(pa[0]), cy(pa[1] + 46), 30, C['text-dim'], { role: 'axis-label', anchor: chart, chart, year: 1966, align: 'center', claims: cl('ax1966'), alpha: a, sharp: true }));
+    items.push(Tx(panel + '-ax1', '1995', cx(pb[0]), cy(pb[1] + 46), 30, C['text-dim'], { role: 'axis-label', anchor: chart, chart, year: 1995, align: 'center', claims: cl('ax1995'), alpha: a, sharp: true }));
   }
 
   // ---------------------------------------------------------------- chart 1: the duel of real balances
@@ -69,15 +70,24 @@
       const lab = `${panel}-lab-${ch}`;
       series(items, `${panel}-${ch}`, chart, ch, upto(arr, p, g), z, panel, a, lab);
       const txt = ch === '1966' ? 'first retiree' : 'mirror retiree';
+      // label: bold 34 px on a dark plate (legible at 25 %, and under motion blur), kept on the side away from the other line
+      // and from the zero axis, and inside the safe area (flipped to the left of the tip near the right edge)
+      const other = ch === '1966' ? o.pm : o.p66, oa = ch === '1966' ? (o.am ?? 1) : (o.a66 ?? 1);
+      const v = valAt(arr, p), ov = other != null && oa > 0 && other >= p - 0.5 ? valAt(ch === '1966' ? M.realMirror : M.real1966, Math.min(p, other)) : null;
+      let up = ov != null ? v >= ov : ch === 'mirror';
+      if (!up && g.Y(v) > g.yb - 70) up = true;
+      const w = txtW(txt, 34) * 0.95;
       let sx, sy, al = 'left';
-      if (o.startLabels || (ch === '1966' && valAt(arr, p) < 1e5)) { // left of the common start point
+      if (o.startLabels || (ch === '1966' && v < 1e5 && p < 3)) { // left of the common start point
         const sp = H.P(g.X(0), g.Y(arr[0]), z);
-        sx = sp[0] - 16; sy = sp[1] + (ch === '1966' ? 40 : -16); al = 'right';
-      } else { // at the tip, to the right of it (nothing is drawn there yet)
-        const sp = H.P(g.X(p), g.Y(valAt(arr, p)), z);
-        sx = sp[0] + (o.tipDx ?? 18); sy = sp[1] + (ch === '1966' ? 34 : -12);
+        sx = sp[0] - 18; sy = sp[1] + (ch === '1966' ? 44 : -20); al = 'right';
+      } else { // at the tip
+        const sp = H.P(g.X(p), g.Y(v), z);
+        sx = sp[0] + (o.tipDx ?? 20); sy = sp[1] + (up ? -22 : 44);
+        if (sx + w > 1800) { const back = valAt(arr, Math.max(0, p - 3)); sx = sp[0] - 20; al = 'right'; sy = sp[1] + (back > v ? 48 : -26); }
       }
-      items.push(Tx(lab, txt, sx, sy, 30, colorOf(ch), { align: al, alpha: a * fade(p, 0.15, 0.3), series: ch, level: 3 }));
+      sy = clamp(sy, 90, 1000);
+      items.push(Tx(lab, txt, sx, sy, 34, colorOf(ch), { align: al, weight: 700, background: C.surface, pad: 6, sharp: true, alpha: (a > 0.02 ? 1 : 0) * fade(p, 0.15, 0.3), series: ch, level: 3 }));
     }
     return g;
   }
@@ -151,7 +161,7 @@
     const g = duel(items, P, H, { p66: p, pm: p, band: [0, p], bandA: 0.25 });
     const gb = smooth((L - (tPaths - 0.2)) / 0.5), x = g.X(1) + 18;
     items.push(S(P + '-brk', 'polyline', { panel: P, z: 0, pts: [[x, g.Y(M.real1966[1])], [x, g.Y(M.real1966[1]) + (g.Y(M.realMirror[1]) - g.Y(M.real1966[1])) * gb]], stroke: C.text, lw: 4, alpha: gb > 0 ? 1 : 0, meta: { role: 'mark', panel: P } }));
-    items.push(L1(P + '-l1', 'Already split', 1280, 360, 72, fade(L, tSplit - 0.5, 0.3)));
+    items.push(L1(P + '-l1', 'Already split', 1280, 360, 72, fade(L, Math.min(0.4, tSplit - 0.5), 0.3)));
     return items;
   };
   CAM['a2-gap1'] = { f: 35, base: {}, moves: [[0.6, 1.3, { z: 300 }]], why: 'push in on the first year, where the split is' };
@@ -236,7 +246,7 @@
     // the starting balance as a thin reference line (no number)
     items.push(S(P + '-ref', 'polyline', { panel: P, z: 0, pts: [[g.x0 - 10, g.yb - 1e6 * g.s], [g.x0 + 9 * g.w, g.yb - 1e6 * g.s]], stroke: C.muted, lw: 2, dash: [10, 8], alpha: fade(L, 0.3), meta: { role: 'mark', panel: P } }));
     const r = H.P(g.x0 + 9 * g.w, g.yb - 1e6 * g.s, 0);
-    items.push(Tx(P + '-refl', 'start', r[0] - 4, r[1] - 16, 30, C['text-dim'], { align: 'right', alpha: fade(L, 0.4), level: 3 }));
+    items.push(Tx(P + '-refl', 'starting balance', r[0] - 4, r[1] - 16, 30, C['text-dim'], { align: 'right', alpha: fade(L, 0.4), level: 3 }));
     // the loss since the start: a bracket from the start line down to the 1974 bar, drawn after the number
     const bu = smooth((L - (tV + 0.3)) / 1.2), bx = g.x0 + 9 * g.w - 4, y0 = g.yb - 1e6 * g.s, y1 = g.yb - M.real1966[9] * g.s;
     items.push(S(P + '-drop', 'polyline', { panel: P, z: 0, pts: [[bx, y0], [bx, y0 + (y1 - y0) * bu]], stroke: C.loss, lw: 5, alpha: bu > 0 ? 1 : 0, meta: { role: 'mark', panel: P } }));
@@ -244,7 +254,7 @@
     items.push(Tx(P + '-e74', 'end of 1974', e[0] + 34, e[1] + 46, 30, C['text-dim'], { align: 'right', claims: cl('y1974'), alpha: on(L, t74), level: 3 }));
     items.push(Tx(P + '-who', '1966 retiree, real balance', g.x0 - 10, 250, 32, C.c1966, { series: '1966', claims: cl('y1966'), alpha: fade(L, 0.3), level: 3 }));
     items.push(L1(P + '-l1', '$461,000', 640, 720, 104, on(L, tV), { claims: cl('bal74') }));
-    basis(items, P + '-basis', 640, 830, L, 0.25, fade(L, 0.2, 0.2));
+    basis(items, P + '-basis', 640, 830, L, 0.25, on(L, tV));
     items.push(Tx(P + '-pre', 'ends the year with', 640, 610, 36, C['text-dim'], { align: 'center', alpha: fade(L, t74 - 0.2), level: 2 }));
     return items;
   };
@@ -253,7 +263,7 @@
   // twin ledger: same year, the mirror's real balance; the 1966 bars sit beside it for scale
   B['a2-bal74m'] = (L, sc, H) => {
     const items = [], P = 'a2-bal74m'; env(items, P, { glow: 0.08, key: C['rim-light'], gx: 1500 });
-    const W = cueL(H), tV = W('a2-bal74m.1', '$1.27 million', 3.4), t66 = W('a2-bal74m.1', '1966', 5.6), tM = W('a2-bal74m.1', 'mirror', 0.2);
+    const W = cueL(H), tV = H.local(266.66) /* onset of '$1.27 million' measured on the master mix (checks ASR) */, t66 = W('a2-bal74m.1', '1966', 5.6), tM = W('a2-bal74m.1', 'mirror', 0.2);
     const s = 0.00030;
     balBars(items, P, H, L, '1966', 9, () => 1, { x0: 170, w: 44, s });
     const g = balBars(items, P, H, L, 'mirror', 9, (k) => smooth((L - 0.3 - k * 0.3) / 0.35), { x0: 620, w: 44, s });
@@ -283,12 +293,13 @@
   B['a2-bite'] = (L, sc, H) => {
     const items = [], P = 'a2-bite'; env(items, P, { glow: 0.09 });
     const W = cueL(H), tV = W('a2-bite.2', '$40,000', 5.65), t66 = W('a2-bite.2', '1966', 7.3), tSm = W('a2-bite.2', 'smaller', 11.3), tBad = W('a2-bite.1', 'bad', 0.7);
-    const r0 = 250, r1 = r0 * Math.sqrt(M.real1966[9] / 1e6);
+    const r0 = 215, r1 = r0 * Math.sqrt(M.real1966[9] / 1e6);
     const sh0 = 40000 / 1e6 * smooth((L - (tV - 0.3)) / 0.6), sh1 = 40000 / M.real1966[9] * smooth((L - (tSm - 0.8)) / 0.6);
-    pie(items, P, P + '-p0', 560, 700, r0, sh0, fade(L, 0.2), '1966');
-    pie(items, P, P + '-p1', 1360, 700 + (r0 - r1), r1, sh1, fade(L, tBad), '1966');
-    items.push(Tx(P + '-c0', 'the pile in 1966', 560, 1000, 32, C['text-dim'], { align: 'center', claims: cl('y1966'), alpha: fade(L, 0.3), level: 3 }));
-    items.push(Tx(P + '-c1', 'after the bad start', 1360, 1000, 32, C['text-dim'], { align: 'center', alpha: fade(L, tBad), level: 3 }));
+    pie(items, P, P + '-p0', 560, 680, r0, sh0, fade(L, 0.2), '1966');
+    pie(items, P, P + '-p1', 1360, 680 + (r0 - r1), r1, sh1, fade(L, tBad), '1966');
+    const c0 = H.P(560, 680 + r0 + 56, 0), c1 = H.P(1360, 680 + r0 + 56, 0);
+    items.push(Tx(P + '-c0', 'the pile at the start', c0[0], Math.min(1000, c0[1]), 32, C['text-dim'], { align: 'center', alpha: fade(L, 0.3), level: 3 }));
+    items.push(Tx(P + '-c1', 'after the bad start', c1[0], Math.min(1000, c1[1]), 32, C['text-dim'], { align: 'center', alpha: fade(L, tBad), level: 3 }));
     const inB = L >= 4.4;
     items.push(L1(P + '-l1', 'Hard to undo', 640, 360, 72, fade(L, 0.3) * fadeOut(L, 4.2, 0.2)));
     items.push(badge(P + '-badge', 1280 - 140, 214, inB ? fade(L, tV - 0.4, 0.2) : 0));
@@ -385,13 +396,13 @@
   B['a2-7576b'] = (L, sc, H) => {
     const items = [], P = 'a2-7576b'; env(items, P, { glow: 0.07, gx: 400 });
     const W = cueL(H), tCut = W('a2-7576b.1', 'cut', 2.5), tWd = W('a2-7576b.1', 'withdrawals', 3.8);
-    const g = duel(items, P, H, { p66: 8 + 3 * smooth((L - 0.3) / 1.6), yb: 640, yt: 240, vmax: 1.2e6, l66dy: 60, ldx: 0 });
+    const g = duel(items, P, H, { p66: 8 + 3 * smooth((L - 0.3) / 1.6), x0: 520, x1: 1560, yb: 640, yt: 240, vmax: 1.2e6, l66dy: 60, ldx: 0 });
     // the start level as a dashed reference, the cut as a bracket from it to the 1974 low
     items.push(S(P + '-ref', 'polyline', { panel: P, z: 0, pts: [[g.X(0), g.Y(1e6)], [g.X(30), g.Y(1e6)]], stroke: C.muted, lw: 2, dash: [10, 8], alpha: 0.8, meta: { role: 'mark', panel: P } }));
     const cu = smooth((L - (tCut - 0.4)) / 0.5), xc = g.X(9) + 20;
     items.push(S(P + '-cut', 'polyline', { panel: P, z: 0, pts: [[xc, g.Y(1e6)], [xc, g.Y(1e6) + (g.Y(M.real1966[9]) - g.Y(1e6)) * cu]], stroke: C.loss, lw: 5, alpha: cu > 0 ? 1 : 0, meta: { role: 'mark', panel: P } }));
     const rp = H.P(g.X(30), g.Y(1e6), 0);
-    items.push(Tx(P + '-refl', 'where it started', rp[0], rp[1] - 16, 30, C['text-dim'], { align: 'right', alpha: 1, level: 3 }));
+    items.push(Tx(P + '-refl', 'where it started', Math.min(1800, rp[0]), rp[1] - 18, 32, C['text-dim'], { align: 'right', alpha: 1, level: 3, background: C.surface, pad: 6, sharp: true }));
     // withdrawals, nominal, as a bar row under the chart
     const x0 = g.x0, w = (g.x1 - g.x0) / 30;
     base(items, P, 'wd', x0, x0 + 11 * w, 960, fade(L, tWd - 0.6));
@@ -480,6 +491,7 @@
     base(items, P, 'r82', 400, 900, yb);
     bar(items, P, 'r82', P + '-b', x, yb, w, M.ret1966[16] * 100, s, smooth((L - (tV - 0.9)) / 0.9), C.gain, 1);
     items.push(S(P + '-tag', 'rect', { panel: P, z: 0, rect: [x, yb + 20, w, 10], radius: 4, fill: C.c1966, meta: { role: 'mark', panel: P, ...charShape('1966') } }));
+    items.push(L1(P + '-l1a', 'A strong year', 1280, 360, 72, L < tV - 0.2 ? fade(L, 0.3, 0.3) : 0));
     items.push(L1(P + '-l1', 'gains 25.4%', 1280, 360, 88, on(L, tV), { claims: cl('ret1982') }));
     items.push(Tx(P + '-who', '1966 retiree, that year', 1280, 470, 36, C.c1966, { align: 'center', claims: cl('y1966'), alpha: on(L, t66), series: '1966', level: 2 }));
     return items;
@@ -613,7 +625,7 @@
   B['a2-years'] = (L, sc, H) => {
     const items = [], P = 'a2-years'; env(items, P, { glow: 0.10, gx: 1500 });
     const W = cueL(H), t40 = W('a2-years.1', '$40,000', 0.45), t66 = W('a2-years.1', '1966', 2.05), tGap = W('a2-years.1', 'gap', 4.6), t49 = W('a2-years.1', '49', 5.6);
-    const gx = 1130, tile = 64, pad = 8, cols = 7, gy = 960; // grid bottom-up; 1 tile = $40,000
+    const gx = 1130, tile = 64, pad = 8, cols = 7, gy = 880; // grid bottom-up; 1 tile = $40,000
     const colH = 49 * 40000 / 40000 * (tile + pad) / cols; // column of the gap, same area per $ as the tiles when cut
     const cu = smooth((L - 1.5) / 2.2), split = smooth((L - (tGap)) / 1.2);
     // the gap column before the split (width of the grid, height = 7 rows)
@@ -623,8 +635,9 @@
       const a = i === 0 ? fade(L, t40 - 0.2, 0.2) : split;
       items.push(S(`${P}-t${i}`, 'rect', { panel: P, z: 0, rect: [gx + c * (tile + pad), gy - (r + 1) * (tile + pad), tile, tile], radius: 6, fill: i === 0 ? C.c1966 : C.text, alpha: a * (i === 0 ? 1 : 0.85), meta: { role: 'mark', panel: P } }));
     }
-    items.push(Tx(P + '-cg', 'the gap', gx, gy + 50, 30, C['text-dim'], { alpha: fade(L, 1.6) * (1 - split), level: 3 }));
-    items.push(Tx(P + '-ct', 'one tile = one year of withdrawals', gx, gy + 50, 30, C['text-dim'], { alpha: split, level: 3 }));
+    const cq = H.P(gx, gy + 48, 0); cq[1] = Math.min(1004, cq[1]);
+    items.push(Tx(P + '-cg', 'the gap', cq[0], cq[1], 30, C['text-dim'], { alpha: fade(L, 1.6) * (1 - split), level: 3 }));
+    items.push(Tx(P + '-ct', 'one tile = one year of withdrawals', cq[0], cq[1], 30, C['text-dim'], { alpha: split, level: 3 }));
     const pre = L < t49 - 0.3;
     items.push(badge(P + '-b40', 640 - 110, 250, pre ? fade(L, t40 - 0.4, 0.2) : 0));
     items.push(L1(P + '-l1', '$40,000 a year', 640, 360, 72, pre ? on(L, t40) : 0, { claims: cl('wd1') }));
@@ -658,7 +671,7 @@
       const a = on(L, t), xa = (g.X(k) + g.X(k + 1)) / 2;
       items.push(S(`${P}-ring${k}`, 'ring', { panel: P, z: 0, c: [xa, (g.Y(arr[k]) + g.Y(arr[k + 1])) / 2], r: 44 * back((L - t) / 0.3), r2: 36 * back((L - t) / 0.3), fill: C.loss, alpha: a, meta: { role: 'mark', panel: P } }));
       const q = H.P(xa, Math.min(g.Y(arr[k]), g.Y(arr[k + 1])) - 40, 0);
-      items.push(Tx(`${P}-t${k}`, txt, q[0], q[1] + dy, 32, C.loss, { align: 'center', weight: 700, claims: cl(yr), alpha: a, level: 2 }));
+      items.push(Tx(`${P}-t${k}`, txt, q[0], q[1] + dy, 32, C.text, { align: 'center', weight: 700, claims: cl(yr), alpha: a, level: 2 }));
     }
     items.push(L1(P + '-l1', 'The same loss, late', 1280, 720, 56, fade(L, 0.3, 0.3)));
     items.push(Tx(P + '-sub', 'on a balance big enough to absorb it', 1280, 800, 32, C['text-dim'], { align: 'center', alpha: fade(L, tAbs - 1.2), level: 2 }));
@@ -677,14 +690,16 @@
       if (k === 25) items.push(S(`${P}-plan`, 'rect', { panel: P, z: 0, rect: [x0 + 9 * w, yb - M.plannedWd[25] * s, w - 14, M.plannedWd[25] * s], radius: 3, fill: null, stroke: C.muted, lw: 3, dash: [10, 8], alpha: fade(L, tV + 0.3), meta: { role: 'mark', panel: P } }));
       bar(items, P, 'wd', `${P}-wd${k}`, x0 + (k - 16) * w, yb, w - 14, M.wd1966[k], s, g, k === 25 ? C.loss : C.inflation, 1);
     }
-    items.push(Tx(P + '-cap', 'withdrawals, nominal', x0, yb + 62, 30, C.inflation, { alpha: fade(L, 0.3), level: 3 }));
+    const cp = H.P(x0, yb + 64, 0);
+    items.push(Tx(P + '-cap', 'withdrawals, nominal', cp[0], Math.min(1000, cp[1]), 30, C.inflation, { alpha: fade(L, 0.3), level: 3 }));
     // balance column (nominal), draining year by year from 1982 to 1991
     const dr = clamp((L - 2.2) / (tZero - 2.2)) * 10, n = Math.floor(dr), f = dr - n;
     const vk = n >= 10 ? 0 : M.nom1966[16 + n] + (M.nom1966[17 + n] - M.nom1966[16 + n]) * smooth(f);
     const cx = 1060, cs = 0.0005;
     base(items, P, 'bal', cx - 20, cx + 200, yb);
     bar(items, P, 'bal', P + '-bal', cx, yb, 180, vk, cs, 1, C.c1966, 1, { char: '1966' });
-    items.push(Tx(P + '-cb', 'balance, nominal', cx, yb + 62, 30, C.c1966, { alpha: 1, level: 3, series: '1966' }));
+    const cbp = H.P(cx - 20, yb + 64, 0);
+    items.push(Tx(P + '-cb', 'balance, nominal', cbp[0], Math.min(1000, cbp[1]), 30, C.c1966, { alpha: 1, level: 3, series: '1966' }));
     const zp = smooth((L - (t91 - 0.2)) / 0.35);
     items.push(S(P + '-zero', 'circle', { panel: P, z: 0, c: [cx + 90, yb], r: 16 * back(zp), fill: C.loss, alpha: zp > 0 ? 1 : 0, meta: { role: 'mark', panel: P, ...charShape('1966') } }));
     const big = L < t91 - 0.3;
@@ -720,15 +735,16 @@
   B['a2-mirror-end'] = (L, sc, H) => {
     const items = [], P = 'a2-mirror-end'; env(items, P, { glow: 0.10, key: C['rim-light'], gx: 1500 });
     const W = cueL(H), t95 = W('a2-mirror-end.1', '1995', 1.9), tV = W('a2-mirror-end.1', '$6.96 million', 4.1);
-    const s = 0.000052, yb = 940, w = 22;
+    const s = 0.000052, yb = 800, w = 22;
     base(items, P, 'n66', 190, 200 + 30 * w, yb);
     base(items, P, 'nm', 1010, 1020 + 30 * w, yb);
     for (let k = 0; k < 30; k++) {
       bar(items, P, 'n66', `${P}-a${k}`, 200 + k * w, yb, w - 6, M.nom1966[k + 1], s, 1, C.c1966, 1, { char: '1966', radius: 2 });
       bar(items, P, 'nm', `${P}-m${k}`, 1020 + k * w, yb, w - 6, M.nomMirror[k + 1], s, smooth((L - 0.3 - k * 0.1) / 0.3), C.cmirror, 1, { char: 'mirror', radius: 2 });
     }
-    items.push(Tx(P + '-a', 'first retiree', 170, 1000, 30, C.c1966, { series: '1966', level: 3 }));
-    items.push(Tx(P + '-b', 'mirror retiree', 1020, 1000, 30, C.cmirror, { series: 'mirror', level: 3 }));
+    const la = H.P(200, yb + 58, 0), lb = H.P(1020, yb + 58, 0);
+    items.push(Tx(P + '-a', 'first retiree', la[0], Math.min(1000, la[1]), 34, C.c1966, { series: '1966', weight: 700, level: 3 }));
+    items.push(Tx(P + '-b', 'mirror retiree', lb[0], Math.min(1000, lb[1]), 34, C.cmirror, { series: 'mirror', weight: 700, level: 3 }));
     const e = H.P(1020 + 29 * w + 8, yb, 0);
     items.push(Tx(P + '-y', '1995', e[0] + 30, e[1] + 46, 30, C['text-dim'], { align: 'center', claims: cl('y1995'), alpha: on(L, t95), level: 3 }));
     items.push(badge(P + '-badge', 1000, 250, fade(L, tV - 0.4, 0.2)));
@@ -737,7 +753,7 @@
     items.push(Tx(P + '-l', 'balance each year, nominal', 200, 250, 30, C['text-dim'], { alpha: fade(L, 0.3), level: 3 }));
     return items;
   };
-  CAM['a2-mirror-end'] = { f: 50, base: { z: 330 }, moves: [[0.6, 1.4, { z: -330 }]], why: 'pull back to show both nominal paths to the end' };
+  CAM['a2-mirror-end'] = { f: 50, base: { z: 200 }, moves: [[0.6, 1.4, { z: -200 }]], why: 'pull back to show both nominal paths to the end' };
 
   // the mirror's end in 1966 dollars: the nominal column deflates to $1.44 million, above the $1 million start line
   B['a2-mirror-real'] = (L, sc, H) => {
@@ -779,12 +795,12 @@
         }
         base(items, P, 'avg-' + ch, x0 - 8, x0 + 600, 860, ba);
       }
-      items.push(Tx(P + '-a', 'first retiree', 300, 960, 30, C.c1966, { series: '1966', alpha: ba, level: 3 }));
-      items.push(Tx(P + '-b', 'mirror retiree', 1000, 960, 30, C.cmirror, { series: 'mirror', alpha: ba, level: 3 }));
+      items.push(Tx(P + '-a', 'first retiree', 300, 960, 34, C.c1966, { series: '1966', weight: 700, alpha: ba, level: 3 }));
+      items.push(Tx(P + '-b', 'mirror retiree', 1000, 960, 34, C.cmirror, { series: 'mirror', weight: 700, alpha: ba, level: 3 }));
     }
     const da = smooth((L - (t2 - 0.1)) / 0.5);
     if (da > 0) {
-      const g = duel(items, P, H, { p66: 30 * smooth((L - t2) / (tBroke - t2 + 0.3)), pm: 30 * smooth((L - t2) / (tBroke - t2 + 0.3)), a66: da, am: da, axisA: da, yb: 900, yt: 480 });
+      const g = duel(items, P, H, { p66: 30 * smooth((L - t2) / (tBroke - t2 + 0.3)), pm: 30 * smooth((L - t2) / (tBroke - t2 + 0.3)), a66: da, am: da, axisA: da, yb: 900, yt: 480, startLabels: true });
       const zp = smooth((L - (tBroke - 0.2)) / 0.35);
       items.push(S(P + '-zero', 'circle', { panel: P, z: 0, c: [g.X(26), g.yb], r: 14 * back(zp), fill: C.loss, alpha: zp > 0 ? 1 : 0, meta: { role: 'mark', panel: P, ...charShape('1966') } }));
     }

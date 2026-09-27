@@ -32,3 +32,16 @@
     - Bỏ 5 câu dạy thế giới 3D thêm ở M2c; khôi phục dòng thời gian tương ứng.
     - Thêm một câu hồi 2 (V8, cùng quy tắc chọn take) cho claim mới: "In 8 of its years with gains above 10%, the 1966 retiree's balance still fell after the withdrawal and inflation." (1979, 1980, 1983, 1985, 1986, 1988, 1989, 1991), có test.
     - Giữ các sửa âm thanh của M2c: cắt đuôi câu quyết định +250 ms; ducking quanh các con số.
+
+## 2026-09-27 — M3, vòng sửa 2 (chỉ dẫn của chủ dự án)
+15. **Trượt đã biết ở 2.5D (không đuổi theo):**
+    - **R06** (cắt thấy được trên hình, 68.6%): luật đo mức đổi hình ở mỗi điểm cắt. Bài dựng theo match cut và các biểu đồ nối tiếp nhau, nên nhiều điểm cắt cố ý không thấy rõ.
+    - **V05** (ease/overshoot): các chuyển động có quán tính (cameras.js) và `back()` khi số hiện ra.
+    - **V07** (tỉ lệ mờ 1.19): mờ chuyển động 8× chỉ có khi máy quay đi trên mặt phẳng biểu đồ, không phải mờ theo chiều sâu 3D.
+    - Cả ba ghi "trượt đã biết" theo mục 13. Không sửa `checks/`.
+16. **A15, lệch giữa hai cách đo (khoảng 7 wpm):**
+    - Cả hai cùng công thức: số từ của `spoken` chia khoảng từ đầu đến từ cuối của ASR.
+    - Phiên đo trên từng take sạch, trước khi trộn: các hồi ra 151–159 wpm (`out/voice/wpm-report.md`).
+    - Checks đo bằng faster-whisper trên bản trộn cuối, có nhạc và hiệu ứng: các hồi ra 144.8–146.8 wpm.
+    - Mốc từ trên bản trộn rộng hơn, nhất là đầu và cuối câu, nên tốc độ đo được thấp hơn chừng 7–9 wpm. M2 đã thấy điều này (hồi 1 thấp hơn khoảng 9 wpm).
+    - Theo chỉ dẫn: ghi lại, **không sinh lại giọng**.

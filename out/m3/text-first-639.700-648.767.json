@@ -1,0 +1,23 @@
+{
+ "a3-overlap-l1": {
+  "t": 640.6667,
+  "x": 560,
+  "level": 1,
+  "role": "label",
+  "claims": 1
+ },
+ "a3-overlap-98": {
+  "t": 643.1667,
+  "x": 960,
+  "level": 2,
+  "role": "label",
+  "claims": 1
+ },
+ "a3-overlap-3": {
+  "t": 645.8333,
+  "x": 1280,
+  "level": 2,
+  "role": "label",
+  "claims": 1
+ }
+}

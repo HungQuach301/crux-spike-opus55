@@ -1,0 +1,72 @@
+{
+ "outro-a0": {
+  "t": 681.8,
+  "x": 556.8,
+  "level": null,
+  "role": "axis-label",
+  "claims": 1
+ },
+ "outro-a1": {
+  "t": 681.8,
+  "x": 1363.2,
+  "level": null,
+  "role": "axis-label",
+  "claims": 1
+ },
+ "outro-l1": {
+  "t": 682.8,
+  "x": 960,
+  "level": 1,
+  "role": "label",
+  "claims": 0
+ },
+ "outro-basis": {
+  "t": 682.9667,
+  "x": 673.6,
+  "level": 3,
+  "role": "label",
+  "claims": 0
+ },
+ "outro-lab66": {
+  "t": 683.1667,
+  "x": 517.1,
+  "level": 3,
+  "role": "label",
+  "claims": 0
+ },
+ "outro-labm": {
+  "t": 683.5667,
+  "x": 667.2,
+  "level": 3,
+  "role": "label",
+  "claims": 0
+ },
+ "outro-sub": {
+  "t": 687.3333,
+  "x": 960,
+  "level": 2,
+  "role": "label",
+  "claims": 0
+ },
+ "outro-title": {
+  "t": 694.0667,
+  "x": 960,
+  "level": 1,
+  "role": "label",
+  "claims": 0
+ },
+ "outro-src": {
+  "t": 697.5667,
+  "x": 960,
+  "level": 3,
+  "role": "label",
+  "claims": 0
+ },
+ "outro-hist": {
+  "t": 701.0667,
+  "x": 960,
+  "level": 3,
+  "role": "label",
+  "claims": 0
+ }
+}

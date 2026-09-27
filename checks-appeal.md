@@ -48,3 +48,13 @@ Theo brief §1.3, Phiên D không tự đổi nguồn. S04 hiện chỉ so lạm
 - §1, §2: chấp nhận cách né; luật giữ nguyên.
 - §3 / S04: **chấp nhận S04 trượt**, không mở thêm domain. Lý do: lệch do phương pháp — Shiller dùng giá trung bình tháng, Damodaran dùng mức cuối năm (82/95 năm lệch > 0,5 pp, trung vị 1,61 pp); bản dữ liệu Yale truy cập được dừng ở 09/2023 nên thiếu 2023–2025. Đối chiếu mô tả trong `data/sources.json` (`crosscheck.stocks.descriptive`): cùng chiều tăng/giảm 91/95 năm; bình quân nhân 30 năm lệch trung bình 0,13 pp (tối đa 0,53 pp), cửa sổ 1966–1995 lệch 0,011 pp. Mô hình vẫn dùng Damodaran.
 - A15: chấp nhận trượt trần 175 wpm từng câu cho các câu diễn có chủ ý; ràng buộc giữ: trung bình mỗi hồi 150–160 wpm, mọi câu 120–190 wpm (ghi ở BRIEF-D-amendments.md). Luật không đổi.
+
+## 4. C04: biểu đồ tròn tô kín bị coi là "chuỗi đường" (M3, a2-bite / a2-bite-b)
+
+**Luật.** `axisAnchors` coi mọi hình ≥ 10 đỉnh mang màu chuỗi là một chuỗi đường. Chuỗi đường phải có trục và 2 mốc số (`o.vertices >= 10 && markHex(o, tok)`).
+
+**Bằng chứng.** Cảnh a2-bite / a2-bite-b vẽ hai "đống tiền" dạng biểu đồ tròn. Mỗi đống là một đa giác tô kín `poly` khoảng 70 đỉnh (phần còn lại) cộng một miếng bị cắn màu `loss`, có diện tích tỉ lệ số dư. Đa giác phần còn lại mang màu nhân vật 1966 (`#ffc857`), nên C04 gắn cờ `a2-bite-p0-rest` / `a2-bite-p1-rest`: axes 0, anchors 0–1 (364 khung ở v1/r1). Biểu đồ tròn không có trục thời gian hay trục giá trị, nên luật đòi thứ không tồn tại.
+
+**Đề xuất.** Chỉ coi hình là chuỗi đường khi nó là đường hở (polyline, không tô) hoặc có `role: 'series'`. Có thể bỏ qua hình tô kín (`fill` khác null, `stroke` null).
+
+**Phiên D đã làm.** Không thêm trục giả cho biểu đồ tròn và không đổi màu đống tiền để né luật. C04 ghi "trượt, kháng nghị" trong báo cáo M3.

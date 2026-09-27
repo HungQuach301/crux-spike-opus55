@@ -204,8 +204,9 @@
       }
       release(lc);
     }
-    // HUD text last (sharp)
-    for (const it of state.items) if (it.kind === 'text') drawText(ctx, it, objs);
+    // HUD text last (sharp); texts flagged `sharp` are left out of the moving subframes and drawn once, at the exposure
+    // midpoint, over the accumulated frame (labels that ride a moving chart stay legible instead of smearing)
+    for (const it of state.items) if (it.kind === 'text' && !(opts.skipSharp && it.sharp)) drawText(ctx, it, objs);
     return { cam, objs };
   }
 
@@ -240,7 +241,7 @@
     }
     acc.fill(0);
     for (let k = 0; k < N; k++) {
-      drawSubframe(mctx, states[k], opts);
+      drawSubframe(mctx, states[k], { ...opts, skipSharp: true });
       const d = mctx.getImageData(0, 0, W, H).data;
       for (let i = 0; i < d.length; i++) acc[i] += d[i];
     }
@@ -252,6 +253,8 @@
       o[i] = acc[i] * inv + dth + 0.5; o[i + 1] = acc[i + 1] * inv + dth + 0.5; o[i + 2] = acc[i + 2] * inv + dth + 0.5; o[i + 3] = 255;
     }
     mctx.putImageData(img, 0, 0);
+    mctx.setTransform(1, 0, 0, 1, 0, 0); mctx.globalAlpha = 1; mctx.filter = 'none';
+    for (const it of centre.items) if (it.kind === 'text' && it.sharp) drawText(mctx, it, []);
     // objects of the centre instant (the exposure midpoint)
     const tmp = layerCanvas(1);
     const r = drawSubframe(tmp.ctx, centre, opts);

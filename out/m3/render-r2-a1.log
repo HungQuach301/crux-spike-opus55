@@ -1,0 +1,12 @@
+worker 2550-2677: frame 2550 (5 s)
+worker 2423-2550: frame 2423 (5 s)
+worker 2296-2423: frame 2296 (6 s)
+worker 2677-2802: frame 2677 (6 s)
+{"range":"76.533-93.400","wallSeconds":391.5,"frames":506,"framesSupersampled":506}
+worker 3814-3874: frame 3814 (2 s)
+worker 3874-3931: frame 3874 (2 s)
+worker 3694-3754: frame 3694 (2 s)
+worker 3754-3814: frame 3754 (2 s)
+{"range":"123.133-131.033","wallSeconds":114.2,"frames":237,"framesSupersampled":237}
+rendered 3 ranges in 507 s
+EXIT 0

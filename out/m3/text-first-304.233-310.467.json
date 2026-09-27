@@ -1,0 +1,86 @@
+{
+ "a2-7576n-va": {
+  "t": 304.2333,
+  "x": 1112.2,
+  "level": 2,
+  "role": "label",
+  "claims": 1
+ },
+ "a2-7576n-vb": {
+  "t": 304.2333,
+  "x": 1525.2,
+  "level": 2,
+  "role": "label",
+  "claims": 1
+ },
+ "a2-7576n-ya": {
+  "t": 304.2333,
+  "x": 1112.2,
+  "level": 3,
+  "role": "label",
+  "claims": 1
+ },
+ "a2-7576n-yb": {
+  "t": 304.2333,
+  "x": 1525.2,
+  "level": 3,
+  "role": "label",
+  "claims": 1
+ },
+ "a2-7576n-l1": {
+  "t": 304.2333,
+  "x": 640,
+  "level": 1,
+  "role": "label",
+  "claims": 0
+ },
+ "a2-7576n-sub": {
+  "t": 304.2333,
+  "x": 640,
+  "level": 2,
+  "role": "label",
+  "claims": 0
+ },
+ "a2-7576b-ax0": {
+  "t": 304.2667,
+  "x": 169.7,
+  "level": null,
+  "role": "axis-label",
+  "claims": 1
+ },
+ "a2-7576b-ax1": {
+  "t": 304.2667,
+  "x": 1210.1,
+  "level": null,
+  "role": "axis-label",
+  "claims": 1
+ },
+ "a2-7576b-lab-1966": {
+  "t": 304.2667,
+  "x": 559.6,
+  "level": 3,
+  "role": "label",
+  "claims": 0
+ },
+ "a2-7576b-refl": {
+  "t": 304.2667,
+  "x": 1088.8,
+  "level": 3,
+  "role": "label",
+  "claims": 0
+ },
+ "a2-7576b-l1": {
+  "t": 304.7,
+  "x": 1280,
+  "level": 1,
+  "role": "label",
+  "claims": 0
+ },
+ "a2-7576b-wdl": {
+  "t": 308.5667,
+  "x": 1073.4,
+  "level": 3,
+  "role": "label",
+  "claims": 0
+ }
+}

@@ -1,0 +1,72 @@
+{
+ "a2-payoff-a": {
+  "t": 441.4667,
+  "x": 392.4,
+  "level": 3,
+  "role": "label",
+  "claims": 0
+ },
+ "a2-payoff-b": {
+  "t": 441.4667,
+  "x": 1109.3,
+  "level": 3,
+  "role": "label",
+  "claims": 0
+ },
+ "a2-payoff-sub": {
+  "t": 441.8333,
+  "x": 960,
+  "level": 2,
+  "role": "label",
+  "claims": 0
+ },
+ "a2-payoff-badge": {
+  "t": 442.6667,
+  "x": 526.1,
+  "level": null,
+  "role": "badge",
+  "claims": 0
+ },
+ "a2-payoff-l1": {
+  "t": 442.9333,
+  "x": 960,
+  "level": 1,
+  "role": "label",
+  "claims": 2
+ },
+ "a2-payoff-l2": {
+  "t": 445.7333,
+  "x": 960,
+  "level": 1,
+  "role": "label",
+  "claims": 0
+ },
+ "a2-payoff-ax0": {
+  "t": 445.8333,
+  "x": 338.2,
+  "level": null,
+  "role": "axis-label",
+  "claims": 1
+ },
+ "a2-payoff-ax1": {
+  "t": 445.8333,
+  "x": 1581.8,
+  "level": null,
+  "role": "axis-label",
+  "claims": 1
+ },
+ "a2-payoff-lab-1966": {
+  "t": 446,
+  "x": 226.9,
+  "level": 3,
+  "role": "label",
+  "claims": 0
+ },
+ "a2-payoff-lab-mirror": {
+  "t": 446,
+  "x": 210.1,
+  "level": 3,
+  "role": "label",
+  "claims": 0
+ }
+}

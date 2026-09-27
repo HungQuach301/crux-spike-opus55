@@ -1,0 +1,72 @@
+{
+ "rs-a0": {
+  "t": 76.5333,
+  "x": 293.1,
+  "level": null,
+  "role": "axis-label",
+  "claims": 1
+ },
+ "rs-a1": {
+  "t": 76.5333,
+  "x": 1576.6,
+  "level": null,
+  "role": "axis-label",
+  "claims": 1
+ },
+ "rs-l1": {
+  "t": 77.0333,
+  "x": 640,
+  "level": 1,
+  "role": "label",
+  "claims": 0
+ },
+ "rs-g100k": {
+  "t": 77.2667,
+  "x": 398.7,
+  "level": null,
+  "role": "axis-label",
+  "claims": 1
+ },
+ "rs-sub": {
+  "t": 77.3333,
+  "x": 640,
+  "level": null,
+  "role": "label",
+  "claims": 0
+ },
+ "re-g100k": {
+  "t": 85.0333,
+  "x": 450.8,
+  "level": null,
+  "role": "axis-label",
+  "claims": 1
+ },
+ "re-a0": {
+  "t": 85.0333,
+  "x": 345.1,
+  "level": null,
+  "role": "axis-label",
+  "claims": 1
+ },
+ "re-a1": {
+  "t": 85.0333,
+  "x": 1528.5,
+  "level": null,
+  "role": "axis-label",
+  "claims": 1
+ },
+ "re-l1": {
+  "t": 85.4,
+  "x": 640,
+  "level": 1,
+  "role": "label",
+  "claims": 0
+ },
+ "re-l1b": {
+  "t": 88.1667,
+  "x": 640,
+  "level": 1,
+  "role": "label",
+  "claims": 0
+ }
+}

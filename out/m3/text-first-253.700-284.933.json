@@ -1,0 +1,135 @@
+{
+ "a2-bal74-who": {
+  "t": 254.1667,
+  "x": 1245.1,
+  "level": 3,
+  "role": "label",
+  "claims": 1
+ },
+ "a2-bal74-refl": {
+  "t": 254.2667,
+  "x": 1304.6,
+  "level": 3,
+  "role": "label",
+  "claims": 0
+ },
+ "a2-bal74-e74": {
+  "t": 257.8,
+  "x": 1670.6,
+  "level": 3,
+  "role": "label",
+  "claims": 1
+ },
+ "a2-bal74-pre": {
+  "t": 257.8,
+  "x": 640,
+  "level": 2,
+  "role": "label",
+  "claims": 0
+ },
+ "a2-bal74-l1": {
+  "t": 259.8667,
+  "x": 640,
+  "level": 1,
+  "role": "label",
+  "claims": 1
+ },
+ "a2-bal74-basis": {
+  "t": 259.8667,
+  "x": 640,
+  "level": 2,
+  "role": "label",
+  "claims": 1
+ },
+ "a2-bal74m-a": {
+  "t": 264.1333,
+  "x": 250.2,
+  "level": 3,
+  "role": "label",
+  "claims": 0
+ },
+ "a2-bal74m-b": {
+  "t": 264.1333,
+  "x": 715.1,
+  "level": 3,
+  "role": "label",
+  "claims": 0
+ },
+ "a2-bal74m-same": {
+  "t": 265.3333,
+  "x": 1360,
+  "level": 2,
+  "role": "label",
+  "claims": 0
+ },
+ "a2-bal74m-badge": {
+  "t": 266.3667,
+  "x": 1216.1,
+  "level": null,
+  "role": "badge",
+  "claims": 0
+ },
+ "a2-bal74m-l1": {
+  "t": 266.6667,
+  "x": 1360,
+  "level": 1,
+  "role": "label",
+  "claims": 1
+ },
+ "a2-bal74m-basis": {
+  "t": 266.6667,
+  "x": 1360,
+  "level": 2,
+  "role": "label",
+  "claims": 0
+ },
+ "a2-bite-c0": {
+  "t": 272.0333,
+  "x": 605.2,
+  "level": 3,
+  "role": "label",
+  "claims": 0
+ },
+ "a2-bite-l1": {
+  "t": 272.0333,
+  "x": 640,
+  "level": 1,
+  "role": "label",
+  "claims": 0
+ },
+ "a2-bite-c1": {
+  "t": 272.4667,
+  "x": 1320.7,
+  "level": 3,
+  "role": "label",
+  "claims": 0
+ },
+ "a2-bite-badge": {
+  "t": 276.9,
+  "x": 1246.1,
+  "level": null,
+  "role": "badge",
+  "claims": 0
+ },
+ "a2-bite-l1b": {
+  "t": 277.2,
+  "x": 1280,
+  "level": 1,
+  "role": "label",
+  "claims": 1
+ },
+ "a2-bite-basis": {
+  "t": 277.2,
+  "x": 1280,
+  "level": 2,
+  "role": "label",
+  "claims": 0
+ },
+ "a2-bite-still": {
+  "t": 282.2667,
+  "x": 1360,
+  "level": 2,
+  "role": "label",
+  "claims": 0
+ }
+}

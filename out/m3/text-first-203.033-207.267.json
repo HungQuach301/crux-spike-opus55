@@ -1,0 +1,44 @@
+{
+ "a2-est-ax0": {
+  "t": 203.0333,
+  "x": 477.6,
+  "level": null,
+  "role": "axis-label",
+  "claims": 1
+ },
+ "a2-est-ax1": {
+  "t": 203.0333,
+  "x": 1442.4,
+  "level": null,
+  "role": "axis-label",
+  "claims": 1
+ },
+ "a2-est-sub": {
+  "t": 203.8,
+  "x": 1280,
+  "level": 2,
+  "role": "label",
+  "claims": 0
+ },
+ "a2-est-l1": {
+  "t": 204.9,
+  "x": 1280,
+  "level": 1,
+  "role": "label",
+  "claims": 0
+ },
+ "a2-est-lab-1966": {
+  "t": 206.2333,
+  "x": 461,
+  "level": 3,
+  "role": "label",
+  "claims": 0
+ },
+ "a2-est-lab-mirror": {
+  "t": 206.2333,
+  "x": 477.8,
+  "level": 3,
+  "role": "label",
+  "claims": 0
+ }
+}

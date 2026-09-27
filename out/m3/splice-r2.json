@@ -1,0 +1,483 @@
+{
+ "scenes": [
+  "a1-start",
+  "a1-raise",
+  "a1-real",
+  "a1-mirror-rule-b",
+  "a2-est",
+  "a2-gap1",
+  "a2-7374",
+  "a2-bal74",
+  "a2-bal74m",
+  "a2-bite",
+  "a2-bite-b",
+  "a2-7576b",
+  "a2-1982r",
+  "a2-late",
+  "a2-mirror-boom",
+  "a2-climb",
+  "a2-climax-in",
+  "a2-climax",
+  "a2-years",
+  "a2-rest",
+  "a2-mirror-late",
+  "a2-1991",
+  "a2-short",
+  "a2-mirror-end",
+  "a2-payoff",
+  "a3-q",
+  "a3-fine",
+  "a3-good",
+  "a3-1929",
+  "a3-1929-b",
+  "a3-nohurt",
+  "a3-four",
+  "a3-four2",
+  "a3-avg-not",
+  "a3-real66",
+  "a3-real66-b",
+  "a3-1969",
+  "a3-1969-b",
+  "a3-1928",
+  "a3-1966d",
+  "a3-mirror-d",
+  "a3-answer",
+  "a3-nuance",
+  "a3-nuance-b",
+  "a3-avg-callback",
+  "a3-overlap",
+  "outro"
+ ],
+ "ranges": [
+  {
+   "f0": 631,
+   "f1": 807,
+   "range": "21.033-26.900",
+   "scenes": [
+    "a1-start"
+   ]
+  },
+  {
+   "f0": 2296,
+   "f1": 2802,
+   "range": "76.533-93.400",
+   "scenes": [
+    "a1-raise",
+    "a1-real"
+   ]
+  },
+  {
+   "f0": 3694,
+   "f1": 3931,
+   "range": "123.133-131.033",
+   "scenes": [
+    "a1-mirror-rule-b"
+   ]
+  },
+  {
+   "f0": 6091,
+   "f1": 6218,
+   "range": "203.033-207.267",
+   "scenes": [
+    "a2-est"
+   ]
+  },
+  {
+   "f0": 6789,
+   "f1": 6887,
+   "range": "226.300-229.567",
+   "scenes": [
+    "a2-gap1"
+   ]
+  },
+  {
+   "f0": 7161,
+   "f1": 7360,
+   "range": "238.700-245.333",
+   "scenes": [
+    "a2-7374"
+   ]
+  },
+  {
+   "f0": 7611,
+   "f1": 8548,
+   "range": "253.700-284.933",
+   "scenes": [
+    "a2-bal74",
+    "a2-bal74m",
+    "a2-bite",
+    "a2-bite-b"
+   ]
+  },
+  {
+   "f0": 9127,
+   "f1": 9314,
+   "range": "304.233-310.467",
+   "scenes": [
+    "a2-7576b"
+   ]
+  },
+  {
+   "f0": 10150,
+   "f1": 10283,
+   "range": "338.333-342.767",
+   "scenes": [
+    "a2-1982r"
+   ]
+  },
+  {
+   "f0": 10763,
+   "f1": 12947,
+   "range": "358.767-431.567",
+   "scenes": [
+    "a2-late",
+    "a2-mirror-boom",
+    "a2-climb",
+    "a2-climax-in",
+    "a2-climax",
+    "a2-years",
+    "a2-rest",
+    "a2-mirror-late",
+    "a2-1991",
+    "a2-short",
+    "a2-mirror-end"
+   ]
+  },
+  {
+   "f0": 13244,
+   "f1": 13544,
+   "range": "441.467-451.467",
+   "scenes": [
+    "a2-payoff"
+   ]
+  },
+  {
+   "f0": 14015,
+   "f1": 15355,
+   "range": "467.167-511.833",
+   "scenes": [
+    "a3-q",
+    "a3-fine",
+    "a3-good",
+    "a3-1929",
+    "a3-1929-b",
+    "a3-nohurt"
+   ]
+  },
+  {
+   "f0": 15704,
+   "f1": 17224,
+   "range": "523.467-574.133",
+   "scenes": [
+    "a3-four",
+    "a3-four2",
+    "a3-avg-not",
+    "a3-real66",
+    "a3-real66-b",
+    "a3-1969",
+    "a3-1969-b",
+    "a3-1928"
+   ]
+  },
+  {
+   "f0": 17538,
+   "f1": 18904,
+   "range": "584.600-630.133",
+   "scenes": [
+    "a3-1966d",
+    "a3-mirror-d",
+    "a3-answer",
+    "a3-nuance",
+    "a3-nuance-b",
+    "a3-avg-callback"
+   ]
+  },
+  {
+   "f0": 19191,
+   "f1": 19463,
+   "range": "639.700-648.767",
+   "scenes": [
+    "a3-overlap"
+   ]
+  },
+  {
+   "f0": 20454,
+   "f1": 21180,
+   "range": "681.800-706.000",
+   "scenes": [
+    "outro"
+   ]
+  }
+ ],
+ "renders": [
+  {
+   "range": "21.033-26.900",
+   "scenes": [
+    "a1-start"
+   ],
+   "skipped": true
+  },
+  {
+   "range": "76.533-93.400",
+   "scenes": [
+    "a1-raise",
+    "a1-real"
+   ],
+   "skipped": true
+  },
+  {
+   "range": "123.133-131.033",
+   "scenes": [
+    "a1-mirror-rule-b"
+   ],
+   "skipped": true
+  },
+  {
+   "range": "203.033-207.267",
+   "scenes": [
+    "a2-est"
+   ],
+   "frames": 127,
+   "framesSupersampled": 127,
+   "wallSeconds": 63.3
+  },
+  {
+   "range": "226.300-229.567",
+   "scenes": [
+    "a2-gap1"
+   ],
+   "frames": 98,
+   "framesSupersampled": 98,
+   "wallSeconds": 44.6
+  },
+  {
+   "range": "238.700-245.333",
+   "scenes": [
+    "a2-7374"
+   ],
+   "frames": 199,
+   "framesSupersampled": 199,
+   "wallSeconds": 92
+  },
+  {
+   "range": "253.700-284.933",
+   "scenes": [
+    "a2-bal74",
+    "a2-bal74m",
+    "a2-bite",
+    "a2-bite-b"
+   ],
+   "frames": 937,
+   "framesSupersampled": 801,
+   "wallSeconds": 416.3
+  },
+  {
+   "range": "304.233-310.467",
+   "scenes": [
+    "a2-7576b"
+   ],
+   "frames": 187,
+   "framesSupersampled": 187,
+   "wallSeconds": 82.7
+  },
+  {
+   "range": "338.333-342.767",
+   "scenes": [
+    "a2-1982r"
+   ],
+   "frames": 133,
+   "framesSupersampled": 67,
+   "wallSeconds": 45.3
+  },
+  {
+   "range": "358.767-431.567",
+   "scenes": [
+    "a2-late",
+    "a2-mirror-boom",
+    "a2-climb",
+    "a2-climax-in",
+    "a2-climax",
+    "a2-years",
+    "a2-rest",
+    "a2-mirror-late",
+    "a2-1991",
+    "a2-short",
+    "a2-mirror-end"
+   ],
+   "frames": 2184,
+   "framesSupersampled": 2184,
+   "wallSeconds": 747.5
+  },
+  {
+   "range": "441.467-451.467",
+   "scenes": [
+    "a2-payoff"
+   ],
+   "frames": 300,
+   "framesSupersampled": 233,
+   "wallSeconds": 96.7
+  },
+  {
+   "range": "467.167-511.833",
+   "scenes": [
+    "a3-q",
+    "a3-fine",
+    "a3-good",
+    "a3-1929",
+    "a3-1929-b",
+    "a3-nohurt"
+   ],
+   "frames": 1340,
+   "framesSupersampled": 1178,
+   "wallSeconds": 456
+  },
+  {
+   "range": "523.467-574.133",
+   "scenes": [
+    "a3-four",
+    "a3-four2",
+    "a3-avg-not",
+    "a3-real66",
+    "a3-real66-b",
+    "a3-1969",
+    "a3-1969-b",
+    "a3-1928"
+   ],
+   "frames": 1520,
+   "framesSupersampled": 1520,
+   "wallSeconds": 539.4
+  },
+  {
+   "range": "584.600-630.133",
+   "scenes": [
+    "a3-1966d",
+    "a3-mirror-d",
+    "a3-answer",
+    "a3-nuance",
+    "a3-nuance-b",
+    "a3-avg-callback"
+   ],
+   "frames": 1366,
+   "framesSupersampled": 1306,
+   "wallSeconds": 474
+  },
+  {
+   "range": "639.700-648.767",
+   "scenes": [
+    "a3-overlap"
+   ],
+   "frames": 272,
+   "framesSupersampled": 272,
+   "wallSeconds": 98.1
+  },
+  {
+   "range": "681.800-706.000",
+   "scenes": [
+    "outro"
+   ],
+   "frames": 726,
+   "framesSupersampled": 726,
+   "wallSeconds": 242.3
+  }
+ ],
+ "renderWallSeconds": 3403.7,
+ "splice": {
+  "masterFrames": 21180,
+  "splicedFrames": 21180,
+  "gopSpans": [
+   {
+    "kA": 515,
+    "kB": 825,
+    "reencodedFrames": 310,
+    "newFrames": 176
+   },
+   {
+    "kA": 2215,
+    "kB": 2973,
+    "reencodedFrames": 758,
+    "newFrames": 506
+   },
+   {
+    "kA": 3515,
+    "kB": 3932,
+    "reencodedFrames": 417,
+    "newFrames": 237
+   },
+   {
+    "kA": 6091,
+    "kB": 6218,
+    "reencodedFrames": 127,
+    "newFrames": 127
+   },
+   {
+    "kA": 6682,
+    "kB": 6888,
+    "reencodedFrames": 206,
+    "newFrames": 98
+   },
+   {
+    "kA": 7138,
+    "kB": 8548,
+    "reencodedFrames": 1410,
+    "newFrames": 1136
+   },
+   {
+    "kA": 8883,
+    "kB": 9315,
+    "reencodedFrames": 432,
+    "newFrames": 187
+   },
+   {
+    "kA": 10150,
+    "kB": 10284,
+    "reencodedFrames": 134,
+    "newFrames": 133
+   },
+   {
+    "kA": 10763,
+    "kB": 12959,
+    "reencodedFrames": 2196,
+    "newFrames": 2184
+   },
+   {
+    "kA": 13244,
+    "kB": 13544,
+    "reencodedFrames": 300,
+    "newFrames": 300
+   },
+   {
+    "kA": 13941,
+    "kB": 15355,
+    "reencodedFrames": 1414,
+    "newFrames": 1340
+   },
+   {
+    "kA": 15605,
+    "kB": 17224,
+    "reencodedFrames": 1619,
+    "newFrames": 1520
+   },
+   {
+    "kA": 17357,
+    "kB": 18904,
+    "reencodedFrames": 1547,
+    "newFrames": 1366
+   },
+   {
+    "kA": 19085,
+    "kB": 19692,
+    "reencodedFrames": 607,
+    "newFrames": 272
+   },
+   {
+    "kA": 20454,
+    "kB": 21180,
+    "reencodedFrames": 726,
+    "newFrames": 726
+   }
+  ],
+  "reencodedFrames": 12203,
+  "newFrames": 10308,
+  "encodeSeconds": 827.6
+ }
+}

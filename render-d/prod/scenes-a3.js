@@ -76,6 +76,7 @@
     const items = []; env(items, 'a3-q', { glow: 0.12, gx: 960 });
     // the map recedes behind the question (out of focus: context, not content)
     startMap(items, 'a3-q', { g: { x0: 506, y0: 260, z: 900 }, color: (s) => (s.y === 1966 ? C.c1966 : C['surface-2']), alpha: () => 0.9 });
+    items.forEach((it) => { if (it.kind === 'shape' && it.id.startsWith('a3-q-y')) it.meta.role = 'bg'; });
     items.push(S('a3-q-card', 'rect', { panel: 'a3-q', z: 0, rect: [420, 380, 1080, 320], radius: 24, fill: C.surface, alpha: fade(L, 0.1, 0.3), shadow: { alpha: 0.5, blur: 60, dy: 30 }, meta: { role: 'card', panel: 'a3-q' } }));
     items.push(Tx('a3-q-k', 'The question for this part', 960, 470, 34, C['text-dim'], { align: 'center', alpha: fade(L, 0.3), level: 2 }));
     items.push(L1('a3-q-l1', 'What decides the outcome?', 960, 580, 64, fade(L, cue(H, 'a3-q.1', 'what', 1) - 0.1, 0.3)));
@@ -87,7 +88,7 @@
     const items = []; env(items, 'a3-fine', { glow: 0.09, gx: 400 });
     const tNever = cue(H, 'a3-fine.1', 'never', 1.2), t65 = cue(H, 'a3-fine.2', '65', 3.8), t69 = cue(H, 'a3-fine.2', '69', 4.4);
     // outcome sweep, year by year: the money lasted (gain) or ran out (loss)
-    const g = startMap(items, 'a3-fine', { g: { x0: 800, y0: 250 }, color: (s, i) => (L < tNever - 0.3 + i * 0.03 ? C['surface-2'] : s.depleted ? C.loss : C.gain),
+    const g = startMap(items, 'a3-fine', { g: { x0: 980, y0: 250 }, color: (s, i) => (L < tNever - 0.3 + i * 0.03 ? C['surface-2'] : s.depleted ? C.loss : C.gain),
       dz: (s) => (s.depleted ? -60 * smooth((L - t65) / 0.6) : 0) });
     void g;
     items.push(L1('a3-fine-l1', 'Most never ran out', 560, 360, 60, fade(L, 0.3) * fadeOut(L, t65 - 0.3, 0.25)));
@@ -100,7 +101,7 @@
     items.push(Tx('a3-fine-lgB', 'ran out', q1[0], q1[1], 30, C['text-dim'], { alpha: fade(L, tNever), level: 3 }));
     return items;
   };
-  CAM['a3-fine'] = { f: 35, base: { z: -300, x: 200, tx: 200 }, moves: [[0.8, 1.5, { z: 300, x: -200, tx: -200 }]] };
+  CAM['a3-fine'] = { f: 35, base: { z: -200, x: 150, tx: 150 }, moves: [[0.8, 1.5, { z: 200, x: -150, tx: -150 }]] };
 
   // (2a) end balance by start year: 69 bars on a zero baseline (value = endReal, same scale for every bar)
   function endBars(items, panel, L, o) {
@@ -115,7 +116,7 @@
   }
   B['a3-good'] = (L, sc, H) => {
     const items = []; env(items, 'a3-good', { glow: 0.10, gx: 1400 });
-    const t82 = cue(H, 'a3-good.1', '1982', 2.5), tM = cue(H, 'a3-good.1', '$5.36 million', 6);
+    const t82 = H.local(482.68) /* first '1982' of the line, measured on the master mix */, tM = cue(H, 'a3-good.1', '$5.36 million', 6);
     const g = endBars(items, 'a3-good', L, { grow: (s, i) => smooth((L - 0.4 - i * 0.025) / 0.6), color: (s) => (s.y === 1982 ? C.gain : s.depleted ? C.loss : s.less ? C.muted : C.gain),
       alpha: (s) => (s.y === 1982 || L < t82 ? 1 : 1 - 0.55 * smooth((L - t82) / 0.5)) });
     const i82 = 1982 - 1928, x82 = g.x0 + i82 * g.step + g.bw / 2, top82 = g.yb - byY[1982].endReal * g.k;
@@ -138,7 +139,7 @@
     const tr = tileRect(1929, g), p = H.P(tr[0] + tr[2] / 2, tr[1] - 22, -120 * smooth((L - t29) / 0.5));
     items.push(Tx('a3-1929-y', '1929', p[0], p[1], 34, C.text, { align: 'center', weight: 700, alpha: at(L, t29), claims: [claim('y1929')], year: 1929 }));
     items.push(L1('a3-1929-l1', 'The crash year', 1340, 360, 56, fade(L, t29 - 0.1, 0.3) * fadeOut(L, tNever + 0.9, 0.3)));
-    items.push(L1('a3-1929-l1b', 'Never ran out', 1340, 360, 56, fade(L, tNever + 1.2, 0.3) * fadeOut(L, t39 - 0.3, 0.25), { color: C.text }));
+    items.push(L1('a3-1929-l1b', 'It never ran out', 1340, 360, 56, fade(L, tNever + 1.2, 0.3) * fadeOut(L, t39 - 0.3, 0.25), { color: C.text }));
     // first-decade real average return of 1929: one bar on a zero line, grows when the decade is named
     const x0 = 1150, yb = 800, k = 2600; // px per unit of return (39 pp -> ~100 px)
     const v = byY[1929].realGeo10, gr = smooth((L - tDec) / 0.8);
@@ -159,7 +160,7 @@
     const items = []; env(items, 'a3-nohurt', { glow: 0.10, gx: 400 });
     // a wave runs through every start year that ended above its start: order did them no harm
     const tNo = cue(H, 'a3-nohurt.1', 'harm', 3);
-    startMap(items, 'a3-nohurt', { g: { x0: 840, y0: 240 }, color: (s) => (s.depleted ? C.loss : C.gain),
+    startMap(items, 'a3-nohurt', { g: { x0: 920, y0: 240 }, color: (s) => (s.depleted ? C.loss : C.gain),
       dz: (s, i) => (s.depleted || s.less ? 0 : -60 * Math.sin(Math.PI * clamp((L - 0.8 - i * 0.04) / 0.8))),
       alpha: (s) => (s.depleted ? 1 - 0.4 * smooth((L - tNo) / 0.5) : 1) });
     items.push(L1('a3-nohurt-l1', 'Order did no harm', 560, 360, 64, fade(L, 0.3)));
@@ -203,7 +204,7 @@
       items.push(Tx('a3-four-' + y, String(y), p[0], p[1] + 6, 32, C.text, { align: 'center', weight: 700, alpha: at(L, t), claims: [claim(cl)], year: y }));
     }
     items.push(L1('a3-four-l1', '4 ran out of money', 560, 360, 52, at(L, t4), { claims: [claim('n4')] }));
-    items.push(Tx('a3-four-sub', 'start years that failed', 560, 450, 34, C['text-dim'], { align: 'center', alpha: fade(L, t4 + 0.3), level: 2 }));
+    items.push(Tx('a3-four-sub', 'the start years that failed', 560, 450, 34, C['text-dim'], { align: 'center', alpha: fade(L, t4 + 0.3), level: 2 }));
     return items;
   };
   CAM['a3-four'] = { f: 50, base: { z: 100 }, moves: [[1.0, 1.5, { y: 180, ty: 180, z: -150 }]], focus: 300, racks: [['turn', 0.8, -60]] };
@@ -212,16 +213,16 @@
     const items = []; env(items, 'a3-four2', { glow: 0.09, gx: 1500 });
     const t68 = cue(H, 'a3-four2.1', '1968', 0.6), t69 = cue(H, 'a3-four2.1', '1969', 1.5);
     const lift = (s) => (s.y === 1968 ? smooth((L - t68 + 0.2) / 0.5) : s.y === 1969 ? smooth((L - t69 + 0.2) / 0.5) : 1);
-    const g = fourMap(items, 'a3-four2', L, H, { x0: 120, y0: 240 }, lift, 1);
+    const g = fourMap(items, 'a3-four2', L, H, { x0: 60, y0: 180, gy: 54 }, lift, 1);
     for (const [y, t] of [[1968, t68], [1969, t69]]) {
       const p = under(H, y, g, -60 * lift(byY[y]));
       items.push(Tx('a3-four2-' + y, String(y), p[0], p[1] + 6, 32, C.text, { align: 'center', weight: 700, alpha: at(L, t), claims: [claim(y === 1968 ? 'y1968' : 'y1969')], year: y }));
     }
-    items.push(L1('a3-four2-l1', 'Then two more', 1340, 360, 60, fade(L, 0.1, 0.2)));
-    items.push(Tx('a3-four2-sub', 'all four within five years', 1340, 450, 34, C['text-dim'], { align: 'center', alpha: fade(L, 0.4), level: 2 }));
+    items.push(L1('a3-four2-l1', 'Then two more', 1376, 360, 60, fade(L, 0.1, 0.2)));
+    items.push(Tx('a3-four2-sub', 'all four within five years', 1376, 450, 34, C['text-dim'], { align: 'center', alpha: fade(L, 0.4), level: 2 }));
     return items;
   };
-  CAM['a3-four2'] = { f: 85, base: { x: -200, tx: -200, z: 300 }, moves: [[0.6, 1.3, { x: 200, tx: 200, z: -120 }]] };
+  CAM['a3-four2'] = { f: 50, base: { x: -120, tx: -120, z: 60 }, moves: [[0.6, 1.3, { x: 120, tx: 120, z: -40 }]] };
 
   // (2b) 30-year real average: a dot strip (beeswarm) and a scatter against the end balance
   const RX = (v) => 360 + (v - 0.025) / (0.08 - 0.025) * 1200;
@@ -257,8 +258,8 @@
   function stripAxis(items, panel, H, a, capY) {
     items.push(S(panel + '-ax', 'polyline', { panel, z: 0, pts: [[330, SW.yb + 4], [1600, SW.yb + 4]], stroke: C.muted, lw: 2, alpha: a, meta: { role: 'axis', panel, chart: panel } }));
     const p = H.P(330, SW.yb + 4, 0), q = H.P(1600, SW.yb + 4, 0);
-    items.push(Tx(panel + '-axl', 'lower real average', p[0], capY ?? p[1] + 50, 30, C['text-dim'], { alpha: a, level: 3 }));
-    items.push(Tx(panel + '-axr', 'higher real average', q[0], capY ?? q[1] + 50, 30, C['text-dim'], { align: 'right', alpha: a, level: 3 }));
+    items.push(Tx(panel + '-axl', 'lower real average', Math.max(110, p[0]), capY ?? p[1] + 50, 30, C['text-dim'], { alpha: a, level: 3 }));
+    items.push(Tx(panel + '-axr', 'higher real average', Math.min(1810, q[0]), capY ?? q[1] + 50, 30, C['text-dim'], { align: 'right', alpha: a, level: 3 }));
   }
   B['a3-avg-not'] = (L, sc, H) => {
     const items = []; env(items, 'a3-avg-not', { glow: 0.09, gx: 960 });
@@ -273,7 +274,7 @@
 
   B['a3-real66'] = (L, sc, H) => {
     const items = []; env(items, 'a3-real66', { glow: 0.09, gx: 400 });
-    const t41 = cue(H, 'a3-real66.1', '4.1%', 4), t17 = cue(H, 'a3-real66.2', '17', 8.9);
+    const t41 = cue(H, 'a3-real66.1', '4.1%', 4), t66w = cue(H, 'a3-real66.1', '1966', 1.8), t17 = cue(H, 'a3-real66.2', '17', 8.9);
     const g66 = byY[1966].realGeo30;
     const low = (s) => s.realGeo30 < g66 && !s.depleted;
     dots(items, 'a3-real66', L, { color: (s) => (s.y === 1966 ? C.c1966 : s.depleted ? C.loss : low(s) && L >= t17 - 0.3 ? C.gain : C.muted),
@@ -284,8 +285,8 @@
     items.push(S('a3-real66-ref', 'polyline', { panel: 'a3-real66', z: 0, pts: [[x66, SW.yb + 4], [x66, SW.yb - 250 * smooth((L - t41) / 0.5)]], stroke: C.c1966, lw: 3, dash: null, alpha: at(L, t41),
       meta: { role: 'mark', panel: 'a3-real66', ...charShape('1966') } }));
     const p = H.P(x66, SW.yb - 270, 0);
-    items.push(Tx('a3-real66-41', '4.1%', p[0], p[1], 56, C.c1966, { align: 'center', weight: 700, alpha: at(L, t41), claims: [claim('rg1966')], series: '1966', level: 2 }));
-    items.push(Tx('a3-real66-who', '1966 retiree, real average', p[0], p[1] - 70, 30, C.c1966, { align: 'center', alpha: fade(L, t41 + 0.1), claims: [claim('y1966')], series: '1966', level: 3 }));
+    items.push(Tx('a3-real66-41', '4.1%', p[0], p[1], 46, C.c1966, { align: 'center', weight: 700, alpha: at(L, t41), claims: [claim('rg1966')], series: '1966', level: 2 }));
+    items.push(Tx('a3-real66-who', '1966 retiree, real average', p[0], p[1] - 70, 30, C.c1966, { align: 'center', alpha: at(L, t66w), claims: [claim('y1966')], series: '1966', level: 3 }));
     items.push(L1('a3-real66-l1', 'After inflation', 1280, 360, 60, fade(L, 0.2) * fadeOut(L, t17 - 0.3, 0.25)));
     items.push(L1('a3-real66-17', '17', 1280, 330, 110, at(L, t17), { claims: [claim('n17')], color: C.gain }));
     items.push(Tx('a3-real66-17s', 'averaged less, never ran out', 1280, 430, 34, C.text, { align: 'center', alpha: fade(L, t17 + 0.2), level: 2 }));
@@ -299,8 +300,9 @@
     items.push(S(panel + '-ay', 'polyline', { panel, z: 0, pts: [[330, SC.yb + 20], [330, SC.top - 20]], stroke: C.muted, lw: 2, alpha: a, meta: { role: 'axis', panel, chart: panel } }));
     const p = H.P(1600, SC.yb + 20, 0), q = H.P(330, SC.top - 20, 0);
     const p0 = H.P(330, SC.yb + 20, 0); void p;
-    items.push(Tx(panel + '-axx', 'higher real average →', p0[0], p0[1] + 48, 30, C['text-dim'], { alpha: a, level: 3 }));
-    items.push(Tx(panel + '-axy', '↑ more left at the end, after inflation', p0[0], p0[1] + 90, 30, C['text-dim'], { alpha: a, level: 3 })); void q; // under the x caption: clear of the headline
+    const pr = H.P(1600, SC.yb + 20, 0), cy = Math.min(1000, p0[1] + 48); // one caption line under the x axis: y caption left, x caption right
+    items.push(Tx(panel + '-axx', 'higher real average →', Math.min(1800, pr[0] - 10), pr[1] - 16, 30, C['text-dim'], { align: 'right', alpha: a, level: 3 })); // above the axis at its empty right end
+    items.push(Tx(panel + '-axy', '↑ more left at the end, after inflation', Math.max(110, p0[0]), cy, 30, C['text-dim'], { alpha: a, level: 3 })); void q;
   }
   B['a3-1969'] = (L, sc, H) => {
     const items = []; env(items, 'a3-1969', { glow: 0.09, gx: 1500 });
@@ -319,7 +321,7 @@
     items.push(Tx('a3-1928-y', '1928', co[0], co[1] - 40, 34, C.text, { align: 'center', weight: 700, alpha: at(L, t28), claims: [claim('y1928')], year: 1928 }));
     items.push(Tx('a3-1928-v', '4.9%', co[0], co[1] + 14, 40, C.gain, { align: 'center', weight: 700, alpha: at(L, t49), claims: [claim('rg1928')], level: 2 }));
     items.push(L1('a3-1969-l1', 'Real average, whole plan', 1280, 360, 52, fade(L, 0.2) * fadeOut(L, t28 - 0.3, 0.25)));
-    items.push(L1('a3-1969-l1b', '1928 averaged less', 1280, 360, 52, fade(L, t49 - 0.2, 0.3), { claims: [claim('y1928')] }));
+    items.push(L1('a3-1969-l1b', '1928 averaged less', 1280, 360, 52, at(L, t28), { claims: [claim('y1928')] })); // takes over from the first headline when 1928 is named
     return items;
   };
   CAM['a3-1969'] = { f: 50, base: { z: -250 }, moves: [[0.8, 1.4, { z: 250 }]] };
@@ -406,7 +408,7 @@
   }
   B['a3-1966d'] = (L, sc, H) => {
     const items = []; env(items, 'a3-1966d', { glow: 0.10, gx: 400 });
-    const t18 = cue(H, 'a3-1966d.1', '−1.8%', 6), t66 = cue(H, 'a3-1966d.1', '1966', 4);
+    const t18 = H.local(590.44), /* the spoken value starts at 'minus' (master-mix ASR) */ t66 = cue(H, 'a3-1966d.1', '1966', 4);
     const x0 = 300, yb = 420, k = 9000;
     const g = fourBars(items, 'a3-1966d', L, H, { x0, yb, k, grow: (y, i) => smooth((L - 0.3 - i * 0.15) / 0.6), dim: 1 - 0.5 * smooth((L - t66) / 0.5) });
     const i66 = FAIL.indexOf(1966), xc = x0 + i66 * (g.bw + g.gap) + g.bw / 2;
@@ -415,7 +417,8 @@
     const ht = H.P(xc, yb - 40, 0);
     items.push(Tx('a3-1966d-y', '1966', ht[0], ht[1], 34, C.c1966, { align: 'center', weight: 700, alpha: at(L, t66), claims: [claim('y1966')], series: '1966', year: 1966 }));
     const zc = H.P(x0 - 30, yb, 0);
-    items.push(Tx('a3-1966d-z', 'zero', zc[0] - 12, zc[1] + 10, 28, C['text-dim'], { align: 'right', alpha: fade(L, 0.4), level: 3 }));
+    const ze = H.P(x0 + 4 * (g.bw + g.gap) + 10, yb, 0); // at the right end of the zero line (its left end leaves the frame in the pan)
+    items.push(Tx('a3-1966d-z', 'zero', ze[0] + 12, ze[1] + 10, 28, C['text-dim'], { align: 'left', alpha: fade(L, 0.4), level: 3 }));
     items.push(L1('a3-1966d-l1', 'A losing first decade', 1280, 720, 60, fade(L, 0.3)));
     items.push(Tx('a3-1966d-sub', 'average per year, after inflation', 1280, 810, 34, C['text-dim'], { align: 'center', alpha: fade(L, 0.6), level: 2 }));
     items.push(Tx('a3-1966d-cap', 'the four start years that ran out', 300, 250, 30, C['text-dim'], { alpha: fade(L, 0.5), level: 3 }));
@@ -440,8 +443,8 @@
     items.push(Tx('a3-mirror-d-v', '6.9%', pm1[0], pm1[1] - 30, 64, C.cmirror, { align: 'center', weight: 700, alpha: at(L, t69), claims: [claim('decm')], series: 'mirror', level: 2 }));
     items.push(badge('a3-mirror-d-badge', pm1[0] + 120, pm1[1] - 48, fade(L, t69 - 0.5, 0.2)));
     const l66 = H.P(630, yb - 40, 0), lm = H.P(1290, yb + 60, 0);
-    items.push(Tx('a3-mirror-d-l66', 'first retiree', l66[0], l66[1], 32, C.c1966, { align: 'center', series: '1966', level: 3 }));
-    items.push(Tx('a3-mirror-d-lm', 'mirror retiree', lm[0], lm[1], 32, C.cmirror, { align: 'center', series: 'mirror', alpha: fade(L, 0.3), level: 3 }));
+    items.push(Tx('a3-mirror-d-l66', 'first retiree', l66[0], l66[1], 34, C.c1966, { align: 'center', weight: 700, background: C.surface, pad: 6, sharp: true, series: '1966', level: 3 }));
+    items.push(Tx('a3-mirror-d-lm', 'mirror retiree', lm[0], lm[1], 34, C.cmirror, { align: 'center', weight: 700, background: C.surface, pad: 6, sharp: true, series: 'mirror', alpha: fade(L, 0.3), level: 3 }));
     items.push(Tx('a3-mirror-d-cap', 'first decade, average per year, after inflation', 960, 960, 30, C['text-dim'], { align: 'center', alpha: fade(L, 0.4), level: 3 }));
     items.push(L1('a3-mirror-d-l1', 'The mirror’s first decade', 640, 260 + 100, 52, fade(L, 0.2)));
     return items;
@@ -454,7 +457,7 @@
     const tNot = cue(H, 'a3-answer.2', 'not', 2.4), tFirst = cue(H, 'a3-answer.3', 'first', 4.1);
     // behind the card: the first-decade bars, out of focus
     decadeBars(items, 'a3-answer-bg', L, { x0: 170, yb: 820, k: 2200, color: (s) => (s.depleted ? C.loss : C.muted), alpha: () => 0.7 });
-    items.forEach((it) => { if (it.id && it.id.startsWith('a3-answer-bg')) { it.z = 800; it.panel = 'a3-answer'; it.meta.panel = 'a3-answer'; } });
+    items.forEach((it) => { if (it.id && it.id.startsWith('a3-answer-bg')) { it.z = 800; it.panel = 'a3-answer'; it.meta.panel = 'a3-answer'; it.meta.role = 'bg'; } }); // out of focus behind the card: background
     items.push(S('a3-answer-card', 'rect', { panel: 'a3-answer', z: 0, rect: [360, 300, 1200, 480], radius: 28, fill: C.surface, shadow: { alpha: 0.55, blur: 70, dy: 30 }, alpha: fade(L, 0.1), meta: { role: 'card', panel: 'a3-answer' } }));
     items.push(L1('a3-answer-q', 'What decided it?', 960, 540, 72, fade(L, 0.2) * fadeOut(L, tNot - 0.3, 0.25)));
     const strike = smooth((L - tNot - 0.3) / 0.5);
@@ -494,13 +497,13 @@
     axisX(items, 'a3-avg-callback-axis', 'a3-avg-callback', x0, x1, yb + 4, 0, 'a3-avg-callback');
     series(items, 'a3-avg-callback-66', 'a3-avg-callback', '1966', M.real1966.slice(0, n + 1).map((v, k) => [X(k), Y(v)]), 0, 'a3-avg-callback', 1, 'a3-avg-callback-lab');
     const a = H.P(x0, yb + 4, 0), b = H.P(x1, yb + 4, 0);
-    items.push(Tx('a3-avg-callback-a0', '1966', a[0], a[1] + 46, 30, C['text-dim'], { role: 'axis-label', anchor: 'a3-avg-callback', chart: 'a3-avg-callback', year: 1966, align: 'center', claims: [claim('y1966')] }));
-    items.push(Tx('a3-avg-callback-a1', '1995', b[0], b[1] + 46, 30, C['text-dim'], { role: 'axis-label', anchor: 'a3-avg-callback', chart: 'a3-avg-callback', year: 1995, align: 'center', claims: [claim('ax1995')] }));
+    items.push(Tx('a3-avg-callback-a0', '1966', a[0], a[1] + 46, 30, C['text-dim'], { role: 'axis-label', anchor: 'a3-avg-callback', chart: 'a3-avg-callback', year: 1966, align: 'center', claims: [claim('ax1966')] }));
+    items.push(Tx('a3-avg-callback-a1', '1995', Math.min(1790, b[0]), b[1] + 46, 30, C['text-dim'], { role: 'axis-label', anchor: 'a3-avg-callback', chart: 'a3-avg-callback', year: 1995, align: 'center', claims: [claim('ax1995')] }));
     const lp = H.P(X(3), Y(M.real1966[3]), 0);
-    items.push(Tx('a3-avg-callback-lab', '1966 retiree, real balance', lp[0] + 10, lp[1] - 34, 30, C.c1966, { claims: [claim('y1966')], series: '1966', alpha: fade(L, 1.0), level: 3 }));
+    items.push(Tx('a3-avg-callback-lab', 'first retiree, real balance', lp[0] + 10, lp[1] - 34, 30, C.c1966, { series: '1966', alpha: fade(L, 1.0), level: 3 }));
     const hit = H.P(X(25), yb + 4, 0);
     items.push(S('a3-avg-callback-zero', 'circle', { panel: 'a3-avg-callback', z: 0, c: [X(25), yb + 4], r: 12 * back((L - t91) / 0.35), fill: C.loss, alpha: at(L, t91), meta: { role: 'mark', panel: 'a3-avg-callback', ...charShape('1966') } }));
-    items.push(Tx('a3-avg-callback-91', '1991', hit[0], hit[1] - 60, 44, C.loss, { align: 'center', weight: 700, alpha: at(L, t91), claims: [claim('y1991')], level: 2 }));
+    items.push(Tx('a3-avg-callback-91', '1991', hit[0], hit[1] - 60, 44, C.text, { align: 'center', weight: 700, alpha: at(L, t91), claims: [claim('y1991')], level: 2 }));
     items.push(L1('a3-avg-callback-l1', '9.7%', 640, 360, 120, at(L, t97), { color: C.c1966, series: '1966', claims: [claim('g1966')] }));
     items.push(Tx('a3-avg-callback-s1', 'described the 1966 retiree perfectly', 640, 470, 32, C['text-dim'], { align: 'center', alpha: at(L, t66), claims: [claim('y1966')], level: 2 }));
     items.push(Tx('a3-avg-callback-s2', 'and said nothing about the end', 640, 530, 32, C['text-dim'], { align: 'center', alpha: fade(L, cue(H, 'a3-avg-callback.1', 'nothing', 6) - 0.1), level: 2 }));
@@ -560,7 +563,7 @@
 
   B['a3-overlap'] = (L, sc, H) => {
     const items = []; env(items, 'a3-overlap', { glow: 0.09, gx: 400 });
-    const t69 = cue(H, 'a3-overlap.1', '69', 0.3), t98 = cue(H, 'a3-overlap.1', '98', 3.5), t3 = cue(H, 'a3-overlap.1', '3', 5);
+    const t69 = cue(H, 'a3-overlap.1', '69', 0.3), t98 = cue(H, 'a3-overlap.1', '98', 3.5), t3 = H.local(645.82); // 'three', measured on the master mix
     // one thin bar per start year spanning its 30 plan years, on a data span of 1928..2025
     const x0 = 200, x1 = 1720, yr = (x1 - x0) / 98, y0 = 340, dy = 7;
     const sep = [1928, 1958, 1988];

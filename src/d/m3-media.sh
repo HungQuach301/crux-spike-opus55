@@ -6,9 +6,12 @@ cd "$(dirname "$0")/../.."
 SRC=out/m3/root/out/video.mp4
 BR=media/opus55-cine-phase-d-m3
 W=$(mktemp -d)
-git worktree add --detach "$W" HEAD >/dev/null
-cd "$W"
-git switch --orphan "$BR" >/dev/null
+# a new master replaces the files in a new commit on the media branch (no history rewrite)
+if git fetch -q origin "$BR" 2>/dev/null; then
+  git worktree add --detach "$W" FETCH_HEAD >/dev/null; cd "$W"; git switch -q -C "$BR"
+else
+  git worktree add --detach "$W" HEAD >/dev/null; cd "$W"; git switch --orphan "$BR" >/dev/null
+fi
 git rm -rfq . >/dev/null 2>&1 || true
 mkdir -p m3
 split -b 95M -d -a 2 "$OLDPWD/$SRC" m3/video.mp4.part-
@@ -28,7 +31,7 @@ Rebuild and verify:
 EOT
 echo "$FULL  video.mp4" > m3/video.sha256
 git add m3
-git -c user.email="$(git -C "$OLDPWD" config user.email)" -c user.name="$(git -C "$OLDPWD" config user.name)" commit -qm "Test D M3 master in parts < 95 MB (SHA-256 per part and whole file)
+git -c user.email="$(git -C "$OLDPWD" config user.email)" -c user.name="$(git -C "$OLDPWD" config user.name)" commit -qm "Test D M3 master${MSG:+ ($MSG)} in parts < 95 MB (SHA-256 per part and whole file)
 
 Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
 Claude-Session: https://claude.ai/code/session_019VjyzPVYE7if4FLwUDYa1m"

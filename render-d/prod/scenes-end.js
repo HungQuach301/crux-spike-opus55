@@ -76,7 +76,7 @@
   B.outro = (L, sc, H) => {
     const items = []; env(items, 'outro', { glow: 0.12, gx: 960 });
     const tTwo = cue(H, 'outro.1', 'two', 1), tFate = cue(H, 'outro.1', 'fate', 4), tOrder = cue(H, 'outro.1', 'order', 5.2);
-    const x0 = 480, x1 = 1440, yb = 880, yt = 500;
+    const x0 = 480, x1 = 1440, yb = 850, yt = 470;
     const X = (k) => x0 + (x1 - x0) * k / 30, Y = (v) => yb - (yb - yt) * v / 2.2e6;
     const prog = smooth((L - 0.8) / 6);
     const n = Math.max(1, Math.round(prog * 30));
@@ -84,11 +84,11 @@
     series(items, 'outro-66', 'outro', '1966', M.real1966.slice(0, n + 1).map((v, k) => [X(k), Y(v)]), 0, 'outro', 1, 'outro-lab66');
     series(items, 'outro-m', 'outro', 'mirror', M.realMirror.slice(0, n + 1).map((v, k) => [X(k), Y(v)]), 0, 'outro', 1, 'outro-labm');
     const a = H.P(x0, yb + 4, 0), b = H.P(x1, yb + 4, 0);
-    items.push(Tx('outro-a0', '1966', a[0], a[1] + 46, 30, C['text-dim'], { role: 'axis-label', anchor: 'outro', chart: 'outro', year: 1966, align: 'center', claims: [claim('ax1966')] }));
-    items.push(Tx('outro-a1', '1995', b[0], b[1] + 46, 30, C['text-dim'], { role: 'axis-label', anchor: 'outro', chart: 'outro', year: 1995, align: 'center', claims: [claim('ax1995')] }));
+    items.push(Tx('outro-a0', '1966', a[0], Math.min(1004, a[1] + 46), 30, C['text-dim'], { role: 'axis-label', anchor: 'outro', chart: 'outro', year: 1966, align: 'center', claims: [claim('ax1966')] }));
+    items.push(Tx('outro-a1', '1995', b[0], Math.min(1004, b[1] + 46), 30, C['text-dim'], { role: 'axis-label', anchor: 'outro', chart: 'outro', year: 1995, align: 'center', claims: [claim('ax1995')] }));
     const l66 = H.P(X(3), Y(M.real1966[3]), 0), lm = H.P(X(Math.min(n, 30)), Y(M.realMirror[Math.min(n, 30)]), 0);
     items.push(Tx('outro-lab66', 'first retiree', l66[0] - 20, l66[1] + 60, 32, C.c1966, { align: 'right', series: '1966', alpha: fade(L, 1.2), level: 3 }));
-    items.push(Tx('outro-labm', 'mirror retiree', Math.min(lm[0] + 24, 1600), lm[1] - 30, 32, C.cmirror, { series: 'mirror', alpha: fade(L, 1.6), level: 3 }));
+    items.push(Tx('outro-labm', 'mirror retiree', Math.min(lm[0] + 24, 1560), lm[1] - 30, 34, C.cmirror, { series: 'mirror', weight: 700, background: C.surface, pad: 6, sharp: true, alpha: fade(L, 1.6), level: 3 }));
     items.push(Tx('outro-basis', 'real balance, after inflation', x0, yt - 40, 30, C['text-dim'], { alpha: fade(L, 1.0), level: 3 }));
     // the fate: 1966 at zero (ringed), the mirror still holding money at the end
     const tz = 0.8 + 6 * 25 / 30;

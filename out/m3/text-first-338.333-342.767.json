@@ -1,0 +1,23 @@
+{
+ "a2-1982r-l1a": {
+  "t": 338.8,
+  "x": 1280,
+  "level": 1,
+  "role": "label",
+  "claims": 0
+ },
+ "a2-1982r-who": {
+  "t": 339.2,
+  "x": 1280,
+  "level": 2,
+  "role": "label",
+  "claims": 1
+ },
+ "a2-1982r-l1": {
+  "t": 341.0333,
+  "x": 1280,
+  "level": 1,
+  "role": "label",
+  "claims": 1
+ }
+}

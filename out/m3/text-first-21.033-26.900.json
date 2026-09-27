@@ -1,0 +1,30 @@
+{
+ "st-who": {
+  "t": 21.6333,
+  "x": 1300,
+  "level": null,
+  "role": "label",
+  "claims": 0
+ },
+ "st-badge": {
+  "t": 22.6667,
+  "x": 576.1,
+  "level": null,
+  "role": "badge",
+  "claims": 0
+ },
+ "st-l1": {
+  "t": 22.8667,
+  "x": 640,
+  "level": 1,
+  "role": "label",
+  "claims": 1
+ },
+ "st-basis": {
+  "t": 22.8667,
+  "x": 640,
+  "level": null,
+  "role": "label",
+  "claims": 0
+ }
+}

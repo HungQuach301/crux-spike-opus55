@@ -125,6 +125,34 @@
   "role": "label",
   "claims": 1
  },
+ "st-who": {
+  "t": 21.6333,
+  "x": 1300,
+  "level": null,
+  "role": "label",
+  "claims": 0
+ },
+ "st-badge": {
+  "t": 22.3667,
+  "x": 576.1,
+  "level": null,
+  "role": "badge",
+  "claims": 0
+ },
+ "st-l1": {
+  "t": 22.5667,
+  "x": 640,
+  "level": 1,
+  "role": "label",
+  "claims": 1
+ },
+ "st-basis": {
+  "t": 22.5667,
+  "x": 640,
+  "level": null,
+  "role": "label",
+  "claims": 1
+ },
  "who-l2": {
   "t": 27.5,
   "x": 1280,
@@ -286,6 +314,62 @@
   "role": "axis-label",
   "claims": 1
  },
+ "rs-l1": {
+  "t": 77.0333,
+  "x": 640,
+  "level": 1,
+  "role": "label",
+  "claims": 0
+ },
+ "rs-g100k": {
+  "t": 77.2667,
+  "x": 1746.7,
+  "level": null,
+  "role": "axis-label",
+  "claims": 1
+ },
+ "rs-sub": {
+  "t": 77.3333,
+  "x": 640,
+  "level": null,
+  "role": "label",
+  "claims": 0
+ },
+ "re-g100k": {
+  "t": 85.0333,
+  "x": 1697.3,
+  "level": null,
+  "role": "axis-label",
+  "claims": 1
+ },
+ "re-a0": {
+  "t": 85.0333,
+  "x": 345.1,
+  "level": null,
+  "role": "axis-label",
+  "claims": 1
+ },
+ "re-a1": {
+  "t": 85.0333,
+  "x": 1528.5,
+  "level": null,
+  "role": "axis-label",
+  "claims": 1
+ },
+ "re-l1": {
+  "t": 85.4,
+  "x": 640,
+  "level": 1,
+  "role": "label",
+  "claims": 0
+ },
+ "re-l1b": {
+  "t": 88.1667,
+  "x": 640,
+  "level": 1,
+  "role": "label",
+  "claims": 0
+ },
  "hz-badge": {
   "t": 93.9667,
   "x": 1256.1,
@@ -396,6 +480,41 @@
   "x": 1593,
   "level": null,
   "role": "axis-label",
+  "claims": 1
+ },
+ "mr-l1b": {
+  "t": 123.8333,
+  "x": 1280,
+  "level": 1,
+  "role": "label",
+  "claims": 0
+ },
+ "mr-zm": {
+  "t": 123.8667,
+  "x": 249.6,
+  "level": null,
+  "role": "axis-label",
+  "claims": 1
+ },
+ "mr-ma": {
+  "t": 123.9,
+  "x": 370,
+  "level": null,
+  "role": "label",
+  "claims": 1
+ },
+ "mr-tm": {
+  "t": 123.9,
+  "x": 1435.1,
+  "level": null,
+  "role": "label",
+  "claims": 0
+ },
+ "mr-mb": {
+  "t": 127.3333,
+  "x": 1536,
+  "level": null,
+  "role": "label",
   "claims": 1
  },
  "il-badge": {
@@ -608,6 +727,34 @@
   "role": "axis-label",
   "claims": 1
  },
+ "a2-est-sub": {
+  "t": 203.8,
+  "x": 1280,
+  "level": 2,
+  "role": "label",
+  "claims": 0
+ },
+ "a2-est-l1": {
+  "t": 204.9,
+  "x": 1280,
+  "level": 1,
+  "role": "label",
+  "claims": 0
+ },
+ "a2-est-lab-1966": {
+  "t": 206.2333,
+  "x": 446.7,
+  "level": 3,
+  "role": "label",
+  "claims": 0
+ },
+ "a2-est-lab-mirror": {
+  "t": 206.2333,
+  "x": 461.6,
+  "level": 3,
+  "role": "label",
+  "claims": 0
+ },
  "a2-q-l1": {
   "t": 208.5,
   "x": 960,
@@ -671,6 +818,41 @@
   "role": "label",
   "claims": 1
  },
+ "a2-gap1-ax0": {
+  "t": 226.3333,
+  "x": 359.8,
+  "level": null,
+  "role": "axis-label",
+  "claims": 1
+ },
+ "a2-gap1-ax1": {
+  "t": 226.3333,
+  "x": 1560.2,
+  "level": null,
+  "role": "axis-label",
+  "claims": 1
+ },
+ "a2-gap1-lab-1966": {
+  "t": 227.1667,
+  "x": 460.5,
+  "level": 3,
+  "role": "label",
+  "claims": 0
+ },
+ "a2-gap1-lab-mirror": {
+  "t": 227.1667,
+  "x": 475.4,
+  "level": 3,
+  "role": "label",
+  "claims": 0
+ },
+ "a2-gap1-l1": {
+  "t": 228.6,
+  "x": 1280,
+  "level": 1,
+  "role": "label",
+  "claims": 0
+ },
  "a2-infl-l1": {
   "t": 230.0667,
   "x": 1280,
@@ -706,6 +888,62 @@
   "role": "label",
   "claims": 0
  },
+ "a2-7374-ax0": {
+  "t": 238.7,
+  "x": 360,
+  "level": null,
+  "role": "axis-label",
+  "claims": 1
+ },
+ "a2-7374-ax1": {
+  "t": 238.7,
+  "x": 1560,
+  "level": null,
+  "role": "axis-label",
+  "claims": 1
+ },
+ "a2-7374-lab-1966": {
+  "t": 239.1,
+  "x": 469.5,
+  "level": 3,
+  "role": "label",
+  "claims": 0
+ },
+ "a2-7374-lab-mirror": {
+  "t": 239.1,
+  "x": 484.4,
+  "level": 3,
+  "role": "label",
+  "claims": 0
+ },
+ "a2-7374-sub": {
+  "t": 239.2,
+  "x": 1280,
+  "level": 2,
+  "role": "label",
+  "claims": 0
+ },
+ "a2-7374-l1": {
+  "t": 240.9,
+  "x": 1280,
+  "level": 1,
+  "role": "label",
+  "claims": 0
+ },
+ "a2-7374-y7": {
+  "t": 242.5,
+  "x": 573.7,
+  "level": 2,
+  "role": "label",
+  "claims": 1
+ },
+ "a2-7374-y8": {
+  "t": 243.7667,
+  "x": 618.5,
+  "level": 2,
+  "role": "label",
+  "claims": 1
+ },
  "a2-1974inf-l1": {
   "t": 245.5667,
   "x": 640,
@@ -730,6 +968,139 @@
  "a2-1974inf-sub": {
   "t": 252.2,
   "x": 640,
+  "level": 2,
+  "role": "label",
+  "claims": 0
+ },
+ "a2-bal74-basis": {
+  "t": 254,
+  "x": 640,
+  "level": 2,
+  "role": "label",
+  "claims": 1
+ },
+ "a2-bal74-who": {
+  "t": 254.1667,
+  "x": 1245.1,
+  "level": 3,
+  "role": "label",
+  "claims": 1
+ },
+ "a2-bal74-refl": {
+  "t": 254.2667,
+  "x": 1388.3,
+  "level": 3,
+  "role": "label",
+  "claims": 0
+ },
+ "a2-bal74-e74": {
+  "t": 257.8,
+  "x": 1670.6,
+  "level": 3,
+  "role": "label",
+  "claims": 1
+ },
+ "a2-bal74-pre": {
+  "t": 257.8,
+  "x": 640,
+  "level": 2,
+  "role": "label",
+  "claims": 0
+ },
+ "a2-bal74-l1": {
+  "t": 259.8667,
+  "x": 640,
+  "level": 1,
+  "role": "label",
+  "claims": 1
+ },
+ "a2-bal74m-a": {
+  "t": 264.1333,
+  "x": 250.2,
+  "level": 3,
+  "role": "label",
+  "claims": 0
+ },
+ "a2-bal74m-b": {
+  "t": 264.1333,
+  "x": 715.1,
+  "level": 3,
+  "role": "label",
+  "claims": 0
+ },
+ "a2-bal74m-same": {
+  "t": 265.3333,
+  "x": 1360,
+  "level": 2,
+  "role": "label",
+  "claims": 0
+ },
+ "a2-bal74m-badge": {
+  "t": 267.2667,
+  "x": 1216.1,
+  "level": null,
+  "role": "badge",
+  "claims": 0
+ },
+ "a2-bal74m-l1": {
+  "t": 267.5333,
+  "x": 1360,
+  "level": 1,
+  "role": "label",
+  "claims": 1
+ },
+ "a2-bal74m-basis": {
+  "t": 267.5333,
+  "x": 1360,
+  "level": 2,
+  "role": "label",
+  "claims": 0
+ },
+ "a2-bite-c0": {
+  "t": 272.0333,
+  "x": 560,
+  "level": 3,
+  "role": "label",
+  "claims": 1
+ },
+ "a2-bite-l1": {
+  "t": 272.0333,
+  "x": 640,
+  "level": 1,
+  "role": "label",
+  "claims": 0
+ },
+ "a2-bite-c1": {
+  "t": 272.4667,
+  "x": 1360,
+  "level": 3,
+  "role": "label",
+  "claims": 0
+ },
+ "a2-bite-badge": {
+  "t": 276.9,
+  "x": 1246.1,
+  "level": null,
+  "role": "badge",
+  "claims": 0
+ },
+ "a2-bite-l1b": {
+  "t": 277.2,
+  "x": 1280,
+  "level": 1,
+  "role": "label",
+  "claims": 1
+ },
+ "a2-bite-basis": {
+  "t": 277.2,
+  "x": 1280,
+  "level": 2,
+  "role": "label",
+  "claims": 0
+ },
+ "a2-bite-still": {
+  "t": 282.2667,
+  "x": 1360,
   "level": 2,
   "role": "label",
   "claims": 0
@@ -810,6 +1181,48 @@
   "level": 2,
   "role": "label",
   "claims": 1
+ },
+ "a2-7576b-ax0": {
+  "t": 304.2667,
+  "x": 9.7,
+  "level": null,
+  "role": "axis-label",
+  "claims": 1
+ },
+ "a2-7576b-ax1": {
+  "t": 304.2667,
+  "x": 1210.1,
+  "level": null,
+  "role": "axis-label",
+  "claims": 1
+ },
+ "a2-7576b-lab-1966": {
+  "t": 304.2667,
+  "x": 428,
+  "level": 3,
+  "role": "label",
+  "claims": 0
+ },
+ "a2-7576b-refl": {
+  "t": 304.2667,
+  "x": 1096.3,
+  "level": 3,
+  "role": "label",
+  "claims": 0
+ },
+ "a2-7576b-l1": {
+  "t": 304.7,
+  "x": 1280,
+  "level": 1,
+  "role": "label",
+  "claims": 0
+ },
+ "a2-7576b-wdl": {
+  "t": 308.5667,
+  "x": 966.5,
+  "level": 3,
+  "role": "label",
+  "claims": 0
  },
  "a2-grind-cap": {
   "t": 310.5,
@@ -930,6 +1343,20 @@
   "role": "label",
   "claims": 0
  },
+ "a2-1982r-who": {
+  "t": 339.2,
+  "x": 1280,
+  "level": 2,
+  "role": "label",
+  "claims": 1
+ },
+ "a2-1982r-l1": {
+  "t": 341.0333,
+  "x": 1280,
+  "level": 1,
+  "role": "label",
+  "claims": 1
+ },
  "a2-1982w-cap2": {
   "t": 343.2667,
   "x": 1154.4,
@@ -1007,6 +1434,468 @@
   "role": "label",
   "claims": 0
  },
+ "a2-late-ax0": {
+  "t": 358.7667,
+  "x": 360,
+  "level": null,
+  "role": "axis-label",
+  "claims": 1
+ },
+ "a2-late-ax1": {
+  "t": 358.7667,
+  "x": 1560,
+  "level": null,
+  "role": "axis-label",
+  "claims": 1
+ },
+ "a2-late-lab-1966": {
+  "t": 358.7667,
+  "x": 1098.2,
+  "level": 3,
+  "role": "label",
+  "claims": 0
+ },
+ "a2-late-bl": {
+  "t": 359.0667,
+  "x": 1159,
+  "level": 2,
+  "role": "label",
+  "claims": 0
+ },
+ "a2-late-l1": {
+  "t": 359.8333,
+  "x": 640,
+  "level": 1,
+  "role": "label",
+  "claims": 0
+ },
+ "a2-mirror-boom-ax0": {
+  "t": 361.1667,
+  "x": 359.8,
+  "level": null,
+  "role": "axis-label",
+  "claims": 1
+ },
+ "a2-mirror-boom-ax1": {
+  "t": 361.1667,
+  "x": 1560.2,
+  "level": null,
+  "role": "axis-label",
+  "claims": 1
+ },
+ "a2-mirror-boom-l1": {
+  "t": 361.6,
+  "x": 1280,
+  "level": 1,
+  "role": "label",
+  "claims": 0
+ },
+ "a2-mirror-boom-lab-mirror": {
+  "t": 361.8333,
+  "x": 482.9,
+  "level": 3,
+  "role": "label",
+  "claims": 0
+ },
+ "a2-mirror-boom-bl": {
+  "t": 363.9,
+  "x": 706.5,
+  "level": 2,
+  "role": "label",
+  "claims": 0
+ },
+ "a2-climb-ax0": {
+  "t": 367.2333,
+  "x": 430.5,
+  "level": null,
+  "role": "axis-label",
+  "claims": 1
+ },
+ "a2-climb-ax1": {
+  "t": 367.2333,
+  "x": 1489.5,
+  "level": null,
+  "role": "axis-label",
+  "claims": 1
+ },
+ "a2-climb-lab-1966": {
+  "t": 367.2333,
+  "x": 811.1,
+  "level": 3,
+  "role": "label",
+  "claims": 0
+ },
+ "a2-climb-lab-mirror": {
+  "t": 367.2333,
+  "x": 826,
+  "level": 3,
+  "role": "label",
+  "claims": 0
+ },
+ "a2-climb-l1": {
+  "t": 367.5,
+  "x": 640,
+  "level": 1,
+  "role": "label",
+  "claims": 0
+ },
+ "a2-climax-in-ax0": {
+  "t": 369.8333,
+  "x": 287.9,
+  "level": null,
+  "role": "axis-label",
+  "claims": 1
+ },
+ "a2-climax-in-ax1": {
+  "t": 369.8333,
+  "x": 1248,
+  "level": null,
+  "role": "axis-label",
+  "claims": 1
+ },
+ "a2-climax-in-lab-1966": {
+  "t": 369.8333,
+  "x": 1090.2,
+  "level": 3,
+  "role": "label",
+  "claims": 0
+ },
+ "a2-climax-in-lab-mirror": {
+  "t": 369.8333,
+  "x": 1105.1,
+  "level": 3,
+  "role": "label",
+  "claims": 0
+ },
+ "a2-climax-in-l1": {
+  "t": 370,
+  "x": 960,
+  "level": 1,
+  "role": "label",
+  "claims": 1
+ },
+ "a2-climax-ax0": {
+  "t": 372.1333,
+  "x": 336.7,
+  "level": null,
+  "role": "axis-label",
+  "claims": 1
+ },
+ "a2-climax-ax1": {
+  "t": 372.1333,
+  "x": 1227.1,
+  "level": null,
+  "role": "axis-label",
+  "claims": 1
+ },
+ "a2-climax-lab-1966": {
+  "t": 372.1333,
+  "x": 1090.2,
+  "level": 3,
+  "role": "label",
+  "claims": 0
+ },
+ "a2-climax-lab-mirror": {
+  "t": 372.1333,
+  "x": 1105.1,
+  "level": 3,
+  "role": "label",
+  "claims": 0
+ },
+ "a2-climax-basis": {
+  "t": 372.3333,
+  "x": 960,
+  "level": 2,
+  "role": "label",
+  "claims": 0
+ },
+ "a2-climax-l1a": {
+  "t": 375.3333,
+  "x": 960,
+  "level": 1,
+  "role": "label",
+  "claims": 0
+ },
+ "a2-climax-badge": {
+  "t": 376.6667,
+  "x": 1406.1,
+  "level": null,
+  "role": "badge",
+  "claims": 0
+ },
+ "a2-climax-l1": {
+  "t": 376.9333,
+  "x": 960,
+  "level": 1,
+  "role": "label",
+  "claims": 1
+ },
+ "a2-years-b40": {
+  "t": 381,
+  "x": 636.1,
+  "level": null,
+  "role": "badge",
+  "claims": 0
+ },
+ "a2-years-l1": {
+  "t": 381.3,
+  "x": 640,
+  "level": 1,
+  "role": "label",
+  "claims": 1
+ },
+ "a2-years-basis": {
+  "t": 381.3,
+  "x": 640,
+  "level": 2,
+  "role": "label",
+  "claims": 0
+ },
+ "a2-years-cg": {
+  "t": 382.6333,
+  "x": 1184.5,
+  "level": 3,
+  "role": "label",
+  "claims": 0
+ },
+ "a2-years-ct": {
+  "t": 386.1,
+  "x": 1374.4,
+  "level": 3,
+  "role": "label",
+  "claims": 0
+ },
+ "a2-years-b49": {
+  "t": 386.1333,
+  "x": 636.1,
+  "level": null,
+  "role": "badge",
+  "claims": 0
+ },
+ "a2-years-l2": {
+  "t": 386.4,
+  "x": 640,
+  "level": 1,
+  "role": "label",
+  "claims": 1
+ },
+ "a2-years-sub": {
+  "t": 386.8,
+  "x": 640,
+  "level": 2,
+  "role": "label",
+  "claims": 0
+ },
+ "a2-rest-ax0": {
+  "t": 389.5333,
+  "x": 412.5,
+  "level": null,
+  "role": "axis-label",
+  "claims": 1
+ },
+ "a2-rest-ax1": {
+  "t": 389.5333,
+  "x": 1507.5,
+  "level": null,
+  "role": "axis-label",
+  "claims": 1
+ },
+ "a2-rest-lab-1966": {
+  "t": 389.5333,
+  "x": 1242,
+  "level": 3,
+  "role": "label",
+  "claims": 0
+ },
+ "a2-rest-l1": {
+  "t": 389.9667,
+  "x": 1280,
+  "level": 1,
+  "role": "label",
+  "claims": 0
+ },
+ "a2-rest-who": {
+  "t": 392.9333,
+  "x": 1280,
+  "level": 2,
+  "role": "label",
+  "claims": 1
+ },
+ "a2-mirror-late-ax0": {
+  "t": 395.4333,
+  "x": 456,
+  "level": null,
+  "role": "axis-label",
+  "claims": 1
+ },
+ "a2-mirror-late-ax1": {
+  "t": 395.4333,
+  "x": 1464,
+  "level": null,
+  "role": "axis-label",
+  "claims": 1
+ },
+ "a2-mirror-late-lab-mirror": {
+  "t": 395.4333,
+  "x": 1173.9,
+  "level": 3,
+  "role": "label",
+  "claims": 0
+ },
+ "a2-mirror-late-l1": {
+  "t": 395.9,
+  "x": 1280,
+  "level": 1,
+  "role": "label",
+  "claims": 0
+ },
+ "a2-mirror-late-t8": {
+  "t": 399.3667,
+  "x": 691.7,
+  "level": 2,
+  "role": "label",
+  "claims": 1
+ },
+ "a2-mirror-late-t21": {
+  "t": 401.2333,
+  "x": 1232.5,
+  "level": 2,
+  "role": "label",
+  "claims": 1
+ },
+ "a2-mirror-late-sub": {
+  "t": 403.4,
+  "x": 1280,
+  "level": 2,
+  "role": "label",
+  "claims": 0
+ },
+ "a2-1991-cb": {
+  "t": 405.6,
+  "x": 1183.5,
+  "level": 3,
+  "role": "label",
+  "claims": 0
+ },
+ "a2-1991-cap": {
+  "t": 406.0667,
+  "x": 394.2,
+  "level": 3,
+  "role": "label",
+  "claims": 0
+ },
+ "a2-1991-v": {
+  "t": 407,
+  "x": 1280,
+  "level": 1,
+  "role": "label",
+  "claims": 1
+ },
+ "a2-1991-nb": {
+  "t": 407,
+  "x": 1280,
+  "level": 2,
+  "role": "label",
+  "claims": 0
+ },
+ "a2-1991-l1": {
+  "t": 414.5,
+  "x": 1280,
+  "level": 1,
+  "role": "label",
+  "claims": 1
+ },
+ "a2-short-ax0": {
+  "t": 416.8,
+  "x": 616.9,
+  "level": null,
+  "role": "axis-label",
+  "claims": 1
+ },
+ "a2-short-ax1": {
+  "t": 416.8,
+  "x": 1893.3,
+  "level": null,
+  "role": "axis-label",
+  "claims": 1
+ },
+ "a2-short-cap": {
+  "t": 417.2667,
+  "x": 587.3,
+  "level": 3,
+  "role": "label",
+  "claims": 0
+ },
+ "a2-short-l1a": {
+  "t": 417.7,
+  "x": 640,
+  "level": 1,
+  "role": "label",
+  "claims": 0
+ },
+ "a2-short-l1": {
+  "t": 421.3667,
+  "x": 1280,
+  "level": 1,
+  "role": "label",
+  "claims": 1
+ },
+ "a2-short-sub": {
+  "t": 421.7667,
+  "x": 1280,
+  "level": 2,
+  "role": "label",
+  "claims": 0
+ },
+ "a2-mirror-end-a": {
+  "t": 423.6667,
+  "x": 250.2,
+  "level": 3,
+  "role": "label",
+  "claims": 0
+ },
+ "a2-mirror-end-b": {
+  "t": 423.6667,
+  "x": 1115.1,
+  "level": 3,
+  "role": "label",
+  "claims": 0
+ },
+ "a2-mirror-end-l": {
+  "t": 424.1333,
+  "x": 397.8,
+  "level": 3,
+  "role": "label",
+  "claims": 0
+ },
+ "a2-mirror-end-y": {
+  "t": 425.5,
+  "x": 1708.1,
+  "level": 3,
+  "role": "label",
+  "claims": 1
+ },
+ "a2-mirror-end-badge": {
+  "t": 427.4667,
+  "x": 1106.1,
+  "level": null,
+  "role": "badge",
+  "claims": 0
+ },
+ "a2-mirror-end-l1": {
+  "t": 427.7333,
+  "x": 1280,
+  "level": 1,
+  "role": "label",
+  "claims": 1
+ },
+ "a2-mirror-end-nb": {
+  "t": 427.7333,
+  "x": 1280,
+  "level": 2,
+  "role": "label",
+  "claims": 0
+ },
  "a2-mirror-real-basis": {
   "t": 431.7667,
   "x": 640,
@@ -1056,6 +1945,76 @@
   "role": "label",
   "claims": 1
  },
+ "a2-payoff-a": {
+  "t": 441.4667,
+  "x": 380.2,
+  "level": 3,
+  "role": "label",
+  "claims": 0
+ },
+ "a2-payoff-b": {
+  "t": 441.4667,
+  "x": 1095.1,
+  "level": 3,
+  "role": "label",
+  "claims": 0
+ },
+ "a2-payoff-sub": {
+  "t": 441.8333,
+  "x": 960,
+  "level": 2,
+  "role": "label",
+  "claims": 0
+ },
+ "a2-payoff-badge": {
+  "t": 442.6667,
+  "x": 526.1,
+  "level": null,
+  "role": "badge",
+  "claims": 0
+ },
+ "a2-payoff-l1": {
+  "t": 442.9333,
+  "x": 960,
+  "level": 1,
+  "role": "label",
+  "claims": 2
+ },
+ "a2-payoff-l2": {
+  "t": 445.7333,
+  "x": 960,
+  "level": 1,
+  "role": "label",
+  "claims": 0
+ },
+ "a2-payoff-ax0": {
+  "t": 445.8333,
+  "x": 338.2,
+  "level": null,
+  "role": "axis-label",
+  "claims": 1
+ },
+ "a2-payoff-ax1": {
+  "t": 445.8333,
+  "x": 1581.8,
+  "level": null,
+  "role": "axis-label",
+  "claims": 1
+ },
+ "a2-payoff-lab-1966": {
+  "t": 446.0333,
+  "x": 452,
+  "level": 3,
+  "role": "label",
+  "claims": 0
+ },
+ "a2-payoff-lab-mirror": {
+  "t": 446.0333,
+  "x": 466.9,
+  "level": 3,
+  "role": "label",
+  "claims": 0
+ },
  "a3-est-l1": {
   "t": 453.6,
   "x": 960,
@@ -1097,6 +2056,160 @@
   "level": 1,
   "role": "label",
   "claims": 1
+ },
+ "a3-q-k": {
+  "t": 467.6667,
+  "x": 960,
+  "level": 2,
+  "role": "label",
+  "claims": 0
+ },
+ "a3-q-l1": {
+  "t": 469.3667,
+  "x": 960,
+  "level": 1,
+  "role": "label",
+  "claims": 0
+ },
+ "a3-fine-l1": {
+  "t": 471.9333,
+  "x": 560,
+  "level": 1,
+  "role": "label",
+  "claims": 0
+ },
+ "a3-fine-lgA": {
+  "t": 473.0333,
+  "x": 302.3,
+  "level": 3,
+  "role": "label",
+  "claims": 0
+ },
+ "a3-fine-lgB": {
+  "t": 473.0333,
+  "x": 256.1,
+  "level": 3,
+  "role": "label",
+  "claims": 0
+ },
+ "a3-fine-65": {
+  "t": 474.8333,
+  "x": 560,
+  "level": 1,
+  "role": "label",
+  "claims": 1
+ },
+ "a3-fine-of": {
+  "t": 475.7667,
+  "x": 560,
+  "level": 2,
+  "role": "label",
+  "claims": 1
+ },
+ "a3-fine-sub": {
+  "t": 476.2667,
+  "x": 560,
+  "level": 3,
+  "role": "label",
+  "claims": 0
+ },
+ "a3-good-l1": {
+  "t": 481.1333,
+  "x": 640,
+  "level": 1,
+  "role": "label",
+  "claims": 0
+ },
+ "a3-good-cap": {
+  "t": 481.8333,
+  "x": 546.2,
+  "level": 3,
+  "role": "label",
+  "claims": 0
+ },
+ "a3-good-m": {
+  "t": 486.0333,
+  "x": 640,
+  "level": 1,
+  "role": "label",
+  "claims": 1
+ },
+ "a3-good-basis": {
+  "t": 486.0333,
+  "x": 640,
+  "level": 2,
+  "role": "label",
+  "claims": 1
+ },
+ "a3-good-82": {
+  "t": 489,
+  "x": 1453,
+  "level": null,
+  "role": "label",
+  "claims": 1
+ },
+ "a3-1929-y": {
+  "t": 492.5333,
+  "x": 966.9,
+  "level": null,
+  "role": "label",
+  "claims": 1
+ },
+ "a3-1929-l1": {
+  "t": 492.6,
+  "x": 1340,
+  "level": 1,
+  "role": "label",
+  "claims": 0
+ },
+ "a3-1929-l1b": {
+  "t": 497.2,
+  "x": 1340,
+  "level": 1,
+  "role": "label",
+  "claims": 0
+ },
+ "a3-1929-pr": {
+  "t": 497.3,
+  "x": 1340,
+  "level": 3,
+  "role": "label",
+  "claims": 0
+ },
+ "a3-1929-cap": {
+  "t": 502.3667,
+  "x": 1363.7,
+  "level": 3,
+  "role": "label",
+  "claims": 0
+ },
+ "a3-1929-l1c": {
+  "t": 504.5,
+  "x": 1340,
+  "level": 1,
+  "role": "label",
+  "claims": 0
+ },
+ "a3-1929-39": {
+  "t": 504.5333,
+  "x": 1221.5,
+  "level": 2,
+  "role": "label",
+  "claims": 1
+ },
+ "a3-nohurt-l1": {
+  "t": 507.0667,
+  "x": 560,
+  "level": 1,
+  "role": "label",
+  "claims": 0
+ },
+ "a3-nohurt-sub": {
+  "t": 507.3667,
+  "x": 560,
+  "level": 2,
+  "role": "label",
+  "claims": 0
  },
  "a3-less-l1": {
   "t": 512.2333,
@@ -1147,6 +2260,244 @@
   "role": "label",
   "claims": 0
  },
+ "a3-four-l1": {
+  "t": 523.5,
+  "x": 560,
+  "level": 1,
+  "role": "label",
+  "claims": 1
+ },
+ "a3-four-sub": {
+  "t": 523.9667,
+  "x": 560,
+  "level": 2,
+  "role": "label",
+  "claims": 0
+ },
+ "a3-four-1965": {
+  "t": 527.2333,
+  "x": 1402.4,
+  "level": null,
+  "role": "label",
+  "claims": 1
+ },
+ "a3-four-1966": {
+  "t": 528.8333,
+  "x": 1506.6,
+  "level": null,
+  "role": "label",
+  "claims": 1
+ },
+ "a3-four2-1968": {
+  "t": 530.6667,
+  "x": 1107.5,
+  "level": null,
+  "role": "label",
+  "claims": 1
+ },
+ "a3-four2-l1": {
+  "t": 530.7,
+  "x": 1340,
+  "level": 1,
+  "role": "label",
+  "claims": 0
+ },
+ "a3-four2-sub": {
+  "t": 531.0667,
+  "x": 1340,
+  "level": 2,
+  "role": "label",
+  "claims": 0
+ },
+ "a3-four2-1969": {
+  "t": 531.9667,
+  "x": 1029.3,
+  "level": null,
+  "role": "label",
+  "claims": 1
+ },
+ "a3-avg-not-axl": {
+  "t": 533.8333,
+  "x": 562,
+  "level": 3,
+  "role": "label",
+  "claims": 0
+ },
+ "a3-avg-not-axr": {
+  "t": 533.8333,
+  "x": 1360,
+  "level": 3,
+  "role": "label",
+  "claims": 0
+ },
+ "a3-avg-not-sub": {
+  "t": 534.4333,
+  "x": 640,
+  "level": 2,
+  "role": "label",
+  "claims": 0
+ },
+ "a3-avg-not-l1": {
+  "t": 534.5,
+  "x": 640,
+  "level": 1,
+  "role": "label",
+  "claims": 0
+ },
+ "a3-real66-axl": {
+  "t": 537.1667,
+  "x": 213.1,
+  "level": 3,
+  "role": "label",
+  "claims": 0
+ },
+ "a3-real66-axr": {
+  "t": 537.1667,
+  "x": 1210.4,
+  "level": 3,
+  "role": "label",
+  "claims": 0
+ },
+ "a3-real66-l1": {
+  "t": 537.5333,
+  "x": 1280,
+  "level": 1,
+  "role": "label",
+  "claims": 0
+ },
+ "a3-real66-41": {
+  "t": 540.9667,
+  "x": 691.6,
+  "level": 2,
+  "role": "label",
+  "claims": 1
+ },
+ "a3-real66-who": {
+  "t": 541.2667,
+  "x": 690.8,
+  "level": 3,
+  "role": "label",
+  "claims": 1
+ },
+ "a3-real66-17": {
+  "t": 545.6667,
+  "x": 1280,
+  "level": 1,
+  "role": "label",
+  "claims": 1
+ },
+ "a3-real66-17s": {
+  "t": 546.0667,
+  "x": 1280,
+  "level": 2,
+  "role": "label",
+  "claims": 0
+ },
+ "a3-1969-axx": {
+  "t": 552.4,
+  "x": 549.1,
+  "level": 3,
+  "role": "label",
+  "claims": 0
+ },
+ "a3-1969-axy": {
+  "t": 552.4,
+  "x": 653.1,
+  "level": 3,
+  "role": "label",
+  "claims": 0
+ },
+ "a3-1969-l1": {
+  "t": 552.4,
+  "x": 1280,
+  "level": 1,
+  "role": "label",
+  "claims": 0
+ },
+ "a3-1969-y": {
+  "t": 553.7333,
+  "x": 975.4,
+  "level": null,
+  "role": "label",
+  "claims": 1
+ },
+ "a3-1969-v": {
+  "t": 555.6333,
+  "x": 1111.4,
+  "level": 2,
+  "role": "label",
+  "claims": 1
+ },
+ "a3-1928-y": {
+  "t": 557.9667,
+  "x": 558.6,
+  "level": null,
+  "role": "label",
+  "claims": 1
+ },
+ "a3-1969-l1b": {
+  "t": 561.4,
+  "x": 1280,
+  "level": 1,
+  "role": "label",
+  "claims": 1
+ },
+ "a3-1928-v": {
+  "t": 561.4333,
+  "x": 541.1,
+  "level": 2,
+  "role": "label",
+  "claims": 1
+ },
+ "a3-1928-axx": {
+  "t": 563.7667,
+  "x": 611.8,
+  "level": 3,
+  "role": "label",
+  "claims": 0
+ },
+ "a3-1928-axy": {
+  "t": 563.7667,
+  "x": 715.9,
+  "level": 3,
+  "role": "label",
+  "claims": 0
+ },
+ "a3-1928-l1": {
+  "t": 564.2333,
+  "x": 1280,
+  "level": 1,
+  "role": "label",
+  "claims": 0
+ },
+ "a3-1928-m": {
+  "t": 565.1333,
+  "x": 675.9,
+  "level": 2,
+  "role": "label",
+  "claims": 1
+ },
+ "a3-1928-b": {
+  "t": 565.1333,
+  "x": 675.9,
+  "level": 3,
+  "role": "label",
+  "claims": 1
+ },
+ "a3-1969-y2": {
+  "t": 569.9,
+  "x": 979.6,
+  "level": null,
+  "role": "label",
+  "claims": 1
+ },
+ "a3-1969-r": {
+  "t": 572.9333,
+  "x": 1255.7,
+  "level": 2,
+  "role": "label",
+  "claims": 1
+ },
  "a3-share-l1": {
   "t": 574.5333,
   "x": 960,
@@ -1181,6 +2532,202 @@
   "level": 2,
   "role": "label",
   "claims": 0
+ },
+ "a3-1966d-l1": {
+  "t": 585.1,
+  "x": 1280,
+  "level": 1,
+  "role": "label",
+  "claims": 0
+ },
+ "a3-1966d-z": {
+  "t": 585.2,
+  "x": -64.8,
+  "level": 3,
+  "role": "label",
+  "claims": 0
+ },
+ "a3-1966d-cap": {
+  "t": 585.3,
+  "x": 525.5,
+  "level": 3,
+  "role": "label",
+  "claims": 0
+ },
+ "a3-1966d-sub": {
+  "t": 585.4,
+  "x": 1280,
+  "level": 2,
+  "role": "label",
+  "claims": 0
+ },
+ "a3-1966d-y": {
+  "t": 588.2333,
+  "x": 543.4,
+  "level": null,
+  "role": "label",
+  "claims": 1
+ },
+ "a3-1966d-v": {
+  "t": 591.5333,
+  "x": 532.3,
+  "level": 2,
+  "role": "label",
+  "claims": 1
+ },
+ "a3-mirror-d-l66": {
+  "t": 595.1,
+  "x": 829.9,
+  "level": 3,
+  "role": "label",
+  "claims": 0
+ },
+ "a3-mirror-d-l1": {
+  "t": 595.4667,
+  "x": 640,
+  "level": 1,
+  "role": "label",
+  "claims": 0
+ },
+ "a3-mirror-d-lm": {
+  "t": 595.5667,
+  "x": 1493.2,
+  "level": 3,
+  "role": "label",
+  "claims": 0
+ },
+ "a3-mirror-d-cap": {
+  "t": 595.6667,
+  "x": 960,
+  "level": 3,
+  "role": "label",
+  "claims": 0
+ },
+ "a3-mirror-d-badge": {
+  "t": 597.0333,
+  "x": 1321.8,
+  "level": null,
+  "role": "badge",
+  "claims": 0
+ },
+ "a3-mirror-d-v": {
+  "t": 597.4333,
+  "x": 1093.8,
+  "level": 2,
+  "role": "label",
+  "claims": 1
+ },
+ "a3-answer-q": {
+  "t": 601.0333,
+  "x": 960,
+  "level": 1,
+  "role": "label",
+  "claims": 0
+ },
+ "a3-answer-avg": {
+  "t": 603.1,
+  "x": 960,
+  "level": 2,
+  "role": "label",
+  "claims": 0
+ },
+ "a3-answer-l1": {
+  "t": 604.6667,
+  "x": 960,
+  "level": 1,
+  "role": "label",
+  "claims": 0
+ },
+ "a3-nuance-l1": {
+  "t": 607.2,
+  "x": 1280,
+  "level": 1,
+  "role": "label",
+  "claims": 0
+ },
+ "a3-nuance-69": {
+  "t": 608.2667,
+  "x": 1280,
+  "level": 2,
+  "role": "label",
+  "claims": 1
+ },
+ "a3-nuance-axx": {
+  "t": 608.6333,
+  "x": 480.2,
+  "level": 3,
+  "role": "label",
+  "claims": 0
+ },
+ "a3-nuance-axy": {
+  "t": 608.6333,
+  "x": 584.2,
+  "level": 3,
+  "role": "label",
+  "claims": 0
+ },
+ "a3-nuance-l1b": {
+  "t": 618.6333,
+  "x": 1280,
+  "level": 1,
+  "role": "label",
+  "claims": 0
+ },
+ "a3-nuance-ring": {
+  "t": 619.0667,
+  "x": 1280,
+  "level": 2,
+  "role": "label",
+  "claims": 0
+ },
+ "a3-avg-callback-a0": {
+  "t": 620.5667,
+  "x": 1216.8,
+  "level": null,
+  "role": "axis-label",
+  "claims": 1
+ },
+ "a3-avg-callback-a1": {
+  "t": 620.5667,
+  "x": 1966,
+  "level": null,
+  "role": "axis-label",
+  "claims": 1
+ },
+ "a3-avg-callback-l1": {
+  "t": 620.6333,
+  "x": 640,
+  "level": 1,
+  "role": "label",
+  "claims": 1
+ },
+ "a3-avg-callback-lab": {
+  "t": 621.7333,
+  "x": 1487.6,
+  "level": 3,
+  "role": "label",
+  "claims": 1
+ },
+ "a3-avg-callback-s1": {
+  "t": 623.1,
+  "x": 640,
+  "level": 2,
+  "role": "label",
+  "claims": 1
+ },
+ "a3-avg-callback-s2": {
+  "t": 626.8667,
+  "x": 640,
+  "level": 2,
+  "role": "label",
+  "claims": 0
+ },
+ "a3-avg-callback-91": {
+  "t": 627.4333,
+  "x": 1621.4,
+  "level": 2,
+  "role": "label",
+  "claims": 1
  },
  "a3-limits-l1": {
   "t": 630.6,
@@ -1230,6 +2777,27 @@
   "level": 2,
   "role": "label",
   "claims": 0
+ },
+ "a3-overlap-l1": {
+  "t": 640.6667,
+  "x": 560,
+  "level": 1,
+  "role": "label",
+  "claims": 1
+ },
+ "a3-overlap-98": {
+  "t": 643.1667,
+  "x": 960,
+  "level": 2,
+  "role": "label",
+  "claims": 1
+ },
+ "a3-overlap-3": {
+  "t": 646.9667,
+  "x": 1280,
+  "level": 2,
+  "role": "label",
+  "claims": 1
  },
  "a3-bare-l1": {
   "t": 649.1333,
@@ -1406,1595 +2974,6 @@
   "role": "label",
   "claims": 0
  },
- "st-who": {
-  "t": 21.6333,
-  "x": 1300,
-  "level": null,
-  "role": "label",
-  "claims": 0
- },
- "st-badge": {
-  "t": 22.6667,
-  "x": 576.1,
-  "level": null,
-  "role": "badge",
-  "claims": 0
- },
- "st-l1": {
-  "t": 22.8667,
-  "x": 640,
-  "level": 1,
-  "role": "label",
-  "claims": 1
- },
- "st-basis": {
-  "t": 22.8667,
-  "x": 640,
-  "level": null,
-  "role": "label",
-  "claims": 0
- },
- "rs-l1": {
-  "t": 77.0333,
-  "x": 640,
-  "level": 1,
-  "role": "label",
-  "claims": 0
- },
- "rs-g100k": {
-  "t": 77.2667,
-  "x": 398.7,
-  "level": null,
-  "role": "axis-label",
-  "claims": 1
- },
- "rs-sub": {
-  "t": 77.3333,
-  "x": 640,
-  "level": null,
-  "role": "label",
-  "claims": 0
- },
- "re-g100k": {
-  "t": 85.0333,
-  "x": 450.8,
-  "level": null,
-  "role": "axis-label",
-  "claims": 1
- },
- "re-a0": {
-  "t": 85.0333,
-  "x": 345.1,
-  "level": null,
-  "role": "axis-label",
-  "claims": 1
- },
- "re-a1": {
-  "t": 85.0333,
-  "x": 1528.5,
-  "level": null,
-  "role": "axis-label",
-  "claims": 1
- },
- "re-l1": {
-  "t": 85.4,
-  "x": 640,
-  "level": 1,
-  "role": "label",
-  "claims": 0
- },
- "re-l1b": {
-  "t": 88.1667,
-  "x": 640,
-  "level": 1,
-  "role": "label",
-  "claims": 0
- },
- "mr-l1b": {
-  "t": 123.8333,
-  "x": 1280,
-  "level": 1,
-  "role": "label",
-  "claims": 0
- },
- "mr-zm": {
-  "t": 123.8667,
-  "x": 249.6,
-  "level": null,
-  "role": "axis-label",
-  "claims": 1
- },
- "mr-ma": {
-  "t": 123.9,
-  "x": 370,
-  "level": null,
-  "role": "label",
-  "claims": 1
- },
- "mr-tm": {
-  "t": 123.9,
-  "x": 1435.1,
-  "level": null,
-  "role": "label",
-  "claims": 0
- },
- "mr-mb": {
-  "t": 127.3333,
-  "x": 1704,
-  "level": null,
-  "role": "label",
-  "claims": 1
- },
- "a2-est-sub": {
-  "t": 203.8,
-  "x": 1280,
-  "level": 2,
-  "role": "label",
-  "claims": 0
- },
- "a2-est-l1": {
-  "t": 204.9,
-  "x": 1280,
-  "level": 1,
-  "role": "label",
-  "claims": 0
- },
- "a2-est-lab-1966": {
-  "t": 206.2333,
-  "x": 461,
-  "level": 3,
-  "role": "label",
-  "claims": 0
- },
- "a2-est-lab-mirror": {
-  "t": 206.2333,
-  "x": 477.8,
-  "level": 3,
-  "role": "label",
-  "claims": 0
- },
- "a2-gap1-ax0": {
-  "t": 226.3333,
-  "x": 359.8,
-  "level": null,
-  "role": "axis-label",
-  "claims": 1
- },
- "a2-gap1-ax1": {
-  "t": 226.3333,
-  "x": 1560.2,
-  "level": null,
-  "role": "axis-label",
-  "claims": 1
- },
- "a2-gap1-l1": {
-  "t": 226.8667,
-  "x": 1280,
-  "level": 1,
-  "role": "label",
-  "claims": 0
- },
- "a2-gap1-lab-1966": {
-  "t": 227.1667,
-  "x": 474.7,
-  "level": 3,
-  "role": "label",
-  "claims": 0
- },
- "a2-gap1-lab-mirror": {
-  "t": 227.1667,
-  "x": 491.6,
-  "level": 3,
-  "role": "label",
-  "claims": 0
- },
- "a2-7374-ax0": {
-  "t": 238.7,
-  "x": 360,
-  "level": null,
-  "role": "axis-label",
-  "claims": 1
- },
- "a2-7374-ax1": {
-  "t": 238.7,
-  "x": 1560,
-  "level": null,
-  "role": "axis-label",
-  "claims": 1
- },
- "a2-7374-lab-1966": {
-  "t": 239.1,
-  "x": 483.7,
-  "level": 3,
-  "role": "label",
-  "claims": 0
- },
- "a2-7374-lab-mirror": {
-  "t": 239.1,
-  "x": 500.6,
-  "level": 3,
-  "role": "label",
-  "claims": 0
- },
- "a2-7374-sub": {
-  "t": 239.2,
-  "x": 1280,
-  "level": 2,
-  "role": "label",
-  "claims": 0
- },
- "a2-7374-l1": {
-  "t": 240.9,
-  "x": 1280,
-  "level": 1,
-  "role": "label",
-  "claims": 0
- },
- "a2-7374-y7": {
-  "t": 242.5,
-  "x": 573.7,
-  "level": 2,
-  "role": "label",
-  "claims": 1
- },
- "a2-7374-y8": {
-  "t": 243.7667,
-  "x": 618.5,
-  "level": 2,
-  "role": "label",
-  "claims": 1
- },
- "a2-bal74-who": {
-  "t": 254.1667,
-  "x": 1245.1,
-  "level": 3,
-  "role": "label",
-  "claims": 1
- },
- "a2-bal74-refl": {
-  "t": 254.2667,
-  "x": 1304.6,
-  "level": 3,
-  "role": "label",
-  "claims": 0
- },
- "a2-bal74-e74": {
-  "t": 257.8,
-  "x": 1670.6,
-  "level": 3,
-  "role": "label",
-  "claims": 1
- },
- "a2-bal74-pre": {
-  "t": 257.8,
-  "x": 640,
-  "level": 2,
-  "role": "label",
-  "claims": 0
- },
- "a2-bal74-l1": {
-  "t": 259.8667,
-  "x": 640,
-  "level": 1,
-  "role": "label",
-  "claims": 1
- },
- "a2-bal74-basis": {
-  "t": 259.8667,
-  "x": 640,
-  "level": 2,
-  "role": "label",
-  "claims": 1
- },
- "a2-bal74m-a": {
-  "t": 264.1333,
-  "x": 250.2,
-  "level": 3,
-  "role": "label",
-  "claims": 0
- },
- "a2-bal74m-b": {
-  "t": 264.1333,
-  "x": 715.1,
-  "level": 3,
-  "role": "label",
-  "claims": 0
- },
- "a2-bal74m-same": {
-  "t": 265.3333,
-  "x": 1360,
-  "level": 2,
-  "role": "label",
-  "claims": 0
- },
- "a2-bal74m-badge": {
-  "t": 266.3667,
-  "x": 1216.1,
-  "level": null,
-  "role": "badge",
-  "claims": 0
- },
- "a2-bal74m-l1": {
-  "t": 266.6667,
-  "x": 1360,
-  "level": 1,
-  "role": "label",
-  "claims": 1
- },
- "a2-bal74m-basis": {
-  "t": 266.6667,
-  "x": 1360,
-  "level": 2,
-  "role": "label",
-  "claims": 0
- },
- "a2-bite-c0": {
-  "t": 272.0333,
-  "x": 605.2,
-  "level": 3,
-  "role": "label",
-  "claims": 0
- },
- "a2-bite-l1": {
-  "t": 272.0333,
-  "x": 640,
-  "level": 1,
-  "role": "label",
-  "claims": 0
- },
- "a2-bite-c1": {
-  "t": 272.4667,
-  "x": 1320.7,
-  "level": 3,
-  "role": "label",
-  "claims": 0
- },
- "a2-bite-badge": {
-  "t": 276.9,
-  "x": 1246.1,
-  "level": null,
-  "role": "badge",
-  "claims": 0
- },
- "a2-bite-l1b": {
-  "t": 277.2,
-  "x": 1280,
-  "level": 1,
-  "role": "label",
-  "claims": 1
- },
- "a2-bite-basis": {
-  "t": 277.2,
-  "x": 1280,
-  "level": 2,
-  "role": "label",
-  "claims": 0
- },
- "a2-bite-still": {
-  "t": 282.2667,
-  "x": 1360,
-  "level": 2,
-  "role": "label",
-  "claims": 0
- },
- "a2-7576b-ax0": {
-  "t": 304.2667,
-  "x": 169.7,
-  "level": null,
-  "role": "axis-label",
-  "claims": 1
- },
- "a2-7576b-ax1": {
-  "t": 304.2667,
-  "x": 1210.1,
-  "level": null,
-  "role": "axis-label",
-  "claims": 1
- },
- "a2-7576b-lab-1966": {
-  "t": 304.2667,
-  "x": 559.6,
-  "level": 3,
-  "role": "label",
-  "claims": 0
- },
- "a2-7576b-refl": {
-  "t": 304.2667,
-  "x": 1088.8,
-  "level": 3,
-  "role": "label",
-  "claims": 0
- },
- "a2-7576b-l1": {
-  "t": 304.7,
-  "x": 1280,
-  "level": 1,
-  "role": "label",
-  "claims": 0
- },
- "a2-7576b-wdl": {
-  "t": 308.5667,
-  "x": 1073.4,
-  "level": 3,
-  "role": "label",
-  "claims": 0
- },
- "a2-1982r-l1a": {
-  "t": 338.8,
-  "x": 1280,
-  "level": 1,
-  "role": "label",
-  "claims": 0
- },
- "a2-1982r-who": {
-  "t": 339.2,
-  "x": 1280,
-  "level": 2,
-  "role": "label",
-  "claims": 1
- },
- "a2-1982r-l1": {
-  "t": 341.0333,
-  "x": 1280,
-  "level": 1,
-  "role": "label",
-  "claims": 1
- },
- "a2-late-ax0": {
-  "t": 358.7667,
-  "x": 360,
-  "level": null,
-  "role": "axis-label",
-  "claims": 1
- },
- "a2-late-ax1": {
-  "t": 358.7667,
-  "x": 1560,
-  "level": null,
-  "role": "axis-label",
-  "claims": 1
- },
- "a2-late-lab-1966": {
-  "t": 358.7667,
-  "x": 1112.4,
-  "level": 3,
-  "role": "label",
-  "claims": 0
- },
- "a2-late-bl": {
-  "t": 359.0667,
-  "x": 1159,
-  "level": 2,
-  "role": "label",
-  "claims": 0
- },
- "a2-late-l1": {
-  "t": 359.8333,
-  "x": 640,
-  "level": 1,
-  "role": "label",
-  "claims": 0
- },
- "a2-mirror-boom-ax0": {
-  "t": 361.1667,
-  "x": 359.8,
-  "level": null,
-  "role": "axis-label",
-  "claims": 1
- },
- "a2-mirror-boom-ax1": {
-  "t": 361.1667,
-  "x": 1560.2,
-  "level": null,
-  "role": "axis-label",
-  "claims": 1
- },
- "a2-mirror-boom-lab-1966": {
-  "t": 361.1667,
-  "x": 1392.5,
-  "level": 3,
-  "role": "label",
-  "claims": 0
- },
- "a2-mirror-boom-l1": {
-  "t": 361.6,
-  "x": 1280,
-  "level": 1,
-  "role": "label",
-  "claims": 0
- },
- "a2-mirror-boom-lab-mirror": {
-  "t": 361.8333,
-  "x": 499.1,
-  "level": 3,
-  "role": "label",
-  "claims": 0
- },
- "a2-mirror-boom-bl": {
-  "t": 363.9,
-  "x": 706.5,
-  "level": 2,
-  "role": "label",
-  "claims": 0
- },
- "a2-climb-ax0": {
-  "t": 367.2333,
-  "x": 430.5,
-  "level": null,
-  "role": "axis-label",
-  "claims": 1
- },
- "a2-climb-ax1": {
-  "t": 367.2333,
-  "x": 1489.5,
-  "level": null,
-  "role": "axis-label",
-  "claims": 1
- },
- "a2-climb-lab-1966": {
-  "t": 367.2333,
-  "x": 825.3,
-  "level": 3,
-  "role": "label",
-  "claims": 0
- },
- "a2-climb-lab-mirror": {
-  "t": 367.2333,
-  "x": 842.2,
-  "level": 3,
-  "role": "label",
-  "claims": 0
- },
- "a2-climb-l1": {
-  "t": 367.5,
-  "x": 640,
-  "level": 1,
-  "role": "label",
-  "claims": 0
- },
- "a2-climax-in-ax0": {
-  "t": 369.8333,
-  "x": 287.9,
-  "level": null,
-  "role": "axis-label",
-  "claims": 1
- },
- "a2-climax-in-ax1": {
-  "t": 369.8333,
-  "x": 1248,
-  "level": null,
-  "role": "axis-label",
-  "claims": 1
- },
- "a2-climax-in-lab-1966": {
-  "t": 369.8333,
-  "x": 1102.4,
-  "level": 3,
-  "role": "label",
-  "claims": 0
- },
- "a2-climax-in-lab-mirror": {
-  "t": 369.8333,
-  "x": 1119.3,
-  "level": 3,
-  "role": "label",
-  "claims": 0
- },
- "a2-climax-in-l1": {
-  "t": 370,
-  "x": 960,
-  "level": 1,
-  "role": "label",
-  "claims": 1
- },
- "a2-climax-ax0": {
-  "t": 372.1333,
-  "x": 336.7,
-  "level": null,
-  "role": "axis-label",
-  "claims": 1
- },
- "a2-climax-ax1": {
-  "t": 372.1333,
-  "x": 1227.1,
-  "level": null,
-  "role": "axis-label",
-  "claims": 1
- },
- "a2-climax-lab-1966": {
-  "t": 372.1333,
-  "x": 1102.4,
-  "level": 3,
-  "role": "label",
-  "claims": 0
- },
- "a2-climax-lab-mirror": {
-  "t": 372.1333,
-  "x": 1119.3,
-  "level": 3,
-  "role": "label",
-  "claims": 0
- },
- "a2-climax-basis": {
-  "t": 372.3333,
-  "x": 960,
-  "level": 2,
-  "role": "label",
-  "claims": 0
- },
- "a2-climax-l1a": {
-  "t": 375.3333,
-  "x": 960,
-  "level": 1,
-  "role": "label",
-  "claims": 0
- },
- "a2-climax-badge": {
-  "t": 376.6667,
-  "x": 1406.1,
-  "level": null,
-  "role": "badge",
-  "claims": 0
- },
- "a2-climax-l1": {
-  "t": 376.9333,
-  "x": 960,
-  "level": 1,
-  "role": "label",
-  "claims": 1
- },
- "a2-years-b40": {
-  "t": 381,
-  "x": 636.1,
-  "level": null,
-  "role": "badge",
-  "claims": 0
- },
- "a2-years-l1": {
-  "t": 381.3,
-  "x": 640,
-  "level": 1,
-  "role": "label",
-  "claims": 1
- },
- "a2-years-basis": {
-  "t": 381.3,
-  "x": 640,
-  "level": 2,
-  "role": "label",
-  "claims": 0
- },
- "a2-years-cg": {
-  "t": 382.6333,
-  "x": 1188.9,
-  "level": 3,
-  "role": "label",
-  "claims": 0
- },
- "a2-years-ct": {
-  "t": 386.1,
-  "x": 1383.1,
-  "level": 3,
-  "role": "label",
-  "claims": 0
- },
- "a2-years-b49": {
-  "t": 386.1333,
-  "x": 636.1,
-  "level": null,
-  "role": "badge",
-  "claims": 0
- },
- "a2-years-l2": {
-  "t": 386.4,
-  "x": 640,
-  "level": 1,
-  "role": "label",
-  "claims": 1
- },
- "a2-years-sub": {
-  "t": 386.8,
-  "x": 640,
-  "level": 2,
-  "role": "label",
-  "claims": 0
- },
- "a2-rest-ax0": {
-  "t": 389.5333,
-  "x": 412.5,
-  "level": null,
-  "role": "axis-label",
-  "claims": 1
- },
- "a2-rest-ax1": {
-  "t": 389.5333,
-  "x": 1507.5,
-  "level": null,
-  "role": "axis-label",
-  "claims": 1
- },
- "a2-rest-lab-1966": {
-  "t": 389.5333,
-  "x": 1256.2,
-  "level": 3,
-  "role": "label",
-  "claims": 0
- },
- "a2-rest-l1": {
-  "t": 389.9667,
-  "x": 1280,
-  "level": 1,
-  "role": "label",
-  "claims": 0
- },
- "a2-rest-who": {
-  "t": 392.9333,
-  "x": 1280,
-  "level": 2,
-  "role": "label",
-  "claims": 1
- },
- "a2-mirror-late-ax0": {
-  "t": 395.4333,
-  "x": 456,
-  "level": null,
-  "role": "axis-label",
-  "claims": 1
- },
- "a2-mirror-late-ax1": {
-  "t": 395.4333,
-  "x": 1464,
-  "level": null,
-  "role": "axis-label",
-  "claims": 1
- },
- "a2-mirror-late-lab-1966": {
-  "t": 395.4333,
-  "x": 1442,
-  "level": 3,
-  "role": "label",
-  "claims": 0
- },
- "a2-mirror-late-lab-mirror": {
-  "t": 395.4333,
-  "x": 1190.1,
-  "level": 3,
-  "role": "label",
-  "claims": 0
- },
- "a2-mirror-late-l1": {
-  "t": 395.9,
-  "x": 1280,
-  "level": 1,
-  "role": "label",
-  "claims": 0
- },
- "a2-mirror-late-t8": {
-  "t": 399.3667,
-  "x": 691.7,
-  "level": 2,
-  "role": "label",
-  "claims": 1
- },
- "a2-mirror-late-t21": {
-  "t": 401.2333,
-  "x": 1232.5,
-  "level": 2,
-  "role": "label",
-  "claims": 1
- },
- "a2-mirror-late-sub": {
-  "t": 403.4,
-  "x": 1280,
-  "level": 2,
-  "role": "label",
-  "claims": 0
- },
- "a2-1991-cb": {
-  "t": 405.6,
-  "x": 1156.8,
-  "level": 3,
-  "role": "label",
-  "claims": 0
- },
- "a2-1991-cap": {
-  "t": 406.0667,
-  "x": 452.4,
-  "level": 3,
-  "role": "label",
-  "claims": 0
- },
- "a2-1991-v": {
-  "t": 407,
-  "x": 1280,
-  "level": 1,
-  "role": "label",
-  "claims": 1
- },
- "a2-1991-nb": {
-  "t": 407,
-  "x": 1280,
-  "level": 2,
-  "role": "label",
-  "claims": 0
- },
- "a2-1991-l1": {
-  "t": 414.5,
-  "x": 1280,
-  "level": 1,
-  "role": "label",
-  "claims": 1
- },
- "a2-short-ax0": {
-  "t": 416.8,
-  "x": 616.9,
-  "level": null,
-  "role": "axis-label",
-  "claims": 1
- },
- "a2-short-ax1": {
-  "t": 416.8,
-  "x": 1780,
-  "level": null,
-  "role": "axis-label",
-  "claims": 1
- },
- "a2-short-cap": {
-  "t": 417.2667,
-  "x": 587.3,
-  "level": 3,
-  "role": "label",
-  "claims": 0
- },
- "a2-short-l1a": {
-  "t": 417.7,
-  "x": 640,
-  "level": 1,
-  "role": "label",
-  "claims": 0
- },
- "a2-short-l1": {
-  "t": 421.3667,
-  "x": 1280,
-  "level": 1,
-  "role": "label",
-  "claims": 1
- },
- "a2-short-sub": {
-  "t": 421.7667,
-  "x": 1280,
-  "level": 2,
-  "role": "label",
-  "claims": 0
- },
- "a2-mirror-end-a": {
-  "t": 423.6667,
-  "x": 218.1,
-  "level": 3,
-  "role": "label",
-  "claims": 0
- },
- "a2-mirror-end-b": {
-  "t": 423.6667,
-  "x": 1135.2,
-  "level": 3,
-  "role": "label",
-  "claims": 0
- },
- "a2-mirror-end-l": {
-  "t": 424.1333,
-  "x": 397.8,
-  "level": 3,
-  "role": "label",
-  "claims": 0
- },
- "a2-mirror-end-y": {
-  "t": 425.5,
-  "x": 1708.6,
-  "level": 3,
-  "role": "label",
-  "claims": 1
- },
- "a2-mirror-end-badge": {
-  "t": 427.4667,
-  "x": 1106.1,
-  "level": null,
-  "role": "badge",
-  "claims": 0
- },
- "a2-mirror-end-l1": {
-  "t": 427.7333,
-  "x": 1280,
-  "level": 1,
-  "role": "label",
-  "claims": 1
- },
- "a2-mirror-end-nb": {
-  "t": 427.7333,
-  "x": 1280,
-  "level": 2,
-  "role": "label",
-  "claims": 0
- },
- "a2-payoff-a": {
-  "t": 441.4667,
-  "x": 392.4,
-  "level": 3,
-  "role": "label",
-  "claims": 0
- },
- "a2-payoff-b": {
-  "t": 441.4667,
-  "x": 1109.3,
-  "level": 3,
-  "role": "label",
-  "claims": 0
- },
- "a2-payoff-sub": {
-  "t": 441.8333,
-  "x": 960,
-  "level": 2,
-  "role": "label",
-  "claims": 0
- },
- "a2-payoff-badge": {
-  "t": 442.6667,
-  "x": 526.1,
-  "level": null,
-  "role": "badge",
-  "claims": 0
- },
- "a2-payoff-l1": {
-  "t": 442.9333,
-  "x": 960,
-  "level": 1,
-  "role": "label",
-  "claims": 2
- },
- "a2-payoff-l2": {
-  "t": 445.7333,
-  "x": 960,
-  "level": 1,
-  "role": "label",
-  "claims": 0
- },
- "a2-payoff-ax0": {
-  "t": 445.8333,
-  "x": 338.2,
-  "level": null,
-  "role": "axis-label",
-  "claims": 1
- },
- "a2-payoff-ax1": {
-  "t": 445.8333,
-  "x": 1581.8,
-  "level": null,
-  "role": "axis-label",
-  "claims": 1
- },
- "a2-payoff-lab-1966": {
-  "t": 446,
-  "x": 226.9,
-  "level": 3,
-  "role": "label",
-  "claims": 0
- },
- "a2-payoff-lab-mirror": {
-  "t": 446,
-  "x": 210.1,
-  "level": 3,
-  "role": "label",
-  "claims": 0
- },
- "a3-q-k": {
-  "t": 467.6667,
-  "x": 960,
-  "level": 2,
-  "role": "label",
-  "claims": 0
- },
- "a3-q-l1": {
-  "t": 469.3667,
-  "x": 960,
-  "level": 1,
-  "role": "label",
-  "claims": 0
- },
- "a3-fine-l1": {
-  "t": 471.9333,
-  "x": 560,
-  "level": 1,
-  "role": "label",
-  "claims": 0
- },
- "a3-fine-lgA": {
-  "t": 473.0333,
-  "x": 303.1,
-  "level": 3,
-  "role": "label",
-  "claims": 0
- },
- "a3-fine-lgB": {
-  "t": 473.0333,
-  "x": 257,
-  "level": 3,
-  "role": "label",
-  "claims": 0
- },
- "a3-fine-65": {
-  "t": 474.8333,
-  "x": 560,
-  "level": 1,
-  "role": "label",
-  "claims": 1
- },
- "a3-fine-of": {
-  "t": 475.7667,
-  "x": 560,
-  "level": 2,
-  "role": "label",
-  "claims": 1
- },
- "a3-fine-sub": {
-  "t": 476.2667,
-  "x": 560,
-  "level": 3,
-  "role": "label",
-  "claims": 0
- },
- "a3-good-l1": {
-  "t": 481.1333,
-  "x": 640,
-  "level": 1,
-  "role": "label",
-  "claims": 0
- },
- "a3-good-cap": {
-  "t": 481.8333,
-  "x": 546.2,
-  "level": 3,
-  "role": "label",
-  "claims": 0
- },
- "a3-good-82": {
-  "t": 482.6667,
-  "x": 1431.7,
-  "level": null,
-  "role": "label",
-  "claims": 1
- },
- "a3-good-m": {
-  "t": 486.0333,
-  "x": 640,
-  "level": 1,
-  "role": "label",
-  "claims": 1
- },
- "a3-good-basis": {
-  "t": 486.0333,
-  "x": 640,
-  "level": 2,
-  "role": "label",
-  "claims": 1
- },
- "a3-1929-y": {
-  "t": 492.5333,
-  "x": 966.9,
-  "level": null,
-  "role": "label",
-  "claims": 1
- },
- "a3-1929-l1": {
-  "t": 492.6,
-  "x": 1340,
-  "level": 1,
-  "role": "label",
-  "claims": 0
- },
- "a3-1929-l1b": {
-  "t": 497.2,
-  "x": 1340,
-  "level": 1,
-  "role": "label",
-  "claims": 0
- },
- "a3-1929-pr": {
-  "t": 497.3,
-  "x": 1340,
-  "level": 3,
-  "role": "label",
-  "claims": 0
- },
- "a3-1929-cap": {
-  "t": 502.3667,
-  "x": 1363.7,
-  "level": 3,
-  "role": "label",
-  "claims": 0
- },
- "a3-1929-l1c": {
-  "t": 504.5,
-  "x": 1340,
-  "level": 1,
-  "role": "label",
-  "claims": 0
- },
- "a3-1929-39": {
-  "t": 504.5333,
-  "x": 1221.5,
-  "level": 2,
-  "role": "label",
-  "claims": 1
- },
- "a3-nohurt-l1": {
-  "t": 507.0667,
-  "x": 560,
-  "level": 1,
-  "role": "label",
-  "claims": 0
- },
- "a3-nohurt-sub": {
-  "t": 507.3667,
-  "x": 560,
-  "level": 2,
-  "role": "label",
-  "claims": 0
- },
- "a3-four-l1": {
-  "t": 523.5,
-  "x": 560,
-  "level": 1,
-  "role": "label",
-  "claims": 1
- },
- "a3-four-sub": {
-  "t": 523.9667,
-  "x": 560,
-  "level": 2,
-  "role": "label",
-  "claims": 0
- },
- "a3-four-1965": {
-  "t": 527.2333,
-  "x": 1402.4,
-  "level": null,
-  "role": "label",
-  "claims": 1
- },
- "a3-four-1966": {
-  "t": 528.8333,
-  "x": 1506.6,
-  "level": null,
-  "role": "label",
-  "claims": 1
- },
- "a3-four2-1968": {
-  "t": 530.6667,
-  "x": 954.8,
-  "level": null,
-  "role": "label",
-  "claims": 1
- },
- "a3-four2-l1": {
-  "t": 530.7,
-  "x": 1376,
-  "level": 1,
-  "role": "label",
-  "claims": 0
- },
- "a3-four2-sub": {
-  "t": 531.0667,
-  "x": 1376,
-  "level": 2,
-  "role": "label",
-  "claims": 0
- },
- "a3-four2-1969": {
-  "t": 531.9667,
-  "x": 948.9,
-  "level": null,
-  "role": "label",
-  "claims": 1
- },
- "a3-avg-not-axl": {
-  "t": 533.8333,
-  "x": 562,
-  "level": 3,
-  "role": "label",
-  "claims": 0
- },
- "a3-avg-not-axr": {
-  "t": 533.8333,
-  "x": 1360,
-  "level": 3,
-  "role": "label",
-  "claims": 0
- },
- "a3-avg-not-sub": {
-  "t": 534.4333,
-  "x": 640,
-  "level": 2,
-  "role": "label",
-  "claims": 0
- },
- "a3-avg-not-l1": {
-  "t": 534.5,
-  "x": 640,
-  "level": 1,
-  "role": "label",
-  "claims": 0
- },
- "a3-real66-axl": {
-  "t": 537.1667,
-  "x": 243.2,
-  "level": 3,
-  "role": "label",
-  "claims": 0
- },
- "a3-real66-axr": {
-  "t": 537.1667,
-  "x": 1210.4,
-  "level": 3,
-  "role": "label",
-  "claims": 0
- },
- "a3-real66-l1": {
-  "t": 537.5333,
-  "x": 1280,
-  "level": 1,
-  "role": "label",
-  "claims": 0
- },
- "a3-real66-who": {
-  "t": 538.9333,
-  "x": 641.5,
-  "level": 3,
-  "role": "label",
-  "claims": 1
- },
- "a3-real66-41": {
-  "t": 540.9667,
-  "x": 691.6,
-  "level": 2,
-  "role": "label",
-  "claims": 1
- },
- "a3-real66-17": {
-  "t": 545.6667,
-  "x": 1280,
-  "level": 1,
-  "role": "label",
-  "claims": 1
- },
- "a3-real66-17s": {
-  "t": 546.0667,
-  "x": 1280,
-  "level": 2,
-  "role": "label",
-  "claims": 0
- },
- "a3-1969-axx": {
-  "t": 552.4,
-  "x": 1370,
-  "level": 3,
-  "role": "label",
-  "claims": 0
- },
- "a3-1969-axy": {
-  "t": 552.4,
-  "x": 653.1,
-  "level": 3,
-  "role": "label",
-  "claims": 0
- },
- "a3-1969-l1": {
-  "t": 552.4,
-  "x": 1280,
-  "level": 1,
-  "role": "label",
-  "claims": 0
- },
- "a3-1969-y": {
-  "t": 553.7333,
-  "x": 975.4,
-  "level": null,
-  "role": "label",
-  "claims": 1
- },
- "a3-1969-v": {
-  "t": 555.6333,
-  "x": 1111.4,
-  "level": 2,
-  "role": "label",
-  "claims": 1
- },
- "a3-1928-y": {
-  "t": 557.9667,
-  "x": 558.6,
-  "level": null,
-  "role": "label",
-  "claims": 1
- },
- "a3-1969-l1b": {
-  "t": 557.9667,
-  "x": 1280,
-  "level": 1,
-  "role": "label",
-  "claims": 1
- },
- "a3-1928-v": {
-  "t": 561.4333,
-  "x": 541.1,
-  "level": 2,
-  "role": "label",
-  "claims": 1
- },
- "a3-1928-axx": {
-  "t": 563.7667,
-  "x": 1625.4,
-  "level": 3,
-  "role": "label",
-  "claims": 0
- },
- "a3-1928-axy": {
-  "t": 563.7667,
-  "x": 715.9,
-  "level": 3,
-  "role": "label",
-  "claims": 0
- },
- "a3-1928-l1": {
-  "t": 564.2333,
-  "x": 1280,
-  "level": 1,
-  "role": "label",
-  "claims": 0
- },
- "a3-1928-m": {
-  "t": 565.1333,
-  "x": 675.9,
-  "level": 2,
-  "role": "label",
-  "claims": 1
- },
- "a3-1928-b": {
-  "t": 565.1333,
-  "x": 675.9,
-  "level": 3,
-  "role": "label",
-  "claims": 1
- },
- "a3-1969-y2": {
-  "t": 569.9,
-  "x": 979.6,
-  "level": null,
-  "role": "label",
-  "claims": 1
- },
- "a3-1969-r": {
-  "t": 572.9333,
-  "x": 1255.7,
-  "level": 2,
-  "role": "label",
-  "claims": 1
- },
- "a3-1966d-l1": {
-  "t": 585.1,
-  "x": 1280,
-  "level": 1,
-  "role": "label",
-  "claims": 0
- },
- "a3-1966d-z": {
-  "t": 585.2,
-  "x": 855.3,
-  "level": 3,
-  "role": "label",
-  "claims": 0
- },
- "a3-1966d-cap": {
-  "t": 585.3,
-  "x": 525.5,
-  "level": 3,
-  "role": "label",
-  "claims": 0
- },
- "a3-1966d-sub": {
-  "t": 585.4,
-  "x": 1280,
-  "level": 2,
-  "role": "label",
-  "claims": 0
- },
- "a3-1966d-y": {
-  "t": 588.2333,
-  "x": 543.4,
-  "level": null,
-  "role": "label",
-  "claims": 1
- },
- "a3-1966d-v": {
-  "t": 590.4333,
-  "x": 536.1,
-  "level": 2,
-  "role": "label",
-  "claims": 1
- },
- "a3-mirror-d-l66": {
-  "t": 595.1,
-  "x": 829.9,
-  "level": 3,
-  "role": "label",
-  "claims": 0
- },
- "a3-mirror-d-l1": {
-  "t": 595.4667,
-  "x": 640,
-  "level": 1,
-  "role": "label",
-  "claims": 0
- },
- "a3-mirror-d-lm": {
-  "t": 595.5667,
-  "x": 1493.2,
-  "level": 3,
-  "role": "label",
-  "claims": 0
- },
- "a3-mirror-d-cap": {
-  "t": 595.6667,
-  "x": 960,
-  "level": 3,
-  "role": "label",
-  "claims": 0
- },
- "a3-mirror-d-badge": {
-  "t": 597.0333,
-  "x": 1321.8,
-  "level": null,
-  "role": "badge",
-  "claims": 0
- },
- "a3-mirror-d-v": {
-  "t": 597.4333,
-  "x": 1093.8,
-  "level": 2,
-  "role": "label",
-  "claims": 1
- },
- "a3-answer-q": {
-  "t": 601.0333,
-  "x": 960,
-  "level": 1,
-  "role": "label",
-  "claims": 0
- },
- "a3-answer-avg": {
-  "t": 603.1,
-  "x": 960,
-  "level": 2,
-  "role": "label",
-  "claims": 0
- },
- "a3-answer-l1": {
-  "t": 604.6667,
-  "x": 960,
-  "level": 1,
-  "role": "label",
-  "claims": 0
- },
- "a3-nuance-l1": {
-  "t": 607.2,
-  "x": 1280,
-  "level": 1,
-  "role": "label",
-  "claims": 0
- },
- "a3-nuance-69": {
-  "t": 608.2667,
-  "x": 1280,
-  "level": 2,
-  "role": "label",
-  "claims": 1
- },
- "a3-nuance-axx": {
-  "t": 608.6333,
-  "x": 1440,
-  "level": 3,
-  "role": "label",
-  "claims": 0
- },
- "a3-nuance-axy": {
-  "t": 608.6333,
-  "x": 584.2,
-  "level": 3,
-  "role": "label",
-  "claims": 0
- },
- "a3-nuance-l1b": {
-  "t": 618.6333,
-  "x": 1280,
-  "level": 1,
-  "role": "label",
-  "claims": 0
- },
- "a3-nuance-ring": {
-  "t": 619.0667,
-  "x": 1280,
-  "level": 2,
-  "role": "label",
-  "claims": 0
- },
- "a3-avg-callback-a0": {
-  "t": 620.5667,
-  "x": 1216.8,
-  "level": null,
-  "role": "axis-label",
-  "claims": 1
- },
- "a3-avg-callback-a1": {
-  "t": 620.5667,
-  "x": 1790,
-  "level": null,
-  "role": "axis-label",
-  "claims": 1
- },
- "a3-avg-callback-l1": {
-  "t": 620.6333,
-  "x": 640,
-  "level": 1,
-  "role": "label",
-  "claims": 1
- },
- "a3-avg-callback-lab": {
-  "t": 621.7333,
-  "x": 1481.8,
-  "level": 3,
-  "role": "label",
-  "claims": 0
- },
- "a3-avg-callback-s1": {
-  "t": 623.1,
-  "x": 640,
-  "level": 2,
-  "role": "label",
-  "claims": 1
- },
- "a3-avg-callback-s2": {
-  "t": 626.8667,
-  "x": 640,
-  "level": 2,
-  "role": "label",
-  "claims": 0
- },
- "a3-avg-callback-91": {
-  "t": 627.4333,
-  "x": 1621.4,
-  "level": 2,
-  "role": "label",
-  "claims": 1
- },
- "a3-overlap-l1": {
-  "t": 640.6667,
-  "x": 560,
-  "level": 1,
-  "role": "label",
-  "claims": 1
- },
- "a3-overlap-98": {
-  "t": 643.1667,
-  "x": 960,
-  "level": 2,
-  "role": "label",
-  "claims": 1
- },
- "a3-overlap-3": {
-  "t": 645.8333,
-  "x": 1280,
-  "level": 2,
-  "role": "label",
-  "claims": 1
- },
  "outro-l1": {
   "t": 682.8,
   "x": 960,
@@ -3018,7 +2997,7 @@
  },
  "outro-labm": {
   "t": 683.5667,
-  "x": 667.2,
+  "x": 659.3,
   "level": 3,
   "role": "label",
   "claims": 0
