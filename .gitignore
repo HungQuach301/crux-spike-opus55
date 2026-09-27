@@ -46,3 +46,6 @@ out/m3/root/out/video.mp4
 out/m3/root/out/audio/master.wav
 out/m3/root/out/checks/
 out/m3/stills/
+out/m3/picture-*.mp4
+out/m3/picture-list.txt
+out/m3/root-pic/
