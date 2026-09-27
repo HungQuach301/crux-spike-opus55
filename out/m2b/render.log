@@ -16,3 +16,11 @@ worker 846-1269: frame 1086 (2942 s)
 worker 423-846: frame 723 (3625 s)
 worker 846-1269: frame 1146 (3789 s)
 worker 0-423: frame 300 (4008 s)
+worker 423-846: frame 783 (4483 s)
+worker 846-1269: frame 1206 (4679 s)
+worker 0-423: frame 360 (4837 s)
+worker 423-846: frame 843 (5343 s)
+worker 846-1269: frame 1266 (5475 s)
+worker 0-423: frame 420 (5527 s)
+{"workers":3,"frames":1269,"subframesHistogram":{"4":377,"6":754,"8":138},"shutter":0.5,"wallSeconds":5537.3,"secondsPerVideoSecond":130.9,"encodeSeconds":139.4,"workerSeconds":[5536.6,5370.4,5494.6]}
+EXIT 0

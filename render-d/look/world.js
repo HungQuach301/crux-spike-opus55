@@ -273,14 +273,14 @@ function shotState(t) {
     } else {
       // both tanks in the storm at the end of 1974: rack from the mirror (far) to the 1966 tank (near) on "retiree"
       S.u = { '1966': 9, mirror: 9 };
-      Object.assign(S, cam(st(id), en(id) + 0.5, { p: [-0.1, 1.75, -8.4], l: [0.2, 1.3, -17.2], f: 40 }, { p: [-0.6, 1.68, -9.7], l: [-1.0, 1.3, -16.0], f: 40 }));
+      Object.assign(S, cam(st(id), en(id) + 0.5, { p: [-0.1, 1.75, -8.4], l: [0.2, 1.3, -17.2], f: 40 }, { p: [-0.45, 1.9, -8.7], l: [-0.9, 1.5, -16.0], f: 40 }));
       const rc = cue('a2-bal74.1|retiree', 34.97); const u = smooth((t - (rc - 0.4)) / 0.8);
       const cp = V(S.p); S.focus = lerp(cp.distanceTo(V([2.9, 1.3, -18.8])), cp.distanceTo(V([-2.3, 1.3, -15.2])), u); S.K = 110; S.rackTurn = rc;
       S.sinks[1974] = stoneTop(8) - BASE;
       const cb = cue('a2-bal74.1|$461,000', 38.03);
       if (t >= cb - 0.05) {
-        S.labels.push({ id: 'b3-bal', text: '$461,000', world: [-2.3, 3.55, -15.2], size: 64, weight: 700, color: C.c1966, level: 1, t0: cb - 0.05, claims: [{ id: 'bal74', text: '$461,000' }], char: '1966', emph: true });
-        S.labels.push({ id: 'b3-basis', text: 'in 1966 dollars', world: [-2.3, 3.55, -15.2], dy: 50, size: 34, weight: 600, color: C.dim, level: 3, t0: cb - 0.05 });
+        S.labels.push({ id: 'b3-bal', text: '$461,000', world: [-0.35, 2.8, -15.2], size: 64, weight: 700, color: C.c1966, level: 1, t0: cb - 0.05, claims: [{ id: 'bal74', text: '$461,000' }], char: '1966', emph: true });
+        S.labels.push({ id: 'b3-basis', text: 'in 1966 dollars', world: [-0.35, 2.8, -15.2], dy: 52, size: 34, weight: 600, color: C.dim, level: 3, t0: cb - 0.05 });
       }
     }
   }

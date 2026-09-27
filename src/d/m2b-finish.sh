@@ -13,5 +13,6 @@ ffmpeg -y -loglevel error -i $R/out/video.mp4 -c:v libx264 -profile:v high -pres
 cp $R/out/captions.srt out/m2b/captions.srt
 PYTHONDONTWRITEBYTECODE=1 python3 audio/d_tension.py $R
 python3 src/d/frame-change.py out/m2b/lookdev.mp4 --json out/m2b/frame-change.json
+rm -rf .frames/boards
 node src/d/m2b-boards.js out/m2b/lookdev.mp4
 ls -la $R/out/video.mp4 out/m2b/lookdev.mp4
