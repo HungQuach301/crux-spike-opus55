@@ -2,3 +2,72 @@ F01  PASS       0.1s
 F02  PASS       0.9s  
 F03  PASS       0.0s  
 F04  PASS       0.0s  
+F05  PASS     115.9s  
+F06  PASS       0.6s  
+F07  PASS       0.0s  
+F08  PASS     300.6s  
+F09  FAIL       0.0s  cues outside 1-7 s=2
+F10  PASS       0.0s  
+A01  PASS       8.0s  
+A02  PASS       0.0s  
+A03  FAIL       0.0s  LRA LU=4.6
+A04  PASS       4.7s  
+A05  PASS       0.5s  
+A06  PASS      14.0s  
+A07  PASS       4.2s  
+A08  PASS       3.8s  
+A09  PASS       8.0s  
+A10  FAIL       7.5s  Spearman speed~whoosh=0.466483; fast moves without whoosh=2
+A11  PASS       0.8s  
+A12  PASS      19.9s  
+A13  PASS      19.1s  
+A14  PASS     144.5s  
+A15  FAIL       0.0s  wpm act act1=147.44251; wpm act act2=146.052277; wpm act act3=144.582142; wpm act method=149.466192; wpm act outro=148.93617; sentences > 175 wpm=10
+S01  PASS       0.0s  
+S02  MISSING    0.0s    artifact missing: out/checks/page.json
+S03  PASS       0.2s  
+S04  FAIL       0.0s  used years missing in a source=3
+S05  PASS       0.0s  
+S06  MISSING    0.0s    artifact missing: out/checks/page.json
+S07  MISSING    0.0s    artifact missing: out/checks/page.json
+S08  MISSING    0.0s    artifact missing: out/checks/page.json
+S09  MISSING    0.0s    artifact missing: out/checks/page.json
+S10  PASS       0.0s  
+S11  MISSING    0.0s    artifact missing: out/checks/page.json
+S12  MISSING    0.0s    artifact missing: out/checks/page.json
+S13  PASS       0.0s  
+S14  PASS       8.8s  
+S15  PASS       0.0s  
+R01  FAIL       5.3s  false peaks=2
+R02  PASS       0.0s  
+R03  FAIL       0.8s  shortest pause s=0.13; pauses < 1.0 s=4
+R04  PASS       0.0s  
+R05  PASS       0.0s  
+R06  FAIL     115.8s  cuts visible in picture (%)=68.627451
+V01  PASS       0.0s  
+V02  MISSING    0.0s    artifact missing: out/checks/page.json
+V03  MISSING    0.0s    artifact missing: out/checks/page.json
+V04  MISSING    0.0s    artifact missing: out/checks/page.json
+V05  FAIL     115.6s  worst ease ratio=0.64; overshoot > 8%=2
+V06  PASS       0.1s  
+V07  FAIL      15.5s  median blur ratio=1.187389
+V08  MISSING    0.0s    artifact missing: out/checks/page.json
+V09  MISSING    0.0s    artifact missing: out/checks/page.json
+V10  PASS     111.3s  
+V11  MISSING    0.0s    artifact missing: out/checks/page.json
+C01  MISSING    0.0s    artifact missing: out/checks/page.json
+C02  MISSING    0.0s    artifact missing: out/checks/page.json
+C03  MISSING    0.0s    artifact missing: out/checks/page.json
+C04  MISSING    0.0s    artifact missing: out/checks/page.json
+C05  MISSING    0.0s    artifact missing: out/checks/page.json
+C06  MISSING    0.0s    artifact missing: out/checks/page.json
+C07  MISSING    0.0s    artifact missing: out/checks/page.json
+C10  MISSING    0.0s    artifact missing: out/checks/page.json
+C11  PASS       0.0s  
+C12  MISSING    0.0s    artifact missing: out/checks/page.json
+C13  MISSING    0.0s    artifact missing: out/checks/page.json
+C14  MISSING    0.0s    artifact missing: out/checks/page.json
+C15  MISSING    0.0s    artifact missing: out/checks/page.json
+P01  PASS       9.3s  
+{"PASS": 36, "FAIL": 10, "MISSING": 25, "ERROR": 0}
+DONE
