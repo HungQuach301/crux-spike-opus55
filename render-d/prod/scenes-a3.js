@@ -237,7 +237,7 @@
   })();
   const SW = { yb: 760, dy: 32, r: 15 };
   const swXY = (y) => [swarm[y][0], SW.yb - SW.r - swarm[y][1] * SW.dy];
-  const SC = { yb: 900, top: 330, max: 5.5e6 };
+  const SC = { yb: 900, top: 440, max: 5.4e6 };
   const scXY = (s) => [RX(s.realGeo30), SC.yb - (SC.yb - SC.top) * s.endReal / SC.max];
   // dots: position = mix of swarm (u=0) and scatter (u=1)
   function dots(items, panel, L, o) {
@@ -296,7 +296,8 @@
     items.push(S(panel + '-ax', 'polyline', { panel, z: 0, pts: [[330, SC.yb + 20], [1600, SC.yb + 20]], stroke: C.muted, lw: 2, alpha: a, meta: { role: 'axis', panel, chart: panel } }));
     items.push(S(panel + '-ay', 'polyline', { panel, z: 0, pts: [[330, SC.yb + 20], [330, SC.top - 20]], stroke: C.muted, lw: 2, alpha: a, meta: { role: 'axis', panel, chart: panel } }));
     const p = H.P(1600, SC.yb + 20, 0), q = H.P(330, SC.top - 20, 0);
-    items.push(Tx(panel + '-axx', 'higher real average →', p[0], p[1] + 48, 30, C['text-dim'], { align: 'right', alpha: a, level: 3 }));
+    const p0 = H.P(330, SC.yb + 20, 0); void p;
+    items.push(Tx(panel + '-axx', 'higher real average →', p0[0], p0[1] + 48, 30, C['text-dim'], { alpha: a, level: 3 }));
     items.push(Tx(panel + '-axy', '↑ more left at the end, after inflation', q[0] + 16, q[1] - 16, 30, C['text-dim'], { alpha: a, level: 3 }));
   }
   B['a3-1969'] = (L, sc, H) => {
@@ -341,7 +342,7 @@
     items.push(Tx('a3-1928-b', 'in 1928 dollars, left at the end', co[0], co[1] + 12, 30, C['text-dim'], { align: 'center', alpha: at(L, tM), claims: [claim('y1928')], level: 3 }));
     items.push(Tx('a3-1969-y2', '1969', d69[0] - 24, ya + 56, 34, C.text, { align: 'right', weight: 700, alpha: at(L, t69), claims: [claim('y1969')], year: 1969 }));
     items.push(Tx('a3-1969-r', 'ran out in its 28th year', d69[0] + 24, ya + 56, 34, C.loss, { weight: 700, alpha: at(L, t28th), claims: [claim('dep1969')], level: 2 }));
-    items.push(L1('a3-1928-l1', 'Lower average, money left', 1280, 720 - 54, 52, fade(L, 0.3)));
+    items.push(L1('a3-1928-l1', 'Lower average, money left', 1280, 360, 52, fade(L, 0.3)));
     return items;
   };
   CAM['a3-1928'] = { f: 85, base: { x: -150, tx: -150, z: 200 }, moves: [[1.0, 1.5, { x: 150, tx: 150, z: -200 }]] };
@@ -474,10 +475,10 @@
     dots(items, 'a3-nuance', L, { u, color: (s) => (s.depleted ? C.loss : s.less ? C.muted : C.gain),
       ring: (s) => (s.realGeo10 < 0 ? smooth((L - tBad + 0.3) / 0.4) : 0), ringColor: C.loss, alpha: (s) => (L > tBad - 0.3 && s.realGeo10 >= 0 ? 0.5 : 1) });
     scatterAxes(items, 'a3-nuance', H, fade(L, 1.8));
-    items.push(L1('a3-nuance-l1', 'The long average still matters', 1280, 360, 52, fade(L, tLeft - 1.5, 0.3) * fadeOut(L, tBad - 0.4, 0.25)));
-    items.push(Tx('a3-nuance-69', 'all 69 start years', 1280, 450, 34, C['text-dim'], { align: 'center', alpha: at(L, t69) * fadeOut(L, tBad - 0.4, 0.25), claims: [claim('n69')], level: 2 }));
-    items.push(L1('a3-nuance-l1b', 'Every failure: a bad first decade', 1280, 360, 48, fade(L, tBad - 0.2, 0.3)));
-    items.push(Tx('a3-nuance-ring', 'ringed: lost money in the first decade', 1280, 450, 32, C.loss, { align: 'center', alpha: fade(L, tBad + 0.2), level: 2 }));
+    items.push(L1('a3-nuance-l1', 'The long average still matters', 640, 360, 52, fade(L, tLeft - 1.5, 0.3) * fadeOut(L, tBad - 0.4, 0.25)));
+    items.push(Tx('a3-nuance-69', 'all 69 start years', 640, 450, 34, C['text-dim'], { align: 'center', alpha: at(L, t69) * fadeOut(L, tBad - 0.4, 0.25), claims: [claim('n69')], level: 2 }));
+    items.push(L1('a3-nuance-l1b', 'Every failure: a bad first decade', 640, 360, 48, fade(L, tBad - 0.2, 0.3)));
+    items.push(Tx('a3-nuance-ring', 'ringed: lost money in the first decade', 640, 450, 32, C.loss, { align: 'center', alpha: fade(L, tBad + 0.2), level: 2 }));
     return items;
   };
   CAM['a3-nuance'] = { f: 35, base: { z: -250 }, moves: [[0.8, 1.5, { z: 250 }]] };
