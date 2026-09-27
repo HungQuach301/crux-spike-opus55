@@ -160,7 +160,7 @@ def chord_notes(root, q, base=48):
 
 def physical(N, spec):
     """Beds (wind, rain, water trickle) and events (drip, thunder, stone grind) of the lookdev world, all synthesised."""
-    out = np.zeros((N, 2))
+    out = np.zeros((N, 2), np.float32)
     t = np.arange(N) / SR
     from scipy.ndimage import uniform_filter1d as uf
     def curve(pts):
@@ -238,7 +238,7 @@ def main():
     first_mirror = next((s['start'] for s in tl['scenes'] if s['id'] in ('a1-mirror-in', 'a2-7374')), total)
 
     # ---------------------------------------------------------------- music
-    dry = np.zeros((N, 2))
+    dry = np.zeros((N, 2), np.float32)
     key_at = lambda t: next((c['key'] for c in reversed([c for c in cues if c['layer'] == 'music']) if c['t'] <= t), 'D minor')
     # chords per bar (4 beats)
     bars = beats[::4]
@@ -284,7 +284,7 @@ def main():
     for a in accents:
         add(dry, a * SR, boom(0.55), 1, 1)
     # air: a soft band-limited (1.2-3.8 kHz) noise pad, slow swells, left/right slightly different
-    air = np.zeros((N, 2))
+    air = np.zeros((N, 2), np.float32)
     for ch in range(2):
         nz = band(RNG.standard_normal(N), 1200, 3800)
         sw = 0.6 + 0.4 * np.sin(2 * np.pi * np.arange(N) / SR / 7.3 + ch)
@@ -306,7 +306,8 @@ def main():
     irL, irR = reverb_ir()
     wetL = signal.oaconvolve(dry[:, 0], irL)[:N]  # overlap-add: memory stays small for a full-length film
     wetR = signal.oaconvolve(dry[:, 1], irR)[:N]
-    music = dry + 0.22 * np.stack([wetL, wetR], 1)
+    music = (dry + 0.22 * np.stack([wetL, wetR], 1)).astype(np.float32)
+    del wetL, wetR, air
 
     # ---------------------------------------------------------------- voice
     takes = {t['id']: t for t in json.load(open(os.path.join(ROOT, 'out', 'voice', 'takes.json')))['takes']}
@@ -351,7 +352,7 @@ def main():
     gpk = np.minimum(1, vc / np.maximum(np.abs(vbuf), 1e-9))
     gpk = np.minimum(_unif(_minf(gpk, int(0.004 * SR)), int(0.002 * SR)), _minf(gpk, int(0.004 * SR)))
     vbuf = vbuf * gpk
-    voice = np.stack([vbuf, vbuf], 1)
+    voice = np.stack([vbuf, vbuf], 1).astype(np.float32)
 
     # voice activity (100 ms RMS > -45 dBFS) -> multiband ducking of the music (1-4 kHz only)
     hop = int(0.01 * SR)
@@ -376,7 +377,7 @@ def main():
         mus[:, ch] = (lo + mid * duck_mid + hi) * duck_all
 
     # ---------------------------------------------------------------- sound design
-    sfx = np.zeros((N, 2))
+    sfx = np.zeros((N, 2), np.float32)
     events = J('out/sfx-events.json')['events']
     for e in events:
         n = int(0.16 * SR)
@@ -409,7 +410,7 @@ def main():
         for k in (c - 1, c, c + 1):
             if 0 <= k < len(sp):
                 sp[k] = 0
-    whoosh = np.zeros((N, 2))
+    whoosh = np.zeros((N, 2), np.float32)
     on = sp > 0.05
     moves = []
     i = 0
@@ -442,9 +443,10 @@ def main():
     pink = signal.lfilter([0.049922035, -0.095993537, 0.050612699, -0.004408786], [1, -2.494956002, 2.017265875, -0.522189400], wn)
     pink = onepole_lp(pink, 3000)
     pink = pink / np.sqrt(np.mean(pink ** 2)) * 10 ** (-60 / 20)
-    room = np.stack([pink, np.roll(pink, 480) * 0.9 + 0.1 * pink], 1)
+    room = np.stack([pink, np.roll(pink, 480) * 0.9 + 0.1 * pink], 1).astype(np.float32)
     # physical sound of the world (lookdev): water, wind, rain, stone, thunder, drips; gated by the silences below
-    amb = physical(N, J('out/physical.json')) if os.path.exists(os.path.join(ROOT, 'out', 'physical.json')) else None
+    _ph = J('out/physical.json') if os.path.exists(os.path.join(ROOT, 'out', 'physical.json')) else None
+    amb = physical(N, _ph) if _ph and (_ph.get('beds') or _ph.get('events')) else None
 
     # intentional silences: everything but the room tone out (30 ms fades)
     gate = np.ones(N)
