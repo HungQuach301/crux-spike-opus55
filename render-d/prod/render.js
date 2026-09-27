@@ -43,7 +43,7 @@ async function stills(browser, times, dir) {
 async function chunk(browser, f0, f1, file, log) {
   const page = await openPage(browser);
   const ff = spawn('ffmpeg', ['-y', '-loglevel', 'error', '-f', 'rawvideo', '-pix_fmt', 'rgba', '-s', '1920x1080', '-r', String(FPS), '-i', '-',
-    '-c:v', 'libx264rgb', '-preset', 'ultrafast', '-qp', '0', file], { stdio: ['pipe', 'inherit', 'inherit'] });
+    '-c:v', 'libx264rgb', '-preset', 'ultrafast', '-crf', '8', file], { stdio: ['pipe', 'inherit', 'inherit'] });
   const done = new Promise((res, rej) => ff.on('close', (c) => (c ? rej(new Error('ffmpeg ' + c)) : res())));
   const cams = [], seen = {};
   let moving = 0;

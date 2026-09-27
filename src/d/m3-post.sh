@@ -4,7 +4,8 @@
 set -euo pipefail
 cd "$(dirname "$0")/../.."
 R=out/m3/root; P=out/m3/root-pic
-node src/d/m3-merge.js 0.000-203.019 203.019-451.458 451.458-706.010
+node src/d/m3-merge.js 0.000-203.019 203.019-706.010
+rm -rf .frames/m3   # the parts are in picture.mp4 now (disk allowance)
 node src/d/m3-glue.js post
 # (a) picture-only root for the page sampler (same files, video without sound)
 rm -rf $P; mkdir -p $P/out
