@@ -1,0 +1,73 @@
+F01  PASS       0.1s  
+F02  PASS       0.8s  
+F03  PASS       0.0s  
+F04  PASS       0.0s  
+F05  PASS      90.1s  
+F06  PASS       0.6s  
+F07  PASS       0.0s  
+F08  PASS     266.5s  
+F09  PASS       0.0s  
+F10  PASS       0.0s  
+A01  PASS       6.8s  
+A02  PASS       0.0s  
+A03  PASS       0.0s  
+A04  PASS       5.4s  
+A05  PASS       0.4s  
+A06  PASS      13.4s  
+A07  PASS       5.1s  
+A08  PASS       3.8s  
+A09  PASS       7.7s  
+A10  PASS       8.0s  
+A11  PASS       0.9s  
+A12  PASS      32.3s  
+A13  PASS      18.1s  
+A14  PASS     118.8s  
+A15  FAIL       0.0s  wpm act act1=146.810053; wpm act act2=146.065397; wpm act act3=144.750795; sentences > 175 wpm=10
+S01  PASS       0.0s  
+S02  PASS       0.0s  
+S03  PASS       0.0s  
+S04  FAIL       0.0s  used years missing in a source=3
+S05  PASS       0.0s  
+S06  PASS       0.0s  
+S07  PASS       0.0s  
+S08  PASS       0.0s  
+S09  PASS       0.0s  
+S10  FAIL       0.0s  advice sentences=3
+S11  PASS       0.0s  
+S12  FAIL       0.0s  max new numbers in a scene=4
+S13  PASS       0.0s  
+S14  PASS       8.2s  
+S15  PASS       0.0s  
+R01  FAIL       5.3s  false peaks=2
+R02  PASS       0.0s  
+R03  FAIL       0.8s  shortest pause s=0.11; pauses < 1.0 s=5
+R04  PASS       0.0s  
+R05  PASS       0.0s  
+R06  FAIL      85.7s  cuts visible in picture (%)=68.627451
+V01  PASS       0.0s  
+V02  PASS       0.0s  
+V03  FAIL       0.0s  text outside safe area=279
+V04  PASS       0.0s  
+V05  FAIL      92.7s  worst ease ratio=0.64; overshoot > 8%=2
+V06  PASS       0.1s  
+V07  FAIL      12.8s  median blur ratio=1.187389
+V08  FAIL       0.0s  worst text contrast=1.02; samples below 4.5:1=117
+V09  PASS       0.0s  
+V10  PASS      92.1s  
+V11  FAIL       0.0s  text collisions=192
+C01  PASS       0.0s  
+C02  PASS       0.0s  
+C03  FAIL       0.0s  frames flagged=162
+C04  FAIL       0.0s  frames flagged=364
+C05  FAIL       0.0s  frames flagged=64
+C06  FAIL       0.0s  frames flagged=132
+C07  PASS       0.0s  
+C10  FAIL       0.0s  scenes failing=3
+C11  PASS       0.0s  
+C12  PASS       0.0s  
+C13  FAIL       0.0s  worst |offset| ms=3353; pairs > 250 ms=9
+C14  FAIL       0.0s  text samples not legible at 25%=14
+C15  PASS       0.0s  
+P01  PASS       9.1s  
+{"PASS": 52, "FAIL": 19, "MISSING": 0, "ERROR": 0}
+CHECKS 0
