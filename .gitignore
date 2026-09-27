@@ -40,3 +40,4 @@ out/m2c/*.log
 out/m2c/root/out/audio/master.wav
 out/m2c/stills-root/out/checks/
 out/m2c/stills-root/out/video.mp4
+out/m2c/root/out/audio/
