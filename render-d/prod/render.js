@@ -16,7 +16,9 @@ const opt = (k, d) => { const i = args.indexOf('--' + k); return i >= 0 ? args[i
 const WORKERS = +(process.env.WORKERS || 4), FPS = 30;
 const PAGE = path.resolve(__dirname, 'page.html');
 const TL = JSON.parse(fs.readFileSync(path.join(ROOT, 'out', 'timeline.json'), 'utf8'));
-const TMP = path.resolve(__dirname, '..', '..', '.frames', path.basename(path.dirname(ROOT)));
+const RANGE = opt('from') || opt('to') ? `${(+opt('from', 0)).toFixed(3)}-${(+opt('to', TL.total)).toFixed(3)}` : null; // a partial render keeps its own parts and outputs
+const TMP = path.resolve(__dirname, '..', '..', '.frames', path.basename(path.dirname(ROOT)), RANGE || 'all');
+const SUF = RANGE ? '-' + RANGE : '';
 
 async function openPage(browser) {
   const page = await browser.newPage({ viewport: { width: 1920, height: 1080 }, deviceScaleFactor: 1 });
@@ -88,10 +90,11 @@ async function main() {
   const wall = (Date.now() - t0) / 1000;
   // camera track + text first appearances
   const frames = res.flatMap((r) => r.cams);
-  fs.writeFileSync(path.join(ROOT, 'out', 'camera.json'), JSON.stringify({ fovAxis: 'vertical', note: 'world px; focus plane z = 0 unless racked; coc = background (far wall) circle of confusion in px at 1080p', frames }));
+  fs.writeFileSync(path.join(ROOT, 'out', 'camera' + SUF + '.json'), JSON.stringify({ fovAxis: 'vertical', note: 'world px; focus plane z = 0 unless racked; coc = background (far wall) circle of confusion in px at 1080p', frames }));
   const seen = {};
   for (const r of res) for (const [k, v] of Object.entries(r.seen)) if (!(k in seen) || v.t < seen[k].t) seen[k] = v;
-  fs.writeFileSync(path.join(ROOT, '..', 'text-first.json'), JSON.stringify(seen, null, 1));
+  fs.writeFileSync(path.join(ROOT, '..', 'text-first' + SUF + '.json'), JSON.stringify(seen, null, 1));
+  if (RANGE && !process.env.ENCODE_PARTIAL) { console.log(JSON.stringify({ range: RANGE, wallSeconds: +((Date.now() - t0) / 1000).toFixed(1), frames: F1 - F0, framesSupersampled: res.reduce((a, r) => a + r.moving, 0) })); fs.writeFileSync(path.join(ROOT, '..', 'render-run' + SUF + '.json'), JSON.stringify({ range: RANGE, wallSeconds: +((Date.now() - t0) / 1000).toFixed(1), frames: F1 - F0, framesSupersampled: res.reduce((a, r) => a + r.moving, 0), workerSeconds: res.map((r) => +r.seconds.toFixed(1)) }, null, 1)); return; }
   // concat + grade + grain + vignette -> master picture
   const list = path.join(TMP, 'list.txt');
   fs.writeFileSync(list, res.map((r) => `file '${path.join(TMP, `part${r.w}.mkv`)}'`).join('\n'));
