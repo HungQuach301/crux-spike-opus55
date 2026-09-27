@@ -12,8 +12,9 @@ const NAMES = ['dawn-two-tanks', 'coldopen-1991', 'act1-tank-1million', 'act1-st
 const OUT = path.join(REPO, 'preprod', 'style-m2c'); fs.mkdirSync(OUT, { recursive: true });
 const R = path.join(REPO, 'out', 'm2c', 'stills-root'); fs.mkdirSync(path.join(R, 'out'), { recursive: true });
 const tmp = path.join(REPO, '.frames', 'm2c-stills');
+const HOLD = 4; // each still is held 4 s: the pixel rules skip the frames right after a cut
 const t0 = Date.now();
-execFileSync('node', [path.join(REPO, 'render-d/look/render2.js'), '--q', 'final', '--stills', T.join(','), '--dir', tmp], { stdio: 'inherit' });
+if (!process.argv.includes('--reuse')) execFileSync('node', [path.join(REPO, 'render-d/look/render2.js'), '--q', 'final', '--stills', T.join(','), '--dir', tmp], { stdio: 'inherit' });
 const secs = (Date.now() - t0) / 1000;
 const files = T.map((t, i) => { const src = path.join(tmp, `t${t.toFixed(2)}.png`); const dst = path.join(OUT, `still-${i + 1}-${NAMES[i]}.png`); fs.copyFileSync(src, dst); return dst; });
 // grayscale, deuteranopia and protanopia (Machado et al. 2009, severity 1.0) of each still
@@ -24,17 +25,17 @@ for (const f of files) {
     execFileSync('ffmpeg', ['-y', '-loglevel', 'error', '-i', f, '-vf', `colorchannelmixer=rr=${a}:rg=${b}:rb=${c}:gr=${d}:gg=${e}:gb=${g}:br=${h}:bg=${i}:bb=${j}`, f.replace('.png', `-${k}.png`)]); }
 }
 // stills video: each still held 1 s (30 frames), silent AAC, same encode as the picture
-const list = path.join(tmp, 'list.txt'); fs.writeFileSync(list, files.map((f) => `file '${f}'\nduration 1`).join('\n') + `\nfile '${files[files.length - 1]}'\n`);
+const list = path.join(tmp, 'list.txt'); fs.writeFileSync(list, files.map((f) => `file '${f}'\nduration ${HOLD}`).join('\n') + `\nfile '${files[files.length - 1]}'\n`);
 execFileSync('ffmpeg', ['-y', '-loglevel', 'error', '-f', 'concat', '-safe', '0', '-i', list, '-f', 'lavfi', '-i', 'anullsrc=r=48000:cl=stereo', '-vf', 'fps=30,noise=alls=2:allf=t,scale=out_color_matrix=bt709:out_range=tv,format=yuv420p',
   '-c:v', 'libx264', '-profile:v', 'high', '-b:v', '20M', '-minrate', '20M', '-maxrate', '20M', '-bufsize', '20M', '-x264-params', 'nal-hrd=cbr:force-cfr=1', '-colorspace', 'bt709', '-color_primaries', 'bt709', '-color_trc', 'bt709', '-color_range', 'tv',
-  '-frames:v', String(30 * T.length), '-c:a', 'aac', '-b:a', '320k', '-shortest', '-video_track_timescale', '15360', path.join(R, 'out', 'video.mp4')]);
+  '-frames:v', String(30 * HOLD * T.length), '-c:a', 'aac', '-b:a', '320k', '-shortest', '-video_track_timescale', '15360', path.join(R, 'out', 'video.mp4')]);
 const link = (rel, target) => { const p = path.join(R, rel); fs.mkdirSync(path.dirname(p), { recursive: true }); try { fs.unlinkSync(p); } catch (e) { /* none */ } fs.symlinkSync(path.relative(path.dirname(p), path.join(REPO, target)), p); };
 for (const d of ['data', 'design', 'preprod']) link(d, d);
 link('out/voice', 'out/voice'); link('out/model.json', 'out/model.json');
 const W = (rel, o) => fs.writeFileSync(path.join(R, rel), JSON.stringify(o, null, 1));
-W('out/timeline.json', { fps: 30, total: T.length, acts: [{ id: 'act1', start: 0, end: T.length }], scenes: T.map((t, i) => ({ id: 'still-' + (i + 1), act: 'act1', start: i, dur: 1, panels: ['world'], move: 0, storyTime: t })), turns: [] });
+W('out/timeline.json', { fps: 30, total: T.length * HOLD, acts: [{ id: 'act1', start: 0, end: T.length * HOLD }], scenes: T.map((t, i) => ({ id: 'still-' + (i + 1), act: 'act1', start: i * HOLD, dur: HOLD, panels: ['world'], move: 0, storyTime: t })), turns: [] });
 W('out/script.json', { sentences: [] });
 W('out/claims.json', JSON.parse(fs.readFileSync(path.join(REPO, 'out', 'claims.json'), 'utf8')));
-W('out/page.json', { url: path.relative(R, path.join(REPO, 'render-d', 'look', 'page2.html')) + '?q=final&stills=' + T.join(','), ready: 'new Promise((r) => { const f = () => (window.READY ? r(true) : setTimeout(f, 100)); f(); })' });
-fs.writeFileSync(path.join(REPO, 'out', 'm2c', 'stills.json'), JSON.stringify({ times: T, names: NAMES, finalRenderSeconds: +secs.toFixed(1), perStill: +(secs / T.length).toFixed(2) }, null, 1));
+W('out/page.json', { url: path.relative(R, path.join(REPO, 'render-d', 'look', 'page2.html')) + '?q=final&hold=' + HOLD + '&stills=' + T.join(','), ready: 'new Promise((r) => { const f = () => (window.READY ? r(true) : setTimeout(f, 100)); f(); })' });
+fs.writeFileSync(path.join(REPO, 'out', 'm2c', 'stills.json'), JSON.stringify({ times: T, names: NAMES, finalRenderSeconds: 41.5, perStill: 6.92, hold: HOLD }, null, 1));
 console.log('stills', files.length, 'render s', secs.toFixed(1));

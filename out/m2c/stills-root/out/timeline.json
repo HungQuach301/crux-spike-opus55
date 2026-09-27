@@ -1,0 +1,80 @@
+{
+ "fps": 30,
+ "total": 24,
+ "acts": [
+  {
+   "id": "act1",
+   "start": 0,
+   "end": 24
+  }
+ ],
+ "scenes": [
+  {
+   "id": "still-1",
+   "act": "act1",
+   "start": 0,
+   "dur": 4,
+   "panels": [
+    "world"
+   ],
+   "move": 0,
+   "storyTime": 5
+  },
+  {
+   "id": "still-2",
+   "act": "act1",
+   "start": 4,
+   "dur": 4,
+   "panels": [
+    "world"
+   ],
+   "move": 0,
+   "storyTime": 10.8
+  },
+  {
+   "id": "still-3",
+   "act": "act1",
+   "start": 8,
+   "dur": 4,
+   "panels": [
+    "world"
+   ],
+   "move": 0,
+   "storyTime": 25
+  },
+  {
+   "id": "still-4",
+   "act": "act1",
+   "start": 12,
+   "dur": 4,
+   "panels": [
+    "world"
+   ],
+   "move": 0,
+   "storyTime": 68.5
+  },
+  {
+   "id": "still-5",
+   "act": "act1",
+   "start": 16,
+   "dur": 4,
+   "panels": [
+    "world"
+   ],
+   "move": 0,
+   "storyTime": 113.6
+  },
+  {
+   "id": "still-6",
+   "act": "act1",
+   "start": 20,
+   "dur": 4,
+   "panels": [
+    "world"
+   ],
+   "move": 0,
+   "storyTime": 122.4
+  }
+ ],
+ "turns": []
+}

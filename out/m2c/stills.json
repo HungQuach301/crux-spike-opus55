@@ -1,0 +1,21 @@
+{
+ "times": [
+  5,
+  10.8,
+  25,
+  68.5,
+  113.6,
+  122.4
+ ],
+ "names": [
+  "dawn-two-tanks",
+  "coldopen-1991",
+  "act1-tank-1million",
+  "act1-stones-profile",
+  "storm-1974",
+  "storm-461000"
+ ],
+ "finalRenderSeconds": 41.5,
+ "perStill": 6.92,
+ "hold": 4
+}

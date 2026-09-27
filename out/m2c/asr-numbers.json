@@ -1,0 +1,170 @@
+[
+ {
+  "sentence": "co-broke.1",
+  "number": "1991",
+  "t": 7.54,
+  "heard": true,
+  "asr": "One ran out of money in 1991."
+ },
+ {
+  "sentence": "a1-est.1",
+  "number": "1966",
+  "t": 18.043,
+  "heard": true,
+  "asr": "is January 1966. The"
+ },
+ {
+  "sentence": "a1-start.1",
+  "number": "$1",
+  "t": 21.663,
+  "heard": true,
+  "asr": "The first retiree starts with $1 million, measured in 1966 dollars. Their money is"
+ },
+ {
+  "sentence": "a1-start.1",
+  "number": "1966",
+  "t": 21.663,
+  "heard": true,
+  "asr": "The first retiree starts with $1 million, measured in 1966 dollars. Their money is"
+ },
+ {
+  "sentence": "a1-rule.1",
+  "number": "4%",
+  "t": 32.363,
+  "heard": true,
+  "asr": "In the first year, the retiree withdraws 4 % of the starting balance. That is $40"
+ },
+ {
+  "sentence": "a1-rule.2",
+  "number": "$40,000",
+  "t": 38.133,
+  "heard": true,
+  "asr": "That is $40 ,000 in 1966 dollars. After"
+ },
+ {
+  "sentence": "a1-rule.2",
+  "number": "1966",
+  "t": 38.133,
+  "heard": true,
+  "asr": "That is $40 ,000 in 1966 dollars. After"
+ },
+ {
+  "sentence": "a1-horizon.1",
+  "number": "30",
+  "t": 58.103,
+  "heard": true,
+  "asr": "The plan runs for 30 years, from 1966 through 1995. Each stone on"
+ },
+ {
+  "sentence": "a1-horizon.1",
+  "number": "1966",
+  "t": 58.103,
+  "heard": true,
+  "asr": "The plan runs for 30 years, from 1966 through 1995. Each stone on"
+ },
+ {
+  "sentence": "a1-horizon.1",
+  "number": "1995",
+  "t": 58.103,
+  "heard": true,
+  "asr": "The plan runs for 30 years, from 1966 through 1995. Each stone on"
+ },
+ {
+  "sentence": "a1-mirror-rule.1",
+  "number": "30",
+  "t": 79.663,
+  "heard": true,
+  "asr": "Mirror retiree lives through the exact same 30 annual returns, but in reverse order. The return of"
+ },
+ {
+  "sentence": "a1-mirror-rule.2",
+  "number": "1995",
+  "t": 86.313,
+  "heard": true,
+  "asr": "The return of 1995 arrives first, and the return of 1966 arrives last. So the Mirror"
+ },
+ {
+  "sentence": "a1-mirror-rule.2",
+  "number": "1966",
+  "t": 86.313,
+  "heard": true,
+  "asr": "The return of 1995 arrives first, and the return of 1966 arrives last. So the Mirror"
+ },
+ {
+  "sentence": "a2-7374.1",
+  "number": "1973",
+  "t": 99.343,
+  "heard": true,
+  "asr": "After inflation, stocks and bonds both lose money in 1973 and 1974. In"
+ },
+ {
+  "sentence": "a2-7374.1",
+  "number": "1974",
+  "t": 99.343,
+  "heard": true,
+  "asr": "After inflation, stocks and bonds both lose money in 1973 and 1974. In"
+ },
+ {
+  "sentence": "a2-1974inf.1",
+  "number": "1974",
+  "t": 106.253,
+  "heard": true,
+  "asr": "1974 alone, the portfolio loses 14 .7%, while prices rise 12 .3%. In"
+ },
+ {
+  "sentence": "a2-1974inf.1",
+  "number": "14.7%",
+  "t": 106.253,
+  "heard": true,
+  "asr": "1974 alone, the portfolio loses 14 .7%, while prices rise 12 .3%. In"
+ },
+ {
+  "sentence": "a2-1974inf.1",
+  "number": "12.3%",
+  "t": 106.253,
+  "heard": true,
+  "asr": "1974 alone, the portfolio loses 14 .7%, while prices rise 12 .3%. In"
+ },
+ {
+  "sentence": "a2-bal74.1",
+  "number": "1966",
+  "t": 115.123,
+  "heard": true,
+  "asr": "1966 dollars, the 1966 retiree ends 1974 with $461 ,000. The"
+ },
+ {
+  "sentence": "a2-bal74.1",
+  "number": "1966",
+  "t": 115.123,
+  "heard": true,
+  "asr": "1966 dollars, the 1966 retiree ends 1974 with $461 ,000. The"
+ },
+ {
+  "sentence": "a2-bal74.1",
+  "number": "1974",
+  "t": 115.123,
+  "heard": true,
+  "asr": "1966 dollars, the 1966 retiree ends 1974 with $461 ,000. The"
+ },
+ {
+  "sentence": "a2-bal74.1",
+  "number": "$461,000",
+  "t": 115.123,
+  "heard": true,
+  "asr": "1966 dollars, the 1966 retiree ends 1974 with $461 ,000. The"
+ },
+ {
+  "sentence": "a2-bal74m.1",
+  "number": "$1.27",
+  "t": 124.813,
+  "heard": true,
+  "asr": "The mirror retiree, same year, same withdrawals, $1 .27 million, also in 1966 dollars."
+ },
+ {
+  "sentence": "a2-bal74m.1",
+  "number": "1966",
+  "t": 124.813,
+  "heard": true,
+  "asr": "The mirror retiree, same year, same withdrawals, $1 .27 million, also in 1966 dollars."
+ }
+]

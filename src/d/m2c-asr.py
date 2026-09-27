@@ -14,9 +14,8 @@ out = []
 for s in data['sentences']:
     for n in re.findall(r'\$?\d[\d,.]*%?', s['text']):
         n = n.rstrip('.,')
-        key = next((k for k in data['cues'] if k.startswith(s['id'] + '|') and re.sub(r'[^0-9]', '', k.split('|')[1])[:2] == re.sub(r'[^0-9]', '', n)[:2]), None)
-        t = data['cues'].get(key, s['start'])
-        near = ' '.join(wd for ts, wd in words if abs(ts - t) <= 1.5)
+        t = s['start']
+        near = ' '.join(wd for ts, wd in words if s['start'] - 0.5 <= ts <= s['end'] + 1.0)  # the sentence window (A14)
         digits = re.sub(r'[^0-9]', '', n)
         heard = digits in re.sub(r'[^0-9]', '', near) or (n.endswith('%') and digits.rstrip('0') in re.sub(r'[^0-9]', '', near))
         out.append({'sentence': s['id'], 'number': n, 't': t, 'heard': heard, 'asr': near})

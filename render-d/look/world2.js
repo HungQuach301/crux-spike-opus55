@@ -20,6 +20,7 @@ const D = window.DATA;
 const QS = new URLSearchParams(location.search);
 const MODE = QS.get('q') || 'final';
 const STILLS = QS.get('stills') ? QS.get('stills').split(',').map(Number) : null;
+const HOLD = +(QS.get('hold') || 1); // seconds each still is held in a stills reel
 const OW = MODE === 'animatic' ? 854 : 1920, OH = MODE === 'animatic' ? 480 : 1080;
 const RW = MODE === 'fast' ? 1280 : OW, RH = MODE === 'fast' ? 720 : OH;
 const TS = OH / 1080; // text scale
@@ -303,8 +304,8 @@ function shotState(t) {
     case 'a1-est.1': Object.assign(S, LIBRARY.day(8, -30)); Object.assign(S, cam({ p: [5, 13, 15], l: [0, 1, -12], f: 26 }, { p: [2.6, 5, 9.5], l: [-0.6, 1.5, -6], f: 28 })); S.focusOn = [-0.9, 1.8, 0]; S.K = 30; S.tapOpen = 0; break;
     case 'a1-start.1': case 'a1-start.2': {
       Object.assign(S, LIBRARY.day(9, -30)); S.tapOpen = 0;
-      const a = { p: [-4.2, 2.7, 5.4], l: [-0.9, 2.0, 0], f: 40 }, b = { p: [-3.6, 2.6, 4.6], l: [-0.9, 2.0, 0], f: 40 };
-      Object.assign(S, id === 'a1-start.1' ? cam(a, b) : cam(b, { p: [-3.3, 2.55, 4.1], l: [-0.9, 2.0, 0], f: 40 }));
+      const a = { p: [-5.6, 2.4, 7.6], l: [-0.9, 2.45, 0], f: 40 }, b = { p: [-5.1, 2.35, 6.9], l: [-0.9, 2.45, 0], f: 40 };
+      Object.assign(S, id === 'a1-start.1' ? cam(a, b) : cam(b, { p: [-4.8, 2.3, 6.4], l: [-0.9, 2.45, 0], f: 40 }));
       S.focusOn = [-0.9, 1.8, 0]; S.K = 55;
       const c1 = at('a1-start.1|$1', sentence('a1-start.1').start + 2);
       if (t >= c1 - 0.05) { S.labels.push(LBL({ id: 'st-1m', group: 'st', row: 1, text: '$1 million', world: tankTop('1966'), size: 56, color: C.c1966, level: 1, t0: c1 - 0.05, claims: [{ id: 'initial', text: '$1 million' }], char: '1966', emph: true }));
@@ -365,13 +366,13 @@ function shotState(t) {
       break; }
     case 'a2-1974inf.1': {
       Object.assign(S, LIBRARY.storm()); const s = sentence('a2-1974inf.1'); S.u['1966'] = lerp(7.95, 8.72, clamp((t - s.start) / (s.end - s.start))); S.u.mirror = S.u['1966'];
-      Object.assign(S, cam({ p: [-7.4, 1.9, zOf(8)], l: [0, 1.2, zOf(8)], f: 32 }, { p: [-6.9, 1.9, zOf(8)], l: [0, 1.2, zOf(8)], f: 32 })); S.focusOn = [-0.9, 1.5, zOf(8)]; S.K = 30; S.subframes = 6;
+      Object.assign(S, cam({ p: [-9.2, 2.3, zOf(8)], l: [0, 2.0, zOf(8)], f: 32 }, { p: [-8.7, 2.3, zOf(8)], l: [0, 2.0, zOf(8)], f: 32 })); S.focusOn = [-0.9, 1.5, zOf(8)]; S.K = 30; S.subframes = 6;
       const cl = at('a2-1974inf.1|14', s.start + 2.9), ci = at('a2-1974inf.1|12', s.start + 6.4);
       S.lightning = Math.max(0, 1 - Math.abs(t - cl - 0.02) / 0.09) + 0.5 * Math.max(0, 1 - Math.abs(t - cl - 0.22) / 0.07);
       S.rain = t > ci ? lerp(1, 1.8, smooth((t - ci) / 1.2)) : 1;
       S.tapScale = (D.withdrawal[8] / D.withdrawal[0]) * (t > ci ? lerp(1, 1.123, smooth((t - ci) / 0.8)) : 1);
-      if (t >= cl - 0.05) S.labels.push(LBL({ id: 'b2-loss', text: 'lost 14.7%', world: tankTop('1966'), size: 52, color: C.loss, level: 1, t0: cl - 0.05, claims: [{ id: 'loss1974', text: '14.7%' }], emph: true }));
-      if (t >= ci - 0.05) S.labels.push(LBL({ id: 'b2-infl', text: 'prices rose 12.3%', world: [-2.2, TB + 1.4 + stoneTop(8), zOf(8)], dx: -150, size: 40, weight: 600, color: C.inflation, level: 2, t0: ci - 0.05, claims: [{ id: 'inf1974', text: '12.3%' }] }));
+      if (t >= cl - 0.05) S.labels.push(LBL({ id: 'b2-loss', group: 'b2', row: 1, text: 'lost 14.7%', world: tankTop('1966'), size: 52, color: C.loss, level: 1, t0: cl - 0.05, claims: [{ id: 'loss1974', text: '14.7%' }], emph: true }));
+      if (t >= ci - 0.05) S.labels.push(LBL({ id: 'b2-infl', group: 'b2', row: 0, text: 'prices rose 12.3%', world: tankTop('1966'), size: 40, weight: 600, color: C.inflation, level: 2, t0: ci - 0.05, claims: [{ id: 'inf1974', text: '12.3%' }] }));
       break; }
     case 'a2-bal74.1': {
       Object.assign(S, LIBRARY.storm()); S.u = { '1966': 8.74, mirror: 8.74 };
@@ -450,7 +451,7 @@ function apply(t, S) {
 // ---------------------------------------------------------------- frame
 let frozen = null, cur = { t: -1, S: null, objs: [] };
 const FPS = 30;
-const storyT = (t) => (STILLS ? STILLS[clamp(Math.floor(t), 0, STILLS.length - 1)] : t);
+const storyT = (t) => (STILLS ? STILLS[clamp(Math.floor(t / HOLD), 0, STILLS.length - 1)] : t);
 function stateFor(t) { const S = shotState(storyT(t)); if (frozen !== null && shotAt(storyT(frozen)).id === S.shot) { const F = shotState(storyT(frozen)); S.p = F.p; S.l = F.l; S.f = F.f; } return S; }
 function sceneRender(target) { renderer.setRenderTarget(target); renderer.setClearColor(0x000000, 1); renderer.render(scene, camera); }
 function post(S, colTex, depthTex) {
@@ -481,7 +482,7 @@ function renderFrame(t) {
       sceneRender(rtHalf); accMat.uniforms.t.value = rtHalf.texture; accMat.uniforms.w.value = 1 / N; pass(accMat, rtHalfAcc, false); }
     const S = stateFor(t); apply(t, S); sceneRender(rtHalf); copyMat.uniforms.t.value = rtHalf.texture; pass(copyMat, rtHalfC); sceneRender(rtScene);
     resMat.uniforms.tFull.value = rtScene.texture; resMat.uniforms.tAcc.value = rtHalfAcc.texture; resMat.uniforms.tC.value = rtHalfC.texture; pass(resMat, rtAcc);
-    post(S, rtAcc.texture, rtScene.depthTexture); cur = { t, S, objs: objectsFor(t, S), rendered: N };
+    post(S, rtAcc.texture, rtScene.depthTexture); cur = { t, S, objs: objectsFor(storyT(t), S), rendered: N };
   } else if (MODE === 'fast') {
     // cameras at the shutter's open and close (180 degrees) for the velocity blur
     const h = 0.25 / FPS; const Sa = stateFor(t - h); apply(t - h, Sa); const prevVP = camera.projectionMatrix.clone().multiply(camera.matrixWorldInverse);
@@ -491,10 +492,10 @@ function renderFrame(t) {
     const vp = camera.projectionMatrix.clone().multiply(camera.matrixWorldInverse);
     Object.assign(mbMat.uniforms, {}); mbMat.uniforms.tCol.value = rtScene.texture; mbMat.uniforms.tDepth.value = rtScene.depthTexture;
     mbMat.uniforms.invVP.value.copy(vp).invert(); mbMat.uniforms.prevVP.value.copy(prevVP); mbMat.uniforms.nextVP.value.copy(nextVP); pass(mbMat, rtMB);
-    post(S, rtMB.texture, rtScene.depthTexture); cur = { t, S, objs: objectsFor(t, S), rendered: 1 };
+    post(S, rtMB.texture, rtScene.depthTexture); cur = { t, S, objs: objectsFor(storyT(t), S), rendered: 1 };
   } else {
     const S = stateFor(t); const sk = apply(t, S); if (sk !== lastShadowKey) { renderer.shadowMap.needsUpdate = true; lastShadowKey = sk; }
-    sceneRender(rtScene); post(S, rtScene.texture, rtScene.depthTexture); cur = { t, S, objs: objectsFor(t, S), rendered: 1 };
+    sceneRender(rtScene); post(S, rtScene.texture, rtScene.depthTexture); cur = { t, S, objs: objectsFor(storyT(t), S), rendered: 1 };
   }
   drawText(cur.objs, true);
   return cur.rendered;
@@ -565,7 +566,7 @@ function drawGraphics(ids) {
 function b64(u8) { let s = ''; const CH = 0x8000; for (let i = 0; i < u8.length; i += CH) s += String.fromCharCode.apply(null, u8.subarray(i, i + CH)); return btoa(s); }
 const comp = document.createElement('canvas'); comp.width = OW; comp.height = OH; const cctx = comp.getContext('2d', { willReadFrequently: true });
 window.CHECKS = {
-  seek: (t) => { const S = stateFor(t); apply(storyT(t), S); cur = { t, S, objs: objectsFor(t, S) }; drawText(cur.objs, true); glCanvas.style.visibility = 'visible'; return 1; },
+  seek: (t) => { const S = stateFor(t); apply(storyT(t), S); cur = { t, S, objs: objectsFor(storyT(t), S) }; drawText(cur.objs, true); glCanvas.style.visibility = 'visible'; return 1; },
   freeze: (t) => { frozen = t; },
   objects: () => cur.objs.map(({ _L, _p, ...o }) => o),
   layer: (name, ids) => {
@@ -585,6 +586,6 @@ window.RENDER = {
     return { b64: b64(new Uint8Array(cctx.getImageData(0, 0, OW, OH).data.buffer)), rendered: n }; },
   texts: () => cur.objs.filter((o) => o.kind === 'text' && o.opacity > 0.5).map((o) => [o.tid, (o.box[0] + o.box[2]) / 2, o.level, o.role, o.claims.length]),
   camera: (t) => { const S = stateFor(t); return { t, pos: S.p, target: S.l, fovDeg: +fovOf(S.f).toFixed(3), focusDist: +S.focus.toFixed(3), coc: +clamp(S.K * Math.abs(1 / S.focus - 1 / 60), 0, 22).toFixed(3) }; },
-  total: STILLS ? STILLS.length : D.total, size: [OW, OH], mode: MODE,
+  total: STILLS ? STILLS.length * HOLD : D.total, size: [OW, OH], mode: MODE,
 };
 window.READY = true;

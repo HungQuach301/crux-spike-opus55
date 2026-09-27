@@ -310,10 +310,10 @@ def main():
                             '-af', 'highpass=f=70,deesser=i=0.4:m=0.5:f=0.5,acompressor=threshold=0.1:ratio=2.5:attack=8:release=150:makeup=1.5', w], check=True)
             x = wavfile.read(w)[1].astype(np.float64) / 32768
         if s['id'] in DECISIVE:
-            # cut the breath/decay after the last word (take ASR end + 90 ms, 40 ms fade): the decisive pause starts clean
+            # cut the breath/decay after the last word (take ASR end + 250 ms, 40 ms fade: the ASR ends a final word early): the decisive pause starts clean
             el = EL.get(os.path.basename(takes[s['id']]['raw'])[:-4])
             if el and el.get('words'):
-                e = int((0.03 + el['words'][-1]['end'] + 0.09) * SR)
+                e = int((0.03 + el['words'][-1]['end'] + 0.25) * SR)
                 f = int(0.04 * SR)
                 if e < len(x):
                     x = x.copy()
@@ -449,12 +449,24 @@ def main():
         # spoken number (so the decisive words stay intelligible to the ASR and to the viewer)
         dph = 10 ** (-10 * g / 20)
         for tn in J('out/physical.json').get('numbers', []):
-            i0, i1 = int(max(0, tn - 0.5) * SR), int(min(N / SR, tn + 0.9) * SR)
+            i0, i1 = int(max(0, tn - 0.5) * SR), int(min(N / SR, tn + 1.6) * SR)
             dph[i0:i1] = np.minimum(dph[i0:i1], 10 ** (-18 / 20))
         from scipy.ndimage import uniform_filter1d as _ufd
         dph = _ufd(dph, int(0.05 * SR))
         sfx += amb * (gate * dph)[:, None]
 
+    # every spoken number keeps the air to itself: music, whoosh and sound effects dip -24 dB from 0.5 s before it
+    # starts to 1.6 s after (a spoken year like "nineteen ninety-one" lasts ~1 s) (only when the root lists the
+    # numbers: out/physical.json)
+    pj = os.path.join(ROOT, 'out', 'physical.json')
+    if os.path.exists(pj):
+        dn = np.ones(N)
+        for tn in json.load(open(pj)).get('numbers', []):
+            dn[int(max(0, tn - 0.5) * SR):int(min(N / SR, tn + 1.6) * SR)] = 10 ** (-24 / 20)
+        from scipy.ndimage import uniform_filter1d as _ufn
+        dn = _ufn(dn, int(0.05 * SR))
+        for arr in (mus, sfx, whoosh):
+            arr *= dn[:, None]
     # ---------------------------------------------------------------- levels
     # voice-active windows: music 20 dB under the voice (mean power)
     vt = act > 0

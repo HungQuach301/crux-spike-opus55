@@ -1,0 +1,35 @@
+{
+ "clear": {
+  "what": "a1-horizon.1: wide road in clear daylight",
+  "window": [
+   58.2,
+   63.2
+  ],
+  "fast": 51.09,
+  "finalRef": 133.74,
+  "fastFrames": 150,
+  "finalFrames": 30
+ },
+ "storm": {
+  "what": "a2-1974inf.1: inside the storm cell, rain + lightning",
+  "window": [
+   107,
+   112
+  ],
+  "fast": 65.5,
+  "finalRef": 172.47,
+  "fastFrames": 150,
+  "finalFrames": 30
+ },
+ "close": {
+  "what": "a1-start.1: close on the 1966 tank",
+  "window": [
+   22.2,
+   27.2
+  ],
+  "fast": 73.37,
+  "finalRef": 198.01,
+  "fastFrames": 150,
+  "finalFrames": 30
+ }
+}

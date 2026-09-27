@@ -1,0 +1,4 @@
+{
+ "url": "../../../render-d/look/page2.html?q=final&hold=4&stills=5,10.8,25,68.5,113.6,122.4",
+ "ready": "new Promise((r) => { const f = () => (window.READY ? r(true) : setTimeout(f, 100)); f(); })"
+}

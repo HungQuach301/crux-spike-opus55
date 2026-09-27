@@ -20423,6 +20423,7 @@ void main() {
   var QS = new URLSearchParams(location.search);
   var MODE = QS.get("q") || "final";
   var STILLS = QS.get("stills") ? QS.get("stills").split(",").map(Number) : null;
+  var HOLD = +(QS.get("hold") || 1);
   var OW = MODE === "animatic" ? 854 : 1920;
   var OH = MODE === "animatic" ? 480 : 1080;
   var RW = MODE === "fast" ? 1280 : OW;
@@ -21012,8 +21013,8 @@ void main() {
       case "a1-start.2": {
         Object.assign(S, LIBRARY.day(9, -30));
         S.tapOpen = 0;
-        const a = { p: [-4.2, 2.7, 5.4], l: [-0.9, 2, 0], f: 40 }, b = { p: [-3.6, 2.6, 4.6], l: [-0.9, 2, 0], f: 40 };
-        Object.assign(S, id === "a1-start.1" ? cam(a, b) : cam(b, { p: [-3.3, 2.55, 4.1], l: [-0.9, 2, 0], f: 40 }));
+        const a = { p: [-5.6, 2.4, 7.6], l: [-0.9, 2.45, 0], f: 40 }, b = { p: [-5.1, 2.35, 6.9], l: [-0.9, 2.45, 0], f: 40 };
+        Object.assign(S, id === "a1-start.1" ? cam(a, b) : cam(b, { p: [-4.8, 2.3, 6.4], l: [-0.9, 2.45, 0], f: 40 }));
         S.focusOn = [-0.9, 1.8, 0];
         S.K = 55;
         const c1 = at("a1-start.1|$1", sentence("a1-start.1").start + 2);
@@ -21130,7 +21131,7 @@ void main() {
         const s = sentence("a2-1974inf.1");
         S.u["1966"] = lerp2(7.95, 8.72, clamp2((t - s.start) / (s.end - s.start)));
         S.u.mirror = S.u["1966"];
-        Object.assign(S, cam({ p: [-7.4, 1.9, zOf(8)], l: [0, 1.2, zOf(8)], f: 32 }, { p: [-6.9, 1.9, zOf(8)], l: [0, 1.2, zOf(8)], f: 32 }));
+        Object.assign(S, cam({ p: [-9.2, 2.3, zOf(8)], l: [0, 2, zOf(8)], f: 32 }, { p: [-8.7, 2.3, zOf(8)], l: [0, 2, zOf(8)], f: 32 }));
         S.focusOn = [-0.9, 1.5, zOf(8)];
         S.K = 30;
         S.subframes = 6;
@@ -21138,8 +21139,8 @@ void main() {
         S.lightning = Math.max(0, 1 - Math.abs(t - cl - 0.02) / 0.09) + 0.5 * Math.max(0, 1 - Math.abs(t - cl - 0.22) / 0.07);
         S.rain = t > ci ? lerp2(1, 1.8, smooth((t - ci) / 1.2)) : 1;
         S.tapScale = D.withdrawal[8] / D.withdrawal[0] * (t > ci ? lerp2(1, 1.123, smooth((t - ci) / 0.8)) : 1);
-        if (t >= cl - 0.05) S.labels.push(LBL({ id: "b2-loss", text: "lost 14.7%", world: tankTop("1966"), size: 52, color: C.loss, level: 1, t0: cl - 0.05, claims: [{ id: "loss1974", text: "14.7%" }], emph: true }));
-        if (t >= ci - 0.05) S.labels.push(LBL({ id: "b2-infl", text: "prices rose 12.3%", world: [-2.2, TB + 1.4 + stoneTop(8), zOf(8)], dx: -150, size: 40, weight: 600, color: C.inflation, level: 2, t0: ci - 0.05, claims: [{ id: "inf1974", text: "12.3%" }] }));
+        if (t >= cl - 0.05) S.labels.push(LBL({ id: "b2-loss", group: "b2", row: 1, text: "lost 14.7%", world: tankTop("1966"), size: 52, color: C.loss, level: 1, t0: cl - 0.05, claims: [{ id: "loss1974", text: "14.7%" }], emph: true }));
+        if (t >= ci - 0.05) S.labels.push(LBL({ id: "b2-infl", group: "b2", row: 0, text: "prices rose 12.3%", world: tankTop("1966"), size: 40, weight: 600, color: C.inflation, level: 2, t0: ci - 0.05, claims: [{ id: "inf1974", text: "12.3%" }] }));
         break;
       }
       case "a2-bal74.1": {
@@ -21301,7 +21302,7 @@ void main() {
   var frozen = null;
   var cur = { t: -1, S: null, objs: [] };
   var FPS = 30;
-  var storyT = (t) => STILLS ? STILLS[clamp2(Math.floor(t), 0, STILLS.length - 1)] : t;
+  var storyT = (t) => STILLS ? STILLS[clamp2(Math.floor(t / HOLD), 0, STILLS.length - 1)] : t;
   function stateFor(t) {
     const S = shotState(storyT(t));
     if (frozen !== null && shotAt(storyT(frozen)).id === S.shot) {
@@ -21412,7 +21413,7 @@ void main() {
       resMat.uniforms.tC.value = rtHalfC.texture;
       pass(resMat, rtAcc);
       post(S, rtAcc.texture, rtScene.depthTexture);
-      cur = { t, S, objs: objectsFor(t, S), rendered: N };
+      cur = { t, S, objs: objectsFor(storyT(t), S), rendered: N };
     } else if (MODE === "fast") {
       const h = 0.25 / FPS;
       const Sa = stateFor(t - h);
@@ -21437,7 +21438,7 @@ void main() {
       mbMat.uniforms.nextVP.value.copy(nextVP);
       pass(mbMat, rtMB);
       post(S, rtMB.texture, rtScene.depthTexture);
-      cur = { t, S, objs: objectsFor(t, S), rendered: 1 };
+      cur = { t, S, objs: objectsFor(storyT(t), S), rendered: 1 };
     } else {
       const S = stateFor(t);
       const sk = apply(t, S);
@@ -21447,7 +21448,7 @@ void main() {
       }
       sceneRender(rtScene);
       post(S, rtScene.texture, rtScene.depthTexture);
-      cur = { t, S, objs: objectsFor(t, S), rendered: 1 };
+      cur = { t, S, objs: objectsFor(storyT(t), S), rendered: 1 };
     }
     drawText(cur.objs, true);
     return cur.rendered;
@@ -21643,7 +21644,7 @@ void main() {
     seek: (t) => {
       const S = stateFor(t);
       apply(storyT(t), S);
-      cur = { t, S, objs: objectsFor(t, S) };
+      cur = { t, S, objs: objectsFor(storyT(t), S) };
       drawText(cur.objs, true);
       glCanvas.style.visibility = "visible";
       return 1;
@@ -21715,7 +21716,7 @@ void main() {
       const S = stateFor(t);
       return { t, pos: S.p, target: S.l, fovDeg: +fovOf(S.f).toFixed(3), focusDist: +S.focus.toFixed(3), coc: +clamp2(S.K * Math.abs(1 / S.focus - 1 / 60), 0, 22).toFixed(3) };
     },
-    total: STILLS ? STILLS.length : D.total,
+    total: STILLS ? STILLS.length * HOLD : D.total,
     size: [OW, OH],
     mode: MODE
   };
