@@ -1,0 +1,397 @@
+{
+ "integratedLUFS": -14.0,
+ "LRA": 4.6,
+ "truePeakDbfs": -1.9,
+ "limiterMinGainDb": 0.0,
+ "moves": [
+  {
+   "t": 2.23,
+   "peakSpeed": 0.287
+  },
+  {
+   "t": 8.3,
+   "peakSpeed": 0.566
+  },
+  {
+   "t": 15.57,
+   "peakSpeed": 0.302
+  },
+  {
+   "t": 17.97,
+   "peakSpeed": 0.196
+  },
+  {
+   "t": 21.8,
+   "peakSpeed": 0.306
+  },
+  {
+   "t": 27.73,
+   "peakSpeed": 0.232
+  },
+  {
+   "t": 33.67,
+   "peakSpeed": 0.34
+  },
+  {
+   "t": 40.07,
+   "peakSpeed": 0.202
+  },
+  {
+   "t": 46.47,
+   "peakSpeed": 0.289
+  },
+  {
+   "t": 52.53,
+   "peakSpeed": 0.373
+  },
+  {
+   "t": 66.23,
+   "peakSpeed": 0.307
+  },
+  {
+   "t": 77.37,
+   "peakSpeed": 0.198
+  },
+  {
+   "t": 94.27,
+   "peakSpeed": 0.595
+  },
+  {
+   "t": 113.63,
+   "peakSpeed": 0.285
+  },
+  {
+   "t": 117.93,
+   "peakSpeed": 0.269
+  },
+  {
+   "t": 131.8,
+   "peakSpeed": 0.341
+  },
+  {
+   "t": 136.7,
+   "peakSpeed": 0.243
+  },
+  {
+   "t": 143.87,
+   "peakSpeed": 0.337
+  },
+  {
+   "t": 153.47,
+   "peakSpeed": 0.357
+  },
+  {
+   "t": 169.47,
+   "peakSpeed": 0.276
+  },
+  {
+   "t": 183.67,
+   "peakSpeed": 0.268
+  },
+  {
+   "t": 192.77,
+   "peakSpeed": 0.315
+  },
+  {
+   "t": 203.83,
+   "peakSpeed": 0.238
+  },
+  {
+   "t": 208.03,
+   "peakSpeed": 0.226
+  },
+  {
+   "t": 215.03,
+   "peakSpeed": 0.245
+  },
+  {
+   "t": 227.1,
+   "peakSpeed": 0.269
+  },
+  {
+   "t": 230.4,
+   "peakSpeed": 0.183
+  },
+  {
+   "t": 239.5,
+   "peakSpeed": 0.237
+  },
+  {
+   "t": 246.1,
+   "peakSpeed": 0.307
+  },
+  {
+   "t": 254.5,
+   "peakSpeed": 0.211
+  },
+  {
+   "t": 264.93,
+   "peakSpeed": 0.238
+  },
+  {
+   "t": 272.33,
+   "peakSpeed": 0.228
+  },
+  {
+   "t": 285.73,
+   "peakSpeed": 0.199
+  },
+  {
+   "t": 296.87,
+   "peakSpeed": 0.255
+  },
+  {
+   "t": 305.07,
+   "peakSpeed": 0.232
+  },
+  {
+   "t": 311.27,
+   "peakSpeed": 0.248
+  },
+  {
+   "t": 315.1,
+   "peakSpeed": 0.313
+  },
+  {
+   "t": 319.33,
+   "peakSpeed": 0.255
+  },
+  {
+   "t": 334.2,
+   "peakSpeed": 0.248
+  },
+  {
+   "t": 339.1,
+   "peakSpeed": 0.262
+  },
+  {
+   "t": 343.57,
+   "peakSpeed": 0.214
+  },
+  {
+   "t": 349.53,
+   "peakSpeed": 0.207
+  },
+  {
+   "t": 361.97,
+   "peakSpeed": 0.238
+  },
+  {
+   "t": 368.0,
+   "peakSpeed": 0.245
+  },
+  {
+   "t": 372.9,
+   "peakSpeed": 0.208
+  },
+  {
+   "t": 381.63,
+   "peakSpeed": 0.212
+  },
+  {
+   "t": 390.33,
+   "peakSpeed": 0.231
+  },
+  {
+   "t": 396.27,
+   "peakSpeed": 0.188
+  },
+  {
+   "t": 406.37,
+   "peakSpeed": 0.249
+  },
+  {
+   "t": 417.6,
+   "peakSpeed": 0.199
+  },
+  {
+   "t": 424.47,
+   "peakSpeed": 0.239
+  },
+  {
+   "t": 432.33,
+   "peakSpeed": 0.269
+  },
+  {
+   "t": 442.3,
+   "peakSpeed": 0.188
+  },
+  {
+   "t": 452.37,
+   "peakSpeed": 0.237
+  },
+  {
+   "t": 456.97,
+   "peakSpeed": 0.18
+  },
+  {
+   "t": 468.07,
+   "peakSpeed": 0.265
+  },
+  {
+   "t": 472.47,
+   "peakSpeed": 0.225
+  },
+  {
+   "t": 481.63,
+   "peakSpeed": 0.256
+  },
+  {
+   "t": 491.83,
+   "peakSpeed": 0.199
+  },
+  {
+   "t": 507.5,
+   "peakSpeed": 0.213
+  },
+  {
+   "t": 512.77,
+   "peakSpeed": 0.188
+  },
+  {
+   "t": 515.83,
+   "peakSpeed": 0.211
+  },
+  {
+   "t": 524.77,
+   "peakSpeed": 0.141
+  },
+  {
+   "t": 531.3,
+   "peakSpeed": 0.178
+  },
+  {
+   "t": 534.27,
+   "peakSpeed": 0.22
+  },
+  {
+   "t": 538.2,
+   "peakSpeed": 0.165
+  },
+  {
+   "t": 553.03,
+   "peakSpeed": 0.182
+  },
+  {
+   "t": 565.0,
+   "peakSpeed": 0.157
+  },
+  {
+   "t": 575.07,
+   "peakSpeed": 0.168
+  },
+  {
+   "t": 579.57,
+   "peakSpeed": 0.168
+  },
+  {
+   "t": 585.83,
+   "peakSpeed": 0.188
+  },
+  {
+   "t": 596.03,
+   "peakSpeed": 0.285
+  },
+  {
+   "t": 601.57,
+   "peakSpeed": 0.206
+  },
+  {
+   "t": 607.7,
+   "peakSpeed": 0.162
+  },
+  {
+   "t": 621.8,
+   "peakSpeed": 0.205
+  },
+  {
+   "t": 631.17,
+   "peakSpeed": 0.178
+  },
+  {
+   "t": 636.23,
+   "peakSpeed": 0.254
+  },
+  {
+   "t": 640.9,
+   "peakSpeed": 0.215
+  },
+  {
+   "t": 649.77,
+   "peakSpeed": 0.201
+  },
+  {
+   "t": 661.4,
+   "peakSpeed": 0.124
+  },
+  {
+   "t": 665.4,
+   "peakSpeed": 0.116
+  },
+  {
+   "t": 670.63,
+   "peakSpeed": 0.207
+  },
+  {
+   "t": 682.87,
+   "peakSpeed": 0.172
+  },
+  {
+   "t": 690.17,
+   "peakSpeed": 0.094
+  },
+  {
+   "t": 695.57,
+   "peakSpeed": 0.148
+  },
+  {
+   "t": 699.03,
+   "peakSpeed": 0.231
+  },
+  {
+   "t": 702.63,
+   "peakSpeed": 0.101
+  }
+ ],
+ "accents": 19,
+ "beats": 1081,
+ "silences": [
+  {
+   "t": 11.1,
+   "dur": 1.09,
+   "why": "let \"1991\" land",
+   "after": "co-broke.1"
+  },
+  {
+   "t": 14.31,
+   "dur": 1.3,
+   "why": "the open question hangs before the title",
+   "after": "co-question.1"
+  },
+  {
+   "t": 158.97,
+   "dur": 1.3,
+   "why": "let the first average land before the mirror answers",
+   "after": "a1-avg1966.1"
+  },
+  {
+   "t": 200.01,
+   "dur": 3.2,
+   "why": "end of act 1: ad break",
+   "after": "a1-payoff.4"
+  },
+  {
+   "t": 379.92,
+   "dur": 1.14,
+   "why": "let the $1.96 million gap land",
+   "after": "a2-climax.1"
+  },
+  {
+   "t": 448.97,
+   "dur": 3.2,
+   "why": "end of act 2: ad break",
+   "after": "a2-payoff.2"
+  }
+ ],
+ "events": 213
+}

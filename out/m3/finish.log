@@ -1,1 +1,7 @@
 sfx events 213
+{"integratedLUFS": -14.0, "LRA": 4.6, "truePeakDbfs": -1.9, "limiterMinGainDb": 0.0, "accents": 19, "beats": 1081, "events": 213}
+peaks [{'t': 163, 'act': 'act1'}, {'t': 368, 'act': 'act2'}, {'t': 601, 'act': 'act3'}] valleys [{'t': 200}, {'t': 382}, {'t': 608}]
+{"video": "out/m3/root/out/video.mp4", "pairs": 21179, "method": "luma, gblur sigma 1.5 (grain removed), |dY| > 4 codes", "at0.5": {"threshold%": 0.5, "framesChanged%": 33.5, "longestStillRun_s": 8.13}, "at0.1": {"threshold%": 0.1, "framesChanged%": 79.1, "longestStillRun_s": 6.77}, "medianChangedPixels%": 0.323}
+-rw-r--r-- 1 root root 1528397839 Sep 27 10:10 out/m3/root/out/video.mp4
+-rw-r--r-- 1 root root  236208861 Sep 27 10:23 out/m3/video.mp4
+FINISH 0
