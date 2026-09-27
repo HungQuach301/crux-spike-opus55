@@ -4,3 +4,29 @@ Previous HEAD position was cf9becc Test D M3: float32 audio buffers (second out-
 Switched to a new branch 'media/opus55-cine-phase-d-m3'
 fatal: expected 'acknowledgments', received 'packfile'
 warning: push negotiation failed; proceeding anyway with push
+remote: warning: See https://gh.io/lfs for more information.        
+remote: warning: File m3/video.mp4.part-03 is 95.00 MB; this is larger than GitHub's recommended maximum file size of 50.00 MB        
+remote: warning: File m3/video.mp4.part-04 is 95.00 MB; this is larger than GitHub's recommended maximum file size of 50.00 MB        
+remote: warning: File m3/video.mp4.part-06 is 95.00 MB; this is larger than GitHub's recommended maximum file size of 50.00 MB        
+remote: warning: File m3/video.mp4.part-08 is 95.00 MB; this is larger than GitHub's recommended maximum file size of 50.00 MB        
+remote: warning: File m3/video.mp4.part-09 is 95.00 MB; this is larger than GitHub's recommended maximum file size of 50.00 MB        
+remote: warning: File m3/video.mp4.part-12 is 95.00 MB; this is larger than GitHub's recommended maximum file size of 50.00 MB        
+remote: warning: File m3/video.mp4.part-14 is 95.00 MB; this is larger than GitHub's recommended maximum file size of 50.00 MB        
+remote: warning: File m3/video.mp4.part-00 is 95.00 MB; this is larger than GitHub's recommended maximum file size of 50.00 MB        
+remote: warning: File m3/video.mp4.part-05 is 95.00 MB; this is larger than GitHub's recommended maximum file size of 50.00 MB        
+remote: warning: File m3/video.mp4.part-07 is 95.00 MB; this is larger than GitHub's recommended maximum file size of 50.00 MB        
+remote: warning: File m3/video.mp4.part-01 is 95.00 MB; this is larger than GitHub's recommended maximum file size of 50.00 MB        
+remote: warning: File m3/video.mp4.part-02 is 95.00 MB; this is larger than GitHub's recommended maximum file size of 50.00 MB        
+remote: warning: File m3/video.mp4.part-11 is 95.00 MB; this is larger than GitHub's recommended maximum file size of 50.00 MB        
+remote: warning: File m3/video.mp4.part-10 is 95.00 MB; this is larger than GitHub's recommended maximum file size of 50.00 MB        
+remote: warning: File m3/video.mp4.part-13 is 95.00 MB; this is larger than GitHub's recommended maximum file size of 50.00 MB        
+remote: warning: GH001: Large files detected. You may want to try Git Large File Storage - https://git-lfs.github.com.        
+remote: 
+remote: Create a pull request for 'media/opus55-cine-phase-d-m3' on GitHub by visiting:        
+remote:      https://github.com/HungQuach301/crux-spike-opus55/pull/new/media/opus55-cine-phase-d-m3        
+remote: 
+To https://github.com/HungQuach301/crux-spike-opus55
+ * [new branch]      media/opus55-cine-phase-d-m3 -> media/opus55-cine-phase-d-m3
+branch 'media/opus55-cine-phase-d-m3' set up to track 'origin/media/opus55-cine-phase-d-m3'.
+media branch media/opus55-cine-phase-d-m3: 0 done; whole-file sha256 569def46b7460053269084732b04c48a1f516ce7ff2998e3d96751c4c2cc586b
+MEDIA 0
