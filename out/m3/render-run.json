@@ -1,0 +1,36 @@
+{
+ "subframes": 8,
+ "shutter": 0.5,
+ "workers": 4,
+ "frames": 21180,
+ "framesSupersampled": 16553,
+ "wallSeconds": 6935.1,
+ "secondsPerVideoSecond": 9.82,
+ "encodeSeconds": 1027.7,
+ "ranges": [
+  {
+   "range": "0.000-203.019",
+   "wallSeconds": 1675.6,
+   "frames": 6091,
+   "framesSupersampled": 3182,
+   "workerSeconds": [
+    1675.3,
+    1580.4,
+    1416.7,
+    1229.6
+   ]
+  },
+  {
+   "range": "203.019-706.010",
+   "wallSeconds": 5259.5,
+   "frames": 15089,
+   "framesSupersampled": 13371,
+   "workerSeconds": [
+    4642.9,
+    4798.9,
+    5259.2,
+    5004.4
+   ]
+  }
+ ]
+}
