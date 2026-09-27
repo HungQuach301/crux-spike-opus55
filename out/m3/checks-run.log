@@ -48,3 +48,25 @@ V01  PASS       0.0s
 V02  PASS       0.0s  
 V03  FAIL       0.0s  text outside safe area=279
 V04  PASS       0.0s  
+V05  FAIL      87.8s  worst ease ratio=0.64; overshoot > 8%=2
+V06  PASS       0.1s  
+V07  FAIL      11.8s  median blur ratio=1.187389
+V08  FAIL       0.0s  worst text contrast=1.02; samples below 4.5:1=117
+V09  PASS       0.0s  
+V10  PASS      88.0s  
+V11  FAIL       0.0s  text collisions=192
+C01  PASS       0.0s  
+C02  PASS       0.0s  
+C03  FAIL       0.0s  frames flagged=162
+C04  FAIL       0.0s  frames flagged=364
+C05  FAIL       0.0s  frames flagged=64
+C06  FAIL       0.0s  frames flagged=132
+C07  PASS       0.0s  
+C10  FAIL       0.0s  scenes failing=3
+C11  PASS       0.0s  
+C12  PASS       0.0s  
+C13  FAIL       0.0s  worst |offset| ms=3353; pairs > 250 ms=10
+C14  FAIL       0.0s  text samples not legible at 25%=14
+C15  PASS       0.0s  
+P01  PASS       9.3s  
+{"PASS": 49, "FAIL": 22, "MISSING": 0, "ERROR": 0}

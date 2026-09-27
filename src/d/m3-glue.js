@@ -82,6 +82,8 @@ function pre() {
     let cur = [];
     for (const w of words) { const cand = [...cur, w].join(' '); if (wrap(cand).length > 2) { chunks.push(cur); cur = [w]; } else cur.push(w); }
     if (cur.length) chunks.push(cur);
+    // no orphan: move words forward until the last chunk is long enough to read for >= 1 s
+    while (chunks.length > 1 && chunks[chunks.length - 1].join(' ').length < 24 && chunks[chunks.length - 2].length > 4) chunks[chunks.length - 1].unshift(chunks[chunks.length - 2].pop());
     const n = l.text.length;
     let acc = 0;
     chunks.forEach((c, k) => {

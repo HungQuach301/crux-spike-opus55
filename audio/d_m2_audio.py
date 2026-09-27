@@ -337,7 +337,11 @@ def main():
         vbuf[i0:i0 + n] += x[:n]
     # performance dynamics by section (the reading gets closer/quieter in the cold open and fuller at the reveals)
     starts = {s_['id']: s_['start'] for s_ in tl['scenes']}
-    SECT = [x for x in [('co-lines', -9.0), ('a1-est', -4.0), ('a1-mirror-in', -1.5), ('a1-avg1966', 2.0), ('a1-geo', -3.0), ('a2-7374', -2.0)] if x[0] in starts]
+    # section dynamics of the reading (dB): close and quiet in the cold open, fuller at the reveals and climaxes, pulled
+    # back for the reflective and technical passages (this is what gives the film its loudness range)
+    SECT = [x for x in [('co-lines', -9.0), ('a1-est', -4.0), ('a1-mirror-in', -1.5), ('a1-avg1966', 2.0), ('a1-geo', -3.0), ('a2-est', -3.0), ('a2-7374', -2.0),
+                        ('a2-1982', 0.0), ('a2-climb', 1.5), ('a2-climax', 3.0), ('a2-years', 0.0), ('a2-rest', -4.0), ('a2-payoff', -1.0), ('a3-est', -3.0),
+                        ('a3-four', 0.5), ('a3-decade', 2.5), ('a3-answer', 1.0), ('a3-nuance', -2.0), ('a3-limits', -5.0), ('method', -8.0), ('outro', -6.0)] if x[0] in starts]
     gv = np.zeros(N)
     for k, (sid, g_) in enumerate(SECT):
         i0 = int(starts[sid] * SR)
@@ -479,7 +483,7 @@ def main():
             dn[int(max(0, tn - 0.5) * SR):int(min(N / SR, tn + 1.6) * SR)] = 10 ** (-24 / 20)
         from scipy.ndimage import uniform_filter1d as _ufn
         dn = _ufn(dn, int(0.05 * SR))
-        for arr in (mus, sfx, whoosh):
+        for arr in (mus, sfx):  # whooshes keep their level: they follow the camera speed (A10)
             arr *= dn[:, None]
     # ---------------------------------------------------------------- levels
     # voice-active windows: music 20 dB under the voice (mean power)
