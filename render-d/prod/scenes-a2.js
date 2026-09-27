@@ -435,15 +435,15 @@
     base(items, P, 'wd', x0 - 10, x0 + 16 * w, yb);
     for (let k = 0; k < 16; k++) bar(items, P, 'wd', `${P}-wd${k}`, x0 + k * w, yb, w - 10, M.wd1966[k], s, smooth((L - 0.3 - k * 0.16) / 0.3), C.inflation, 1);
     const b = H.P(x0 + 15 * w + 18, yb, 0);
-    items.push(Tx(P + '-y', '1981', b[0], b[1] + 46, 30, C['text-dim'], { align: 'center', claims: cl('y1981'), alpha: on(L, t81), level: 3 }));
-    items.push(Tx(P + '-cap', 'withdrawal each year', x0, yb + 46, 30, C.inflation, { alpha: fade(L, 0.3), level: 3 }));
+    items.push(Tx(P + '-y', '1981', b[0], b[1] + 62, 30, C['text-dim'], { align: 'center', claims: cl('y1981'), alpha: on(L, t81), level: 3 }));
+    items.push(Tx(P + '-cap', 'withdrawal each year', x0, yb + 62, 30, C.inflation, { alpha: fade(L, 0.3), level: 3 }));
     const inB = L >= 8.9;
     items.push(L1(P + '-l1', '$108,553', 1280, 360, 96, inB ? 0 : on(L, tV), { claims: cl('wd1981') }));
     items.push(Tx(P + '-nb', 'nominal dollars', 1280, 450, 36, C['text-dim'], { align: 'center', alpha: inB ? 0 : on(L, tV), level: 2 }));
     // the real withdrawal: flat at $40,000 of 1966 money
     const fu = smooth((L - (t66 - 0.2)) / 1.2);
     items.push(S(P + '-flat', 'polyline', { panel: P, z: 0, pts: [[x0 - 10, yb - 40000 * s], [x0 - 10 + (16 * w + 10) * fu, yb - 40000 * s]], stroke: C.text, lw: 5, alpha: fu > 0 ? 1 : 0, meta: { role: 'mark', panel: P } }));
-    items.push(badge(P + '-badge', 1140, 580, inB ? fade(L, t40 - 0.4, 0.2) : 0));
+    items.push(badge(P + '-badge', 1080, 632, inB ? fade(L, t40 - 0.4, 0.2) : 0));
     items.push(L1(P + '-l1b', '$40,000', 1280, 720, 96, inB ? on(L, t40) : 0, { claims: cl('wd1') }));
     basis(items, P + '-basis', 1280, 810, L, t66, inB ? fade(L, t66 - 0.1, 0.2) : 0);
     items.push(Tx(P + '-real', 'the same money, in real terms', 1280, 470, 32, C['text-dim'], { align: 'center', alpha: inB ? fade(L, t66 + 0.4) : 0, level: 2 }));
@@ -464,7 +464,7 @@
     }
     const b = H.P(g.X(16), 800, 0);
     items.push(Tx(P + '-y', '1982', b[0], b[1] + 50, 32, C.text, { align: 'center', weight: 700, claims: cl('y1982'), alpha: on(L, t82), level: 2 }));
-    items.push(Tx(P + '-cap', 'return by year', 300, 900, 30, C['text-dim'], { level: 3 }));
+    items.push(Tx(P + '-cap', 'return by year', 300, 1000, 30, C['text-dim'], { level: 3 }));
     items.push(L1(P + '-l1', 'The good years arrive', 640, 360, 64, fade(L, tG - 0.3, 0.3)));
     return items;
   };
@@ -496,7 +496,7 @@
     items.push(S(P + '-slice', 'rect', { panel: P, z: 0, rect: [sx + sw * (1 - M.share1966[16]) + 8 + 40 * u, sy + 60 * u, sw * M.share1966[16] - 8, 70], radius: 6, fill: C.loss, meta: { role: 'mark', panel: P } }));
     items.push(Tx(P + '-cs', 'balance at the start of 1982', sx, sy - 24, 30, C['text-dim'], { claims: [], alpha: 0, level: 3 }));
     items.push(Tx(P + '-cap', 'what is left', sx, sy + 118, 30, C['text-dim'], { alpha: fade(L, tLeft - 0.3), level: 3 }));
-    items.push(Tx(P + '-cap2', 'withdrawal as a share of the balance', x0 - 10, yb + 50, 30, C['text-dim'], { alpha: fade(L, 0.3), level: 3 }));
+    items.push(Tx(P + '-cap2', 'withdrawal as a share of the balance', x0 - 10, yb + 62, 30, C['text-dim'], { alpha: fade(L, 0.3), level: 3 }));
     items.push(L1(P + '-l1', '16.9%', 640, 360, 110, on(L, tV), { claims: cl('share1982') }));
     return items;
   };
@@ -507,7 +507,7 @@
     const items = [], P = 'a2-gains80'; env(items, P, { glow: 0.08, gx: 1500 });
     const W = cueL(H), t8 = W('a2-gains80.1', '8', 0.1), t10 = W('a2-gains80.1', '10%', 1.8), tBal = W('a2-gains80.1', 'balance', 3.7), tFell = W('a2-gains80.1', 'fell', 6.8), tWd = W('a2-gains80.1', 'withdrawal', 8.1);
     const fell = (D.claims.gainsFell && D.claims.gainsFell.years) || [1979, 1980, 1983, 1985, 1986, 1988, 1989, 1991];
-    const k0 = 13, k1 = 25, x0 = 300, w = 76, yb = 520, s = 4.4;
+    const k0 = 13, k1 = 25, x0 = 300, w = 76, yb = 620, s = 3.6;
     base(items, P, 'g80', x0 - 10, x0 + 13 * w, yb);
     for (let k = k0; k <= k1; k++) {
       const x = x0 + (k - k0) * w, v = M.ret1966[k] * 100, isF = fell.includes(1966 + k) && M.real1966[k + 1] < M.real1966[k] && v > 10;
@@ -529,14 +529,14 @@
     items.push(S(P + '-t10', 'polyline', { panel: P, z: 0, pts: [[x0 - 10, y10], [x0 - 10 + (13 * w + 10) * ua, y10]], stroke: C.text, lw: 2, dash: [8, 8], alpha: ua > 0 ? 0.9 : 0, meta: { role: 'mark', panel: P } }));
     const tl = H.P(x0 + 13 * w + 16, y10, 0);
     items.push(Tx(P + '-l10', 'gain above 10%', tl[0], tl[1] + 11, 30, C.text, { claims: cl('gt10'), alpha: on(L, t10), level: 2 }));
-    const rl = H.P(x0 - 10, yb - 150, 0), wl = H.P(x0 + 13 * w + 16, yb + 60, 0);
+    const rl = H.P(x0 - 10, yb - 140, 0), wl = H.P(x0 + 13 * w + 16, yb + 60, 0);
     items.push(Tx(P + '-cr', 'return', rl[0], rl[1], 30, C.gain, { alpha: fade(L, 0.2), level: 3 }));
     items.push(Tx(P + '-cw', 'taken by the withdrawal', wl[0], wl[1], 30, C.inflation, { alpha: fade(L, tBal - 0.2), level: 3 }));
     items.push(Tx(P + '-cw2', 'share of the balance', wl[0], wl[1] + 40, 30, C.inflation, { alpha: fade(L, tBal - 0.2), level: 3 }));
     items.push(Tx(P + '-who', '1966 retiree, 1979 to 1991', 300, 130, 30, C.c1966, { series: '1966', claims: [], alpha: 0, level: 3 }));
-    items.push(L1(P + '-l1', '8', 1280, 250, 120, on(L, t8), { claims: cl('gainsFell') }));
-    items.push(Tx(P + '-sub', 'big-gain years where the balance still fell', 1280, 350, 32, C['text-dim'], { align: 'center', alpha: fade(L, t8 + 0.3), level: 2 }));
-    items.push(Tx(P + '-who2', '1966 retiree', 1280, 400, 30, C.c1966, { align: 'center', series: '1966', claims: cl('y1966'), alpha: on(L, W('a2-gains80.1', '1966', 4.4)), level: 3 }));
+    items.push(L1(P + '-l1', '8', 1280, 330, 120, on(L, t8), { claims: cl('gainsFell') }));
+    items.push(Tx(P + '-sub', 'big-gain years where the balance still fell', 1280, 432, 32, C['text-dim'], { align: 'center', alpha: fade(L, t8 + 0.3), level: 2 }));
+    items.push(Tx(P + '-who2', '1966 retiree', 1280, 200, 30, C.c1966, { align: 'center', series: '1966', claims: cl('y1966'), alpha: on(L, W('a2-gains80.1', '1966', 4.4)), level: 3 }));
     items.push(Tx(P + '-fell', 'balance fell', H.P(x0 + 13 * w + 16, yb + 150, 0)[0], H.P(x0 + 13 * w + 16, yb + 150, 0)[1], 30, C.loss, { alpha: fade(L, tFell - 0.2), level: 3 }));
     void tWd;
     return items;

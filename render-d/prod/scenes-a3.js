@@ -485,7 +485,7 @@
     const items = []; env(items, 'a3-avg-callback', { glow: 0.10, gx: 400 });
     const t97 = cue(H, 'a3-avg-callback.1', '9.7%', 0.3), t66 = cue(H, 'a3-avg-callback.1', '1966', 2.5), t91 = cue(H, 'a3-avg-callback.1', '1991', 7);
     // the 1966 real balance under its average: the line walks down to zero as the voice reaches 1991
-    const x0 = 820, x1 = 1640, yb = 860, yt = 520;
+    const x0 = 1000, x1 = 1700, yb = 860, yt = 580;
     const X = (k) => x0 + (x1 - x0) * k / 30, Y = (v) => yb - (yb - yt) * v / 1e6;
     const prog = smooth((L - 0.8) / Math.max(1, t91 - 0.8));
     const n = Math.max(1, Math.round(prog * 25));
@@ -560,19 +560,20 @@
     const items = []; env(items, 'a3-overlap', { glow: 0.09, gx: 400 });
     const t69 = cue(H, 'a3-overlap.1', '69', 0.3), t98 = cue(H, 'a3-overlap.1', '98', 3.5), t3 = cue(H, 'a3-overlap.1', '3', 5);
     // one thin bar per start year spanning its 30 plan years, on a data span of 1928..2025
-    const x0 = 200, x1 = 1720, yr = (x1 - x0) / 98, y0 = 330, dy = 8;
+    const x0 = 200, x1 = 1720, yr = (x1 - x0) / 98, y0 = 340, dy = 7;
     const sep = [1928, 1958, 1988];
     ST.forEach((s, i) => {
       const x = x0 + (s.y - 1928) * yr, isSep = sep.includes(s.y);
       const gr = smooth((L - 0.2 - i * 0.03) / 0.3);
-      items.push(S('a3-overlap-w' + s.y, 'rect', { panel: 'a3-overlap', z: 0, rect: [x, y0 + i * dy, 30 * yr * gr, dy - 2], radius: 2,
+      items.push(S('a3-overlap-w' + s.y, 'rect', { panel: 'a3-overlap', z: 0, rect: [x, y0 + i * dy, 30 * yr * gr, dy - 2], radius: 1,
         fill: isSep && L >= t3 - 0.2 ? C.c1966 : C.muted, alpha: L >= t3 - 0.2 && !isSep ? 0.4 : 0.95, meta: { role: 'mark', panel: 'a3-overlap', year: s.y } }));
     });
     // the data span underneath: 98 years
     const ya = y0 + 69 * dy + 30, span = smooth((L - t98 + 0.3) / 0.6);
     items.push(S('a3-overlap-span', 'polyline', { panel: 'a3-overlap', z: 0, pts: [[x0, ya], [x0 + (x1 - x0) * span, ya]], stroke: C.text, lw: 4, alpha: span > 0 ? 1 : 0, meta: { role: 'axis', panel: 'a3-overlap', chart: 'a3-overlap' } }));
-    items.push(Tx('a3-overlap-98', '98 years of data', 960, ya + 60, 40, C.text, { align: 'center', weight: 700, alpha: at(L, t98), claims: [claim('n98')], level: 2 }));
-    items.push(L1('a3-overlap-l1', '69 windows overlap', 640, 220 + 50, 56, at(L, t69), { claims: [claim('n69')] }));
+    const pa = H.P(960, ya, 0);
+    items.push(Tx('a3-overlap-98', '98 years of data', pa[0], pa[1] + 56, 40, C.text, { align: 'center', weight: 700, alpha: at(L, t98), claims: [claim('n98')], level: 2 }));
+    items.push(L1('a3-overlap-l1', '69 windows overlap', 560, 720, 56, at(L, t69), { claims: [claim('n69')] }));
     items.push(Tx('a3-overlap-3', 'only 3 separate stretches', 1280, 250, 40, C.c1966, { align: 'center', weight: 700, alpha: at(L, t3), claims: [claim('n3')], level: 2 }));
     return items;
   };
