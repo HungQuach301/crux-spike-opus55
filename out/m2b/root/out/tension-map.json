@@ -1,0 +1,308 @@
+{
+ "note": "measured on the delivered edit and stems (audio/d_tension.py)",
+ "samples": [
+  {
+   "t": 0,
+   "cutRate": 1,
+   "audioDensity": 2.0,
+   "musicLevel": -29.0,
+   "tension": 0.283
+  },
+  {
+   "t": 1,
+   "cutRate": 1,
+   "audioDensity": 2.8,
+   "musicLevel": -33.3,
+   "tension": 0.407
+  },
+  {
+   "t": 2,
+   "cutRate": 1,
+   "audioDensity": 3.6,
+   "musicLevel": -35.6,
+   "tension": 0.52
+  },
+  {
+   "t": 3,
+   "cutRate": 2,
+   "audioDensity": 4.0,
+   "musicLevel": -33.4,
+   "tension": 0.522
+  },
+  {
+   "t": 4,
+   "cutRate": 2,
+   "audioDensity": 4.0,
+   "musicLevel": -37.6,
+   "tension": 0.555
+  },
+  {
+   "t": 5,
+   "cutRate": 2,
+   "audioDensity": 3.8,
+   "musicLevel": -42.5,
+   "tension": 0.559
+  },
+  {
+   "t": 6,
+   "cutRate": 2,
+   "audioDensity": 3.8,
+   "musicLevel": -32.3,
+   "tension": 0.556
+  },
+  {
+   "t": 7,
+   "cutRate": 1,
+   "audioDensity": 3.8,
+   "musicLevel": -34.9,
+   "tension": 0.55
+  },
+  {
+   "t": 8,
+   "cutRate": 2,
+   "audioDensity": 3.8,
+   "musicLevel": -33.8,
+   "tension": 0.571
+  },
+  {
+   "t": 9,
+   "cutRate": 2,
+   "audioDensity": 3.0,
+   "musicLevel": -36.2,
+   "tension": 0.564
+  },
+  {
+   "t": 10,
+   "cutRate": 3,
+   "audioDensity": 3.2,
+   "musicLevel": -39.6,
+   "tension": 0.585
+  },
+  {
+   "t": 11,
+   "cutRate": 3,
+   "audioDensity": 3.2,
+   "musicLevel": -40.2,
+   "tension": 0.59
+  },
+  {
+   "t": 12,
+   "cutRate": 3,
+   "audioDensity": 2.8,
+   "musicLevel": -38.3,
+   "tension": 0.612
+  },
+  {
+   "t": 13,
+   "cutRate": 3,
+   "audioDensity": 2.4,
+   "musicLevel": -34.1,
+   "tension": 0.581
+  },
+  {
+   "t": 14,
+   "cutRate": 3,
+   "audioDensity": 3.0,
+   "musicLevel": -35.4,
+   "tension": 0.58
+  },
+  {
+   "t": 15,
+   "cutRate": 3,
+   "audioDensity": 2.8,
+   "musicLevel": -120.0,
+   "tension": 0.608
+  },
+  {
+   "t": 16,
+   "cutRate": 3,
+   "audioDensity": 2.8,
+   "musicLevel": -39.1,
+   "tension": 0.607
+  },
+  {
+   "t": 17,
+   "cutRate": 3,
+   "audioDensity": 3.2,
+   "musicLevel": -29.0,
+   "tension": 0.618
+  },
+  {
+   "t": 18,
+   "cutRate": 2,
+   "audioDensity": 3.6,
+   "musicLevel": -31.6,
+   "tension": 0.655
+  },
+  {
+   "t": 19,
+   "cutRate": 3,
+   "audioDensity": 3.8,
+   "musicLevel": -34.5,
+   "tension": 0.65
+  },
+  {
+   "t": 20,
+   "cutRate": 2,
+   "audioDensity": 4.0,
+   "musicLevel": -33.2,
+   "tension": 0.627
+  },
+  {
+   "t": 21,
+   "cutRate": 2,
+   "audioDensity": 3.8,
+   "musicLevel": -36.9,
+   "tension": 0.602
+  },
+  {
+   "t": 22,
+   "cutRate": 2,
+   "audioDensity": 3.6,
+   "musicLevel": -31.8,
+   "tension": 0.549
+  },
+  {
+   "t": 23,
+   "cutRate": 1,
+   "audioDensity": 3.4,
+   "musicLevel": -32.7,
+   "tension": 0.52
+  },
+  {
+   "t": 24,
+   "cutRate": 1,
+   "audioDensity": 3.2,
+   "musicLevel": -37.3,
+   "tension": 0.492
+  },
+  {
+   "t": 25,
+   "cutRate": 1,
+   "audioDensity": 3.0,
+   "musicLevel": -32.5,
+   "tension": 0.48
+  },
+  {
+   "t": 26,
+   "cutRate": 1,
+   "audioDensity": 3.0,
+   "musicLevel": -37.1,
+   "tension": 0.495
+  },
+  {
+   "t": 27,
+   "cutRate": 2,
+   "audioDensity": 3.0,
+   "musicLevel": -34.0,
+   "tension": 0.5
+  },
+  {
+   "t": 28,
+   "cutRate": 2,
+   "audioDensity": 3.0,
+   "musicLevel": -33.1,
+   "tension": 0.498
+  },
+  {
+   "t": 29,
+   "cutRate": 1,
+   "audioDensity": 3.0,
+   "musicLevel": -34.4,
+   "tension": 0.498
+  },
+  {
+   "t": 30,
+   "cutRate": 1,
+   "audioDensity": 3.0,
+   "musicLevel": -33.3,
+   "tension": 0.481
+  },
+  {
+   "t": 31,
+   "cutRate": 1,
+   "audioDensity": 3.0,
+   "musicLevel": -37.4,
+   "tension": 0.464
+  },
+  {
+   "t": 32,
+   "cutRate": 1,
+   "audioDensity": 3.0,
+   "musicLevel": -32.8,
+   "tension": 0.464
+  },
+  {
+   "t": 33,
+   "cutRate": 1,
+   "audioDensity": 3.0,
+   "musicLevel": -32.1,
+   "tension": 0.465
+  },
+  {
+   "t": 34,
+   "cutRate": 1,
+   "audioDensity": 3.0,
+   "musicLevel": -34.3,
+   "tension": 0.468
+  },
+  {
+   "t": 35,
+   "cutRate": 1,
+   "audioDensity": 3.0,
+   "musicLevel": -32.7,
+   "tension": 0.443
+  },
+  {
+   "t": 36,
+   "cutRate": 1,
+   "audioDensity": 3.0,
+   "musicLevel": -36.5,
+   "tension": 0.42
+  },
+  {
+   "t": 37,
+   "cutRate": 0,
+   "audioDensity": 3.0,
+   "musicLevel": -34.7,
+   "tension": 0.401
+  },
+  {
+   "t": 38,
+   "cutRate": 0,
+   "audioDensity": 3.0,
+   "musicLevel": -32.9,
+   "tension": 0.37
+  },
+  {
+   "t": 39,
+   "cutRate": 0,
+   "audioDensity": 2.8,
+   "musicLevel": -33.4,
+   "tension": 0.334
+  },
+  {
+   "t": 40,
+   "cutRate": 0,
+   "audioDensity": 2.4,
+   "musicLevel": -34.5,
+   "tension": 0.304
+  },
+  {
+   "t": 41,
+   "cutRate": 0,
+   "audioDensity": 1.8,
+   "musicLevel": -38.1,
+   "tension": 0.228
+  },
+  {
+   "t": 42,
+   "cutRate": 0,
+   "audioDensity": 1.2,
+   "musicLevel": -39.3,
+   "tension": 0.156
+  }
+ ],
+ "peaks": [],
+ "valleys": []
+}

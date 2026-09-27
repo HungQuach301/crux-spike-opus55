@@ -291,3 +291,118 @@ Các chỉ số near khác xem trong `report.json` (các cờ `near`).
 - Chọn giọng chính thức (#158) — V8 vẫn là tạm thời.
 
 **DỪNG**, chờ duyệt.
+
+---
+
+# M2b — LOOKDEV (thế giới vật lý)
+
+Nhánh: **`claude/opus55-cine-phase-d-jw6me1`**. checks/ không đổi; SHA khớp LOCK trước mỗi commit. Bắt đầu 00:20 UTC, dừng khoảng 03:25 UTC (khoảng 185 phút, dưới mốc 240). Không dùng credit ElevenLabs/OpenAI mới (dùng lại các lần đọc của V8).
+
+## Kết quả giao
+- **Video:** `out/m2b/lookdev.mp4`, 42,3 s, 1080p30, 14 Mbps, 75 MB, có trong git. Gồm:
+  - **Đoạn A** (0:00–0:17,1): cold open + ident.
+  - **Đoạn B** (0:17,1–0:42,3): hồi 2, các câu a2-7374 → a2-1974inf → a2-bal74 (bão 1973–74, hai bể tách nhau).
+  - Bản master đúng hợp đồng (20 Mbps, AAC 320k): `out/m2b/root/out/video.mp4`, 108 MB, **chỉ ở máy**.
+- **Visual bible:** `preprod/visual-bible.md` — thế giới, vật liệu, bảng ánh sáng theo hồi, bộ ống kính, ngữ pháp máy quay, quy tắc chữ, chuyển động vật lý, âm thanh của thế giới.
+- **6 khung phong cách:** `preprod/style/style-1-world.png` … `style-6-materials.png`. Cắt từ chính bản render, nên khung phong cách và phim là cùng điểm ảnh.
+- **Máy dựng:** `render-d/look/`: three.js (WebGL2), trang có `window.CHECKS`.
+  - Bể kính: mực chất lỏng = số dư thực; dòng chảy từ vòi = khoản rút.
+  - Con đường: 30 khối đá, chiều cao = lợi suất thực 60/40 của năm đó.
+  - Bầu trời vật lý, mây động, sương.
+  - Bụi trong nắng; mưa, gió giật, một tia chớp.
+  - Hai nhân vật: 1966 hổ phách bên trái, mirror xanh bên phải.
+- **Âm thanh:**
+  - Nhạc, giọng V8, duck, master như M2.
+  - Thêm âm thanh vật lý: nước từ mỗi vòi (pan theo bể; dòng 1966 tắt ở 1991, sau đó nhỏ giọt), gió, mưa (dày lên sau "12.3%"), đá nghiến khi khối 1974 lún, sấm 0,55 s sau chớp.
+  - Master −14,0 LUFS, LRA 9,0, true peak −1,3 dBTP.
+
+## Số đo
+**Render** (container 4 nhân, không GPU; WebGL chạy trên SwiftShader, tức CPU):
+
+| lần | nội dung | wall | s render / s video | subframe |
+|---|---|---|---|---|
+| 1 | toàn bộ 1.269 khung | 5.537 s | **130,9** | 377 khung ×4, 754 khung ×6 (mưa), 138 khung ×8 (time-lapse) |
+| 2 | 319 khung shot cuối, khung lại (nhãn "$461,000" ra ngoài khung ở lần 1) | 1.602 s | 150,7 | ×6 |
+
+- **Cách làm mờ chuyển động:** một lượt nét toàn độ phân giải cộng phần dư chuyển động từ N subframe nửa độ phân giải, màn trập 180°; sau đó DOF, bloom, tia nắng, ACES, FXAA.
+- **Ước tính render toàn bài (~703 s):** 703 × 131–151 ≈ **92.000–106.000 s ≈ 26–29 giờ** trên container này.
+- **So với ngân sách:** BRIEF-D §8b đặt ngưỡng > 60 s/s thì DỪNG và đề xuất giảm tải. Lookdev vượt 2,2–2,5 lần, nên **đề xuất:**
+  1. **Chạy cùng trang trên máy có GPU (khuyến nghị).**
+     - Đo được ở đây: một lượt cảnh 1080p mất 1,0–1,75 s trên SwiftShader. Profile cho thấy IBL chiếm khoảng 45%, vật liệu trong suốt khoảng 33%; không có phần nào áp đảo, đây là giới hạn của rasteriser CPU.
+     - Trên GPU rời, một lượt như vậy thường chỉ tốn cỡ mili-giây. Ước tính < 10 s/s, toàn bài < 2 giờ. **Chưa đo** vì container không có GPU.
+  2. **Chỉ dùng CPU, không có GPU:**
+     - Mỗi khung chỉ 4 subframe (mưa đã có vệt): khoảng −25%.
+     - Bỏ vòm mây ở cảnh cận: khoảng −10%.
+     - Shadow map 1024: khoảng −5%.
+     - Ước tính khoảng 85–90 s/s, **vẫn > 60**.
+     - Kèm render 1600×900 rồi phóng lên: khoảng 60 s/s, nhưng không còn 1080p gốc.
+  3. **Chia khung cho nhiều container song song** (các khung độc lập): 3 container → khoảng 9 giờ wall; 8 container → khoảng 3,5 giờ.
+- **Tỷ lệ khung có thay đổi thấy được** (`src/d/frame-change.py`): luma sau khi lọc grain bằng Gaussian σ 1,5, đếm điểm ảnh đổi > 4 mức. Cùng công cụ đo lại M2 cho 24,4% ở ngưỡng 0,1%, khớp số đo độc lập của chủ dự án.
+
+  | | M2 | **M2b lookdev** |
+  |---|---|---|
+  | khung có ≥ 0,5% điểm ảnh đổi | 14,9% | **81,4%** |
+  | khung có ≥ 0,1% điểm ảnh đổi | 24,4% | 96,2% |
+  | đoạn đứng yên dài nhất | 13,6 s | 1,33 s |
+  | trung vị % điểm ảnh đổi mỗi khung | 0,0% | 1,64% |
+
+## checks/ trên lookdev (`checks/run.sh out/m2b/root`, không sửa checks)
+Toàn bộ: 32 PASS / 38 FAIL / 1 MISSING (`out/m2b/checks-run.log`, `out/m2b/checks-report.json`). Phần lớn FAIL là luật của cả bài hoặc không áp dụng cho một đoạn 42 s (F07, S02, S05, S06, S10–S15, R01, R05, P01…).
+
+**Bốn luật được yêu cầu — cả bốn TRƯỢT:**
+
+| luật | đo được | nguyên nhân | sửa ở vòng sau |
+|---|---|---|---|
+| **V11** va chạm chữ | 15 mẫu | tiêu đề chạm các khối đá cuối ident khi máy quay nâng lên (50 px, 2 mẫu); nhãn "1973" nằm trên các khối đá xa (13 mẫu) | đặt nhãn theo mặt nạ đồ hoạ đo trước khi render, không đặt theo ước lượng hình học |
+| **V08** tương phản ≥ 4,5:1 | 103 mẫu dưới ngưỡng; tệ nhất 1,44 ("lost 14.7%" trên trời bão sáng) | chữ sáng trên trời xám sáng; bóng mờ sau chữ không đủ | "nhãn sạch" có tấm nền tối mờ phía sau (đúng tinh thần "nhãn sạch" trong hướng mới), hoặc chỉ đặt nhãn trước vùng tối |
+| **C14** đọc ở 25% | 61 mẫu | cùng nguyên nhân tương phản; cỡ chữ đều ≥ 34 px | như V08 |
+| **F08** banding | tệ nhất 15,0% ở 0:28 (gradient trời bão); các khung còn lại ≤ 4,64% | gradient tối rộng của trời/sương trong 8 bit | dither mạnh hơn ở vùng trời; hoặc trung gian 10 bit |
+
+V08 theo nhãn:
+
+| nhãn | tương phản |
+|---|---|
+| "1991" | 3,63 |
+| tiêu đề | 3,87 |
+| "1973" | 3,45 |
+| "1974" | 2,02 |
+| "lost 14.7%" | 1,44 |
+| "12.3%" | 1,78 |
+| "$461,000" | 3,15 |
+
+**Hồi quy thật khác cần báo:**
+- **A14 / C13 / R03:** ASR nghe "1991" thành "1990" trong câu cold open. Ở M2, câu này đạt với cùng lần đọc. Nhiều khả năng do lớp âm thanh vật lý (nước đang tắt, giọt nước) dưới đúng từ quyết định. Sửa: duck lớp vật lý dưới giọng, giống cách nhạc đã được duck.
+- **A08:** vùng duck 1–4 kHz không đo được trong đoạn này (−0,34 dB). Nhạc bị lớp mưa/gió che.
+- **A15:** act 2 đo được 129 wpm. Ba câu bão đọc chậm; chỉ có 3 câu nên không đại diện cho cả hồi.
+- **R06:** chỉ 14% cut thấy được trong khung. Luật đo đột biến so với trung vị, mà hình lúc này chuyển động liên tục nên trung vị đã cao.
+- **V05/V06/V07** đo bằng các trường khai báo của M2 (subframes trong render-log) mà lookdev ghi theo dạng khác, nên V07 báo subframes = 0. Đây là lỗi khai báo của tôi, không phải số đo hình.
+
+**ĐẠT:**
+- F01–F06, F09. Phụ đề: sửa lỗi cue < 1 s bằng cách không để đoạn mồ côi.
+- A01–A07, A10, A13.
+- V01, V03, V09.
+- C01–C04, C07, C10, C11.
+- S01, S03, S08, S09.
+- R02, R04.
+
+## Sửa lỗi đã biết (M3) rơi vào hai đoạn lookdev
+- F03 (số khung): **ĐẠT**.
+- F09: **ĐẠT**.
+- C13 (hiện số đúng lúc nói, theo ASR): hiện đúng mốc; còn "1991" không nghe được, xem trên.
+- V08/C14: **vẫn trượt**, chuyển sang giải pháp nhãn sạch.
+- Các lỗi khác (a1-who trống, a1-geo bị cắt, ILLUSTRATIVE xa số, "$1 million, in 1966 dollars", mốc 0 cho chuỗi cột) nằm ngoài hai đoạn; để M3 như đã giao.
+
+## Tự đánh giá hướng hình (để chủ dự án duyệt)
+**Được:**
+- Có thế giới nhất quán, chiều sâu thật và parallax.
+- Ánh sáng kể chuyện: bình minh → time-lapse mặt trời → hoàng hôn → bão.
+- Rack focus giữa hai bể đúng bước ngoặt; khối 1974 lún hai nhịp (lỗ vốn rồi lạm phát).
+- Mọi khung đều có chuyển động vật lý có lý do.
+
+**Chưa được:**
+- Chất lỏng hổ phách nhạt thành màu kem dưới ánh sáng lạnh; màu nhân vật cần giữ tốt hơn.
+- Mặt đất và đá thiếu chi tiết bề mặt ở cận cảnh.
+- Nhãn chữ chưa đạt tương phản.
+- Tốc độ render trên CPU vượt ngân sách.
+
+**DỪNG**, chờ chủ dự án duyệt hướng hình.

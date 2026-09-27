@@ -1,0 +1,73 @@
+{"seconds":98.6,"samples":423,"pixelSamples":79,"summary":{"C01":0,"C02":0,"C03":0,"C04":0,"C05":52,"C06":52,"C07":0,"C15":9160,"C10":0,"C12":[{"scene":"co-broke","start":7.7,"durationS":2.4,"maxW":1,"maxH":0.918},{"scene":"a2-7374","start":20.9,"durationS":2.1,"maxW":0.811,"maxH":0.741}],"S08":0,"S09":"","V02":"","V03":0,"V08":103,"V11":15,"C14":61,"V04":""}}
+F01  PASS       0.1s  
+F02  PASS       0.2s  
+F03  PASS       0.0s  
+F04  PASS       0.0s  
+F05  PASS       7.0s  
+F06  PASS       0.2s  
+F07  FAIL       0.0s  duration s=42.3
+F08  FAIL       8.3s  worst banding (%)=15.026042
+F09  PASS       0.0s  
+F10  FAIL       0.0s  chapters=2
+A01  PASS       0.7s  
+A02  PASS       0.0s  
+A03  PASS       0.0s  
+A04  PASS       0.5s  
+A05  PASS       0.0s  
+A06  PASS       1.3s  
+A07  PASS       0.4s  
+A08  FAIL       0.1s  median 1-4 kHz drop dB=-0.337351; median band-limited excess dB=1.046188
+A09  FAIL       0.7s  silences 0.8-1.5 s=2
+A10  PASS       0.5s  
+A11  FAIL       0.1s  events measured=6
+A12  FAIL       2.3s  accents=2; accents confirmed by onset (%)=50.0
+A13  PASS      24.0s  
+A14  FAIL      60.2s  key words missing=1
+A15  FAIL       0.0s  wpm act act2=129.060579
+S01  PASS       0.0s  
+S02  FAIL       0.0s  no-tax in method card=False; no-fee in method card=False; no-tax on screen elsewhere=False; no-fee on screen elsewhere=False
+S03  PASS       0.2s  
+S04  FAIL       0.0s  used years missing in a source=3
+S05  FAIL       0.0s  geomean claims shown=0
+S06  FAIL       0.0s  start years shown in act 3=0
+S07  FAIL       0.0s  orphan numbers on screen=1; unregistered numbers in narration=2
+S08  PASS       0.0s  
+S09  PASS       0.0s  
+S10  FAIL       0.0s  "US only" stated=False; "history, not a forecast" stated=False
+S11  FAIL       0.0s  core claims=0
+S12  FAIL       0.0s  new numbers=6
+S13  FAIL       0.0s  sentence length CV=0.341362
+S14  FAIL       0.2s  ad breaks=0
+S15  FAIL       0.0s  act order=['cold-open', 'ident', 'act2']; outro s=None; total s=42.313
+R01  FAIL       0.3s  r music level=0.330959; acts with climax peak=0
+R02  PASS       0.0s  
+R03  FAIL       0.1s  shortest pause s=0.15; pauses < 1.0 s=1; decisive numbers not heard=1
+R04  PASS       0.0s  
+R05  FAIL       0.0s  act-2 scenes before climax=0
+R06  FAIL       5.1s  cuts visible in picture (%)=14.285714
+V01  PASS       0.0s  
+V02  FAIL       0.0s  level-1 placed (%)=14.393939
+V03  PASS       0.0s  
+V04  FAIL       0.0s  shapes differ=False
+V05  FAIL       6.5s  worst ease ratio=0.86; linear moves=1; anticipation in moves ≥1 s (%)=0.0; overshoot in moves ≥1 s (%)=0.0; overshoot > 8%=1; peak |a| fw/s²=92.48
+V06  FAIL       0.0s  racks tied to turns=2
+V07  FAIL       0.0s  subframes=0; subframe setting justified=False; moves measured=0; median blur ratio=None
+V08  FAIL       0.0s  worst text contrast=1.44; samples below 4.5:1=103
+V09  PASS       0.0s  
+V10  FAIL       5.2s  verified match cuts=0; verified J/L cuts=0
+V11  FAIL       0.0s  text collisions=15
+C01  PASS       0.0s  
+C02  PASS       0.0s  
+C03  PASS       0.0s  
+C04  PASS       0.0s  
+C05  FAIL       0.0s  frames flagged=52
+C06  FAIL       0.0s  frames flagged=52
+C07  PASS       0.0s  
+C10  PASS       0.0s  
+C11  PASS       0.0s  
+C12  FAIL       0.0s  split-view runs=2
+C13  FAIL       0.0s  spoken numbers not in ASR=1
+C14  FAIL       0.0s  text samples not legible at 25%=61
+C15  FAIL       0.0s  frames flagged=9160
+P01  MISSING    0.0s    artifact missing: out/package/thumb-1.png
+{"PASS": 32, "FAIL": 38, "MISSING": 1, "ERROR": 0}

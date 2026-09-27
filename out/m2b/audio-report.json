@@ -1,0 +1,45 @@
+{
+ "integratedLUFS": -14.0,
+ "LRA": 9.0,
+ "truePeakDbfs": -1.3,
+ "limiterMinGainDb": -1.23,
+ "moves": [
+  {
+   "t": 1.5,
+   "peakSpeed": 0.314
+  },
+  {
+   "t": 8.13,
+   "peakSpeed": 0.281
+  },
+  {
+   "t": 13.1,
+   "peakSpeed": 0.06
+  },
+  {
+   "t": 15.33,
+   "peakSpeed": 0.122
+  },
+  {
+   "t": 18.53,
+   "peakSpeed": 0.102
+  }
+ ],
+ "accents": 2,
+ "beats": 64,
+ "silences": [
+  {
+   "t": 11.1,
+   "dur": 1.09,
+   "why": "let \"1991\" land",
+   "after": "co-broke.1"
+  },
+  {
+   "t": 14.31,
+   "dur": 1.3,
+   "why": "the open question hangs before the title",
+   "after": "co-question.1"
+  }
+ ],
+ "events": 7
+}

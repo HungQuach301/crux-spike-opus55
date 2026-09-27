@@ -1,0 +1,41 @@
+{
+ "note": "render 1 = all 1269 frames; render 2 = frames 950-1268 (last shot re-framed: the $461,000 label was out of frame); the picture splices render 1 (0-949) and render 2",
+ "render1": {
+  "workers": 3,
+  "frames": 1269,
+  "subframesHistogram": {
+   "4": 377,
+   "6": 754,
+   "8": 138
+  },
+  "shutter": 0.5,
+  "wallSeconds": 5537.3,
+  "secondsPerVideoSecond": 130.9,
+  "encodeSeconds": 139.4,
+  "workerSeconds": [
+   5536.6,
+   5370.4,
+   5494.6
+  ]
+ },
+ "render2": {
+  "workers": 3,
+  "frames": 319,
+  "subframesHistogram": {
+   "6": 319
+  },
+  "shutter": 0.5,
+  "wallSeconds": 1602.5,
+  "secondsPerVideoSecond": 150.71,
+  "encodeSeconds": 35,
+  "workerSeconds": [
+   1581.5,
+   1602,
+   1547.2
+  ]
+ },
+ "frames": 1269,
+ "wallSecondsBothRenders": 7139.8,
+ "secondsPerVideoSecond": 130.9,
+ "finalEncodeSeconds": 135.1
+}

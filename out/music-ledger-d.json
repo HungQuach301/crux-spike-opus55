@@ -13,6 +13,12 @@
    "licence": "original work of this project"
   },
   {
+   "name": "physical sounds of the lookdev world: water, wind, rain, stone, thunder, drips",
+   "origin": "synthesised in audio/d_m2_audio.py (physical)",
+   "seed": 20260926,
+   "licence": "original work of this project"
+  },
+  {
    "name": "voice",
    "origin": "ElevenLabs text-to-speech, voice Eric (premade), eleven_v3 / eleven_multilingual_v2",
    "licence": "ElevenLabs output under the account's plan; provisional voice (not decision #158)"

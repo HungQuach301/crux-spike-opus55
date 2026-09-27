@@ -1,0 +1,31 @@
+1
+00:00:01,900 --> 00:00:05,640
+Two retirees with the same balance, the
+same withdrawals and
+
+2
+00:00:05,660 --> 00:00:07,140
+the same average return.
+
+3
+00:00:07,540 --> 00:00:11,020
+One ran out of money in 1991.
+
+4
+00:00:12,270 --> 00:00:14,230
+So what decided it?
+
+5
+00:00:17,143 --> 00:00:23,103
+After inflation, stocks and bonds both
+lose money in 1973 and 1974.
+
+6
+00:00:23,503 --> 00:00:30,503
+In 1974 alone, the portfolio loses 14.7%,
+while prices rise 12.3%.
+
+7
+00:00:31,863 --> 00:00:38,863
+In 1966 dollars, the 1966 retiree ends
+1974 with $461,000.

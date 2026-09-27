@@ -1,0 +1,12 @@
+sfx events 7
+{"integratedLUFS": -14.0, "LRA": 9.0, "truePeakDbfs": -1.3, "limiterMinGainDb": -1.23, "accents": 2, "beats": 64, "events": 7}
+peaks [] valleys []
+{"video": "out/m2b/lookdev.mp4", "pairs": 1268, "method": "luma, gblur sigma 1.5 (grain removed), |dY| > 4 codes", "at0.5": {"threshold%": 0.5, "framesChanged%": 81.4, "longestStillRun_s": 1.33}, "at0.1": {"threshold%": 0.1, "framesChanged%": 96.2, "longestStillRun_s": 1.07}, "medianChangedPixels%": 1.643}
+board style-1-world
+board style-2-light
+board style-3-lenses
+board style-4-camera
+board style-5-text
+board style-6-materials
+-rw-r--r-- 1 root root  75563923 Sep 27 03:07 out/m2b/lookdev.mp4
+-rw-r--r-- 1 root root 107693427 Sep 27 03:04 out/m2b/root/out/video.mp4

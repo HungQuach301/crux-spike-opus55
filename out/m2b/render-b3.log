@@ -1,0 +1,8 @@
+worker 1057-1164: frame 1057 (24 s)
+worker 950-1057: frame 950 (25 s)
+worker 1164-1269: frame 1164 (25 s)
+worker 950-1057: frame 1010 (904 s)
+worker 1164-1269: frame 1224 (914 s)
+worker 1057-1164: frame 1117 (954 s)
+{"workers":3,"frames":319,"subframesHistogram":{"6":319},"shutter":0.5,"wallSeconds":1602.5,"secondsPerVideoSecond":150.71,"encodeSeconds":35,"workerSeconds":[1581.5,1602,1547.2]}
+EXIT 0

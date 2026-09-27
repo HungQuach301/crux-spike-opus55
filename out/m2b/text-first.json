@@ -1,0 +1,58 @@
+{
+ "cb-1991": {
+  "t": 10.1667,
+  "x": 1200.6,
+  "level": 1,
+  "role": "label",
+  "claims": 1
+ },
+ "id-title": {
+  "t": 15.2333,
+  "x": 960,
+  "level": 1,
+  "role": "label",
+  "claims": 0
+ },
+ "b1-1973": {
+  "t": 20.7667,
+  "x": 955.4,
+  "level": 2,
+  "role": "label",
+  "claims": 1
+ },
+ "b1-1974": {
+  "t": 22.0333,
+  "x": 958,
+  "level": 2,
+  "role": "label",
+  "claims": 1
+ },
+ "b2-loss": {
+  "t": 26.5,
+  "x": 1018.5,
+  "level": 1,
+  "role": "label",
+  "claims": 1
+ },
+ "b2-infl": {
+  "t": 29.9,
+  "x": 1023.7,
+  "level": 2,
+  "role": "label",
+  "claims": 1
+ },
+ "b3-bal": {
+  "t": 38.1333,
+  "x": 997.1,
+  "level": 1,
+  "role": "label",
+  "claims": 1
+ },
+ "b3-basis": {
+  "t": 38.1333,
+  "x": 997.1,
+  "level": 3,
+  "role": "label",
+  "claims": 0
+ }
+}
