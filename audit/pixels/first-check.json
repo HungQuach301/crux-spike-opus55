@@ -1,0 +1,131 @@
+[
+ {
+  "tid": "a2-bal74-l1",
+  "declaredFirst": 259.867,
+  "text": "$461,000",
+  "ocrAfter": "$461,000",
+  "p95Rise": 206.0,
+  "opacityBefore": 0,
+  "opacityAfter": 1
+ },
+ {
+  "tid": "a2-infl-v",
+  "declaredFirst": 233.933,
+  "text": "6.2% a year",
+  "ocrAfter": "6.2% a year",
+  "p95Rise": 206.0,
+  "opacityBefore": 0,
+  "opacityAfter": 1
+ },
+ {
+  "tid": "a2-climax-l1",
+  "declaredFirst": 376.933,
+  "text": "$1.96 million",
+  "ocrAfter": "$1.96 million",
+  "p95Rise": 1.0,
+  "opacityBefore": 0,
+  "opacityAfter": 1
+ },
+ {
+  "tid": "ru-40",
+  "declaredFirst": 71.633,
+  "text": "$40,000",
+  "ocrAfter": "940, 000",
+  "p95Rise": 186.0,
+  "opacityBefore": 0,
+  "opacityAfter": 1
+ },
+ {
+  "tid": "mr-t20",
+  "declaredFirst": 117.6,
+  "text": "20%",
+  "verdict": "off frame at +0.5 s",
+  "box": [
+   -135,
+   537,
+   -71,
+   564
+  ]
+ },
+ {
+  "tid": "a3-1969-v",
+  "declaredFirst": 555.633,
+  "text": "5.6%",
+  "ocrAfter": "2.6%",
+  "p95Rise": 117.0,
+  "opacityBefore": 0,
+  "opacityAfter": 1
+ },
+ {
+  "tid": "am-66",
+  "declaredFirst": 160.033,
+  "text": "9.7%",
+  "ocrAfter": "9.7%",
+  "p95Rise": 0.0,
+  "opacityBefore": null,
+  "opacityAfter": 1
+ },
+ {
+  "tid": "a2-mirror-boom-ax1",
+  "declaredFirst": 361.167,
+  "text": "1995",
+  "ocrAfter": "1995",
+  "p95Rise": 1.0,
+  "opacityBefore": null,
+  "opacityAfter": 1
+ },
+ {
+  "tid": "a3-avg-callback-a0",
+  "declaredFirst": 620.567,
+  "text": "1966",
+  "ocrAfter": "1966",
+  "p95Rise": 162.0,
+  "opacityBefore": null,
+  "opacityAfter": 1
+ },
+ {
+  "tid": "rs-a1",
+  "declaredFirst": 76.533,
+  "text": "1995",
+  "ocrAfter": "1995",
+  "p95Rise": 161.0,
+  "opacityBefore": null,
+  "opacityAfter": 1
+ },
+ {
+  "tid": "a3-four-1965",
+  "declaredFirst": 527.233,
+  "text": "1965",
+  "ocrAfter": "1965",
+  "p95Rise": 191.0,
+  "opacityBefore": 0,
+  "opacityAfter": 1
+ },
+ {
+  "tid": "a2-gains80-l1",
+  "declaredFirst": 348.867,
+  "text": "8",
+  "ocrAfter": ":",
+  "p95Rise": 189.0,
+  "opacityBefore": null,
+  "opacityAfter": 1
+ },
+ {
+  "tid": "as-t1",
+  "declaredFirst": 53.9,
+  "text": "Standard & Poor's 500",
+  "ocrAfter": "Standard & Poor's 500",
+  "p95Rise": 202.0,
+  "opacityBefore": 0,
+  "opacityAfter": 1
+ },
+ {
+  "tid": "av-sub",
+  "declaredFirst": 153.733,
+  "text": "1966 retiree, average return per year",
+  "ocrAfter": "1966 retiree, average return per year",
+  "p95Rise": 154.0,
+  "opacityBefore": 0,
+  "opacityAfter": 1
+ }
+]

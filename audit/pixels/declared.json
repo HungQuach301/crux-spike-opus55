@@ -1,0 +1,1648 @@
+[
+ {
+  "t": 5.466666666666667,
+  "texts": [
+   {
+    "tid": "co-lab-1966",
+    "role": "label",
+    "text": "1966 retiree",
+    "box": [
+     1579,
+     441,
+     1751,
+     473
+    ],
+    "claims": [
+     "y1966"
+    ],
+    "opacity": 1
+   },
+   {
+    "tid": "co-lab-mirror",
+    "role": "label",
+    "text": "mirror retiree",
+    "box": [
+     1579,
+     347,
+     1782,
+     379
+    ],
+    "claims": [],
+    "opacity": 1
+   },
+   {
+    "tid": "co-a0",
+    "role": "axis-label",
+    "text": "1966",
+    "box": [
+     329,
+     895,
+     397,
+     927
+    ],
+    "claims": [
+     "ax1966"
+    ],
+    "opacity": 1
+   },
+   {
+    "tid": "co-a1",
+    "role": "axis-label",
+    "text": "1995",
+    "box": [
+     1523,
+     895,
+     1591,
+     927
+    ],
+    "claims": [
+     "ax1995"
+    ],
+    "opacity": 1
+   },
+   {
+    "tid": "co-l1",
+    "role": "label",
+    "text": "Two retirees",
+    "box": [
+     451,
+     326,
+     829,
+     394
+    ],
+    "claims": [],
+    "opacity": 1
+   },
+   {
+    "tid": "co-same-0",
+    "role": "label",
+    "text": "Same balance",
+    "box": [
+     470,
+     405,
+     669,
+     437
+    ],
+    "claims": [],
+    "opacity": 1
+   },
+   {
+    "tid": "co-same-1",
+    "role": "label",
+    "text": "Same withdrawals",
+    "box": [
+     470,
+     451,
+     737,
+     483
+    ],
+    "claims": [],
+    "opacity": 1
+   }
+  ]
+ },
+ {
+  "t": 9.1,
+  "texts": [
+   {
+    "tid": "cb-lab-1966",
+    "role": "label",
+    "text": "1966 retiree",
+    "box": [
+     984,
+     792,
+     1156,
+     820
+    ],
+    "claims": [
+     "y1966"
+    ],
+    "opacity": 1
+   },
+   {
+    "tid": "cb-lab-mirror",
+    "role": "label",
+    "text": "mirror retiree",
+    "box": [
+     771,
+     385,
+     962,
+     413
+    ],
+    "claims": [],
+    "opacity": 1
+   },
+   {
+    "tid": "cb-a0",
+    "role": "axis-label",
+    "text": "1966",
+    "box": [
+     388,
+     792,
+     459,
+     820
+    ],
+    "claims": [
+     "ax1966"
+    ],
+    "opacity": 1
+   },
+   {
+    "tid": "cb-a1",
+    "role": "axis-label",
+    "text": "1995",
+    "box": [
+     1510,
+     792,
+     1579,
+     820
+    ],
+    "claims": [
+     "ax1995"
+    ],
+    "opacity": 1
+   },
+   {
+    "tid": "cb-l1a",
+    "role": "label",
+    "text": "With the same withdrawals",
+    "box": [
+     270,
+     334,
+     1010,
+     386
+    ],
+    "claims": [],
+    "opacity": 1
+   }
+  ]
+ },
+ {
+  "t": 50.766666666666666,
+  "texts": [
+   {
+    "tid": "mx-badge",
+    "role": "badge",
+    "text": "ILLUSTRATIVE",
+    "box": [
+     1288,
+     467,
+     1524,
+     512
+    ],
+    "claims": [],
+    "opacity": 1
+   },
+   {
+    "tid": "mx-l1",
+    "role": "label",
+    "text": "The portfolio",
+    "box": [
+     439,
+     330,
+     841,
+     390
+    ],
+    "claims": [],
+    "opacity": 1
+   },
+   {
+    "tid": "mx-s",
+    "role": "label",
+    "text": "60% stocks",
+    "box": [
+     1300,
+     527,
+     1553,
+     569
+    ],
+    "claims": [
+     "w60"
+    ],
+    "opacity": 1
+   },
+   {
+    "tid": "mx-b",
+    "role": "label",
+    "text": "40% bonds",
+    "box": [
+     1300,
+     727,
+     1546,
+     769
+    ],
+    "claims": [
+     "w40"
+    ],
+    "opacity": 1
+   }
+  ]
+ },
+ {
+  "t": 130.96666666666667,
+  "texts": [
+   {
+    "tid": "mr-z66",
+    "role": "axis-label",
+    "text": "0%",
+    "box": [
+     173,
+     638,
+     219,
+     664
+    ],
+    "claims": [
+     "axPct0"
+    ],
+    "opacity": 1
+   },
+   {
+    "tid": "mr-t20",
+    "role": "axis-label",
+    "text": "20%",
+    "box": [
+     155,
+     538,
+     219,
+     564
+    ],
+    "claims": [
+     "axPct20"
+    ],
+    "opacity": 1
+   },
+   {
+    "tid": "mr-zm",
+    "role": "axis-label",
+    "text": "0%",
+    "box": [
+     173,
+     953,
+     219,
+     979
+    ],
+    "claims": [
+     "axPct0"
+    ],
+    "opacity": 1
+   },
+   {
+    "tid": "mr-66a",
+    "role": "axis-label",
+    "text": "1966",
+    "box": [
+     282,
+     428,
+     352,
+     456
+    ],
+    "claims": [
+     "ax1966"
+    ],
+    "opacity": 1
+   },
+   {
+    "tid": "mr-66b",
+    "role": "axis-label",
+    "text": "1995",
+    "box": [
+     1558,
+     428,
+     1628,
+     456
+    ],
+    "claims": [
+     "ax1995"
+    ],
+    "opacity": 1
+   },
+   {
+    "tid": "mr-ma",
+    "role": "label",
+    "text": "1995 first",
+    "box": [
+     302,
+     982,
+     438,
+     1010
+    ],
+    "claims": [
+     "y1995"
+    ],
+    "opacity": 1
+   },
+   {
+    "tid": "mr-mb",
+    "role": "label",
+    "text": "1966 last",
+    "box": [
+     1639,
+     919,
+     1769,
+     947
+    ],
+    "claims": [
+     "y1966"
+    ],
+    "opacity": 1
+   },
+   {
+    "tid": "mr-t66",
+    "role": "label",
+    "text": "first retiree",
+    "box": [
+     300,
+     518,
+     460,
+     546
+    ],
+    "claims": [],
+    "opacity": 1
+   },
+   {
+    "tid": "mr-tm",
+    "role": "label",
+    "text": "mirror retiree",
+    "box": [
+     1340,
+     698,
+     1530,
+     726
+    ],
+    "claims": [],
+    "opacity": 1
+   },
+   {
+    "tid": "mr-l1b",
+    "role": "label",
+    "text": "The mirror reads it backwards",
+    "box": [
+     900,
+     336,
+     1660,
+     384
+    ],
+    "claims": [],
+    "opacity": 1
+   }
+  ]
+ },
+ {
+  "t": 138.86666666666667,
+  "texts": [
+   {
+    "tid": "sw-l1",
+    "role": "label",
+    "text": "Same dollars out, every year",
+    "box": [
+     250,
+     334,
+     1030,
+     386
+    ],
+    "claims": [],
+    "opacity": 1
+   },
+   {
+    "tid": "sw-a",
+    "role": "label",
+    "text": "1966 retiree",
+    "box": [
+     200,
+     938,
+     372,
+     966
+    ],
+    "claims": [
+     "y1966"
+    ],
+    "opacity": 1
+   },
+   {
+    "tid": "sw-b",
+    "role": "label",
+    "text": "mirror retiree",
+    "box": [
+     1000,
+     938,
+     1190,
+     966
+    ],
+    "claims": [],
+    "opacity": 1
+   },
+   {
+    "tid": "sw-c",
+    "role": "label",
+    "text": "inflation in calendar order for both",
+    "box": [
+     1017,
+     436,
+     1543,
+     466
+    ],
+    "claims": [],
+    "opacity": 1
+   }
+  ]
+ },
+ {
+  "t": 199.56666666666666,
+  "texts": [
+   {
+    "tid": "po-r0",
+    "role": "label",
+    "text": "Same money in",
+    "box": [
+     300,
+     439,
+     610,
+     478
+    ],
+    "claims": [],
+    "opacity": 1
+   },
+   {
+    "tid": "po-r1",
+    "role": "label",
+    "text": "Same money out",
+    "box": [
+     300,
+     509,
+     639,
+     548
+    ],
+    "claims": [],
+    "opacity": 1
+   },
+   {
+    "tid": "po-r2",
+    "role": "label",
+    "text": "Same average",
+    "box": [
+     300,
+     579,
+     588,
+     618
+    ],
+    "claims": [],
+    "opacity": 1
+   },
+   {
+    "tid": "po-l1",
+    "role": "label",
+    "text": "Only the order differs",
+    "box": [
+     307,
+     720,
+     973,
+     780
+    ],
+    "claims": [],
+    "opacity": 1
+   }
+  ]
+ },
+ {
+  "t": 206.7,
+  "texts": [
+   {
+    "tid": "a2-est-ax0",
+    "role": "axis-label",
+    "text": "1966",
+    "box": [
+     297,
+     899,
+     367,
+     927
+    ],
+    "claims": [
+     "ax1966"
+    ],
+    "opacity": 1
+   },
+   {
+    "tid": "a2-est-ax1",
+    "role": "axis-label",
+    "text": "1995",
+    "box": [
+     1553,
+     899,
+     1622,
+     927
+    ],
+    "claims": [
+     "ax1995"
+    ],
+    "opacity": 1
+   },
+   {
+    "tid": "a2-est-lab-1966",
+    "role": "label",
+    "text": "first retiree",
+    "box": [
+     382,
+     649,
+     579,
+     690
+    ],
+    "claims": [],
+    "opacity": 1
+   },
+   {
+    "tid": "a2-est-lab-mirror",
+    "role": "label",
+    "text": "mirror retiree",
+    "box": [
+     382,
+     507,
+     612,
+     547
+    ],
+    "claims": [],
+    "opacity": 1
+   },
+   {
+    "tid": "a2-est-l1",
+    "role": "label",
+    "text": "Year by year",
+    "box": [
+     1061,
+     326,
+     1499,
+     394
+    ],
+    "claims": [],
+    "opacity": 1
+   },
+   {
+    "tid": "a2-est-sub",
+    "role": "label",
+    "text": "both balances in real dollars",
+    "box": [
+     1063,
+     416,
+     1497,
+     446
+    ],
+    "claims": [],
+    "opacity": 1
+   }
+  ]
+ },
+ {
+  "t": 219.73333333333332,
+  "texts": [
+   {
+    "tid": "a2-y1-n66",
+    "role": "label",
+    "text": "1966 retiree",
+    "box": [
+     618,
+     787,
+     801,
+     817
+    ],
+    "claims": [
+     "y1966"
+    ],
+    "opacity": 1
+   },
+   {
+    "tid": "a2-y1-v66",
+    "role": "label",
+    "text": "loses 4.8%",
+    "box": [
+     611,
+     830,
+     807,
+     864
+    ],
+    "claims": [
+     "ret1966"
+    ],
+    "opacity": 1
+   },
+   {
+    "tid": "a2-y1-nm",
+    "role": "label",
+    "text": "mirror retiree",
+    "box": [
+     1129,
+     787,
+     1332,
+     817
+    ],
+    "claims": [],
+    "opacity": 0.93
+   },
+   {
+    "tid": "a2-y1-l1",
+    "role": "label",
+    "text": "Year one",
+    "box": [
+     486,
+     326,
+     794,
+     394
+    ],
+    "claims": [],
+    "opacity": 1
+   }
+  ]
+ },
+ {
+  "t": 248.13333333333333,
+  "texts": [
+   {
+    "tid": "a2-1974inf-l1",
+    "role": "label",
+    "text": "1974",
+    "box": [
+     516,
+     308,
+     764,
+     412
+    ],
+    "claims": [
+     "y1974"
+    ],
+    "opacity": 1
+   }
+  ]
+ },
+ {
+  "t": 302.03333333333336,
+  "texts": [
+   {
+    "tid": "a2-7576n-va",
+    "role": "label",
+    "text": "+23.6%",
+    "box": [
+     1023,
+     354,
+     1194,
+     395
+    ],
+    "claims": [
+     "ret1975"
+    ],
+    "opacity": 1
+   },
+   {
+    "tid": "a2-7576n-ya",
+    "role": "label",
+    "text": "1975",
+    "box": [
+     1071,
+     862,
+     1146,
+     894
+    ],
+    "claims": [
+     "y1975"
+    ],
+    "opacity": 1
+   },
+   {
+    "tid": "a2-7576n-yb",
+    "role": "label",
+    "text": "1976",
+    "box": [
+     1474,
+     862,
+     1550,
+     894
+    ],
+    "claims": [
+     "y1976"
+    ],
+    "opacity": 1
+   },
+   {
+    "tid": "a2-7576n-l1",
+    "role": "label",
+    "text": "Two strong years",
+    "box": [
+     370,
+     330,
+     910,
+     390
+    ],
+    "claims": [],
+    "opacity": 1
+   },
+   {
+    "tid": "a2-7576n-sub",
+    "role": "label",
+    "text": "portfolio return",
+    "box": [
+     516,
+     425,
+     764,
+     457
+    ],
+    "claims": [],
+    "opacity": 1
+   }
+  ]
+ },
+ {
+  "t": 343.5,
+  "texts": [
+   {
+    "tid": "a2-1982w-cap2",
+    "role": "label",
+    "text": "withdrawal as a share of the balance",
+    "box": [
+     890,
+     940,
+     1419,
+     968
+    ],
+    "claims": [],
+    "opacity": 1
+   }
+  ]
+ },
+ {
+  "t": 349.56666666666666,
+  "texts": [
+   {
+    "tid": "a2-gains80-cr",
+    "role": "label",
+    "text": "return",
+    "box": [
+     364,
+     464,
+     453,
+     493
+    ],
+    "claims": [],
+    "opacity": 1
+   },
+   {
+    "tid": "a2-gains80-l1",
+    "role": "label",
+    "text": "8",
+    "box": [
+     1241,
+     274,
+     1319,
+     386
+    ],
+    "claims": [
+     "gainsFell"
+    ],
+    "opacity": 1
+   },
+   {
+    "tid": "a2-gains80-sub",
+    "role": "label",
+    "text": "big-gain years where the balance still fell",
+    "box": [
+     963,
+     408,
+     1597,
+     438
+    ],
+    "claims": [],
+    "opacity": 1
+   }
+  ]
+ },
+ {
+  "t": 356.1666666666667,
+  "texts": [
+   {
+    "tid": "a2-gains80-l10",
+    "role": "label",
+    "text": "gain above 10%",
+    "box": [
+     1326,
+     576,
+     1554,
+     604
+    ],
+    "claims": [
+     "gt10"
+    ],
+    "opacity": 1
+   },
+   {
+    "tid": "a2-gains80-cr",
+    "role": "label",
+    "text": "return",
+    "box": [
+     248,
+     454,
+     336,
+     482
+    ],
+    "claims": [],
+    "opacity": 1
+   },
+   {
+    "tid": "a2-gains80-cw",
+    "role": "label",
+    "text": "taken by the withdrawal",
+    "box": [
+     1326,
+     667,
+     1671,
+     695
+    ],
+    "claims": [],
+    "opacity": 1
+   },
+   {
+    "tid": "a2-gains80-cw2",
+    "role": "label",
+    "text": "share of the balance",
+    "box": [
+     1326,
+     707,
+     1621,
+     735
+    ],
+    "claims": [],
+    "opacity": 1
+   },
+   {
+    "tid": "a2-gains80-l1",
+    "role": "label",
+    "text": "8",
+    "box": [
+     1241,
+     274,
+     1319,
+     386
+    ],
+    "claims": [
+     "gainsFell"
+    ],
+    "opacity": 1
+   },
+   {
+    "tid": "a2-gains80-sub",
+    "role": "label",
+    "text": "big-gain years where the balance still fell",
+    "box": [
+     963,
+     408,
+     1597,
+     438
+    ],
+    "claims": [],
+    "opacity": 1
+   },
+   {
+    "tid": "a2-gains80-who2",
+    "role": "label",
+    "text": "1966 retiree",
+    "box": [
+     1194,
+     178,
+     1366,
+     206
+    ],
+    "claims": [
+     "y1966"
+    ],
+    "opacity": 1
+   },
+   {
+    "tid": "a2-gains80-fell",
+    "role": "label",
+    "text": "balance fell",
+    "box": [
+     1326,
+     762,
+     1493,
+     790
+    ],
+    "claims": [],
+    "opacity": 1
+   }
+  ]
+ },
+ {
+  "t": 367.6333333333333,
+  "texts": [
+   {
+    "tid": "a2-climb-ax0",
+    "role": "axis-label",
+    "text": "1966",
+    "box": [
+     393,
+     847,
+     463,
+     876
+    ],
+    "claims": [
+     "ax1966"
+    ],
+    "opacity": 1
+   },
+   {
+    "tid": "a2-climb-ax1",
+    "role": "axis-label",
+    "text": "1995",
+    "box": [
+     1457,
+     847,
+     1526,
+     876
+    ],
+    "claims": [
+     "ax1995"
+    ],
+    "opacity": 1
+   },
+   {
+    "tid": "a2-climb-lab-1966",
+    "role": "label",
+    "text": "first retiree",
+    "box": [
+     736,
+     705,
+     933,
+     745
+    ],
+    "claims": [],
+    "opacity": 1
+   },
+   {
+    "tid": "a2-climb-lab-mirror",
+    "role": "label",
+    "text": "mirror retiree",
+    "box": [
+     736,
+     458,
+     967,
+     498
+    ],
+    "claims": [],
+    "opacity": 1
+   },
+   {
+    "tid": "a2-climb-l1",
+    "role": "label",
+    "text": "The gap widens",
+    "box": [
+     393,
+     330,
+     887,
+     390
+    ],
+    "claims": [],
+    "opacity": 1
+   }
+  ]
+ },
+ {
+  "t": 380.1,
+  "texts": [
+   {
+    "tid": "a2-climax-ax0",
+    "role": "axis-label",
+    "text": "1966",
+    "box": [
+     200,
+     982,
+     270,
+     1010
+    ],
+    "claims": [
+     "ax1966"
+    ],
+    "opacity": 1
+   },
+   {
+    "tid": "a2-climax-ax1",
+    "role": "axis-label",
+    "text": "1995",
+    "box": [
+     1236,
+     982,
+     1305,
+     1010
+    ],
+    "claims": [
+     "ax1995"
+    ],
+    "opacity": 1
+   },
+   {
+    "tid": "a2-climax-lab-1966",
+    "role": "label",
+    "text": "first retiree",
+    "box": [
+     1004,
+     889,
+     1201,
+     929
+    ],
+    "claims": [],
+    "opacity": 1
+   },
+   {
+    "tid": "a2-climax-lab-mirror",
+    "role": "label",
+    "text": "mirror retiree",
+    "box": [
+     1004,
+     399,
+     1235,
+     440
+    ],
+    "claims": [],
+    "opacity": 1
+   },
+   {
+    "tid": "a2-climax-l1",
+    "role": "label",
+    "text": "$1.96 million",
+    "box": [
+     664,
+     205,
+     1256,
+     295
+    ],
+    "claims": [
+     "gap86"
+    ],
+    "opacity": 1
+   },
+   {
+    "tid": "a2-climax-badge",
+    "role": "badge",
+    "text": "ILLUSTRATIVE",
+    "box": [
+     1288,
+     231,
+     1524,
+     276
+    ],
+    "claims": [],
+    "opacity": 1
+   },
+   {
+    "tid": "a2-climax-basis",
+    "role": "label",
+    "text": "in 1966 dollars",
+    "box": [
+     841,
+     315,
+     1079,
+     347
+    ],
+    "claims": [
+     "y1966"
+    ],
+    "opacity": 1
+   }
+  ]
+ },
+ {
+  "t": 438.26666666666665,
+  "texts": [
+   {
+    "tid": "a2-mirror-real-refl",
+    "role": "label",
+    "text": "starting balance",
+    "box": [
+     1510,
+     834,
+     1745,
+     863
+    ],
+    "claims": [],
+    "opacity": 1
+   },
+   {
+    "tid": "a2-mirror-real-badge",
+    "role": "badge",
+    "text": "ILLUSTRATIVE",
+    "box": [
+     488,
+     219,
+     724,
+     264
+    ],
+    "claims": [],
+    "opacity": 1
+   },
+   {
+    "tid": "a2-mirror-real-l1",
+    "role": "label",
+    "text": "$1.44 million",
+    "box": [
+     340,
+     315,
+     940,
+     405
+    ],
+    "claims": [
+     "endmr"
+    ],
+    "opacity": 1
+   },
+   {
+    "tid": "a2-mirror-real-basis",
+    "role": "label",
+    "text": "in 1966 dollars",
+    "box": [
+     521,
+     425,
+     759,
+     457
+    ],
+    "claims": [
+     "y1966"
+    ],
+    "opacity": 1
+   },
+   {
+    "tid": "a2-mirror-real-more",
+    "role": "label",
+    "text": "more than it started with",
+    "box": [
+     452,
+     486,
+     828,
+     516
+    ],
+    "claims": [],
+    "opacity": 1
+   }
+  ]
+ },
+ {
+  "t": 442.73333333333335,
+  "texts": [
+   {
+    "tid": "a2-payoff-a",
+    "role": "label",
+    "text": "first retiree",
+    "box": [
+     300,
+     935,
+     485,
+     967
+    ],
+    "claims": [],
+    "opacity": 1
+   },
+   {
+    "tid": "a2-payoff-b",
+    "role": "label",
+    "text": "mirror retiree",
+    "box": [
+     1000,
+     935,
+     1219,
+     967
+    ],
+    "claims": [],
+    "opacity": 1
+   },
+   {
+    "tid": "a2-payoff-badge",
+    "role": "badge",
+    "text": "ILLUSTRATIVE",
+    "box": [
+     408,
+     331,
+     644,
+     376
+    ],
+    "claims": [],
+    "opacity": 1
+   },
+   {
+    "tid": "a2-payoff-sub",
+    "role": "label",
+    "text": "both averaged",
+    "box": [
+     841,
+     225,
+     1079,
+     257
+    ],
+    "claims": [],
+    "opacity": 1
+   }
+  ]
+ },
+ {
+  "t": 468.8666666666667,
+  "texts": [
+   {
+    "tid": "a3-q-k",
+    "role": "label",
+    "text": "The question for this part",
+    "box": [
+     752,
+     445,
+     1168,
+     477
+    ],
+    "claims": [],
+    "opacity": 1
+   }
+  ]
+ },
+ {
+  "t": 481.03333333333336,
+  "texts": []
+ },
+ {
+  "t": 627.0666666666667,
+  "texts": [
+   {
+    "tid": "a3-avg-callback-a0",
+    "role": "axis-label",
+    "text": "1966",
+    "box": [
+     967,
+     906,
+     1037,
+     935
+    ],
+    "claims": [
+     "ax1966"
+    ],
+    "opacity": 1
+   },
+   {
+    "tid": "a3-avg-callback-a1",
+    "role": "axis-label",
+    "text": "1995",
+    "box": [
+     1708,
+     906,
+     1777,
+     935
+    ],
+    "claims": [
+     "ax1995"
+    ],
+    "opacity": 1
+   },
+   {
+    "tid": "a3-avg-callback-lab",
+    "role": "label",
+    "text": "first retiree, real balance",
+    "box": [
+     1086,
+     551,
+     1441,
+     579
+    ],
+    "claims": [],
+    "opacity": 1
+   },
+   {
+    "tid": "a3-avg-callback-l1",
+    "role": "label",
+    "text": "9.7%",
+    "box": [
+     488,
+     304,
+     792,
+     416
+    ],
+    "claims": [
+     "g1966"
+    ],
+    "opacity": 1
+   },
+   {
+    "tid": "a3-avg-callback-s1",
+    "role": "label",
+    "text": "described the 1966 retiree perfectly",
+    "box": [
+     364,
+     446,
+     916,
+     476
+    ],
+    "claims": [
+     "y1966"
+    ],
+    "opacity": 1
+   },
+   {
+    "tid": "a3-avg-callback-s2",
+    "role": "label",
+    "text": "and said nothing about the end",
+    "box": [
+     401,
+     506,
+     879,
+     536
+    ],
+    "claims": [],
+    "opacity": 1
+   }
+  ]
+ },
+ {
+  "t": 639.3,
+  "texts": [
+   {
+    "tid": "a3-usonly-l1",
+    "role": "label",
+    "text": "US only",
+    "box": [
+     490,
+     322,
+     790,
+     398
+    ],
+    "claims": [],
+    "opacity": 1
+   },
+   {
+    "tid": "a3-usonly-sub",
+    "role": "label",
+    "text": "one country, one set of markets",
+    "box": [
+     379,
+     435,
+     901,
+     467
+    ],
+    "claims": [],
+    "opacity": 1
+   }
+  ]
+ },
+ {
+  "t": 655.8333333333334,
+  "texts": [
+   {
+    "tid": "a3-bare-r0",
+    "role": "label",
+    "text": "No taxes",
+    "box": [
+     307,
+     471,
+     486,
+     511
+    ],
+    "claims": [],
+    "opacity": 1
+   },
+   {
+    "tid": "a3-bare-r1",
+    "role": "label",
+    "text": "No fees",
+    "box": [
+     307,
+     587,
+     464,
+     626
+    ],
+    "claims": [],
+    "opacity": 1
+   },
+   {
+    "tid": "a3-bare-r2",
+    "role": "label",
+    "text": "One portfolio mix",
+    "box": [
+     307,
+     703,
+     655,
+     742
+    ],
+    "claims": [],
+    "opacity": 1
+   },
+   {
+    "tid": "a3-bare-r3",
+    "role": "label",
+    "text": "One withdrawal rule",
+    "box": [
+     307,
+     818,
+     713,
+     858
+    ],
+    "claims": [],
+    "opacity": 1
+   },
+   {
+    "tid": "a3-bare-l1",
+    "role": "label",
+    "text": "A bare model",
+    "box": [
+     1048,
+     326,
+     1512,
+     394
+    ],
+    "claims": [],
+    "opacity": 1
+   }
+  ]
+ },
+ {
+  "t": 680.7666666666667,
+  "texts": [
+   {
+    "tid": "method-model-r0",
+    "role": "label",
+    "text": "Dividends and bond coupons included",
+    "box": [
+     300,
+     316,
+     966,
+     350
+    ],
+    "claims": [],
+    "opacity": 1
+   },
+   {
+    "tid": "method-model-r1",
+    "role": "label",
+    "text": "Rebalanced once a year",
+    "box": [
+     300,
+     436,
+     716,
+     470
+    ],
+    "claims": [],
+    "opacity": 1
+   },
+   {
+    "tid": "method-model-r2",
+    "role": "label",
+    "text": "Withdrawals rise with inflation",
+    "box": [
+     300,
+     556,
+     826,
+     590
+    ],
+    "claims": [],
+    "opacity": 1
+   },
+   {
+    "tid": "method-model-r3",
+    "role": "label",
+    "text": "No taxes",
+    "box": [
+     300,
+     676,
+     453,
+     710
+    ],
+    "claims": [],
+    "opacity": 1
+   },
+   {
+    "tid": "method-model-r4",
+    "role": "label",
+    "text": "No fees",
+    "box": [
+     300,
+     796,
+     434,
+     830
+    ],
+    "claims": [],
+    "opacity": 1
+   },
+   {
+    "tid": "method-model-l1b",
+    "role": "label",
+    "text": "Every formula is listed",
+    "box": [
+     1100,
+     337,
+     1620,
+     383
+    ],
+    "claims": [],
+    "opacity": 1
+   },
+   {
+    "tid": "method-model-desc",
+    "role": "label",
+    "text": "in the description",
+    "box": [
+     1209,
+     423,
+     1511,
+     457
+    ],
+    "claims": [],
+    "opacity": 1
+   }
+  ]
+ },
+ {
+  "t": 700.0333333333333,
+  "texts": [
+   {
+    "tid": "outro-a0",
+    "role": "axis-label",
+    "text": "1966",
+    "box": [
+     364,
+     931,
+     434,
+     959
+    ],
+    "claims": [
+     "ax1966"
+    ],
+    "opacity": 1
+   },
+   {
+    "tid": "outro-a1",
+    "role": "axis-label",
+    "text": "1995",
+    "box": [
+     1486,
+     931,
+     1556,
+     959
+    ],
+    "claims": [
+     "ax1995"
+    ],
+    "opacity": 1
+   },
+   {
+    "tid": "outro-lab66",
+    "role": "label",
+    "text": "first retiree",
+    "box": [
+     320,
+     754,
+     491,
+     784
+    ],
+    "claims": [],
+    "opacity": 1
+   },
+   {
+    "tid": "outro-labm",
+    "role": "label",
+    "text": "mirror retiree",
+    "box": [
+     1539,
+     552,
+     1770,
+     592
+    ],
+    "claims": [],
+    "opacity": 1
+   },
+   {
+    "tid": "outro-basis",
+    "role": "label",
+    "text": "real balance, after inflation",
+    "box": [
+     480,
+     408,
+     867,
+     436
+    ],
+    "claims": [],
+    "opacity": 1
+   },
+   {
+    "tid": "outro-title",
+    "role": "label",
+    "text": "Same average, different fate",
+    "box": [
+     462,
+     216,
+     1458,
+     284
+    ],
+    "claims": [],
+    "opacity": 1
+   },
+   {
+    "tid": "outro-src",
+    "role": "label",
+    "text": "Data: NYU Stern (Damodaran) · BLS CPI-U via FRED",
+    "box": [
+     589,
+     318,
+     1331,
+     346
+    ],
+    "claims": [],
+    "opacity": 1
+   }
+  ]
+ }
+]
