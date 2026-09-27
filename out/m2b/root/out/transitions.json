@@ -1,0 +1,74 @@
+{
+ "cuts": [
+  {
+   "t": 1.429,
+   "from": "co-lines",
+   "to": "co-same",
+   "type": "cut",
+   "match": null,
+   "audio": null,
+   "action": false,
+   "reason": "the crane continues: same world, the line carries on"
+  },
+  {
+   "t": 7.54,
+   "from": "co-same",
+   "to": "co-broke",
+   "type": "cut",
+   "match": null,
+   "audio": null,
+   "action": false,
+   "reason": "hard cut to the time-lapse: 25 years in one sun arc"
+  },
+  {
+   "t": 12.143,
+   "from": "co-broke",
+   "to": "co-question",
+   "type": "cut",
+   "match": null,
+   "audio": null,
+   "action": false,
+   "reason": "dusk close-up after the silence"
+  },
+  {
+   "t": 14.83,
+   "from": "co-question",
+   "to": "ident",
+   "type": "cut",
+   "match": null,
+   "audio": null,
+   "action": false,
+   "reason": "title over the road at dusk"
+  },
+  {
+   "t": 17.143,
+   "from": "ident",
+   "to": "a2-7374",
+   "type": "cut",
+   "match": null,
+   "audio": null,
+   "action": false,
+   "reason": "hard cut from dusk to the storm: act 2 opens in 1973"
+  },
+  {
+   "t": 23.245,
+   "from": "a2-7374",
+   "to": "a2-1974inf",
+   "type": "cut",
+   "match": null,
+   "audio": null,
+   "action": false,
+   "reason": "profile of the road: the 1974 stone"
+  },
+  {
+   "t": 31.647,
+   "from": "a2-1974inf",
+   "to": "a2-bal74",
+   "type": "cut",
+   "match": null,
+   "audio": null,
+   "action": false,
+   "reason": "both tanks at the end of 1974"
+  }
+ ]
+}

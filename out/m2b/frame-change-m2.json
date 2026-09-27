@@ -1,0 +1,16 @@
+{
+ "video": "out/m2/video.mp4",
+ "pairs": 6088,
+ "method": "luma, gblur sigma 1.5 (grain removed), |dY| > 4 codes",
+ "at0.5": {
+  "threshold%": 0.5,
+  "framesChanged%": 14.9,
+  "longestStillRun_s": 13.63
+ },
+ "at0.1": {
+  "threshold%": 0.1,
+  "framesChanged%": 24.4,
+  "longestStillRun_s": 7.57
+ },
+ "medianChangedPixels%": 0.0
+}

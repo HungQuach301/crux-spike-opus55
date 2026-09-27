@@ -158,6 +158,73 @@ def chord_notes(root, q, base=48):
     return [r, r + (3 if q == 'm' else 4), r + 7, r + 12 + (3 if q == 'm' else 4)]
 
 
+def physical(N, spec):
+    """Beds (wind, rain, water trickle) and events (drip, thunder, stone grind) of the lookdev world, all synthesised."""
+    out = np.zeros((N, 2))
+    t = np.arange(N) / SR
+    from scipy.ndimage import uniform_filter1d as uf
+    def curve(pts):
+        pts = sorted(pts)
+        return np.interp(t, [p[0] for p in pts], [p[1] for p in pts])
+    for b in spec['beds']:
+        lv = curve(b['level']) if isinstance(b['level'], list) else np.full(N, b['level'])
+        on = ((t >= b['t0']) & (t < b['t1'])).astype(float)
+        on = uf(on, int(0.3 * SR))
+        if b['kind'] == 'wind':
+            for ch in range(2):
+                nz = RNG.standard_normal(N)
+                gust = uf(RNG.standard_normal(N), int(1.3 * SR))
+                gust = 0.55 + 0.45 * np.tanh(gust / (gust.std() + 1e-9))
+                x = band(nz, 180, 900) * 0.7 + band(nz, 900, 2600) * 0.25 * gust
+                out[:, ch] += x * gust * lv * on
+        elif b['kind'] == 'rain':
+            for ch in range(2):
+                hiss = band(RNG.standard_normal(N), 1800, 9000) * 0.5
+                drops = (RNG.random(N) < 900 / SR).astype(float) * RNG.uniform(0.3, 1.0, N)
+                drops = signal.lfilter([1], [1, -0.93], drops)
+                drops = band(drops, 1200, 7000) * 1.6
+                rumble = band(RNG.standard_normal(N), 40, 260) * 0.8
+                out[:, ch] += (hiss + drops + rumble) * lv * on
+        elif b['kind'] == 'water':
+            x = np.zeros(N)
+            n = int(0.03 * SR)
+            tt = np.arange(n) / SR
+            idx = np.nonzero(RNG.random(N) < 38 / SR)[0]
+            for i in idx:
+                f0 = RNG.uniform(700, 2200)
+                bub = np.sin(2 * np.pi * (f0 * tt + 0.5 * f0 * 3 * tt ** 2 / 0.03)) * np.exp(-tt / 0.008) * RNG.uniform(0.3, 1)
+                add1 = min(n, N - i)
+                x[i:i + add1] += bub[:add1]
+            x += band(RNG.standard_normal(N), 700, 3500) * 0.35 * (0.7 + 0.3 * np.sin(2 * np.pi * t * 3.1))
+            gl, gr = pan_gains(b.get('pan', 0))
+            out[:, 0] += x * lv * on * gl
+            out[:, 1] += x * lv * on * gr
+    for e in spec['events']:
+        i0 = int(e['t'] * SR)
+        gl, gr = pan_gains(e.get('pan', 0))
+        if e['kind'] == 'drip':
+            n = int(0.12 * SR); tt = np.arange(n) / SR
+            x = np.sin(2 * np.pi * (1100 * tt + 9000 * tt ** 2)) * np.exp(-tt / 0.012) + band(RNG.standard_normal(n), 2000, 8000) * np.exp(-tt / 0.006) * 0.4
+        elif e['kind'] == 'thunder':
+            n = int(4.5 * SR); tt = np.arange(n) / SR
+            crack = band(RNG.standard_normal(n), 300, 6000) * np.exp(-tt / 0.08)
+            roll = band(RNG.standard_normal(n), 25, 320) * np.exp(-tt / 1.4) * (0.6 + 0.4 * np.abs(np.sin(2 * np.pi * tt * 1.7)))
+            x = crack * 0.9 + roll * 2.6
+        elif e['kind'] == 'stone':
+            n = int(e.get('dur', 0.9) * SR); tt = np.arange(n) / SR
+            grit = (RNG.random(n) < 300 / SR).astype(float) * RNG.uniform(0.2, 1, n)
+            grit = band(signal.lfilter([1], [1, -0.8], grit), 120, 2200)
+            x = (band(RNG.standard_normal(n), 50, 500) * 0.8 + grit * 1.4) * np.sin(np.pi * tt / tt[-1]) ** 0.5
+            x = np.concatenate([x, boom(0.8)[:int(0.6 * SR)] * 0.9])
+        else:
+            continue
+        m = min(len(x), N - i0)
+        if m > 0:
+            out[i0:i0 + m, 0] += x[:m] * e['level'] * gl
+            out[i0:i0 + m, 1] += x[:m] * e['level'] * gr
+    return out
+
+
 def main():
     tl, sc = J('out/timeline.json'), J('out/script.json')
     total = tl['total']
@@ -165,9 +232,10 @@ def main():
     tempo = J('out/tempo-map.json')
     beats = [b for b in tempo['beats'] if b < total - 0.05]
     accents = tempo.get('accents', [])
-    cues = json.load(open(os.path.join(REPO, 'out', 'cues.json')))['cues']
+    cp = os.path.join(ROOT, 'out', 'cues.json')
+    cues = json.load(open(cp if os.path.exists(cp) else os.path.join(REPO, 'out', 'cues.json')))['cues']
     sil = J('out/silences.json')['silences']
-    first_mirror = next(s['start'] for s in tl['scenes'] if s['id'] == 'a1-mirror-in')
+    first_mirror = next((s['start'] for s in tl['scenes'] if s['id'] in ('a1-mirror-in', 'a2-7374')), total)
 
     # ---------------------------------------------------------------- music
     dry = np.zeros((N, 2))
@@ -255,8 +323,8 @@ def main():
         n = min(len(x), N - i0)
         vbuf[i0:i0 + n] += x[:n]
     # performance dynamics by section (the reading gets closer/quieter in the cold open and fuller at the reveals)
-    SECT = [('co-lines', -9.0), ('a1-est', -4.0), ('a1-mirror-in', -1.5), ('a1-avg1966', 2.0), ('a1-geo', -3.0)]
     starts = {s_['id']: s_['start'] for s_ in tl['scenes']}
+    SECT = [x for x in [('co-lines', -9.0), ('a1-est', -4.0), ('a1-mirror-in', -1.5), ('a1-avg1966', 2.0), ('a1-geo', -3.0), ('a2-7374', -2.0)] if x[0] in starts]
     gv = np.zeros(N)
     for k, (sid, g_) in enumerate(SECT):
         i0 = int(starts[sid] * SR)
@@ -363,6 +431,8 @@ def main():
     pink = onepole_lp(pink, 3000)
     pink = pink / np.sqrt(np.mean(pink ** 2)) * 10 ** (-60 / 20)
     room = np.stack([pink, np.roll(pink, 480) * 0.9 + 0.1 * pink], 1)
+    # physical sound of the world (lookdev): water, wind, rain, stone, thunder, drips; gated by the silences below
+    amb = physical(N, J('out/physical.json')) if os.path.exists(os.path.join(ROOT, 'out', 'physical.json')) else None
 
     # intentional silences: everything but the room tone out (30 ms fades)
     gate = np.ones(N)
@@ -374,6 +444,8 @@ def main():
         gate[i1:i1 + f] = np.minimum(gate[i1:i1 + f], np.linspace(0, 1, len(gate[i1:i1 + f])))
     for arr in (mus, sfx, whoosh):
         arr *= gate[:, None]
+    if amb is not None:
+        sfx += amb * gate[:, None]
 
     # ---------------------------------------------------------------- levels
     # voice-active windows: music 20 dB under the voice (mean power)
@@ -423,6 +495,7 @@ def main():
     json.dump(rep, open(os.path.join(ROOT, '..', 'audio-report.json'), 'w'), indent=1)
     ledger = {'assets': [{'name': 'music (pad, pulse, leitmotifs, accents, reverb)', 'origin': 'synthesised in audio/d_m2_audio.py', 'seed': 20260926, 'licence': 'original work of this project; no samples or third-party audio'},
                          {'name': 'sfx, risers, impacts, whooshes, room tone', 'origin': 'synthesised in audio/d_m2_audio.py', 'seed': 20260926, 'licence': 'original work of this project'},
+                         {'name': 'physical sounds of the lookdev world: water, wind, rain, stone, thunder, drips', 'origin': 'synthesised in audio/d_m2_audio.py (physical)', 'seed': 20260926, 'licence': 'original work of this project'},
                          {'name': 'voice', 'origin': 'ElevenLabs text-to-speech, voice Eric (premade), eleven_v3 / eleven_multilingual_v2', 'licence': 'ElevenLabs output under the account\'s plan; provisional voice (not decision #158)'}]}
     json.dump(ledger, open(os.path.join(REPO, 'out', 'music-ledger-d.json'), 'w'), indent=1)
     print(json.dumps({k: v for k, v in rep.items() if k not in ('moves', 'silences')}))

@@ -1,0 +1,194 @@
+{
+ "fps": 30,
+ "total": 42.313,
+ "acts": [
+  {
+   "id": "cold-open",
+   "start": 0,
+   "end": 14.83
+  },
+  {
+   "id": "ident",
+   "start": 14.83,
+   "end": 17.143
+  },
+  {
+   "id": "act2",
+   "start": 17.143,
+   "end": 42.313,
+   "climax": null
+  }
+ ],
+ "turns": [
+  {
+   "scene": "co-question",
+   "sentence": "co-question.1",
+   "t": 13.62,
+   "what": "open loop: focus racks from the dry tank to the full one"
+  },
+  {
+   "scene": "a2-bal74",
+   "sentence": "a2-bal74.1",
+   "t": 34.973,
+   "what": "focus racks from the mirror tank to the 1966 tank"
+  }
+ ],
+ "scenes": [
+  {
+   "id": "co-lines",
+   "act": "cold-open",
+   "start": 0,
+   "dur": 1.429,
+   "layout": "duel/emerge",
+   "shot": {
+    "size": "extreme-wide",
+    "angle": "low",
+    "focalMm": 24
+   },
+   "panels": [
+    "world"
+   ],
+   "chart": null,
+   "move": 0,
+   "composition": "center",
+   "cutIn": null,
+   "srcStart": 0
+  },
+  {
+   "id": "co-same",
+   "act": "cold-open",
+   "start": 1.429,
+   "dur": 6.111,
+   "layout": "duel/overlay",
+   "shot": {
+    "size": "wide",
+    "angle": "eye-level",
+    "focalMm": 35
+   },
+   "panels": [
+    "world"
+   ],
+   "chart": null,
+   "move": 0,
+   "cutIn": null,
+   "srcStart": 1.429
+  },
+  {
+   "id": "co-broke",
+   "act": "cold-open",
+   "start": 7.54,
+   "dur": 4.603,
+   "layout": "duel/split",
+   "shot": {
+    "size": "medium",
+    "angle": "eye-level",
+    "focalMm": 50
+   },
+   "panels": [
+    "world"
+   ],
+   "chart": null,
+   "move": 0,
+   "cutIn": null,
+   "srcStart": 7.54
+  },
+  {
+   "id": "co-question",
+   "act": "cold-open",
+   "start": 12.143,
+   "dur": 2.687,
+   "layout": "duel/split",
+   "shot": {
+    "size": "close-up",
+    "angle": "slightly high",
+    "focalMm": 85
+   },
+   "panels": [
+    "world"
+   ],
+   "chart": null,
+   "move": 0,
+   "composition": "center",
+   "cutIn": null,
+   "srcStart": 12.143
+  },
+  {
+   "id": "ident",
+   "act": "ident",
+   "start": 14.83,
+   "dur": 2.313,
+   "layout": "title/ident",
+   "shot": {
+    "size": "insert",
+    "angle": "eye-level",
+    "focalMm": 50
+   },
+   "panels": [
+    "world"
+   ],
+   "chart": null,
+   "move": 0,
+   "composition": "center",
+   "cutIn": null,
+   "srcStart": 14.83
+  },
+  {
+   "id": "a2-7374",
+   "act": "act2",
+   "start": 17.143,
+   "dur": 6.102,
+   "layout": "duel/lines-2",
+   "shot": {
+    "size": "medium",
+    "angle": "eye-level",
+    "focalMm": 35
+   },
+   "panels": [
+    "world"
+   ],
+   "chart": null,
+   "move": 0,
+   "cutIn": null,
+   "srcStart": 239.83
+  },
+  {
+   "id": "a2-1974inf",
+   "act": "act2",
+   "start": 23.245,
+   "dur": 8.402,
+   "layout": "escalator/peak",
+   "shot": {
+    "size": "close-up",
+    "angle": "eye-level",
+    "focalMm": 85
+   },
+   "panels": [
+    "world"
+   ],
+   "chart": null,
+   "move": 0,
+   "cutIn": null,
+   "srcStart": 245.932
+  },
+  {
+   "id": "a2-bal74",
+   "act": "act2",
+   "start": 31.647,
+   "dur": 10.666,
+   "layout": "ledger/drop",
+   "shot": {
+    "size": "close-up",
+    "angle": "eye-level",
+    "focalMm": 85
+   },
+   "panels": [
+    "world"
+   ],
+   "chart": null,
+   "move": 0,
+   "cutIn": null,
+   "srcStart": 254.334
+  }
+ ],
+ "note": "M2b lookdev: segment A = cold open + ident; segment B = act 2 lines a2-7374..a2-bal74 moved to follow A"
+}

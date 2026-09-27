@@ -1,0 +1,82 @@
+{
+ "note": "lookdev cue sheet: cold open + ident as in out/cues.json; storm cues moved by -222.687 s",
+ "cues": [
+  {
+   "t": 0,
+   "end": 7.54,
+   "function": "cold open: both leitmotifs in unison on one low pad, same notes",
+   "key": "D minor",
+   "tempo": 84,
+   "layer": "music",
+   "scene": "co-lines"
+  },
+  {
+   "t": 0,
+   "end": 1.429,
+   "function": "room tone in: dark hall, the one reverb space of the film",
+   "key": null,
+   "tempo": 84,
+   "layer": "room",
+   "scene": "co-lines"
+  },
+  {
+   "t": 7.54,
+   "end": 14.83,
+   "function": "the split: 1966 motif descends alone, mirror motif holds; music cuts to silence after \"1991\"",
+   "key": "D minor",
+   "tempo": 84,
+   "layer": "music",
+   "scene": "co-broke"
+  },
+  {
+   "t": 14.83,
+   "end": 17.143,
+   "function": "ident sting: two-note signature, filtered pluck + sub",
+   "key": "D minor",
+   "tempo": 84,
+   "layer": "music",
+   "scene": "ident"
+  },
+  {
+   "t": 17.143,
+   "end": 42.313,
+   "function": "storm 1973-74: low strings, filtered noise swell, 1966 motif in minor, slower",
+   "key": "D minor",
+   "tempo": 99,
+   "layer": "music",
+   "scene": "a2-7374"
+  },
+  {
+   "t": 17.143,
+   "end": 23.245,
+   "function": "storm layer: low rumble under the bear market",
+   "key": null,
+   "tempo": 99,
+   "layer": "sfx",
+   "scene": "a2-7374"
+  },
+  {
+   "t": 0,
+   "end": 42.313,
+   "function": "physical sound of the world: water from the spouts, wind, rain, stone, thunder",
+   "key": null,
+   "tempo": null,
+   "layer": "sfx",
+   "scene": "world"
+  }
+ ],
+ "silences": [
+  {
+   "t": 11.1,
+   "dur": 1.09,
+   "why": "let \"1991\" land",
+   "after": "co-broke.1"
+  },
+  {
+   "t": 14.31,
+   "dur": 1.3,
+   "why": "the open question hangs before the title",
+   "after": "co-question.1"
+  }
+ ]
+}

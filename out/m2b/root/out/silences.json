@@ -1,0 +1,16 @@
+{
+ "silences": [
+  {
+   "t": 11.1,
+   "dur": 1.09,
+   "why": "let \"1991\" land",
+   "after": "co-broke.1"
+  },
+  {
+   "t": 14.31,
+   "dur": 1.3,
+   "why": "the open question hangs before the title",
+   "after": "co-question.1"
+  }
+ ]
+}

@@ -1,0 +1,58 @@
+{
+ "sentences": [
+  {
+   "id": "co-same.1",
+   "scene": "co-same",
+   "text": "Two retirees with the same balance, the same withdrawals and the same average return.",
+   "spoken": "Two retirees with the same balance... the same withdrawals and the same average return.",
+   "start": 1.9,
+   "end": 7.14,
+   "srcStart": 1.9
+  },
+  {
+   "id": "co-broke.1",
+   "scene": "co-broke",
+   "text": "One ran out of money in 1991.",
+   "spoken": "One ran out of money... in nineteen ninety-one.",
+   "start": 7.54,
+   "end": 11.02,
+   "srcStart": 7.54
+  },
+  {
+   "id": "co-question.1",
+   "scene": "co-question",
+   "text": "So what decided it?",
+   "spoken": "So... what decided it?",
+   "start": 12.27,
+   "end": 14.23,
+   "srcStart": 12.27
+  },
+  {
+   "id": "a2-7374.1",
+   "scene": "a2-7374",
+   "text": "After inflation, stocks and bonds both lose money in 1973 and 1974.",
+   "spoken": "After inflation... stocks and bonds both lose money in nineteen seventy-three and nineteen seventy-four.",
+   "start": 17.143,
+   "end": 23.103,
+   "srcStart": 239.83
+  },
+  {
+   "id": "a2-1974inf.1",
+   "scene": "a2-1974inf",
+   "text": "In 1974 alone, the portfolio loses 14.7%, while prices rise 12.3%.",
+   "spoken": "In nineteen seventy-four alone... the portfolio loses fourteen point seven percent... while prices rise twelve point three percent.",
+   "start": 23.503,
+   "end": 31.463,
+   "srcStart": 246.19
+  },
+  {
+   "id": "a2-bal74.1",
+   "scene": "a2-bal74",
+   "text": "In 1966 dollars, the 1966 retiree ends 1974 with $461,000.",
+   "spoken": "In nineteen sixty-six dollars... the nineteen sixty-six retiree ends nineteen seventy-four with four hundred sixty-one thousand dollars.",
+   "start": 31.863,
+   "end": 40.603,
+   "srcStart": 254.55
+  }
+ ]
+}

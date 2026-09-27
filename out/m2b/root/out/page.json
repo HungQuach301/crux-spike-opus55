@@ -1,0 +1,4 @@
+{
+ "url": "../../../render-d/look/page.html",
+ "ready": "new Promise((r) => { const f = () => (window.READY ? r(true) : setTimeout(f, 100)); f(); })"
+}

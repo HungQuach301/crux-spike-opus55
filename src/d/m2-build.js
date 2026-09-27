@@ -116,4 +116,5 @@ function main() {
   console.log('M2 scenes', scenes.length, 'end', end.toFixed(2), 's | sentences', sentences.length, '| cues', Object.keys(cueMap).length, '| missing number cues', missingCues.join(' ') || '-');
 }
 
-main();
+if (require.main === module) main();
+module.exports = { cues };
