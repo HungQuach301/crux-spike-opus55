@@ -68,11 +68,18 @@
       const arr = ch === '1966' ? M.real1966 : M.realMirror;
       const lab = `${panel}-lab-${ch}`;
       series(items, `${panel}-${ch}`, chart, ch, upto(arr, p, g), z, panel, a, lab);
-      const lk = Math.min(p, ch === '1966' ? (o.lk66 ?? 4) : (o.lkm ?? 4));
-      const sp = H.P(g.X(lk), g.Y(valAt(arr, lk)), z);
+      const fixed = ch === '1966' ? o.lk66 : o.lkm;
       const txt = ch === '1966' ? 'first retiree' : 'mirror retiree';
-      const dy = ch === '1966' ? (o.l66dy ?? 62) : (o.lmdy ?? -40);
-      items.push(Tx(lab, txt, sp[0] + (o.ldx ?? 10), sp[1] + dy, 30, colorOf(ch), { alpha: a * fade(p, 0.15, 0.3), series: ch, level: 3 }));
+      let sx, sy;
+      if (fixed == null) { // at the tip, to the right of it (nothing is drawn there yet)
+        const sp = H.P(g.X(p), g.Y(valAt(arr, p)), z);
+        sx = sp[0] + 18; sy = sp[1] + (ch === '1966' ? 34 : -12);
+        if (ch === '1966' && o.p66 != null && o.pm != null && p === o.pm && valAt(M.real1966, p) > valAt(M.realMirror, p) - 1.5e5) sy += 20;
+      } else {
+        const lk = Math.min(p, fixed), sp = H.P(g.X(lk), g.Y(valAt(arr, lk)), z);
+        sx = sp[0] + (o.ldx ?? 10); sy = sp[1] + (ch === '1966' ? (o.l66dy ?? 62) : (o.lmdy ?? -40));
+      }
+      items.push(Tx(lab, txt, sx, sy, 30, colorOf(ch), { alpha: a * fade(p, 0.15, 0.3), series: ch, level: 3 }));
     }
     return g;
   }
@@ -143,13 +150,13 @@
     const items = [], P = 'a2-gap1'; env(items, P, { glow: 0.08, gx: 400 });
     const W = cueL(H), tSplit = W('a2-gap1.1', 'split', 2.6), tPaths = W('a2-gap1.1', 'paths', 1.8);
     const p = smooth((L - 0.2) / 1.6);
-    const g = duel(items, P, H, { p66: p, pm: p, lk66: 0.3, lkm: 0.3, band: [0, p], bandA: 0.25, l66dy: 70, lmdy: -50 });
+    const g = duel(items, P, H, { p66: p, pm: p, band: [0, p], bandA: 0.25 });
     const gb = smooth((L - (tPaths - 0.2)) / 0.5), x = g.X(1) + 18;
     items.push(S(P + '-brk', 'polyline', { panel: P, z: 0, pts: [[x, g.Y(M.real1966[1])], [x, g.Y(M.real1966[1]) + (g.Y(M.realMirror[1]) - g.Y(M.real1966[1])) * gb]], stroke: C.text, lw: 4, alpha: gb > 0 ? 1 : 0, meta: { role: 'mark', panel: P } }));
     items.push(L1(P + '-l1', 'Already split', 1280, 360, 72, fade(L, tSplit - 0.5, 0.3)));
     return items;
   };
-  CAM['a2-gap1'] = { f: 35, base: {}, moves: [[0.6, 1.3, { x: -420, tx: -420, z: 320 }]], why: 'travel along the chart plane to the first year, where the split is' };
+  CAM['a2-gap1'] = { f: 35, base: {}, moves: [[0.6, 1.3, { z: 300 }]], why: 'push in on the first year, where the split is' };
 
   // inflation climbs: inflation bars 1966..1969 rise, then every withdrawal (nominal) grows with it
   function inflRow(items, P, H, L, n, grow, o = {}) {
@@ -173,7 +180,7 @@
     items.push(Tx(P + '-v', '6.2% a year', top[0] + 36, top[1] + 10, 40, C.text, { weight: 700, claims: cl('inf1969'), alpha: on(L, t62), level: 2 }));
     const b3 = H.P(gi.x0 + 3 * gi.w + 17, gi.yb, 0);
     items.push(Tx(P + '-y', '1969', b3[0], b3[1] + 44, 30, C['text-dim'], { align: 'center', claims: cl('y1969'), alpha: on(L, t69), level: 3 }));
-    items.push(Tx(P + '-cap1', 'inflation per year', H.P(gi.x0, gi.yb, 0)[0], H.P(gi.x0, gi.yb, 0)[1] + 44, 30, C.inflation, { alpha: fade(L, tIn), level: 3 }));
+    items.push(Tx(P + '-cap1', 'inflation per year', H.P(gi.x0 + 4 * gi.w + 30, gi.yb, 0)[0], H.P(gi.x0, gi.yb, 0)[1] + 44, 30, C.inflation, { alpha: fade(L, tIn), level: 3 }));
     const wl = H.P(gw.x0 + 16 * gw.w + 30, gw.yb, 0);
     items.push(Tx(P + '-cap2', 'each withdrawal, nominal', wl[0], wl[1] - 20, 30, C.c1966, { alpha: fade(L, tWd), level: 3, series: '1966' }));
     items.push(L1(P + '-l1', 'Inflation climbs', 1280, 360, 72, fade(L, tIn - 0.2, 0.3)));
@@ -186,7 +193,7 @@
     const items = [], P = 'a2-7374'; env(items, P, { glow: 0.07, gx: 400 });
     const W = cueL(H), t73 = W('a2-7374.1', '1973', 3.5), t74 = W('a2-7374.1', '1974', 4.8), tLose = W('a2-7374.1', 'lose', 2.8);
     const p = 7 + 2 * smooth((L - (tLose - 0.3)) / (t74 - tLose + 0.6));
-    const g = duel(items, P, H, { p66: 7 * smooth((L - 0.1) / 1.6) + (p - 7) * (L > 1.8 ? 1 : 0), pm: 7 * smooth((L - 0.1) / 1.6) + (p - 7) * (L > 1.8 ? 1 : 0), lk66: 2, lkm: 2 });
+    const g = duel(items, P, H, { p66: 7 * smooth((L - 0.1) / 1.6) + (p - 7) * (L > 1.8 ? 1 : 0), pm: 7 * smooth((L - 0.1) / 1.6) + (p - 7) * (L > 1.8 ? 1 : 0) });
     for (const [k, t, yr] of [[7, t73, 'y1973'], [8, t74, 'y1974']]) {
       const a = fade(L, t - 0.25, 0.25);
       items.push(S(`${P}-span${k}`, 'rect', { panel: P, z: 20, rect: [g.X(k) + 2, g.yt - 30, g.X(k + 1) - g.X(k) - 4, g.yb - g.yt + 28], fill: C.loss, alpha: 0.16 * a, meta: { role: 'mark', panel: P } }));
@@ -197,7 +204,7 @@
     items.push(Tx(P + '-sub', 'after inflation', 1280, 800, 34, C['text-dim'], { align: 'center', alpha: fade(L, 0.3), level: 2 }));
     return items;
   };
-  CAM['a2-7374'] = { f: 35, base: {}, moves: [[0.6, 1.5, { x: -300, tx: -300, z: 260 }]], why: 'move along the chart to 1973 and 1974, the years the line is about' };
+  CAM['a2-7374'] = { f: 35, base: {}, moves: [[0.6, 1.5, { z: 300 }]], why: 'push in on 1973 and 1974, the years the line is about' };
 
   // 1974 alone: the portfolio's loss (down) against price rise (up) on one zero line
   B['a2-1974inf'] = (L, sc, H) => {
@@ -560,7 +567,7 @@
     void tBal;
     return items;
   };
-  CAM['a2-mirror-boom'] = { f: 35, base: {}, moves: [[0.6, 1.5, { x: -300, tx: -300, z: 240 }]], why: 'move along the chart to the mirror\'s early boom years' };
+  CAM['a2-mirror-boom'] = { f: 35, base: {}, moves: [[0.6, 1.5, { z: 300 }]], why: 'push in on the mirror\'s early boom years' };
 
   // the gap widens: the band between the lines grows year by year
   B['a2-climb'] = (L, sc, H) => {
@@ -655,7 +662,7 @@
     items.push(Tx(P + '-sub', 'on a balance big enough to absorb it', 1280, 800, 32, C['text-dim'], { align: 'center', alpha: fade(L, tAbs - 1.2), level: 2 }));
     return items;
   };
-  CAM['a2-mirror-late'] = { f: 35, base: { x: -200, tx: -200 }, moves: [[4.4, 1.5, { x: 520, tx: 520 }]], why: 'travel along the chart from the 1974 loss to where the mirror meets it, 1987' };
+  CAM['a2-mirror-late'] = { f: 35, base: { z: -300 }, moves: [[0.6, 1.5, { z: 300 }]], why: 'push in on the chart where the mirror meets the bad years' };
 
   // the last payment, nominal; the balance column drains to zero in 1991
   B['a2-1991'] = (L, sc, H) => {

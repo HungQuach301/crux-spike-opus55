@@ -195,7 +195,7 @@
     const items = []; env(items, 'a3-four', { glow: 0.09, gx: 400 });
     const t4 = cue(H, 'a3-four.1', '4', 0.2), t65 = cue(H, 'a3-four.1', '1965', 4), t66 = cue(H, 'a3-four.1', '1966', 5);
     const lift = (s) => smooth((L - (s.y === 1965 ? t65 : s.y === 1966 ? t66 : t4 + 0.4) + 0.2) / 0.5);
-    const g = fourMap(items, 'a3-four', L, H, { x0: 900, y0: 240 }, lift, smooth((L - t4) / 0.6));
+    const g = fourMap(items, 'a3-four', L, H, { x0: 820, y0: 260 }, lift, smooth((L - t4) / 0.6));
     for (const [y, t, cl] of [[1965, t65, 'y1965'], [1966, t66, 'y1966']]) {
       const p = under(H, y, g, -60 * lift(byY[y]));
       items.push(Tx('a3-four-' + y, String(y), p[0], p[1] + 6, 32, C.text, { align: 'center', weight: 700, alpha: at(L, t), claims: [claim(cl)], year: y }));
@@ -204,7 +204,7 @@
     items.push(Tx('a3-four-sub', 'start years that failed', 560, 450, 34, C['text-dim'], { align: 'center', alpha: fade(L, t4 + 0.3), level: 2 }));
     return items;
   };
-  CAM['a3-four'] = { f: 50, base: { z: 100 }, moves: [[1.0, 1.5, { y: 250, ty: 250 }]], focus: 300, racks: [['turn', 0.8, -60]] };
+  CAM['a3-four'] = { f: 50, base: { z: 100 }, moves: [[1.0, 1.5, { y: 180, ty: 180, z: -150 }]], focus: 300, racks: [['turn', 0.8, -60]] };
 
   B['a3-four2'] = (L, sc, H) => {
     const items = []; env(items, 'a3-four2', { glow: 0.09, gx: 1500 });
@@ -307,12 +307,16 @@
       alpha: (s) => (s.y === 1969 || s.y === 1928 ? 1 : 0.45), r: (s) => (s.y === 1969 ? 1 + 0.4 * back((L - t69) / 0.4) : s.y === 1928 ? 1 + 0.4 * back((L - t28) / 0.4) : 1) });
     scatterAxes(items, 'a3-1969', H, fade(L, 0.2));
     const d69 = H.P(...dotAt(byY[1969], u), 0), d28 = H.P(...dotAt(byY[1928], u), 0);
-    items.push(Tx('a3-1969-y', '1969', d69[0], d69[1] - 110, 34, C.text, { align: 'center', weight: 700, alpha: at(L, t69), claims: [claim('y1969')], year: 1969 }));
-    items.push(Tx('a3-1969-v', '5.6%', d69[0], d69[1] - 50, 40, C.loss, { align: 'center', weight: 700, alpha: at(L, t56), claims: [claim('rg1969')], level: 2 }));
-    items.push(Tx('a3-1928-y', '1928', d28[0], d28[1] - 110, 34, C.text, { align: 'center', weight: 700, alpha: at(L, t28), claims: [claim('y1928')], year: 1928 }));
-    items.push(Tx('a3-1928-v', '4.9%', d28[0], d28[1] - 50, 40, C.gain, { align: 'center', weight: 700, alpha: at(L, t49), claims: [claim('rg1928')], level: 2 }));
-    items.push(L1('a3-1969-l1', 'Real average, whole plan', 1280, 360, 52, fade(L, 0.2) * fadeOut(L, t28 - 0.3, 0.25)));
-    items.push(L1('a3-1969-l1b', '1928 averaged less', 1280, 360, 52, fade(L, t49 - 0.2, 0.3), { claims: [claim('y1928')] }));
+    const ya = H.P(0, SC.yb + 20, 0)[1];
+    items.push(Tx('a3-1969-y', '1969', d69[0] - 24, ya + 56, 34, C.text, { align: 'right', weight: 700, alpha: at(L, t69), claims: [claim('y1969')], year: 1969 }));
+    items.push(Tx('a3-1969-v', '5.6%', d69[0] + 24, ya + 56, 34, C.loss, { weight: 700, alpha: at(L, t56), claims: [claim('rg1969')], level: 2 }));
+    // 1928: a callout in the empty upper-left of the plot, tied to its dot by a leader
+    const co = H.P(560, 600, 0);
+    items.push(S('a3-1969-lead', 'polyline', { panel: 'a3-1969', z: 0, pts: [[600, 640], [scXY(byY[1928])[0] - 22, scXY(byY[1928])[1] - 16]], stroke: C.gain, lw: 2, alpha: at(L, t28), meta: { role: 'mark', panel: 'a3-1969' } }));
+    items.push(Tx('a3-1928-y', '1928', co[0], co[1] - 40, 34, C.text, { align: 'center', weight: 700, alpha: at(L, t28), claims: [claim('y1928')], year: 1928 }));
+    items.push(Tx('a3-1928-v', '4.9%', co[0], co[1] + 14, 40, C.gain, { align: 'center', weight: 700, alpha: at(L, t49), claims: [claim('rg1928')], level: 2 }));
+    items.push(L1('a3-1969-l1', 'Real average, whole plan', 640, 360, 52, fade(L, 0.2) * fadeOut(L, t28 - 0.3, 0.25)));
+    items.push(L1('a3-1969-l1b', '1928 averaged less', 640, 360, 52, fade(L, t49 - 0.2, 0.3), { claims: [claim('y1928')] }));
     return items;
   };
   CAM['a3-1969'] = { f: 50, base: { z: -250 }, moves: [[0.8, 1.4, { z: 250 }]] };
@@ -323,18 +327,21 @@
     dots(items, 'a3-1928', L, { u: () => 1, color: (s) => (s.y === 1969 ? C.loss : s.y === 1928 ? C.gain : C.muted), alpha: (s) => (s.y === 1969 || s.y === 1928 ? 1 : 0.35),
       r: (s) => (s.y === 1969 || s.y === 1928 ? 1.4 : 1) });
     scatterAxes(items, 'a3-1928', H, 1);
-    const d69 = H.P(...scXY(byY[1969]), 0), d28 = H.P(...scXY(byY[1928]), 0);
-    // what each one had left: 1928 climbs to its end balance, 1969 falls to zero
-    const s28 = byY[1928];
-    const hy = SC.yb - (SC.yb - SC.top) * s28.endReal / SC.max;
-    items.push(S('a3-1928-stem', 'polyline', { panel: 'a3-1928', z: 0, pts: [[RX(s28.realGeo30), SC.yb + 20], [RX(s28.realGeo30), SC.yb + 20 - (SC.yb + 20 - hy - 22) * smooth((L - tM + 0.6) / 0.6)]], stroke: C.gain, lw: 4, alpha: fade(L, tM - 0.6, 0.2),
+    const d69 = H.P(...scXY(byY[1969]), 0);
+    const ya = H.P(0, SC.yb + 20, 0)[1];
+    // what each one had left: 1928 rises to its end balance, 1969 sits on zero
+    const s28 = byY[1928], p28 = scXY(s28);
+    const up = smooth((L - tM + 0.6) / 0.6);
+    items.push(S('a3-1928-stem', 'polyline', { panel: 'a3-1928', z: 0, pts: [[p28[0], SC.yb + 20], [p28[0], SC.yb + 20 - (SC.yb + 20 - p28[1] - 22) * up]], stroke: C.gain, lw: 4, alpha: fade(L, tM - 0.6, 0.2),
       meta: { role: 'mark', panel: 'a3-1928' } }));
-    items.push(Tx('a3-1928-y', '1928', d28[0] - 40, d28[1] - 36, 34, C.text, { align: 'right', weight: 700, claims: [claim('y1928')], year: 1928 }));
-    items.push(Tx('a3-1928-m', '$1.21 million', d28[0] + 10, d28[1] - 150, 48, C.gain, { align: 'center', weight: 700, alpha: at(L, tM), claims: [claim('end1928')], level: 2 }));
-    items.push(Tx('a3-1928-b', 'in 1928 dollars', d28[0] + 10, d28[1] - 96, 30, C['text-dim'], { align: 'center', alpha: at(L, tM), claims: [claim('y1928')], level: 3 }));
-    items.push(Tx('a3-1969-y2', '1969', d69[0], d69[1] - 44, 34, C.text, { align: 'center', weight: 700, alpha: at(L, t69), claims: [claim('y1969')], year: 1969 }));
-    items.push(Tx('a3-1969-r', 'ran out in its 28th year', d69[0], d69[1] - 100, 34, C.loss, { align: 'center', weight: 700, alpha: at(L, t28th), claims: [claim('dep1969')], level: 2 }));
-    items.push(L1('a3-1928-l1', 'Lower average, money left', 1280, 360, 52, fade(L, 0.3)));
+    items.push(S('a3-1928-lead', 'polyline', { panel: 'a3-1928', z: 0, pts: [[600, 660], [p28[0] - 22, p28[1] - 16]], stroke: C.gain, lw: 2, meta: { role: 'mark', panel: 'a3-1928' } }));
+    const co = H.P(560, 600, 0);
+    items.push(Tx('a3-1928-y', '1928', co[0], co[1] - 110, 34, C.text, { align: 'center', weight: 700, claims: [claim('y1928')], year: 1928 }));
+    items.push(Tx('a3-1928-m', '$1.21 million', co[0], co[1] - 40, 48, C.gain, { align: 'center', weight: 700, alpha: at(L, tM), claims: [claim('end1928')], level: 2 }));
+    items.push(Tx('a3-1928-b', 'in 1928 dollars, left at the end', co[0], co[1] + 12, 30, C['text-dim'], { align: 'center', alpha: at(L, tM), claims: [claim('y1928')], level: 3 }));
+    items.push(Tx('a3-1969-y2', '1969', d69[0] - 24, ya + 56, 34, C.text, { align: 'right', weight: 700, alpha: at(L, t69), claims: [claim('y1969')], year: 1969 }));
+    items.push(Tx('a3-1969-r', 'ran out in its 28th year', d69[0] + 24, ya + 56, 34, C.loss, { weight: 700, alpha: at(L, t28th), claims: [claim('dep1969')], level: 2 }));
+    items.push(L1('a3-1928-l1', 'Lower average, money left', 1280, 720 - 54, 52, fade(L, 0.3)));
     return items;
   };
   CAM['a3-1928'] = { f: 85, base: { x: -150, tx: -150, z: 200 }, moves: [[1.0, 1.5, { x: 150, tx: 150, z: -200 }]] };
