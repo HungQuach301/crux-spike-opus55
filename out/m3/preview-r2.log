@@ -1,0 +1,1 @@
+{"video": "out/m3/root/out/video.mp4", "pairs": 21179, "method": "luma, gblur sigma 1.5 (grain removed), |dY| > 4 codes", "at0.5": {"threshold%": 0.5, "framesChanged%": 33.4, "longestStillRun_s": 8.13}, "at0.1": {"threshold%": 0.1, "framesChanged%": 79.2, "longestStillRun_s": 6.77}, "medianChangedPixels%": 0.322}

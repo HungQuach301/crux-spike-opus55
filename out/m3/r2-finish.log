@@ -1,0 +1,3 @@
+spliced 15 GOP spans, 10308 new frames, 12203 re-encoded; frames 21180 ; encode 828 s
+{"videoFrames": 21180, "pictureFrames": 21180, "expectedFrames": 21180, "videoStart": 0.0, "audioStart": 0.0, "videoDuration": 706.0, "audioDuration": 706.0, "avDurationDiffMs": 0.0, "ok": true}
+FINISH 0

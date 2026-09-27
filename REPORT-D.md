@@ -536,3 +536,107 @@ Bảng trong file: vật thể → biến → đơn vị → lúc giới thiệu
   - (3) phương án render toàn phim (3 container song song hay máy có GPU).
 
 **DỪNG**, chờ duyệt.
+
+# M3 — phim đầy đủ, 2.5D "biểu đồ là nhân vật chính" (quyết định: BRIEF-D-amendments.md 11–16)
+
+## Kết quả giao
+- **Master:** `out/m3/root/out/video.mp4`.
+  - 706,0 s (11:46), 21 180 frame, 1920×1080, 30 fps CFR.
+  - Hình: H.264 High, 17 Mbps CBR (đo cả file 17,3 Mbps).
+  - Tiếng: AAC-LC 320 kb/s, 48 kHz. Tích hợp **−14,0 LUFS**, LRA 7,5, true peak −1,8 dBTP.
+  - File quá lớn cho nhánh làm việc, nên giao trên nhánh **`media/opus55-cine-phase-d-m3`**: các phần < 95 MB, SHA-256 cho từng phần và cả file. Cả file: `dd6117c66fa66dffbba6ea59fb67eaa670e9f278023f8563f1d374910ffb089a`. Cách ghép lại ở `m3/README.md`.
+  - Nhánh media giữ lịch sử, nên bản master v1 (`569def46…`) vẫn còn ở commit trước.
+- **Bản xem trước 2,5 Mbps:** `out/m3/preview/`, gồm 3 phần 90 MB, `parts.sha256` và README (có SHA-256 cả file).
+- **Phụ đề:** `out/m3/captions.srt`, 145 cue.
+- **Gói phát hành:** `out/m3/root/out/package/`, gồm 3 thumbnail (json kèm), `titles.md` (3 tiêu đề) và `description.md` (chương, nguồn, giả định, "không phải lời khuyên", ghi chú giọng tổng hợp).
+- **Giọng:** V8 Eric `eleven_v3`, tạm thời, KHÔNG phải quyết định #158. M3 tốn 2 624 ký tự / 56 lần gọi. 13 câu dùng `eleven_multilingual_v2` (danh sách ở `out/voice/wpm-report.md`).
+- **Checks:** `out/m3/checks-report-v1.md` → `checks-report-r1.md` → **`checks-report-r2.md`**. Log ở `out/m3/checks-run*.log`.
+
+## Checks toàn phim (`checks/run.sh out/m3/root`; `checks/` không đổi, LOCK khớp trước mỗi commit)
+| lần chạy | PASS | FAIL | MISSING |
+|---|---|---|---|
+| v1 (bản dựng đầu) | 49 | 22 | 0 |
+| sau vòng 1 (âm thanh, phụ đề) | 52 | 19 | 0 |
+| **sau vòng 2 (hình, ghép vào master)** | **58** | **13** | 0 |
+
+### Mọi luật từng trượt, xếp vào 3 cột
+| luật | đã sửa ở vòng 1/2 | trượt đã biết / được chấp nhận | chưa sửa, kèm lý do |
+|---|---|---|---|
+| F09 | **vòng 1**: 2 cue mồ côi 0,8 s đã gộp; 145 cue | | |
+| A03 | **vòng 1**: dải động theo đoạn; LRA 4,6 → 7,5 | | |
+| A10 | **vòng 1**: bỏ whoosh khỏi vùng hạ nhạc quanh con số; mọi chuyển động nhanh đều có whoosh | | |
+| S10 | **vòng 2**: 3 chữ trên màn hình bị đọc thành câu mệnh lệnh ("start", "Never ran out", "start years that failed") đã đổi cách nói; nghĩa giữ nguyên | | |
+| C03 | **vòng 2**: nhãn chuỗi hiện cùng đường (162 → 0 khung) | | |
+| C05 | **vòng 2**: nhãn 4.1% < 48 px (64 → 0) | | |
+| C06 | **vòng 2**: "1974 loss" và "1991" dùng màu chữ, vòng/chấm giữ màu loss (132 → 0) | | |
+| C10 | **vòng 2**: tiêu đề cấp 1 giữ suốt a2-gap1, a2-1982r, a3-1969-b (3 → 0 cảnh) | | |
+| C14 | **vòng 2**: nhãn chuỗi đậm 34 px trên nền tối, vẽ nét tại giữa phơi sáng (14 → 0) | | |
+| V11 | **vòng 2, phần lớn**: 192 → 35 mẫu | | Còn lại: gạch ngang "Not the average" (a3-answer, 11 mẫu, gạch cố ý). Nhãn năm trục chạm đường trục khi đẩy máy (a2-climax, outro; 5–140 px). Nhãn gương ở a2-mirror-late (185 px, 3 mẫu). Đã hết lượt sửa. |
+| V08 | **vòng 2, phần lớn**: xấu nhất 1,02 → 3,74; 117 → 68 mẫu | | Còn lại: nhãn "mirror retiree" xanh trên vùng sáng ấm của a2-climb/climax-in/climax/outro (3,7–4,4:1), và "starting balance" ở a2-bal74 (3,9). Đã hết lượt sửa. |
+| V03 | **vòng 2, phần lớn**: 279 → 28 mẫu | | Còn lại một nhãn: "mirror retiree" ở a2-payoff lệch 1 px ra ngoài vùng an toàn (x 95 < 96). Lỗi này do chính vòng 2 tạo ra khi dời nhãn sang trái điểm xuất phát. |
+| C13 | **vòng 2, phần lớn**: 9 → 1 cặp; xấu nhất 3 353 → 347 ms | | Còn lại: y1966 ở a2-bal74 +347 ms. Chữ "in 1966 dollars" giờ hiện cùng con số $461,000 (để khỏi đè thanh khi máy trượt), nên trễ hơn tiếng "1966". |
+| R06 | | **trượt đã biết** (2.5D, mục 15): 69,6% điểm cắt thấy được; match cut cố ý | |
+| V05 | | **trượt đã biết** (mục 15): ease 0,65; overshoot 3 | |
+| V07 | | **trượt đã biết** (mục 15): tỉ lệ mờ 1,19 | |
+| A15 | | **đã chấp nhận** (mục 8 và 16): các hồi 146,8 / 146,1 / 144,8 wpm; 10 câu > 175 wpm. Lệch khoảng 7 wpm so với số đo take của phiên (151–159) vì ASR chạy trên bản trộn; không sinh lại giọng | |
+| S04 | | **đã chấp nhận** (mục 9) | |
+| C04 | | **kháng nghị** (checks-appeal §4): biểu đồ tròn tô kín ở a2-bite bị coi là chuỗi đường; 364 khung | |
+| S12 | | | Có 4 cảnh nêu 3–4 số mới: a1-assets, a1-rule, a2-7576, a3-1969-b. Số nằm trong lời thoại; muốn sửa phải viết lại kịch bản và thu lại giọng, ngoài phạm vi vòng sửa hình. |
+| R01 | | | 2 đỉnh căng giả ở 163 s và 368 s (tension map đo từ stem). Sửa phải trộn lại âm, mà vòng 2 chỉ được sửa hình. |
+| R03 | | | 5 khoảng lặng < 1,0 s sau số quyết định (0,11–0,17 s: y1991 ×3, bal74, gap86). Sửa phải đổi dòng thời gian, tức render lại toàn phim và trộn lại âm. |
+
+Luật trượt ở v1 nhưng đạt ở r2: F09, A03, A10, S10, C03, C05, C06, C10, C14 (9 luật). Không có luật nào từ đạt chuyển sang trượt.
+
+### Số đo sát ngưỡng (r2)
+- Nhấn nhịp trên điểm cắt 100/100%.
+- Cold open 14,83 s / 15.
+- Mỗi hồi có một đỉnh cao trào: 3/3.
+- Act 2, trung bình cuối/đầu 0,777 / 0,8.
+- Màu nhân vật 1966 chiếm 0,987 / 0,95.
+- Subframe 8/8.
+- Thumbnail 100% token.
+- Mọi năm xuất phát được hiển thị: 69/69.
+- Ad break 2 (khoảng cho phép 2–3).
+- wpm theo hồi: cold open 155,4; method 156,1; outro 151,1 (đạt). Act 1–3 trượt, xem A15.
+
+### Đo chuyển động (không phải luật; đo, không khai)
+`out/m3/frame-change.json` (r2):
+- 33,4% cặp khung đổi ≥ 0,5% điểm ảnh; mục tiêu 50%.
+- Đoạn đứng lâu nhất 8,13 s; mục tiêu ≤ 4 s.
+- **Chưa đạt.** Vòng 2 không thêm chuyển động chỉ để qua ngưỡng.
+- Ở ngưỡng 0,1%: 79,2% cặp khung đổi, đoạn đứng lâu nhất 6,77 s.
+
+## Thời gian và số lần render
+| vòng | giờ (UTC) | render hình | ghi chú |
+|---|---|---|---|
+| dựng M3 + checks v1 | trước 11:35 | 2 đoạn toàn phim: A 1 675,6 s (6 091 frame), BC 5 259,5 s (15 089 frame); encode 1 082 + 1 028 s | sampler toàn phim 4 841 s |
+| **vòng 1** (âm thanh, phụ đề) | 11:35 → 12:07 (32') | **0** | trộn âm lại 1 lần; chạy lại luật 1 lần, dùng page.json v1 vì hình không đổi |
+| **vòng 2** (hình) | 12:08 → 15:24 (3 h 16') | **16 lần render đoạn** (47 cảnh; 10 308 frame mới = 48,7% phim; 9 687 frame siêu mẫu; 3 968 s), cộng khoảng 100 ảnh tĩnh để kiểm | ghép 828 s; sampler toàn phim 5 117 s + các luật khoảng 10'; kiểm trước 1 lần bằng sampler thô trên các cảnh đổi (32') |
+
+Chi tiết vòng 2:
+- **Sửa bộ dựng và kiểm ảnh tĩnh:** 12:08–12:26.
+- **Render:** 12:24–13:29. `src/d/m3-splice.js render` render đúng khung của từng cảnh; các cảnh cách nhau < 1 s được gộp làm một.
+- **Ghép:** 13:30–13:44. Master được cắt ở chính keyframe của nó.
+  - Khung ngoài 15 đoạn GOP được copy nguyên bit. Đã kiểm md5 của khung giải mã ở 4 điểm (50, 180, 330, 660 s), đều trùng bản r1. Lần ghép thử cũng kiểm 4 điểm và đều trùng.
+  - Chỉ mã hoá lại các đoạn GOP có khung mới: 12 203 frame, cùng cài đặt 17 Mbps.
+  - Không render lại toàn phim.
+- **Kiểm đồng bộ:** `out/m3/sync-r2.json`.
+  - Hình 21 180 frame, đúng bằng bản trước.
+  - Hình và tiếng cùng bắt đầu ở 0,000 s, cùng dài 706,000 s, lệch 0 ms.
+  - Tiếng là bản trộn vòng 1, không đổi.
+- **Checks toàn phim:** 13:44–15:24.
+
+## Cảnh chưa sửa hết
+- a2-climax, a2-climb, a2-climax-in: nhãn gương tương phản 3,7–4,4.
+- a2-climax, outro: nhãn năm trục chạm đường trục trong lúc đẩy máy.
+- a2-mirror-late: nhãn gương chạm đường.
+- a2-payoff: nhãn gương lệch 1 px ra ngoài vùng an toàn.
+- a2-bal74: số 1966 hiện trễ 347 ms; "starting balance" tương phản 3,9.
+- a3-answer: gạch ngang cố ý đè chữ.
+
+Mỗi lỗi chỉ vài mẫu. Theo chỉ dẫn, không có vòng sửa thứ 3.
+
+## Chưa làm
+- Frame-change chưa đạt mục tiêu 50% / ≤ 4 s. Muốn đạt phải sửa nhịp chuyển động của nhiều cảnh, rồi render lại phần lớn phim.
+- S12, R01, R03: xem bảng trên.
+- Không có Release asset. Các công cụ GitHub của phiên này không tải được asset, nên master nằm trên nhánh media.
