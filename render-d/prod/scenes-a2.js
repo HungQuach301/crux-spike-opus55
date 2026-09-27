@@ -93,7 +93,7 @@
       const a = clamp((L - 0.4 - k * 0.1) / 0.2);
       items.push(S(`${P}-tick${k}`, 'polyline', { panel: P, chart: P + '-duel', z: 0, pts: [[g.X(k + 0.5), g.yb - 8], [g.X(k + 0.5), g.yb + 8]], stroke: C.muted, lw: 2, alpha: a, meta: { role: 'axis', panel: P, chart: P + '-duel' } }));
     }
-    for (const ch of ['1966', 'mirror']) items.push(S(`${P}-dot-${ch}`, 'circle', { panel: P, z: 0, c: [g.X(0), g.Y(1e6) + (ch === '1966' ? 0 : 0)], r: 12 * back((L - 0.3) / 0.4), fill: colorOf(ch), alpha: fade(L, 0.3, 0.2), meta: { role: 'mark', panel: P, ...charShape(ch) } }));
+    for (const ch of ['mirror', '1966']) items.push(S(`${P}-dot-${ch}`, 'circle', { panel: P, z: 0, c: [g.X(0), g.Y(1e6)], r: (ch === '1966' ? 9 : 17) * back((L - 0.3) / 0.4), fill: colorOf(ch), alpha: fade(L, 0.3, 0.2), meta: { role: 'mark', panel: P, ...charShape(ch) } }));
     items.push(L1(P + '-l1', 'Year by year', 1280, 360, 72, fade(L, W('a2-est.1', 'balances', 1.3) - 0.3, 0.3)));
     items.push(Tx(P + '-sub', 'both balances in real dollars', 1280, 440, 32, C['text-dim'], { align: 'center', alpha: fade(L, 0.6), level: 2 }));
     return items;
@@ -237,6 +237,9 @@
     items.push(S(P + '-ref', 'polyline', { panel: P, z: 0, pts: [[g.x0 - 10, g.yb - 1e6 * g.s], [g.x0 + 9 * g.w, g.yb - 1e6 * g.s]], stroke: C.muted, lw: 2, dash: [10, 8], alpha: fade(L, 0.3), meta: { role: 'mark', panel: P } }));
     const r = H.P(g.x0 + 9 * g.w, g.yb - 1e6 * g.s, 0);
     items.push(Tx(P + '-refl', 'start', r[0] - 4, r[1] - 16, 30, C['text-dim'], { align: 'right', alpha: fade(L, 0.4), level: 3 }));
+    // the loss since the start: a bracket from the start line down to the 1974 bar, drawn after the number
+    const bu = smooth((L - (tV + 0.3)) / 1.2), bx = g.x0 + 9 * g.w - 4, y0 = g.yb - 1e6 * g.s, y1 = g.yb - M.real1966[9] * g.s;
+    items.push(S(P + '-drop', 'polyline', { panel: P, z: 0, pts: [[bx, y0], [bx, y0 + (y1 - y0) * bu]], stroke: C.loss, lw: 5, alpha: bu > 0 ? 1 : 0, meta: { role: 'mark', panel: P } }));
     const e = H.P(g.x0 + 8 * g.w + 28, g.yb, 0);
     items.push(Tx(P + '-e74', 'end of 1974', e[0] + 34, e[1] + 46, 30, C['text-dim'], { align: 'right', claims: cl('y1974'), alpha: on(L, t74), level: 3 }));
     items.push(Tx(P + '-who', '1966 retiree, real balance', g.x0 - 10, 250, 32, C.c1966, { series: '1966', claims: cl('y1966'), alpha: fade(L, 0.3), level: 3 }));
@@ -324,7 +327,7 @@
     items.push(L1(P + '-l1', 'Gone before the recovery', 1280, 360, 60, fade(L, 0.3, 0.3)));
     return items;
   };
-  CAM['a2-sell'] = { f: 85, base: { y: 250, ty: 150 }, moves: [[0.6, 1.4, { y: -250, ty: -150 }]], why: 'rise up the stack to where the slabs are lost' };
+  CAM['a2-sell'] = { f: 85, base: { y: 280, ty: 150 }, moves: [[0.6, 1.4, { y: -280, ty: -150 }]], why: 'rise up the stack to where the slabs are lost' };
 
   // the term
   B['a2-seq'] = (L, sc, H) => {
@@ -354,7 +357,6 @@
   B['a2-7576'] = (L, sc, H) => {
     const items = [], P = 'a2-7576'; env(items, P, { glow: 0.10, gx: 1500 });
     retRow(items, P, H, L, 0, 10, (k) => (k < 9 ? 1 : smooth((L - 0.5 - (k - 9) * 0.35) / 0.5)), { x0: 300, w: 70, yb: 760, s: 12, hi: [9, 10] });
-    items.push(Tx(P + '-cap', '1966 retiree, return by year', 300, 1000, 30, C['text-dim'], { claims: [], alpha: 0, level: 3 }));
     items.push(L1(P + '-l1', 'Good years do come', 1280, 360, 64, fade(L, 0.1, 0.3)));
     return items;
   };
@@ -432,6 +434,9 @@
     const x0 = 260, w = 46, yb = 920, s = 0.0034;
     base(items, P, 'wd', x0 - 10, x0 + 16 * w, yb);
     for (let k = 0; k < 16; k++) bar(items, P, 'wd', `${P}-wd${k}`, x0 + k * w, yb, w - 10, M.wd1966[k], s, smooth((L - 0.3 - k * 0.16) / 0.3), C.inflation, 1);
+    const gu = smooth((L - (tV + 1.6)) / 1.4), gx = x0 + 16 * w + 6, ya = yb - M.wd1966[0] * s, yz = yb - M.wd1966[15] * s;
+    items.push(S(P + '-grow', 'polyline', { panel: P, z: 0, pts: [[gx, ya], [gx, ya + (yz - ya) * gu]], stroke: C.text, lw: 4, alpha: gu > 0 && L < 8.9 ? 1 : 0, meta: { role: 'mark', panel: P } }));
+    items.push(S(P + '-grow0', 'polyline', { panel: P, z: 0, pts: [[x0 - 10, ya], [x0 - 10 + (gx - x0 + 10) * gu, ya]], stroke: C.text, lw: 2, dash: [8, 8], alpha: gu > 0 && L < 8.9 ? 0.8 : 0, meta: { role: 'mark', panel: P } }));
     const b = H.P(x0 + 15 * w + 18, yb, 0);
     items.push(Tx(P + '-y', '1981', b[0], b[1] + 62, 30, C['text-dim'], { align: 'center', claims: cl('y1981'), alpha: on(L, t81), level: 3 }));
     items.push(Tx(P + '-cap', 'withdrawal each year', x0, yb + 62, 30, C.inflation, { alpha: fade(L, 0.3), level: 3 }));
@@ -447,7 +452,7 @@
     items.push(Tx(P + '-real', 'the same money, in real terms', 1280, 470, 32, C['text-dim'], { align: 'center', alpha: inB ? fade(L, t66 + 0.4) : 0, level: 2 }));
     return items;
   };
-  CAM['a2-1981'] = { f: 85, base: { y: -300, ty: -200 }, moves: [[0.6, 1.5, { y: 300, ty: 200 }]], why: 'tilt down onto the withdrawal escalator' };
+  CAM['a2-1981'] = { f: 85, base: { z: -380 }, moves: [[0.6, 1.5, { z: 380 }]], why: 'push in on the withdrawal escalator as it reaches 1981' };
 
   // dawn: the full return row; the good run from 1982 lights up
   B['a2-1982'] = (L, sc, H) => {
@@ -492,7 +497,6 @@
     const u = smooth((L - (tV - 0.2)) / 0.6), sx = 300, sw = 600, sy = 560;
     items.push(S(P + '-whole', 'rect', { panel: P, z: 0, rect: [sx, sy, sw * (1 - M.share1966[16]), 70], radius: 6, fill: C.c1966, meta: { role: 'mark', panel: P, ...charShape('1966') } }));
     items.push(S(P + '-slice', 'rect', { panel: P, z: 0, rect: [sx + sw * (1 - M.share1966[16]) + 8 + 40 * u, sy + 60 * u, sw * M.share1966[16] - 8, 70], radius: 6, fill: C.loss, meta: { role: 'mark', panel: P } }));
-    items.push(Tx(P + '-cs', 'balance at the start of 1982', sx, sy - 24, 30, C['text-dim'], { claims: [], alpha: 0, level: 3 }));
     items.push(Tx(P + '-cap', 'what is left', sx, sy + 118, 30, C['text-dim'], { alpha: fade(L, tLeft - 0.3), level: 3 }));
     items.push(Tx(P + '-cap2', 'withdrawal as a share of the balance', x0 - 10, yb + 62, 30, C['text-dim'], { alpha: fade(L, 0.3), level: 3 }));
     items.push(L1(P + '-l1', '16.9%', 640, 360, 110, on(L, tV), { claims: cl('share1982') }));
@@ -531,7 +535,6 @@
     items.push(Tx(P + '-cr', 'return', rl[0], rl[1], 30, C.gain, { alpha: fade(L, 0.2), level: 3 }));
     items.push(Tx(P + '-cw', 'taken by the withdrawal', wl[0], wl[1], 30, C.inflation, { alpha: fade(L, tBal - 0.2), level: 3 }));
     items.push(Tx(P + '-cw2', 'share of the balance', wl[0], wl[1] + 40, 30, C.inflation, { alpha: fade(L, tBal - 0.2), level: 3 }));
-    items.push(Tx(P + '-who', '1966 retiree, 1979 to 1991', 300, 130, 30, C.c1966, { series: '1966', claims: [], alpha: 0, level: 3 }));
     items.push(L1(P + '-l1', '8', 1280, 330, 120, on(L, t8), { claims: cl('gainsFell') }));
     items.push(Tx(P + '-sub', 'big-gain years where the balance still fell', 1280, 432, 32, C['text-dim'], { align: 'center', alpha: fade(L, t8 + 0.3), level: 2 }));
     items.push(Tx(P + '-who2', '1966 retiree', 1280, 200, 30, C.c1966, { align: 'center', series: '1966', claims: cl('y1966'), alpha: on(L, W('a2-gains80.1', '1966', 4.4)), level: 3 }));
@@ -597,7 +600,7 @@
   B['a2-climax'] = (L, sc, H) => {
     const items = [], P = 'a2-climax'; env(items, P, { glow: 0.14, gx: 960 });
     const W = cueL(H), t66 = W('a2-climax.1', '1966', 0.2), tV = W('a2-climax.1', '$1.96 million', 4.6), tAh = W('a2-climax.1', 'ahead', 4.0);
-    gapPeak(items, P, H, L, 1);
+    gapPeak(items, P, H, L, 1, { bandA: 0.28 + 0.2 * smooth((L - tV) / 1.4) });
     items.push(L1(P + '-l1a', 'The mirror is ahead', 960, 250, 64, L < tV - 0.2 ? fade(L, tAh - 1.2, 0.3) : 0));
     items.push(L1(P + '-l1', '$1.96 million', 960, 250, 96, on(L, tV), { claims: cl('gap86') }));
     items.push(badge(P + '-badge', 960 + 340, 250 + 12, fade(L, tV - 0.4, 0.2)));
@@ -758,7 +761,6 @@
     items.push(L1(P + '-l1', '$1.44 million', 640, 360, 96, on(L, tV), { claims: cl('endmr') }));
     basis(items, P + '-basis', 640, 450, L, t66, fade(L, 0.1, 0.2));
     items.push(Tx(P + '-more', 'more than it started with', 640, 510, 32, C['text-dim'], { align: 'center', alpha: fade(L, tMore), level: 2 }));
-    items.push(Tx(P + '-who', 'mirror retiree, end of the plan', x + w / 2, 1000, 30, C.cmirror, { align: 'center', series: 'mirror', alpha: 0, level: 3 }));
     return items;
   };
   CAM['a2-mirror-real'] = { f: 85, base: { z: -350 }, moves: [[0.6, 1.3, { z: 350 }]], why: 'push in on the balance as it is converted to 1966 dollars' };
@@ -786,7 +788,7 @@
       const zp = smooth((L - (tBroke - 0.2)) / 0.35);
       items.push(S(P + '-zero', 'circle', { panel: P, z: 0, c: [g.X(26), g.yb], r: 14 * back(zp), fill: C.loss, alpha: zp > 0 ? 1 : 0, meta: { role: 'mark', panel: P, ...charShape('1966') } }));
     }
-    items.push(badge(P + '-badge', 960 + 150, 330, !part2 ? fade(L, tV - 0.4, 0.2) : 0));
+    items.push(badge(P + '-badge', 420, 362, !part2 ? fade(L, tV - 0.4, 0.2) : 0));
     items.push(L1(P + '-l1', '9.7% a year', 960, 360, 88, !part2 ? on(L, tV) : 0, { claims: cl('g1966', 'gmirror') }));
     items.push(Tx(P + '-sub', 'both averaged', 960, 250, 34, C['text-dim'], { align: 'center', alpha: !part2 ? fade(L, 0.2) : 0, level: 2 }));
     items.push(L1(P + '-l2', 'The average did not decide', 960, 300, 64, part2 ? fade(L, t2 - 0.1, 0.3) : 0));
