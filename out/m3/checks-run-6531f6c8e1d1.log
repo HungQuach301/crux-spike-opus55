@@ -1,0 +1,74 @@
+master 6531f6c8e1d11473251156875ad5631ecc2b6768517eab47d4ab8756735e3b62 mtime 2026-09-28T02:19:16Z; page.json mtime 2026-09-28T04:13:09Z; rules start 2026-09-28T04:13:17Z
+F01  PASS       0.1s  
+F02  PASS       1.2s  
+F03  PASS       0.0s  
+F04  PASS       0.0s  
+F05  PASS     101.7s  
+F06  PASS       0.9s  
+F07  PASS       0.0s  
+F08  PASS     372.3s  
+F09  PASS       0.0s  
+F10  PASS       0.0s  
+A01  PASS       9.7s  
+A02  PASS       0.0s  
+A03  PASS       0.0s  
+A04  PASS       6.7s  
+A05  PASS       0.5s  
+A06  PASS      17.7s  
+A07  PASS       5.8s  
+A08  PASS       5.8s  
+A09  PASS      11.9s  
+A10  PASS       8.3s  
+A11  PASS       1.5s  
+A12  PASS      30.7s  
+A13  PASS      24.7s  
+A14  FAIL       4.5s  key words missing=1
+A15  FAIL       0.0s  wpm act act1=146.756855; wpm act act2=145.16129; wpm act act3=146.176912; sentences > 175 wpm=8
+S01  PASS       0.0s  
+S02  PASS       0.0s  
+S03  PASS       0.0s  
+S04  FAIL       0.0s  used years missing in a source=3
+S05  PASS       0.0s  
+S06  PASS       0.0s  
+S07  PASS       0.0s  
+S08  PASS       0.0s  
+S09  PASS       0.0s  
+S10  PASS       0.1s  
+S11  PASS       0.0s  
+S12  FAIL       0.0s  max new numbers in a scene=4
+S13  PASS       0.0s  
+S14  PASS      16.3s  
+S15  PASS       0.0s  
+R01  FAIL       4.9s  false peaks=2; peaks without valley=1
+R02  PASS       0.0s  
+R03  FAIL       0.9s  shortest pause s=0.13; pauses < 1.0 s=5
+R04  PASS       0.0s  
+R05  PASS       0.0s  
+R06  FAIL      98.9s  cuts visible in picture (%)=70.588235
+V01  PASS       0.0s  
+V02  PASS       0.0s  
+V03  FAIL       0.0s  text outside safe area=28
+V04  FAIL       0.0s  1966 colour share=0.939977
+V05  FAIL     101.2s  worst ease ratio=0.65; overshoot > 8%=3
+V06  PASS       0.1s  
+V07  FAIL      13.9s  median blur ratio=1.215605
+V08  FAIL       0.0s  worst text contrast=3.74; samples below 4.5:1=68
+V09  PASS       0.0s  
+V10  PASS      99.9s  
+V11  FAIL       0.0s  text collisions=44
+C01  PASS       0.0s  
+C02  PASS       0.0s  
+C03  PASS       0.0s  
+C04  FAIL       0.0s  frames flagged=364
+C05  PASS       0.0s  
+C06  PASS       0.0s  
+C07  PASS       0.0s  
+C10  PASS       0.0s  
+C11  PASS       0.0s  
+C12  PASS       0.0s  
+C13  FAIL       0.0s  worst |offset| ms=347; pairs > 250 ms=3
+C14  PASS       0.0s  
+C15  PASS       0.0s  
+P01  PASS      14.5s  
+{"PASS": 56, "FAIL": 15, "MISSING": 0, "ERROR": 0}
+CHECKS 0 2026-09-28T04:29:14Z

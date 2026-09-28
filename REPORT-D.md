@@ -642,7 +642,7 @@ Mỗi lỗi chỉ vài mẫu. Theo chỉ dẫn, không có vòng sửa thứ 3.
 - Không có Release asset. Các công cụ GitHub của phiên này không tải được asset, nên master nằm trên nhánh media.
 
 # M3 vòng 3 — sửa theo chấm tay của chủ dự án (H1 4 · H2 2 · H3 3 · H4 3 · H5 4 · H6 4 · H7 3 → 3,29, chưa đạt)
-Thời gian: 01:45 → 04:1x UTC ngày 2026-09-28 (điểm dừng an toàn 04:45). Quyết định ghi ở BRIEF-D-amendments.md, mục 17–20.
+Thời gian: 01:45 → 04:3x UTC ngày 2026-09-28 (điểm dừng an toàn 04:45). Quyết định ghi ở BRIEF-D-amendments.md, mục 17–20.
 
 ## Đã làm
 - **H2, câu móc lại 0:32–0:46** (a1-hook, a1-hook-b; vẽ lại, bỏ lưới 69 ô cũ):
@@ -716,12 +716,21 @@ Master r3: SHA-256 `6531f6c8e1d11473251156875ad5631ecc2b6768517eab47d4ab8756735e
   - A15, S04, S12, R01, R03, R06, V05, V07 như bảng vòng 2.
 - Các luật trang (V03, V08, V11, C04, C13…) của lần này là số của trang r2: không dùng.
 
-**Lần chạy hợp lệ duy nhất** (một chuỗi: chờ sampler r3 xong → kiểm page.json mới hơn master và ghi thời điểm cùng SHA → chạy rules một lần): `out/m3/checks-run-6531f6c8e1d1.log` → `out/m3/checks-report-6531f6c8e1d1.*`.
-- Tại lúc commit này, sampler toàn phim (bắt đầu 02:13) CHƯA xong. Vì vậy **chưa luật nào được chạy trên master r3 với page.json của r3**.
-- Các luật trang chưa chạy trên r3: V02, V03, V04, V08, V11, C01–C07, C10, C12–C15, S08, S09, C13, cùng các luật đọc textTrack/claimFinal.
+**Lần chạy hợp lệ duy nhất**, một chuỗi: chờ sampler r3 xong → kiểm page.json mới hơn master → ghi thời điểm và SHA → chạy rules một lần.
+- Log `out/m3/checks-run-6531f6c8e1d1.log`: master `6531f6c8…` (mtime 02:19:16Z), page.json 04:13:09Z, rules 04:13:17Z → 04:29:14Z.
+- Báo cáo: `out/m3/checks-report-6531f6c8e1d1.json/.md`.
+- **Kết quả: 56 PASS / 15 FAIL / 0 MISSING** (r2: 58 / 13). Không luật nào từ trượt chuyển sang đạt. Có 2 luật mới trượt:
+  - **V04:** màu 1966 chiếm 0,940, ngưỡng 0,95. Lỗi của vòng 3: các ô xám trong dải và các hàng xám của hình móc lại mới vẫn mang nhãn nhân vật 1966 (`charShape('1966')`), dù chỉ ô hổ phách mới là nhân vật. Sửa được bằng cách bỏ nhãn đó trên các ô xám, nhưng chưa sửa vì đã hết lượt render.
+  - **A14:** thiếu "thirty" ở 10:10. Đây là lỗi máy kiểm (checks-appeal §5); theo chỉ dẫn chỉ báo cáo.
+- Luật trang so với r2:
+  - V11: 35 → 44 mẫu. Thêm 9 mẫu vì nhãn "mirror retiree" ở co-broke, sau khi dời, chạm đường gương. Các mẫu còn lại như vòng 2.
+  - V03: 28, V08: 68 mẫu (kém nhất 3,74), C04: 364. Không đổi.
+  - C13: 1 → 3 cặp. y1966 ở a2-bal74 +347 ms như cũ; thêm y1928 ở a3-1928 +300 ms và arith ở a1-arith −260 ms. Cả hai cảnh này không bị render lại, nên đây là do ASR trên bản trộn mới cho mốc từ khác đi.
+- A15, S04, S12, R01 (thêm 1 đỉnh thiếu thung lũng), R03, R06, V05, V07: như trước.
+- Đạt: A09 (6 khoảng lặng 0,8–1,5 s), A10 (Spearman 0,976), F01–F09, A03 (LRA 7,6), P01.
 
 ## Thời gian và số lần render của vòng 3
-- 01:45 → 04:1x UTC. Điểm dừng an toàn là 04:45.
+- 01:45 → 04:3x UTC. Điểm dừng an toàn là 04:45.
 - Giọng: 4 take, 320 ký tự ElevenLabs.
 - Render hình: **3 đoạn, 9 cảnh, 1 317 frame, 635 s**, cộng khoảng 20 ảnh tĩnh để kiểm.
 - Ghép: 218 s.
