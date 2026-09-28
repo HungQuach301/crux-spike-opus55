@@ -45,3 +45,18 @@
     - Checks đo bằng faster-whisper trên bản trộn cuối, có nhạc và hiệu ứng: các hồi ra 144.8–146.8 wpm.
     - Mốc từ trên bản trộn rộng hơn, nhất là đầu và cuối câu, nên tốc độ đo được thấp hơn chừng 7–9 wpm. M2 đã thấy điều này (hồi 1 thấp hơn khoảng 9 wpm).
     - Theo chỉ dẫn: ghi lại, **không sinh lại giọng**.
+
+## 2026-09-28 — vòng 3, sửa theo chấm tay của chủ dự án (H1 4 · H2 2 · H3 3 · H4 3 · H5 4 · H6 4 · H7 3)
+17. **H2, câu móc lại 0:30–0:45:** vẽ lại thành một vật duy nhất.
+    - Dải 30 ô là 30 năm của người về hưu đầu tiên. Một khung 10 năm trượt dọc dải khi giọng hỏi "which ten years", rồi dừng ở thập kỷ đầu.
+    - Nửa sau là 69 cửa sổ 30 năm của mọi năm bắt đầu từ 1928, mỗi hàng một năm, thập kỷ đầu sáng hơn.
+18. **H5:** mỗi khoảng lặng có chủ ý vào bằng chuyển tiếp chừng 300 ms.
+    - Nhạc nhả như đuôi reverb, sfx tắt dần trong 150 ms.
+    - Room tone lên 6 dB thành một sàn, không bao giờ im số tuyệt đối. Mọi thứ trở lại trong 200 ms.
+19. **H7:**
+    - (a) Sonification theo dữ liệu, sự kiện đọc từ trạng thái trang theo từng khung (`src/d/m3-sonify-events.js`, `audio/d_m2_audio.py` `sonify()`). Khi > 8 sự kiện/giây thì gộp thành cụm. Lớp này duck dưới lời đọc.
+    - (b) Nhạc có phối riêng cho từng hồi, 3 vòng hợp âm xoay theo mỗi câu 4 ô nhịp, leitmotif đổi theo diễn biến. Độ tự tương đồng đo trước/sau bằng `audio/d_music_selfsim.py`.
+20. **Nội dung:**
+    - Claim gainsFell đổi thành **7** năm "in which money remained": 1979, 1980, 1983, 1985, 1986, 1988, 1989. Năm 1991, năm cạn tiền, bị loại.
+    - Lời đọc mới là take V8 theo cùng quy tắc chọn. Câu bắt đầu sớm 0,24 s (J-cut) để vừa khe cũ, nên dòng thời gian không đổi.
+    - Nhãn nhân vật trong 15 s đầu được vẽ nét tại giữa phơi sáng, hết bị nhân đôi khi máy quay chạy.

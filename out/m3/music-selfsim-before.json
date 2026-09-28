@@ -1,0 +1,1 @@
+{"label": "before-r2", "phrases": 67, "pairs": 66, "meanSimilarity": 0.8109, "medianSimilarity": 0.8216, "shareAtLeast0.90": 0.0758, "shareAtLeast0.95": 0.0152, "longestRunOfRepeats(>=0.90)": 2, "longestRunStarts": 95.39, "mostRepetitive30s": [[85.01, 0.9221], [169.32, 0.8759], [492.69, 0.8738]]}

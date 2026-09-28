@@ -189,7 +189,7 @@ const ACTS = [
         { t: 'But the withdrawal now takes 16.9% of what is left.', d: 'Undercut the good news. Stress "sixteen point nine".' },
       ] },
       { id: 'a2-gains80', layout: 'ledger/gains', shot: 'medium', lines: [
-        { t: 'In 8 of its years with gains above 10%, the balance of the 1966 retiree still fell after the withdrawal and inflation.', d: 'Analytical, a small sting on "still fell". Even pace through the list of conditions.' },
+        { t: 'In 7 years with gains above 10% in which money remained, the balance of the 1966 retiree still fell after withdrawal and inflation.', d: 'Analytical, a small sting on "still fell". Even pace through the list of conditions.' },
       ] },
       { id: 'a2-late', layout: 'duel/lines', shot: 'wide', variant: 3, lines: [
         { t: 'The boom comes too late.', d: 'Short. Heavy.' },

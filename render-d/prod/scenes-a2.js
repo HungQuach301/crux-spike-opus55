@@ -519,12 +519,12 @@
   // gains that still lost: 1979..1991, returns (up) vs withdrawal share (down) on one scale; the 8 years highlighted
   B['a2-gains80'] = (L, sc, H) => {
     const items = [], P = 'a2-gains80'; env(items, P, { glow: 0.08, gx: 1500 });
-    const W = cueL(H), t8 = W('a2-gains80.1', '8', 0.1), t10 = W('a2-gains80.1', '10%', 1.8), tBal = W('a2-gains80.1', 'balance', 3.7), tFell = W('a2-gains80.1', 'fell', 6.8), tWd = W('a2-gains80.1', 'withdrawal', 8.1);
-    const fell = (D.claims.gainsFell && D.claims.gainsFell.years) || [1979, 1980, 1983, 1985, 1986, 1988, 1989, 1991];
+    const W = cueL(H), t8 = W('a2-gains80.1', '7', 0.1), t10 = W('a2-gains80.1', '10%', 1.8), tBal = W('a2-gains80.1', 'balance', 3.7), tFell = W('a2-gains80.1', 'fell', 6.8), tWd = W('a2-gains80.1', 'withdrawal', 8.1);
+    const fell = [1979, 1980, 1983, 1985, 1986, 1988, 1989]; // claim gainsFell: years with gains above 10% in which money remained (1991, the year it ran out, is not one)
     const k0 = 13, k1 = 25, x0 = 300, w = 76, yb = 620, s = 3.6;
     base(items, P, 'g80', x0 - 10, x0 + 13 * w, yb);
     for (let k = k0; k <= k1; k++) {
-      const x = x0 + (k - k0) * w, v = M.ret1966[k] * 100, isF = fell.includes(1966 + k) && M.real1966[k + 1] < M.real1966[k] && v > 10;
+      const x = x0 + (k - k0) * w, v = M.ret1966[k] * 100, isF = fell.includes(1966 + k) && M.real1966[k + 1] > 0 && M.real1966[k + 1] < M.real1966[k] && v > 10;
       const dim = L > t10 + 0.4 && !isF ? 0.35 : 1;
       bar(items, P, 'g80', `${P}-r${k}`, x, yb, w - 16, v, s, smooth((L - 0.1 - (k - k0) * 0.08) / 0.3), v >= 0 ? C.gain : C.loss, dim);
       bar(items, P, 'g80', `${P}-w${k}`, x, yb, w - 16, -M.share1966[k] * 100, s, smooth((L - (tBal - 0.2) - (k - k0) * 0.1) / 0.35), C.inflation, dim);
@@ -547,8 +547,8 @@
     items.push(Tx(P + '-cr', 'return', rl[0], rl[1], 30, C.gain, { alpha: fade(L, 0.2), level: 3 }));
     items.push(Tx(P + '-cw', 'taken by the withdrawal', wl[0], wl[1], 30, C.inflation, { alpha: fade(L, tBal - 0.2), level: 3 }));
     items.push(Tx(P + '-cw2', 'share of the balance', wl[0], wl[1] + 40, 30, C.inflation, { alpha: fade(L, tBal - 0.2), level: 3 }));
-    items.push(L1(P + '-l1', '8', 1280, 330, 120, on(L, t8), { claims: cl('gainsFell') }));
-    items.push(Tx(P + '-sub', 'big-gain years where the balance still fell', 1280, 432, 32, C['text-dim'], { align: 'center', alpha: fade(L, t8 + 0.3), level: 2 }));
+    items.push(L1(P + '-l1', D.claims.gainsFell.display, 1280, 330, 120, on(L, t8), { claims: cl('gainsFell') }));
+    items.push(Tx(P + '-sub', 'big-gain years, money left, balance still fell', 1280, 432, 32, C['text-dim'], { align: 'center', alpha: fade(L, t8 + 0.3), level: 2 }));
     items.push(Tx(P + '-who2', '1966 retiree', 1280, 200, 30, C.c1966, { align: 'center', series: '1966', claims: cl('y1966'), alpha: on(L, W('a2-gains80.1', '1966', 4.4)), level: 3 }));
     items.push(Tx(P + '-fell', 'balance fell', H.P(x0 + 13 * w + 16, yb + 150, 0)[0], H.P(x0 + 13 * w + 16, yb + 150, 0)[1], 30, C.loss, { alpha: fade(L, tFell - 0.2), level: 3 }));
     void tWd;

@@ -225,6 +225,120 @@ def physical(N, spec):
     return out
 
 
+
+# ---------------------------------------------------------------- sonification (round 3, H7a)
+PENTA = [2, 5, 7, 9, 0]  # D minor pentatonic pitch classes: D F G A C
+
+
+def qpenta(m):
+    m = int(round(m))
+    for d in range(0, 7):
+        for c in (m - d, m + d):
+            if c % 12 in PENTA:
+                return c
+    return m
+
+
+def sonify(N, ev):
+    """Every chart element that changes gets its own sound, starting on the frame it changes (events from
+    src/d/m3-sonify-events.js, read from the render page's scene state):
+      bar grows   -> a tone rising into its pitch; pitch from the bar's value on one fixed scale for the whole film
+                     (value / largest |value| of its chart: positive values MIDI 67-79, negative values 43-55, D minor
+                     pentatonic); lasts as long as the bar grows
+      line drawn  -> a continuous soft tone whose pitch follows the slope at the tip (rising line = higher)
+      dot appears -> a light pluck, pitch from its height on screen
+      number text changes -> a tick (the film has no running counters: 0 events)
+    More than 8 discrete events a second: they merge into one cluster sound per 125 ms (a soft chord + air), not a
+    rattle. Levels sit with the other sound effects; the mix ducks this layer under the voice."""
+    fps = ev['fps']
+    out = np.zeros((N, 2), np.float32)
+    mx = {}
+    for b in ev['bar']:
+        if b.get('value') is not None:
+            mx[b['chart']] = max(mx.get(b['chart'], 0), abs(b['value']))
+    disc = []  # (t, kind, midi, pan, dur)
+    for b in ev['bar']:
+        if b.get('value') is None or not mx.get(b['chart']):
+            continue
+        v = b['value'] / mx[b['chart']]
+        m = qpenta(67 + 12 * v if v >= 0 else 55 + 12 * v)
+        disc.append((b['f0'] / fps, 'bar', m, np.clip((b['x'] - 960) / 960, -0.8, 0.8), float(np.clip((b['f1'] - b['f0']) / fps, 0.08, 1.2))))
+    for d in ev['dot']:
+        disc.append((d['f'] / fps, 'dot', qpenta(84 - 36 * np.clip(d['y'], 0, 1080) / 1080), np.clip((d['x'] - 960) / 960, -0.8, 0.8), 0.3))
+    for k in ev.get('tick', []):
+        disc.append((k['f'] / fps, 'tick', 96, np.clip((k['x'] - 960) / 960, -0.8, 0.8), 0.03))
+    disc.sort()
+    ts = np.array([d[0] for d in disc])
+    dense = np.array([((ts > t - 0.5) & (ts <= t + 0.5)).sum() > 8 for t in ts]) if len(ts) else np.array([], bool)
+    stats = {'bars': sum(1 for d in disc if d[1] == 'bar'), 'dots': sum(1 for d in disc if d[1] == 'dot'), 'ticks': sum(1 for d in disc if d[1] == 'tick'), 'clustered': int(dense.sum())}
+    bins = {}
+    for (t, kind, m, pan, dur), dz in zip(disc, dense):
+        if dz:
+            bins.setdefault(int(t / 0.125), []).append((t, m, pan))
+            continue
+        gl, gr = pan_gains(pan)
+        if kind == 'bar':  # rising into the value's pitch while the bar grows
+            n = int((dur + 0.25) * SR)
+            tt = np.arange(n) / SR
+            fr = hz(m) * 2 ** (-np.clip(1 - tt / dur, 0, 1) * 7 / 12)
+            ph = 2 * np.pi * np.cumsum(fr) / SR
+            x = (np.sin(ph) + 0.25 * np.sin(2 * ph)) * np.minimum(1, tt / 0.01) * np.where(tt < dur, 1, np.exp(-(tt - dur) / 0.08))
+            add(out, t * SR, x * 0.045, gl, gr)
+        elif kind == 'dot':
+            add(out, t * SR, pluck(hz(m), 0.3, 0.06), gl, gr)
+        else:
+            n = int(0.03 * SR)
+            tt = np.arange(n) / SR
+            add(out, t * SR, band(RNG.standard_normal(n), 3000, 8000) * np.exp(-tt / 0.006) * 0.05, gl, gr)
+    for kb, grp in bins.items():  # one cluster per 125 ms
+        t = grp[0][0]
+        ms = sorted(m for _, m, _ in grp)
+        med = ms[len(ms) // 2]
+        pan = float(np.mean([p_ for _, _, p_ in grp]))
+        n = int(0.35 * SR)
+        tt = np.arange(n) / SR
+        x = sum(np.sin(2 * np.pi * hz(qpenta(med + d)) * tt) for d in (0, 5, 12)) / 3
+        x = x + 0.3 * band(RNG.standard_normal(n), 2000, 7000)
+        x *= np.minimum(1, tt / 0.01) * np.exp(-tt / 0.1) * min(1.0, 0.5 + 0.08 * len(grp))
+        gl, gr = pan_gains(np.clip(pan, -0.8, 0.8))
+        add(out, t * SR, x * 0.04, gl, gr)
+    stats['clusters'] = len(bins)
+    # lines: continuous tone per drawing run, pitch follows the slope at the tip
+    runs = {}
+    for l in ev['line']:
+        runs.setdefault(l['id'], []).append(l)
+    nr = 0
+    for lid, ls in runs.items():
+        ls.sort(key=lambda r: r['f'])
+        cur = [ls[0]]
+        segs = []
+        for r in ls[1:]:
+            if r['f'] - cur[-1]['f'] <= 2:
+                cur.append(r)
+            else:
+                segs.append(cur); cur = [r]
+        segs.append(cur)
+        for sg in segs:
+            if len(sg) < 3:
+                continue
+            nr += 1
+            f0, f1 = sg[0]['f'], sg[-1]['f'] + 1
+            n = int((f1 - f0) / fps * SR)
+            tf = np.array([r['f'] for r in sg]) / fps
+            base = 62 if (sg[0].get('char') != 'mirror') else 69
+            mid = np.array([base + 9 * np.tanh(1.2 * r['slope']) for r in sg])
+            tt = f0 / fps + np.arange(n) / SR
+            fr = hz(np.interp(tt, tf, mid))
+            ph = 2 * np.pi * np.cumsum(fr) / SR
+            env = np.minimum(1, np.minimum(np.arange(n), n - np.arange(n)) / (0.03 * SR))
+            x = (np.sin(ph) + 0.15 * np.sin(3 * ph)) * env * 0.022
+            pan = np.clip((sg[-1]['x'] - 960) / 960, -0.7, 0.7)
+            gl, gr = pan_gains(pan)
+            add(out, f0 / fps * SR, x, gl, gr)
+    stats['lineRuns'] = nr
+    return out, stats
+
+
 def main():
     tl, sc = J('out/timeline.json'), J('out/script.json')
     total = tl['total']
@@ -240,46 +354,98 @@ def main():
     # ---------------------------------------------------------------- music
     dry = np.zeros((N, 2), np.float32)
     key_at = lambda t: next((c['key'] for c in reversed([c for c in cues if c['layer'] == 'music']) if c['t'] <= t), 'D minor')
-    # chords per bar (4 beats)
+    # arrangement (round 3, H7b): the music follows the story instead of looping one 4-bar pattern.
+    # - each section has its own texture: cold open / ident: pad and motif only; act 1: straight pluck pulse; act 2:
+    #   syncopated pulse over a darker pad and a longer bass; act 3: half-time electric piano; method / outro: pad and
+    #   both motifs, resolved
+    # - every 4-bar phrase takes the next of 3 progressions of its key (as written / rotated / substituted) and the
+    #   pulse alternates its pattern every phrase, so no 4-bar phrase repeats as-is
+    # - leitmotifs follow the plot: 1966 (electric piano, left) major and rising while the plan is young, minor and
+    #   falling from the first losses (a2-7374), a broken two-note fragment after it runs out (a2-1991), minor and
+    #   quiet in act 3; mirror (bell, right, retrograde) neutral in act 1, major in act 2 (it thrives), both resolved
+    #   in the outro. Motif rhythm and register change from one statement to the next.
+    act_at = lambda t: next((a_['id'] for a_ in tl['acts'] if a_['start'] <= t < a_['end']), tl['acts'][-1]['id'])
+    st_ = {s_['id']: s_['start'] for s_ in tl['scenes']}
+    t_loss, t_broke = st_.get('a2-7374', total), st_.get('a2-1991', total)
+    def prog(key, p_):
+        base_ = CHORDS[key]
+        v_ = p_ % 3
+        return base_ if v_ == 0 else (base_[2:] + base_[:2] if v_ == 1 else [base_[0], base_[3], base_[1], base_[2]])
+    def beat_t(x):  # fractional beat index -> time
+        j = int(np.floor(x))
+        j = min(max(j, 0), len(beats) - 2)
+        return beats[j] + (x - j) * (beats[j + 1] - beats[j])
+    PAD = {'cold-open': (0.15, 600), 'ident': (0.15, 600), 'act1': (0.20, 1100), 'act2': (0.22, 650), 'act3': (0.18, 1300), 'method': (0.16, 900), 'outro': (0.19, 1000)}
     bars = beats[::4]
     for bi, b0 in enumerate(bars):
         b1 = bars[bi + 1] if bi + 1 < len(bars) else min(total, b0 + 2.6)
-        key = key_at(b0)
-        root, q = CHORDS[key][bi % 4]
+        key, sec, p_ = key_at(b0), act_at(b0), bi // 4
+        root, q = prog(key, p_)[bi % 4]
         notes = chord_notes(root, q)
-        inv = RNG.integers(0, 3)
+        inv = (p_ + bi) % 3
         notes = sorted([n + (12 if k < inv else 0) for k, n in enumerate(notes)])  # re-voiced every bar
-        vel = 0.20 * RNG.uniform(0.85, 1.1)
-        p = pad([hz(n) for n in notes], b1 - b0 + 0.6, vel, bright=700 if 'minor' in key else 1100)
+        pv, br = PAD.get(sec, (0.2, 900))
+        p = pad([hz(n) for n in notes], b1 - b0 + 0.6, pv * RNG.uniform(0.9, 1.1), bright=br if 'minor' not in key else 0.75 * br)
         add(dry, b0 * SR, p, 0.9, 0.9)
-        # bass
-        bn = int(0.8 * SR * (b1 - b0))
+        bn = int((1.0 if sec == 'act2' else 0.8) * SR * (b1 - b0))
         tt = np.arange(bn) / SR
-        bass = np.sin(2 * np.pi * hz(36 + NOTE[root]) * tt) * np.minimum(1, tt / 0.02) * np.exp(-tt / 1.2) * 0.22
+        bass = np.sin(2 * np.pi * hz(36 + NOTE[root]) * tt) * np.minimum(1, tt / 0.02) * np.exp(-tt / (1.8 if sec == 'act2' else 1.2)) * (0.26 if sec == 'act2' else 0.18 if sec == 'act3' else 0.22)
         add(dry, b0 * SR, bass, 1, 1)
-    # pulse on every beat (onsets follow the edit's tempo map); downbeats louder
-    for i, b in enumerate(beats):
+    # pulse
+    for i, b in enumerate(beats[:-1]):
+        sec, p_ = act_at(b), i // 16
+        if sec in ('cold-open', 'ident', 'method', 'outro'):
+            continue
         key = key_at(b)
-        root, q = CHORDS[key][(i // 4) % 4]
-        f = hz(60 + NOTE[root] + (7 if i % 2 else 0))
-        v = (0.5 if i % 4 == 0 else 0.32) * RNG.uniform(0.85, 1.1)
-        gl, gr = pan_gains(-0.15 if i % 2 else 0.15)
-        add(dry, b * SR, pluck(f, 0.4, v), gl, gr)
-    # leitmotifs on the first beat of every second bar
-    m66 = [0, 3, 7, 10]  # D F A C relative to D (62)
+        root, q = prog(key, p_)[(i // 4) % 4]
+        pat, pos = p_ % 2, i % 4
+        v = (0.5 if pos == 0 else 0.32) * RNG.uniform(0.85, 1.1)
+        if sec == 'act1':
+            if pat == 1 and pos == 2:
+                continue
+            f = hz(60 + NOTE[root] + (7 if i % 2 else 0) + (12 if pat == 1 and pos == 3 else 0))
+            gl, gr = pan_gains(-0.15 if i % 2 else 0.15)
+            add(dry, b * SR, pluck(f, 0.4, v), gl, gr)
+        elif sec == 'act2':
+            offs = [0.5] if pat == 0 else ([0.0, 0.75] if pos in (0, 2) else [0.5])
+            for o in offs:
+                f = hz(57 + NOTE[root] + (3 if q == 'm' and o > 0.6 else 0) + (7 if o == 0.5 else 0))
+                gl, gr = pan_gains(0.2 if o == 0.5 else -0.2)
+                add(dry, beat_t(i + o) * SR, pluck(f, 0.32, 0.8 * v), gl, gr)
+        else:  # act 3: half time
+            if i % 2:
+                continue
+            f = hz(60 + NOTE[root] + ((3 if q == 'm' else 4) if (i // 2) % 2 else 0) + (12 if pat else 0))
+            add(dry, b * SR, epiano(f, 1.0, 0.22 * RNG.uniform(0.85, 1.05)), 0.8, 0.8)
+    # leitmotifs, every second bar, rhythm and register varying
+    RH = [[0, 1, 2, 3], [0, 1, 2, 2.5], [0, 0.5, 1, 2], [0, 1.5, 2, 3]]
+    MAJ_UP, MIN_UP, MIN_DOWN = [0, 4, 7, 11], [0, 3, 7, 10], [10, 7, 3, 0]
     for bi in range(0, len(bars), 2):
         b0 = bars[bi]
-        if bi * 4 + 4 >= len(beats):
+        if bi * 4 + 8 >= len(beats):
             break
-        key = key_at(b0)
+        key, sec = key_at(b0), act_at(b0)
         shift = 0 if 'D' in key else (3 if key.startswith('F') else 0)
+        k_ = bi // 2
+        rh, reg = RH[k_ % 4], (12 if k_ % 3 == 2 else 0)
+        if b0 < t_loss:
+            m66, v66 = MAJ_UP, 0.30
+        elif b0 < t_broke:
+            m66, v66 = (MIN_DOWN if k_ % 2 else MIN_UP), 0.30
+        elif sec == 'act2':
+            m66, v66 = ([3, 0] if k_ % 2 == 0 else []), 0.24  # the broken fragment, every other statement
+        elif sec in ('method', 'outro'):
+            m66, v66 = MAJ_UP, 0.24
+        else:
+            m66, v66 = MIN_UP, 0.22
         gl, gr = pan_gains(-0.3)
         for k, iv in enumerate(m66):
-            add(dry, beats[bi * 4 + k] * SR, epiano(hz(62 + shift + iv), 1.2, 0.30 * RNG.uniform(0.85, 1.05)), gl, gr)
-        if b0 >= first_mirror and bi * 4 + 8 < len(beats):  # mirror answers with the retrograde a bar later
+            add(dry, beat_t(bi * 4 + rh[k]) * SR, epiano(hz(62 + shift + iv - (12 if b0 >= t_broke and sec == 'act2' else 0) + reg), 1.2, v66 * RNG.uniform(0.85, 1.05)), gl, gr)
+        if b0 >= first_mirror and (k_ % 2 == 1 or sec in ('method', 'outro')):  # the mirror answers a bar later
+            mm = list(reversed(MAJ_UP if sec in ('act2', 'act3', 'method', 'outro') else MIN_UP))
             gl, gr = pan_gains(0.3)
-            for k, iv in enumerate(reversed(m66)):
-                add(dry, beats[bi * 4 + 4 + k] * SR, bell(hz(74 + shift + iv), 1.6, 0.18 * RNG.uniform(0.85, 1.05)), gl, gr)
+            for k, iv in enumerate(mm):
+                add(dry, beat_t(bi * 4 + 4 + RH[(k_ + 1) % 4][k]) * SR, bell(hz(74 + shift + iv - reg), 1.6, (0.20 if sec == 'act2' else 0.16) * RNG.uniform(0.85, 1.05)), gl, gr)
     # accents: a low hit on each declared accent (all are cuts)
     for a in accents:
         add(dry, a * SR, boom(0.55), 1, 1)
@@ -452,16 +618,32 @@ def main():
     _ph = J('out/physical.json') if os.path.exists(os.path.join(ROOT, 'out', 'physical.json')) else None
     amb = physical(N, _ph) if _ph and (_ph.get('beds') or _ph.get('events')) else None
 
-    # intentional silences: everything but the room tone out (30 ms fades)
-    gate = np.ones(N)
+    # intentional silences (round 3, H5): no hard cut into them. The music releases like a reverb tail (exponential,
+    # tau 90 ms from 50 ms before the silence: -30 dB about 0.3 s later), the sound effects and whooshes fade over 150 ms, and the
+    # room tone rises 6 dB into the silence over 250 ms (a floor, never digital zero); everything returns over 200 ms.
+    gate_m, gate_s, room_up = np.ones(N), np.ones(N), np.zeros(N)
+    tt_s = np.arange(N) / SR
     for s in sil:
-        i0, i1 = int(s['t'] * SR), int((s['t'] + s['dur']) * SR)
-        f = int(0.03 * SR)
-        gate[i0:i1] = 0
-        gate[max(0, i0 - f):i0] = np.minimum(gate[max(0, i0 - f):i0], np.linspace(1, 0, i0 - max(0, i0 - f)))
-        gate[i1:i1 + f] = np.minimum(gate[i1:i1 + f], np.linspace(0, 1, len(gate[i1:i1 + f])))
-    for arr in (mus, sfx, whoosh):
-        arr *= gate[:, None]
+        t0, t1 = s['t'], s['t'] + s['dur']
+        i0, i1 = int((t0 - 0.05) * SR), int(t1 * SR)
+        seg = tt_s[i0:i1] - (t0 - 0.05)
+        gate_m[i0:i1] = np.minimum(gate_m[i0:i1], np.exp(-seg / 0.09))
+        j0, j1 = int((t0 - 0.1) * SR), int((t0 + 0.05) * SR)
+        gate_s[j0:j1] = np.minimum(gate_s[j0:j1], np.linspace(1, 0, j1 - j0) ** 2)
+        gate_s[j1:i1] = 0
+        r = int(0.2 * SR)
+        up = np.linspace(0, 1, r) ** 2
+        gate_m[i1:i1 + r] = np.minimum(gate_m[i1:i1 + r], up[:len(gate_m[i1:i1 + r])])
+        gate_s[i1:i1 + r] = np.minimum(gate_s[i1:i1 + r], up[:len(gate_s[i1:i1 + r])])
+        k0, k1 = int((t0 - 0.1) * SR), int((t0 + 0.15) * SR)
+        room_up[k0:k1] = np.maximum(room_up[k0:k1], np.linspace(0, 1, k1 - k0))
+        room_up[k1:i1] = 1
+        room_up[i1:i1 + r] = np.maximum(room_up[i1:i1 + r], np.linspace(1, 0, r)[:len(room_up[i1:i1 + r])])
+    gate = gate_s
+    mus *= gate_m[:, None]
+    for arr in (sfx, whoosh):
+        arr *= gate_s[:, None]
+    room *= (1 + (10 ** (6 / 20) - 1) * room_up)[:, None]
     if amb is not None:
         # physical sounds sit under the voice: -10 dB while the voice is active, and -18 dB within +-0.5 s of every
         # spoken number (so the decisive words stay intelligible to the ASR and to the viewer)
@@ -485,6 +667,22 @@ def main():
         dn = _ufn(dn, int(0.05 * SR))
         for arr in (mus, sfx):  # whooshes keep their level: they follow the camera speed (A10)
             arr *= dn[:, None]
+    # sonification of the data (round 3, H7a): its own layer inside the sfx stem, ducked 10 dB under the voice and
+    # 16 dB inside the spoken-number windows, silent in the intentional silences
+    son_stats = None
+    sp_ = os.path.join(ROOT, 'out', 'sonify-events.json')
+    if os.path.exists(sp_):
+        son, son_stats = sonify(N, json.load(open(sp_)))
+        dson = 10 ** (-10 * g / 20)
+        if os.path.exists(pj):
+            for tn in json.load(open(pj)).get('numbers', []):
+                i0, i1 = int(max(0, tn - 0.5) * SR), int(min(N / SR, tn + 1.6) * SR)
+                dson[i0:i1] = np.minimum(dson[i0:i1], 10 ** (-16 / 20))
+        from scipy.ndimage import uniform_filter1d as _ufs
+        dson = _ufs(dson, int(0.03 * SR)) * gate_s
+        son *= dson[:, None].astype(np.float32)
+        sfx += son
+        del son
     # ---------------------------------------------------------------- levels
     # voice-active windows: music 20 dB under the voice (mean power)
     vt = act > 0
@@ -535,7 +733,7 @@ def main():
     wavfile.write(os.path.join(ROOT, 'out', 'audio', 'master.wav'), SR, np.clip(master, -1, 1).astype(np.float32))
     # voice / music gap as the check measures it (100 ms windows, voice RMS > -45 dBFS)
     rep = {'integratedLUFS': I1, 'LRA': LRA, 'truePeakDbfs': TP, 'limiterMinGainDb': round(float(db(gsm.min())), 2), 'moves': wrows, 'accents': len(accents), 'beats': len(beats),
-           'silences': sil, 'events': len(events)}
+           'silences': sil, 'events': len(events), 'sonification': son_stats}
     json.dump(rep, open(os.path.join(ROOT, '..', 'audio-report.json'), 'w'), indent=1)
     ledger = {'assets': [{'name': 'music (pad, pulse, leitmotifs, accents, reverb)', 'origin': 'synthesised in audio/d_m2_audio.py', 'seed': 20260926, 'licence': 'original work of this project; no samples or third-party audio'},
                          {'name': 'sfx, risers, impacts, whooshes, room tone', 'origin': 'synthesised in audio/d_m2_audio.py', 'seed': 20260926, 'licence': 'original work of this project'},

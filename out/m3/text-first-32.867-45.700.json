@@ -1,0 +1,51 @@
+{
+ "hk-a0": {
+  "t": 33.3333,
+  "x": -25.1,
+  "level": null,
+  "role": "axis-label",
+  "claims": 1
+ },
+ "hk-cap": {
+  "t": 33.4333,
+  "x": 132.5,
+  "level": 3,
+  "role": "label",
+  "claims": 0
+ },
+ "hk-a1": {
+  "t": 34.0333,
+  "x": 1846.1,
+  "level": null,
+  "role": "axis-label",
+  "claims": 1
+ },
+ "hk-l1": {
+  "t": 35.0667,
+  "x": 1280,
+  "level": 1,
+  "role": "label",
+  "claims": 0
+ },
+ "hkb-66": {
+  "t": 39.6667,
+  "x": 1410.5,
+  "level": 3,
+  "role": "label",
+  "claims": 0
+ },
+ "hkb-l1": {
+  "t": 40.0333,
+  "x": 1280,
+  "level": 1,
+  "role": "label",
+  "claims": 0
+ },
+ "hkb-1928": {
+  "t": 43.9,
+  "x": 243.2,
+  "level": null,
+  "role": "label",
+  "claims": 1
+ }
+}

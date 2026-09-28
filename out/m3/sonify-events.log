@@ -1,0 +1,6 @@
+frame 0 0 s
+frame 6000 2 s
+frame 12000 4 s
+frame 18000 6 s
+{"bars":550,"lineSamples":1224,"dots":89,"ticks":0,"seconds":8}
+EXIT 0

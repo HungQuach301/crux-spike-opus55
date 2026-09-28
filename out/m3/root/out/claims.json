@@ -1526,10 +1526,10 @@
   },
   {
    "claimId": "gainsFell",
-   "value": 8,
-   "display": "8",
+   "value": 7,
+   "display": "7",
    "character": "1966",
-   "formula": "count of 1966-path years (1966..1991) with 0.6·S&P + 0.4·TBond > 10% and endReal < real balance at the start of the year: 1979, 1980, 1983, 1985, 1986, 1988, 1989, 1991",
+   "formula": "count of 1966-path years (1966..1991) in which money remained (endReal > 0) with 0.6·S&P + 0.4·TBond > 10% and endReal < real balance at the start of the year: 1979, 1980, 1983, 1985, 1986, 1988, 1989",
    "source": {
     "id": "damodaran-histretSP-2026",
     "url": "https://pages.stern.nyu.edu/~adamodar/pc/datasets/histretSP.xls"
@@ -1547,8 +1547,7 @@
     1985,
     1986,
     1988,
-    1989,
-    1991
+    1989
    ],
    "spoken": [
     {

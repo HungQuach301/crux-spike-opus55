@@ -1,0 +1,79 @@
+{
+ "a2-1982w-cap": {
+  "t": 348.7333,
+  "x": 378.8,
+  "level": 3,
+  "role": "label",
+  "claims": 0
+ },
+ "a2-1982w-cap2": {
+  "t": 348.7333,
+  "x": 1154.4,
+  "level": 3,
+  "role": "label",
+  "claims": 0
+ },
+ "a2-1982w-l1": {
+  "t": 348.7333,
+  "x": 640,
+  "level": 1,
+  "role": "label",
+  "claims": 1
+ },
+ "a2-gains80-l1": {
+  "t": 348.7667,
+  "x": 1280,
+  "level": 1,
+  "role": "label",
+  "claims": 1
+ },
+ "a2-gains80-sub": {
+  "t": 349.1,
+  "x": 1280,
+  "level": 2,
+  "role": "label",
+  "claims": 0
+ },
+ "a2-gains80-cr": {
+  "t": 349.1333,
+  "x": 411.4,
+  "level": 3,
+  "role": "label",
+  "claims": 0
+ },
+ "a2-gains80-l10": {
+  "t": 350,
+  "x": 1397.6,
+  "level": 2,
+  "role": "label",
+  "claims": 1
+ },
+ "a2-gains80-cw": {
+  "t": 352.9333,
+  "x": 1488.7,
+  "level": 3,
+  "role": "label",
+  "claims": 0
+ },
+ "a2-gains80-cw2": {
+  "t": 352.9333,
+  "x": 1463.6,
+  "level": 3,
+  "role": "label",
+  "claims": 0
+ },
+ "a2-gains80-who2": {
+  "t": 353.6667,
+  "x": 1280,
+  "level": 3,
+  "role": "label",
+  "claims": 1
+ },
+ "a2-gains80-fell": {
+  "t": 356.1667,
+  "x": 1409.1,
+  "level": 3,
+  "role": "label",
+  "claims": 0
+ }
+}

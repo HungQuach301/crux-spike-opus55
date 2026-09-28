@@ -1,0 +1,21 @@
+worker 0-158: frame 0 (3 s)
+worker 158-316: frame 158 (3 s)
+worker 316-474: frame 316 (4 s)
+worker 474-631: frame 474 (4 s)
+worker 474-631: frame 624 (189 s)
+worker 0-158: frame 150 (268 s)
+worker 316-474: frame 466 (276 s)
+worker 158-316: frame 308 (286 s)
+{"range":"0.000-21.033","wallSeconds":299.4,"frames":631,"framesSupersampled":470}
+worker 986-1083: frame 986 (2 s)
+worker 1180-1277: frame 1180 (2 s)
+worker 1083-1180: frame 1083 (2 s)
+worker 1277-1371: frame 1277 (2 s)
+{"range":"32.867-45.700","wallSeconds":188.8,"frames":385,"framesSupersampled":385}
+worker 10614-10690: frame 10614 (2 s)
+worker 10538-10614: frame 10538 (2 s)
+worker 10690-10763: frame 10690 (2 s)
+worker 10462-10538: frame 10462 (2 s)
+{"range":"348.733-358.767","wallSeconds":146.9,"frames":301,"framesSupersampled":301}
+rendered 3 ranges in 637 s
+EXIT 0

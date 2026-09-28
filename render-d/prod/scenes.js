@@ -76,11 +76,11 @@
       const sp = P(tip[0], tip[1], 0);
       const right = false;
       items.push(Tx(`${panel}-lab-${ch}`, ch === '1966' ? '1966 retiree' : 'mirror retiree', sp[0] + (right ? -22 : 22), sp[1] + (ch === '1966' ? 58 : -36), 34, colorOf(ch),
-        { align: right ? 'right' : 'left', claims: ch === '1966' ? [claim('y1966')] : [], alpha: prog > 0.2 ? fade(prog * 10, 2.2, 1) : 0, series: ch }));
+        { sharp: true, align: right ? 'right' : 'left', claims: ch === '1966' ? [claim('y1966')] : [], alpha: prog > 0.2 ? fade(prog * 10, 2.2, 1) : 0, series: ch }));
     }
     const a = P(x0, yb + 20, 0), b = P(x1, yb + 20, 0);
-    items.push(Tx(panel + '-a0', '1966', a[0], a[1] + 46, 34, C.text, { role: 'axis-label', anchor: panel, chart: panel, year: 1966, align: 'center', claims: [claim('ax1966')] }));
-    items.push(Tx(panel + '-a1', '1995', b[0], b[1] + 46, 34, C.text, { role: 'axis-label', anchor: panel, chart: panel, year: 1995, align: 'center', claims: [claim('ax1995')] }));
+    items.push(Tx(panel + '-a0', '1966', a[0], a[1] + 46, 34, C.text, { sharp: true, role: 'axis-label', anchor: panel, chart: panel, year: 1966, align: 'center', claims: [claim('ax1966')] }));
+    items.push(Tx(panel + '-a1', '1995', b[0], b[1] + 46, 34, C.text, { sharp: true, role: 'axis-label', anchor: panel, chart: panel, year: 1995, align: 'center', claims: [claim('ax1995')] }));
   }
   B['co-lines'] = (L, sc, H) => {
     const items = []; env(items, 'co', { glow: 0.06, floor: 0.7 });
@@ -96,7 +96,7 @@
     const w = (p) => H.local(cueAbs('co-same.1', p));
     items.push(L1('co-l1', 'Two retirees', 640, 360, 72, fade(L, 0.15)));
     [['balance', 'Same balance'], ['withdrawals', 'Same withdrawals'], ['average', 'Same average return']].forEach(([p, s], i) =>
-      items.push(Tx('co-same-' + i, s, 470, 430 + i * 46, 34, C['text-dim'], { alpha: fade(L, w(p) - 0.1, 0.25), level: 2 })));
+      items.push(Tx('co-same-' + i, s, 470, 430 + i * 46, 34, C['text-dim'], { sharp: true, alpha: fade(L, w(p) - 0.1, 0.25), level: 2 })));
     void Lc;
     return items;
   };
@@ -115,17 +115,17 @@
       series(items, 'cb-' + ch, 'cb', ch, pts, 0, 'cb', 1, 'cb-lab-' + ch);
     }
     const lab66 = H.P(X(8), Y(M.bal1966[7]), 0), labM = H.P(X(Math.min(n, 21)), Y(M.balMirror[Math.min(n, 21) - 1]), 0);
-    items.push(Tx('cb-lab-1966', '1966 retiree', H.P(X(15), yb, 0)[0], H.P(X(15), yb, 0)[1] + 50, 30, C.c1966, { claims: [claim('y1966')], series: '1966' }));
-    items.push(Tx('cb-lab-mirror', 'mirror retiree', labM[0] - 250, labM[1] - 30, 30, C.cmirror, { series: 'mirror' }));
+    items.push(Tx('cb-lab-1966', '1966 retiree', H.P(X(15), yb, 0)[0], H.P(X(15), yb, 0)[1] + 50, 30, C.c1966, { sharp: true, claims: [claim('y1966')], series: '1966' }));
+    items.push(Tx('cb-lab-mirror', 'mirror retiree', labM[0] + 24, labM[1] + 30, 30, C.cmirror, { sharp: true, series: 'mirror' }));
     const a = H.P(x0, yb + 4, 0), b = H.P(x1, yb + 4, 0);
-    items.push(Tx('cb-a0', '1966', a[0], a[1] + 46, 30, C['text-dim'], { role: 'axis-label', anchor: 'cb', chart: 'cb', year: 1966, align: 'center', claims: [claim('ax1966')] }));
-    items.push(Tx('cb-a1', '1995', b[0], b[1] + 46, 30, C['text-dim'], { role: 'axis-label', anchor: 'cb', chart: 'cb', year: 1995, align: 'center', claims: [claim('ax1995')] }));
+    items.push(Tx('cb-a0', '1966', a[0], a[1] + 46, 30, C['text-dim'], { sharp: true, role: 'axis-label', anchor: 'cb', chart: 'cb', year: 1966, align: 'center', claims: [claim('ax1966')] }));
+    items.push(Tx('cb-a1', '1995', b[0], b[1] + 46, 30, C['text-dim'], { sharp: true, role: 'axis-label', anchor: 'cb', chart: 'cb', year: 1995, align: 'center', claims: [claim('ax1995')] }));
     const hit = H.P(X(25), yb + 4, -250);
     const ah = L >= tHit - 1 / 60 ? 1 : 0;
     items.push(S('cb-zero', 'circle', { panel: 'cb', z: -250, c: [X(25), yb + 4], r: 12 * back((L - tHit) / 0.35), fill: C.loss, alpha: ah, meta: { role: 'mark', panel: 'cb', ...charShape('1966') }, stroke: null }));
     items.push(L1('cb-l1a', 'With the same withdrawals', 640, 360, 56, fade(L, 0.2) * fadeOut(L, tHit - 0.35, 0.3)));
-    items.push(L1('cb-l1', '1991', hit[0], hit[1] - 112, 96, ah, { claims: [claim('y1991')] }));
-    items.push(Tx('cb-ranout', 'ran out of money', hit[0], hit[1] - 192, 34, C['text-dim'], { align: 'center', alpha: fade(L, tHit + 0.1) }));
+    items.push(L1('cb-l1', '1991', hit[0], hit[1] - 112, 96, ah, { sharp: true, claims: [claim('y1991')] }));
+    items.push(Tx('cb-ranout', 'ran out of money', hit[0], hit[1] - 192, 34, C['text-dim'], { sharp: true, align: 'center', alpha: fade(L, tHit + 0.1) }));
     return items;
   };
   B['co-question'] = (L, sc, H) => {
@@ -156,7 +156,7 @@
       items.push(S(`est-d${k}`, 'rect', { panel: 'est', z: 300, rect: [300 + c * 118, 480 + r * 108, 96, 86], radius: 8, fill: k === 5 ? C.c1966 : C['surface-2'], alpha: k === 5 ? fade(L, 1.2) : 1,
         meta: { role: 'mark', panel: 'est', ...(k === 5 ? charShape('1966') : {}) } }));
     }
-    items.push(L1('est-l1', 'January 1966', 640, 360, 88, fade(L, H.local(cueAbs('a1-est.1', '1966')) - 0.05, 0.2), { claims: [claim('y1966')] }));
+    items.push(L1('est-l1', 'January 1966', 640, 360, 88, fade(L, H.local(cueAbs('a1-est.1', '1966')) - 0.05, 0.2), { sharp: true, claims: [claim('y1966')] }));
     return items;
   };
   function moneyColumn(items, panel, n, L, x, yb, z, lift) {
@@ -210,19 +210,53 @@
         meta: { role: 'mark', panel, year: y, ...(isHi ? charShape('1966') : {}) } }));
     }
   }
+  // the promise (H2, round 3): ONE object — the first retiree's 30 years as a strip of cells. A ten-year window slides
+  // along it while the voice asks "which ten years" and settles on the first decade; then (a1-hook-b) the same strip
+  // takes its place among the 30-year windows of every start year 1928..1996 (one row each, first decade marked).
+  const HK = { x0: 240, cw: 44, gap: 4, y: 600, h: 70 };
+  const hkX = (k) => HK.x0 + k * (HK.cw + HK.gap);
   B['a1-hook'] = (L, sc, H) => {
     const items = []; env(items, 'hk', { glow: 0.08 });
-    yearGrid(items, 'hk', L, H, smooth((L - 0.3) / 3), 1);
-    items.push(L1('hk-l1', 'Which ten years decided it?', 1280, 360, 64, fade(L, 0.4)));
+    const tWhich = H.local(cueAbs('a1-hook.1', 'which')), tDec = H.local(cueAbs('a1-hook.1', 'decided'));
+    const slide = smooth((L - (tWhich - 0.1)) / (tDec - tWhich + 0.2)), wa = smooth((L - (tWhich - 0.25)) / 0.3);
+    const w0 = 20 * (1 - slide); // window start cell: 20 (the last ten years) -> 0 (the first ten)
+    for (let k = 0; k < 30; k++) {
+      const a = clamp((L - 0.2 - k * 0.03) / 0.25);
+      const inW = wa > 0 && k >= w0 - 0.5 && k < w0 + 9.5;
+      const first = slide >= 0.999 && k < 10;
+      items.push(S(`hk-c${k}`, 'rect', { panel: 'hk', z: 0, rect: [hkX(k), HK.y, HK.cw, HK.h], radius: 6, fill: first || inW ? C.c1966 : C['surface-2'], alpha: a * (first ? 1 : inW ? 0.55 : 1),
+      meta: { role: 'mark', panel: 'hk', year: 1966 + k, ...charShape('1966') } }));
+    }
+    // the ten-year window: a bracket over ten cells
+    const bx0 = hkX(w0) - 2, bx1 = hkX(w0 + 9) + HK.cw + 2, by = HK.y - 22;
+    items.push(S('hk-win', 'polyline', { panel: 'hk', z: 0, pts: [[bx0, by + 12], [bx0, by], [bx1, by], [bx1, by + 12]], stroke: C.text, lw: 4, alpha: wa, meta: { role: 'mark', panel: 'hk' } }));
+    const a0 = H.P(hkX(0) + HK.cw / 2, HK.y + HK.h, 0), a1 = H.P(hkX(29) + HK.cw / 2, HK.y + HK.h, 0);
+    items.push(Tx('hk-a0', '1966', a0[0], a0[1] + 44, 30, C['text-dim'], { sharp: true, role: 'axis-label', anchor: 'hk', chart: 'hk', year: 1966, align: 'center', claims: [claim('ax1966')], alpha: fade(L, 0.3) }));
+    items.push(Tx('hk-a1', '1995', a1[0], a1[1] + 44, 30, C['text-dim'], { sharp: true, role: 'axis-label', anchor: 'hk', chart: 'hk', year: 1995, align: 'center', claims: [claim('ax1995')], alpha: fade(L, 1.0) }));
+    const cp = H.P(hkX(0), HK.y - 70, 0);
+    items.push(Tx('hk-cap', 'first retiree, year by year', cp[0], cp[1], 32, C.c1966, { sharp: true, series: '1966', alpha: fade(L, 0.4), level: 3 }));
+    items.push(L1('hk-l1', 'Which ten years decided it?', 1280, 360, 64, fade(L, tWhich - 0.3, 0.3)));
     return items;
   };
+  // every start year's 30-year window on one calendar (1928..2025), one row per start year, first decade brighter
   B['a1-hook-b'] = (L, sc, H) => {
     const items = []; env(items, 'hk', { glow: 0.08 });
-    yearGrid(items, 'hk', L, H, 1, 1);
-    const t28 = H.local(cueAbs('a1-hook.1', '1928'));
-    items.push(L1('hkb-l1', 'Did it hold for every start year?', 640, 360, 60, fade(L, H.local(cueAbs('a1-hook.1', 'whether')) - 0.1, 0.3)));
-    const p = H.P(150, 500 + 330, 0);
-    items.push(Tx('hkb-1928', 'since 1928', p[0] + 10, p[1] + 60, 34, C['text-dim'], { alpha: L >= t28 - 1 / 60 ? 1 : 0, claims: [claim('y1928')] }));
+    const tEvery = H.local(cueAbs('a1-hook.1', 'every')), t28 = H.local(cueAbs('a1-hook.1', '1928'));
+    const cx = (y) => 200 + (y - 1928) * 15.6, top = 430, rh = 6.9;
+    const fan = (i) => smooth((L - (tEvery - 0.4) - Math.abs(i - 38) * 0.012) / 0.4);
+    for (let i = 0; i < 69; i++) {
+      const y = 1928 + i, is66 = y === 1966, a = is66 ? 1 : fan(i), yy = top + i * rh;
+      if (a <= 0) continue;
+      items.push(S(`hkb-r${y}`, 'rect', { panel: 'hk', z: 0, rect: [cx(y), yy, 30 * 15.6, is66 ? rh + 2 : rh - 2], radius: 2, fill: is66 ? C.c1966 : C['surface-2'], alpha: a * (is66 ? 0.45 : 1),
+        meta: { role: 'mark', panel: 'hk', year: y, ...(is66 ? charShape('1966') : {}) } }));
+      items.push(S(`hkb-d${y}`, 'rect', { panel: 'hk', z: 0, rect: [cx(y), yy, 10 * 15.6, is66 ? rh + 2 : rh - 2], radius: 2, fill: is66 ? C.c1966 : C.muted, alpha: a,
+        meta: { role: 'mark', panel: 'hk', year: y, ...(is66 ? charShape('1966') : {}) } }));
+    }
+    const p = H.P(cx(1928), top, 0);
+    items.push(Tx('hkb-1928', 'since 1928', p[0], p[1] - 18, 34, C['text-dim'], { sharp: true, alpha: L >= t28 - 1 / 60 ? 1 : 0, claims: [claim('y1928')] }));
+    const q = H.P(cx(1966) + 30 * 15.6 + 16, top + 38 * rh + 6, 0);
+    items.push(Tx('hkb-66', 'first retiree', q[0], q[1], 30, C.c1966, { sharp: true, series: '1966', alpha: fade(L, 0.2), level: 3 }));
+    items.push(L1('hkb-l1', 'Did it hold for every start year?', 1280, 330, 56, fade(L, H.local(cueAbs('a1-hook.1', 'whether')) - 0.1, 0.3)));
     return items;
   };
   function donut(items, panel, cx, cy, z, share, a, H, tilt = 0.55) {

@@ -342,13 +342,14 @@ But the withdrawal now takes 16.9% of what
 is left.
 
 76
-00:05:48,740 --> 00:05:55,487
-In 8 of its years with gains above 10%,
-the balance of the 1966 retiree still fell
+00:05:48,500 --> 00:05:54,626
+In 7 years with gains above 10% in which
+money remained, the balance of the 1966
 
 77
-00:05:55,507 --> 00:05:58,360
-after the withdrawal and inflation.
+00:05:54,646 --> 00:05:58,440
+retiree still fell after withdrawal and
+inflation.
 
 78
 00:05:58,760 --> 00:06:00,740

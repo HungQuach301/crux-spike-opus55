@@ -1,0 +1,108 @@
+{
+ "scenes": [
+  "co-lines",
+  "co-same",
+  "co-broke",
+  "co-question",
+  "ident",
+  "a1-est",
+  "a1-hook",
+  "a1-hook-b",
+  "a2-gains80"
+ ],
+ "ranges": [
+  {
+   "f0": 0,
+   "f1": 631,
+   "range": "0.000-21.033",
+   "scenes": [
+    "co-lines",
+    "co-same",
+    "co-broke",
+    "co-question",
+    "ident",
+    "a1-est"
+   ]
+  },
+  {
+   "f0": 986,
+   "f1": 1371,
+   "range": "32.867-45.700",
+   "scenes": [
+    "a1-hook",
+    "a1-hook-b"
+   ]
+  },
+  {
+   "f0": 10462,
+   "f1": 10763,
+   "range": "348.733-358.767",
+   "scenes": [
+    "a2-gains80"
+   ]
+  }
+ ],
+ "renders": [
+  {
+   "range": "0.000-21.033",
+   "scenes": [
+    "co-lines",
+    "co-same",
+    "co-broke",
+    "co-question",
+    "ident",
+    "a1-est"
+   ],
+   "frames": 631,
+   "framesSupersampled": 470,
+   "wallSeconds": 299.4
+  },
+  {
+   "range": "32.867-45.700",
+   "scenes": [
+    "a1-hook",
+    "a1-hook-b"
+   ],
+   "frames": 385,
+   "framesSupersampled": 385,
+   "wallSeconds": 188.8
+  },
+  {
+   "range": "348.733-358.767",
+   "scenes": [
+    "a2-gains80"
+   ],
+   "frames": 301,
+   "framesSupersampled": 301,
+   "wallSeconds": 146.9
+  }
+ ],
+ "renderWallSeconds": 636.8,
+ "splice": {
+  "masterFrames": 21180,
+  "splicedFrames": 21180,
+  "gopSpans": [
+   {
+    "kA": 0,
+    "kB": 632,
+    "reencodedFrames": 632,
+    "newFrames": 631
+   },
+   {
+    "kA": 825,
+    "kB": 1384,
+    "reencodedFrames": 559,
+    "newFrames": 385
+   },
+   {
+    "kA": 10284,
+    "kB": 10763,
+    "reencodedFrames": 479,
+    "newFrames": 301
+   }
+  ],
+  "reencodedFrames": 1670,
+  "newFrames": 1317,
+  "encodeSeconds": 218.3
+ }
+}

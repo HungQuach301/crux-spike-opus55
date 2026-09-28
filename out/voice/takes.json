@@ -450,7 +450,7 @@
   },
   {
    "id": "a2-gains80.1",
-   "raw": "out/voice/el/a2-gains80.1.t3.eleven_v3.mp3",
+   "raw": "out/voice/el/a2-gains80.1.r3t3.eleven_v3.mp3",
    "final": "out/voice/final/a2-gains80.1.flac",
    "model": "eleven_v3",
    "take": 3

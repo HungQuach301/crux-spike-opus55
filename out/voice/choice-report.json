@@ -1134,15 +1134,16 @@
   {
    "id": "a2-gains80.1",
    "act": "act2",
-   "words": 24,
+   "words": 25,
    "chosen": {
     "take": 3,
     "model": "eleven_v3",
-    "wpm": 154.5,
-    "wpmAfter": 154.5,
+    "wpm": 155.9,
+    "wpmAfter": 155.9,
     "stretch": 1.0,
     "missing": [],
-    "heard": "In eight of its years with gains above 10%, the balance of the 1966 retiree still fell after the withdrawal and inflation."
+    "heard": "In seven years with gains above 10 % in which money remained, the balance of the 1966 retiree still fell after withdrawal and inflation.",
+    "round3": true
    },
    "takes": 4,
    "problem": ""

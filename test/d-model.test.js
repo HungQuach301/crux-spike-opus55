@@ -73,12 +73,13 @@ test('script: every number is registered, and "US only" / "history, not a foreca
   assert.ok(real.every((c) => c.value < 0));
 });
 
-test('act 2: in 8 of its years with gains above 10%, the 1966 balance still fell (1979, 1980, 1983, 1985, 1986, 1988, 1989, 1991)', () => {
+test('act 2: in 7 years with gains above 10% in which money remained, the 1966 balance still fell (1979, 1980, 1983, 1985, 1986, 1988, 1989; not 1991, the year it ran out)', () => {
   const { build } = require('../src/d/claims');
   const r = build();
   const c = r.claims.find((x) => x.claimId === 'gainsFell');
-  assert.strictEqual(c.value, 8);
-  assert.deepStrictEqual(c.years, [1979, 1980, 1983, 1985, 1986, 1988, 1989, 1991]);
+  assert.strictEqual(c.value, 7);
+  assert.deepStrictEqual(c.years, [1979, 1980, 1983, 1985, 1986, 1988, 1989]);
+  assert.ok(!c.years.includes(1991)); // 1991: the withdrawal ($168,302 nominal) exceeded the balance ($96,829 paid): no money remained
   assert.ok(c.spoken.some((s) => s.sentence === 'a2-gains80.1'));
   const t = r.claims.find((x) => x.claimId === 'gt10');
   assert.strictEqual(t.display, '10%');

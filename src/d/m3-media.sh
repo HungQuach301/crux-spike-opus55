@@ -30,7 +30,19 @@ Rebuild and verify:
     echo "$FULL  video.mp4" | sha256sum -c   # the whole file
 EOT
 echo "$FULL  video.mp4" > m3/video.sha256
-git add m3
+# the M3 stems (voice, music, sfx incl. the data sonification, whoosh, room; 48 kHz FLAC at mix level); files over
+# 95 MB split like the master; SHA-256 of every file and every part. Added with -f: never blocked by an ignore rule.
+STEMS="$OLDPWD/out/m3/root/out/audio/stems"
+if [ -d "$STEMS" ]; then
+  mkdir -p m3/stems
+  for f in "$STEMS"/*.flac; do b=$(basename "$f")
+    if [ "$(stat -c %s "$f")" -gt $((95*1024*1024)) ]; then split -b 95M -d -a 2 "$f" "m3/stems/$b.part-"; else cp "$f" "m3/stems/$b"; fi
+    echo "$(sha256sum "$f" | cut -d' ' -f1)  $b" >> m3/stems/stems.sha256
+  done
+  ( cd m3/stems && sha256sum *.flac* > files.sha256 )
+  printf '\nStems: `m3/stems/` (FLAC 48 kHz, at mix level). A split stem: `cat m3/stems/<name>.flac.part-* > <name>.flac`; whole-file SHA-256 in `m3/stems/stems.sha256`.\n' >> m3/README.md
+fi
+git add -f m3
 git -c user.email="$(git -C "$OLDPWD" config user.email)" -c user.name="$(git -C "$OLDPWD" config user.name)" commit -qm "Test D M3 master${MSG:+ ($MSG)} in parts < 95 MB (SHA-256 per part and whole file)
 
 Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
