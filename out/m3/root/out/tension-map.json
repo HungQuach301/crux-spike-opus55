@@ -4,2675 +4,2675 @@
   {
    "t": 0,
    "cutRate": 1,
-   "audioDensity": 1.4,
-   "musicLevel": -27.3,
-   "tension": 0.274
+   "audioDensity": 1.6,
+   "musicLevel": -28.3,
+   "tension": 0.272
   },
   {
    "t": 1,
    "cutRate": 1,
-   "audioDensity": 2.0,
-   "musicLevel": -31.0,
-   "tension": 0.389
+   "audioDensity": 2.2,
+   "musicLevel": -32.4,
+   "tension": 0.386
   },
   {
    "t": 2,
    "cutRate": 1,
-   "audioDensity": 2.4,
-   "musicLevel": -33.4,
-   "tension": 0.492
+   "audioDensity": 2.6,
+   "musicLevel": -33.8,
+   "tension": 0.485
   },
   {
    "t": 3,
    "cutRate": 2,
    "audioDensity": 2.6,
-   "musicLevel": -31.4,
-   "tension": 0.487
+   "musicLevel": -31.9,
+   "tension": 0.468
   },
   {
    "t": 4,
    "cutRate": 2,
    "audioDensity": 2.4,
-   "musicLevel": -35.5,
-   "tension": 0.514
+   "musicLevel": -37.0,
+   "tension": 0.496
   },
   {
    "t": 5,
    "cutRate": 2,
    "audioDensity": 2.4,
-   "musicLevel": -40.1,
-   "tension": 0.519
+   "musicLevel": -44.9,
+   "tension": 0.502
   },
   {
    "t": 6,
    "cutRate": 2,
-   "audioDensity": 2.4,
-   "musicLevel": -30.0,
-   "tension": 0.53
+   "audioDensity": 2.6,
+   "musicLevel": -30.9,
+   "tension": 0.521
   },
   {
    "t": 7,
    "cutRate": 1,
-   "audioDensity": 2.6,
-   "musicLevel": -32.4,
-   "tension": 0.529
+   "audioDensity": 3.0,
+   "musicLevel": -33.2,
+   "tension": 0.527
   },
   {
    "t": 8,
    "cutRate": 2,
-   "audioDensity": 2.4,
+   "audioDensity": 3.0,
    "musicLevel": -26.5,
-   "tension": 0.518
+   "tension": 0.535
   },
   {
    "t": 9,
    "cutRate": 2,
-   "audioDensity": 2.0,
-   "musicLevel": -34.5,
-   "tension": 0.479
+   "audioDensity": 2.6,
+   "musicLevel": -35.6,
+   "tension": 0.5
   },
   {
    "t": 10,
    "cutRate": 3,
-   "audioDensity": 2.0,
-   "musicLevel": -51.1,
-   "tension": 0.5
+   "audioDensity": 2.6,
+   "musicLevel": -52.5,
+   "tension": 0.509
   },
   {
    "t": 11,
    "cutRate": 3,
-   "audioDensity": 1.8,
-   "musicLevel": -62.8,
-   "tension": 0.499
+   "audioDensity": 2.2,
+   "musicLevel": -72.0,
+   "tension": 0.49
   },
   {
    "t": 12,
    "cutRate": 3,
-   "audioDensity": 1.6,
-   "musicLevel": -35.7,
-   "tension": 0.525
+   "audioDensity": 1.8,
+   "musicLevel": -40.4,
+   "tension": 0.497
   },
   {
    "t": 13,
    "cutRate": 3,
-   "audioDensity": 1.8,
-   "musicLevel": -32.3,
-   "tension": 0.525
+   "audioDensity": 1.6,
+   "musicLevel": -35.7,
+   "tension": 0.489
   },
   {
    "t": 14,
    "cutRate": 3,
-   "audioDensity": 2.2,
-   "musicLevel": -33.0,
-   "tension": 0.563
+   "audioDensity": 2.0,
+   "musicLevel": -38.4,
+   "tension": 0.5
   },
   {
    "t": 15,
    "cutRate": 3,
-   "audioDensity": 2.0,
-   "musicLevel": -120.0,
-   "tension": 0.61
+   "audioDensity": 1.8,
+   "musicLevel": -70.0,
+   "tension": 0.56
   },
   {
    "t": 16,
    "cutRate": 3,
-   "audioDensity": 2.2,
-   "musicLevel": -37.3,
-   "tension": 0.617
+   "audioDensity": 2.0,
+   "musicLevel": -44.9,
+   "tension": 0.579
   },
   {
    "t": 17,
    "cutRate": 4,
-   "audioDensity": 2.0,
-   "musicLevel": -27.2,
-   "tension": 0.572
+   "audioDensity": 1.8,
+   "musicLevel": -25.5,
+   "tension": 0.55
   },
   {
    "t": 18,
    "cutRate": 3,
    "audioDensity": 2.0,
-   "musicLevel": -30.0,
-   "tension": 0.581
+   "musicLevel": -30.1,
+   "tension": 0.56
   },
   {
    "t": 19,
    "cutRate": 3,
    "audioDensity": 2.2,
-   "musicLevel": -58.1,
-   "tension": 0.561
+   "musicLevel": -57.8,
+   "tension": 0.557
   },
   {
    "t": 20,
    "cutRate": 2,
    "audioDensity": 2.2,
-   "musicLevel": -39.8,
-   "tension": 0.504
+   "musicLevel": -40.2,
+   "tension": 0.5
   },
   {
    "t": 21,
    "cutRate": 2,
    "audioDensity": 1.8,
-   "musicLevel": -36.1,
-   "tension": 0.429
+   "musicLevel": -38.0,
+   "tension": 0.424
   },
   {
    "t": 22,
    "cutRate": 3,
    "audioDensity": 2.0,
-   "musicLevel": -40.9,
+   "musicLevel": -40.1,
    "tension": 0.436
   },
   {
    "t": 23,
    "cutRate": 2,
    "audioDensity": 1.8,
-   "musicLevel": -53.4,
-   "tension": 0.405
+   "musicLevel": -53.3,
+   "tension": 0.406
   },
   {
    "t": 24,
    "cutRate": 2,
    "audioDensity": 1.6,
-   "musicLevel": -37.4,
-   "tension": 0.372
+   "musicLevel": -35.8,
+   "tension": 0.378
   },
   {
    "t": 25,
    "cutRate": 2,
    "audioDensity": 1.8,
-   "musicLevel": -51.7,
-   "tension": 0.341
+   "musicLevel": -51.0,
+   "tension": 0.344
   },
   {
    "t": 26,
    "cutRate": 2,
    "audioDensity": 2.2,
-   "musicLevel": -59.5,
-   "tension": 0.404
+   "musicLevel": -57.9,
+   "tension": 0.402
   },
   {
    "t": 27,
    "cutRate": 1,
    "audioDensity": 2.2,
-   "musicLevel": -38.2,
-   "tension": 0.426
+   "musicLevel": -38.9,
+   "tension": 0.418
   },
   {
    "t": 28,
    "cutRate": 2,
    "audioDensity": 2.4,
-   "musicLevel": -28.5,
-   "tension": 0.479
+   "musicLevel": -30.2,
+   "tension": 0.475
   },
   {
    "t": 29,
    "cutRate": 2,
    "audioDensity": 2.6,
-   "musicLevel": -32.9,
-   "tension": 0.527
+   "musicLevel": -33.5,
+   "tension": 0.528
   },
   {
    "t": 30,
    "cutRate": 2,
    "audioDensity": 2.4,
-   "musicLevel": -32.3,
-   "tension": 0.538
+   "musicLevel": -31.0,
+   "tension": 0.544
   },
   {
    "t": 31,
    "cutRate": 2,
    "audioDensity": 2.6,
-   "musicLevel": -33.5,
-   "tension": 0.519
+   "musicLevel": -31.7,
+   "tension": 0.533
   },
   {
    "t": 32,
    "cutRate": 1,
    "audioDensity": 2.8,
-   "musicLevel": -36.7,
-   "tension": 0.503
+   "musicLevel": -35.2,
+   "tension": 0.52
   },
   {
    "t": 33,
    "cutRate": 1,
    "audioDensity": 2.8,
-   "musicLevel": -29.4,
-   "tension": 0.5
+   "musicLevel": -28.1,
+   "tension": 0.513
   },
   {
    "t": 34,
    "cutRate": 1,
    "audioDensity": 2.6,
-   "musicLevel": -31.6,
-   "tension": 0.497
+   "musicLevel": -31.0,
+   "tension": 0.508
   },
   {
    "t": 35,
    "cutRate": 2,
    "audioDensity": 2.6,
-   "musicLevel": -34.1,
+   "musicLevel": -34.2,
    "tension": 0.51
   },
   {
    "t": 36,
    "cutRate": 2,
    "audioDensity": 2.2,
-   "musicLevel": -33.1,
-   "tension": 0.504
+   "musicLevel": -32.2,
+   "tension": 0.502
   },
   {
    "t": 37,
    "cutRate": 2,
    "audioDensity": 2.0,
-   "musicLevel": -36.1,
-   "tension": 0.504
+   "musicLevel": -38.9,
+   "tension": 0.502
   },
   {
    "t": 38,
    "cutRate": 1,
    "audioDensity": 2.4,
-   "musicLevel": -30.2,
+   "musicLevel": -29.7,
    "tension": 0.481
   },
   {
    "t": 39,
    "cutRate": 1,
-   "audioDensity": 2.4,
-   "musicLevel": -30.7,
-   "tension": 0.488
+   "audioDensity": 2.6,
+   "musicLevel": -31.1,
+   "tension": 0.489
   },
   {
    "t": 40,
    "cutRate": 1,
-   "audioDensity": 2.4,
-   "musicLevel": -34.8,
-   "tension": 0.489
+   "audioDensity": 2.6,
+   "musicLevel": -34.4,
+   "tension": 0.496
   },
   {
    "t": 41,
    "cutRate": 2,
-   "audioDensity": 2.4,
-   "musicLevel": -31.0,
-   "tension": 0.5
+   "audioDensity": 2.6,
+   "musicLevel": -30.7,
+   "tension": 0.507
   },
   {
    "t": 42,
    "cutRate": 2,
-   "audioDensity": 2.2,
-   "musicLevel": -36.6,
-   "tension": 0.467
+   "audioDensity": 2.4,
+   "musicLevel": -37.9,
+   "tension": 0.472
   },
   {
    "t": 43,
    "cutRate": 2,
-   "audioDensity": 1.8,
-   "musicLevel": -31.2,
-   "tension": 0.424
+   "audioDensity": 2.0,
+   "musicLevel": -31.6,
+   "tension": 0.427
   },
   {
    "t": 44,
    "cutRate": 2,
    "audioDensity": 2.2,
-   "musicLevel": -54.7,
-   "tension": 0.411
+   "musicLevel": -54.2,
+   "tension": 0.414
   },
   {
    "t": 45,
    "cutRate": 1,
    "audioDensity": 2.2,
-   "musicLevel": -56.5,
-   "tension": 0.401
+   "musicLevel": -56.9,
+   "tension": 0.411
   },
   {
    "t": 46,
    "cutRate": 1,
    "audioDensity": 2.0,
-   "musicLevel": -27.0,
-   "tension": 0.353
+   "musicLevel": -25.6,
+   "tension": 0.362
   },
   {
    "t": 47,
    "cutRate": 2,
    "audioDensity": 2.2,
-   "musicLevel": -40.4,
-   "tension": 0.391
+   "musicLevel": -38.3,
+   "tension": 0.399
   },
   {
    "t": 48,
    "cutRate": 2,
    "audioDensity": 2.0,
-   "musicLevel": -57.2,
-   "tension": 0.425
+   "musicLevel": -56.7,
+   "tension": 0.435
   },
   {
    "t": 49,
    "cutRate": 2,
    "audioDensity": 1.6,
-   "musicLevel": -33.6,
-   "tension": 0.368
+   "musicLevel": -34.0,
+   "tension": 0.374
   },
   {
    "t": 50,
    "cutRate": 2,
    "audioDensity": 2.0,
-   "musicLevel": -43.7,
-   "tension": 0.362
+   "musicLevel": -43.1,
+   "tension": 0.363
   },
   {
    "t": 51,
    "cutRate": 1,
    "audioDensity": 2.4,
-   "musicLevel": -56.3,
-   "tension": 0.376
+   "musicLevel": -56.7,
+   "tension": 0.384
   },
   {
    "t": 52,
    "cutRate": 1,
    "audioDensity": 2.2,
-   "musicLevel": -35.3,
-   "tension": 0.32
+   "musicLevel": -35.1,
+   "tension": 0.329
   },
   {
    "t": 53,
    "cutRate": 1,
    "audioDensity": 2.4,
-   "musicLevel": -38.7,
-   "tension": 0.283
+   "musicLevel": -36.2,
+   "tension": 0.291
   },
   {
    "t": 54,
    "cutRate": 1,
    "audioDensity": 2.4,
-   "musicLevel": -53.3,
-   "tension": 0.341
+   "musicLevel": -51.6,
+   "tension": 0.345
   },
   {
    "t": 55,
    "cutRate": 1,
    "audioDensity": 2.0,
-   "musicLevel": -54.8,
-   "tension": 0.341
+   "musicLevel": -55.9,
+   "tension": 0.347
   },
   {
    "t": 56,
    "cutRate": 2,
    "audioDensity": 1.6,
-   "musicLevel": -32.9,
-   "tension": 0.332
+   "musicLevel": -34.2,
+   "tension": 0.323
   },
   {
    "t": 57,
    "cutRate": 1,
-   "audioDensity": 1.8,
-   "musicLevel": -34.0,
-   "tension": 0.328
+   "audioDensity": 1.6,
+   "musicLevel": -32.2,
+   "tension": 0.317
   },
   {
    "t": 58,
    "cutRate": 1,
-   "audioDensity": 2.0,
-   "musicLevel": -40.6,
-   "tension": 0.369
+   "audioDensity": 1.8,
+   "musicLevel": -42.6,
+   "tension": 0.352
   },
   {
    "t": 59,
    "cutRate": 1,
-   "audioDensity": 2.0,
-   "musicLevel": -54.1,
-   "tension": 0.372
+   "audioDensity": 1.8,
+   "musicLevel": -56.0,
+   "tension": 0.355
   },
   {
    "t": 60,
    "cutRate": 1,
-   "audioDensity": 2.0,
-   "musicLevel": -34.4,
-   "tension": 0.404
+   "audioDensity": 1.8,
+   "musicLevel": -36.3,
+   "tension": 0.389
   },
   {
    "t": 61,
    "cutRate": 2,
-   "audioDensity": 2.2,
-   "musicLevel": -34.2,
-   "tension": 0.435
+   "audioDensity": 2.0,
+   "musicLevel": -34.4,
+   "tension": 0.427
   },
   {
    "t": 62,
    "cutRate": 2,
    "audioDensity": 2.2,
-   "musicLevel": -30.9,
-   "tension": 0.509
+   "musicLevel": -29.2,
+   "tension": 0.504
   },
   {
    "t": 63,
    "cutRate": 2,
    "audioDensity": 2.0,
-   "musicLevel": -36.5,
-   "tension": 0.545
+   "musicLevel": -36.7,
+   "tension": 0.549
   },
   {
    "t": 64,
    "cutRate": 2,
    "audioDensity": 2.2,
-   "musicLevel": -30.4,
-   "tension": 0.545
+   "musicLevel": -30.1,
+   "tension": 0.553
   },
   {
    "t": 65,
    "cutRate": 2,
    "audioDensity": 2.4,
-   "musicLevel": -29.7,
-   "tension": 0.524
+   "musicLevel": -29.3,
+   "tension": 0.527
   },
   {
    "t": 66,
    "cutRate": 1,
    "audioDensity": 2.4,
-   "musicLevel": -27.6,
-   "tension": 0.506
+   "musicLevel": -27.0,
+   "tension": 0.509
   },
   {
    "t": 67,
    "cutRate": 1,
    "audioDensity": 2.2,
    "musicLevel": -31.4,
-   "tension": 0.432
+   "tension": 0.434
   },
   {
    "t": 68,
    "cutRate": 1,
    "audioDensity": 2.2,
-   "musicLevel": -36.3,
+   "musicLevel": -36.5,
    "tension": 0.367
   },
   {
    "t": 69,
    "cutRate": 1,
    "audioDensity": 2.0,
-   "musicLevel": -57.2,
-   "tension": 0.319
+   "musicLevel": -56.1,
+   "tension": 0.32
   },
   {
    "t": 70,
    "cutRate": 1,
    "audioDensity": 1.6,
-   "musicLevel": -43.7,
+   "musicLevel": -43.9,
    "tension": 0.264
   },
   {
    "t": 71,
    "cutRate": 0,
    "audioDensity": 1.6,
-   "musicLevel": -34.9,
-   "tension": 0.249
+   "musicLevel": -34.3,
+   "tension": 0.25
   },
   {
    "t": 72,
    "cutRate": 1,
    "audioDensity": 1.6,
-   "musicLevel": -55.9,
-   "tension": 0.262
+   "musicLevel": -56.0,
+   "tension": 0.261
   },
   {
    "t": 73,
    "cutRate": 1,
    "audioDensity": 1.6,
-   "musicLevel": -39.6,
+   "musicLevel": -39.7,
    "tension": 0.253
   },
   {
    "t": 74,
    "cutRate": 1,
    "audioDensity": 1.8,
-   "musicLevel": -44.5,
-   "tension": 0.282
+   "musicLevel": -45.0,
+   "tension": 0.273
   },
   {
    "t": 75,
    "cutRate": 1,
    "audioDensity": 2.4,
-   "musicLevel": -52.0,
-   "tension": 0.341
+   "musicLevel": -52.6,
+   "tension": 0.335
   },
   {
    "t": 76,
    "cutRate": 1,
    "audioDensity": 2.6,
-   "musicLevel": -35.0,
-   "tension": 0.368
+   "musicLevel": -37.8,
+   "tension": 0.366
   },
   {
    "t": 77,
    "cutRate": 1,
-   "audioDensity": 2.8,
-   "musicLevel": -32.4,
-   "tension": 0.4
+   "audioDensity": 3.0,
+   "musicLevel": -32.1,
+   "tension": 0.389
   },
   {
    "t": 78,
    "cutRate": 1,
-   "audioDensity": 2.8,
-   "musicLevel": -34.4,
-   "tension": 0.453
+   "audioDensity": 3.0,
+   "musicLevel": -33.2,
+   "tension": 0.447
   },
   {
    "t": 79,
    "cutRate": 1,
-   "audioDensity": 2.6,
-   "musicLevel": -35.4,
-   "tension": 0.477
+   "audioDensity": 2.8,
+   "musicLevel": -40.3,
+   "tension": 0.478
   },
   {
    "t": 80,
    "cutRate": 1,
-   "audioDensity": 2.2,
-   "musicLevel": -29.1,
-   "tension": 0.468
+   "audioDensity": 2.4,
+   "musicLevel": -28.2,
+   "tension": 0.467
   },
   {
    "t": 81,
    "cutRate": 2,
-   "audioDensity": 2.0,
-   "musicLevel": -31.5,
-   "tension": 0.467
+   "audioDensity": 2.2,
+   "musicLevel": -32.1,
+   "tension": 0.46
   },
   {
    "t": 82,
    "cutRate": 1,
    "audioDensity": 2.0,
-   "musicLevel": -32.7,
-   "tension": 0.462
+   "musicLevel": -32.5,
+   "tension": 0.456
   },
   {
    "t": 83,
    "cutRate": 1,
    "audioDensity": 2.2,
-   "musicLevel": -32.4,
-   "tension": 0.461
+   "musicLevel": -32.9,
+   "tension": 0.451
   },
   {
    "t": 84,
    "cutRate": 1,
    "audioDensity": 2.2,
-   "musicLevel": -36.0,
-   "tension": 0.447
+   "musicLevel": -39.5,
+   "tension": 0.437
   },
   {
    "t": 85,
    "cutRate": 1,
    "audioDensity": 2.2,
-   "musicLevel": -29.2,
-   "tension": 0.444
+   "musicLevel": -29.3,
+   "tension": 0.434
   },
   {
    "t": 86,
    "cutRate": 1,
    "audioDensity": 2.4,
-   "musicLevel": -30.8,
-   "tension": 0.445
+   "musicLevel": -30.7,
+   "tension": 0.44
   },
   {
    "t": 87,
    "cutRate": 1,
    "audioDensity": 2.4,
-   "musicLevel": -35.3,
-   "tension": 0.459
+   "musicLevel": -35.2,
+   "tension": 0.469
   },
   {
    "t": 88,
    "cutRate": 1,
    "audioDensity": 2.2,
-   "musicLevel": -32.0,
-   "tension": 0.475
+   "musicLevel": -30.4,
+   "tension": 0.482
   },
   {
    "t": 89,
    "cutRate": 2,
    "audioDensity": 2.2,
-   "musicLevel": -38.3,
-   "tension": 0.473
+   "musicLevel": -36.3,
+   "tension": 0.477
   },
   {
    "t": 90,
    "cutRate": 2,
    "audioDensity": 2.2,
-   "musicLevel": -30.6,
-   "tension": 0.473
+   "musicLevel": -31.7,
+   "tension": 0.478
   },
   {
    "t": 91,
    "cutRate": 1,
    "audioDensity": 2.0,
-   "musicLevel": -30.3,
-   "tension": 0.481
+   "musicLevel": -31.3,
+   "tension": 0.483
   },
   {
    "t": 92,
    "cutRate": 1,
    "audioDensity": 2.0,
-   "musicLevel": -33.7,
-   "tension": 0.495
+   "musicLevel": -33.4,
+   "tension": 0.494
   },
   {
    "t": 93,
    "cutRate": 1,
    "audioDensity": 2.0,
-   "musicLevel": -28.5,
-   "tension": 0.437
+   "musicLevel": -27.8,
+   "tension": 0.44
   },
   {
    "t": 94,
    "cutRate": 2,
    "audioDensity": 1.8,
-   "musicLevel": -31.4,
-   "tension": 0.399
+   "musicLevel": -30.5,
+   "tension": 0.404
   },
   {
    "t": 95,
    "cutRate": 2,
    "audioDensity": 1.6,
-   "musicLevel": -56.9,
-   "tension": 0.371
+   "musicLevel": -56.0,
+   "tension": 0.375
   },
   {
    "t": 96,
    "cutRate": 2,
    "audioDensity": 1.4,
-   "musicLevel": -53.6,
-   "tension": 0.33
+   "musicLevel": -51.8,
+   "tension": 0.334
   },
   {
    "t": 97,
    "cutRate": 2,
    "audioDensity": 1.6,
-   "musicLevel": -57.6,
-   "tension": 0.291
+   "musicLevel": -59.8,
+   "tension": 0.288
   },
   {
    "t": 98,
    "cutRate": 2,
-   "audioDensity": 1.6,
-   "musicLevel": -56.4,
-   "tension": 0.312
+   "audioDensity": 1.8,
+   "musicLevel": -56.6,
+   "tension": 0.304
   },
   {
    "t": 99,
    "cutRate": 1,
-   "audioDensity": 1.8,
-   "musicLevel": -38.3,
-   "tension": 0.356
+   "audioDensity": 2.0,
+   "musicLevel": -40.8,
+   "tension": 0.352
   },
   {
    "t": 100,
    "cutRate": 1,
-   "audioDensity": 2.0,
-   "musicLevel": -36.1,
-   "tension": 0.387
+   "audioDensity": 2.2,
+   "musicLevel": -38.8,
+   "tension": 0.386
   },
   {
    "t": 101,
    "cutRate": 1,
-   "audioDensity": 2.2,
-   "musicLevel": -29.2,
-   "tension": 0.437
+   "audioDensity": 2.4,
+   "musicLevel": -28.4,
+   "tension": 0.434
   },
   {
    "t": 102,
    "cutRate": 1,
-   "audioDensity": 2.0,
-   "musicLevel": -32.3,
-   "tension": 0.454
+   "audioDensity": 2.2,
+   "musicLevel": -32.1,
+   "tension": 0.458
   },
   {
    "t": 103,
    "cutRate": 2,
    "audioDensity": 2.0,
-   "musicLevel": -32.8,
-   "tension": 0.453
+   "musicLevel": -32.6,
+   "tension": 0.456
   },
   {
    "t": 104,
    "cutRate": 1,
    "audioDensity": 2.0,
-   "musicLevel": -32.5,
+   "musicLevel": -31.9,
    "tension": 0.448
   },
   {
    "t": 105,
    "cutRate": 1,
    "audioDensity": 2.0,
-   "musicLevel": -36.5,
-   "tension": 0.451
+   "musicLevel": -38.8,
+   "tension": 0.454
   },
   {
    "t": 106,
    "cutRate": 1,
-   "audioDensity": 2.0,
-   "musicLevel": -30.5,
-   "tension": 0.448
+   "audioDensity": 2.2,
+   "musicLevel": -30.4,
+   "tension": 0.454
   },
   {
    "t": 107,
    "cutRate": 1,
-   "audioDensity": 2.0,
-   "musicLevel": -30.9,
-   "tension": 0.467
+   "audioDensity": 2.2,
+   "musicLevel": -30.1,
+   "tension": 0.479
   },
   {
    "t": 108,
    "cutRate": 2,
-   "audioDensity": 2.0,
+   "audioDensity": 2.4,
    "musicLevel": -34.2,
-   "tension": 0.489
+   "tension": 0.512
   },
   {
    "t": 109,
    "cutRate": 2,
-   "audioDensity": 1.8,
-   "musicLevel": -32.2,
-   "tension": 0.493
+   "audioDensity": 2.2,
+   "musicLevel": -30.8,
+   "tension": 0.514
   },
   {
    "t": 110,
    "cutRate": 2,
-   "audioDensity": 2.0,
-   "musicLevel": -35.6,
-   "tension": 0.524
+   "audioDensity": 2.4,
+   "musicLevel": -35.2,
+   "tension": 0.543
   },
   {
    "t": 111,
    "cutRate": 2,
-   "audioDensity": 2.2,
-   "musicLevel": -37.1,
-   "tension": 0.549
+   "audioDensity": 2.4,
+   "musicLevel": -37.9,
+   "tension": 0.566
   },
   {
    "t": 112,
    "cutRate": 2,
-   "audioDensity": 2.4,
-   "musicLevel": -28.3,
-   "tension": 0.56
+   "audioDensity": 2.6,
+   "musicLevel": -28.2,
+   "tension": 0.571
   },
   {
    "t": 113,
    "cutRate": 2,
    "audioDensity": 2.6,
-   "musicLevel": -27.1,
-   "tension": 0.575
+   "musicLevel": -26.3,
+   "tension": 0.58
   },
   {
    "t": 114,
    "cutRate": 2,
    "audioDensity": 2.8,
-   "musicLevel": -31.8,
-   "tension": 0.58
+   "musicLevel": -31.3,
+   "tension": 0.588
   },
   {
    "t": 115,
    "cutRate": 2,
    "audioDensity": 3.0,
-   "musicLevel": -33.6,
-   "tension": 0.582
+   "musicLevel": -34.1,
+   "tension": 0.59
   },
   {
    "t": 116,
    "cutRate": 2,
    "audioDensity": 3.0,
-   "musicLevel": -38.5,
-   "tension": 0.542
+   "musicLevel": -37.0,
+   "tension": 0.543
   },
   {
    "t": 117,
    "cutRate": 2,
    "audioDensity": 2.6,
-   "musicLevel": -28.1,
-   "tension": 0.519
+   "musicLevel": -27.4,
+   "tension": 0.505
   },
   {
    "t": 118,
    "cutRate": 1,
    "audioDensity": 2.2,
-   "musicLevel": -33.3,
-   "tension": 0.464
+   "musicLevel": -35.0,
+   "tension": 0.451
   },
   {
    "t": 119,
    "cutRate": 2,
    "audioDensity": 2.2,
-   "musicLevel": -37.9,
-   "tension": 0.457
+   "musicLevel": -43.3,
+   "tension": 0.417
   },
   {
    "t": 120,
    "cutRate": 2,
    "audioDensity": 1.8,
-   "musicLevel": -57.7,
-   "tension": 0.443
+   "musicLevel": -57.5,
+   "tension": 0.398
   },
   {
    "t": 121,
    "cutRate": 2,
    "audioDensity": 1.6,
-   "musicLevel": -35.9,
-   "tension": 0.443
+   "musicLevel": -44.5,
+   "tension": 0.399
   },
   {
    "t": 122,
    "cutRate": 2,
    "audioDensity": 1.6,
-   "musicLevel": -29.5,
-   "tension": 0.387
+   "musicLevel": -30.8,
+   "tension": 0.357
   },
   {
    "t": 123,
    "cutRate": 1,
    "audioDensity": 1.8,
-   "musicLevel": -31.9,
-   "tension": 0.365
+   "musicLevel": -33.2,
+   "tension": 0.335
   },
   {
    "t": 124,
    "cutRate": 1,
    "audioDensity": 1.8,
-   "musicLevel": -58.2,
-   "tension": 0.347
+   "musicLevel": -58.5,
+   "tension": 0.338
   },
   {
    "t": 125,
    "cutRate": 1,
    "audioDensity": 1.6,
-   "musicLevel": -54.0,
-   "tension": 0.321
+   "musicLevel": -52.8,
+   "tension": 0.316
   },
   {
    "t": 126,
    "cutRate": 1,
    "audioDensity": 1.4,
-   "musicLevel": -34.1,
-   "tension": 0.291
+   "musicLevel": -35.0,
+   "tension": 0.29
   },
   {
    "t": 127,
    "cutRate": 2,
    "audioDensity": 1.6,
-   "musicLevel": -39.3,
-   "tension": 0.325
+   "musicLevel": -38.8,
+   "tension": 0.322
   },
   {
    "t": 128,
    "cutRate": 2,
    "audioDensity": 1.6,
-   "musicLevel": -55.3,
-   "tension": 0.383
+   "musicLevel": -54.3,
+   "tension": 0.38
   },
   {
    "t": 129,
    "cutRate": 1,
    "audioDensity": 2.0,
-   "musicLevel": -38.0,
-   "tension": 0.413
+   "musicLevel": -38.7,
+   "tension": 0.408
   },
   {
    "t": 130,
    "cutRate": 1,
    "audioDensity": 2.4,
-   "musicLevel": -31.2,
-   "tension": 0.44
+   "musicLevel": -31.4,
+   "tension": 0.432
   },
   {
    "t": 131,
    "cutRate": 2,
    "audioDensity": 2.6,
-   "musicLevel": -34.8,
-   "tension": 0.508
+   "musicLevel": -36.4,
+   "tension": 0.503
   },
   {
    "t": 132,
    "cutRate": 2,
    "audioDensity": 2.6,
-   "musicLevel": -32.9,
-   "tension": 0.547
+   "musicLevel": -33.4,
+   "tension": 0.546
   },
   {
    "t": 133,
    "cutRate": 2,
    "audioDensity": 2.8,
-   "musicLevel": -28.8,
-   "tension": 0.569
+   "musicLevel": -28.1,
+   "tension": 0.568
   },
   {
    "t": 134,
    "cutRate": 2,
    "audioDensity": 2.8,
-   "musicLevel": -34.2,
-   "tension": 0.577
+   "musicLevel": -33.0,
+   "tension": 0.583
   },
   {
    "t": 135,
    "cutRate": 2,
    "audioDensity": 2.8,
-   "musicLevel": -31.7,
-   "tension": 0.555
+   "musicLevel": -32.0,
+   "tension": 0.56
   },
   {
    "t": 136,
    "cutRate": 2,
    "audioDensity": 2.8,
-   "musicLevel": -32.6,
-   "tension": 0.529
+   "musicLevel": -31.6,
+   "tension": 0.535
   },
   {
    "t": 137,
    "cutRate": 1,
    "audioDensity": 2.8,
-   "musicLevel": -34.8,
-   "tension": 0.53
+   "musicLevel": -35.2,
+   "tension": 0.534
   },
   {
    "t": 138,
    "cutRate": 1,
    "audioDensity": 2.6,
-   "musicLevel": -30.1,
-   "tension": 0.515
+   "musicLevel": -29.3,
+   "tension": 0.514
   },
   {
    "t": 139,
    "cutRate": 2,
    "audioDensity": 2.2,
-   "musicLevel": -31.6,
-   "tension": 0.492
+   "musicLevel": -31.1,
+   "tension": 0.489
   },
   {
    "t": 140,
    "cutRate": 2,
    "audioDensity": 2.0,
-   "musicLevel": -34.2,
-   "tension": 0.487
+   "musicLevel": -36.6,
+   "tension": 0.477
   },
   {
    "t": 141,
    "cutRate": 1,
    "audioDensity": 2.2,
-   "musicLevel": -31.6,
-   "tension": 0.495
+   "musicLevel": -31.1,
+   "tension": 0.485
   },
   {
    "t": 142,
    "cutRate": 1,
    "audioDensity": 2.4,
-   "musicLevel": -35.2,
-   "tension": 0.485
+   "musicLevel": -38.4,
+   "tension": 0.472
   },
   {
    "t": 143,
    "cutRate": 1,
    "audioDensity": 2.4,
-   "musicLevel": -26.4,
-   "tension": 0.472
+   "musicLevel": -25.4,
+   "tension": 0.464
   },
   {
    "t": 144,
    "cutRate": 1,
    "audioDensity": 2.6,
-   "musicLevel": -29.3,
-   "tension": 0.478
+   "musicLevel": -30.2,
+   "tension": 0.469
   },
   {
    "t": 145,
    "cutRate": 1,
    "audioDensity": 2.6,
-   "musicLevel": -33.7,
-   "tension": 0.48
+   "musicLevel": -34.2,
+   "tension": 0.473
   },
   {
    "t": 146,
    "cutRate": 1,
    "audioDensity": 2.4,
-   "musicLevel": -30.0,
-   "tension": 0.489
+   "musicLevel": -30.1,
+   "tension": 0.48
   },
   {
    "t": 147,
    "cutRate": 1,
    "audioDensity": 2.2,
-   "musicLevel": -33.7,
-   "tension": 0.482
+   "musicLevel": -35.9,
+   "tension": 0.476
   },
   {
    "t": 148,
    "cutRate": 2,
    "audioDensity": 2.2,
-   "musicLevel": -29.9,
-   "tension": 0.482
+   "musicLevel": -29.5,
+   "tension": 0.479
   },
   {
    "t": 149,
    "cutRate": 1,
    "audioDensity": 2.0,
-   "musicLevel": -29.5,
-   "tension": 0.481
+   "musicLevel": -29.4,
+   "tension": 0.479
   },
   {
    "t": 150,
    "cutRate": 1,
    "audioDensity": 2.0,
-   "musicLevel": -31.5,
-   "tension": 0.485
+   "musicLevel": -30.8,
+   "tension": 0.487
   },
   {
    "t": 151,
    "cutRate": 1,
    "audioDensity": 2.2,
-   "musicLevel": -29.8,
-   "tension": 0.477
+   "musicLevel": -29.6,
+   "tension": 0.479
   },
   {
    "t": 152,
    "cutRate": 1,
    "audioDensity": 2.2,
-   "musicLevel": -32.3,
-   "tension": 0.424
+   "musicLevel": -32.8,
+   "tension": 0.426
   },
   {
    "t": 153,
    "cutRate": 1,
    "audioDensity": 2.2,
-   "musicLevel": -25.4,
-   "tension": 0.41
+   "musicLevel": -25.2,
+   "tension": 0.411
   },
   {
    "t": 154,
    "cutRate": 1,
    "audioDensity": 2.2,
-   "musicLevel": -50.0,
-   "tension": 0.43
+   "musicLevel": -52.1,
+   "tension": 0.433
   },
   {
    "t": 155,
    "cutRate": 1,
    "audioDensity": 2.0,
-   "musicLevel": -36.6,
-   "tension": 0.44
+   "musicLevel": -36.3,
+   "tension": 0.452
   },
   {
    "t": 156,
    "cutRate": 2,
    "audioDensity": 1.6,
-   "musicLevel": -27.8,
-   "tension": 0.364
+   "musicLevel": -26.6,
+   "tension": 0.378
   },
   {
    "t": 157,
    "cutRate": 2,
-   "audioDensity": 1.2,
-   "musicLevel": -32.4,
-   "tension": 0.354
+   "audioDensity": 1.4,
+   "musicLevel": -30.1,
+   "tension": 0.387
   },
   {
    "t": 158,
    "cutRate": 1,
-   "audioDensity": 1.2,
-   "musicLevel": -54.7,
-   "tension": 0.352
+   "audioDensity": 1.4,
+   "musicLevel": -54.2,
+   "tension": 0.365
   },
   {
    "t": 159,
    "cutRate": 1,
-   "audioDensity": 1.2,
-   "musicLevel": -50.9,
-   "tension": 0.33
+   "audioDensity": 1.4,
+   "musicLevel": -43.5,
+   "tension": 0.34
   },
   {
    "t": 160,
    "cutRate": 1,
-   "audioDensity": 1.4,
-   "musicLevel": -35.2,
+   "audioDensity": 1.6,
+   "musicLevel": -43.2,
    "tension": 0.323
   },
   {
    "t": 161,
    "cutRate": 1,
-   "audioDensity": 1.4,
-   "musicLevel": -27.9,
-   "tension": 0.368
+   "audioDensity": 1.6,
+   "musicLevel": -28.6,
+   "tension": 0.352
   },
   {
    "t": 162,
    "cutRate": 1,
    "audioDensity": 1.6,
-   "musicLevel": -28.7,
-   "tension": 0.394
+   "musicLevel": -29.5,
+   "tension": 0.358
   },
   {
    "t": 163,
    "cutRate": 1,
    "audioDensity": 1.6,
-   "musicLevel": -34.6,
-   "tension": 0.414
+   "musicLevel": -40.2,
+   "tension": 0.396
   },
   {
    "t": 164,
    "cutRate": 2,
    "audioDensity": 1.8,
-   "musicLevel": -52.8,
-   "tension": 0.399
+   "musicLevel": -52.9,
+   "tension": 0.384
   },
   {
    "t": 165,
    "cutRate": 2,
    "audioDensity": 2.0,
-   "musicLevel": -37.6,
-   "tension": 0.399
+   "musicLevel": -37.9,
+   "tension": 0.386
   },
   {
    "t": 166,
    "cutRate": 1,
    "audioDensity": 2.2,
-   "musicLevel": -36.4,
-   "tension": 0.402
+   "musicLevel": -35.6,
+   "tension": 0.401
   },
   {
    "t": 167,
    "cutRate": 1,
    "audioDensity": 2.8,
-   "musicLevel": -33.4,
+   "musicLevel": -33.1,
    "tension": 0.442
   },
   {
    "t": 168,
    "cutRate": 1,
    "audioDensity": 3.0,
-   "musicLevel": -38.6,
-   "tension": 0.436
+   "musicLevel": -39.7,
+   "tension": 0.438
   },
   {
    "t": 169,
    "cutRate": 1,
    "audioDensity": 2.8,
-   "musicLevel": -31.3,
-   "tension": 0.457
+   "musicLevel": -31.1,
+   "tension": 0.46
   },
   {
    "t": 170,
    "cutRate": 1,
    "audioDensity": 2.6,
-   "musicLevel": -34.4,
-   "tension": 0.465
+   "musicLevel": -34.2,
+   "tension": 0.468
   },
   {
    "t": 171,
    "cutRate": 2,
    "audioDensity": 2.6,
-   "musicLevel": -37.5,
-   "tension": 0.478
+   "musicLevel": -36.3,
+   "tension": 0.484
   },
   {
    "t": 172,
    "cutRate": 2,
    "audioDensity": 2.2,
-   "musicLevel": -35.9,
-   "tension": 0.451
+   "musicLevel": -35.2,
+   "tension": 0.446
   },
   {
    "t": 173,
    "cutRate": 2,
    "audioDensity": 2.0,
    "musicLevel": -37.5,
-   "tension": 0.452
+   "tension": 0.449
   },
   {
    "t": 174,
    "cutRate": 1,
    "audioDensity": 2.0,
-   "musicLevel": -38.5,
-   "tension": 0.431
+   "musicLevel": -42.5,
+   "tension": 0.425
   },
   {
    "t": 175,
    "cutRate": 1,
    "audioDensity": 2.0,
-   "musicLevel": -31.7,
-   "tension": 0.414
+   "musicLevel": -30.8,
+   "tension": 0.407
   },
   {
    "t": 176,
    "cutRate": 1,
    "audioDensity": 2.0,
-   "musicLevel": -35.6,
-   "tension": 0.422
+   "musicLevel": -35.5,
+   "tension": 0.416
   },
   {
    "t": 177,
    "cutRate": 1,
    "audioDensity": 2.0,
-   "musicLevel": -33.8,
-   "tension": 0.447
+   "musicLevel": -33.5,
+   "tension": 0.449
   },
   {
    "t": 178,
    "cutRate": 2,
    "audioDensity": 2.0,
-   "musicLevel": -34.4,
-   "tension": 0.472
+   "musicLevel": -34.3,
+   "tension": 0.475
   },
   {
    "t": 179,
    "cutRate": 2,
    "audioDensity": 2.0,
-   "musicLevel": -36.9,
-   "tension": 0.483
+   "musicLevel": -37.3,
+   "tension": 0.482
   },
   {
    "t": 180,
    "cutRate": 2,
    "audioDensity": 2.2,
-   "musicLevel": -30.4,
-   "tension": 0.495
+   "musicLevel": -29.3,
+   "tension": 0.49
   },
   {
    "t": 181,
    "cutRate": 1,
    "audioDensity": 2.6,
-   "musicLevel": -33.9,
-   "tension": 0.483
+   "musicLevel": -35.2,
+   "tension": 0.48
   },
   {
    "t": 182,
    "cutRate": 1,
    "audioDensity": 2.8,
-   "musicLevel": -32.2,
-   "tension": 0.477
+   "musicLevel": -33.7,
+   "tension": 0.46
   },
   {
    "t": 183,
    "cutRate": 1,
    "audioDensity": 2.8,
-   "musicLevel": -34.4,
-   "tension": 0.462
+   "musicLevel": -33.4,
+   "tension": 0.438
   },
   {
    "t": 184,
    "cutRate": 1,
    "audioDensity": 2.8,
-   "musicLevel": -34.8,
-   "tension": 0.463
+   "musicLevel": -40.5,
+   "tension": 0.438
   },
   {
    "t": 185,
    "cutRate": 1,
    "audioDensity": 2.4,
-   "musicLevel": -29.2,
-   "tension": 0.426
+   "musicLevel": -30.8,
+   "tension": 0.404
   },
   {
    "t": 186,
    "cutRate": 1,
    "audioDensity": 2.0,
-   "musicLevel": -31.2,
-   "tension": 0.372
+   "musicLevel": -32.9,
+   "tension": 0.348
   },
   {
    "t": 187,
    "cutRate": 2,
    "audioDensity": 1.8,
-   "musicLevel": -52.2,
-   "tension": 0.36
+   "musicLevel": -51.6,
+   "tension": 0.349
   },
   {
    "t": 188,
    "cutRate": 1,
    "audioDensity": 1.6,
-   "musicLevel": -55.3,
-   "tension": 0.322
+   "musicLevel": -53.8,
+   "tension": 0.318
   },
   {
    "t": 189,
    "cutRate": 1,
    "audioDensity": 1.6,
-   "musicLevel": -34.9,
+   "musicLevel": -35.7,
    "tension": 0.274
   },
   {
    "t": 190,
    "cutRate": 1,
    "audioDensity": 2.0,
-   "musicLevel": -41.9,
-   "tension": 0.318
+   "musicLevel": -41.0,
+   "tension": 0.319
   },
   {
    "t": 191,
    "cutRate": 1,
    "audioDensity": 2.2,
-   "musicLevel": -55.6,
-   "tension": 0.377
+   "musicLevel": -54.9,
+   "tension": 0.379
   },
   {
    "t": 192,
    "cutRate": 1,
    "audioDensity": 2.2,
-   "musicLevel": -27.7,
-   "tension": 0.383
+   "musicLevel": -27.1,
+   "tension": 0.382
   },
   {
    "t": 193,
    "cutRate": 1,
    "audioDensity": 2.4,
-   "musicLevel": -30.7,
-   "tension": 0.414
+   "musicLevel": -30.6,
+   "tension": 0.412
   },
   {
    "t": 194,
    "cutRate": 1,
    "audioDensity": 2.4,
-   "musicLevel": -35.8,
+   "musicLevel": -37.4,
    "tension": 0.466
   },
   {
    "t": 195,
    "cutRate": 1,
    "audioDensity": 2.2,
-   "musicLevel": -30.8,
-   "tension": 0.432
+   "musicLevel": -30.5,
+   "tension": 0.431
   },
   {
    "t": 196,
    "cutRate": 1,
    "audioDensity": 2.0,
-   "musicLevel": -29.9,
+   "musicLevel": -29.2,
    "tension": 0.405
   },
   {
    "t": 197,
    "cutRate": 0,
    "audioDensity": 2.2,
-   "musicLevel": -33.0,
-   "tension": 0.404
+   "musicLevel": -32.5,
+   "tension": 0.41
   },
   {
    "t": 198,
    "cutRate": 0,
    "audioDensity": 1.8,
-   "musicLevel": -31.1,
-   "tension": 0.372
+   "musicLevel": -30.6,
+   "tension": 0.376
   },
   {
    "t": 199,
    "cutRate": 1,
    "audioDensity": 1.4,
-   "musicLevel": -32.4,
-   "tension": 0.308
+   "musicLevel": -32.1,
+   "tension": 0.313
   },
   {
    "t": 200,
    "cutRate": 1,
    "audioDensity": 1.0,
-   "musicLevel": -38.1,
-   "tension": 0.273
+   "musicLevel": -38.5,
+   "tension": 0.278
   },
   {
    "t": 201,
    "cutRate": 1,
-   "audioDensity": 1.0,
-   "musicLevel": -120.0,
+   "audioDensity": 1.2,
+   "musicLevel": -91.4,
    "tension": 0.298
   },
   {
    "t": 202,
    "cutRate": 1,
-   "audioDensity": 1.2,
+   "audioDensity": 1.4,
    "musicLevel": -120.0,
-   "tension": 0.325
+   "tension": 0.327
   },
   {
    "t": 203,
    "cutRate": 2,
-   "audioDensity": 1.6,
-   "musicLevel": -36.1,
-   "tension": 0.371
+   "audioDensity": 1.8,
+   "musicLevel": -38.2,
+   "tension": 0.379
   },
   {
    "t": 204,
    "cutRate": 2,
-   "audioDensity": 2.0,
-   "musicLevel": -31.8,
-   "tension": 0.461
+   "audioDensity": 2.4,
+   "musicLevel": -32.3,
+   "tension": 0.479
   },
   {
    "t": 205,
    "cutRate": 2,
-   "audioDensity": 2.4,
-   "musicLevel": -33.9,
-   "tension": 0.544
+   "audioDensity": 2.8,
+   "musicLevel": -33.5,
+   "tension": 0.564
   },
   {
    "t": 206,
    "cutRate": 2,
-   "audioDensity": 2.8,
-   "musicLevel": -30.2,
-   "tension": 0.565
+   "audioDensity": 3.0,
+   "musicLevel": -26.7,
+   "tension": 0.599
   },
   {
    "t": 207,
    "cutRate": 2,
-   "audioDensity": 2.4,
-   "musicLevel": -30.9,
-   "tension": 0.546
+   "audioDensity": 2.6,
+   "musicLevel": -30.1,
+   "tension": 0.586
   },
   {
    "t": 208,
    "cutRate": 2,
-   "audioDensity": 2.4,
-   "musicLevel": -31.4,
-   "tension": 0.548
+   "audioDensity": 2.6,
+   "musicLevel": -27.8,
+   "tension": 0.584
   },
   {
    "t": 209,
    "cutRate": 1,
    "audioDensity": 2.4,
-   "musicLevel": -32.9,
-   "tension": 0.543
+   "musicLevel": -29.8,
+   "tension": 0.573
   },
   {
    "t": 210,
    "cutRate": 2,
    "audioDensity": 2.4,
-   "musicLevel": -32.9,
-   "tension": 0.539
+   "musicLevel": -32.7,
+   "tension": 0.567
   },
   {
    "t": 211,
    "cutRate": 2,
    "audioDensity": 2.0,
-   "musicLevel": -29.2,
-   "tension": 0.517
+   "musicLevel": -27.2,
+   "tension": 0.539
   },
   {
    "t": 212,
    "cutRate": 2,
    "audioDensity": 2.2,
-   "musicLevel": -31.9,
-   "tension": 0.513
+   "musicLevel": -30.9,
+   "tension": 0.522
   },
   {
    "t": 213,
    "cutRate": 1,
    "audioDensity": 2.2,
-   "musicLevel": -31.3,
-   "tension": 0.494
+   "musicLevel": -29.4,
+   "tension": 0.504
   },
   {
    "t": 214,
    "cutRate": 1,
    "audioDensity": 2.0,
-   "musicLevel": -32.9,
-   "tension": 0.435
+   "musicLevel": -34.6,
+   "tension": 0.442
   },
   {
    "t": 215,
    "cutRate": 2,
-   "audioDensity": 1.8,
+   "audioDensity": 2.0,
    "musicLevel": -37.7,
-   "tension": 0.378
+   "tension": 0.385
   },
   {
    "t": 216,
    "cutRate": 2,
-   "audioDensity": 1.6,
-   "musicLevel": -53.5,
-   "tension": 0.34
+   "audioDensity": 1.8,
+   "musicLevel": -53.0,
+   "tension": 0.344
   },
   {
    "t": 217,
    "cutRate": 2,
-   "audioDensity": 1.4,
-   "musicLevel": -56.8,
-   "tension": 0.339
+   "audioDensity": 1.6,
+   "musicLevel": -55.3,
+   "tension": 0.359
   },
   {
    "t": 218,
    "cutRate": 2,
-   "audioDensity": 1.4,
-   "musicLevel": -54.8,
-   "tension": 0.325
+   "audioDensity": 1.6,
+   "musicLevel": -55.6,
+   "tension": 0.348
   },
   {
    "t": 219,
    "cutRate": 2,
-   "audioDensity": 1.4,
-   "musicLevel": -38.9,
-   "tension": 0.308
+   "audioDensity": 1.6,
+   "musicLevel": -35.0,
+   "tension": 0.338
   },
   {
    "t": 220,
    "cutRate": 1,
    "audioDensity": 1.6,
-   "musicLevel": -34.6,
-   "tension": 0.31
+   "musicLevel": -32.9,
+   "tension": 0.34
   },
   {
    "t": 221,
    "cutRate": 1,
-   "audioDensity": 1.8,
-   "musicLevel": -49.6,
-   "tension": 0.36
+   "audioDensity": 2.0,
+   "musicLevel": -46.9,
+   "tension": 0.394
   },
   {
    "t": 222,
    "cutRate": 2,
-   "audioDensity": 1.6,
-   "musicLevel": -55.1,
-   "tension": 0.342
+   "audioDensity": 1.8,
+   "musicLevel": -53.0,
+   "tension": 0.368
   },
   {
    "t": 223,
    "cutRate": 2,
-   "audioDensity": 1.6,
-   "musicLevel": -31.9,
-   "tension": 0.327
+   "audioDensity": 1.8,
+   "musicLevel": -30.7,
+   "tension": 0.353
   },
   {
    "t": 224,
    "cutRate": 2,
-   "audioDensity": 2.0,
-   "musicLevel": -47.8,
-   "tension": 0.405
+   "audioDensity": 2.2,
+   "musicLevel": -46.7,
+   "tension": 0.429
   },
   {
    "t": 225,
    "cutRate": 2,
-   "audioDensity": 2.2,
-   "musicLevel": -60.0,
-   "tension": 0.462
+   "audioDensity": 2.6,
+   "musicLevel": -57.8,
+   "tension": 0.49
   },
   {
    "t": 226,
    "cutRate": 2,
-   "audioDensity": 2.4,
-   "musicLevel": -30.1,
-   "tension": 0.479
+   "audioDensity": 2.6,
+   "musicLevel": -27.9,
+   "tension": 0.508
   },
   {
    "t": 227,
    "cutRate": 2,
-   "audioDensity": 2.6,
-   "musicLevel": -32.6,
-   "tension": 0.527
+   "audioDensity": 2.8,
+   "musicLevel": -30.9,
+   "tension": 0.563
   },
   {
    "t": 228,
    "cutRate": 2,
-   "audioDensity": 3.0,
-   "musicLevel": -30.6,
-   "tension": 0.573
+   "audioDensity": 3.2,
+   "musicLevel": -29.4,
+   "tension": 0.61
   },
   {
    "t": 229,
    "cutRate": 2,
-   "audioDensity": 3.0,
-   "musicLevel": -33.6,
-   "tension": 0.574
+   "audioDensity": 3.4,
+   "musicLevel": -30.6,
+   "tension": 0.604
   },
   {
    "t": 230,
    "cutRate": 2,
-   "audioDensity": 2.6,
-   "musicLevel": -34.2,
-   "tension": 0.539
+   "audioDensity": 2.8,
+   "musicLevel": -32.9,
+   "tension": 0.567
   },
   {
    "t": 231,
    "cutRate": 2,
-   "audioDensity": 2.2,
-   "musicLevel": -29.1,
-   "tension": 0.453
+   "audioDensity": 2.4,
+   "musicLevel": -29.4,
+   "tension": 0.478
   },
   {
    "t": 232,
    "cutRate": 1,
-   "audioDensity": 2.0,
-   "musicLevel": -35.8,
-   "tension": 0.394
+   "audioDensity": 2.2,
+   "musicLevel": -35.2,
+   "tension": 0.408
   },
   {
    "t": 233,
    "cutRate": 1,
-   "audioDensity": 1.6,
-   "musicLevel": -55.8,
-   "tension": 0.322
+   "audioDensity": 1.8,
+   "musicLevel": -56.0,
+   "tension": 0.335
   },
   {
    "t": 234,
    "cutRate": 2,
-   "audioDensity": 1.4,
-   "musicLevel": -56.2,
-   "tension": 0.297
+   "audioDensity": 1.6,
+   "musicLevel": -56.3,
+   "tension": 0.32
   },
   {
    "t": 235,
    "cutRate": 1,
-   "audioDensity": 1.6,
-   "musicLevel": -58.7,
-   "tension": 0.309
+   "audioDensity": 2.0,
+   "musicLevel": -59.9,
+   "tension": 0.341
   },
   {
    "t": 236,
    "cutRate": 1,
-   "audioDensity": 2.0,
-   "musicLevel": -29.9,
-   "tension": 0.371
+   "audioDensity": 2.4,
+   "musicLevel": -27.4,
+   "tension": 0.412
   },
   {
    "t": 237,
    "cutRate": 1,
-   "audioDensity": 2.4,
-   "musicLevel": -32.9,
-   "tension": 0.426
+   "audioDensity": 3.0,
+   "musicLevel": -30.2,
+   "tension": 0.476
   },
   {
    "t": 238,
    "cutRate": 1,
-   "audioDensity": 2.8,
-   "musicLevel": -31.3,
-   "tension": 0.476
+   "audioDensity": 3.4,
+   "musicLevel": -29.3,
+   "tension": 0.531
   },
   {
    "t": 239,
    "cutRate": 1,
-   "audioDensity": 2.8,
-   "musicLevel": -27.2,
-   "tension": 0.503
+   "audioDensity": 3.4,
+   "musicLevel": -25.4,
+   "tension": 0.561
   },
   {
    "t": 240,
    "cutRate": 1,
-   "audioDensity": 2.6,
-   "musicLevel": -35.0,
-   "tension": 0.517
+   "audioDensity": 3.2,
+   "musicLevel": -33.6,
+   "tension": 0.569
   },
   {
    "t": 241,
    "cutRate": 2,
-   "audioDensity": 2.2,
-   "musicLevel": -27.7,
-   "tension": 0.471
+   "audioDensity": 3.0,
+   "musicLevel": -26.0,
+   "tension": 0.518
   },
   {
    "t": 242,
    "cutRate": 2,
-   "audioDensity": 1.8,
-   "musicLevel": -33.0,
-   "tension": 0.395
+   "audioDensity": 2.4,
+   "musicLevel": -32.3,
+   "tension": 0.435
   },
   {
    "t": 243,
    "cutRate": 2,
-   "audioDensity": 1.2,
-   "musicLevel": -55.3,
-   "tension": 0.343
+   "audioDensity": 1.8,
+   "musicLevel": -53.7,
+   "tension": 0.375
   },
   {
    "t": 244,
    "cutRate": 1,
-   "audioDensity": 1.2,
-   "musicLevel": -57.1,
-   "tension": 0.255
+   "audioDensity": 1.6,
+   "musicLevel": -57.6,
+   "tension": 0.275
   },
   {
    "t": 245,
    "cutRate": 1,
-   "audioDensity": 1.4,
-   "musicLevel": -56.9,
-   "tension": 0.226
+   "audioDensity": 1.6,
+   "musicLevel": -55.6,
+   "tension": 0.237
   },
   {
    "t": 246,
    "cutRate": 1,
    "audioDensity": 1.4,
-   "musicLevel": -54.7,
-   "tension": 0.235
+   "musicLevel": -52.8,
+   "tension": 0.25
   },
   {
    "t": 247,
    "cutRate": 1,
    "audioDensity": 1.6,
-   "musicLevel": -35.9,
-   "tension": 0.261
+   "musicLevel": -36.2,
+   "tension": 0.274
   },
   {
    "t": 248,
    "cutRate": 1,
    "audioDensity": 1.8,
-   "musicLevel": -41.3,
-   "tension": 0.323
+   "musicLevel": -37.6,
+   "tension": 0.337
   },
   {
    "t": 249,
    "cutRate": 2,
-   "audioDensity": 1.8,
-   "musicLevel": -58.1,
-   "tension": 0.382
+   "audioDensity": 2.0,
+   "musicLevel": -55.3,
+   "tension": 0.401
   },
   {
    "t": 250,
    "cutRate": 2,
-   "audioDensity": 1.6,
-   "musicLevel": -34.8,
-   "tension": 0.35
+   "audioDensity": 1.8,
+   "musicLevel": -34.6,
+   "tension": 0.372
   },
   {
    "t": 251,
    "cutRate": 1,
-   "audioDensity": 1.8,
-   "musicLevel": -29.6,
-   "tension": 0.37
+   "audioDensity": 2.0,
+   "musicLevel": -28.2,
+   "tension": 0.394
   },
   {
    "t": 252,
    "cutRate": 1,
-   "audioDensity": 2.2,
-   "musicLevel": -55.6,
-   "tension": 0.4
+   "audioDensity": 2.4,
+   "musicLevel": -54.7,
+   "tension": 0.43
   },
   {
    "t": 253,
    "cutRate": 1,
-   "audioDensity": 2.4,
-   "musicLevel": -36.0,
-   "tension": 0.382
+   "audioDensity": 2.8,
+   "musicLevel": -33.1,
+   "tension": 0.419
   },
   {
    "t": 254,
    "cutRate": 1,
-   "audioDensity": 2.2,
-   "musicLevel": -32.8,
-   "tension": 0.33
+   "audioDensity": 2.6,
+   "musicLevel": -31.3,
+   "tension": 0.367
   },
   {
    "t": 255,
    "cutRate": 1,
-   "audioDensity": 2.2,
-   "musicLevel": -36.1,
-   "tension": 0.322
+   "audioDensity": 2.8,
+   "musicLevel": -35.1,
+   "tension": 0.363
   },
   {
    "t": 256,
    "cutRate": 1,
-   "audioDensity": 2.0,
-   "musicLevel": -53.8,
-   "tension": 0.271
+   "audioDensity": 2.6,
+   "musicLevel": -52.4,
+   "tension": 0.304
   },
   {
    "t": 257,
    "cutRate": 1,
-   "audioDensity": 1.4,
-   "musicLevel": -56.8,
-   "tension": 0.195
+   "audioDensity": 2.0,
+   "musicLevel": -54.3,
+   "tension": 0.222
   },
   {
    "t": 258,
    "cutRate": 1,
-   "audioDensity": 1.0,
-   "musicLevel": -55.1,
-   "tension": 0.15
+   "audioDensity": 1.4,
+   "musicLevel": -53.9,
+   "tension": 0.168
   },
   {
    "t": 259,
    "cutRate": 0,
-   "audioDensity": 1.2,
-   "musicLevel": -57.5,
-   "tension": 0.158
+   "audioDensity": 1.4,
+   "musicLevel": -56.3,
+   "tension": 0.174
   },
   {
    "t": 260,
    "cutRate": 1,
    "audioDensity": 1.4,
-   "musicLevel": -56.8,
-   "tension": 0.21
+   "musicLevel": -57.3,
+   "tension": 0.222
   },
   {
    "t": 261,
    "cutRate": 1,
    "audioDensity": 1.6,
-   "musicLevel": -45.6,
-   "tension": 0.275
+   "musicLevel": -44.0,
+   "tension": 0.288
   },
   {
    "t": 262,
    "cutRate": 1,
-   "audioDensity": 1.8,
-   "musicLevel": -31.7,
-   "tension": 0.35
+   "audioDensity": 2.0,
+   "musicLevel": -31.9,
+   "tension": 0.366
   },
   {
    "t": 263,
    "cutRate": 1,
-   "audioDensity": 2.2,
-   "musicLevel": -30.4,
-   "tension": 0.401
+   "audioDensity": 2.6,
+   "musicLevel": -29.9,
+   "tension": 0.431
   },
   {
    "t": 264,
    "cutRate": 1,
-   "audioDensity": 2.2,
-   "musicLevel": -32.9,
-   "tension": 0.443
+   "audioDensity": 2.8,
+   "musicLevel": -33.5,
+   "tension": 0.487
   },
   {
    "t": 265,
    "cutRate": 1,
-   "audioDensity": 2.0,
-   "musicLevel": -33.2,
-   "tension": 0.45
+   "audioDensity": 3.0,
+   "musicLevel": -31.5,
+   "tension": 0.51
   },
   {
    "t": 266,
    "cutRate": 1,
-   "audioDensity": 1.8,
-   "musicLevel": -30.5,
-   "tension": 0.408
+   "audioDensity": 2.8,
+   "musicLevel": -27.6,
+   "tension": 0.468
   },
   {
    "t": 267,
    "cutRate": 2,
-   "audioDensity": 1.6,
-   "musicLevel": -36.0,
-   "tension": 0.379
+   "audioDensity": 2.4,
+   "musicLevel": -32.2,
+   "tension": 0.445
   },
   {
    "t": 268,
    "cutRate": 2,
-   "audioDensity": 1.2,
-   "musicLevel": -54.9,
-   "tension": 0.332
+   "audioDensity": 1.8,
+   "musicLevel": -51.8,
+   "tension": 0.384
   },
   {
    "t": 269,
    "cutRate": 2,
-   "audioDensity": 1.2,
-   "musicLevel": -47.5,
-   "tension": 0.312
+   "audioDensity": 1.6,
+   "musicLevel": -45.1,
+   "tension": 0.355
   },
   {
    "t": 270,
    "cutRate": 1,
    "audioDensity": 1.8,
-   "musicLevel": -54.6,
-   "tension": 0.328
+   "musicLevel": -54.5,
+   "tension": 0.359
   },
   {
    "t": 271,
    "cutRate": 1,
    "audioDensity": 2.2,
-   "musicLevel": -39.5,
-   "tension": 0.393
+   "musicLevel": -36.4,
+   "tension": 0.42
   },
   {
    "t": 272,
    "cutRate": 2,
    "audioDensity": 2.4,
-   "musicLevel": -32.8,
-   "tension": 0.445
+   "musicLevel": -30.7,
+   "tension": 0.458
   },
   {
    "t": 273,
    "cutRate": 2,
    "audioDensity": 2.6,
-   "musicLevel": -30.9,
-   "tension": 0.508
+   "musicLevel": -30.1,
+   "tension": 0.518
   },
   {
    "t": 274,
    "cutRate": 2,
    "audioDensity": 2.6,
-   "musicLevel": -33.6,
-   "tension": 0.546
+   "musicLevel": -34.5,
+   "tension": 0.553
   },
   {
    "t": 275,
    "cutRate": 2,
    "audioDensity": 2.0,
-   "musicLevel": -34.5,
-   "tension": 0.497
+   "musicLevel": -35.8,
+   "tension": 0.503
   },
   {
    "t": 276,
    "cutRate": 2,
    "audioDensity": 1.6,
-   "musicLevel": -30.3,
-   "tension": 0.414
+   "musicLevel": -28.6,
+   "tension": 0.418
   },
   {
    "t": 277,
    "cutRate": 1,
    "audioDensity": 1.4,
-   "musicLevel": -40.1,
-   "tension": 0.338
+   "musicLevel": -38.2,
+   "tension": 0.344
   },
   {
    "t": 278,
    "cutRate": 1,
    "audioDensity": 1.4,
-   "musicLevel": -55.1,
-   "tension": 0.299
+   "musicLevel": -53.8,
+   "tension": 0.304
   },
   {
    "t": 279,
    "cutRate": 1,
    "audioDensity": 1.4,
-   "musicLevel": -57.8,
-   "tension": 0.307
+   "musicLevel": -54.6,
+   "tension": 0.312
   },
   {
    "t": 280,
    "cutRate": 2,
    "audioDensity": 1.6,
-   "musicLevel": -47.6,
-   "tension": 0.335
+   "musicLevel": -49.3,
+   "tension": 0.34
   },
   {
    "t": 281,
    "cutRate": 2,
    "audioDensity": 1.8,
-   "musicLevel": -28.2,
-   "tension": 0.396
+   "musicLevel": -26.3,
+   "tension": 0.404
   },
   {
    "t": 282,
    "cutRate": 1,
    "audioDensity": 2.0,
-   "musicLevel": -31.6,
-   "tension": 0.454
+   "musicLevel": -30.3,
+   "tension": 0.469
   },
   {
    "t": 283,
    "cutRate": 1,
    "audioDensity": 2.4,
-   "musicLevel": -31.0,
-   "tension": 0.473
+   "musicLevel": -29.8,
+   "tension": 0.499
   },
   {
    "t": 284,
    "cutRate": 1,
    "audioDensity": 2.6,
-   "musicLevel": -32.9,
-   "tension": 0.457
+   "musicLevel": -30.0,
+   "tension": 0.481
   },
   {
    "t": 285,
    "cutRate": 1,
    "audioDensity": 2.6,
-   "musicLevel": -36.6,
-   "tension": 0.482
+   "musicLevel": -34.3,
+   "tension": 0.508
   },
   {
    "t": 286,
    "cutRate": 1,
    "audioDensity": 2.6,
-   "musicLevel": -29.9,
-   "tension": 0.5
+   "musicLevel": -28.5,
+   "tension": 0.527
   },
   {
    "t": 287,
    "cutRate": 2,
    "audioDensity": 2.6,
-   "musicLevel": -32.0,
-   "tension": 0.533
+   "musicLevel": -30.0,
+   "tension": 0.558
   },
   {
    "t": 288,
    "cutRate": 2,
    "audioDensity": 2.2,
-   "musicLevel": -31.1,
-   "tension": 0.558
+   "musicLevel": -29.1,
+   "tension": 0.575
   },
   {
    "t": 289,
    "cutRate": 3,
    "audioDensity": 2.0,
-   "musicLevel": -33.0,
-   "tension": 0.579
+   "musicLevel": -31.2,
+   "tension": 0.591
   },
   {
    "t": 290,
    "cutRate": 2,
    "audioDensity": 2.2,
-   "musicLevel": -33.1,
-   "tension": 0.596
+   "musicLevel": -34.1,
+   "tension": 0.603
   },
   {
    "t": 291,
    "cutRate": 2,
    "audioDensity": 2.2,
    "musicLevel": -28.3,
-   "tension": 0.616
+   "tension": 0.621
   },
   {
    "t": 292,
    "cutRate": 3,
    "audioDensity": 2.4,
-   "musicLevel": -32.2,
-   "tension": 0.621
+   "musicLevel": -32.4,
+   "tension": 0.622
   },
   {
    "t": 293,
    "cutRate": 3,
-   "audioDensity": 2.4,
-   "musicLevel": -31.8,
-   "tension": 0.633
+   "audioDensity": 2.6,
+   "musicLevel": -31.5,
+   "tension": 0.64
   },
   {
    "t": 294,
    "cutRate": 3,
-   "audioDensity": 2.4,
-   "musicLevel": -32.6,
-   "tension": 0.638
+   "audioDensity": 2.6,
+   "musicLevel": -32.9,
+   "tension": 0.652
   },
   {
    "t": 295,
    "cutRate": 3,
-   "audioDensity": 2.2,
+   "audioDensity": 2.6,
    "musicLevel": -36.3,
-   "tension": 0.564
+   "tension": 0.583
   },
   {
    "t": 296,
    "cutRate": 3,
-   "audioDensity": 2.0,
-   "musicLevel": -33.2,
-   "tension": 0.49
+   "audioDensity": 2.4,
+   "musicLevel": -32.1,
+   "tension": 0.508
   },
   {
    "t": 297,
    "cutRate": 2,
-   "audioDensity": 1.8,
-   "musicLevel": -55.5,
-   "tension": 0.395
+   "audioDensity": 2.2,
+   "musicLevel": -53.6,
+   "tension": 0.414
   },
   {
    "t": 298,
    "cutRate": 2,
-   "audioDensity": 1.8,
-   "musicLevel": -55.5,
-   "tension": 0.363
+   "audioDensity": 2.0,
+   "musicLevel": -53.3,
+   "tension": 0.378
   },
   {
    "t": 299,
    "cutRate": 1,
-   "audioDensity": 1.6,
-   "musicLevel": -57.6,
-   "tension": 0.293
+   "audioDensity": 1.8,
+   "musicLevel": -54.6,
+   "tension": 0.302
   },
   {
    "t": 300,
    "cutRate": 2,
-   "audioDensity": 1.4,
-   "musicLevel": -37.8,
-   "tension": 0.271
+   "audioDensity": 1.6,
+   "musicLevel": -38.7,
+   "tension": 0.278
   },
   {
    "t": 301,
    "cutRate": 2,
-   "audioDensity": 1.4,
-   "musicLevel": -52.4,
-   "tension": 0.251
+   "audioDensity": 1.6,
+   "musicLevel": -50.0,
+   "tension": 0.26
   },
   {
    "t": 302,
    "cutRate": 1,
-   "audioDensity": 1.6,
-   "musicLevel": -56.5,
-   "tension": 0.288
+   "audioDensity": 1.8,
+   "musicLevel": -54.3,
+   "tension": 0.298
   },
   {
    "t": 303,
    "cutRate": 1,
-   "audioDensity": 1.8,
-   "musicLevel": -55.2,
-   "tension": 0.283
+   "audioDensity": 2.2,
+   "musicLevel": -54.0,
+   "tension": 0.297
   },
   {
    "t": 304,
    "cutRate": 1,
-   "audioDensity": 2.2,
-   "musicLevel": -38.3,
-   "tension": 0.349
+   "audioDensity": 2.6,
+   "musicLevel": -39.0,
+   "tension": 0.372
   },
   {
    "t": 305,
    "cutRate": 1,
-   "audioDensity": 2.4,
-   "musicLevel": -35.8,
-   "tension": 0.429
+   "audioDensity": 2.8,
+   "musicLevel": -35.9,
+   "tension": 0.459
   },
   {
    "t": 306,
    "cutRate": 2,
-   "audioDensity": 2.6,
-   "musicLevel": -29.8,
-   "tension": 0.503
+   "audioDensity": 3.2,
+   "musicLevel": -28.0,
+   "tension": 0.54
   },
   {
    "t": 307,
    "cutRate": 2,
-   "audioDensity": 2.4,
-   "musicLevel": -30.7,
-   "tension": 0.538
+   "audioDensity": 3.2,
+   "musicLevel": -30.1,
+   "tension": 0.586
   },
   {
    "t": 308,
    "cutRate": 2,
-   "audioDensity": 2.2,
-   "musicLevel": -31.1,
-   "tension": 0.564
+   "audioDensity": 2.8,
+   "musicLevel": -29.3,
+   "tension": 0.618
   },
   {
    "t": 309,
    "cutRate": 2,
-   "audioDensity": 2.4,
-   "musicLevel": -33.4,
-   "tension": 0.568
+   "audioDensity": 3.0,
+   "musicLevel": -30.6,
+   "tension": 0.619
   },
   {
    "t": 310,
    "cutRate": 2,
-   "audioDensity": 2.6,
-   "musicLevel": -34.4,
-   "tension": 0.565
+   "audioDensity": 3.2,
+   "musicLevel": -33.2,
+   "tension": 0.613
   },
   {
    "t": 311,
    "cutRate": 2,
-   "audioDensity": 2.6,
-   "musicLevel": -28.4,
-   "tension": 0.567
+   "audioDensity": 3.0,
+   "musicLevel": -26.8,
+   "tension": 0.61
   },
   {
    "t": 312,
    "cutRate": 2,
-   "audioDensity": 2.4,
-   "musicLevel": -31.5,
-   "tension": 0.578
+   "audioDensity": 2.6,
+   "musicLevel": -30.0,
+   "tension": 0.614
   },
   {
    "t": 313,
    "cutRate": 2,
-   "audioDensity": 2.4,
-   "musicLevel": -31.1,
-   "tension": 0.549
+   "audioDensity": 2.6,
+   "musicLevel": -29.8,
+   "tension": 0.575
   },
   {
    "t": 314,
    "cutRate": 3,
-   "audioDensity": 2.0,
-   "musicLevel": -35.3,
-   "tension": 0.483
+   "audioDensity": 2.2,
+   "musicLevel": -33.5,
+   "tension": 0.501
   },
   {
    "t": 315,
    "cutRate": 3,
    "audioDensity": 1.8,
-   "musicLevel": -59.7,
-   "tension": 0.43
+   "musicLevel": -58.9,
+   "tension": 0.444
   },
   {
    "t": 316,
    "cutRate": 2,
    "audioDensity": 1.8,
-   "musicLevel": -53.5,
-   "tension": 0.422
+   "musicLevel": -52.6,
+   "tension": 0.434
   },
   {
    "t": 317,
    "cutRate": 2,
-   "audioDensity": 2.0,
-   "musicLevel": -55.1,
-   "tension": 0.365
+   "audioDensity": 2.2,
+   "musicLevel": -54.2,
+   "tension": 0.376
   },
   {
    "t": 318,
    "cutRate": 2,
-   "audioDensity": 2.2,
-   "musicLevel": -33.2,
-   "tension": 0.352
+   "audioDensity": 2.6,
+   "musicLevel": -33.3,
+   "tension": 0.364
   },
   {
    "t": 319,
    "cutRate": 2,
-   "audioDensity": 2.2,
-   "musicLevel": -57.6,
-   "tension": 0.389
+   "audioDensity": 2.8,
+   "musicLevel": -56.4,
+   "tension": 0.408
   },
   {
    "t": 320,
    "cutRate": 1,
-   "audioDensity": 2.0,
-   "musicLevel": -40.7,
-   "tension": 0.369
+   "audioDensity": 2.6,
+   "musicLevel": -42.5,
+   "tension": 0.39
   },
   {
    "t": 321,
    "cutRate": 1,
-   "audioDensity": 2.0,
-   "musicLevel": -29.2,
-   "tension": 0.353
+   "audioDensity": 2.6,
+   "musicLevel": -29.3,
+   "tension": 0.371
   },
   {
    "t": 322,
    "cutRate": 1,
-   "audioDensity": 2.0,
-   "musicLevel": -56.6,
-   "tension": 0.374
+   "audioDensity": 2.4,
+   "musicLevel": -56.3,
+   "tension": 0.389
   },
   {
    "t": 323,
    "cutRate": 2,
-   "audioDensity": 1.8,
-   "musicLevel": -37.9,
-   "tension": 0.388
+   "audioDensity": 2.0,
+   "musicLevel": -38.1,
+   "tension": 0.401
   },
   {
    "t": 324,
    "cutRate": 1,
    "audioDensity": 1.8,
-   "musicLevel": -33.0,
-   "tension": 0.384
+   "musicLevel": -32.0,
+   "tension": 0.399
   },
   {
    "t": 325,
    "cutRate": 1,
    "audioDensity": 2.0,
-   "musicLevel": -35.5,
-   "tension": 0.432
+   "musicLevel": -35.6,
+   "tension": 0.448
   },
   {
    "t": 326,
    "cutRate": 1,
    "audioDensity": 1.8,
-   "musicLevel": -29.8,
-   "tension": 0.38
+   "musicLevel": -27.1,
+   "tension": 0.394
   },
   {
    "t": 327,
    "cutRate": 1,
    "audioDensity": 1.8,
-   "musicLevel": -31.4,
-   "tension": 0.352
+   "musicLevel": -29.6,
+   "tension": 0.364
   },
   {
    "t": 328,
    "cutRate": 1,
    "audioDensity": 1.8,
-   "musicLevel": -55.5,
-   "tension": 0.371
+   "musicLevel": -53.0,
+   "tension": 0.39
   },
   {
    "t": 329,
    "cutRate": 2,
    "audioDensity": 1.6,
-   "musicLevel": -56.0,
-   "tension": 0.345
+   "musicLevel": -52.5,
+   "tension": 0.371
   },
   {
    "t": 330,
    "cutRate": 2,
    "audioDensity": 1.6,
-   "musicLevel": -34.5,
-   "tension": 0.317
+   "musicLevel": -31.7,
+   "tension": 0.338
   },
   {
    "t": 331,
    "cutRate": 2,
    "audioDensity": 1.8,
-   "musicLevel": -47.0,
-   "tension": 0.378
+   "musicLevel": -41.9,
+   "tension": 0.4
   },
   {
    "t": 332,
    "cutRate": 2,
    "audioDensity": 2.0,
-   "musicLevel": -56.0,
-   "tension": 0.438
+   "musicLevel": -53.3,
+   "tension": 0.46
   },
   {
    "t": 333,
    "cutRate": 1,
    "audioDensity": 2.0,
    "musicLevel": -27.8,
-   "tension": 0.403
+   "tension": 0.417
   },
   {
    "t": 334,
    "cutRate": 2,
    "audioDensity": 2.2,
-   "musicLevel": -30.0,
-   "tension": 0.432
+   "musicLevel": -29.7,
+   "tension": 0.436
   },
   {
    "t": 335,
    "cutRate": 2,
    "audioDensity": 2.2,
-   "musicLevel": -59.5,
-   "tension": 0.481
+   "musicLevel": -60.2,
+   "tension": 0.49
   },
   {
    "t": 336,
    "cutRate": 2,
    "audioDensity": 2.2,
-   "musicLevel": -37.3,
-   "tension": 0.511
+   "musicLevel": -36.2,
+   "tension": 0.52
   },
   {
    "t": 337,
    "cutRate": 2,
    "audioDensity": 2.0,
-   "musicLevel": -31.9,
-   "tension": 0.488
+   "musicLevel": -29.9,
+   "tension": 0.507
   },
   {
    "t": 338,
    "cutRate": 3,
-   "audioDensity": 1.8,
-   "musicLevel": -30.8,
-   "tension": 0.482
+   "audioDensity": 2.0,
+   "musicLevel": -31.3,
+   "tension": 0.503
   },
   {
    "t": 339,
    "cutRate": 2,
-   "audioDensity": 1.6,
-   "musicLevel": -36.0,
-   "tension": 0.445
+   "audioDensity": 1.8,
+   "musicLevel": -33.2,
+   "tension": 0.466
   },
   {
    "t": 340,
    "cutRate": 2,
-   "audioDensity": 1.6,
-   "musicLevel": -58.4,
-   "tension": 0.396
+   "audioDensity": 1.8,
+   "musicLevel": -56.0,
+   "tension": 0.419
   },
   {
    "t": 341,
    "cutRate": 2,
-   "audioDensity": 1.8,
-   "musicLevel": -55.2,
-   "tension": 0.374
+   "audioDensity": 2.2,
+   "musicLevel": -52.0,
+   "tension": 0.4
   },
   {
    "t": 342,
    "cutRate": 2,
-   "audioDensity": 2.0,
-   "musicLevel": -54.8,
-   "tension": 0.392
+   "audioDensity": 2.6,
+   "musicLevel": -53.0,
+   "tension": 0.417
   },
   {
    "t": 343,
    "cutRate": 2,
-   "audioDensity": 2.0,
-   "musicLevel": -32.5,
-   "tension": 0.431
+   "audioDensity": 2.4,
+   "musicLevel": -32.4,
+   "tension": 0.459
   },
   {
    "t": 344,
    "cutRate": 2,
-   "audioDensity": 2.2,
-   "musicLevel": -31.5,
-   "tension": 0.433
+   "audioDensity": 2.6,
+   "musicLevel": -29.7,
+   "tension": 0.459
   },
   {
    "t": 345,
    "cutRate": 2,
-   "audioDensity": 2.2,
-   "musicLevel": -37.7,
-   "tension": 0.475
+   "audioDensity": 2.6,
+   "musicLevel": -37.1,
+   "tension": 0.501
   },
   {
    "t": 346,
    "cutRate": 2,
-   "audioDensity": 2.0,
-   "musicLevel": -53.6,
-   "tension": 0.46
+   "audioDensity": 2.2,
+   "musicLevel": -51.7,
+   "tension": 0.477
   },
   {
    "t": 347,
    "cutRate": 2,
-   "audioDensity": 1.8,
-   "musicLevel": -33.4,
-   "tension": 0.387
+   "audioDensity": 2.0,
+   "musicLevel": -31.9,
+   "tension": 0.399
   },
   {
    "t": 348,
    "cutRate": 1,
-   "audioDensity": 2.0,
-   "musicLevel": -30.7,
-   "tension": 0.33
+   "audioDensity": 2.2,
+   "musicLevel": -33.3,
+   "tension": 0.343
   },
   {
    "t": 349,
    "cutRate": 1,
-   "audioDensity": 1.8,
-   "musicLevel": -56.6,
-   "tension": 0.306
+   "audioDensity": 2.2,
+   "musicLevel": -54.1,
+   "tension": 0.327
   },
   {
    "t": 350,
    "cutRate": 1,
-   "audioDensity": 1.8,
-   "musicLevel": -60.5,
-   "tension": 0.269
+   "audioDensity": 2.4,
+   "musicLevel": -57.3,
+   "tension": 0.313
   },
   {
    "t": 351,
    "cutRate": 1,
-   "audioDensity": 1.6,
-   "musicLevel": -53.7,
-   "tension": 0.239
+   "audioDensity": 2.6,
+   "musicLevel": -51.9,
+   "tension": 0.315
   },
   {
    "t": 352,
    "cutRate": 1,
-   "audioDensity": 1.6,
-   "musicLevel": -38.9,
-   "tension": 0.239
+   "audioDensity": 2.4,
+   "musicLevel": -31.1,
+   "tension": 0.317
   },
   {
    "t": 353,
    "cutRate": 1,
-   "audioDensity": 1.6,
-   "musicLevel": -40.3,
-   "tension": 0.272
+   "audioDensity": 2.4,
+   "musicLevel": -33.1,
+   "tension": 0.344
   },
   {
    "t": 354,
    "cutRate": 1,
-   "audioDensity": 1.8,
-   "musicLevel": -56.7,
-   "tension": 0.335
+   "audioDensity": 2.4,
+   "musicLevel": -54.9,
+   "tension": 0.397
   },
   {
    "t": 355,
    "cutRate": 1,
-   "audioDensity": 1.8,
-   "musicLevel": -37.6,
-   "tension": 0.382
+   "audioDensity": 2.2,
+   "musicLevel": -39.3,
+   "tension": 0.422
   },
   {
    "t": 356,
    "cutRate": 1,
    "audioDensity": 2.2,
-   "musicLevel": -28.9,
-   "tension": 0.438
+   "musicLevel": -28.5,
+   "tension": 0.454
   },
   {
    "t": 357,
    "cutRate": 2,
    "audioDensity": 2.4,
-   "musicLevel": -31.6,
-   "tension": 0.515
+   "musicLevel": -29.4,
+   "tension": 0.533
   },
   {
    "t": 358,
    "cutRate": 2,
-   "audioDensity": 2.4,
-   "musicLevel": -29.7,
-   "tension": 0.553
+   "audioDensity": 2.6,
+   "musicLevel": -29.4,
+   "tension": 0.581
   },
   {
    "t": 359,
    "cutRate": 2,
-   "audioDensity": 2.6,
-   "musicLevel": -31.8,
-   "tension": 0.579
+   "audioDensity": 2.8,
+   "musicLevel": -29.3,
+   "tension": 0.619
   },
   {
    "t": 360,
    "cutRate": 2,
-   "audioDensity": 2.8,
-   "musicLevel": -34.4,
-   "tension": 0.582
+   "audioDensity": 3.2,
+   "musicLevel": -32.6,
+   "tension": 0.628
   },
   {
    "t": 361,
    "cutRate": 2,
-   "audioDensity": 2.6,
-   "musicLevel": -28.1,
-   "tension": 0.603
+   "audioDensity": 3.2,
+   "musicLevel": -25.4,
+   "tension": 0.656
   },
   {
    "t": 362,
    "cutRate": 2,
-   "audioDensity": 2.4,
-   "musicLevel": -30.7,
-   "tension": 0.601
+   "audioDensity": 3.2,
+   "musicLevel": -29.1,
+   "tension": 0.65
   },
   {
    "t": 363,
    "cutRate": 3,
-   "audioDensity": 2.4,
-   "musicLevel": -29.4,
-   "tension": 0.624
+   "audioDensity": 3.0,
+   "musicLevel": -28.0,
+   "tension": 0.669
   },
   {
    "t": 364,
    "cutRate": 2,
-   "audioDensity": 2.2,
-   "musicLevel": -31.1,
-   "tension": 0.644
+   "audioDensity": 2.8,
+   "musicLevel": -31.3,
+   "tension": 0.685
   },
   {
    "t": 365,
    "cutRate": 3,
-   "audioDensity": 2.2,
-   "musicLevel": -30.9,
-   "tension": 0.649
+   "audioDensity": 2.6,
+   "musicLevel": -30.6,
+   "tension": 0.685
   },
   {
    "t": 366,
    "cutRate": 3,
-   "audioDensity": 2.4,
-   "musicLevel": -27.5,
-   "tension": 0.651
+   "audioDensity": 2.8,
+   "musicLevel": -25.7,
+   "tension": 0.689
   },
   {
    "t": 367,
    "cutRate": 2,
-   "audioDensity": 2.4,
-   "musicLevel": -28.6,
-   "tension": 0.675
+   "audioDensity": 2.8,
+   "musicLevel": -27.5,
+   "tension": 0.718
   },
   {
    "t": 368,
    "cutRate": 3,
-   "audioDensity": 2.2,
-   "musicLevel": -27.9,
-   "tension": 0.624
+   "audioDensity": 2.6,
+   "musicLevel": -25.1,
+   "tension": 0.666
   },
   {
    "t": 369,
    "cutRate": 3,
-   "audioDensity": 2.2,
-   "musicLevel": -29.9,
-   "tension": 0.565
+   "audioDensity": 2.6,
+   "musicLevel": -27.1,
+   "tension": 0.608
   },
   {
    "t": 370,
    "cutRate": 3,
-   "audioDensity": 2.2,
-   "musicLevel": -50.6,
-   "tension": 0.577
+   "audioDensity": 2.6,
+   "musicLevel": -50.2,
+   "tension": 0.621
   },
   {
    "t": 371,
    "cutRate": 3,
-   "audioDensity": 2.0,
-   "musicLevel": -48.0,
-   "tension": 0.504
+   "audioDensity": 2.2,
+   "musicLevel": -45.3,
+   "tension": 0.539
   },
   {
    "t": 372,
    "cutRate": 3,
    "audioDensity": 2.0,
-   "musicLevel": -30.0,
-   "tension": 0.467
+   "musicLevel": -27.3,
+   "tension": 0.498
   },
   {
    "t": 373,
    "cutRate": 2,
    "audioDensity": 2.4,
-   "musicLevel": -48.5,
-   "tension": 0.479
+   "musicLevel": -47.3,
+   "tension": 0.505
   },
   {
    "t": 374,
    "cutRate": 2,
    "audioDensity": 2.4,
-   "musicLevel": -37.1,
-   "tension": 0.506
+   "musicLevel": -34.3,
+   "tension": 0.529
   },
   {
    "t": 375,
    "cutRate": 1,
    "audioDensity": 2.0,
-   "musicLevel": -29.7,
-   "tension": 0.433
+   "musicLevel": -30.2,
+   "tension": 0.449
   },
   {
    "t": 376,
    "cutRate": 2,
    "audioDensity": 2.0,
-   "musicLevel": -30.3,
-   "tension": 0.399
+   "musicLevel": -27.9,
+   "tension": 0.411
   },
   {
    "t": 377,
    "cutRate": 2,
    "audioDensity": 2.0,
-   "musicLevel": -56.9,
-   "tension": 0.364
+   "musicLevel": -54.7,
+   "tension": 0.376
   },
   {
    "t": 378,
    "cutRate": 1,
    "audioDensity": 1.4,
-   "musicLevel": -56.1,
-   "tension": 0.328
+   "musicLevel": -55.7,
+   "tension": 0.334
   },
   {
    "t": 379,
    "cutRate": 1,
    "audioDensity": 1.4,
-   "musicLevel": -39.1,
+   "musicLevel": -36.3,
    "tension": 0.249
   },
   {
    "t": 380,
    "cutRate": 1,
    "audioDensity": 1.6,
-   "musicLevel": -41.7,
+   "musicLevel": -44.6,
    "tension": 0.223
   },
   {
    "t": 381,
    "cutRate": 1,
    "audioDensity": 1.4,
-   "musicLevel": -63.6,
+   "musicLevel": -64.8,
    "tension": 0.227
   },
   {
@@ -2680,2275 +2680,2275 @@
    "cutRate": 1,
    "audioDensity": 1.4,
    "musicLevel": -61.7,
-   "tension": 0.2
+   "tension": 0.192
   },
   {
    "t": 383,
    "cutRate": 1,
    "audioDensity": 1.8,
-   "musicLevel": -58.7,
-   "tension": 0.235
+   "musicLevel": -57.9,
+   "tension": 0.241
   },
   {
    "t": 384,
    "cutRate": 1,
    "audioDensity": 1.6,
-   "musicLevel": -60.6,
-   "tension": 0.269
+   "musicLevel": -57.2,
+   "tension": 0.284
   },
   {
    "t": 385,
    "cutRate": 2,
    "audioDensity": 1.4,
-   "musicLevel": -35.2,
-   "tension": 0.271
+   "musicLevel": -33.2,
+   "tension": 0.286
   },
   {
    "t": 386,
    "cutRate": 1,
    "audioDensity": 1.6,
-   "musicLevel": -38.0,
-   "tension": 0.303
+   "musicLevel": -34.7,
+   "tension": 0.331
   },
   {
    "t": 387,
    "cutRate": 1,
    "audioDensity": 1.6,
-   "musicLevel": -59.7,
-   "tension": 0.341
+   "musicLevel": -57.3,
+   "tension": 0.386
   },
   {
    "t": 388,
    "cutRate": 1,
-   "audioDensity": 1.8,
-   "musicLevel": -38.0,
-   "tension": 0.341
+   "audioDensity": 2.0,
+   "musicLevel": -33.8,
+   "tension": 0.387
   },
   {
    "t": 389,
    "cutRate": 1,
-   "audioDensity": 2.2,
-   "musicLevel": -37.9,
-   "tension": 0.383
+   "audioDensity": 2.6,
+   "musicLevel": -33.3,
+   "tension": 0.432
   },
   {
    "t": 390,
    "cutRate": 1,
-   "audioDensity": 2.4,
-   "musicLevel": -31.6,
-   "tension": 0.451
+   "audioDensity": 3.0,
+   "musicLevel": -31.2,
+   "tension": 0.51
   },
   {
    "t": 391,
    "cutRate": 2,
-   "audioDensity": 2.2,
-   "musicLevel": -32.1,
-   "tension": 0.443
+   "audioDensity": 2.8,
+   "musicLevel": -29.7,
+   "tension": 0.493
   },
   {
    "t": 392,
    "cutRate": 2,
-   "audioDensity": 2.2,
-   "musicLevel": -34.1,
-   "tension": 0.431
+   "audioDensity": 2.8,
+   "musicLevel": -32.6,
+   "tension": 0.467
   },
   {
    "t": 393,
    "cutRate": 2,
-   "audioDensity": 2.2,
-   "musicLevel": -56.2,
-   "tension": 0.425
+   "audioDensity": 2.6,
+   "musicLevel": -56.0,
+   "tension": 0.447
   },
   {
    "t": 394,
    "cutRate": 2,
-   "audioDensity": 2.2,
-   "musicLevel": -59.4,
-   "tension": 0.413
+   "audioDensity": 2.4,
+   "musicLevel": -59.6,
+   "tension": 0.427
   },
   {
    "t": 395,
    "cutRate": 1,
    "audioDensity": 2.4,
-   "musicLevel": -34.1,
-   "tension": 0.4
+   "musicLevel": -36.3,
+   "tension": 0.406
   },
   {
    "t": 396,
    "cutRate": 1,
    "audioDensity": 2.6,
-   "musicLevel": -30.4,
-   "tension": 0.428
+   "musicLevel": -29.0,
+   "tension": 0.434
   },
   {
    "t": 397,
    "cutRate": 1,
    "audioDensity": 2.4,
-   "musicLevel": -32.4,
-   "tension": 0.438
+   "musicLevel": -31.3,
+   "tension": 0.45
   },
   {
    "t": 398,
    "cutRate": 1,
    "audioDensity": 2.0,
-   "musicLevel": -31.3,
-   "tension": 0.384
+   "musicLevel": -29.8,
+   "tension": 0.405
   },
   {
    "t": 399,
    "cutRate": 1,
    "audioDensity": 1.6,
-   "musicLevel": -36.2,
-   "tension": 0.318
+   "musicLevel": -33.7,
+   "tension": 0.341
   },
   {
    "t": 400,
    "cutRate": 1,
-   "audioDensity": 1.2,
-   "musicLevel": -59.6,
-   "tension": 0.261
+   "audioDensity": 1.6,
+   "musicLevel": -57.6,
+   "tension": 0.287
   },
   {
    "t": 401,
    "cutRate": 1,
-   "audioDensity": 1.2,
-   "musicLevel": -52.1,
-   "tension": 0.256
+   "audioDensity": 1.8,
+   "musicLevel": -50.2,
+   "tension": 0.289
   },
   {
    "t": 402,
    "cutRate": 1,
-   "audioDensity": 1.4,
-   "musicLevel": -55.6,
-   "tension": 0.268
+   "audioDensity": 2.0,
+   "musicLevel": -54.5,
+   "tension": 0.313
   },
   {
    "t": 403,
    "cutRate": 1,
-   "audioDensity": 1.6,
-   "musicLevel": -31.5,
-   "tension": 0.315
+   "audioDensity": 2.4,
+   "musicLevel": -30.6,
+   "tension": 0.367
   },
   {
    "t": 404,
    "cutRate": 1,
-   "audioDensity": 2.0,
-   "musicLevel": -33.1,
-   "tension": 0.389
+   "audioDensity": 3.0,
+   "musicLevel": -29.9,
+   "tension": 0.442
   },
   {
    "t": 405,
    "cutRate": 1,
-   "audioDensity": 2.2,
-   "musicLevel": -36.4,
-   "tension": 0.397
+   "audioDensity": 2.8,
+   "musicLevel": -34.3,
+   "tension": 0.45
   },
   {
    "t": 406,
    "cutRate": 1,
-   "audioDensity": 2.2,
-   "musicLevel": -25.8,
-   "tension": 0.354
+   "audioDensity": 2.6,
+   "musicLevel": -25.0,
+   "tension": 0.4
   },
   {
    "t": 407,
    "cutRate": 1,
-   "audioDensity": 2.2,
+   "audioDensity": 2.8,
    "musicLevel": -51.0,
-   "tension": 0.352
+   "tension": 0.387
   },
   {
    "t": 408,
    "cutRate": 1,
-   "audioDensity": 2.2,
-   "musicLevel": -55.3,
-   "tension": 0.349
+   "audioDensity": 2.6,
+   "musicLevel": -54.5,
+   "tension": 0.383
   },
   {
    "t": 409,
    "cutRate": 1,
-   "audioDensity": 2.0,
-   "musicLevel": -33.9,
-   "tension": 0.32
+   "audioDensity": 2.2,
+   "musicLevel": -31.9,
+   "tension": 0.35
   },
   {
    "t": 410,
    "cutRate": 1,
-   "audioDensity": 2.0,
-   "musicLevel": -36.7,
-   "tension": 0.364
+   "audioDensity": 2.2,
+   "musicLevel": -33.4,
+   "tension": 0.385
   },
   {
    "t": 411,
    "cutRate": 0,
-   "audioDensity": 2.0,
-   "musicLevel": -28.2,
-   "tension": 0.409
+   "audioDensity": 2.2,
+   "musicLevel": -28.5,
+   "tension": 0.425
   },
   {
    "t": 412,
    "cutRate": 1,
    "audioDensity": 1.8,
-   "musicLevel": -32.1,
-   "tension": 0.402
+   "musicLevel": -33.1,
+   "tension": 0.409
   },
   {
    "t": 413,
    "cutRate": 1,
    "audioDensity": 1.6,
-   "musicLevel": -31.1,
-   "tension": 0.369
+   "musicLevel": -31.2,
+   "tension": 0.365
   },
   {
    "t": 414,
    "cutRate": 1,
    "audioDensity": 1.8,
-   "musicLevel": -35.6,
-   "tension": 0.377
+   "musicLevel": -36.4,
+   "tension": 0.374
   },
   {
    "t": 415,
    "cutRate": 1,
    "audioDensity": 2.2,
-   "musicLevel": -61.6,
-   "tension": 0.388
+   "musicLevel": -59.7,
+   "tension": 0.384
   },
   {
    "t": 416,
    "cutRate": 1,
    "audioDensity": 2.4,
-   "musicLevel": -34.0,
-   "tension": 0.4
+   "musicLevel": -33.3,
+   "tension": 0.398
   },
   {
    "t": 417,
    "cutRate": 1,
    "audioDensity": 2.6,
-   "musicLevel": -31.1,
-   "tension": 0.432
+   "musicLevel": -32.5,
+   "tension": 0.44
   },
   {
    "t": 418,
    "cutRate": 1,
    "audioDensity": 2.8,
-   "musicLevel": -31.0,
-   "tension": 0.487
+   "musicLevel": -30.2,
+   "tension": 0.5
   },
   {
    "t": 419,
    "cutRate": 2,
    "audioDensity": 2.4,
-   "musicLevel": -33.5,
-   "tension": 0.507
+   "musicLevel": -30.4,
+   "tension": 0.52
   },
   {
    "t": 420,
    "cutRate": 2,
    "audioDensity": 1.8,
-   "musicLevel": -35.2,
-   "tension": 0.449
+   "musicLevel": -33.8,
+   "tension": 0.467
   },
   {
    "t": 421,
    "cutRate": 2,
    "audioDensity": 1.6,
-   "musicLevel": -31.0,
-   "tension": 0.437
+   "musicLevel": -30.2,
+   "tension": 0.456
   },
   {
    "t": 422,
    "cutRate": 1,
-   "audioDensity": 1.8,
-   "musicLevel": -55.2,
-   "tension": 0.412
+   "audioDensity": 2.0,
+   "musicLevel": -55.9,
+   "tension": 0.428
   },
   {
    "t": 423,
    "cutRate": 1,
-   "audioDensity": 1.8,
-   "musicLevel": -31.7,
-   "tension": 0.386
+   "audioDensity": 2.0,
+   "musicLevel": -31.4,
+   "tension": 0.404
   },
   {
    "t": 424,
    "cutRate": 1,
-   "audioDensity": 1.8,
-   "musicLevel": -33.2,
-   "tension": 0.317
+   "audioDensity": 2.2,
+   "musicLevel": -32.5,
+   "tension": 0.34
   },
   {
    "t": 425,
    "cutRate": 1,
-   "audioDensity": 2.0,
-   "musicLevel": -38.1,
-   "tension": 0.351
+   "audioDensity": 2.6,
+   "musicLevel": -38.3,
+   "tension": 0.382
   },
   {
    "t": 426,
    "cutRate": 1,
-   "audioDensity": 1.8,
-   "musicLevel": -53.8,
-   "tension": 0.32
+   "audioDensity": 2.4,
+   "musicLevel": -52.5,
+   "tension": 0.353
   },
   {
    "t": 427,
    "cutRate": 2,
-   "audioDensity": 1.6,
-   "musicLevel": -44.2,
-   "tension": 0.286
+   "audioDensity": 2.0,
+   "musicLevel": -41.5,
+   "tension": 0.327
   },
   {
    "t": 428,
    "cutRate": 2,
-   "audioDensity": 1.6,
-   "musicLevel": -55.8,
-   "tension": 0.303
+   "audioDensity": 2.0,
+   "musicLevel": -53.5,
+   "tension": 0.339
   },
   {
    "t": 429,
    "cutRate": 1,
-   "audioDensity": 1.8,
-   "musicLevel": -45.7,
-   "tension": 0.357
+   "audioDensity": 2.0,
+   "musicLevel": -41.4,
+   "tension": 0.392
   },
   {
    "t": 430,
    "cutRate": 1,
    "audioDensity": 1.8,
-   "musicLevel": -31.2,
-   "tension": 0.323
+   "musicLevel": -30.7,
+   "tension": 0.348
   },
   {
    "t": 431,
    "cutRate": 1,
    "audioDensity": 2.0,
-   "musicLevel": -30.7,
-   "tension": 0.305
+   "musicLevel": -28.5,
+   "tension": 0.326
   },
   {
    "t": 432,
    "cutRate": 1,
    "audioDensity": 1.8,
-   "musicLevel": -56.5,
-   "tension": 0.294
+   "musicLevel": -56.9,
+   "tension": 0.301
   },
   {
    "t": 433,
    "cutRate": 1,
    "audioDensity": 1.8,
-   "musicLevel": -54.9,
-   "tension": 0.272
+   "musicLevel": -53.9,
+   "tension": 0.277
   },
   {
    "t": 434,
    "cutRate": 1,
    "audioDensity": 1.8,
-   "musicLevel": -58.2,
-   "tension": 0.269
+   "musicLevel": -56.3,
+   "tension": 0.271
   },
   {
    "t": 435,
    "cutRate": 1,
    "audioDensity": 1.8,
    "musicLevel": -39.5,
-   "tension": 0.316
+   "tension": 0.31
   },
   {
    "t": 436,
    "cutRate": 1,
    "audioDensity": 1.8,
-   "musicLevel": -30.8,
-   "tension": 0.366
+   "musicLevel": -30.2,
+   "tension": 0.364
   },
   {
    "t": 437,
    "cutRate": 1,
    "audioDensity": 1.8,
-   "musicLevel": -32.4,
-   "tension": 0.399
+   "musicLevel": -35.1,
+   "tension": 0.405
   },
   {
    "t": 438,
    "cutRate": 1,
    "audioDensity": 1.6,
-   "musicLevel": -30.4,
-   "tension": 0.371
+   "musicLevel": -29.2,
+   "tension": 0.378
   },
   {
    "t": 439,
    "cutRate": 1,
    "audioDensity": 1.6,
-   "musicLevel": -37.1,
-   "tension": 0.356
+   "musicLevel": -33.7,
+   "tension": 0.369
   },
   {
    "t": 440,
    "cutRate": 1,
    "audioDensity": 1.8,
-   "musicLevel": -54.5,
-   "tension": 0.354
+   "musicLevel": -53.7,
+   "tension": 0.376
   },
   {
    "t": 441,
    "cutRate": 1,
    "audioDensity": 1.8,
-   "musicLevel": -36.3,
-   "tension": 0.31
+   "musicLevel": -33.5,
+   "tension": 0.328
   },
   {
    "t": 442,
    "cutRate": 1,
    "audioDensity": 2.0,
-   "musicLevel": -33.8,
-   "tension": 0.284
+   "musicLevel": -33.3,
+   "tension": 0.295
   },
   {
    "t": 443,
    "cutRate": 1,
    "audioDensity": 2.4,
-   "musicLevel": -55.2,
-   "tension": 0.34
+   "musicLevel": -52.8,
+   "tension": 0.351
   },
   {
    "t": 444,
    "cutRate": 1,
-   "audioDensity": 2.4,
-   "musicLevel": -59.0,
-   "tension": 0.361
+   "audioDensity": 2.6,
+   "musicLevel": -56.1,
+   "tension": 0.37
   },
   {
    "t": 445,
    "cutRate": 1,
-   "audioDensity": 2.2,
-   "musicLevel": -30.4,
-   "tension": 0.362
+   "audioDensity": 2.6,
+   "musicLevel": -31.9,
+   "tension": 0.372
   },
   {
    "t": 446,
    "cutRate": 1,
-   "audioDensity": 2.2,
-   "musicLevel": -29.9,
-   "tension": 0.403
+   "audioDensity": 2.8,
+   "musicLevel": -30.2,
+   "tension": 0.422
   },
   {
    "t": 447,
    "cutRate": 1,
-   "audioDensity": 1.8,
-   "musicLevel": -32.8,
-   "tension": 0.42
+   "audioDensity": 2.4,
+   "musicLevel": -34.1,
+   "tension": 0.45
   },
   {
    "t": 448,
    "cutRate": 1,
-   "audioDensity": 1.2,
-   "musicLevel": -29.9,
-   "tension": 0.353
+   "audioDensity": 1.8,
+   "musicLevel": -28.8,
+   "tension": 0.385
   },
   {
    "t": 449,
    "cutRate": 1,
-   "audioDensity": 0.8,
-   "musicLevel": -37.9,
-   "tension": 0.308
+   "audioDensity": 1.2,
+   "musicLevel": -34.3,
+   "tension": 0.335
   },
   {
    "t": 450,
    "cutRate": 1,
-   "audioDensity": 0.8,
-   "musicLevel": -120.0,
-   "tension": 0.306
+   "audioDensity": 1.0,
+   "musicLevel": -101.9,
+   "tension": 0.32
   },
   {
    "t": 451,
    "cutRate": 2,
    "audioDensity": 1.0,
    "musicLevel": -120.0,
-   "tension": 0.323
+   "tension": 0.325
   },
   {
    "t": 452,
    "cutRate": 2,
    "audioDensity": 1.2,
-   "musicLevel": -38.8,
-   "tension": 0.325
+   "musicLevel": -42.7,
+   "tension": 0.314
   },
   {
    "t": 453,
    "cutRate": 2,
    "audioDensity": 1.6,
-   "musicLevel": -32.3,
-   "tension": 0.405
+   "musicLevel": -33.4,
+   "tension": 0.382
   },
   {
    "t": 454,
    "cutRate": 2,
    "audioDensity": 2.2,
-   "musicLevel": -58.2,
-   "tension": 0.466
+   "musicLevel": -58.9,
+   "tension": 0.442
   },
   {
    "t": 455,
    "cutRate": 2,
    "audioDensity": 2.4,
-   "musicLevel": -33.7,
-   "tension": 0.474
+   "musicLevel": -37.0,
+   "tension": 0.456
   },
   {
    "t": 456,
    "cutRate": 2,
    "audioDensity": 2.2,
-   "musicLevel": -31.3,
-   "tension": 0.465
+   "musicLevel": -32.1,
+   "tension": 0.44
   },
   {
    "t": 457,
    "cutRate": 1,
    "audioDensity": 2.2,
-   "musicLevel": -32.2,
-   "tension": 0.452
+   "musicLevel": -33.8,
+   "tension": 0.424
   },
   {
    "t": 458,
    "cutRate": 1,
    "audioDensity": 2.0,
-   "musicLevel": -29.8,
-   "tension": 0.378
+   "musicLevel": -33.2,
+   "tension": 0.359
   },
   {
    "t": 459,
    "cutRate": 1,
    "audioDensity": 1.6,
-   "musicLevel": -45.1,
-   "tension": 0.278
+   "musicLevel": -46.3,
+   "tension": 0.262
   },
   {
    "t": 460,
    "cutRate": 1,
    "audioDensity": 1.4,
-   "musicLevel": -60.6,
-   "tension": 0.219
+   "musicLevel": -61.7,
+   "tension": 0.205
   },
   {
    "t": 461,
    "cutRate": 0,
    "audioDensity": 1.2,
-   "musicLevel": -52.8,
-   "tension": 0.159
+   "musicLevel": -53.7,
+   "tension": 0.154
   },
   {
    "t": 462,
    "cutRate": 0,
    "audioDensity": 1.4,
-   "musicLevel": -44.0,
-   "tension": 0.16
+   "musicLevel": -44.6,
+   "tension": 0.151
   },
   {
    "t": 463,
    "cutRate": 1,
    "audioDensity": 1.4,
-   "musicLevel": -55.2,
-   "tension": 0.195
+   "musicLevel": -59.6,
+   "tension": 0.18
   },
   {
    "t": 464,
    "cutRate": 1,
    "audioDensity": 1.4,
-   "musicLevel": -44.0,
-   "tension": 0.221
+   "musicLevel": -46.8,
+   "tension": 0.206
   },
   {
    "t": 465,
    "cutRate": 1,
    "audioDensity": 1.4,
-   "musicLevel": -37.0,
-   "tension": 0.29
+   "musicLevel": -39.2,
+   "tension": 0.275
   },
   {
    "t": 466,
    "cutRate": 1,
    "audioDensity": 1.8,
-   "musicLevel": -55.7,
-   "tension": 0.361
+   "musicLevel": -57.3,
+   "tension": 0.341
   },
   {
    "t": 467,
    "cutRate": 2,
    "audioDensity": 2.2,
-   "musicLevel": -35.9,
-   "tension": 0.434
+   "musicLevel": -36.7,
+   "tension": 0.416
   },
   {
    "t": 468,
    "cutRate": 2,
    "audioDensity": 2.4,
-   "musicLevel": -34.7,
-   "tension": 0.477
+   "musicLevel": -36.4,
+   "tension": 0.462
   },
   {
    "t": 469,
    "cutRate": 2,
    "audioDensity": 2.8,
-   "musicLevel": -29.4,
-   "tension": 0.552
+   "musicLevel": -31.4,
+   "tension": 0.53
   },
   {
    "t": 470,
    "cutRate": 2,
    "audioDensity": 3.0,
-   "musicLevel": -34.4,
-   "tension": 0.574
+   "musicLevel": -35.4,
+   "tension": 0.546
   },
   {
    "t": 471,
    "cutRate": 2,
    "audioDensity": 3.0,
-   "musicLevel": -33.9,
-   "tension": 0.563
+   "musicLevel": -36.5,
+   "tension": 0.531
   },
   {
    "t": 472,
    "cutRate": 2,
    "audioDensity": 2.6,
-   "musicLevel": -29.3,
-   "tension": 0.526
+   "musicLevel": -32.5,
+   "tension": 0.496
   },
   {
    "t": 473,
    "cutRate": 1,
    "audioDensity": 2.4,
-   "musicLevel": -31.4,
-   "tension": 0.452
+   "musicLevel": -34.5,
+   "tension": 0.425
   },
   {
    "t": 474,
    "cutRate": 1,
    "audioDensity": 2.0,
-   "musicLevel": -32.7,
-   "tension": 0.395
+   "musicLevel": -34.1,
+   "tension": 0.375
   },
   {
    "t": 475,
    "cutRate": 1,
    "audioDensity": 1.8,
-   "musicLevel": -57.5,
-   "tension": 0.336
+   "musicLevel": -58.1,
+   "tension": 0.32
   },
   {
    "t": 476,
    "cutRate": 2,
    "audioDensity": 1.6,
-   "musicLevel": -60.5,
-   "tension": 0.325
+   "musicLevel": -60.3,
+   "tension": 0.317
   },
   {
    "t": 477,
    "cutRate": 1,
    "audioDensity": 1.4,
-   "musicLevel": -39.6,
-   "tension": 0.294
+   "musicLevel": -41.1,
+   "tension": 0.301
   },
   {
    "t": 478,
    "cutRate": 1,
    "audioDensity": 1.6,
-   "musicLevel": -32.3,
-   "tension": 0.3
+   "musicLevel": -32.5,
+   "tension": 0.307
   },
   {
    "t": 479,
    "cutRate": 1,
    "audioDensity": 2.2,
-   "musicLevel": -45.3,
-   "tension": 0.325
+   "musicLevel": -40.8,
+   "tension": 0.326
   },
   {
    "t": 480,
    "cutRate": 1,
    "audioDensity": 2.4,
-   "musicLevel": -55.2,
+   "musicLevel": -55.6,
    "tension": 0.362
   },
   {
    "t": 481,
    "cutRate": 1,
    "audioDensity": 2.4,
-   "musicLevel": -36.1,
-   "tension": 0.377
+   "musicLevel": -38.4,
+   "tension": 0.375
   },
   {
    "t": 482,
    "cutRate": 1,
    "audioDensity": 2.6,
-   "musicLevel": -30.1,
-   "tension": 0.404
+   "musicLevel": -31.8,
+   "tension": 0.385
   },
   {
    "t": 483,
    "cutRate": 1,
    "audioDensity": 2.6,
-   "musicLevel": -30.3,
-   "tension": 0.45
+   "musicLevel": -31.6,
+   "tension": 0.425
   },
   {
    "t": 484,
    "cutRate": 1,
    "audioDensity": 2.0,
-   "musicLevel": -34.6,
-   "tension": 0.415
+   "musicLevel": -36.3,
+   "tension": 0.388
   },
   {
    "t": 485,
    "cutRate": 1,
    "audioDensity": 1.8,
-   "musicLevel": -30.3,
-   "tension": 0.352
+   "musicLevel": -32.8,
+   "tension": 0.33
   },
   {
    "t": 486,
    "cutRate": 1,
    "audioDensity": 1.8,
-   "musicLevel": -46.9,
-   "tension": 0.336
+   "musicLevel": -50.3,
+   "tension": 0.314
   },
   {
    "t": 487,
    "cutRate": 1,
    "audioDensity": 1.6,
-   "musicLevel": -57.0,
-   "tension": 0.295
+   "musicLevel": -62.3,
+   "tension": 0.277
   },
   {
    "t": 488,
    "cutRate": 1,
    "audioDensity": 1.6,
-   "musicLevel": -32.7,
-   "tension": 0.244
+   "musicLevel": -33.9,
+   "tension": 0.233
   },
   {
    "t": 489,
    "cutRate": 1,
    "audioDensity": 2.0,
-   "musicLevel": -55.4,
-   "tension": 0.281
+   "musicLevel": -55.3,
+   "tension": 0.269
   },
   {
    "t": 490,
    "cutRate": 1,
    "audioDensity": 2.0,
-   "musicLevel": -54.4,
-   "tension": 0.317
+   "musicLevel": -57.6,
+   "tension": 0.303
   },
   {
    "t": 491,
    "cutRate": 1,
    "audioDensity": 1.8,
-   "musicLevel": -33.1,
-   "tension": 0.295
+   "musicLevel": -36.4,
+   "tension": 0.284
   },
   {
    "t": 492,
    "cutRate": 1,
    "audioDensity": 2.0,
-   "musicLevel": -37.9,
-   "tension": 0.343
+   "musicLevel": -38.8,
+   "tension": 0.334
   },
   {
    "t": 493,
    "cutRate": 2,
    "audioDensity": 2.0,
-   "musicLevel": -53.2,
-   "tension": 0.412
+   "musicLevel": -54.5,
+   "tension": 0.398
   },
   {
    "t": 494,
    "cutRate": 2,
    "audioDensity": 1.8,
-   "musicLevel": -38.8,
-   "tension": 0.417
+   "musicLevel": -38.0,
+   "tension": 0.408
   },
   {
    "t": 495,
    "cutRate": 2,
    "audioDensity": 2.0,
-   "musicLevel": -31.8,
-   "tension": 0.43
+   "musicLevel": -33.7,
+   "tension": 0.417
   },
   {
    "t": 496,
    "cutRate": 1,
    "audioDensity": 2.2,
-   "musicLevel": -32.5,
-   "tension": 0.461
+   "musicLevel": -33.9,
+   "tension": 0.445
   },
   {
    "t": 497,
    "cutRate": 1,
    "audioDensity": 2.2,
-   "musicLevel": -34.0,
-   "tension": 0.464
+   "musicLevel": -36.3,
+   "tension": 0.443
   },
   {
    "t": 498,
    "cutRate": 1,
    "audioDensity": 2.2,
-   "musicLevel": -31.6,
-   "tension": 0.436
+   "musicLevel": -33.0,
+   "tension": 0.418
   },
   {
    "t": 499,
    "cutRate": 1,
-   "audioDensity": 2.2,
-   "musicLevel": -31.7,
-   "tension": 0.442
+   "audioDensity": 2.4,
+   "musicLevel": -33.4,
+   "tension": 0.432
   },
   {
    "t": 500,
    "cutRate": 1,
-   "audioDensity": 2.0,
-   "musicLevel": -34.7,
-   "tension": 0.456
+   "audioDensity": 2.2,
+   "musicLevel": -36.0,
+   "tension": 0.458
   },
   {
    "t": 501,
    "cutRate": 1,
-   "audioDensity": 2.0,
-   "musicLevel": -29.4,
-   "tension": 0.451
+   "audioDensity": 2.4,
+   "musicLevel": -29.7,
+   "tension": 0.452
   },
   {
    "t": 502,
    "cutRate": 2,
-   "audioDensity": 1.8,
-   "musicLevel": -34.7,
-   "tension": 0.443
+   "audioDensity": 2.2,
+   "musicLevel": -33.8,
+   "tension": 0.441
   },
   {
    "t": 503,
    "cutRate": 1,
-   "audioDensity": 1.6,
-   "musicLevel": -31.5,
-   "tension": 0.402
+   "audioDensity": 2.0,
+   "musicLevel": -34.6,
+   "tension": 0.404
   },
   {
    "t": 504,
    "cutRate": 1,
-   "audioDensity": 1.6,
-   "musicLevel": -32.3,
-   "tension": 0.389
+   "audioDensity": 1.8,
+   "musicLevel": -35.1,
+   "tension": 0.385
   },
   {
    "t": 505,
    "cutRate": 1,
-   "audioDensity": 2.0,
-   "musicLevel": -55.8,
-   "tension": 0.398
+   "audioDensity": 2.2,
+   "musicLevel": -61.6,
+   "tension": 0.381
   },
   {
    "t": 506,
    "cutRate": 1,
    "audioDensity": 2.2,
-   "musicLevel": -35.0,
-   "tension": 0.415
+   "musicLevel": -35.9,
+   "tension": 0.397
   },
   {
    "t": 507,
    "cutRate": 2,
    "audioDensity": 2.4,
-   "musicLevel": -33.7,
-   "tension": 0.45
+   "musicLevel": -36.2,
+   "tension": 0.437
   },
   {
    "t": 508,
    "cutRate": 2,
    "audioDensity": 2.6,
-   "musicLevel": -36.2,
-   "tension": 0.521
+   "musicLevel": -38.3,
+   "tension": 0.505
   },
   {
    "t": 509,
    "cutRate": 2,
    "audioDensity": 2.6,
-   "musicLevel": -30.5,
-   "tension": 0.578
+   "musicLevel": -30.8,
+   "tension": 0.554
   },
   {
    "t": 510,
    "cutRate": 2,
    "audioDensity": 2.6,
-   "musicLevel": -33.3,
-   "tension": 0.584
+   "musicLevel": -33.5,
+   "tension": 0.561
   },
   {
    "t": 511,
    "cutRate": 3,
    "audioDensity": 2.6,
-   "musicLevel": -30.3,
-   "tension": 0.587
+   "musicLevel": -34.0,
+   "tension": 0.567
   },
   {
    "t": 512,
    "cutRate": 2,
    "audioDensity": 2.6,
-   "musicLevel": -32.1,
-   "tension": 0.591
+   "musicLevel": -34.2,
+   "tension": 0.567
   },
   {
    "t": 513,
    "cutRate": 2,
    "audioDensity": 2.6,
-   "musicLevel": -34.9,
-   "tension": 0.581
+   "musicLevel": -36.2,
+   "tension": 0.555
   },
   {
    "t": 514,
    "cutRate": 2,
    "audioDensity": 2.6,
-   "musicLevel": -29.1,
-   "tension": 0.502
+   "musicLevel": -30.6,
+   "tension": 0.486
   },
   {
    "t": 515,
    "cutRate": 2,
    "audioDensity": 2.2,
-   "musicLevel": -35.4,
-   "tension": 0.429
+   "musicLevel": -36.7,
+   "tension": 0.418
   },
   {
    "t": 516,
    "cutRate": 2,
    "audioDensity": 2.0,
-   "musicLevel": -56.1,
-   "tension": 0.398
+   "musicLevel": -58.5,
+   "tension": 0.391
   },
   {
    "t": 517,
    "cutRate": 1,
    "audioDensity": 2.0,
-   "musicLevel": -56.0,
-   "tension": 0.386
+   "musicLevel": -55.7,
+   "tension": 0.379
   },
   {
    "t": 518,
    "cutRate": 1,
    "audioDensity": 2.0,
-   "musicLevel": -36.7,
-   "tension": 0.394
+   "musicLevel": -36.5,
+   "tension": 0.386
   },
   {
    "t": 519,
    "cutRate": 2,
    "audioDensity": 2.0,
-   "musicLevel": -31.3,
-   "tension": 0.415
+   "musicLevel": -32.9,
+   "tension": 0.404
   },
   {
    "t": 520,
    "cutRate": 2,
    "audioDensity": 2.0,
-   "musicLevel": -31.6,
-   "tension": 0.468
+   "musicLevel": -33.3,
+   "tension": 0.449
   },
   {
    "t": 521,
    "cutRate": 1,
    "audioDensity": 1.8,
-   "musicLevel": -34.2,
-   "tension": 0.467
+   "musicLevel": -35.2,
+   "tension": 0.445
   },
   {
    "t": 522,
    "cutRate": 1,
    "audioDensity": 1.8,
-   "musicLevel": -29.3,
-   "tension": 0.397
+   "musicLevel": -32.1,
+   "tension": 0.38
   },
   {
    "t": 523,
    "cutRate": 1,
    "audioDensity": 2.0,
-   "musicLevel": -36.9,
-   "tension": 0.369
+   "musicLevel": -38.0,
+   "tension": 0.348
   },
   {
    "t": 524,
    "cutRate": 1,
    "audioDensity": 2.0,
-   "musicLevel": -50.5,
-   "tension": 0.391
+   "musicLevel": -50.7,
+   "tension": 0.369
   },
   {
    "t": 525,
    "cutRate": 1,
    "audioDensity": 1.8,
-   "musicLevel": -34.0,
-   "tension": 0.39
+   "musicLevel": -37.1,
+   "tension": 0.358
   },
   {
    "t": 526,
    "cutRate": 2,
    "audioDensity": 1.8,
-   "musicLevel": -33.3,
-   "tension": 0.367
+   "musicLevel": -34.7,
+   "tension": 0.338
   },
   {
    "t": 527,
    "cutRate": 2,
    "audioDensity": 1.6,
-   "musicLevel": -36.5,
-   "tension": 0.379
+   "musicLevel": -42.8,
+   "tension": 0.35
   },
   {
    "t": 528,
    "cutRate": 2,
    "audioDensity": 1.2,
-   "musicLevel": -59.0,
-   "tension": 0.353
+   "musicLevel": -61.2,
+   "tension": 0.332
   },
   {
    "t": 529,
    "cutRate": 2,
    "audioDensity": 1.2,
-   "musicLevel": -56.1,
-   "tension": 0.306
+   "musicLevel": -59.0,
+   "tension": 0.289
   },
   {
    "t": 530,
    "cutRate": 2,
    "audioDensity": 1.4,
-   "musicLevel": -55.7,
+   "musicLevel": -58.6,
    "tension": 0.276
   },
   {
    "t": 531,
    "cutRate": 2,
    "audioDensity": 1.6,
-   "musicLevel": -57.2,
+   "musicLevel": -58.5,
    "tension": 0.31
   },
   {
    "t": 532,
    "cutRate": 2,
    "audioDensity": 2.2,
-   "musicLevel": -54.3,
-   "tension": 0.382
+   "musicLevel": -56.6,
+   "tension": 0.38
   },
   {
    "t": 533,
    "cutRate": 3,
    "audioDensity": 2.6,
-   "musicLevel": -57.5,
-   "tension": 0.471
+   "musicLevel": -59.0,
+   "tension": 0.459
   },
   {
    "t": 534,
    "cutRate": 3,
    "audioDensity": 2.6,
-   "musicLevel": -35.9,
-   "tension": 0.535
+   "musicLevel": -36.3,
+   "tension": 0.513
   },
   {
    "t": 535,
    "cutRate": 3,
    "audioDensity": 2.8,
-   "musicLevel": -29.4,
-   "tension": 0.588
+   "musicLevel": -33.2,
+   "tension": 0.564
   },
   {
    "t": 536,
    "cutRate": 2,
    "audioDensity": 3.0,
-   "musicLevel": -31.2,
-   "tension": 0.608
+   "musicLevel": -34.9,
+   "tension": 0.583
   },
   {
    "t": 537,
    "cutRate": 2,
    "audioDensity": 2.6,
-   "musicLevel": -31.6,
-   "tension": 0.524
+   "musicLevel": -32.6,
+   "tension": 0.501
   },
   {
    "t": 538,
    "cutRate": 2,
    "audioDensity": 2.2,
-   "musicLevel": -33.4,
-   "tension": 0.419
+   "musicLevel": -33.7,
+   "tension": 0.406
   },
   {
    "t": 539,
    "cutRate": 1,
    "audioDensity": 2.0,
-   "musicLevel": -58.9,
-   "tension": 0.355
+   "musicLevel": -60.1,
+   "tension": 0.352
   },
   {
    "t": 540,
    "cutRate": 1,
    "audioDensity": 1.8,
-   "musicLevel": -55.5,
-   "tension": 0.294
+   "musicLevel": -55.7,
+   "tension": 0.293
   },
   {
    "t": 541,
    "cutRate": 2,
    "audioDensity": 1.6,
-   "musicLevel": -55.5,
-   "tension": 0.274
+   "musicLevel": -56.4,
+   "tension": 0.27
   },
   {
    "t": 542,
    "cutRate": 2,
    "audioDensity": 1.4,
-   "musicLevel": -58.1,
-   "tension": 0.268
+   "musicLevel": -60.7,
+   "tension": 0.264
   },
   {
    "t": 543,
    "cutRate": 1,
    "audioDensity": 1.4,
-   "musicLevel": -30.4,
-   "tension": 0.264
+   "musicLevel": -32.2,
+   "tension": 0.26
   },
   {
    "t": 544,
    "cutRate": 1,
    "audioDensity": 1.4,
-   "musicLevel": -58.2,
-   "tension": 0.242
+   "musicLevel": -59.2,
+   "tension": 0.238
   },
   {
    "t": 545,
    "cutRate": 1,
    "audioDensity": 1.4,
-   "musicLevel": -59.0,
-   "tension": 0.251
+   "musicLevel": -63.3,
+   "tension": 0.239
   },
   {
    "t": 546,
    "cutRate": 1,
    "audioDensity": 1.4,
-   "musicLevel": -52.9,
-   "tension": 0.273
+   "musicLevel": -53.3,
+   "tension": 0.258
   },
   {
    "t": 547,
    "cutRate": 1,
    "audioDensity": 1.6,
-   "musicLevel": -39.9,
-   "tension": 0.344
+   "musicLevel": -42.7,
+   "tension": 0.322
   },
   {
    "t": 548,
    "cutRate": 2,
    "audioDensity": 1.8,
-   "musicLevel": -31.1,
-   "tension": 0.41
+   "musicLevel": -34.1,
+   "tension": 0.382
   },
   {
    "t": 549,
    "cutRate": 2,
    "audioDensity": 2.0,
-   "musicLevel": -33.4,
-   "tension": 0.471
+   "musicLevel": -35.6,
+   "tension": 0.438
   },
   {
    "t": 550,
    "cutRate": 2,
    "audioDensity": 2.2,
-   "musicLevel": -35.7,
-   "tension": 0.499
+   "musicLevel": -38.2,
+   "tension": 0.469
   },
   {
    "t": 551,
    "cutRate": 1,
    "audioDensity": 2.4,
-   "musicLevel": -30.7,
-   "tension": 0.49
+   "musicLevel": -32.9,
+   "tension": 0.467
   },
   {
    "t": 552,
    "cutRate": 1,
    "audioDensity": 2.2,
-   "musicLevel": -31.7,
-   "tension": 0.444
+   "musicLevel": -33.1,
+   "tension": 0.426
   },
   {
    "t": 553,
    "cutRate": 2,
    "audioDensity": 2.0,
-   "musicLevel": -35.1,
-   "tension": 0.4
+   "musicLevel": -35.8,
+   "tension": 0.389
   },
   {
    "t": 554,
    "cutRate": 2,
    "audioDensity": 1.8,
-   "musicLevel": -54.1,
-   "tension": 0.356
+   "musicLevel": -56.9,
+   "tension": 0.351
   },
   {
    "t": 555,
    "cutRate": 2,
    "audioDensity": 1.6,
-   "musicLevel": -58.9,
-   "tension": 0.351
+   "musicLevel": -60.9,
+   "tension": 0.345
   },
   {
    "t": 556,
    "cutRate": 2,
    "audioDensity": 1.2,
-   "musicLevel": -55.9,
-   "tension": 0.287
+   "musicLevel": -57.6,
+   "tension": 0.283
   },
   {
    "t": 557,
    "cutRate": 2,
    "audioDensity": 1.4,
-   "musicLevel": -38.4,
-   "tension": 0.285
+   "musicLevel": -39.9,
+   "tension": 0.281
   },
   {
    "t": 558,
    "cutRate": 1,
    "audioDensity": 1.6,
-   "musicLevel": -55.7,
-   "tension": 0.326
+   "musicLevel": -57.7,
+   "tension": 0.317
   },
   {
    "t": 559,
    "cutRate": 2,
    "audioDensity": 1.6,
-   "musicLevel": -55.0,
-   "tension": 0.357
+   "musicLevel": -56.8,
+   "tension": 0.346
   },
   {
    "t": 560,
    "cutRate": 2,
    "audioDensity": 1.4,
-   "musicLevel": -33.9,
-   "tension": 0.33
+   "musicLevel": -35.7,
+   "tension": 0.323
   },
   {
    "t": 561,
    "cutRate": 2,
    "audioDensity": 1.6,
-   "musicLevel": -39.8,
-   "tension": 0.373
+   "musicLevel": -40.5,
+   "tension": 0.362
   },
   {
    "t": 562,
    "cutRate": 2,
    "audioDensity": 1.8,
-   "musicLevel": -54.9,
-   "tension": 0.406
+   "musicLevel": -56.8,
+   "tension": 0.385
   },
   {
    "t": 563,
    "cutRate": 1,
    "audioDensity": 1.8,
-   "musicLevel": -34.6,
-   "tension": 0.39
+   "musicLevel": -36.2,
+   "tension": 0.366
   },
   {
    "t": 564,
    "cutRate": 1,
-   "audioDensity": 2.0,
-   "musicLevel": -31.5,
-   "tension": 0.347
+   "audioDensity": 1.8,
+   "musicLevel": -34.9,
+   "tension": 0.323
   },
   {
    "t": 565,
    "cutRate": 1,
-   "audioDensity": 2.2,
-   "musicLevel": -35.4,
-   "tension": 0.371
+   "audioDensity": 2.0,
+   "musicLevel": -37.5,
+   "tension": 0.334
   },
   {
    "t": 566,
    "cutRate": 1,
-   "audioDensity": 2.0,
-   "musicLevel": -57.6,
-   "tension": 0.326
+   "audioDensity": 1.8,
+   "musicLevel": -58.8,
+   "tension": 0.291
   },
   {
    "t": 567,
    "cutRate": 1,
-   "audioDensity": 1.6,
-   "musicLevel": -32.9,
-   "tension": 0.259
+   "audioDensity": 1.4,
+   "musicLevel": -36.9,
+   "tension": 0.226
   },
   {
    "t": 568,
    "cutRate": 1,
-   "audioDensity": 1.4,
-   "musicLevel": -53.9,
-   "tension": 0.212
+   "audioDensity": 1.2,
+   "musicLevel": -58.7,
+   "tension": 0.187
   },
   {
    "t": 569,
    "cutRate": 0,
    "audioDensity": 1.4,
-   "musicLevel": -46.8,
-   "tension": 0.206
+   "musicLevel": -51.7,
+   "tension": 0.183
   },
   {
    "t": 570,
    "cutRate": 1,
    "audioDensity": 1.4,
-   "musicLevel": -54.5,
-   "tension": 0.21
+   "musicLevel": -56.5,
+   "tension": 0.194
   },
   {
    "t": 571,
    "cutRate": 1,
    "audioDensity": 1.4,
-   "musicLevel": -58.1,
-   "tension": 0.218
+   "musicLevel": -59.5,
+   "tension": 0.204
   },
   {
    "t": 572,
    "cutRate": 1,
    "audioDensity": 1.8,
-   "musicLevel": -32.1,
-   "tension": 0.258
+   "musicLevel": -34.2,
+   "tension": 0.252
   },
   {
    "t": 573,
    "cutRate": 1,
    "audioDensity": 2.2,
-   "musicLevel": -56.1,
-   "tension": 0.341
+   "musicLevel": -55.9,
+   "tension": 0.327
   },
   {
    "t": 574,
    "cutRate": 2,
    "audioDensity": 2.2,
-   "musicLevel": -56.6,
-   "tension": 0.414
+   "musicLevel": -57.5,
+   "tension": 0.397
   },
   {
    "t": 575,
    "cutRate": 2,
    "audioDensity": 2.2,
-   "musicLevel": -29.5,
-   "tension": 0.442
+   "musicLevel": -32.3,
+   "tension": 0.427
   },
   {
    "t": 576,
    "cutRate": 2,
    "audioDensity": 2.4,
-   "musicLevel": -33.6,
-   "tension": 0.518
+   "musicLevel": -35.0,
+   "tension": 0.503
   },
   {
    "t": 577,
    "cutRate": 2,
-   "audioDensity": 2.4,
-   "musicLevel": -31.6,
-   "tension": 0.584
+   "audioDensity": 2.6,
+   "musicLevel": -33.6,
+   "tension": 0.573
   },
   {
    "t": 578,
    "cutRate": 2,
-   "audioDensity": 2.4,
-   "musicLevel": -29.8,
+   "audioDensity": 2.8,
+   "musicLevel": -31.3,
    "tension": 0.585
   },
   {
    "t": 579,
    "cutRate": 2,
-   "audioDensity": 2.6,
-   "musicLevel": -26.6,
-   "tension": 0.589
+   "audioDensity": 3.0,
+   "musicLevel": -26.5,
+   "tension": 0.591
   },
   {
    "t": 580,
    "cutRate": 2,
-   "audioDensity": 2.6,
-   "musicLevel": -30.6,
-   "tension": 0.573
+   "audioDensity": 3.0,
+   "musicLevel": -31.1,
+   "tension": 0.58
   },
   {
    "t": 581,
    "cutRate": 2,
-   "audioDensity": 2.6,
-   "musicLevel": -32.7,
-   "tension": 0.569
+   "audioDensity": 3.0,
+   "musicLevel": -34.7,
+   "tension": 0.576
   },
   {
    "t": 582,
    "cutRate": 2,
-   "audioDensity": 2.2,
-   "musicLevel": -37.0,
-   "tension": 0.517
+   "audioDensity": 2.4,
+   "musicLevel": -37.1,
+   "tension": 0.513
   },
   {
    "t": 583,
    "cutRate": 2,
-   "audioDensity": 2.2,
-   "musicLevel": -30.2,
-   "tension": 0.441
+   "audioDensity": 2.4,
+   "musicLevel": -31.4,
+   "tension": 0.437
   },
   {
    "t": 584,
    "cutRate": 1,
-   "audioDensity": 2.2,
-   "musicLevel": -37.3,
-   "tension": 0.41
+   "audioDensity": 2.4,
+   "musicLevel": -40.3,
+   "tension": 0.402
   },
   {
    "t": 585,
    "cutRate": 1,
-   "audioDensity": 2.2,
-   "musicLevel": -54.5,
-   "tension": 0.401
+   "audioDensity": 2.4,
+   "musicLevel": -57.6,
+   "tension": 0.389
   },
   {
    "t": 586,
    "cutRate": 1,
-   "audioDensity": 2.0,
-   "musicLevel": -34.6,
-   "tension": 0.333
+   "audioDensity": 2.2,
+   "musicLevel": -37.2,
+   "tension": 0.323
   },
   {
    "t": 587,
    "cutRate": 1,
-   "audioDensity": 2.2,
-   "musicLevel": -33.2,
-   "tension": 0.293
+   "audioDensity": 2.4,
+   "musicLevel": -34.6,
+   "tension": 0.289
   },
   {
    "t": 588,
    "cutRate": 1,
    "audioDensity": 2.0,
-   "musicLevel": -47.5,
-   "tension": 0.305
+   "musicLevel": -47.0,
+   "tension": 0.282
   },
   {
    "t": 589,
    "cutRate": 1,
    "audioDensity": 1.6,
-   "musicLevel": -53.5,
-   "tension": 0.312
+   "musicLevel": -55.3,
+   "tension": 0.287
   },
   {
    "t": 590,
    "cutRate": 0,
    "audioDensity": 1.4,
-   "musicLevel": -34.8,
-   "tension": 0.261
+   "musicLevel": -41.5,
+   "tension": 0.238
   },
   {
    "t": 591,
    "cutRate": 1,
    "audioDensity": 1.6,
-   "musicLevel": -30.7,
-   "tension": 0.305
+   "musicLevel": -32.9,
+   "tension": 0.275
   },
   {
    "t": 592,
    "cutRate": 1,
    "audioDensity": 1.6,
-   "musicLevel": -56.8,
-   "tension": 0.367
+   "musicLevel": -58.6,
+   "tension": 0.331
   },
   {
    "t": 593,
    "cutRate": 1,
    "audioDensity": 1.8,
-   "musicLevel": -30.3,
-   "tension": 0.407
+   "musicLevel": -32.6,
+   "tension": 0.389
   },
   {
    "t": 594,
    "cutRate": 1,
-   "audioDensity": 2.2,
-   "musicLevel": -28.7,
-   "tension": 0.443
+   "audioDensity": 2.4,
+   "musicLevel": -31.8,
+   "tension": 0.428
   },
   {
    "t": 595,
    "cutRate": 1,
-   "audioDensity": 2.2,
-   "musicLevel": -30.4,
-   "tension": 0.511
+   "audioDensity": 2.6,
+   "musicLevel": -31.9,
+   "tension": 0.497
   },
   {
    "t": 596,
    "cutRate": 2,
-   "audioDensity": 2.0,
-   "musicLevel": -26.2,
-   "tension": 0.479
+   "audioDensity": 2.4,
+   "musicLevel": -28.7,
+   "tension": 0.475
   },
   {
    "t": 597,
    "cutRate": 2,
-   "audioDensity": 2.0,
-   "musicLevel": -33.5,
-   "tension": 0.498
+   "audioDensity": 2.4,
+   "musicLevel": -34.6,
+   "tension": 0.488
   },
   {
    "t": 598,
    "cutRate": 2,
-   "audioDensity": 1.8,
-   "musicLevel": -57.1,
-   "tension": 0.532
+   "audioDensity": 2.2,
+   "musicLevel": -57.3,
+   "tension": 0.512
   },
   {
    "t": 599,
    "cutRate": 2,
-   "audioDensity": 2.0,
-   "musicLevel": -28.3,
-   "tension": 0.531
+   "audioDensity": 2.2,
+   "musicLevel": -33.5,
+   "tension": 0.515
   },
   {
    "t": 600,
    "cutRate": 2,
    "audioDensity": 2.4,
-   "musicLevel": -25.9,
-   "tension": 0.553
+   "musicLevel": -29.6,
+   "tension": 0.536
   },
   {
    "t": 601,
    "cutRate": 1,
    "audioDensity": 2.6,
    "musicLevel": -21.0,
-   "tension": 0.608
+   "tension": 0.582
   },
   {
    "t": 602,
    "cutRate": 2,
    "audioDensity": 2.6,
-   "musicLevel": -27.7,
-   "tension": 0.601
+   "musicLevel": -27.3,
+   "tension": 0.588
   },
   {
    "t": 603,
    "cutRate": 2,
    "audioDensity": 2.4,
-   "musicLevel": -31.4,
-   "tension": 0.55
+   "musicLevel": -33.4,
+   "tension": 0.555
   },
   {
    "t": 604,
    "cutRate": 2,
    "audioDensity": 2.0,
-   "musicLevel": -31.1,
-   "tension": 0.469
+   "musicLevel": -30.7,
+   "tension": 0.474
   },
   {
    "t": 605,
    "cutRate": 2,
    "audioDensity": 2.2,
-   "musicLevel": -44.1,
+   "musicLevel": -41.1,
    "tension": 0.428
   },
   {
    "t": 606,
    "cutRate": 1,
    "audioDensity": 2.2,
-   "musicLevel": -59.5,
-   "tension": 0.372
+   "musicLevel": -61.3,
+   "tension": 0.376
   },
   {
    "t": 607,
    "cutRate": 1,
    "audioDensity": 2.0,
-   "musicLevel": -33.2,
-   "tension": 0.299
+   "musicLevel": -34.6,
+   "tension": 0.303
   },
   {
    "t": 608,
    "cutRate": 1,
    "audioDensity": 2.0,
-   "musicLevel": -43.7,
-   "tension": 0.255
+   "musicLevel": -44.0,
+   "tension": 0.251
   },
   {
    "t": 609,
    "cutRate": 1,
    "audioDensity": 1.8,
-   "musicLevel": -61.8,
-   "tension": 0.267
+   "musicLevel": -65.2,
+   "tension": 0.263
   },
   {
    "t": 610,
    "cutRate": 1,
    "audioDensity": 1.4,
-   "musicLevel": -58.4,
-   "tension": 0.255
+   "musicLevel": -58.6,
+   "tension": 0.249
   },
   {
    "t": 611,
    "cutRate": 2,
    "audioDensity": 1.4,
-   "musicLevel": -59.7,
-   "tension": 0.271
+   "musicLevel": -63.1,
+   "tension": 0.26
   },
   {
    "t": 612,
    "cutRate": 1,
    "audioDensity": 1.6,
-   "musicLevel": -36.2,
-   "tension": 0.303
+   "musicLevel": -38.4,
+   "tension": 0.282
   },
   {
    "t": 613,
    "cutRate": 1,
    "audioDensity": 1.8,
-   "musicLevel": -37.0,
-   "tension": 0.35
+   "musicLevel": -39.2,
+   "tension": 0.324
   },
   {
    "t": 614,
    "cutRate": 1,
    "audioDensity": 2.0,
-   "musicLevel": -39.0,
-   "tension": 0.401
+   "musicLevel": -42.5,
+   "tension": 0.369
   },
   {
    "t": 615,
    "cutRate": 1,
    "audioDensity": 2.0,
-   "musicLevel": -34.6,
-   "tension": 0.433
+   "musicLevel": -36.3,
+   "tension": 0.403
   },
   {
    "t": 616,
    "cutRate": 2,
    "audioDensity": 2.2,
-   "musicLevel": -33.8,
-   "tension": 0.469
+   "musicLevel": -36.1,
+   "tension": 0.436
   },
   {
    "t": 617,
    "cutRate": 2,
    "audioDensity": 2.2,
-   "musicLevel": -34.1,
-   "tension": 0.499
+   "musicLevel": -35.5,
+   "tension": 0.467
   },
   {
    "t": 618,
    "cutRate": 2,
    "audioDensity": 2.2,
-   "musicLevel": -32.6,
-   "tension": 0.525
+   "musicLevel": -35.7,
+   "tension": 0.494
   },
   {
    "t": 619,
    "cutRate": 2,
    "audioDensity": 2.2,
-   "musicLevel": -35.8,
-   "tension": 0.459
+   "musicLevel": -39.1,
+   "tension": 0.435
   },
   {
    "t": 620,
    "cutRate": 2,
    "audioDensity": 2.4,
-   "musicLevel": -33.9,
-   "tension": 0.413
+   "musicLevel": -35.2,
+   "tension": 0.384
   },
   {
    "t": 621,
    "cutRate": 1,
    "audioDensity": 2.0,
-   "musicLevel": -55.5,
-   "tension": 0.351
+   "musicLevel": -57.5,
+   "tension": 0.322
   },
   {
    "t": 622,
    "cutRate": 1,
-   "audioDensity": 2.0,
-   "musicLevel": -43.4,
-   "tension": 0.291
+   "audioDensity": 1.8,
+   "musicLevel": -45.8,
+   "tension": 0.269
   },
   {
    "t": 623,
    "cutRate": 1,
-   "audioDensity": 2.0,
-   "musicLevel": -47.5,
-   "tension": 0.265
+   "audioDensity": 1.8,
+   "musicLevel": -51.1,
+   "tension": 0.235
   },
   {
    "t": 624,
    "cutRate": 1,
-   "audioDensity": 2.0,
-   "musicLevel": -59.9,
-   "tension": 0.312
+   "audioDensity": 1.8,
+   "musicLevel": -61.0,
+   "tension": 0.274
   },
   {
    "t": 625,
    "cutRate": 1,
-   "audioDensity": 1.6,
-   "musicLevel": -33.0,
-   "tension": 0.329
+   "audioDensity": 1.4,
+   "musicLevel": -36.6,
+   "tension": 0.293
   },
   {
    "t": 626,
    "cutRate": 1,
-   "audioDensity": 1.6,
-   "musicLevel": -31.1,
-   "tension": 0.318
+   "audioDensity": 1.4,
+   "musicLevel": -33.1,
+   "tension": 0.291
   },
   {
    "t": 627,
    "cutRate": 1,
    "audioDensity": 1.4,
-   "musicLevel": -34.9,
-   "tension": 0.353
+   "musicLevel": -37.2,
+   "tension": 0.324
   },
   {
    "t": 628,
    "cutRate": 1,
    "audioDensity": 1.6,
-   "musicLevel": -54.0,
-   "tension": 0.358
+   "musicLevel": -55.9,
+   "tension": 0.339
   },
   {
    "t": 629,
    "cutRate": 1,
    "audioDensity": 1.8,
-   "musicLevel": -36.1,
-   "tension": 0.39
+   "musicLevel": -37.6,
+   "tension": 0.369
   },
   {
    "t": 630,
    "cutRate": 1,
    "audioDensity": 2.2,
-   "musicLevel": -33.4,
-   "tension": 0.434
+   "musicLevel": -33.8,
+   "tension": 0.409
   },
   {
    "t": 631,
    "cutRate": 2,
    "audioDensity": 2.4,
-   "musicLevel": -29.7,
-   "tension": 0.506
+   "musicLevel": -33.2,
+   "tension": 0.468
   },
   {
    "t": 632,
    "cutRate": 2,
    "audioDensity": 2.6,
-   "musicLevel": -30.3,
-   "tension": 0.549
+   "musicLevel": -34.4,
+   "tension": 0.512
   },
   {
    "t": 633,
    "cutRate": 2,
-   "audioDensity": 2.4,
-   "musicLevel": -33.4,
-   "tension": 0.587
+   "audioDensity": 2.6,
+   "musicLevel": -38.8,
+   "tension": 0.548
   },
   {
    "t": 634,
    "cutRate": 2,
-   "audioDensity": 2.6,
-   "musicLevel": -30.8,
-   "tension": 0.582
+   "audioDensity": 2.8,
+   "musicLevel": -32.6,
+   "tension": 0.552
   },
   {
    "t": 635,
    "cutRate": 3,
-   "audioDensity": 2.6,
-   "musicLevel": -35.5,
-   "tension": 0.578
+   "audioDensity": 2.8,
+   "musicLevel": -37.3,
+   "tension": 0.561
   },
   {
    "t": 636,
    "cutRate": 2,
-   "audioDensity": 2.6,
-   "musicLevel": -32.4,
-   "tension": 0.584
+   "audioDensity": 2.8,
+   "musicLevel": -33.2,
+   "tension": 0.577
   },
   {
    "t": 637,
    "cutRate": 2,
-   "audioDensity": 2.6,
-   "musicLevel": -31.7,
-   "tension": 0.584
+   "audioDensity": 2.8,
+   "musicLevel": -32.1,
+   "tension": 0.572
   },
   {
    "t": 638,
    "cutRate": 2,
    "audioDensity": 2.8,
-   "musicLevel": -32.9,
-   "tension": 0.562
+   "musicLevel": -33.4,
+   "tension": 0.548
   },
   {
    "t": 639,
    "cutRate": 2,
    "audioDensity": 2.4,
-   "musicLevel": -29.9,
-   "tension": 0.489
+   "musicLevel": -33.0,
+   "tension": 0.475
   },
   {
    "t": 640,
    "cutRate": 2,
    "audioDensity": 2.2,
-   "musicLevel": -34.6,
-   "tension": 0.451
+   "musicLevel": -36.5,
+   "tension": 0.432
   },
   {
    "t": 641,
    "cutRate": 1,
    "audioDensity": 2.0,
-   "musicLevel": -59.8,
-   "tension": 0.404
+   "musicLevel": -59.6,
+   "tension": 0.386
   },
   {
    "t": 642,
    "cutRate": 1,
    "audioDensity": 2.0,
-   "musicLevel": -36.3,
-   "tension": 0.345
+   "musicLevel": -37.8,
+   "tension": 0.334
   },
   {
    "t": 643,
    "cutRate": 1,
    "audioDensity": 1.8,
-   "musicLevel": -39.0,
-   "tension": 0.319
+   "musicLevel": -39.6,
+   "tension": 0.31
   },
   {
    "t": 644,
    "cutRate": 2,
    "audioDensity": 1.8,
-   "musicLevel": -56.0,
-   "tension": 0.357
+   "musicLevel": -57.5,
+   "tension": 0.345
   },
   {
    "t": 645,
    "cutRate": 1,
    "audioDensity": 1.6,
-   "musicLevel": -34.7,
-   "tension": 0.322
+   "musicLevel": -35.9,
+   "tension": 0.314
   },
   {
    "t": 646,
    "cutRate": 1,
    "audioDensity": 1.8,
-   "musicLevel": -35.0,
-   "tension": 0.299
+   "musicLevel": -36.1,
+   "tension": 0.293
   },
   {
    "t": 647,
    "cutRate": 1,
    "audioDensity": 2.2,
-   "musicLevel": -55.6,
-   "tension": 0.33
+   "musicLevel": -55.8,
+   "tension": 0.315
   },
   {
    "t": 648,
    "cutRate": 1,
    "audioDensity": 2.4,
-   "musicLevel": -55.7,
-   "tension": 0.352
+   "musicLevel": -57.1,
+   "tension": 0.333
   },
   {
    "t": 649,
    "cutRate": 1,
    "audioDensity": 2.4,
-   "musicLevel": -32.9,
-   "tension": 0.364
+   "musicLevel": -36.2,
+   "tension": 0.343
   },
   {
    "t": 650,
    "cutRate": 1,
    "audioDensity": 2.6,
-   "musicLevel": -30.3,
-   "tension": 0.416
+   "musicLevel": -32.9,
+   "tension": 0.39
   },
   {
    "t": 651,
    "cutRate": 1,
    "audioDensity": 2.6,
-   "musicLevel": -33.7,
-   "tension": 0.465
+   "musicLevel": -35.5,
+   "tension": 0.436
   },
   {
    "t": 652,
    "cutRate": 1,
    "audioDensity": 2.2,
-   "musicLevel": -30.4,
-   "tension": 0.444
+   "musicLevel": -32.4,
+   "tension": 0.415
   },
   {
    "t": 653,
    "cutRate": 1,
    "audioDensity": 2.0,
-   "musicLevel": -30.2,
-   "tension": 0.418
+   "musicLevel": -31.2,
+   "tension": 0.39
   },
   {
    "t": 654,
    "cutRate": 0,
    "audioDensity": 2.2,
-   "musicLevel": -32.6,
-   "tension": 0.412
+   "musicLevel": -36.0,
+   "tension": 0.382
   },
   {
    "t": 655,
    "cutRate": 0,
    "audioDensity": 2.2,
-   "musicLevel": -30.8,
-   "tension": 0.402
+   "musicLevel": -33.3,
+   "tension": 0.366
   },
   {
    "t": 656,
    "cutRate": 1,
    "audioDensity": 2.2,
-   "musicLevel": -34.4,
-   "tension": 0.407
+   "musicLevel": -36.9,
+   "tension": 0.37
   },
   {
    "t": 657,
    "cutRate": 1,
    "audioDensity": 2.2,
-   "musicLevel": -34.2,
-   "tension": 0.429
+   "musicLevel": -38.2,
+   "tension": 0.396
   },
   {
    "t": 658,
    "cutRate": 1,
    "audioDensity": 2.2,
-   "musicLevel": -29.3,
-   "tension": 0.462
+   "musicLevel": -30.7,
+   "tension": 0.436
   },
   {
    "t": 659,
    "cutRate": 1,
    "audioDensity": 2.2,
-   "musicLevel": -31.9,
-   "tension": 0.473
+   "musicLevel": -33.5,
+   "tension": 0.453
   },
   {
    "t": 660,
    "cutRate": 1,
    "audioDensity": 2.4,
-   "musicLevel": -26.6,
-   "tension": 0.473
+   "musicLevel": -26.5,
+   "tension": 0.455
   },
   {
    "t": 661,
    "cutRate": 1,
    "audioDensity": 2.4,
-   "musicLevel": -31.1,
-   "tension": 0.47
+   "musicLevel": -31.4,
+   "tension": 0.456
   },
   {
    "t": 662,
    "cutRate": 1,
    "audioDensity": 2.4,
-   "musicLevel": -34.9,
-   "tension": 0.473
+   "musicLevel": -38.4,
+   "tension": 0.463
   },
   {
    "t": 663,
    "cutRate": 1,
    "audioDensity": 2.6,
-   "musicLevel": -31.8,
-   "tension": 0.476
+   "musicLevel": -31.7,
+   "tension": 0.457
   },
   {
    "t": 664,
    "cutRate": 1,
    "audioDensity": 2.6,
-   "musicLevel": -32.1,
-   "tension": 0.478
+   "musicLevel": -32.6,
+   "tension": 0.451
   },
   {
    "t": 665,
    "cutRate": 2,
    "audioDensity": 2.4,
-   "musicLevel": -33.2,
-   "tension": 0.482
+   "musicLevel": -36.2,
+   "tension": 0.462
   },
   {
    "t": 666,
    "cutRate": 1,
    "audioDensity": 2.4,
-   "musicLevel": -30.3,
-   "tension": 0.474
+   "musicLevel": -33.5,
+   "tension": 0.447
   },
   {
    "t": 667,
    "cutRate": 1,
    "audioDensity": 2.4,
-   "musicLevel": -33.3,
-   "tension": 0.479
+   "musicLevel": -34.5,
+   "tension": 0.445
   },
   {
    "t": 668,
    "cutRate": 1,
    "audioDensity": 2.6,
-   "musicLevel": -35.0,
-   "tension": 0.465
+   "musicLevel": -37.0,
+   "tension": 0.427
   },
   {
    "t": 669,
    "cutRate": 1,
    "audioDensity": 2.6,
-   "musicLevel": -30.2,
-   "tension": 0.481
+   "musicLevel": -33.4,
+   "tension": 0.447
   },
   {
    "t": 670,
    "cutRate": 1,
    "audioDensity": 2.6,
-   "musicLevel": -31.4,
-   "tension": 0.51
+   "musicLevel": -36.3,
+   "tension": 0.476
   },
   {
    "t": 671,
    "cutRate": 2,
    "audioDensity": 2.6,
-   "musicLevel": -32.5,
-   "tension": 0.529
+   "musicLevel": -34.3,
+   "tension": 0.502
   },
   {
    "t": 672,
    "cutRate": 2,
    "audioDensity": 2.6,
-   "musicLevel": -30.9,
-   "tension": 0.529
+   "musicLevel": -31.9,
+   "tension": 0.502
   },
   {
    "t": 673,
    "cutRate": 2,
    "audioDensity": 2.2,
-   "musicLevel": -33.9,
-   "tension": 0.522
+   "musicLevel": -33.1,
+   "tension": 0.501
   },
   {
    "t": 674,
    "cutRate": 2,
    "audioDensity": 2.0,
-   "musicLevel": -35.5,
-   "tension": 0.499
+   "musicLevel": -38.5,
+   "tension": 0.48
   },
   {
    "t": 675,
    "cutRate": 1,
    "audioDensity": 2.2,
-   "musicLevel": -32.6,
-   "tension": 0.488
+   "musicLevel": -35.1,
+   "tension": 0.464
   },
   {
    "t": 676,
    "cutRate": 1,
    "audioDensity": 2.2,
-   "musicLevel": -31.8,
-   "tension": 0.493
+   "musicLevel": -33.2,
+   "tension": 0.458
   },
   {
    "t": 677,
    "cutRate": 2,
    "audioDensity": 2.0,
-   "musicLevel": -33.1,
-   "tension": 0.498
+   "musicLevel": -35.8,
+   "tension": 0.465
   },
   {
    "t": 678,
    "cutRate": 2,
    "audioDensity": 1.8,
-   "musicLevel": -30.4,
-   "tension": 0.512
+   "musicLevel": -34.0,
+   "tension": 0.481
   },
   {
    "t": 679,
    "cutRate": 2,
    "audioDensity": 1.6,
-   "musicLevel": -32.0,
-   "tension": 0.514
+   "musicLevel": -34.1,
+   "tension": 0.48
   },
   {
    "t": 680,
    "cutRate": 2,
    "audioDensity": 1.8,
-   "musicLevel": -33.4,
-   "tension": 0.515
+   "musicLevel": -35.2,
+   "tension": 0.486
   },
   {
    "t": 681,
    "cutRate": 1,
    "audioDensity": 2.0,
-   "musicLevel": -30.2,
-   "tension": 0.494
+   "musicLevel": -33.0,
+   "tension": 0.47
   },
   {
    "t": 682,
    "cutRate": 1,
    "audioDensity": 2.2,
-   "musicLevel": -26.2,
-   "tension": 0.485
+   "musicLevel": -26.9,
+   "tension": 0.466
   },
   {
    "t": 683,
    "cutRate": 1,
    "audioDensity": 2.4,
-   "musicLevel": -32.8,
-   "tension": 0.468
+   "musicLevel": -34.5,
+   "tension": 0.458
   },
   {
    "t": 684,
    "cutRate": 1,
    "audioDensity": 2.6,
    "musicLevel": -31.9,
-   "tension": 0.456
+   "tension": 0.448
   },
   {
    "t": 685,
    "cutRate": 1,
-   "audioDensity": 2.2,
-   "musicLevel": -33.6,
-   "tension": 0.423
+   "audioDensity": 2.4,
+   "musicLevel": -33.0,
+   "tension": 0.411
   },
   {
    "t": 686,
    "cutRate": 1,
-   "audioDensity": 2.0,
-   "musicLevel": -34.8,
-   "tension": 0.399
+   "audioDensity": 2.2,
+   "musicLevel": -37.3,
+   "tension": 0.391
   },
   {
    "t": 687,
    "cutRate": 0,
-   "audioDensity": 1.8,
-   "musicLevel": -29.7,
-   "tension": 0.37
+   "audioDensity": 2.0,
+   "musicLevel": -32.6,
+   "tension": 0.356
   },
   {
    "t": 688,
    "cutRate": 0,
-   "audioDensity": 1.8,
-   "musicLevel": -31.7,
-   "tension": 0.348
+   "audioDensity": 2.0,
+   "musicLevel": -33.1,
+   "tension": 0.325
   },
   {
    "t": 689,
    "cutRate": 0,
-   "audioDensity": 1.8,
-   "musicLevel": -32.5,
-   "tension": 0.327
+   "audioDensity": 2.0,
+   "musicLevel": -35.4,
+   "tension": 0.306
   },
   {
    "t": 690,
    "cutRate": 0,
    "audioDensity": 1.6,
-   "musicLevel": -32.0,
-   "tension": 0.316
+   "musicLevel": -33.8,
+   "tension": 0.295
   },
   {
    "t": 691,
-   "cutRate": 0,
-   "audioDensity": 1.4,
-   "musicLevel": -33.0,
-   "tension": 0.317
-  },
-  {
-   "t": 692,
-   "cutRate": 0,
-   "audioDensity": 1.6,
-   "musicLevel": -33.0,
-   "tension": 0.319
-  },
-  {
-   "t": 693,
-   "cutRate": 0,
-   "audioDensity": 1.6,
-   "musicLevel": -30.5,
-   "tension": 0.315
-  },
-  {
-   "t": 694,
-   "cutRate": 0,
-   "audioDensity": 1.6,
-   "musicLevel": -31.0,
-   "tension": 0.321
-  },
-  {
-   "t": 695,
-   "cutRate": 0,
-   "audioDensity": 1.6,
-   "musicLevel": -33.5,
-   "tension": 0.323
-  },
-  {
-   "t": 696,
-   "cutRate": 0,
-   "audioDensity": 1.6,
-   "musicLevel": -31.7,
-   "tension": 0.315
-  },
-  {
-   "t": 697,
-   "cutRate": 0,
-   "audioDensity": 1.6,
-   "musicLevel": -32.0,
-   "tension": 0.315
-  },
-  {
-   "t": 698,
-   "cutRate": 0,
-   "audioDensity": 1.6,
-   "musicLevel": -33.6,
-   "tension": 0.322
-  },
-  {
-   "t": 699,
-   "cutRate": 0,
-   "audioDensity": 1.4,
-   "musicLevel": -30.2,
-   "tension": 0.322
-  },
-  {
-   "t": 700,
-   "cutRate": 0,
-   "audioDensity": 1.6,
-   "musicLevel": -30.8,
-   "tension": 0.324
-  },
-  {
-   "t": 701,
-   "cutRate": 0,
-   "audioDensity": 1.8,
-   "musicLevel": -32.5,
-   "tension": 0.325
-  },
-  {
-   "t": 702,
-   "cutRate": 0,
-   "audioDensity": 1.6,
-   "musicLevel": -31.5,
-   "tension": 0.314
-  },
-  {
-   "t": 703,
-   "cutRate": 0,
-   "audioDensity": 1.4,
-   "musicLevel": -32.5,
-   "tension": 0.306
-  },
-  {
-   "t": 704,
    "cutRate": 0,
    "audioDensity": 1.4,
    "musicLevel": -34.2,
    "tension": 0.296
   },
   {
+   "t": 692,
+   "cutRate": 0,
+   "audioDensity": 1.6,
+   "musicLevel": -34.9,
+   "tension": 0.304
+  },
+  {
+   "t": 693,
+   "cutRate": 0,
+   "audioDensity": 1.6,
+   "musicLevel": -31.4,
+   "tension": 0.302
+  },
+  {
+   "t": 694,
+   "cutRate": 0,
+   "audioDensity": 1.6,
+   "musicLevel": -30.8,
+   "tension": 0.304
+  },
+  {
+   "t": 695,
+   "cutRate": 0,
+   "audioDensity": 1.6,
+   "musicLevel": -34.8,
+   "tension": 0.314
+  },
+  {
+   "t": 696,
+   "cutRate": 0,
+   "audioDensity": 1.6,
+   "musicLevel": -33.9,
+   "tension": 0.303
+  },
+  {
+   "t": 697,
+   "cutRate": 0,
+   "audioDensity": 1.6,
+   "musicLevel": -31.5,
+   "tension": 0.297
+  },
+  {
+   "t": 698,
+   "cutRate": 0,
+   "audioDensity": 1.6,
+   "musicLevel": -35.2,
+   "tension": 0.309
+  },
+  {
+   "t": 699,
+   "cutRate": 0,
+   "audioDensity": 1.4,
+   "musicLevel": -32.6,
+   "tension": 0.309
+  },
+  {
+   "t": 700,
+   "cutRate": 0,
+   "audioDensity": 1.6,
+   "musicLevel": -30.1,
+   "tension": 0.3
+  },
+  {
+   "t": 701,
+   "cutRate": 0,
+   "audioDensity": 1.8,
+   "musicLevel": -34.8,
+   "tension": 0.305
+  },
+  {
+   "t": 702,
+   "cutRate": 0,
+   "audioDensity": 1.6,
+   "musicLevel": -34.6,
+   "tension": 0.298
+  },
+  {
+   "t": 703,
+   "cutRate": 0,
+   "audioDensity": 1.4,
+   "musicLevel": -32.8,
+   "tension": 0.281
+  },
+  {
+   "t": 704,
+   "cutRate": 0,
+   "audioDensity": 1.4,
+   "musicLevel": -35.3,
+   "tension": 0.276
+  },
+  {
    "t": 705,
    "cutRate": 0,
    "audioDensity": 1.0,
-   "musicLevel": -31.4,
-   "tension": 0.23
+   "musicLevel": -34.1,
+   "tension": 0.219
   },
   {
    "t": 706,
    "cutRate": 0,
    "audioDensity": 0.6,
-   "musicLevel": -32.1,
-   "tension": 0.169
+   "musicLevel": -32.2,
+   "tension": 0.159
   }
  ],
  "peaks": [
@@ -4961,19 +4961,19 @@
    "act": "act2"
   },
   {
-   "t": 601,
+   "t": 602,
    "act": "act3"
   }
  ],
  "valleys": [
   {
-   "t": 200
+   "t": 189
   },
   {
    "t": 382
   },
   {
-   "t": 608
+   "t": 623
   }
  ]
 }

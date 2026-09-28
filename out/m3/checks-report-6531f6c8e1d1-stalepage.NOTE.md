@@ -1,0 +1,2 @@
+Rules run 02:52–03:15 UTC on master SHA-256 6531f6c8e1d11473251156875ad5631ecc2b6768517eab47d4ab8756735e3b62 (round 3), but with the round-2 page.json (the page sampler of round 3 had not finished: a waiter matched "SAMPLER-START").
+Valid for the non-page rules (file, audio, content from files); NOT valid for the page rules (V02 V03 V04 V08 V11 C01–C07 C10 C12–C15 S08 S09 and the rules reading claimFinal/textTrack).

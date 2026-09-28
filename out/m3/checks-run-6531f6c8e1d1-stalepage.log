@@ -1,0 +1,73 @@
+F01  PASS       0.1s  
+F02  PASS       1.1s  
+F03  PASS       0.0s  
+F04  PASS       0.0s  
+F05  PASS     136.0s  
+F06  PASS       0.9s  
+F07  PASS       0.0s  
+F08  PASS     411.6s  
+F09  PASS       0.0s  
+F10  PASS       0.0s  
+A01  PASS      10.9s  
+A02  PASS       0.0s  
+A03  PASS       0.0s  
+A04  PASS       7.5s  
+A05  PASS       0.5s  
+A06  PASS      20.1s  
+A07  PASS       5.5s  
+A08  PASS       5.2s  
+A09  PASS      10.6s  
+A10  PASS      11.7s  
+A11  PASS       1.3s  
+A12  PASS      29.5s  
+A13  PASS      26.8s  
+A14  FAIL     260.6s  key words missing=1
+A15  FAIL       0.0s  wpm act act1=146.756855; wpm act act2=145.16129; wpm act act3=146.176912; sentences > 175 wpm=8
+S01  PASS       0.2s  
+S02  PASS       0.0s  
+S03  PASS       0.3s  
+S04  FAIL       0.0s  used years missing in a source=3
+S05  PASS       0.0s  
+S06  PASS       0.0s  
+S07  PASS       0.0s  
+S08  PASS       0.0s  
+S09  PASS       0.0s  
+S10  PASS       0.0s  
+S11  PASS       0.0s  
+S12  FAIL       0.0s  max new numbers in a scene=4
+S13  PASS       0.0s  
+S14  PASS      13.1s  
+S15  PASS       0.0s  
+R01  FAIL       7.7s  false peaks=2; peaks without valley=1
+R02  PASS       0.0s  
+R03  FAIL       1.9s  shortest pause s=0.13; pauses < 1.0 s=5
+R04  PASS       0.0s  
+R05  PASS       0.0s  
+R06  FAIL     133.0s  cuts visible in picture (%)=70.588235
+V01  PASS       0.0s  
+V02  PASS       0.0s  
+V03  FAIL       0.0s  text outside safe area=28
+V04  PASS       0.0s  
+V05  FAIL     137.8s  worst ease ratio=0.65; overshoot > 8%=3
+V06  PASS       0.1s  
+V07  FAIL      18.5s  median blur ratio=1.215605
+V08  FAIL       0.0s  worst text contrast=3.74; samples below 4.5:1=68
+V09  PASS       0.0s  
+V10  PASS     132.9s  
+V11  FAIL       0.0s  text collisions=35
+C01  PASS       0.0s  
+C02  PASS       0.0s  
+C03  PASS       0.0s  
+C04  FAIL       0.0s  frames flagged=364
+C05  PASS       0.0s  
+C06  PASS       0.0s  
+C07  PASS       0.0s  
+C10  PASS       0.0s  
+C11  PASS       0.0s  
+C12  PASS       0.0s  
+C13  FAIL       0.0s  worst |offset| ms=600; pairs > 250 ms=5
+C14  PASS       0.0s  
+C15  PASS       0.0s  
+P01  PASS      14.9s  
+{"PASS": 57, "FAIL": 14, "MISSING": 0, "ERROR": 0}
+CHECKS 0 03:15

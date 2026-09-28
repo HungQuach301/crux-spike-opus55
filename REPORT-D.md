@@ -640,3 +640,100 @@ Mỗi lỗi chỉ vài mẫu. Theo chỉ dẫn, không có vòng sửa thứ 3.
 - Frame-change chưa đạt mục tiêu 50% / ≤ 4 s. Muốn đạt phải sửa nhịp chuyển động của nhiều cảnh, rồi render lại phần lớn phim.
 - S12, R01, R03: xem bảng trên.
 - Không có Release asset. Các công cụ GitHub của phiên này không tải được asset, nên master nằm trên nhánh media.
+
+# M3 vòng 3 — sửa theo chấm tay của chủ dự án (H1 4 · H2 2 · H3 3 · H4 3 · H5 4 · H6 4 · H7 3 → 3,29, chưa đạt)
+Thời gian: 01:45 → 04:1x UTC ngày 2026-09-28 (điểm dừng an toàn 04:45). Quyết định ghi ở BRIEF-D-amendments.md, mục 17–20.
+
+## Đã làm
+- **H2, câu móc lại 0:32–0:46** (a1-hook, a1-hook-b; vẽ lại, bỏ lưới 69 ô cũ):
+  - Chỉ còn một vật: dải 30 ô là 30 năm của người về hưu đầu tiên.
+  - Một khung 10 năm trượt dọc dải khi giọng nói "which ten years", rồi dừng ở thập kỷ đầu. Tiêu đề "Which ten years decided it?".
+  - Nửa sau: 69 hàng, mỗi hàng là cửa sổ 30 năm của một năm bắt đầu trên cùng trục lịch; thập kỷ đầu sáng hơn, hàng 1966 màu hổ phách. Ghi "since 1928" đúng lúc giọng đọc năm đó.
+- **H5, khoảng lặng:** không cắt cứng nữa.
+  - Nhạc nhả dần kiểu đuôi reverb (hằng số 90 ms, từ 50 ms trước khoảng lặng; −30 dB sau khoảng 0,3 s).
+  - sfx và whoosh tắt dần trong 150 ms.
+  - Room tone lên 6 dB thành sàn, không im số tuyệt đối. Mọi thứ trở lại trong 200 ms. Lời đọc không bị động tới.
+  - Đo trên master: 4 khoảng lặng dài 1,27–1,47 s. A09 đạt: 6 đoạn trong khoảng 0,8–1,5 s.
+- **H7a, âm thanh theo dữ liệu:**
+  - `src/d/m3-sonify-events.js` đọc trạng thái trang theo từng khung (chính các hàm dựng cảnh, không vẽ). Mỗi âm bắt đầu đúng khung phần tử đổi, lệch 0 khung.
+  - Cột mọc: âm lên dần tới cao độ của giá trị. Thang cố định cho cả phim: giá trị chia cho |giá trị| lớn nhất của biểu đồ; dương ở MIDI 67–79, âm ở 43–55; ngũ cung Rê thứ.
+  - Đường được vẽ: âm liên tục, cao độ bám độ dốc ở đầu đường.
+  - Điểm xuất hiện: tiếng gảy, cao độ theo trục y.
+  - Bộ đếm số: phim không có bộ đếm chạy, nên 0 sự kiện.
+  - Đếm được 550 lần cột mọc, 89 điểm, 21 lần vẽ đường. 517 sự kiện rơi vào đoạn > 8 sự kiện/giây và được gộp thành 166 cụm, mỗi cụm 125 ms.
+  - Lớp này nằm trong stem sfx: −10 dB khi có lời, −16 dB trong cửa sổ đọc số, tắt trong khoảng lặng.
+- **H7b, nhạc:**
+  - Mỗi hồi một phối khí riêng:
+    - cold open: pad + motif;
+    - hồi 1: pulse gảy đều;
+    - hồi 2: pulse nghịch phách, pad tối, bass dài;
+    - hồi 3: electric piano nửa nhịp;
+    - method/outro: hai motif cùng giải quyết.
+  - Mỗi câu 4 ô nhịp lấy vòng hợp âm kế tiếp trong 3 vòng (gốc / xoay / thay), và pulse đổi mẫu theo từng câu.
+  - Leitmotif 1966: trưởng, đi lên khi kế hoạch còn mới; thứ, đi xuống từ những năm lỗ đầu tiên (a2-7374); còn mẩu 2 nốt sau khi cạn tiền (a2-1991); thứ và nhẹ ở hồi 3.
+  - Leitmotif gương (bell): trưởng ở hồi 2, lúc nó đang lên.
+  - Nhịp điệu và quãng của motif đổi qua từng lần xuất hiện.
+- **Độ tự tương đồng của nhạc** (`audio/d_music_selfsim.py`; chroma + mẫu onset mỗi ô nhịp, cosine giữa hai câu 4 ô liền nhau):
+
+  | | trung bình | trung vị | cặp ≥ 0,90 | cặp ≥ 0,95 | chuỗi lặp ≥ 0,90 dài nhất |
+  |---|---|---|---|---|---|
+  | trước (r2) | 0,811 | 0,822 | 7,6% | 1,5% | 2 (từ 95,4 s) |
+  | sau (r3) | **0,653** | 0,658 | **0%** | **0%** | **0** |
+- **Nội dung:**
+  - gainsFell = **7**: 1979, 1980, 1983, 1985, 1986, 1988, 1989. Điều kiện thêm "endReal > 0", nên 1991 (năm cạn tiền) bị loại. Test cập nhật; `npm test` 65/65.
+  - Số trên màn hình là "7"; phụ đề "big-gain years, money left, balance still fell".
+  - Câu mới: "In 7 years with gains above 10% in which money remained, the balance of the 1966 retiree still fell after withdrawal and inflation."
+    - V8 Eric `eleven_v3`, 4 take (320 ký tự). Chọn take 3 theo quy tắc: đủ từ khoá, 155,9 wpm, clip 9,94 s.
+    - Câu bắt đầu ở 348,50 s, sớm hơn điểm cắt 0,24 s (J-cut), để vừa khe cũ. Dòng thời gian không đổi.
+  - Nhãn nhân vật trong cold open (0–15 s) được vẽ một lần tại giữa phơi sáng, hết nhân đôi khi máy quay chạy. Nhãn "mirror retiree" ở co-broke dời khỏi dòng tiêu đề.
+- **Render và ghép:**
+  - 9 cảnh trong 3 đoạn, 1 317 frame, 635 s render: co-lines, co-same, co-broke, co-question, ident, a1-est, a1-hook, a1-hook-b, a2-gains80.
+  - Ghép vào master r2 tại keyframe: 3 đoạn GOP, 1 670 frame mã hoá lại, 218 s. Khung ngoài vùng ghép trùng md5 với r2 (kiểm ở 100, 400, 600 s).
+  - Trộn lại âm thanh toàn phim: −14,0 LUFS, LRA 7,6, true peak −1,8 dBTP.
+  - Đồng bộ (`out/m3/sync-r3.json`): 21 180 frame; hình và tiếng cùng 706,000 s, lệch 0 ms.
+- **Giao hàng:**
+  - Master và **stem M3** (voice, music, sfx gồm cả sonification, whoosh, room) nằm trên `media/opus55-cine-phase-d-m3`, thêm bằng `git add -f`.
+  - room.flac 117 MB nên chia 2 phần. SHA-256 cho từng file và từng phần.
+  - SHA-256 master: `6531f6c8e1d11473251156875ad5631ecc2b6768517eab47d4ab8756735e3b62`.
+  - Bản xem trước: `out/m3/preview/`.
+- **Gói duyệt:** `out/r3/review/`, mỗi file < 90 MB, không chia phần, xem được trên điện thoại. Mốc thời gian ở README.md.
+  - `h2-rehook.mp4` (70 s)
+  - `h5-silences.mp4` (60 s)
+  - `h7-sonification.mp4` (60 s)
+  - `h7-music.mp4` (60 s)
+
+## Checks sau vòng 3 (`checks/` không đổi, LOCK khớp)
+Master r3: SHA-256 `6531f6c8e1d11473251156875ad5631ecc2b6768517eab47d4ab8756735e3b62`. Mỗi báo cáo checks được lưu thành file riêng theo SHA của master nó chấm; báo cáo r2 chấm master `dd6117c6…` (`out/m3/checks-report-r2.SHA.md`).
+
+**Lần chạy 02:52–03:15, KHÔNG hợp lệ cho các luật trang** (`out/m3/checks-report-6531f6c8e1d1-stalepage.*` + `.NOTE.md`):
+- Luật chạy trên master r3 nhưng dùng page.json của r2. Bộ chờ khớp nhầm dòng "SAMPLER-START" nên chạy trước khi sampler r3 xong.
+- Kết quả 57 PASS / 14 FAIL.
+- Các luật không đọc trang thì hợp lệ trên r3:
+  - A09 PASS: 6 khoảng lặng 0,8–1,5 s.
+  - A10 PASS: Spearman 0,976, 0 chuyển động nhanh thiếu whoosh.
+  - Các luật F, S đọc từ file.
+  - A14 FAIL (thiếu "30", xem mục chưa làm).
+  - A15, S04, S12, R01, R03, R06, V05, V07 như bảng vòng 2.
+- Các luật trang (V03, V08, V11, C04, C13…) của lần này là số của trang r2: không dùng.
+
+**Lần chạy hợp lệ duy nhất** (một chuỗi: chờ sampler r3 xong → kiểm page.json mới hơn master và ghi thời điểm cùng SHA → chạy rules một lần): `out/m3/checks-run-6531f6c8e1d1.log` → `out/m3/checks-report-6531f6c8e1d1.*`.
+- Tại lúc commit này, sampler toàn phim (bắt đầu 02:13) CHƯA xong. Vì vậy **chưa luật nào được chạy trên master r3 với page.json của r3**.
+- Các luật trang chưa chạy trên r3: V02, V03, V04, V08, V11, C01–C07, C10, C12–C15, S08, S09, C13, cùng các luật đọc textTrack/claimFinal.
+
+## Thời gian và số lần render của vòng 3
+- 01:45 → 04:1x UTC. Điểm dừng an toàn là 04:45.
+- Giọng: 4 take, 320 ký tự ElevenLabs.
+- Render hình: **3 đoạn, 9 cảnh, 1 317 frame, 635 s**, cộng khoảng 20 ảnh tĩnh để kiểm.
+- Ghép: 218 s.
+- Trộn âm toàn phim: 2 lần. Lần 2 dời điểm bắt đầu nhả nhạc để khoảng lặng 2:39 không dài quá 1,5 s.
+- Sampler toàn phim (bắt đầu 02:13): lâu hơn vòng 2 vì chạy song song với trộn âm, preview, gói duyệt và nhánh media.
+
+## Chưa làm / trượt còn lại
+- R06, V05, V07: trượt đã biết ở 2.5D. A15, S04: đã chấp nhận. C04: kháng nghị.
+- S12, R03: như vòng 2.
+- R01: ngoài 2 đỉnh căng giả cũ, giờ có thêm 1 đỉnh thiếu thung lũng, vì bản phối mới đổi đường cong năng lượng.
+- **A14, trượt mới:**
+  - ASR của checks nghe "the year real return" ở 10:10 (a3-nuance.1), thiếu "thirty".
+  - Lời đọc giống hệt r2. Nhạc ở cửa sổ đó −60 dBFS; bản trộn r2 và r3 lệch nhau −51 dB.
+  - Đây là do faster-whisper chia đoạn trên toàn file khác đi, không phải bị che. Chưa sửa: muốn sửa phải đổi giọng hoặc dòng thời gian, mà vòng này không làm.
+- **Frame-change** (đo, không khai): 33,9% cặp khung đổi ≥ 0,5% điểm ảnh, đoạn đứng lâu nhất 8,13 s. Vẫn chưa đạt 50% / ≤ 4 s.

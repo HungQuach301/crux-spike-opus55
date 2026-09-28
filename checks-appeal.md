@@ -58,3 +58,17 @@ Theo brief §1.3, Phiên D không tự đổi nguồn. S04 hiện chỉ so lạm
 **Đề xuất.** Chỉ coi hình là chuỗi đường khi nó là đường hở (polyline, không tô) hoặc có `role: 'series'`. Có thể bỏ qua hình tô kín (`fill` khác null, `stroke` null).
 
 **Phiên D đã làm.** Không thêm trục giả cho biểu đồ tròn và không đổi màu đống tiền để né luật. C04 ghi "trượt, kháng nghị" trong báo cáo M3.
+
+## 5. (Ghi nhận lỗi máy kiểm, không kháng nghị ở vòng 3) A14: faster-whisper chia đoạn trên cả file
+
+**Luật.** `asr_master` chạy faster-whisper small.en một lần trên toàn bộ tiếng của video, có word timestamps, rồi lấy từ nằm trong cửa sổ từng câu.
+
+**Bằng chứng (vòng 3, master `6531f6c8…`).**
+- Câu a3-nuance.1 ở 10:10 bị chép thành "…the year real return…", thiếu "thirty". A14 báo thiếu key word "30".
+- Ở vòng 2 (master `dd6117c6…`), cùng câu đó được nghe đúng.
+- Lời đọc giống hệt r2. Trong cửa sổ 609,8–611,4 s, nhạc ở −60 dBFS, không có sonification, và bản trộn r3 lệch r2 chỉ −51 dB so với tín hiệu.
+- Kết quả đổi vì Whisper chia đoạn theo ngữ cảnh của **cả file**: thay đổi ở chỗ khác trong phim (âm thanh cold open, nhạc) dời ranh giới đoạn, nên từ ở một chỗ không đổi vẫn có thể bị bỏ.
+
+**Đề xuất.** Chạy ASR theo từng câu (cửa sổ câu ± 1 s) hoặc cố định ranh giới đoạn bằng timeline, để kết quả của một câu chỉ phụ thuộc chính tiếng của câu đó.
+
+**Phiên D đã làm.** Theo chỉ dẫn: chỉ báo cáo; không sửa lời đọc, không sửa luật.
